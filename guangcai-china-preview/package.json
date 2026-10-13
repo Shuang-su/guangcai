@@ -13,10 +13,12 @@
     "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
     "qa:textures": "node tools/texture-qa.mjs",
     "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
-    "textures:fixed": "python3 tools/extract-original-floral.py && node tools/derive-original-fixed.mjs",
+    "textures:fixed": "node tools/original-assets.mjs",
     "textures:china": "python3 tools/china-assets.py",
     "prebuild": "node tools/web-textures.mjs",
-    "textures:web": "node tools/web-textures.mjs"
+    "textures:web": "node tools/web-textures.mjs",
+    "evidence:v3": "node tools/v3-evidence.mjs",
+    "qa:background": "node tools/background-qa-v3.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

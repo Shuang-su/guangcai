@@ -6,7 +6,7 @@
   "saucer": {
     "offsetU": 0.485,
     "phaseBalance": 0.145,
-    "sourceOffsetU": -0.055
+    "sourceOffsetU": -0.105
   },
   "note": "Source-layout-v3 uses normalized UV2, one full 151 saucer arc with no mirroring or old phase compensation. Legacy UV0 and offsets remain available for older packages."
 }

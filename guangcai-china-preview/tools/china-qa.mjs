@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
 import sharp from 'sharp';
-const url=process.env.QA_URL??'http://127.0.0.1:5208/';
+const url=process.env.QA_URL??'http://127.0.0.1:5210/';
 const output='output/playwright/china';await mkdir(output,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});

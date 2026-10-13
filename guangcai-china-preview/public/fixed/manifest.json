@@ -84,7 +84,7 @@
       }
     },
     "saucer": {
-      "offsetU": -0.055,
+      "offsetU": -0.105,
       "width": 6924,
       "height": 195,
       "physical": {
@@ -135,7 +135,7 @@
   },
   "reliefRevision": "Existing v5 height profile and strengths applied to the original source contours; visual approximation, not measured physical height.",
   "runtimeOffsets": {
-    "saucerU": -0.055
+    "saucerU": -0.105
   },
   "layoutCalibration": {
     "version": 3,
@@ -145,7 +145,7 @@
     "saucer": {
       "offsetU": 0.485,
       "phaseBalance": 0.145,
-      "sourceOffsetU": -0.055
+      "sourceOffsetU": -0.105
     },
     "note": "Source-layout-v3 uses normalized UV2, one full 151 saucer arc with no mirroring or old phase compensation. Legacy UV0 and offsets remain available for older packages."
   }
