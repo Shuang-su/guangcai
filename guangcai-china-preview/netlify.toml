@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "dist"
 
-# Three separate HTML entry points; missing textures must remain real 404s.
+# Two current HTML entry points; missing textures must remain real 404s.
 # Do not add an SPA catch-all rewrite to index.html.
 [[headers]]
   for = "/*"

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-13T11:13:57.953Z",
+  "format": "lossless WebP, original PNG retained",
+  "sourceBytes": 16796918,
+  "webBytes": 10399564,
+  "records": [
+    {
+      "source": "public/fixed/body-baseColor.png",
+      "web": "public/web/fixed/body-baseColor.webp",
+      "sourceBytes": 5848898,
+      "webBytes": 3717346,
+      "sha256": "182a912df9d7868237912747d0811b045675f2ef89697b04547dbe122f352916",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/body-normal.png",
+      "web": "public/web/fixed/body-normal.webp",
+      "sourceBytes": 1663500,
+      "webBytes": 1145268,
+      "sha256": "25e7c2a82cff5075fc3e3c943e4d27a7ac147a6f15dcc9c0ca70d81e17db26c6",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/body-roughness.png",
+      "web": "public/web/fixed/body-roughness.webp",
+      "sourceBytes": 563566,
+      "webBytes": 361548,
+      "sha256": "a1bebacc35787c20ed3114ab0becfe0ad11a6fb7102571334eb548e35d46e892",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/body-metalness.png",
+      "web": "public/web/fixed/body-metalness.webp",
+      "sourceBytes": 1263256,
+      "webBytes": 611078,
+      "sha256": "6b0634c6c05a0e206d1b555150033c4fa9498ff032b320b4a31a244fe5e20784",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/handle-baseColor.png",
+      "web": "public/web/fixed/handle-baseColor.webp",
+      "sourceBytes": 2292356,
+      "webBytes": 1136080,
+      "sha256": "0e4d293c21889ebf8cc158e306ab90b72f847f0278c0efec2bf3ab27e99963fd",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/handle-normal.png",
+      "web": "public/web/fixed/handle-normal.webp",
+      "sourceBytes": 610896,
+      "webBytes": 377260,
+      "sha256": "1eb92f1f33706151363b38564a7964dbf5708739e89cff5966b6995aa42673e9",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/handle-roughness.png",
+      "web": "public/web/fixed/handle-roughness.webp",
+      "sourceBytes": 214277,
+      "webBytes": 138248,
+      "sha256": "c679852be3e3e9e645d81889da98600f71f4218f93a9e5188b24d56f65afb144",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/handle-metalness.png",
+      "web": "public/web/fixed/handle-metalness.webp",
+      "sourceBytes": 512803,
+      "webBytes": 241800,
+      "sha256": "a1db885eaebf15488984f3d4315fd68970b2a5a3d2a77c2ce3ac7642c1896af3",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/saucer-baseColor.png",
+      "web": "public/web/fixed/saucer-baseColor.webp",
+      "sourceBytes": 1224757,
+      "webBytes": 755014,
+      "sha256": "0b712528ecd37f42339cb632e50482e43f70ad2cbcdc9fee34e7ccedc4a4eb00",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/saucer-normal.png",
+      "web": "public/web/fixed/saucer-normal.webp",
+      "sourceBytes": 364544,
+      "webBytes": 248808,
+      "sha256": "dfb5574f66398f2e30071905683a92d3b8b4e7f592ca4458a8b371ebf296747f",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/saucer-roughness.png",
+      "web": "public/web/fixed/saucer-roughness.webp",
+      "sourceBytes": 98319,
+      "webBytes": 60058,
+      "sha256": "a1397cef31f9034061f505071d39a184e03208a12850995b83cb7f64abf6980c",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/fixed/saucer-metalness.png",
+      "web": "public/web/fixed/saucer-metalness.webp",
+      "sourceBytes": 211607,
+      "webBytes": 97176,
+      "sha256": "9707c0b951fc908c765b625a21bf5566fa35f5a3ad5337c303862097b6403cec",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/china/baseColor.png",
+      "web": "public/web/china/baseColor.webp",
+      "sourceBytes": 25616,
+      "webBytes": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/china/normal.png",
+      "web": "public/web/china/normal.webp",
+      "sourceBytes": 1614035,
+      "webBytes": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/china/roughness.png",
+      "web": "public/web/china/roughness.webp",
+      "sourceBytes": 223533,
+      "webBytes": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "decodedPixelsIdentical": true
+    },
+    {
+      "source": "public/china/metalness.png",
+      "web": "public/web/china/metalness.webp",
+      "sourceBytes": 64955,
+      "webBytes": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "decodedPixelsIdentical": true
+    }
+  ]
+}

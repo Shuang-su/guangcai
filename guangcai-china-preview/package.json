@@ -14,7 +14,9 @@
     "qa:textures": "node tools/texture-qa.mjs",
     "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
     "textures:fixed": "tsx tools/surface-metrics.ts && node tools/derive-fixed.mjs",
-    "textures:china": "python3 tools/china-assets.py"
+    "textures:china": "python3 tools/china-assets.py",
+    "prebuild": "node tools/web-textures.mjs",
+    "textures:web": "node tools/web-textures.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

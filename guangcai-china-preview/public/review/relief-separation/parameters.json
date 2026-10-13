@@ -8,7 +8,7 @@
     "lineFinishMask": "line-finish.png",
     "roundedHeightProfile": {
       "coreSigmaPx": 0.65,
-      "coreWeight": 1.0
+      "coreWeight": 1
     },
     "normalGradientGain": 2.1,
     "normalScale": 0.7,
@@ -34,8 +34,8 @@
     "refresh": "After geometry pose settles; no recapture for camera-only rotation"
   },
   "browserQa": {
-    "url": "http://127.0.0.1:5208/",
-    "date": "2026-10-11T15:42:45.723Z",
+    "url": "http://127.0.0.1:5209/",
+    "date": "2026-10-11T16:11:05.551Z",
     "checks": [
       "initial independent city + fixed packages loaded",
       "city uses UV1, aligned maps, and zero geometry displacement",
@@ -112,5 +112,13 @@
     "errors": [],
     "method": "Real handle hidden only for cube capture, restored in camera image; compares white body pixels at identical pose",
     "scope": "Local finite-volume reflection approximation; difference amplification image is labeled x20, not an actual render"
+  },
+  "webTransport": {
+    "lossless": true,
+    "pixelsIdentical": true,
+    "runtimeMaps": 16,
+    "sourceBytes": 16796918,
+    "webBytes": 10399564,
+    "networkRetryAttempts": 3
   }
 }

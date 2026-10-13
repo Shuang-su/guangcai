@@ -1,4 +1,5 @@
-import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Texture, TextureLoader, type MeshPhysicalMaterial } from 'three';
+import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Texture, type MeshPhysicalMaterial } from 'three';
+import {loadTexture} from './load-texture';
 
 export interface CityArtworkPack {
   id: string; version: number; name: string; layout: 'blank-300deg-v1';
@@ -8,7 +9,8 @@ export interface CityArtworkPack {
 export const chinaPack: CityArtworkPack = {
   placement:{scale:.82,offsetU:.047,offsetV:0},
   id:'china-draft-20261011',version:3,name:'中国 · 临时线稿',layout:'blank-300deg-v1',
-  ...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}china/${k}.png?v=3`])),
+  ...Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}web/china/${k}.webp?v=3`])),
+  height:`${import.meta.env.BASE_URL}china/height.png?v=3`,
 } as CityArtworkPack;
 const channels=['baseColor','normal','roughness','metalness'] as const;
 type Pixels={data:Uint8ClampedArray;width:number;height:number};
@@ -29,7 +31,7 @@ export class CityArtworkManager {
   relief=1;metalEnabled=true;lastError='';
   constructor(private material:MeshPhysicalMaterial,private anisotropy:number){}
   private labelPixels(){
-    if(!this.label)this.label=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}china/label.png`).then(t=>{
+    if(!this.label)this.label=loadTexture(`${import.meta.env.BASE_URL}china/label.png`).then(t=>{
       try{return pixels(t.image,t.image.width,t.image.height);}finally{t.dispose();}
     }).catch(e=>{this.label=undefined;throw e;});return this.label;
   }
@@ -37,8 +39,7 @@ export class CityArtworkManager {
     if(this.disposed)throw new Error('观察器已释放');
     const revision=++this.revision;
     if(!pack||pack.layout!=='blank-300deg-v1'||!pack.id||!pack.name||!Number.isInteger(pack.version)||pack.version<1||channels.some(k=>typeof pack[k]!=='string'||!pack[k]))throw new Error('城市包缺少有效版本、展开规范或对齐通道');
-    const loader=new TextureLoader();loader.setCrossOrigin('anonymous');
-    const results=await Promise.allSettled(channels.map(k=>loader.loadAsync(pack[k])));
+    const results=await Promise.allSettled(channels.map(k=>loadTexture(pack[k])));
     const loaded=results.flatMap(r=>r.status==='fulfilled'?[r.value]:[]);const staged:Texture[]=[];
     try{
       if(revision!==this.revision||this.disposed)return false;

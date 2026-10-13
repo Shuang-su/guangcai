@@ -1,8 +1,9 @@
-import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpace, Texture, TextureLoader } from 'three';
+import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
+import {loadTexture} from './load-texture';
 export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string}
 export interface StylePack {name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'新版固定广彩 · 参考重建',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}fixed/${region}-${k}.png`]))])) as unknown as unknown as StylePack['regions']};
+export const defaultPack:StylePack={name:'新版固定广彩 · 参考重建',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}web/fixed/${region}-${k}.webp`]))])) as unknown as unknown as StylePack['regions']};
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[
@@ -37,9 +38,8 @@ export class StyleManager {
       if(!entry?.baseColor)throw new Error(`材质包缺少 ${region}.baseColor`);
       for(const channel of channels)if(entry[channel])tasks.push({region,channel,url:entry[channel]!});
     }
-    const loader=new TextureLoader(); loader.setCrossOrigin('anonymous');
     const results=await Promise.allSettled(tasks.map(async task=>{
-      const texture=await loader.loadAsync(task.url);
+      const texture=await loadTexture(task.url);
       const img=texture.image;
       if(!img.width||!img.height||img.width>8192||img.height>8192){texture.dispose();throw new Error('贴图尺寸必须在 1–8192 像素内');}
       texture.colorSpace=task.channel==='baseColor'?SRGBColorSpace:NoColorSpace;

@@ -1,5 +1,5 @@
 import './ui/styles.css';
-import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace,TextureLoader} from 'three';
+import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace} from 'three';
 import {buildProduct} from './geometry/product';
 import {makeMaterials} from './materials/materials';
 import {createStudio} from './studio/studio';
@@ -9,10 +9,12 @@ import {chinaPack,CityArtworkManager,type CityArtworkPack} from './styles/city-a
 import {ViewController,type View} from './interaction/views';
 import {applyPose,type Pose} from './interaction/calibration';
 import {createInterface} from './ui/interface';
+import {loadTexture} from './styles/load-texture';
 const mats=makeMaterials(),product=buildProduct(mats);
-let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false;
+let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false;
 const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),restore:async()=>{await applyCityArtwork(chinaPack);}});
 let studio:ReturnType<typeof createStudio>;
+ui.message('正在载入花纸与金色浮雕…',true);
 try{studio=createStudio(ui.canvas);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
 studio.scene.add(product.root);
 const reflections=createLocalReflections(studio,product,mats.city);
@@ -39,9 +41,9 @@ function inspect(){
  };
  for(const[mesh,mat]of originals)mesh.material=Array.isArray(mat)?mat.map(convert):convert(mat);
 }
-async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.apply(pack);if(applied){inspect();ui.style(city.current!.name);}return applied;}
-const markReady=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
-Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady]).then(()=>{if(!disposed){reflections.initialize();ui.canvas.dataset.ready='true';}}).catch(e=>ui.error((e as Error).message));
+async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.apply(pack);if(applied){inspect();if(assetsReady)ui.style(city.current!.name);}return applied;}
+const markReady=loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
+Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
 let last=performance.now(),raf=0;
 function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;if(!calibrating)view.update(dt);studio.contact.update(product.root);if(mode==='pbr')reflections.update(now);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
 raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');});
