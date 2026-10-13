@@ -1,0 +1,16 @@
+{
+  "name": "guangcai-object-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "textures": "node tools/derive-pbr.mjs",
+    "test": "tsx --test tools/geometry.test.ts",
+    "qa": "node tools/browser-qa.mjs"
+  },
+  "dependencies": { "three": "0.186.1" },
+  "devDependencies": { "@types/three": "^0.183.1", "vite": "8.3.1", "typescript": "^5.9.3", "tsx": "^4.20.6", "sharp": "^0.34.5", "playwright": "^1.58.2" }
+}
