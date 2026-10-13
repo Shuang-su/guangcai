@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-13T10:35:19.812Z",
+  "date": "2026-10-13T11:07:48.056Z",
   "siteName": "guangcai-no1-china",
-  "staging": ".codex-work/deploy/china-20261013-fixed-layout/site",
+  "staging": ".codex-work/deploy/china-20261013-mobile-background-responsive/site",
   "allowlist": [
     "index.html",
     "evidence.html",
@@ -10,20 +10,27 @@
     "fixed",
     "marks",
     "reference",
-    "review"
+    "review",
+    "backgrounds"
   ],
   "files": [
     {
-      "path": "assets/index-DKETri6h.css",
-      "size": 6137,
-      "sha256": "e197effb5e42068139b95010cf7656e341834825a11a7bcb8087474b73d2106e",
-      "sha1": "2ac3eca28350fbecd2c367a5137daa7c9bb4d77d"
+      "path": "assets/index-CE3Nbekc.js",
+      "size": 619129,
+      "sha256": "af40025bd8a45b6f0485c29275d723276a018328fb514063eab15118e4df25f4",
+      "sha1": "596038546a02777b6602e539caa07b3acd2e0d4c"
     },
     {
-      "path": "assets/index-DzbCBv9D.js",
-      "size": 612737,
-      "sha256": "6269e0887efbd5ee00518eba6152f28cc1b262fb59ed7d4870cad7cc60dcd981",
-      "sha1": "a6a8f07e01011db61cfb5111d9d9c52ba5fe0f9a"
+      "path": "assets/index-CneZKPP2.css",
+      "size": 7591,
+      "sha256": "65a06122223401f2a0776e084c156a96d2dc4e1bbc1ff1e7fe3033a73a724407",
+      "sha1": "35f4c423010886cf91dfe77a2738043d33c4b0a4"
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "size": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c",
+      "sha1": "94b5c952132bb0d0fed2693a7b73749b1b7a886e"
     },
     {
       "path": "china/baseColor.png",
@@ -99,9 +106,9 @@
     },
     {
       "path": "evidence.html",
-      "size": 22248,
-      "sha256": "52d1780e50c73da5a1593bfe48bbd0e27b3b440cb2735aabf913257cf6fab016",
-      "sha1": "9dc2b01f00d910f36795e3fcfc070b350c49ba7e"
+      "size": 23419,
+      "sha256": "0eecf935bc0aba2ba29d2219ec94f924c19008a377a28b2334b7a9304153fbc7",
+      "sha1": "6f991be504e4faa664ec23605b5a38538fdab2fd"
     },
     {
       "path": "fixed/body-baseColor.png",
@@ -208,8 +215,8 @@
     {
       "path": "index.html",
       "size": 464,
-      "sha256": "b23079bc9a28ab1ac60e66c9f762990eb0769fb019a305d42f02bb8ad52cfe16",
-      "sha1": "884dd8e803c644a49ff80b3f18226b1f2673ee3c"
+      "sha256": "d8c92ec7fac3794cee2e7f455ef8124f36e60742620a820107a569d2a3c93ed0",
+      "sha1": "445f8fd8965eccf5d37cb6c6e38706ff1b46b8a0"
     },
     {
       "path": "marks/auratic-reference.png",
@@ -248,6 +255,24 @@
       "sha1": "9981deb2e052acafd637f5c1242a4e0b9486938c"
     },
     {
+      "path": "review/background/mobile-comparison.jpg",
+      "size": 108055,
+      "sha256": "a24486acadbc2c1a30be3c2ca989fd4c7ec980bbe385fe46b346c446bc27a70f",
+      "sha1": "8a2849a196c96c65ed741edec780bc61e1ab214c"
+    },
+    {
+      "path": "review/background/mobile-panel.jpg",
+      "size": 63961,
+      "sha256": "9c6e4d3191e1673b69d9c53fb68901d4edff02b0b27abe07347bf23a4407a37c",
+      "sha1": "5a9fa844a9957e08f907b096a64418a7d724c562"
+    },
+    {
+      "path": "review/background/verification.json",
+      "size": 1475,
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8",
+      "sha1": "08915bf5aea3514faa202c5e72d7f8e95774a4c3"
+    },
+    {
       "path": "review/before-matte.jpg",
       "size": 178294,
       "sha256": "97c7ab4606c642629cfab8338b4b9cdadbd18e0ee8002ac0d51e7bb0a7648a9c",
@@ -256,8 +281,8 @@
     {
       "path": "review/browser-qa.json",
       "size": 2583,
-      "sha256": "cc7a1c28dd7769ac8ea3e9c3cbe1819864c4390a6e19254bdcb410ffa5d92471",
-      "sha1": "2741dc4abd3151857cec6d09021c3a21db6cc40e"
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7",
+      "sha1": "a72487c0fbd78158a840d6a76f3b7fa0c4a624a3"
     },
     {
       "path": "review/buildings-comparison.jpg",
@@ -800,5 +825,5 @@
       "sha1": "13f117123add3d8e5062762630b38f744b75c7d9"
     }
   ],
-  "totalBytes": 43629236
+  "totalBytes": 43850458
 }

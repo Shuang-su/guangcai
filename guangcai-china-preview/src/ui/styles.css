@@ -9,3 +9,14 @@ aside{position:absolute;top:102px;right:24px;bottom:105px;width:304px;padding:22
 .fixed-settings{margin:18px 0 0;font-size:12px}.fixed-settings div{display:flex;justify-content:space-between;padding:7px 0}.fixed-settings dd{margin:0;font-variant-numeric:tabular-nums;font-weight:600}.style-choices{display:grid;gap:9px}.style-choice{padding:0;overflow:hidden;text-align:left;background:#eeeae1}.style-choice img{width:100%;height:32px;object-fit:cover;display:block}.style-choice span,.style-choice small{display:block;padding:8px 10px 0}.style-choice small{font-size:10px;opacity:.8;padding:4px 10px 9px}.standards-link{display:block;font-size:12px;color:#854c4d;margin-top:15px;line-height:1.6}
 .standards-top{font-size:12px;color:#624c35;text-decoration:none;align-self:center;margin-right:5px}@media(max-width:520px){.standards-top{font-size:10px;width:30px;line-height:1.5;margin:0}}
 .check-label{font-size:13px;display:flex;gap:8px;align-items:center}.check-label input{accent-color:var(--accent)}
+.scene-background{position:absolute;inset:0;background:#b7b8ba center/cover no-repeat;pointer-events:none}#viewport{position:relative}
+.open-background{position:absolute;right:26px;top:calc(45% - 50px);font-size:13px}
+.background-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}.background-choices button{padding:12px 8px}.background-choices button:first-child{grid-column:1/-1}.background-choices span{display:block;font-size:11px;margin-top:5px;opacity:.8}.background-choices [hidden]{display:none}#choose-background{width:100%}#background-status.error{color:#993f35}
+@media(max-width:900px){.open-background{top:auto;bottom:126px;right:134px}}
+@media(max-width:520px){.open-background{bottom:167px;right:106px;padding:8px 12px;font-size:11px}.gesture-hint{max-width:calc(100vw - 190px);bottom:151px}}
+.open-background{background:rgba(245,244,240,.8);backdrop-filter:blur(12px)}
+#background-settings{bottom:auto;max-height:calc(100% - 160px)}
+@media(max-width:360px){h1{font-size:20px;white-space:nowrap}header p{font-size:9px}.top-actions button{font-size:10px;padding:8px}.top-actions{gap:4px}}
+@media(min-width:521px) and (max-width:900px){.gesture-hint{bottom:104px;max-width:calc(100vw - 230px)}}
+@media(max-height:520px) and (orientation:landscape){aside{top:18px;bottom:18px}.open-background,.open-settings{bottom:90px}footer{bottom:12px}.gesture-hint{display:none}}
+@media(max-height:520px) and (orientation:landscape){#background-settings{max-height:calc(100% - 36px)}}

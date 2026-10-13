@@ -21,7 +21,7 @@ try{
  const initial=await debug(),pack=initial.city.pack;
  check('initial independent city + fixed packages loaded',initial.city.maps.length===5&&Object.values(initial.fixed).every(r=>Object.keys(r).length===4));
  check('city uses UV1, aligned maps, and zero geometry displacement',initial.city.maps.every(m=>m.channel===1&&same(m.size,[4096,1783]))&&initial.city.displacementScale===0);
- check('old full-floral replacement controls removed',await page.locator('input[type=file],.style-choice').count()===0);
+ check('old full-floral replacement controls removed',await page.locator('input[type=file]:not(#background-file),.style-choice').count()===0);
  check('local geometry reflection initialized',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0&&initial.reflections.resolution===512);
  await frame('desktop');
  for(const v of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','flowers','hero']){
