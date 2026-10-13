@@ -7,6 +7,7 @@ const output='output/playwright/china';await mkdir(output,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
 const errors=[],checks=[];page.on('pageerror',e=>errors.push(e.message));
+page.on('console',m=>{if(m.type()==='error'&&/WebGLProgram|Shader Error|GL_INVALID/.test(m.text()))errors.push(m.text());});
 const debug=()=>page.evaluate(()=>window.cupViewer.debug());
 const check=(name,value)=>{assert.ok(value,name);checks.push(name);console.log('PASS',name);};
 const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
@@ -21,15 +22,26 @@ try{
  check('initial independent city + fixed packages loaded',initial.city.maps.length===5&&Object.values(initial.fixed).every(r=>Object.keys(r).length===5));
  check('city uses UV1, aligned maps, and zero geometry displacement',initial.city.maps.every(m=>m.channel===1&&same(m.size,[4096,1783]))&&initial.city.displacementScale===0);
  check('old full-floral replacement controls removed',await page.locator('input[type=file],.style-choice').count()===0);
+ check('local geometry reflection initialized',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0&&initial.reflections.resolution===512);
  await frame('desktop');
  for(const v of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','hero']){
   await view(v);check(`view button ${v}`,(await debug()).view===v);await frame(v);
   if(v==='bottom')check('turned cup clears the floor',(await debug()).bottomClearance>30);
+  if(v==='exploded'){await pause(500);const r=(await debug()).reflections;check('local probe follows exploded cup',r.captures>initial.reflections.captures&&Math.abs(r.position[1]-initial.reflections.position[1]-26)<.01);}
  }
+ await pause(650);const beforeOrbitCapture=(await debug()).reflections.captures;
  await page.locator('#auto').click();const a=await debug();await pause(500);const b=await debug();check('auto rotation changes camera',!same(a.camera,b.camera));
  await page.mouse.move(660,390);await page.mouse.down();await page.mouse.move(810,460,{steps:12});await page.mouse.up();await pause(250);const dragged=await debug();check('drag stops auto and rotates',!dragged.auto&&!same(dragged.camera,b.camera));
+ check('camera rotation reuses the local reflection capture',dragged.reflections.captures===beforeOrbitCapture);
  const distance=s=>Math.hypot(...s.camera.map((v,i)=>v-s.target[i]));const beforeZoom=distance(dragged);await page.mouse.wheel(0,-210);await pause(350);check('wheel zoom',distance(await debug())<beforeZoom);
  await view('detail');await page.locator('#open-settings').click();
+ const probeMap=(await debug()).reflections.envMap;
+ await page.locator('#local-reflections').uncheck();const disabled=(await debug()).reflections;
+ check('reflection toggle restores studio-only environment',!disabled.enabled&&disabled.envMap!==probeMap);
+ await page.locator('#local-reflections').check();await pause(100);const localStable=await debug();
+ check('reflection toggle restores local geometry capture',localStable.reflections.enabled&&localStable.reflections.envMap===probeMap);
+ for(let i=0;i<5;i++){await page.evaluate(()=>{window.cupViewer.setLocalReflections(false);window.cupViewer.setLocalReflections(true);});await pause(100);}
+ check('five reflection toggles reuse GPU resources',same((await debug()).memory,localStable.memory));
  for(const v of ['0','-1','1']){await page.locator('#relief').selectOption(v);check(`relief ${v} retains metal + geometry`,(await debug()).city.relief===+v&&(await debug()).city.metalEnabled&&same((await debug()).geometries,initial.geometries));}
  for(const mode of ['clay','relief','metalness','pbr']){await page.locator('#material-mode').selectOption(mode);check(`inspection ${mode}`,(await debug()).mode===mode);}
  await page.locator('#city-metal').uncheck();check('metal off retains stroke normal',(await debug()).city.relief===1&&!(await debug()).city.metalEnabled);await page.locator('#city-metal').check();await page.locator('#close-settings').click();
