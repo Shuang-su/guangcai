@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:5187/compare.html",
+  "checks": [
+    "1221: same physical saucer and corresponding photo loaded",
+    "1220: same physical saucer and corresponding photo loaded",
+    "1230: same physical saucer and corresponding photo loaded",
+    "1238: same physical saucer and corresponding photo loaded",
+    "1236: same physical saucer and corresponding photo loaded",
+    "camera roll and pitch controls change the actual 3D projection",
+    "edited camera survives reload",
+    "reset restores the reviewed pose",
+    "photo / model / overlay toggles",
+    "four display modes",
+    "PNG combines the original aspect photo with transparent WebGL canvas",
+    "camera JSON download",
+    "mobile overlay keeps photo aspect without horizontal overflow"
+  ],
+  "errors": [],
+  "date": "2026-09-29T15:30:21.107Z"
+}

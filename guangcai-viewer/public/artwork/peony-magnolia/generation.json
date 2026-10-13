@@ -1,0 +1,26 @@
+{
+  "id": "peony-magnolia",
+  "name": "牡丹玉兰 · 金地",
+  "tool": "image_gen",
+  "prompts": [
+    "Use case: illustration-story. Asset type: a FLAT 2D albedo decal print master for a Canton famille rose Guangcai porcelain cup. Output portrait aspect 1:2 at highest available detail. Fill the entire canvas edge to edge with exquisite dense traditional Chinese hand-painted flowers, fruits, butterflies and foliage, on a perfectly FLAT UNIFORM ochre gold ground color #B3924F. The gold ground is matte flat ink for a later PBR mask, NOT rendered metallic. Multiple distinct small pink/red peonies with many delicate petals, pale cream chrysanthemum with fine red contours, coral and rose pink lotus, turquoise jade green leaves with very fine dark green veins, occasional pomegranate fruit, two tiny pale yellow/red butterflies, little white blossoms. Refined intricate enamel decal linework matching finely painted Chinese porcelain; elegant asymmetrical botanical intertwining, many varied smaller motifs, not big cartoon flowers, crisp thin precise outlines, richly detailed fine brushwork with lightly layered pigment inside petals, balanced 30% visible uniform ochre gold background negative spaces. No recognizable repeats within the image. The vertical edges and top/bottom must tile seamlessly with matching stems and background. Front-on flat scan style, constant color, no illumination or shadows whatsoever. No container, cup, saucer, handle, object mockup, borders, margins, text, logo, watermarks, labels, embossing, specular highlight, texture of paper, grain, perspective, cast shadow, baked light, gradients in gold. Gold must stay homogeneous separate from multicolored enamel so semantic color segmentation can make an aligned metal mask. This is newly reconstructed artwork inspired by photographed ceramic decoration, not a photo crop.\nVariant direction only: Emphasize coral and raspberry pink peonies, introduce small ivory magnolias among the existing mixed flowers, retain chrysanthemums, tiny white blossoms, fruits, butterflies and dense jade foliage. Match the supplied ORIGINAL master's dense edge-to-edge layout, motif scale, intertwined foliage coverage and small irregular gold gaps. Keep the visual density unchanged; do not simplify into isolated bouquets. Create a new arrangement of the motifs.",
+    "Use case illustration-story. Create a very wide horizontal 6:1 flat 2D ceramic decal strip, maximum detailed resolution. Entire rectangle edge to edge, no borders, no margins. Continuous dense traditional Canton famille rose Guangcai botanical enamel: many small different pink peonies, red camellias, pale ivory chrysanthemums, lotus buds, tiny yellow/red butterflies, jade/turquoise green leaves with thin dark contours and fine veins, occasional pomegranate. Flowers mostly fit within the strip height. About 14 distinct flower groupings across width, asymmetrical organic densely entwined finely painted miniature pattern, NO obvious identical repetitions. Exact homogeneous flat ochre gold ground #B3924F throughout all negative spaces, no metallic shading. Ends left/right join SEAMLESSLY with same flat gold ground and matching plant stems. This is a print albedo master for a narrow saucer rim, NOT a photo. Absolutely flat scan view, no ceramic object, no camera perspective, no shadows, no lighting, no highlights, no rough surface, no paper grain, no embossing, no bevels, no text. Each petal and vein and butterfly wing has precise delicate linework. Use a traditional Chinese porcelain enamel painting look, not vector clipart or cartoon. Gold background must be separable by color for an aligned PBR mask. New reconstruction inspired by ceramic motifs, not an official print master.\nVariant direction only: Emphasize coral/raspberry peonies and small ivory magnolias while retaining many diverse small blossoms, fruit, butterflies and dense jade foliage. Match the supplied ORIGINAL master's density and flower scale throughout the middle quarter of the image height, because that strip is used on the saucer. Keep the original dense all-over composition, NOT a single garland with blank ochre margins. A new arrangement with similarly dense full-coverage botanical painting."
+  ],
+  "masters": [
+    {
+      "part": "body",
+      "width": 887,
+      "height": 1774
+    },
+    {
+      "part": "band",
+      "width": 2172,
+      "height": 724
+    }
+  ],
+  "render": {
+    "relief": 1.5,
+    "exposure": 1.08
+  },
+  "inference": "Artistic PBR, not a measured scan."
+}

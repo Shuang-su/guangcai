@@ -1,0 +1,56 @@
+{
+  "note": "Proxy based on the existing ochre color mask, not a semantic ground-truth measurement. Nonmetal mask pixels below 128 count as enamel.",
+  "styles": {
+    "original": {
+      "body": {
+        "enamelCoverage": 0.6249,
+        "top20Percent": 0.5398,
+        "bottom20Percent": 0.6649
+      },
+      "handle": {
+        "enamelCoverage": 0.5064,
+        "top20Percent": 0.4334,
+        "bottom20Percent": 0.4511
+      },
+      "saucer": {
+        "enamelCoverage": 0.7138,
+        "top20Percent": 0.6875,
+        "bottom20Percent": 0.6536
+      }
+    },
+    "peony-magnolia": {
+      "body": {
+        "enamelCoverage": 0.6394,
+        "top20Percent": 0.5488,
+        "bottom20Percent": 0.6746
+      },
+      "handle": {
+        "enamelCoverage": 0.5284,
+        "top20Percent": 0.4713,
+        "bottom20Percent": 0.4583
+      },
+      "saucer": {
+        "enamelCoverage": 0.7942,
+        "top20Percent": 0.7483,
+        "bottom20Percent": 0.8173
+      }
+    },
+    "lotus-butterfly": {
+      "body": {
+        "enamelCoverage": 0.5623,
+        "top20Percent": 0.4559,
+        "bottom20Percent": 0.6492
+      },
+      "handle": {
+        "enamelCoverage": 0.4269,
+        "top20Percent": 0.3909,
+        "bottom20Percent": 0.4407
+      },
+      "saucer": {
+        "enamelCoverage": 0.4336,
+        "top20Percent": 0.1654,
+        "bottom20Percent": 0.2407
+      }
+    }
+  }
+}

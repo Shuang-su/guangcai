@@ -1,0 +1,1033 @@
+{
+  "url": "http://127.0.0.1:5197/",
+  "date": "2026-09-29T15:46:10.653Z",
+  "checks": [
+    "original/body/baseColor dimensions and SHA-256",
+    "original/body/metalness dimensions and SHA-256",
+    "original/body/roughness dimensions and SHA-256",
+    "original/body/height dimensions and SHA-256",
+    "original/body/normal dimensions and SHA-256",
+    "original/handle/baseColor dimensions and SHA-256",
+    "original/handle/metalness dimensions and SHA-256",
+    "original/handle/roughness dimensions and SHA-256",
+    "original/handle/height dimensions and SHA-256",
+    "original/handle/normal dimensions and SHA-256",
+    "original/saucer/baseColor dimensions and SHA-256",
+    "original/saucer/metalness dimensions and SHA-256",
+    "original/saucer/roughness dimensions and SHA-256",
+    "original/saucer/height dimensions and SHA-256",
+    "original/saucer/normal dimensions and SHA-256",
+    "peony-magnolia/body/baseColor dimensions and SHA-256",
+    "peony-magnolia/body/metalness dimensions and SHA-256",
+    "peony-magnolia/body/roughness dimensions and SHA-256",
+    "peony-magnolia/body/height dimensions and SHA-256",
+    "peony-magnolia/body/normal dimensions and SHA-256",
+    "peony-magnolia/handle/baseColor dimensions and SHA-256",
+    "peony-magnolia/handle/metalness dimensions and SHA-256",
+    "peony-magnolia/handle/roughness dimensions and SHA-256",
+    "peony-magnolia/handle/height dimensions and SHA-256",
+    "peony-magnolia/handle/normal dimensions and SHA-256",
+    "peony-magnolia/saucer/baseColor dimensions and SHA-256",
+    "peony-magnolia/saucer/metalness dimensions and SHA-256",
+    "peony-magnolia/saucer/roughness dimensions and SHA-256",
+    "peony-magnolia/saucer/height dimensions and SHA-256",
+    "peony-magnolia/saucer/normal dimensions and SHA-256",
+    "lotus-butterfly/body/baseColor dimensions and SHA-256",
+    "lotus-butterfly/body/metalness dimensions and SHA-256",
+    "lotus-butterfly/body/roughness dimensions and SHA-256",
+    "lotus-butterfly/body/height dimensions and SHA-256",
+    "lotus-butterfly/body/normal dimensions and SHA-256",
+    "lotus-butterfly/handle/baseColor dimensions and SHA-256",
+    "lotus-butterfly/handle/metalness dimensions and SHA-256",
+    "lotus-butterfly/handle/roughness dimensions and SHA-256",
+    "lotus-butterfly/handle/height dimensions and SHA-256",
+    "lotus-butterfly/handle/normal dimensions and SHA-256",
+    "lotus-butterfly/saucer/baseColor dimensions and SHA-256",
+    "lotus-butterfly/saucer/metalness dimensions and SHA-256",
+    "lotus-butterfly/saucer/roughness dimensions and SHA-256",
+    "lotus-butterfly/saucer/height dimensions and SHA-256",
+    "lotus-butterfly/saucer/normal dimensions and SHA-256",
+    "peony-magnolia/body density no lower than original within 10 percent",
+    "peony-magnolia/handle density no lower than original within 10 percent",
+    "peony-magnolia/saucer density no lower than original within 10 percent",
+    "peony-magnolia full coverage at BOTH rim edges",
+    "lotus-butterfly/body density no lower than original within 10 percent",
+    "lotus-butterfly/handle density no lower than original within 10 percent",
+    "lotus-butterfly/saucer density no lower than original within 10 percent",
+    "lotus-butterfly full coverage at BOTH rim edges",
+    "peony-magnolia/body exact original prompt prefix preserved",
+    "peony-magnolia/band exact original prompt prefix preserved",
+    "lotus-butterfly/body exact original prompt prefix preserved",
+    "lotus-butterfly/band exact original prompt prefix preserved",
+    "no editable relief or exposure controls",
+    "fixed values displayed",
+    "original locked material constants",
+    "original same geometry and camera",
+    "original five channels share UV transforms and correct color space",
+    "original all PBR channels loaded",
+    "original selected card reflects applied style",
+    "peony-magnolia locked material constants",
+    "peony-magnolia same geometry and camera",
+    "peony-magnolia five channels share UV transforms and correct color space",
+    "peony-magnolia all PBR channels loaded",
+    "peony-magnolia selected card reflects applied style",
+    "lotus-butterfly locked material constants",
+    "lotus-butterfly same geometry and camera",
+    "lotus-butterfly five channels share UV transforms and correct color space",
+    "lotus-butterfly all PBR channels loaded",
+    "lotus-butterfly selected card reflects applied style",
+    "repeated variant switching releases old GPU maps",
+    "selected variant persists on reload",
+    "mobile variant panel fits",
+    "mobile card activates",
+    "gallery original/body/baseColor",
+    "gallery original/body/normal",
+    "gallery original/body/roughness",
+    "gallery original/body/metalness",
+    "gallery original/body/height",
+    "gallery original/handle/baseColor",
+    "gallery original/handle/normal",
+    "gallery original/handle/roughness",
+    "gallery original/handle/metalness",
+    "gallery original/handle/height",
+    "gallery original/saucer/baseColor",
+    "gallery original/saucer/normal",
+    "gallery original/saucer/roughness",
+    "gallery original/saucer/metalness",
+    "gallery original/saucer/height",
+    "gallery peony-magnolia/body/baseColor",
+    "gallery peony-magnolia/body/normal",
+    "gallery peony-magnolia/body/roughness",
+    "gallery peony-magnolia/body/metalness",
+    "gallery peony-magnolia/body/height",
+    "gallery peony-magnolia/handle/baseColor",
+    "gallery peony-magnolia/handle/normal",
+    "gallery peony-magnolia/handle/roughness",
+    "gallery peony-magnolia/handle/metalness",
+    "gallery peony-magnolia/handle/height",
+    "gallery peony-magnolia/saucer/baseColor",
+    "gallery peony-magnolia/saucer/normal",
+    "gallery peony-magnolia/saucer/roughness",
+    "gallery peony-magnolia/saucer/metalness",
+    "gallery peony-magnolia/saucer/height",
+    "gallery lotus-butterfly/body/baseColor",
+    "gallery lotus-butterfly/body/normal",
+    "gallery lotus-butterfly/body/roughness",
+    "gallery lotus-butterfly/body/metalness",
+    "gallery lotus-butterfly/body/height",
+    "gallery lotus-butterfly/handle/baseColor",
+    "gallery lotus-butterfly/handle/normal",
+    "gallery lotus-butterfly/handle/roughness",
+    "gallery lotus-butterfly/handle/metalness",
+    "gallery lotus-butterfly/handle/height",
+    "gallery lotus-butterfly/saucer/baseColor",
+    "gallery lotus-butterfly/saucer/normal",
+    "gallery lotus-butterfly/saucer/roughness",
+    "gallery lotus-butterfly/saucer/metalness",
+    "gallery lotus-butterfly/saucer/height",
+    "standards mobile no overflow",
+    "all three rendered previews loaded",
+    "photo overlay uses the same locked brightness and relief",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "styles": [
+    {
+      "id": "original",
+      "exposure": 1.08,
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        174.845655685361,
+        188.61605722773203,
+        379.920909828351
+      ],
+      "target": [
+        7.000000000000011,
+        65,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "f020d01e-e423-468d-a2ac-7bd75a8e3757",
+        "16fecd92-3abe-4da7-b223-26402145247b",
+        "16cf9e51-8173-4b72-9c67-52a80e9c9374",
+        "dd70340a-fa51-45d7-ac43-d83bf0a00167",
+        "562be7a8-5934-481e-8f49-540a7f89bf1c",
+        "c54f9cd5-c409-43a5-aeef-10b55919f4b1",
+        "6139f5eb-1045-4596-922f-1cbde1ba129f",
+        "942cf6cd-f60d-4b15-8f21-1c1a06c17401",
+        "dad56bda-bf9e-4a03-8563-e636cf42fdd3",
+        "edf85cbb-444b-40a2-be59-95761af14af6",
+        "4d60edd2-e9c3-4121-86da-f7a655612993"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    {
+      "id": "peony-magnolia",
+      "exposure": 1.08,
+      "view": "hero",
+      "mode": "pbr",
+      "style": "牡丹玉兰 · 金地",
+      "auto": false,
+      "camera": [
+        174.845655685361,
+        188.61605722773203,
+        379.920909828351
+      ],
+      "target": [
+        7.000000000000011,
+        65,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "f020d01e-e423-468d-a2ac-7bd75a8e3757",
+        "16fecd92-3abe-4da7-b223-26402145247b",
+        "16cf9e51-8173-4b72-9c67-52a80e9c9374",
+        "dd70340a-fa51-45d7-ac43-d83bf0a00167",
+        "562be7a8-5934-481e-8f49-540a7f89bf1c",
+        "c54f9cd5-c409-43a5-aeef-10b55919f4b1",
+        "6139f5eb-1045-4596-922f-1cbde1ba129f",
+        "942cf6cd-f60d-4b15-8f21-1c1a06c17401",
+        "dad56bda-bf9e-4a03-8563-e636cf42fdd3",
+        "edf85cbb-444b-40a2-be59-95761af14af6",
+        "4d60edd2-e9c3-4121-86da-f7a655612993"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    {
+      "id": "lotus-butterfly",
+      "exposure": 1.08,
+      "view": "hero",
+      "mode": "pbr",
+      "style": "莲荷双蝶 · 金地",
+      "auto": false,
+      "camera": [
+        174.845655685361,
+        188.61605722773203,
+        379.920909828351
+      ],
+      "target": [
+        7.000000000000011,
+        65,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "f020d01e-e423-468d-a2ac-7bd75a8e3757",
+        "16fecd92-3abe-4da7-b223-26402145247b",
+        "16cf9e51-8173-4b72-9c67-52a80e9c9374",
+        "dd70340a-fa51-45d7-ac43-d83bf0a00167",
+        "562be7a8-5934-481e-8f49-540a7f89bf1c",
+        "c54f9cd5-c409-43a5-aeef-10b55919f4b1",
+        "6139f5eb-1045-4596-922f-1cbde1ba129f",
+        "942cf6cd-f60d-4b15-8f21-1c1a06c17401",
+        "dad56bda-bf9e-4a03-8563-e636cf42fdd3",
+        "edf85cbb-444b-40a2-be59-95761af14af6",
+        "4d60edd2-e9c3-4121-86da-f7a655612993"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998926873321783
+              ],
+              "offset": [
+                0,
+                0.000053656333910856446
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                1,
+                0.9998932435337862
+              ],
+              "offset": [
+                0,
+                0.000053378233106915474
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "channels": {
+            "baseColor": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": "srgb"
+            },
+            "normal": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "roughness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "metalness": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            },
+            "height": {
+              "repeat": [
+                0.9981274630154555,
+                1
+              ],
+              "offset": [
+                0.0009362684922722408,
+                0
+              ],
+              "colorSpace": ""
+            }
+          },
+          "normalScale": [
+            1.5,
+            1.5
+          ],
+          "clearcoatNormalScale": [
+            0.8250000000000001,
+            0.8250000000000001
+          ],
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    }
+  ]
+}

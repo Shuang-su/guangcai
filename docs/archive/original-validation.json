@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-13T18:33:28.186495+08:00",
+  "version": "original",
+  "commands": [
+    {
+      "check": "geometry-tests",
+      "exitCode": 0
+    },
+    {
+      "check": "build",
+      "exitCode": 0
+    }
+  ],
+  "buildComparedToDeploy": "6abbdf78d912b4b6b1d7c3b9",
+  "releaseFiles": 78,
+  "buildDifferences": [],
+  "dependencyMode": "Read-only reuse of installed locked dependencies from original project; no installation or deployment",
+  "sourceChanges": false,
+  "geometryTests": {
+    "passed": 6,
+    "failed": 0
+  }
+}

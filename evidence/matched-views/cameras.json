@@ -1,0 +1,2253 @@
+{
+  "viewport": {
+    "width": 768,
+    "height": 1024
+  },
+  "states": {
+    "1142": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        -84.5421495387614,
+        452.7107476938068
+      ],
+      "target": [
+        0,
+        6,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1145": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        411.5633560201543,
+        68.97335986737345
+      ],
+      "target": [
+        0,
+        6,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1148": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        -62.9604721002797,
+        457.8523147641524
+      ],
+      "target": [
+        0,
+        6,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1159": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        349.99999999999955,
+        105.99999999999991,
+        1.0000000000000326
+      ],
+      "target": [
+        12,
+        64,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1163": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        100.00000000000001,
+        126.99999999999999,
+        365
+      ],
+      "target": [
+        12.000000000000009,
+        61.999999999999986,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1165": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        72.0521468897252,
+        527.4568689076247,
+        187.3355819132855
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1168": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        1.4971633129381863,
+        -419.0922601402207,
+        119.7730650350549
+      ],
+      "target": [
+        0,
+        60,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1178": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        10.811611135759255,
+        106.978375166375,
+        290.56204927352996
+      ],
+      "target": [
+        0,
+        34,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1182": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        1.3445049640762003,
+        -213.0444084259448,
+        53.780198563048025
+      ],
+      "target": [
+        0,
+        33,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1197": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        244.22740329906347,
+        239.71477675403997,
+        536.9674331431505
+      ],
+      "target": [
+        7.000000000000011,
+        65,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1198": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        492.9297421365315,
+        254.26297554085855,
+        44.118950850054155
+      ],
+      "target": [
+        9,
+        64,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1199": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        361.4365842244101,
+        469.8416981482524,
+        63.33988964595166
+      ],
+      "target": [
+        8,
+        67,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1205": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        116.49959095431456,
+        74.49998318990333,
+        -554.9979267547444
+      ],
+      "target": [
+        7,
+        70,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1206": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        249.04172354072992,
+        277.34335255413737,
+        -519.7214922653712
+      ],
+      "target": [
+        7.000000000000011,
+        65,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1220": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        -10.336329478966004,
+        148.1228103464387,
+        516.7330098913901
+      ],
+      "target": [
+        13,
+        56.99999999999999,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1221": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        12.585030245377666,
+        464.2343123444858
+      ],
+      "target": [
+        0,
+        8,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1225": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        232.5936046579492,
+        441.3787917220744
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1229": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        -413.08006193564,
+        27.348063399143008
+      ],
+      "target": [
+        0,
+        45,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1230": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        0,
+        -385.6840914489087,
+        37.2309641511697
+      ],
+      "target": [
+        0,
+        4,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1236": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        292.75362596686034,
+        47.152519084451846,
+        1.7925989548954848e-14
+      ],
+      "target": [
+        0,
+        36,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1237": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        44.83417964886494,
+        46.461308584735136,
+        313.83925754205444
+      ],
+      "target": [
+        0,
+        36,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    },
+    "1221-detail": {
+      "view": "hero",
+      "mode": "pbr",
+      "style": "花蝶 · 金地",
+      "auto": false,
+      "camera": [
+        69,
+        9.499999999999993,
+        82.00000000000009
+      ],
+      "target": [
+        69,
+        9,
+        0
+      ],
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "2ff428de-a246-4739-814d-6f73d146169f",
+        "2d2056ec-b24a-4803-9521-bcee9be4e1ce",
+        "cde64a8a-9c78-4f71-92d5-f87d0a9b8dbe",
+        "0ef9e2e7-35c6-4eb5-9e20-485c333786bb",
+        "4047a54a-475a-4081-a1b0-a396f860dcc8",
+        "cd746f4f-77a0-449e-8838-58a66f21733b",
+        "0795fd8c-9d6e-4bb1-884b-cfa8a559ba45",
+        "e0a2a816-56ee-4148-a0e9-d8af6854fcdb",
+        "0ae7e948-d085-489a-9182-cef8a4af0b65",
+        "cb8a38ae-4a23-4ca1-9486-3a4d18c9630e",
+        "add80365-2f8c-4812-bc70-617aac000675"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 19
+      },
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "regions": {
+        "body": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998926873321783
+          ],
+          "offset": [
+            0,
+            0.000053656333910856446
+          ],
+          "mapSize": [
+            1024,
+            2222
+          ]
+        },
+        "handle": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            1,
+            0.9998932435337862
+          ],
+          "offset": [
+            0,
+            0.000053378233106915474
+          ],
+          "mapSize": [
+            320,
+            3119
+          ]
+        },
+        "saucer": {
+          "normal": true,
+          "metal": true,
+          "roughness": true,
+          "metalness": 1,
+          "repeat": [
+            0.9981274630154555,
+            1
+          ],
+          "offset": [
+            0.0009362684922722408,
+            0
+          ],
+          "mapSize": [
+            2172,
+            213
+          ]
+        }
+      }
+    }
+  },
+  "errors": []
+}
