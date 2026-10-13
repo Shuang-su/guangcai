@@ -1,0 +1,6 @@
+{
+  "id": "blue-text-reserved",
+  "prompt": "Edit this transparent ornament layer for a porcelain cup texture. Preserve the blue-and-ivory peonies and blue leaves at the BOTTOM RIGHT, small ivory flowers at BOTTOM LEFT, the flying birds and sparse flat gold-outline clouds. REMOVE the large flower/leaf cluster at TOP RIGHT completely; leave the entire upper-right quadrant transparent, from x=70% to100% and y=0% to55%, because this is a reserved lettering area. Do not put any text, buildings, scenery, background, paper grain, shadows or metallic highlights anywhere. Flat fine painted decal pigment, same source style and palette. Preserve transparent alpha outside the motifs, keep white petals opaque. Keep the landscape aspect ratio. The lower clusters should be complete with natural edges, leaving 2% transparent inset at the left/right boundaries, not cut rectangles.",
+  "savedFile": "blue-ornaments.png",
+  "reason": "Original upper-right flowers overlapped final UV text zone; remove that cluster while preserving lower peonies, birds and clouds."
+}

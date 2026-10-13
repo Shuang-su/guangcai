@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const url=process.env.QA_URL??'http://127.0.0.1:5210/';
-const out=process.env.QA_URL?.startsWith('https:')?'evidence/deployment/v3-background':'output/playwright/v3/background';await mkdir(out,{recursive:true});
+const out=process.env.QA_OUTPUT??(process.env.QA_URL?.startsWith('https:')?'evidence/deployment/v3-background':'output/playwright/v3/background');await mkdir(out,{recursive:true});
 const checks=[],errors=[],writes=[];const check=(n,v)=>{assert.ok(v,n);checks.push(n);console.log('PASS',n);};
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const desktop=await browser.newContext({viewport:{width:1440,height:1000}});

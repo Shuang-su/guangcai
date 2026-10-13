@@ -20,7 +20,7 @@
   {
     "id": "blue",
     "prompt": "Extract/refine only the ornamental layer from this blue-and-gold China cup decal into a transparent production texture, same very wide 2.297:1 composition. Remove ALL buildings, towers, temple, wall, hills and ALL lettering. Keep the small gold-outline clouds across the upper/middle spaces, the few small blue/gold flying birds at their original positions, small pale blossoms at the lower left, and the rich blue/ivory peonies and leaves at the upper-right and lower-right corners. Leave the text region around x75%-88%, y20%-42% empty transparent. Fine crisp gongbi outlines, flat cobalt/navy/ivory pigment fills and restrained tonal washes, muted ochre gold drawn lines. No photographic illumination, no metallic glare, no cast shadows, no paper, no white rectangular backdrop, no architectural traces. Preserve opaque white petals. Keep corners and outer tips contained within a small clear margin. This separate layer will be aligned with fixed original PSD buildings.",
-    "savedFile": "blue-ornaments.png",
+    "savedFile": "blue-ornaments-before-text-reserve.png",
     "sha256": "68da3a877cd16778e1f8c33a9c7dbd9c43b2780e7dcf6e7d056e92eaa9454cf8"
   },
   {
@@ -40,5 +40,12 @@
     "prompt": "Create a production-ready architectural decal MASTER from the attached Shenzhen illustration. Very wide landscape, same 2240:976 aspect. Preserve EXACT skyline composition and proportions: left rounded slim tower, twin-spired rectangular tower, tallest faceted Ping An tower at x29%, small middle towers, rounded diagonal-grid tower at x45%, sweeping-roof civic center along bottom x33%-68%, low bridge continuing right. The buildings rise from the bottom edge. Produce ONLY fine crisp BLACK architectural outlines, window divisions, roof edges and structural detail, with opaque WHITE interiors inside buildings. Transparent outside the architectural silhouettes including the upper right empty space. Remove ALL text, plaques, flowers, leaves, birds, mountains, clouds, paper, watercolor, lighting, shading, metallic shine. Do not add buildings. Thin elegant uniform architectural drafting lines, clean antialiasing, closed external silhouettes with all window areas remaining white, no black filled facades. No frame. Every structure must fit completely and not be cropped beyond its ground baseline. High detail linework suitable for deriving a raised ceramic decal. This is a source-aligned building master, not a product render.",
     "savedFile": "shenzhen-lines-generated.png",
     "sha256": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93"
+  },
+  {
+    "id": "blue-text-reserved",
+    "prompt": "Edit this transparent ornament layer for a porcelain cup texture. Preserve the blue-and-ivory peonies and blue leaves at the BOTTOM RIGHT, small ivory flowers at BOTTOM LEFT, the flying birds and sparse flat gold-outline clouds. REMOVE the large flower/leaf cluster at TOP RIGHT completely; leave the entire upper-right quadrant transparent, from x=70% to100% and y=0% to55%, because this is a reserved lettering area. Do not put any text, buildings, scenery, background, paper grain, shadows or metallic highlights anywhere. Flat fine painted decal pigment, same source style and palette. Preserve transparent alpha outside the motifs, keep white petals opaque. Keep the landscape aspect ratio. The lower clusters should be complete with natural edges, leaving 2% transparent inset at the left/right boundaries, not cut rectangles.",
+    "savedFile": "blue-ornaments.png",
+    "reason": "Original upper-right flowers overlapped final UV text zone; remove that cluster while preserving lower peonies, birds and clouds.",
+    "sha256": "64473809bbb475497f6a735fa6e292a22ccd889f7b90e1db077ce9e9f548aa49"
   }
 ]

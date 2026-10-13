@@ -70,7 +70,8 @@ for id,name,theme,deco,ref,dark,light,textColor in variants:
         ornaments=arr(M/(deco+'-ornaments.png'),'RGBA')
         # Clean only low-alpha generation residue; keep white petal interiors.
         ornaments[:,:,3]=np.where(ornaments[:,:,3]<12,0,ornaments[:,:,3])
-        ornaments[round(H*.12):round(H*.48),round(W*.75):round(W*.92),3]=0
+        # Reserve the final UV text region (also fits the taller Shenzhen frame).
+        ornaments[0:round(H*((.60-.18)/.82)),round(W*((.74-.047)/.82)):W,3]=0
         # Tiny guard margin prevents cut artwork touching the fixed floral sector.
         edge=np.minimum(np.arange(W),np.arange(W)[::-1]);ornaments[:,:,3]*=np.clip(edge/18,0,1)[None,:]
     ma=mask/255;oa=ornaments[:,:,3]/255
