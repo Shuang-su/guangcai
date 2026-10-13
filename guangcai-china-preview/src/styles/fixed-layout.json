@@ -1,6 +1,12 @@
 {
-  "version": 1,
-  "body": { "visibleEndFraction": 0.3 },
-  "saucer": { "offsetU": 0.485, "phaseBalance": 0.145 },
-  "note": "2026-10-13 same-camera layout calibration. Crop the body decoration within its original UV allocation; smoothly balance opposite saucer faces. Source pixels and relief remain unchanged."
+  "version": 3,
+  "body": {
+    "visibleEndFraction": 0.45
+  },
+  "saucer": {
+    "offsetU": 0.485,
+    "phaseBalance": 0.145,
+    "sourceOffsetU": -0.055
+  },
+  "note": "Source-layout-v3 uses normalized UV2, one full 151 saucer arc with no mirroring or old phase compensation. Legacy UV0 and offsets remain available for older packages."
 }

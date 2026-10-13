@@ -10,21 +10,21 @@ export function createLocalReflections(studio:Studio,product:Product,material:Me
  const wall=product.cup.getObjectByName('cup-wall-and-recessed-foot')!,mark=product.cup.getObjectByName('cup-bottom-mark')!;
  let filtered:WebGLRenderTarget|undefined,enabled=true,ready=false,disposed=false,captures=0,lastKey='',observedKey='',changedAt=0;
  const position=new Vector3();
- const probeUniforms={cupProbePosition:{value:position},cupProbeMinimum:{value:new Vector3()},cupProbeMaximum:{value:new Vector3()},cupProbeEnabled:{value:0}};
+ const probeUniforms={cupProbePosition:{value:position},cupProbeHandleDirection:{value:new Vector3(1,0,0)},cupProbeMinimum:{value:new Vector3()},cupProbeMaximum:{value:new Vector3()},cupProbeEnabled:{value:0}};
  // A finite capture volume corrects the strongest near-handle parallax. Keep
  // the distant studio directions unchanged outside that local angular sector.
  material.onBeforeCompile=shader=>{
   Object.assign(shader.uniforms,probeUniforms);
   shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vCupProbePosition;').replace('#include <worldpos_vertex>','#include <worldpos_vertex>\nvCupProbePosition = (modelMatrix * vec4(transformed, 1.0)).xyz;');
   const chunk=ShaderChunk.envmap_physical_pars_fragment.replace('vec4 envMapColor = textureCubeUV( envMap, envMapRotation * reflectVec, roughness );',`
-   float handleSector = smoothstep(0.55, 0.85, reflectVec.x) * (1.0 - smoothstep(0.3, 0.7, abs(reflectVec.z))) * cupProbeEnabled;
+   float handleSector = smoothstep(0.55, 0.85, dot(reflectVec,cupProbeHandleDirection)) * (1.0 - smoothstep(0.3, 0.7, abs(dot(reflectVec,cross(cupProbeHandleDirection,vec3(0.0,1.0,0.0)))))) * cupProbeEnabled;
    vec3 safeRay = mix(vec3(-1.0), vec3(1.0), step(vec3(0.0), reflectVec)) * max(abs(reflectVec), vec3(0.00001));
    vec3 distances = max((cupProbeMaximum-vCupProbePosition)/safeRay, (cupProbeMinimum-vCupProbePosition)/safeRay);
    float travel = max(0.0, min(min(distances.x, distances.y), distances.z));
    vec3 localDirection = normalize(vCupProbePosition + reflectVec * travel - cupProbePosition);
    reflectVec = normalize(mix(reflectVec, localDirection, handleSector));
    vec4 envMapColor = textureCubeUV( envMap, envMapRotation * reflectVec, roughness );`);
-  shader.fragmentShader='varying vec3 vCupProbePosition;\nuniform vec3 cupProbePosition;\nuniform vec3 cupProbeMinimum;\nuniform vec3 cupProbeMaximum;\nuniform float cupProbeEnabled;\n'+shader.fragmentShader.replace('#include <envmap_physical_pars_fragment>',chunk);
+  shader.fragmentShader='varying vec3 vCupProbePosition;\nuniform vec3 cupProbePosition;\nuniform vec3 cupProbeHandleDirection;\nuniform vec3 cupProbeMinimum;\nuniform vec3 cupProbeMaximum;\nuniform float cupProbeEnabled;\n'+shader.fragmentShader.replace('#include <envmap_physical_pars_fragment>',chunk);
  };
  material.customProgramCacheKey=()=> 'cup-local-reflection-parallax-v1';
  const key=()=>product.root.children.map(o=>[...o.position.toArray(),...o.quaternion.toArray(),o.visible?1:0].map(v=>v.toFixed(3)).join(',')).join('/');
@@ -35,7 +35,7 @@ export function createLocalReflections(studio:Studio,product:Product,material:Me
   if(options.includeHandle===false)hidden.push(product.cup.getObjectByName('wide-ribbon-handle')!);
   const visibility=hidden.map(o=>o.visible);
   try{
-   product.root.updateMatrixWorld(true);product.cup.getWorldPosition(position);camera.position.copy(position);
+   product.root.updateMatrixWorld(true);product.cup.getWorldPosition(position);camera.position.copy(position);probeUniforms.cupProbeHandleDirection.value.set(1,0,0).transformDirection(product.cup.matrixWorld);
    probeUniforms.cupProbeMinimum.value.copy(position).add(new Vector3(-83,-65,-83));probeUniforms.cupProbeMaximum.value.copy(position).add(new Vector3(83,65,83));
    hidden.forEach(o=>o.visible=false);scene.background=studio.cupEnvironment;scene.backgroundBlurriness=0;
    renderer.shadowMap.autoUpdate=false;camera.update(renderer,scene);

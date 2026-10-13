@@ -1,0 +1,690 @@
+{
+  "source": "/Volumes/Prism_初号機/广彩/guangcai-china-v3",
+  "destination": "/Volumes/Prism/Codex/guangcai-github-20261013/guangcai-china-preview",
+  "baseline": "99e26b079ce546fcc4943525b7f72034262a90db",
+  "files": [
+    {
+      "source": "index.html",
+      "destination": "guangcai-china-preview/index.html",
+      "bytes": 360,
+      "sha256": "d4d36635af1548a9e2e3267e00be8f38499bfb05424171f663682f27b184db8e",
+      "previousSha256": "2aa0675a60c7417dae9f615add244d27526de818902f0d06927db6d5d1de82a1",
+      "status": "modified"
+    },
+    {
+      "source": "package-lock.json",
+      "destination": "guangcai-china-preview/package-lock.json",
+      "bytes": 63914,
+      "sha256": "a9fc939585cf6e1504bd668bff1a3ec2d57031569e8aecd8144b1de7e8ea7a17",
+      "previousSha256": "b13af7c887dc28681cc8d15865c4f53df21717472d728ca754ea14500752e8e1",
+      "status": "modified"
+    },
+    {
+      "source": "package.json",
+      "destination": "guangcai-china-preview/package.json",
+      "bytes": 1241,
+      "sha256": "a6ca37ccfdbc5a4cd9926d821430d000782f0bc2130fcff712c1a6e02ed93000",
+      "previousSha256": "4d59b139bcbbf033fd5332072cd79fb4317dfa81219f99a66bb294b7be5bf6c9",
+      "status": "modified"
+    },
+    {
+      "source": "vite.config.ts",
+      "destination": "guangcai-china-preview/vite.config.ts",
+      "bytes": 199,
+      "sha256": "9280e0d5aa5c14405a34aef99da64c85b4b3f79ed2801e5a0778ec5f5e9e7bac",
+      "previousSha256": "eb402e25dfa21cac42701996b15c3bf276f1c04d8f483813e7daded1d3a0c15f",
+      "status": "modified"
+    },
+    {
+      "source": "tools/web-textures.mjs",
+      "destination": "guangcai-china-preview/tools/web-textures.mjs",
+      "bytes": 2764,
+      "sha256": "acd479f1e7e61d40f639169574e6803b5f3a4ef72da7c2c2a98d7461a0178114",
+      "previousSha256": "de00633cd59ff9ad8c88e88a0ae6e74ed4cabb83fc4a3bc37dcadbcb9a65ca41",
+      "status": "modified"
+    },
+    {
+      "source": "tools/geometry.test.ts",
+      "destination": "guangcai-china-preview/tools/geometry.test.ts",
+      "bytes": 9327,
+      "sha256": "a9c996bbe8acd91b12f592caef6e2eceb4979ec27d9120a0ba35181ec4088157",
+      "previousSha256": "9e21451fa63821a5cb23f00fc608c2b16adabfeba274ecabc05bf5158a32c788",
+      "status": "modified"
+    },
+    {
+      "source": "tools/china-qa.mjs",
+      "destination": "guangcai-china-preview/tools/china-qa.mjs",
+      "bytes": 13423,
+      "sha256": "0591ddfea8e5d982319c4b4f465b57c5894e95aa4e81fc1bcd396d94478fe21d",
+      "previousSha256": "528200245892308c916bfe64549bb6987d7023ffa41b0b8371b939e9d91379f7",
+      "status": "modified"
+    },
+    {
+      "source": "tools/extract-original-floral.py",
+      "destination": "guangcai-china-preview/tools/extract-original-floral.py",
+      "bytes": 3356,
+      "sha256": "2abbce93dff739ef75be09e91aadfdc414ddaad6df50859e23a5b3e6db3c418a",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "tools/derive-original-fixed.mjs",
+      "destination": "guangcai-china-preview/tools/derive-original-fixed.mjs",
+      "bytes": 5879,
+      "sha256": "896a2da35b92b5535e34a402debaaedf118b07b31db51f70806799574a8585e1",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "tools/calibrate-v3.ts",
+      "destination": "guangcai-china-preview/tools/calibrate-v3.ts",
+      "bytes": 3122,
+      "sha256": "f26139a5a900a4e5b68cac820f24776afb7827cf8407bd4911b032bd5ac9163b",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "tools/background-qa-v3.mjs",
+      "destination": "guangcai-china-preview/tools/background-qa-v3.mjs",
+      "bytes": 10091,
+      "sha256": "2571ef5553cd0d3a83964eaf68e3861fe1f3b2a3388f000d0d7153c59bd9cdc8",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "evidence/browser-qa-failure.json",
+      "destination": "guangcai-china-preview/evidence/browser-qa-failure.json",
+      "bytes": 2309,
+      "sha256": "21af9924eb5dbdcb8fbdb4a2eb866e0d06fdb4629d5dd68178bb80b0c85a6af4",
+      "previousSha256": "109f3c9d532de256d4e1368986497fa3fd11cd59b99ee75b6c76fd86e0e29641",
+      "status": "modified"
+    },
+    {
+      "source": "evidence/web-textures.json",
+      "destination": "guangcai-china-preview/evidence/web-textures.json",
+      "bytes": 7790,
+      "sha256": "96574d4d80e344883c943c9dea86d2f26b2dea2960bc932aef31728bf99bfa92",
+      "previousSha256": "788ff5e938814074646e44eddea6bb2f3463a85745204925a20e3a7e568b1d25",
+      "status": "modified"
+    },
+    {
+      "source": "evidence/source-floral-v3.json",
+      "destination": "guangcai-china-preview/evidence/source-floral-v3.json",
+      "bytes": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "evidence/camera-calibration-v3.json",
+      "destination": "guangcai-china-preview/evidence/camera-calibration-v3.json",
+      "bytes": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "docs/changes/20261013-v3/baseline-files.json",
+      "destination": "guangcai-china-preview/docs/changes/20261013-v3/baseline-files.json",
+      "bytes": 177311,
+      "sha256": "1b89074409e027833568c4feb6ede949ff667382121ccfea983bf84efd0c4ab3",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "docs/changes/20261013-v3/sources.json",
+      "destination": "guangcai-china-preview/docs/changes/20261013-v3/sources.json",
+      "bytes": 1151,
+      "sha256": "fb0b770a695a35040fa21451eacf6067bdcd4d3a1fa9d4868d5c77aa3c396379",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "docs/changes/20261013-v3/plan.md",
+      "destination": "guangcai-china-preview/docs/changes/20261013-v3/plan.md",
+      "bytes": 6534,
+      "sha256": "20f031c767edc4a5410a624fad99cf1df559bcace6e6a8cf77645e05b972a7a0",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "docs/changes/20261013-v3/request.md",
+      "destination": "guangcai-china-preview/docs/changes/20261013-v3/request.md",
+      "bytes": 7054,
+      "sha256": "bf74ecebf9b67943f1e2317434e84f8cf8e1766c79b080938215b0f0c2394dae",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "bytes": 398446,
+      "sha256": "d4877edad4744523c384df1cc76058b8cc1473fa0550499501b7fca0a35a9bbf",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-body-normal-ee5545c4699e0488.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-body-normal-ee5545c4699e0488.webp",
+      "bytes": 618362,
+      "sha256": "ee5545c4699e04889846e9bc46954b29e1b2006066bb7569bea3bde0bf9073e9",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-body-roughness-abc7641a2db17569.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-body-roughness-abc7641a2db17569.webp",
+      "bytes": 78854,
+      "sha256": "abc7641a2db17569e5df44a4046f58fda236c67082818eb91dfe293a9ea6fa67",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+      "bytes": 114218,
+      "sha256": "706b3c9f5cad04723747c95ec8bb8623238e513f11bdfa57d5395365f67eb01d",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "bytes": 117626,
+      "sha256": "ebe308cf4629d7439195aeed9ea45ab494da1fc7b6d865ce1c861e4a1574b8e0",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-handle-normal-22fdb336573d9360.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-handle-normal-22fdb336573d9360.webp",
+      "bytes": 180894,
+      "sha256": "22fdb336573d936029a7871e4c353393a0f5d2ba92a2a4710b95c67abf391cb4",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-handle-roughness-91d94d19539575b9.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-handle-roughness-91d94d19539575b9.webp",
+      "bytes": 23978,
+      "sha256": "91d94d19539575b950eff69becb23550f7e48ccac780437a3bf8471483a45500",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+      "bytes": 36010,
+      "sha256": "16b092c9c80c4945603b868f8068c86b8ddb53deabdd8bcda8adde2c1c2a22f8",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-baseColor-8e57fee22596c597.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-baseColor-8e57fee22596c597.webp",
+      "bytes": 695878,
+      "sha256": "8e57fee22596c597544efbea4017fe25aaa972b66033c530111ddd657be71b14",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-normal-3f332fba1f6086d9.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-normal-3f332fba1f6086d9.webp",
+      "bytes": 1179010,
+      "sha256": "3f332fba1f6086d9f30982ac562278f64a4eb2dc5c97934646b783feff508607",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-roughness-bf02e17b05f008b8.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-roughness-bf02e17b05f008b8.webp",
+      "bytes": 150806,
+      "sha256": "bf02e17b05f008b82a463f0d5aadf0c1c493a03efc36c2facb3de6e6666891db",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-metalness-df1e211bfca52890.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-metalness-df1e211bfca52890.webp",
+      "bytes": 235500,
+      "sha256": "df1e211bfca5289070333734bb2a27ec0e8ed00183b95a68a93e7c4659e0117d",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "bytes": 616610,
+      "sha256": "f6e719b2bc268bf7adad04be05e98447a4b3197c994693adb5fc6186a720f6d1",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+      "bytes": 1029662,
+      "sha256": "263afcfc74cfeaf66dc354e4b211eee0b6075711ce164c4aad8fd26d30ecd231",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+      "bytes": 128684,
+      "sha256": "9a6657df8e5caa9ddb8ffff6c9109aafc76dfce3e965462c96dae52b46531c7c",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+      "destination": "guangcai-china-preview/public/textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+      "bytes": 199804,
+      "sha256": "2058a91b9c888893d0dba29aa5906e0006a555863a36b92f6da727d380cc70c2",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "destination": "guangcai-china-preview/public/backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "bytes": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/fixed/handle-metalness.png",
+      "destination": "guangcai-china-preview/public/fixed/handle-metalness.png",
+      "bytes": 73953,
+      "sha256": "108b0d7dbb7b295e15b64cdb6660f3f18832bcbd5e50d0c359b70a4269ec9093",
+      "previousSha256": "5f5a5da8654c0cbe000a80a37d495b26e39233f831e1a3d8036814668367eb64",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/saucer-metalness.png",
+      "destination": "guangcai-china-preview/public/fixed/saucer-metalness.png",
+      "bytes": 424725,
+      "sha256": "c4f40dbbbd7d1fbab3acfb96b3035b9f64bf26f3b54aab51b71dfe2fd6971419",
+      "previousSha256": "a58452f09641558fe93bc98c3499bc88a0ed853144934d9b003e0b6dc32f8d27",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/body-metalness.png",
+      "destination": "guangcai-china-preview/public/fixed/body-metalness.png",
+      "bytes": 230451,
+      "sha256": "9b50384fbbe162f92080221aeb6c4c5241bce71e1b4c0f5b5e55261dc3ce8208",
+      "previousSha256": "27bd91c4c86b3cd327476fd4edf11d14ab4711408eee7cdd201af7f2c528fe94",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/handle-height.png",
+      "destination": "guangcai-china-preview/public/fixed/handle-height.png",
+      "bytes": 128733,
+      "sha256": "af98f2f84d439f58be95b0156aac5eb472a50f84c5f8d1c0f7630c5870af366e",
+      "previousSha256": "eb72355188acd90f99a72e991301a64ec637285cfb6805ff753914df13628643",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/handle-normal.png",
+      "destination": "guangcai-china-preview/public/fixed/handle-normal.png",
+      "bytes": 255517,
+      "sha256": "320b3a8dd077e7d27dda2f44183318bf951f11a0556628dd7929344f3fe56d3e",
+      "previousSha256": "8dcccf1678d8520abaabec844591dcd2e1ff6356f9e912e145c48328bb2ee5ff",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/style.json",
+      "destination": "guangcai-china-preview/public/fixed/style.json",
+      "bytes": 835,
+      "sha256": "3a205e2793ee8ff4a24a92a995455b45d6ddfc6ef780957118b1a36b289795eb",
+      "previousSha256": "985bcdc38c968719711f552a75745bb76c360a854abdf061104bf275459529bf",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/body-height.png",
+      "destination": "guangcai-china-preview/public/fixed/body-height.png",
+      "bytes": 433494,
+      "sha256": "ee3fbcab4d71a114369424d5909e6b3c48ad0d768bd4ff656eceac055c4111ba",
+      "previousSha256": "b2dd67de0cb3781c33cf9b1ddd4a389f96306ccf325e73b774cea4899e67991f",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/body-normal.png",
+      "destination": "guangcai-china-preview/public/fixed/body-normal.png",
+      "bytes": 874353,
+      "sha256": "fbd6d2968e0a629dc1b672f16311c19dc7cf90cdc3252fbb9b50d4924b91c31a",
+      "previousSha256": "f12b7d4c20344ec08b801e96931df90840dd44fc16cd846f426ff5dd5603cca4",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/body-baseColor.png",
+      "destination": "guangcai-china-preview/public/fixed/body-baseColor.png",
+      "bytes": 1674330,
+      "sha256": "dfbef00ca5336207466bf8d6d1522bbd1921cfa274996cf94a2fc212aa93300d",
+      "previousSha256": "a645e69121cefbeb33b3c2fb74fda225b5b744fba997fcaa642c974bc814c047",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/body-roughness.png",
+      "destination": "guangcai-china-preview/public/fixed/body-roughness.png",
+      "bytes": 133372,
+      "sha256": "10b91c29380e11776c8fe9bc67654a273fbae3f4938f8d8b422020f885a57b20",
+      "previousSha256": "79da3e2a411d56977112f7cd1ad8dbcb8bfdc005dd210358d3093f9f529fa3e2",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/saucer-baseColor.png",
+      "destination": "guangcai-china-preview/public/fixed/saucer-baseColor.png",
+      "bytes": 3403934,
+      "sha256": "fd6f74f3af88aa703e92815dbe6bf507fe399df250292750d01b9816b675b25f",
+      "previousSha256": "b2e17775570604828de532cc2041c51b83a446efd64ff2881332e60d766ffc4c",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/saucer-roughness.png",
+      "destination": "guangcai-china-preview/public/fixed/saucer-roughness.png",
+      "bytes": 214896,
+      "sha256": "7ecba5978e1a8112b47127098686bd814ce49dfccd4efd39dfd7d34cba1aa1c9",
+      "previousSha256": "35cb4b6ddb4e7ef95bb1b0c9aba64578a586951267ce63bd57f6fb44ba5a30fd",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/handle-roughness.png",
+      "destination": "guangcai-china-preview/public/fixed/handle-roughness.png",
+      "bytes": 41264,
+      "sha256": "c03557d81e1102973188f88a829eae602021a7471fcb090248fec57d4ccaf528",
+      "previousSha256": "b2d64b3c4690868b30c852111fbccf4a8d321f8ec2e7c8375efe7968d6e25a79",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/handle-baseColor.png",
+      "destination": "guangcai-china-preview/public/fixed/handle-baseColor.png",
+      "bytes": 488364,
+      "sha256": "49bea1266fd04ee138f1a4c78a143e32b80addffd1b65a57e676d5aff95bbc78",
+      "previousSha256": "bb477218491efafadcf80266b22949d5d06f9fab80b1fd12c6ec3ac5d9227f74",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/manifest.json",
+      "destination": "guangcai-china-preview/public/fixed/manifest.json",
+      "bytes": 5191,
+      "sha256": "34f07ab3467d13c34d6305fb5dae508dc2a773f41e1650f7c1b3166b8c889478",
+      "previousSha256": "ad9bfa36ea96be1f21b70fbec32e9adc0ef298b66f8524da9e30262c95319dc5",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/saucer-height.png",
+      "destination": "guangcai-china-preview/public/fixed/saucer-height.png",
+      "bytes": 686492,
+      "sha256": "b51d798064dd66bb80643e884d80b1fa5c12567c357f36b2e2f896a4005c3d61",
+      "previousSha256": "746b8dff5520145bbd43ef2ecbfd1d6d56d27c307e443d4ed61c3da53c87d38b",
+      "status": "modified"
+    },
+    {
+      "source": "public/fixed/saucer-normal.png",
+      "destination": "guangcai-china-preview/public/fixed/saucer-normal.png",
+      "bytes": 1401254,
+      "sha256": "035c481ab404457c43dc385b103d849aba9304ba724d6348d534ead78e9fcc67",
+      "previousSha256": "4fce708fd288b8287c885b293597ea39e526ab7e1ecc056194ffbee3dfe4c0e3",
+      "status": "modified"
+    },
+    {
+      "source": "public/review/v3/before-left.jpg",
+      "destination": "guangcai-china-preview/public/review/v3/before-left.jpg",
+      "bytes": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/review/v3/before-right.jpg",
+      "destination": "guangcai-china-preview/public/review/v3/before-right.jpg",
+      "bytes": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/review/v3/v3-left.jpg",
+      "destination": "guangcai-china-preview/public/review/v3/v3-left.jpg",
+      "bytes": 117038,
+      "sha256": "e5048ac3c8ea9041a6bb0f65ed02f113b4beadfeeb3de4bf48b249723a45a825",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "public/review/v3/v3-right.jpg",
+      "destination": "guangcai-china-preview/public/review/v3/v3-right.jpg",
+      "bytes": 90282,
+      "sha256": "544fd0291498153d70ecabf730c8cdf357d29c8621fed64f613b27b13a3df144",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/source/floral-export.psd",
+      "destination": "guangcai-china-preview/assets/source/floral-export.psd",
+      "bytes": 25627383,
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/source/mobile-background-v3.png",
+      "destination": "guangcai-china-preview/assets/source/mobile-background-v3.png",
+      "bytes": 612219,
+      "sha256": "35332ace2cc2022434ea893928ae13bbd81e005c258aa3c047b15bb854e6f685",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/source/reference-v3-left.jpg",
+      "destination": "guangcai-china-preview/assets/source/reference-v3-left.jpg",
+      "bytes": 9180166,
+      "sha256": "dbfaea7bb75fa9cf371e82d5a5875d2aa5cd24078f4955c6649da1314e1f81b9",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/source/reference-v3-right.jpg",
+      "destination": "guangcai-china-preview/assets/source/reference-v3-right.jpg",
+      "bytes": 9332193,
+      "sha256": "5a6c3822284faf4731018aa97225906d62f7a38efbb4a6bf8260b416e0062196",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/source/before-mobile.png",
+      "destination": "guangcai-china-preview/assets/source/before-mobile.png",
+      "bytes": 785221,
+      "sha256": "d40b461bf8de94817bc692529bc2bcaef4ec0f0e8ce2c95c77829355f3c5603e",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/masters/floral-source-v3-srgb.png",
+      "destination": "guangcai-china-preview/assets/masters/floral-source-v3-srgb.png",
+      "bytes": 14592407,
+      "sha256": "7e735b62eeed97228a91736c4a0d524509bc6d717b336a56a956a384d98d0240",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/masters/v3/body.png",
+      "destination": "guangcai-china-preview/assets/masters/v3/body.png",
+      "bytes": 1452934,
+      "sha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/masters/v3/handle.png",
+      "destination": "guangcai-china-preview/assets/masters/v3/handle.png",
+      "bytes": 414335,
+      "sha256": "d57c227878e2b1bb95e22ea556ab1351aee3a140b6e12ad5c4653ce136d017ad",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "assets/masters/v3/saucer.png",
+      "destination": "guangcai-china-preview/assets/masters/v3/saucer.png",
+      "bytes": 2497583,
+      "sha256": "f738151b2fd6049f834dd104de75b7ce8de1acbccc658c30c9f6364c489557ee",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "src/main.ts",
+      "destination": "guangcai-china-preview/src/main.ts",
+      "bytes": 9213,
+      "sha256": "8fd7c7a0f73c02e160cba547edf8de5c0f70eb6d375f2aefcbf39da8ff809b01",
+      "previousSha256": "c34da316e619e8e04053912d3b92181d78030746a76a06e4ab44906828e212de",
+      "status": "modified"
+    },
+    {
+      "source": "src/ui/background-asset.json",
+      "destination": "guangcai-china-preview/src/ui/background-asset.json",
+      "bytes": 289,
+      "sha256": "cb7aa60ef126b17289d4a86a8174f8f21b26dd0e636f62c305111ff2261be7b3",
+      "previousSha256": "e7eb2cefdc879ced8957fb096e3753a61b5915338d4b06c109ad2c6fc094dafd",
+      "status": "modified"
+    },
+    {
+      "source": "src/ui/background.ts",
+      "destination": "guangcai-china-preview/src/ui/background.ts",
+      "bytes": 5519,
+      "sha256": "45fcef1060057c5ee70cd12be8472d13353b43ea0bd0c58551185c32f85686b3",
+      "previousSha256": "b14f4a6baa7e9e5c71e92d5efaef495b11ba7e169646ab27ee1086d929bc46fc",
+      "status": "modified"
+    },
+    {
+      "source": "src/ui/interface.ts",
+      "destination": "guangcai-china-preview/src/ui/interface.ts",
+      "bytes": 9072,
+      "sha256": "de8854876c129ed2904c42d0e35fbbcbaf917d1fbd2c05ee929df57fee1c1a05",
+      "previousSha256": "b00c0742e4e4cc1a5d398c9052ca1300e44a2eaddd69acd7ea49ad721d925822",
+      "status": "modified"
+    },
+    {
+      "source": "src/studio/local-reflections.ts",
+      "destination": "guangcai-china-preview/src/studio/local-reflections.ts",
+      "bytes": 5455,
+      "sha256": "173baa1af22c50becedd0e6de962e7fb4d775fef44651ed7c82f44be84b49f0d",
+      "previousSha256": "82dd1a75cc31b5c00f54eed97cf62e12712edef0c046272c26399591643dadcb",
+      "status": "modified"
+    },
+    {
+      "source": "src/studio/studio.ts",
+      "destination": "guangcai-china-preview/src/studio/studio.ts",
+      "bytes": 4261,
+      "sha256": "7758fa7f4d5c3a9932a882b7dbce9725589b691fdc785c8c460f6cd73f088fda",
+      "previousSha256": "606bba35a55b5eb1b7dac9b7ecfcc603b8d074ed8daf38d44388df5d042dd89d",
+      "status": "modified"
+    },
+    {
+      "source": "src/studio/lid-reflections.ts",
+      "destination": "guangcai-china-preview/src/studio/lid-reflections.ts",
+      "bytes": 4383,
+      "sha256": "0cbe18cbd5e513d4c1133a1e2e17e005d300739a8f29fe025fd5fd3f2dbd4bc3",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "src/materials/materials.ts",
+      "destination": "guangcai-china-preview/src/materials/materials.ts",
+      "bytes": 2473,
+      "sha256": "83a39166bad36258f781807a79056dc2aa5d4a968ed4eaa333617ca7d98282ba",
+      "previousSha256": "ac9c42b843243c28b0c101e38a3a5433ddcee328a3f4616c88cd1d110d17d8a6",
+      "status": "modified"
+    },
+    {
+      "source": "src/materials/porcelain.ts",
+      "destination": "guangcai-china-preview/src/materials/porcelain.ts",
+      "bytes": 1571,
+      "sha256": "1579b56f07953280209902df89c629e4d13c224f33a8cf6ff9e281e8a35bae3b",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "src/styles/style-manager.ts",
+      "destination": "guangcai-china-preview/src/styles/style-manager.ts",
+      "bytes": 7186,
+      "sha256": "3f717eeb410c4b1224b68bcb3890e0f3a11caad90fa5917302a124831e987c88",
+      "previousSha256": "91f1294822990525f6df6c8e410d77ceb474c62a5c1144bcd3d4f55d8e675071",
+      "status": "modified"
+    },
+    {
+      "source": "src/styles/web-textures.json",
+      "destination": "guangcai-china-preview/src/styles/web-textures.json",
+      "bytes": 1267,
+      "sha256": "f07a35768b11dc12bf06e87aca80af59c2e351798988322f5052a7e40fff754e",
+      "previousSha256": "33da80def830afd640dc13b97e95714572dcc684951d8df67d7da3f80c98a2ee",
+      "status": "modified"
+    },
+    {
+      "source": "src/styles/city-artwork.ts",
+      "destination": "guangcai-china-preview/src/styles/city-artwork.ts",
+      "bytes": 7257,
+      "sha256": "308b25b1231c18bffd9f5ac03413fbe84adec7d3eb79d486f9727dc62e7ff63e",
+      "previousSha256": "aa4a0ce2e6f4ce306874a95fe19801ddc7d70bc4f1672f41f9d1f47546c5db81",
+      "status": "modified"
+    },
+    {
+      "source": "src/styles/fixed-layout.json",
+      "destination": "guangcai-china-preview/src/styles/fixed-layout.json",
+      "bytes": 343,
+      "sha256": "9d95fb0f985eec46e80ecb134edea7e4764e699a558517f2fada07049621bbfa",
+      "previousSha256": "0ac6a39bb56089f520792fa5b01ff9f861935434148efd2a9d76b14c73ed944e",
+      "status": "modified"
+    },
+    {
+      "source": "src/geometry/product.ts",
+      "destination": "guangcai-china-preview/src/geometry/product.ts",
+      "bytes": 7313,
+      "sha256": "5707474753742261058b2d1949061cb3b87b06afd03b5fb7909da30f8310f2a7",
+      "previousSha256": "d41dca2e975b02248e81291aa8b9156daa0bef3559dccb8c0cd83d99968bec7b",
+      "status": "modified"
+    },
+    {
+      "source": "src/interaction/calibration.ts",
+      "destination": "guangcai-china-preview/src/interaction/calibration.ts",
+      "bytes": 2246,
+      "sha256": "ac15652bd6540be9889cb8816ec12f530b24f5703e5653b4235d6be480b9eb49",
+      "previousSha256": "254e254ddbd28d2dca5d75dbe67f74d3aea1858fd2d6ceee71a70f2bfdc94bc4",
+      "status": "modified"
+    },
+    {
+      "source": "src/interaction/views.ts",
+      "destination": "guangcai-china-preview/src/interaction/views.ts",
+      "bytes": 6992,
+      "sha256": "648975198e69307a1ff179fb49d1e2f511c103bb17c670ccf2d0e190653a3b14",
+      "previousSha256": "dc5898df45718a9a38750990a53d54a0752f523dcff77606379cb56088136e3c",
+      "status": "modified"
+    },
+    {
+      "source": "docs/changes/20261013-v3/pre-git-inventory.json",
+      "destination": "guangcai-china-preview/docs/changes/20261013-v3/pre-git-inventory.json",
+      "bytes": 177886,
+      "sha256": "d741558eccc0c68da132078dbea2a41009467b1a39655dcc8662aa196501ec4c",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "output/playwright/v3/initial-hero.png",
+      "destination": "guangcai-china-preview/evidence/v3/initial/initial-hero.png",
+      "bytes": 275514,
+      "sha256": "9cc4fe6a89c967dfc7edd2c74f86a1570e1f2b3103cb305157d1dbce8a4992fe",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "output/playwright/v3/before-flat-lid.png",
+      "destination": "guangcai-china-preview/evidence/v3/initial/before-flat-lid.png",
+      "bytes": 306031,
+      "sha256": "259df316a8a329e8af62cb4bdf0f8296f503e742817cf38b9de8411d2c246127",
+      "previousSha256": null,
+      "status": "added"
+    }
+  ],
+  "copiedBytes": 82438632,
+  "businessFilesRemoved": [],
+  "excluded": "Caches, dependencies, AppleDouble, .netlify, dist and temporary screenshots excluded. Original directory retained."
+}

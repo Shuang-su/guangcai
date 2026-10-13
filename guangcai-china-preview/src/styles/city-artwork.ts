@@ -64,7 +64,7 @@ export class CityArtworkManager {
       for(let i=0;i<base.length;i+=4){
         const m=mask[i]/255,a=l[i]/255,combined=a+m*(1-a);
         for(let k=0;k<3;k++){
-          outColor[i+k]=([244,243,237][k]*(1-m)+base[i+k]*m)*(1-a)+[221,181,56][k]*a;
+          outColor[i+k]=([255,253,247][k]*(1-m)+base[i+k]*m)*(1-a)+[221,181,56][k]*a;
           outMetal[i+k]=combined*255;outRough[i+k]=(41*(1-m)+rough[i]*m)*(1-a)+66*a;
           outCoat[i+k]=(255*(1-m)+26*m)*(1-a)+26*a;
         }

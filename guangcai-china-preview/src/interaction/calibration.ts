@@ -1,5 +1,5 @@
 import {PerspectiveCamera,Vector3,MathUtils} from 'three';
-export interface Pose {yaw:number;pitch:number;roll:number;distance:number;fov:number;cx:number;cy:number;targetY:number}
+export interface Pose {cupYaw?:number;yaw:number;pitch:number;roll:number;distance:number;fov:number;cx:number;cy:number;targetY:number}
 export const calibrations:Record<string,{label:string;part:'all'|'saucer'|'lid';pose:Pose}>={
  '1238':{label:'1238 · 盖片与盖把侧面',part:'lid',pose:{"yaw": 0, "pitch": 2.469329694742335, "roll": 90.0086517880859, "distance": 186.38023902495297, "fov": 35, "cx": 0.5629832664266305, "cy": 0.5511243300743722, "targetY": 109}},
  '1236':{label:'1236 · 盖片厚度与盖把宽面',part:'lid',pose:{"yaw": 90, "pitch": 3.263230933212226, "roll": 90.01134281885084, "distance": 179.19230012600545, "fov": 35, "cx": 0.5112196649252497, "cy": 0.47204706950120995, "targetY": 109}},

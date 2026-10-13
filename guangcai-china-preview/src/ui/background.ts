@@ -2,8 +2,8 @@ import {Color} from 'three';
 import type {Studio} from '../studio/studio';
 import asset from './background-asset.json';
 
-export type BackgroundChoice='auto'|'soft'|'gray'|'custom';
-export interface BackgroundState {choice:BackgroundChoice;active:'soft'|'gray'|'custom';busy:boolean;hasCustom:boolean}
+export type BackgroundChoice='auto'|'soft'|'soft-v3'|'gray'|'custom';
+export interface BackgroundState {choice:BackgroundChoice;active:'soft'|'soft-v3'|'gray'|'custom';busy:boolean;hasCustom:boolean}
 const mobileQuery='(max-width: 600px), (hover: none) and (pointer: coarse)';
 const maxBytes=20*1024*1024;
 function decodedImage(url:string){return new Promise<HTMLImageElement>((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('图片无法读取，请选择有效的 JPG、PNG 或 WebP。'));img.src=url;});}
@@ -16,8 +16,8 @@ export class BackgroundController {
   private intent:BackgroundChoice='auto';
   private current:BackgroundState={choice:'auto',active:'gray',busy:false,hasCustom:false};
   private customUrl:string|undefined;
-  private softReady:Promise<HTMLImageElement>|undefined;
-  private softUrl=`${import.meta.env.BASE_URL}${asset.path}`;
+  private softReady:Partial<Record<'soft'|'soft-v3',Promise<HTMLImageElement>>>={};
+  private softUrls={soft:`${import.meta.env.BASE_URL}${asset.path}`,'soft-v3':`${import.meta.env.BASE_URL}${asset.v3.path}`};
   readonly ready:Promise<void>;
   constructor(private studio:Studio,private layer:HTMLElement,private notify:(state:BackgroundState)=>void,private report:(message:string)=>void){
     this.paint('gray');
@@ -36,14 +36,14 @@ export class BackgroundController {
     if(this.disposed)return;
     if(choice==='custom'&&!this.customUrl)throw new Error('请先选择一张背景图片。');
     const revision=++this.revision;this.intent=choice;this.current.busy=true;this.notify(this.state());
-    const active=choice==='auto'?(this.media.matches?'soft':'gray'):choice;
+    const active=choice==='auto'?(this.media.matches?'soft-v3':'gray'):choice;
     try{
-      if(active==='soft'){
-        this.softReady??=decodedImage(this.softUrl).catch(e=>{this.softReady=undefined;throw e;});
-        await this.softReady;
+      if(active==='soft'||active==='soft-v3'){
+        this.softReady[active]??=decodedImage(this.softUrls[active]).catch(e=>{delete this.softReady[active];throw e;});
+        await this.softReady[active];
       }
       if(this.disposed||revision!==this.revision)return;
-      this.paint(active,active==='soft'?this.softUrl:active==='custom'?this.customUrl:undefined);
+      this.paint(active,(active==='soft'||active==='soft-v3')?this.softUrls[active]:active==='custom'?this.customUrl:undefined);
       this.current={choice,active,busy:false,hasCustom:!!this.customUrl};this.notify(this.state());
     }catch(e){if(revision!==this.revision||this.disposed)return;this.intent=this.current.choice;this.current.busy=false;this.notify(this.state());throw e;}
   }

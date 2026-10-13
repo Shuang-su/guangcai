@@ -1,12 +1,12 @@
-import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
+import { ClampToEdgeWrapping, MirroredRepeatWrapping, RepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
 export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string;offsetU?:number}
-export interface StylePack {name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'花鸟原图局部 · 参考重建 v4',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
-defaultPack.regions.saucer.offsetU=fixedLayout.saucer.offsetU;
+export interface StylePack {mapping?:'source-layout-v3';name:string;regions:Record<Region,RegionPack>}
+export const defaultPack:StylePack={name:'原始广彩花纸 · 450 杯 / 151 碟',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
+defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[
@@ -17,12 +17,14 @@ export const builtinStyles = [
 const channels=['baseColor','normal','roughness','metalness','height'] as const;
 const regions:Region[]=['body','handle','saucer'];
 export class StyleManager {
+  private mapping:StylePack['mapping'];
   private offsets:Partial<Record<Region,number>>={};
   private aspects:Record<Region,number>={body:45.0294947/106.7,handle:11.9/117.6181655,saucer:106.1072919/7.1867934};
   fit(aspects:Record<Region,number>){
     this.aspects=aspects;
     for(const region of regions)for(const texture of Object.values(this.currentMaps[region]??{})){
       const img=texture.image as HTMLImageElement;
+      if(this.mapping==='source-layout-v3'){texture.repeat.set(1,1);texture.offset.set(this.offsets[region]??0,0);texture.updateMatrix();continue;}
       const source=img.width/img.height,target=aspects[region];
       const x=Math.min(1,target/source),y=Math.min(1,source/target);
       texture.repeat.set(x,y);texture.offset.set((1-x)/2+(this.offsets[region]??0),(1-y)/2);texture.updateMatrix();
@@ -36,6 +38,7 @@ export class StyleManager {
   async apply(pack:StylePack):Promise<boolean>{
     const revision=++this.revision;
     if(!pack||typeof pack.name!=='string'||!pack.regions)throw new Error('无效材质包：缺少 name / regions');
+    if(pack.mapping!==undefined&&pack.mapping!=='source-layout-v3')throw new Error('不支持的花纸展开规范');
     const tasks:{region:Region;channel:typeof channels[number];url:string}[]=[];
     for(const region of regions){
       const entry=pack.regions[region];
@@ -48,7 +51,8 @@ export class StyleManager {
       const img=texture.image;
       if(!img.width||!img.height||img.width>8192||img.height>8192){texture.dispose();throw new Error('贴图尺寸必须在 1–8192 像素内');}
       texture.colorSpace=task.channel==='baseColor'?SRGBColorSpace:NoColorSpace;
-      texture.wrapS=task.region==='saucer'?MirroredRepeatWrapping:ClampToEdgeWrapping;
+      texture.channel=pack.mapping==='source-layout-v3'?2:0;
+      texture.wrapS=task.region==='saucer'?(pack.mapping==='source-layout-v3'?RepeatWrapping:MirroredRepeatWrapping):ClampToEdgeWrapping;
       texture.wrapT=ClampToEdgeWrapping;texture.anisotropy=this.anisotropy;
       return texture;
     }));
@@ -67,7 +71,7 @@ export class StyleManager {
     // Atomic swap: only after EVERY channel decodes and passes alignment checks.
     regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region]));
     this.owned.forEach(t=>t.dispose());this.owned=textures;
-    this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
+    this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
   }
   async flatFile(file:File){
     if(!file.type.startsWith('image/'))throw new Error('请选择 PNG、JPEG 或 WebP 图片');

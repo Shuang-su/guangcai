@@ -31,7 +31,10 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false){
     const intensity=material.color.r;
     material.color.setScalar(intensity<.10?.045:intensity>=2?intensity*1.65:intensity===.30?.42:intensity);
   }
-  const cupEnvironment=pmrem.fromScene(environment,.035,.1,200);pmrem.dispose();
+  const cupEnvironment=pmrem.fromScene(environment,.035,.1,200);
+  // Broad bright cards for white glaze only. Gold retains the original environments.
+  for(const object of environment.children)if(object instanceof Mesh){const m=object.material as MeshBasicMaterial;m.color.setScalar(m.color.r<.5?.65:Math.min(m.color.r,4.5));}
+  const porcelainEnvironment=pmrem.fromScene(environment,.10,.1,200);pmrem.dispose();
   environment.traverse(o=>{if(o instanceof Mesh){o.geometry.dispose();(o.material as MeshBasicMaterial).dispose();}});
   const key=new DirectionalLight('#fffdf5',1.2);key.position.set(-90,220,150);key.castShadow=true;
   key.shadow.mapSize.set(2048,2048);key.shadow.camera.left=-170;key.shadow.camera.right=170;key.shadow.camera.top=200;key.shadow.camera.bottom=-140;
@@ -41,6 +44,6 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false){
   const contact=createContactShadow(renderer,scene);const floor=contact.floor;
   const resize=()=>{const {width,height}=canvas.getBoundingClientRect();renderer.setSize(width,height,false);camera.aspect=width/Math.max(height,1);camera.updateProjectionMatrix();};
   const observer=new ResizeObserver(resize);observer.observe(canvas);resize();
-  return{renderer,scene,camera,resize,floor,contact,cupEnvironment:cupEnvironment.texture,dispose(){observer.disconnect();env.dispose();cupEnvironment.dispose();contact.dispose();renderer.dispose();}};
+  return{renderer,scene,camera,resize,floor,contact,cupEnvironment:cupEnvironment.texture,porcelainEnvironment:porcelainEnvironment.texture,dispose(){observer.disconnect();env.dispose();cupEnvironment.dispose();porcelainEnvironment.dispose();contact.dispose();renderer.dispose();}};
 }
 export type Studio=ReturnType<typeof createStudio>;

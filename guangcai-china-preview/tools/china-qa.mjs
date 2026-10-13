@@ -82,7 +82,7 @@ try{
  const touch0=await mp.evaluate(()=>window.cupViewer.debug().camera);const cdp=await mobile.newCDPSession(mp);
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:170,y:330}]});for(let i=1;i<=8;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:170+i*11,y:330+i*3}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await mp.waitForTimeout(400);
  check('mobile touch drag rotates',!same(touch0,await mp.evaluate(()=>window.cupViewer.debug().camera)));
- await mp.waitForTimeout(1000);const twoBefore=await mp.evaluate(()=>window.cupViewer.debug());
+ let lastCamera=await mp.evaluate(()=>window.cupViewer.debug().camera);for(let i=0;i<50;i++){await mp.waitForTimeout(100);const next=await mp.evaluate(()=>window.cupViewer.debug().camera);const settled=next.every((v,j)=>Math.abs(v-lastCamera[j])<.005);lastCamera=next;if(settled)break;}const twoBefore=await mp.evaluate(()=>window.cupViewer.debug());
  const two=(shift,spread=0)=>[{x:130+shift-spread,y:340+shift*.3,id:1},{x:240+shift+spread,y:340+shift*.3,id:2}];
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:two(0)});
  for(let i=1;i<=8;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:two(i*6)});

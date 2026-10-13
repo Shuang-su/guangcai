@@ -96,7 +96,7 @@ test('city artwork reaches the rounded exterior foot with a continuous upright s
   assert.equal(minV,0);assert.equal(maxV,1);product.dispose();
 });
 
-test('fixed layout calibration preserves previous-release geometry and city coordinates exactly',()=>{
+test('v3 preserves cup and saucer geometry and city coordinates outside the authorized lid correction',()=>{
   const baseline=JSON.parse(readFileSync('docs/changes/20261013-fixed-layout/geometry-before.json','utf8'));
   const product=buildProduct(makeMaterials()),seen=new Set<string>();
   const hash=(a:Float32Array|Uint16Array|Uint32Array)=>createHash('sha256').update(Buffer.from(a.buffer,a.byteOffset,a.byteLength)).digest('hex');
@@ -104,6 +104,7 @@ test('fixed layout calibration preserves previous-release geometry and city coor
     if(!(o instanceof Mesh))return;
     const key=o.name+(seen.has(o.name)?'_2':'');seen.add(key);
     const g=o.geometry;
+    if(['lid-double-sided-with-seat','arched-bridge-knob','knob-porcelain-fillet'].includes(o.name))return;
     for(const name of ['position','normal','uv1'])if(baseline[key][name])assert.equal(hash(g.attributes[name].array as Float32Array),baseline[key][name],key+'.'+name);
     if(baseline[key].cityIndices){const group=g.groups.find(x=>x.materialIndex===3)!;assert.equal(hash(g.index!.array.slice(group.start,group.start+group.count) as Uint32Array),baseline[key].cityIndices);}
   });
@@ -116,7 +117,7 @@ test('narrow floral coverage remains continuous and does not expose the handle r
   const pos=g.attributes.position,idx=g.index!,group=g.groups.find(x=>x.materialIndex===1)!;
   const angles=[];
   for(let j=group.start;j<group.start+group.count;j++){const i=idx.getX(j);angles.push(Math.atan2(pos.getZ(i),pos.getX(i))*180/Math.PI);}
-  assert.ok(Math.abs(Math.min(...angles)+30)<.001);assert.ok(Math.abs(Math.max(...angles)-18)<.001);
+  assert.ok(Math.abs(Math.min(...angles)+30)<.001);assert.ok(Math.abs(Math.max(...angles)-27)<.001);
   // Both roots occupy less than +/-10 degrees around the handle axis.
   assert.ok(Math.min(...angles)<-10&&Math.max(...angles)>10);product.dispose();
 });
@@ -131,3 +132,11 @@ test('balanced saucer UV closes without a new seam, folds or abrupt changes of m
   for(let i=1;i<steps.length;i++)assert.ok(Math.abs(steps[i]-steps[i-1])<.0001);
   product.dispose();
 });
+
+ test('flat lid glaze and knob feet stay in contact after crown removal',()=>{
+  const p=buildProduct(makeMaterials()),lid=p.lid.children[0] as Mesh,pos=lid.geometry.attributes.position;
+  const tops=[];for(let i=0;i<pos.count;i++)if(i%16>=12)tops.push(pos.getY(i));
+  assert.ok(Math.max(...tops)-Math.min(...tops)<1e-6);
+  for(const foot of p.lid.children.filter(o=>o.name==='knob-porcelain-fillet') as Mesh[]){foot.geometry.computeBoundingBox();const b=foot.geometry.boundingBox!;assert.ok(b.min.y<lid.userData.topHeight&&b.max.y>lid.userData.topHeight);}
+  p.dispose();
+ });

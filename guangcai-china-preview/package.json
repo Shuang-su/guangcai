@@ -1,6 +1,6 @@
 {
-  "name": "guangcai-china-preview",
-  "version": "1.0.0",
+  "name": "guangcai-china-v3",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
     "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
     "qa:textures": "node tools/texture-qa.mjs",
     "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
-    "textures:fixed": "tsx tools/surface-metrics.ts && node tools/derive-fixed.mjs",
+    "textures:fixed": "python3 tools/extract-original-floral.py && node tools/derive-original-fixed.mjs",
     "textures:china": "python3 tools/china-assets.py",
     "prebuild": "node tools/web-textures.mjs",
     "textures:web": "node tools/web-textures.mjs"

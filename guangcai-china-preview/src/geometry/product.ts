@@ -36,31 +36,37 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const cityUv:number[]=[];
   for(let i=0;i<=n;i++)for(const [,y] of profile)cityUv.push((n-i)/(n-bandSegments),(y-.12)/(h-2.42));
   body.geometry.setAttribute('uv1',new Float32BufferAttribute(cityUv,2));
+  const bodyUV=body.geometry.getAttribute('uv'),sourceBodyUV=[];
+  for(let i=0;i<bodyUV.count;i++)sourceBodyUV.push(bodyUV.getX(i)/(.5+fixedLayout.body.visibleEndFraction),bodyUV.getY(i));
+  body.geometry.setAttribute('uv2',new Float32BufferAttribute(sourceBodyUV,2));
   const {path,upper,lower}=handlePath(p);
   mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
   for(const y of[upper,lower])mesh('porcelain-handle-root',handleCollar(r,p.handleWidth,p.handleThickness,y===upper?2.5:0),m.porcelain,cup,y-h/2);
+  const handleMesh=cup.getObjectByName('wide-ribbon-handle') as Mesh;
+  handleMesh.geometry.setAttribute('uv2',handleMesh.geometry.getAttribute('uv').clone());
   const lr=r+p.lidOverhang;
-  // Side-reference estimates: thin rolled rim; 4.35 mm centre plate; 30 mm bridge span.
-  const lidProfile:ProfilePoint[]=[[0,-1.3],[r-7,-1.3],[r-5,-1.5],[r-4.5,-3.3],[r-3.8,-3.7],[r-3,-3.45],[r-2.7,-1.0],[lr-1,-.35],[lr,-.1],[lr+.3,.6],[lr,1.35],[lr-1,1.65],[r-2,1.9],[r-10,2.45],[14,2.95],[0,3.05]];
-  mesh('lid-double-sided-with-seat',revolve(lidProfile,240,{material:j=>j>=8&&j<=10?1:0}),[m.porcelain,m.gold],lid);
+  // 3.0 single-cup references: planar central glaze; rolled edge and underside seat retained.
+  const lidProfile:ProfilePoint[]=[[0,-1.3],[r-7,-1.3],[r-5,-1.5],[r-4.5,-3.3],[r-3.8,-3.7],[r-3,-3.45],[r-2.7,-1.0],[lr-1,-.35],[lr,-.1],[lr+.3,.6],[lr,1.35],[lr-1,1.65],[r-2,1.9],[r-10,1.9],[14,1.9],[0,1.9]];
+  const lidPlate=mesh('lid-double-sided-with-seat',revolve(lidProfile,240,{material:j=>j>=8&&j<=10?1:0}),[m.porcelain,m.gold],lid);
+  lidPlate.userData.topHeight=1.9;
   const knobPath=new CatmullRomCurve3(Array.from({length:81},(_,i)=>{
-    const a=Math.PI-i/80*Math.PI;return new Vector3(Math.cos(a)*12.8,3.0+Math.sin(a)*11.7,0);
+    const a=Math.PI-i/80*Math.PI;return new Vector3(Math.cos(a)*12.8,1.95+Math.sin(a)*11.7,0);
   }));
   const knob=ribbon(knobPath,10.5,4.4,440);
-  const striped=new MeshPhysicalMaterial({color:'#f3f2ed',roughness:.16,clearcoat:1,clearcoatRoughness:.06,metalness:0});
+  const striped=m.porcelain.clone();striped.name='knob-striped-porcelain';
   // Stripes belong to the bridge surface itself; no floating decal planes.
   const oldIndex=knob.index!,kuv=knob.getAttribute('uv'),ki:number[]=[],kb=[[],[],[]] as number[][];
   for(const group of knob.groups)for(let i=group.start;i<group.start+group.count;i+=3){
     const ids=[oldIndex.getX(i),oldIndex.getX(i+1),oldIndex.getX(i+2)];
     const v=ids.reduce((sum,id)=>sum+kuv.getY(id),0)/3;
-    const atPorcelainRoot=ids.reduce((sum,id)=>sum+knob.getAttribute('position').getY(id),0)/3<4.55;
+    const atPorcelainRoot=ids.reduce((sum,id)=>sum+knob.getAttribute('position').getY(id),0)/3<3.50;
     const material=atPorcelainRoot?0:group.materialIndex===2&&((v*22)%1)<.14?1:group.materialIndex!;
     kb[material].push(...ids);
   }
   knob.clearGroups();kb.forEach((data,m)=>{knob.addGroup(ki.length,data.length,m);for(const index of data)ki.push(index);});knob.setIndex(ki);
   mesh('arched-bridge-knob',knob,[m.porcelain,m.gold,striped],lid);
   for(const x of [-12.8,12.8]){
-    const collar=knobFoot(10.5,4.4);collar.translate(x,2.92,0);
+    const collar=knobFoot(10.5,4.4);collar.translate(x,1.87,0);
     mesh('knob-porcelain-fillet',collar,m.porcelain,lid);
   }
   const sr=p.saucerRadius;
@@ -85,6 +91,9 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   });
   sg.userData.surfaceMetrics={width:(sr-3.3)*2*Math.PI/4,length:sideLength,aspect:(sr-3.3)*2*Math.PI/4/sideLength};
   sg.userData.profile=sp;
+  const sourceSaucerUV:number[]=[];
+  for(let i=0;i<=320;i++)for(const [,y]of sp)sourceSaucerUV.push(i/320,(y-5.9)/10.4);
+  sg.setAttribute('uv2',new Float32BufferAttribute(sourceSaucerUV,2));
   mesh('saucer-bowl-and-continuous-rim',sg,[m.porcelain,m.gold,m.regions.saucer,m.foot],saucer);
   // A glaze-thin print on the recessed underside; no paper, border or QR label.
   for(const [parent,y,name] of [[cup,2.5-h/2,'cup-bottom-mark'],[saucer,2.25,'saucer-bottom-mark']] as const){
