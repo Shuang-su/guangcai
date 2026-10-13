@@ -59,6 +59,11 @@ def read_psd(path):
     return layers,resources
 
 layers,resources=read_psd(SOURCE)
+EXTRACTED=ROOT/'assets/extracted';EXTRACTED.mkdir(exist_ok=True)
+for i,layer in enumerate(layers):
+    if 'alpha' in layer and layer['name'] in ['东方明珠线','广州塔线','深圳平安大厦线','长城线','天坛线','字']:
+        layer['alpha'].save(EXTRACTED/f'layer-{i}-alpha.png')
+(EXTRACTED/'layout.json').write_text(json.dumps([{'index':i,'name':l['name'],'box':l['box']} for i,l in enumerate(layers)],ensure_ascii=False,indent=2))
 W,H=FRAME[2]-FRAME[0],FRAME[3]-FRAME[1]
 raw=np.zeros((H,W),dtype=np.uint8); clean=raw.copy(); metal=raw.copy(); label=raw.copy(); cleanup=[]
 for layer in layers:
@@ -110,7 +115,7 @@ dy,dx=np.gradient(field)
 normal=np.stack([-dx*2.1,dy*2.1,np.ones_like(field)],axis=-1)
 normal/=np.linalg.norm(normal,axis=-1,keepdims=True)
 save(np.round((normal*.5+.5)*255).astype('uint8'),'normal.png')
-save(np.full((SIZE[1],SIZE[0]),54,dtype='uint8'),'roughness.png')
+save(np.full((SIZE[1],SIZE[0]),102,dtype='uint8'),'roughness.png')
 save(np.full((SIZE[1],SIZE[0],3),[255,198,67],dtype='uint8'),'baseColor.png')
 save(np.full((SIZE[1],SIZE[0]),255,dtype='uint8'),'label-roughness.png')
 # Alignment and cleanup proof: same origin, no change to any substantial stroke.
@@ -120,7 +125,7 @@ preview=Image.new('RGB',SIZE,'white');preview.paste('#d4ab26',(0,0),metal_img);p
 preview.resize((1600,696)).save(EVIDENCE/'china-atlas-preview.png')
 pack={'id':'china-draft-20261011','version':1,'name':'中国 · 临时线稿','layout':'blank-300deg-v1','placement':{'scale':.82,'offsetU':.047,'offsetV':0},'baseColor':'baseColor.png','normal':'normal.png','roughness':'roughness.png','metalness':'metalness.png','height':'height.png'}
 (OUT/'city.json').write_text(json.dumps(pack,indent=2,ensure_ascii=False))
-audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'bottomAnchor':{'psdGuideBottom':4608,'contentBottom':4603,'cupExteriorY':.12,'note':'Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside'},'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
+audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'bottomAnchor':{'psdGuideBottom':4608,'contentBottom':4603,'cupExteriorY':.12,'metalBaselineExtensionPixels':10,'note':'Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside'},'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','cityMaterial':{'roughness':0.4,'normalScale':0.45,'clearcoatCoverage':6/255,'labelRoughness':66/255,'labelClearcoatCoverage':26/255},'text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
 (EVIDENCE/'psd-audit.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False))
 assert all(x['retainedPixelsAtAlpha128']==x['originalPixelsAtAlpha128'] for x in cleanup)
 print(json.dumps({'out':str(OUT),'size':SIZE,'cleanup':cleanup},ensure_ascii=False))

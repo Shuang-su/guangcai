@@ -2,7 +2,7 @@ import {PerspectiveCamera,Vector3} from 'three';
 import {applyPose,type Pose} from '../src/interaction/calibration';
 import {writeFileSync} from 'node:fs';
 const camera=new PerspectiveCamera();
-const cases=[{id:'buildings',width:960,height:872,yaw:-104,targets:[[226,732,98,140],[76,890,553,700]]},{id:'label',width:1168,height:1032,yaw:86,targets:[[254,849,110,174],[62,1033,640,852]]}];
+const cases=[{id:'buildings',width:960,height:872,yaw:-166,targets:[[226,732,98,140],[76,890,553,700]]},{id:'label',width:1168,height:1032,yaw:4,targets:[[254,849,110,174],[62,1033,640,852]]}];
 function optimize(start:number[],steps:number[],cost:(v:number[])=>number){let s=[start,...steps.map((a,j)=>start.map((b,k)=>b+(j===k?a:0)))].map(x=>({x,y:cost(x)}));for(let iter=0;iter<800;iter++){s.sort((a,b)=>a.y-b.y);const n=start.length,c=start.map((_,j)=>s.slice(0,n).reduce((sum,a)=>sum+a.x[j]/n,0));const at=(k:number)=>{const x=c.map((v,j)=>v+k*(c[j]-s[n].x[j]));return{x,y:cost(x)}};const r=at(1);if(r.y<s[0].y){const e=at(2);s[n]=e.y<r.y?e:r;}else if(r.y<s[n-1].y)s[n]=r;else{const q=at(r.y<s[n].y?.5:-.5);if(q.y<Math.min(r.y,s[n].y))s[n]=q;else s=s.map((a,i)=>i?{x:a.x.map((v,j)=>(v+s[0].x[j])/2),y:0}:a).map(a=>({x:a.x,y:cost(a.x)}));}}return s.sort((a,b)=>a.y-b.y)[0];}
 const results=[];
 for(const ref of cases){

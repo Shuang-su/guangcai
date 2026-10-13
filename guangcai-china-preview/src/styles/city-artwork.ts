@@ -64,7 +64,7 @@ export class CityArtworkManager {
         for(let k=0;k<3;k++){
           outColor[i+k]=([244,243,237][k]*(1-m)+base[i+k]*m)*(1-a)+[221,181,56][k]*a;
           outMetal[i+k]=combined*255;outRough[i+k]=(41*(1-m)+rough[i]*m)*(1-a)+66*a;
-          outCoat[i+k]=255*(1-combined)+combined*26;
+          outCoat[i+k]=(255*(1-m)+6*m)*(1-a)+26*a;
         }
         outColor[i+3]=outMetal[i+3]=outRough[i+3]=outCoat[i+3]=255;
       }
@@ -73,14 +73,14 @@ export class CityArtworkManager {
       const mat=this.material;
       [mat.map,mat.metalnessMap,mat.roughnessMap,mat.clearcoatMap,mat.normalMap]=staged;
       mat.clearcoatNormalMap=mat.normalMap;mat.metalness=this.metalEnabled?1:0;mat.roughness=1;mat.color.set(0xffffff);
-      mat.normalScale.setScalar(this.relief*.7);mat.clearcoatNormalScale.setScalar(this.relief*.7);
+      mat.normalScale.setScalar(this.relief*.45);mat.clearcoatNormalScale.setScalar(this.relief*.45);
       mat.displacementMap=null;mat.displacementScale=0;mat.needsUpdate=true;
       const old=this.owned;this.owned=[...staged];staged.length=0;old.forEach(t=>this.release(t));
       this.current={...pack};this.lastError='';return true;
     }catch(e){this.lastError=(e as Error).message;throw e;}
     finally{loaded.forEach(t=>t.dispose());staged.forEach(t=>this.release(t));}
   }
-  setRelief(value:number){if(![-1,0,1].includes(value))throw new Error('凹凸方向只接受 -1 / 0 / 1');this.relief=value;this.material.normalScale.setScalar(value*.7);this.material.clearcoatNormalScale.setScalar(value*.7);}
+  setRelief(value:number){if(![-1,0,1].includes(value))throw new Error('凹凸方向只接受 -1 / 0 / 1');this.relief=value;this.material.normalScale.setScalar(value*.45);this.material.clearcoatNormalScale.setScalar(value*.45);}
   setMetal(enabled:boolean){this.metalEnabled=enabled;this.material.metalness=enabled?1:0;}
   private release(t:Texture){t.dispose();if(t.image instanceof HTMLCanvasElement)t.image.width=t.image.height=1;}
   debug(){return {pack:this.current,relief:this.relief,metalEnabled:this.metalEnabled,displacementScale:this.material.displacementScale,maps:this.owned.map(t=>({uuid:t.uuid,channel:t.channel,size:[(t.image as HTMLCanvasElement).width,(t.image as HTMLCanvasElement).height],colorSpace:t.colorSpace})),labelSource:'china/label.png',labelColor:'#ddb538',lastError:this.lastError};}

@@ -1,5 +1,5 @@
 {
-  "name": "guangcai-object-study",
+  "name": "guangcai-china-preview",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,9 +9,12 @@
     "preview": "vite preview --host 127.0.0.1",
     "textures": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs",
     "test": "tsx --test tools/geometry.test.ts",
-    "qa": "node tools/browser-qa.mjs",
+    "qa": "node tools/china-qa.mjs",
     "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
-    "qa:textures": "node tools/texture-qa.mjs"
+    "qa:textures": "node tools/texture-qa.mjs",
+    "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
+    "textures:fixed": "tsx tools/surface-metrics.ts && node tools/derive-fixed.mjs",
+    "textures:china": "python3 tools/china-assets.py"
   },
   "dependencies": {
     "three": "0.186.1"

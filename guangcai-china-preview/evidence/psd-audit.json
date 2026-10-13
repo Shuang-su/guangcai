@@ -18,6 +18,7 @@
     "psdGuideBottom": 4608,
     "contentBottom": 4603,
     "cupExteriorY": 0.12,
+    "metalBaselineExtensionPixels": 10,
     "note": "Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside"
   },
   "resourceIds": [
@@ -461,6 +462,13 @@
   ],
   "metalFillMethod": "per-layer row silhouette; wall per-column to original baseline; visual approximation",
   "relief": "stroke-derived normal only; no geometric displacement; convex default",
+  "cityMaterial": {
+    "roughness": 0.4,
+    "normalScale": 0.45,
+    "clearcoatCoverage": 0.023529411764705882,
+    "labelRoughness": 0.25882352941176473,
+    "labelClearcoatCoverage": 0.10196078431372549
+  },
   "text": "PSD original 中国 / CHINA; fixed gold; separate alpha",
   "maps": {
     "line-finish.png": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
@@ -472,7 +480,7 @@
     "normal.png": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
     "cleanup-difference.png": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
     "height.png": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
-    "roughness.png": "4ef7d6d78ac4a82f3f68228ceff274b8f17a6d6509eb49800179b52707222d69",
+    "roughness.png": "44a8a57225774ff685f3ceb2beca068851dcb70b7f60f2cb92e4193320e26e52",
     "baseColor.png": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e"
   }
 }
