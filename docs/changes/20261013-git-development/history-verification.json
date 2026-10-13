@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "versions": [
+    {
+      "version": "2.1",
+      "files": 864,
+      "bytes": 410883371,
+      "revision": "17e5d12635a0036ade6fcaf42747b525e0daab6f"
+    },
+    {
+      "version": "2.2",
+      "files": 912,
+      "bytes": 413513996,
+      "revision": "b2c2bd4dd0fee80ad073ae34087dfe588a671740"
+    },
+    {
+      "version": "2.0",
+      "files": 780,
+      "bytes": 393386745,
+      "revision": "b86503cd52fa54758c085786589de0266ba55c13"
+    },
+    {
+      "version": "original",
+      "files": 437,
+      "bytes": 242768470,
+      "revision": "152a791b51faaa28e4a565809b3250cf7fc75346"
+    }
+  ],
+  "failures": [],
+  "scope": "Historical source/assets/evidence are checked at pinned commits; frozen deployments are also checked on disk. Current development source is validated by builds/tests, not compared to an older release."
+}

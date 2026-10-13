@@ -1,5 +1,7 @@
 # 广彩 · 一号杯三维观察器
 
+> 当前开发：本目录是 Shuang-su/guangcai Git 仓库的一部分，依赖用本目录 `npm ci` 安装。分支、提交、PR、版本及发布流程以[仓库 README](../README.md)为准；以下保留产品说明与操作文档。
+
 可编辑的 Vite + TypeScript + Three.js 本地项目，包含杯、盖、碟、生成花纸、PBR 数据贴图、底款和多角度检查工具。
 
 ## 启动

@@ -1,0 +1,26 @@
+{
+  "sites": [
+    {
+      "name": "guangcai-no1",
+      "id": "cdc49df3-1e59-4e37-99ac-962584f050a6",
+      "deployId": "6abbdf78d912b4b6b1d7c3b9",
+      "state": "ready",
+      "repo": null,
+      "repoUrl": null,
+      "repoBranch": null,
+      "provider": null
+    },
+    {
+      "name": "guangcai-no1-china",
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "deployId": "6ace111ab0415c9455a3c6f8",
+      "state": "ready",
+      "repo": null,
+      "repoUrl": null,
+      "repoBranch": null,
+      "provider": null
+    }
+  ],
+  "observedDuring": "2026-10-13, before PR #4 integration",
+  "recordedAt": "2026-10-13T12:23:00.601487+00:00"
+}
