@@ -16,6 +16,7 @@ Updated aligned masters, hashed pigment maps/thumbnails, four-style material gal
 - 20 unit/geometry/normal/selection tests passed.
 - Export check: 100% of sampled opaque nonmetal lower-building interiors retain palette saturation for all four variants (over 141,000 tested pixels per variant).
 - Existing and new catalogs confirm unchanged identity for every non-color channel, every structural-line digest, all lettering assets, and all channels of the other four styles.
+- Public browser after publication: 5/5 targeted checks passed, all four corrected styles displayed without runtime/shader errors.
 - Browser before: 13 checks, no runtime/shader errors. Browser after: 15 checks, no runtime/shader errors; four corrected variants across three finishes, unchanged fixed maps/geometry/porcelain and RGBA16F normals.
 - Same-camera default gold and relief-gray frame comparisons pass mean pixel difference <0.01/255.
 - TypeScript/Vite production build passed; final build includes the refreshed evidence gallery.
@@ -23,6 +24,8 @@ Updated aligned masters, hashed pigment maps/thumbnails, four-style material gal
 
 ## Publication
 
-Manual V4 production update and server readback pending at this source checkpoint. No V3/old-site update or Git deployment binding is included. Public verification, immutable archive and final checkpoint will be recorded in deployment.json and the release closeout.
+Published manually at https://guangcai-no1-china-v4.netlify.app/ . Source checkpoint: a186d002f9d7e9271ad34e26aaaf3325cf7ba656. Deployment: 6acec19de30f79f5b1b676d9. All 404 public content files match server SHA-1 hashes; the archive matches local SHA-256. Site readback confirms ready and no Git repository/provider/branch binding. V3 remains at 6ace443df7425f433e717eb0.
+
+The verified staging directory was promoted by same-volume rename into the new immutable deployment archive, avoiding a second 279 MB copy on the nearly full ExFAT volume. No prior snapshot was modified. Source and release records continue in Draft PR #15.
 
 This correction addresses pigment coverage. It does not change relief depth, replace the fixed Guangcai pattern, or claim a physical-device/manufacturing acceptance.
