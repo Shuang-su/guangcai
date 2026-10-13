@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11T17:45:04.452Z",
+  "date": "2026-10-11T18:09:20.629Z",
   "format": "WebP quality 94 fixed colors; body/handle capped near native master crop density (820px/142px), full-size saucer and 4096px city. Data channels encoded losslessly at their stated size; original PNGs and masters retained",
-  "sourceBytes": 15803280,
-  "webBytes": 4476630,
+  "sourceBytes": 17196573,
+  "webBytes": 5364256,
   "records": [
     {
       "source": "public/fixed/body-baseColor.png",
@@ -22,10 +22,10 @@
     },
     {
       "source": "public/fixed/body-normal.png",
-      "web": "public/textures/fixed-body-normal-4acd3855ec5cb28f.webp",
-      "sourceBytes": 1538655,
-      "webBytes": 709148,
-      "sha256": "4acd3855ec5cb28f7726a2f4bc751bda27ffa10078440e00a6bfebaf879c3cc3",
+      "web": "public/textures/fixed-body-normal-f7e890415f2c3a5e.webp",
+      "sourceBytes": 2457646,
+      "webBytes": 1365158,
+      "sha256": "f7e890415f2c3a5e8203d085b5a248fb2ff4fb354dd698732fdf69aa0149e0a6",
       "size": [
         820,
         1779
@@ -86,10 +86,10 @@
     },
     {
       "source": "public/fixed/handle-normal.png",
-      "web": "public/textures/fixed-handle-normal-310c32173827dd4d.webp",
-      "sourceBytes": 530191,
-      "webBytes": 98950,
-      "sha256": "310c32173827dd4d27c3971dcb7cff73cc1331a0742a346c02f0535d1c38ce6c",
+      "web": "public/textures/fixed-handle-normal-01d9c81fa1bf17d2.webp",
+      "sourceBytes": 778792,
+      "webBytes": 148816,
+      "sha256": "01d9c81fa1bf17d25d69d56ad09507988210e235c0caaa7e86f51b666f96b7c6",
       "size": [
         142,
         1384
@@ -150,10 +150,10 @@
     },
     {
       "source": "public/fixed/saucer-normal.png",
-      "web": "public/textures/fixed-saucer-normal-1da429581963d6e6.webp",
-      "sourceBytes": 300224,
-      "webBytes": 194174,
-      "sha256": "1da429581963d6e669a356801bd2fca0b6bdf5d7dc3b1f09fae304192131b2bc",
+      "web": "public/textures/fixed-saucer-normal-f74ee54395467d94.webp",
+      "sourceBytes": 525925,
+      "webBytes": 375924,
+      "sha256": "f74ee54395467d94b9b46f487fb7faaba43be58120bee62bb064170e717424fc",
       "size": [
         2172,
         213

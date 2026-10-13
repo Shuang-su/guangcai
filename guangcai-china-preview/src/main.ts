@@ -2,6 +2,7 @@ import './ui/styles.css';
 import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace} from 'three';
 import {buildProduct} from './geometry/product';
 import {makeMaterials} from './materials/materials';
+import {RENDER_STANDARD} from './materials/render-standard';
 import {createStudio} from './studio/studio';
 import {createLocalReflections} from './studio/local-reflections';
 import {defaultPack,StyleManager} from './styles/style-manager';
@@ -11,8 +12,8 @@ import {applyPose,type Pose} from './interaction/calibration';
 import {createInterface} from './ui/interface';
 import {loadTexture} from './styles/load-texture';
 const mats=makeMaterials(),product=buildProduct(mats);
-let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false;
-const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),restore:async()=>{await applyCityArtwork(chinaPack);}});
+let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false,fixedReliefEnabled=true;
+const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),restore:async()=>{await applyCityArtwork(chinaPack);}});
 let studio:ReturnType<typeof createStudio>;
 ui.message('正在载入花纸与金色浮雕…',true);
 try{studio=createStudio(ui.canvas);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
@@ -37,18 +38,20 @@ function inspect(){
   if(mode==='metalness'&&m===mats.city)result=new MeshBasicMaterial({map:mats.city.metalnessMap});
   if(mode==='metalness'&&Object.values(mats.regions).includes(m as never))result=new MeshBasicMaterial({map:(m as typeof mats.city).metalnessMap});
   if(mode==='relief'&&m===mats.city)result=new MeshStandardMaterial({color:'#9b9b98',roughness:.48,normalMap:mats.city.normalMap,normalScale:mats.city.normalScale});
+  if(mode==='floral'&&Object.values(mats.regions).includes(m as never)){const fm=m as typeof mats.city;result=new MeshStandardMaterial({color:'#9b9b98',roughness:.42,normalMap:fm.normalMap,normalScale:fm.normalScale});}
   if(result!==clay)temporary.push(result);lookup.set(m,result);return result;
  };
  for(const[mesh,mat]of originals)mesh.material=Array.isArray(mat)?mat.map(convert):convert(mat);
 }
+function setFixedRelief(enabled:boolean){fixedReliefEnabled=enabled;for(const m of Object.values(mats.regions)){m.normalScale.setScalar(enabled?RENDER_STANDARD.relief:0);m.clearcoatNormalScale.setScalar(enabled?RENDER_STANDARD.clearcoatRelief:0);}inspect();}
 async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.apply(pack);if(applied){inspect();if(assetsReady)ui.style(city.current!.name);}return applied;}
 const markReady=loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
 Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
 let last=performance.now(),raf=0;
 function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;if(!calibrating)view.update(dt);studio.contact.update(product.root);if(mode==='pbr')reflections.update(now);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
 raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');});
-const debug=()=>({ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,parameters:product.parameters,reflections:reflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory},city:city.debug(),fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
-Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',applyCityArtwork,restore:()=>applyCityArtwork(chinaPack),setView:(v:View)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:(v:number)=>{city.setRelief(v);inspect();},setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
+const debug=()=>({ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,parameters:product.parameters,reflections:reflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory},city:city.debug(),fixedFinish:{enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
+Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',applyCityArtwork,restore:()=>applyCityArtwork(chinaPack),setView:(v:View)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:(v:number)=>{city.setRelief(v);inspect();},setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});

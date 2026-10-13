@@ -35,7 +35,7 @@ try{
  await page.locator('[data-view="detail"]').click();await pause(2000);await page.screenshot({path:`${out}/live-detail.png`});
  await page.locator('#open-settings').click();await page.locator('#local-reflections').uncheck();
  check('reflection toggle works online',!(await page.evaluate(()=>window.cupViewer.debug())).reflections.enabled);
- await page.locator('#local-reflections').check();await page.locator('#close-settings').click();
+ await page.locator('#local-reflections').check();await page.locator('#fixed-relief').uncheck();check('fixed flower normal control is independent online',!(await page.evaluate(()=>window.cupViewer.debug())).fixedFinish.enabled&&(await page.evaluate(()=>window.cupViewer.debug())).city.relief===1);await page.locator('#fixed-relief').check();await page.locator('#close-settings').click();
  await page.locator('[data-view="front"]').click();await pause(2000);
  check('text face and reflection restored',(await page.evaluate(()=>window.cupViewer.debug())).view==='front'&&(await page.evaluate(()=>window.cupViewer.debug())).reflections.enabled);
  await page.screenshot({path:`${out}/live-text-face.png`});
@@ -49,12 +49,12 @@ try{
  await page.locator('#open-settings').click();check('mobile calibration panel fits',await page.locator('#settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));await page.locator('#close-settings').click();
  }
  await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('details').evaluateAll(es=>es.forEach(e=>e.open=true));await page.locator('img').evaluateAll(imgs=>{imgs.forEach(i=>i.loading='eager');return Promise.all(imgs.map(i=>i.decode()));});
- check('all 30 reference and evidence images decode online',await page.locator('img').count()===30);
+ check('all 35 reference and evidence images decode online',await page.locator('img').count()===35);
  check('mobile evidence page has no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
  await page.setViewportSize({width:1440,height:1000});
  const slider=page.locator('[data-compare="buildings"]');await slider.press('Home');await slider.press('ArrowRight');
  check('reference slider updates actual image split',await page.locator('#buildings .model').evaluate(e=>e.style.clipPath.includes('99%')));
- await page.locator('#relief-update').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/live-evidence.png`});
+ await page.locator('#floral-update').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/live-evidence.png`});
  const missing=await page.request.get(new URL('china/qa-missing-resource.png',url).href);check('missing texture is real 404',missing.status()===404);
  const texture=manifest.files.find(f=>f.path.startsWith('textures/'));
  check('content-hashed textures use immutable cache',(await page.request.get(new URL(texture.path,url).href)).headers()['cache-control']?.includes('immutable'));

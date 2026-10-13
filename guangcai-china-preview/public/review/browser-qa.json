@@ -1,6 +1,6 @@
 {
   "url": "http://127.0.0.1:5209/",
-  "date": "2026-10-11T17:47:43.613Z",
+  "date": "2026-10-11T18:10:26.268Z",
   "checks": [
     "initial independent city + fixed packages loaded",
     "city uses UV1, aligned maps, and zero geometry displacement",
@@ -16,6 +16,7 @@
     "local probe follows exploded cup",
     "view button lid",
     "view button detail",
+    "view button flowers",
     "view button hero",
     "auto rotation changes camera",
     "drag stops auto and rotates",
@@ -24,6 +25,8 @@
     "right drag translates camera and target without rotating or zooming",
     "canvas right click suppresses context menu",
     "reset restores centered framing after pan",
+    "floral relief off keeps city textures, geometry, and fixed maps",
+    "floral relief restores both paint and glaze normals",
     "reflection toggle restores studio-only environment",
     "reflection toggle restores local geometry capture",
     "five reflection toggles reuse GPU resources",
@@ -32,6 +35,7 @@
     "relief 1 retains metal + geometry",
     "inspection clay",
     "inspection relief",
+    "inspection floral",
     "inspection metalness",
     "inspection pbr",
     "metal off retains stroke normal",

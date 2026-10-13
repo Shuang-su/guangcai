@@ -7,7 +7,7 @@ export function makeMaterials() {
   const gold = new MeshPhysicalMaterial({color:new Color().setRGB(1,.60,.045),metalness:1,roughness:.065,clearcoat:.12,clearcoatRoughness:.075});
   const foot = new MeshPhysicalMaterial({color:'#e7e5de',metalness:0,roughness:.42,clearcoat:.25});
   const mark = new MeshPhysicalMaterial({color:0xffffff,metalness:0,roughness:.22,clearcoat:1,clearcoatRoughness:.065,transparent:true,alphaTest:.02,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-1});
-  const painted = () => new MeshPhysicalMaterial({color:0xffffff,envMapIntensity:.7,metalness:1,roughness:1,specularIntensity:.55,clearcoat:.35,clearcoatRoughness:.14,normalScale:new Vector2(RENDER_STANDARD.relief,RENDER_STANDARD.relief),clearcoatNormalScale:new Vector2(RENDER_STANDARD.clearcoatRelief,RENDER_STANDARD.clearcoatRelief)});
+  const painted = () => new MeshPhysicalMaterial({color:0xffffff,envMapIntensity:.7,metalness:1,roughness:1,specularIntensity:.85,clearcoat:.75,clearcoatRoughness:.14,normalScale:new Vector2(RENDER_STANDARD.relief,RENDER_STANDARD.relief),clearcoatNormalScale:new Vector2(RENDER_STANDARD.clearcoatRelief,RENDER_STANDARD.clearcoatRelief)});
   const regions: Record<Region,MeshPhysicalMaterial> = {body:painted(),handle:painted(),saucer:painted()};
   const city=new MeshPhysicalMaterial({color:0xffffff,metalness:1,roughness:1,clearcoat:1,clearcoatRoughness:.065,ior:1.5});
   return {porcelain,gold,foot,mark,regions,city};

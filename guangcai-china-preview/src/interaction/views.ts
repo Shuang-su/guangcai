@@ -3,7 +3,7 @@ import { Box3, MathUtils, MOUSE, TOUCH, Quaternion, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Product } from '../geometry/product';
 import type { Studio } from '../studio/studio';
-export const viewLabels={hero:'建筑面',front:'文字面',handle:'把手',top:'俯视',bottom:'杯底',saucerBottom:'碟底',exploded:'拆解',lid:'杯盖',detail:'浮雕近看'} as const;
+export const viewLabels={hero:'建筑面',front:'文字面',handle:'把手',top:'俯视',bottom:'杯底',saucerBottom:'碟底',exploded:'拆解',lid:'杯盖',detail:'浮雕近看',flowers:'花纹近看'} as const;
 export type View=keyof typeof viewLabels;
 export class ViewController{
   controls:OrbitControls;view:View='hero';auto=false;
@@ -44,6 +44,7 @@ export class ViewController{
       pos=[68,111,127];this.toTarget.set(0,36,0);
     }
     if(view==='detail'){pos=[-80,87,-178];this.toTarget.set(-9,38,-11);}
+    if(view==='flowers'){pos=[0,23,155];this.toTarget.set(0,9,30);}
     const aspect=this.studio.camera.aspect;
     this.toCamera.set(...pos as [number,number,number]);
     if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);

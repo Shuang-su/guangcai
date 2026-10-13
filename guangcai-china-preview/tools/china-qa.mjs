@@ -24,7 +24,7 @@ try{
  check('old full-floral replacement controls removed',await page.locator('input[type=file],.style-choice').count()===0);
  check('local geometry reflection initialized',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0&&initial.reflections.resolution===512);
  await frame('desktop');
- for(const v of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','hero']){
+ for(const v of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','flowers','hero']){
   await view(v);check(`view button ${v}`,(await debug()).view===v);await frame(v);
   if(v==='bottom')check('turned cup clears the floor',(await debug()).bottomClearance>30);
   if(v==='exploded'){await pause(500);const r=(await debug()).reflections;check('local probe follows exploded cup',r.captures>initial.reflections.captures&&Math.abs(r.position[1]-initial.reflections.position[1]-26)<.01);}
@@ -42,6 +42,10 @@ try{
  check('canvas right click suppresses context menu',await page.evaluate(()=>window.panContextPrevented===true));
  await page.locator('#reset').click();await pause(2200);check('reset restores centered framing after pan',near((await debug()).target,panBefore.target));
  await view('detail');await page.locator('#open-settings').click();
+ const fixedOn=await debug();
+ await page.locator('#fixed-relief').uncheck();const fixedOff=await debug();
+ check('floral relief off keeps city textures, geometry, and fixed maps',fixedOff.fixedFinish.normalScale===0&&fixedOff.fixedFinish.clearcoatNormalScale===0&&same(fixedOff.city,fixedOn.city)&&same(fixedOff.fixed,fixedOn.fixed)&&same(fixedOff.geometries,fixedOn.geometries));
+ await page.locator('#fixed-relief').check();check('floral relief restores both paint and glaze normals',(await debug()).fixedFinish.normalScale===2.2&&(await debug()).fixedFinish.clearcoatNormalScale===1.6);
  const probeMap=(await debug()).reflections.envMap;
  await page.locator('#local-reflections').uncheck();const disabled=(await debug()).reflections;
  check('reflection toggle restores studio-only environment',!disabled.enabled&&disabled.envMap!==probeMap);
@@ -50,7 +54,7 @@ try{
  for(let i=0;i<5;i++){await page.evaluate(()=>{window.cupViewer.setLocalReflections(false);window.cupViewer.setLocalReflections(true);});await pause(100);}
  check('five reflection toggles reuse GPU resources',same((await debug()).memory,localStable.memory));
  for(const v of ['0','-1','1']){await page.locator('#relief').selectOption(v);check(`relief ${v} retains metal + geometry`,(await debug()).city.relief===+v&&(await debug()).city.metalEnabled&&same((await debug()).geometries,initial.geometries));}
- for(const mode of ['clay','relief','metalness','pbr']){await page.locator('#material-mode').selectOption(mode);check(`inspection ${mode}`,(await debug()).mode===mode);}
+ for(const mode of ['clay','relief','floral','metalness','pbr']){await page.locator('#material-mode').selectOption(mode);check(`inspection ${mode}`,(await debug()).mode===mode);}
  await page.locator('#city-metal').uncheck();check('metal off retains stroke normal',(await debug()).city.relief===1&&!(await debug()).city.metalEnabled);await page.locator('#city-metal').check();await page.locator('#close-settings').click();
  for(const [v,name]of[[1,'convex'],[0,'flat'],[-1,'concave']]){await page.evaluate(v=>window.cupViewer.setRelief(v),v);await pause(200);await frame(name);}
  await page.evaluate(()=>{window.cupViewer.setRelief(1);window.cupViewer.setMode('relief')});await pause(200);await frame('stroke-only');await page.evaluate(()=>window.cupViewer.setMode('pbr'));
