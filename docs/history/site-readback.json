@@ -1,0 +1,41 @@
+{
+  "checkedAtUTC": "2026-10-13T11:14:33.854287+00:00",
+  "sites": [
+    {
+      "name": "original",
+      "siteId": "cdc49df3-1e59-4e37-99ac-962584f050a6",
+      "url": "https://guangcai-no1.netlify.app",
+      "publishedDeploy": {
+        "id": "6abbdf78d912b4b6b1d7c3b9",
+        "state": "ready",
+        "created_at": "2026-09-29T15:55:37.017Z",
+        "published_at": "2026-09-29T15:55:48.779Z",
+        "deploy_ssl_url": "https://6abbdf78d912b4b6b1d7c3b9--guangcai-no1.netlify.app"
+      },
+      "repo": null,
+      "buildSettings": {
+        "repo_url": null,
+        "repo_branch": null,
+        "provider": null
+      }
+    },
+    {
+      "name": "china",
+      "siteId": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "url": "https://guangcai-no1-china.netlify.app",
+      "publishedDeploy": {
+        "id": "6ace111ab0415c9455a3c6f8",
+        "state": "ready",
+        "created_at": "2026-10-13T11:08:10.905Z",
+        "published_at": "2026-10-13T11:08:12.786Z",
+        "deploy_ssl_url": "https://6ace111ab0415c9455a3c6f8--guangcai-no1-china.netlify.app"
+      },
+      "repo": null,
+      "buildSettings": {
+        "repo_url": null,
+        "repo_branch": null,
+        "provider": null
+      }
+    }
+  ]
+}

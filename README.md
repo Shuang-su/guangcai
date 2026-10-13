@@ -47,3 +47,9 @@ npm run build
 中国杯使用相同的 `npm ci` / `npm test` / `npm run build` 流程；其 `prebuild` 会重新生成 WebP。离线核验部署快照不需要安装 Node 依赖：`python3 tools/verify-archive.py` 会核对入库文件和实际发布文件的 SHA-256。
 
 本仓库的本机工作目录使用 `.codex-work/` 存放缓存和验证输出，并通过 `.git/info/exclude` 排除。新克隆开始工作前同样配置本地 exclude。首次导入记录见 `docs/changes/20261013-github-archive/`。
+
+## 会话历史恢复
+
+已补建原版 4 个、中国杯 9 个基线前源码节点，并串联 1.0、2.0、2.1；完整源码可按 commit 检出。查看 [开发历史和验证记录](HISTORY.md)。这些是真实源码操作的当前补录，提交日期未倒签；不会触发线上发布。
+
+历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。
