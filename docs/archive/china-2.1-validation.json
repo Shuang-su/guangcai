@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-13T18:45:43.741348+08:00",
+  "version": "2.1",
+  "commands": [
+    {
+      "check": "geometry-tests",
+      "exitCode": 0
+    },
+    {
+      "check": "build-with-texture-generation",
+      "exitCode": 0
+    }
+  ],
+  "geometryTests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "buildComparedToDeploy": "6ace09922a1b2f8945a7a41c",
+  "releaseFiles": 131,
+  "buildDifferences": [],
+  "dependencyMode": "Read-only reuse of installed locked dependencies in isolated validation copy",
+  "deploymentPerformedByThisTask": false
+}

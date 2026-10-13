@@ -1,5 +1,5 @@
 {
-  "version": "china",
+  "version": "2.0",
   "importedAt": "2026-10-13T18:34:07.741539+08:00",
   "sourceRoot": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs",
   "site": "guangcai-no1-china",
@@ -4703,5 +4703,6 @@
       "sha256": "eb402e25dfa21cac42701996b15c3bf276f1c04d8f483813e7daded1d3a0c15f"
     }
   ],
-  "recoveryNote": "Current China working directory included ongoing 2.1 work. Recovered deployed 2.0 production source from recorded before snapshots and exact published assets; in-progress-only files retained locally outside this Git import."
+  "recoveryNote": "Current China working directory included ongoing 2.1 work. Recovered deployed 2.0 production source from recorded before snapshots and exact published assets; in-progress-only files retained locally outside this Git import.",
+  "verifyAtCommit": "b86503cd52fa54758c085786589de0266ba55c13"
 }

@@ -1,0 +1,40 @@
+{
+  "configs": [
+    {
+      "id": "before",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 30,
+      "warp": 0
+    },
+    {
+      "id": "a",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 18,
+      "warp": 0.12
+    },
+    {
+      "id": "b",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 18,
+      "warp": 0.16
+    },
+    {
+      "id": "c",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 18,
+      "warp": 0.2
+    },
+    {
+      "id": "d",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 18,
+      "warp": 0.24
+    }
+  ],
+  "errors": []
+}

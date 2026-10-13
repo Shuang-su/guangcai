@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-11T18:15:36.462Z",
+  "date": "2026-10-13T10:35:19.812Z",
   "siteName": "guangcai-no1-china",
-  "staging": ".codex-work/deploy/china-20261012-floral-relief-deeper/site",
+  "staging": ".codex-work/deploy/china-20261013-fixed-layout/site",
   "allowlist": [
     "index.html",
     "evidence.html",
@@ -14,16 +14,16 @@
   ],
   "files": [
     {
-      "path": "assets/index-CQ1H8zvg.js",
-      "size": 612318,
-      "sha256": "c378978f6db14cff7a2b79a23aeb232d9940cb770f30d9f88fe94a8a6b1049f7",
-      "sha1": "dc3a24fa50822a3161f9f52eeff5c22807308862"
-    },
-    {
       "path": "assets/index-DKETri6h.css",
       "size": 6137,
       "sha256": "e197effb5e42068139b95010cf7656e341834825a11a7bcb8087474b73d2106e",
       "sha1": "2ac3eca28350fbecd2c367a5137daa7c9bb4d77d"
+    },
+    {
+      "path": "assets/index-DzbCBv9D.js",
+      "size": 612737,
+      "sha256": "6269e0887efbd5ee00518eba6152f28cc1b262fb59ed7d4870cad7cc60dcd981",
+      "sha1": "a6a8f07e01011db61cfb5111d9d9c52ba5fe0f9a"
     },
     {
       "path": "china/baseColor.png",
@@ -99,9 +99,9 @@
     },
     {
       "path": "evidence.html",
-      "size": 19974,
-      "sha256": "1446f3879c6c5846c2e53f276ebde5b0ed84ee5e92b623956b8b1b26ea75420c",
-      "sha1": "75dac6437f8e5d61ce0d823218446282de8e24cb"
+      "size": 22248,
+      "sha256": "52d1780e50c73da5a1593bfe48bbd0e27b3b440cb2735aabf913257cf6fab016",
+      "sha1": "9dc2b01f00d910f36795e3fcfc070b350c49ba7e"
     },
     {
       "path": "fixed/body-baseColor.png",
@@ -165,9 +165,9 @@
     },
     {
       "path": "fixed/manifest.json",
-      "size": 5278,
-      "sha256": "7e7aa36ac137f08ddff568869b1b06e43e8353d7960a6e5494928fc2e3b71d18",
-      "sha1": "571edf02dc06836b0ccdc77c6905ab6de06be0c6"
+      "size": 5769,
+      "sha256": "ad9bfa36ea96be1f21b70fbec32e9adc0ef298b66f8524da9e30262c95319dc5",
+      "sha1": "8402e70648e1922f7cef5887429ea1b4f09e8167"
     },
     {
       "path": "fixed/saucer-baseColor.png",
@@ -201,15 +201,15 @@
     },
     {
       "path": "fixed/style.json",
-      "size": 797,
-      "sha256": "77c69f00c1ff3c73fd0d2625f677b19491aa0d5b0170aa9b6cca4bb630adb15a",
-      "sha1": "002ebf960b794487f704c1a12466f2a778f33c32"
+      "size": 800,
+      "sha256": "985bcdc38c968719711f552a75745bb76c360a854abdf061104bf275459529bf",
+      "sha1": "e0c946d9997dd1f8e2570f74d23e132cacd9fcaf"
     },
     {
       "path": "index.html",
       "size": 464,
-      "sha256": "e12d935ef8933758c756115e604a6d296b64f0552c270c5e3436db790daba952",
-      "sha1": "c62f20a3543265a45e9e73a25aa36aa510b3869e"
+      "sha256": "b23079bc9a28ab1ac60e66c9f762990eb0769fb019a305d42f02bb8ad52cfe16",
+      "sha1": "884dd8e803c644a49ff80b3f18226b1f2673ee3c"
     },
     {
       "path": "marks/auratic-reference.png",
@@ -256,26 +256,26 @@
     {
       "path": "review/browser-qa.json",
       "size": 2583,
-      "sha256": "8cd161abf5c96706a93def2413fa711ea2fce6108c922b3bf8b81bfe8c97e422",
-      "sha1": "aab5723be4e34436e0c845fc6342a573cad3c6d3"
+      "sha256": "cc7a1c28dd7769ac8ea3e9c3cbe1819864c4390a6e19254bdcb410ffa5d92471",
+      "sha1": "2741dc4abd3151857cec6d09021c3a21db6cc40e"
     },
     {
       "path": "review/buildings-comparison.jpg",
-      "size": 214789,
-      "sha256": "85433b7127295e3a73ff9bf902e39e4a68b5164a95c495d8e6dae33db247c6ef",
-      "sha1": "0fb2e1913a8b6f8a6270334206d51211d9b483fa"
+      "size": 214875,
+      "sha256": "630e85d53a88fda01edd841ad9c3176586f562ffa5527bdc773928cf54f8a6c8",
+      "sha1": "857769c417a306c2499c59fd07840c73e49f7f87"
     },
     {
       "path": "review/buildings-model.png",
-      "size": 359832,
-      "sha256": "77d336f33c2dfd8bffa7fef51c3045e0843a60fd12b83cdf735af03da9d20178",
-      "sha1": "435a20050298b7c13f074caac99e30f082c1a347"
+      "size": 360366,
+      "sha256": "50b3a5c815bcb53253ab4b6fdf9ed0432fbcd1dfd632e9eb7541387b77154d54",
+      "sha1": "2c245d12bf2f9f193ff74828e4098a89ed25b655"
     },
     {
       "path": "review/buildings-overlay.png",
-      "size": 817795,
-      "sha256": "0665dc8cbc7af1f6dec51239a2bdfa692223fa4014642e49e457d8546560e235",
-      "sha1": "aba423e7644f8faa1380fc2296581faab5c78e33"
+      "size": 817796,
+      "sha256": "3ac5298ba95561a2b0fcf1016f72b91a2748cd5f8ee7181d48918b73e839d3d0",
+      "sha1": "7a9767b44c2f3097ad353fffcd546bc4e44ea832"
     },
     {
       "path": "review/buildings-reference.jpg",
@@ -291,45 +291,99 @@
     },
     {
       "path": "review/concave.jpg",
-      "size": 149515,
-      "sha256": "3889965b5049503443ab0522be7ac01e36a0ed9065101510c80d5fe9b9858561",
-      "sha1": "1dd02a0aea8bc4bb4302ec5adba290134be6b26d"
+      "size": 149317,
+      "sha256": "21d03baa9c3a205adc4c67e7e3f1c277097d53e6c8e11e596726f3adb1a67c5a",
+      "sha1": "6c0472235725d5031b86452c842ec1a9d5cadde0"
     },
     {
       "path": "review/convex.jpg",
-      "size": 149661,
-      "sha256": "6e1b9220776491c16ec9f2132414c7ebf5443cd5b55f06574be864a7243a4811",
-      "sha1": "0107a17bbfbeb0a95c7a0110aae540450f815a82"
+      "size": 149446,
+      "sha256": "8cc62e9e07953e7ee26251093329e066887baca8d35c380eacd2beb7a2249858",
+      "sha1": "52b63d1ac320a7aa32bfbed3ae86cf03ea0e50f0"
     },
     {
       "path": "review/desktop.jpg",
-      "size": 80519,
-      "sha256": "3e929071cc59ab03d86299d8e061f799d674a15d58bb556abc45ab6c5ba20345",
-      "sha1": "89d88f9695567634ddbd404f7cadeaaaab060d75"
+      "size": 80676,
+      "sha256": "48113ca5560134cd8b366db30b74c40c857c237cad84b3a24685468419b9d7c2",
+      "sha1": "978af559aad7a847a897c457475e77b97ac6cf75"
     },
     {
       "path": "review/detail.jpg",
-      "size": 149746,
-      "sha256": "43b44a571b3feadda5f701e26669a05a57b011674f7518123b5ada83d9919160",
-      "sha1": "1591c83f5dd8351d628900bdc0e8a8c47e9dc604"
+      "size": 149535,
+      "sha256": "d01e1e1140cbc8913b33578765d5af2f4c5c4ee98bbd54fc36bd193a90cf5bc5",
+      "sha1": "1119d918d478260865a9210fd949f7fff0178099"
     },
     {
       "path": "review/evidence.json",
       "size": 217,
-      "sha256": "bae0442f3b17d8cb5362943ed7ccb89f9e0faa21b845c2247c4bee93371dcc32",
-      "sha1": "73f67fe0d52ff0b9ec639104ec27db033f99e028"
+      "sha256": "0d90e1b56d2ff34538630db112a276cad7723409d9a3ff6ee141e105ea29eed1",
+      "sha1": "dc4384066c6210292063a59ef3dce01bc0647fd4"
+    },
+    {
+      "path": "review/fixed-layout/buildings-after.jpg",
+      "size": 131940,
+      "sha256": "3277c5b200974e90691d5adc199ec1a52efc4697c2e82ee8d800b9c2bbed89e7",
+      "sha1": "8fae78ce3d5586f0ba16eaa2f5418703a83516d1"
+    },
+    {
+      "path": "review/fixed-layout/buildings-before.jpg",
+      "size": 131834,
+      "sha256": "a1220dd83927cc9f4620a01b8e5762b5ebcbb8dfbfad03328c8a5af814be2c48",
+      "sha1": "c41581a4c954aca8197f74e43faec8291c4fb217"
+    },
+    {
+      "path": "review/fixed-layout/buildings-comparison.jpg",
+      "size": 306241,
+      "sha256": "4bf32c525c06488743eefeb3712935ea88264c2ba1ff05e70e3769bc00986b55",
+      "sha1": "df8f9a7ba5e20337ef1c8e17c4c7c769104f4292"
+    },
+    {
+      "path": "review/fixed-layout/buildings-overlay.png",
+      "size": 817796,
+      "sha256": "3ac5298ba95561a2b0fcf1016f72b91a2748cd5f8ee7181d48918b73e839d3d0",
+      "sha1": "7a9767b44c2f3097ad353fffcd546bc4e44ea832"
+    },
+    {
+      "path": "review/fixed-layout/label-after.jpg",
+      "size": 135271,
+      "sha256": "3cb930ac47c62e40345295d128a177dc334385d63efb8e2668c6dedc46be04a0",
+      "sha1": "c5775ff57830859cba9df2324aa30dfb4b4b5a72"
+    },
+    {
+      "path": "review/fixed-layout/label-before.jpg",
+      "size": 143668,
+      "sha256": "8e82a2c6f3f3edea619604c4254b6c87712711775c57aa5ae6b03a9d392e85ba",
+      "sha1": "4939f5f924adbb068b0cbda291b54a823339063c"
+    },
+    {
+      "path": "review/fixed-layout/label-comparison.jpg",
+      "size": 238477,
+      "sha256": "628a227f9b4922049f8f85dfa45b83067004ddb627496fc59dc942bccba09eba",
+      "sha1": "1799967b9dd334ff4b7b87d6af9901221bd0f8f6"
+    },
+    {
+      "path": "review/fixed-layout/label-overlay.png",
+      "size": 802430,
+      "sha256": "5dfc92707da94972f342d749b5cc037bb227e2188a81f3f6ef5ed51535f8393f",
+      "sha1": "a06ec20ca88259e98c5d5738ff2a2abf705c7875"
+    },
+    {
+      "path": "review/fixed-layout/verification.json",
+      "size": 3450,
+      "sha256": "39c469e7206c60dfa4f4fdcdb9b61ed91f469be9ecc49364d7c418830ff925fd",
+      "sha1": "7537a16627a339cbf4d0f2ca30935b8450d316cc"
     },
     {
       "path": "review/fixed-quarters.jpg",
-      "size": 97670,
-      "sha256": "d6bef844403a655a74fddb62ef136df6b3dec88a79ad8aa2855070c5945db8f3",
-      "sha1": "4b0757c9bfcff88f8c61cda5162d16fc6be750f6"
+      "size": 94428,
+      "sha256": "a37d5741ddace41c18aa9900aba06e1a80fd0df675cf4a0f91b4de9f6be48295",
+      "sha1": "df28d9cd8e5c5d97212cbc0c992f7b62b12ee299"
     },
     {
       "path": "review/flat.jpg",
-      "size": 107949,
-      "sha256": "e47782924ed0303854ff40d389f64d5fa65fd0200a148ce4af8b6e4ec195a20c",
-      "sha1": "78da87afea51c4fc51a257c26ea658fb622564d0"
+      "size": 107735,
+      "sha256": "8bf4bbf8c411990d2b91339b1caf178d8a3c954e7f7c12fcb21307bbbc1f2e49",
+      "sha1": "e268d91b6d08308d6de1fb289944f12650248d98"
     },
     {
       "path": "review/floral-relief/after-flowers.jpg",
@@ -429,15 +483,15 @@
     },
     {
       "path": "review/front.jpg",
-      "size": 75042,
-      "sha256": "91020b5170a936bcd1de6cc20248e44f85deaab34a899dd2a8e54f449b450073",
-      "sha1": "6955fb33f56f387d7fb0a325d95011362455978a"
+      "size": 72445,
+      "sha256": "03357cc54ee6ad79a30fb91b2de12f7c457f6c2e7a9d886beef952ac964bd395",
+      "sha1": "8c49a4ad128d599e75d6c90a0d97947393f5f3e9"
     },
     {
       "path": "review/handle.jpg",
-      "size": 77454,
-      "sha256": "bba9adf0caa889c98e32f90beed4662c47b12d7e8659e31770322404d6f8379c",
-      "sha1": "7a505fd9538dd9a0ba44b9f1cc89bd24f78fee78"
+      "size": 73037,
+      "sha256": "7e564d300618fdc706128cc2913fd706a579f4fd93ef24470eeb9047c809caf7",
+      "sha1": "bfc87a9db6796761532d74bfd21a693690dcfa2a"
     },
     {
       "path": "review/height.png",
@@ -447,21 +501,21 @@
     },
     {
       "path": "review/label-comparison.jpg",
-      "size": 225666,
-      "sha256": "c8503a6a0f5160d29877e73ad0a562b2681fbfa1652a6950262eec961393b4b9",
-      "sha1": "728821372478f6fc547e876dcd5e1daec22cb71c"
+      "size": 218121,
+      "sha256": "794f6a4daf3c8026bd99a26ecc43b5295093e51e3493f8ba661f7c65f8587960",
+      "sha1": "3c2257f2f763285efe1448d3ec005abad4298822"
     },
     {
       "path": "review/label-model.png",
-      "size": 412509,
-      "sha256": "e4c7f1e270ece58592a23e9a6347de3dfaf546eb98b723998fa92f6e1b81f254",
-      "sha1": "9144c58ab48b805741e65fda265c870c500ba598"
+      "size": 377068,
+      "sha256": "9bcacbf550534907b5d32351c2eff2e302ab8a9729bac814baddbb8c0e326b6f",
+      "sha1": "aeba7bf670497c8bfc6504b90f70c8779fa0e4a6"
     },
     {
       "path": "review/label-overlay.png",
-      "size": 829748,
-      "sha256": "5b07e5aa0720ea29ae2a60f7a2b06cc118f51bf8486abfdf4b9afed01d9fdd0f",
-      "sha1": "9d0e14fa0c0f244503cf79bcb3fcbbe86d7bc21f"
+      "size": 802430,
+      "sha256": "5dfc92707da94972f342d749b5cc037bb227e2188a81f3f6ef5ed51535f8393f",
+      "sha1": "a06ec20ca88259e98c5d5738ff2a2abf705c7875"
     },
     {
       "path": "review/label-reference.jpg",
@@ -543,9 +597,9 @@
     },
     {
       "path": "review/mobile.jpg",
-      "size": 134286,
-      "sha256": "b4044d898e71e8d41c104ed13d8edd6624aaff90b17ca5fa0a53bf44bce9597a",
-      "sha1": "4c360d96a03571d4a09e6c301a3757fe4c74d92a"
+      "size": 134275,
+      "sha256": "c2bc3a9519bac04b4a46878a8d6ec7c8b75f9c5366a22a8e99ca788813c1d7ba",
+      "sha1": "9e03ad00582804458c69645a8782cf1d65e62a49"
     },
     {
       "path": "review/normal.png",
@@ -746,5 +800,5 @@
       "sha1": "13f117123add3d8e5062762630b38f744b75c7d9"
     }
   ],
-  "totalBytes": 40995573
+  "totalBytes": 43629236
 }
