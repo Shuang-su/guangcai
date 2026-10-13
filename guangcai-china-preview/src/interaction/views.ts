@@ -1,5 +1,5 @@
 import {references,type ReferenceId} from './reference-views';
-import { Box3, MathUtils, Quaternion, Vector3 } from 'three';
+import { Box3, MathUtils, MOUSE, TOUCH, Quaternion, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Product } from '../geometry/product';
 import type { Studio } from '../studio/studio';
@@ -11,7 +11,10 @@ export class ViewController{
   private cupPos=new Vector3();private lidPos=new Vector3();private saucerPos=new Vector3();private cupQuat=new Quaternion();private lidQuat=new Quaternion();
   constructor(private studio:Studio,private getProduct:()=>Product,private onChange:()=>void){
     this.controls=new OrbitControls(studio.camera,studio.renderer.domElement);
-    this.controls.enableDamping=true;this.controls.dampingFactor=.09;this.controls.enablePan=false;
+    this.controls.enableDamping=true;this.controls.dampingFactor=.09;this.controls.enablePan=true;
+    this.controls.screenSpacePanning=true;
+    this.controls.mouseButtons={LEFT:MOUSE.ROTATE,MIDDLE:MOUSE.DOLLY,RIGHT:MOUSE.PAN};
+    this.controls.touches={ONE:TOUCH.ROTATE,TWO:TOUCH.DOLLY_PAN};
     this.controls.minDistance=85;this.controls.maxDistance=750;this.controls.minPolarAngle=.035;this.controls.maxPolarAngle=Math.PI-.035;
     this.controls.autoRotateSpeed=.7;this.controls.target.set(7,65,0);
     this.controls.addEventListener('start',()=>{this.animateCamera=false;this.setAuto(false);});

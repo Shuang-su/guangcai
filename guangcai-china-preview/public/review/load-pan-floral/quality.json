@@ -1,30 +1,30 @@
 {
-  "date": "2026-10-11T17:46:26.568Z",
+  "date": "2026-10-11T17:30:25.697Z",
   "url": "http://127.0.0.1:5209/",
   "metrics": [
     {
       "view": "hero",
-      "meanRgbDelta": 0.010710185185185185,
-      "rmse": 0.12805525427778489,
-      "maxChannelDelta": 24
+      "meanRgbDelta": 0.013190277777777778,
+      "rmse": 0.15233825666734027,
+      "maxChannelDelta": 20
     },
     {
       "view": "handle",
-      "meanRgbDelta": 0.04349814814814815,
-      "rmse": 0.4700113276806721,
-      "maxChannelDelta": 67
+      "meanRgbDelta": 0.05620370370370371,
+      "rmse": 0.5704660213207107,
+      "maxChannelDelta": 63
     },
     {
       "view": "detail",
-      "meanRgbDelta": 0.034116203703703704,
-      "rmse": 0.2505854256646934,
+      "meanRgbDelta": 0.04008634259259259,
+      "rmse": 0.29896464859764127,
       "maxChannelDelta": 44
     },
     {
       "view": "front",
-      "meanRgbDelta": 0.024217592592592593,
-      "rmse": 0.281085033924427,
-      "maxChannelDelta": 39
+      "meanRgbDelta": 0.031930324074074076,
+      "rmse": 0.35899132095152175,
+      "maxChannelDelta": 49
     }
   ],
   "order": [
@@ -42,9 +42,9 @@
         "width": 565,
         "height": 74
       },
-      "meanRgbDelta": 0.3015705971458184,
-      "rmse": 0.6399618301620952,
-      "maxChannelDelta": 13
+      "meanRgbDelta": 0.37504584230247945,
+      "rmse": 0.785796336821831,
+      "maxChannelDelta": 14
     },
     {
       "view": "handle",
@@ -54,9 +54,9 @@
         "width": 80,
         "height": 460
       },
-      "meanRgbDelta": 0.7141394927536232,
-      "rmse": 2.298414308459929,
-      "maxChannelDelta": 67
+      "meanRgbDelta": 0.9561322463768116,
+      "rmse": 2.9010758249361537,
+      "maxChannelDelta": 63
     },
     {
       "view": "detail",
@@ -66,8 +66,8 @@
         "width": 1240,
         "height": 90
       },
-      "meanRgbDelta": 0.399778972520908,
-      "rmse": 0.8722011046915096,
+      "meanRgbDelta": 0.46981780167264037,
+      "rmse": 1.0432965742949047,
       "maxChannelDelta": 44
     }
   ]

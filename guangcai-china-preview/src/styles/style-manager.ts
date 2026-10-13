@@ -1,9 +1,10 @@
 import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
+import webTextures from './web-textures.json';
 export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string}
 export interface StylePack {name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'新版固定广彩 · 参考重建',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}web/fixed/${region}-${k}.webp`]))])) as unknown as unknown as StylePack['regions']};
+export const defaultPack:StylePack={name:'浓彩花鸟 · 参考重建 v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[

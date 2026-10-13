@@ -1,5 +1,6 @@
 import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Texture, type MeshPhysicalMaterial } from 'three';
 import {loadTexture} from './load-texture';
+import webTextures from './web-textures.json';
 
 export interface CityArtworkPack {
   id: string; version: number; name: string; layout: 'blank-300deg-v1';
@@ -9,7 +10,7 @@ export interface CityArtworkPack {
 export const chinaPack: CityArtworkPack = {
   placement:{scale:.82,offsetU:.047,offsetV:0},
   id:'china-draft-20261011',version:3,name:'中国 · 临时线稿',layout:'blank-300deg-v1',
-  ...Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}web/china/${k}.webp?v=3`])),
+  ...Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`china/${k}` as keyof typeof webTextures]}`])),
   height:`${import.meta.env.BASE_URL}china/height.png?v=3`,
 } as CityArtworkPack;
 const channels=['baseColor','normal','roughness','metalness'] as const;

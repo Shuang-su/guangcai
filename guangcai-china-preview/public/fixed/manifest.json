@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 3,
   "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
   "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
   "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
@@ -11,7 +11,7 @@
         "width": 45.0294947014537,
         "length": 97.7
       },
-      "source": "assets/masters/china-fixed-body.png",
+      "source": "assets/masters/china-fixed-body-v3.png",
       "sourceSize": [
         887,
         1774
@@ -22,23 +22,23 @@
       "maps": {
         "baseColor": {
           "url": "fixed/body-baseColor.png",
-          "sha256": "6233a1179effc841bb6a647b2e272b1fc0248e1c607c6ff252fc22e74452a1ec"
+          "sha256": "e6a678ac7de48b60104754daae054a331c0430485f6be3ec9b886f7e5bed7b3e"
         },
         "metalness": {
           "url": "fixed/body-metalness.png",
-          "sha256": "fb8d6987a4183635fb784ab91ae51a0779aac861a8146de62d0414619796f84f"
+          "sha256": "aef63d63eb2881751250d36191257f5e633575e1bff0fadb53a9cda81553bcc0"
         },
         "roughness": {
           "url": "fixed/body-roughness.png",
-          "sha256": "79a59d6439d174764e41f98241ff8ef4979ac56e27a326382e8d4f9e8db13cb6"
+          "sha256": "bb16846fa1d6e8e0648197d23fdee3231f39b918dfabe87b6035a77aa642fec4"
         },
         "height": {
           "url": "fixed/body-height.png",
-          "sha256": "f34bfd53d8e7cec82f6911807bd4b965e2d050612a8e6e7cfca90d1e107c9fc4"
+          "sha256": "92acf3a4e89818f73578038bd3bec2248a43e30d48bf2f24dd71b7cbf3938037"
         },
         "normal": {
           "url": "fixed/body-normal.png",
-          "sha256": "1504418bb55b589665981b9e1c7af1dd6dabc7e6c36b79c11d6c0c863ab100a7"
+          "sha256": "3a4d8e0d495d23d9d36cf24cb0aa12e0878b6bda7bf6fcf7bc77d014f9777d46"
         }
       }
     },
@@ -50,7 +50,7 @@
         "length": 115.97543005101365,
         "aspect": 0.10260794027463917
       },
-      "source": "assets/masters/china-fixed-body.png",
+      "source": "assets/masters/china-fixed-body-v3.png",
       "sourceSize": [
         887,
         1774
@@ -66,23 +66,23 @@
       "maps": {
         "baseColor": {
           "url": "fixed/handle-baseColor.png",
-          "sha256": "7b14ad7dec4331861b92a7be330ddd36e93f37f4fdf9da178586efaf2b28dad3"
+          "sha256": "9d9f5b6dd82394e8c9693c8d1eb3374286f0102b2f6d1cf663c5242435fd9a7f"
         },
         "metalness": {
           "url": "fixed/handle-metalness.png",
-          "sha256": "2275b0b63288c3c15a2d063aeeccc2945fe570dd2e97fc3a961edf31cc43002b"
+          "sha256": "b788b3b5498f08444408c4cb3f7ab6069fe8adc7c30a34fc4b06b50a8567c450"
         },
         "roughness": {
           "url": "fixed/handle-roughness.png",
-          "sha256": "f82a27405548a3d0f463ca1f2334392e6aa75d602f72fc21b760abafcf11aff5"
+          "sha256": "be220554e2ce249a345525a627eee69e0fcfa0909c7f09592461985a59d90fd3"
         },
         "height": {
           "url": "fixed/handle-height.png",
-          "sha256": "4b01e64ab7c86942bbe6364080674579416390d950da2a06675692a60c70dbff"
+          "sha256": "9b06383cd0bbb2ef0c1411cfc2e0a6fb7d32d19c0d6e5e10f62959cd5ce78734"
         },
         "normal": {
           "url": "fixed/handle-normal.png",
-          "sha256": "93c6dbdafdf34bb4f5030ccc9502db72bdfe5c40c13aa0f6447a556e39477e33"
+          "sha256": "ee704552d516ab4055571061644688cbce1139e5a2d0f777b8f9bc1d91c8ca5e"
         }
       }
     },
@@ -93,48 +93,48 @@
         "width": 113.41149479459153,
         "length": 11.142710621747296
       },
-      "source": "assets/masters/china-fixed-band.png",
+      "source": "assets/masters/china-fixed-band-v3.png",
       "sourceSize": [
         2172,
         724
       ],
       "crop": [
         0,
-        0.38,
+        0.35,
         1,
-        0.25
+        0.3
       ],
       "layout": "original-cover",
       "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
       "maps": {
         "baseColor": {
           "url": "fixed/saucer-baseColor.png",
-          "sha256": "72fd520ec7ed3ab92d08a9677d8c09ddbcd8cc2b24ca6dd777c56369b0ca92fd"
+          "sha256": "c2580f379fb33ca3a5c638e04172c7b747bf39baacf5cedc388a441e574ec71c"
         },
         "metalness": {
           "url": "fixed/saucer-metalness.png",
-          "sha256": "b84e5fa72a9c1d196285eabedba46ac414900e14f4d9f2f28a465641b94479d9"
+          "sha256": "fdaa8ccaef57b15714210f3c74d9888b2bb8521262cd453bdfd288d97af82600"
         },
         "roughness": {
           "url": "fixed/saucer-roughness.png",
-          "sha256": "5a721f63b854faf6ff08b3abf388470cecece254eaa412aa9e02b8834a4d71b2"
+          "sha256": "b83b119ab8b0a9f2e9bc1c04a986507a81021f16401011c69e7f3880c96e8232"
         },
         "height": {
           "url": "fixed/saucer-height.png",
-          "sha256": "aa0c906712b268b5ec30ef7d4d7ad37fe382986947c964caf0247bbf439add08"
+          "sha256": "f9338c156025ea81b77e40492f1a2ab861aa2326e21cae4fc8970a81257e04ba"
         },
         "normal": {
           "url": "fixed/saucer-normal.png",
-          "sha256": "de1cc40fd920621d21653d4241c521a2a0bb263683918e6be02862aaeea074f5"
+          "sha256": "28b612cc6a979396d013436dd2eca878af40e7e1632f0ef16302d93236a4d0eb"
         }
       }
     }
   },
-  "name": "新版固定广彩 · 参考重建",
+  "name": "浓彩花鸟 · 参考重建 v3",
   "renderStandard": {
     "relief": 1.5,
     "clearcoatRelief": 0.825,
     "exposure": 1.08
   },
-  "layoutNote": "Original accepted pipeline restored: body full master; handle crop [.47,.07,.16,.82] of body master; saucer crop [0,.38,1,.25] of band master. Uniform cover. Saucer runtime UV mirrors four quarters."
+  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v3 saucer central ribbon crop [0,.35,1,.30]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork."
 }

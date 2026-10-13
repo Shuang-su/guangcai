@@ -23,6 +23,7 @@ try{
  await page.waitForFunction(()=>window.cupViewer?.ready()||!document.querySelector('#fatal').hidden,{},{timeout:300000});assert.equal(await page.locator('#fatal').isVisible(),false,'Complete texture loading');await pause(2000);
  readyAfterMs=Date.now()-started;console.log('READY',readyAfterMs+' ms');
  const initial=await page.evaluate(()=>window.cupViewer.debug());
+ await writeFile(`${out}/cold-load-resources.json`,JSON.stringify(await page.evaluate(()=>performance.getEntriesByType('resource').map(r=>({name:r.name,start:r.startTime,duration:r.duration,transfer:r.transferSize,encoded:r.encodedBodySize}))),null,2));
  check('current v3 city and independent fixed package render',initial.city.pack.version===3&&initial.city.maps.length===5&&Object.keys(initial.fixed).length===3);
  check('nearby geometry reflection active online',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0);
  check('no public badge overlays controls',await page.locator('script[src*="/.netlify/scripts/hud"]').count()===0);
@@ -43,14 +44,16 @@ try{
  await page.screenshot({path:`${out}/live-mobile.png`});
  await page.locator('#open-settings').click();check('mobile calibration panel fits',await page.locator('#settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));await page.locator('#close-settings').click();
  }
- await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('img').evaluateAll(imgs=>Promise.all(imgs.map(i=>i.decode())));
- check('all 24 reference and evidence images decode online',await page.locator('img').count()===24);
+ await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('details').evaluateAll(es=>es.forEach(e=>e.open=true));await page.locator('img').evaluateAll(imgs=>{imgs.forEach(i=>i.loading='eager');return Promise.all(imgs.map(i=>i.decode()));});
+ check('all 27 reference and evidence images decode online',await page.locator('img').count()===27);
  check('mobile evidence page has no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
  await page.setViewportSize({width:1440,height:1000});
  const slider=page.locator('[data-compare="buildings"]');await slider.press('Home');await slider.press('ArrowRight');
  check('reference slider updates actual image split',await page.locator('#buildings .model').evaluate(e=>e.style.clipPath.includes('99%')));
  await page.locator('#relief-update').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/live-evidence.png`});
  const missing=await page.request.get(new URL('china/qa-missing-resource.png',url).href);check('missing texture is real 404',missing.status()===404);
+ const texture=manifest.files.find(f=>f.path.startsWith('textures/'));
+ check('content-hashed textures use immutable cache',(await page.request.get(new URL(texture.path,url).href)).headers()['cache-control']?.includes('immutable'));
  const hashed=manifest.files.find(f=>f.path.startsWith('assets/')&&f.path.endsWith('.js'));
  check('content-hashed JS uses immutable cache',(await page.request.get(new URL(hashed.path,url).href)).headers()['cache-control']?.includes('immutable'));
  check('stable city texture names revalidate',(await page.request.get(new URL('china/normal.png',url).href)).headers()['cache-control']?.includes('must-revalidate'));
