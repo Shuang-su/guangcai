@@ -1,0 +1,871 @@
+{
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "files": [
+    {
+      "path": "assets/index-BO1YuuIU.js",
+      "size": 631627,
+      "sha256": "68168787230bde39c58fd1a93304347715e1f96d0241c1ea49415e8770d9a718",
+      "matches": true,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "assets/index-CneZKPP2.css",
+      "size": 7591,
+      "sha256": "65a06122223401f2a0776e084c156a96d2dc4e1bbc1ff1e7fe3033a73a724407",
+      "matches": true,
+      "contentType": "text/css; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "size": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "size": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/baseColor.png",
+      "size": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/city.json",
+      "size": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "size": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/height.png",
+      "size": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/label-roughness.png",
+      "size": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/label.png",
+      "size": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/line-finish.png",
+      "size": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/lines-original.png",
+      "size": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/lines.png",
+      "size": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/metalness.png",
+      "size": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/normal.png",
+      "size": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "china/roughness.png",
+      "size": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "evidence.html",
+      "size": 11786,
+      "sha256": "89a91a5c4e2f85910efcaa3a799cd6d298ca05aed6b6c1e26ac89f2a83479e72",
+      "matches": true,
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "size": 3321253,
+      "sha256": "9838e5a7f227767ca04dceded2d727537f4bc6d6399c527ea46a68fb50203d66",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-height.png",
+      "size": 2737515,
+      "sha256": "f6027b40841191802d75755b12a67db26837a38cc2c77b1447a715ff14b0d477",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "size": 412220,
+      "sha256": "d46b5df543a079189007d928a37569b1ebaab8a67be36d651b1855bc8ec655ca",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-normal.hfn.gz",
+      "size": 5666823,
+      "sha256": "da6d729c9d39471cdbf9d826c349a5e5bc4bb4577d9e8a0376d5a100096a48df",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "size": 1781481,
+      "sha256": "3cfeb6b83f9efb0e61350b5b898e7886e0cc5c9c1e2082d442c865ce70d5b350",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "size": 235359,
+      "sha256": "26b394e10040b12e5cf428801706750caedc116bd81ca01a81c193768e27d76a",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "size": 1466494,
+      "sha256": "53b90a5918ae4a66be73add34fbafd05d2a73652025960fc22724c675381f36f",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "size": 1317188,
+      "sha256": "7b9279c8d11f6158411119c3a4de0c45c51ca7ef447c6f3a69fa2434fe2ed75c",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "size": 159170,
+      "sha256": "a4cd3cb98807a97f06507f21a436c5d6002384020fd543ad911b8f57abb07573",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-normal.hfn.gz",
+      "size": 2816088,
+      "sha256": "48261a6369cb5474fb681cd85ce6bbafe6a42787e1b863cef908e488e7edc199",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "size": 745601,
+      "sha256": "280610224a731580257d1d004ad0105948f359cb6246b5492389b20ab5873974",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "size": 87296,
+      "sha256": "780a5f5f9dfac2a22ca445d3b688f65f6dc4b9b9df15e2768f604b5dccd5baac",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/manifest.json",
+      "size": 4097,
+      "sha256": "11ecdca75f1e6895bfc5228f45e615d326533590fd2ba2d6bb192cf168316ede",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "size": 4939936,
+      "sha256": "10d2456c6b1c09f3f67283d8d16fd25fd0a73a2fc3f48a544a807ff5c2b99509",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "size": 3821767,
+      "sha256": "5611372f0be742d67c08790e18adef9f139c5bac830d3598c8ae8c87ca3ea160",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "size": 439826,
+      "sha256": "5ef21dad0321af604c506d08289d0b02b3ce7678ce2d2e4d9a2616892fe373ff",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-normal.hfn.gz",
+      "size": 7950113,
+      "sha256": "1f9c565f2e91db1c46a3ff6b6d524f0173096469b14c39629df3ace6c1f23a30",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "size": 2532300,
+      "sha256": "3c66596269db87edb5a0cc151edbdd30113ac2fe616eaf806acd782c934e42ab",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "size": 256216,
+      "sha256": "458ff39c1da299f31dd06d5e92b18a9041b3a7c912b2aef291e146e307c49fe5",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "fixed/style.json",
+      "size": 971,
+      "sha256": "26338e9d2207b4545c3574f5783d2da56cd885833eb592ec0cbc4e939fab6b6f",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "index.html",
+      "size": 462,
+      "sha256": "6a6c728be414ecb3d2bbba314d2eab05d0df1500ce32d2eeec1b03e723e4e208",
+      "matches": true,
+      "contentType": "text/html; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "size": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "size": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "matches": true,
+      "contentType": "image/svg+xml",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/capture.json",
+      "size": 4982,
+      "sha256": "e77f9e4ea769ee9effbf40db30130ce582df07331c7b924989eaff1f384c1f0a",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/center-color.png",
+      "size": 1064572,
+      "sha256": "539d61df6d386004fda1501d21f79202a43210114bf75568f7cd4e1f0bd3af75",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/center-flat.png",
+      "size": 28649,
+      "sha256": "089082d705155fde066e308ab815c4198826ced558426b347323c6e24329580d",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/center-gray.png",
+      "size": 274417,
+      "sha256": "5a0dee9b6da60e22e5c0d78dcec2c9f9f48757241f6bd724d1b1d54944bee4d3",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/hero.png",
+      "size": 348230,
+      "sha256": "73014a0a7598bb26f36c9e102268abfcd5cf93ec6de920847f9b721b3ce48548",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/petals-color.png",
+      "size": 1259762,
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/petals-gray.png",
+      "size": 528889,
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/seam-color.png",
+      "size": 1197828,
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/seam-flat.png",
+      "size": 48364,
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/after/seam-gray.png",
+      "size": 493377,
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/capture.json",
+      "size": 4989,
+      "sha256": "57ce281716f37cb9f24e08e736e2da1d8e5aa43b6a4925068ba6d558872cb43f",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/center-color.png",
+      "size": 1033483,
+      "sha256": "791a90538baf621875ab2ea2adbbfa17580eb141f1f6a81d50deb3a2781232dc",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/center-flat.png",
+      "size": 28650,
+      "sha256": "b53401ebe9ab13cb876c0b37ced866d9c43d1ff21e57fb7bdb247e9243df3a8c",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/center-gray.png",
+      "size": 259137,
+      "sha256": "8536c4af0604d694c756ec83e1713890e6936d9abbfabe8048616fb0e81a8d0a",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/hero.png",
+      "size": 348667,
+      "sha256": "b01dd8de96134d238ae334586a88969ac925f196387ac0e4f289958d945b3b8b",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/petals-color.png",
+      "size": 1197339,
+      "sha256": "f10420ab42207101e380bc201543d76dcb2e09da3af1f82a9b5f89adc2db1df9",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/petals-flat.png",
+      "size": 88844,
+      "sha256": "26644352c37b8f7dfc6b630ece64a3c4b2be6349b10203a139644c6413e33eff",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/petals-gray.png",
+      "size": 510822,
+      "sha256": "afd0f2d6eab3a9806d4a678f43ba56dbcc2da36c01be91c5729ef3e18938a4a1",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/seam-color.png",
+      "size": 1113516,
+      "sha256": "af07ec8a3bbdba8012696076dbc1a5882fd458669ae38ca4a4f373296be27c2e",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/seam-flat.png",
+      "size": 48365,
+      "sha256": "e7642aa8651fd92c3887db3af3b154149edc68c0b581a14b9e6869825fe33d16",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/before/seam-gray.png",
+      "size": 461893,
+      "sha256": "54df1c0d9d2d35522a840fff2e1f597083865f502e608024ed390054487d1e89",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/derivation.json",
+      "size": 1804,
+      "sha256": "d4da1c5245386a8ddebc7288fecf534ff28d0f5eba388cef0f0a807dbd72cd33",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/floral-hq/verification.json",
+      "size": 5997,
+      "sha256": "0e2fc607bdeee57da2bdd7eff1a20ec89e7bbdc16ea91b715e8885a1aa3bf29b",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/before-left.jpg",
+      "size": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/before-right.jpg",
+      "size": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/camera-calibration.json",
+      "size": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/capture.json",
+      "size": 5169,
+      "sha256": "1516b437b96742de8f42987cd83d0d7e60ca48ea3c1d1cabb4f05a60a1c40644",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/floral-color.jpg",
+      "size": 196207,
+      "sha256": "5140b05cb5b31b8e51f72723647351a3d2624c7164717b5259385672b21013dd",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/floral-flat.jpg",
+      "size": 54072,
+      "sha256": "903ed1e4ee1b82e0a3c40047f8cc8497a5d056a464b57d975aaa9b24446ee1b5",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/floral-gray.jpg",
+      "size": 96527,
+      "sha256": "3dea9fb7b37cacde8d1212fe4496c0bddab693f1eef1ea8becd6a6dbdf52fc42",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/front.jpg",
+      "size": 93388,
+      "sha256": "1fcd4c1e492e08ff6936edb95eb04ca3fa5978a9fca6b12308a9504f3156daea",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/handle.jpg",
+      "size": 89324,
+      "sha256": "ecd7681ea46e82af6eb2ff90c0ec2b0c4936a8a1da49e1b2149b9f9f8dca9467",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/hero.jpg",
+      "size": 123821,
+      "sha256": "7273a6f5bdbbb5740769e18590a286c0b21fd1b459d72528aae8ea0f470a640f",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/left-comparison.jpg",
+      "size": 298924,
+      "sha256": "791c1d22d305ae814976fe548475edb719764b5974cb1649719564005fdb17d8",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/left-overlay.jpg",
+      "size": 170086,
+      "sha256": "a725091fbd145158e1aa60feab3bc649591ecc84499f41a9e4a075bc035bdbe6",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-model-left.png",
+      "size": 40081,
+      "sha256": "987a4ad89a56ba9e6dd0a0bdc47f90ce2ed106d19981990e9dca35cbe6682a09",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-model-right.png",
+      "size": 41487,
+      "sha256": "8aabd50c61a6524e1d9aad942db6b47f2bdf3843c43642fc64de84299de9dacd",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-native-left.jpg",
+      "size": 153809,
+      "sha256": "bf5a0ddadef0b2e274753cf9f11a9acb4f312263b5d8b9d583740c847d6c2226",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-native-right.jpg",
+      "size": 153153,
+      "sha256": "f48a11030e1740035b9fbbd068daf868c2a2d8fc4dab791bcdb5bbbb3db4761e",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-reference-left.png",
+      "size": 83441,
+      "sha256": "771d818ef556776ee41c6d9250e91b3d0fe0474f7dcc0ff84b48f4051e9e510c",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid-reference-right.png",
+      "size": 86317,
+      "sha256": "7bf3977ab38d42bb2b81a56ca9060414dd863647a6def2ae989ee325013d10a2",
+      "matches": true,
+      "contentType": "image/png",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/lid.jpg",
+      "size": 55119,
+      "sha256": "5fdf10fdbb9a19c54146220b44c17e9d724de7773217a9b808a5794bb919a7d3",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/quarters.jpg",
+      "size": 167602,
+      "sha256": "7415c334049cc6fc73332a9fecf690d97c03c5bbcf05089595797ef0cf698395",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/reference-left.jpg",
+      "size": 211977,
+      "sha256": "85fe4bf207e8f767199134a7333f0288638af4f1a21f753f8ba72b3b097049ab",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/reference-right.jpg",
+      "size": 211869,
+      "sha256": "5ac9252f0f8fb455eeed76b8b349dc12c83632917058f91f07ab2ab176c683fd",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/right-comparison.jpg",
+      "size": 272143,
+      "sha256": "4ee948bea458292bc1f5db02cccf69eac41c5217199f96729fc2d1b5c34bf1c6",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/right-overlay.jpg",
+      "size": 152199,
+      "sha256": "88a67019496ade3b0c1a93ce8812ba6a61bfcec99e0209952dfd59b82c755cf5",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/source-floral.json",
+      "size": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/v3-left.jpg",
+      "size": 121188,
+      "sha256": "554832f03276f88ceccd2b59059e90b515bf79915741353806a3f1a90eae4148",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/v3-right.jpg",
+      "size": 94019,
+      "sha256": "d3a1b0fa2b894c7e74e95363d07afc7859f524b4723cc0fc3e059ab5f947386c",
+      "matches": true,
+      "contentType": "image/jpeg",
+      "contentEncoding": null
+    },
+    {
+      "path": "review/v3/verification.json",
+      "size": 6061,
+      "sha256": "a279f7bffe097223dcbc60295c7557ae70200424c40a5b97aab4a581d02e4b16",
+      "matches": true,
+      "contentType": "application/json",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/china-baseColor-754558a83d8866b8.webp",
+      "size": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/china-metalness-7ac9525c8019fc98.webp",
+      "size": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/china-normal-f0662e241725d83b.webp",
+      "size": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/china-roughness-40e7b97659e5e028.webp",
+      "size": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-body-baseColor-64e1ed7bba0e7ab9.webp",
+      "size": 2492632,
+      "sha256": "64e1ed7bba0e7ab91b0fdf2657f74628c8d78941e0821261e27d2070f425b23f",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-body-metalness-70f7baa13bf3fe53.webp",
+      "size": 361038,
+      "sha256": "70f7baa13bf3fe535125954a3316cec9d570d693695666dfd53804e5d4b7cdb3",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-body-normal-da6d729c9d39471c.hfn.gz",
+      "size": 5666823,
+      "sha256": "da6d729c9d39471cdbf9d826c349a5e5bc4bb4577d9e8a0376d5a100096a48df",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-body-roughness-406db82aa5cbd883.webp",
+      "size": 187778,
+      "sha256": "406db82aa5cbd883573a2b26cbee6270babf24cb89fa7b4a1cae41190f8932b0",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-handle-baseColor-463ed5b77f55f9e4.webp",
+      "size": 1077600,
+      "sha256": "463ed5b77f55f9e42067b6e668236db6d9212d25921989d61d6301306af465b6",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-handle-metalness-988aad2bac78d4eb.webp",
+      "size": 152260,
+      "sha256": "988aad2bac78d4eb4191dbd94374edf596c70aebbbf68dc8966f1ba9c3764b0b",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-handle-normal-48261a6369cb5474.hfn.gz",
+      "size": 2816088,
+      "sha256": "48261a6369cb5474fb681cd85ce6bbafe6a42787e1b863cef908e488e7edc199",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-handle-roughness-80bad06e6d018eab.webp",
+      "size": 63500,
+      "sha256": "80bad06e6d018eab509e372aa693553735c83eb11c1a84f95fe6eb26a55a218a",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-saucer-baseColor-dc3db9d3d36c6066.webp",
+      "size": 3648972,
+      "sha256": "dc3db9d3d36c6066b5baa75519b4c3c6d340a96f6fbbb8d5daccc36f839030eb",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-saucer-metalness-0df7fe0475bb2010.webp",
+      "size": 395874,
+      "sha256": "0df7fe0475bb2010443bff883cca96fe9d77699ba4a2859a57bfbc739ec5703c",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-saucer-normal-1f9c565f2e91db1c.hfn.gz",
+      "size": 7950113,
+      "sha256": "1f9c565f2e91db1c46a3ff6b6d524f0173096469b14c39629df3ace6c1f23a30",
+      "matches": true,
+      "contentType": "application/gzip",
+      "contentEncoding": null
+    },
+    {
+      "path": "textures/fixed-saucer-roughness-9939470bdc5d8c96.webp",
+      "size": 210114,
+      "sha256": "9939470bdc5d8c96a5748fa24d73a20d258dc6c40ae3bd4227f95901fbf6b229",
+      "matches": true,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    }
+  ],
+  "verified": 108,
+  "allSha256Match": true
+}
