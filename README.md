@@ -1,55 +1,53 @@
-# 广彩一号杯：两个已上线版本的源码归档
+# 广彩一号杯与中国杯
 
-> 完整源码已统一归档，按 1.0 → 2.0 → 2.1 管理。已根据真实会话补建 16 个源码节点，见 [历史提交索引](https://github.com/Shuang-su/guangcai/blob/codex/reconstruct-history/HISTORY.md)；源码分支及 issue/PR 见 [归档入口](ARCHIVE_INDEX.md)。
+广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-此仓库保存一号杯原版与中国杯预览版的完整前端源码、运行素材、生成母版、校验工具、历史变更记录和部署证据。仓库为私有，原始设计资料不作为公开授权素材。
+## 项目与版本
 
-## 版本与部署
+- `guangcai-viewer/`：原版一号杯，当前发布基线 1.0。
+- `guangcai-china-preview/`：中国杯持续开发目录。2.x → 3.0 → 后续版本在同一目录演进，通过功能分支和发布标签定位，不再为每版复制一套长期维护的源码。
+- `main`：已验证的完整项目基线。3.0 在 `codex/china-3.0` 开发，完成前通过 Draft PR 跟踪。
+- [版本与部署索引](VERSION_HISTORY.md) · [恢复的 16 个历史节点](HISTORY.md) · [开发接入记录](docs/changes/20261013-git-development/completion.md)。
 
-| 版本 | 源码目录 | 现有线上站点 | 本次核验的部署 ID |
+| 已发布版本 | 标签 | 站点 | 部署 ID |
 | --- | --- | --- | --- |
-| **1.0 一号杯原版** | `guangcai-viewer/` | https://guangcai-no1.netlify.app/ | `6abbdf78d912b4b6b1d7c3b9` |
-| **2.0 中国杯基线** | `guangcai-china-preview/` @ `b86503c` | [历史固定部署](https://6acbd24fa545c331cdd20dae--guangcai-no1-china.netlify.app/) | `6acbd24fa545c331cdd20dae` |
-| **2.1 中国杯布局修订** | `guangcai-china-preview/` 当前目录 | https://guangcai-no1-china.netlify.app/ | `6ace09922a1b2f8945a7a41c` |
+| 1.0 | `v1.0` | [原版一号杯](https://guangcai-no1.netlify.app/) | `6abbdf78d912b4b6b1d7c3b9` |
+| 2.2 | `v2.2` | [中国杯](https://guangcai-no1-china.netlify.app/) | `6ace111ab0415c9455a3c6f8` |
 
-两个项目在首次入库前都没有 `.git`、提交历史或远端。此次 Git 提交从 2026-10-13 的真实导入开始。随后根据保存的原会话文件操作补建了 13 个基线前源码节点，连同 1.0 / 2.0 / 2.1 共 16 个可检出状态；原修改时间单独记录，提交没有倒签，未声称覆盖每次临时编辑。旧请求、计划、完成记录、素材版本和中间截图作为历史文件原样保留，其时间以文件内记录为准。
+Git 提交、PR 合并与上线是分别核实的状态。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。3.0 按已批准的计划使用独立新网址，旧站继续保留。
 
-两个目录同时保留，因为它们对应两个独立运行的站点；不把原版覆盖成中国杯版，也不提前抽取公共代码。中国杯原有校验脚本还引用相邻原版的文件摘要。导入采用相承的 PR：1.0 原版先导入，2.0 中国杯以 1.0 为基线，2.1 布局修订再以 2.0 为基线。各自的 issue 记录来源和验收证据。`main` 初始只含归档说明，待审查合并后才包含源码；完整双版本快照位于 [`codex/import-2.1`](https://github.com/Shuang-su/guangcai/tree/codex/import-2.1)。详细版本索引见 [VERSION_HISTORY.md](https://github.com/Shuang-su/guangcai/blob/codex/import-2.1/VERSION_HISTORY.md)。
+## 本地开发
 
-**版本约定：** 已上线原版为 1.0，已上线中国杯为 2.0；后续各自用 1.1、1.2… 和 2.1、2.2… 记录可审查改动。提交与 issue/PR 的编号表示代码进度，只有部署回读通过才标记“已上线”。历史 `package.json` 和素材清单的内部编号保持原样，产品版本以版本索引为准。
+要求 Node.js 22.12+、npm，以及支持 WebGL 2 的浏览器。两个应用均有独立锁文件；首次安装使用各自的 `npm ci`，不依赖外部电脑路径或共享的 node_modules 符号链接。
 
-**本仓库没有连接 Netlify、配置部署工作流或保存部署凭据。推送和 PR 不更新现有站点。** 归档期间另一任务独立完成了中国杯 2.1 的发布，本仓库据此追加真实代码差异与 131 个发布文件。此前 2.0 仍可由 Git 提交或固定部署查看。两个目录中的 `netlify.toml` 与历史发布命令仅作为原项目资料保留；后续发布仍需要用户明确授权。
+在仓库根目录执行（中国杯示例）：
 
-表中的部署 ID 是本次最初核查的基线。历史补录截止 2.1；另一会话 2026-10-13 19:08 发布的后续背景功能尚未纳入这批归档。线上实时状态与归档编号分开记录。
+```sh
+npm --prefix guangcai-china-preview ci --cache .codex-work/cache/npm
+npm --prefix guangcai-china-preview test
+npm --prefix guangcai-china-preview run build
+npm --prefix guangcai-china-preview run dev -- --port 5208
+```
 
-## 保存范围
+原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。几何测试分别为原版 6 项、中国杯 10 项。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
 
-- 两个项目的 TypeScript / Three.js 源码、HTML、样式、锁文件、配置和全部工具。
-- 完整 `assets/` 与 `public/`：PBR 通道、生成母版、提示词、中国杯 PSD / PDF / JPG 原稿副本、图层提取结果及历史纹样。
-- 原版公共 `evidence/`、中国杯 `evidence/` / `output/` / `out/`、全部 `docs/changes/`，包括已记录的失败与中间版本。
-- `deployments/<站点名>/<部署 ID>/`：按原发布清单核验的实际发布文件快照。清单外未发布的文件留在各自源码目录中。
-- `docs/archive/`：首次导入清单、文件摘要、版本边界、部署关联和本轮验证记录。
+中国杯 `prebuild` 会从保存的母版生成 WebP；如产生源码或素材清单差异，先核对原因。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
 
-不纳入 `node_modules/`、`.codex-work/`、`.netlify/`、可再构建的 `dist/`、系统索引与 AppleDouble 文件。源码外的原始拍摄照片和视频不复制；项目使用的参考图、预览、索引及中国杯设计原稿副本已随项目保留。绝对路径仍保留在历史记录中表示来源，不能假定别的电脑有这些路径。
+## 开发与发布
 
-## 使用与校验
+1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，从 main 建立 `codex/<task>` 分支；存在其他修改时使用独立 worktree。
+2. 在本仓库直接修改、验证并形成原子提交，例如 `feat(3.0): add original floral artwork`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
+3. PR 审查和必要验证通过后按授权合并。原始历史补录已经保留为真实可达提交，不对既有分支强推或重写。
+4. 正式版本使用 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0` 等标签；标签只在对应版本验证完成后创建，不能移动已发布标签。后续使用 3.1、3.2 等产品版本；一个版本可包含多个正常开发提交。
+5. 发布仅使用用户已授权的目标站点。从已记录的 Git 提交构建，保存站点 ID、提交 SHA、构建命令、部署 ID、文件哈希及回读结果。`.netlify/` 和凭据只留本地，不入库。
 
-两个项目分别安装依赖，运行命令见各自历史 README。新克隆中执行 `npm ci`；不要复制其他电脑的 `node_modules` 链接。纹样重生成可能改写导出图及时间戳，应与原始归档分开进行。
+## 历史完整性
 
 ```sh
 python3 tools/verify-archive.py
-cd guangcai-viewer
-npm ci
-npm test
-npm run build
+python3 tools/test_verify_archive.py
 ```
 
-中国杯使用相同的 `npm ci` / `npm test` / `npm run build` 流程；其 `prebuild` 会重新生成 WebP。离线核验部署快照不需要安装 Node 依赖：`python3 tools/verify-archive.py` 会核对入库文件和实际发布文件的 SHA-256。
+核验工具按固定 Git 提交读取历史源码，同时检查工作树中不可变的 `deployments/` 快照，因此不会把正常开发改动误判为旧版损坏。必须使用完整 Git 克隆；浅克隆先运行 `git fetch --unshallow origin`。下载 ZIP 不包含历史对象，工具会明确报告无法完成历史核验。
 
-本仓库的本机工作目录使用 `.codex-work/` 存放缓存和验证输出，并通过 `.git/info/exclude` 排除。新克隆开始工作前同样配置本地 exclude。首次导入记录见 `docs/changes/20261013-github-archive/`。
-
-## 会话历史恢复
-
-已补建原版 4 个、中国杯 9 个基线前源码节点，并串联 1.0、2.0、2.1；完整源码可按 commit 检出。查看 [开发历史和验证记录](HISTORY.md)。这些是真实源码操作的当前补录，提交日期未倒签；不会触发线上发布。
-
-历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。
+`docs/archive/`、`docs/history/` 和 `deployments/` 保存旧版本证据；不要覆盖原记录。缓存、临时测试和发布暂存放在 `.codex-work/`，通过 `git rev-parse --git-path info/exclude` 指向的仓库本地 exclude 忽略。安装或复制较大素材前检查磁盘空间。

@@ -1,37 +1,25 @@
-# 产品版本索引
+# 产品版本与发布索引
 
-版本号用于开发查找，源码目录保持两个并列项目。两个上线版本最初没有 Git 历史，本次是 2026-10-13 的首次真实导入。
+本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-| 产品版本 | 状态 | 源码目录与分支 | 对应部署 | Git checkpoint |
+| 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
-| **1.0** | 本次核查起点的已上线原版 | `guangcai-viewer/` · `codex/import-1.0` | `6abbdf78d912b4b6b1d7c3b9` | `312b71e4cb6d9d319b8eafbdbb730772fdd30913` |
-| **2.0** | 本次核查起点的已上线中国杯 | `guangcai-china-preview/` · `codex/import-2.0` | `6acbd24fa545c331cdd20dae` | `b86503cd52fa54758c085786589de0266ba55c13` |
-| **2.1** | 另一任务于 2026-10-13 18:36 独立发布，随后在本仓库归档 | `guangcai-china-preview/` · `codex/import-2.1` | `6ace09922a1b2f8945a7a41c` | `56d4e167a9cd5ee0de98a7fd330ed25201523784` |
+| 1.0 | `v1.0` | `152a791b51faaa28e4a565809b3250cf7fc75346` | `6abbdf78d912b4b6b1d7c3b9` | 原版一号杯 |
+| 2.0 | `v2.0` | `e50528015a727ea0689a0ca277a0ab2f6731cf8e` | `6acbd24fa545c331cdd20dae` | 中国杯上线基线 |
+| 2.1 | `v2.1` | `17e5d12635a0036ade6fcaf42747b525e0daab6f` | `6ace09922a1b2f8945a7a41c` | 花纹布局与饰带宽度 |
+| 2.2 | `v2.2` | `b2c2bd4dd0fee80ad073ae34087dfe588a671740` | `6ace111ab0415c9455a3c6f8` | 移动端柔光背景、本地图片预览与响应式修正 |
+| 3.0 | 完成验收后创建 | 开发分支 `codex/china-3.0` | 独立新站，发布后补录 | 原始花纸、白瓷光效、视角与新背景；正在开发 |
 
-## 后续编号
+旧版本首次入库没有原生 Git 历史；实际修改时间与补录提交时间分开记载。[HISTORY.md](HISTORY.md) 保存恢复的 16 个源码节点，全部已进入 main 的可达历史。表中 1.0/2.0/2.1 使用移除本机依赖链接后的提交，应用源码与各发布基线一致；历史 package.json 的内部编号保留原值，产品版本以本索引为准。3.0 开始同步维护产品 package 版本。
 
-- 1.x 属于原版，2.x 属于中国杯版。后续可审查改动分别按 1.1、1.2… / 2.1、2.2… 记录在提交、issue、PR 与本索引。
-- 提交示例：`fix(2.1): adjust saucer artwork layout`；issue / PR 标题示例：`[2.1] 调整杯碟花纹布局`。
-- 代码版本、合并状态、部署状态分别记录。存在 2.1 提交或 PR 不表示 2.1 已上线；部署完成后补上 Netlify 部署 ID、URL 和验收证据。
-- `package.json` 原有的 1.0.0、纹理 manifest 的 version 5 等是历史内部字段，保留原值以保证归档的字节一致性。产品版本使用本索引，不混用这些字段。
-- `main` 初始提供入口和归档说明。PR 审查期间可直接检出 `codex/import-2.1`，其中包含完整 1.0 和当前 2.1，历史 2.0 在相承提交中；原版独立审查入口是 `codex/import-1.0`。
+## 查找与继续开发
 
-## 证据与边界
+完整克隆后可用 `git show v2.0:guangcai-china-preview/src/main.ts` 查看旧代码；需要运行旧版时在独立 worktree 检出标签，勿覆盖当前未提交改动。新功能从 main 建功能分支，同一版本可有多个按真实改动划分的 commit，后续产品版本按 3.1、3.2 等递增。
 
-1.0 从源码构建，全部 78 个发布文件与原清单一致。2.0 曾混入本地进行中调整，已由真实 before 文件和已发布静态文件恢复；重新构建的 122 个发布文件也全部一致。恢复来源与差异记录位于 `docs/archive/china-2.0-recovery.json`。
+[Issue #1](https://github.com/Shuang-su/guangcai/issues/1)、[#2](https://github.com/Shuang-su/guangcai/issues/2)、[#3](https://github.com/Shuang-su/guangcai/issues/3)、[#7](https://github.com/Shuang-su/guangcai/issues/7) 对应 1.0、2.0、2.1 和历史恢复；PR #4、#5、#6、#8 已按依赖顺序合入 main。[Issue #9](https://github.com/Shuang-su/guangcai/issues/9) 跟踪 2.2 与持续开发接入。
 
-2.1 的 10 项几何测试和完整构建通过，131 个发布文件全部与新部署清单一致。Git 校验脚本支持在 2.1 工作树中按 `b86503c` 核验历史 2.0。
+## 验证与部署边界
 
-Issue：[1.0 #1](https://github.com/Shuang-su/guangcai/issues/1)、[2.0 #2](https://github.com/Shuang-su/guangcai/issues/2)、[2.1 #3](https://github.com/Shuang-su/guangcai/issues/3)。
+1.0 与 2.2 本次分别重新安装锁定依赖，6/10 项几何测试及 TypeScript/Vite 构建通过；重新构建的 78/135 个发布文件与当时清单逐个匹配。2.0 的 122 项、2.1 的 131 项发布一致性证据及中途源码验证见历史记录。本次未重跑全部旧版浏览器或真机验收。
 
-本次不创建发布 tag、不合并 PR、不连接 Git 自动部署，也不执行 Netlify 发布。实际站点状态以 `docs/archive/sites-before.json` 和最终回读为准。
-
-审查入口：[1.0 PR #4](https://github.com/Shuang-su/guangcai/pull/4) → [2.0 PR #5](https://github.com/Shuang-su/guangcai/pull/5) → [2.1 PR #6](https://github.com/Shuang-su/guangcai/pull/6)。三者均待审，未合并。
-
-## 历史源码补录
-
-已根据原会话补建 16 个源码节点（13 个基线前节点与 1.0、2.0、2.1）。可逐个检出与比较，完整 commit 索引、原修改时间、部署映射与验证见 [HISTORY.md](HISTORY.md)。`pre.N` 表示基线之前，不等同于“未曾上线”。
-
-本次补录截止 2.1；另一会话随后发布的背景功能 `6ace111ab0415c9455a3c6f8` 不在这批源码范围中。
-
-历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。
+实际发布字节保存在 `deployments/<站点>/<部署 ID>/`。`docs/archive/*-inventory.json` 固定到源码提交；`tools/verify-archive.py` 同时检查历史对象及工作树发布快照。旧站保持现有部署，不连接 Git 自动发布。Git 标签与上线记录分别核实，不以 PR 合并推断线上已更新。

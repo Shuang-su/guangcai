@@ -50,7 +50,7 @@ try{
  await page.locator('#open-settings').click();check('mobile calibration panel fits',await page.locator('#settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));await page.locator('#close-settings').click();
  }
  await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('details').evaluateAll(es=>es.forEach(e=>e.open=true));await page.locator('img').evaluateAll(imgs=>{imgs.forEach(i=>i.loading='eager');return Promise.all(imgs.map(i=>i.decode()));});
- check('all reference and evidence images decode online',await page.locator('img').count()===39);
+ check('all reference and evidence images decode online',await page.locator('img').count()===41);
  check('mobile evidence page has no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
  await page.setViewportSize({width:1440,height:1000});
  const slider=page.locator('[data-compare="buildings"]');await slider.press('Home');await slider.press('ArrowRight');

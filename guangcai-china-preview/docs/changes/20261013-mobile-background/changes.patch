@@ -1,0 +1,156 @@
+--- docs/changes/20261013-mobile-background/before/src/main.ts	2026-10-12 02:05:34
++++ src/main.ts	2026-10-13 18:58:43
+@@ -10,13 +10,15 @@
+ import {ViewController,type View} from './interaction/views';
+ import {applyPose,type Pose} from './interaction/calibration';
+ import {createInterface} from './ui/interface';
++import {BackgroundController} from './ui/background';
+ import {loadTexture} from './styles/load-texture';
+ const mats=makeMaterials(),product=buildProduct(mats);
+ let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false,fixedReliefEnabled=true;
+-const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),restore:async()=>{await applyCityArtwork(chinaPack);}});
++const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),background:choice=>background.select(choice),uploadBackground:file=>background.upload(file),restore:async()=>{await applyCityArtwork(chinaPack);}});
+ let studio:ReturnType<typeof createStudio>;
+ ui.message('正在载入花纸与金色浮雕…',true);
+-try{studio=createStudio(ui.canvas);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
++try{studio=createStudio(ui.canvas,true);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
++const background=new BackgroundController(studio,ui.backgroundLayer,ui.background,ui.backgroundError);
+ studio.scene.add(product.root);
+ const reflections=createLocalReflections(studio,product,mats.city);
+ view=new ViewController(studio,()=>product,()=>{if(view)ui.update(view.view,view.auto);});
+@@ -46,12 +48,12 @@
+ function setFixedRelief(enabled:boolean){fixedReliefEnabled=enabled;for(const m of Object.values(mats.regions)){m.normalScale.setScalar(enabled?RENDER_STANDARD.relief:0);m.clearcoatNormalScale.setScalar(enabled?RENDER_STANDARD.clearcoatRelief:0);}inspect();}
+ async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.apply(pack);if(applied){inspect();if(assetsReady)ui.style(city.current!.name);}return applied;}
+ const markReady=loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
+-Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
++Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady,background.ready]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
+ let last=performance.now(),raf=0;
+ function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;if(!calibrating)view.update(dt);studio.contact.update(product.root);if(mode==='pbr')reflections.update(now);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
+ raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');});
+-const debug=()=>({ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,parameters:product.parameters,reflections:reflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory},city:city.debug(),fixedFinish:{enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
++const debug=()=>({ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory},city:city.debug(),fixedFinish:{enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
+ Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',applyCityArtwork,restore:()=>applyCityArtwork(chinaPack),setView:(v:View)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:(v:number)=>{city.setRelief(v);inspect();},setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
+  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
+- debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
++ debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);background.dispose();ui.dispose();reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
+ if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});
+--- docs/changes/20261013-mobile-background/before/src/ui/interface.ts	2026-10-12 02:05:34
++++ src/ui/interface.ts	2026-10-13 18:58:43
+@@ -1,10 +1,18 @@
+ import {viewLabels,type View} from '../interaction/views';
+-export interface Actions{view:(v:View)=>void;auto:()=>void;reset:()=>void;relief:(v:number)=>void;fixedRelief:(v:boolean)=>void;metal:(v:boolean)=>void;mode:(v:string)=>void;reflection:(v:boolean)=>void;restore:()=>Promise<void>;}
++import type {BackgroundChoice,BackgroundState} from './background';
++export interface Actions{view:(v:View)=>void;auto:()=>void;reset:()=>void;relief:(v:number)=>void;fixedRelief:(v:boolean)=>void;metal:(v:boolean)=>void;mode:(v:string)=>void;reflection:(v:boolean)=>void;restore:()=>Promise<void>;background:(choice:BackgroundChoice)=>Promise<void>;uploadBackground:(file:File)=>Promise<void>;}
+ export function createInterface(actions:Actions){
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML=`<main aria-label="中国杯临时稿三维预览">
++ <div id="scene-background" class="scene-background" aria-hidden="true"></div>
+  <canvas id="viewport" tabindex="0" aria-label="左键或单指旋转中国杯，右键或双指拖移，滚轮或双指捏合缩放"></canvas>
+  <header><div><h1>中国 · 共彩</h1><p>临时线稿 · 金色浅浮雕</p></div><div class="top-actions"><a class="standards-top" href="./evidence.html">素材与对照</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div></header>
+  <button id="open-settings" class="open-settings" aria-expanded="false" aria-controls="settings">材质校准</button>
++ <button id="open-background" class="open-background" aria-expanded="false" aria-controls="background-settings">背景</button>
++ <aside id="background-settings" hidden aria-label="背景设置"><div class="panel-heading"><h2>背景</h2><button id="close-background">关闭</button></div>
++ <div class="background-choices" role="group" aria-label="选择预览背景"><button data-background-choice="auto" aria-pressed="true">自动<span>手机柔光背景 · 桌面灰底</span></button><button data-background-choice="soft" aria-pressed="false">柔光背景</button><button data-background-choice="gray" aria-pressed="false">灰色背景</button><button data-background-choice="custom" aria-pressed="false" hidden>已选图片</button></div>
++ <button id="choose-background" class="file-button">选择背景图片</button><input id="background-file" type="file" accept="image/jpeg,image/png,image/webp" hidden aria-label="选择本地背景图片">
++ <p class="note">JPG、PNG、WebP，最大 20 MB。图片居中铺满，只在当前浏览器预览，刷新后恢复自动背景。</p><p id="background-status" class="note" role="status" aria-live="polite"></p>
++ </aside>
+  <aside id="settings" hidden aria-label="材质校准"><div class="panel-heading"><h2>材质校准</h2><button id="close-settings">关闭</button></div>
+  <section><label class="field-label" for="relief">城市线条凹凸</label><select id="relief"><option value="1">凸纹 · 当前预览</option><option value="0">关闭凹凸</option><option value="-1">凹纹 · 对照</option></select><p class="note">仅改变城市线条的表面起伏。实际凹凸方向和高度仍待工艺确认。</p><label class="check-label"><input id="city-metal" type="checkbox" checked> 城市金属反射</label><label class="check-label"><input id="local-reflections" type="checkbox" checked> 邻近部件反射</label></section>
+  <section><label class="check-label"><input id="fixed-relief" type="checkbox" checked> 彩色花纹浅起伏</label><p class="note">杯碟、把手与纵向饰带的花瓣描线和叶脉。选“花纹近看”，开关比较。</p></section>
+@@ -14,10 +22,17 @@
+  </aside><footer><p class="gesture-hint">左键 / 单指旋转 · 右键 / 双指拖移 · 滚轮 / 捏合缩放</p><nav aria-label="观察视角">${Object.entries(viewLabels).map(([key,label])=>`<button data-view="${key}" aria-pressed="${key==='hero'}">${label}</button>`).join('')}</nav></footer>
+  <div id="status" role="status" aria-live="polite"></div><div id="fatal" hidden role="alert"></div></main>`;
+  const $=<T extends HTMLElement>(s:string)=>document.querySelector<T>(s)!;
+- const panel=$('#settings'),toggle=$('#open-settings');
+- const setPanel=(open:boolean)=>{panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open)$('#close-settings').focus();};
++ const panel=$('#settings'),toggle=$('#open-settings'),backgroundPanel=$('#background-settings'),backgroundToggle=$('#open-background');
++ const setBackgroundPanel=(open:boolean)=>{backgroundPanel.hidden=!open;backgroundToggle.setAttribute('aria-expanded',String(open));if(open){setPanel(false);$('#close-background').focus();}};
++ const setPanel=(open:boolean)=>{panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open){setBackgroundPanel(false);$('#close-settings').focus();}};
+  toggle.onclick=()=>setPanel(panel.hidden);$('#close-settings').onclick=()=>setPanel(false);
+- document.addEventListener('keydown',e=>{if(e.key==='Escape')setPanel(false);if(e.target instanceof HTMLInputElement||e.target instanceof HTMLSelectElement)return;if(e.key.toLowerCase()==='r')actions.reset();});
++ backgroundToggle.onclick=()=>setBackgroundPanel(backgroundPanel.hidden);$('#close-background').onclick=()=>{setBackgroundPanel(false);backgroundToggle.focus();};
++ const keydown=(e:KeyboardEvent)=>{if(e.key==='Escape'){if(!backgroundPanel.hidden){setBackgroundPanel(false);backgroundToggle.focus();}else if(!panel.hidden){setPanel(false);toggle.focus();}}if(e.target instanceof HTMLInputElement||e.target instanceof HTMLSelectElement)return;if(e.key.toLowerCase()==='r')actions.reset();};
++ document.addEventListener('keydown',keydown);
++ const backgroundError=(text:string)=>{$('#background-status').textContent=text;$('#background-status').classList.add('error');};
++ document.querySelectorAll<HTMLButtonElement>('[data-background-choice]').forEach(b=>b.onclick=async()=>{try{await actions.background(b.dataset.backgroundChoice as BackgroundChoice);}catch(e){backgroundError((e as Error).message);}});
++ const backgroundFile=$<HTMLInputElement>('#background-file');$('#choose-background').onclick=()=>backgroundFile.click();
++ backgroundFile.onchange=async()=>{const file=backgroundFile.files?.[0];backgroundFile.value='';if(!file)return;try{await actions.uploadBackground(file);}catch(e){backgroundError((e as Error).message);}};
+  document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.onclick=()=>actions.view(b.dataset.view as View));
+  $('#auto').onclick=actions.auto;$('#reset').onclick=actions.reset;
+  $<HTMLSelectElement>('#relief').onchange=e=>actions.relief(+(e.target as HTMLSelectElement).value);
+@@ -28,5 +43,5 @@
+  $('#restore').onclick=async()=>{try{message('正在恢复…',true);await actions.restore();}catch(e){message((e as Error).message,true);}};
+  let timer=0;
+  function message(text:string,persistent=false){clearTimeout(timer);$('#status').textContent=text;$('#status').classList.add('visible');if(!persistent)timer=window.setTimeout(()=>$('#status').classList.remove('visible'),3500);}
+- return {canvas:$<HTMLCanvasElement>('#viewport'),message,style(name:string){$('#style-name').textContent=name;message(`已载入 · ${name}`);},update(view:View,auto:boolean){document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));$('#auto').setAttribute('aria-pressed',String(auto));$('#auto').textContent=auto?'暂停旋转':'自动旋转';},error(text:string){$('#fatal').hidden=false;$('#fatal').textContent=text;}};
++ return {canvas:$<HTMLCanvasElement>('#viewport'),backgroundLayer:$('#scene-background'),backgroundError,background(state:BackgroundState){document.querySelectorAll<HTMLButtonElement>('[data-background-choice]').forEach(b=>{b.setAttribute('aria-pressed',String(state.choice===b.dataset.backgroundChoice));if(b.dataset.backgroundChoice==='custom')b.hidden=!state.hasCustom;});backgroundPanel.setAttribute('aria-busy',String(state.busy));$('#background-status').classList.remove('error');$('#background-status').textContent=state.busy?'正在准备背景…':`当前：${{gray:'灰色背景',soft:'柔光背景',custom:'已选图片'}[state.active]}`;},message,style(name:string){$('#style-name').textContent=name;message(`已载入 · ${name}`);},update(view:View,auto:boolean){document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));$('#auto').setAttribute('aria-pressed',String(auto));$('#auto').textContent=auto?'暂停旋转':'自动旋转';},error(text:string){$('#fatal').hidden=false;$('#fatal').textContent=text;},dispose(){document.removeEventListener('keydown',keydown);clearTimeout(timer);}};
+ }
+--- docs/changes/20261013-mobile-background/before/src/ui/styles.css	2026-10-12 02:09:12
++++ src/ui/styles.css	2026-10-13 19:07:43
+@@ -9,3 +9,14 @@
+ .fixed-settings{margin:18px 0 0;font-size:12px}.fixed-settings div{display:flex;justify-content:space-between;padding:7px 0}.fixed-settings dd{margin:0;font-variant-numeric:tabular-nums;font-weight:600}.style-choices{display:grid;gap:9px}.style-choice{padding:0;overflow:hidden;text-align:left;background:#eeeae1}.style-choice img{width:100%;height:32px;object-fit:cover;display:block}.style-choice span,.style-choice small{display:block;padding:8px 10px 0}.style-choice small{font-size:10px;opacity:.8;padding:4px 10px 9px}.standards-link{display:block;font-size:12px;color:#854c4d;margin-top:15px;line-height:1.6}
+ .standards-top{font-size:12px;color:#624c35;text-decoration:none;align-self:center;margin-right:5px}@media(max-width:520px){.standards-top{font-size:10px;width:30px;line-height:1.5;margin:0}}
+ .check-label{font-size:13px;display:flex;gap:8px;align-items:center}.check-label input{accent-color:var(--accent)}
++.scene-background{position:absolute;inset:0;background:#b7b8ba center/cover no-repeat;pointer-events:none}#viewport{position:relative}
++.open-background{position:absolute;right:26px;top:calc(45% - 50px);font-size:13px}
++.background-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}.background-choices button{padding:12px 8px}.background-choices button:first-child{grid-column:1/-1}.background-choices span{display:block;font-size:11px;margin-top:5px;opacity:.8}.background-choices [hidden]{display:none}#choose-background{width:100%}#background-status.error{color:#993f35}
++@media(max-width:900px){.open-background{top:auto;bottom:126px;right:134px}}
++@media(max-width:520px){.open-background{bottom:167px;right:106px;padding:8px 12px;font-size:11px}.gesture-hint{max-width:calc(100vw - 190px);bottom:151px}}
++.open-background{background:rgba(245,244,240,.8);backdrop-filter:blur(12px)}
++#background-settings{bottom:auto;max-height:calc(100% - 160px)}
++@media(max-width:360px){h1{font-size:20px;white-space:nowrap}header p{font-size:9px}.top-actions button{font-size:10px;padding:8px}.top-actions{gap:4px}}
++@media(min-width:521px) and (max-width:900px){.gesture-hint{bottom:104px;max-width:calc(100vw - 230px)}}
++@media(max-height:520px) and (orientation:landscape){aside{top:18px;bottom:18px}.open-background,.open-settings{bottom:90px}footer{bottom:12px}.gesture-hint{display:none}}
++@media(max-height:520px) and (orientation:landscape){#background-settings{max-height:calc(100% - 36px)}}
+--- docs/changes/20261013-mobile-background/before/tools/china-qa.mjs	2026-10-12 02:12:44
++++ tools/china-qa.mjs	2026-10-13 18:58:43
+@@ -21,7 +21,7 @@
+  const initial=await debug(),pack=initial.city.pack;
+  check('initial independent city + fixed packages loaded',initial.city.maps.length===5&&Object.values(initial.fixed).every(r=>Object.keys(r).length===4));
+  check('city uses UV1, aligned maps, and zero geometry displacement',initial.city.maps.every(m=>m.channel===1&&same(m.size,[4096,1783]))&&initial.city.displacementScale===0);
+- check('old full-floral replacement controls removed',await page.locator('input[type=file],.style-choice').count()===0);
++ check('old full-floral replacement controls removed',await page.locator('input[type=file]:not(#background-file),.style-choice').count()===0);
+  check('local geometry reflection initialized',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0&&initial.reflections.resolution===512);
+  await frame('desktop');
+  for(const v of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','flowers','hero']){
+--- docs/changes/20261013-mobile-background/before/tools/china-online-qa.mjs	2026-10-13 18:34:20
++++ tools/china-online-qa.mjs	2026-10-13 19:03:32
+@@ -50,7 +50,7 @@
+  await page.locator('#open-settings').click();check('mobile calibration panel fits',await page.locator('#settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));await page.locator('#close-settings').click();
+  }
+  await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('details').evaluateAll(es=>es.forEach(e=>e.open=true));await page.locator('img').evaluateAll(imgs=>{imgs.forEach(i=>i.loading='eager');return Promise.all(imgs.map(i=>i.decode()));});
+- check('all reference and evidence images decode online',await page.locator('img').count()===39);
++ check('all reference and evidence images decode online',await page.locator('img').count()===41);
+  check('mobile evidence page has no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
+  await page.setViewportSize({width:1440,height:1000});
+  const slider=page.locator('[data-compare="buildings"]');await slider.press('Home');await slider.press('ArrowRight');
+--- docs/changes/20261013-mobile-background/before/tools/prepare-china-release.mjs	2026-10-12 01:25:19
++++ tools/prepare-china-release.mjs	2026-10-13 18:58:43
+@@ -2,7 +2,7 @@
+ import{createHash}from'node:crypto';
+ const staging=process.argv[2];if(!staging?.startsWith('.codex-work/deploy/'))throw new Error('Provide a new project-local staging directory');
+ await mkdir(staging,{recursive:true});
+-const allowlist=['index.html','evidence.html','assets','china','fixed','marks','reference','review'];
++const allowlist=['index.html','evidence.html','assets','china','fixed','marks','reference','review','backgrounds'];
+ for(const name of allowlist)await cp(`dist/${name}`,`${staging}/${name}`,{recursive:true,errorOnExist:true,force:false});
+ // Only current content-addressed textures are published. Older exports stay local.
+ const runtime=JSON.parse(await readFile('src/styles/web-textures.json','utf8'));
+--- docs/changes/20261013-mobile-background/before/netlify.toml	2026-10-13 19:03:32
++++ netlify.toml	2026-10-13 19:02:06
+@@ -22,3 +22,7 @@
+   [headers.values]
+     Cache-Control = "public, max-age=31536000, immutable"
+ 
++[[headers]]
++  for = "/backgrounds/*"
++  [headers.values]
++    Cache-Control = "public, max-age=31536000, immutable"
+--- docs/changes/20261013-mobile-background/before/evidence.html	2026-10-13 18:34:20
++++ public/evidence.html	2026-10-13 19:03:32
+@@ -3,6 +3,7 @@
+ </style></head><body><main><header><div><span class="kicker">中国临时稿 / LOCAL STUDY</span><h1>素材与对照</h1></div><a class="button" href="./">返回三维预览</a></header>
+ <p>基于当前 PSD 与暂时效果图制作的可修订预览。金属覆盖、线条起伏、文字和固定广彩分别管理；建筑落到杯身底缘，城市金属保留清楚的线条层次与柔和反光，杯身包含邻近部件反射。</p>
+ <div class="grid three"><div class="card"><span class="tag">文件实证</span><h3>直接读取 PSD</h3><p>7016 × 4961，10 条图层记录。建筑及文字透明度直接解码；未找到保存的矢量路径或矢量蒙版。</p></div><div class="card"><span class="tag">图像观察</span><h3>连续金属面 + 线条细节</h3><p>参考中的建筑内部是连续金色，线条对应细节明暗。单张效果图不能确定真实高度或每条纹路的凹凸方向。</p></div><div class="card"><span class="tag">视觉近似</span><h3>凸纹默认，底面零位移</h3><p>原线条生成浅浮雕法线。金属填充独立重建；固定花纸依据可见参考生成，遮挡部分不视为精确复原。</p></div></div>
++<section id="background-preview"><h2>手机背景与本地选图</h2><p>手机默认使用新提供的柔光背景，桌面自动模式沿用灰底。在三维预览中点击“背景”，可切换柔光、灰色或选择自己的图片。选图仅在当前浏览器内处理，刷新恢复自动模式。背景独立于杯子的灯光、反射与花纹凹凸。</p><div class="grid"><figure><img loading="lazy" decoding="async" src="review/background/mobile-comparison.jpg" alt="同一手机机位，左为灰色背景，右为柔光背景"><figcaption>同机位对照：左为灰底，右为用户提供的柔光背景。杯子的不透明渲染像素差为 0。</figcaption></figure><figure><img loading="lazy" decoding="async" src="review/background/mobile-panel.jpg" style="max-height:580px;object-fit:contain" alt="手机端背景选择面板"><figcaption>选择本地 JPG、PNG、WebP（最大 20 MB）即可预览；无需上传到服务器。</figcaption></figure></div><p>新增背景图约 38 KB，桌面自动模式不下载它。<a href="./">进入三维预览</a> · <a href="review/background/verification.json">背景功能检查记录</a></p></section>
+ <section id="floral-update"><h2>花纹排列与饰带宽度：保留当前凹凸</h2>
+ <p>2026-10-13 校准：沿用上一个上线版本的全部固定花纸、高度图、法线图与材质参数；花纹法线强度 4.4、釉层法线强度 2.4 保持不变。杯碟采用连续的周向位置调整，让文字面的大粉红花向右、建筑面的大花与长尾鸟向左靠近参考位置。纵向饰带在原有区域内收窄，城市与文字的展开坐标不变。</p>
+ <figure><img loading="lazy" decoding="async" src="review/fixed-layout/label-comparison.jpg" alt="文字面同机位：原效果图、调整前、调整后"><figcaption>文字面，从左到右：原效果图、调整前、调整后。查看右侧纵向饰带的宽度，以及杯碟大粉红花、白蝶的位置。</figcaption></figure>
