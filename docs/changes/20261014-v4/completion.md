@@ -10,7 +10,7 @@ V4 is implemented, manually deployed, and verified from the public URL. The V3 a
 - Base: 5af1f73aaacbb7ce1662e4ebbe4de0f15a6f231b. Published V3 source: 9400eaf7f65452cbaa68bee563b9793c632d17ae.
 - Source checkpoint: 5b96503 (masters and aligned channels).
 - Implementation / deployed source checkpoint: b39b23ae5358e52efea8b09d0324a64634d8124f.
-- Final closeout adds deployment archive/readback and a release-inventory sidecar filter. It does not change the deployed runtime.
+- Deployment archive/readback checkpoint: 9a3f59a. Final closeout adds deployment archive/readback and a release-inventory sidecar filter. It does not change the deployed runtime.
 
 ## Delivered behavior
 
@@ -40,6 +40,7 @@ Visual inspection found a blue flower cluster overlapping the lettering. A separ
 - Evidence includes 96 rendered finish/view images (8 × 3 × 4), 16 gray/off images, separate lettering captures, reference comparisons, aligned atlases and line overlays. These are actual Three.js renders rather than generated cup mockups.
 - Default-gold V3/V4 model-region mean byte difference: 0.00000132. Geometry, studio, structural-gold and original China/fixed source channels have no diff against V3 base.
 - Public comparison-gallery images and selectors were separately checked; see output/playwright/v4/online/evidence-qa.json.
+- Source/record whitespace checks and release-helper syntax check passed. The whole-archive whitespace check reports pre-existing whitespace inside the generated Three.js shader bundle; immutable deployed bytes are preserved rather than reformatted.
 - All 367 public content files match Netlify API SHA-1 values, and the immutable local archive matches SHA-256. Netlify lowercases paths in its API; mixed-case runtime URLs also passed browser checks. The extra internal netlify.toml API record is processed configuration, not publicly served content (HTTP 404).
 
 Intermediate test interruptions are retained accurately: an already decoded image bypassed an initial failure fixture, so the fixture was changed to intercept the float-normal request; a development hot reload interrupted one geometry-identity test, so final acceptance used static production. Neither interruption was counted as a passed check.
