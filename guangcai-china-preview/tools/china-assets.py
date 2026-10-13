@@ -107,15 +107,22 @@ def save(arr,name):
     return im
 raw_img=resize(raw);stroke=resize(clean);metal_img=resize(metal);label_img=resize(label)
 save(raw_img,'lines-original.png');save(stroke,'lines.png');save(metal_img,'metalness.png');save(label_img,'label.png')
-# Height has a constant flat background and rounded stroke shoulders. The metal
-# silhouette is not added to this height field, so its fill does not become relief.
-height=stroke.filter(ImageFilter.GaussianBlur(.65));save(height,'height.png')
-field=np.array(height,dtype=np.float32)/255
+# Two rounded stroke profiles keep a defined crest and a softer shoulder.
+# Neither the metal silhouette nor RGB color contributes to this height field.
+height_field=(np.array(stroke.filter(ImageFilter.GaussianBlur(.65)),dtype=np.float32)*.8
+              +np.array(stroke.filter(ImageFilter.GaussianBlur(1.35)),dtype=np.float32)*.2)
+save(np.round(height_field).astype('uint8'),'height.png')
+field=height_field/255
 dy,dx=np.gradient(field)
-normal=np.stack([-dx*2.1,dy*2.1,np.ones_like(field)],axis=-1)
+normal=np.stack([-dx*5.0,dy*5.0,np.ones_like(field)],axis=-1)
 normal/=np.linalg.norm(normal,axis=-1,keepdims=True)
 save(np.round((normal*.5+.5)*255).astype('uint8'),'normal.png')
-save(np.full((SIZE[1],SIZE[0]),102,dtype='uint8'),'roughness.png')
+# Satin metal base and slightly smoother stroke/shoulder reflect independently.
+# This mask follows source alpha; it is not a painted highlight or dark outline.
+finish=np.asarray(stroke.filter(ImageFilter.MaxFilter(3)).filter(ImageFilter.GaussianBlur(.75)),dtype=np.float32)/255
+finish=np.minimum(1,finish*1.15)*(np.asarray(metal_img,dtype=np.float32)/255)
+save(np.round(finish*255).astype('uint8'),'line-finish.png')
+save(np.round((.40-(.40-.28)*finish)*255).astype('uint8'),'roughness.png')
 save(np.full((SIZE[1],SIZE[0],3),[255,198,67],dtype='uint8'),'baseColor.png')
 save(np.full((SIZE[1],SIZE[0]),255,dtype='uint8'),'label-roughness.png')
 # Alignment and cleanup proof: same origin, no change to any substantial stroke.
@@ -123,9 +130,9 @@ diff=np.abs(np.array(raw_img,dtype=np.int16)-np.array(stroke,dtype=np.int16)).as
 save(diff,'cleanup-difference.png')
 preview=Image.new('RGB',SIZE,'white');preview.paste('#d4ab26',(0,0),metal_img);preview.paste('#7c5c0f',(0,0),stroke);preview.paste('#bb992c',(0,0),label_img)
 preview.resize((1600,696)).save(EVIDENCE/'china-atlas-preview.png')
-pack={'id':'china-draft-20261011','version':1,'name':'中国 · 临时线稿','layout':'blank-300deg-v1','placement':{'scale':.82,'offsetU':.047,'offsetV':0},'baseColor':'baseColor.png','normal':'normal.png','roughness':'roughness.png','metalness':'metalness.png','height':'height.png'}
+pack={'id':'china-draft-20261011','version':2,'name':'中国 · 临时线稿','layout':'blank-300deg-v1','placement':{'scale':.82,'offsetU':.047,'offsetV':0},'baseColor':'baseColor.png','normal':'normal.png','roughness':'roughness.png','metalness':'metalness.png','height':'height.png'}
 (OUT/'city.json').write_text(json.dumps(pack,indent=2,ensure_ascii=False))
-audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'bottomAnchor':{'psdGuideBottom':4608,'contentBottom':4603,'cupExteriorY':.12,'metalBaselineExtensionPixels':10,'note':'Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside'},'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','cityMaterial':{'roughness':0.4,'normalScale':0.45,'clearcoatCoverage':6/255,'labelRoughness':66/255,'labelClearcoatCoverage':26/255},'text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
+audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'bottomAnchor':{'psdGuideBottom':4608,'contentBottom':4603,'cupExteriorY':.12,'metalBaselineExtensionPixels':10,'note':'Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside'},'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','cityMaterial':{'baseRoughness':0.4,'lineRoughness':0.28,'lineFinishMask':'line-finish.png','roundedHeightProfile':{'coreSigmaPx':0.65,'coreWeight':0.8,'shoulderSigmaPx':1.35,'shoulderWeight':0.2},'normalGradientGain':5.0,'normalScale':0.45,'clearcoatCoverage':6/255,'labelRoughness':66/255,'labelClearcoatCoverage':26/255},'text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
 (EVIDENCE/'psd-audit.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False))
 assert all(x['retainedPixelsAtAlpha128']==x['originalPixelsAtAlpha128'] for x in cleanup)
 print(json.dumps({'out':str(OUT),'size':SIZE,'cleanup':cleanup},ensure_ascii=False))

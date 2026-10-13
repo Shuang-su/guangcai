@@ -463,7 +463,16 @@
   "metalFillMethod": "per-layer row silhouette; wall per-column to original baseline; visual approximation",
   "relief": "stroke-derived normal only; no geometric displacement; convex default",
   "cityMaterial": {
-    "roughness": 0.4,
+    "baseRoughness": 0.4,
+    "lineRoughness": 0.28,
+    "lineFinishMask": "line-finish.png",
+    "roundedHeightProfile": {
+      "coreSigmaPx": 0.65,
+      "coreWeight": 0.8,
+      "shoulderSigmaPx": 1.35,
+      "shoulderWeight": 0.2
+    },
+    "normalGradientGain": 5.0,
     "normalScale": 0.45,
     "clearcoatCoverage": 0.023529411764705882,
     "labelRoughness": 0.25882352941176473,
@@ -477,10 +486,10 @@
     "label.png": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
     "lines-original.png": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
     "label-roughness.png": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
-    "normal.png": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+    "normal.png": "28d564d9defeab1471eb9a20f73ca63bc2de14bcc4461703227626ef8edae2ae",
     "cleanup-difference.png": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
-    "height.png": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
-    "roughness.png": "44a8a57225774ff685f3ceb2beca068851dcb70b7f60f2cb92e4193320e26e52",
+    "height.png": "f9bfea7b823a5b927c77934f8dc9ad6d3862ecfb255ff38f7c1aefe2ed0aeb57",
+    "roughness.png": "6cfe447fc830d36945a25b34fdcafe61dc1d704390a136aa2bbbbd2f83f0da20",
     "baseColor.png": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e"
   }
 }

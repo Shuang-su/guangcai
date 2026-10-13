@@ -7,8 +7,8 @@ export interface CityArtworkPack {
 }
 export const chinaPack: CityArtworkPack = {
   placement:{scale:.82,offsetU:.047,offsetV:0},
-  id:'china-draft-20261011',version:1,name:'中国 · 临时线稿',layout:'blank-300deg-v1',
-  ...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}china/${k}.png`])),
+  id:'china-draft-20261011',version:2,name:'中国 · 临时线稿',layout:'blank-300deg-v1',
+  ...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}china/${k}.png?v=2`])),
 } as CityArtworkPack;
 const channels=['baseColor','normal','roughness','metalness'] as const;
 type Pixels={data:Uint8ClampedArray;width:number;height:number};
