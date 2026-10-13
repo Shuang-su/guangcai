@@ -1,26 +1,29 @@
 {
-  "name": "浓彩花鸟 · 参考重建 v3",
+  "name": "花鸟原图局部 · 参考重建 v4",
   "regions": {
     "body": {
       "baseColor": "body-baseColor.png",
       "normal": "body-normal.png",
       "roughness": "body-roughness.png",
       "metalness": "body-metalness.png",
-      "height": "body-height.png"
+      "height": "body-height.png",
+      "offsetU": 0
     },
     "handle": {
       "baseColor": "handle-baseColor.png",
       "normal": "handle-normal.png",
       "roughness": "handle-roughness.png",
       "metalness": "handle-metalness.png",
-      "height": "handle-height.png"
+      "height": "handle-height.png",
+      "offsetU": 0
     },
     "saucer": {
       "baseColor": "saucer-baseColor.png",
       "normal": "saucer-normal.png",
       "roughness": "saucer-roughness.png",
       "metalness": "saucer-metalness.png",
-      "height": "saucer-height.png"
+      "height": "saucer-height.png",
+      "offsetU": 0.5
     }
   }
 }

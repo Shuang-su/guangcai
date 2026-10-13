@@ -14,9 +14,9 @@ const out = variant?`public/artwork/${variant.id}`:'public/fixed'; await mkdir(o
 const smooth = (a,b,x) => { const t=Math.max(0,Math.min(1,(x-a)/(b-a))); return t*t*(3-2*t); };
 const physical=JSON.parse(await readFile('assets/surface-metrics.json','utf8'));
 const configs = [
-  {name:'body',input:variant?.masters.body.path??'assets/masters/china-fixed-body-v3.png',width:1024},
-  {name:'handle',input:variant?.masters.body.path??'assets/masters/china-fixed-body-v3.png',crop:[.47,.07,.16,.82],width:320},
-  {name:'saucer',input:variant?.masters.band.path??'assets/masters/china-fixed-band-v3.png',crop:variant?[0,.38,1,.25]:[0,.35,1,.30],width:2172},
+  {name:'body',input:variant?.masters.body.path??'assets/masters/china-fixed-body-v4.png',width:1024},
+  {name:'handle',input:variant?.masters.body.path??'assets/masters/china-fixed-body-v4.png',crop:[.47,.07,.16,.82],width:320},
+  {name:'saucer',input:variant?.masters.band.path??'assets/masters/china-fixed-band-v4.png',crop:variant?[0,.38,1,.25]:[0,.285,1,.375],width:2172},
 ].map(c=>({...c,height:Math.round(c.width*physical[c.name].length/physical[c.name].width)}));
 const manifest = { version:1, provenance:'Built-in image_gen; new reference-inspired artwork, not official artwork.', method:'Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.', heightCalibration:"Artistic micro-relief only; not measured, no geometric displacement", regions:{} };
 for (const c of configs) {
@@ -47,7 +47,7 @@ for (const c of configs) {
     normal[i]=Math.round((-dx/norm*.5+.5)*255); normal[i+1]=Math.round((dy/norm*.5+.5)*255); normal[i+2]=Math.round((1/norm*.5+.5)*255);
   }
   const maps={baseColor:data,metalness:metal,roughness:rough,height:blurred,normal};
-  const region={width:w,height:h,physical:physical[c.name],source:c.input,sourceSize:[meta.width,meta.height],crop:c.crop??null,layout:'original-cover',fit:'cover, uniform scale; original normalized crop; all channels use identical pixel coordinates',maps:{}};
+  const region={offsetU:!variant&&c.name==='saucer'?.5:0,width:w,height:h,physical:physical[c.name],source:c.input,sourceSize:[meta.width,meta.height],crop:c.crop??null,layout:'original-cover',fit:'cover, uniform scale; original normalized crop; all channels use identical pixel coordinates',maps:{}};
   for(const [channel,buffer]of Object.entries(maps)){
     const filename=`${c.name}-${channel}.png`;
     await sharp(buffer,{raw:{width:w,height:h,channels:channel==='baseColor'||channel==='normal'?3:1}}).png().toFile(`${out}/${filename}`);
@@ -55,10 +55,11 @@ for (const c of configs) {
   }
   manifest.regions[c.name]=region;
 }
-manifest.version=variant?1:3;
-manifest.name=variant?.name??'浓彩花鸟 · 参考重建 v3';
+manifest.version=variant?1:4;
+manifest.name=variant?.name??'花鸟原图局部 · 参考重建 v4';
 manifest.renderStandard={relief:1.5,clearcoatRelief:.825,exposure:1.08};
-manifest.layoutNote='Body full master; handle crop [.47,.07,.16,.82]; v3 saucer central ribbon crop [0,.35,1,.30]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork.';
+manifest.runtimeOffsets={saucerU:variant?0:.5};
+manifest.layoutNote='Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork.';
 await writeFile(`${out}/manifest.json`,JSON.stringify(manifest,null,2));
-await writeFile(`${out}/style.json`,JSON.stringify({name:manifest.name,regions:Object.fromEntries(configs.map(c=>[c.name,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${c.name}-${channel}.png`]))]))},null,2));
+await writeFile(`${out}/style.json`,JSON.stringify({name:manifest.name,regions:Object.fromEntries(configs.map(c=>[c.name,{...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${c.name}-${channel}.png`])),offsetU:!variant&&c.name==='saucer'?.5:0}]))},null,2));
 console.log(JSON.stringify({out,regions:Object.fromEntries(Object.entries(manifest.regions).map(([k,v])=>[k,[v.width,v.height]]))}));

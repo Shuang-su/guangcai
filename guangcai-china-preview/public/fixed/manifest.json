@@ -1,17 +1,18 @@
 {
-  "version": 3,
+  "version": 4,
   "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
   "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
   "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
   "regions": {
     "body": {
+      "offsetU": 0,
       "width": 1024,
       "height": 2222,
       "physical": {
         "width": 45.0294947014537,
         "length": 97.7
       },
-      "source": "assets/masters/china-fixed-body-v3.png",
+      "source": "assets/masters/china-fixed-body-v4.png",
       "sourceSize": [
         887,
         1774
@@ -22,27 +23,28 @@
       "maps": {
         "baseColor": {
           "url": "fixed/body-baseColor.png",
-          "sha256": "e6a678ac7de48b60104754daae054a331c0430485f6be3ec9b886f7e5bed7b3e"
+          "sha256": "a645e69121cefbeb33b3c2fb74fda225b5b744fba997fcaa642c974bc814c047"
         },
         "metalness": {
           "url": "fixed/body-metalness.png",
-          "sha256": "aef63d63eb2881751250d36191257f5e633575e1bff0fadb53a9cda81553bcc0"
+          "sha256": "27bd91c4c86b3cd327476fd4edf11d14ab4711408eee7cdd201af7f2c528fe94"
         },
         "roughness": {
           "url": "fixed/body-roughness.png",
-          "sha256": "bb16846fa1d6e8e0648197d23fdee3231f39b918dfabe87b6035a77aa642fec4"
+          "sha256": "79da3e2a411d56977112f7cd1ad8dbcb8bfdc005dd210358d3093f9f529fa3e2"
         },
         "height": {
           "url": "fixed/body-height.png",
-          "sha256": "92acf3a4e89818f73578038bd3bec2248a43e30d48bf2f24dd71b7cbf3938037"
+          "sha256": "7770603d646861eb27c2f14bc88e64796e279dc5fa4fc7d3ba3498de5d2dca23"
         },
         "normal": {
           "url": "fixed/body-normal.png",
-          "sha256": "3a4d8e0d495d23d9d36cf24cb0aa12e0878b6bda7bf6fcf7bc77d014f9777d46"
+          "sha256": "b0837a945ff06fa3f00156bc8f636ee185cf413158b90b5f2448219a4711a1e6"
         }
       }
     },
     "handle": {
+      "offsetU": 0,
       "width": 320,
       "height": 3119,
       "physical": {
@@ -50,7 +52,7 @@
         "length": 115.97543005101365,
         "aspect": 0.10260794027463917
       },
-      "source": "assets/masters/china-fixed-body-v3.png",
+      "source": "assets/masters/china-fixed-body-v4.png",
       "sourceSize": [
         887,
         1774
@@ -66,75 +68,79 @@
       "maps": {
         "baseColor": {
           "url": "fixed/handle-baseColor.png",
-          "sha256": "9d9f5b6dd82394e8c9693c8d1eb3374286f0102b2f6d1cf663c5242435fd9a7f"
+          "sha256": "bb477218491efafadcf80266b22949d5d06f9fab80b1fd12c6ec3ac5d9227f74"
         },
         "metalness": {
           "url": "fixed/handle-metalness.png",
-          "sha256": "b788b3b5498f08444408c4cb3f7ab6069fe8adc7c30a34fc4b06b50a8567c450"
+          "sha256": "5f5a5da8654c0cbe000a80a37d495b26e39233f831e1a3d8036814668367eb64"
         },
         "roughness": {
           "url": "fixed/handle-roughness.png",
-          "sha256": "be220554e2ce249a345525a627eee69e0fcfa0909c7f09592461985a59d90fd3"
+          "sha256": "b2d64b3c4690868b30c852111fbccf4a8d321f8ec2e7c8375efe7968d6e25a79"
         },
         "height": {
           "url": "fixed/handle-height.png",
-          "sha256": "9b06383cd0bbb2ef0c1411cfc2e0a6fb7d32d19c0d6e5e10f62959cd5ce78734"
+          "sha256": "3ffb4e9bd4fc96b6d6198dd138417c6dda1978a6b48dea48201325d46f31dc99"
         },
         "normal": {
           "url": "fixed/handle-normal.png",
-          "sha256": "ee704552d516ab4055571061644688cbce1139e5a2d0f777b8f9bc1d91c8ca5e"
+          "sha256": "f3ad13277d67058e3f8bae8f8b0aa2c50e6f3107fd91d60e38682e05a822f5d0"
         }
       }
     },
     "saucer": {
+      "offsetU": 0.5,
       "width": 2172,
       "height": 213,
       "physical": {
         "width": 113.41149479459153,
         "length": 11.142710621747296
       },
-      "source": "assets/masters/china-fixed-band-v3.png",
+      "source": "assets/masters/china-fixed-band-v4.png",
       "sourceSize": [
-        2172,
+        2173,
         724
       ],
       "crop": [
         0,
-        0.35,
+        0.285,
         1,
-        0.3
+        0.375
       ],
       "layout": "original-cover",
       "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
       "maps": {
         "baseColor": {
           "url": "fixed/saucer-baseColor.png",
-          "sha256": "c2580f379fb33ca3a5c638e04172c7b747bf39baacf5cedc388a441e574ec71c"
+          "sha256": "b2e17775570604828de532cc2041c51b83a446efd64ff2881332e60d766ffc4c"
         },
         "metalness": {
           "url": "fixed/saucer-metalness.png",
-          "sha256": "fdaa8ccaef57b15714210f3c74d9888b2bb8521262cd453bdfd288d97af82600"
+          "sha256": "a58452f09641558fe93bc98c3499bc88a0ed853144934d9b003e0b6dc32f8d27"
         },
         "roughness": {
           "url": "fixed/saucer-roughness.png",
-          "sha256": "b83b119ab8b0a9f2e9bc1c04a986507a81021f16401011c69e7f3880c96e8232"
+          "sha256": "35cb4b6ddb4e7ef95bb1b0c9aba64578a586951267ce63bd57f6fb44ba5a30fd"
         },
         "height": {
           "url": "fixed/saucer-height.png",
-          "sha256": "f9338c156025ea81b77e40492f1a2ab861aa2326e21cae4fc8970a81257e04ba"
+          "sha256": "391fcd32294a5a78a512c54900aa00f363b215c386d8b1bfcf7cf9a1a5518ba0"
         },
         "normal": {
           "url": "fixed/saucer-normal.png",
-          "sha256": "28b612cc6a979396d013436dd2eca878af40e7e1632f0ef16302d93236a4d0eb"
+          "sha256": "b9ca37c4395ad0dc6ea817eccc96cae442db3fe7cfc67ba3626c808d630ba4d5"
         }
       }
     }
   },
-  "name": "浓彩花鸟 · 参考重建 v3",
+  "name": "花鸟原图局部 · 参考重建 v4",
   "renderStandard": {
     "relief": 1.5,
     "clearcoatRelief": 0.825,
     "exposure": 1.08
   },
-  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v3 saucer central ribbon crop [0,.35,1,.30]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork."
+  "runtimeOffsets": {
+    "saucerU": 0.5
+  },
+  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork."
 }

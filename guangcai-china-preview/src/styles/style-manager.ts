@@ -2,9 +2,10 @@ import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpa
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
 import webTextures from './web-textures.json';
-export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string}
+export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string;offsetU?:number}
 export interface StylePack {name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'浓彩花鸟 · 参考重建 v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
+export const defaultPack:StylePack={name:'花鸟原图局部 · 参考重建 v4',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
+defaultPack.regions.saucer.offsetU=.5;
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[
@@ -15,6 +16,7 @@ export const builtinStyles = [
 const channels=['baseColor','normal','roughness','metalness','height'] as const;
 const regions:Region[]=['body','handle','saucer'];
 export class StyleManager {
+  private offsets:Partial<Record<Region,number>>={};
   private aspects:Record<Region,number>={body:45.0294947/106.7,handle:11.9/117.6181655,saucer:106.1072919/7.1867934};
   fit(aspects:Record<Region,number>){
     this.aspects=aspects;
@@ -22,7 +24,7 @@ export class StyleManager {
       const img=texture.image as HTMLImageElement;
       const source=img.width/img.height,target=aspects[region];
       const x=Math.min(1,target/source),y=Math.min(1,source/target);
-      texture.repeat.set(x,y);texture.offset.set((1-x)/2,(1-y)/2);texture.updateMatrix();
+      texture.repeat.set(x,y);texture.offset.set((1-x)/2+(this.offsets[region]??0),(1-y)/2);texture.updateMatrix();
     }
   }
   private revision=0;
@@ -37,6 +39,7 @@ export class StyleManager {
     for(const region of regions){
       const entry=pack.regions[region];
       if(!entry?.baseColor)throw new Error(`材质包缺少 ${region}.baseColor`);
+      if(entry.offsetU!==undefined&&(!Number.isFinite(entry.offsetU)||Math.abs(entry.offsetU)>2))throw new Error('花纸定位无效');
       for(const channel of channels)if(entry[channel])tasks.push({region,channel,url:entry[channel]!});
     }
     const results=await Promise.allSettled(tasks.map(async task=>{
@@ -63,7 +66,7 @@ export class StyleManager {
     // Atomic swap: only after EVERY channel decodes and passes alignment checks.
     regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region]));
     this.owned.forEach(t=>t.dispose());this.owned=textures;
-    this.currentMaps=maps;this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
+    this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
   }
   async flatFile(file:File){
     if(!file.type.startsWith('image/'))throw new Error('请选择 PNG、JPEG 或 WebP 图片');

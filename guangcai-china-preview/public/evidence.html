@@ -3,10 +3,10 @@
 </style></head><body><main><header><div><span class="kicker">中国临时稿 / LOCAL STUDY</span><h1>素材与对照</h1></div><a class="button" href="./">返回三维预览</a></header>
 <p>基于当前 PSD 与暂时效果图制作的可修订预览。金属覆盖、线条起伏、文字和固定广彩分别管理；建筑落到杯身底缘，城市金属保留清楚的线条层次与柔和反光，杯身包含邻近部件反射。</p>
 <div class="grid three"><div class="card"><span class="tag">文件实证</span><h3>直接读取 PSD</h3><p>7016 × 4961，10 条图层记录。建筑及文字透明度直接解码；未找到保存的矢量路径或矢量蒙版。</p></div><div class="card"><span class="tag">图像观察</span><h3>连续金属面 + 线条细节</h3><p>参考中的建筑内部是连续金色，线条对应细节明暗。单张效果图不能确定真实高度或每条纹路的凹凸方向。</p></div><div class="card"><span class="tag">视觉近似</span><h3>凸纹默认，底面零位移</h3><p>原线条生成浅浮雕法线。金属填充独立重建；固定花纸依据可见参考生成，遮挡部分不视为精确复原。</p></div></div>
-<section id="floral-update"><h2>浓彩花鸟修订与加载优化</h2>
-<p>按新版效果图重建固定花纸：加重红花、黄底、翠绿叶片，调整杯碟花带的花朵尺度与鸟蝶搭配；同时收敛饰面偏白的釉层反光。以下两张均为三维实际渲染。参考没有展示完整一周，新花纸属于视觉重建，仍可继续修订。</p>
-<div class="grid"><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/before.jpg" alt="修订前的线上固定花纹"><figcaption>修订前线上版本。</figcaption></figure><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/after.jpg" alt="修订后的浓彩固定花纹"><figcaption>本次版本：红花、黄底、绿叶更饱满。</figcaption></figure></div>
-<p>首屏贴图从 10.40 MB 减至 5.40 MB，约减少 48%。颜色图使用高质量 WebP；杯身饰带和把手运行尺寸回到接近母版裁切的原生像素密度，避免下载放大插值产生的冗余像素。杯碟花带与城市 4096 像素贴图保持原分辨率，城市法线及材质数据仍为无损编码。原 PNG 和母版保留。</p>
+<section id="floral-update"><h2>从原效果图局部重建花鸟纹样</h2>
+<p>从原始 7680 × 4320 效果图直接截取左右杯碟和把手纵向饰带，将局部作为唯一纹样输入重建花纸。重点对应卷瓣粉红花、黄红菊花、蓝头长尾鸟、红黑斑白蝶和清楚的叶脉笔触；同时收敛饰面偏白的釉层反光。参考没有展示完整一周，无法把曲面局部精确还原成厂家完整花纸，当前仍为可修订的参考重建。</p>
+<div class="grid"><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/reference-right.jpg" alt="从原效果图直接裁切的右杯碟花纹"><figcaption>原效果图局部：保留原像素，没有重绘。</figcaption></figure><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/reference-left.jpg" alt="原效果图左杯碟长尾鸟与卷瓣花"><figcaption>原效果图另一面：长尾鸟与卷瓣花。</figcaption></figure></div><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/generated-band.jpg" alt="根据两张局部参考生成的平面花带"><figcaption>从上述局部重建的平面花带，去除杯碟透视、金边与光影。</figcaption></figure><div class="grid"><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/before.jpg" alt="修订前的线上固定花纹"><figcaption>修订前线上版本。</figcaption></figure><figure><img loading="lazy" decoding="async" src="review/load-pan-floral/after.jpg" alt="修订后的浓彩固定花纹"><figcaption>本次版本：按原图局部重新生成并校准的纹样。</figcaption></figure></div>
+<p>首屏贴图从 10.40 MB 减至 4.48 MB，约减少 57%。颜色图使用高质量 WebP；杯身饰带和把手运行尺寸回到接近母版裁切的原生像素密度，避免下载放大插值产生的冗余像素。杯碟花带与城市 4096 像素贴图保持原分辨率，城市法线及材质数据仍为无损编码。原 PNG 和母版保留。</p>
 <details><summary>同机位检查压缩效果</summary><img loading="lazy" decoding="async" src="review/load-pan-floral/quality-handle.jpg" alt="同材质同机位：旧花纸、新花纸原 PNG、新运行时 WebP"><p class="muted">从左到右：旧花纸、新花纸原 PNG、新版运行时 WebP；三者在同一材质设置下渲染，用于检查纹理差异。保留上方独立旧版截图用于比较完整修订前后效果。</p></details>
 <p>操作：左键／单指旋转；右键／触屏双指拖移；滚轮／双指捏合缩放。点击“复位”恢复居中。</p>
 <p><a href="review/load-pan-floral/web-textures.json">贴图尺寸与编码记录</a> · <a href="review/load-pan-floral/quality.json">三维渲染差异记录</a></p></section>

@@ -7,7 +7,7 @@ const url=process.env.QA_URL;
 if(!url?.startsWith('https://'))throw new Error('QA_URL must be the verified HTTPS deployment URL');
 const out='evidence/deployment';await mkdir(out,{recursive:true});
 const manifest=JSON.parse(await readFile(`${out}/release-manifest.json`,'utf8'));
-const checks=[],errors=[],assets=[],networkFailures=[];let complete=false;const started=Date.now();let readyAfterMs;
+const checks=[],errors=[],assets=[],networkFailures=[];let complete=false;const started=Date.now();let readyAfterMs,warmReadyAfterMs;
 const evidenceOnly=process.env.QA_EVIDENCE_ONLY==='1';
 if(evidenceOnly){const prior=JSON.parse(await readFile(out+'/online-model-stage.json','utf8'));assert.ok(prior.checks.includes('mobile calibration panel fits'));checks.push(...prior.checks);readyAfterMs=prior.readyAfterMs;}
 const check=(name,value)=>{assert.ok(value,name);checks.push(name);console.log('PASS',name);};
@@ -28,6 +28,10 @@ try{
  check('nearby geometry reflection active online',initial.reflections.ready&&initial.reflections.enabled&&initial.reflections.captures>0);
  check('no public badge overlays controls',await page.locator('script[src*="/.netlify/scripts/hud"]').count()===0);
  await page.screenshot({path:`${out}/live-desktop.png`});
+ const panBefore=await page.evaluate(()=>window.cupViewer.debug());await page.mouse.move(620,420);await page.mouse.down({button:'right'});await page.mouse.move(740,450,{steps:10});await page.mouse.up({button:'right'});await pause(1000);const panAfter=await page.evaluate(()=>window.cupViewer.debug());
+ check('right drag pans camera and target online',Math.hypot(...panAfter.target.map((v,i)=>v-panBefore.target[i]))>1&&panAfter.camera.every((v,i)=>Math.abs((v-panAfter.target[i])-(panBefore.camera[i]-panBefore.target[i]))<.05));
+ await page.locator('#reset').click();await pause(2000);
+
  await page.locator('[data-view="detail"]').click();await pause(2000);await page.screenshot({path:`${out}/live-detail.png`});
  await page.locator('#open-settings').click();await page.locator('#local-reflections').uncheck();
  check('reflection toggle works online',!(await page.evaluate(()=>window.cupViewer.debug())).reflections.enabled);
@@ -38,14 +42,14 @@ try{
  await page.locator('[data-view="exploded"]').click();await pause(2300);
  const exploded=await page.evaluate(()=>window.cupViewer.debug());
  check('reflection probe follows exploded geometry online',exploded.reflections.captures>initial.reflections.captures&&Math.abs(exploded.reflections.position[1]-initial.reflections.position[1]-26)<.01);
- await page.setViewportSize({width:390,height:844});await page.reload();await page.waitForFunction(()=>window.cupViewer?.ready(),{},{timeout:300000});await pause(2000);
+ await page.setViewportSize({width:390,height:844});const warmStart=Date.now();await page.reload();await page.waitForFunction(()=>window.cupViewer?.ready(),{},{timeout:300000});warmReadyAfterMs=Date.now()-warmStart;console.log('WARM',warmReadyAfterMs+' ms');await pause(2000);
  check('mobile initial render and no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
  check('mobile view controls within viewport',await page.locator('[data-view="detail"]').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));
  await page.screenshot({path:`${out}/live-mobile.png`});
  await page.locator('#open-settings').click();check('mobile calibration panel fits',await page.locator('#settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight;}));await page.locator('#close-settings').click();
  }
  await page.goto(new URL('evidence.html',url).href,{waitUntil:'domcontentloaded'});await page.locator('details').evaluateAll(es=>es.forEach(e=>e.open=true));await page.locator('img').evaluateAll(imgs=>{imgs.forEach(i=>i.loading='eager');return Promise.all(imgs.map(i=>i.decode()));});
- check('all 27 reference and evidence images decode online',await page.locator('img').count()===27);
+ check('all 30 reference and evidence images decode online',await page.locator('img').count()===30);
  check('mobile evidence page has no overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
  await page.setViewportSize({width:1440,height:1000});
  const slider=page.locator('[data-compare="buildings"]');await slider.press('Home');await slider.press('ArrowRight');
@@ -73,5 +77,5 @@ try{
  check('all release files match published Netlify digests and sizes',assets.length===manifest.files.length);
  check('no browser or shader errors',errors.length===0);complete=true;
 }catch(error){errors.push(error.message);await page.screenshot({path:`${out}/online-qa-failure.png`}).catch(()=>{});throw error;}
-finally{await writeFile(`${out}/online-qa.json`,JSON.stringify({date:new Date().toISOString(),url,complete,checks,errors,networkFailures,readyAfterMs,evidenceOnly,assets,scope:'Public HTTPS in desktop Chrome and mobile-sized Chrome; local full touch/atomic-switch checks in evidence/browser-qa.json'},null,2));await browser.close();}
+finally{await writeFile(`${out}/online-qa.json`,JSON.stringify({date:new Date().toISOString(),url,complete,checks,errors,networkFailures,readyAfterMs,warmReadyAfterMs,evidenceOnly,assets,scope:'Public HTTPS in desktop Chrome and mobile-sized Chrome; local full touch/atomic-switch checks in evidence/browser-qa.json'},null,2));await browser.close();}
 console.log(JSON.stringify({url,checks:checks.length,assets:assets.length,errors}));
