@@ -2,83 +2,112 @@
   "version": 1,
   "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
   "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
-  "maxReliefMm": 0.045,
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
   "regions": {
     "body": {
       "width": 1024,
-      "height": 2048,
+      "height": 2222,
+      "physical": {
+        "width": 45.0294947014537,
+        "length": 97.7
+      },
+      "crop": null,
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
       "maps": {
         "baseColor": {
           "url": "artwork/body-baseColor.png",
-          "sha256": "455c7584ff23920b28cddd3c789cefd7ab68c7fabcb6b33c351adfc5ed5ab87a"
+          "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415"
         },
         "metalness": {
           "url": "artwork/body-metalness.png",
-          "sha256": "133a4e39e212b1bbf7dbad1dde9bd3c19768c7292827af61a9709e248d6e5413"
+          "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c"
         },
         "roughness": {
           "url": "artwork/body-roughness.png",
-          "sha256": "80695d48a6ac89cbc2fd0c661ba45099a897ef5799ed370c529a3daf2339351d"
+          "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335"
         },
         "height": {
           "url": "artwork/body-height.png",
-          "sha256": "b34a71f3d36067c3bef7dbaa6b21c64cbae1df66bb145123e5f2f57667ecad99"
+          "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1"
         },
         "normal": {
           "url": "artwork/body-normal.png",
-          "sha256": "c65d130e6c7d8e99cb91c59b009007aed1a55df1dad6412595e68844c3ba0a07"
+          "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d"
         }
       }
     },
     "handle": {
-      "width": 384,
-      "height": 1536,
+      "width": 320,
+      "height": 3047,
+      "physical": {
+        "width": 11.9,
+        "length": 113.32138587384561,
+        "aspect": 0.10501107013681961
+      },
+      "crop": [
+        0.47,
+        0.07,
+        0.16,
+        0.82
+      ],
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
       "maps": {
         "baseColor": {
           "url": "artwork/handle-baseColor.png",
-          "sha256": "6885ceb7d26a08a28cd96c471f68b403732d553b9b130ab3bfd588ed8b556313"
+          "sha256": "979b15fa478fbdab1be23d971fa582b6a7bf47267ff7de403d7e14a5a197008f"
         },
         "metalness": {
           "url": "artwork/handle-metalness.png",
-          "sha256": "2dab79796c264a9bb61219eecf93ea6699e0944ffea390d6ab7b1436e4a122cf"
+          "sha256": "3a2cac01d45879de415ea727608e6d2df2f11a7efbe2524e366ae3c75806eb91"
         },
         "roughness": {
           "url": "artwork/handle-roughness.png",
-          "sha256": "e259e960bb9d170fe73599cb4d0b3fface887be60bef352a939932ab92e904f6"
+          "sha256": "e9b77fe5e9fe802f07d0440b7e2ab21c6a94ca46045a84bf4cb954c2f5dbfbc1"
         },
         "height": {
           "url": "artwork/handle-height.png",
-          "sha256": "86bddc89a9af3e602e1708d90298148104cc5b8d7e5f1dd93fde56f9e7477ee7"
+          "sha256": "55f8e9eb64e18ccfb3752107432074dd5f73577496afd901abf18822e5f8493c"
         },
         "normal": {
           "url": "artwork/handle-normal.png",
-          "sha256": "2fc952f9b6e50458930ad13a139af67a61b90fecf184a1ba90d7f108a0562590"
+          "sha256": "2a88e506ab0646c64d3b2a379d4cd2038498391c3a21c84ec4bc7107d04cff35"
         }
       }
     },
     "saucer": {
       "width": 2172,
-      "height": 181,
+      "height": 203,
+      "physical": {
+        "width": 114.74667167236719,
+        "length": 10.720074626605918
+      },
+      "crop": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
       "maps": {
         "baseColor": {
           "url": "artwork/saucer-baseColor.png",
-          "sha256": "37f3216406c293717c756a8b28c66b9fa35a2e88b302c5293f5287247a4dd0b6"
+          "sha256": "05c2cd37bf48b498c1251a40f2ae36cfac3cf91e20837af935d102cf308f938c"
         },
         "metalness": {
           "url": "artwork/saucer-metalness.png",
-          "sha256": "932f32f67a69ab47ece6e5d11d869aeb3bff3a1d09c6d081522727e6f71e6151"
+          "sha256": "c72f6b616d5e4cb42d7fda4edf49dde61d0c0667033427f86415bf9a56f1d279"
         },
         "roughness": {
           "url": "artwork/saucer-roughness.png",
-          "sha256": "379ecf0577977270e1e0e4297ecdbae5bb35bec359aecee9f5476a93e626534b"
+          "sha256": "77c0f3235ab68495d2834b18caedbefd2ad6f057607188cac543a4d4ae2411ec"
         },
         "height": {
           "url": "artwork/saucer-height.png",
-          "sha256": "84a5b7b087c81cd7ee30825365b40146cbf69312a9b6ebe167f843af5b6b0f1f"
+          "sha256": "8236b1c44b3b1b1c8304fb7455543411b005e16367c2ca78974fb914357e9ebb"
         },
         "normal": {
           "url": "artwork/saucer-normal.png",
-          "sha256": "8abfe11837f7dc0b0a2009f8dfcd96eee5174148b5a3d767338d628cc5f31cf8"
+          "sha256": "c0f59e82a62f3938e5e412d60a61414d7215f852ce3968b997d1ca3c3fd3516e"
         }
       }
     }

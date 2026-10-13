@@ -1,0 +1,820 @@
+{
+  "version": "1.0-pre.2",
+  "title": "把手净空、UV 与参考器型修订",
+  "sessionId": "01a0ed06-5ea9-7532-a412-9c5a7a53716e",
+  "sourceLineCutoff": 903,
+  "project": "guangcai-viewer",
+  "sourceReplay": "original-02-refinement",
+  "deploymentSnapshot": null,
+  "commands": [
+    {
+      "command": "node_modules/.bin/tsx tools/surface-metrics.ts",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/surface-metrics.log"
+    },
+    {
+      "command": "node tools/derive-pbr.mjs",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/derive-pbr.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/geometry-tests.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "path": "package.json",
+      "sha256": "60948c9ec4af4fefda7b9cd597176f64c3621037b12ab020489cb20d3706aac4"
+    },
+    {
+      "path": "src/geometry/handle.ts",
+      "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "a9b33476332aaa77509064588c9245c3578faa91251f7ed9c794f8d0c8e6fe4b"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "b64a80ac82839f19ce0953fa3e31314718d4e5908dac9aca903d81212b1bce90"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "473328d83481afbc2a4e9ae4bd6adfb8b7f2c41ef438334a0b5f1e0fdf39e869"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "a3b81985949c51332d4d2ba99ad67a6e619124c6050408f922335ec3a859a423"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "ef5def51478ff774256e5ec2ccb06b25812272ce194aadb78b017a653cc6813b"
+    },
+    {
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "a352d32c4f62f38e016d2c6b138c766ea09db6ae67cdb72e56a2106b635d73c7"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "d7ae9b57f7fb8d20bc30745610e7c48c5b52156e8dbc0a2f3f63b1c71fca8094"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "1b35781ff72e20342de137fe689c2e6a4727e72d78dca443536690ba17b7017c"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "path": "tools/browser-qa.mjs",
+      "sha256": "b1df114db0b14ca9e1e155db980cb7901e66f7f3a4c1a4bfe6ee56fd71cb3036"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "c98fa59bf967bde233088eb8d9401aaaa2fd0b2e0c608a2d2a33813bc5c20833"
+    },
+    {
+      "path": "tools/geometry.test.ts",
+      "sha256": "53e637b10a8e9641b8f1be3e12c0a3ab5e4bbebf8e176a01967d9b3ea7d236a5"
+    },
+    {
+      "path": "tools/reference-captures.mjs",
+      "sha256": "9a6adcc3b68c0d2c52c1606950478ee4fbe8e10ce54261424a857c27a16ddc23"
+    },
+    {
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "a206b9f1d0f2608f1e568e1debda65064f0b9de7d56dd81e9acaec3834964e8a"
+    },
+    {
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    }
+  ],
+  "originalTimeUTC": "2026-09-29T13:11:56.454Z",
+  "reconstructedAtUTC": "2026-10-13T11:10:51Z",
+  "scopeNotes": [
+    "Source checkpoints are reconstructed now from saved file writes/patches. They were not Git commits at the original time.",
+    "assets/ retains the collected masters and inputs, including unused later alternatives. Runtime references are determined by each checkpoint source.",
+    "Early runtime maps are re-derived locally from retained masters/PSD with the historical scripts and current retained dependency lock. They are not claimed to be original exported bytes.",
+    "Historical release comparison checks every path in the preserved release; ancillary retained assets outside that release are not deployment contents.",
+    "No historical shell command or deployment was replayed. The original project and online sites were not modified.",
+    "Source fit-calibration metadata uses preserved calibration outputs; ephemeral renderer candidates and unsaved editor states are not all recoverable."
+  ],
+  "sourceWriteEvidence": [
+    {
+      "line": 100,
+      "path": "package.json",
+      "sha256": "a74e29a48d6f1abd7e4fd029a7aa44671cb40cd2751ff302c34325bb4e1a28f3"
+    },
+    {
+      "line": 100,
+      "path": "tsconfig.json",
+      "sha256": "fd5a8f227639647059a3057a1b8aaabe229be913891c3f16fda075327bc670cf"
+    },
+    {
+      "line": 100,
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    },
+    {
+      "line": 100,
+      "path": "index.html",
+      "sha256": "6ca9ddb2d68db26f0ddaf7a825e94964ec3fe089a6b20d77aeff7711cc657162"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "6f27978d2da7165d2d15146cb07bc12a729e6e57c6b3f5338ce22b41e607e5b1"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/surface.ts",
+      "sha256": "b5e1989e02e627575671e42d92b8722cff403738cd16947927b43c583395e471"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "7a7f8715c6ec489be0c3b069d036ba0f2c69bf96890b98576931262204e42008"
+    },
+    {
+      "line": 108,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "2a66774b3bcb1c6f11f64370c35c4cb4d1718cfdddfc82b5690d1358d110d4a6"
+    },
+    {
+      "line": 108,
+      "path": "src/materials/materials.ts",
+      "sha256": "5e07bda926a8f3a11e7c8dfdaa977ad2052a45dc2e94e4d0c20c7bbeafd741bb"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/product.ts",
+      "sha256": "4223d377ad0f4586f225ce01f6939399b19a1019b362dd6aab0de841d4c5f06c"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "9d50866559579bdc9e9d1271b311eecd4e01d6debd75812301573d71df35d98c"
+    },
+    {
+      "line": 132,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "62f68c862ff711ad97eb23e037a5d07945c55c5345b5b9bffdf2ad083df9f7a1"
+    },
+    {
+      "line": 132,
+      "path": "src/studio/studio.ts",
+      "sha256": "85526d0a0f57cfac6a33adcce04d0aa620e5944172b13efeec027af51bec0c8a"
+    },
+    {
+      "line": 132,
+      "path": "src/interaction/views.ts",
+      "sha256": "081b919e3dd2ed0e0486d5c185cd46d698636c735ae84000206872b0d765eea3"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/interface.ts",
+      "sha256": "305e78385d5ed99231ff82e4f7c9ca83d7c115d090dc764e00c481ebb2d122b6"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "line": 141,
+      "path": "src/main.ts",
+      "sha256": "012acffba287a23635e9bb93c39ca1b8c7eaeb238dee9f7e1feab3cbb121f52a"
+    },
+    {
+      "line": 149,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "ff3ca6814706791fd84abd28cd5ad3ce109be6d15184dcfa06b7aa76d6ce10b5"
+    },
+    {
+      "line": 149,
+      "path": "src/geometry/product.ts",
+      "sha256": "ac99794a71a4b7e5eacaf50fd1d721451bab534125541d3738955a5b3e2fd1f7"
+    },
+    {
+      "line": 216,
+      "path": "src/studio/studio.ts",
+      "sha256": "cacaef7a559d0c1b99349c41a07a0983329175d19596ed146e8b4ebf40c1a547"
+    },
+    {
+      "line": 216,
+      "path": "src/materials/materials.ts",
+      "sha256": "910c98d6c82539601c32a6e51df12d671a4d6a307974b17aeadc76cfc8ff602f"
+    },
+    {
+      "line": 231,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "dac24cfb193c6805d4701d96b7016ea5de63451d889134f55fc34ed6647d354a"
+    },
+    {
+      "line": 246,
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "line": 246,
+      "path": "src/studio/studio.ts",
+      "sha256": "125029de560853d0c2540fafb32dffbab62564bf5e7f9887753271e51ba1385e"
+    },
+    {
+      "line": 246,
+      "path": "src/main.ts",
+      "sha256": "bb953737e08057db60c618db4e5b183a58d39d12a6db7a31debbe7bbef0521ae"
+    },
+    {
+      "line": 246,
+      "path": "src/interaction/views.ts",
+      "sha256": "c546fad7f0e165b1378726e486674371365fb2284464ff3598a0f2e7ccfbc656"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/handle.ts",
+      "sha256": "7deceb137c42c92285fb2c26a8391a1c90470bda968098acbd7b0a23bc4852f3"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/product.ts",
+      "sha256": "f493a901025973eb17a199edb52396f2d0d8e5250930bdede87c41e8a5008296"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "b3b524f5c81ee68cb78a41da583540f492b7e5d0454f191e8c69c89130b59de9"
+    },
+    {
+      "line": 310,
+      "path": "src/interaction/views.ts",
+      "sha256": "7d0f42388ee21d52a7ef1618d22195e91537e7fd0b328f7c8319563774e01a6e"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "abcf8355244804f33aef16087abcc519d4d123899eb4a9c54ac8f5f9abd552f1"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/handle.ts",
+      "sha256": "18f5667ff5faac5dc5058e68f3b64750830135c9e60c32c32d09abaa83b4f30f"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "line": 516,
+      "path": "src/geometry/product.ts",
+      "sha256": "54f5fa4bc1bc6674c80711bc4301940b7ffa466f3f78aa6c544646a734d17dea"
+    },
+    {
+      "line": 516,
+      "path": "src/materials/materials.ts",
+      "sha256": "6b0a1a920e050f6a1c5ef6b760a508b7bde4024298f26d4bf8cd53671b2a7b60"
+    },
+    {
+      "line": 516,
+      "path": "src/studio/studio.ts",
+      "sha256": "335457e9d15fa2272caf2f1647077f723b66505932ecc8a37cfb9021f07cdac7"
+    },
+    {
+      "line": 516,
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "line": 522,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "7dd44c1c9e48954b8ee271bb382d912fa8153c3c233744953a48dfc9949e1aca"
+    },
+    {
+      "line": 522,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "873233cd2e7e8717daab6b29b2c53d68a408f6944d4156a5e004080b66482590"
+    },
+    {
+      "line": 578,
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "line": 593,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "e643ba729faa3cff4fa5ce4d8328aac70ff2e8d2b3784149325f552ff00ad1d9"
+    },
+    {
+      "line": 593,
+      "path": "src/geometry/product.ts",
+      "sha256": "aae8def4206a581aa6bfd67922059567a0f3a9283f8427864009616cbf60e9d3"
+    },
+    {
+      "line": 616,
+      "path": "src/materials/materials.ts",
+      "sha256": "6513d5d70c156dc895739f8cf727599363042e579f15e17e44afc718eba3737b"
+    },
+    {
+      "line": 616,
+      "path": "src/studio/studio.ts",
+      "sha256": "10ce949c8279f08fe9d910ba61a39cc5b40479074779152c9b2d60dbff8a3301"
+    },
+    {
+      "line": 623,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "730a54d84634b24c8be90d496b10b6d0e40a1df0462495df3c18676b0e4b119a"
+    },
+    {
+      "line": 623,
+      "path": "src/interaction/views.ts",
+      "sha256": "2ad6bdd505e1b0b5770e12ea9a446f4438a882b8d212165f8cde27ded599952e"
+    },
+    {
+      "line": 623,
+      "path": "src/ui/interface.ts",
+      "sha256": "de0699e53c09606dbd5b214cc2cc5aea079c0a2c735e76064462b7f85edd50e9"
+    },
+    {
+      "line": 623,
+      "path": "src/main.ts",
+      "sha256": "c8571e8cd8957661f0a1611a5c83d700f911d19a9c81d16dce435c801d178380"
+    },
+    {
+      "line": 683,
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "line": 683,
+      "path": "package.json",
+      "sha256": "60948c9ec4af4fefda7b9cd597176f64c3621037b12ab020489cb20d3706aac4"
+    },
+    {
+      "line": 683,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "c71cf9e9ea0b6bb43fd0047fb5aaf18e69a7f528a059d16ec103ba51915dbe12"
+    },
+    {
+      "line": 683,
+      "path": "src/main.ts",
+      "sha256": "d8e1289557f371e18adcec402b700649f990875d5b0fd1695ad53e130795313f"
+    },
+    {
+      "line": 683,
+      "path": "src/ui/interface.ts",
+      "sha256": "1b35781ff72e20342de137fe689c2e6a4727e72d78dca443536690ba17b7017c"
+    },
+    {
+      "line": 683,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "afc2bad8fc37321b084cdf7974445805dfd690c641cd23d1b1062702824a84c7"
+    },
+    {
+      "line": 708,
+      "path": "src/main.ts",
+      "sha256": "744ab3f00d942ae3b3fe7a202c2835c865b7316c5489fe44d842078b8eef8db4"
+    },
+    {
+      "line": 708,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "a9b33476332aaa77509064588c9245c3578faa91251f7ed9c794f8d0c8e6fe4b"
+    },
+    {
+      "line": 708,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "cfcfe949477a362a1d0ee7cde28d3c5a0e73dd8022180964c5a436d4daebd8b6"
+    },
+    {
+      "line": 708,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "9a6adcc3b68c0d2c52c1606950478ee4fbe8e10ce54261424a857c27a16ddc23"
+    },
+    {
+      "line": 739,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "d7ae9b57f7fb8d20bc30745610e7c48c5b52156e8dbc0a2f3f63b1c71fca8094"
+    },
+    {
+      "line": 739,
+      "path": "src/main.ts",
+      "sha256": "b81f35ce912a4fd0626395318febf65e79977f9eb8ec1bc267f83bfb58979c6d"
+    },
+    {
+      "line": 739,
+      "path": "src/studio/studio.ts",
+      "sha256": "038142b131b4fdff53119ae027e5ffdb047628a52cdce82527abc3fdc4311bb1"
+    },
+    {
+      "line": 739,
+      "path": "src/materials/materials.ts",
+      "sha256": "1e7bfcbdb7c952a615116c63dd36f4cfc5185dbcb99dc9d7d5ebe473a19ff9fb"
+    },
+    {
+      "line": 739,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252"
+    },
+    {
+      "line": 739,
+      "path": "src/main.ts",
+      "sha256": "2ed435d4e38122873ba633c981719bccd94c0b37d79ce27bbf914163ea1094dc"
+    },
+    {
+      "line": 739,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "002ef41167dc5fbbf98c0140381532c550c64c279fd885bdf32aa2de5d104b16"
+    },
+    {
+      "line": 754,
+      "path": "src/interaction/views.ts",
+      "sha256": "616ca83ab6eb6868c9d1a358fafe04a9cb13398ed274f5fca13fdbcd3bc31405"
+    },
+    {
+      "line": 788,
+      "path": "src/geometry/product.ts",
+      "sha256": "2775f2d222f3d7acd95d23a678a22c591a744dabb263774ba5b50e1d3e6abf7b"
+    },
+    {
+      "line": 788,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "line": 788,
+      "path": "src/materials/materials.ts",
+      "sha256": "94cb4a3ef88b861dfe2952ccb399e98b603ca87b0fc1aa79537bfef095639d48"
+    },
+    {
+      "line": 788,
+      "path": "src/studio/studio.ts",
+      "sha256": "27f720a12300ed45b5e67ed46eaec1ceee87fd7f127b7324cc92e11ebd9833c5"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/views.ts",
+      "sha256": "2dea51b2a703ee1f87c68df75c0ef8672c7e1b766029e7b42f71a91c9cf92053"
+    },
+    {
+      "line": 788,
+      "path": "src/geometry/product.ts",
+      "sha256": "2775f2d222f3d7acd95d23a678a22c591a744dabb263774ba5b50e1d3e6abf7b"
+    },
+    {
+      "line": 788,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "line": 788,
+      "path": "src/materials/materials.ts",
+      "sha256": "94cb4a3ef88b861dfe2952ccb399e98b603ca87b0fc1aa79537bfef095639d48"
+    },
+    {
+      "line": 788,
+      "path": "src/studio/studio.ts",
+      "sha256": "27f720a12300ed45b5e67ed46eaec1ceee87fd7f127b7324cc92e11ebd9833c5"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/views.ts",
+      "sha256": "473328d83481afbc2a4e9ae4bd6adfb8b7f2c41ef438334a0b5f1e0fdf39e869"
+    },
+    {
+      "line": 796,
+      "path": "tools/geometry.test.ts",
+      "sha256": "53e637b10a8e9641b8f1be3e12c0a3ab5e4bbebf8e176a01967d9b3ea7d236a5"
+    },
+    {
+      "line": 810,
+      "path": "tools/browser-qa.mjs",
+      "sha256": "b1df114db0b14ca9e1e155db980cb7901e66f7f3a4c1a4bfe6ee56fd71cb3036"
+    },
+    {
+      "line": 820,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "a206b9f1d0f2608f1e568e1debda65064f0b9de7d56dd81e9acaec3834964e8a"
+    },
+    {
+      "line": 848,
+      "path": "src/materials/materials.ts",
+      "sha256": "b7d5eeb2da5af997c448f53893d3bff8903d8705888cefd2ef2964d0ef5bc11a"
+    },
+    {
+      "line": 848,
+      "path": "src/studio/studio.ts",
+      "sha256": "a352d32c4f62f38e016d2c6b138c766ea09db6ae67cdb72e56a2106b635d73c7"
+    },
+    {
+      "line": 848,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "c98fa59bf967bde233088eb8d9401aaaa2fd0b2e0c608a2d2a33813bc5c20833"
+    },
+    {
+      "line": 848,
+      "path": "src/geometry/product.ts",
+      "sha256": "16d08a7719e0528f4e013b3ab658d997251487f37a58cf1c63a35a608ee7a595"
+    },
+    {
+      "line": 903,
+      "path": "src/materials/materials.ts",
+      "sha256": "ef5def51478ff774256e5ec2ccb06b25812272ce194aadb78b017a653cc6813b"
+    },
+    {
+      "line": 903,
+      "path": "src/geometry/handle.ts",
+      "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80"
+    },
+    {
+      "line": 903,
+      "path": "src/geometry/product.ts",
+      "sha256": "b64a80ac82839f19ce0953fa3e31314718d4e5908dac9aca903d81212b1bce90"
+    },
+    {
+      "line": 903,
+      "path": "src/main.ts",
+      "sha256": "a3b81985949c51332d4d2ba99ad67a6e619124c6050408f922335ec3a859a423"
+    }
+  ],
+  "operationDigests": [
+    {
+      "line": 100,
+      "timeUTC": "2026-09-29T12:06:58.356Z",
+      "tool": "apply_patch",
+      "sha256": "069dbf79465d66afa9a1088ec4e1014d417de79ae6048fb3225e8b1f7e759035"
+    },
+    {
+      "line": 100,
+      "timeUTC": "2026-09-29T12:06:58.356Z",
+      "tool": "exec_command",
+      "sha256": "ee8f1ed5b3d93b0017037ae8c87257d9d7b9af34874fcd1c010858831de764ef"
+    },
+    {
+      "line": 108,
+      "timeUTC": "2026-09-29T12:09:43.061Z",
+      "tool": "apply_patch",
+      "sha256": "0ed27175a569039080ddff2b60c434d4dc23fc959c27bda2d91fe80405389d29"
+    },
+    {
+      "line": 108,
+      "timeUTC": "2026-09-29T12:09:43.061Z",
+      "tool": "exec_command",
+      "sha256": "dea8b44157055ac2f5af8cdae92f997fbe6ef39e93111856437aef4121a63133"
+    },
+    {
+      "line": 132,
+      "timeUTC": "2026-09-29T12:12:52.680Z",
+      "tool": "apply_patch",
+      "sha256": "0e305db77d04b580937d31cfad1ee3c66a84f9b24aab6538ae39b15fdfaed78b"
+    },
+    {
+      "line": 141,
+      "timeUTC": "2026-09-29T12:15:49.566Z",
+      "tool": "apply_patch",
+      "sha256": "c3b1c17e29f780f7bdf39e5aeb6d6a61003014e8f9998b092f28ecccbd15be02"
+    },
+    {
+      "line": 141,
+      "timeUTC": "2026-09-29T12:15:49.566Z",
+      "tool": "exec_command",
+      "sha256": "60d2591a43e77aa247e40075a275a4f084cad21b75a24f33484be6730509fef3"
+    },
+    {
+      "line": 149,
+      "timeUTC": "2026-09-29T12:16:25.963Z",
+      "tool": "exec_command",
+      "sha256": "305fb20b55547afb736990bf2faa85569187d49591e1932ee79b6558ed59235a"
+    },
+    {
+      "line": 216,
+      "timeUTC": "2026-09-29T12:20:00.671Z",
+      "tool": "exec_command",
+      "sha256": "3f85ae6ebf407a11d72a5f40c727b454232fee20bc0e08c3abeb1db6ab101486"
+    },
+    {
+      "line": 216,
+      "timeUTC": "2026-09-29T12:20:00.671Z",
+      "tool": "exec_command",
+      "sha256": "49383515d100c20bd551d879bd7e5529d120db06f2d8e3777aec8218ff37fa25"
+    },
+    {
+      "line": 231,
+      "timeUTC": "2026-09-29T12:20:51.558Z",
+      "tool": "exec_command",
+      "sha256": "d71d0d077764fdb3e165b9a2c7ec0ef91a05603e43507dda853129e28e445563"
+    },
+    {
+      "line": 246,
+      "timeUTC": "2026-09-29T12:22:22.739Z",
+      "tool": "apply_patch",
+      "sha256": "7f7e4630c03b85c34b1dd71e4f2487e550e5d9a038f3eb30af752e627ddd6669"
+    },
+    {
+      "line": 246,
+      "timeUTC": "2026-09-29T12:22:22.739Z",
+      "tool": "exec_command",
+      "sha256": "68193c4c4efcf6bfbf8b9ba4946e6bc0fe1fe8ae14bcb63b77162a0de0f587b6"
+    },
+    {
+      "line": 310,
+      "timeUTC": "2026-09-29T12:29:12.272Z",
+      "tool": "apply_patch",
+      "sha256": "4ccab275090185b931902316a05403dd048a30418bf1bbb4eb0960e3080aae21"
+    },
+    {
+      "line": 310,
+      "timeUTC": "2026-09-29T12:29:12.272Z",
+      "tool": "exec_command",
+      "sha256": "08575a14b258e431a16c249617039c43d9e23c5cdfcf4d3654b369230149af67"
+    },
+    {
+      "line": 509,
+      "timeUTC": "2026-09-29T12:41:00.717Z",
+      "tool": "exec_command",
+      "sha256": "a09a998f1158f6b0e281a4506dc30498de6828cd4b9a48d9d8123cffa46bb529"
+    },
+    {
+      "line": 516,
+      "timeUTC": "2026-09-29T12:42:18.135Z",
+      "tool": "exec_command",
+      "sha256": "82e869f25d66e655f887a687bf5c0026910f00f0db537d8aee05820156815081"
+    },
+    {
+      "line": 522,
+      "timeUTC": "2026-09-29T12:42:58.254Z",
+      "tool": "exec_command",
+      "sha256": "246257d7db6307925dfafb6e6b7495c53f22677576dd49a8752fa676974e8fd6"
+    },
+    {
+      "line": 578,
+      "timeUTC": "2026-09-29T12:45:18.574Z",
+      "tool": "exec_command",
+      "sha256": "c43998f6f5d72e71407e53ca6974635700164e0eea10f46a3eb16522b3ae4620"
+    },
+    {
+      "line": 578,
+      "timeUTC": "2026-09-29T12:45:18.574Z",
+      "tool": "exec_command",
+      "sha256": "40f30581d008e9ac52bead5f2c36a144ccc5b120e11c5ffcd41bdbe129a0ef9e"
+    },
+    {
+      "line": 593,
+      "timeUTC": "2026-09-29T12:46:23.911Z",
+      "tool": "exec_command",
+      "sha256": "815bd6a84f4b7b5980c421d09968c21df352110dc15dd9a6add17858e94b0781"
+    },
+    {
+      "line": 616,
+      "timeUTC": "2026-09-29T12:48:05.282Z",
+      "tool": "exec_command",
+      "sha256": "71592190396bd090260aa5a06d40e65a59b74fd1be6d1b8c5e27eeabf50c084f"
+    },
+    {
+      "line": 623,
+      "timeUTC": "2026-09-29T12:48:55.474Z",
+      "tool": "exec_command",
+      "sha256": "deb4ad2cf550c5919ab1a676d8b722bff5e7996bd7f9d0059f8f8d8401efaedd"
+    },
+    {
+      "line": 683,
+      "timeUTC": "2026-09-29T12:54:30.979Z",
+      "tool": "exec_command",
+      "sha256": "4b107cc7a1bc0aabe4be53d0fb4f53c111d71674b3133a944154c040a04ab502"
+    },
+    {
+      "line": 683,
+      "timeUTC": "2026-09-29T12:54:30.979Z",
+      "tool": "exec_command",
+      "sha256": "345859be5e1a694bacd916d1b4af16b2615a0346aa4cef6e22e550f51be437bc"
+    },
+    {
+      "line": 708,
+      "timeUTC": "2026-09-29T12:55:35.330Z",
+      "tool": "exec_command",
+      "sha256": "7ba7908beaba4d88ae1ddf58adc5311dee08d3e5e166730b44075f629393a435"
+    },
+    {
+      "line": 708,
+      "timeUTC": "2026-09-29T12:55:35.330Z",
+      "tool": "exec_command",
+      "sha256": "af746ec237614a8bab621023228a9bd7806922bbcedc01a65a4d1bb7bc47e6c7"
+    },
+    {
+      "line": 739,
+      "timeUTC": "2026-09-29T12:56:56.331Z",
+      "tool": "exec_command",
+      "sha256": "6e26e22183a68c991cb3e2beed1cc5d26d2113bde8899f3409be59b35a858ded"
+    },
+    {
+      "line": 754,
+      "timeUTC": "2026-09-29T12:57:49.560Z",
+      "tool": "exec_command",
+      "sha256": "478af1562e987883db90debd1ec563d8a3e813d0300eeb9fa8c5b2e882f9bdbc"
+    },
+    {
+      "line": 788,
+      "timeUTC": "2026-09-29T12:59:38.690Z",
+      "tool": "exec_command",
+      "sha256": "69e37546371734b87c195f773bafc845441fb150338d1d1ca8aa638679fcddc0"
+    },
+    {
+      "line": 788,
+      "timeUTC": "2026-09-29T12:59:38.690Z",
+      "tool": "exec_command",
+      "sha256": "698f0b891666ab1d10100bd5dfc4598a693aec562eccfa2e5312a060dd99e3aa"
+    },
+    {
+      "line": 796,
+      "timeUTC": "2026-09-29T13:00:42.077Z",
+      "tool": "exec_command",
+      "sha256": "5e965b860f68d0a0e313e368702307f42b1e66ed54d15d64f574a96fb63410f9"
+    },
+    {
+      "line": 810,
+      "timeUTC": "2026-09-29T13:02:22.019Z",
+      "tool": "exec_command",
+      "sha256": "bc628b88a481f68d6ea0d35ffdad71aaf848d288b746c5d872697f1c87534bc0"
+    },
+    {
+      "line": 810,
+      "timeUTC": "2026-09-29T13:02:22.019Z",
+      "tool": "exec_command",
+      "sha256": "2a9a2b56030c4be21c9af0ca95f01afcbc529c365520e00b5eec8071383d0229"
+    },
+    {
+      "line": 820,
+      "timeUTC": "2026-09-29T13:03:48.499Z",
+      "tool": "exec_command",
+      "sha256": "d25c59b49aa0b24f52af4fa6d230348bff36f25e91f3a918a0fd143dbe2059d6"
+    },
+    {
+      "line": 848,
+      "timeUTC": "2026-09-29T13:05:37.436Z",
+      "tool": "exec_command",
+      "sha256": "54ba8d9cfb2532f979caaaba502fdcf54460a4f025597379c3ac4f1961de3079"
+    },
+    {
+      "line": 848,
+      "timeUTC": "2026-09-29T13:05:37.436Z",
+      "tool": "exec_command",
+      "sha256": "faf26c2950bbe385b3a527da359416028bb320e6d391a8c5f4cfc28ed1b7e4ad"
+    },
+    {
+      "line": 903,
+      "timeUTC": "2026-09-29T13:11:56.454Z",
+      "tool": "apply_patch",
+      "sha256": "f7f03a8fbc2f05b28fea3799ac8efc1707762637b2b10cf2e442b8dd7f4d5c4f"
+    }
+  ]
+}

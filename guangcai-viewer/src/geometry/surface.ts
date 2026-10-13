@@ -14,7 +14,7 @@ export function revolve(profile: ProfilePoint[], segments = 240,
     for (let j = 0; j < rows; j++) {
       const [r, y] = profile[j];
       const prev = profile[Math.max(0, j - 1)], next = profile[Math.min(rows - 1, j + 1)];
-      const tangent = new Vector2(next[0] - prev[0], next[1] - prev[1]).normalize();
+      const tangent = new Vector2(profile[j][0]-prev[0],profile[j][1]-prev[1]).normalize().add(new Vector2(next[0]-profile[j][0],next[1]-profile[j][1]).normalize()).normalize();
       pos.push(r * Math.cos(theta), y, r * Math.sin(theta));
       normal.push(tangent.y * Math.cos(theta), -tangent.x, tangent.y * Math.sin(theta));
       uv.push(...(options.uv?.(r, y, theta, j) ?? [i / segments, j / (rows - 1)]));

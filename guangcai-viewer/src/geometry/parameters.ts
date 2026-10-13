@@ -5,9 +5,9 @@ export interface Dimensions {
   saucerRadius: number; lidOverhang: number;
 }
 export const defaults: Dimensions = {
-  radius: 43, height: 112, wall: 2.2, bottom: 5.5,
-  bandAngle: Math.PI / 3, handleReach: 34, handleWidth: 14, handleThickness: 5.5,
-  saucerRadius: 70, lidOverhang: 2.4,
+  radius: 43, height: 103, wall: 2.2, bottom: 5.5,
+  bandAngle: Math.PI / 3, handleReach: 33, handleWidth: 14, handleThickness: 4.8,
+  saucerRadius: 75.5, lidOverhang: 2.4,
 };
 export function validateDimensions(p: Dimensions) {
   for (const v of Object.values(p)) if (!Number.isFinite(v) || v <= 0) throw new Error('尺寸必须为有限正数');

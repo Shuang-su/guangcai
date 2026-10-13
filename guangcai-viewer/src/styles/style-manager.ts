@@ -6,6 +6,16 @@ export const defaultPack:StylePack={name:'花蝶 · 金地',regions:Object.fromE
 const channels=['baseColor','normal','roughness','metalness','height'] as const;
 const regions:Region[]=['body','handle','saucer'];
 export class StyleManager {
+  private aspects:Record<Region,number>={body:45.0294947/106.7,handle:11.9/117.6181655,saucer:106.1072919/7.1867934};
+  fit(aspects:Record<Region,number>){
+    this.aspects=aspects;
+    for(const region of regions)for(const texture of Object.values(this.currentMaps[region]??{})){
+      const img=texture.image as HTMLImageElement;
+      const source=img.width/img.height,target=aspects[region];
+      const x=Math.min(1,target/source),y=Math.min(1,source/target);
+      texture.repeat.set(x,y);texture.offset.set((1-x)/2,(1-y)/2);texture.updateMatrix();
+    }
+  }
   private revision=0;
   private owned:Texture[]=[];
   currentName='正在载入花纸';
@@ -45,7 +55,7 @@ export class StyleManager {
     // Atomic swap: only after EVERY channel decodes and passes alignment checks.
     regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region]));
     this.owned.forEach(t=>t.dispose());this.owned=textures;
-    this.currentMaps=maps;this.currentName=pack.name;this.onChange();return true;
+    this.currentMaps=maps;this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
   }
   async flatFile(file:File){
     if(!file.type.startsWith('image/'))throw new Error('请选择 PNG、JPEG 或 WebP 图片');

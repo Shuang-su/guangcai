@@ -1,5 +1,6 @@
+import type {ReferenceId} from './interaction/reference-views';
 import './ui/styles.css';
-import { Material, Mesh, MeshBasicMaterial, MeshNormalMaterial, MeshStandardMaterial, Vector2 } from 'three';
+import { Material, Mesh, MeshBasicMaterial, MeshNormalMaterial, MeshStandardMaterial, SRGBColorSpace, TextureLoader } from 'three';
 import { defaults } from './geometry/parameters';
 import { buildProduct } from './geometry/product';
 import { makeMaterials, type MaterialMode } from './materials/materials';
@@ -12,13 +13,13 @@ let mode:MaterialMode='pbr',relief=.65;
 const mats=makeMaterials();let product=buildProduct(mats);
 let view:ViewController,manager:StyleManager;
 const ui=createInterface({
-  view:v=>view.set(v),auto:()=>view.setAuto(!view.auto),reset:()=>view.set('hero'),
+  reference:id=>view.reference(id),view:v=>view.set(v),auto:()=>view.setAuto(!view.auto),reset:()=>view.set('hero'),
   mode:v=>{mode=v;inspectMaterial();},relief:v=>{relief=v;setRelief();},exposure:v=>studio.renderer.toneMappingExposure=v,
   flat:async f=>{if(await manager.flatFile(f)){inspectMaterial();ui.style(manager.currentName);}},
   folder:async f=>{if(await manager.folder(f)){inspectMaterial();ui.style(manager.currentName);}},
   restore:async()=>{if(await manager.apply(defaultPack)){inspectMaterial();ui.style(manager.currentName);}},
   dimensions:p=>{
-    try{const next=buildProduct(mats,{...product.parameters,...p});restoreMaterials();studio.scene.remove(product.root);product.dispose();product=next;studio.scene.add(product.root);originals.clear();inspectMaterial();view.set('hero');ui.message('已应用推定尺寸');}
+    try{const next=buildProduct(mats,{...product.parameters,...p});restoreMaterials();studio.scene.remove(product.root);product.dispose();product=next;studio.scene.add(product.root);originals.clear();fitArtwork();inspectMaterial();view.set('hero');ui.message('已应用推定尺寸');}
     catch(e){ui.message((e as Error).message,true);}
   },
 },defaults);
@@ -46,19 +47,28 @@ function inspectMaterial(){
 }
 function setRelief(){for(const m of Object.values(mats.regions)){m.normalScale.setScalar(relief);m.clearcoatNormalScale.setScalar(relief*.55);}}
 manager=new StyleManager(mats,Math.min(8,studio.renderer.capabilities.getMaxAnisotropy()),()=>{setRelief();});
-manager.apply(defaultPack).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
+fitArtwork();
+const markReady=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(texture=>{texture.colorSpace=SRGBColorSpace;texture.anisotropy=4;mats.mark.map=texture;mats.mark.needsUpdate=true;});
+Promise.all([manager.apply(defaultPack),markReady]).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
+function fitArtwork(){
+  const p=product.parameters;
+  const handle=product.cup.getObjectByName('wide-ribbon-handle') as Mesh;
+  const saucer=product.saucer.children[0] as Mesh;
+  manager.fit({body:p.radius*p.bandAngle/(p.height-5.3),handle:handle.geometry.userData.surfaceMetrics.aspect,saucer:saucer.geometry.userData.surfaceMetrics.aspect});
+}
 let last=performance.now(),raf=0,disposed=false;
-function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;view.update(dt);studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
+function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;view.update(dt);studio.contact.update(product.root);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
 raf=requestAnimationFrame(frame);
 ui.canvas.addEventListener('dblclick',()=>view.set('hero'));
 // Public, typed API: geometry never changes when swapping a style package.
 const api={
   ready:()=>ui.canvas.dataset.ready==='true',
+  reference:(id:ReferenceId)=>view.reference(id),
   setView:(v:View)=>view.set(v),setAuto:(v:boolean)=>view.setAuto(v),
   applyStyle:async(pack:StylePack)=>{const applied=await manager.apply(pack);if(applied){inspectMaterial();ui.style(manager.currentName);}return applied;},
   restore:async()=>{const applied=await manager.apply(defaultPack);if(applied){inspectMaterial();ui.style(manager.currentName);}return applied;},
-  debug:()=>({view:view.view,mode,style:manager.currentName,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(x=>x.geometry.uuid),memory:{...studio.renderer.info.memory},parameters:{...product.parameters},regions:Object.fromEntries(Object.entries(mats.regions).map(([k,m])=>[k,{normal:!!m.normalMap,metal:!!m.metalnessMap,roughness:!!m.roughnessMap,metalness:m.metalness}]))}),
-  dispose:()=>{disposed=true;cancelAnimationFrame(raf);manager.dispose();view.dispose();restoreMaterials();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();studio.dispose();},
+  debug:()=>({view:view.view,mode,style:manager.currentName,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(x=>x.geometry.uuid),memory:{...studio.renderer.info.memory},parameters:{...product.parameters},regions:Object.fromEntries(Object.entries(mats.regions).map(([k,m])=>[k,{normal:!!m.normalMap,metal:!!m.metalnessMap,roughness:!!m.roughnessMap,metalness:m.metalness,repeat:m.map?.repeat.toArray(),offset:m.map?.offset.toArray(),mapSize:m.map?[(m.map.image as HTMLImageElement).width,(m.map.image as HTMLImageElement).height]:null}]))}),
+  dispose:()=>{disposed=true;cancelAnimationFrame(raf);manager.dispose();view.dispose();restoreMaterials();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();studio.dispose();},
 };
 inspectMaterial();
 Object.assign(window,{cupViewer:api});
