@@ -74,12 +74,12 @@ IMG_1220 产品图明确给出碟径 **151 mm**、杯的标称容量 **450 ml**�
 
 几何测试检查内腔净距、弧长 UV、法线朝向、足圈和底款位置；浏览器测试覆盖视角、材质、款式原子替换、失败回退、尺寸更新、移动端布局及资源释放。当前实测报告在 [evidence](../evidence/)；变更记录见 [docs/changes/20260929-reference-corrections](docs/changes/20260929-reference-corrections/)。
 
-此目录不是 Git 仓库，没有初始化仓库、创建提交、推送或部署。
+首次交付时原工作目录尚未接入 Git。当前目录已在 Shuang-su/guangcai 中正常开发，1.0 源码与部署通过 v1.0 定位；分支、提交和发布流程见仓库根 README。
 
 
 ## 本轮把手与杯盖校准
 
-工作副本与构建位于外置盘 `/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-viewer/`，`dist/` 为静态构建。原 Documents 目录保留。补充原照现位于 `/Volumes/Prism_初号機/广彩/一号杯2/`。
+首次交付时的工作副本与构建位于外置盘 `/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-viewer/`，`dist/` 为静态构建。原 Documents 目录保留。补充原照现位于 `/Volumes/Prism_初号機/广彩/一号杯2/`。
 
 - 把手内外边界分别建模，上端由较厚的三角根部收向水平上臂，外折角收紧；花纹仍按外弧真实距离展开。
 - 盖片中心厚度约 4.35 mm，边缘金口厚度约 1.75 mm；底面止口单独建模，不将其算成整片盖厚度。
