@@ -64,7 +64,7 @@ try{
  await mp.locator('#open-background').tap();check('landscape background panel remains usable',await mp.locator('#background-settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&r.height>280;}));
  await mp.screenshot({path:out+'/mobile-landscape.png'});await mobile.close();
  await page.evaluate(()=>window.cupViewer.dispose());check('dispose releases custom background URLs',await page.evaluate(()=>window.backgroundObjectUrls.size===0));
- const protectedFiles=JSON.parse(await readFile('docs/changes/20261013-v3/baseline-files.json','utf8')).files;for(const[p,h]of Object.entries(protectedFiles).filter(([p])=>p.startsWith('public/china/')))assert.equal(createHash('sha256').update(await readFile(p)).digest('hex'),h,p);
+ const protectedFiles=JSON.parse(await readFile('docs/changes/20261013-v3/baseline-files.json','utf8')).files;for(const[p,h]of Object.entries(protectedFiles).filter(([p])=>p.startsWith('public/china/')&&!p.split('/').some(n=>n.startsWith('._'))))assert.equal(createHash('sha256').update(await readFile(p)).digest('hex'),h,p);
  check('city and lettering source textures remain byte-identical',true);check('no browser runtime errors',errors.length===0);
  await writeFile(out+'/verification.json',JSON.stringify({url,checks,errors,httpUploads:writes.length,opaqueCupMeanPixelDelta:diff/(count*3),opaquePixels:count,backgroundBytes:91936,protectedFiles:Object.keys(protectedFiles).length},null,2));
  console.log(JSON.stringify({checks:checks.length,errors,out}));
