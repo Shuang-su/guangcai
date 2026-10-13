@@ -2,16 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {Mesh, Vector3} from 'three';
 import {defaults} from '../src/geometry/parameters';
-import {handlePath,handleCollar} from '../src/geometry/handle';
+import {handlePath,handleRails,handleCollar} from '../src/geometry/handle';
 import {ribbon} from '../src/geometry/ribbon';
 import {buildProduct} from '../src/geometry/product';
 import {makeMaterials} from '../src/materials/materials';
 
 test('handle and porcelain collars stay outside the cavity across all UI dimension extremes',()=>{
   let clearance=Infinity;
-  for(const radius of [35,43,55])for(const height of [90,103,150])for(const wall of [1.5,2.2,4])for(const handleReach of [25,33,45]){
+  for(const radius of [35,43,55])for(const height of [90,103,150])for(const wall of [1.5,2.2,4])for(const handleReach of [25,35,45]){
     const p={...defaults,radius,height,wall,handleReach};
-    for(const g of [ribbon(handlePath(p).path,p.handleWidth,p.handleThickness),handleCollar(radius,p.handleWidth,p.handleThickness)]){
+    for(const g of [ribbon(handlePath(p).path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),handleCollar(radius,p.handleWidth,p.handleThickness,2.5)]){
       const pos=g.getAttribute('position');
       for(let i=0;i<pos.count;i++)clearance=Math.min(clearance,Math.hypot(pos.getX(i),pos.getZ(i))-(radius-wall));
       g.dispose();
@@ -21,7 +21,7 @@ test('handle and porcelain collars stay outside the cavity across all UI dimensi
   console.log('minimum radial cavity clearance, mm:',clearance);
 });
 test('handle artwork uses uniform physical scale through the upper corner and lower curve',()=>{
-  const g=ribbon(handlePath(defaults).path,defaults.handleWidth,defaults.handleThickness,192);
+  const g=ribbon(handlePath(defaults).path,defaults.handleWidth,defaults.handleThickness,192,true,handleRails(defaults));
   const pos=g.getAttribute('position'),uv=g.getAttribute('uv'),{width,length}=g.userData.surfaceMetrics;
   const a=new Vector3(),b=new Vector3();let maxError=0;
   for(let i=0;i<192;i++){
@@ -64,4 +64,16 @@ test('reference-derived assembly retains inset saucer foot, recessed cup base an
 });
 test('invalid parameters reject before creating a replacement model',()=>{
   for(const p of [{radius:NaN},{wall:25},{height:0},{saucerRadius:40}])assert.throws(()=>buildProduct(makeMaterials(),{...defaults,...p}));
+});
+
+test('bottom marks face outward, sit below the recessed base and share physical scale',()=>{
+  const product=buildProduct(makeMaterials());
+  const normals=[];
+  for(const [part,name,recess] of [[product.cup,'cup-bottom-mark',2.5-defaults.height/2],[product.saucer,'saucer-bottom-mark',2.25]] as const){
+    const mark=part.getObjectByName(name) as Mesh;
+    assert.ok(mark.position.y<recess&&recess-mark.position.y<.02);
+    normals.push(new Vector3(0,0,1).applyQuaternion(mark.quaternion));
+    mark.geometry.computeBoundingBox();assert.equal(mark.geometry.boundingBox!.max.x-mark.geometry.boundingBox!.min.x,20);
+  }
+  assert.ok(normals.every(n=>n.y<-.999));product.dispose();
 });

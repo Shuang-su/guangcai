@@ -43,7 +43,7 @@ export class ViewController{
     if(view==='detail'){pos=[170,123,92];this.toTarget.set(46,67,0);}
     const aspect=this.studio.camera.aspect;
     this.toCamera.set(...pos as [number,number,number]);
-    if(aspect<.8)this.toCamera.sub(this.toTarget).multiplyScalar(1.4).add(this.toTarget);
+    if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);
     this.active=true;this.animateCamera=true;if(instant)this.update(10);this.onChange();
   }
   update(dt:number){
@@ -75,7 +75,6 @@ export class ViewController{
       if(scale<=1.001)break;
       this.studio.camera.position.sub(this.controls.target).multiplyScalar(scale).add(this.controls.target);this.controls.update();
     }
-    if(id==='1148'){this.studio.camera.up.set(0,-1,0);this.studio.camera.lookAt(this.controls.target);}
     if(id==='1148'){this.studio.camera.up.set(0,-1,0);this.studio.camera.lookAt(this.controls.target);}
     if(id==='1168'){this.studio.camera.up.set(1,0,0);this.studio.camera.lookAt(this.controls.target);}
     this.onChange();

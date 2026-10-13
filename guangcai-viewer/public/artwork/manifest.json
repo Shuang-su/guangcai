@@ -38,11 +38,11 @@
     },
     "handle": {
       "width": 320,
-      "height": 3047,
+      "height": 3119,
       "physical": {
         "width": 11.9,
-        "length": 113.32138587384561,
-        "aspect": 0.10501107013681961
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
       },
       "crop": [
         0.47,
@@ -54,23 +54,23 @@
       "maps": {
         "baseColor": {
           "url": "artwork/handle-baseColor.png",
-          "sha256": "979b15fa478fbdab1be23d971fa582b6a7bf47267ff7de403d7e14a5a197008f"
+          "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d"
         },
         "metalness": {
           "url": "artwork/handle-metalness.png",
-          "sha256": "3a2cac01d45879de415ea727608e6d2df2f11a7efbe2524e366ae3c75806eb91"
+          "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686"
         },
         "roughness": {
           "url": "artwork/handle-roughness.png",
-          "sha256": "e9b77fe5e9fe802f07d0440b7e2ab21c6a94ca46045a84bf4cb954c2f5dbfbc1"
+          "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21"
         },
         "height": {
           "url": "artwork/handle-height.png",
-          "sha256": "55f8e9eb64e18ccfb3752107432074dd5f73577496afd901abf18822e5f8493c"
+          "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416"
         },
         "normal": {
           "url": "artwork/handle-normal.png",
-          "sha256": "2a88e506ab0646c64d3b2a379d4cd2038498391c3a21c84ec4bc7107d04cff35"
+          "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7"
         }
       }
     },

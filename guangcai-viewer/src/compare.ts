@@ -19,6 +19,8 @@ const silhouette=new MeshBasicMaterial({color:'#00d7ee'}),clay=new MeshStandardM
 const depthOnly=new MeshBasicMaterial({colorWrite:false});
 const lines=new Group(),lineMaterial=new LineBasicMaterial({color:'#00efff',depthTest:true});lines.renderOrder=2;
 for(const[r,y]of [[75.5,17.35],[70.2,5.9],[70.4,4.8],[65.4,3.7],[63.1,1],[62.7,0]])lines.add(new LineLoop(new BufferGeometry().setFromPoints(Array.from({length:512},(_,i)=>{const a=i/512*Math.PI*2;return new Vector3(r*Math.cos(a),y,r*Math.sin(a));})),lineMaterial));
+for(const child of lines.children)child.userData.part='saucer';
+for(const[r,y]of [[45.7,109],[40.3,107.4],[39.2,104.7]]){const line=new LineLoop(new BufferGeometry().setFromPoints(Array.from({length:512},(_,i)=>{const a=i/512*Math.PI*2;return new Vector3(r*Math.cos(a),y,r*Math.sin(a));})),lineMaterial);line.userData.part='lid';lines.add(line);}
 studio.scene.add(lines);lines.visible=false;
 let id='1221',pose:Pose={...calibrations[id].pose},ready=false,disposed=false;
 function controls(){for(const[key]of fields)$<HTMLInputElement>(key).value=String(pose[key]);}
@@ -29,12 +31,13 @@ function render(){
 function presentation(){canvas.style.opacity=$<HTMLInputElement>('opacity').value;$('opacity-value').textContent=`${Math.round(Number(canvas.style.opacity)*100)}%`;photo.style.visibility=$<HTMLInputElement>('show-photo').checked?'visible':'hidden';render();}
 function setMode(mode:string){
  for(const [mesh,material]of originals)mesh.material=mode==='silhouette'?silhouette:mode==='clay'?clay:mode==='rings'?depthOnly:material;
- product.root.visible=true;lines.visible=mode==='rings';render();
+ product.root.visible=true;lines.visible=mode==='rings';for(const child of lines.children)child.visible=child.userData.part===(calibrations[id].part==='lid'?'lid':'saucer');render();
 }
 async function select(next:string,reset=false){
- id=next;const c=calibrations[id];pose={...c.pose};
+ id=next;$<HTMLSelectElement>('reference').value=id;const c=calibrations[id];pose={...c.pose};
  if(!reset){try{const saved=JSON.parse(localStorage.getItem(`guangcai-calibration-${id}`)||'null');if(saved&&Object.keys(pose).every(k=>Number.isFinite(saved[k])))pose=saved;}catch{}}
- product.cup.visible=c.part==='all';product.lid.visible=c.part==='all';product.saucer.visible=true;
+ product.cup.visible=c.part==='all';product.lid.visible=c.part==='all'||c.part==='lid';product.saucer.visible=c.part!=='lid';
+ lines.visible=$<HTMLSelectElement>('mode').value==='rings';for(const child of lines.children)child.visible=child.userData.part===(c.part==='lid'?'lid':'saucer');
  photo.src=`${import.meta.env.BASE_URL}references/${id}.jpg`;await photo.decode();frame.style.aspectRatio=`${photo.naturalWidth}/${photo.naturalHeight}`;controls();studio.resize();render();
  $('state').textContent=`IMG_${id} · 已载入校准机位，可继续微调`;
 }

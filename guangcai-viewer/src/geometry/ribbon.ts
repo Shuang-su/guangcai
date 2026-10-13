@@ -2,7 +2,7 @@ import { BufferGeometry, Curve, Float32BufferAttribute, Vector3 } from 'three';
 
 /** Broad porcelain strap, with a lightly crowned gilded side and rounded edges.
  * Artwork V follows the OUTER rail, never the centreline (bends have different lengths). */
-export function ribbon(path: Curve<Vector3>, width: number, thickness: number, segments = 192, decoration = true) {
+export function ribbon(path: Curve<Vector3>, width: number, thickness: number, segments = 192, decoration = true, rails?: {outer:Curve<Vector3>;inner:Curve<Vector3>}) {
   const g=new BufferGeometry(),pos:number[]=[],uv:number[]=[],indices:number[]=[],buckets=[[],[],[]] as number[][];
   const ht=thickness/2,hw=width/2,bevel=Math.min(1.05,thickness*.22),flatWidth=width-2*bevel;
   const section:{a:number;b:number;material:number}[]=[];
@@ -20,13 +20,16 @@ export function ribbon(path: Curve<Vector3>, width: number, thickness: number, s
       section.push({a:aa+(side?0:(corner===3?1:-1)*crown),b:bb+(side?(corner===0?1:-1)*crown:0),material:corner===3&&decoration?2:corner===1?0:1});
     }
   }
-  const n=section.length,centres:Vector3[]=[],outwards:Vector3[]=[],lengths=[0];let previous:Vector3|undefined;
+  const n=section.length,centres:Vector3[]=[],outwards:Vector3[]=[],outside:Vector3[]=[],inside:Vector3[]=[],lengths=[0];let previous:Vector3|undefined;
   for(let i=0;i<=segments;i++){
-    const p=path.getPointAt(i/segments),t=path.getTangentAt(i/segments).normalize(),out=new Vector3(-t.y,t.x,0),rail=p.clone().addScaledVector(out,ht);
+    const p=path.getPointAt(i/segments),t=path.getTangentAt(i/segments).normalize(),out=new Vector3(-t.y,t.x,0),rail=rails?rails.outer.getPointAt(i/segments):p.clone().addScaledVector(out,ht);
+    if(rails){outside.push(rail);inside.push(rails.inner.getPointAt(i/segments));}
     centres.push(p);outwards.push(out);if(previous)lengths.push(lengths[i-1]+rail.distanceTo(previous));previous=rail;
   }
   for(let i=0;i<=segments;i++)for(let j=0;j<=n;j++){
-    const s=section[j%n],p=centres[i],out=outwards[i];pos.push(p.x+out.x*s.a,p.y+out.y*s.a,p.z+s.b);
+    const s=section[j%n],p=centres[i],out=outwards[i];if(rails){
+      const q=inside[i].clone().lerp(outside[i],(s.a+ht)/thickness);pos.push(q.x,q.y,q.z+s.b);
+    }else pos.push(p.x+out.x*s.a,p.y+out.y*s.a,p.z+s.b);
     uv.push(.5+s.b/flatWidth,1-lengths[i]/lengths[segments]);
   }
   for(let i=0;i<segments;i++)for(let j=0;j<n;j++){

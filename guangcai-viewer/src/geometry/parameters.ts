@@ -6,7 +6,7 @@ export interface Dimensions {
 }
 export const defaults: Dimensions = {
   radius: 43, height: 103, wall: 2.2, bottom: 5.5,
-  bandAngle: Math.PI / 3, handleReach: 33, handleWidth: 14, handleThickness: 4.8,
+  bandAngle: Math.PI / 3, handleReach: 35, handleWidth: 14, handleThickness: 4.8,
   saucerRadius: 75.5, lidOverhang: 2.4,
 };
 export function validateDimensions(p: Dimensions) {

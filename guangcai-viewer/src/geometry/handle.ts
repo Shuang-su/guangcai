@@ -15,15 +15,33 @@ export function handlePath(p: Dimensions) {
   return {path,upper,lower};
 }
 
+/** Independent side contours: triangular upper haunch, level top and a small
+ * outer shoulder radius. The opening is not a constant offset from the outside. */
+export function handleRails(p:Dimensions){
+  const r=p.radius,R=p.handleReach,u=p.height*.865,l=p.height*.325,t=p.handleThickness/2;
+  const v=(x:number,y:number)=>new Vector3(r+x,y,0);
+  const outer=new CurvePath<Vector3>(),inner=new CurvePath<Vector3>();
+  const ox=R+t,oy=u+t+.25,ix=R-t,iy=u-t-.35,oc=2.4,ic=5.6;
+  outer.add(new CubicBezierCurve3(v(.25,u+t),v(7,oy),v(ox-oc-7,oy),v(ox-oc,oy)));
+  outer.add(new CubicBezierCurve3(v(ox-oc,oy),v(ox-oc*.448,oy),v(ox,oy-oc*.448),v(ox,oy-oc)));
+  outer.add(new CubicBezierCurve3(v(ox,oy-oc),v(ox,l+(u-l)*.43),v(R*.76,l-t),v(.25,l-t)));
+  inner.add(new CubicBezierCurve3(v(.25,u-t-3.8),v(3,u-t-3.6),v(5.5,iy),v(9,iy)));
+  inner.add(new CubicBezierCurve3(v(9,iy),v(12,iy),v(ix-ic-3,iy),v(ix-ic,iy)));
+  inner.add(new CubicBezierCurve3(v(ix-ic,iy),v(ix-ic*.448,iy),v(ix,iy-ic*.448),v(ix,iy-ic)));
+  inner.add(new CubicBezierCurve3(v(ix,iy-ic),v(ix,l+(u-l)*.43),v(R*.72,l+t),v(.25,l+t)));
+  outer.arcLengthDivisions=1200;inner.arcLengthDivisions=1200;
+  return {outer,inner};
+}
+
 /** Shallow flared porcelain collar follows the cylindrical wall rather than
  * placing a sphere on it. Ends overlap the cup and ribbon to hide their seams. */
-export function handleCollar(radius:number,width:number,thickness:number) {
+export function handleCollar(radius:number,width:number,thickness:number,lowerHaunch=0) {
   const points:number[]=[],uvs:number[]=[],indices:number[]=[],n=64;
   const rings=[[-.35,thickness*.79,width*.58],[.1,thickness*.77,width*.58],[.6,thickness*.67,width*.55],[1.35,thickness*.55,width*.50],[2.2,thickness*.42,width*.43]];
   for(let j=0;j<rings.length;j++){
     const [x,ry,rz]=rings[j];
     for(let i=0;i<=n;i++){
-      const a=i/n*Math.PI*2,y=Math.sign(Math.cos(a))*Math.pow(Math.abs(Math.cos(a)),.55)*ry,z=Math.sign(Math.sin(a))*Math.pow(Math.abs(Math.sin(a)),.55)*rz;
+      const a=i/n*Math.PI*2,y=Math.sign(Math.cos(a))*Math.pow(Math.abs(Math.cos(a)),.55)*(ry+(Math.cos(a)<0?lowerHaunch*(1-j/(rings.length-1)*.35):0)),z=Math.sign(Math.sin(a))*Math.pow(Math.abs(Math.sin(a)),.55)*rz;
       points.push(Math.sqrt(radius*radius-z*z)+x,y,z);uvs.push(i/n,j/(rings.length-1));
     }
   }

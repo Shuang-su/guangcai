@@ -5,7 +5,7 @@ const browser=await chromium.launch({channel:'chrome',headless:true});const chec
 try{
  const page=await browser.newPage({viewport:{width:1400,height:1000}});page.on('pageerror',e=>errors.push(e.message));
  const url=(process.env.QA_URL??'http://127.0.0.1:5187/')+'compare.html';await page.goto(url);await page.waitForFunction(()=>window.cupCompare?.ready());
- for(const id of ['1221','1220','1230']){await page.selectOption('#reference',id);await page.waitForFunction(id=>window.cupCompare.state().id===id&&document.getElementById('photo').complete,id);await page.waitForTimeout(150);const s=await page.evaluate(()=>window.cupCompare.state());assert.equal(s.id,id);assert.equal(s.parameters.saucerRadius,75.5);checks.push(`${id}: same physical saucer and corresponding photo loaded`);}
+ for(const id of ['1221','1220','1230','1238','1236']){await page.selectOption('#reference',id);await page.waitForFunction(id=>window.cupCompare.state().id===id&&document.getElementById('photo').complete,id);await page.waitForTimeout(150);const s=await page.evaluate(()=>window.cupCompare.state());assert.equal(s.id,id);assert.equal(s.parameters.saucerRadius,75.5);checks.push(`${id}: same physical saucer and corresponding photo loaded`);}
  await page.selectOption('#reference','1221');await page.waitForTimeout(200);
  const original=await page.evaluate(()=>window.cupCompare.state().pose);await page.fill('#roll','3.5');await page.fill('#pitch','-2');
  assert.equal(await page.evaluate(()=>window.cupCompare.state().pose.roll),3.5);checks.push('camera roll and pitch controls change the actual 3D projection');

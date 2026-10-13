@@ -1,7 +1,7 @@
 import { CatmullRomCurve3, Group, Mesh, MeshPhysicalMaterial, PlaneGeometry, Vector3, type Material } from 'three';
 import { arc, revolve, type ProfilePoint } from './surface';
 import { ribbon } from './ribbon';
-import { handlePath, handleCollar, knobFoot } from './handle';
+import { handlePath, handleRails, handleCollar, knobFoot } from './handle';
 import { defaults, validateDimensions, type Dimensions } from './parameters';
 import type { Materials } from '../materials/materials';
 
@@ -29,28 +29,30 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   }),[m.porcelain,m.regions.body,m.foot],cup,-h/2);
   body.userData={circleRadius:r,bandRadians:actualBand,wallThickness:w};
   const {path,upper,lower}=handlePath(p);
-  mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
-  for(const y of[upper,lower])mesh('porcelain-handle-root',handleCollar(r,p.handleWidth,p.handleThickness),m.porcelain,cup,y-h/2);
+  mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
+  for(const y of[upper,lower])mesh('porcelain-handle-root',handleCollar(r,p.handleWidth,p.handleThickness,y===upper?2.5:0),m.porcelain,cup,y-h/2);
   const lr=r+p.lidOverhang;
-  const lidProfile:ProfilePoint[]=[[0,-1.3],[r-7,-1.3],[r-5,-1.5],[r-4.5,-3.3],[r-3.8,-3.7],[r-3,-3.45],[r-2.7,-1.0],[lr-1,-.35],[lr,-.1],[lr+.3,.6],[lr,1.35],[lr-1,1.65],[r-2,1.9],[r-10,2.65],[14,3.25],[0,3.35]];
+  // Side-reference estimates: thin rolled rim; 4.35 mm centre plate; 30 mm bridge span.
+  const lidProfile:ProfilePoint[]=[[0,-1.3],[r-7,-1.3],[r-5,-1.5],[r-4.5,-3.3],[r-3.8,-3.7],[r-3,-3.45],[r-2.7,-1.0],[lr-1,-.35],[lr,-.1],[lr+.3,.6],[lr,1.35],[lr-1,1.65],[r-2,1.9],[r-10,2.45],[14,2.95],[0,3.05]];
   mesh('lid-double-sided-with-seat',revolve(lidProfile,240,{material:j=>j>=8&&j<=10?1:0}),[m.porcelain,m.gold],lid);
   const knobPath=new CatmullRomCurve3(Array.from({length:81},(_,i)=>{
-    const a=Math.PI-i/80*Math.PI;return new Vector3(Math.cos(a)*12.8,3.3+Math.sin(a)*10.2,0);
+    const a=Math.PI-i/80*Math.PI;return new Vector3(Math.cos(a)*12.8,3.0+Math.sin(a)*11.7,0);
   }));
-  const knob=ribbon(knobPath,9.5,4.4,440);
+  const knob=ribbon(knobPath,10.5,4.4,440);
   const striped=new MeshPhysicalMaterial({color:'#f3f2ed',roughness:.16,clearcoat:1,clearcoatRoughness:.06,metalness:0});
   // Stripes belong to the bridge surface itself; no floating decal planes.
   const oldIndex=knob.index!,kuv=knob.getAttribute('uv'),ki:number[]=[],kb=[[],[],[]] as number[][];
   for(const group of knob.groups)for(let i=group.start;i<group.start+group.count;i+=3){
     const ids=[oldIndex.getX(i),oldIndex.getX(i+1),oldIndex.getX(i+2)];
     const v=ids.reduce((sum,id)=>sum+kuv.getY(id),0)/3;
-    const material=group.materialIndex===2&&((v*22)%1)<.14?1:group.materialIndex!;
+    const atPorcelainRoot=ids.reduce((sum,id)=>sum+knob.getAttribute('position').getY(id),0)/3<4.55;
+    const material=atPorcelainRoot?0:group.materialIndex===2&&((v*22)%1)<.14?1:group.materialIndex!;
     kb[material].push(...ids);
   }
   knob.clearGroups();kb.forEach((data,m)=>{knob.addGroup(ki.length,data.length,m);for(const index of data)ki.push(index);});knob.setIndex(ki);
   mesh('arched-bridge-knob',knob,[m.porcelain,m.gold,striped],lid);
   for(const x of [-12.8,12.8]){
-    const collar=knobFoot(9.5,4.4);collar.translate(x,3.22,0);
+    const collar=knobFoot(10.5,4.4);collar.translate(x,2.92,0);
     mesh('knob-porcelain-fillet',collar,m.porcelain,lid);
   }
   const sr=p.saucerRadius;
