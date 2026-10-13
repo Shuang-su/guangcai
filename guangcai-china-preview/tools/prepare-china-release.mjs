@@ -2,7 +2,7 @@ import{mkdir,cp,readdir,readFile,writeFile}from'node:fs/promises';
 import{createHash}from'node:crypto';
 const staging=process.argv[2];if(!staging?.startsWith('.codex-work/deploy/'))throw new Error('Provide a new project-local staging directory');
 await mkdir(staging,{recursive:true});
-const allowlist=['index.html','evidence.html','assets','china','fixed','marks','review/v3','review/floral-hq','review/floral-restored','backgrounds','cities/v4','review/v4'];
+const allowlist=['index.html','evidence.html','assets','china','fixed','marks','review/v3','review/floral-hq','review/floral-restored','backgrounds','cities/v4','review/v4','review/v4-color-coverage'];
 for(const name of allowlist)await cp(`dist/${name}`,`${staging}/${name}`,{recursive:true,errorOnExist:true,force:false,filter:p=>!p.split('/').pop().startsWith('._')});
 // Only current content-addressed textures are published. Older exports stay local.
 const runtime=JSON.parse(await readFile('src/styles/web-textures.json','utf8'));

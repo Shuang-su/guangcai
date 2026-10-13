@@ -59,10 +59,9 @@ for id,name,theme,deco,ref,dark,light,textColor in variants:
     lineStyle=deco is None
     y=np.linspace(0,1,H,dtype=np.float32)[:,None,None];t=np.clip((y-.28)/.72,0,1)
     color=np.broadcast_to(rgb(dark)*(1-t)+rgb(light)*t,(H,W,3)).copy()
-    # Unlit pigment variation, intentionally broad; no photographic highlights.
-    if not lineStyle and theme=='china':
-        balcony=(np.arange(H)[:,None]>.85*H)&(np.arange(W)[None,:]<.48*W)
-        color[balcony]=color[balcony]*.15+rgb('#f3e7c9')*.85
+    # Carry the selected pigment through the complete architectural silhouette.
+    # A rectangular cream override used to bleach rails, stairs and the tower
+    # base at the same height. White petals remain in the separate ornament layer.
     ink=rgb(textColor) if lineStyle else rgb('#dcb251')
     lf=np.clip(lines/255,0,1);color=color*(1-lf[:,:,None])+ink*lf[:,:,None]
     ornaments=np.zeros((H,W,4),dtype=np.float32)
