@@ -135,14 +135,14 @@
   },
   "name": "花鸟原图局部 · 参考重建 v4",
   "renderStandard": {
-    "relief": 2.2,
-    "clearcoatRelief": 1.6,
+    "relief": 4.4,
+    "clearcoatRelief": 2.4,
     "specularIntensity": 0.85,
     "clearcoat": 0.75,
     "clearcoatRoughness": 0.14,
     "exposure": 1.08
   },
-  "reliefRevision": "v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4.",
+  "reliefRevision": "v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4. User-requested deeper finish: normal 4.4, glaze normal 2.4. Same height and texture pixels.",
   "runtimeOffsets": {
     "saucerU": 0.5
   },

@@ -45,7 +45,7 @@ try{
  const fixedOn=await debug();
  await page.locator('#fixed-relief').uncheck();const fixedOff=await debug();
  check('floral relief off keeps city textures, geometry, and fixed maps',fixedOff.fixedFinish.normalScale===0&&fixedOff.fixedFinish.clearcoatNormalScale===0&&same(fixedOff.city,fixedOn.city)&&same(fixedOff.fixed,fixedOn.fixed)&&same(fixedOff.geometries,fixedOn.geometries));
- await page.locator('#fixed-relief').check();check('floral relief restores both paint and glaze normals',(await debug()).fixedFinish.normalScale===2.2&&(await debug()).fixedFinish.clearcoatNormalScale===1.6);
+ await page.locator('#fixed-relief').check();check('floral relief restores both paint and glaze normals',(await debug()).fixedFinish.normalScale===4.4&&(await debug()).fixedFinish.clearcoatNormalScale===2.4);
  const probeMap=(await debug()).reflections.envMap;
  await page.locator('#local-reflections').uncheck();const disabled=(await debug()).reflections;
  check('reflection toggle restores studio-only environment',!disabled.enabled&&disabled.envMap!==probeMap);

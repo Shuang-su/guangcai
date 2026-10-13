@@ -63,7 +63,7 @@ for (const c of configs) {
 }
 manifest.version=variant?1:5;
 manifest.name=variant?.name??'花鸟原图局部 · 参考重建 v4';
-manifest.renderStandard={relief:2.2,clearcoatRelief:1.6,specularIntensity:.85,clearcoat:.75,clearcoatRoughness:.14,exposure:1.08};
+manifest.renderStandard={relief:4.4,clearcoatRelief:2.4,specularIntensity:.85,clearcoat:.75,clearcoatRoughness:.14,exposure:1.08};
 manifest.reliefRevision='v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4.';
 manifest.runtimeOffsets={saucerU:variant?0:.5};
 manifest.layoutNote='Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork.';
