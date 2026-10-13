@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
   "method": "Gold: ochre chromaticity mask. Relief: paint silhouette plus bounded local chromatic ink ridges, then smoothed. No grayscale-color height conversion.",
   "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
@@ -89,7 +89,7 @@
       }
     },
     "saucer": {
-      "offsetU": 0.5,
+      "offsetU": 0.485,
       "width": 2172,
       "height": 213,
       "physical": {
@@ -144,7 +144,18 @@
   },
   "reliefRevision": "v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4. User-requested deeper finish: normal 4.4, glaze normal 2.4. Same height and texture pixels.",
   "runtimeOffsets": {
-    "saucerU": 0.5
+    "saucerU": 0.485
   },
-  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork."
+  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters with a smooth periodic phase balance; body floral coverage is cropped within the unchanged city UV allocation. Hidden reference motifs are reconstructed, not official source artwork.",
+  "layoutCalibration": {
+    "version": 1,
+    "body": {
+      "visibleEndFraction": 0.3
+    },
+    "saucer": {
+      "offsetU": 0.485,
+      "phaseBalance": 0.145
+    },
+    "note": "2026-10-13 same-camera layout calibration. Crop the body decoration within its original UV allocation; smoothly balance opposite saucer faces. Source pixels and relief remain unchanged."
+  }
 }

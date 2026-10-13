@@ -1,0 +1,35 @@
+{
+  "configs": [
+    {
+      "id": "before",
+      "phase": 0.5,
+      "repeat": 4,
+      "bandEnd": 30
+    },
+    {
+      "id": "a",
+      "phase": 0.62,
+      "repeat": 4,
+      "bandEnd": 18
+    },
+    {
+      "id": "b",
+      "phase": 0.66,
+      "repeat": 4,
+      "bandEnd": 18
+    },
+    {
+      "id": "c",
+      "phase": 0.7,
+      "repeat": 4,
+      "bandEnd": 15
+    },
+    {
+      "id": "d",
+      "phase": 0.66,
+      "repeat": 4,
+      "bandEnd": 21
+    }
+  ],
+  "errors": []
+}
