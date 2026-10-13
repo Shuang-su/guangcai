@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2222,
+      "physical": {
+        "width": 45.0294947014537,
+        "length": 97.7
+      },
+      "source": "assets/masters/china-fixed-body.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": null,
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/body-baseColor.png",
+          "sha256": "6233a1179effc841bb6a647b2e272b1fc0248e1c607c6ff252fc22e74452a1ec"
+        },
+        "metalness": {
+          "url": "fixed/body-metalness.png",
+          "sha256": "fb8d6987a4183635fb784ab91ae51a0779aac861a8146de62d0414619796f84f"
+        },
+        "roughness": {
+          "url": "fixed/body-roughness.png",
+          "sha256": "79a59d6439d174764e41f98241ff8ef4979ac56e27a326382e8d4f9e8db13cb6"
+        },
+        "height": {
+          "url": "fixed/body-height.png",
+          "sha256": "f34bfd53d8e7cec82f6911807bd4b965e2d050612a8e6e7cfca90d1e107c9fc4"
+        },
+        "normal": {
+          "url": "fixed/body-normal.png",
+          "sha256": "1504418bb55b589665981b9e1c7af1dd6dabc7e6c36b79c11d6c0c863ab100a7"
+        }
+      }
+    },
+    "handle": {
+      "width": 320,
+      "height": 3119,
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "source": "assets/masters/china-fixed-body.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": [
+        0.47,
+        0.07,
+        0.16,
+        0.82
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/handle-baseColor.png",
+          "sha256": "7b14ad7dec4331861b92a7be330ddd36e93f37f4fdf9da178586efaf2b28dad3"
+        },
+        "metalness": {
+          "url": "fixed/handle-metalness.png",
+          "sha256": "2275b0b63288c3c15a2d063aeeccc2945fe570dd2e97fc3a961edf31cc43002b"
+        },
+        "roughness": {
+          "url": "fixed/handle-roughness.png",
+          "sha256": "f82a27405548a3d0f463ca1f2334392e6aa75d602f72fc21b760abafcf11aff5"
+        },
+        "height": {
+          "url": "fixed/handle-height.png",
+          "sha256": "4b01e64ab7c86942bbe6364080674579416390d950da2a06675692a60c70dbff"
+        },
+        "normal": {
+          "url": "fixed/handle-normal.png",
+          "sha256": "93c6dbdafdf34bb4f5030ccc9502db72bdfe5c40c13aa0f6447a556e39477e33"
+        }
+      }
+    },
+    "saucer": {
+      "width": 2172,
+      "height": 213,
+      "physical": {
+        "width": 113.41149479459153,
+        "length": 11.142710621747296
+      },
+      "source": "assets/masters/china-fixed-band.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/saucer-baseColor.png",
+          "sha256": "5828c8cc1665b556d0abe8e58980088125f5dbb2d74b10231b779cb14c253e72"
+        },
+        "metalness": {
+          "url": "fixed/saucer-metalness.png",
+          "sha256": "cd5332ce0701a6dfab0017ea6a8421e6b658e0a4516baf7d004a864a55eadd10"
+        },
+        "roughness": {
+          "url": "fixed/saucer-roughness.png",
+          "sha256": "0cc46323cdc4a66ca5eaae7e73e847fe8655ca18fa448c42a62d8d471886c1a2"
+        },
+        "height": {
+          "url": "fixed/saucer-height.png",
+          "sha256": "a03f3070049a275ad7e07f9a719cfcee59edecc0d4ca457040fa102f11461d5d"
+        },
+        "normal": {
+          "url": "fixed/saucer-normal.png",
+          "sha256": "ec6bfa6e4b30d47b9d1759a7f4342afa7efd15b1cab82540e90691441b393675"
+        }
+      }
+    }
+  },
+  "name": "新版固定广彩 · 参考重建",
+  "renderStandard": {
+    "relief": 1.5,
+    "clearcoatRelief": 0.825,
+    "exposure": 1.08
+  },
+  "layoutNote": "Original accepted pipeline restored: body full master; handle crop [.47,.07,.16,.82] of body master; saucer crop [0,.38,1,.25] of band master. Uniform cover. Saucer runtime UV mirrors four quarters."
+}
