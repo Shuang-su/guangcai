@@ -6,19 +6,24 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 
-const out = 'public/artwork'; await mkdir(out, { recursive: true });
+const variantId=process.argv[2];
+const variants=JSON.parse(await readFile('assets/variant-prompts.json','utf8')).variants;
+const variant=variantId?variants.find(v=>v.id===variantId):null;
+if(variantId&&!variant)throw new Error('Unknown variant: '+variantId);
+const out = variant?`public/artwork/${variant.id}`:'public/artwork'; await mkdir(out, { recursive: true });
 const smooth = (a,b,x) => { const t=Math.max(0,Math.min(1,(x-a)/(b-a))); return t*t*(3-2*t); };
 const physical=JSON.parse(await readFile('assets/surface-metrics.json','utf8'));
 const configs = [
-  {name:'body',input:'assets/masters/body-generated.png',width:1024},
-  {name:'handle',input:'assets/masters/body-generated.png',crop:[.47,.07,.16,.82],width:320},
-  {name:'saucer',input:'assets/masters/band-generated.png',crop:[0,.38,1,.25],width:2172},
+  {name:'body',input:variant?.masters.body.path??'assets/masters/body-generated.png',width:1024},
+  {name:'handle',input:variant?.masters.body.path??'assets/masters/body-generated.png',crop:[.47,.07,.16,.82],width:320},
+  {name:'saucer',input:variant?.masters.band.path??'assets/masters/band-generated.png',crop:[0,.38,1,.25],width:2172},
 ].map(c=>({...c,height:Math.round(c.width*physical[c.name].length/physical[c.name].width)}));
 const manifest = { version:1, provenance:'Built-in image_gen; new reference-inspired artwork, not official artwork.', method:'Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.', heightCalibration:"Artistic micro-relief only; not measured, no geometric displacement", regions:{} };
 for (const c of configs) {
   let source=sharp(c.input); const meta=await source.metadata();
   if(c.crop) source=source.extract({left:Math.round(meta.width*c.crop[0]),top:Math.round(meta.height*c.crop[1]),width:Math.floor(meta.width*c.crop[2]),height:Math.floor(meta.height*c.crop[3])});
-  const {data,info}=await source.resize(c.width,c.height,{fit:"cover",position:"centre"}).removeAlpha().raw().toBuffer({resolveWithObject:true});
+  // Original accepted layout: all regions use the original normalized crops and uniform cover.
+  const {data,info}=await source.resize(c.width,c.height,{fit:'cover',position:'centre'}).removeAlpha().raw().toBuffer({resolveWithObject:true});
   const w=info.width,h=info.height,n=w*h, metal=Buffer.alloc(n),rough=Buffer.alloc(n),height=Buffer.alloc(n);
   for(let i=0;i<n;i++){
     const r=data[i*3]/255,g=data[i*3+1]/255,b=data[i*3+2]/255;
@@ -42,13 +47,17 @@ for (const c of configs) {
     normal[i]=Math.round((-dx/norm*.5+.5)*255); normal[i+1]=Math.round((dy/norm*.5+.5)*255); normal[i+2]=Math.round((1/norm*.5+.5)*255);
   }
   const maps={baseColor:data,metalness:metal,roughness:rough,height:blurred,normal};
-  const region={width:w,height:h,physical:physical[c.name],crop:c.crop??null,fit:"cover, uniform scale; all channels use identical pixel coordinates",maps:{}};
+  const region={width:w,height:h,physical:physical[c.name],source:c.input,sourceSize:[meta.width,meta.height],crop:c.crop??null,layout:'original-cover',fit:'cover, uniform scale; original normalized crop; all channels use identical pixel coordinates',maps:{}};
   for(const [channel,buffer]of Object.entries(maps)){
     const filename=`${c.name}-${channel}.png`;
     await sharp(buffer,{raw:{width:w,height:h,channels:channel==='baseColor'||channel==='normal'?3:1}}).png().toFile(`${out}/${filename}`);
-    region.maps[channel]={url:`artwork/${filename}`,sha256:createHash('sha256').update(await readFile(`${out}/${filename}`)).digest('hex')};
+    region.maps[channel]={url:`${out.slice(7)}/${filename}`,sha256:createHash('sha256').update(await readFile(`${out}/${filename}`)).digest('hex')};
   }
   manifest.regions[c.name]=region;
 }
+manifest.name=variant?.name??'花蝶 · 金地';
+manifest.renderStandard={relief:1.5,clearcoatRelief:.825,exposure:1.08};
+manifest.layoutNote='Original accepted pipeline restored: body full master; handle crop [.47,.07,.16,.82] of body master; saucer crop [0,.38,1,.25] of band master. Uniform cover. Saucer runtime UV mirrors four quarters.';
 await writeFile(`${out}/manifest.json`,JSON.stringify(manifest,null,2));
-console.log(JSON.stringify(manifest,null,2));
+await writeFile(`${out}/style.json`,JSON.stringify({name:manifest.name,regions:Object.fromEntries(configs.map(c=>[c.name,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${c.name}-${channel}.png`]))]))},null,2));
+console.log(JSON.stringify({out,regions:Object.fromEntries(Object.entries(manifest.regions).map(([k,v])=>[k,[v.width,v.height]]))}));

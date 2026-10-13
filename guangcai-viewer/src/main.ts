@@ -5,19 +5,19 @@ import { defaults } from './geometry/parameters';
 import { buildProduct } from './geometry/product';
 import { makeMaterials, type MaterialMode } from './materials/materials';
 import { createStudio } from './studio/studio';
-import { defaultPack, StyleManager, type StylePack } from './styles/style-manager';
+import { builtinStyles, defaultPack, StyleManager, type StylePack } from './styles/style-manager';
 import { ViewController, type View } from './interaction/views';
 import { createInterface } from './ui/interface';
 
-let mode:MaterialMode='pbr',relief=.65;
+let mode:MaterialMode='pbr';
 const mats=makeMaterials();let product=buildProduct(mats);
 let view:ViewController,manager:StyleManager;
 const ui=createInterface({
   reference:id=>view.reference(id),view:v=>view.set(v),auto:()=>view.setAuto(!view.auto),reset:()=>view.set('hero'),
-  mode:v=>{mode=v;inspectMaterial();},relief:v=>{relief=v;setRelief();},exposure:v=>studio.renderer.toneMappingExposure=v,
+  mode:v=>{mode=v;inspectMaterial();},builtin:async id=>{await applyBuiltin(id);},
   flat:async f=>{if(await manager.flatFile(f)){inspectMaterial();ui.style(manager.currentName);}},
   folder:async f=>{if(await manager.folder(f)){inspectMaterial();ui.style(manager.currentName);}},
-  restore:async()=>{if(await manager.apply(defaultPack)){inspectMaterial();ui.style(manager.currentName);}},
+  restore:async()=>{await applyBuiltin('original');},
   dimensions:p=>{
     try{const next=buildProduct(mats,{...product.parameters,...p});restoreMaterials();studio.scene.remove(product.root);product.dispose();product=next;studio.scene.add(product.root);originals.clear();fitArtwork();inspectMaterial();view.set('hero');ui.message('已应用推定尺寸');}
     catch(e){ui.message((e as Error).message,true);}
@@ -45,11 +45,14 @@ function inspectMaterial(){
   }
   for(const[mesh,material]of originals)mesh.material=Array.isArray(material)?material.map(convert):convert(material);
 }
-function setRelief(){for(const m of Object.values(mats.regions)){m.normalScale.setScalar(relief);m.clearcoatNormalScale.setScalar(relief*.55);}}
-manager=new StyleManager(mats,Math.min(8,studio.renderer.capabilities.getMaxAnisotropy()),()=>{setRelief();});
+async function applyBuiltin(id:string){const style=builtinStyles.find(s=>s.id===id);if(!style)throw new Error('未知花纸款式');const applied=await manager.apply(style.pack);if(applied){inspectMaterial();ui.style(manager.currentName);try{localStorage.setItem('guangcai-style',id);}catch{}}return applied;}
+manager=new StyleManager(mats,Math.min(8,studio.renderer.capabilities.getMaxAnisotropy()),()=>{});
 fitArtwork();
 const markReady=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(texture=>{texture.colorSpace=SRGBColorSpace;texture.anisotropy=4;mats.mark.map=texture;mats.mark.needsUpdate=true;});
-Promise.all([manager.apply(defaultPack),markReady]).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
+let initialStyle=new URLSearchParams(location.search).get('style');
+try{initialStyle??=localStorage.getItem('guangcai-style');}catch{}
+const initialPack=builtinStyles.find(s=>s.id===initialStyle)?.pack??defaultPack;
+Promise.all([manager.apply(initialPack),markReady]).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
 function fitArtwork(){
   const p=product.parameters;
   const handle=product.cup.getObjectByName('wide-ribbon-handle') as Mesh;
@@ -63,11 +66,12 @@ ui.canvas.addEventListener('dblclick',()=>view.set('hero'));
 // Public, typed API: geometry never changes when swapping a style package.
 const api={
   ready:()=>ui.canvas.dataset.ready==='true',
+ applyBuiltin,
   reference:(id:ReferenceId)=>view.reference(id),
   setView:(v:View)=>view.set(v),setAuto:(v:boolean)=>view.setAuto(v),
   applyStyle:async(pack:StylePack)=>{const applied=await manager.apply(pack);if(applied){inspectMaterial();ui.style(manager.currentName);}return applied;},
   restore:async()=>{const applied=await manager.apply(defaultPack);if(applied){inspectMaterial();ui.style(manager.currentName);}return applied;},
-  debug:()=>({view:view.view,mode,style:manager.currentName,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(x=>x.geometry.uuid),memory:{...studio.renderer.info.memory},parameters:{...product.parameters},regions:Object.fromEntries(Object.entries(mats.regions).map(([k,m])=>[k,{normal:!!m.normalMap,metal:!!m.metalnessMap,roughness:!!m.roughnessMap,metalness:m.metalness,repeat:m.map?.repeat.toArray(),offset:m.map?.offset.toArray(),mapSize:m.map?[(m.map.image as HTMLImageElement).width,(m.map.image as HTMLImageElement).height]:null}]))}),
+  debug:()=>({exposure:studio.renderer.toneMappingExposure,view:view.view,mode,style:manager.currentName,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(x=>x.geometry.uuid),memory:{...studio.renderer.info.memory},parameters:{...product.parameters},regions:Object.fromEntries(Object.entries(mats.regions).map(([k,m])=>[k,{channels:Object.fromEntries(Object.entries(manager.currentMaps[k as keyof typeof mats.regions]??{}).map(([channel,t])=>[channel,{repeat:t.repeat.toArray(),offset:t.offset.toArray(),colorSpace:t.colorSpace}])),normalScale:m.normalScale.toArray(),clearcoatNormalScale:m.clearcoatNormalScale.toArray(),normal:!!m.normalMap,metal:!!m.metalnessMap,roughness:!!m.roughnessMap,metalness:m.metalness,repeat:m.map?.repeat.toArray(),offset:m.map?.offset.toArray(),mapSize:m.map?[(m.map.image as HTMLImageElement).width,(m.map.image as HTMLImageElement).height]:null}]))}),
   dispose:()=>{disposed=true;cancelAnimationFrame(raf);manager.dispose();view.dispose();restoreMaterials();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();studio.dispose();},
 };
 inspectMaterial();

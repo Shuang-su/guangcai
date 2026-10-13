@@ -2,7 +2,14 @@ import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpa
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string}
 export interface StylePack {name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'花蝶 · 金地',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}artwork/${region}-${k}.png`]))])) as unknown as StylePack['regions']};
+export const defaultPack:StylePack={name:'花蝶 · 金地',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}artwork/${region}-${k}.png`]))])) as unknown as unknown as StylePack['regions']};
+export const builtinStyles = [
+  {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
+  ...[
+    {id:'peony-magnolia',name:'牡丹玉兰 · 金地',description:'珊瑚牡丹、白玉兰与翠叶'},
+    {id:'lotus-butterfly',name:'莲荷双蝶 · 金地',description:'粉莲、青荷与两只彩蝶'},
+  ].map(style=>({...style,path:`artwork/${style.id}`,pack:{name:style.name,regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${import.meta.env.BASE_URL}artwork/${style.id}/${region}-${channel}.png?v=dense-v3-final`]))])) as unknown as StylePack['regions']}}))
+];
 const channels=['baseColor','normal','roughness','metalness','height'] as const;
 const regions:Region[]=['body','handle','saucer'];
 export class StyleManager {

@@ -1,0 +1,31 @@
+{
+  "id": "1236",
+  "pose": {
+    "yaw": 90,
+    "pitch": 3.263230933212226,
+    "roll": 90.01134281885084,
+    "distance": 179.19230012600545,
+    "fov": 35,
+    "cx": 0.5112196649252497,
+    "cy": 0.47204706950120995,
+    "targetY": 109
+  },
+  "photoSize": [
+    1368,
+    1824
+  ],
+  "mode": "pbr",
+  "opacity": 0.5,
+  "parameters": {
+    "radius": 43,
+    "height": 103,
+    "wall": 2.2,
+    "bottom": 5.5,
+    "bandAngle": 1.0471975511965976,
+    "handleReach": 35,
+    "handleWidth": 14,
+    "handleThickness": 4.8,
+    "saucerRadius": 75.5,
+    "lidOverhang": 2.4
+  }
+}

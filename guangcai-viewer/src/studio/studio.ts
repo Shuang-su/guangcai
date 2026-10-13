@@ -1,10 +1,11 @@
 import { createContactShadow } from './contact-shadow';
+import { RENDER_STANDARD } from '../materials/render-standard';
 import { ACESFilmicToneMapping, BoxGeometry, Color, DirectionalLight, HalfFloatType, HemisphereLight, Mesh, MeshBasicMaterial, MeshStandardMaterial, PCFShadowMap, PerspectiveCamera, PlaneGeometry, PMREMGenerator, Scene, SRGBColorSpace, ShadowMaterial, WebGLRenderer, BackSide } from 'three';
 
 export function createStudio(canvas:HTMLCanvasElement,transparent=false){
   const renderer=new WebGLRenderer({canvas,antialias:true,alpha:transparent,preserveDrawingBuffer:true,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=SRGBColorSpace;
-  renderer.toneMapping=ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;
+  renderer.toneMapping=ACESFilmicToneMapping;renderer.toneMappingExposure=RENDER_STANDARD.exposure;
   renderer.shadowMap.enabled=true;renderer.shadowMap.type=PCFShadowMap;
   const scene=new Scene();scene.background=transparent?null:new Color('#b7b8ba');
   if(transparent)renderer.setClearColor(0x000000,0);

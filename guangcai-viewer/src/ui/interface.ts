@@ -1,10 +1,12 @@
+import {builtinStyles} from '../styles/style-manager';
+import {RENDER_STANDARD} from '../materials/render-standard';
 import {references,type ReferenceId} from '../interaction/reference-views';
 import { viewLabels, type View } from '../interaction/views';
 import type { MaterialMode } from '../materials/materials';
 import type { Dimensions } from '../geometry/parameters';
 export interface Actions{
  reference:(v:ReferenceId)=>void;view:(v:View)=>void;auto:()=>void;reset:()=>void;mode:(v:MaterialMode)=>void;
- relief:(v:number)=>void;exposure:(v:number)=>void;flat:(f:File)=>Promise<void>;
+ builtin:(id:string)=>Promise<void>;flat:(f:File)=>Promise<void>;
  folder:(f:File[])=>Promise<void>;restore:()=>Promise<void>;dimensions:(p:Partial<Dimensions>)=>void;
 }
 export function createInterface(actions:Actions,p:Dimensions){
@@ -12,17 +14,17 @@ export function createInterface(actions:Actions,p:Dimensions){
     <main aria-label="广彩瓷器三维观察器">
       <canvas id="viewport" aria-label="可旋转的三维杯、盖与碟；也可使用下方预设视角" tabindex="0"></canvas>
       <header><div class="identity"><h1>广彩 · 器物</h1><p>一号杯 · 花纹展示</p></div>
-        <div class="top-actions"><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div>
+        <div class="top-actions"><a href="./texture-standards.html" class="standards-top">花纸与标准</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div>
       </header>
       <button id="open-settings" class="open-settings" aria-expanded="false" aria-controls="settings">材质与图案</button>
       <aside id="settings" hidden aria-label="材质与图案设置">
         <div class="panel-heading"><h2>材质与图案</h2><button id="close-settings" aria-label="关闭设置">关闭</button></div>
         <section><label class="field-label" for="reference-view">照片对应机位</label><select id="reference-view"><option value="">选择参考照片</option>${Object.entries(references).map(([id,p])=>`<option value="${id}">${p.label}</option>`).join('')}</select><p class="note">依据照片透视估计，保留自由旋转。原照片分组与对照图见交付目录。 <a href="./compare.html">打开实拍叠图校准</a></p></section><section><label class="field-label" for="material-mode">观察材质</label>
           <select id="material-mode"><option value="pbr">白瓷 · 金彩 · 花纸</option><option value="porcelain">素瓷与金边</option><option value="clay">中性灰器型</option><option value="normal">表面法线</option><option value="metalness">金属区域</option></select>
-          <label class="slider-label" for="relief">彩绘微浮雕 <output id="relief-value">0.65</output></label><input id="relief" type="range" min="0" max="1.5" value="0.65" step="0.05">
-          <label class="slider-label" for="exposure">摄影棚亮度 <output id="exposure-value">1.08</output></label><input id="exposure" type="range" min=".65" max="1.5" value="1.08" step=".01">
+          <dl class="fixed-settings"><div><dt>彩绘微浮雕 · 固定</dt><dd id="relief-value">${RENDER_STANDARD.relief.toFixed(1)}</dd></div><div><dt>摄影棚亮度 · 固定</dt><dd id="exposure-value">${RENDER_STANDARD.exposure.toFixed(2)}</dd></div></dl>
+          <p class="note">所有花纸共用同一光照。微浮雕数值为法线强度，不是毫米高度。</p>
         </section>
-        <section><h3>替换图案</h3><p class="current-style" id="style-name">正在载入花纸…</p>
+        <section><h3>花纸款式</h3><div class="style-choices">${builtinStyles.map(s=>`<button class="style-choice" data-style="${s.id}" aria-pressed="false"><img src="${import.meta.env.BASE_URL}${s.path}/saucer-baseColor.png?v=dense-v3-final" alt=""><span>${s.name}</span><small>${s.description}</small></button>`).join('')}</div><a class="standards-link" href="./texture-standards.html">查看展开贴图与生成标准 ↗</a></section><section><h3>替换图案</h3><p class="current-style" id="style-name">正在载入花纸…</p>
           <label class="file-button">上传一张图片<input id="flat-upload" type="file" accept="image/png,image/jpeg,image/webp"></label>
           <p class="note">按各装饰区比例等比裁切，自动清除旧浮雕和金属遮罩。</p>
           <label class="file-button secondary">导入完整材质包<input id="pack-upload" type="file" webkitdirectory multiple></label>
@@ -53,10 +55,11 @@ export function createInterface(actions:Actions,p:Dimensions){
   $<HTMLSelectElement>('#reference-view').onchange=e=>{actions.reference((e.target as HTMLSelectElement).value as ReferenceId);setPanel(false);};
   $('#auto').onclick=actions.auto;$('#reset').onclick=actions.reset;
   $<HTMLSelectElement>('#material-mode').onchange=e=>actions.mode((e.target as HTMLSelectElement).value as MaterialMode);
-  for(const id of['relief','exposure'] as const){$<HTMLInputElement>(`#${id}`).oninput=e=>{const v=+(e.target as HTMLInputElement).value;$(`#${id}-value`).textContent=v.toFixed(2);actions[id](v);};}
+
   const operation=async(fn:()=>Promise<void>)=>{try{message('正在载入图案…',true);await fn();}catch(e){message(e instanceof Error?e.message:'操作失败，保留当前图案。',true);}};
   $<HTMLInputElement>('#flat-upload').onchange=e=>{const el=e.target as HTMLInputElement,f=el.files?.[0];if(f)void operation(()=>actions.flat(f));el.value='';};
   $<HTMLInputElement>('#pack-upload').onchange=e=>{const el=e.target as HTMLInputElement,files=Array.from(el.files??[]);if(files.length)void operation(()=>actions.folder(files));el.value='';};
+  document.querySelectorAll<HTMLButtonElement>('[data-style]').forEach(b=>b.onclick=()=>void operation(()=>actions.builtin(b.dataset.style!)));
   $('#restore').onclick=()=>void operation(actions.restore);
   $('#apply-dimensions').onclick=()=>{
     const ids=['diameter','height','wall','reach'];if(ids.some(id=>!$<HTMLInputElement>(`#${id}`).reportValidity()))return;
@@ -66,7 +69,7 @@ export function createInterface(actions:Actions,p:Dimensions){
   function message(text:string,persistent=false){clearTimeout(messageTimer);$('#status').textContent=text;$('#status').classList.add('visible');if(!persistent)messageTimer=window.setTimeout(()=>$('#status').classList.remove('visible'),4000);}
   return{canvas:$<HTMLCanvasElement>('#viewport'),message,
     update(view:View,auto:boolean){document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));$('#auto').setAttribute('aria-pressed',String(auto));$('#auto').textContent=auto?'暂停旋转':'自动旋转';},
-    style(name:string){$('#style-name').textContent=name;message(`已应用 · ${name}`);},
+    style(name:string){document.querySelectorAll<HTMLButtonElement>('[data-style]').forEach(b=>b.setAttribute('aria-pressed',String(builtinStyles.find(s=>s.id===b.dataset.style)?.name===name)));$('#style-name').textContent=name;message(`已应用 · ${name}`);},
     error(text:string){$('#fatal').hidden=false;$('#fatal').textContent=text;},
   };
 }

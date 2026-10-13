@@ -49,7 +49,7 @@ $('photo-only').onclick=()=>{$<HTMLInputElement>('opacity').value='0';$<HTMLInpu
 $('model-only').onclick=()=>{$<HTMLInputElement>('opacity').value='1';$<HTMLInputElement>('show-photo').checked=false;presentation();};
 $('overlay').onclick=()=>{$<HTMLInputElement>('opacity').value='.5';$<HTMLInputElement>('show-photo').checked=true;presentation();};
 $('reset-pose').onclick=()=>{localStorage.removeItem(`guangcai-calibration-${id}`);void select(id,true);};
-function state(){return{id,pose:{...pose},photoSize:[photo.naturalWidth,photo.naturalHeight],mode:$<HTMLSelectElement>('mode').value,opacity:Number(canvas.style.opacity||.5),parameters:product.parameters};}
+function state(){return{id,pose:{...pose},photoSize:[photo.naturalWidth,photo.naturalHeight],mode:$<HTMLSelectElement>('mode').value,opacity:Number(canvas.style.opacity||.5),parameters:product.parameters,renderStandard:{exposure:studio.renderer.toneMappingExposure,normalScales:Object.values(mats.regions).map(m=>m.normalScale.toArray())}};}
 function download(href:string,name:string){const a=document.createElement('a');a.href=href;a.download=name;a.click();}
 function capture(){render();const output=document.createElement('canvas');output.width=photo.naturalWidth;output.height=photo.naturalHeight;const c=output.getContext('2d')!;c.fillStyle='#e6e5e3';c.fillRect(0,0,output.width,output.height);if($<HTMLInputElement>('show-photo').checked)c.drawImage(photo,0,0);c.globalAlpha=Number(canvas.style.opacity||.5);c.drawImage(canvas,0,0,output.width,output.height);return output.toDataURL('image/png');}
 $('save-image').onclick=()=>download(capture(),`IMG_${id}-overlay.png`);
