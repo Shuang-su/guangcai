@@ -1,34 +1,65 @@
 # V4 completion record
 
-Issue: https://github.com/Shuang-su/guangcai/issues/14
-Branch: codex/china-4.0
-Base: 5af1f73aaacbb7ce1662e4ebbe4de0f15a6f231b (V3 release closeout); published V3 source 9400eaf7f65452cbaa68bee563b9793c632d17ae.
+V4 is implemented, manually deployed, and verified from the public URL. The V3 and 2.2 deployments remain unchanged. Code review remains Draft; this record does not claim user visual acceptance or physical-device acceptance.
 
-## Source stage
-- Independent full-history Git clone on 初号機; source directory remains guangcai-china-preview. Original workspaces and V3 deployment remain unchanged.
-- Eight user reference images copied with SHA-256. Built-in imagegen produced six independent ornament layers and one shared Shenzhen line master; complete prompts and outputs saved.
-- China architecture reuses PSD-derived structure; Shenzhen palettes share one master. Colors, coverage, metalness, roughness, coat and RGBA16F normals are independently aligned. 16-bit source heights retain over 64,000 distinct levels.
-- Independent checked labels: 中国 / CHINA, 深圳 / SHENZHEN, 和合共彩, 共创美好. Text is not taken from generated lettering.
-- Original application: six tests and TypeScript/Vite build passed in this clone before its generated dependencies/output were removed to recover disk space. China application: 20 tests passed, including selection/race semantics and preserved geometry.
-- First visual samples rendered without shader/page errors. Default-gold model region versus V3 baseline mean channel difference <0.01/255. Full V4 browser matrix is still running; this is not yet deployment completion.
+- Live: https://guangcai-no1-china-v4.netlify.app/
+- Comparison gallery: https://guangcai-no1-china-v4.netlify.app/evidence.html#v4
+- Issue: https://github.com/Shuang-su/guangcai/issues/14
+- Draft PR: https://github.com/Shuang-su/guangcai/pull/15
+- Branch: codex/china-4.0, stacked on codex/china-3.0 because V3 PR #13 remains Draft.
+- Base: 5af1f73aaacbb7ce1662e4ebbe4de0f15a6f231b. Published V3 source: 9400eaf7f65452cbaa68bee563b9793c632d17ae.
+- Source checkpoint: 5b96503 (masters and aligned channels).
+- Implementation / deployed source checkpoint: b39b23ae5358e52efea8b09d0324a64634d8124f.
+- Final closeout adds deployment archive/readback and a release-inventory sidecar filter. It does not change the deployed runtime.
 
-Remaining: complete browser/visual checks, evidence page, build, manual V4 deployment and live readback, Draft PR and final records. No physical-phone or manufacturing acceptance is claimed.
+## Delivered behavior
 
-## Implementation and review stage
-- Source checkpoint: 5b96503. Selection UI, catalog transactions and backward-compatible city material channels are now implemented. City coverage is separate from metalness and porcelain calibration; hidden text removes its frame.
-- Default-gold crop against V3 measured mean byte difference 0.00000132, with identical geometry, fixed flowers, source city maps, global exposure, studio and structural-gold code.
-- Visual review found an upper-right blue peony overlapping China text. A separately saved imagegen revision removed that cluster; lower peonies, birds and clouds remain. Final UV text reservation replaces the earlier pre-placement rectangle. Original generation is preserved as blue-ornaments-before-text-reserve.png and in the first checkpoint.
-- Floating height filtering/placement prevents 8-bit quantization before 16-bit export. Precision and text-zone measurements are saved with the masters. All eight label regions contain no opaque artwork overlap (China maximum 0/255, Shenzhen residual 1/255).
-- Browser fault-test fixture initially reused an already decoded image; replaced it with an intercepted float-normal request. A developer hot reload interrupted a later geometry-identity check; final regression runs against a static production build. These interruptions are not claimed as passing acceptance.
-- Background regression: 24 checks passed, including local uploads, decode failure retention, stale-load handling, portrait/landscape and disposal. Unit/geometry/normal suite: 20 tests passed.
-- Netlify V4 site created independently: cbb885ed-16d0-41a2-9ab0-055c0c3ce234. build_settings is empty; no Git repo/provider/branch. Built-with badge disabled. No production deploy yet.
+Nine choices: China original gold, green-gold, red-gold, purple-gold, blue-gold, blue line, purple line; Shenzhen red-gold and teal-gold. Eight new choices offer enamel/gold lines, colored metal and light-relief paint. Original gold keeps V3 material behavior and is the initial default.
 
-## Visual limits
-The new assets are source-aligned previews. China structural ink remains PSD-derived, while fills are controlled reference palettes and broad unlit washes. Generated ornaments and the shared Shenzhen master are not exact replicas of the reference artwork. Generated originals are 1900 × 828, resampled into the common 4096 × 1783 frame. Text frames are independently authored rounded borders, not copied calligraphic frames. Relief is shader-based and is not a physical-depth or manufacturing claim. Browser mobile emulation does not constitute physical iPhone/Android acceptance.
+Independent lettering offers auto, theme name, applicable Shenzhen slogans, or none. China lettering uses the PSD glyphs. Shenzhen names and slogans are separately typeset and checked, with their own frames. Hidden lettering also hides the frame. None persists across themes; Shenzhen-only slogans reset for China. Lettering color follows the variant. No free input.
 
-## Pre-deployment validation
-- Production build: TypeScript and Vite passed. China tests: 20/20. V4 production-browser regression: 82/82, zero shader/page exceptions. Background regression: 24/24. The untouched original application had 6/6 tests plus a successful build in this clone.
-- Evidence: all 8 × 3 × 4 = 96 finish/view images, plus 16 gray/off images, separate lettering captures, references, aligned atlases and structural overlays. These are real rendered frames, not imagegen cup mockups.
-- Browser sizes 320×667, 390×844, 844×390, 1440×1000, including touch emulation. Right drag, two-finger pan, camera reset versus artwork reset, last-wins updates, decode/network failure rollback and GPU texture-count stability passed.
-- Initial runtime transfer measured locally ~52.2 MB, dominated by retained high-detail V3 flowers. New variants are not requested on the initial screen; identical maps share content-hashed URLs. Local timings are not public-network or physical-phone timing claims.
-- Source/model proof: geometry, studio, structural gold and original China/fixed source-channel files have no diff against V3 base.
+The responsive theme panel contains thumbnails, material and lettering controls, and restore-default artwork. Camera reset does not reset artwork. Artwork changes preserve camera and background. New variants load only on demand; completed map groups commit atomically, stale loads are discarded, failure retains the current complete appearance, and replaced textures are disposed. Old applyCityArtwork(pack) remains supported.
+
+Coverage, metalness, clearcoat and height/normal data are separate. Porcelain-only calibration excludes nonmetal colored artwork and lettering. Fixed Guangcai, geometry, studio, structural gold, original gold city textures, global exposure and background behavior remain unchanged.
+
+## Source and implementation
+
+Development used an independent full-history clone on 初号機, preserving the existing guangcai-china-preview application directory. Original workspaces were not modified. Caches/staging remain project-local; no Photoshop or separate cloud PSD parsing was used.
+
+Eight references are copied with hashes. Built-in imagegen produced six ornament layers and one shared Shenzhen line master; prompts and native outputs are saved under assets/masters/v4. China structural ink and coverage reuse the PSD-derived source and calibrated placement. Shenzhen palettes share one master. All new runtime channels align to 4096 × 1783. Height masters are 16-bit, normals RGBA16F; float filtering and placement avoid intermediate 8-bit quantization. All eight heights retain over 64,000 distinct values.
+
+Visual inspection found a blue flower cluster overlapping the lettering. A separately saved imagegen revision removed that cluster while retaining lower peonies, birds and clouds. The earlier generation remains saved. Final UV text reservations have no opaque artwork overlaps (China maximum 0/255, Shenzhen residual 1/255).
+
+## Validation
+
+- China unit/geometry/normal suite: 20/20 passed. TypeScript/Vite production build passed.
+- Untouched original application: 6/6 tests and build passed in this clone before its generated dependencies/output were removed for disk space.
+- V4 static-production browser regression: 82/82 passed; public V4: 81/81 passed. The one local-only check is the V3 pixel baseline. Zero shader errors or uncaught page exceptions.
+- Background regression: 24/24 passed, including uploads, decode failure retention, stale loads, portrait/landscape and disposal.
+- Viewports: 320×667, 390×844, 844×390, 1440×1000. Right-button pan, emulated two-finger pan, ten inspection views, camera versus artwork reset, fast selection, failure rollback, old API compatibility and stable GPU texture counts passed.
+- Evidence includes 96 rendered finish/view images (8 × 3 × 4), 16 gray/off images, separate lettering captures, reference comparisons, aligned atlases and line overlays. These are actual Three.js renders rather than generated cup mockups.
+- Default-gold V3/V4 model-region mean byte difference: 0.00000132. Geometry, studio, structural-gold and original China/fixed source channels have no diff against V3 base.
+- Public comparison-gallery images and selectors were separately checked; see output/playwright/v4/online/evidence-qa.json.
+- All 367 public content files match Netlify API SHA-1 values, and the immutable local archive matches SHA-256. Netlify lowercases paths in its API; mixed-case runtime URLs also passed browser checks. The extra internal netlify.toml API record is processed configuration, not publicly served content (HTTP 404).
+
+Intermediate test interruptions are retained accurately: an already decoded image bypassed an initial failure fixture, so the fixture was changed to intercept the float-normal request; a development hot reload interrupted one geometry-identity test, so final acceptance used static production. Neither interruption was counted as a passed check.
+
+## Loading observations
+
+The fresh public desktop browser reached default-ready in 9,929 ms, including 1,900 ms deliberate render settling. Runtime resource transfer was 52,188,422 bytes; the retained high-detail fixed flower maps dominate this amount. No new variant textures were requested on the initial screen.
+
+The seven new variants not previously selected in that browser took 1.734–4.266 seconds on their first recorded selection, including 200 ms settling. China green was already warm from UI checks. These are single observations, not repeated cold benchmarks. Public QA used process-only proxy DNS mapping and disabled HTTP/2 to accommodate this machine's network. No OS network setting was changed. No physical mobile-network or phone performance claim is made.
+
+## Deployment and preservation
+
+Manual deployment ID: 6aceb7c1c85f347fb86ce86d. Site ID: cbb885ed-16d0-41a2-9ab0-055c0c3ce234. Netlify readback confirms ready, with no repository, provider or branch binding and no Git auto-deploy. Built-with badge is disabled.
+
+V3 remains at 6ace443df7425f433e717eb0. China 2.2 remains at 6ace111ab0415c9455a3c6f8. Both remain unbound from Git. No merge, release tag, V3 overwrite or old-site rollback was performed.
+
+Immutable content archive: deployments/guangcai-no1-china-v4/6aceb7c1c85f347fb86ce86d (367 content files, 259,134,942 bytes). ExFAT-generated AppleDouble metadata is excluded from content counts and Git. The original staging inventory and normalized release manifest are both retained. The release helper now excludes sidecars even if the filesystem recreates them during copy.
+
+## Remaining visual and device limits
+
+China structure is PSD-derived; the architectural fills use controlled reference palettes and broad unlit washes. The enamel appearance is softer and often lighter than the supplied flat reference, depending on the camera and reflections. Generated ornament shapes and the Shenzhen skyline are reference reconstructions, not exact reproductions. Native generation was 1900 × 828 and resampled to the common output frame; this is not recovery of nonexistent source pixels. Independently authored rounded slogan frames differ from the decorative reference frames.
+
+The current relief is shader-based visual approximation, not a manufacturing depth specification. Browser mobile/touch emulation does not replace physical iPhone/Android or Safari acceptance. Final color, ornament/detail and manufacturing approval remain with the user; the PR therefore stays Draft.

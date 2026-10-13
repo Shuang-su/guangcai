@@ -9,7 +9,9 @@ const runtime=JSON.parse(await readFile('src/styles/web-textures.json','utf8'));
 await mkdir(`${staging}/textures`,{recursive:true});
 for(const path of Object.values(runtime))await cp(`dist/${path}`,`${staging}/${path}`,{errorOnExist:true,force:false});
 const files=[];
-async function walk(dir,prefix=''){for(const entry of await readdir(dir,{withFileTypes:true})){const p=prefix+entry.name;if(entry.isDirectory())await walk(dir+'/'+entry.name,p+'/');else{const data=await readFile(dir+'/'+entry.name);files.push({path:p,size:data.length,sha256:createHash('sha256').update(data).digest('hex'),sha1:createHash('sha1').update(data).digest('hex')});}}}
+// ExFAT may create AppleDouble sidecars during cp even when its input filter
+// excludes them. They are filesystem metadata, not Netlify release content.
+async function walk(dir,prefix=''){for(const entry of await readdir(dir,{withFileTypes:true})){if(entry.name.startsWith('._'))continue;const p=prefix+entry.name;if(entry.isDirectory())await walk(dir+'/'+entry.name,p+'/');else{const data=await readFile(dir+'/'+entry.name);files.push({path:p,size:data.length,sha256:createHash('sha256').update(data).digest('hex'),sha1:createHash('sha1').update(data).digest('hex')});}}}
 await walk(staging);files.sort((a,b)=>a.path.localeCompare(b.path));
 const result={date:new Date().toISOString(),siteName:'guangcai-no1-china-v4',staging,allowlist,files,totalBytes:files.reduce((n,f)=>n+f.size,0)};
 const recordDir=process.env.RELEASE_RECORD_DIR??'evidence/deployment/v4';
