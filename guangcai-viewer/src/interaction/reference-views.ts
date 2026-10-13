@@ -1,6 +1,13 @@
 /** Approximate camera matches, inferred from rim ellipse and visible handle width.
  * No claim of calibrated lens or pixel-perfect pose from unmeasured photos. */
 export const references={
+  '1221-detail':{label:'1221 · 侧缘轮廓放大',part:'saucer',camera:[69,9.5,82],target:[69,9,0],detail:true},
+  '1221':{label:'1221 · 底碟外撇与下肩',part:'saucer',camera:[0,12,405],target:[0,8,0]},
+  '1225':{label:'1225 · 承杯金圈',part:'saucer',camera:[0,145,270],target:[0,7,0]},
+  '1229':{label:'1229 · 杯底灰色底款',part:'cup',camera:[0,-290,20],target:[0,45,0]},
+  '1230':{label:'1230 · 碟底与底款',part:'saucer',camera:[0,-310,30],target:[0,4,0]},
+  '1237':{label:'1237 · 盖钮与白瓷过渡',part:'lid',camera:[30,43,210],target:[0,36,0]},
+  '1236':{label:'1236 · 盖钮宽面',part:'lid',camera:[210,44,0],target:[0,36,0]},
   '1220':{label:'1220 · 产品侧面比例',part:'all',camera:[-8,139,465],target:[13,57,0]},
   '1197':{label:'1197 · 侧前方整体',part:'all',camera:[155,174,335],target:[7,65,0]},
   '1198':{label:'1198 · 把手正对',part:'all',camera:[360,202,32],target:[9,64,0]},

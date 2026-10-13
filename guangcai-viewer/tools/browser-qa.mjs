@@ -10,7 +10,7 @@ const check=(name,value)=>{assert.ok(value,name);checks.push(name);};
 try{
  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready());await page.waitForTimeout(700);
  const initial=await debug();check('initial aligned PBR maps loaded',Object.values(initial.regions).every(r=>r.normal&&r.metal&&r.roughness));
- for(const view of ['front','handle','top','bottom','exploded','lid','detail','hero']){
+ for(const view of ['front','handle','top','bottom','saucerBottom','exploded','lid','detail','hero']){
    await page.locator(`[data-view="${view}"]`).click();await page.waitForTimeout(1400);
    check(`UI view ${view}`, (await debug()).view===view);
    if(view==='bottom')check('flipped cup clears ground',(await debug()).bottomClearance>30);

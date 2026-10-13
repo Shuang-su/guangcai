@@ -3,7 +3,7 @@ import { Box3, MathUtils, Quaternion, Vector3 } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Product } from '../geometry/product';
 import type { Studio } from '../studio/studio';
-export const viewLabels={hero:'整体',front:'正面',handle:'把手',top:'俯视',bottom:'杯底',exploded:'拆解',lid:'杯盖',detail:'花纹细看'} as const;
+export const viewLabels={hero:'整体',front:'正面',handle:'把手',top:'俯视',bottom:'杯底',saucerBottom:'碟底',exploded:'拆解',lid:'杯盖',detail:'花纹细看'} as const;
 export type View=keyof typeof viewLabels;
 export class ViewController{
   controls:OrbitControls;view:View='hero';auto=false;
@@ -32,6 +32,9 @@ export class ViewController{
       p.lid.visible=false;p.saucer.visible=false;this.cupPos.set(0,h/2+38,0);
       this.cupQuat.setFromAxisAngle(new Vector3(1,0,0),Math.PI);
       pos=[170,300,290];this.toTarget.set(4,h/2+42,0);
+    }
+    if(view==='saucerBottom'){
+      p.cup.visible=false;p.lid.visible=false;pos=[0,-290,50];this.toTarget.set(0,5,0);
     }
     if(view==='lid'){
       p.cup.visible=false;p.saucer.visible=false;this.lidPos.set(0,33,0);
@@ -64,7 +67,7 @@ export class ViewController{
     p.root.updateMatrixWorld(true);
     const bounds=new Box3();
     for(const part of [p.cup,p.lid,p.saucer])if(part.visible)bounds.union(new Box3().setFromObject(part));
-    for(let iteration=0;iteration<3;iteration++){
+    for(let iteration=0;iteration<('detail' in pose?0:3);iteration++){
       this.studio.camera.updateMatrixWorld(true);let scale=1;
       for(const x of [bounds.min.x,bounds.max.x])for(const y of [bounds.min.y,bounds.max.y])for(const z of [bounds.min.z,bounds.max.z]){
         const v=new Vector3(x,y,z).project(this.studio.camera);scale=Math.max(scale,Math.abs(v.x)/.9,Math.abs(v.y)/.88);

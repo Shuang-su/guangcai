@@ -1,12 +1,13 @@
 import { createContactShadow } from './contact-shadow';
 import { ACESFilmicToneMapping, BoxGeometry, Color, DirectionalLight, HalfFloatType, HemisphereLight, Mesh, MeshBasicMaterial, MeshStandardMaterial, PCFShadowMap, PerspectiveCamera, PlaneGeometry, PMREMGenerator, Scene, SRGBColorSpace, ShadowMaterial, WebGLRenderer, BackSide } from 'three';
 
-export function createStudio(canvas:HTMLCanvasElement){
-  const renderer=new WebGLRenderer({canvas,antialias:true,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+export function createStudio(canvas:HTMLCanvasElement,transparent=false){
+  const renderer=new WebGLRenderer({canvas,antialias:true,alpha:transparent,preserveDrawingBuffer:true,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=SRGBColorSpace;
   renderer.toneMapping=ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;
   renderer.shadowMap.enabled=true;renderer.shadowMap.type=PCFShadowMap;
-  const scene=new Scene();scene.background=new Color('#b7b8ba');
+  const scene=new Scene();scene.background=transparent?null:new Color('#b7b8ba');
+  if(transparent)renderer.setClearColor(0x000000,0);
   const camera=new PerspectiveCamera(33,1,.5,2500);camera.position.set(205,175,285);
   const environment=new Scene();environment.background=new Color('#565961');
   const room=new Mesh(new BoxGeometry(100,100,100),new MeshBasicMaterial({color:new Color().setScalar(.30),side:BackSide}));environment.add(room);

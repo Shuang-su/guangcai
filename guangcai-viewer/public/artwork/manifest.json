@@ -76,10 +76,10 @@
     },
     "saucer": {
       "width": 2172,
-      "height": 203,
+      "height": 213,
       "physical": {
-        "width": 114.74667167236719,
-        "length": 10.720074626605918
+        "width": 113.41149479459153,
+        "length": 11.142710621747296
       },
       "crop": [
         0,
@@ -91,23 +91,23 @@
       "maps": {
         "baseColor": {
           "url": "artwork/saucer-baseColor.png",
-          "sha256": "05c2cd37bf48b498c1251a40f2ae36cfac3cf91e20837af935d102cf308f938c"
+          "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc"
         },
         "metalness": {
           "url": "artwork/saucer-metalness.png",
-          "sha256": "c72f6b616d5e4cb42d7fda4edf49dde61d0c0667033427f86415bf9a56f1d279"
+          "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716"
         },
         "roughness": {
           "url": "artwork/saucer-roughness.png",
-          "sha256": "77c0f3235ab68495d2834b18caedbefd2ad6f057607188cac543a4d4ae2411ec"
+          "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa"
         },
         "height": {
           "url": "artwork/saucer-height.png",
-          "sha256": "8236b1c44b3b1b1c8304fb7455543411b005e16367c2ca78974fb914357e9ebb"
+          "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97"
         },
         "normal": {
           "url": "artwork/saucer-normal.png",
-          "sha256": "c0f59e82a62f3938e5e412d60a61414d7215f852ce3968b997d1ca3c3fd3516e"
+          "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe"
         }
       }
     }

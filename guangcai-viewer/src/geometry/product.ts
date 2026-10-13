@@ -54,24 +54,25 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
     mesh('knob-porcelain-fillet',collar,m.porcelain,lid);
   }
   const sr=p.saucerRadius;
-  // IMG_1142/1148/1203: broad near-edge white foot + gold lower shoulder,
-  // conical flower wall, thin upper lip, white sloping annulus and low seat ring.
+  // IMG_1221 annotated correction + IMG_1148: 125 mm white foot, recessed gold shoulder,
+  // more outward-flared flower wall, thin upper lip, white sloping annulus and low seat ring.
   const sp:ProfilePoint[]=[
-    [0,2.25],[sr-13,2.25],[sr-10.8,2.05],[sr-9.7,1.4],[sr-9.4,.45],[sr-9,0],
-    [sr-7.4,0],[sr-6.9,.4],[sr-6.6,1.0],
-    [sr-5.6,1.35],[sr-4.6,1.75],[sr-4.2,2.35],[sr-4.4,3.1],[sr-4.6,3.5],
-    [sr-4.1,4.15],[sr-3.75,4.7],
-    [sr-1.15,15.1],[sr-.65,16.3],
-    [sr-.05,16.8],[sr,17.25],[sr-.15,17.7],[sr-.65,17.75],
-    [sr-1.2,17.3],[sr-2.25,15.5],[sr-4.0,12.7],[sr-6.8,10],[sr-10.3,7.6],[r+8,6.25],
+    [0,2.25],[sr-19,2.25],[sr-15.3,2.05],[sr-14.3,1.4],[sr-14.3,.45],[sr-14.1,0],
+    [sr-12.8,0],[sr-12.45,.4],[sr-12.4,1.0],
+    [sr-12.2,1.6],[sr-11.3,2.7],[sr-10.1,3.7],[sr-8.5,4.0],[sr-5.9,4.15],
+    [sr-5.1,4.8],[sr-5.3,5.9],
+    [sr-1.3,16.3],[sr-.65,16.7],
+    [sr-.15,16.95],[sr,17.35],[sr-.15,17.9],[sr-.65,18.0],
+    [sr-1.2,17.5],[sr-2.2,15.5],[sr-3.6,13.4],[sr-6.8,9.3],[sr-11.2,7.5],[r+8,6.25],
     [r+4,6.05],[r+2.65,6.45],[r+2.0,7.0],[r+1.15,7.08],[r+.4,6.65],[r-.4,6.12],[r-2,6.0],[0,6.0]
   ];
-  const sideLength=Math.hypot(2.6,10.4);
+  const sideLength=Math.hypot(4.0,10.4);
   const sg=revolve(sp,320,{
     material:j=>j===15?2:j>=8&&j<=14||j>=16&&j<=20||j>=29&&j<=32?1:j===5?3:0,
-    uv:(rr,y,theta)=>[theta/(Math.PI*2)*4,(y-4.7)/10.4],
+    uv:(_rr,y,theta)=>[theta/(Math.PI*2)*4,(y-5.9)/10.4],
   });
-  sg.userData.surfaceMetrics={width:(sr-2.45)*2*Math.PI/4,length:sideLength,aspect:(sr-2.45)*2*Math.PI/4/sideLength};
+  sg.userData.surfaceMetrics={width:(sr-3.3)*2*Math.PI/4,length:sideLength,aspect:(sr-3.3)*2*Math.PI/4/sideLength};
+  sg.userData.profile=sp;
   mesh('saucer-bowl-and-continuous-rim',sg,[m.porcelain,m.gold,m.regions.saucer,m.foot],saucer);
   // A glaze-thin print on the recessed underside; no paper, border or QR label.
   for(const [parent,y,name] of [[cup,2.5-h/2,'cup-bottom-mark'],[saucer,2.25,'saucer-bottom-mark']] as const){

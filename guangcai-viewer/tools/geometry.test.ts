@@ -51,12 +51,12 @@ test('all rendered triangles face the same side as their vertex normals; no inva
     }
   });product.dispose();console.log('triangles checked:',count);
 });
-test('reference-derived assembly retains near-edge saucer foot, recessed cup base and lid flange',()=>{
+test('reference-derived assembly retains inset saucer foot, recessed cup base and lid flange',()=>{
   const product=buildProduct(makeMaterials());
   const saucer=(product.saucer.children[0] as Mesh).geometry.getAttribute('position');
   let minFoot=Infinity,maxFoot=0;
   for(let i=0;i<saucer.count;i++)if(saucer.getY(i)<.05){const r=Math.hypot(saucer.getX(i),saucer.getZ(i));minFoot=Math.min(minFoot,r);maxFoot=Math.max(maxFoot,r);}
-  assert.ok(minFoot/defaults.saucerRadius>.87);assert.ok(maxFoot/defaults.saucerRadius>.9);
+  assert.ok(minFoot/defaults.saucerRadius>.80);assert.ok(maxFoot/defaults.saucerRadius<.85);
   const body=(product.cup.children[0] as Mesh).geometry.getAttribute('position');
   assert.ok(body.getY(0)>2);assert.ok((product.lid.children[0] as Mesh).geometry.boundingBox!.min.y<-3);
   assert.ok(Math.abs(defaults.saucerRadius*2-151)<.001);
