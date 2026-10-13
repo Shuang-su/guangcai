@@ -7,3 +7,5 @@
 正式目录已完成原始花纸映射、白瓷及平盖、盖钮倒影、新背景、双面同机位和原像素盖面局部对照。中国杯 11 项几何、53 项交互、24 项背景和 6 项固定包兼容检查通过；TypeScript 与构建通过。原版 6 项测试及构建通过，应用源码未改。真实手机/Safari与用户视觉验收未完成，PR 保持 Draft，不建正式 v3.0 标签。
 
 独立新站 `guangcai-no1-china-v3` 已手工创建；API 核对 Git 仓库、提供方、分支全部为空，后续手动发布，不连接 Git 自动部署。两个旧站部署 ID 回读不变。实际发布及公网回归结果见应用的 `docs/changes/20261013-v3/` 与 `evidence/deployment/v3/`。
+
+验证 checkpoint `fb901a7`，同步 main 后部署源码 `b92e418e547c11c21ce90ccb2baad9ae5198a5a5` 均已推送并回读。3.0 独立站已手动发布到 https://guangcai-no1-china-v3.netlify.app/ ，部署 `6ace27aaf19dc1dfbdd9c2a0`。公网 81 个文件与本地发布清单一致；两个旧站部署保持不变。详情及性能数据在应用完成记录中。

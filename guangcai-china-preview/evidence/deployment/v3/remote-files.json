@@ -1,0 +1,738 @@
+{
+  "date": "2026-10-13T12:45:31.849892+00:00",
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "files": [
+    {
+      "path": "assets/index-CneZKPP2.css",
+      "bytes": 7591,
+      "sha256": "65a06122223401f2a0776e084c156a96d2dc4e1bbc1ff1e7fe3033a73a724407",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "assets/index-m0B-dQq3.js",
+      "bytes": 629716,
+      "sha256": "b10bda67a908f6ac12825caf00edb7e23212e90a33ab7b52df03a4ddb686c52f",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "bytes": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "bytes": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "china/baseColor.png",
+      "bytes": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/city.json",
+      "bytes": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "bytes": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/height.png",
+      "bytes": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/label-roughness.png",
+      "bytes": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/label.png",
+      "bytes": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/line-finish.png",
+      "bytes": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/lines-original.png",
+      "bytes": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/lines.png",
+      "bytes": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/metalness.png",
+      "bytes": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/normal.png",
+      "bytes": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "china/roughness.png",
+      "bytes": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "evidence.html",
+      "bytes": 8618,
+      "sha256": "a214a65a9e7b3660239ede0da0d523141ab62450f0e1debeb8c85f5d8f84f36d",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "bytes": 1674330,
+      "sha256": "dfbef00ca5336207466bf8d6d1522bbd1921cfa274996cf94a2fc212aa93300d",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/body-height.png",
+      "bytes": 433494,
+      "sha256": "ee3fbcab4d71a114369424d5909e6b3c48ad0d768bd4ff656eceac055c4111ba",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "bytes": 230451,
+      "sha256": "9b50384fbbe162f92080221aeb6c4c5241bce71e1b4c0f5b5e55261dc3ce8208",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "bytes": 874353,
+      "sha256": "fbd6d2968e0a629dc1b672f16311c19dc7cf90cdc3252fbb9b50d4924b91c31a",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "bytes": 133372,
+      "sha256": "10b91c29380e11776c8fe9bc67654a273fbae3f4938f8d8b422020f885a57b20",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "bytes": 488364,
+      "sha256": "49bea1266fd04ee138f1a4c78a143e32b80addffd1b65a57e676d5aff95bbc78",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "bytes": 128733,
+      "sha256": "af98f2f84d439f58be95b0156aac5eb472a50f84c5f8d1c0f7630c5870af366e",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "bytes": 73953,
+      "sha256": "108b0d7dbb7b295e15b64cdb6660f3f18832bcbd5e50d0c359b70a4269ec9093",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "bytes": 255517,
+      "sha256": "320b3a8dd077e7d27dda2f44183318bf951f11a0556628dd7929344f3fe56d3e",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "bytes": 41264,
+      "sha256": "c03557d81e1102973188f88a829eae602021a7471fcb090248fec57d4ccaf528",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/manifest.json",
+      "bytes": 5191,
+      "sha256": "94083448b203b7d984e96676f349aff94555b9189cd83b640eb172fedf0e4115",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "bytes": 3403934,
+      "sha256": "fd6f74f3af88aa703e92815dbe6bf507fe399df250292750d01b9816b675b25f",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "bytes": 686492,
+      "sha256": "b51d798064dd66bb80643e884d80b1fa5c12567c357f36b2e2f896a4005c3d61",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "bytes": 424725,
+      "sha256": "c4f40dbbbd7d1fbab3acfb96b3035b9f64bf26f3b54aab51b71dfe2fd6971419",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "bytes": 1401254,
+      "sha256": "035c481ab404457c43dc385b103d849aba9304ba724d6348d534ead78e9fcc67",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "bytes": 214896,
+      "sha256": "7ecba5978e1a8112b47127098686bd814ce49dfccd4efd39dfd7d34cba1aa1c9",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "fixed/style.json",
+      "bytes": 835,
+      "sha256": "5e53e7f1ca3b71099bb2d2679fd01de255005c5dade5b4fcf541a0a4a1ba889b",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "index.html",
+      "bytes": 462,
+      "sha256": "3b5deb2987d20d5d3b5c1f6110b25a0d8f907cb18fe96d0ccf4ca32f179babec",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "bytes": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "bytes": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "review/v3/before-left.jpg",
+      "bytes": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/before-right.jpg",
+      "bytes": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/camera-calibration.json",
+      "bytes": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "review/v3/capture.json",
+      "bytes": 5169,
+      "sha256": "66721c1d3a54b8b3f35ca9f5c71e181421bdd85c7d8579c7e5b8827b46b3a71b",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "review/v3/floral-color.jpg",
+      "bytes": 198891,
+      "sha256": "3c073ec13538bfdf22ee1fe1d22539f40aeb274fae0b50006e6044dcef666aef",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/floral-flat.jpg",
+      "bytes": 54072,
+      "sha256": "903ed1e4ee1b82e0a3c40047f8cc8497a5d056a464b57d975aaa9b24446ee1b5",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/floral-gray.jpg",
+      "bytes": 97161,
+      "sha256": "3243326f334043b5a03c594f9f0d58d9270a207dc61eccbcb31f66f55fc1b20e",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/front.jpg",
+      "bytes": 93008,
+      "sha256": "f5cb84b3c6bec9cab84a2d60417ef90df4a3dacf5acf7218fd0b9f317c3ef7cf",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/handle.jpg",
+      "bytes": 88899,
+      "sha256": "9c31ef95b7b4be3db794730516b2de15d6800e96ca001f01a0a4b73719edd0bc",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/hero.jpg",
+      "bytes": 123526,
+      "sha256": "03530787b6e30b9ee2c9bff2689d6ec3ede08abad725069a04d4cd0a3acaf140",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/left-comparison.jpg",
+      "bytes": 298559,
+      "sha256": "f723b8dc220c0e7e705e4ed65579dad323e3ba12f0bc8b829259e72d64c9293c",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/left-overlay.jpg",
+      "bytes": 169815,
+      "sha256": "174c174f8d9ddcb1dedb66014db17ad1e6ac57be2e232b3aa3fd47cf640c8ed4",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/lid-model-left.png",
+      "bytes": 40082,
+      "sha256": "7092e9e9fece34ecf2f5a87aa090f2b59ca3a9be876834f96e9a64e9893356ef",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "review/v3/lid-model-right.png",
+      "bytes": 41564,
+      "sha256": "1b8b9d2f1d22ebd103f45c73262bea7cf6ff7022e4734d315f802eeb4d080ad0",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "review/v3/lid-native-left.jpg",
+      "bytes": 153809,
+      "sha256": "bf5a0ddadef0b2e274753cf9f11a9acb4f312263b5d8b9d583740c847d6c2226",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/lid-native-right.jpg",
+      "bytes": 153153,
+      "sha256": "f48a11030e1740035b9fbbd068daf868c2a2d8fc4dab791bcdb5bbbb3db4761e",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/lid-reference-left.png",
+      "bytes": 83441,
+      "sha256": "771d818ef556776ee41c6d9250e91b3d0fe0474f7dcc0ff84b48f4051e9e510c",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "review/v3/lid-reference-right.png",
+      "bytes": 86317,
+      "sha256": "7bf3977ab38d42bb2b81a56ca9060414dd863647a6def2ae989ee325013d10a2",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/png"
+    },
+    {
+      "path": "review/v3/lid.jpg",
+      "bytes": 55119,
+      "sha256": "5fdf10fdbb9a19c54146220b44c17e9d724de7773217a9b808a5794bb919a7d3",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/quarters.jpg",
+      "bytes": 167802,
+      "sha256": "0bee6691b62809fb94ee9656d570954e7fbe600671793a398934bded6648ed2d",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/reference-left.jpg",
+      "bytes": 211977,
+      "sha256": "85fe4bf207e8f767199134a7333f0288638af4f1a21f753f8ba72b3b097049ab",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/reference-right.jpg",
+      "bytes": 211869,
+      "sha256": "5ac9252f0f8fb455eeed76b8b349dc12c83632917058f91f07ab2ab176c683fd",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/right-comparison.jpg",
+      "bytes": 271735,
+      "sha256": "f47641097d5158ded818003f2bba099f76747f9f297b4fee8433e5dd0a2ab771",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/right-overlay.jpg",
+      "bytes": 151912,
+      "sha256": "c6076aa2e9c30a685eeb8c126453932a6418ae418c558a958cc1d7cf2183cd26",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/source-floral.json",
+      "bytes": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "review/v3/v3-left.jpg",
+      "bytes": 120894,
+      "sha256": "fada8fad04c057552a4ebcf90cffa521ca616bf20754f4e2c57a52762cb690a1",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/v3-right.jpg",
+      "bytes": 93686,
+      "sha256": "65afb10015dc7e6a842c726cfed8348d37454e8d3f365e774413e08973e57584",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "review/v3/verification.json",
+      "bytes": 5754,
+      "sha256": "0940e9e9ad198d91be6720fe746026adbd1e6658475dfc280ee9f6694dbed522",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "contentType": "application/json"
+    },
+    {
+      "path": "textures/china-baseColor-754558a83d8866b8.webp",
+      "bytes": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/china-metalness-7ac9525c8019fc98.webp",
+      "bytes": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/china-normal-f0662e241725d83b.webp",
+      "bytes": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/china-roughness-40e7b97659e5e028.webp",
+      "bytes": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "bytes": 398446,
+      "sha256": "d4877edad4744523c384df1cc76058b8cc1473fa0550499501b7fca0a35a9bbf",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+      "bytes": 114218,
+      "sha256": "706b3c9f5cad04723747c95ec8bb8623238e513f11bdfa57d5395365f67eb01d",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-body-normal-ee5545c4699e0488.webp",
+      "bytes": 618362,
+      "sha256": "ee5545c4699e04889846e9bc46954b29e1b2006066bb7569bea3bde0bf9073e9",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-body-roughness-abc7641a2db17569.webp",
+      "bytes": 78854,
+      "sha256": "abc7641a2db17569e5df44a4046f58fda236c67082818eb91dfe293a9ea6fa67",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "bytes": 117626,
+      "sha256": "ebe308cf4629d7439195aeed9ea45ab494da1fc7b6d865ce1c861e4a1574b8e0",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+      "bytes": 36010,
+      "sha256": "16b092c9c80c4945603b868f8068c86b8ddb53deabdd8bcda8adde2c1c2a22f8",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-handle-normal-22fdb336573d9360.webp",
+      "bytes": 180894,
+      "sha256": "22fdb336573d936029a7871e4c353393a0f5d2ba92a2a4710b95c67abf391cb4",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-handle-roughness-91d94d19539575b9.webp",
+      "bytes": 23978,
+      "sha256": "91d94d19539575b950eff69becb23550f7e48ccac780437a3bf8471483a45500",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "bytes": 616610,
+      "sha256": "f6e719b2bc268bf7adad04be05e98447a4b3197c994693adb5fc6186a720f6d1",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+      "bytes": 199804,
+      "sha256": "2058a91b9c888893d0dba29aa5906e0006a555863a36b92f6da727d380cc70c2",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+      "bytes": 1029662,
+      "sha256": "263afcfc74cfeaf66dc354e4b211eee0b6075711ce164c4aad8fd26d30ecd231",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    },
+    {
+      "path": "textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+      "bytes": 128684,
+      "sha256": "9a6657df8e5caa9ddb8ffff6c9109aafc76dfce3e965462c96dae52b46531c7c",
+      "match": true,
+      "status": 200,
+      "cacheControl": "public,max-age=31536000,immutable",
+      "contentType": "image/webp"
+    }
+  ],
+  "count": 81,
+  "bytes": 24222789,
+  "allSha256Match": true
+}
