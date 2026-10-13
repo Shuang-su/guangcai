@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-13T18:51:35.379343+08:00",
+  "sites": [
+    {
+      "siteId": "cdc49df3-1e59-4e37-99ac-962584f050a6",
+      "name": "guangcai-no1",
+      "url": "https://guangcai-no1.netlify.app",
+      "repo": null,
+      "buildSettings": {
+        "provider": null,
+        "repo_url": null,
+        "repo_path": null,
+        "repo_branch": null,
+        "repo_link": null,
+        "branch": null
+      },
+      "publishedDeploy": {
+        "id": "6abbdf78d912b4b6b1d7c3b9",
+        "state": "ready",
+        "published_at": "2026-09-29T15:55:48.779Z",
+        "commit_ref": null,
+        "branch": null,
+        "deploy_ssl_url": "https://6abbdf78d912b4b6b1d7c3b9--guangcai-no1.netlify.app"
+      },
+      "publicHome": {
+        "status": 200,
+        "sha256": "ef4c1465b00ad80bf98e1c2d6cbc688737663a5d862eb89af46b58f987a9a28c",
+        "bytes": 533
+      },
+      "unchangedSinceIndependent21Release": true
+    },
+    {
+      "siteId": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "url": "https://guangcai-no1-china.netlify.app",
+      "repo": null,
+      "buildSettings": {
+        "provider": null,
+        "repo_url": null,
+        "repo_path": null,
+        "repo_branch": null,
+        "repo_link": null,
+        "branch": null
+      },
+      "publishedDeploy": {
+        "id": "6ace09922a1b2f8945a7a41c",
+        "state": "ready",
+        "published_at": "2026-10-13T10:36:08.951Z",
+        "commit_ref": null,
+        "branch": null,
+        "deploy_ssl_url": "https://6ace09922a1b2f8945a7a41c--guangcai-no1-china.netlify.app"
+      },
+      "publicHome": {
+        "status": 200,
+        "sha256": "b23079bc9a28ab1ac60e66c9f762990eb0769fb019a305d42f02bb8ad52cfe16",
+        "bytes": 464
+      },
+      "unchangedSinceIndependent21Release": true
+    }
+  ],
+  "deploymentPerformedByThisTask": false,
+  "independentReleaseDuringArchive": "China cup 2.1 was published by task 01a12b50-f453-7bb0-b232-93ddb671fa2c; see source completion record.",
+  "scope": "Read-only Netlify API and public home checks after GitHub upload."
+}

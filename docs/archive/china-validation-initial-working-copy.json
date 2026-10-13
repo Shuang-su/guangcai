@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-13T18:34:39.420853+08:00",
+  "version": "china",
+  "commands": [
+    {
+      "check": "geometry-tests",
+      "exitCode": 0
+    },
+    {
+      "check": "build-with-texture-generation",
+      "exitCode": 0
+    }
+  ],
+  "buildComparedToDeploy": "6acbd24fa545c331cdd20dae",
+  "releaseFiles": 122,
+  "buildDifferences": [
+    "assets/index-CQ1H8zvg.js",
+    "fixed/manifest.json",
+    "fixed/style.json",
+    "index.html"
+  ],
+  "sourceCopiesVerified": 3,
+  "originalFilesVerified": 104,
+  "integrityFailures": [],
+  "dependencyMode": "Read-only reuse of installed locked dependencies in an isolated validation copy; no deployment",
+  "archivedSourceChanges": false
+}

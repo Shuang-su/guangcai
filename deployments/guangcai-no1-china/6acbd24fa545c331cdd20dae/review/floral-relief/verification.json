@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-11T18:13:06.388Z",
+  "errors": [],
+  "roi": {
+    "left": 100,
+    "top": 460,
+    "width": 1400,
+    "height": 250
+  },
+  "flowerToggleMeanRgbDelta": 4.851888571428572,
+  "normalOn": 4.4,
+  "coatNormalOn": 2.4,
+  "normalOff": 0,
+  "previous": {
+    "normal": 1.5,
+    "coatNormal": 0.825,
+    "clearcoat": 0.35,
+    "specularIntensity": 0.55
+  },
+  "current": {
+    "normal": 4.4,
+    "coatNormal": 2.4,
+    "clearcoat": 0.75,
+    "specularIntensity": 0.85
+  },
+  "scope": "Actual WebGL before/current normal and material parameters on identical v4 colour artwork; matching cameras and environment. Gray view isolates fixed flower normals. Height is visual approximation, not physical measurement."
+}

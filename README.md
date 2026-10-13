@@ -6,14 +6,17 @@
 
 | 版本 | 源码目录 | 现有线上站点 | 本次核验的部署 ID |
 | --- | --- | --- | --- |
-| 一号杯原版 | `guangcai-viewer/` | https://guangcai-no1.netlify.app/ | `6abbdf78d912b4b6b1d7c3b9` |
-| 中国杯预览版 | `guangcai-china-preview/` | https://guangcai-no1-china.netlify.app/ | `6acbd24fa545c331cdd20dae` |
+| **1.0 一号杯原版** | `guangcai-viewer/` | https://guangcai-no1.netlify.app/ | `6abbdf78d912b4b6b1d7c3b9` |
+| **2.0 中国杯基线** | `guangcai-china-preview/` @ `b86503c` | [历史固定部署](https://6acbd24fa545c331cdd20dae--guangcai-no1-china.netlify.app/) | `6acbd24fa545c331cdd20dae` |
+| **2.1 中国杯布局修订** | `guangcai-china-preview/` 当前目录 | https://guangcai-no1-china.netlify.app/ | `6ace09922a1b2f8945a7a41c` |
 
 两个项目在首次入库前都没有 `.git`、提交历史或远端。此次 Git 历史从 2026-10-13 的真实导入开始；不能据此还原过去每次编辑的提交顺序。旧请求、计划、完成记录、素材版本和中间截图作为历史文件原样保留，其时间以文件内记录为准。
 
-两个目录同时保留，因为它们对应两个独立运行的站点；不把原版覆盖成中国杯版，也不提前抽取公共代码。中国杯原有校验脚本还引用相邻原版的文件摘要。导入采用两个关联 PR，原版先导入，中国杯 PR 以原版导入分支为基线。各自的 issue 记录来源和验收证据。`main` 初始只含归档说明，待审查合并后才包含源码；完整双版本快照位于中国杯导入分支。
+两个目录同时保留，因为它们对应两个独立运行的站点；不把原版覆盖成中国杯版，也不提前抽取公共代码。中国杯原有校验脚本还引用相邻原版的文件摘要。导入采用相承的 PR：1.0 原版先导入，2.0 中国杯以 1.0 为基线，2.1 布局修订再以 2.0 为基线。各自的 issue 记录来源和验收证据。`main` 初始只含归档说明，待审查合并后才包含源码；完整双版本快照位于 [`codex/import-2.1`](https://github.com/Shuang-su/guangcai/tree/codex/import-2.1)。详细版本索引见 [VERSION_HISTORY.md](https://github.com/Shuang-su/guangcai/blob/codex/import-2.1/VERSION_HISTORY.md)。
 
-**本仓库没有连接 Netlify、配置部署工作流或保存部署凭据。推送和 PR 不更新现有站点。** 两个目录中的 `netlify.toml` 与历史发布命令仅作为原项目资料保留；后续发布仍需要用户明确授权。
+**版本约定：** 已上线原版为 1.0，已上线中国杯为 2.0；后续各自用 1.1、1.2… 和 2.1、2.2… 记录可审查改动。提交与 issue/PR 的编号表示代码进度，只有部署回读通过才标记“已上线”。历史 `package.json` 和素材清单的内部编号保持原样，产品版本以版本索引为准。
+
+**本仓库没有连接 Netlify、配置部署工作流或保存部署凭据。推送和 PR 不更新现有站点。** 归档期间另一任务独立完成了中国杯 2.1 的发布，本仓库据此追加真实代码差异与 131 个发布文件。此前 2.0 仍可由 Git 提交或固定部署查看。两个目录中的 `netlify.toml` 与历史发布命令仅作为原项目资料保留；后续发布仍需要用户明确授权。
 
 ## 保存范围
 
@@ -40,3 +43,7 @@ npm run build
 中国杯使用相同的 `npm ci` / `npm test` / `npm run build` 流程；其 `prebuild` 会重新生成 WebP。离线核验部署快照不需要安装 Node 依赖：`python3 tools/verify-archive.py` 会核对入库文件和实际发布文件的 SHA-256。
 
 本仓库的本机工作目录使用 `.codex-work/` 存放缓存和验证输出，并通过 `.git/info/exclude` 排除。新克隆开始工作前同样配置本地 exclude。首次导入记录见 `docs/changes/20261013-github-archive/`。
+
+## 会话历史恢复
+
+已补建原版 4 个、中国杯 9 个基线前源码节点，并串联 1.0、2.0、2.1；完整源码可按 commit 检出。查看 [开发历史和验证记录](HISTORY.md)。这些是真实源码操作的当前补录，提交日期未倒签；不会触发线上发布。

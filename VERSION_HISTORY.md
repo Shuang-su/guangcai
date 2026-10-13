@@ -1,0 +1,35 @@
+# 产品版本索引
+
+版本号用于开发查找，源码目录保持两个并列项目。两个上线版本最初没有 Git 历史，本次是 2026-10-13 的首次真实导入。
+
+| 产品版本 | 状态 | 源码目录与分支 | 对应部署 | Git checkpoint |
+| --- | --- | --- | --- | --- |
+| **1.0** | 本次核查起点的已上线原版 | `guangcai-viewer/` · `codex/import-1.0` | `6abbdf78d912b4b6b1d7c3b9` | `312b71e4cb6d9d319b8eafbdbb730772fdd30913` |
+| **2.0** | 本次核查起点的已上线中国杯 | `guangcai-china-preview/` · `codex/import-2.0` | `6acbd24fa545c331cdd20dae` | `b86503cd52fa54758c085786589de0266ba55c13` |
+| **2.1** | 另一任务于 2026-10-13 18:36 独立发布，随后在本仓库归档 | `guangcai-china-preview/` · `codex/import-2.1` | `6ace09922a1b2f8945a7a41c` | `56d4e167a9cd5ee0de98a7fd330ed25201523784` |
+
+## 后续编号
+
+- 1.x 属于原版，2.x 属于中国杯版。后续可审查改动分别按 1.1、1.2… / 2.1、2.2… 记录在提交、issue、PR 与本索引。
+- 提交示例：`fix(2.1): adjust saucer artwork layout`；issue / PR 标题示例：`[2.1] 调整杯碟花纹布局`。
+- 代码版本、合并状态、部署状态分别记录。存在 2.1 提交或 PR 不表示 2.1 已上线；部署完成后补上 Netlify 部署 ID、URL 和验收证据。
+- `package.json` 原有的 1.0.0、纹理 manifest 的 version 5 等是历史内部字段，保留原值以保证归档的字节一致性。产品版本使用本索引，不混用这些字段。
+- `main` 初始提供入口和归档说明。PR 审查期间可直接检出 `codex/import-2.1`，其中包含完整 1.0 和当前 2.1，历史 2.0 在相承提交中；原版独立审查入口是 `codex/import-1.0`。
+
+## 证据与边界
+
+1.0 从源码构建，全部 78 个发布文件与原清单一致。2.0 曾混入本地进行中调整，已由真实 before 文件和已发布静态文件恢复；重新构建的 122 个发布文件也全部一致。恢复来源与差异记录位于 `docs/archive/china-2.0-recovery.json`。
+
+2.1 的 10 项几何测试和完整构建通过，131 个发布文件全部与新部署清单一致。Git 校验脚本支持在 2.1 工作树中按 `b86503c` 核验历史 2.0。
+
+Issue：[1.0 #1](https://github.com/Shuang-su/guangcai/issues/1)、[2.0 #2](https://github.com/Shuang-su/guangcai/issues/2)、[2.1 #3](https://github.com/Shuang-su/guangcai/issues/3)。
+
+本次不创建发布 tag、不合并 PR、不连接 Git 自动部署，也不执行 Netlify 发布。实际站点状态以 `docs/archive/sites-before.json` 和最终回读为准。
+
+审查入口：[1.0 PR #4](https://github.com/Shuang-su/guangcai/pull/4) → [2.0 PR #5](https://github.com/Shuang-su/guangcai/pull/5) → [2.1 PR #6](https://github.com/Shuang-su/guangcai/pull/6)。三者均待审，未合并。
+
+## 历史源码补录
+
+已根据原会话补建 16 个源码节点（13 个基线前节点与 1.0、2.0、2.1）。可逐个检出与比较，完整 commit 索引、原修改时间、部署映射与验证见 [HISTORY.md](HISTORY.md)。`pre.N` 表示基线之前，不等同于“未曾上线”。
+
+本次补录截止 2.1；另一会话随后发布的背景功能 `6ace111ab0415c9455a3c6f8` 不在这批源码范围中。
