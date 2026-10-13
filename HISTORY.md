@@ -55,3 +55,7 @@ npm run dev
 本次补录到 2.1（部署 `6ace09922a1b2f8945a7a41c`）为止。19:14 回读时，另一会话已于 19:08 独立发布后续背景功能 `6ace111ab0415c9455a3c6f8`；该新增功能尚未包含在本次历史链中，不将此分支称为当前中国杯线上源码。原版仍为 `6abbdf78d912b4b6b1d7c3b9`。
 
 两个站点的 Git 关联仍为空。本次恢复没有执行 Netlify 发布、回滚、Git 自动部署绑定、PR 合并或 tag。回读见 [站点记录](docs/history/site-readback.json)。
+
+历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。
+
+[历史部署与源码对应表](docs/history/deployment-map.json) · [GitHub 分支、文件与 16 个 commit 回读](docs/history/github-readback.json)。

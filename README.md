@@ -10,7 +10,7 @@
 | **2.0 中国杯基线** | `guangcai-china-preview/` @ `b86503c` | [历史固定部署](https://6acbd24fa545c331cdd20dae--guangcai-no1-china.netlify.app/) | `6acbd24fa545c331cdd20dae` |
 | **2.1 中国杯布局修订** | `guangcai-china-preview/` 当前目录 | https://guangcai-no1-china.netlify.app/ | `6ace09922a1b2f8945a7a41c` |
 
-两个项目在首次入库前都没有 `.git`、提交历史或远端。此次 Git 历史从 2026-10-13 的真实导入开始；不能据此还原过去每次编辑的提交顺序。旧请求、计划、完成记录、素材版本和中间截图作为历史文件原样保留，其时间以文件内记录为准。
+两个项目在首次入库前都没有 `.git`、提交历史或远端。此次 Git 提交从 2026-10-13 的真实导入开始；随后根据保存的原会话文件操作补建了 16 个源码节点，详见 HISTORY.md。原修改时间单独记录，未倒签或声称覆盖每次临时编辑。旧请求、计划、完成记录、素材版本和中间截图作为历史文件原样保留，其时间以文件内记录为准。
 
 两个目录同时保留，因为它们对应两个独立运行的站点；不把原版覆盖成中国杯版，也不提前抽取公共代码。中国杯原有校验脚本还引用相邻原版的文件摘要。导入采用相承的 PR：1.0 原版先导入，2.0 中国杯以 1.0 为基线，2.1 布局修订再以 2.0 为基线。各自的 issue 记录来源和验收证据。`main` 初始只含归档说明，待审查合并后才包含源码；完整双版本快照位于 [`codex/import-2.1`](https://github.com/Shuang-su/guangcai/tree/codex/import-2.1)。详细版本索引见 [VERSION_HISTORY.md](https://github.com/Shuang-su/guangcai/blob/codex/import-2.1/VERSION_HISTORY.md)。
 
@@ -47,3 +47,5 @@ npm run build
 ## 会话历史恢复
 
 已补建原版 4 个、中国杯 9 个基线前源码节点，并串联 1.0、2.0、2.1；完整源码可按 commit 检出。查看 [开发历史和验证记录](HISTORY.md)。这些是真实源码操作的当前补录，提交日期未倒签；不会触发线上发布。
+
+历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。

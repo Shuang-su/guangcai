@@ -30,4 +30,8 @@
 - 2.0：`23c23e3353188a57153555c21ef0f19642c93361` · 加深彩色描线起伏，中国杯上线基线
 - 2.1：`ea96b85295f2ee26ae2fd1cb599495d3ca2f3e63` · 杯碟周向排列和把手侧饰带宽度
 
-GitHub issue / PR 与最终推送回读由后续归档文档提交补充。
+GitHub 已推送 `codex/reconstruct-history`；[Issue #7](https://github.com/Shuang-su/guangcai/issues/7)、[PR #8](https://github.com/Shuang-su/guangcai/pull/8) 已创建并回读，PR 为 OPEN / MERGEABLE，基分支为 `codex/import-2.1`。应用源码及素材最终树与基分支完全相同；历史差异保留在 16 个源码 checkpoint 中。未合并 PR。
+
+汇合 checkpoint：`fe7fb40f43f18d8b57c07e9f89df38d27c1749cd`。GitHub 16 个 commit 的 SHA / tree SHA、当前分支完整文件树与本地一致，详见 `docs/history/github-readback.json`。最后的文档提交只补充链接和远端验证记录。
+
+面向用户答复：已从真实会话补出 13 个中间开发节点，连同 1.0 / 2.0 / 2.1 共 16 个可检出源码状态；保留真实来源、原修改时间、必要素材和可核验部署记录。历史补录使用当前时间，不冒充当时的 Git 提交。独立恢复分支已上传，原工作树和生产配置未修改；线上后续背景功能属于另一会话的独立发布，本批截止 2.1。

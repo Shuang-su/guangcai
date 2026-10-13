@@ -33,3 +33,5 @@ Issue：[1.0 #1](https://github.com/Shuang-su/guangcai/issues/1)、[2.0 #2](http
 已根据原会话补建 16 个源码节点（13 个基线前节点与 1.0、2.0、2.1）。可逐个检出与比较，完整 commit 索引、原修改时间、部署映射与验证见 [HISTORY.md](HISTORY.md)。`pre.N` 表示基线之前，不等同于“未曾上线”。
 
 本次补录截止 2.1；另一会话随后发布的背景功能 `6ace111ab0415c9455a3c6f8` 不在这批源码范围中。
+
+历史补录审查：[Issue #7](https://github.com/Shuang-su/guangcai/issues/7) · [PR #8](https://github.com/Shuang-su/guangcai/pull/8)（基于 `codex/import-2.1`，未合并）。
