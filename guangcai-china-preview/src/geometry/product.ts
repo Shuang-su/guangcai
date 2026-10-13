@@ -4,6 +4,7 @@ import { ribbon } from './ribbon';
 import { handlePath, handleRails, handleCollar, knobFoot } from './handle';
 import { defaults, validateDimensions, type Dimensions } from './parameters';
 import type { Materials } from '../materials/materials';
+import fixedLayout from '../styles/fixed-layout.json';
 
 export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   validateDimensions(p);
@@ -22,12 +23,15 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
     [r-w-6,p.bottom],[0,p.bottom],
   ];
   const n=240,bandSegments=Math.round(p.bandAngle/(2*Math.PI)*n), actualBand=bandSegments/n*2*Math.PI;
+  // Crop only the floral material. Keep the reserved 60-degree sector and city UV1
+  // intact so the buildings and lettering cannot move when this band is narrowed.
+  const visibleBandSegments=Math.round(bandSegments*(.5+fixedLayout.body.visibleEndFraction));
   const body=mesh('cup-wall-and-recessed-foot',revolve(profile,n,{
     start:-actualBand/2,
-    material:(j,i)=>j>=6&&j<=10?(i<bandSegments?(j>=9?1:0):3):j===5?2:0,
+    material:(j,i)=>j>=6&&j<=10?(i<bandSegments?(j>=9&&i<visibleBandSegments?1:0):3):j===5?2:0,
     uv:(_rr,y,theta)=>[(theta+actualBand/2)/actualBand,(y-3)/(h-5.3)],
   }),[m.porcelain,m.regions.body,m.foot,m.city],cup,-h/2);
-  body.userData={circleRadius:r,bandRadians:actualBand,wallThickness:w};
+  body.userData={circleRadius:r,bandRadians:actualBand,visibleBandRadians:visibleBandSegments/n*2*Math.PI,wallThickness:w};
   // A second UV set maps ONLY the white exterior, with upright non-mirrored text.
   const cityUv:number[]=[];
   for(let i=0;i<=n;i++)for(const [,y] of profile)cityUv.push((n-i)/(n-bandSegments),(y-.12)/(h-2.42));
@@ -75,7 +79,9 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const sideLength=Math.hypot(4.0,10.4);
   const sg=revolve(sp,320,{
     material:j=>j===15?2:j>=8&&j<=14||j>=16&&j<=20||j>=29&&j<=32?1:j===5?3:0,
-    uv:(_rr,y,theta)=>[theta/(Math.PI*2)*4,(y-5.9)/10.4],
+    // A smooth periodic phase adjustment aligns the two observed faces independently.
+    // It stays monotonic and closes over 360 degrees; every PBR channel shares this UV.
+    uv:(_rr,y,theta)=>[theta/(Math.PI*2)*4+fixedLayout.saucer.phaseBalance*Math.sin(theta),(y-5.9)/10.4],
   });
   sg.userData.surfaceMetrics={width:(sr-3.3)*2*Math.PI/4,length:sideLength,aspect:(sr-3.3)*2*Math.PI/4/sideLength};
   sg.userData.profile=sp;

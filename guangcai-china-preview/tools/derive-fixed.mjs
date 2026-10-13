@@ -6,6 +6,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 
+const fixedLayout=JSON.parse(await readFile('src/styles/fixed-layout.json','utf8'));
 const variantId=process.argv[2];
 const variants=JSON.parse(await readFile('assets/variant-prompts.json','utf8')).variants;
 const variant=variantId?variants.find(v=>v.id===variantId):null;
@@ -53,7 +54,7 @@ for (const c of configs) {
     normal[i]=Math.round((-dx/norm*.5+.5)*255); normal[i+1]=Math.round((dy/norm*.5+.5)*255); normal[i+2]=Math.round((1/norm*.5+.5)*255);
   }
   const maps={baseColor:data,metalness:metal,roughness:rough,height:blurred,normal};
-  const region={offsetU:!variant&&c.name==='saucer'?.5:0,width:w,height:h,physical:physical[c.name],source:c.input,sourceSize:[meta.width,meta.height],crop:c.crop??null,layout:'original-cover',fit:'cover, uniform scale; original normalized crop; all channels use identical pixel coordinates',maps:{}};
+  const region={offsetU:!variant&&c.name==='saucer'?fixedLayout.saucer.offsetU:0,width:w,height:h,physical:physical[c.name],source:c.input,sourceSize:[meta.width,meta.height],crop:c.crop??null,layout:'original-cover',fit:'cover, uniform scale; original normalized crop; all channels use identical pixel coordinates',maps:{}};
   for(const [channel,buffer]of Object.entries(maps)){
     const filename=`${c.name}-${channel}.png`;
     await sharp(buffer,{raw:{width:w,height:h,channels:channel==='baseColor'||channel==='normal'?3:1}}).png().toFile(`${out}/${filename}`);
@@ -61,12 +62,13 @@ for (const c of configs) {
   }
   manifest.regions[c.name]=region;
 }
-manifest.version=variant?1:5;
+manifest.version=variant?1:6;
 manifest.name=variant?.name??'花鸟原图局部 · 参考重建 v4';
 manifest.renderStandard={relief:4.4,clearcoatRelief:2.4,specularIntensity:.85,clearcoat:.75,clearcoatRoughness:.14,exposure:1.08};
 manifest.reliefRevision='v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4.';
-manifest.runtimeOffsets={saucerU:variant?0:.5};
-manifest.layoutNote='Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters. Hidden reference motifs are reconstructed, not official source artwork.';
+manifest.runtimeOffsets={saucerU:variant?0:fixedLayout.saucer.offsetU};
+if(!variant)manifest.layoutCalibration=fixedLayout;
+manifest.layoutNote='Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters with a smooth periodic phase balance; body floral coverage is cropped within the unchanged city UV allocation. Hidden reference motifs are reconstructed, not official source artwork.';
 await writeFile(`${out}/manifest.json`,JSON.stringify(manifest,null,2));
-await writeFile(`${out}/style.json`,JSON.stringify({name:manifest.name,regions:Object.fromEntries(configs.map(c=>[c.name,{...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${c.name}-${channel}.png`])),offsetU:!variant&&c.name==='saucer'?.5:0}]))},null,2));
+await writeFile(`${out}/style.json`,JSON.stringify({name:manifest.name,regions:Object.fromEntries(configs.map(c=>[c.name,{...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${c.name}-${channel}.png`])),offsetU:!variant&&c.name==='saucer'?fixedLayout.saucer.offsetU:0}]))},null,2));
 console.log(JSON.stringify({out,regions:Object.fromEntries(Object.entries(manifest.regions).map(([k,v])=>[k,[v.width,v.height]]))}));

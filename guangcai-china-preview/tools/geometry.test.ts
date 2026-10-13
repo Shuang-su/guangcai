@@ -6,6 +6,8 @@ import {handlePath,handleRails,handleCollar} from '../src/geometry/handle';
 import {ribbon} from '../src/geometry/ribbon';
 import {buildProduct} from '../src/geometry/product';
 import {makeMaterials} from '../src/materials/materials';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 
 test('handle and porcelain collars stay outside the cavity across all UI dimension extremes',()=>{
   let clearance=Infinity;
@@ -92,4 +94,40 @@ test('city artwork reaches the rounded exterior foot with a continuous upright s
   assert.ok(Math.abs(minY-.12)<1e-5,'no white pedestal below artwork');
   assert.ok(Math.abs(maxY-(defaults.height-2.3))<1e-4);
   assert.equal(minV,0);assert.equal(maxV,1);product.dispose();
+});
+
+test('fixed layout calibration preserves previous-release geometry and city coordinates exactly',()=>{
+  const baseline=JSON.parse(readFileSync('docs/changes/20261013-fixed-layout/geometry-before.json','utf8'));
+  const product=buildProduct(makeMaterials()),seen=new Set<string>();
+  const hash=(a:Float32Array|Uint16Array|Uint32Array)=>createHash('sha256').update(Buffer.from(a.buffer,a.byteOffset,a.byteLength)).digest('hex');
+  product.root.traverse(o=>{
+    if(!(o instanceof Mesh))return;
+    const key=o.name+(seen.has(o.name)?'_2':'');seen.add(key);
+    const g=o.geometry;
+    for(const name of ['position','normal','uv1'])if(baseline[key][name])assert.equal(hash(g.attributes[name].array as Float32Array),baseline[key][name],key+'.'+name);
+    if(baseline[key].cityIndices){const group=g.groups.find(x=>x.materialIndex===3)!;assert.equal(hash(g.index!.array.slice(group.start,group.start+group.count) as Uint32Array),baseline[key].cityIndices);}
+  });
+  assert.equal(seen.size,Object.keys(baseline).length);product.dispose();
+});
+
+test('narrow floral coverage remains continuous and does not expose the handle roots',()=>{
+  const product=buildProduct(makeMaterials());
+  const g=(product.cup.getObjectByName('cup-wall-and-recessed-foot') as Mesh).geometry;
+  const pos=g.attributes.position,idx=g.index!,group=g.groups.find(x=>x.materialIndex===1)!;
+  const angles=[];
+  for(let j=group.start;j<group.start+group.count;j++){const i=idx.getX(j);angles.push(Math.atan2(pos.getZ(i),pos.getX(i))*180/Math.PI);}
+  assert.ok(Math.abs(Math.min(...angles)+30)<.001);assert.ok(Math.abs(Math.max(...angles)-18)<.001);
+  // Both roots occupy less than +/-10 degrees around the handle axis.
+  assert.ok(Math.min(...angles)<-10&&Math.max(...angles)>10);product.dispose();
+});
+
+test('balanced saucer UV closes without a new seam, folds or abrupt changes of motif scale',()=>{
+  const product=buildProduct(makeMaterials());
+  const g=(product.saucer.getObjectByName('saucer-bowl-and-continuous-rim') as Mesh).geometry,uv=g.attributes.uv;
+  const rows=uv.count/321,steps=[];
+  for(let i=0;i<320;i++){const d=uv.getX((i+1)*rows)-uv.getX(i*rows);assert.ok(d>.009&&d<.016,'positive and bounded UV density');steps.push(d);}
+  assert.ok(Math.abs(uv.getX(320*rows)-uv.getX(0)-4)<1e-6,'exact four mirrored cycles');
+  assert.ok(Math.abs(steps[0]-steps.at(-1)!)<1e-6,'matching slope at seam');
+  for(let i=1;i<steps.length;i++)assert.ok(Math.abs(steps[i]-steps[i-1])<.0001);
+  product.dispose();
 });

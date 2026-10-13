@@ -2,10 +2,11 @@ import { ClampToEdgeWrapping, MirroredRepeatWrapping, NoColorSpace, SRGBColorSpa
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
 import webTextures from './web-textures.json';
+import fixedLayout from './fixed-layout.json';
 export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string;offsetU?:number}
 export interface StylePack {name:string;regions:Record<Region,RegionPack>}
 export const defaultPack:StylePack={name:'花鸟原图局部 · 参考重建 v4',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
-defaultPack.regions.saucer.offsetU=.5;
+defaultPack.regions.saucer.offsetU=fixedLayout.saucer.offsetU;
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[
