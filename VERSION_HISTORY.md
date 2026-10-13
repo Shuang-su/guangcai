@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | **1.0** | 本次核查起点的已上线原版 | `guangcai-viewer/` · `codex/import-1.0` | `6abbdf78d912b4b6b1d7c3b9` | `312b71e4cb6d9d319b8eafbdbb730772fdd30913` |
 | **2.0** | 本次核查起点的已上线中国杯 | `guangcai-china-preview/` · `codex/import-2.0` | `6acbd24fa545c331cdd20dae` | `b86503cd52fa54758c085786589de0266ba55c13` |
-| **2.1** | 另一任务于 2026-10-13 18:36 独立发布，随后在本仓库归档 | `guangcai-china-preview/` · `codex/import-2.1` | `6ace09922a1b2f8945a7a41c` | 本 PR 的 `chore(2.1)` 导入提交；最终 SHA 见完成记录 |
+| **2.1** | 另一任务于 2026-10-13 18:36 独立发布，随后在本仓库归档 | `guangcai-china-preview/` · `codex/import-2.1` | `6ace09922a1b2f8945a7a41c` | `56d4e167a9cd5ee0de98a7fd330ed25201523784` |
 
 ## 后续编号
 
@@ -25,3 +25,5 @@
 Issue：[1.0 #1](https://github.com/Shuang-su/guangcai/issues/1)、[2.0 #2](https://github.com/Shuang-su/guangcai/issues/2)、[2.1 #3](https://github.com/Shuang-su/guangcai/issues/3)。
 
 本次不创建发布 tag、不合并 PR、不连接 Git 自动部署，也不执行 Netlify 发布。实际站点状态以 `docs/archive/sites-before.json` 和最终回读为准。
+
+审查入口：[1.0 PR #4](https://github.com/Shuang-su/guangcai/pull/4) → [2.0 PR #5](https://github.com/Shuang-su/guangcai/pull/5) → [2.1 PR #6](https://github.com/Shuang-su/guangcai/pull/6)。三者均待审，未合并。
