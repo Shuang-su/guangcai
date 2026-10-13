@@ -2,12 +2,15 @@ import { ClampToEdgeWrapping, MirroredRepeatWrapping, RepeatWrapping, NoColorSpa
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
 import {loadFloatNormal} from './float-normal';
+import {validateFixedAtlas,type FixedAtlas} from '../materials/fixed-atlas';
+import fixedRendering from './fixed-rendering.json';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
-export interface RegionPack {baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
+export interface RegionPack {atlas?:FixedAtlas;baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
 export interface StylePack {mapping?:'source-layout-v3';name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'原始广彩花纸 · 450 杯 / 151 碟',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
+export const defaultPack:StylePack={name:'固定广彩 · 高清重建花纸',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
+for(const [region,atlas]of Object.entries(fixedRendering))defaultPack.regions[region as Region].atlas=atlas as FixedAtlas;
 for(const entry of Object.values(defaultPack.regions))if(entry.normal?.endsWith('.hfn.gz'))entry.normalFormat='rgba16f-gzip-v1';
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
@@ -67,12 +70,13 @@ export class StyleManager {
     tasks.forEach((task,i)=>{maps[task.region]??={} as Maps;maps[task.region][task.channel]=textures[i];});
     for(const region of regions){
       const map=maps[region],{width,height}=map.baseColor.image as HTMLImageElement;
+      try{if(pack.regions[region].atlas){if(pack.mapping!=='source-layout-v3')throw new Error('图集需要独立花纸 UV');validateFixedAtlas(pack.regions[region].atlas!,width,height);}}catch(error){release();throw error;}
       if(Object.values(map).some(t=>(t.image as HTMLImageElement).width!==width||(t.image as HTMLImageElement).height!==height)){
         release();throw new Error(`${region} 的 PBR 通道像素尺寸不一致，未应用。`);
       }
     }
     // Atomic swap: only after EVERY channel decodes and passes alignment checks.
-    regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region]));
+    regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region],pack.regions[region].atlas));
     this.owned.forEach(t=>t.dispose());this.owned=textures;
     this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
   }
@@ -97,6 +101,6 @@ export class StyleManager {
       return await this.apply(pack);
     }finally{urls.forEach(url=>URL.revokeObjectURL(url));}
   }
-  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY}]}));}
+  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
   dispose(){++this.revision;this.owned.forEach(t=>t.dispose());this.owned=[];}
 }

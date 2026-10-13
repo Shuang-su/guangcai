@@ -4,3 +4,6 @@ const candidates=[process.env.PYTHON,'python3',`${homedir()}/.cache/codex-runtim
 const python=candidates.find(p=>spawnSync(p,['-c','import PIL, numpy'],{stdio:'ignore'}).status===0);
 if(!python)throw new Error('Asset export requires Python 3 with Pillow (LittleCMS) and NumPy. Install tools/requirements-assets.txt or set PYTHON to that interpreter.');
 for(const [cmd,args]of [[python,['tools/extract-original-floral.py']],[python,['tools/derive-fixed-hq.py']]]){const r=spawnSync(cmd,args,{stdio:'inherit'});if(r.status!==0)process.exit(r.status??1);}
+
+// This explicit legacy export restores the old full-strip rendering metadata.
+await (await import('node:fs/promises')).writeFile('src/styles/fixed-rendering.json','{}\n');

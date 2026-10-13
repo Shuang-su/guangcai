@@ -1,5 +1,6 @@
 import { Color, MeshPhysicalMaterial, Vector2, type Texture } from 'three';
 import {PORCELAIN} from './porcelain';
+import {configureFixedAtlas,type FixedAtlas} from './fixed-atlas';
 import { RENDER_STANDARD } from './render-standard';
 export type Region = 'body' | 'handle' | 'saucer';
 export type MaterialMode = 'pbr' | 'porcelain' | 'clay' | 'normal' | 'metalness';
@@ -15,7 +16,8 @@ export function makeMaterials() {
 }
 export type Materials = ReturnType<typeof makeMaterials>;
 export type Maps = {baseColor:Texture;normal?:Texture;metalness?:Texture;roughness?:Texture;height?:Texture};
-export function setRegionMaps(material: MeshPhysicalMaterial,maps:Maps){
+export function setRegionMaps(material: MeshPhysicalMaterial,maps:Maps,atlas?:FixedAtlas){
+  configureFixedAtlas(material,atlas);
   material.normalScale.setScalar(RENDER_STANDARD.relief);
   material.clearcoatNormalScale.setScalar(RENDER_STANDARD.clearcoatRelief);
   material.color.set(0xffffff); material.map=maps.baseColor;

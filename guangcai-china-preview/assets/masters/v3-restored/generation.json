@@ -1,0 +1,67 @@
+{
+  "generator": "OpenAI built-in imagegen",
+  "source": "Source-layout crops from original PSD, with previously accepted localized seam repair in saucer part 00",
+  "restoration": "Generated detail; not lossless super-resolution",
+  "files": [
+    {
+      "file": "body-generated.png",
+      "sha256": "18b5ab63c6861c94ace38d4028cb06680c7f558e00c0830b6c28cb455301a4d8",
+      "prompt": "body-prompt.txt"
+    },
+    {
+      "file": "handle-bottom-generated.png",
+      "sha256": "0b69139d84982c4bf371cf1c896bd717c53683dfb2271fc8ee61d1e7c88b5277",
+      "prompt": "handle-prompt.txt"
+    },
+    {
+      "file": "handle-top-generated.png",
+      "sha256": "75c8bdb4e6ec6bc52aa93f9dcde3b94b52ead3684feb66e3b2d7c94c8ca8e802",
+      "prompt": "handle-prompt.txt"
+    },
+    {
+      "file": "pilot-generated.png",
+      "sha256": "961b93ad2684200e837fb428a321649983bb9d1e67074d975a692126b5bd8108",
+      "prompt": "pilot-prompt.txt"
+    },
+    {
+      "file": "saucer-01-generated.png",
+      "sha256": "5ca1d84028d87bacd274b1383c53440d9604d480183e04081b58c62e01ca6e41",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-02-generated.png",
+      "sha256": "2e4ad0aafdbbaa0a273a1c2d06fbb6ffa376d51fedab310e377181a6178ea2af",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-03-generated.png",
+      "sha256": "afd01b57381208e3d7a3215c3596dda4c903ed2e2d8cad26fcbdced564066ece",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-04-generated.png",
+      "sha256": "c2d0f402138f33279b7337f75494d77ea501933e186c3eb5dfa2fdafb14eae02",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-05-generated.png",
+      "sha256": "2197989817e3316b430227496d9ef2cd27ffad4860e2372c896382e09b91e10f",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-06-generated.png",
+      "sha256": "b073c1e4e8853f10dde16cb81abedf8df190e8bb6d8b8fc79de4ef2146b43e89",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-07-generated.png",
+      "sha256": "178cd25f370650156c0454533e841af871c5bd0df8972121e8240591ab3f8657",
+      "prompt": "segment-prompt.txt"
+    },
+    {
+      "file": "saucer-08-generated.png",
+      "sha256": "fe5eb78cfa7aca543b9ff6115a3af5bb7043fd8f8f9b955ea00ee854320b493d",
+      "prompt": "segment-prompt.txt"
+    }
+  ]
+}

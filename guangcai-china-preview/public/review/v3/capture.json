@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13T13:20:55.989Z",
+  "date": "2026-10-13T14:34:00.595Z",
   "url": "http://127.0.0.1:5210/",
   "errors": [],
   "debug": {
@@ -31,7 +31,7 @@
       "busy": false,
       "hasCustom": false
     },
-    "environment": "d0c6e5a7-33ab-4dc4-bb5f-9b8628029a5b",
+    "environment": "fcef92e9-5925-42d9-b3e0-81eec30060c8",
     "parameters": {
       "radius": 43,
       "height": 103,
@@ -54,28 +54,28 @@
         57.5,
         0
       ],
-      "envMap": "b8e031e2-3aa9-433e-99d9-25802d83cfa3",
+      "envMap": "ddb4af59-f28f-4396-9e30-36103617c3df",
       "method": "local cube probe; cup wall excluded, real nearby geometry included",
       "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
     },
     "lidReflections": {
       "method": "planar reflection of actual lid knob",
-      "captures": 328,
+      "captures": 329,
       "resolution": 1024
     },
     "bottomClearance": 6.119999997317791,
     "geometries": [
-      "94853eff-cd7c-4976-a344-53c0fe649162",
-      "0af24131-8c95-465b-b280-d21ac11b7df7",
-      "2f2bc5f5-dd13-4033-8070-97d5d040dbc8",
-      "cdd4aa82-d32e-4117-bb78-d9fdd621fc7f",
-      "79347374-4e68-45c4-9431-f98c16bbff82",
-      "4c5cecee-6af6-4bd5-b8d0-1b016c2ac1f8",
-      "29636863-4504-4041-9fd4-214922c3a9ea",
-      "62d2b64d-a173-4ec9-84d5-65edf16a20f7",
-      "b0a3f75e-0d8e-4a01-b0e4-fcca8cbfe9d0",
-      "ee56b931-1f3f-41fb-845f-5d61aeed5d18",
-      "d691aae2-6791-4929-ad2f-cc4a2099bfd6"
+      "268061a3-1c8e-497a-a43d-27c2ce1ff73c",
+      "70596268-cae6-4fe5-aba7-c745839daa05",
+      "7af838c4-9385-42fb-8c36-75f1e90b2d40",
+      "b2b85b9b-a249-4638-a306-3bc3fd95b23b",
+      "ac46a46b-1e8b-4828-bac6-8e34bc84689c",
+      "9c1c7d83-2320-4165-9905-ef909532913d",
+      "1ca7fe3e-73bc-48df-a538-f212b0cc9d89",
+      "90104322-91c0-41ad-a124-9ae4d2c0555e",
+      "4d52deca-2213-4599-9b6e-76f9254932b1",
+      "219c6384-0ceb-4976-a5bf-fe030e45e1fe",
+      "f872c6da-8297-49e2-b7d8-599482994df1"
     ],
     "memory": {
       "geometries": 26,
@@ -103,7 +103,7 @@
       "displacementScale": 0,
       "maps": [
         {
-          "uuid": "f131d922-b4ee-4c5c-b049-981039e33d99",
+          "uuid": "8c2d7e1d-5ae8-4f66-bf05-d22fdb38977a",
           "channel": 1,
           "size": [
             4096,
@@ -112,7 +112,7 @@
           "colorSpace": "srgb"
         },
         {
-          "uuid": "289c318d-4668-48f4-a271-23331763afa0",
+          "uuid": "f224cefc-34a9-4f32-a6f6-7baf09833864",
           "channel": 1,
           "size": [
             4096,
@@ -121,7 +121,7 @@
           "colorSpace": ""
         },
         {
-          "uuid": "607b4502-8016-4d2b-a424-3819306a08ae",
+          "uuid": "53696acf-1997-4176-a6e1-9e10e93289ed",
           "channel": 1,
           "size": [
             4096,
@@ -130,7 +130,7 @@
           "colorSpace": ""
         },
         {
-          "uuid": "1a4aa0e6-052d-4f87-94fe-9e9394ad7f9e",
+          "uuid": "504831cb-52ad-4dce-a542-a59b777f3174",
           "channel": 1,
           "size": [
             4096,
@@ -139,7 +139,7 @@
           "colorSpace": ""
         },
         {
-          "uuid": "df3861b4-6496-4524-978c-b300de6074a8",
+          "uuid": "f7c3e518-a654-49f8-8c0d-1be3dddffb8e",
           "channel": 1,
           "size": [
             4096,
@@ -161,22 +161,22 @@
     },
     "fixed": {
       "body": {
-        "baseColor": "b165a6d7-35e9-4c01-bce3-82536667e89e",
-        "normal": "9f67e638-4046-4b79-a9f6-a0701234ed16",
-        "roughness": "f2611beb-16dc-4c9d-8672-97ac630d6819",
-        "metalness": "fa6944cd-7320-4ab9-b115-22ece557d7e0"
+        "baseColor": "942c8632-ada7-419e-866d-8836b25f0b61",
+        "normal": "c6c27f48-0cc9-4d63-86e7-b66e4ed47885",
+        "roughness": "6e02058d-5c08-4253-ae9e-c10c427e0e87",
+        "metalness": "80e60ee4-71c9-4e0c-9eb0-80e7e08d6392"
       },
       "handle": {
-        "baseColor": "1f335d29-cb6e-4370-b3ab-f8d7094345d1",
-        "normal": "4f10c198-74f8-40f4-b62a-c131e11d856a",
-        "roughness": "0fdb2dba-c663-411f-ab5d-68dd4c6dba9a",
-        "metalness": "cd5b95a7-2a1d-4c35-b14c-deb4b14bdf54"
+        "baseColor": "5ad822f8-c41f-4040-84e5-c5b50693c24e",
+        "normal": "8a69fa67-0da3-4015-bed5-c4835810e9e4",
+        "roughness": "abc2d014-b9cd-439d-9832-62eeea78072c",
+        "metalness": "fb884852-b417-4121-928c-ad507622dd53"
       },
       "saucer": {
-        "baseColor": "cffbadc4-91a4-4ec8-b88a-f96b92a8b35c",
-        "normal": "243c29c5-469d-4372-9b49-32c1a05f4c2a",
-        "roughness": "e79ec311-6ca5-4166-be10-c1d006634894",
-        "metalness": "6a9f6d6b-eb50-496f-bba4-682c9c8a732b"
+        "baseColor": "55f3720d-5dde-4a0a-b6df-ec6a542c8671",
+        "normal": "d222e4f1-85f7-44c7-9ddf-11e0eee2b955",
+        "roughness": "08e3c938-ba01-421c-9e70-bb6759f9202d",
+        "metalness": "cf004f55-d773-442c-b532-964f976617d6"
       }
     }
   },

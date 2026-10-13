@@ -3,7 +3,7 @@
   "geometryChecks": 11,
   "browser": {
     "url": "http://127.0.0.1:5210/",
-    "date": "2026-10-13T13:08:44.321Z",
+    "date": "2026-10-13T14:34:32.349Z",
     "checks": [
       "initial independent city + fixed packages loaded",
       "city uses UV1, aligned maps, and zero geometry displacement",
@@ -76,15 +76,19 @@
     "scope": "Desktop Chrome and emulated mobile Chrome; not physical iPhone/Safari"
   },
   "fixedMapping": {
+    "date": "2026-10-13T14:33:45.095Z",
     "checks": [
-      "v3 uses UV2 and a single unmapped source region",
+      "v3 uses UV2 and normalized source region",
       "v3 saucer repeats without mirroring",
       "all source channels share offsets",
+      "saucer atlas is installed on the actual physical material",
       "failed fixed load retains every current map",
-      "legacy packages continue to use UV0 and mirrored saucer wrap",
+      "invalid atlas rejects atomically and preserves the installed mapping",
+      "prior source-layout package works without atlas",
+      "legacy packages use UV0 and mirrored saucer wrap",
       "rapid fixed switching commits the latest complete package"
     ],
-    "passed": 6
+    "passed": 9
   },
   "protectedCityFiles": [
     "public/china/line-finish.png",
@@ -108,7 +112,7 @@
     "Physical mobile and Safari acceptance",
     "Lid knob silhouette and saucer side height differ slightly from reference",
     "Real-time highlights differ from offline rendering; gold parameters preserved",
-    "Source saucer strip is only 195px high. More precise sampling does not add missing source detail. Localized generated seam repair is documented."
+    "Fixed floral details are generatively reconstructed from the source; local brush strokes and petal shapes differ. Large runtime texture package prioritizes quality."
   ],
   "background": {
     "url": "http://127.0.0.1:5210/",
@@ -144,9 +148,12 @@
     "opaquePixels": 400678,
     "backgroundBytes": 91936,
     "protectedFiles": 1427,
-    "scope": "Previously verified in initial 3.0; background implementation unchanged in floral precision revision."
+    "scope": "Previously verified in initial 3.0; background implementation hash remains unchanged through the floral restoration."
   },
-  "date": "2026-10-13T13:23:35.993Z",
+  "date": "2026-10-13T14:36:43.351343+00:00",
   "precisionUnitChecks": 4,
-  "hqVerification": "review/floral-hq/verification.json"
+  "hqVerification": "review/floral-hq/verification.json",
+  "atlasUnitChecks": 2,
+  "restorationVerification": "review/floral-restored/verification.json",
+  "atlasRenderVerification": "review/floral-restored/atlas-render.json"
 }

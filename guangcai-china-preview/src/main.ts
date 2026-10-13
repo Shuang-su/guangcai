@@ -1,3 +1,4 @@
+import {configureFixedAtlas} from './materials/fixed-atlas';
 import './ui/styles.css';
 import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace,Vector3} from 'three';
 import {buildProduct} from './geometry/product';
@@ -7,7 +8,7 @@ import {RENDER_STANDARD} from './materials/render-standard';
 import {createStudio} from './studio/studio';
 import {createLocalReflections} from './studio/local-reflections';
 import {createLidReflections} from './studio/lid-reflections';
-import {defaultPack,StyleManager} from './styles/style-manager';
+import {defaultPack,StyleManager,type StylePack} from './styles/style-manager';
 import {chinaPack,CityArtworkManager,type CityArtworkPack} from './styles/city-artwork';
 import {ViewController,type View} from './interaction/views';
 import {applyPose,type Pose} from './interaction/calibration';
@@ -47,7 +48,7 @@ function inspect(){
   if(mode==='metalness'&&Object.values(mats.regions).includes(m as never))result=new MeshBasicMaterial({map:(m as typeof mats.city).metalnessMap});
   if(mode==='relief'&&m===mats.city)result=new MeshStandardMaterial({color:'#9b9b98',roughness:.48,normalMap:mats.city.normalMap,normalScale:mats.city.normalScale});
   if(mode==='floral'&&Object.values(mats.regions).includes(m as never)){const fm=m as typeof mats.city;result=new MeshStandardMaterial({color:'#9b9b98',roughness:.42,normalMap:fm.normalMap,normalScale:fm.normalScale});}
-  if(result!==clay)temporary.push(result);lookup.set(m,result);return result;
+  if(result!==clay){configureFixedAtlas(result,m.userData.fixedAtlas);temporary.push(result);}lookup.set(m,result);return result;
  };
  for(const[mesh,mat]of originals)mesh.material=Array.isArray(mat)?mat.map(convert):convert(mat);
 }
@@ -63,5 +64,6 @@ Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',appl
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},
  fixedPrecision:()=>fixed.precision(),
+ applyFixedArtwork:async(pack:StylePack)=>{const committed=await fixed.apply(pack);if(committed){reflections.refresh();inspect();}return committed;},
  debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);background.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});
