@@ -3,7 +3,7 @@
   "geometryChecks": 11,
   "browser": {
     "url": "http://127.0.0.1:5210/",
-    "date": "2026-10-13T12:32:25.984Z",
+    "date": "2026-10-13T13:08:44.321Z",
     "checks": [
       "initial independent city + fixed packages loaded",
       "city uses UV1, aligned maps, and zero geometry displacement",
@@ -107,8 +107,8 @@
   "remaining": [
     "Physical mobile and Safari acceptance",
     "Lid knob silhouette and saucer side height differ slightly from reference",
-    "Original strip has a motif discontinuity at its endpoints; no paper gap remains",
-    "Real-time highlights differ from offline rendering; gold parameters preserved"
+    "Real-time highlights differ from offline rendering; gold parameters preserved",
+    "Source saucer strip is only 195px high. More precise sampling does not add missing source detail. Localized generated seam repair is documented."
   ],
   "background": {
     "url": "http://127.0.0.1:5210/",
@@ -143,6 +143,10 @@
     "opaqueCupMeanPixelDelta": 0,
     "opaquePixels": 400678,
     "backgroundBytes": 91936,
-    "protectedFiles": 1427
-  }
+    "protectedFiles": 1427,
+    "scope": "Previously verified in initial 3.0; background implementation unchanged in floral precision revision."
+  },
+  "date": "2026-10-13T13:23:35.993Z",
+  "precisionUnitChecks": 4,
+  "hqVerification": "review/floral-hq/verification.json"
 }

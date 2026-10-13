@@ -1,12 +1,14 @@
 import { ClampToEdgeWrapping, MirroredRepeatWrapping, RepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
+import {loadFloatNormal} from './float-normal';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
-export interface RegionPack {baseColor:string;normal?:string;roughness?:string;metalness?:string;height?:string;offsetU?:number}
+export interface RegionPack {baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
 export interface StylePack {mapping?:'source-layout-v3';name:string;regions:Record<Region,RegionPack>}
 export const defaultPack:StylePack={name:'原始广彩花纸 · 450 杯 / 151 碟',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
+for(const entry of Object.values(defaultPack.regions))if(entry.normal?.endsWith('.hfn.gz'))entry.normalFormat='rgba16f-gzip-v1';
 export const builtinStyles = [
   {id:'original',name:defaultPack.name,description:'繁花、果实与蝶叶 · 原有款',path:'artwork',pack:defaultPack},
   ...[
@@ -39,16 +41,17 @@ export class StyleManager {
     const revision=++this.revision;
     if(!pack||typeof pack.name!=='string'||!pack.regions)throw new Error('无效材质包：缺少 name / regions');
     if(pack.mapping!==undefined&&pack.mapping!=='source-layout-v3')throw new Error('不支持的花纸展开规范');
-    const tasks:{region:Region;channel:typeof channels[number];url:string}[]=[];
+    const tasks:{region:Region;channel:typeof channels[number];url:string;normalFormat?:RegionPack['normalFormat']}[]=[];
     for(const region of regions){
       const entry=pack.regions[region];
       if(!entry?.baseColor)throw new Error(`材质包缺少 ${region}.baseColor`);
       if(entry.offsetU!==undefined&&(!Number.isFinite(entry.offsetU)||Math.abs(entry.offsetU)>2))throw new Error('花纸定位无效');
-      for(const channel of channels)if(entry[channel])tasks.push({region,channel,url:entry[channel]!});
+      if(entry.normalFormat!==undefined&&(entry.normalFormat!=='rgba16f-gzip-v1'||!entry.normal))throw new Error('高精度法线格式无效');
+      for(const channel of channels)if(entry[channel])tasks.push({region,channel,url:entry[channel]!,normalFormat:channel==='normal'?entry.normalFormat:undefined});
     }
     const results=await Promise.allSettled(tasks.map(async task=>{
-      const texture=await loadTexture(task.url);
-      const img=texture.image;
+      const texture:Texture=task.normalFormat?await loadFloatNormal(task.url):await loadTexture(task.url);
+      const img=texture.image as {width:number;height:number};
       if(!img.width||!img.height||img.width>8192||img.height>8192){texture.dispose();throw new Error('贴图尺寸必须在 1–8192 像素内');}
       texture.colorSpace=task.channel==='baseColor'?SRGBColorSpace:NoColorSpace;
       texture.channel=pack.mapping==='source-layout-v3'?2:0;
@@ -94,5 +97,6 @@ export class StyleManager {
       return await this.apply(pack);
     }finally{urls.forEach(url=>URL.revokeObjectURL(url));}
   }
+  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY}]}));}
   dispose(){++this.revision;this.owned.forEach(t=>t.dispose());this.owned=[];}
 }
