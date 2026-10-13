@@ -1,0 +1,733 @@
+{
+  "date": "2026-09-29T16:02:29.623Z",
+  "url": "https://guangcai-no1.netlify.app/",
+  "complete": true,
+  "passed": 98,
+  "checks": [
+    "public HTTPS entry is accessible without login",
+    "initial WebGL render is ready",
+    "original complete aligned PBR channels",
+    "original fixed relief and brightness",
+    "original keeps geometry",
+    "peony-magnolia complete aligned PBR channels",
+    "peony-magnolia fixed relief and brightness",
+    "peony-magnolia keeps geometry",
+    "lotus-butterfly complete aligned PBR channels",
+    "lotus-butterfly fixed relief and brightness",
+    "lotus-butterfly keeps geometry",
+    "view controls work online",
+    "mobile layout has no horizontal overflow",
+    "all three standards previews render online",
+    "reference photo and 3D overlay render online",
+    "overlay transparency works",
+    "missing asset is a real 404",
+    "hashed JavaScript has immutable caching",
+    "stable artwork filenames revalidate",
+    "artwork/body-metalness.png deployed content equals release",
+    "artwork/generation.json deployed content equals release",
+    "artwork/body-height.png deployed content equals release",
+    "artwork/body-roughness.png deployed content equals release",
+    "artwork/handle-height.png deployed content equals release",
+    "artwork/handle-metalness.png deployed content equals release",
+    "artwork/handle-roughness.png deployed content equals release",
+    "artwork/body-normal.png deployed content equals release",
+    "artwork/body-baseColor.png deployed content equals release",
+    "artwork/handle-normal.png deployed content equals release",
+    "artwork/handle-baseColor.png deployed content equals release",
+    "artwork/lotus-butterfly/body-height.png deployed content equals release",
+    "artwork/lotus-butterfly/body-roughness.png deployed content equals release",
+    "artwork/lotus-butterfly/generation.json deployed content equals release",
+    "artwork/lotus-butterfly/body-metalness.png deployed content equals release",
+    "artwork/lotus-butterfly/body-baseColor.png deployed content equals release",
+    "artwork/lotus-butterfly/handle-height.png deployed content equals release",
+    "artwork/lotus-butterfly/body-normal.png deployed content equals release",
+    "artwork/lotus-butterfly/handle-roughness.png deployed content equals release",
+    "artwork/lotus-butterfly/manifest.json deployed content equals release",
+    "artwork/lotus-butterfly/handle-metalness.png deployed content equals release",
+    "artwork/lotus-butterfly/handle-normal.png deployed content equals release",
+    "artwork/lotus-butterfly/preview.jpg deployed content equals release",
+    "artwork/lotus-butterfly/masters/band.png deployed content equals release",
+    "artwork/lotus-butterfly/saucer-height.png deployed content equals release",
+    "artwork/lotus-butterfly/handle-baseColor.png deployed content equals release",
+    "artwork/lotus-butterfly/saucer-normal.png deployed content equals release",
+    "artwork/lotus-butterfly/saucer-metalness.png deployed content equals release",
+    "artwork/lotus-butterfly/style.json deployed content equals release",
+    "artwork/lotus-butterfly/saucer-baseColor.png deployed content equals release",
+    "artwork/manifest.json deployed content equals release",
+    "artwork/lotus-butterfly/saucer-roughness.png deployed content equals release",
+    "artwork/lotus-butterfly/masters/body.png deployed content equals release",
+    "artwork/masters/band.png deployed content equals release",
+    "artwork/peony-magnolia/body-height.png deployed content equals release",
+    "artwork/peony-magnolia/body-metalness.png deployed content equals release",
+    "artwork/peony-magnolia/generation.json deployed content equals release",
+    "artwork/peony-magnolia/body-normal.png deployed content equals release",
+    "artwork/peony-magnolia/handle-height.png deployed content equals release",
+    "artwork/peony-magnolia/body-baseColor.png deployed content equals release",
+    "artwork/masters/body.png deployed content equals release",
+    "artwork/peony-magnolia/body-roughness.png deployed content equals release",
+    "artwork/peony-magnolia/manifest.json deployed content equals release",
+    "artwork/peony-magnolia/handle-roughness.png deployed content equals release",
+    "artwork/peony-magnolia/handle-metalness.png deployed content equals release",
+    "artwork/peony-magnolia/handle-normal.png deployed content equals release",
+    "artwork/peony-magnolia/preview.jpg deployed content equals release",
+    "artwork/peony-magnolia/saucer-baseColor.png deployed content equals release",
+    "artwork/peony-magnolia/handle-baseColor.png deployed content equals release",
+    "artwork/peony-magnolia/saucer-height.png deployed content equals release",
+    "artwork/peony-magnolia/saucer-normal.png deployed content equals release",
+    "artwork/peony-magnolia/saucer-metalness.png deployed content equals release",
+    "artwork/peony-magnolia/saucer-roughness.png deployed content equals release",
+    "artwork/peony-magnolia/style.json deployed content equals release",
+    "artwork/peony-magnolia/masters/body.png deployed content equals release",
+    "artwork/saucer-baseColor.png deployed content equals release",
+    "artwork/preview.jpg deployed content equals release",
+    "artwork/saucer-metalness.png deployed content equals release",
+    "artwork/saucer-height.png deployed content equals release",
+    "assets/compare-B2kJLVWD.js deployed content equals release",
+    "artwork/style.json deployed content equals release",
+    "assets/compare-MZHawTH_.css deployed content equals release",
+    "artwork/saucer-roughness.png deployed content equals release",
+    "assets/main-CwrIcHZa.js deployed content equals release",
+    "artwork/saucer-normal.png deployed content equals release",
+    "assets/main-bbCCIrxu.css deployed content equals release",
+    "index.html deployed content equals release apart from Netlify additions",
+    "compare.html deployed content equals release apart from Netlify additions",
+    "assets/style-manager-Dyahk5Cb.js deployed content equals release",
+    "artwork/peony-magnolia/masters/band.png deployed content equals release",
+    "marks/auratic-reference.svg deployed content equals release",
+    "marks/auratic-reference.png deployed content equals release",
+    "references/1220.jpg deployed content equals release",
+    "texture-standards.html deployed content equals release apart from Netlify additions",
+    "references/1230.jpg deployed content equals release",
+    "references/1238.jpg deployed content equals release",
+    "references/1221.jpg deployed content equals release",
+    "references/1236.jpg deployed content equals release",
+    "no browser runtime exceptions"
+  ],
+  "errors": [],
+  "assetResults": [
+    {
+      "path": "artwork/body-metalness.png",
+      "status": 200,
+      "bytes": 694450,
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c",
+      "normalizedContentSha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/generation.json",
+      "status": 200,
+      "bytes": 3544,
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0",
+      "normalizedContentSha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/body-height.png",
+      "status": 200,
+      "bytes": 671829,
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1",
+      "normalizedContentSha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/body-roughness.png",
+      "status": 200,
+      "bytes": 354379,
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335",
+      "normalizedContentSha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/handle-height.png",
+      "status": 200,
+      "bytes": 215990,
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416",
+      "normalizedContentSha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/handle-metalness.png",
+      "status": 200,
+      "bytes": 287489,
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686",
+      "normalizedContentSha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/handle-roughness.png",
+      "status": 200,
+      "bytes": 133029,
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21",
+      "normalizedContentSha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/body-normal.png",
+      "status": 200,
+      "bytes": 1331343,
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d",
+      "normalizedContentSha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/body-baseColor.png",
+      "status": 200,
+      "bytes": 4430448,
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415",
+      "normalizedContentSha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/handle-normal.png",
+      "status": 200,
+      "bytes": 415117,
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7",
+      "normalizedContentSha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/handle-baseColor.png",
+      "status": 200,
+      "bytes": 1467136,
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d",
+      "normalizedContentSha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-height.png",
+      "status": 200,
+      "bytes": 756646,
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f",
+      "normalizedContentSha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-roughness.png",
+      "status": 200,
+      "bytes": 385824,
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa",
+      "normalizedContentSha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/generation.json",
+      "status": 200,
+      "bytes": 4505,
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7",
+      "normalizedContentSha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-metalness.png",
+      "status": 200,
+      "bytes": 752098,
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9",
+      "normalizedContentSha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-baseColor.png",
+      "status": 200,
+      "bytes": 5124693,
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5",
+      "normalizedContentSha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-height.png",
+      "status": 200,
+      "bytes": 273223,
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4",
+      "normalizedContentSha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-normal.png",
+      "status": 200,
+      "bytes": 1510166,
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023",
+      "normalizedContentSha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-roughness.png",
+      "status": 200,
+      "bytes": 170939,
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388",
+      "normalizedContentSha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/manifest.json",
+      "status": 200,
+      "bytes": 5035,
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300",
+      "normalizedContentSha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-metalness.png",
+      "status": 200,
+      "bytes": 384463,
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6",
+      "normalizedContentSha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-normal.png",
+      "status": 200,
+      "bytes": 533321,
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020",
+      "normalizedContentSha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/preview.jpg",
+      "status": 200,
+      "bytes": 71527,
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700",
+      "normalizedContentSha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/masters/band.png",
+      "status": 200,
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03",
+      "normalizedContentSha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-height.png",
+      "status": 200,
+      "bytes": 197242,
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b",
+      "normalizedContentSha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-baseColor.png",
+      "status": 200,
+      "bytes": 2022345,
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278",
+      "normalizedContentSha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-normal.png",
+      "status": 200,
+      "bytes": 395475,
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd",
+      "normalizedContentSha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-metalness.png",
+      "status": 200,
+      "bytes": 181047,
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d",
+      "normalizedContentSha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/style.json",
+      "status": 200,
+      "bytes": 720,
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae",
+      "normalizedContentSha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-baseColor.png",
+      "status": 200,
+      "bytes": 1215629,
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015",
+      "normalizedContentSha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/manifest.json",
+      "status": 200,
+      "bytes": 3889,
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96",
+      "normalizedContentSha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-roughness.png",
+      "status": 200,
+      "bytes": 92882,
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05",
+      "normalizedContentSha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/lotus-butterfly/masters/body.png",
+      "status": 200,
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f",
+      "normalizedContentSha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/masters/band.png",
+      "status": 200,
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4",
+      "normalizedContentSha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/body-height.png",
+      "status": 200,
+      "bytes": 676602,
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493",
+      "normalizedContentSha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/body-metalness.png",
+      "status": 200,
+      "bytes": 676465,
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65",
+      "normalizedContentSha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/generation.json",
+      "status": 200,
+      "bytes": 4525,
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f",
+      "normalizedContentSha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/body-normal.png",
+      "status": 200,
+      "bytes": 1342378,
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1",
+      "normalizedContentSha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-height.png",
+      "status": 200,
+      "bytes": 216437,
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e",
+      "normalizedContentSha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/body-baseColor.png",
+      "status": 200,
+      "bytes": 4530401,
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b",
+      "normalizedContentSha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/masters/body.png",
+      "status": 200,
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91",
+      "normalizedContentSha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/body-roughness.png",
+      "status": 200,
+      "bytes": 348281,
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9",
+      "normalizedContentSha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/manifest.json",
+      "status": 200,
+      "bytes": 5017,
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f",
+      "normalizedContentSha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-roughness.png",
+      "status": 200,
+      "bytes": 125075,
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366",
+      "normalizedContentSha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-metalness.png",
+      "status": 200,
+      "bytes": 267916,
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f",
+      "normalizedContentSha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-normal.png",
+      "status": 200,
+      "bytes": 412132,
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504",
+      "normalizedContentSha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/preview.jpg",
+      "status": 200,
+      "bytes": 71892,
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be",
+      "normalizedContentSha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-baseColor.png",
+      "status": 200,
+      "bytes": 1186845,
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d",
+      "normalizedContentSha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-baseColor.png",
+      "status": 200,
+      "bytes": 1493454,
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d",
+      "normalizedContentSha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-height.png",
+      "status": 200,
+      "bytes": 189507,
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d",
+      "normalizedContentSha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-normal.png",
+      "status": 200,
+      "bytes": 376977,
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118",
+      "normalizedContentSha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-metalness.png",
+      "status": 200,
+      "bytes": 181438,
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f",
+      "normalizedContentSha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-roughness.png",
+      "status": 200,
+      "bytes": 89738,
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d",
+      "normalizedContentSha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/style.json",
+      "status": 200,
+      "bytes": 720,
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9",
+      "normalizedContentSha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/masters/body.png",
+      "status": 200,
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606",
+      "normalizedContentSha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/saucer-baseColor.png",
+      "status": 200,
+      "bytes": 1039444,
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc",
+      "normalizedContentSha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/preview.jpg",
+      "status": 200,
+      "bytes": 71029,
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda",
+      "normalizedContentSha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/saucer-metalness.png",
+      "status": 200,
+      "bytes": 121504,
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716",
+      "normalizedContentSha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/saucer-height.png",
+      "status": 200,
+      "bytes": 161444,
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97",
+      "normalizedContentSha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "assets/compare-B2kJLVWD.js",
+      "status": 200,
+      "bytes": 8296,
+      "sha256": "ccaa95c323f1a93dea0c16d6e97cef5a71009ccaec959ba1927f288008644592",
+      "normalizedContentSha256": "ccaa95c323f1a93dea0c16d6e97cef5a71009ccaec959ba1927f288008644592",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/style.json",
+      "status": 200,
+      "bytes": 714,
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f",
+      "normalizedContentSha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "assets/compare-MZHawTH_.css",
+      "status": 200,
+      "bytes": 1409,
+      "sha256": "1db9efb173be696661ee02aec5504c8a28b58d96c73a185e4a95e7e7f7750479",
+      "normalizedContentSha256": "1db9efb173be696661ee02aec5504c8a28b58d96c73a185e4a95e7e7f7750479",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/saucer-roughness.png",
+      "status": 200,
+      "bytes": 68359,
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa",
+      "normalizedContentSha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "assets/main-CwrIcHZa.js",
+      "status": 200,
+      "bytes": 36928,
+      "sha256": "603b1191c2c5246ad2ec8711df86c737f895c143ff74a3369832429701ea7ba5",
+      "normalizedContentSha256": "603b1191c2c5246ad2ec8711df86c737f895c143ff74a3369832429701ea7ba5",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/saucer-normal.png",
+      "status": 200,
+      "bytes": 320697,
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe",
+      "normalizedContentSha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "assets/main-bbCCIrxu.css",
+      "status": 200,
+      "bytes": 6023,
+      "sha256": "313700e1a8827f3dfae7b845f3cf020bccab5edfcad2af1cb6c0b534d78a6763",
+      "normalizedContentSha256": "313700e1a8827f3dfae7b845f3cf020bccab5edfcad2af1cb6c0b534d78a6763",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 859,
+      "sha256": "0cdc91e044c0488849252cc4762af058e944334dde9b0fbebbd85894c1ae8280",
+      "normalizedContentSha256": "ef4c1465b00ad80bf98e1c2d6cbc688737663a5d862eb89af46b58f987a9a28c",
+      "netlifyHTMLAdditions": true
+    },
+    {
+      "path": "compare.html",
+      "status": 200,
+      "bytes": 817,
+      "sha256": "c41a3f125f126cd29f518113dcb71c0c16db176b574917e3d9d4cc365bf122f2",
+      "normalizedContentSha256": "d88226d8966b742d8546cbb9907fd24476705e221827849afab387eeefb66530",
+      "netlifyHTMLAdditions": true
+    },
+    {
+      "path": "assets/style-manager-Dyahk5Cb.js",
+      "status": 200,
+      "bytes": 572691,
+      "sha256": "6278fce9b898bb12c587adeb5c98c6f8bbb54235e5e3034e1dca694a55e643a1",
+      "normalizedContentSha256": "6278fce9b898bb12c587adeb5c98c6f8bbb54235e5e3034e1dca694a55e643a1",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "artwork/peony-magnolia/masters/band.png",
+      "status": 200,
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f",
+      "normalizedContentSha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "status": 200,
+      "bytes": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "normalizedContentSha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "status": 200,
+      "bytes": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "normalizedContentSha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "references/1220.jpg",
+      "status": 200,
+      "bytes": 132972,
+      "sha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92",
+      "normalizedContentSha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "texture-standards.html",
+      "status": 200,
+      "bytes": 33380,
+      "sha256": "a627953ae256ed3406b35ae5dbdcffe9cf7596a33c1b36d9ffdd4b7c88091019",
+      "normalizedContentSha256": "751ab8d373216c66d19a223508960f7553418cafa45a82152665aa1cf2cc536d",
+      "netlifyHTMLAdditions": true
+    },
+    {
+      "path": "references/1230.jpg",
+      "status": 200,
+      "bytes": 486039,
+      "sha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b",
+      "normalizedContentSha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "references/1238.jpg",
+      "status": 200,
+      "bytes": 430227,
+      "sha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19",
+      "normalizedContentSha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "references/1221.jpg",
+      "status": 200,
+      "bytes": 452592,
+      "sha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94",
+      "normalizedContentSha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94",
+      "netlifyHTMLAdditions": false
+    },
+    {
+      "path": "references/1236.jpg",
+      "status": 200,
+      "bytes": 423874,
+      "sha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874",
+      "normalizedContentSha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874",
+      "netlifyHTMLAdditions": false
+    }
+  ]
+}
