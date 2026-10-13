@@ -1,0 +1,499 @@
+{
+  "sourceSha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+  "size": [
+    7016,
+    4961
+  ],
+  "frame": [
+    777,
+    2243,
+    6210,
+    4608
+  ],
+  "outputSize": [
+    4096,
+    1783
+  ],
+  "bottomAnchor": {
+    "psdGuideBottom": 4608,
+    "contentBottom": 4603,
+    "cupExteriorY": 0.12,
+    "metalBaselineExtensionPixels": 10,
+    "note": "Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside"
+  },
+  "resourceIds": [
+    1028,
+    1061,
+    1060,
+    1085,
+    1082,
+    1083,
+    1005,
+    1062,
+    1037,
+    1049,
+    1011,
+    10000,
+    1013,
+    1016,
+    1024,
+    1026,
+    1072,
+    1069,
+    1032,
+    1054,
+    1050,
+    1064,
+    1039,
+    1044,
+    1036,
+    1057,
+    1058
+  ],
+  "savedPaths": false,
+  "vectorMasks": false,
+  "layers": [
+    {
+      "name": "背景",
+      "box": [
+        0,
+        0,
+        7016,
+        4961
+      ],
+      "channels": [
+        [
+          0,
+          555634
+        ],
+        [
+          1,
+          555634
+        ],
+        [
+          2,
+          555634
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lnsr",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "</Layer group>",
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "channels": [
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lnsr",
+        "lyid",
+        "lsct",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "东方明珠线",
+      "box": [
+        798,
+        3035,
+        1139,
+        4573
+      ],
+      "channels": [
+        [
+          -1,
+          94542
+        ],
+        [
+          0,
+          12798
+        ],
+        [
+          1,
+          12798
+        ],
+        [
+          2,
+          12798
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "广州塔线",
+      "box": [
+        2721,
+        2719,
+        3597,
+        4482
+      ],
+      "channels": [
+        [
+          -1,
+          501612
+        ],
+        [
+          0,
+          113129
+        ],
+        [
+          1,
+          125682
+        ],
+        [
+          2,
+          143247
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "深圳平安大厦线",
+      "box": [
+        1249,
+        2891,
+        1481,
+        4347
+      ],
+      "channels": [
+        [
+          -1,
+          234228
+        ],
+        [
+          0,
+          9248
+        ],
+        [
+          1,
+          9248
+        ],
+        [
+          2,
+          9248
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "长城线",
+      "box": [
+        2847,
+        3768,
+        5308,
+        4599
+      ],
+      "channels": [
+        [
+          -1,
+          378344
+        ],
+        [
+          0,
+          36598
+        ],
+        [
+          1,
+          36598
+        ],
+        [
+          2,
+          36598
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "天坛线",
+      "box": [
+        788,
+        2821,
+        3658,
+        4603
+      ],
+      "channels": [
+        [
+          -1,
+          457787
+        ],
+        [
+          0,
+          85538
+        ],
+        [
+          1,
+          85538
+        ],
+        [
+          2,
+          85538
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "效果ok 拷贝 3",
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "channels": [
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "lsct",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "字",
+      "box": [
+        4920,
+        2846,
+        5434,
+        3178
+      ],
+      "channels": [
+        [
+          -1,
+          28350
+        ],
+        [
+          0,
+          3986
+        ],
+        [
+          1,
+          3986
+        ],
+        [
+          2,
+          3986
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    },
+    {
+      "name": "外框线",
+      "box": [
+        777,
+        2243,
+        6210,
+        4608
+      ],
+      "channels": [
+        [
+          -1,
+          226986
+        ],
+        [
+          0,
+          208226
+        ],
+        [
+          1,
+          208226
+        ],
+        [
+          2,
+          208226
+        ]
+      ],
+      "tags": [
+        "luni",
+        "lyid",
+        "clbl",
+        "infx",
+        "knko",
+        "lspf",
+        "lclr",
+        "shmd",
+        "fxrp"
+      ]
+    }
+  ],
+  "cleanup": [
+    {
+      "layer": "东方明珠线",
+      "removedAlphaSum": 363135,
+      "retainedPixelsAtAlpha128": 71415,
+      "originalPixelsAtAlpha128": 71415
+    },
+    {
+      "layer": "广州塔线",
+      "removedAlphaSum": 1201793,
+      "retainedPixelsAtAlpha128": 73564,
+      "originalPixelsAtAlpha128": 73564
+    },
+    {
+      "layer": "深圳平安大厦线",
+      "removedAlphaSum": 25394,
+      "retainedPixelsAtAlpha128": 116597,
+      "originalPixelsAtAlpha128": 116597
+    },
+    {
+      "layer": "长城线",
+      "removedAlphaSum": 595444,
+      "retainedPixelsAtAlpha128": 300109,
+      "originalPixelsAtAlpha128": 300109
+    },
+    {
+      "layer": "天坛线",
+      "removedAlphaSum": 10818,
+      "retainedPixelsAtAlpha128": 716263,
+      "originalPixelsAtAlpha128": 716263
+    }
+  ],
+  "metalFillMethod": "per-layer row silhouette; wall per-column to original baseline; visual approximation",
+  "relief": "stroke-derived normal only; no geometric displacement; convex default",
+  "cityMaterial": {
+    "baseRoughness": 0.26,
+    "lineRoughness": 0.22,
+    "lineFinishMask": "line-finish.png",
+    "roundedHeightProfile": {
+      "coreSigmaPx": 0.65,
+      "coreWeight": 1.0
+    },
+    "normalGradientGain": 2.1,
+    "normalScale": 0.7,
+    "clearcoatCoverage": 0.10196078431372549,
+    "reflectionEnvironment": {
+      "darkFlagRadiance": 0.045,
+      "softboxMultiplier": 1.65,
+      "roomRadiance": 0.42,
+      "localGeometryCapture": true
+    },
+    "labelRoughness": 0.25882352941176473,
+    "labelClearcoatCoverage": 0.10196078431372549
+  },
+  "text": "PSD original 中国 / CHINA; fixed gold; separate alpha",
+  "maps": {
+    "line-finish.png": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+    "lines.png": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+    "metalness.png": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+    "label.png": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+    "lines-original.png": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+    "label-roughness.png": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+    "normal.png": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+    "cleanup-difference.png": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+    "height.png": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+    "roughness.png": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+    "baseColor.png": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e"
+  }
+}

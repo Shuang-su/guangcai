@@ -1,0 +1,621 @@
+{
+  "date": "2026-10-11T16:26:47.602Z",
+  "url": "https://guangcai-no1-china.netlify.app/",
+  "complete": true,
+  "checks": [
+    "public HTTPS entry accessible without login",
+    "current v3 city and independent fixed package render",
+    "nearby geometry reflection active online",
+    "no public badge overlays controls",
+    "reflection toggle works online",
+    "text face and reflection restored",
+    "reflection probe follows exploded geometry online",
+    "mobile initial render and no overflow",
+    "mobile view controls within viewport",
+    "mobile calibration panel fits",
+    "all 24 reference and evidence images decode online",
+    "mobile evidence page has no overflow",
+    "reference slider updates actual image split",
+    "missing texture is real 404",
+    "content-hashed JS uses immutable cache",
+    "stable city texture names revalidate",
+    "public HTML and hashed bundle match release bytes",
+    "all release files match published Netlify digests and sizes",
+    "no browser or shader errors"
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "readyAfterMs": 103806,
+  "evidenceOnly": true,
+  "assets": [
+    {
+      "path": "assets/index-CBUn9qKs.js",
+      "size": 609588,
+      "sha1": "c3edba56f307f12d5a6491ca7acc51bf983bf364",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "assets/index-DSRNiFcP.css",
+      "size": 6137,
+      "sha1": "9d149f483a9e480c157e72daca9a44bb7dcb0990",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/baseColor.png",
+      "size": 25616,
+      "sha1": "a286d90c4855076c55b60e5ad20c72433124e5a2",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/city.json",
+      "size": 345,
+      "sha1": "f39e1764578d1a1bd3352d97e8fb308b1969d853",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "size": 226538,
+      "sha1": "7695cce9abe1f473e21f7273b023bea8fb653cd9",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/height.png",
+      "size": 643905,
+      "sha1": "60832e7809ccc4499c7542b4d7a0a28b9d4a2547",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/label-roughness.png",
+      "size": 11230,
+      "sha1": "67bd2953f5d4bca4fd0bb5d488e72a8423815930",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/label.png",
+      "size": 21808,
+      "sha1": "38468c5a3211b4880d5bb60e0313566f2c660150",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/line-finish.png",
+      "size": 537748,
+      "sha1": "27c94dd2ea280cc285c046dcb34f2201a18a10bd",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/lines-original.png",
+      "size": 713687,
+      "sha1": "35c6f0e276f348a9e6141f1fb5b952afc37a29a0",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/lines.png",
+      "size": 592733,
+      "sha1": "ed739682158130187cde84381b7e0d05cf59d83d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/metalness.png",
+      "size": 64955,
+      "sha1": "4a75aac2ea2c19b64f4c7638ed5ed4a9ed6672be",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/normal.png",
+      "size": 1614035,
+      "sha1": "ab710a08e6c492671c21681fcaf21f9f0bb0dbe5",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "china/roughness.png",
+      "size": 223533,
+      "sha1": "18dca0e6f0cc7ed5a8c5784354e20f8db4f7f3f3",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "evidence.html",
+      "size": 13361,
+      "sha1": "032d5ccb9742bc9a8eebcb8e6f7f582e65ce6491",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "size": 5848898,
+      "sha1": "580700d7acc6379248dbbad34533b36c981c7a20",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/body-height.png",
+      "size": 853530,
+      "sha1": "62d937af78d3216c90e786540887b49190c20712",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "size": 1263256,
+      "sha1": "3ae6b61b16cfc0746cfddbbba7d741370d9f574d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "size": 1663500,
+      "sha1": "ca16eafd0277d8c3bdfe977d4725023f50738e70",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "size": 563566,
+      "sha1": "2292a7c6eed002dbe948234a2e8bc51e20b61578",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "size": 2292356,
+      "sha1": "b74418e6fc7eb8abe531567c3ab5bba23a91c331",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "size": 314291,
+      "sha1": "eabb067a783511876b28a23cc6441f5ab9e51a7e",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "size": 512803,
+      "sha1": "dd734dace73a10238032b9f562d14afceb3b1700",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "size": 610896,
+      "sha1": "307da7b25c9ca7698f9b1af9607216b5e592ca5d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "size": 214277,
+      "sha1": "584f5c7727561898b63b8b368db1dd52b259258b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/manifest.json",
+      "size": 4738,
+      "sha1": "74c285379b2fdf4278264c3ea86919db43ec267d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "size": 1224757,
+      "sha1": "6278a0f49758ff02a68ff46b4414ffce06162fea",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "size": 186045,
+      "sha1": "170d4b4d280896713d2fbd652620c3ddb4a313c9",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "size": 211607,
+      "sha1": "c7715bb23c7a22084f370da7c6e008f8b6fead4e",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "size": 364544,
+      "sha1": "945015b87c64e64b5311201d6e712a4695fcc72f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "size": 98319,
+      "sha1": "ca539e42d914ad28f12f8f59c4a556c35767731f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "fixed/style.json",
+      "size": 732,
+      "sha1": "2cd6956dce19114c2c23ebfddc6cded70031a950",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "index.html",
+      "size": 464,
+      "sha1": "fcece240e6d7506e33a55490880d25241d03bf8b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "size": 47084,
+      "sha1": "7d1c4f104322abaa420273cc070cd51036f516cb",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "size": 796,
+      "sha1": "ddc5ec02a56dbaccbf48ed310251e18727769817",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "reference/buildings.jpg",
+      "size": 77584,
+      "sha1": "7497853f47523a61f1eda2c264ae526fd27ad692",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "reference/label.jpg",
+      "size": 79970,
+      "sha1": "b46b194d78b44838d8cce5ed145977303bc4ac4f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/after-matte.jpg",
+      "size": 151480,
+      "sha1": "6fac8dc76f964ee91ce593bf3f7f2858dba77e7d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/atlas.jpg",
+      "size": 109696,
+      "sha1": "9981deb2e052acafd637f5c1242a4e0b9486938c",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/before-matte.jpg",
+      "size": 178294,
+      "sha1": "f8ff777afbb2d60f63ebc83c6d43774137839cdd",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/browser-qa.json",
+      "size": 2104,
+      "sha1": "34baa681edeccbc66e364192c4de2e1ec74c052d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/buildings-comparison.jpg",
+      "size": 214330,
+      "sha1": "ad2bf3bea9f268b93e56e7ae5c9e78118b37b1c8",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/buildings-model.png",
+      "size": 360137,
+      "sha1": "e6d4f614371c073830214f563370e5e219dfa42b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/buildings-overlay.png",
+      "size": 817027,
+      "sha1": "f30a7dfb8386a50509fdfd14a7681b7d145e4d29",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/buildings-reference.jpg",
+      "size": 77584,
+      "sha1": "7497853f47523a61f1eda2c264ae526fd27ad692",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/camera-calibration.json",
+      "size": 1888,
+      "sha1": "8d2fbd2e6c332aa713bcfa5ec16fff325ea3bff9",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/concave.jpg",
+      "size": 149305,
+      "sha1": "923f1df49f1537f930283f4173fd7e219b6239e2",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/convex.jpg",
+      "size": 149415,
+      "sha1": "cba9747a0b4eb7600f5ad1cc92bd80125b09235f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/desktop.jpg",
+      "size": 78844,
+      "sha1": "a7ca46cdfb408854d301a4afe72ad8f666c7fb6f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/detail.jpg",
+      "size": 149391,
+      "sha1": "364523fcb01a7ed1178df7a3de46065b921c6f04",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/evidence.json",
+      "size": 217,
+      "sha1": "6da10f22635d2a3ab0e8c6f99b0b387940dd05be",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/fixed-quarters.jpg",
+      "size": 97120,
+      "sha1": "81612de3a9678cad520f4531f380db5c3168bcce",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/flat.jpg",
+      "size": 107643,
+      "sha1": "a7af1408c969b5201b46ff23e6c3dab23ffdfd75",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/front.jpg",
+      "size": 73085,
+      "sha1": "85ce5886d54ef059928c8056035ae29c2dc28986",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/handle.jpg",
+      "size": 75875,
+      "sha1": "345ed752d26b5c598b86272dbf4910eb03a30aa7",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/height.png",
+      "size": 210963,
+      "sha1": "f9887e0a87b97e38f939a919d9f443a2211dfec5",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/label-comparison.jpg",
+      "size": 224906,
+      "sha1": "29591188fd9eff7762014d978d6aba725aa3abca",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/label-model.png",
+      "size": 413486,
+      "sha1": "e9345e35993eb9901f4414991535f026d6dcd111",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/label-overlay.png",
+      "size": 827631,
+      "sha1": "00070248b9d8222d4a5be66513d0a0bfac7ee6db",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/label-reference.jpg",
+      "size": 79970,
+      "sha1": "b46b194d78b44838d8cce5ed145977303bc4ac4f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/label.png",
+      "size": 8250,
+      "sha1": "992a13f951b625a54f1af29f674e9e03d040a4c3",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/lines-original.png",
+      "size": 225985,
+      "sha1": "2fd6f1dd56250495c2e207e860614b9949a0f36a",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/lines.png",
+      "size": 203275,
+      "sha1": "870bb22d4744909871077996bd348b503b72ec05",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/metalness.png",
+      "size": 28439,
+      "sha1": "7fe976cd50fa36766db611d38c6e83488b9a9811",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/mobile.jpg",
+      "size": 130758,
+      "sha1": "092906d18372090d9a5128434b9b648a322359b4",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/normal.png",
+      "size": 297528,
+      "sha1": "9d99f8589572ca9aa5a244db8978d4ff8204dca5",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/psd-audit.json",
+      "size": 8548,
+      "sha1": "b6f7af5fedb3a7927b75a13dbc8f328f9b67e50e",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/after-detail.jpg",
+      "size": 242027,
+      "sha1": "79175403cffa0de6975c296e389f6ff594e475ab",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/after-hero.jpg",
+      "size": 122290,
+      "sha1": "c56dea027d1e54e3ba6486990333e9b9c7f98861",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/before-detail.jpg",
+      "size": 235225,
+      "sha1": "c259f3a4dfeee43b3add9df11699b5c5d4a412b4",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/before-hero.jpg",
+      "size": 111511,
+      "sha1": "cca855e78bdae27e17ed436dae645838a678c0d5",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/comparison.jpg",
+      "size": 269347,
+      "sha1": "5b5899c119440b5c0082b765dd77a9799ce6bfe1",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/finish-only.jpg",
+      "size": 251028,
+      "sha1": "cd4b8dca145c17235a077e0092566b3dcc734d86",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/front.jpg",
+      "size": 100520,
+      "sha1": "fd58fcee5749f53646c097db21bb9ceb1b67e39b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-difference-x20.png",
+      "size": 4805,
+      "sha1": "9d3fce8b6c36721f271db9d90ac3369b82e67d3d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-qa.json",
+      "size": 539,
+      "sha1": "43769958eaaf012468b8e6f5d70cf1c8b8aaa4ed",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/parameters.json",
+      "size": 4157,
+      "sha1": "b1396f954fae54044ca7795eaaf23d4cc8058340",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/preferred-earlier.jpg",
+      "size": 287075,
+      "sha1": "e72675d7fdc98bbbad84f0a36d850db14d253240",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/reference-temple.png",
+      "size": 720801,
+      "sha1": "525c9bb58dd607e73723d053a712a932fb0acb26",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/reflection-on.jpg",
+      "size": 100520,
+      "sha1": "fd58fcee5749f53646c097db21bb9ceb1b67e39b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/relief-separation/reflection-without-handle.jpg",
+      "size": 100436,
+      "sha1": "ac4840b2a8eb5358fc3ed19bd55d3ecc96e4f920",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "review/stroke-only.jpg",
+      "size": 59521,
+      "sha1": "6bce6e5add1b53dde3f2814497d91e37faf44353",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/china/baseColor.webp",
+      "size": 348,
+      "sha1": "a5a2fbe7489cb3441ad3e554feae7044d8f0b398",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/china/metalness.webp",
+      "size": 40364,
+      "sha1": "7b0d376de636f6d47df37507fab84e2186b4ad1f",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/china/normal.webp",
+      "size": 1312530,
+      "sha1": "fea1d94204d9107404943a7267ea3781462d5c76",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/china/roughness.webp",
+      "size": 156638,
+      "sha1": "a4a53177b9c1040bad19d1045bbf486dae44b120",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/body-baseColor.webp",
+      "size": 3717346,
+      "sha1": "7f1f37835beacc47226f4317e43427fabd39151b",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/body-metalness.webp",
+      "size": 611078,
+      "sha1": "002914bf4a486f6a1db070ee4d20325740310d15",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/body-normal.webp",
+      "size": 1145268,
+      "sha1": "e3c8c58fe96b53a8fff1cfe7570e0b1169e27220",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/body-roughness.webp",
+      "size": 361548,
+      "sha1": "0465e1a25176d8fa0640fe0654fc0525c509ef54",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/handle-baseColor.webp",
+      "size": 1136080,
+      "sha1": "51d99386bb7cd5de8c8f406812413bd4b88eb49d",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/handle-metalness.webp",
+      "size": 241800,
+      "sha1": "7f866d0d02b7ecefe674892a267c3b2c53298460",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/handle-normal.webp",
+      "size": 377260,
+      "sha1": "f0b9a69e02932fb7801fad006e0a5c6899c319c0",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/handle-roughness.webp",
+      "size": 138248,
+      "sha1": "64927c16876f541c355e21903f5d4d26bb5cf87e",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/saucer-baseColor.webp",
+      "size": 755014,
+      "sha1": "d7c7fa5751aeb93de8525cb1dc5a8f510cc31691",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/saucer-metalness.webp",
+      "size": 97176,
+      "sha1": "1049a5bbb46f764cee9e7ef24385f624c1b6b9e1",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/saucer-normal.webp",
+      "size": 248808,
+      "sha1": "d6bac772cf614d2718edf9345312890baa14bda3",
+      "method": "Netlify published file index compared to immutable local release"
+    },
+    {
+      "path": "web/fixed/saucer-roughness.webp",
+      "size": 60058,
+      "sha1": "d8cb917f1db540a4d86dc17430165d52879f522f",
+      "method": "Netlify published file index compared to immutable local release"
+    }
+  ],
+  "scope": "Public HTTPS in desktop Chrome and mobile-sized Chrome; local full touch/atomic-switch checks in evidence/browser-qa.json"
+}

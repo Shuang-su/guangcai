@@ -1,0 +1,31 @@
+{
+  "source": "assets/source/china-reference.jpg",
+  "sourceSize": [
+    7680,
+    4320
+  ],
+  "method": "Unmodified rectangular crops, no warp or generated content",
+  "crops": [
+    {
+      "name": "right-saucer-flower-bird-butterfly",
+      "left": 3970,
+      "top": 3230,
+      "width": 2420,
+      "height": 620
+    },
+    {
+      "name": "left-saucer-bird-flower",
+      "left": 1230,
+      "top": 2910,
+      "width": 2100,
+      "height": 420
+    },
+    {
+      "name": "handle-side-vertical-band",
+      "left": 5770,
+      "top": 1850,
+      "width": 205,
+      "height": 1680
+    }
+  ]
+}
