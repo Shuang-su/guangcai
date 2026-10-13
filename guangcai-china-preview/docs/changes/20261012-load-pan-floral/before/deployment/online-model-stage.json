@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-11T16:23:24.672Z",
+  "url": "https://guangcai-no1-china.netlify.app/",
+  "complete": false,
+  "checks": [
+    "public HTTPS entry accessible without login",
+    "current v3 city and independent fixed package render",
+    "nearby geometry reflection active online",
+    "no public badge overlays controls",
+    "reflection toggle works online",
+    "text face and reflection restored",
+    "reflection probe follows exploded geometry online",
+    "mobile initial render and no overflow",
+    "mobile view controls within viewport",
+    "mobile calibration panel fits"
+  ],
+  "errors": [
+    "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://guangcai-no1-china.netlify.app/evidence.html\", waiting until \"load\"\u001b[22m\n"
+  ],
+  "networkFailures": [],
+  "readyAfterMs": 103806,
+  "assets": [],
+  "scope": "Public HTTPS in desktop Chrome and mobile-sized Chrome; local full touch/atomic-switch checks in evidence/browser-qa.json"
+}

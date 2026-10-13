@@ -1,0 +1,94 @@
+[
+  {
+    "id": "buildings",
+    "width": 960,
+    "height": 872,
+    "yaw": -166,
+    "targets": [
+      [
+        226,
+        732,
+        98,
+        140
+      ],
+      [
+        76,
+        890,
+        553,
+        700
+      ]
+    ],
+    "pose": {
+      "yaw": -166,
+      "pitch": 8.023408955959265,
+      "distance": 956.3055345360731,
+      "fov": 9.59649551936423,
+      "cx": 0.501041666623518,
+      "cy": 0.4692598721219576,
+      "roll": 0,
+      "targetY": 57
+    },
+    "projected": [
+      [
+        232.2022166901412,
+        729.7977832270147,
+        97.62718851021636,
+        139.46499356406378
+      ],
+      [
+        72.063710660822,
+        889.936289256334,
+        553.120603593125,
+        700.7872146729075
+      ]
+    ],
+    "rmsPx": 2.7357621394364644,
+    "method": "Manual approximate lid and saucer rim extrema; fixed geometry, perspective camera fit, no image warp. RMS only describes 8 chosen bounds."
+  },
+  {
+    "id": "label",
+    "width": 1168,
+    "height": 1032,
+    "yaw": 4,
+    "targets": [
+      [
+        254,
+        849,
+        110,
+        174
+      ],
+      [
+        62,
+        1033,
+        640,
+        852
+      ]
+    ],
+    "pose": {
+      "yaw": 4,
+      "pitch": 9.867580655791368,
+      "distance": 828.3990319191198,
+      "fov": 11.015020425674209,
+      "cx": 0.47046232841948454,
+      "cy": 0.47130459010022485,
+      "roll": 0,
+      "targetY": 57
+    },
+    "projected": [
+      [
+        252.50336163922864,
+        846.4966375486874,
+        109.854915000204,
+        173.8863340842238
+      ],
+      [
+        63.8622282839229,
+        1035.1377709039928,
+        640.0924933666603,
+        852.1662571576778
+      ]
+    ],
+    "rmsPx": 1.4411312669177994,
+    "method": "Manual approximate lid and saucer rim extrema; fixed geometry, perspective camera fit, no image warp. RMS only describes 8 chosen bounds."
+  }
+]

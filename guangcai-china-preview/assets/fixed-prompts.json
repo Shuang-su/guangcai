@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "created": "2026-10-11",
+  "references": [
+    "assets/source/china-reference.jpg",
+    "original body-generated.png",
+    "original band-generated.png"
+  ],
+  "prompts": {
+    "body": "Use case: illustration-story. Edit target: flat portrait Guangcai enamel print master in image 1. Reference image 2: newer China cup render; use ONLY its colorful fixed floral decoration on saucer and handle-side strip, not the gold architectural artwork. Produce a regenerated portrait 1:2 FLAT 2D albedo print master. DENSE edge to edge traditional Canton famille rose flowers, butterflies, fruits and leaves. Match the new reference's vivid red and pink peonies, white flowers, fresh jade/lime green veined leaves, tiny blue flowers and large intricate pale yellow butterflies; less muted and more compact than old master. Exquisitely fine outlines, botanical painting detail, many varied smaller motifs, dense intertwined flowers reaching every edge, roughly 20% visible flat ochre ground. Preserve old master fine craft, improve density. Perfect homogeneous flat ochre gold ground #B3924F used only for later metal segmentation, NOT metallic shading. No recognizable repeated blocks. Opposite edges tile seamlessly. Constant colors, flat scan, NO lighting, highlights, shadows, gradients in ground, embossing, photo texture, cup, object, text, watermarks, borders, margins. Output only one clean full-bleed portrait flat flower artwork.",
+    "band": "Use case: illustration-story. Edit target: old horizontal Guangcai enamel print master image 1. Reference image 2: latest China cup render, use colorful fixed saucer band as primary motif/palette reference. Output one very wide horizontal 3:1 flat 2D albedo master, maximum detail. Dense traditional Canton famille rose miniature flowers and butterfly decoration FULL BLEED from top to bottom with NO unpainted border strips: alternating vivid red and pink peonies, white flowers, yellow-red butterflies with blue accents, emerald/lime/jade foliage with veins, small blue flowers and occasional fruits. Around 14 varied small flower groupings across width, densely interwoven, edge to edge with some cropped petals at top/bottom, not one sparse row. Match new reference vivid greens and reds; keep exquisite old master linework. Ends left/right join seamlessly with no mirrored or obvious repeats. Homogeneous flat ochre background #B3924F only in small gaps about 20%, no metallic rendering. No cup, saucer, object, camera perspective, lighting, highlights, shadows, paper, embossing, bevels, text, watermarks, borders or margins."
+  }
+}

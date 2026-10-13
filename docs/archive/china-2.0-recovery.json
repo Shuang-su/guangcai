@@ -1,0 +1,103 @@
+{
+  "deployedVersion": "2.0",
+  "deployId": "6acbd24fa545c331cdd20dae",
+  "capturedLocalWork": "2.1 in progress, not represented as deployed",
+  "recoveredFiles": [
+    {
+      "path": "guangcai-china-preview/src/geometry/product.ts",
+      "capturedLocalSha256": "d41dca2e975b02248e81291aa8b9156daa0bef3559dccb8c0cd83d99968bec7b",
+      "deployedBaselineSha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/geometry/product.ts"
+    },
+    {
+      "path": "guangcai-china-preview/src/styles/style-manager.ts",
+      "capturedLocalSha256": "91f1294822990525f6df6c8e410d77ceb474c62a5c1144bcd3d4f55d8e675071",
+      "deployedBaselineSha256": "1639e5bb558ea04e24dd3f8e67a7cad30cf35103919ae813c29247f080830805",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/styles/style-manager.ts"
+    },
+    {
+      "path": "guangcai-china-preview/tools/derive-fixed.mjs",
+      "capturedLocalSha256": "e5248ac21110ed321ce9dbdaf77170cad7be996fb4f73fee5f266b3605d36968",
+      "deployedBaselineSha256": "e0c6f9b31fd500f4f5fe8eb7fb7c8c20d901fdcfdfae5f8286c84a68d53de60d",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/derive-fixed.mjs"
+    },
+    {
+      "path": "guangcai-china-preview/tools/geometry.test.ts",
+      "capturedLocalSha256": "9e21451fa63821a5cb23f00fc608c2b16adabfeba274ecabc05bf5158a32c788",
+      "deployedBaselineSha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/geometry.test.ts"
+    },
+    {
+      "path": "guangcai-china-preview/public/fixed/style.json",
+      "capturedLocalSha256": "985bcdc38c968719711f552a75745bb76c360a854abdf061104bf275459529bf",
+      "deployedBaselineSha256": "77c69f00c1ff3c73fd0d2625f677b19491aa0d5b0170aa9b6cca4bb630adb15a",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-github-20261013/deployments/guangcai-no1-china/6acbd24fa545c331cdd20dae/fixed/style.json"
+    },
+    {
+      "path": "guangcai-china-preview/public/fixed/manifest.json",
+      "capturedLocalSha256": "ad9bfa36ea96be1f21b70fbec32e9adc0ef298b66f8524da9e30262c95319dc5",
+      "deployedBaselineSha256": "7e7aa36ac137f08ddff568869b1b06e43e8353d7960a6e5494928fc2e3b71d18",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-github-20261013/deployments/guangcai-no1-china/6acbd24fa545c331cdd20dae/fixed/manifest.json"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/browser-qa.json",
+      "capturedLocalSha256": "cc7a1c28dd7769ac8ea3e9c3cbe1819864c4390a6e19254bdcb410ffa5d92471",
+      "deployedBaselineSha256": "8cd161abf5c96706a93def2413fa711ea2fce6108c922b3bf8b81bfe8c97e422",
+      "restoredFrom": "/Volumes/Prism/Codex/guangcai-github-20261013/deployments/guangcai-no1-china/6acbd24fa545c331cdd20dae/review/browser-qa.json"
+    }
+  ],
+  "excludedInProgressFiles": [
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/evidence/camera-calibration.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/evidence/deployment/netlify-deploy.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/evidence/deployment/online-qa.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/evidence.html",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/fixed/manifest.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/fixed/style.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/buildings-comparison.jpg",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/buildings-model.png",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/buildings-overlay.png",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/label-comparison.jpg",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/label-model.png",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/review/label-overlay.png",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/geometry/product.ts",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/main.ts",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/styles/style-manager.ts",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/derive-fixed.mjs",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/geometry.test.ts",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/geometry-before.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/plan.md",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/previous-online-fixed-manifest.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/protected.json",
+    "guangcai-china-preview/docs/changes/20261013-fixed-layout/request.md",
+    "guangcai-china-preview/tools/layout-probe.mjs",
+    "guangcai-china-preview/tools/layout-balanced-probe.mjs",
+    "guangcai-china-preview/output/playwright/layout-probe/a-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe/a-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe/b-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe/b-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe/before-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe/before-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe/buildings-grid.jpg",
+    "guangcai-china-preview/output/playwright/layout-probe/c-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe/c-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe/configs.json",
+    "guangcai-china-preview/output/playwright/layout-probe/d-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe/d-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe/label-grid.jpg",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/a-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/a-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/b-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/b-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/before-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/before-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/buildings-grid.jpg",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/c-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/c-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/configs.json",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/d-buildings.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/d-label.png",
+    "guangcai-china-preview/output/playwright/layout-probe-balanced/label-grid.jpg"
+  ],
+  "localPreservation": "/Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/captured-2.1",
+  "originalProjectModified": false
+}

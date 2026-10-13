@@ -1,0 +1,107 @@
+[
+  {
+    "path": "src/geometry/product.ts",
+    "status": "modified",
+    "sha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20"
+  },
+  {
+    "path": "src/interaction/views.ts",
+    "status": "modified",
+    "sha256": "7f5ca3c223e7c718e1fe1846b56d5a7e59d02b60f99f05e2c4368e8df12ec2e2"
+  },
+  {
+    "path": "src/main.ts",
+    "status": "modified",
+    "sha256": "3ed29462132f6d784ffe1078af8ba5fe4071d1edaf896c3f77953873c99717e8"
+  },
+  {
+    "path": "src/materials/materials.ts",
+    "status": "modified",
+    "sha256": "fe98890f8b208bbcaf21023f1b0dc7140f39fb6c6e8240c0ef70d13d1571b574"
+  },
+  {
+    "path": "src/styles/city-artwork.ts",
+    "status": "added",
+    "sha256": "2b486703a879d9da8e5215b771fbebaed546d676a72381cb6574026f662914be"
+  },
+  {
+    "path": "src/styles/style-manager.ts",
+    "status": "modified",
+    "sha256": "23468c3c8953a5b31771eb33ddab9cb40400f645e3ed55e283add9513fb731a6"
+  },
+  {
+    "path": "src/ui/interface.ts",
+    "status": "modified",
+    "sha256": "e5049306726be9219fa6728ca71069b6433e2d8b9f1d984ca1b96c0cd86c2f63"
+  },
+  {
+    "path": "src/ui/styles.css",
+    "status": "modified",
+    "sha256": "a035580e60c944e39c3baf918d7bd9c54ebc13c359fc46374e4ca32eb918e629"
+  },
+  {
+    "path": "tools/china-assets.py",
+    "status": "added",
+    "sha256": "fa77917d36a3bcebb2fcbe8ffa73625a2240d4697a2d8d3f1bd56aeddb81f093"
+  },
+  {
+    "path": "tools/china-calibration.ts",
+    "status": "added",
+    "sha256": "b382aa9c5a1e71b1b27a05ac48438c33bd223b76ab3063fdec3cd976ce761517"
+  },
+  {
+    "path": "tools/china-evidence.mjs",
+    "status": "added",
+    "sha256": "5e4a613962f85fc9c1ae8a2f8cb287cfdbcbae7dc97acd6aff5390f78bf0aa86"
+  },
+  {
+    "path": "tools/china-qa.mjs",
+    "status": "added",
+    "sha256": "7076290ac4902e986f9147d8bbc462e7be917a933746a491debc65567d0ee3de"
+  },
+  {
+    "path": "tools/derive-fixed.mjs",
+    "status": "added",
+    "sha256": "3bd56939a3d2294186901a0a9806ca7b3aadb7450696d37175730ee998409260"
+  },
+  {
+    "path": "tools/geometry.test.ts",
+    "status": "modified",
+    "sha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b"
+  },
+  {
+    "path": "tools/verify-delivery.mjs",
+    "status": "added",
+    "sha256": "4d5adbc669569cbce07d04d0431ed7647bb98f4075c97651f43a306af737243d"
+  },
+  {
+    "path": "README.md",
+    "status": "modified",
+    "sha256": "b915d1cbaa2b9c08eb70eea65585a402b6cd80dff78f4b73a061ad1c4f9db26b"
+  },
+  {
+    "path": "index.html",
+    "status": "modified",
+    "sha256": "2aa0675a60c7417dae9f615add244d27526de818902f0d06927db6d5d1de82a1"
+  },
+  {
+    "path": "package.json",
+    "status": "modified",
+    "sha256": "d9e2147ad7e1a5a59b470770cd8c16bcce9a9c5ca501cb77feaae8601814b4cb"
+  },
+  {
+    "path": "package-lock.json",
+    "status": "modified",
+    "sha256": "b13af7c887dc28681cc8d15865c4f53df21717472d728ca754ea14500752e8e1"
+  },
+  {
+    "path": "vite.config.ts",
+    "status": "modified",
+    "sha256": "eb402e25dfa21cac42701996b15c3bf276f1c04d8f483813e7daded1d3a0c15f"
+  },
+  {
+    "path": "public/evidence.html",
+    "status": "added",
+    "sha256": "fc7211b6bac358ad7896e59ffcb035b39d9eb8b9e019d0c9b2938581de6bb85c"
+  }
+]

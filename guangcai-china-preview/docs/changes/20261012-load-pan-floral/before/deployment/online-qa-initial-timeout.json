@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11T16:01:56.572Z",
+  "url": "https://guangcai-no1-china.netlify.app/",
+  "complete": false,
+  "checks": [
+    "public HTTPS entry accessible without login"
+  ],
+  "errors": [
+    "page.waitForFunction: Timeout 60000ms exceeded."
+  ],
+  "assets": [],
+  "scope": "Public HTTPS in desktop Chrome and mobile-sized Chrome; local full touch/atomic-switch checks in evidence/browser-qa.json"
+}

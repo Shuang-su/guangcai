@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-13T18:37:58.917673+08:00",
+  "version": "2.0",
+  "commands": [
+    {
+      "check": "geometry-tests",
+      "exitCode": 0
+    },
+    {
+      "check": "build-with-texture-generation",
+      "exitCode": 0
+    }
+  ],
+  "buildComparedToDeploy": "6acbd24fa545c331cdd20dae",
+  "releaseFiles": 122,
+  "buildDifferences": [],
+  "sourceCopiesVerified": 3,
+  "originalFilesVerified": 104,
+  "integrityFailures": [],
+  "dependencyMode": "Read-only reuse of installed locked dependencies in isolated validation copy; no deployment",
+  "archivedSourceChanges": false,
+  "recovery": "Production source recovered from pre-2.1 snapshots; see china-2.0-recovery.json",
+  "geometryTests": {
+    "passed": 7,
+    "failed": 0
+  }
+}
