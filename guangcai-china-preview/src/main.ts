@@ -6,10 +6,11 @@ import {createStudio} from './studio/studio';
 import {defaultPack,StyleManager} from './styles/style-manager';
 import {chinaPack,CityArtworkManager,type CityArtworkPack} from './styles/city-artwork';
 import {ViewController,type View} from './interaction/views';
+import {applyPose,type Pose} from './interaction/calibration';
 import {createInterface} from './ui/interface';
 const mats=makeMaterials(),product=buildProduct(mats);
-let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false;
-const ui=createInterface({view:v=>view.set(v),auto:()=>view.setAuto(!view.auto),reset:()=>view.set('hero'),relief:v=>{city.setRelief(v);inspect();},metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},restore:async()=>{await applyCityArtwork(chinaPack);}});
+let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false;
+const ui=createInterface({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>{city.setRelief(v);inspect();},metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},restore:async()=>{await applyCityArtwork(chinaPack);}});
 let studio:ReturnType<typeof createStudio>;
 try{studio=createStudio(ui.canvas);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
 studio.scene.add(product.root);
@@ -40,10 +41,10 @@ async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.a
 const markReady=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
 Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady]).then(()=>{if(!disposed)ui.canvas.dataset.ready='true';}).catch(e=>ui.error((e as Error).message));
 let last=performance.now(),raf=0;
-function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;view.update(dt);studio.contact.update(product.root);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
-raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>view.set('hero'));
+function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;if(!calibrating)view.update(dt);studio.contact.update(product.root);studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
+raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');});
 const debug=()=>({ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,parameters:product.parameters,bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory},city:city.debug(),fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
-Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',applyCityArtwork,restore:()=>applyCityArtwork(chinaPack),setView:(v:View)=>view.set(v),setAuto:(v:boolean)=>view.setAuto(v),setRelief:(v:number)=>{city.setRelief(v);inspect();},setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
+Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',applyCityArtwork,restore:()=>applyCityArtwork(chinaPack),setView:(v:View)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:(v:number)=>{city.setRelief(v);inspect();},setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});

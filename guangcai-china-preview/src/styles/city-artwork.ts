@@ -2,9 +2,11 @@ import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Textu
 
 export interface CityArtworkPack {
   id: string; version: number; name: string; layout: 'blank-300deg-v1';
+  placement?: {scale:number;offsetU:number;offsetV:number};
   baseColor: string; normal: string; roughness: string; metalness: string; height?: string;
 }
 export const chinaPack: CityArtworkPack = {
+  placement:{scale:.82,offsetU:.047,offsetV:0},
   id:'china-draft-20261011',version:1,name:'中国 · 临时线稿',layout:'blank-300deg-v1',
   ...Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(k=>[k,`${import.meta.env.BASE_URL}china/${k}.png`])),
 } as CityArtworkPack;
@@ -48,7 +50,14 @@ export class CityArtworkManager {
       const labelCanvas=document.createElement('canvas');labelCanvas.width=label.width;labelCanvas.height=label.height;
       const lc=labelCanvas.getContext('2d')!,li=lc.createImageData(label.width,label.height);li.data.set(label.data);lc.putImageData(li,0,0);
       const l=pixels(labelCanvas,w,h).data;labelCanvas.width=labelCanvas.height=1;
-      const [base,norm,rough,mask]=loaded.map(t=>pixels(t.image,w,h).data);
+      const place=pack.placement??{scale:1,offsetU:0,offsetV:0};
+      if(!Object.values(place).every(Number.isFinite)||place.scale<=0||place.scale>1||place.offsetU<0||place.offsetV<0||place.offsetU+place.scale>1.001||place.offsetV+place.scale>1.001)throw new Error('城市图样定位超出展开区域');
+      const [base,norm,rough,mask]=loaded.map((t,j)=>{
+        const c=document.createElement('canvas');c.width=w;c.height=h;const ctx=c.getContext('2d')!;
+        ctx.fillStyle=j===1?'rgb(128,128,255)':'black';ctx.fillRect(0,0,w,h);
+        ctx.drawImage(t.image,place.offsetU*w,(1-place.scale-place.offsetV)*h,place.scale*w,place.scale*h);
+        const result=pixels(c,w,h).data;c.width=c.height=1;return result;
+      });
       const outColor=new Uint8ClampedArray(w*h*4),outMetal=new Uint8ClampedArray(w*h*4),outRough=new Uint8ClampedArray(w*h*4),outCoat=new Uint8ClampedArray(w*h*4);
       for(let i=0;i<base.length;i+=4){
         const m=mask[i]/255,a=l[i]/255,combined=a+m*(1-a);

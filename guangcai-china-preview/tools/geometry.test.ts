@@ -77,3 +77,19 @@ test('bottom marks face outward, sit below the recessed base and share physical 
   }
   assert.ok(normals.every(n=>n.y<-.999));product.dispose();
 });
+
+test('city artwork reaches the rounded exterior foot with a continuous upright second UV set',()=>{
+  const product=buildProduct(makeMaterials());
+  const mesh=product.cup.getObjectByName('cup-wall-and-recessed-foot') as Mesh;
+  const g=mesh.geometry,idx=g.index!,pos=g.getAttribute('position'),uv=g.getAttribute('uv1');
+  let minY=Infinity,maxY=-Infinity,minV=Infinity,maxV=-Infinity;
+  for(const group of g.groups.filter(g=>g.materialIndex===3))for(let j=group.start;j<group.start+group.count;j++){
+    const i=idx.getX(j),y=pos.getY(i),r=Math.hypot(pos.getX(i),pos.getZ(i));
+    assert.ok(r>=defaults.radius-1.71,'city never enters underside or inner cavity');
+    assert.ok(uv.getX(i)>=-1e-6&&uv.getX(i)<=1.000001,'city stays within blank 300 degree UV');
+    minY=Math.min(minY,y);maxY=Math.max(maxY,y);minV=Math.min(minV,uv.getY(i));maxV=Math.max(maxV,uv.getY(i));
+  }
+  assert.ok(Math.abs(minY-.12)<1e-5,'no white pedestal below artwork');
+  assert.ok(Math.abs(maxY-(defaults.height-2.3))<1e-4);
+  assert.equal(minV,0);assert.equal(maxV,1);product.dispose();
+});

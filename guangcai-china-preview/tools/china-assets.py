@@ -89,7 +89,13 @@ for layer in layers:
     metal[yy:yy+arr.shape[0],xx:xx+arr.shape[1]]=np.maximum(metal[yy:yy+arr.shape[0],xx:xx+arr.shape[1]],fill)
     cleanup.append({'layer':name,'removedAlphaSum':int(arr.sum(dtype=np.int64)-normalized.sum(dtype=np.int64)),'retainedPixelsAtAlpha128':int((normalized>=128).sum()),'originalPixelsAtAlpha128':int((arr>=128).sum())})
 
-def resize(arr):return Image.fromarray(arr).resize(SIZE,Image.Resampling.LANCZOS)
+# The PSD guide has 5-9 transparent pixels below the drawing. Remove that
+# guide-only bottom padding from all channels together so art reaches the foot.
+CONTENT_BOTTOM=2360
+# Carry the independently reconstructed metal face through the last few pixels
+# of baseline antialiasing. Only columns already occupied near the foot extend.
+metal[CONTENT_BOTTOM-10:CONTENT_BOTTOM]=np.maximum(metal[CONTENT_BOTTOM-10:CONTENT_BOTTOM],metal[CONTENT_BOTTOM-10:CONTENT_BOTTOM].max(axis=0))
+def resize(arr):return Image.fromarray(arr[:CONTENT_BOTTOM]).resize(SIZE,Image.Resampling.LANCZOS)
 def save(arr,name):
     im=arr if isinstance(arr,Image.Image) else Image.fromarray(arr)
     im.save(OUT/name)
@@ -112,9 +118,9 @@ diff=np.abs(np.array(raw_img,dtype=np.int16)-np.array(stroke,dtype=np.int16)).as
 save(diff,'cleanup-difference.png')
 preview=Image.new('RGB',SIZE,'white');preview.paste('#d4ab26',(0,0),metal_img);preview.paste('#7c5c0f',(0,0),stroke);preview.paste('#bb992c',(0,0),label_img)
 preview.resize((1600,696)).save(EVIDENCE/'china-atlas-preview.png')
-pack={'id':'china-draft-20261011','version':1,'name':'中国 · 临时线稿','layout':'blank-300deg-v1','baseColor':'baseColor.png','normal':'normal.png','roughness':'roughness.png','metalness':'metalness.png','height':'height.png'}
+pack={'id':'china-draft-20261011','version':1,'name':'中国 · 临时线稿','layout':'blank-300deg-v1','placement':{'scale':.82,'offsetU':.047,'offsetV':0},'baseColor':'baseColor.png','normal':'normal.png','roughness':'roughness.png','metalness':'metalness.png','height':'height.png'}
 (OUT/'city.json').write_text(json.dumps(pack,indent=2,ensure_ascii=False))
-audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
+audit={'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'size':[7016,4961],'frame':FRAME,'outputSize':SIZE,'bottomAnchor':{'psdGuideBottom':4608,'contentBottom':4603,'cupExteriorY':.12,'note':'Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside'},'resourceIds':resources,'savedPaths':any(2000<=r<=2997 for r in resources),'vectorMasks':any(t in ['vmsk','vsms'] for l in layers for t in l['tags']),'layers':[{k:v for k,v in l.items() if k!='alpha'} for l in layers],'cleanup':cleanup,'metalFillMethod':'per-layer row silhouette; wall per-column to original baseline; visual approximation','relief':'stroke-derived normal only; no geometric displacement; convex default','text':'PSD original 中国 / CHINA; fixed gold; separate alpha','maps':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.png')}}
 (EVIDENCE/'psd-audit.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False))
 assert all(x['retainedPixelsAtAlpha128']==x['originalPixelsAtAlpha128'] for x in cleanup)
 print(json.dumps({'out':str(OUT),'size':SIZE,'cleanup':cleanup},ensure_ascii=False))

@@ -14,6 +14,12 @@
     4096,
     1783
   ],
+  "bottomAnchor": {
+    "psdGuideBottom": 4608,
+    "contentBottom": 4603,
+    "cupExteriorY": 0.12,
+    "note": "Guide-only transparent padding removed consistently; city material extends onto rounded exterior foot, not underside"
+  },
   "resourceIds": [
     1028,
     1061,
@@ -458,14 +464,14 @@
   "text": "PSD original 中国 / CHINA; fixed gold; separate alpha",
   "maps": {
     "line-finish.png": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
-    "lines.png": "4d68866c9f28979f9fbe2b58e7546a35b45f451b9092f7d93445293faae5ff5e",
-    "metalness.png": "2ecd455ffb0d253e548b5065340d36646371147d768f30dd843e4f74f05ef154",
-    "label.png": "a11420676146bcea4ac1cd6d61a3eb761b5c0c11d9e9c7678dc410725b20f048",
-    "lines-original.png": "ca47c528041652535383eb9a1a5f89a35278615dddfd24596ad03e3dc7b9e5dc",
+    "lines.png": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+    "metalness.png": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+    "label.png": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+    "lines-original.png": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
     "label-roughness.png": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
-    "normal.png": "2fa4e725707754f20b7499b87285032314c8b7cdd83d3582ef3891b9778ae905",
-    "cleanup-difference.png": "b0bb53b103cdf761ddf69db037ddb829f97a5888a9f9fb1f9c30f9949dd90856",
-    "height.png": "f8d5f94b39b57615aa5ad12453452b359b42d5de8d3e9c393bc12b954c9cab96",
+    "normal.png": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+    "cleanup-difference.png": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+    "height.png": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
     "roughness.png": "4ef7d6d78ac4a82f3f68228ceff274b8f17a6d6509eb49800179b52707222d69",
     "baseColor.png": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e"
   }

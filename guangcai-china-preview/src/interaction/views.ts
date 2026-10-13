@@ -23,7 +23,7 @@ export class ViewController{
     const p=this.getProduct(),h=p.parameters.height;
     this.cupPos.copy(p.home.cup);this.lidPos.copy(p.home.lid);this.saucerPos.copy(p.home.saucer);this.cupQuat.identity();this.lidQuat.identity();
     p.cup.visible=true;p.lid.visible=true;p.saucer.visible=true;
-    this.toTarget.set(7,65,0);let pos=[-145,140,-310];
+    this.toTarget.set(7,65,0);let pos=[-88,125,-360];
     if(view==='front'){pos=[22,124,340];this.toTarget.set(4,61,0);}
     if(view==='handle'){pos=[65,105,325];this.toTarget.set(17,67,0);}
     if(view==='top'){p.lid.visible=false;pos=[.1,325,1];this.toTarget.set(0,45,0);}
@@ -40,7 +40,7 @@ export class ViewController{
       p.cup.visible=false;p.saucer.visible=false;this.lidPos.set(0,33,0);
       pos=[68,111,127];this.toTarget.set(0,36,0);
     }
-    if(view==='detail'){pos=[-64,70,-133];this.toTarget.set(-7,36,-13);}
+    if(view==='detail'){pos=[-80,87,-178];this.toTarget.set(-9,38,-11);}
     const aspect=this.studio.camera.aspect;
     this.toCamera.set(...pos as [number,number,number]);
     if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);

@@ -24,13 +24,13 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const n=240,bandSegments=Math.round(p.bandAngle/(2*Math.PI)*n), actualBand=bandSegments/n*2*Math.PI;
   const body=mesh('cup-wall-and-recessed-foot',revolve(profile,n,{
     start:-actualBand/2,
-    material:(j,i)=>j>=9&&j<=10?(i<bandSegments?1:3):j===5?2:0,
+    material:(j,i)=>j>=6&&j<=10?(i<bandSegments?(j>=9?1:0):3):j===5?2:0,
     uv:(_rr,y,theta)=>[(theta+actualBand/2)/actualBand,(y-3)/(h-5.3)],
   }),[m.porcelain,m.regions.body,m.foot,m.city],cup,-h/2);
   body.userData={circleRadius:r,bandRadians:actualBand,wallThickness:w};
   // A second UV set maps ONLY the white exterior, with upright non-mirrored text.
   const cityUv:number[]=[];
-  for(let i=0;i<=n;i++)for(const [,y] of profile)cityUv.push((n-i)/(n-bandSegments),(y-3)/(h-5.3));
+  for(let i=0;i<=n;i++)for(const [,y] of profile)cityUv.push((n-i)/(n-bandSegments),(y-.12)/(h-2.42));
   body.geometry.setAttribute('uv1',new Float32BufferAttribute(cityUv,2));
   const {path,upper,lower}=handlePath(p);
   mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
