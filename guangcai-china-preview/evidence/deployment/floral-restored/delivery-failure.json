@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-13T14:59:54.467Z",
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "checks": [],
+  "errors": [
+    "Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR",
+    "Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR"
+  ],
+  "badRequests": [],
+  "error": "TimeoutError: page.waitForFunction: Timeout 120000ms exceeded."
+}

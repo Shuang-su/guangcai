@@ -1,0 +1,9 @@
+{
+  "observations": [
+    "Two default-resolver Chrome checks exceeded a 120 second material-ready timeout.",
+    "A diagnostic browser run reported no shader errors; the 24,498,837 byte saucer normal completed, while some other images remained pending.",
+    "Default curl could not connect within 30 seconds; curl -4 reached HTTP 200. A later 11 MB color download received 9.3 MB before its 30 second limit.",
+    "Netlify API checks and Git push completed after process-local IPv4 selection. Website and system network configuration were not changed."
+  ],
+  "scope": "Observed workstation network failures; not evidence of a general website error or of physical mobile performance."
+}
