@@ -67,7 +67,7 @@ npm run textures:web
 
 - 中国杯 2.2 保留在 https://guangcai-no1-china.netlify.app/ ，已发布部署 ID `6ace111ab0415c9455a3c6f8`。
 - [3.0 高清预览](https://guangcai-no1-china-v3.netlify.app/) 已发布，部署 ID `6ace443df7425f433e717eb0`，继续保留。
-- [4.0 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前记录部署 ID `6aced018c70635a1ad24cbbe`，源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签已指向对应发布源码。
+- [4.0 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前记录部署 ID `6acef244237630dba7fa87fe`，源码 `591d8c56b0819143a2bdab454068fd30921a2977`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签固定在各自发布基线；本轮纹饰修正作为 v4.0 之后的新提交保存。
 - 原版站与历史发布对应关系见仓库 `VERSION_HISTORY.md` 和 `deployments/`。
 - 早期非 Git 开发、122 文件的旧发布记录等属于 2026-10-11/12 历史状态，原文保留在各日期的 `docs/changes/`；不代表当前开发状态。
 
@@ -80,3 +80,5 @@ V4 记录位于仓库根目录 [docs/changes/20261014-v4/](../docs/changes/20261
 参考图中的空白杯身用于器型、白瓷和机位校准；城市图样按原双杯参考和 PSD 检查。参考图会等比缩小，不进行透视变形。机位残差只描述选取的盖沿与碟沿边界，不能代表整件逐像素一致。保留的差异包括盖钮轮廓、较薄的碟侧、实时高光与离线效果图的差别、原稿与高清重建纹样的细节差异，以及 PSD 的 CHINA 大小写。正式工艺厚度、最终城市稿和真实设备验收仍须单独确认。
 
 V4 六款中国新图样共用 PSD 建筑结构，深圳两款共用母稿；花云鸟等点缀属于参考重建。高精度凹凸仍为实时材质近似，不能视作原稿真实三维高度或生产尺寸。
+
+[固定纹饰凹凸修正](../docs/changes/20261014-fixed-relief-alignment/completion.md)：清理金底伪高度，固定釉层覆盖 0.40／粗糙度 0.22；保持正常线条深浅，法线不改变几何剪影。

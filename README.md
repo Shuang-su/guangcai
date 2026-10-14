@@ -24,7 +24,7 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 | 3.0 预览 | `v3.0` | [高清中国杯 V3](https://guangcai-no1-china-v3.netlify.app/) | `6ace443df7425f433e717eb0` |
 | 4.0 预览 | `v4.0` | [主题与釉彩 V4](https://guangcai-no1-china-v4.netlify.app/) | `6aced018c70635a1ad24cbbe` |
 
-Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，`v3.0`、`v4.0` 标签指向各自已发布源码；后续修复使用新的 commit，不移动已有标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。最新 V4 部署对应源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`，详见[部署与公网复核记录](docs/changes/20261014-v4-body-seam/deployment.json)。
+Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，`v3.0`、`v4.0` 标签指向各自已发布源码；后续修复使用新的 commit，不移动已有标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。`v4.0` 固定在表中发布基线；后续纹饰修正对应源码 `591d8c56b0819143a2bdab454068fd30921a2977`、部署 `6acef244237630dba7fa87fe`，详见[部署与公网复核记录](docs/changes/20261014-fixed-relief-alignment/deployment.json)及[凹凸对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#fixed-relief-alignment)。
 
 ## 本地开发
 

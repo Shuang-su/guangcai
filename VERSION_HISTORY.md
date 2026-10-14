@@ -39,3 +39,9 @@ V4 最新接缝修正完成 20 项测试、构建及公网浏览器回归；408 
 - [旋转方向修正记录](docs/changes/20261014-v4-rotation/)
 - [杯身接缝修正记录](docs/changes/20261014-v4-body-seam/completion.md) · [部署清单与公网复核](docs/changes/20261014-v4-body-seam/deployment.json)
 - [线上素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [颜色覆盖对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#color-coverage) · [杯身接缝对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#body-seam)
+
+## 4.0 标签之后的纹饰修正
+
+源码 `591d8c56b0819143a2bdab454068fd30921a2977`，手动部署 `6acef244237630dba7fa87fe`。固定花纹去除金底伪高度、改善侧边釉层反光，法线强度维持 4.4／2.4。`v4.0` 仍指向此前发布基线，不移动标签。
+
+[请求、计划、验证与完成记录](docs/changes/20261014-fixed-relief-alignment/completion.md) · [线上对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#fixed-relief-alignment)。
