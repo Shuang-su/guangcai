@@ -55,3 +55,9 @@ V4 最新接缝修正完成 20 项测试、构建及公网浏览器回归；408 
 Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐文件 SHA-1、公网页面版本与实际渲染均独立回读确认，未重复部署。V3 不变，两站无 Git 自动部署。
 
 [完成记录](docs/changes/20261014-floral-cleanup-4.2/completion.md) · [部署回读](docs/changes/20261014-floral-cleanup-4.2/deployment.json) · [4.2 对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#floral-cleanup-4.2)。
+
+## 4.3：北京主题（开发验证完成，发布核验中）
+
+基于4.2新增北京纯金、青绿金线、红金、紫金、蓝金，共13种有效材质组合。原1942×810透明线稿等比放大为4096×1783通道，16位高度和RGBA16F法线共用结构；生成式候选改变建筑，未采用。全站三个主题十四款，默认中国纯金不变。
+
+21项应用、4项素材、76项浏览器、24项背景和17项生产预览检查通过，生产构建成功。浏览器模拟手机，尚未真机验收。来源、对照与实际发布状态见[完成记录](docs/changes/20261014-beijing-4.3/completion.md)。

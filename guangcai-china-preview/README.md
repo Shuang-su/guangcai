@@ -1,13 +1,14 @@
-# 中国杯 4.2：城市主题与固定花纹金底清洗
+# 中国杯 4.3：北京主题、配色与可选文字
 
 [打开 V4](https://guangcai-no1-china-v4.netlify.app/) · [素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [版本与部署索引](../VERSION_HISTORY.md)
 
-本目录是 [Shuang-su/guangcai](https://github.com/Shuang-su/guangcai) 的中国杯应用，2.x、3.x、4.x 沿用同一源码目录。当前源码版本 **4.2.0**；发布与合并状态以末尾记录和根目录版本索引为准，开发与发布遵循[仓库约定](../AGENTS.md)。站点手动发布，不随代码推送或 PR 合并自动更新。
+本目录是 [Shuang-su/guangcai](https://github.com/Shuang-su/guangcai) 的中国杯应用，2.x、3.x、4.x 沿用同一源码目录。当前源码版本 **4.3.0**；发布与合并状态以末尾记录和根目录版本索引为准，开发与发布遵循[仓库约定](../AGENTS.md)。站点手动发布，不随代码推送或 PR 合并自动更新。
 
 ## 主题、款式与文字
 
 - **中国七款：** 原版纯金、青绿金线、红金、紫金、蓝金、蓝色线描、紫色线描。
 - **深圳两款：** 红金、青蓝金线。
+- **北京五款：** 纯金、青绿金线、红金、紫金、蓝金；沿用提供的线稿，不额外加花鸟。
 - **新款三种材质：** 彩釉金线、彩色金属、轻浮雕彩绘；原版纯金保留 3.0 基准参数。
 - **文字独立可选：** 随款式、主题名称、不显示；深圳另可选择“和合共彩”或“共创美好”及对应边框。文字颜色随款式，原版纯金仍为金色。
 
@@ -42,7 +43,7 @@ npm run qa:v4
 - `assets/masters/v3/`：3.0 原稿裁切／弧长展开记录；后续高清重建及连续图集见 `docs/changes/20261013-v3-restored/`。
 - `public/fixed/`：对齐的颜色、法线、高度、金属度和粗糙度；高度源保留，不做几何位移。
 - `public/china/`：原版纯金城市与文字材质源。
-- `public/cities/v4/catalog.json`：八款新图样目录；运行通道为 4096 × 1783，包含独立覆盖、颜色、金属度、粗糙度、清漆和高精度法线。文字独立保存。
+- `public/cities/v4/catalog.json`：十三款编译图样目录（另有原版中国纯金包）；运行通道为 4096 × 1783，包含独立覆盖、颜色、金属度、粗糙度、清漆和高精度法线。文字独立保存。
 - `public/textures/`：内容哈希运行资产；颜色与数据通道分开编码，高精度法线通过浮点编码加载。具体文件以当前清单为准。
 - `evidence/source-floral-v3.json`：裁切、极坐标展开和来源哈希。
 
@@ -92,3 +93,17 @@ V4 六款中国新图样共用 PSD 建筑结构，深圳两款共用母稿；花
 生成样张和未采用原因见 `evidence/floral-cleanup-4.2/imagegen-note.md`；局部生成改变了描线，因此只作对照，未接入生产纹样。与描线相连的细小色痕仍可能保留。
 
 复核：`python3 tools/test_gold_cleanup.py`、`python3 tools/test_floral_relief.py`、`python3 tools/verify-gold-cleanup.py`，需要 `tools/requirements-assets.txt` 的依赖。浏览器使用 `QA_PHASE=after node tools/floral-cleanup-review.mjs`（默认 5212）。历史核验脚本按其对应版本标签使用，不应以新版本材质通道去断言旧版通道不变。
+
+## 4.3 北京主题
+
+北京四个彩色款沿用中国对应配色与三种材质，纯金采用固定基准参数。新增独立“北京 / BEIJING”文字资产；“祈年殿”牌匾属于建筑，不受文字开关影响。主题目录集中定义默认款、名称与标语能力，`applyCityArtwork(pack)` 继续兼容旧包。
+
+`assets/source/beijing/` 保存用户原图；`assets/masters/beijing-4.3/` 保存高清线条、覆盖、高度与超分候选；`tools/compile-beijing.py` 生成独立对齐通道。生成式超分候选被拒绝，最终保留原稿构图；4096×1783 是等比放大的运行尺寸，不代表新增真实细节。
+
+```sh
+npm run textures:beijing  # 需要 Pillow / NumPy，增量保留旧款
+python3 tools/test_beijing_assets.py
+QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
+```
+
+[本轮请求、计划与完成记录](../docs/changes/20261014-beijing-4.3/) · [北京同机位对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#beijing-4.3)。

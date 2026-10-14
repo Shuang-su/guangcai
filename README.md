@@ -2,11 +2,11 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：4.2
+## 当前开发版本：4.3（发布核验中）
 
-[打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [4.2 金底清洗对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#floral-cleanup-4.2) · [应用说明](guangcai-china-preview/README.md)
+[打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [4.3 北京主题对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#beijing-4.3) · [应用说明](guangcai-china-preview/README.md)
 
-中国杯当前产品版本为 **4.2 / 4.2.0**，代码已合入 `main`。提供中国、深圳两个主题共九款图样；八款新图样支持彩釉金线、彩色金属、轻浮雕彩绘三种材质，文字可随款式、按主题或隐藏。首次打开仍为原版纯金。固定高清广彩花纹、白瓷、结构金边、背景上传及观察交互继续保留。
+中国杯本轮源码版本为 **4.3 / 4.3.0**，新增北京五款，与中国、深圳合计三个主题十四款。两款纯金维持固定材质，其余十二款支持彩釉金线、彩色金属、轻浮雕彩绘；文字可独立选择或隐藏。首次打开仍为中国原版纯金，固定高清广彩花纸与4.2金底清洗继续保留。发布、合并与标签将在核验后分别记录。
 
 V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
 
@@ -65,3 +65,5 @@ python3 tools/test_verify_archive.py
 `docs/archive/`、`docs/history/` 和 `deployments/` 保存旧版本证据；不要覆盖原记录。缓存、临时测试和发布暂存放在 `.codex-work/`，通过 `git rev-parse --git-path info/exclude` 指向的仓库本地 exclude 忽略。安装或复制较大素材前检查磁盘空间。
 
 4.2 保留原始颜色图、花果晕染与描线，用独立空白金底范围清理杂点和拖痕；对齐金属、粗糙度和凹凸，界面与 package 同步递增。[请求、验证与发布记录](docs/changes/20261014-floral-cleanup-4.2/completion.md)。
+
+4.3 [北京主题的请求、素材与验证记录](docs/changes/20261014-beijing-4.3/completion.md)，关联 [Issue #21](https://github.com/Shuang-su/guangcai/issues/21)。
