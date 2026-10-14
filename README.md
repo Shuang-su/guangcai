@@ -2,19 +2,29 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
+## 当前版本：4.0
+
+[打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [应用说明](guangcai-china-preview/README.md)
+
+中国杯应用版本为 **4.0.0**，代码已合入 `main`。提供中国、深圳两个主题共九款图样；八款新图样支持彩釉金线、彩色金属、轻浮雕彩绘三种材质，文字可随款式、按主题或隐藏。首次打开仍为原版纯金。固定高清广彩花纹、白瓷、结构金边、背景上传及观察交互继续保留。
+
+V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
+
 ## 项目与版本
 
 - `guangcai-viewer/`：原版一号杯，当前发布基线 1.0。
-- `guangcai-china-preview/`：中国杯持续开发目录。2.x → 3.0 → 后续版本在同一目录演进，通过功能分支和发布标签定位，不再为每版复制一套长期维护的源码。
-- `main`：已验证的完整项目基线。3.0 在 `codex/china-3.0` 开发，完成前通过 Draft PR 跟踪。
+- `guangcai-china-preview/`：中国杯持续开发目录。2.x → 3.0 → 4.0 → 后续版本在同一目录演进，通过功能分支和发布标签定位，不再为每版复制一套长期维护的源码。
+- `main`：包含已合并的 3.0 高清基础、V4 主题选择及后续修正；未完成的新功能另建分支。
 - [版本与部署索引](VERSION_HISTORY.md) · [恢复的 16 个历史节点](HISTORY.md) · [开发接入记录](docs/changes/20261013-git-development/completion.md)。
 
-| 已发布版本 | 标签 | 站点 | 部署 ID |
+| 已发布版本 | Git 标签 | 站点 | 部署 ID |
 | --- | --- | --- | --- |
 | 1.0 | `v1.0` | [原版一号杯](https://guangcai-no1.netlify.app/) | `6abbdf78d912b4b6b1d7c3b9` |
 | 2.2 | `v2.2` | [中国杯](https://guangcai-no1-china.netlify.app/) | `6ace111ab0415c9455a3c6f8` |
+| 3.0 预览 | 未创建 | [高清中国杯 V3](https://guangcai-no1-china-v3.netlify.app/) | `6ace443df7425f433e717eb0` |
+| 4.0 预览 | 未创建 | [主题与釉彩 V4](https://guangcai-no1-china-v4.netlify.app/) | `6aced018c70635a1ad24cbbe` |
 
-Git 提交、PR 合并与上线是分别核实的状态。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。3.0 按已批准的计划使用独立新网址，旧站继续保留。
+Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，但尚未创建 `v3.0`、`v4.0` 标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。最新 V4 部署对应源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`，详见[部署与公网复核记录](docs/changes/20261014-v4-body-seam/deployment.json)。
 
 ## 本地开发
 
@@ -29,16 +39,16 @@ npm --prefix guangcai-china-preview run build
 npm --prefix guangcai-china-preview run dev -- --port 5208
 ```
 
-原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。几何测试分别为原版 6 项、中国杯 10 项。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
+原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。中国杯测试覆盖几何、浮点法线、固定图集及款式选择；V4 接缝修正记录中为 20 项通过。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
 
 中国杯 `prebuild` 会从保存的母版生成 WebP；如产生源码或素材清单差异，先核对原因。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
 
 ## 开发与发布
 
 1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，从 main 建立 `codex/<task>` 分支；存在其他修改时使用独立 worktree。
-2. 在本仓库直接修改、验证并形成原子提交，例如 `feat(3.0): add original floral artwork`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
+2. 在本仓库直接修改、验证并形成原子提交，例如 `fix(china): align porcelain at artwork boundary`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
 3. PR 审查和必要验证通过后按授权合并。原始历史补录已经保留为真实可达提交，不对既有分支强推或重写。
-4. 正式版本使用 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0` 等标签；标签只在对应版本验证完成后创建，不能移动已发布标签。后续使用 3.1、3.2 等产品版本；一个版本可包含多个正常开发提交。
+4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
 5. 发布仅使用用户已授权的目标站点。从已记录的 Git 提交构建，保存站点 ID、提交 SHA、构建命令、部署 ID、文件哈希及回读结果。`.netlify/` 和凭据只留本地，不入库。
 
 ## 历史完整性
