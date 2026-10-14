@@ -25,12 +25,13 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const n=240,bandSegments=Math.round(p.bandAngle/(2*Math.PI)*n), actualBand=bandSegments/n*2*Math.PI;
   // Crop only the floral material. Keep the reserved 60-degree sector and city UV1
   // intact so the buildings and lettering cannot move when this band is narrowed.
+  // The narrow remainder is still cup-wall glaze and must share its local reflection.
   const visibleBandSegments=Math.round(bandSegments*(.5+fixedLayout.body.visibleEndFraction));
   const body=mesh('cup-wall-and-recessed-foot',revolve(profile,n,{
     start:-actualBand/2,
-    material:(j,i)=>j>=6&&j<=10?(i<bandSegments?(j>=9&&i<visibleBandSegments?1:0):3):j===5?2:0,
+    material:(j,i)=>j>=6&&j<=10?(i<bandSegments?(j>=9?(i<visibleBandSegments?1:4):0):3):j===5?2:0,
     uv:(_rr,y,theta)=>[(theta+actualBand/2)/actualBand,(y-3)/(h-5.3)],
-  }),[m.porcelain,m.regions.body,m.foot,m.city],cup,-h/2);
+  }),[m.porcelain,m.regions.body,m.foot,m.city,m.wallPorcelain],cup,-h/2);
   body.userData={circleRadius:r,bandRadians:actualBand,visibleBandRadians:visibleBandSegments/n*2*Math.PI,wallThickness:w};
   // A second UV set maps ONLY the white exterior, with upright non-mirrored text.
   const cityUv:number[]=[];

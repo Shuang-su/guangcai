@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-13T13:22:08.585Z",
+  "baselineSource": "b92e418e547c11c21ce90ccb2baad9ae5198a5a5",
+  "checks": [
+    "baseColor.png: city/lettering byte-identical to initial 3.0",
+    "city.json: city/lettering byte-identical to initial 3.0",
+    "cleanup-difference.png: city/lettering byte-identical to initial 3.0",
+    "height.png: city/lettering byte-identical to initial 3.0",
+    "label-roughness.png: city/lettering byte-identical to initial 3.0",
+    "label.png: city/lettering byte-identical to initial 3.0",
+    "line-finish.png: city/lettering byte-identical to initial 3.0",
+    "lines-original.png: city/lettering byte-identical to initial 3.0",
+    "lines.png: city/lettering byte-identical to initial 3.0",
+    "metalness.png: city/lettering byte-identical to initial 3.0",
+    "normal.png: city/lettering byte-identical to initial 3.0",
+    "roughness.png: city/lettering byte-identical to initial 3.0",
+    "body: source dimensions preserved",
+    "body: original master pixels unchanged",
+    "handle: source dimensions preserved",
+    "handle: original master pixels unchanged",
+    "saucer: source dimensions preserved",
+    "saucer: pixels outside 768px seam patch unchanged",
+    "body: GPU texture is RGBA16F with expected dimensions",
+    "handle: GPU texture is RGBA16F with expected dimensions",
+    "saucer: GPU texture is RGBA16F with expected dimensions",
+    "accepted depth and exposure retained",
+    "raw HFN1 and gzip payloads both decode"
+  ],
+  "precision": {
+    "body": {
+      "normalType": 1016,
+      "normalSize": [
+        1024,
+        2466
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    },
+    "handle": {
+      "normalType": 1016,
+      "normalSize": [
+        320,
+        3728
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    },
+    "saucer": {
+      "normalType": 1016,
+      "normalSize": [
+        8192,
+        384
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    }
+  },
+  "protectedFiles": {
+    "public/china/baseColor.png": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+    "public/china/city.json": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+    "public/china/cleanup-difference.png": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+    "public/china/height.png": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+    "public/china/label-roughness.png": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+    "public/china/label.png": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+    "public/china/line-finish.png": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+    "public/china/lines-original.png": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+    "public/china/lines.png": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+    "public/china/metalness.png": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+    "public/china/normal.png": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+    "public/china/roughness.png": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500"
+  },
+  "authoredSources": {
+    "assets/masters/v3-hq/seam-prompt.txt": "03214b8efa1644cb6ee65420d63206f112b8b94506a4f0091d24265f6b68ee21",
+    "assets/masters/v3-hq/seam-repair-generated.png": "6a7a405bbe880744e88aadf79bdc82b876da887feab06addc84103cb77db7f4b",
+    "assets/masters/v3-hq/seam-final-native.png": "a53f8b62813afcd3b7b880d52cd626093330415ced9e2f456d90af6d8ff5b203"
+  },
+  "unmodifiedSaucerColumnsFraction": 0.8890814558058926,
+  "normalDecodePaths": [
+    {
+      "size": [
+        2,
+        2
+      ],
+      "precision": "RGBA16F"
+    },
+    {
+      "size": [
+        2,
+        2
+      ],
+      "precision": "RGBA16F"
+    }
+  ],
+  "locked": {
+    "exposure": 1.08,
+    "fixedFinish": {
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.75,
+      "specularIntensity": 0.85
+    },
+    "city": {
+      "pack": {
+        "placement": {
+          "scale": 0.82,
+          "offsetU": 0.047,
+          "offsetV": 0
+        },
+        "id": "china-draft-20261011",
+        "version": 3,
+        "name": "中国 · 临时线稿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "/textures/china-baseColor-754558a83d8866b8.webp",
+        "normal": "/textures/china-normal-f0662e241725d83b.webp",
+        "roughness": "/textures/china-roughness-40e7b97659e5e028.webp",
+        "metalness": "/textures/china-metalness-7ac9525c8019fc98.webp",
+        "height": "/china/height.png?v=3"
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "maps": [
+        {
+          "uuid": "2785833b-8da3-4e93-a5ca-8a6bc061a720",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "srgb"
+        },
+        {
+          "uuid": "b44f129a-0787-4077-b224-da03a69e1f00",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "8d8ee9b7-20f2-4ec7-9dc8-5ad63d3f70ff",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "d00e442e-6680-4073-8c07-11bed7b2417f",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "6a6c6891-70c4-4e60-b72b-8b590f19bf91",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        }
+      ],
+      "labelSource": "china/label.png",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    }
+  },
+  "scope": "Chrome WebGL and decoded source data; not physical phone or Safari acceptance"
+}

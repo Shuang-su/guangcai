@@ -4,7 +4,7 @@ import type {Studio}from'./studio';
 /** Geometry-aware local reflection probe. The receiving cup wall is hidden only
  * during capture. Nearby handle/lid/saucer are rendered with their real materials.
  * A single centre probe is a local approximation, not ray-traced self reflection. */
-export function createLocalReflections(studio:Studio,product:Product,material:MeshPhysicalMaterial){
+export function createLocalReflections(studio:Studio,product:Product,material:MeshPhysicalMaterial,companions:MeshPhysicalMaterial[]=[]){
  const target=new WebGLCubeRenderTarget(512,{type:HalfFloatType,minFilter:LinearFilter,generateMipmaps:false});
  const camera=new CubeCamera(.3,2500,target),pmrem=new PMREMGenerator(studio.renderer);
  const wall=product.cup.getObjectByName('cup-wall-and-recessed-foot')!,mark=product.cup.getObjectByName('cup-bottom-mark')!;
@@ -13,7 +13,10 @@ export function createLocalReflections(studio:Studio,product:Product,material:Me
  const probeUniforms={cupProbePosition:{value:position},cupProbeHandleDirection:{value:new Vector3(1,0,0)},cupProbeMinimum:{value:new Vector3()},cupProbeMaximum:{value:new Vector3()},cupProbeEnabled:{value:0}};
  // A finite capture volume corrects the strongest near-handle parallax. Keep
  // the distant studio directions unchanged outside that local angular sector.
- material.onBeforeCompile=shader=>{
+ const receivers=[material,...companions];
+ for(const receiver of receivers){
+ receiver.envMap=studio.cupEnvironment;
+ receiver.onBeforeCompile=shader=>{
   Object.assign(shader.uniforms,probeUniforms);
   shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vCupProbePosition;').replace('#include <worldpos_vertex>','#include <worldpos_vertex>\nvCupProbePosition = (modelMatrix * vec4(transformed, 1.0)).xyz;');
   const chunk=ShaderChunk.envmap_physical_pars_fragment.replace('vec4 envMapColor = textureCubeUV( envMap, envMapRotation * reflectVec, roughness );',`
@@ -26,7 +29,8 @@ export function createLocalReflections(studio:Studio,product:Product,material:Me
    vec4 envMapColor = textureCubeUV( envMap, envMapRotation * reflectVec, roughness );`);
   shader.fragmentShader='varying vec3 vCupProbePosition;\nuniform vec3 cupProbePosition;\nuniform vec3 cupProbeHandleDirection;\nuniform vec3 cupProbeMinimum;\nuniform vec3 cupProbeMaximum;\nuniform float cupProbeEnabled;\n'+shader.fragmentShader.replace('#include <envmap_physical_pars_fragment>',chunk);
  };
- material.customProgramCacheKey=()=> 'cup-local-reflection-parallax-v1';
+ receiver.customProgramCacheKey=()=> 'cup-local-reflection-parallax-v1';
+ }
  const key=()=>product.root.children.map(o=>[...o.position.toArray(),...o.quaternion.toArray(),o.visible?1:0].map(v=>v.toFixed(3)).join(',')).join('/');
  function capture(options:{includeHandle?:boolean}={}){
   if(disposed||!ready)return;
@@ -43,14 +47,14 @@ export function createLocalReflections(studio:Studio,product:Product,material:Me
   }finally{
    hidden.forEach((o,i)=>o.visible=visibility[i]);scene.background=background;scene.backgroundBlurriness=blur;renderer.shadowMap.autoUpdate=autoShadow;
   }
-  if(enabled){material.envMap=filtered!.texture;probeUniforms.cupProbeEnabled.value=1;material.needsUpdate=true;}
+  if(enabled){for(const receiver of receivers){receiver.envMap=filtered!.texture;receiver.needsUpdate=true;}probeUniforms.cupProbeEnabled.value=1;}
  }
  return{
   initialize(){ready=true;capture();},
   update(now:number){if(!ready||disposed||!enabled)return;const next=key();if(next!==observedKey){observedKey=next;changedAt=now;}if(next!==lastKey&&now-changedAt>160)capture();},
-  setEnabled(value:boolean){enabled=value;probeUniforms.cupProbeEnabled.value=value?1:0;if(!value){material.envMap=studio.cupEnvironment;material.needsUpdate=true;}else{capture();}},
+  setEnabled(value:boolean){enabled=value;probeUniforms.cupProbeEnabled.value=value?1:0;if(!value){for(const receiver of receivers){receiver.envMap=studio.cupEnvironment;receiver.needsUpdate=true;}}else{capture();}},
   refresh:capture,
   debug(){return {enabled,ready,captures,resolution:512,position:position.toArray(),envMap:material.envMap?.uuid,method:'local cube probe; cup wall excluded, real nearby geometry included',approximation:'single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces'};},
-  dispose(){if(disposed)return;disposed=true;material.envMap=null;target.dispose();filtered?.dispose();pmrem.dispose();}
+  dispose(){if(disposed)return;disposed=true;for(const receiver of receivers)receiver.envMap=null;target.dispose();filtered?.dispose();pmrem.dispose();}
  };
 }

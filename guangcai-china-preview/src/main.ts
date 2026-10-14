@@ -25,8 +25,8 @@ ui.message('正在载入花纸与金色浮雕…',true);
 try{studio=createStudio(ui.canvas,true);}catch(e){ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
 const background=new BackgroundController(studio,ui.backgroundLayer,ui.background,ui.backgroundError);
 studio.scene.add(product.root);
-const reflections=createLocalReflections(studio,product,mats.city);
-const porcelainControls=[calibratePorcelain(mats.porcelain),calibratePorcelain(mats.city,true)];
+const reflections=createLocalReflections(studio,product,mats.city,[mats.wallPorcelain]);
+const porcelainControls=[calibratePorcelain(mats.porcelain),calibratePorcelain(mats.city,true),calibratePorcelain(mats.wallPorcelain)];
 mats.porcelain.envMap=studio.porcelainEnvironment;
 product.root.traverse(o=>{if(o instanceof Mesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m.name==='knob-striped-porcelain'){m.envMap=studio.porcelainEnvironment;porcelainControls.push(calibratePorcelain(m));}});
 const lidReflections=createLidReflections(studio,product,mats.porcelain);
@@ -39,6 +39,9 @@ artworkUI=createArtworkPanel(selection,ui.closePanels);
 city.onProgress=(done,total)=>{artworkUI?.progress(done,total);if(selection.busy)ui.message(`正在准备 ${variantFor(selection.desired.variant).name} · ${done} / ${total}`,true);};
 const handle=product.cup.getObjectByName('wide-ribbon-handle') as Mesh,saucer=product.saucer.children[0] as Mesh;
 fixed.fit({body:product.parameters.radius*product.parameters.bandAngle/(product.parameters.height-5.3),handle:handle.geometry.userData.surfaceMetrics.aspect,saucer:saucer.geometry.userData.surfaceMetrics.aspect});
+// Until fixed maps are ready, the band uses the same glaze as the adjacent wall.
+const wallMaterials=(product.cup.getObjectByName('cup-wall-and-recessed-foot') as Mesh).material as Material[];
+wallMaterials[1]=mats.wallPorcelain;
 const originals=new Map<Mesh,Material|Material[]>();product.root.traverse(o=>{if(o instanceof Mesh&&o.type!=='Reflector')originals.set(o,o.material);});
 let temporary:Material[]=[];
 function inspect(){
@@ -61,7 +64,7 @@ function inspect(){
 function setFixedRelief(enabled:boolean){fixedReliefEnabled=enabled;for(const m of Object.values(mats.regions)){m.normalScale.setScalar(enabled?RENDER_STANDARD.relief:0);m.clearcoatNormalScale.setScalar(enabled?RENDER_STANDARD.clearcoatRelief:0);}inspect();}
 async function applyCityArtwork(pack:CityArtworkPack){const applied=await city.apply(pack);if(applied){inspect();if(assetsReady)ui.style(city.current!.name);}return applied;}
 const markReady=loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;});
-Promise.all([fixed.apply(defaultPack),applyCityArtwork(chinaPack),markReady,background.ready]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;artworkUI?.ready();ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
+Promise.all([fixed.apply(defaultPack).then(committed=>{if(committed&&!disposed){wallMaterials[1]=mats.regions.body;inspect();}}),applyCityArtwork(chinaPack),markReady,background.ready]).then(()=>{if(!disposed){reflections.initialize();assetsReady=true;artworkUI?.ready();ui.canvas.dataset.ready='true';ui.style(city.current!.name);}}).catch(e=>{ui.message('素材未完整载入，请刷新重试。',true);ui.error((e as Error).message);});
 let last=performance.now(),raf=0;
 function frame(now:number){if(disposed)return;const dt=Math.min(.1,(now-last)/1000);last=now;if(!calibrating)view.update(dt);studio.contact.update(product.root);if(mode==='pbr'){reflections.update(now);lidReflections.update();}studio.floor.visible=product.saucer.visible&&product.cup.visible;studio.renderer.render(studio.scene,studio.camera);raf=requestAnimationFrame(frame);}
 raf=requestAnimationFrame(frame);ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');});
@@ -71,5 +74,5 @@ Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',appl
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},
  fixedPrecision:()=>fixed.precision(),
  applyFixedArtwork:async(pack:StylePack)=>{const committed=await fixed.apply(pack);if(committed){reflections.refresh();inspect();}return committed;},
- debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);background.dispose();artworkUI?.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
+ debug,dispose:()=>{if(disposed)return;disposed=true;cancelAnimationFrame(raf);background.dispose();artworkUI?.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.wallPorcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});
