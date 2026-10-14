@@ -1,0 +1,44 @@
+{
+  "sourceCommit": "591d8c56b0819143a2bdab454068fd30921a2977",
+  "deploy": {
+    "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "site_name": "guangcai-no1-china-v4",
+    "deploy_id": "6acef244237630dba7fa87fe",
+    "deploy_url": "https://6acef244237630dba7fa87fe--guangcai-no1-china-v4.netlify.app",
+    "logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/deploys/6acef244237630dba7fa87fe",
+    "function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/functions",
+    "edge_function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/edge-functions",
+    "url": "https://guangcai-no1-china-v4.netlify.app"
+  },
+  "archive": "deployments/guangcai-no1-china-v4/6acef244237630dba7fa87fe",
+  "filesVerified": 434,
+  "extraServerFiles": [
+    {
+      "id": "/netlify.toml",
+      "path": "/netlify.toml",
+      "sha": "d95928911f573e92f42d93e1c1e094c7b366c39f",
+      "mime_type": "application/octet-stream",
+      "size": 1277,
+      "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "deploy_id": "6acef244237630dba7fa87fe"
+    }
+  ],
+  "pathNormalization": "Netlify API lowercases paths; verified no case-fold collisions and exact SHA-1 for all files.",
+  "errors": [],
+  "readbacks": [
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "deployId": "6acef244237630dba7fa87fe",
+      "state": "ready",
+      "gitBinding": {}
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "deployId": "6ace443df7425f433e717eb0",
+      "state": "ready",
+      "gitBinding": {}
+    }
+  ]
+}

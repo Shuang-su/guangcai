@@ -124,3 +124,8 @@ for name,arr,native in [('body',body,637),('handle',handle,148),('saucer',saucer
  print(name,regional[name],flush=True)
 if active:(R/'src/styles/fixed-rendering.json').write_text(json.dumps({'saucer':atlas},indent=2)+'\n')
 (O/'style.json').write_text(json.dumps(style,ensure_ascii=False,indent=2));report={'assetVersion':'3.0-floral-restored-1','fixedNormalScale':4.4,'clearcoatNormalScale':2.4,'method':'Generative high-definition restoration; coarse source-layout registration; minimal-difference overlap joins; semantic enamel and raised ink; float height and RGBA16F normal atlas','pilot':pilot,'parts':reports,'saucerJoins':joins,'handleJoins':hjoins,'regions':regional,'atlas':atlas,'limits':'Generated details and strokes are reconstructed, not lossless recovery of the PSD. Actual mobile acceptance remains separate.'};(R/'evidence/floral-restored/derivation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));(O/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+
+# Keep later height-only corrections reproducible after a full source rebuild.
+if active:
+ import runpy
+ runpy.run_path(str(R/"tools/repair-fixed-relief.py"),run_name="__main__")
