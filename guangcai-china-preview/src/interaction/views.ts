@@ -16,7 +16,7 @@ export class ViewController{
     this.controls.mouseButtons={LEFT:MOUSE.ROTATE,MIDDLE:MOUSE.DOLLY,RIGHT:MOUSE.PAN};
     this.controls.touches={ONE:TOUCH.ROTATE,TWO:TOUCH.DOLLY_PAN};
     this.controls.minDistance=85;this.controls.maxDistance=3000;this.controls.minPolarAngle=.035;this.controls.maxPolarAngle=Math.PI-.035;
-    this.controls.autoRotateSpeed=.7;this.controls.target.set(7,65,0);
+    this.controls.autoRotateSpeed=-.7;this.controls.target.set(7,65,0);
     this.controls.addEventListener('start',()=>{this.animateCamera=false;this.setAuto(false);});
     this.set('hero',true);
   }
