@@ -2,11 +2,21 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：4.2
+## main 基线 4.2；4.3 预览待视觉验收
 
 [打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [4.2 金底清洗对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#floral-cleanup-4.2) · [应用说明](guangcai-china-preview/README.md)
 
 中国杯当前产品版本为 **4.2 / 4.2.0**，代码已合入 `main`。提供中国、深圳两个主题共九款图样；八款新图样支持彩釉金线、彩色金属、轻浮雕彩绘三种材质，文字可随款式、按主题或隐藏。首次打开仍为原版纯金。固定高清广彩花纹、白瓷、结构金边、背景上传及观察交互继续保留。
+
+以上是当前 `main` 的代码基线。V4 网址另已发布北京主题 **4.3 预览**，源码标签 `v4.3` 指向 `8d54f7e`、部署 `6acf18984f3abc04fe3cab18`；[PR #22](https://github.com/Shuang-su/guangcai/pull/22) 仍为 Draft，建筑填色与线稿视觉复核尚未完成，不能将“已发布预览”当作“已合并／已验收”。
+
+## 原件与旧工作区
+
+[原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源与哈希](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围和缺口](docs/changes/20261014-source-consolidation/completion.md) · [整理任务 #23](https://github.com/Shuang-su/guangcai/issues/23)。
+
+已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,075份去重内容、10,918处来源。`archives/`以内容哈希保存实际对象，原文件名和各来源路径在索引中；10个大文件使用Git LFS。旧目录仍保留，云端占位和失效附件路径另行记录。此资料补录与既有16个源码恢复节点互补。
+
+首次克隆资料库需要安装Git LFS；空间有限时可先用 `GIT_LFS_SKIP_SMUDGE=1 git clone`，再选择所需档案下载。LFS指针不是原文件，读取时应确认真实内容已取回。
 
 V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
 

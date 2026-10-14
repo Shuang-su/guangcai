@@ -3286,3 +3286,16 @@
 - [work/recovery/1435-cmd.sh](../../../archives/objects/d4/d4f606b105622780175c7b0ff315af800ac8704ae875a0ef45ef956f87d48eea.sh) (203 bytes; 1处来源)
 - [work/recovery/index.json](../../../archives/objects/4e/4e68406dd16e5847ab6ed9f255840c227aa437aaa31282f6a8379b22467b97f1.json) (5,012 bytes; 1处来源)
 - [work/recovery/issues.json](../../../archives/objects/4f/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json) (2 bytes; 1处来源)
+
+## 会话中补录的附件
+
+- [SCR-20261014-iqke-2.jpeg](../../../archives/objects/7d/7d4aaccf7cd2d8b20de8931b1f050cc3c02cb06ea44e39095ac1e4ef052bdbb6.jpeg) — 1,260,425 bytes
+- [微信图片_20261014083606_1238_6490.png](../../../archives/objects/08/088a582695343fa32b354633476a76fb67e8ef07c4e77ea41b8ca9c0b991aa36.png) — 359,478 bytes
+- [截屏 2026-10-14 08.32.48.png](../../../archives/objects/8a/8a6c2557f44c10acf79821dedaff20a71a948515e34cfdd3046764366ee8eecd.png) — 2,154,052 bytes
+- [psd-temple-true-alpha.png](../../../archives/objects/cb/cb1c5a0e7a35033f42157799e1d1cb67905ad8e7c747a09a8b0558f5b31ad21d.png) — 154,264 bytes
+- [codex-clipboard-3e81402b-331d-490b-ae45-c9417ac8754b.png](../../../archives/objects/e7/e7f9b2527c6efc93ec389b95ed28fb0ea9cf1e85eb26b87f7e07ed045c64d237.png) — 4,367,130 bytes
+- [codex-clipboard-4a4692d3-419d-4af2-8e8c-868d3196a3b5.png](../../../archives/objects/90/90d843874b8c723fb51115f3c0764db40e054227b062ed6ca98564e37f1cf20e.png) — 129,526 bytes
+- [codex-clipboard-5c0236fe-e928-4882-9a48-1bf74e223295.png](../../../archives/objects/f1/f11b5030d94dfa1908294f50450bdbf3f0c088780b62a1fca7de7e5476393523.png) — 2,017,504 bytes
+- [codex-clipboard-a0a805b3-260d-4535-ba51-6c1fb14598f0.png](../../../archives/objects/79/79ebd9fdb57ad43fbd64acca0f1afe69a6dbfeb73e26b7bbc7b2dd49331ed32f.png) — 754,391 bytes
+- [codex-clipboard-b04e359b-31ff-4442-a0de-9eb673853391.png](../../../archives/objects/48/488130c33a2cd2979686a0befe55729a4004975eea2e442cf6f257cf8502efbe.png) — 2,417,194 bytes
+- [codex-clipboard-d9d49629-83c1-4c06-a60c-837d550bd20d.png](../../../archives/objects/4a/4a8ba36cb51488c1050007f85c273e9b6ffeca0ea032e3bc8f4f6326df808232.png) — 1,350,127 bytes
