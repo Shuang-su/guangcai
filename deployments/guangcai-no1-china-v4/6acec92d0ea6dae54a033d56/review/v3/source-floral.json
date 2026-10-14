@@ -1,0 +1,56 @@
+{
+  "source": "assets/source/floral-export.psd",
+  "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37",
+  "sourceSize": [
+    6409,
+    3858
+  ],
+  "sourceMode": "CMYK",
+  "embeddedProfile": "Japan Color 2001 Coated",
+  "outputProfile": "sRGB",
+  "renderingIntent": "perceptual",
+  "regions": {
+    "body": {
+      "label": "450 ml 杯",
+      "crop": [
+        5017,
+        122,
+        5654,
+        1656
+      ]
+    },
+    "handle": {
+      "label": "450 杯把",
+      "crop": [
+        5999,
+        23,
+        6147,
+        1747
+      ]
+    },
+    "saucer": {
+      "label": "151 碟 A01-01",
+      "center": [
+        3260.4367756306815,
+        5843.34685794283
+      ],
+      "outerCircleRadius": 3797.8598846459627,
+      "fitRmsPixels": 0.636502963877151,
+      "radiusRange": [
+        3775.8598846459627,
+        3582.0
+      ],
+      "angleRangeRadians": [
+        -0.934,
+        0.948
+      ],
+      "size": [
+        6924,
+        195
+      ],
+      "direction": "left to right along original arc; outer edge at top",
+      "seam": "Trimmed end paper and printed outline. One original arc wraps once; artwork is not a periodic tile. Join is placed toward the handle side."
+    }
+  },
+  "method": "Direct ICC conversion, rectangular crop and polar resampling; no generative redraw; printed text and rules excluded geometrically."
+}

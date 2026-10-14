@@ -1,0 +1,577 @@
+{
+  "url": "https://guangcai-no1-china-v4.netlify.app/",
+  "date": "2026-10-13T23:04:25.401Z",
+  "checks": [
+    "default is the unchanged gold pack, exposure and fixed relief",
+    "no new variant textures are requested on first screen",
+    "UI variant and finish controls commit together",
+    "hidden lettering survives UI theme change",
+    "china-green/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/name: separate text option",
+    "china-green/none: separate text option",
+    "china-red/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/name: separate text option",
+    "china-red/none: separate text option",
+    "china-purple/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/name: separate text option",
+    "china-purple/none: separate text option",
+    "china-blue/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/name: separate text option",
+    "china-blue/none: separate text option",
+    "china-blue-line/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/name: separate text option",
+    "china-blue-line/none: separate text option",
+    "china-purple-line/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/name: separate text option",
+    "china-purple-line/none: separate text option",
+    "shenzhen-red/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/name: separate text option",
+    "shenzhen-red/he: separate text option",
+    "shenzhen-red/create: separate text option",
+    "shenzhen-red/none: separate text option",
+    "shenzhen-teal/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/name: separate text option",
+    "shenzhen-teal/he: separate text option",
+    "shenzhen-teal/create: separate text option",
+    "shenzhen-teal/none: separate text option",
+    "failed legacy/API load preserves every active map",
+    "failed selector load retains current and rolls controls back",
+    "rapid changes only commit the latest complete selection",
+    "repeated replacement releases old GPU textures",
+    "artwork changes preserve camera, target and background",
+    "reset changes only view, not chosen artwork",
+    "restore returns original gold and texture budget",
+    "old city package interface remains compatible",
+    "right-button drag translates the camera target",
+    "view front",
+    "view handle",
+    "view top",
+    "view bottom",
+    "view saucerBottom",
+    "view exploded",
+    "view lid",
+    "view detail",
+    "view flowers",
+    "view hero",
+    "viewport 320: no document overflow",
+    "viewport 320: correct automatic background",
+    "viewport 320: panel is on screen",
+    "viewport 390: no document overflow",
+    "viewport 390: correct automatic background",
+    "viewport 390: panel is on screen",
+    "two-finger emulated drag pans",
+    "viewport 844: no document overflow",
+    "viewport 844: correct automatic background",
+    "viewport 844: panel is on screen",
+    "viewport 1440: no document overflow",
+    "viewport 1440: correct automatic background",
+    "viewport 1440: panel is on screen",
+    "no shader errors or uncaught page exceptions"
+  ],
+  "errors": [],
+  "timings": [
+    {
+      "stage": "cold-default-to-ready-including-1900ms-settle",
+      "elapsedMs": 9929,
+      "resources": [
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/assets/index-DTzJ56_u.js",
+          "bytes": 159053,
+          "decoded": 647692,
+          "duration": 1157.8000000715256
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/assets/index-BoaNW_n4.css",
+          "bytes": 2936,
+          "decoded": 9854,
+          "duration": 563.8999999761581
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+          "bytes": 5001912,
+          "decoded": 5001612,
+          "duration": 1181.6999999284744
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+          "bytes": 3772024,
+          "decoded": 3771724,
+          "duration": 1645.0999999046326
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+          "bytes": 24499137,
+          "decoded": 24498837,
+          "duration": 4494.800000071526
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/marks/auratic-reference.png",
+          "bytes": 47384,
+          "decoded": 47084,
+          "duration": 1005.1000000238419
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-body-roughness-2cf010a49887d95e.webp",
+          "bytes": 190138,
+          "decoded": 189838,
+          "duration": 778
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+          "bytes": 2532848,
+          "decoded": 2532548,
+          "duration": 1733.6000000238419
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+          "bytes": 165026,
+          "decoded": 164726,
+          "duration": 1669.3999999761581
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+          "bytes": 1779942,
+          "decoded": 1779642,
+          "duration": 2031.2999999523163
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-handle-roughness-9095e03b450273c8.webp",
+          "bytes": 122726,
+          "decoded": 122426,
+          "duration": 1006
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+          "bytes": 109014,
+          "decoded": 108714,
+          "duration": 330
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+          "bytes": 11008888,
+          "decoded": 11008588,
+          "duration": 3385.899999976158
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+          "bytes": 741774,
+          "decoded": 741474,
+          "duration": 899.3000000715256
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+          "bytes": 522432,
+          "decoded": 522132,
+          "duration": 1304.6000000238419
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/china-baseColor-754558a83d8866b8.webp",
+          "bytes": 648,
+          "decoded": 348,
+          "duration": 610.1999999284744
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/china-normal-f0662e241725d83b.webp",
+          "bytes": 1312830,
+          "decoded": 1312530,
+          "duration": 984.3999999761581
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/china-roughness-40e7b97659e5e028.webp",
+          "bytes": 156938,
+          "decoded": 156638,
+          "duration": 628.2000000476837
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/textures/china-metalness-7ac9525c8019fc98.webp",
+          "bytes": 40664,
+          "decoded": 40364,
+          "duration": 461.1999999284744
+        },
+        {
+          "url": "https://guangcai-no1-china-v4.netlify.app/china/label.png",
+          "bytes": 22108,
+          "decoded": 21808,
+          "duration": 418.5
+        }
+      ]
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1297
+    },
+    {
+      "variant": "china-green",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 1032
+    },
+    {
+      "variant": "china-green",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 1112
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1167
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1121
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 925
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 3002
+    },
+    {
+      "variant": "china-red",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 1013
+    },
+    {
+      "variant": "china-red",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 959
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 994
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 976
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 913
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 2815
+    },
+    {
+      "variant": "china-purple",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 948
+    },
+    {
+      "variant": "china-purple",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 968
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 970
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 940
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 953
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 3461
+    },
+    {
+      "variant": "china-blue",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 886
+    },
+    {
+      "variant": "china-blue",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 979
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1009
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 950
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 952
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 2229
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 859
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 942
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 982
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 947
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 929
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 2167
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 864
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 984
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 959
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 965
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 938
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1734
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 916
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 976
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 957
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1514
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "he",
+      "elapsedMs": 1097
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "create",
+      "elapsedMs": 1476
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 975
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 4266
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 918
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 1015
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1030
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 993
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "he",
+      "elapsedMs": 1057
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "create",
+      "elapsedMs": 999
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 939
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 2233
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1312
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1144
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1115
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1142
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1118
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1149
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1155
+    }
+  ],
+  "physicalDevice": "not tested; viewport and touch are browser emulation"
+}

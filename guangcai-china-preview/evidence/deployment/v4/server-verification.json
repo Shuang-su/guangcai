@@ -1,0 +1,21 @@
+{
+  "deploymentId": "6aceb7c1c85f347fb86ce86d",
+  "publishedContentFiles": 367,
+  "remoteFileRecords": 368,
+  "missing": [],
+  "hashDifferences": [],
+  "archiveSha256Errors": [],
+  "normalization": "Netlify API reports lowercase paths. Compared case-insensitively; original mixed-case URLs also passed the online browser suite. AppleDouble filesystem metadata is excluded.",
+  "extraInternalConfiguration": [
+    {
+      "id": "/netlify.toml",
+      "path": "/netlify.toml",
+      "sha": "d95928911f573e92f42d93e1c1e094c7b366c39f",
+      "mime_type": "application/octet-stream",
+      "size": 1277,
+      "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "deploy_id": "6aceb7c1c85f347fb86ce86d"
+    }
+  ],
+  "configurationNote": "Netlify additionally records its processed /netlify.toml, which is not publicly served (HTTP 404). Its hash differs from source configuration; excluded from public-content byte equality. Source configuration is retained at the deployed commit."
+}

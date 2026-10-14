@@ -1,0 +1,2447 @@
+{
+  "date": "2026-10-13T23:41:11.094Z",
+  "siteName": "guangcai-no1-china-v4",
+  "staging": ".codex-work/deploy/v4-color-coverage",
+  "allowlist": [
+    "index.html",
+    "evidence.html",
+    "assets",
+    "china",
+    "fixed",
+    "marks",
+    "review/v3",
+    "review/floral-hq",
+    "review/floral-restored",
+    "backgrounds",
+    "cities/v4",
+    "review/v4",
+    "review/v4-color-coverage"
+  ],
+  "files": [
+    {
+      "path": "assets/index-Bc-xRUmk.js",
+      "size": 647692,
+      "sha256": "39d50b0adc2aedb84b82839e6579a51a4a2a269ae6f2ec68ffcc8de599a9dd2e",
+      "sha1": "bb9d1d141fd929c51be8b38b12656ee4a8d6e1b2"
+    },
+    {
+      "path": "assets/index-BoaNW_n4.css",
+      "size": 9854,
+      "sha256": "34e83a5f4a883c27fd90872c025bdd3eb4eed6473a23536c6d33e562c5d4ac92",
+      "sha1": "4a4895e2bce11e59fa58bf24f09053c9597096a8"
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "size": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c",
+      "sha1": "94b5c952132bb0d0fed2693a7b73749b1b7a886e"
+    },
+    {
+      "path": "backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "size": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "sha1": "dcaadac4ddc683645e594bd0d05fbec7e59213ea"
+    },
+    {
+      "path": "china/baseColor.png",
+      "size": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+      "sha1": "a286d90c4855076c55b60e5ad20c72433124e5a2"
+    },
+    {
+      "path": "china/city.json",
+      "size": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+      "sha1": "f39e1764578d1a1bd3352d97e8fb308b1969d853"
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "size": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+      "sha1": "7695cce9abe1f473e21f7273b023bea8fb653cd9"
+    },
+    {
+      "path": "china/height.png",
+      "size": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "sha1": "60832e7809ccc4499c7542b4d7a0a28b9d4a2547"
+    },
+    {
+      "path": "china/label-roughness.png",
+      "size": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+      "sha1": "67bd2953f5d4bca4fd0bb5d488e72a8423815930"
+    },
+    {
+      "path": "china/label.png",
+      "size": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+      "sha1": "38468c5a3211b4880d5bb60e0313566f2c660150"
+    },
+    {
+      "path": "china/line-finish.png",
+      "size": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+      "sha1": "27c94dd2ea280cc285c046dcb34f2201a18a10bd"
+    },
+    {
+      "path": "china/lines-original.png",
+      "size": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+      "sha1": "35c6f0e276f348a9e6141f1fb5b952afc37a29a0"
+    },
+    {
+      "path": "china/lines.png",
+      "size": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+      "sha1": "ed739682158130187cde84381b7e0d05cf59d83d"
+    },
+    {
+      "path": "china/metalness.png",
+      "size": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+      "sha1": "4a75aac2ea2c19b64f4c7638ed5ed4a9ed6672be"
+    },
+    {
+      "path": "china/normal.png",
+      "size": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "sha1": "ab710a08e6c492671c21681fcaf21f9f0bb0dbe5"
+    },
+    {
+      "path": "china/roughness.png",
+      "size": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+      "sha1": "18dca0e6f0cc7ed5a8c5784354e20f8db4f7f3f3"
+    },
+    {
+      "path": "cities/v4/catalog.json",
+      "size": 6469,
+      "sha256": "5ad4281f81dadad68d59215c84431f0fc9f22df7032542e95b41baa2b8736cee",
+      "sha1": "98c6c51ca49a0003bae8693cbad9b0c46f560c9b"
+    },
+    {
+      "path": "cities/v4/china-blue-a7d037e5b349b479.hfn.gz",
+      "size": 4749416,
+      "sha256": "a7d037e5b349b4792d55d8ff0c79814c648900a9f78933c0d1b2e4ac8676525e",
+      "sha1": "dca2310a53f3fdf4074882bb6060d875210648a3"
+    },
+    {
+      "path": "cities/v4/china-blue-baseColor-48997049094a6aac.webp",
+      "size": 1594284,
+      "sha256": "48997049094a6aaccc7bcb1f49422b782bbcf5f02fcfd930f2cd72b69ab34e79",
+      "sha1": "42b71a2e4f659f67a99667f396bfa23eff343d20"
+    },
+    {
+      "path": "cities/v4/china-blue-coverage-ea09b8ceb0482dd8.webp",
+      "size": 165124,
+      "sha256": "ea09b8ceb0482dd8fe0e38a5d0a176aacc352d3f7df78670f178f89b729f316f",
+      "sha1": "9ea8ac399c754adf32bc56a069456d8e7209f639"
+    },
+    {
+      "path": "cities/v4/china-blue-line-abb445fc12901f1e.hfn.gz",
+      "size": 3988193,
+      "sha256": "abb445fc12901f1e1b20146fc650f064c785612d543d5f287e297206b5d7dbc6",
+      "sha1": "ae9e143178ba82bf98f333f97f0e043d1ed672f7"
+    },
+    {
+      "path": "cities/v4/china-blue-line-baseColor-37f1a27f7d86d911.webp",
+      "size": 678580,
+      "sha256": "37f1a27f7d86d9116ef348bb55cf1d864f94ded326cdbb8f76ed10af866ffb1e",
+      "sha1": "0bc1ae5d872de788bc04c833e3088973f46e8b40"
+    },
+    {
+      "path": "cities/v4/china-blue-line-coverage-33812078eb659b62.webp",
+      "size": 36648,
+      "sha256": "33812078eb659b6240afb892fcb543e355d9d0ba1e6187d7e8d86d0d85a21430",
+      "sha1": "e07bdbd538393c75a1135c320341d0b11903c9f2"
+    },
+    {
+      "path": "cities/v4/china-blue-line-metalness-1f872cf65156edfa.webp",
+      "size": 346,
+      "sha256": "1f872cf65156edfac946f8959a1e77cccc70dfa43b3c330f4e38976d373fc0bf",
+      "sha1": "2fed62c6074c8640252ec7ccb432deabda9e42b5"
+    },
+    {
+      "path": "cities/v4/china-blue-line-roughness-76d42e14b5bb0e37.webp",
+      "size": 348,
+      "sha256": "76d42e14b5bb0e379283d81946eb9d6510710a639f667569ef8dade42966b269",
+      "sha1": "4b6239563ead4eb03f92e940372a6f4359c069e3"
+    },
+    {
+      "path": "cities/v4/china-blue-line-thumb-d5489ce65fe3cd34.webp",
+      "size": 29706,
+      "sha256": "d5489ce65fe3cd342f57247da028d59681a73f6acbd898b7975ff51051f54604",
+      "sha1": "7a360862530a06eb74015a32037372a7601bb308"
+    },
+    {
+      "path": "cities/v4/china-blue-metalness-96b572880a7c8fe8.webp",
+      "size": 515392,
+      "sha256": "96b572880a7c8fe873442ea941e668af57c28c89b6fb4f8a45becf572d11a75b",
+      "sha1": "8cd8f100826f6b751028f29e3053d29a6e675070"
+    },
+    {
+      "path": "cities/v4/china-blue-roughness-d464f6f134c9ba0a.webp",
+      "size": 206030,
+      "sha256": "d464f6f134c9ba0a59b26dc2fa117e0992166d4bdd640d1ee1f3835b30b96372",
+      "sha1": "c7eb0580820e47b16ccca1dc22162ebcc208e656"
+    },
+    {
+      "path": "cities/v4/china-blue-thumb-ff6662557c8268a2.webp",
+      "size": 42438,
+      "sha256": "ff6662557c8268a256f74140907cdf62aea1577a36a35ff073df4e9aec767132",
+      "sha1": "2cf8065ecbb71b0d1e997793b7040d3db13d2bca"
+    },
+    {
+      "path": "cities/v4/china-green-a686155c82e74832.hfn.gz",
+      "size": 4467976,
+      "sha256": "a686155c82e74832acba5fa0cc588ddcca45d43c85ef70e9e16120e3843cd428",
+      "sha1": "df43accebc2ed517a37e5c4c6ab409cf06d2c5e3"
+    },
+    {
+      "path": "cities/v4/china-green-baseColor-777eae434b4e2921.webp",
+      "size": 1276276,
+      "sha256": "777eae434b4e29216e02dc52fe93d95ecb959c890ae5fedea6cf21cbd2e29376",
+      "sha1": "4a02ba1a596d3fb62b71b67d9a35669cb6429586"
+    },
+    {
+      "path": "cities/v4/china-green-clearcoat-aea7a8b419244538.webp",
+      "size": 348,
+      "sha256": "aea7a8b419244538732db25508fdbea6f2ee201852e417191bca91e670e4f146",
+      "sha1": "44c6e4d8a69041c81abb336aacd209232cc6fdc9"
+    },
+    {
+      "path": "cities/v4/china-green-coverage-834d8ef0614acbcf.webp",
+      "size": 173138,
+      "sha256": "834d8ef0614acbcf78076902db60613feba9a96b2ce58cbed246ba70a34c600e",
+      "sha1": "ab44361630adec4d7d1351d40839f187f616f9be"
+    },
+    {
+      "path": "cities/v4/china-green-metalness-bda496bc6c13e988.webp",
+      "size": 477924,
+      "sha256": "bda496bc6c13e98861544f102972d81e76d6c135bc476249ed30358b00683c3b",
+      "sha1": "fdcc6fd03d301f5f4aa43eb08540c0db85cbdac9"
+    },
+    {
+      "path": "cities/v4/china-green-roughness-0e49973dcb22bb16.webp",
+      "size": 190354,
+      "sha256": "0e49973dcb22bb169d84f7601db23896556fc12345c12e8d9d1887c343814fd3",
+      "sha1": "0a6e407af4f687c3c9cda6de2ec6ead9400fb5ea"
+    },
+    {
+      "path": "cities/v4/china-green-thumb-eb9e190c3faa6b36.webp",
+      "size": 36002,
+      "sha256": "eb9e190c3faa6b3675da4d15794aa3979d346667fb5d2cc729aae70308f4a437",
+      "sha1": "53623d5026227108b33ae7e0c693b946f1f238fc"
+    },
+    {
+      "path": "cities/v4/china-purple-8ba5f9cdd2723823.hfn.gz",
+      "size": 4745442,
+      "sha256": "8ba5f9cdd27238236440020f810c0feb11deefd8ea3f576a8751a93c8fd27f90",
+      "sha1": "c23ba84f8df61699f512fe088bb9a8a3f50570fd"
+    },
+    {
+      "path": "cities/v4/china-purple-baseColor-e5893c9514580877.webp",
+      "size": 1354734,
+      "sha256": "e5893c951458087786c8b7af7d3d9941b8b0502608d0964f3185565eba39ca33",
+      "sha1": "9d2184a75fe1fb8d851f3a6b6f65f38920a0eea6"
+    },
+    {
+      "path": "cities/v4/china-purple-coverage-73311ead26018f39.webp",
+      "size": 146820,
+      "sha256": "73311ead26018f39c616f49652b2be9debc642108097de4b5acde8453b0c4a26",
+      "sha1": "79e1eef9dfd5daae5c2a520f97bb9ba7255dd11d"
+    },
+    {
+      "path": "cities/v4/china-purple-line-baseColor-09af6a31a550a0fd.webp",
+      "size": 657442,
+      "sha256": "09af6a31a550a0fd72fcfc26558cc6f16176ebb3a0716412bc5cbdd70e699819",
+      "sha1": "a6c29d1c6c2e3b8a588498faedb352ff7a7df714"
+    },
+    {
+      "path": "cities/v4/china-purple-line-thumb-9c1fdd3df50872dd.webp",
+      "size": 28440,
+      "sha256": "9c1fdd3df50872dd5eacffd5cee5d1b0dcce0e495ac7d3a065070d80bcbf76f5",
+      "sha1": "e1344a58675b6c2138b5f58f1b4614c048cca6c5"
+    },
+    {
+      "path": "cities/v4/china-purple-metalness-ccd6dc1582f8782d.webp",
+      "size": 514822,
+      "sha256": "ccd6dc1582f8782d0953587b2533a3761bb5a8ee1291c9130b3f49faffbfd0e6",
+      "sha1": "d0e7f1a041d57a2c8cf1e598d54dd1972cc448dd"
+    },
+    {
+      "path": "cities/v4/china-purple-roughness-b3aa5cd5681d0c56.webp",
+      "size": 205032,
+      "sha256": "b3aa5cd5681d0c5688da964f0d7b6ce145f0c1ec7b82b31d1cf51ce7063fc1f6",
+      "sha1": "e59eaeb0808d84314524884c0e271c81523f3ad5"
+    },
+    {
+      "path": "cities/v4/china-purple-thumb-b3d54b925091e700.webp",
+      "size": 37184,
+      "sha256": "b3d54b925091e7008ec5e226a73229be354c437536e76b29602fb479bf8ef7df",
+      "sha1": "f32cbe53c999103799a60760a84bc4cd78ffd430"
+    },
+    {
+      "path": "cities/v4/china-red-853a9155a4d6f706.hfn.gz",
+      "size": 4241433,
+      "sha256": "853a9155a4d6f7062857e59b372a22d52f67c67c259a47108d7a99ae5f460a5a",
+      "sha1": "87c4463e0f2ea96e6d5001bc16ebcaa4bbcb4347"
+    },
+    {
+      "path": "cities/v4/china-red-baseColor-043235809b06b82f.webp",
+      "size": 835604,
+      "sha256": "043235809b06b82f17ac1c53c1b815cd7d0831185ebe10b98df2340cff817238",
+      "sha1": "b3d7bc5d9fd6a094f6d6244470f846cf5c3aa57d"
+    },
+    {
+      "path": "cities/v4/china-red-coverage-865719758797ae44.webp",
+      "size": 79992,
+      "sha256": "865719758797ae4462fdeaf97b6427e5b5384219e4c7d170804a72cc912e6053",
+      "sha1": "4ab9c2018fde741e550bd60f9b6e04506821398e"
+    },
+    {
+      "path": "cities/v4/china-red-metalness-6e04c9e171e5bddf.webp",
+      "size": 449388,
+      "sha256": "6e04c9e171e5bddf3f365d7a1537295444809b1180ed62b9b78c574d23ab8bc4",
+      "sha1": "62a7a19fe733fd73ccc99a23504b4456d430b8da"
+    },
+    {
+      "path": "cities/v4/china-red-roughness-f64b9af378edf0f3.webp",
+      "size": 180582,
+      "sha256": "f64b9af378edf0f3486aed77b1162ab41508f56284a4e7c756bbd6c4fd28fa41",
+      "sha1": "74ad23844f621d7c36e3c426d46c05ed43a81f24"
+    },
+    {
+      "path": "cities/v4/china-red-thumb-9fad55a0ac328d17.webp",
+      "size": 33098,
+      "sha256": "9fad55a0ac328d17084b2e8cf38ac77ae65871b8a6ea88aca44bc128c5689cab",
+      "sha1": "911d72ab3127e1af183cfb7135734bb87095f85c"
+    },
+    {
+      "path": "cities/v4/china-structural-lines.webp",
+      "size": 413602,
+      "sha256": "31f7cb7d0d237aecdde4637d0aeff4108678dd44e5ccce4c45cad793a30e4be5",
+      "sha1": "7bdd8709b86c60323f2ae0b8ee65c28064773644"
+    },
+    {
+      "path": "cities/v4/label-china-cc5fe88a14e8bcc7.webp",
+      "size": 13980,
+      "sha256": "cc5fe88a14e8bcc7c99c47a7dfc93be15b9cecf6e73d2243b7325893d3e04d3f",
+      "sha1": "f93532c55db4766508d34b8428d499bd3e5d4d82"
+    },
+    {
+      "path": "cities/v4/label-create-5391195266bd432f.webp",
+      "size": 8034,
+      "sha256": "5391195266bd432fb2af57b9f24cce4369c522586c29889424e5f499a60c4a5e",
+      "sha1": "a7a1a75d8d63c0dda24deaaeb042309a2a54060d"
+    },
+    {
+      "path": "cities/v4/label-he-0c91ba3679e51b3e.webp",
+      "size": 8122,
+      "sha256": "0c91ba3679e51b3edef0d78813299ce75c0fc709f4b24115be7b567f9e2884fd",
+      "sha1": "83eca955902247a84ebf0b6d1825f192e1a23470"
+    },
+    {
+      "path": "cities/v4/label-shenzhen-9d6374680bb7fb1d.webp",
+      "size": 7202,
+      "sha256": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92",
+      "sha1": "303f87313612a376ae1dce6429839e7877d4c6e8"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-baseColor-a061d93590f39d89.webp",
+      "size": 1375110,
+      "sha256": "a061d93590f39d8921a9e3547608cebbeb77c0e48eb3af4535614f5e4a867216",
+      "sha1": "64a181ed566cdd2d1ddf9ea72b7a11c6f221c36a"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-coverage-6c400fb706d2e61e.webp",
+      "size": 130292,
+      "sha256": "6c400fb706d2e61e43abf51450a95cec1006aa3d4d1b1561b86088afce7c01b2",
+      "sha1": "2d5ee39b05306cd2d6ce6ad9aacc5cd658f4fd88"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-e515a4f707c04173.hfn.gz",
+      "size": 5947186,
+      "sha256": "e515a4f707c04173f0ea0331a52ba01e26a7c307eae5db736c72ab73dfa67a89",
+      "sha1": "2f9da87f080e44b029d2d5a46f234bc2cbaea01e"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-metalness-45835a5448a62694.webp",
+      "size": 589100,
+      "sha256": "45835a5448a6269479ac91229a627d3a062894d287130a5e35d4f1271a0bd159",
+      "sha1": "92b4d6b7ab613d866aaad610c748c0276ff05865"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-roughness-c1bace17754a32fd.webp",
+      "size": 271234,
+      "sha256": "c1bace17754a32fd4256486ae5fe12d1c79456228f800b3b335163ed600d0ff7",
+      "sha1": "01fe9a7169cd9c1310e292bc4f4f995f0d58ff56"
+    },
+    {
+      "path": "cities/v4/shenzhen-red-thumb-e3ce5f5fbd85d7ef.webp",
+      "size": 23812,
+      "sha256": "e3ce5f5fbd85d7efacd48ea0baaadb65bbdc2115686fd970d78d73572d77eb07",
+      "sha1": "4bf66e74dcbdfc7911545bdc1906e0380615f87e"
+    },
+    {
+      "path": "cities/v4/shenzhen-structural-lines.webp",
+      "size": 524950,
+      "sha256": "21227ba3b023be2e5be2330dfad8622ad18620fb669b6e1bfb7db51d32aef6c2",
+      "sha1": "d382c8f384354812f322bdeb1bb8b55045329609"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-baseColor-964c7c3c31fbb207.webp",
+      "size": 1857854,
+      "sha256": "964c7c3c31fbb207ca7e4050fd82815309da98850206a66892bfad74557d03ef",
+      "sha1": "953d69bee9a80871e11e688eb376b48b51d71c16"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-c8c9a345d1685a6f.hfn.gz",
+      "size": 6310941,
+      "sha256": "c8c9a345d1685a6f866ce9b58d9c28a3533884c05f9773e2eb3265c10d298bda",
+      "sha1": "e311349b2c14a0935e70243adf5378540c83a6f4"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-coverage-9168da8875bc29fa.webp",
+      "size": 212884,
+      "sha256": "9168da8875bc29fa2f42427f458e0696706fd9c1c6019298553ed0c775d0679a",
+      "sha1": "c170397fa5e75dcdb6ac66d0c51b1726662eebc3"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-metalness-9992b719f76510da.webp",
+      "size": 638078,
+      "sha256": "9992b719f76510da5c7c92eda6ab662de4e524e1c9f7697db2d1c3a289c64b96",
+      "sha1": "aa6dbdcc6c1265430432897c1929ca244edfebf3"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-roughness-0e8ab8bb8a281bf2.webp",
+      "size": 287990,
+      "sha256": "0e8ab8bb8a281bf2dcb06d8ee619af3761cfbf573c198f8a0d5d42bbbdbd6f72",
+      "sha1": "8d416ce97daca6fe50ff9a915396e7c545848fff"
+    },
+    {
+      "path": "cities/v4/shenzhen-teal-thumb-83f0f2ea4d28cd13.webp",
+      "size": 28854,
+      "sha256": "83f0f2ea4d28cd13b78e1da5d31b0ad2e9e4a95448d406dd12d492dda76271c2",
+      "sha1": "c1e1b81a78451f4ae4eea37fb6dbe8918960c61e"
+    },
+    {
+      "path": "evidence.html",
+      "size": 20367,
+      "sha256": "1913cddb3e0993f142531142ec80a58ec42c21b73166fb4786ccfee29f868b71",
+      "sha1": "e149f242c423dd9c892c2e7dd1ebca5bae796c9f"
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "size": 3461685,
+      "sha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "sha1": "a455960e00edb85b0c697863a72e4073c490d7ae"
+    },
+    {
+      "path": "fixed/body-height.png",
+      "size": 2494217,
+      "sha256": "101a5404eb9df2fad68b71e3db6f51cc5afa63e502b7a4012aef4be9ae51d5c2",
+      "sha1": "8b59bd864613a128c7f561e6cab3bbd7dad9eff3"
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "size": 216899,
+      "sha256": "c2c3fba0d984592a1a34d6a3fd012075132ce5b530b7891a4ac749a78cd732a0",
+      "sha1": "4ac10af125c1f4a9923b16a1a39a211c91bbdba0"
+    },
+    {
+      "path": "fixed/body-normal.hfn.gz",
+      "size": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3",
+      "sha1": "5c941764c3a8943ca77a2c57704406127c2c9487"
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "size": 1192303,
+      "sha256": "663f3f2b4f5b11cb6911161ed53c6ee7ac4b80669419bbbe44f85cef53092f55",
+      "sha1": "d41b9e7e2ebc3c1d15c4f47f49b1cd98fe5afb86"
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "size": 238770,
+      "sha256": "0c456cb793bf7f3eb144f45d1c24a0649f77305c9dbd17a687f8cb2e43c6b296",
+      "sha1": "b0174b40bd24f4d608ef090449c0fbd5590d7ac2"
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "size": 2384505,
+      "sha256": "1bbe09ecdef463283f11c7f7319f80a05576311be5f28ff172eaf77751065e7e",
+      "sha1": "02a3d7133d9de4829b53f164c8531b99a9f2e620"
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "size": 1654519,
+      "sha256": "dccf30410ee0153884b22381ef6fc477b57899074b1f78091d674a6d9cace6c5",
+      "sha1": "2cae14e3edbb84b4cc4033406698f81a7bf55a19"
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "size": 135589,
+      "sha256": "4a13505d79c8cd57b3ccff0257bc2eb204a872455359fa3fc89202e3f5ef2c2b",
+      "sha1": "48d0f0ca34bca9f9e03d5ba646723e52c0bb9cae"
+    },
+    {
+      "path": "fixed/handle-normal.hfn.gz",
+      "size": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341",
+      "sha1": "01719ae6d8111f898d5b49086319901820b43486"
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "size": 936945,
+      "sha256": "5ea5659d8d68839eace9c4e2d6a79b0445919a3f240fc88ce4672f3be21dda02",
+      "sha1": "909aecb31205d267fe9841300fa86680c01f8dfb"
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "size": 154952,
+      "sha256": "427cdc89517cfd150b0f5ce2a57ef1f283e16079654c09992e975f7c58684329",
+      "sha1": "15b76377a40da7dc1cb755efdf8e0481bf15e948"
+    },
+    {
+      "path": "fixed/manifest.json",
+      "size": 8096,
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30",
+      "sha1": "0850d7daeeaf2ebb596e58d9b729c18ef9640b7e"
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "size": 14503414,
+      "sha256": "055dcb7b469f1dd641de2f5415c69bda9b6f85f450b0efcd902648773cde3225",
+      "sha1": "d9de32cff1d52e85544345c9b5380f187db1718a"
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "size": 9651740,
+      "sha256": "d747a9deea15f0119b1518c66e1da2293b6ac7ff310da777544ff2ffb98813da",
+      "sha1": "4ac264f8d9f6c97774bb0fab82daa3b63f7fab02"
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "size": 668365,
+      "sha256": "49d1780ab95ff7e824f9b4f9188ebfa96e3d4a80d57b16a350156ff18ce2cbd6",
+      "sha1": "2ce1e9288d913f068f9f4c1c021c6c7f1db8dc96"
+    },
+    {
+      "path": "fixed/saucer-normal.hfn.gz",
+      "size": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1",
+      "sha1": "c6cc126ab7e8a79930fbf107d2db43ced70be01c"
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "size": 5452995,
+      "sha256": "2a1221777efec8e7c79dc3c242fa3800355de681d144362dbf71cb08f935d1d5",
+      "sha1": "23b0623858355c826fcf68015d1b5cd5345b5fd5"
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "size": 915703,
+      "sha256": "bccfa79bc99476ded0b697b9836d860edfd4856793c11b0f8f12231fa2864d0e",
+      "sha1": "ac77a19672803cb1659528e144004368b103447b"
+    },
+    {
+      "path": "fixed/style.json",
+      "size": 1103,
+      "sha256": "443ffc8ee37e7afce6095a79c72a74d02142ebd3c3d598663c97b1405b469ed0",
+      "sha1": "11e98fe2cd17066e6cfa595e6d1af2e8eb4b02f0"
+    },
+    {
+      "path": "index.html",
+      "size": 471,
+      "sha256": "ca25d2cad760f5ba756b2fd0d88550347b0e92497fc549b812a642a092806c34",
+      "sha1": "2f5aa026fb9f0173410047d39bf288a2679da42d"
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "size": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "sha1": "7d1c4f104322abaa420273cc070cd51036f516cb"
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "size": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "sha1": "ddc5ec02a56dbaccbf48ed310251e18727769817"
+    },
+    {
+      "path": "review/floral-hq/after/capture.json",
+      "size": 4982,
+      "sha256": "e77f9e4ea769ee9effbf40db30130ce582df07331c7b924989eaff1f384c1f0a",
+      "sha1": "aac063ead65f003d0f7feda42a0d9b1aeee0d709"
+    },
+    {
+      "path": "review/floral-hq/after/center-color.png",
+      "size": 1064572,
+      "sha256": "539d61df6d386004fda1501d21f79202a43210114bf75568f7cd4e1f0bd3af75",
+      "sha1": "5efdf209caece8f034966318e7a1aa77b872f108"
+    },
+    {
+      "path": "review/floral-hq/after/center-flat.png",
+      "size": 28649,
+      "sha256": "089082d705155fde066e308ab815c4198826ced558426b347323c6e24329580d",
+      "sha1": "07e9ec3aece1b1b72eb3d295c090030838e05c3e"
+    },
+    {
+      "path": "review/floral-hq/after/center-gray.png",
+      "size": 274417,
+      "sha256": "5a0dee9b6da60e22e5c0d78dcec2c9f9f48757241f6bd724d1b1d54944bee4d3",
+      "sha1": "c826e1e1f324954a9665385cdc4f4ad6e3e94e37"
+    },
+    {
+      "path": "review/floral-hq/after/hero.png",
+      "size": 348230,
+      "sha256": "73014a0a7598bb26f36c9e102268abfcd5cf93ec6de920847f9b721b3ce48548",
+      "sha1": "779a375371cf499bf830ebfdf95fe18a973f2803"
+    },
+    {
+      "path": "review/floral-hq/after/petals-color.png",
+      "size": 1259762,
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "sha1": "5b598fdf72fd7fb95a3c9cfc70ff070ba123cf8f"
+    },
+    {
+      "path": "review/floral-hq/after/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-hq/after/petals-gray.png",
+      "size": 528889,
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "sha1": "80f9f977af2a872633d55e50eabfdd8d1b0fa19c"
+    },
+    {
+      "path": "review/floral-hq/after/seam-color.png",
+      "size": 1197828,
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "sha1": "e81bada36ac2bd53f59aefcdcf454a2618683dd4"
+    },
+    {
+      "path": "review/floral-hq/after/seam-flat.png",
+      "size": 48364,
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "sha1": "460aa8bcd36e9291e73b35b997e5e7e6979abc0e"
+    },
+    {
+      "path": "review/floral-hq/after/seam-gray.png",
+      "size": 493377,
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "sha1": "d651f3cac08e16eef5239fc3c4f242c4d13c708e"
+    },
+    {
+      "path": "review/floral-hq/before/capture.json",
+      "size": 4989,
+      "sha256": "57ce281716f37cb9f24e08e736e2da1d8e5aa43b6a4925068ba6d558872cb43f",
+      "sha1": "a9bb966a469223406dea50deff0600f8ce18e1f1"
+    },
+    {
+      "path": "review/floral-hq/before/center-color.png",
+      "size": 1033483,
+      "sha256": "791a90538baf621875ab2ea2adbbfa17580eb141f1f6a81d50deb3a2781232dc",
+      "sha1": "356a187146eeba14470e32f6367daba77ec1d509"
+    },
+    {
+      "path": "review/floral-hq/before/center-flat.png",
+      "size": 28650,
+      "sha256": "b53401ebe9ab13cb876c0b37ced866d9c43d1ff21e57fb7bdb247e9243df3a8c",
+      "sha1": "5cfb50399e750a8a3d63282cedbb53e934eaf153"
+    },
+    {
+      "path": "review/floral-hq/before/center-gray.png",
+      "size": 259137,
+      "sha256": "8536c4af0604d694c756ec83e1713890e6936d9abbfabe8048616fb0e81a8d0a",
+      "sha1": "5cb4560800d9a898223216cbc3b05d771c474530"
+    },
+    {
+      "path": "review/floral-hq/before/hero.png",
+      "size": 348667,
+      "sha256": "b01dd8de96134d238ae334586a88969ac925f196387ac0e4f289958d945b3b8b",
+      "sha1": "a381bf8b6feaec7b7fc92ef75bed284c9b56d6c5"
+    },
+    {
+      "path": "review/floral-hq/before/petals-color.png",
+      "size": 1197339,
+      "sha256": "f10420ab42207101e380bc201543d76dcb2e09da3af1f82a9b5f89adc2db1df9",
+      "sha1": "318045bbe1013629baf9bb9ff04137c196f46ccc"
+    },
+    {
+      "path": "review/floral-hq/before/petals-flat.png",
+      "size": 88844,
+      "sha256": "26644352c37b8f7dfc6b630ece64a3c4b2be6349b10203a139644c6413e33eff",
+      "sha1": "657d0f78d4435f15f6b3b047da4f28b68635c699"
+    },
+    {
+      "path": "review/floral-hq/before/petals-gray.png",
+      "size": 510822,
+      "sha256": "afd0f2d6eab3a9806d4a678f43ba56dbcc2da36c01be91c5729ef3e18938a4a1",
+      "sha1": "46f533f9223377b5cc76ef64226de6623e28c129"
+    },
+    {
+      "path": "review/floral-hq/before/seam-color.png",
+      "size": 1113516,
+      "sha256": "af07ec8a3bbdba8012696076dbc1a5882fd458669ae38ca4a4f373296be27c2e",
+      "sha1": "6f2dcceaac867c3814edfba23c56dfad09e83f6a"
+    },
+    {
+      "path": "review/floral-hq/before/seam-flat.png",
+      "size": 48365,
+      "sha256": "e7642aa8651fd92c3887db3af3b154149edc68c0b581a14b9e6869825fe33d16",
+      "sha1": "28aa09783c7f07606979a8836e74e265690ad26e"
+    },
+    {
+      "path": "review/floral-hq/before/seam-gray.png",
+      "size": 461893,
+      "sha256": "54df1c0d9d2d35522a840fff2e1f597083865f502e608024ed390054487d1e89",
+      "sha1": "20702baadfe046fcbf566a4fd1436ef1b0b3f8a4"
+    },
+    {
+      "path": "review/floral-hq/derivation.json",
+      "size": 1804,
+      "sha256": "d4da1c5245386a8ddebc7288fecf534ff28d0f5eba388cef0f0a807dbd72cd33",
+      "sha1": "5613c0dee2eee6e41ad4510fc68beef9971df84a"
+    },
+    {
+      "path": "review/floral-hq/verification.json",
+      "size": 5997,
+      "sha256": "0e2fc607bdeee57da2bdd7eff1a20ec89e7bbdc16ea91b715e8885a1aa3bf29b",
+      "sha1": "1a487be117af82e94c26e1c582b0b75e1ff202f9"
+    },
+    {
+      "path": "review/floral-restored/after/bird-color.png",
+      "size": 1217059,
+      "sha256": "caac3b28466916b65c3a645b8848c463b14cc1ce3a3944ca33e2235ce3ee798c",
+      "sha1": "08a8b77daa3746353095864ef43a27ae2691e9f7"
+    },
+    {
+      "path": "review/floral-restored/after/bird-flat.png",
+      "size": 31446,
+      "sha256": "8227b0c1d1126db6451bdccaa7798f2ece6e2dc727e01128e04266db1d09e307",
+      "sha1": "a7c3b7f2d374f19f72b80301b11b79b9691ead26"
+    },
+    {
+      "path": "review/floral-restored/after/bird-gray.png",
+      "size": 271874,
+      "sha256": "e4cb1e5a13f2462db32bffa83cf84a3427555d34bf19074a868c334caea828f9",
+      "sha1": "b9619afb38794985ed410113292f29be71a89012"
+    },
+    {
+      "path": "review/floral-restored/after/capture.json",
+      "size": 5660,
+      "sha256": "ea31a1083e6ccc1403144d0955ba5688883ee1ffa3523eabedaea3b22067bfc3",
+      "sha1": "66a5fdfabda5c65bbe52ffcc932138285fd27154"
+    },
+    {
+      "path": "review/floral-restored/after/hero.png",
+      "size": 346265,
+      "sha256": "06ce5260fbe7dbce10c8102cad278458b9e76cf10978142daded5a71eec8e957",
+      "sha1": "985ccb605bf480ee2d304a67b050e928e8d6f342"
+    },
+    {
+      "path": "review/floral-restored/after/petals-color.png",
+      "size": 1455681,
+      "sha256": "a2ea094ec2ed325c36923dcee76b9be0eb41e22082da6bef8686f826109a904a",
+      "sha1": "ddb1157404fdd41e6fb47356570c7447aefba2cc"
+    },
+    {
+      "path": "review/floral-restored/after/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-restored/after/petals-gray.png",
+      "size": 546441,
+      "sha256": "c220a3b4f9bc76c06f568d6bbe7a407b002a79613d60328c72b2031f9bd8afd7",
+      "sha1": "2ad8c8a64f5bb0868b5383c4bd70edb541c31bec"
+    },
+    {
+      "path": "review/floral-restored/after/seam-color.png",
+      "size": 1370315,
+      "sha256": "09560926ae84bd6cad4237fbfdff7063e2c1771ce5efca8f36691c960c89e20a",
+      "sha1": "3358d758a1f2746df61599164e51eb12bea76a68"
+    },
+    {
+      "path": "review/floral-restored/after/seam-flat.png",
+      "size": 48363,
+      "sha256": "dbbdace2da6ddb12ce3ae117fc17fcb14edc0107e24f2f320e87b48ec2614e8d",
+      "sha1": "9da39ada61e143cc24c631d13554aad509b780c4"
+    },
+    {
+      "path": "review/floral-restored/after/seam-gray.png",
+      "size": 505567,
+      "sha256": "e2899b77bef58931f213c8a19bb6b2da92ef2ed9971a3d9f35ca41f38ae2f29c",
+      "sha1": "5007bb20aee53e412194229e40aa53fc491bcdbc"
+    },
+    {
+      "path": "review/floral-restored/atlas-render.json",
+      "size": 448,
+      "sha256": "4ca8e06107ad5318ca723743b01e6deef474b2a7e67b197015190fac910efaf0",
+      "sha1": "911ef50fb914660e8a396dbc39ac20b3c32fdd0f"
+    },
+    {
+      "path": "review/floral-restored/before/bird-color.png",
+      "size": 1028148,
+      "sha256": "72169320ef6956d34cc5da70fdcf22d273ba2a3bb919e6934b05f8f9689c6769",
+      "sha1": "1f56f6d04d36ea7009cb5217dc4ce3af5a3b935f"
+    },
+    {
+      "path": "review/floral-restored/before/bird-flat.png",
+      "size": 31448,
+      "sha256": "ce31a96baa612d148c400e86f6954af551080321623a8e78e4ca5a242b35129f",
+      "sha1": "0486e7f24cde4dfcb306254220c4fe3b492d6fd5"
+    },
+    {
+      "path": "review/floral-restored/before/bird-gray.png",
+      "size": 272484,
+      "sha256": "42a33656de690b928fc74d8a0fb652b97d120377e54a1d66b42294ff32e0f3d6",
+      "sha1": "d00e73b98bed0ce9b0df74ddd9c1f1db3a9ce155"
+    },
+    {
+      "path": "review/floral-restored/before/capture.json",
+      "size": 5821,
+      "sha256": "066f3a97c6947e07214fdf036e25147796a8ab45cb403a9e1ddce7e54222f64f",
+      "sha1": "0730589ee9953ddfae3c41227d680c959355364b"
+    },
+    {
+      "path": "review/floral-restored/before/hero.png",
+      "size": 348219,
+      "sha256": "009f6b0c138fbcb35373f6d8deb59ac6e156a035fcfac347178e3274181488a0",
+      "sha1": "408ac14abcbcf16273fafc1e43ef186cc3a18996"
+    },
+    {
+      "path": "review/floral-restored/before/petals-color.png",
+      "size": 1259762,
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "sha1": "5b598fdf72fd7fb95a3c9cfc70ff070ba123cf8f"
+    },
+    {
+      "path": "review/floral-restored/before/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-restored/before/petals-gray.png",
+      "size": 528889,
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "sha1": "80f9f977af2a872633d55e50eabfdd8d1b0fa19c"
+    },
+    {
+      "path": "review/floral-restored/before/seam-color.png",
+      "size": 1197828,
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "sha1": "e81bada36ac2bd53f59aefcdcf454a2618683dd4"
+    },
+    {
+      "path": "review/floral-restored/before/seam-flat.png",
+      "size": 48364,
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "sha1": "460aa8bcd36e9291e73b35b997e5e7e6979abc0e"
+    },
+    {
+      "path": "review/floral-restored/before/seam-gray.png",
+      "size": 493377,
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "sha1": "d651f3cac08e16eef5239fc3c4f242c4d13c708e"
+    },
+    {
+      "path": "review/floral-restored/derivation.json",
+      "size": 8096,
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30",
+      "sha1": "0850d7daeeaf2ebb596e58d9b729c18ef9640b7e"
+    },
+    {
+      "path": "review/floral-restored/joins.json",
+      "size": 1476,
+      "sha256": "86a3b04a249c009c5579ff92abdecfe5fa3233cfada8ac95b0d843d5c2e688dc",
+      "sha1": "13624c1edba213a787857b9db8c962d350ed870b"
+    },
+    {
+      "path": "review/floral-restored/joins/contact.png",
+      "size": 3029818,
+      "sha256": "a6bb024a8d32e08002185d0a4ade14d3e576e080fa2b8c9f0f11524b9113c09c",
+      "sha1": "57592f45be24a5edbd6c388768ef9f23a0fb18de"
+    },
+    {
+      "path": "review/floral-restored/joins/handle.png",
+      "size": 237247,
+      "sha256": "3332a48e3e2f6cad05d9945f979fc0373775c25b1343e66cf3901a12b50603bb",
+      "sha1": "06741b2ad20bfed0599214b8182c65e6eca163c4"
+    },
+    {
+      "path": "review/floral-restored/joins/join-1.png",
+      "size": 1350739,
+      "sha256": "09dc503407242b524033e51bec6082fc891db2a1dc5d0414120f8ba6bb728104",
+      "sha1": "eb19d0ede4cfc201b1535cb8d81db97a7ed73467"
+    },
+    {
+      "path": "review/floral-restored/joins/join-2.png",
+      "size": 1365714,
+      "sha256": "13c6f5fe17112068aa3c0db1f97f1859ce160fac44e8cc63fbca1f64dc3474ee",
+      "sha1": "0de909e589ab845a0999223cddc6f9f2d1d844d7"
+    },
+    {
+      "path": "review/floral-restored/joins/join-3.png",
+      "size": 1505720,
+      "sha256": "3bd667aa7d4ded78978a89fb205f6a35b52cd985f4f46d102c39f507e43f480e",
+      "sha1": "7fe10770cd6c46d7aa693bb7b70c778951a5c9d5"
+    },
+    {
+      "path": "review/floral-restored/joins/join-4.png",
+      "size": 1396166,
+      "sha256": "d77e019d532b848ffec788a4215896352392bdce6f7db4902178ae4f4b0d8345",
+      "sha1": "9a79ac5bb1e43bb80662643d9faf05d5ec26d6e3"
+    },
+    {
+      "path": "review/floral-restored/joins/join-5.png",
+      "size": 1342496,
+      "sha256": "70b0473b960c02b6d4425d10126eb8c82bc2ac9e4d24c8f4dcd0bbeb215f35fd",
+      "sha1": "a3bb005f2a5a2c0dd77d70a174589bf70e18de7c"
+    },
+    {
+      "path": "review/floral-restored/joins/join-6.png",
+      "size": 1308988,
+      "sha256": "2aa306296747755e33312b264c33abd1c7d995734d8288a2f432b2b00715aff2",
+      "sha1": "b556f529ba21041d59b79062ee4e6926526b86c6"
+    },
+    {
+      "path": "review/floral-restored/joins/join-7.png",
+      "size": 1334884,
+      "sha256": "f4db0ee467c89b045c015b327992df01c949fd9c2f0866789fcbdb05255abf74",
+      "sha1": "b86430b4496602d2bd31f6514464d98635a24625"
+    },
+    {
+      "path": "review/floral-restored/joins/join-8.png",
+      "size": 1325121,
+      "sha256": "befdd40c49eb03bbe924d3268700834d1b65affa139f635c6efbe3635b5a55c6",
+      "sha1": "dc83c259dfad52d194b5d7888879d7e1f7cd1461"
+    },
+    {
+      "path": "review/floral-restored/joins/join-9.png",
+      "size": 1306276,
+      "sha256": "9bf41859fb062c9846e017553ba6f7948338628cbfb7ace17fb0e080037109b7",
+      "sha1": "55bca2a3358b06f9ea14c3e3611571230c58d6d2"
+    },
+    {
+      "path": "review/floral-restored/joins/top.png",
+      "size": 203315,
+      "sha256": "63bea27a791497490799f15f87b36bf481b60c81c3235e8d37c8170997cb642b",
+      "sha1": "341ab49b725a72304b099230529ecb2ee49f1e4c"
+    },
+    {
+      "path": "review/floral-restored/saucer-master.webp",
+      "size": 11918114,
+      "sha256": "12c222c556e7dae5e8394e9931f0c7df3a76241ea555042f8da314db7eaef8aa",
+      "sha1": "314a19967957d19c8840bfbdd52a6b4997223e14"
+    },
+    {
+      "path": "review/floral-restored/verification.json",
+      "size": 14581,
+      "sha256": "dfd49fdd764b2fb1788e1a356e3f5bd75a02c30d7fbbd4ff917c92eb971945ea",
+      "sha1": "dab4f2d3c6cc8056c72dd3206a6b58d5fd7503e0"
+    },
+    {
+      "path": "review/v3/before-left.jpg",
+      "size": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "sha1": "d104505cd53d4ff94876250eb347df59c2d61672"
+    },
+    {
+      "path": "review/v3/before-right.jpg",
+      "size": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "sha1": "0550575b23b3fd3b6c0b51da30b3467652c2394c"
+    },
+    {
+      "path": "review/v3/camera-calibration.json",
+      "size": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "sha1": "f492af7fc63b40c65ec7c30c38db590b2595af4e"
+    },
+    {
+      "path": "review/v3/capture.json",
+      "size": 5169,
+      "sha256": "9c4e87affaad51caad533fed6d13e828fc9c39442fd609c8cf4247ea31ed49c7",
+      "sha1": "3302e676552a17c2da0dde24e16cb7df65bca265"
+    },
+    {
+      "path": "review/v3/floral-color.jpg",
+      "size": 211294,
+      "sha256": "52ae8a21ad2a274605b6eefb3a4fc0017196f31eca099783e5b087557f360ad2",
+      "sha1": "5e534a2453fe0358e759cd3e20fc2f159713bed8"
+    },
+    {
+      "path": "review/v3/floral-flat.jpg",
+      "size": 54072,
+      "sha256": "f307f4750d092c268e72abcb5fd1d6cfd34b0975515824f01836efe2e809fd9d",
+      "sha1": "43811cb1c24b492ef700d2399258fa9a4955ce61"
+    },
+    {
+      "path": "review/v3/floral-gray.jpg",
+      "size": 101199,
+      "sha256": "a77824f24f40b78f69b5ffba5e44ea8afe6f00012d5fc42be607660fc1b470cc",
+      "sha1": "ec4f3377a7b2bd44b10d1d78068bf95a6c6e62be"
+    },
+    {
+      "path": "review/v3/front.jpg",
+      "size": 94250,
+      "sha256": "20a9b806e57baf2c4a5e699ea58699474c5ed25dc40987420f2e3631eadb08e5",
+      "sha1": "abbdaa2b86b9e66666d0a3f35e2feefa45f61e99"
+    },
+    {
+      "path": "review/v3/handle.jpg",
+      "size": 90168,
+      "sha256": "56106acaea8305abc8c3ca334b7ce00ee443ea68ffba89d18e08314f508101a4",
+      "sha1": "c08c350549b446f7d84fb38665bcc0723503a143"
+    },
+    {
+      "path": "review/v3/hero.jpg",
+      "size": 124581,
+      "sha256": "bd319ee03ac9b7c2ccba2ff90acbb1d593c6215ef020d67d38a8ba99405d8138",
+      "sha1": "9334d323f5b8d7ee29e5ace9f7e29aad54dd72ab"
+    },
+    {
+      "path": "review/v3/left-comparison.jpg",
+      "size": 299488,
+      "sha256": "8e0e2d2b0cdb69505fd360b811ca47b5da3c1dade5a104b3d50fcca75dce3099",
+      "sha1": "e6f06a4da41b9d5ffec8d8588e97934ec68dd3e6"
+    },
+    {
+      "path": "review/v3/left-overlay.jpg",
+      "size": 170366,
+      "sha256": "1461b9f412b61985d59aeae8df9813a081691deb37da435b9233af56f9479173",
+      "sha1": "393232be26a5724158efee6b299e19afddab23ba"
+    },
+    {
+      "path": "review/v3/lid-model-left.png",
+      "size": 39871,
+      "sha256": "6e25f3e45fd6726ce192affe07b36aadb5c0cb0b397b650549fc17f8288acb2d",
+      "sha1": "4bce79591782569f76e214f0318aca5d25a13699"
+    },
+    {
+      "path": "review/v3/lid-model-right.png",
+      "size": 41479,
+      "sha256": "b63a6608c4505091e593ec6e31cb2af98f312e0a1e5868e6acb8cba2ad723596",
+      "sha1": "a970c51797563e2bc068030bde4cae70f680055c"
+    },
+    {
+      "path": "review/v3/lid-native-left.jpg",
+      "size": 153809,
+      "sha256": "bf5a0ddadef0b2e274753cf9f11a9acb4f312263b5d8b9d583740c847d6c2226",
+      "sha1": "5886c8edd02ced2154d745aa9fcce4ba128b6ed8"
+    },
+    {
+      "path": "review/v3/lid-native-right.jpg",
+      "size": 153153,
+      "sha256": "f48a11030e1740035b9fbbd068daf868c2a2d8fc4dab791bcdb5bbbb3db4761e",
+      "sha1": "2f846d79159bed05434e2dd5dcd08ad468881a8e"
+    },
+    {
+      "path": "review/v3/lid-reference-left.png",
+      "size": 83441,
+      "sha256": "771d818ef556776ee41c6d9250e91b3d0fe0474f7dcc0ff84b48f4051e9e510c",
+      "sha1": "d58969e845aecaa02aea380d49a3a95dea1769f2"
+    },
+    {
+      "path": "review/v3/lid-reference-right.png",
+      "size": 86317,
+      "sha256": "7bf3977ab38d42bb2b81a56ca9060414dd863647a6def2ae989ee325013d10a2",
+      "sha1": "0167f92a7e8fc23e32cd26172bc98f7f517cb455"
+    },
+    {
+      "path": "review/v3/lid.jpg",
+      "size": 55119,
+      "sha256": "5fdf10fdbb9a19c54146220b44c17e9d724de7773217a9b808a5794bb919a7d3",
+      "sha1": "b25095f4323e4dcd1c30c5730b2356a5401efaf9"
+    },
+    {
+      "path": "review/v3/quarters.jpg",
+      "size": 172956,
+      "sha256": "14b7a3533ab84c2710d3ab58f82ddc2cde60bff7f53efdaf88f36bfbc4ca583f",
+      "sha1": "11c6dc021d270eb8f7b6ccd34179f733d2b61c15"
+    },
+    {
+      "path": "review/v3/reference-left.jpg",
+      "size": 211977,
+      "sha256": "85fe4bf207e8f767199134a7333f0288638af4f1a21f753f8ba72b3b097049ab",
+      "sha1": "d3ca0d56745aa86e4b744995211fd98fd42db8c8"
+    },
+    {
+      "path": "review/v3/reference-right.jpg",
+      "size": 211869,
+      "sha256": "5ac9252f0f8fb455eeed76b8b349dc12c83632917058f91f07ab2ab176c683fd",
+      "sha1": "a9202c5b2a7654d89e5f2df6c55250772636cfce"
+    },
+    {
+      "path": "review/v3/right-comparison.jpg",
+      "size": 272770,
+      "sha256": "d2c0c11fd00c8d4fef0fea61ef64a531fba7d7b6bda3de3342f300533e81aaf8",
+      "sha1": "77020be2577ab190008c41d3c756da4c19aae98e"
+    },
+    {
+      "path": "review/v3/right-overlay.jpg",
+      "size": 152526,
+      "sha256": "8a9f784c32fd40df78cd4bc96d1855e3104f20cfd4eb99863ab25f7254aa6712",
+      "sha1": "52bc41ab5ed59d8409e3ed482f7a4b46a21529cf"
+    },
+    {
+      "path": "review/v3/source-floral.json",
+      "size": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "sha1": "425a1d20148d5f4d2e545b387ba9618a0703b736"
+    },
+    {
+      "path": "review/v3/v3-left.jpg",
+      "size": 121871,
+      "sha256": "5c8e45c3ddc2845be6ab7debd18c85941c64ba58bd98b53feabe46a30a5c25a3",
+      "sha1": "afc84908d819fa3c8ee4bc462238630a78d2c6eb"
+    },
+    {
+      "path": "review/v3/v3-right.jpg",
+      "size": 94708,
+      "sha256": "d9849b1188b35be19ed6218a1dee4492d48bddf8e21a1e901418a7824b8ba88f",
+      "sha1": "a8b962cf680fa3304eca1638e477e60977ef54aa"
+    },
+    {
+      "path": "review/v3/verification.json",
+      "size": 6497,
+      "sha256": "1cc53109875d509e8e15b5f65837a0ec46c60c4c7a0d52b4d8a12968bc848ec8",
+      "sha1": "4269e3e62349dc0d7eba0877853c440a9669a2c1"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-blue-enamel-detail.png",
+      "size": 709791,
+      "sha256": "f5b9dfc4179e26e5770d55e37981c38612fec409b6bbd1287247bb645da7063f",
+      "sha1": "f930a612d3f3ce4888b21a021dd9e4e89c1f7604"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-blue-metal-detail.png",
+      "size": 744388,
+      "sha256": "224964cd125dd27c8894ffe8181a0621d8f09bdfbe8c20a6f6ad26823a801f0c",
+      "sha1": "fc0f5c7565f1dedde8502dd5ffd9f71f431652a8"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-blue-paint-detail.png",
+      "size": 664186,
+      "sha256": "ecadb4325640ca0de788ede9a6e47085f5276d02c70ad2622e0cae8bb6bf018b",
+      "sha1": "b4d1e75d6dff88d8a4112bdeafd0ffaccb2b76c3"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-green-enamel-detail.png",
+      "size": 687083,
+      "sha256": "f383b4e699ea5d9efe7dfbf2b93dd9306a8ca2a0c5591bf08a0ba859f071dd9b",
+      "sha1": "e55e63dce984351a0c32f07d1bddd305fdda416e"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-green-metal-detail.png",
+      "size": 720291,
+      "sha256": "ad75a77c4dd6dd4ff92bb8e5cd2b0606c33af80e2d1a97d4b603b9ff404bd221",
+      "sha1": "e08487dee829131b2393879d78fc27c0ff203e1a"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-green-paint-detail.png",
+      "size": 627925,
+      "sha256": "fcd79bab4121e829ee3170eeb5100097a8dea05358ecbe2f45c9874c6b082400",
+      "sha1": "68a3ed821114924263d2a9fa96a1082590db4f5b"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-purple-enamel-detail.png",
+      "size": 684585,
+      "sha256": "7c52ecb57d76e4521bc552728dd15e2133e00e21498f7621e987c1193653ff76",
+      "sha1": "b4de1976a4be012b1fd4844455e9cdb6f8c4113b"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-purple-metal-detail.png",
+      "size": 721118,
+      "sha256": "396b9b60a4d5a008ab7e5e29e08c7839ea1870dbb76fd92252968bc40f6d0248",
+      "sha1": "77ace5803ee389281d71927ecfecd950f2831b50"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-purple-paint-detail.png",
+      "size": 636074,
+      "sha256": "65f012e8d6a6f6a74f9e47d1e474c2fa299a4fdcb227289e4f415fa8d05b5026",
+      "sha1": "1112e81c206780a8b37cf5b99370e11c54025280"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-red-enamel-detail.png",
+      "size": 655593,
+      "sha256": "f0b59304542886776b0781893bfdc50186e90d574c49e693e6d89ffc4985e78a",
+      "sha1": "08f6609b4fbe5f7c548dd32e91c7b6791376a7f9"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-red-metal-detail.png",
+      "size": 686352,
+      "sha256": "1918fe891b4a36d0ce1afabddc037651aebf5064c91787316c6c2c818efae8d0",
+      "sha1": "a2b212a578eb69731129a6fc1a8c6704e7968fe4"
+    },
+    {
+      "path": "review/v4-color-coverage/after/china-red-paint-detail.png",
+      "size": 603622,
+      "sha256": "047e123e1e88915c4139181f78d3f4610a77e13876e71c28d547b972c658ab4f",
+      "sha1": "81be3298c7c3c242fef037f49cc3ea94bd203751"
+    },
+    {
+      "path": "review/v4-color-coverage/after/gold-hero.png",
+      "size": 371944,
+      "sha256": "c8fcad8a999c75a64c867b5286ad8f44692e71a7d36c6aa691ed157e88f4ae40",
+      "sha1": "00d516a3cf6509aa80b8948f597c1453d3983bbe"
+    },
+    {
+      "path": "review/v4-color-coverage/after/green-gray.png",
+      "size": 334142,
+      "sha256": "84faca679d66539bb2fca17c4281b46182a7dfa30d775c91424f1b19a9e425fd",
+      "sha1": "2060e1054a0f15f0fdfbebee6661400416b03c3f"
+    },
+    {
+      "path": "review/v4-color-coverage/after/green-panel.png",
+      "size": 372630,
+      "sha256": "a27be3484e61a4690c9a8965ac8c2c7ecd09fed35169a2f96c63a22029eb1636",
+      "sha1": "b27a6e927c5f1c07000445aaccbea84bbc5a277a"
+    },
+    {
+      "path": "review/v4-color-coverage/after/qa.json",
+      "size": 1522,
+      "sha256": "aed80f93d708bb9c0aa6472d8ece38faf0ab3fa2aac55380c657cf4cb99149b8",
+      "sha1": "3a2283c6b83240e5935c01e3e48c3125693c878b"
+    },
+    {
+      "path": "review/v4-color-coverage/asset-check.json",
+      "size": 570,
+      "sha256": "1527a27504009bacb19d8092b2d2a2035a6726c663da13484fc1988e555c8e3d",
+      "sha1": "3acbc9edac09dd61b8c95c6d70308c43146e9a9d"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-blue-enamel-detail.png",
+      "size": 700878,
+      "sha256": "51d37aea656bb49ece25f6d3ef7903a5ae9fc1a5e4b143a8c57aa62ac8152bca",
+      "sha1": "1c3ee209742608a2490f2df9650b05dcfe2a023c"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-blue-metal-detail.png",
+      "size": 735166,
+      "sha256": "8963586fcf39334677731790c1e6a5283b90b3052337f4ba40de09062b80313e",
+      "sha1": "7d590f97d5b080d98479e4274e0988ad204996bf"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-blue-paint-detail.png",
+      "size": 652266,
+      "sha256": "0e1a3414f9075bc8e36483ec04389e71efae835338ab7c22562c178a8c546722",
+      "sha1": "9ce4221f4ea6bf09eda4928e983464a76044db60"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-green-enamel-detail.png",
+      "size": 678722,
+      "sha256": "df476cfd43610b93cb135f19cde49f8fe514ec22d288495911f8c8b6c58b41c6",
+      "sha1": "d148ca75210380564baa1a3541238435e61da461"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-green-metal-detail.png",
+      "size": 713765,
+      "sha256": "77205fba593e24f5f0c64e153573cbc8ae59508cd950389b2a8c82e3d694aefe",
+      "sha1": "eb7a09d3d82058d651cef563ce53b00f7482cd65"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-green-paint-detail.png",
+      "size": 618664,
+      "sha256": "878a9e58609d718dc54e0449f5203c22bbcadf6a8acc8753e8c07bef800a85c7",
+      "sha1": "c4079b07164cc36393916fa3438e569ea5013ea9"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-purple-enamel-detail.png",
+      "size": 676454,
+      "sha256": "ab1ae626387648a50cf531ece03b1e5263806a4544388125377f9b54377ea272",
+      "sha1": "95d91b70daeddb9d01901d9ef614cedc1f613c36"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-purple-metal-detail.png",
+      "size": 713612,
+      "sha256": "54d87fab060eacc35e408261acb529d5e9f8670609cd6ce55469dd1e924ffbc4",
+      "sha1": "01d9f77a0f74b8b2076992b5dab1694e7668bcd6"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-purple-paint-detail.png",
+      "size": 625288,
+      "sha256": "86216b6a26c03989a42fb361a13b45467e2b5d5ae689566f04b44ff6a0972c39",
+      "sha1": "da910eb2643376b88f48ee72ba9a1c6980629266"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-red-enamel-detail.png",
+      "size": 645817,
+      "sha256": "f3831440097b50d325831632f289394fc591601a70ff8379c9347463c236c11d",
+      "sha1": "0f230ba4d1e33c7ce4aa31f03e7425167a92dafe"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-red-metal-detail.png",
+      "size": 677288,
+      "sha256": "7c4060a23f71cf7d47b48b8b665fb4a5c1512a2ef8be0e3d5d42c311397ccf59",
+      "sha1": "ab1fbc5e853e06e668a3ae40c8b916df269ed6ef"
+    },
+    {
+      "path": "review/v4-color-coverage/before/china-red-paint-detail.png",
+      "size": 592107,
+      "sha256": "2fe3d554bc9b9da156b33d9eb48e451beaf218d18cbbc051accdff29011547e6",
+      "sha1": "d31186ef5bcfcc75e6d0df6d9d12d4b3b1a6f60a"
+    },
+    {
+      "path": "review/v4-color-coverage/before/gold-hero.png",
+      "size": 371944,
+      "sha256": "c8fcad8a999c75a64c867b5286ad8f44692e71a7d36c6aa691ed157e88f4ae40",
+      "sha1": "00d516a3cf6509aa80b8948f597c1453d3983bbe"
+    },
+    {
+      "path": "review/v4-color-coverage/before/green-gray.png",
+      "size": 334142,
+      "sha256": "84faca679d66539bb2fca17c4281b46182a7dfa30d775c91424f1b19a9e425fd",
+      "sha1": "2060e1054a0f15f0fdfbebee6661400416b03c3f"
+    },
+    {
+      "path": "review/v4-color-coverage/before/green-panel.png",
+      "size": 371552,
+      "sha256": "1eeb7dc112529fa68d32c4c3d734c4b62b39221682ffcb4982184ca2d592ad83",
+      "sha1": "172b6ae6a0808ca84891547cf4fd98a6cb942d07"
+    },
+    {
+      "path": "review/v4-color-coverage/before/qa.json",
+      "size": 1353,
+      "sha256": "da92f6c65f9d31ec49a1f49e41b8d5ab36b7a99e74e5e1951290b9943b35ce12",
+      "sha1": "d0bc81ab59073a41db50c3f5c2b3727c9e3447c4"
+    },
+    {
+      "path": "review/v4-color-coverage/china-blue-comparison.jpg",
+      "size": 304564,
+      "sha256": "734ae4cdaddf7f8acc7e6864f4bedff758e32a7469a617fdb277ebbf92cd7b92",
+      "sha1": "86bf25a97a19743d69ee1f4ad1a14436b6624f89"
+    },
+    {
+      "path": "review/v4-color-coverage/china-green-comparison.jpg",
+      "size": 300028,
+      "sha256": "22021167422ab71d4fa3d760c1c56deabc2a9819ec38c7b7d0f1250f6adebef6",
+      "sha1": "9a9856d5492f8cdd665a79b5dccf39f53c5913e4"
+    },
+    {
+      "path": "review/v4-color-coverage/china-purple-comparison.jpg",
+      "size": 293451,
+      "sha256": "f54001f7748744d462ccc7719e865e3daee290304140b43d9747ad12974192ff",
+      "sha1": "5bdf60e3db2db9c762b8219d30a52d6e32ae0807"
+    },
+    {
+      "path": "review/v4-color-coverage/china-red-comparison.jpg",
+      "size": 296481,
+      "sha256": "118a39400d3f2bd5882ea565739a18fb13a1f5b55d8143218e5f3a4e8cf975e0",
+      "sha1": "5bb9817b9d25f1983ac85010251064dd58e3ce5d"
+    },
+    {
+      "path": "review/v4/china-blue-atlas.webp",
+      "size": 392456,
+      "sha256": "b6a3d3f8cd40cffaf5a044c5b1d7e4eb27716a462e8c0f6d277660e2faf60ec0",
+      "sha1": "562f6d4bce0874c9198bca8a96091f2d492075fc"
+    },
+    {
+      "path": "review/v4/china-blue-enamel-detail.jpg",
+      "size": 200844,
+      "sha256": "2ab8e97fd008aa03bb47a54e53f735ca6517530f9eecbbf4dd401ed584f3b93f",
+      "sha1": "a84a7bc80e0b60df44ce72bfc54b7d69b4fb02b1"
+    },
+    {
+      "path": "review/v4/china-blue-enamel-grazing.jpg",
+      "size": 62238,
+      "sha256": "a107d7a7a30e2fc854f03c4f161dbbc6e6cf6a3d50b68c183150472f0a0170ca",
+      "sha1": "219d2c223bd85164f73dc2e8168228e16f3fc37d"
+    },
+    {
+      "path": "review/v4/china-blue-enamel-hero.jpg",
+      "size": 122201,
+      "sha256": "3ae398bfaff5ffde1200bf350c7a3be5d8affb76afc9c4ed6838d6eccf2c1169",
+      "sha1": "3d03bdcd059853f9283b14e223e40c1db30fbb4a"
+    },
+    {
+      "path": "review/v4/china-blue-enamel-text.jpg",
+      "size": 102342,
+      "sha256": "370f247168419fb1cfd05c317f0329cbaffacafecaa5cffcbb352b13d630499f",
+      "sha1": "87bbc0b78d8da4283603f8eeab5257704feafbd4"
+    },
+    {
+      "path": "review/v4/china-blue-gray-off.jpg",
+      "size": 50999,
+      "sha256": "566a4cfe167a43b86450da9786ffcb3762d13c37f714c199aa5e94f586af01ca",
+      "sha1": "8434e43609f82623cfdca5d2609539b1da13aed4"
+    },
+    {
+      "path": "review/v4/china-blue-gray.jpg",
+      "size": 72586,
+      "sha256": "117eccc5c2656e8e838b2c702cb0a5d3022c56ac9e2aa909597a3cdb649a5c22",
+      "sha1": "40dc8f6e3095577cdaf861392a52bb31d3aede60"
+    },
+    {
+      "path": "review/v4/china-blue-lettering-name.jpg",
+      "size": 102342,
+      "sha256": "370f247168419fb1cfd05c317f0329cbaffacafecaa5cffcbb352b13d630499f",
+      "sha1": "87bbc0b78d8da4283603f8eeab5257704feafbd4"
+    },
+    {
+      "path": "review/v4/china-blue-lettering-none.jpg",
+      "size": 99707,
+      "sha256": "b40cd632748db57575be0d3a343b1e043c0b60eef440d663e48e0843048ce503",
+      "sha1": "e6a5e7ec961217bcd6a1e66244885bc29d47e6d9"
+    },
+    {
+      "path": "review/v4/china-blue-line-atlas.webp",
+      "size": 199010,
+      "sha256": "dc14ce974d13a9590c12eb30a9005440889337436e48d0d5230d139c4592d93c",
+      "sha1": "38b40d90e40bc3405d4c9f65642d8356822d7c23"
+    },
+    {
+      "path": "review/v4/china-blue-line-enamel-detail.jpg",
+      "size": 183134,
+      "sha256": "044577feb889a0d46517c626c3dcfaee82323e408777cf641511b990725c94ce",
+      "sha1": "dbf8a9295f4c42517e5070f0256804f25f0614eb"
+    },
+    {
+      "path": "review/v4/china-blue-line-enamel-grazing.jpg",
+      "size": 55110,
+      "sha256": "23af52d23bd3cb0111940ca5433ac201c1f362a0ab90f2715cd27db7f89a9ff4",
+      "sha1": "987fd2b0beeb776555e7aeeb961665beae44c08c"
+    },
+    {
+      "path": "review/v4/china-blue-line-enamel-hero.jpg",
+      "size": 116772,
+      "sha256": "eef829d34b34e647c3e62a9339a29b69237d32b147e97483ef40a602cd5f211f",
+      "sha1": "0b4c32dd329126da7f6e100c2341f79fc3a7c900"
+    },
+    {
+      "path": "review/v4/china-blue-line-enamel-text.jpg",
+      "size": 92196,
+      "sha256": "4856923fc43917c7bf54c2b4e6ab516ef9838cc4828b78318963fdec6b34cd66",
+      "sha1": "b7d8693520d3b0e910e0bb8423f64b6f046a59d7"
+    },
+    {
+      "path": "review/v4/china-blue-line-gray-off.jpg",
+      "size": 51253,
+      "sha256": "dcc2ca6020385a3ce0487347582f0acd786a0ba5ccaf2bf7aefebdcf0ce5402e",
+      "sha1": "4e8b238593e0f1399ea5585ca561aae885de4da4"
+    },
+    {
+      "path": "review/v4/china-blue-line-gray.jpg",
+      "size": 72569,
+      "sha256": "3909322325cd696eb798914d6e9c0f3d7ba56b48c68d0b7c2ddc15d460bdde13",
+      "sha1": "ef7fdcdb768f83da2fa8d3fef1698e1fc98e7fe2"
+    },
+    {
+      "path": "review/v4/china-blue-line-lettering-name.jpg",
+      "size": 92196,
+      "sha256": "4856923fc43917c7bf54c2b4e6ab516ef9838cc4828b78318963fdec6b34cd66",
+      "sha1": "b7d8693520d3b0e910e0bb8423f64b6f046a59d7"
+    },
+    {
+      "path": "review/v4/china-blue-line-lettering-none.jpg",
+      "size": 89455,
+      "sha256": "40eb4f2c4f4ae779b311195914aa95fa57372aa222012c56b8aa4f38ca2d17ea",
+      "sha1": "e9cb227b65fa6d596eebc04cbe4a4a155d616504"
+    },
+    {
+      "path": "review/v4/china-blue-line-line-overlay.webp",
+      "size": 154600,
+      "sha256": "de15a85c1008f0de28e3571649c81d452f2a6715bb9535574d898b27e7e643dc",
+      "sha1": "d8f56a8e0a4a05d225b4a11f7cf910617558b387"
+    },
+    {
+      "path": "review/v4/china-blue-line-metal-detail.jpg",
+      "size": 199922,
+      "sha256": "e01d3cc8b9a1fa3366791fea0e36f7dcfa403285a7a3a58fe90300f8c15a531f",
+      "sha1": "0c6a9e68d2acf7b452ca4879ea2048bd14e091f8"
+    },
+    {
+      "path": "review/v4/china-blue-line-metal-grazing.jpg",
+      "size": 55110,
+      "sha256": "23af52d23bd3cb0111940ca5433ac201c1f362a0ab90f2715cd27db7f89a9ff4",
+      "sha1": "987fd2b0beeb776555e7aeeb961665beae44c08c"
+    },
+    {
+      "path": "review/v4/china-blue-line-metal-hero.jpg",
+      "size": 123412,
+      "sha256": "8d8bdd151ee2c2dd46279da1b84db43845b76287c450e44e7ed23afc5ddca64f",
+      "sha1": "294f37ec2dabd49f806dfb34f301ffaf450c80c6"
+    },
+    {
+      "path": "review/v4/china-blue-line-metal-text.jpg",
+      "size": 93034,
+      "sha256": "0989b4052c1011cbae41cdc13b2bbba1a6ec7cb35e067e4363a1ca099aef3f70",
+      "sha1": "c808e401628bce2b4911246e6317f41c56ee9cb4"
+    },
+    {
+      "path": "review/v4/china-blue-line-overlay.webp",
+      "size": 199580,
+      "sha256": "b617388ef5fee91f53a0f112e29f69ce2344713e976df161f57a90e63b34356b",
+      "sha1": "a605261e20531dc4014683f3c54f0d427b089ab6"
+    },
+    {
+      "path": "review/v4/china-blue-line-paint-detail.jpg",
+      "size": 181547,
+      "sha256": "8ef968be13ec249ea0907cfcae7c5005709283618425c01bc84f3b9d032d33d4",
+      "sha1": "be5e483fb38acf03f3d65f404a2f562f981e22ce"
+    },
+    {
+      "path": "review/v4/china-blue-line-paint-grazing.jpg",
+      "size": 55110,
+      "sha256": "23af52d23bd3cb0111940ca5433ac201c1f362a0ab90f2715cd27db7f89a9ff4",
+      "sha1": "987fd2b0beeb776555e7aeeb961665beae44c08c"
+    },
+    {
+      "path": "review/v4/china-blue-line-paint-hero.jpg",
+      "size": 116432,
+      "sha256": "b685f9286cb4daec2c6b7e2c25580303b01d9c634fc064a7e2acd2476c9dc78d",
+      "sha1": "bd7f145fe80a92684d68ac2ac10b5ee15220e2db"
+    },
+    {
+      "path": "review/v4/china-blue-line-paint-text.jpg",
+      "size": 92218,
+      "sha256": "9a1e4796907cb51f86e791c056dad4ff6dee47a1f7ef722c66fdaa4fa29541ac",
+      "sha1": "b4c9f5dee9e3bd0eaf4e744ab7b7e7583b858655"
+    },
+    {
+      "path": "review/v4/china-blue-metal-detail.jpg",
+      "size": 215113,
+      "sha256": "ecafd491409156096d917e915bdbaaa33725b40c6b4adec3ac5a091fbe9f78b7",
+      "sha1": "8588329796e5d5f3ddbb6594b15495000657738d"
+    },
+    {
+      "path": "review/v4/china-blue-metal-grazing.jpg",
+      "size": 62352,
+      "sha256": "0b5679b09c1c7eeab26392cb090dc52552ac0723d9452735f4ccc418ac090951",
+      "sha1": "cbea4796cfc48c96c1b4a48e84ef763cc598e206"
+    },
+    {
+      "path": "review/v4/china-blue-metal-hero.jpg",
+      "size": 129919,
+      "sha256": "8882f76168ef17eff34f31c83c56bd4af50c279e2f89931702448da943baa888",
+      "sha1": "3c9122b85dbcf3b3720df7dc19abb5f3d537abbc"
+    },
+    {
+      "path": "review/v4/china-blue-metal-text.jpg",
+      "size": 104295,
+      "sha256": "ebe817d1a51e50cc2273916acf37ab96eaf94859a038e11088f1b81892eefa6e",
+      "sha1": "4f3cbd688db33c2751e4c98451569af62389ae6a"
+    },
+    {
+      "path": "review/v4/china-blue-paint-detail.jpg",
+      "size": 184298,
+      "sha256": "ba11a7fffc9182bdb9d4bc5daf794550865f0511a90b34556f695424557b8dbd",
+      "sha1": "0e1fbeaafaf266367332a4c4b5fd9479df316f0b"
+    },
+    {
+      "path": "review/v4/china-blue-paint-grazing.jpg",
+      "size": 62312,
+      "sha256": "5f3d998fc63f013da1ceabeb71e1f0a4ce95fb6d609db433c825b44abdfb26ed",
+      "sha1": "3a49cc1d75256e45694a04a7406c50ce23ae50cb"
+    },
+    {
+      "path": "review/v4/china-blue-paint-hero.jpg",
+      "size": 116355,
+      "sha256": "d85e832f50d04885d34f0ba86660e3de1d42fcf8e37c18b7ca038d2a7e914fda",
+      "sha1": "6aad44dd54458b39044ba59b4440ba6d3563fa3c"
+    },
+    {
+      "path": "review/v4/china-blue-paint-text.jpg",
+      "size": 101370,
+      "sha256": "ef25eb7abfe37e47f8d94a9d8f16dc7d9b857ed16f868d8f9294317711188b3f",
+      "sha1": "51a61642868c8b18aaace9fa447dd64d73e91d6d"
+    },
+    {
+      "path": "review/v4/china-green-atlas.webp",
+      "size": 330360,
+      "sha256": "34e591bca71534c44c53f05fd58b2497b660b00255a00e9b3a6f60a9a3075ec2",
+      "sha1": "dbb6d148125fd4947385f490decf0500f4471597"
+    },
+    {
+      "path": "review/v4/china-green-enamel-detail.jpg",
+      "size": 191282,
+      "sha256": "78cd0c25399b127345fac639984de43bf2497f82f8dcf74b74eef8e328b9a185",
+      "sha1": "4179fbb0b8448457a984ba9bcf0f41bf01af7fea"
+    },
+    {
+      "path": "review/v4/china-green-enamel-grazing.jpg",
+      "size": 58751,
+      "sha256": "f194223773e42c13bdfe5889eeceb242b492c2aa655bb8f6e7a6eeb1d8f2f69a",
+      "sha1": "bbe78488bdb24be449ceae1f267b67b4c768c41f"
+    },
+    {
+      "path": "review/v4/china-green-enamel-hero.jpg",
+      "size": 118995,
+      "sha256": "8c9c6e40cbaa5380ee459bd662b27d74431feddf0a9a01d8a7e85548cdf0d689",
+      "sha1": "0090273af4e5b884471696a4e55d62082369b3a9"
+    },
+    {
+      "path": "review/v4/china-green-enamel-text.jpg",
+      "size": 97835,
+      "sha256": "eee16a12888888934d3c7cc6169ae3fa4303e3e5ab4d7d3ea09b0a591e2af5e9",
+      "sha1": "98649869fef150ee5d06887a6b39d3b879ee0f3d"
+    },
+    {
+      "path": "review/v4/china-green-gray-off.jpg",
+      "size": 51232,
+      "sha256": "d870afb841d847b3d4c4f7a876619e4ce53ca73f69e8fbff4abaabf024b00d80",
+      "sha1": "2a4a39c47e83f77aa69d85b5394f830215940b32"
+    },
+    {
+      "path": "review/v4/china-green-gray.jpg",
+      "size": 72635,
+      "sha256": "6670114daec142594e150e0fc9a671e91543121b509723b054a6f11dd3118c83",
+      "sha1": "97f52ebf3b582298eed4a563e463311d2b1e519e"
+    },
+    {
+      "path": "review/v4/china-green-lettering-name.jpg",
+      "size": 97835,
+      "sha256": "eee16a12888888934d3c7cc6169ae3fa4303e3e5ab4d7d3ea09b0a591e2af5e9",
+      "sha1": "98649869fef150ee5d06887a6b39d3b879ee0f3d"
+    },
+    {
+      "path": "review/v4/china-green-lettering-none.jpg",
+      "size": 95390,
+      "sha256": "36bd2f3bd0a9c95d39e5ab051a993c17c88e88c99b62e14a5f2b128bfab829da",
+      "sha1": "aa40fc508bc91fe8051de65020b00d346e96c54e"
+    },
+    {
+      "path": "review/v4/china-green-line-overlay.webp",
+      "size": 164550,
+      "sha256": "5e73fd84d1f86809ccafe5fa187eac6b1d4d9dd454428400fd24caf200a065d4",
+      "sha1": "11879a36d36039a9924aa4a8afdefe16f98cb738"
+    },
+    {
+      "path": "review/v4/china-green-metal-detail.jpg",
+      "size": 205481,
+      "sha256": "3c7580229099cfb38e9b8e21a0d8d7b2d3961fe697b0dd51d028a683cb521523",
+      "sha1": "9ad6a0c3a3280e5bf34fd31f8978369db8f92303"
+    },
+    {
+      "path": "review/v4/china-green-metal-grazing.jpg",
+      "size": 59230,
+      "sha256": "eab6de83ca5a236b3dcc190a1e0e6f031dfb5fb641be4ec94c5c2b49dce98dbf",
+      "sha1": "26f948db6ef2f1efe90b07de7c32596bb1f66e61"
+    },
+    {
+      "path": "review/v4/china-green-metal-hero.jpg",
+      "size": 126672,
+      "sha256": "baa8f43f247afdf34a1437f6e725dd952eb8af643dab112300565e6e4ee7fe9c",
+      "sha1": "3222a6e7fee29dfb3e69bdea7b5a067abd0d6659"
+    },
+    {
+      "path": "review/v4/china-green-metal-text.jpg",
+      "size": 100136,
+      "sha256": "ce994806f914f994d86e654cef70c09542d5ecdb3ae47468c73471bb2e573715",
+      "sha1": "f3a2ae2999f5934bea4510f5cf0a1f1096b3f046"
+    },
+    {
+      "path": "review/v4/china-green-paint-detail.jpg",
+      "size": 172927,
+      "sha256": "1367d252d9b73bc3314023eab7433e5ce4d470a0063e4302a63ba8e63543c7b8",
+      "sha1": "a7a7178e48b9226b66be7d55e49007b948f9a15e"
+    },
+    {
+      "path": "review/v4/china-green-paint-grazing.jpg",
+      "size": 58748,
+      "sha256": "122f593a5c6a2a1df7b23f5fce10eba00e8ee61fb890f3fb2232e33536060904",
+      "sha1": "a243adc8e92e2038918224a6349506392c909c9b"
+    },
+    {
+      "path": "review/v4/china-green-paint-hero.jpg",
+      "size": 112230,
+      "sha256": "3b6ea50cd2319556f2a3394c14211eaea73eddd8cef5237a9f72d8173a78e115",
+      "sha1": "0a90f95c79affc07953c3c55e5bd38bc02770239"
+    },
+    {
+      "path": "review/v4/china-green-paint-text.jpg",
+      "size": 96748,
+      "sha256": "7c95e721eb2fde9da131a97771954ca3f27828e02fe6e2944243ced8a713ab3c",
+      "sha1": "dc73f8af4a58d02eae3443bf5b993ad0b50335cf"
+    },
+    {
+      "path": "review/v4/china-purple-atlas.webp",
+      "size": 338076,
+      "sha256": "c7dcfafabb70f844c862c9080e37e8c0ec6120563f7c082ca5b73c46d855babd",
+      "sha1": "ee9d8b1d56c6685b7fa959b87d620645d6ac5274"
+    },
+    {
+      "path": "review/v4/china-purple-enamel-detail.jpg",
+      "size": 189144,
+      "sha256": "e1d5142b913323acdcc7dec250c70652c0c52bbf67d07687fffff67817179120",
+      "sha1": "840540230c8ab96a81a363e56345417899fdf3d6"
+    },
+    {
+      "path": "review/v4/china-purple-enamel-grazing.jpg",
+      "size": 59250,
+      "sha256": "c88c7d99addb50ff668b7e69a5b462f2d6aa3a419c10d7f298c1b8598198ee4b",
+      "sha1": "6a9243774d672ea8331fe0b7fb353208f0d21bf1"
+    },
+    {
+      "path": "review/v4/china-purple-enamel-hero.jpg",
+      "size": 117891,
+      "sha256": "c32b9dd55b8107896ec8810a94f01bd06b03c63e3b2b2608b790eb2e1e72315c",
+      "sha1": "693899dd9ab986f2d62d48fd0c4b68ccc0a117db"
+    },
+    {
+      "path": "review/v4/china-purple-enamel-text.jpg",
+      "size": 99917,
+      "sha256": "74c6a97e4eacf55209b2687335aaaa39f01922e7607c14b1eb50cf3272c2f05f",
+      "sha1": "833ed88c3984c0adca7b251abdcdb55d7753d99f"
+    },
+    {
+      "path": "review/v4/china-purple-gray-off.jpg",
+      "size": 50987,
+      "sha256": "ad57f82e43be2623784d91ea3f7c7878b33518aa903a7165577a5fbff54b556a",
+      "sha1": "ec9a7462e01c88bde7cad2bef5ce192f76312be9"
+    },
+    {
+      "path": "review/v4/china-purple-gray.jpg",
+      "size": 72417,
+      "sha256": "e8e63b8523e0757b842cccad10cb4b1906866a372979c6d993d85c601e97efcb",
+      "sha1": "d6ac7ac04f851bfa8d5aef1eea2123bf5a91b39a"
+    },
+    {
+      "path": "review/v4/china-purple-lettering-name.jpg",
+      "size": 99917,
+      "sha256": "74c6a97e4eacf55209b2687335aaaa39f01922e7607c14b1eb50cf3272c2f05f",
+      "sha1": "833ed88c3984c0adca7b251abdcdb55d7753d99f"
+    },
+    {
+      "path": "review/v4/china-purple-lettering-none.jpg",
+      "size": 97116,
+      "sha256": "913449364b74fc1a23771e3e8b27e11480cca0a942220b06b8801a3b29b6e21d",
+      "sha1": "edfdacd5066b8782a644b7f2af6261bc62196d48"
+    },
+    {
+      "path": "review/v4/china-purple-line-atlas.webp",
+      "size": 191548,
+      "sha256": "a17f131d1490bcaeb0caa8e3bb33447c1d742da473a1e31b3a5cc5478f463e2e",
+      "sha1": "c1900bfb0687e5488776ebdd45b256891e234ae5"
+    },
+    {
+      "path": "review/v4/china-purple-line-enamel-detail.jpg",
+      "size": 181120,
+      "sha256": "5192dffe81f35c3e87bfc5a8fc8c79607e7000c791beab4dff111ba245d9c0d4",
+      "sha1": "04ec82ccba9c9edc271336ce89b951e71b496129"
+    },
+    {
+      "path": "review/v4/china-purple-line-enamel-grazing.jpg",
+      "size": 55117,
+      "sha256": "642a761117083db98438da9af64c3863e34cb6e746860eebcfb060b75e8ea242",
+      "sha1": "e6a08b04337c6c6844327b26a6b98c927ff8b0d4"
+    },
+    {
+      "path": "review/v4/china-purple-line-enamel-hero.jpg",
+      "size": 116379,
+      "sha256": "d97616ef1dcd3bded5901d3a97d538e80c898c6ef7e887b71d98b7c68aa360ba",
+      "sha1": "3360b56dae2eaa127c1035346bf756a5b1af014e"
+    },
+    {
+      "path": "review/v4/china-purple-line-enamel-text.jpg",
+      "size": 92158,
+      "sha256": "b9121e4f418259601bcbdb4147b100d8aa8ccdb9cf159b4e7e6b93e3c750b347",
+      "sha1": "7229f6621afa9d2d7ac8130b7d1b741797d7ffeb"
+    },
+    {
+      "path": "review/v4/china-purple-line-gray-off.jpg",
+      "size": 51261,
+      "sha256": "76b6d1bb48b0ef7f12fb2f75611f033f9dd702592c2e53cbb38cea125dd1c085",
+      "sha1": "8171b5298e481efda4799f68456f65d3add4c0bd"
+    },
+    {
+      "path": "review/v4/china-purple-line-gray.jpg",
+      "size": 72590,
+      "sha256": "07119550296c25ad8a717e2ee155811af0d3572ac08d44bbfd8dd4eb94dc6a35",
+      "sha1": "315a55ec51dd61a9844bef36fce3ff0a7fba9065"
+    },
+    {
+      "path": "review/v4/china-purple-line-lettering-name.jpg",
+      "size": 92158,
+      "sha256": "b9121e4f418259601bcbdb4147b100d8aa8ccdb9cf159b4e7e6b93e3c750b347",
+      "sha1": "7229f6621afa9d2d7ac8130b7d1b741797d7ffeb"
+    },
+    {
+      "path": "review/v4/china-purple-line-lettering-none.jpg",
+      "size": 89430,
+      "sha256": "cd23c2e438088dcf4f600737d604b1aea162811bff5e61a8dad1a93fe42c7150",
+      "sha1": "4e0f71b9ba76e1c8cdd2727d40a04a47258c7e7c"
+    },
+    {
+      "path": "review/v4/china-purple-line-line-overlay.webp",
+      "size": 153732,
+      "sha256": "b567a9939f5d9adc3559386ee4c88a4f83456a1a48414e03640d05d89eefa8f4",
+      "sha1": "77993e17c9a36efd37a7e6e6a3578a7baf2e6dfd"
+    },
+    {
+      "path": "review/v4/china-purple-line-metal-detail.jpg",
+      "size": 195988,
+      "sha256": "1723fbc2d6439b2cc3c9e3f2cd4f680073a4f0c2e3a2b8aac88586cd15ba98e1",
+      "sha1": "52b797d0b81170b31e21628e6e656e02a52a441c"
+    },
+    {
+      "path": "review/v4/china-purple-line-metal-grazing.jpg",
+      "size": 55117,
+      "sha256": "642a761117083db98438da9af64c3863e34cb6e746860eebcfb060b75e8ea242",
+      "sha1": "e6a08b04337c6c6844327b26a6b98c927ff8b0d4"
+    },
+    {
+      "path": "review/v4/china-purple-line-metal-hero.jpg",
+      "size": 122460,
+      "sha256": "4c6ebf44bf14f242b8e39c2875feaa6b1d6c13f0f8710c5f6ae722f22ba0bab7",
+      "sha1": "8beded33c9e8a0483bc7e9a13fe17750e0d3f0e9"
+    },
+    {
+      "path": "review/v4/china-purple-line-metal-text.jpg",
+      "size": 92877,
+      "sha256": "4bf5ff2526c47ae753aa61b39f0f7d43098ab502e90b30538d3f25ab554dbe45",
+      "sha1": "142954e042e0280c767764195c79d608635f187f"
+    },
+    {
+      "path": "review/v4/china-purple-line-overlay.webp",
+      "size": 172306,
+      "sha256": "5e6237c799d993ea4667a186529d678750db099ef3f33ba51e2b17ef62d79d67",
+      "sha1": "a9f0b861443bceeb3f0e9ddf779559e01d2f9eff"
+    },
+    {
+      "path": "review/v4/china-purple-line-paint-detail.jpg",
+      "size": 179211,
+      "sha256": "5388aeaaca5de22b21dd9800529b5629de870b2039a86fc97118dfbafb043723",
+      "sha1": "3a957bbc7fb41f467f52a9bcce2e634a356260af"
+    },
+    {
+      "path": "review/v4/china-purple-line-paint-grazing.jpg",
+      "size": 55117,
+      "sha256": "642a761117083db98438da9af64c3863e34cb6e746860eebcfb060b75e8ea242",
+      "sha1": "e6a08b04337c6c6844327b26a6b98c927ff8b0d4"
+    },
+    {
+      "path": "review/v4/china-purple-line-paint-hero.jpg",
+      "size": 116007,
+      "sha256": "6e02bd01a224545988a2ae39515ddfa7f7245846509f17255e51d72d5594c0e6",
+      "sha1": "dfb9890df23039092affdafe108b8374cd869ac9"
+    },
+    {
+      "path": "review/v4/china-purple-line-paint-text.jpg",
+      "size": 92175,
+      "sha256": "1cf4a7b3a1d90572f0fee45497ae34d8a6bd9c91fbab5f6d62e2aaa20d623a77",
+      "sha1": "a8d30d2ca7d45b1dfa4bb3bd827180fd1942190d"
+    },
+    {
+      "path": "review/v4/china-purple-metal-detail.jpg",
+      "size": 201921,
+      "sha256": "a43e6f612fbd354f2056937e7ec1e8545026182fc4dcdfc5cf2bd2611ba76b2e",
+      "sha1": "25e62f8750faa649934d7cf63b627245577c54a2"
+    },
+    {
+      "path": "review/v4/china-purple-metal-grazing.jpg",
+      "size": 59563,
+      "sha256": "f83589014b9e0b63dfb9a838e9f5c0dd39c493a18e24df7621bd3004fbf32a56",
+      "sha1": "fb9ceb3d8f389416ff40e4dab012521f3aded4d1"
+    },
+    {
+      "path": "review/v4/china-purple-metal-hero.jpg",
+      "size": 125397,
+      "sha256": "bf97f3365577cf38b0f5226d46aab102d0263f1c3f996db17f67ec74e8625983",
+      "sha1": "c0698d0b9fa85a4bc2359954576a945cc10dc6e2"
+    },
+    {
+      "path": "review/v4/china-purple-metal-text.jpg",
+      "size": 102829,
+      "sha256": "6ef6e94fd4cecb420d35f8373f58703861af26f5f2fb9d5ee7dcd1d29cc27b4b",
+      "sha1": "77a7b28e9b957035ff151b6b1764ed32a89cce83"
+    },
+    {
+      "path": "review/v4/china-purple-paint-detail.jpg",
+      "size": 174458,
+      "sha256": "3c44f80d2e0adb8517aeb7b977d5dc9b344f847cc9cfe015c66a175fc5dc06e9",
+      "sha1": "952b8a0b0f0f791e8f514892aa3603edf7d0476b"
+    },
+    {
+      "path": "review/v4/china-purple-paint-grazing.jpg",
+      "size": 59221,
+      "sha256": "c93577183777d263a349ed54b30d5152628ceecdc4acdc334e0ca1b71895aff0",
+      "sha1": "090240208b2936ff757110374ce8cefed8c5a599"
+    },
+    {
+      "path": "review/v4/china-purple-paint-hero.jpg",
+      "size": 113629,
+      "sha256": "48f8db0b313290647516b35832abb7c0619d714acf6748fb59b3afe9b87b9082",
+      "sha1": "3139a1e72057eadc9227262aa24ecfdbb97b9ed0"
+    },
+    {
+      "path": "review/v4/china-purple-paint-text.jpg",
+      "size": 99293,
+      "sha256": "56ba0e79ee5f0d0871f061005ca56fbba7dba75fb3a815243986220cde896095",
+      "sha1": "a71c347a6b341d532105419a7927dd742d3f1ac1"
+    },
+    {
+      "path": "review/v4/china-red-atlas.webp",
+      "size": 231494,
+      "sha256": "e495913bcc6e03b63fa26a00f39d4193eb1177df2aef4c48f37a79b0da1034cd",
+      "sha1": "421852f72a49b0ca62fd6335b7a3eca96787d4e4"
+    },
+    {
+      "path": "review/v4/china-red-enamel-detail.jpg",
+      "size": 191433,
+      "sha256": "c88b097056a7368e638cd6a7f50a685cf9628c2774558390495e80cf0521f099",
+      "sha1": "7f441bab399a1bc008df6f489324ed9071ec9be9"
+    },
+    {
+      "path": "review/v4/china-red-enamel-grazing.jpg",
+      "size": 54713,
+      "sha256": "75dc460b32d32c5789d791bcdd3d81d06bb6b34bc26d94d02b3206eb303a3afa",
+      "sha1": "31127d72d7b1517aeb1a0d8d5a3c7f4e850343a1"
+    },
+    {
+      "path": "review/v4/china-red-enamel-hero.jpg",
+      "size": 119950,
+      "sha256": "0236c5dce860b60b78d2de25dde0cbd95f3f2ca82671ff09261769529a6ffd3e",
+      "sha1": "b6391404196077711e9fce61b9993aa24705e06c"
+    },
+    {
+      "path": "review/v4/china-red-enamel-text.jpg",
+      "size": 95258,
+      "sha256": "d676f2d31caab9fe41b296c0a11a4e388ccc5fb77df97eb3768d9db7b20e258d",
+      "sha1": "b344a8d3403557b72c5905798a371d3370d1fc47"
+    },
+    {
+      "path": "review/v4/china-red-gray-off.jpg",
+      "size": 50992,
+      "sha256": "1e8af6aa55e539bc8a83b3bbb1126df89cfa51632df61fa0dddac191e43f7faf",
+      "sha1": "7122a0b4ef8f7dd31d0939e73681f5badd46de9b"
+    },
+    {
+      "path": "review/v4/china-red-gray.jpg",
+      "size": 72300,
+      "sha256": "33f5599e794d7f12867ce3b0aaf796ec52c4c66761251014a8dc30bbce0cec88",
+      "sha1": "d0f55e14250b0ff1c068d2f7b5efbf6748a37670"
+    },
+    {
+      "path": "review/v4/china-red-lettering-name.jpg",
+      "size": 95258,
+      "sha256": "d676f2d31caab9fe41b296c0a11a4e388ccc5fb77df97eb3768d9db7b20e258d",
+      "sha1": "b344a8d3403557b72c5905798a371d3370d1fc47"
+    },
+    {
+      "path": "review/v4/china-red-lettering-none.jpg",
+      "size": 92320,
+      "sha256": "d479056ebc80f1df769280ad719a54dacaaf940a219d3fb68721a6f2b60e943a",
+      "sha1": "6b01333a1cbb0e51e7dd00860c746b65c684a308"
+    },
+    {
+      "path": "review/v4/china-red-line-overlay.webp",
+      "size": 126732,
+      "sha256": "9969f9c9b0232b7c7d17569aaff4747b3378105c16138fd9f9c4205be5810fd0",
+      "sha1": "b82310787770d22a36a01602f51850a2f7c68c9a"
+    },
+    {
+      "path": "review/v4/china-red-metal-detail.jpg",
+      "size": 203638,
+      "sha256": "03e2eecf4d911a7fb221f9592f19f89e8a716c5fabdfbb75ae383e63f06381ea",
+      "sha1": "1bfe7cccb16255aec590362b809fd0c29615057c"
+    },
+    {
+      "path": "review/v4/china-red-metal-grazing.jpg",
+      "size": 54713,
+      "sha256": "75dc460b32d32c5789d791bcdd3d81d06bb6b34bc26d94d02b3206eb303a3afa",
+      "sha1": "31127d72d7b1517aeb1a0d8d5a3c7f4e850343a1"
+    },
+    {
+      "path": "review/v4/china-red-metal-hero.jpg",
+      "size": 126607,
+      "sha256": "1f8058f9597d39b4017b9195c195b9169385ef5fe328ed83a3cb01e70754c5c9",
+      "sha1": "2cee42168f1a4d33c127f9e502aa0eef1bbfe719"
+    },
+    {
+      "path": "review/v4/china-red-metal-text.jpg",
+      "size": 96690,
+      "sha256": "b9a6f2fa3f50c8d7a7302e72aa5f621fe571f18b66140b75fe0781594de755cb",
+      "sha1": "91e46e41eff7fbc4bf4b810b68ab998a7748e6fa"
+    },
+    {
+      "path": "review/v4/china-red-paint-detail.jpg",
+      "size": 181471,
+      "sha256": "567d269c0c829a92096b8c4660d94da9505987d60357213fea46a65df7f16a11",
+      "sha1": "5ea30d52596130ccf8fa15b31d65926c07f289d4"
+    },
+    {
+      "path": "review/v4/china-red-paint-grazing.jpg",
+      "size": 54713,
+      "sha256": "75dc460b32d32c5789d791bcdd3d81d06bb6b34bc26d94d02b3206eb303a3afa",
+      "sha1": "31127d72d7b1517aeb1a0d8d5a3c7f4e850343a1"
+    },
+    {
+      "path": "review/v4/china-red-paint-hero.jpg",
+      "size": 117800,
+      "sha256": "cdde16e89cc46a3bbc1b74f2de9ece530ea77016f80fb9ad8fc4597178ac2817",
+      "sha1": "6762a5c69dc70df6a720860abe560d7f9b2519da"
+    },
+    {
+      "path": "review/v4/china-red-paint-text.jpg",
+      "size": 95348,
+      "sha256": "f83924632856d96b2a6348267be2461407bc0633e30f354b94acf75f5d8c3cf2",
+      "sha1": "847a3ec9fa8b6ff10f0628de7bb2e58f3f03753b"
+    },
+    {
+      "path": "review/v4/desktop-panel.jpg",
+      "size": 126747,
+      "sha256": "f6968a83a16b5ee45dbe30434801b48ac85a00ced081a15b7e78a6da561b3809",
+      "sha1": "91300d8283d4c2d3ca9434da5e1d41a98451cac2"
+    },
+    {
+      "path": "review/v4/gold-hero.jpg",
+      "size": 115516,
+      "sha256": "85cc98faf37d4a6825a70901b098a88ba8a8ca9006810e6a56acc4ae57ae25f6",
+      "sha1": "7039d8de9a462b039520a7eb0aca5988ce52f95e"
+    },
+    {
+      "path": "review/v4/gold-hero.png",
+      "size": 371944,
+      "sha256": "c8fcad8a999c75a64c867b5286ad8f44692e71a7d36c6aa691ed157e88f4ae40",
+      "sha1": "00d516a3cf6509aa80b8948f597c1453d3983bbe"
+    },
+    {
+      "path": "review/v4/qa.json",
+      "size": 16552,
+      "sha256": "ea64a076ca28873417f9472d7d9a914221ee348b0a45742ffc6f012386728ae9",
+      "sha1": "af67625ec994d2a7f6b66d507a284f713361e6ef"
+    },
+    {
+      "path": "review/v4/reference-1.webp",
+      "size": 284328,
+      "sha256": "77e5f64981aca3c99ab491d440a55e533aa15ffbba402ef94986563aab92e3bb",
+      "sha1": "3d871eeffbeb894b1db0e80b342b14ec5fe0dbc8"
+    },
+    {
+      "path": "review/v4/reference-2.webp",
+      "size": 350626,
+      "sha256": "3e710c5835ef16b7c1fe16f3cac235935a8d6748a10ac2ca843a69e346eec605",
+      "sha1": "4b9742c568eb6bbbbfaa6815d07c7acf10a4de4e"
+    },
+    {
+      "path": "review/v4/reference-3.webp",
+      "size": 232280,
+      "sha256": "c066aa80950a0862a74d633d029a144da30a7ae5b3d5d94eb4098cb44f3c4ccf",
+      "sha1": "4d776b85e929daffcbdf3479d803026a74788936"
+    },
+    {
+      "path": "review/v4/reference-4.webp",
+      "size": 207710,
+      "sha256": "bad3d0fa0a571ff934cd29cd65dfe22503b25b1a6576f67e40601ee839467345",
+      "sha1": "250ac48480f61d38f7d155192a29ce5fba7da0fd"
+    },
+    {
+      "path": "review/v4/reference-5.webp",
+      "size": 245210,
+      "sha256": "28534f6ee2d268a8d390e98b743a11d5f0971537c65a1b8872c4140d157300e5",
+      "sha1": "1e64f242fcecde5ff1d9d6297bd56b8e79381fa3"
+    },
+    {
+      "path": "review/v4/reference-6.webp",
+      "size": 314542,
+      "sha256": "6bb644a5d5b63f6a1db83b47dbbd7af7cce8641e2973f4b3737ca055958824d6",
+      "sha1": "89564e28efd0f4213480b0bb0053e244bed9f535"
+    },
+    {
+      "path": "review/v4/reference-7.webp",
+      "size": 176308,
+      "sha256": "bbe1c30d96ac95ae0ecad5cd9fc1200687e8ae3c4b8e31d9ce05c7d3ab4aa190",
+      "sha1": "e0503ba11a56691623253a55bfaabcb7741a89a4"
+    },
+    {
+      "path": "review/v4/reference-8.webp",
+      "size": 204994,
+      "sha256": "c93b17750010920345869339a5e0dddc5f718db480612b57ffd4eaaa72decddb",
+      "sha1": "04cac96f555868e78eb8177056ee4150dbe70431"
+    },
+    {
+      "path": "review/v4/shenzhen-red-atlas.webp",
+      "size": 277720,
+      "sha256": "e29071ea7f90e3d94e2190534465cc1073ed391d855314e2f609d066c656546f",
+      "sha1": "5050ab4274657dbd7ebadc7354f09e2fffc9c8a1"
+    },
+    {
+      "path": "review/v4/shenzhen-red-enamel-detail.jpg",
+      "size": 165186,
+      "sha256": "92fc65104c7531735de9e35b978065958a4b0deb70586c806f017f3b25fc3c53",
+      "sha1": "9d1f5f2059d482b70c475e672b4629ba25dcc921"
+    },
+    {
+      "path": "review/v4/shenzhen-red-enamel-grazing.jpg",
+      "size": 54967,
+      "sha256": "614cec439a37f0043477b51e0842169396e949f2bca99b475cd90b8f38cce751",
+      "sha1": "211a6045029926b524aae16630c69b21f1b6d9e2"
+    },
+    {
+      "path": "review/v4/shenzhen-red-enamel-hero.jpg",
+      "size": 111442,
+      "sha256": "90b515f3e3b342d51637e45a440cd873556761b84a95cb7754afff8aa2aa7b95",
+      "sha1": "547762a6244fb1dd2716011ff7bcb16ae6ca4e5c"
+    },
+    {
+      "path": "review/v4/shenzhen-red-enamel-text.jpg",
+      "size": 95110,
+      "sha256": "9da87b702b4eacb7dd9b394549946ee7f9136da67beef18212f44f36c035353a",
+      "sha1": "678b695686f0f91a813aec82ad26dbdf1f5824e7"
+    },
+    {
+      "path": "review/v4/shenzhen-red-gray-off.jpg",
+      "size": 51157,
+      "sha256": "4b68ffa97ae9963f9f3a6125881905b674b1558e46ed311a6070235ea4b0ac79",
+      "sha1": "09d0cf84d22ee7ad79d588d9d009977c14804511"
+    },
+    {
+      "path": "review/v4/shenzhen-red-gray.jpg",
+      "size": 66336,
+      "sha256": "5bb13f11a14ed6351ba0c9ced0ed45e854e6c0e84c1f3ae53fc4a64e028a750d",
+      "sha1": "ea1e76f456c8b152fd535615d5efa0ab6c7d0a9f"
+    },
+    {
+      "path": "review/v4/shenzhen-red-lettering-create.jpg",
+      "size": 96881,
+      "sha256": "3ad119c1a598f60eae348784dbf023e45757d30c3f715055d71805ece78ce93a",
+      "sha1": "3cf89af6fbf7cca5d7e8228798c9c99358640e9e"
+    },
+    {
+      "path": "review/v4/shenzhen-red-lettering-he.jpg",
+      "size": 96627,
+      "sha256": "032184213f0dc79249e2037ca302569d9579ddfa90140cd86af7e5c1e6f772af",
+      "sha1": "2f88cdd56d76d8e4f38dd76afc6a9e6e49fac54d"
+    },
+    {
+      "path": "review/v4/shenzhen-red-lettering-name.jpg",
+      "size": 70452,
+      "sha256": "37401ed4199c958fee00a797db23e8b0af038ca86adb782ed56c78bfb3b06841",
+      "sha1": "69fbad799e94dfb8e16f86a7c5496eb3ab8d97f1"
+    },
+    {
+      "path": "review/v4/shenzhen-red-lettering-none.jpg",
+      "size": 94035,
+      "sha256": "8ed06d707d3bfd26dbf85bd3ae0c324882246b97f3c21c6b1f41b419fae97f46",
+      "sha1": "e09dec394a7317bd77c91887d7b7cea70836231f"
+    },
+    {
+      "path": "review/v4/shenzhen-red-line-overlay.webp",
+      "size": 125646,
+      "sha256": "5ce62d1905177dfa49acd31e8e5d3463ad52101c4b8f8223ea402e9fe18830f9",
+      "sha1": "52d2d4190d66bd73329b8a1a2d509fc3225c52c7"
+    },
+    {
+      "path": "review/v4/shenzhen-red-metal-detail.jpg",
+      "size": 175950,
+      "sha256": "6ac6ddaf5e1757ed67b3162a079bac38411aa893ce735852a0715760fcaaff44",
+      "sha1": "6ffce247f578cd92ef180afb824a4d87f35fce40"
+    },
+    {
+      "path": "review/v4/shenzhen-red-metal-grazing.jpg",
+      "size": 54967,
+      "sha256": "614cec439a37f0043477b51e0842169396e949f2bca99b475cd90b8f38cce751",
+      "sha1": "211a6045029926b524aae16630c69b21f1b6d9e2"
+    },
+    {
+      "path": "review/v4/shenzhen-red-metal-hero.jpg",
+      "size": 116717,
+      "sha256": "df1a4bb5b8428d02edfd7e3a0baa2be5d43e8e770f0779a39e6f195bb581a752",
+      "sha1": "8be8b4fd5d790510a0166bd57fd6e6a445b9f0cf"
+    },
+    {
+      "path": "review/v4/shenzhen-red-metal-text.jpg",
+      "size": 97344,
+      "sha256": "b8082e8d777100951a01f5d466242041760eaa5e86b30cb769edc2710d241f5d",
+      "sha1": "a1fb614a9c1ba64b33ea33e6497775e7ac3625d3"
+    },
+    {
+      "path": "review/v4/shenzhen-red-paint-detail.jpg",
+      "size": 159451,
+      "sha256": "e48f90b6c4f700ff7a76466be8df99b39bd7bd8bb6a13e60079b680b2e827664",
+      "sha1": "dbc3d68e740b31e236f13f0b2f60e10d301331c3"
+    },
+    {
+      "path": "review/v4/shenzhen-red-paint-grazing.jpg",
+      "size": 54967,
+      "sha256": "614cec439a37f0043477b51e0842169396e949f2bca99b475cd90b8f38cce751",
+      "sha1": "211a6045029926b524aae16630c69b21f1b6d9e2"
+    },
+    {
+      "path": "review/v4/shenzhen-red-paint-hero.jpg",
+      "size": 110052,
+      "sha256": "6ec1e864757c19f4b48c41cef47a4bb2b8f6f10123009ac311f597463c0a3a10",
+      "sha1": "59488fefaf11b913e25b5023bce154bd13e0e65e"
+    },
+    {
+      "path": "review/v4/shenzhen-red-paint-text.jpg",
+      "size": 94640,
+      "sha256": "e0c76d9e3a2e4ac2f57bbb6b719ed191f952316d021abc3f43dde592c47e8d23",
+      "sha1": "a6ed929765a20e8b27bfb69306c3564ff8d305a8"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-atlas.webp",
+      "size": 363744,
+      "sha256": "ccedc7ce373321c20bea28b20166f8a1385d3e8f2aa37a48d89193df266f09e1",
+      "sha1": "89f867091035d0268052ebf8cfe6c7dc37037e42"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-enamel-detail.jpg",
+      "size": 173575,
+      "sha256": "00022a844aa826c593271b456ce785d0f01bffe1171203029332033049a64538",
+      "sha1": "a662256eab62a7e1ea857b847d6ff7f160925fb9"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-enamel-grazing.jpg",
+      "size": 53573,
+      "sha256": "e4798da528a8e5832cdb16998ba52603ecde05296fb4e6addc547f60527bab08",
+      "sha1": "62740b35f730f1b8e76ddeb1236b4a4857b26f25"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-enamel-hero.jpg",
+      "size": 113116,
+      "sha256": "bced7a271f5318f5d1d169d777401d97cc5cb97a95e4b5491ba8dfd53dbfa868",
+      "sha1": "fa6fb8dd21516aab5b055117b36f740fa4fa80d3"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-enamel-text.jpg",
+      "size": 94546,
+      "sha256": "9cb6a40e9391abae872e7316e3fc64faccd6776b558fbfade2dd4edd049d3d8c",
+      "sha1": "08061b6f82d1eceae3a5de02bc4f90677c2c1ee0"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-gray-off.jpg",
+      "size": 51447,
+      "sha256": "671063a14d5de97b549ff6b269744a003b0bb46497979862affb18a161f4a8dd",
+      "sha1": "0e4a96c724cc8d71f6be41ca28c29e128f602ab8"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-gray.jpg",
+      "size": 66540,
+      "sha256": "85de171fa44c210f7d7ff462ae1b197e3c2024c45860918f0c5aed54de9fe349",
+      "sha1": "db03286287d3fd11f93a4f5716debb1e6bcc4673"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-lettering-create.jpg",
+      "size": 94570,
+      "sha256": "e88a2d1afe6a9eea2c9f91cd8ba6274db8f6ccdb56c9a58721cf1150b5174e56",
+      "sha1": "b716a4bef73c51b9d1af7d0579e8be9bae142119"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-lettering-he.jpg",
+      "size": 94430,
+      "sha256": "8a71b88ebce2ef9b91a26023ca0bbb7b83105e131d214ebed51e3f64ffe06336",
+      "sha1": "b5bb41da672cb0d145578e6f3c7905b46a92c64e"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-lettering-name.jpg",
+      "size": 93644,
+      "sha256": "428f6f1ce577fde4e110dbb25ecdf5713dee6150b34337800f66628437339323",
+      "sha1": "0ef09a004330b544281d6e35aea9393cc2544e4c"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-lettering-none.jpg",
+      "size": 91336,
+      "sha256": "b616a3d970c396bd54b3045dbde12ac503047c138126292ec41d91447e13af9b",
+      "sha1": "b96a1a93b2a689ff4638c53900de13ce9c899dc5"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-line-overlay.webp",
+      "size": 153454,
+      "sha256": "0e7cf719e48505bf483ad57182799cb378416c5355362413b2166c63a38989cd",
+      "sha1": "65e7b20c425469ba3a02ea48ae9fe3088c03415d"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-metal-detail.jpg",
+      "size": 187262,
+      "sha256": "9a2e16da20478c511807c8fbb373d512c368a7cb0f187b26b47d693d2d841688",
+      "sha1": "a2ebb5dad90d962a7047d1a83f10e955854f9fe5"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-metal-grazing.jpg",
+      "size": 53573,
+      "sha256": "e4798da528a8e5832cdb16998ba52603ecde05296fb4e6addc547f60527bab08",
+      "sha1": "62740b35f730f1b8e76ddeb1236b4a4857b26f25"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-metal-hero.jpg",
+      "size": 119639,
+      "sha256": "50e4f602ad60a6370eb42d7eb05cd0deefc5fe88e22b5ffaa956649823afd2da",
+      "sha1": "fa39de21cbc13d36a69c454d7a8f067df9015abd"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-metal-text.jpg",
+      "size": 97429,
+      "sha256": "40e8f5aba0def671ef978ccc7185b7e81e7ce1b81dbdf2dc84cf54adf7e85323",
+      "sha1": "71ab7fecb88b4f14a81bf633566d43d0bccee691"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-paint-detail.jpg",
+      "size": 166016,
+      "sha256": "94c2d97ea140c714147dc6b9ad03908b3cb4cdeebc822e93d3108d465c2226d8",
+      "sha1": "ed17e346a7a2271fbfadbbfcc64f0190880034d9"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-paint-grazing.jpg",
+      "size": 53573,
+      "sha256": "e4798da528a8e5832cdb16998ba52603ecde05296fb4e6addc547f60527bab08",
+      "sha1": "62740b35f730f1b8e76ddeb1236b4a4857b26f25"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-paint-hero.jpg",
+      "size": 110597,
+      "sha256": "6ce529ffa60f4f085ddedec548ed08ff9c1fa11b40bf27f3f6134798f3c8cdfd",
+      "sha1": "561dd63267f07eae0537fadeba9670486f86d7ec"
+    },
+    {
+      "path": "review/v4/shenzhen-teal-paint-text.jpg",
+      "size": 93671,
+      "sha256": "9a9ad823471a725bbca2d1980588af78aece24229d9099502e6793e101c35175",
+      "sha1": "e9f04fb5e1c8720f8300c5b267b41dc586f4fc27"
+    },
+    {
+      "path": "review/v4/v3-gold-baseline.png",
+      "size": 370723,
+      "sha256": "4ed90b19c1612a9232d91c73fa22add188c95300955ba0f30a55752cef0b84cc",
+      "sha1": "5e0291fca026a05bbac0cc6e9f9ecde92291edd1"
+    },
+    {
+      "path": "review/v4/variants-overview.jpg",
+      "size": 166790,
+      "sha256": "6ab2aabaf2cef5e23d431b54bd5b914009f293ea9df5bdcaa72ce478bc28f53e",
+      "sha1": "0ef02fa47f7343e2df95c11b2394cb1a66de1c59"
+    },
+    {
+      "path": "review/v4/viewport-1440-panel.jpg",
+      "size": 169052,
+      "sha256": "8c9b018ff6894b932c386266236c90de053a24fb44b2ad92d1e869d906e031cd",
+      "sha1": "2916f53fb1d7d4f6c65da674e4115eff3f6da116"
+    },
+    {
+      "path": "review/v4/viewport-320-panel.jpg",
+      "size": 49344,
+      "sha256": "75900675d87677af5345133e6feff6844557bcc253cbb9f52db38cfd6a7166b1",
+      "sha1": "770aadcd2026e909e225842daa8cc09217f4864c"
+    },
+    {
+      "path": "review/v4/viewport-320.jpg",
+      "size": 43629,
+      "sha256": "27a4ecaf3f1f55fb4d2d8d7e0bfc8489f63b8e673a01b5da61310f3db8866015",
+      "sha1": "f82c9cf2a2c2456b141e09f628635a0680ecbb59"
+    },
+    {
+      "path": "review/v4/viewport-390-panel.jpg",
+      "size": 69613,
+      "sha256": "014aa180ab4d068bd9fe5b593b7a10e1588417a5c1a06459aa8547ec1cc79fba",
+      "sha1": "705f87ead1c88382fe67a7a5e2a0b187f34da40c"
+    },
+    {
+      "path": "review/v4/viewport-390.jpg",
+      "size": 57158,
+      "sha256": "ccac30be1a1eb710b18111b251b104ff78f2b509da88e696098b80e6532c9cd5",
+      "sha1": "a7ac99e324d7b3e8ce70f78762e1fdb2541d2e69"
+    },
+    {
+      "path": "review/v4/viewport-844-panel.jpg",
+      "size": 63930,
+      "sha256": "43bc1b3a8864b7c04ca3d6d273ae5526cc4dbd90ccbf685c3fab8ce2a3453b9e",
+      "sha1": "b2ee8d3ec68a8b0c0131aad82ad767e2f0299f5e"
+    },
+    {
+      "path": "textures/china-baseColor-754558a83d8866b8.webp",
+      "size": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "sha1": "a5a2fbe7489cb3441ad3e554feae7044d8f0b398"
+    },
+    {
+      "path": "textures/china-metalness-7ac9525c8019fc98.webp",
+      "size": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "sha1": "7b0d376de636f6d47df37507fab84e2186b4ad1f"
+    },
+    {
+      "path": "textures/china-normal-f0662e241725d83b.webp",
+      "size": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "sha1": "fea1d94204d9107404943a7267ea3781462d5c76"
+    },
+    {
+      "path": "textures/china-roughness-40e7b97659e5e028.webp",
+      "size": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "sha1": "a4a53177b9c1040bad19d1045bbf486dae44b120"
+    },
+    {
+      "path": "textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+      "size": 2532548,
+      "sha256": "09eb4a8337a419e2d3d448c11596764f88aa0bf33e92d43f8359d933c6843df2",
+      "sha1": "cefa5bef259205bd1fc98f8c6fd1a91fe6cc8faa"
+    },
+    {
+      "path": "textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+      "size": 164726,
+      "sha256": "cff904af2a6dfa3db4f2a28f0a4accbd8e4c2551184461c2baf4ea3f42f71ce0",
+      "sha1": "4f9f7cbab01ec00672a38fcad16955879a0f7842"
+    },
+    {
+      "path": "textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+      "size": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3",
+      "sha1": "5c941764c3a8943ca77a2c57704406127c2c9487"
+    },
+    {
+      "path": "textures/fixed-body-roughness-2cf010a49887d95e.webp",
+      "size": 189838,
+      "sha256": "2cf010a49887d95ed47f493184f58002572c20ed31aef41404bbc9e3864c4126",
+      "sha1": "69b28d09e03dff7cb251f26d15c8d2c6a49c92eb"
+    },
+    {
+      "path": "textures/fixed-handle-baseColor-532fac87777aba59.webp",
+      "size": 1779642,
+      "sha256": "532fac87777aba59e25f143b8dd33bc86a629e92fb0ea57e938c58abaebb33f1",
+      "sha1": "204d263cbba7d4e25f5454584ae3834bd790edf0"
+    },
+    {
+      "path": "textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+      "size": 108714,
+      "sha256": "f6ed3020d859c5cbc0addb03dd60055a00cc9745fad700cdc780f1f7f15cca21",
+      "sha1": "b1355f62aabea68e924b661734e2204538c0f5b1"
+    },
+    {
+      "path": "textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+      "size": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341",
+      "sha1": "01719ae6d8111f898d5b49086319901820b43486"
+    },
+    {
+      "path": "textures/fixed-handle-roughness-9095e03b450273c8.webp",
+      "size": 122426,
+      "sha256": "9095e03b450273c8b8bf3d9a24a60fb83aeda978d2b7cdb2344a7575c2ec0019",
+      "sha1": "ff1768962153b10f77f0b9ea4e2bde8c64c6c981"
+    },
+    {
+      "path": "textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+      "size": 11008588,
+      "sha256": "69f9090a7ca74212bb90f9ca1a74a932156b8148b4d8c384da77c7e1b7df4d82",
+      "sha1": "7ea4548291f3cb7f7a3e56c59cb49a71c7ea591d"
+    },
+    {
+      "path": "textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+      "size": 522132,
+      "sha256": "33ea1e54980b7b76edfac64edd521b422042e89619b926b55989a4a6904075fa",
+      "sha1": "c1a8ea31217105c6488f0ecb0883891d75ae622b"
+    },
+    {
+      "path": "textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+      "size": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1",
+      "sha1": "c6cc126ab7e8a79930fbf107d2db43ced70be01c"
+    },
+    {
+      "path": "textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+      "size": 741474,
+      "sha256": "d1c7c328646bb2838081879164ba338a36f265b2102e94066513aa8c68c0c0e5",
+      "sha1": "dbc6275ba3e40f09e42d852b2bb144781da3b7b6"
+    }
+  ],
+  "totalBytes": 278705364
+}

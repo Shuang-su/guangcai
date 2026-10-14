@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-13T14:20:49.534Z",
+  "result": [
+    {
+      "width": 512,
+      "mean": 0,
+      "max": 0,
+      "seamMean": 0
+    },
+    {
+      "width": 128,
+      "mean": 0.0523681640625,
+      "max": 3,
+      "seamMean": 0.07142857142857142
+    }
+  ],
+  "errors": [],
+  "method": "Pixel comparison of physically lit, normal-mapped full-strip vs packed atlas at full and mipmapped resolutions, including the central split and clearcoat."
+}
