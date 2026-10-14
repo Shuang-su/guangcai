@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "ee6e1aff10bf2f9892babc375e723bf360d9d63e",
+  "productVersion": "4.2.0",
+  "deploy": {
+    "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "site_name": "guangcai-no1-china-v4",
+    "deploy_id": "6acefdc52ef3d568cd9acedd",
+    "url": "https://guangcai-no1-china-v4.netlify.app",
+    "deploy_url": "https://6acefdc52ef3d568cd9acedd--guangcai-no1-china-v4.netlify.app",
+    "state": "ready",
+    "recoveredFromServerReadback": true,
+    "cliExit": 1,
+    "cliError": "JSONHTTPError: Unprocessable Entity",
+    "title": "China cup 4.2: clean fixed floral gold ground and preserve pigment"
+  },
+  "filesVerified": 466,
+  "extraServerFiles": [
+    {
+      "id": "/netlify.toml",
+      "path": "/netlify.toml",
+      "sha": "d95928911f573e92f42d93e1c1e094c7b366c39f",
+      "mime_type": "application/octet-stream",
+      "size": 1277,
+      "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "deploy_id": "6acefdc52ef3d568cd9acedd"
+    }
+  ],
+  "pathNormalization": "Netlify paths are case-folded; no collisions and exact SHA-1 for all app files",
+  "readbacks": [
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "deployId": "6acefdc52ef3d568cd9acedd",
+      "state": "ready",
+      "gitBinding": {}
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "deployId": "6ace443df7425f433e717eb0",
+      "state": "ready",
+      "gitBinding": {}
+    }
+  ],
+  "errors": [],
+  "cliWarning": "CLI returned 422 despite a ready published deployment; deployment identity and every file independently reverified, no retry deployment.",
+  "archive": "deployments/guangcai-no1-china-v4/6acefdc52ef3d568cd9acedd"
+}

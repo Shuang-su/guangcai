@@ -2,11 +2,11 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：4.0
+## 当前版本：4.2
 
-[打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [应用说明](guangcai-china-preview/README.md)
+[打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [4.2 金底清洗对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#floral-cleanup-4.2) · [应用说明](guangcai-china-preview/README.md)
 
-中国杯应用版本为 **4.0.0**，代码已合入 `main`。提供中国、深圳两个主题共九款图样；八款新图样支持彩釉金线、彩色金属、轻浮雕彩绘三种材质，文字可随款式、按主题或隐藏。首次打开仍为原版纯金。固定高清广彩花纹、白瓷、结构金边、背景上传及观察交互继续保留。
+中国杯当前产品版本为 **4.2 / 4.2.0**，代码已合入 `main`。提供中国、深圳两个主题共九款图样；八款新图样支持彩釉金线、彩色金属、轻浮雕彩绘三种材质，文字可随款式、按主题或隐藏。首次打开仍为原版纯金。固定高清广彩花纹、白瓷、结构金边、背景上传及观察交互继续保留。
 
 V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
 
@@ -23,6 +23,8 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 | 2.2 | `v2.2` | [中国杯](https://guangcai-no1-china.netlify.app/) | `6ace111ab0415c9455a3c6f8` |
 | 3.0 预览 | `v3.0` | [高清中国杯 V3](https://guangcai-no1-china-v3.netlify.app/) | `6ace443df7425f433e717eb0` |
 | 4.0 预览 | `v4.0` | [主题与釉彩 V4](https://guangcai-no1-china-v4.netlify.app/) | `6aced018c70635a1ad24cbbe` |
+| 4.1 预览 | `v4.1` | [纹饰凹凸修复](https://guangcai-no1-china-v4.netlify.app/) | `6acef244237630dba7fa87fe` |
+| 4.2 预览 | `v4.2` | [花纹金底清洗](https://guangcai-no1-china-v4.netlify.app/) | `6acefdc52ef3d568cd9acedd` |
 
 Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，`v3.0`、`v4.0` 标签指向各自已发布源码；后续修复使用新的 commit，不移动已有标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。`v4.0` 固定在表中发布基线；后续纹饰修正对应源码 `591d8c56b0819143a2bdab454068fd30921a2977`、部署 `6acef244237630dba7fa87fe`，详见[部署与公网复核记录](docs/changes/20261014-fixed-relief-alignment/deployment.json)及[凹凸对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#fixed-relief-alignment)。
 
@@ -48,7 +50,7 @@ npm --prefix guangcai-china-preview run dev -- --port 5208
 1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，从 main 建立 `codex/<task>` 分支；存在其他修改时使用独立 worktree。
 2. 在本仓库直接修改、验证并形成原子提交，例如 `fix(china): align porcelain at artwork boundary`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
 3. PR 审查和必要验证通过后按授权合并。原始历史补录已经保留为真实可达提交，不对既有分支强推或重写。
-4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0`、`v4.0`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
+4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0`、`v4.0`、`v4.1`、`v4.2`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
 5. 发布仅使用用户已授权的目标站点。从已记录的 Git 提交构建，保存站点 ID、提交 SHA、构建命令、部署 ID、文件哈希及回读结果。`.netlify/` 和凭据只留本地，不入库。
 
 ## 历史完整性
@@ -61,3 +63,5 @@ python3 tools/test_verify_archive.py
 核验工具按固定 Git 提交读取历史源码，同时检查工作树中不可变的 `deployments/` 快照，因此不会把正常开发改动误判为旧版损坏。必须使用完整 Git 克隆；浅克隆先运行 `git fetch --unshallow origin`。下载 ZIP 不包含历史对象，工具会明确报告无法完成历史核验。
 
 `docs/archive/`、`docs/history/` 和 `deployments/` 保存旧版本证据；不要覆盖原记录。缓存、临时测试和发布暂存放在 `.codex-work/`，通过 `git rev-parse --git-path info/exclude` 指向的仓库本地 exclude 忽略。安装或复制较大素材前检查磁盘空间。
+
+4.2 保留原始颜色图、花果晕染与描线，用独立空白金底范围清理杂点和拖痕；对齐金属、粗糙度和凹凸，界面与 package 同步递增。[请求、验证与发布记录](docs/changes/20261014-floral-cleanup-4.2/completion.md)。

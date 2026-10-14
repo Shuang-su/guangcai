@@ -1,8 +1,8 @@
-# 中国杯 4.0：城市主题与釉彩预览
+# 中国杯 4.2：城市主题与固定花纹金底清洗
 
 [打开 V4](https://guangcai-no1-china-v4.netlify.app/) · [素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [版本与部署索引](../VERSION_HISTORY.md)
 
-本目录是 [Shuang-su/guangcai](https://github.com/Shuang-su/guangcai) 的中国杯应用，2.x、3.x、4.x 沿用同一源码目录。当前产品版本 **4.0.0** 已合入 `main`，开发与发布遵循[仓库约定](../AGENTS.md)。站点手动发布，不随代码推送或 PR 合并自动更新。
+本目录是 [Shuang-su/guangcai](https://github.com/Shuang-su/guangcai) 的中国杯应用，2.x、3.x、4.x 沿用同一源码目录。当前源码版本 **4.2.0**；发布与合并状态以末尾记录和根目录版本索引为准，开发与发布遵循[仓库约定](../AGENTS.md)。站点手动发布，不随代码推送或 PR 合并自动更新。
 
 ## 主题、款式与文字
 
@@ -57,7 +57,7 @@ npm run textures:web
 
 ## 接口与固定参数
 
-`window.cupViewer.applyCityArtwork(pack)` 继续使用 `blank-300deg-v1`，对齐通道先完整解码再原子切换，失败保留当前版本，连续请求以最后一次为准，旧纹理释放。V4 增加独立覆盖遮罩、清漆通道、法线编码和文字描述；旧包缺省字段仍兼容。款式、材质和文字整组成功后提交，城市包版本号与产品版本 4.0.0 分别管理。
+`window.cupViewer.applyCityArtwork(pack)` 继续使用 `blank-300deg-v1`，对齐通道先完整解码再原子切换，失败保留当前版本，连续请求以最后一次为准，旧纹理释放。V4 增加独立覆盖遮罩、清漆通道、法线编码和文字描述；旧包缺省字段仍兼容。款式、材质和文字整组成功后提交，城市包版本号与产品版本 4.2.0 分别管理。
 
 固定花纸包可选 `mapping: 'source-layout-v3'`，使用 UV2，一条原始碟花带绕一周。旧包省略该字段时继续使用旧 UV0 映射；城市始终使用 UV1。全局曝光 1.08，固定花纹法线 4.4、釉层法线 2.4，原版纯金城市法线 0.7；新款按所选材质应用参数。凹凸是视觉近似，不是制造深度。
 
@@ -67,7 +67,7 @@ npm run textures:web
 
 - 中国杯 2.2 保留在 https://guangcai-no1-china.netlify.app/ ，已发布部署 ID `6ace111ab0415c9455a3c6f8`。
 - [3.0 高清预览](https://guangcai-no1-china-v3.netlify.app/) 已发布，部署 ID `6ace443df7425f433e717eb0`，继续保留。
-- [4.0 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前记录部署 ID `6acef244237630dba7fa87fe`，源码 `591d8c56b0819143a2bdab454068fd30921a2977`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签固定在各自发布基线；本轮纹饰修正作为 v4.0 之后的新提交保存。
+- [4.2 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前部署 ID `6acefdc52ef3d568cd9acedd`，源码 `ee6e1aff10bf2f9892babc375e723bf360d9d63e`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签固定在各自发布基线；上一轮纹饰修正已回溯标为 `v4.1`，本轮金底清洗标为 `v4.2`，旧部署字节与标签均保留。
 - 原版站与历史发布对应关系见仓库 `VERSION_HISTORY.md` 和 `deployments/`。
 - 早期非 Git 开发、122 文件的旧发布记录等属于 2026-10-11/12 历史状态，原文保留在各日期的 `docs/changes/`；不代表当前开发状态。
 
@@ -82,3 +82,13 @@ V4 记录位于仓库根目录 [docs/changes/20261014-v4/](../docs/changes/20261
 V4 六款中国新图样共用 PSD 建筑结构，深圳两款共用母稿；花云鸟等点缀属于参考重建。高精度凹凸仍为实时材质近似，不能视作原稿真实三维高度或生产尺寸。
 
 [固定纹饰凹凸修正](../docs/changes/20261014-fixed-relief-alignment/completion.md)：清理金底伪高度，固定釉层覆盖 0.40／粗糙度 0.22；保持正常线条深浅，法线不改变几何剪影。
+
+## 4.2 金底清洗
+
+原始颜色母图保持不变。`tools/clean-fixed-gold.py` 从保存的 4.1 金属/粗糙度母版生成清洗范围及对齐通道；`src/materials/fixed-gold-ground.ts` 仅在确认的金底上统一底色，实际反光继续使用 PBR。黄花与果皮受更严格的范围保护，不对整图降噪或重画。
+
+固定包新增可选 `cleanGoldGround: true`：metalnessMap 的 R 通道记录金底清洗覆盖、B 通道保留金属度（G 与 B 一致）。旧包默认关闭，仍按原逻辑显示。清洗开启与整包纹理原子切换，失败保留原包。颜色、法线、金属、粗糙度同 UV/图集；法线强度仍 4.4/2.4。
+
+生成样张和未采用原因见 `evidence/floral-cleanup-4.2/imagegen-note.md`；局部生成改变了描线，因此只作对照，未接入生产纹样。与描线相连的细小色痕仍可能保留。
+
+复核：`python3 tools/test_gold_cleanup.py`、`python3 tools/test_floral_relief.py`、`python3 tools/verify-gold-cleanup.py`，需要 `tools/requirements-assets.txt` 的依赖。浏览器使用 `QA_PHASE=after node tools/floral-cleanup-review.mjs`（默认 5212）。历史核验脚本按其对应版本标签使用，不应以新版本材质通道去断言旧版通道不变。

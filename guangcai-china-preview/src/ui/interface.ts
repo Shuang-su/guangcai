@@ -2,10 +2,10 @@ import {viewLabels,type View} from '../interaction/views';
 import type {BackgroundChoice,BackgroundState} from './background';
 export interface Actions{view:(v:View)=>void;auto:()=>void;reset:()=>void;relief:(v:number)=>void;fixedRelief:(v:boolean)=>void;metal:(v:boolean)=>void;mode:(v:string)=>void;reflection:(v:boolean)=>void;restore:()=>Promise<void>;background:(choice:BackgroundChoice)=>Promise<void>;uploadBackground:(file:File)=>Promise<void>;}
 export function createInterface(actions:Actions){
- document.querySelector<HTMLDivElement>('#app')!.innerHTML=`<main aria-label="中国杯 4.0 三维预览">
+ document.querySelector<HTMLDivElement>('#app')!.innerHTML=`<main aria-label="中国杯 4.2 三维预览">
  <div id="scene-background" class="scene-background" aria-hidden="true"></div>
  <canvas id="viewport" tabindex="0" aria-label="左键或单指旋转中国杯，右键或双指拖移，滚轮或双指捏合缩放"></canvas>
- <header><div><h1>中国 · 共彩</h1><p>4.0 · 城市主题与釉彩</p></div><div class="top-actions"><a class="standards-top" href="./evidence.html">素材与对照</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div></header>
+ <header><div><h1>中国 · 共彩</h1><p>4.2 · 城市主题与釉彩</p></div><div class="top-actions"><a class="standards-top" href="./evidence.html">素材与对照</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div></header>
  <button id="open-settings" class="open-settings" aria-expanded="false" aria-controls="settings">材质校准</button>
  <button id="open-background" class="open-background" aria-expanded="false" aria-controls="background-settings">背景</button>
  <aside id="background-settings" hidden aria-label="背景设置"><div class="panel-heading"><h2>背景</h2><button id="close-background">关闭</button></div>
