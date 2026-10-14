@@ -1,10 +1,10 @@
-import {variants,variantFor,finishes,selectTheme,type SelectionController,type Finish,type Lettering,type Theme} from '../styles/city-selection';
+import {variants,variantFor,finishes,selectTheme,themes,themeFor,isFixedGold,type SelectionController,type Finish,type Lettering,type Theme} from '../styles/city-selection';
 export function createArtworkPanel(controller:SelectionController,closeOtherPanels:()=>void){
  const main=document.querySelector('main')!;
  const toggle=document.createElement('button');toggle.disabled=true;toggle.id='open-artwork';toggle.className='open-artwork';toggle.textContent='主题与款式';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','artwork-settings');
  const panel=document.createElement('aside');panel.id='artwork-settings';panel.hidden=true;panel.setAttribute('aria-label','主题与款式');
  panel.innerHTML=`<div class="panel-heading"><h2>主题与款式</h2><button id="close-artwork">收起</button></div>
- <div class="theme-options" role="group" aria-label="选择主题"><button data-theme="china">中国</button><button data-theme="shenzhen">深圳</button></div>
+ <div class="theme-options" role="group" aria-label="选择主题">${Object.entries(themes).map(([id,theme])=>`<button data-theme="${id}">${theme.name}</button>`).join('')}</div>
  <div class="variant-grid" role="group" aria-label="选择配色款式"></div>
  <label class="field-label" for="artwork-finish">材质试看</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select>
  <p id="finish-note" class="note"></p>
@@ -32,12 +32,12 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   }
   panel.querySelectorAll<HTMLElement>('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===v.theme)));
   panel.querySelectorAll<HTMLElement>('[data-variant]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.variant===s.variant)));
-  finish.value=s.finish;finish.disabled=s.variant==='china-gold';text.value=s.text;
-  for(const option of text.options)option.hidden=v.theme==='china'&&['he','create'].includes(option.value);
-  $('#finish-note').textContent=s.variant==='china-gold'?'原版纯金保留 3.0 材质。其他配色可比较三种材质。':s.finish==='enamel'?'釉彩填面与凸起描线独立反光。':s.finish==='metal'?'彩色图样呈现金属反射。':'柔和彩绘釉面，降低线条起伏与金属感。';
+  finish.value=s.finish;finish.disabled=isFixedGold(v);text.value=s.text;
+  for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
+  $('#finish-note').textContent=isFixedGold(v)?'纯金款采用固定金色浅浮雕。其他配色可比较三种材质。':s.finish==='enamel'?'釉彩填面与凸起描线独立反光。':s.finish==='metal'?'彩色图样呈现金属反射。':'柔和彩绘釉面，降低线条起伏与金属感。';
   $('#artwork-progress').textContent=controller.busy?`正在准备 ${v.name} · ${progress||'读取素材…'}`:controller.error||`当前：${variantFor(controller.current.variant).name}`;
   $('#artwork-progress').classList.toggle('error',!!controller.error);
-  if(!controller.busy){progress='';document.querySelector('h1')!.textContent=variantFor(controller.current.variant).theme==='china'?'中国 · 共彩':'深圳 · 共彩';}
+  if(!controller.busy){progress='';document.querySelector('h1')!.textContent=themeFor(variantFor(controller.current.variant)).name+' · 共彩';}
  }
  render();return {ready:()=>{toggle.disabled=false;},render,progress:(done:number,total:number)=>{progress=`${done} / ${total}`;render();},close:dismiss,dispose(){document.removeEventListener('keydown',keyboard);document.querySelector('#open-settings')?.removeEventListener('click',dismiss);document.querySelector('#open-background')?.removeEventListener('click',dismiss);panel.remove();toggle.remove();}};
 }

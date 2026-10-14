@@ -146,7 +146,7 @@ label.save(OUT/'label-beijing.webp',lossless=True)
 label.resize((1536,669)).save(REVIEW/'label-beijing.png')
 catalog_path=OUT/'catalog.json';catalog=json.loads(catalog_path.read_text())
 catalog['variants']=[v for v in catalog['variants'] if v['theme']!='beijing']+records
-catalog.setdefault('labels',{})['beijing']='label-beijing.webp'
+catalog.setdefault('labels',{'china':'label-china.webp','shenzhen':'label-shenzhen.webp','he':'label-he.webp','create':'label-create.webp'})['beijing']='label-beijing.webp'
 catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
 
 # Same-transform overlay: cyan original source ink and red derived line ink.
