@@ -1,0 +1,3 @@
+import {chromium} from 'playwright';import fs from 'node:fs/promises';
+const b=await chromium.launch({channel:'chrome',headless:true});const page=await b.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});const logs=[];page.on('console',m=>{if(['error','warning'].includes(m.type()))logs.push({type:m.type(),text:m.text()});});page.on('pageerror',e=>logs.push({error:String(e)}));
+await page.goto('http://127.0.0.1:5173');await page.waitForSelector('canvas[data-ready="true"]');await page.waitForTimeout(800);await page.screenshot({path:'.codex-work/qa/chromium-gold-hero.png'});console.log(JSON.stringify({state:await page.evaluate(()=>window.cupViewer.inspect()),logs},null,2));await b.close();

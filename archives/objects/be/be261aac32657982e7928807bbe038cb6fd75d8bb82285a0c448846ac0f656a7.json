@@ -1,0 +1,26 @@
+{
+  "name": "apec-guangcai-h5",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tools/*.test.ts",
+    "media:render": "node tools/render-media.mjs",
+    "qa": "node tools/qa.mjs",
+    "assets:verify": "node tools/verify-assets.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.183.1",
+    "vite": "8.3.1",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "sharp": "^0.34.5",
+    "playwright": "^1.58.2"
+  }
+}

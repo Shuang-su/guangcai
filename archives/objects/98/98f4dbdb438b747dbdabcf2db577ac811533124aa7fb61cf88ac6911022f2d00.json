@@ -1,0 +1,250 @@
+{
+  "version": "2.0-pre.3",
+  "title": "金属哑光与柔和反光",
+  "sessionId": "01a12b50-f453-7bb0-b232-93ddb671fa2c",
+  "sourceLineCutoff": 562,
+  "project": "guangcai-china-preview",
+  "sourceReplay": "china-03-matte",
+  "deploymentSnapshot": null,
+  "commands": [
+    {
+      "command": "/Users/shuangsu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/china-assets.py",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/2.0-pre.3/derive-city.log"
+    },
+    {
+      "command": "node_modules/.bin/tsx tools/surface-metrics.ts",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/2.0-pre.3/surface-metrics.log"
+    },
+    {
+      "command": "node tools/derive-fixed.mjs",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/2.0-pre.3/derive-fixed.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/2.0-pre.3/geometry-tests.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/2.0-pre.3/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "compare.html",
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    {
+      "path": "index.html",
+      "sha256": "2aa0675a60c7417dae9f615add244d27526de818902f0d06927db6d5d1de82a1"
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "37e45467e6ababd8cb1d03f630ed540bdd096b59342103b16ed63367b22f1efb"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "b13af7c887dc28681cc8d15865c4f53df21717472d728ca754ea14500752e8e1"
+    },
+    {
+      "path": "package.json",
+      "sha256": "d9e2147ad7e1a5a59b470770cd8c16bcce9a9c5ca501cb77feaae8601814b4cb"
+    },
+    {
+      "path": "src/compare.ts",
+      "sha256": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3"
+    },
+    {
+      "path": "src/geometry/handle.ts",
+      "sha256": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "path": "src/interaction/calibration.ts",
+      "sha256": "254e254ddbd28d2dca5d75dbe67f74d3aea1858fd2d6ceee71a70f2bfdc94bc4"
+    },
+    {
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "7f5ca3c223e7c718e1fe1846b56d5a7e59d02b60f99f05e2c4368e8df12ec2e2"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "3ed29462132f6d784ffe1078af8ba5fe4071d1edaf896c3f77953873c99717e8"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "fe98890f8b208bbcaf21023f1b0dc7140f39fb6c6e8240c0ef70d13d1571b574"
+    },
+    {
+      "path": "src/materials/render-standard.ts",
+      "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283"
+    },
+    {
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "8a165bcbea96248e7ff9c5c1b37ac2894748a77aa82abc9c2a8feca9e1c5ecb2"
+    },
+    {
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "2b486703a879d9da8e5215b771fbebaed546d676a72381cb6574026f662914be"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "23468c3c8953a5b31771eb33ddab9cb40400f645e3ed55e283add9513fb731a6"
+    },
+    {
+      "path": "src/ui/compare.css",
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "e5049306726be9219fa6728ca71069b6433e2d8b9f1d984ca1b96c0cd86c2f63"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "a035580e60c944e39c3baf918d7bd9c54ebc13c359fc46374e4ca32eb918e629"
+    },
+    {
+      "path": "tools/browser-qa.mjs",
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    {
+      "path": "tools/china-assets.py",
+      "sha256": "fa77917d36a3bcebb2fcbe8ffa73625a2240d4697a2d8d3f1bd56aeddb81f093"
+    },
+    {
+      "path": "tools/china-calibration.ts",
+      "sha256": "b382aa9c5a1e71b1b27a05ac48438c33bd223b76ab3063fdec3cd976ce761517"
+    },
+    {
+      "path": "tools/china-evidence.mjs",
+      "sha256": "5e4a613962f85fc9c1ae8a2f8cb287cfdbcbae7dc97acd6aff5390f78bf0aa86"
+    },
+    {
+      "path": "tools/china-qa.mjs",
+      "sha256": "7076290ac4902e986f9147d8bbc462e7be917a933746a491debc65567d0ee3de"
+    },
+    {
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "3bd56939a3d2294186901a0a9806ca7b3aadb7450696d37175730ee998409260"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "e2a2cd0e67db1047c7bff33bd1f95606a64a58166078dc12add22099311f829e"
+    },
+    {
+      "path": "tools/fit-calibration.ts",
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    {
+      "path": "tools/fit-lid-calibrations.ts",
+      "sha256": "4065b7c6e70e49c379a5a8e0c6a076de34e4a8d7b7989e1afd0fb86ab4cf4d68"
+    },
+    {
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    {
+      "path": "tools/geometry.test.ts",
+      "sha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b"
+    },
+    {
+      "path": "tools/handle-compare.mjs",
+      "sha256": "0fa6cf178227095df847d1c0201a924c104049ca97aeba844d521af8fcd26f09"
+    },
+    {
+      "path": "tools/lid-compare.mjs",
+      "sha256": "eb154101a2e3eb35e7fe3d8a8741c2b313bdd893badb9092a9e69f20eb60f9e6"
+    },
+    {
+      "path": "tools/online-qa.mjs",
+      "sha256": "8ee15d1b1c708ae8e7c03a2b339b0c3a733daf82e2f8d045d5d8300d3e36cc5f"
+    },
+    {
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    {
+      "path": "tools/overlay-qa.mjs",
+      "sha256": "14af901bd914a2f35d1d219d45a9132689074b3db3338e11c7dd900189c88793"
+    },
+    {
+      "path": "tools/overlay-report.mjs",
+      "sha256": "c57db3f2832403eed1801558c859e97c8efd28d2885d82a1519576136d5ce2e4"
+    },
+    {
+      "path": "tools/reference-captures.mjs",
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    {
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "6e2c4c67774ea2ddcdd9223b90552421f250f2bd20ff5af81b65a48718018dc9"
+    },
+    {
+      "path": "tools/saucer-closeup.mjs",
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    {
+      "path": "tools/saucer-profile.ts",
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    {
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "path": "tools/surface-metrics.ts",
+      "sha256": "fa339dcfc16f086c43b02ca8e9ffd70116b1479bb131d7c4f1f51b218296b0d3"
+    },
+    {
+      "path": "tools/texture-density.mjs",
+      "sha256": "5eedfc6d7eae0bcd92c20b6d9859e5442da39968189ee302780c9d55eddcfb21"
+    },
+    {
+      "path": "tools/texture-qa.mjs",
+      "sha256": "caf6546b5a919498b6b854dca653a89bb7a2b6c84f57be689b6d0c0f73fc5baf"
+    },
+    {
+      "path": "tools/texture-standards.mjs",
+      "sha256": "a91bda81d937537c567251049e2433de212118270b576dd134a43544830e0ec7"
+    },
+    {
+      "path": "tools/verify-delivery.mjs",
+      "sha256": "4d5adbc669569cbce07d04d0431ed7647bb98f4075c97651f43a306af737243d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "eb402e25dfa21cac42701996b15c3bf276f1c04d8f483813e7daded1d3a0c15f"
+    }
+  ]
+}

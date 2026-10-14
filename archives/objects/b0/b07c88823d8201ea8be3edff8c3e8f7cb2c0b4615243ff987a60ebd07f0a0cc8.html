@@ -1,0 +1,57 @@
+<div id="readme" class="md" data-path="README.md"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 class="heading-element" dir="auto">广彩一号杯：两个已上线版本的源码归档</h1><a id="user-content-广彩一号杯两个已上线版本的源码归档" class="anchor" aria-label="Permalink: 广彩一号杯：两个已上线版本的源码归档" href="#广彩一号杯两个已上线版本的源码归档"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<blockquote>
+<p dir="auto">完整源码已统一归档，按 1.0 → 2.0 → 2.1 管理。已根据真实会话补建 16 个源码节点，见 <a href="https://github.com/Shuang-su/guangcai/blob/codex/reconstruct-history/HISTORY.md">历史提交索引</a>；源码分支及 issue/PR 见 <a href="ARCHIVE_INDEX.md">归档入口</a>。</p>
+</blockquote>
+<p dir="auto">此仓库保存一号杯原版与中国杯预览版的完整前端源码、运行素材、生成母版、校验工具、历史变更记录和部署证据。仓库为私有，原始设计资料不作为公开授权素材。</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">版本与部署</h2><a id="user-content-版本与部署" class="anchor" aria-label="Permalink: 版本与部署" href="#版本与部署"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<markdown-accessiblity-table><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>源码目录</th>
+<th>现有线上站点</th>
+<th>本次核验的部署 ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一号杯原版</td>
+<td><code>guangcai-viewer/</code></td>
+<td><a href="https://guangcai-no1.netlify.app/" rel="nofollow">https://guangcai-no1.netlify.app/</a></td>
+<td><code>6abbdf78d912b4b6b1d7c3b9</code></td>
+</tr>
+<tr>
+<td>中国杯预览版</td>
+<td><code>guangcai-china-preview/</code></td>
+<td><a href="https://guangcai-no1-china.netlify.app/" rel="nofollow">https://guangcai-no1-china.netlify.app/</a></td>
+<td><code>6acbd24fa545c331cdd20dae</code></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">两个项目在首次入库前都没有 <code>.git</code>、提交历史或远端。此次 Git 提交从 2026-10-13 的真实导入开始。随后根据保存的原会话文件操作补建了 13 个基线前源码节点，连同 1.0 / 2.0 / 2.1 共 16 个可检出状态；原修改时间单独记录，提交没有倒签，未声称覆盖每次临时编辑。旧请求、计划、完成记录、素材版本和中间截图作为历史文件原样保留，其时间以文件内记录为准。</p>
+<p dir="auto">两个目录同时保留，因为它们对应两个独立运行的站点；不把原版覆盖成中国杯版，也不提前抽取公共代码。中国杯原有校验脚本还引用相邻原版的文件摘要。导入采用相承的关联 PR，原版先导入，中国杯 PR 以原版导入分支为基线。各自的 issue 记录来源和验收证据。<code>main</code> 初始只含归档说明，待审查合并后才包含源码；完整双版本快照位于中国杯导入分支。</p>
+<p dir="auto"><strong>本仓库没有连接 Netlify、配置部署工作流或保存部署凭据。推送和 PR 不更新现有站点。</strong> 两个目录中的 <code>netlify.toml</code> 与历史发布命令仅作为原项目资料保留；后续发布仍需要用户明确授权。</p>
+<p dir="auto">表中的部署 ID 是本次最初核查的基线。历史补录截止 2.1；另一会话 2026-10-13 19:08 发布的后续背景功能尚未纳入这批归档。线上实时状态与归档编号分开记录。</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">保存范围</h2><a id="user-content-保存范围" class="anchor" aria-label="Permalink: 保存范围" href="#保存范围"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>两个项目的 TypeScript / Three.js 源码、HTML、样式、锁文件、配置和全部工具。</li>
+<li>完整 <code>assets/</code> 与 <code>public/</code>：PBR 通道、生成母版、提示词、中国杯 PSD / PDF / JPG 原稿副本、图层提取结果及历史纹样。</li>
+<li>原版公共 <code>evidence/</code>、中国杯 <code>evidence/</code> / <code>output/</code> / <code>out/</code>、全部 <code>docs/changes/</code>，包括已记录的失败与中间版本。</li>
+<li><code>deployments/&lt;站点名&gt;/&lt;部署 ID&gt;/</code>：按原发布清单核验的实际发布文件快照。清单外未发布的文件留在各自源码目录中。</li>
+<li><code>docs/archive/</code>：首次导入清单、文件摘要、版本边界、部署关联和本轮验证记录。</li>
+</ul>
+<p dir="auto">不纳入 <code>node_modules/</code>、<code>.codex-work/</code>、<code>.netlify/</code>、可再构建的 <code>dist/</code>、系统索引与 AppleDouble 文件。源码外的原始拍摄照片和视频不复制；项目使用的参考图、预览、索引及中国杯设计原稿副本已随项目保留。绝对路径仍保留在历史记录中表示来源，不能假定别的电脑有这些路径。</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">使用与校验</h2><a id="user-content-使用与校验" class="anchor" aria-label="Permalink: 使用与校验" href="#使用与校验"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">两个项目分别安装依赖，运行命令见各自历史 README。新克隆中执行 <code>npm ci</code>；不要复制其他电脑的 <code>node_modules</code> 链接。纹样重生成可能改写导出图及时间戳，应与原始归档分开进行。</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="python3 tools/verify-archive.py
+cd guangcai-viewer
+npm ci
+npm test
+npm run build"><pre>python3 tools/verify-archive.py
+<span class="pl-c1">cd</span> guangcai-viewer
+npm ci
+npm <span class="pl-c1">test</span>
+npm run build</pre></div>
+<p dir="auto">中国杯使用相同的 <code>npm ci</code> / <code>npm test</code> / <code>npm run build</code> 流程；其 <code>prebuild</code> 会重新生成 WebP。离线核验部署快照不需要安装 Node 依赖：<code>python3 tools/verify-archive.py</code> 会核对入库文件和实际发布文件的 SHA-256。</p>
+<p dir="auto">本仓库的本机工作目录使用 <code>.codex-work/</code> 存放缓存和验证输出，并通过 <code>.git/info/exclude</code> 排除。新克隆开始工作前同样配置本地 exclude。首次导入记录见 <code>docs/changes/20261013-github-archive/</code>。</p>
+</article></div>

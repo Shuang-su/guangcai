@@ -1,0 +1,983 @@
+{
+  "errors": [
+    {
+      "line": 56,
+      "pythonLine": 2,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 56,
+      "pythonLine": 3,
+      "error": "disabled import subprocess"
+    },
+    {
+      "line": 56,
+      "pythonLine": 6,
+      "error": "name 'subprocess' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 7,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 7,
+      "error": "name 'ImageDraw' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 10,
+      "error": "name 'sheet' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 12,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 12,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 12,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 12,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 56,
+      "pythonLine": 13,
+      "error": "UNAVAILABLE:/Users/shuangsu/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/a4488abc_55e2/msg/file/2026-10/中国杯线稿(1)(3).psd"
+    },
+    {
+      "line": 83,
+      "pythonLine": 1,
+      "error": "disabled import struct"
+    },
+    {
+      "line": 83,
+      "pythonLine": 2,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 83,
+      "pythonLine": 4,
+      "error": "UNAVAILABLE:/Users/shuangsu/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/a4488abc_55e2/msg/file/2026-10/中国杯线稿(1)(3).psd"
+    },
+    {
+      "line": 83,
+      "pythonLine": 17,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 83,
+      "pythonLine": 18,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 121,
+      "pythonLine": 1,
+      "error": "disabled import struct"
+    },
+    {
+      "line": 121,
+      "pythonLine": 3,
+      "error": "UNAVAILABLE:/Users/shuangsu/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/a4488abc_55e2/msg/file/2026-10/中国杯线稿(1)(3).psd"
+    },
+    {
+      "line": 128,
+      "pythonLine": 1,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 128,
+      "pythonLine": 3,
+      "error": "disabled import struct"
+    },
+    {
+      "line": 128,
+      "pythonLine": 6,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 128,
+      "pythonLine": 6,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 128,
+      "pythonLine": 7,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 128,
+      "pythonLine": 10,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 128,
+      "pythonLine": 11,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 128,
+      "pythonLine": 12,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 147,
+      "pythonLine": 1,
+      "error": "disabled import struct"
+    },
+    {
+      "line": 147,
+      "pythonLine": 3,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 147,
+      "pythonLine": 6,
+      "error": "'Path' object has no attribute 'open'"
+    },
+    {
+      "line": 313,
+      "pythonLine": 1,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 313,
+      "pythonLine": 4,
+      "error": "name 'Image' is not defined"
+    },
+    {
+      "line": 313,
+      "pythonLine": 5,
+      "error": "name 'im' is not defined"
+    },
+    {
+      "line": 331,
+      "pythonLine": 3,
+      "error": "assets/masters/china-fixed-band.png"
+    },
+    {
+      "line": 331,
+      "pythonLine": 4,
+      "error": "UNAVAILABLE:/Users/shuangsu/.codex/generated_images/01a12b50-f453-7bb0-b232-93ddb671fa2c/exec-85f1c4d9-545d-4149-a58b-d2fec257b4c6.png"
+    },
+    {
+      "line": 434,
+      "pythonLine": 1,
+      "error": "disabled import PIL"
+    },
+    {
+      "line": 434,
+      "pythonLine": 2,
+      "error": "disabled import numpy"
+    },
+    {
+      "line": 434,
+      "pythonLine": 3,
+      "error": "name 'np' is not defined"
+    },
+    {
+      "line": 600,
+      "pythonLine": 5,
+      "error": "public/china/roughness.png"
+    },
+    {
+      "line": 600,
+      "pythonLine": 8,
+      "error": "public/china/lines.png"
+    },
+    {
+      "line": 600,
+      "pythonLine": 9,
+      "error": "name 'manifest' is not defined"
+    },
+    {
+      "line": 625,
+      "pythonLine": 2,
+      "error": ".codex-work/tmp/relief-separation/render.mjs"
+    },
+    {
+      "line": 625,
+      "pythonLine": 2,
+      "error": "name 's' is not defined"
+    },
+    {
+      "line": 877,
+      "pythonLine": 5,
+      "error": "substring not found"
+    },
+    {
+      "line": 877,
+      "pythonLine": 22,
+      "error": "name 'end' is not defined"
+    },
+    {
+      "line": 877,
+      "pythonLine": 33,
+      "error": ""
+    },
+    {
+      "line": 877,
+      "pythonLine": 40,
+      "error": "UNAVAILABLE:/var/folders/pm/18l5wnt52tqddscrs6w9538r0000gn/T/codex-clipboard-c2d47d02-145f-4689-8c7d-24fad9ee2b43.png"
+    },
+    {
+      "line": 877,
+      "pythonLine": 42,
+      "error": "'Path' object has no attribute 'open'"
+    },
+    {
+      "line": 954,
+      "pythonLine": 4,
+      "error": "'Path' object has no attribute 'open'"
+    },
+    {
+      "line": 954,
+      "pythonLine": 57,
+      "error": "public/china/line-finish.png"
+    },
+    {
+      "line": 1986,
+      "pythonLine": 7,
+      "error": "src/styles/web-textures.json"
+    },
+    {
+      "line": 2066,
+      "pythonLine": 6,
+      "error": "public/review/buildings-model.png"
+    },
+    {
+      "line": 2238,
+      "pythonLine": 4,
+      "error": "public/review/floral-relief/on-gray.jpg"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 2,
+      "error": "disabled import urllib.request"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 6,
+      "error": "public/review/label-model.png"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 10,
+      "error": "name 'urllib' is not defined"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 11,
+      "error": "name 'remote' is not defined"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 11,
+      "error": "name 'j' is not defined"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 12,
+      "error": "name 'j' is not defined"
+    },
+    {
+      "line": 2441,
+      "pythonLine": 13,
+      "error": "name 'remote' is not defined"
+    },
+    {
+      "line": 2572,
+      "pythonLine": 4,
+      "error": "output/playwright/layout-probe-balanced/before-label.png"
+    },
+    {
+      "line": 2572,
+      "pythonLine": 5,
+      "error": "'types.SimpleNamespace' object has no attribute 'move'"
+    }
+  ],
+  "fallbackSourceReads": [
+    {
+      "line": 562,
+      "path": "src/studio/local-reflections.ts"
+    },
+    {
+      "line": 562,
+      "path": "src/styles/fixed-layout.json"
+    },
+    {
+      "line": 562,
+      "path": "src/styles/load-texture.ts"
+    },
+    {
+      "line": 562,
+      "path": "src/styles/web-textures.json"
+    },
+    {
+      "line": 562,
+      "path": "tools/china-online-qa.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/floral-quality-qa.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/floral-relief-evidence.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/floral-relief-qa.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/layout-evidence.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/prepare-china-release.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/reflections-qa.mjs"
+    },
+    {
+      "line": 562,
+      "path": "tools/web-textures.mjs"
+    },
+    {
+      "line": 1986,
+      "path": "src/styles/web-textures.json"
+    },
+    {
+      "line": 2066,
+      "path": "src/styles/web-textures.json"
+    },
+    {
+      "line": 2441,
+      "path": "src/styles/web-textures.json"
+    }
+  ],
+  "events": [
+    {
+      "line": 227,
+      "path": "tools/china-assets.py",
+      "sha256": "f6e8fbac2c39c5b771c9ef313ef78178de8b8f8721f5e3b51a7424dedb21e1ad"
+    },
+    {
+      "line": 249,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "3bd56939a3d2294186901a0a9806ca7b3aadb7450696d37175730ee998409260"
+    },
+    {
+      "line": 258,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "5a39c1c28298cbe81adaad6f1fb1aa5681155a7082f9aba0a947fb7a67379760"
+    },
+    {
+      "line": 258,
+      "path": "src/materials/materials.ts",
+      "sha256": "fe98890f8b208bbcaf21023f1b0dc7140f39fb6c6e8240c0ef70d13d1571b574"
+    },
+    {
+      "line": 258,
+      "path": "src/geometry/product.ts",
+      "sha256": "3343d26babd6a63e048a1ba8e7ec40b76293b4683a8856c34348d236fc000ef1"
+    },
+    {
+      "line": 258,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "23468c3c8953a5b31771eb33ddab9cb40400f645e3ed55e283add9513fb731a6"
+    },
+    {
+      "line": 258,
+      "path": "src/interaction/views.ts",
+      "sha256": "ee5e055ff51344acc44087cfcf76decee1804c1fa6c5bedd615cceb2069462d7"
+    },
+    {
+      "line": 258,
+      "path": "vite.config.ts",
+      "sha256": "6a19737c83de00af22ae83cd3a528b59e17e59af133e15240c46ad5a5f45b85a"
+    },
+    {
+      "line": 268,
+      "path": "src/ui/interface.ts",
+      "sha256": "e5049306726be9219fa6728ca71069b6433e2d8b9f1d984ca1b96c0cd86c2f63"
+    },
+    {
+      "line": 268,
+      "path": "src/main.ts",
+      "sha256": "3eaac7572db72be004519cfe1ba721db0c03f59d8033b5be772db5af7811e24a"
+    },
+    {
+      "line": 268,
+      "path": "src/ui/styles.css",
+      "sha256": "a035580e60c944e39c3baf918d7bd9c54ebc13c359fc46374e4ca32eb918e629"
+    },
+    {
+      "line": 275,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "b26042fb62a75aab8b163a268db9f471c6eb6ce1db58fe1f46868ec88b991202"
+    },
+    {
+      "line": 331,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "6b383fa32128cce58d1806f37b4efa289537ac79ee491c801bf49ea235e3e913"
+    },
+    {
+      "line": 331,
+      "path": "tools/china-assets.py",
+      "sha256": "4e0434857299d38f2b639800209ea475f10d63e42f8f6e4ca7a2baba69b14fec"
+    },
+    {
+      "line": 331,
+      "path": "src/interaction/views.ts",
+      "sha256": "13a0a81b8ef0328ae38989de6ece8dde84c13fef9acfe483aa0aba42cc877926"
+    },
+    {
+      "line": 353,
+      "path": "src/main.ts",
+      "sha256": "def9d6cbd36b62f07f914e358e9d4a7dac7c76b69317c216d19d186a14435c57"
+    },
+    {
+      "line": 353,
+      "path": "src/interaction/views.ts",
+      "sha256": "7f5ca3c223e7c718e1fe1846b56d5a7e59d02b60f99f05e2c4368e8df12ec2e2"
+    },
+    {
+      "line": 361,
+      "path": "tools/china-calibration.ts",
+      "sha256": "a618b1972ba13ae8f0396c836e16fca5ea685f57b2f090ab6144bc16e26e480c"
+    },
+    {
+      "line": 381,
+      "path": "src/geometry/product.ts",
+      "sha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20"
+    },
+    {
+      "line": 381,
+      "path": "tools/china-assets.py",
+      "sha256": "02a8d0db57b110a6ad3c0be1a2b8c06af20e4a289abb1b8f2c77f020d4310d2c"
+    },
+    {
+      "line": 402,
+      "path": "tools/china-assets.py",
+      "sha256": "537371ffb1c1639939da72c9876a88ef9e4adfa23e9073ab236aacaa8f2c054d"
+    },
+    {
+      "line": 444,
+      "path": "tools/china-assets.py",
+      "sha256": "f86f9172c58daef8256a778a5bc3a8b28bc368ddcb55b97108c22a8ac5e25dd6"
+    },
+    {
+      "line": 444,
+      "path": "src/main.ts",
+      "sha256": "3ed29462132f6d784ffe1078af8ba5fe4071d1edaf896c3f77953873c99717e8"
+    },
+    {
+      "line": 444,
+      "path": "vite.config.ts",
+      "sha256": "eb402e25dfa21cac42701996b15c3bf276f1c04d8f483813e7daded1d3a0c15f"
+    },
+    {
+      "line": 444,
+      "path": "tools/geometry.test.ts",
+      "sha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b"
+    },
+    {
+      "line": 467,
+      "path": "tools/china-assets.py",
+      "sha256": "8fd7f3b5b096952ed624b100d40b760717c808c9a8e014c8f0d7ac092c80f0b6"
+    },
+    {
+      "line": 467,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "2b486703a879d9da8e5215b771fbebaed546d676a72381cb6574026f662914be"
+    },
+    {
+      "line": 476,
+      "path": "tools/china-calibration.ts",
+      "sha256": "b382aa9c5a1e71b1b27a05ac48438c33bd223b76ab3063fdec3cd976ce761517"
+    },
+    {
+      "line": 476,
+      "path": "index.html",
+      "sha256": "2aa0675a60c7417dae9f615add244d27526de818902f0d06927db6d5d1de82a1"
+    },
+    {
+      "line": 483,
+      "path": "tools/china-qa.mjs",
+      "sha256": "7076290ac4902e986f9147d8bbc462e7be917a933746a491debc65567d0ee3de"
+    },
+    {
+      "line": 503,
+      "path": "tools/china-evidence.mjs",
+      "sha256": "5e4a613962f85fc9c1ae8a2f8cb287cfdbcbae7dc97acd6aff5390f78bf0aa86"
+    },
+    {
+      "line": 503,
+      "path": "tools/china-assets.py",
+      "sha256": "fa77917d36a3bcebb2fcbe8ffa73625a2240d4697a2d8d3f1bd56aeddb81f093"
+    },
+    {
+      "line": 519,
+      "path": "package.json",
+      "sha256": "d9e2147ad7e1a5a59b470770cd8c16bcce9a9c5ca501cb77feaae8601814b4cb"
+    },
+    {
+      "line": 538,
+      "path": "tools/verify-delivery.mjs",
+      "sha256": "4d5adbc669569cbce07d04d0431ed7647bb98f4075c97651f43a306af737243d"
+    },
+    {
+      "line": 553,
+      "path": "package-lock.json",
+      "sha256": "b13af7c887dc28681cc8d15865c4f53df21717472d728ca754ea14500752e8e1"
+    },
+    {
+      "line": 642,
+      "path": "tools/china-assets.py",
+      "sha256": "110258b5763c6c8c985571e6b7aa9a259364d38a9c7777015d3f98c59e2a4cff"
+    },
+    {
+      "line": 642,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "78be2dd7d3dbe1ddbcc0ebcd33db46e2272849b0b2951d53ea6b7d62e6258137"
+    },
+    {
+      "line": 642,
+      "path": "tools/china-assets.py",
+      "sha256": "4c988a48cde3bcb3f6aea14392401640bec35ee171788dfaead4b2ed38694bbc"
+    },
+    {
+      "line": 696,
+      "path": "src/studio/studio.ts",
+      "sha256": "1797adb4584e8225a90e8148ade699490896a148fa9316629531f74547a0c630"
+    },
+    {
+      "line": 696,
+      "path": "src/studio/local-reflections.ts",
+      "sha256": "9ee2418f408f955774e3b4a6ef8e2e5d96abf643becba0094310ed93186c6633"
+    },
+    {
+      "line": 696,
+      "path": "src/main.ts",
+      "sha256": "5b8f0de9204c57ec9515bb098b8ad844453fb775073a16df18b6420a7f2ddee8"
+    },
+    {
+      "line": 696,
+      "path": "src/ui/interface.ts",
+      "sha256": "3d175dc8c729a77f7be97b58b799f317c5288eae9755eecb75a467a9d2e9755b"
+    },
+    {
+      "line": 705,
+      "path": "tools/china-assets.py",
+      "sha256": "df2d0a5be6781ca44153299094bed5170278546a10dce54e52763361d203d210"
+    },
+    {
+      "line": 705,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "f3957b0a0957bd9187b9039a7d53d83ab2ef07e655fcf5c37be16714d10c045c"
+    },
+    {
+      "line": 731,
+      "path": "src/studio/studio.ts",
+      "sha256": "606bba35a55b5eb1b7dac9b7ecfcc603b8d074ed8daf38d44388df5d042dd89d"
+    },
+    {
+      "line": 751,
+      "path": "src/studio/local-reflections.ts",
+      "sha256": "74a6e69d4656035c42e61a1a66d94a42ecacd6e2544a17071bae177a87ecbdcb"
+    },
+    {
+      "line": 770,
+      "path": "src/studio/local-reflections.ts",
+      "sha256": "82dd1a75cc31b5c00f54eed97cf62e12712edef0c046272c26399591643dadcb"
+    },
+    {
+      "line": 770,
+      "path": "src/main.ts",
+      "sha256": "d64776cfceb34976809781fced4ad40fd2a4c88864e02cc7682c0900b2a1a102"
+    },
+    {
+      "line": 770,
+      "path": "tools/china-assets.py",
+      "sha256": "ce0c2933382628f5bc77f2d7f1cd2a7399747420f3ce563d785912e81dbe88f8"
+    },
+    {
+      "line": 823,
+      "path": "src/main.ts",
+      "sha256": "961bea8a2ec0e92e37f087271acfdfb5213fe563eda31ba27579acfc1bbb0205"
+    },
+    {
+      "line": 823,
+      "path": "tools/china-qa.mjs",
+      "sha256": "0b6bd186949b64c5d7f16c4abf8b9a620dc22385706e05770fc0d9888b71a4c2"
+    },
+    {
+      "line": 855,
+      "path": "tools/reflections-qa.mjs",
+      "sha256": "26136b492d8cbbca8270b4fc7d46d29036a6d79e7abf8e22b7a68abc744140d0"
+    },
+    {
+      "line": 1104,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "e1db97d05224039fddf53e1708cda88b88a504f354ccf5a4bb3fa130454ba086"
+    },
+    {
+      "line": 1113,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "6347dfeafa1ed97e7dc1dc7d71beb44e2c77874db8babfab9f2dd82ab6fa14e3"
+    },
+    {
+      "line": 1123,
+      "path": "netlify.toml",
+      "sha256": "a3888f5e63632726a5c760264d005ef317c99fbb9cc8625b84423479059377d8"
+    },
+    {
+      "line": 1205,
+      "path": "tools/web-textures.mjs",
+      "sha256": "93308761a534f947617c2b81db278b6bcf99e4d2dcdf91dcef6f2df233e54121"
+    },
+    {
+      "line": 1205,
+      "path": "src/styles/load-texture.ts",
+      "sha256": "5313aae4acf24f4d94c43f17613323ee3a12718cdf402aaead80dae562105ade"
+    },
+    {
+      "line": 1205,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "152e54bfee9d36c8addd8039ebf9ea67cef8f419f6d8dbbf9a2fd73ef9177fa6"
+    },
+    {
+      "line": 1205,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "6bc0f063e0a9df519b8aaa27c7ea436d3ea9d90319528e89cd005eb37f5e55f9"
+    },
+    {
+      "line": 1205,
+      "path": "src/main.ts",
+      "sha256": "abf4d34c371bf3009fcc50ffe2696130a7575309a91c0b27068c4c67d5a085d5"
+    },
+    {
+      "line": 1205,
+      "path": "tools/china-qa.mjs",
+      "sha256": "19b7e3f4783f9bc5f240e26c5849219fdaa039a8317ac61c5cde4c64bf168805"
+    },
+    {
+      "line": 1214,
+      "path": "src/main.ts",
+      "sha256": "fae7b865523fe9b5598756c6392d957084b05ac917ad92fdc1b63612ff238929"
+    },
+    {
+      "line": 1214,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "4dca129d940f2aaaebc29091d088c6849f04af66b474f79a88969436e81f2ad4"
+    },
+    {
+      "line": 1214,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "ece2675c1d58fa8f6aacd5721ea1573e4de572ff5ee985c4e5f1a106f9358415"
+    },
+    {
+      "line": 1222,
+      "path": "src/styles/load-texture.ts",
+      "sha256": "db04f22235e45b64b09c5cd581b1e8500050813b561c0d2073890850a2dcc9b1"
+    },
+    {
+      "line": 1243,
+      "path": "package.json",
+      "sha256": "4d59b139bcbbf033fd5332072cd79fb4317dfa81219f99a66bb294b7be5bf6c9"
+    },
+    {
+      "line": 1243,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "9c35bfd6d2c36b52b8c8ee84fb8013972c3ae8e567ecd7843b87e6296a146a4d"
+    },
+    {
+      "line": 1251,
+      "path": "tools/prepare-china-release.mjs",
+      "sha256": "cce53dcd28c76456fb355bebda49db1e5813453847879d3ea4857b4cbe1501e6"
+    },
+    {
+      "line": 1259,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "2a63856cf82a8a0762fb325a649db0458a8730148b2bd5facfaaf86d07815498"
+    },
+    {
+      "line": 1318,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "294861a77e4fb3bbe49f8748ca3e807ec21c027d2ccd57b4911da63b66e71996"
+    },
+    {
+      "line": 1387,
+      "path": "src/styles/load-texture.ts",
+      "sha256": "23662391bbc40ffaee24e01a66421417ff23759349b6803c1abe918e78a03467"
+    },
+    {
+      "line": 1387,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "57d4758e3ab794cd824d8f835c750b874e6b0e4b8f489b35393e826525e917b7"
+    },
+    {
+      "line": 1411,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "29d865eae6007cde487c7f73b20bb0dcdfe8faf583c9c5683060b77ed094f271"
+    },
+    {
+      "line": 1465,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "fd4edba2a57f907b40099b0dc8d9a46bcf091e23cc69179bc090d132393a7762"
+    },
+    {
+      "line": 1476,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "3feef2b338a4905731a1a77cd6ea135b5c4881650f8834154b4b99c922e598f2"
+    },
+    {
+      "line": 1630,
+      "path": "src/interaction/views.ts",
+      "sha256": "94758ab14200686ff490f6a0a9a7e01ebcc310e706172b9821fa2830b8b6adeb"
+    },
+    {
+      "line": 1630,
+      "path": "src/ui/interface.ts",
+      "sha256": "aa31203706c8ea9173f62f7cc65eef69ce2127b73c1afe87cb5a590f38228617"
+    },
+    {
+      "line": 1630,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "22af8dbd5d680f93c383c664813d320a043ac780197639c5fa11aaccfd42c831"
+    },
+    {
+      "line": 1638,
+      "path": "tools/web-textures.mjs",
+      "sha256": "66b49e692edd092ef9498f034ed673fc219c58750371af7b21e440c5363bf53e"
+    },
+    {
+      "line": 1638,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "0c1b50fbdda3de2664296d3bd0a1d629568aa2cefc1a8f62bd4d3fdbd7ca67c8"
+    },
+    {
+      "line": 1638,
+      "path": "src/styles/city-artwork.ts",
+      "sha256": "aa4a0ce2e6f4ce306874a95fe19801ddc7d70bc4f1672f41f9d1f47546c5db81"
+    },
+    {
+      "line": 1638,
+      "path": "tools/prepare-china-release.mjs",
+      "sha256": "046d1297aad6e526ce88c0835221f7163edb3a2eac36f278bf4a1f85a1780866"
+    },
+    {
+      "line": 1638,
+      "path": "netlify.toml",
+      "sha256": "bda2c1ace8e89b163a707bc8f7a170ee8d075fed400da61681e76c68c2c31239"
+    },
+    {
+      "line": 1645,
+      "path": "tools/china-qa.mjs",
+      "sha256": "6e7e45cf4c953401d98e97e6dc484dc8dfb87743b979b2af7b487d252e37b6ff"
+    },
+    {
+      "line": 1658,
+      "path": "tools/floral-quality-qa.mjs",
+      "sha256": "5d6a69648784f4385e52f769eeeefb368afa391af6d4ab7fc4d7ca9b17ac0129"
+    },
+    {
+      "line": 1687,
+      "path": "tools/web-textures.mjs",
+      "sha256": "de00633cd59ff9ad8c88e88a0ae6e74ed4cabb83fc4a3bc37dcadbcb9a65ca41"
+    },
+    {
+      "line": 1687,
+      "path": "src/materials/materials.ts",
+      "sha256": "937cd876cb6202482e339d311aaeeeed10cd50a3cd770e07c2bffa3ef9aee45a"
+    },
+    {
+      "line": 1723,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "dad1041b4a56903540b93700bd74a7db2f09bdbc615fda485cddaa434b22eb14"
+    },
+    {
+      "line": 1825,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "e6e18acfd12a9678cf249619c76aaed906654cf74597a8a7c6a41dc800273c63"
+    },
+    {
+      "line": 1825,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "0a0c925359c55574305af5cb6b2fcb6010dddfec2471a24a1d920050e31c04aa"
+    },
+    {
+      "line": 1834,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "d9b0be79ffaa48608450628b862babca812a9c66c5228041c151e1b685c3e73a"
+    },
+    {
+      "line": 1866,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "1639e5bb558ea04e24dd3f8e67a7cad30cf35103919ae813c29247f080830805"
+    },
+    {
+      "line": 1866,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "1720065fd44d499a3aa99277b70f165b12511bd5dd83a9b8c019c96fd0356b9e"
+    },
+    {
+      "line": 1879,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "ee82751a816da598d9526fe52b88ec1a05d16a8c76574a68523e548504f2b229"
+    },
+    {
+      "line": 2066,
+      "path": "tools/floral-relief-qa.mjs",
+      "sha256": "c4c85d057e4cc96d868b8dc469945f3055ce043128acccbbd577a509619fe974"
+    },
+    {
+      "line": 2093,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "8eee2f812a69be8cafe00b6cfd66ac36ff6a9608223ff86aa45af9f4a9c4b517"
+    },
+    {
+      "line": 2114,
+      "path": "tools/floral-relief-qa.mjs",
+      "sha256": "12c7bc58061c3af4116f4c4997b93ee1f858fdfccfa5e04861bcec0cb4bec1c6"
+    },
+    {
+      "line": 2142,
+      "path": "src/materials/render-standard.ts",
+      "sha256": "1d5b0b99ad0a621623ea86dfa8593e01a0094ea27e6d6421741455080a1d2f5a"
+    },
+    {
+      "line": 2142,
+      "path": "src/materials/materials.ts",
+      "sha256": "ac9c42b843243c28b0c101e38a3a5433ddcee328a3f4616c88cd1d110d17d8a6"
+    },
+    {
+      "line": 2142,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "01c136a025a1df09ef58625469256304a2e4cc93f5eb5352e77d952883b337b5"
+    },
+    {
+      "line": 2142,
+      "path": "src/main.ts",
+      "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb"
+    },
+    {
+      "line": 2142,
+      "path": "src/interaction/views.ts",
+      "sha256": "dc5898df45718a9a38750990a53d54a0752f523dcff77606379cb56088136e3c"
+    },
+    {
+      "line": 2142,
+      "path": "src/ui/interface.ts",
+      "sha256": "0ef6fe581c9896893801f3f89fdaab05b7cf66e5a6068a6fdec39cd5b80f5de4"
+    },
+    {
+      "line": 2152,
+      "path": "tools/china-qa.mjs",
+      "sha256": "a32408deeaa1c017eb395950b26debbfb3f8af10cceb4f0ba8928996446a672a"
+    },
+    {
+      "line": 2158,
+      "path": "tools/floral-relief-evidence.mjs",
+      "sha256": "85affe23ebd88b034938e62b4a73c3a80944434d7b819629144adaa139c48048"
+    },
+    {
+      "line": 2197,
+      "path": "src/ui/styles.css",
+      "sha256": "ddfaa8a265526f840f4ddfacd202d33dbbfad3c344a0ff37ea25f053848b4bf1"
+    },
+    {
+      "line": 2197,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "c5a05d105d1fbad006073ecd1b147bad270a5b5ce2e80b1b36afbca11d333c9e"
+    },
+    {
+      "line": 2215,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "734d535dfa5c6172925bb2f70a457402f264f63ccf677019b368eeb143abe296"
+    },
+    {
+      "line": 2245,
+      "path": "src/materials/render-standard.ts",
+      "sha256": "338fe1972e96b7aa19375ac5d323330cedd422e2d3e6aa61eb27b3b96e86a18f"
+    },
+    {
+      "line": 2245,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "e0c6f9b31fd500f4f5fe8eb7fb7c8c20d901fdcfdfae5f8286c84a68d53de60d"
+    },
+    {
+      "line": 2245,
+      "path": "tools/floral-relief-evidence.mjs",
+      "sha256": "b2596d847c2f780604f16cf1ac3fab7be4bb89349492b7d2ddb7d72732809507"
+    },
+    {
+      "line": 2245,
+      "path": "tools/china-qa.mjs",
+      "sha256": "2be2453f5820f7493030a49224902a2f788f306341f57f77cbe59a2fb9af7773"
+    },
+    {
+      "line": 2441,
+      "path": "tools/layout-probe.mjs",
+      "sha256": "2869cf8076de3a220f7be122dd5b471b4204415b1e0204cf8e8ffdd4e20e03f1"
+    },
+    {
+      "line": 2481,
+      "path": "tools/layout-balanced-probe.mjs",
+      "sha256": "4ec4fd96bfee71a339ba49f3adaeb33a3471f6757e7792e1e0c2121406566636"
+    },
+    {
+      "line": 2510,
+      "path": "src/styles/fixed-layout.json",
+      "sha256": "0ac6a39bb56089f520792fa5b01ff9f861935434148efd2a9d76b14c73ed944e"
+    },
+    {
+      "line": 2510,
+      "path": "src/geometry/product.ts",
+      "sha256": "d41dca2e975b02248e81291aa8b9156daa0bef3559dccb8c0cd83d99968bec7b"
+    },
+    {
+      "line": 2510,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "91f1294822990525f6df6c8e410d77ceb474c62a5c1144bcd3d4f55d8e675071"
+    },
+    {
+      "line": 2518,
+      "path": "tools/derive-fixed.mjs",
+      "sha256": "e5248ac21110ed321ce9dbdaf77170cad7be996fb4f73fee5f266b3605d36968"
+    },
+    {
+      "line": 2518,
+      "path": "tools/geometry.test.ts",
+      "sha256": "9e21451fa63821a5cb23f00fc608c2b16adabfeba274ecabc05bf5158a32c788"
+    },
+    {
+      "line": 2541,
+      "path": "tools/layout-evidence.mjs",
+      "sha256": "2b980d73d43a0a7ccb851b081938267beea12e9698f4583ebc2d36720972a281"
+    },
+    {
+      "line": 2541,
+      "path": "tools/china-online-qa.mjs",
+      "sha256": "19dc964c88478fa8e6ec32edf2c5fe252b20a9d27d13c31157dd7cac0b3d3af4"
+    },
+    {
+      "line": 2572,
+      "path": "tools/layout-evidence.mjs",
+      "sha256": "7115a033afee9892e0e5d7e255935f204293dbde45e20b0f02fcbe0d52ad6f6e"
+    }
+  ]
+}

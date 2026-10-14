@@ -1,0 +1,39 @@
+{
+  "name": "固定广彩 · 高清重建彩釉与连续花带",
+  "mapping": "source-layout-v3",
+  "regions": {
+    "body": {
+      "baseColor": "fixed-restored/body-baseColor.png",
+      "normal": "fixed-restored/body-normal.hfn.gz",
+      "height": "fixed-restored/body-height.png",
+      "metalness": "fixed-restored/body-metalness.png",
+      "roughness": "fixed-restored/body-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
+      "offsetU": 0
+    },
+    "handle": {
+      "baseColor": "fixed-restored/handle-baseColor.png",
+      "normal": "fixed-restored/handle-normal.hfn.gz",
+      "height": "fixed-restored/handle-height.png",
+      "metalness": "fixed-restored/handle-metalness.png",
+      "roughness": "fixed-restored/handle-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
+      "offsetU": 0
+    },
+    "saucer": {
+      "baseColor": "fixed-restored/saucer-baseColor.png",
+      "normal": "fixed-restored/saucer-normal.hfn.gz",
+      "height": "fixed-restored/saucer-height.png",
+      "metalness": "fixed-restored/saucer-metalness.png",
+      "roughness": "fixed-restored/saucer-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
+      "offsetU": -0.105,
+      "atlas": {
+        "rows": 2,
+        "contentWidth": 8128,
+        "contentHeight": 512,
+        "gutter": 32
+      }
+    }
+  }
+}

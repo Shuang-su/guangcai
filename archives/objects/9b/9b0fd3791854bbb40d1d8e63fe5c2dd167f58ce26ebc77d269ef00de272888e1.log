@@ -1,0 +1,18 @@
+
+> guangcai-object-study@1.0.0 build
+> tsc --noEmit && vite build --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 24 modules transformed.
+rendering chunks...
+computing gzip size...
+../.codex-work/current-build/compare.html                        0.49 kB │ gzip:   0.35 kB
+../.codex-work/current-build/index.html                          0.53 kB │ gzip:   0.37 kB
+../.codex-work/current-build/assets/compare-MZHawTH_.css         1.40 kB │ gzip:   0.69 kB
+../.codex-work/current-build/assets/main-Btfw0b1F.css            5.21 kB │ gzip:   1.84 kB
+../.codex-work/current-build/assets/compare-kHw6Sreu.js          8.16 kB │ gzip:   4.23 kB
+../.codex-work/current-build/assets/main-DP2lgfmg.js            35.87 kB │ gzip:  10.90 kB
+../.codex-work/current-build/assets/style-manager-DqX0V9iF.js  571.88 kB │ gzip: 145.39 kB
+
+✓ built in 200ms

@@ -1,0 +1,5 @@
+import {chromium} from 'playwright';
+import {writeFile} from 'node:fs/promises';
+const target=process.argv[2], out=process.argv[3];const browser=await chromium.launch({channel:'chrome',headless:true});const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('requestfailed',r=>errors.push({url:r.url(),error:r.failure()?.errorText}));
+const began=Date.now();await page.goto(target,{waitUntil:'domcontentloaded',timeout:120000});await page.waitForFunction(()=>window.cupViewer?.ready(),{},{timeout:300000});const readyMs=Date.now()-began;
+const resources=await page.evaluate(()=>performance.getEntriesByType('resource').map(r=>({name:r.name,start:r.startTime,duration:r.duration,ttfb:r.responseStart-r.requestStart,transfer:r.transferSize,encoded:r.encodedBodySize,decoded:r.decodedBodySize})));await writeFile(out,JSON.stringify({date:new Date().toISOString(),target,readyMs,resources,errors},null,2));console.log(JSON.stringify({readyMs,bytes:resources.reduce((n,r)=>n+r.encoded,0),slowest:[...resources].sort((a,b)=>b.duration-a.duration).slice(0,6),errors}));await browser.close();

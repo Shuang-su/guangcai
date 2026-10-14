@@ -1,0 +1,177 @@
+{
+  "version": "1.0-pre.3",
+  "title": "底碟剖面与实拍叠图",
+  "sessionId": "01a0ed06-5ea9-7532-a412-9c5a7a53716e",
+  "sourceLineCutoff": 1436,
+  "project": "guangcai-viewer",
+  "sourceReplay": "original-03-saucer",
+  "deploymentSnapshot": null,
+  "commands": [
+    {
+      "command": "node_modules/.bin/tsx tools/surface-metrics.ts",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.3/surface-metrics.log"
+    },
+    {
+      "command": "node tools/derive-pbr.mjs",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.3/derive-pbr.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.3/geometry-tests.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.3/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "compare.html",
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    {
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "path": "package.json",
+      "sha256": "60948c9ec4af4fefda7b9cd597176f64c3621037b12ab020489cb20d3706aac4"
+    },
+    {
+      "path": "src/compare.ts",
+      "sha256": "b742fbb2b74aad7c62b863b90ff14449d3aba9e4eec1c259bf1580a3bd682cfa"
+    },
+    {
+      "path": "src/geometry/handle.ts",
+      "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "a9b33476332aaa77509064588c9245c3578faa91251f7ed9c794f8d0c8e6fe4b"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "7b4556b29c97a66e9141f2ef25829b6f04e3afb7956966e49c11ddc0bb07db6b"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "path": "src/interaction/calibration.ts",
+      "sha256": "6127895044670d00572c39a126a9223bb42399d80bced88d4f8743827728f78c"
+    },
+    {
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "5bf942d2618f729e9b433c516dbb9419985b26fdba9d93f3c37230ad14e320ea"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "a3b81985949c51332d4d2ba99ad67a6e619124c6050408f922335ec3a859a423"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "ef5def51478ff774256e5ec2ccb06b25812272ce194aadb78b017a653cc6813b"
+    },
+    {
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "c0ae5ca9dd2414f58129c87ada5c255dd5aee056d1d65da0aa5254951ab28f3b"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "d7ae9b57f7fb8d20bc30745610e7c48c5b52156e8dbc0a2f3f63b1c71fca8094"
+    },
+    {
+      "path": "src/ui/compare.css",
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "eefde5f67d5ba262dab6047fe8c434acd19cfed52a2e0ab8df880af34190f7e9"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "9afae6357ae9431863a158e7a4be9a7616d5e4540d431747e6bd830fa888da6f"
+    },
+    {
+      "path": "tools/browser-qa.mjs",
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "c98fa59bf967bde233088eb8d9401aaaa2fd0b2e0c608a2d2a33813bc5c20833"
+    },
+    {
+      "path": "tools/fit-calibration.ts",
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    {
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    {
+      "path": "tools/geometry.test.ts",
+      "sha256": "7a78866df5dd1557b3a6f5df84fa436930c75adbe7a0098bd60f9ded8fa242c9"
+    },
+    {
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    {
+      "path": "tools/overlay-qa.mjs",
+      "sha256": "eadf28ef82ef2df61c84085176f814c5820129275604a429e3d5b051656939ba"
+    },
+    {
+      "path": "tools/overlay-report.mjs",
+      "sha256": "135cb171e3c816ed1b60ffadf370cf0a0eaf454e68e4319de2ea7fbd8eb683ad"
+    },
+    {
+      "path": "tools/reference-captures.mjs",
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    {
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "3fe19b59a7ebc21ac532a2202d41f414dc8e65514a2b8cb1fb4667e1204c6f73"
+    },
+    {
+      "path": "tools/saucer-closeup.mjs",
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    {
+      "path": "tools/saucer-profile.ts",
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    {
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "path": "tools/surface-metrics.ts",
+      "sha256": "fe0ddf532fd9b3c00d774e3c0407a3eb316f5a6d005bba90cff736576c1870e5"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "192f39ae201f12d72915f806a33cd07d8a63f5cbb0429685eabc84f9a03980a1"
+    }
+  ]
+}
