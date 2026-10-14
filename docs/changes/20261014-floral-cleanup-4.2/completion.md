@@ -27,3 +27,5 @@
 - 公网读到 4.2.0 与 cleanGoldGround=true；真实 catalog 款式切换固定纹理不变；材质查看、5 个机位与手机视口、对照滑杆通过，无控制台错误。
 - V3 仍为 6ace443df7425f433e717eb0；两站 Git 绑定为空。
 - PR #20 关联 Issue #19，由合并关闭；发布归档提交后完成合并回读。
+
+发布归档 checkpoint：`f9acfcc`（完整 SHA 见 Git 历史），包含 4.2 部署快照、在线截图和版本索引。推送时默认稀疏对象枚举重复传输了已存在的归档资源，终止本任务的两次上传连接后，以单次命令参数 `pack.useSparse=false`、`push.negotiate=true` 重试同一提交；实际仅 34 个新对象、507.38 KiB，成功推送 f9acfcc。没有强推、重写提交或修改全局 Git 配置。
