@@ -14,7 +14,7 @@
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源与哈希](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围和缺口](docs/changes/20261014-source-consolidation/completion.md) · [整理任务 #23](https://github.com/Shuang-su/guangcai/issues/23)。
 
-已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,223份去重内容、14,524处来源。`archives/`以内容哈希保存实际对象，原文件名和各来源路径在索引中；10个大文件使用Git LFS。旧目录仍保留。北京工作区此前3593个云占位已全部下载并按字节核验；9月旧仓库仍有未下载Git对象，失效附件路径继续单列。此资料补录与既有16个源码恢复节点互补。
+已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,614份去重内容、18,040处来源。`archives/`以内容哈希保存实际对象，原文件名和各来源路径在索引中；10个大文件使用Git LFS。旧目录仍保留。北京工作区此前3593个云占位已全部下载并按字节核验；9月旧仓库仍有未下载Git对象，失效附件路径继续单列。此资料补录与既有16个源码恢复节点互补。
 
 首次克隆资料库需要安装Git LFS；空间有限时可先用 `GIT_LFS_SKIP_SMUDGE=1 git clone`，再选择所需档案下载。LFS指针不是原文件，读取时应确认真实内容已取回。
 
