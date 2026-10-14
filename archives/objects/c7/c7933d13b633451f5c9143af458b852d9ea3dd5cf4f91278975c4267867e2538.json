@@ -1,0 +1,70 @@
+{
+  "id": "guangcai-v1",
+  "orientation": "U increases along surface travel; V up. Image top is V=1.",
+  "params": {
+    "height": 112,
+    "radiusTop": 42.5,
+    "radiusBottom": 41.8,
+    "flatCutDepth": 9.5,
+    "flatTransitionRadius": 4,
+    "wallThickness": 2.6,
+    "bottomThickness": 5,
+    "bottomRecessDepth": 1.7,
+    "lipRadius": 1.1,
+    "fluteCount": 16,
+    "fluteDepth": 0.18,
+    "fluteEdgeFade": 0.12,
+    "handleReach": 31,
+    "handleWidth": 10.5,
+    "handleThickness": 4.6,
+    "handleTop": 94,
+    "handleBottom": 29,
+    "lidRadius": 44.6,
+    "lidThickness": 3.6,
+    "knobHeight": 15,
+    "knobSpan": 28,
+    "innerFloorRadius": 3,
+    "footInset": 2,
+    "footWidth": 1,
+    "fluteRootHeightFade": 4,
+    "fluteRootWidthFade": 8,
+    "handleRootFlare": 0.4,
+    "handleRootBlend": 32,
+    "knobWidth": 7,
+    "knobThickness": 3.5,
+    "knobFluteDepth": 0.12,
+    "knobFluteCount": 18,
+    "lidLocatorDepth": 2,
+    "lidLocatorWall": 2,
+    "saucerRadius": 75.5,
+    "saucerHeight": 13,
+    "quality": "high"
+  },
+  "regions": {
+    "body": {
+      "minU": 0,
+      "maxU": 1,
+      "minV": 0,
+      "maxV": 0.9901785850524902,
+      "decoratedBoundarySegments": 560,
+      "repeatU": 1,
+      "topArcLengthMm": 206.0213673371448
+    },
+    "handle": {
+      "minU": 0.01875000074505806,
+      "maxU": 0.981249988079071,
+      "minV": 0.09176526218652725,
+      "maxV": 0.908234715461731,
+      "decoratedBoundarySegments": 314,
+      "repeatU": 1.8
+    },
+    "saucer": {
+      "minU": 0,
+      "maxU": 1,
+      "minV": -0.10000000149011612,
+      "maxV": 0.800000011920929,
+      "decoratedBoundarySegments": 518,
+      "repeatU": 8
+    }
+  }
+}

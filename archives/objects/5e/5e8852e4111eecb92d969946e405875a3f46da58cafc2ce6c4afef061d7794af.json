@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-30T04:45:55.642Z",
+  "checks": [
+    {
+      "name": "poster export failure creates no result and retains all choices",
+      "passed": true
+    },
+    {
+      "name": "poster export retry recovers",
+      "passed": true
+    },
+    {
+      "name": "sustained gesture draws real geometry",
+      "passed": true
+    },
+    {
+      "name": "ribbon transition remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "context loss is explicit",
+      "passed": true
+    },
+    {
+      "name": "context loss retry restores viewer and draft",
+      "passed": true
+    },
+    {
+      "name": "leaving a lost context and returning recreates the renderer",
+      "passed": true
+    },
+    {
+      "name": "opening timeout is finite and offers retry",
+      "passed": true
+    },
+    {
+      "name": "opening failure can still reach home",
+      "passed": true
+    },
+    {
+      "name": "blocked storage supports in-memory flow",
+      "passed": true
+    }
+  ],
+  "performance": {
+    "environment": "Isolated desktop Chrome, 390x844, DPR capped 1.5; not physical phone",
+    "durationMs": 3020.300000000745,
+    "renderedFrames": 91,
+    "observedFps": 30.129457338667535,
+    "medianActiveFrameMs": 33.30000000000018,
+    "p95ActiveFrameMs": 35,
+    "triangles": 150086,
+    "pixelRatio": 1.5
+  },
+  "physicalDeviceTested": false
+}

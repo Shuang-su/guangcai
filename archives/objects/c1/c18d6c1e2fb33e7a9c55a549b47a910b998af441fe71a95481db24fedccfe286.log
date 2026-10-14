@@ -1,0 +1,17 @@
+
+> apec-guangcai-h5@1.0.0 test
+> tsx --test tools/*.test.ts
+
+✔ first visit, incomplete return and completed return use distinct routes (2.0655ms)
+✔ draft updates are immutable; every step validates its own options (1.148667ms)
+✔ all 1280 possible choice paths resolve to exactly the same fixed identity (4.344125ms)
+✔ invalid stored choices, step numbers and schema versions do not bypass steps (0.212875ms)
+✔ returning to change an earlier choice keeps the remaining choices (0.108291ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 235.237333

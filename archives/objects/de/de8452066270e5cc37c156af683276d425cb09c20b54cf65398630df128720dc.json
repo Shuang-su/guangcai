@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Full bundle: all architectures, deep",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n/Applications/Setapp/AlDente Pro.app: valid on disk\n/Applications/Setapp/AlDente Pro.app: satisfies its Designated Requirement"
+    },
+    {
+      "name": "Helper: all architectures, strict",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "/Applications/Setapp/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk\n/Applications/Setapp/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement"
+    },
+    {
+      "name": "Candidate client matches pinned certificate and ID",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--prepared:/Applications/Setapp/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n--validated:/Applications/Setapp/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n/Applications/Setapp/AlDente Pro.app: valid on disk\n/Applications/Setapp/AlDente Pro.app: satisfies its Designated Requirement\n/Applications/Setapp/AlDente Pro.app: explicit requirement satisfied"
+    },
+    {
+      "name": "Candidate helper matches pinned certificate and ID",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "/Applications/Setapp/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk\n/Applications/Setapp/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement\n/Applications/Setapp/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: explicit requirement satisfied"
+    },
+    {
+      "name": "Original ad hoc client rejected by new client rule",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app: valid on disk (not all contents verified)\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "Original vendor helper rejected by new helper rule",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk (not all contents verified)\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "Client rejected by helper-ID rule despite matching certificate",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Applications/Setapp/AlDente Pro.app: valid on disk (not all contents verified)\n/Applications/Setapp/AlDente Pro.app: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "main: executable instruction sections unchanged",
+      "passed": true,
+      "details": {
+        "original": {
+          "16777223": "0509926e7d11c67d3fb122cf7271531f61273274120d5611dda419703d59b6f9",
+          "16777228": "b20fc89dca4ec433441e6007342ef3b68edc50715b26fc978bf3e4ff0d9f5e5f"
+        },
+        "candidate": {
+          "16777223": "0509926e7d11c67d3fb122cf7271531f61273274120d5611dda419703d59b6f9",
+          "16777228": "b20fc89dca4ec433441e6007342ef3b68edc50715b26fc978bf3e4ff0d9f5e5f"
+        }
+      }
+    },
+    {
+      "name": "helper: executable instruction sections unchanged",
+      "passed": true,
+      "details": {
+        "original": {
+          "16777223": "4054927f1748ac6ac016d00952dff53c9462dd1e30745057b74cf6d4fe905c35",
+          "16777228": "5e0aa335157844c3ae1061261bee1bd3fa08c732f6028317b450c7b305753dfa"
+        },
+        "candidate": {
+          "16777223": "4054927f1748ac6ac016d00952dff53c9462dd1e30745057b74cf6d4fe905c35",
+          "16777228": "5e0aa335157844c3ae1061261bee1bd3fa08c732f6028317b450c7b305753dfa"
+        }
+      }
+    },
+    {
+      "name": "Application permits only pinned helper rule",
+      "passed": true,
+      "details": {
+        "com.apphousekitchen.aldente-pro-setapp.helper": "identifier \"com.apphousekitchen.aldente-pro-setapp.helper\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+      }
+    },
+    {
+      "name": "Both helper architectures permit only pinned client rule",
+      "passed": true,
+      "details": [
+        [
+          "identifier \"com.apphousekitchen.aldente-pro-setapp\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+        ],
+        [
+          "identifier \"com.apphousekitchen.aldente-pro-setapp\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+        ]
+      ]
+    },
+    {
+      "name": "Installed files match signed candidate",
+      "passed": true,
+      "details": {
+        "Contents/MacOS/AlDente": true,
+        "Contents/Info.plist": true,
+        "Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper": true
+      }
+    },
+    {
+      "name": "Local certificate trusted for code signing",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "...certificate verification successful."
+    },
+    {
+      "name": "Local certificate not accepted for SSL",
+      "passed": true,
+      "exit_code": 1,
+      "expected_success": false,
+      "details": "---\nNo extended validation result found\nCertificate Transparency (CT) status: \u001b[31mnot verified\u001b[0m\nUnable to find at least 2 signed certificate timestamps (SCTs) from approved logs\nCert Verify Result: CSSMERR_TP_NOT_TRUSTED"
+    },
+    {
+      "name": "Modified helper system service exists",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "system/com.apphousekitchen.aldente-pro-setapp.helper = {\n\tactive count = 2\n\tpath = /Library/LaunchDaemons/com.apphousekitchen.aldente-pro-setapp.helper.plist\n\ttype = LaunchDaemon\n\tstate = running\n\n\tprogram = /Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper\n\targuments = {\n\t\t/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper\n\t}\n\n\tdefault environment = {\n\t\tPATH => /usr/bin:/bin:/usr/sbin:/sbin\n\t}\n\n\tenvironment = {\n\t\tXPC_SERVICE_NAME => com.apphousekitchen.aldente-pro-setapp.helper\n\t}\n\n\tdomain = system\n\tminimum runtime = 10\n\texit timeout = 5\n\truns = 2\n\tpid = 30726\n\timmediate reason = ipc (mach)\n\tforks = 0\n\texecs = 1\n\tinitialized = 1\n\ttrampolined = 1\n\tstarted suspended = 0\n\tproxy started suspended = 0\n\tlast exit code = 0\n\n\tendpoints = {\n\t\t\"com.apphousekitchen.aldente-pro-setapp.helper\" = {\n\t\t\tport = 0xc622b\n\t\t\tactive = 1\n\t\t\tmanaged = 1\n\t\t\treset = 0\n\t\t\thide = 0\n\t\t\twatching = 0\n\t\t}\n\t}\n\n\tspawn type = daemon (3)\n\tjetsam priority = 40\n\tjetsam memory limit (active) = (unlimited)\n\tjetsam memory limit (inactive) = (unlimited)\n\tjetsamproperties category = daemon\n\tjetsam thread limit = 32\n\tcpumon = default\n\tprobabilistic guard malloc policy = {\n\t\tactivation rate = 1/1000\n\t\tsample rate = 1/0\n\t}\n\n\tproperties = \n}"
+    },
+    {
+      "name": "System helper bytes match the installed application helper",
+      "passed": true,
+      "details": "/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper"
+    },
+    {
+      "name": "System helper is owned by root",
+      "passed": true,
+      "details": {
+        "uid": 0,
+        "mode": "0o544"
+      }
+    },
+    {
+      "name": "System helper is running",
+      "passed": true,
+      "details": "system/com.apphousekitchen.aldente-pro-setapp.helper = {\n\tactive count = 2\n\tpath = /Library/LaunchDaemons/com.apphousekitchen.aldente-pro-setapp.helper.plist\n\ttype = LaunchDaemon\n\tstate = running\n\n\tprogram = /Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper\n\targuments = {\n\t\t/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper\n\t}\n\n\tdefault environment = {\n\t\tPATH => /usr/bin:/bin:/usr/sbin:/sbin\n\t}\n\n\tenvironment = {\n\t\tXPC_SERVICE_NAME => com.apphousekitchen.aldente-pro-setapp.helper\n\t}\n\n\tdomain = system\n\tminimum runtime = 10\n\texit timeout = 5\n\truns = 2\n\tpid = 30726\n\timmediate reason = ipc (mach)\n\tforks = 0\n\texecs = 1\n\tinitialized = 1\n\ttrampolined = 1\n\tstarted suspended = 0\n\tproxy started suspended = 0\n\tlast exit code = 0\n\n\tendpoints = {\n\t\t\"com.apphousekitchen.aldente-pro-setapp.helper\" = {\n\t\t\tport = 0xc622b\n\t\t\tactive = 1\n\t\t\tmanaged = 1\n\t\t\treset = 0\n\t\t\thide = 0\n\t\t\twatching = 0\n\t\t}\n\t}\n\n\tspawn type = daemon (3)\n\tjetsam priority = 40\n\tjetsam memory limit (active) = (unlimited)\n\tjetsam memory limit (inactive) = (unlimited)\n\tjetsamproperties category = daemon\n\tjetsam thread limit = 32\n\tcpumon = default\n\tprobabilistic guard malloc policy = {\n\t\tactivation rate = 1/1000\n\t\tsample rate = 1/0\n\t}\n\n\tproperties = \n}\n"
+    },
+    {
+      "name": "System helper passes its pinned signing identity requirement",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk\n/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement\n/Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper: explicit requirement satisfied"
+    }
+  ],
+  "candidate": "/Applications/Setapp/AlDente Pro.app",
+  "readonly_image": false,
+  "scope": "Signature/resource/identity checks and system service presence; runtime behavior is checked separately."
+}

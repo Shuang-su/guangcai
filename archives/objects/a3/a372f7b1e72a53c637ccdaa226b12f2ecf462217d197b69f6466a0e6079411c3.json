@@ -1,0 +1,607 @@
+{
+  "date": "2026-10-11T16:19:31.935Z",
+  "siteName": "guangcai-no1-china",
+  "staging": ".codex-work/deploy/china-20261012-network/site",
+  "allowlist": [
+    "index.html",
+    "evidence.html",
+    "assets",
+    "china",
+    "fixed",
+    "marks",
+    "reference",
+    "review",
+    "web"
+  ],
+  "files": [
+    {
+      "path": "assets/index-CBUn9qKs.js",
+      "size": 609588,
+      "sha256": "9708adfd1ce7f5457e8586b865253a070fcff493e33ace2900ba354cb273e763",
+      "sha1": "c3edba56f307f12d5a6491ca7acc51bf983bf364"
+    },
+    {
+      "path": "assets/index-DSRNiFcP.css",
+      "size": 6137,
+      "sha256": "272d36b4c4fe98def43e0261ce046327224e0847218ea2e862c2435e755a9820",
+      "sha1": "9d149f483a9e480c157e72daca9a44bb7dcb0990"
+    },
+    {
+      "path": "china/baseColor.png",
+      "size": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+      "sha1": "a286d90c4855076c55b60e5ad20c72433124e5a2"
+    },
+    {
+      "path": "china/city.json",
+      "size": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+      "sha1": "f39e1764578d1a1bd3352d97e8fb308b1969d853"
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "size": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+      "sha1": "7695cce9abe1f473e21f7273b023bea8fb653cd9"
+    },
+    {
+      "path": "china/height.png",
+      "size": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "sha1": "60832e7809ccc4499c7542b4d7a0a28b9d4a2547"
+    },
+    {
+      "path": "china/label-roughness.png",
+      "size": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+      "sha1": "67bd2953f5d4bca4fd0bb5d488e72a8423815930"
+    },
+    {
+      "path": "china/label.png",
+      "size": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+      "sha1": "38468c5a3211b4880d5bb60e0313566f2c660150"
+    },
+    {
+      "path": "china/line-finish.png",
+      "size": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+      "sha1": "27c94dd2ea280cc285c046dcb34f2201a18a10bd"
+    },
+    {
+      "path": "china/lines-original.png",
+      "size": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+      "sha1": "35c6f0e276f348a9e6141f1fb5b952afc37a29a0"
+    },
+    {
+      "path": "china/lines.png",
+      "size": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+      "sha1": "ed739682158130187cde84381b7e0d05cf59d83d"
+    },
+    {
+      "path": "china/metalness.png",
+      "size": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+      "sha1": "4a75aac2ea2c19b64f4c7638ed5ed4a9ed6672be"
+    },
+    {
+      "path": "china/normal.png",
+      "size": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "sha1": "ab710a08e6c492671c21681fcaf21f9f0bb0dbe5"
+    },
+    {
+      "path": "china/roughness.png",
+      "size": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+      "sha1": "18dca0e6f0cc7ed5a8c5784354e20f8db4f7f3f3"
+    },
+    {
+      "path": "evidence.html",
+      "size": 13361,
+      "sha256": "9d67404ec468a108bc1ec1078d47e24f4ceba23bf70b7769a1fd22676baa1870",
+      "sha1": "032d5ccb9742bc9a8eebcb8e6f7f582e65ce6491"
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "size": 5848898,
+      "sha256": "6233a1179effc841bb6a647b2e272b1fc0248e1c607c6ff252fc22e74452a1ec",
+      "sha1": "580700d7acc6379248dbbad34533b36c981c7a20"
+    },
+    {
+      "path": "fixed/body-height.png",
+      "size": 853530,
+      "sha256": "f34bfd53d8e7cec82f6911807bd4b965e2d050612a8e6e7cfca90d1e107c9fc4",
+      "sha1": "62d937af78d3216c90e786540887b49190c20712"
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "size": 1263256,
+      "sha256": "fb8d6987a4183635fb784ab91ae51a0779aac861a8146de62d0414619796f84f",
+      "sha1": "3ae6b61b16cfc0746cfddbbba7d741370d9f574d"
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "size": 1663500,
+      "sha256": "1504418bb55b589665981b9e1c7af1dd6dabc7e6c36b79c11d6c0c863ab100a7",
+      "sha1": "ca16eafd0277d8c3bdfe977d4725023f50738e70"
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "size": 563566,
+      "sha256": "79a59d6439d174764e41f98241ff8ef4979ac56e27a326382e8d4f9e8db13cb6",
+      "sha1": "2292a7c6eed002dbe948234a2e8bc51e20b61578"
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "size": 2292356,
+      "sha256": "7b14ad7dec4331861b92a7be330ddd36e93f37f4fdf9da178586efaf2b28dad3",
+      "sha1": "b74418e6fc7eb8abe531567c3ab5bba23a91c331"
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "size": 314291,
+      "sha256": "4b01e64ab7c86942bbe6364080674579416390d950da2a06675692a60c70dbff",
+      "sha1": "eabb067a783511876b28a23cc6441f5ab9e51a7e"
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "size": 512803,
+      "sha256": "2275b0b63288c3c15a2d063aeeccc2945fe570dd2e97fc3a961edf31cc43002b",
+      "sha1": "dd734dace73a10238032b9f562d14afceb3b1700"
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "size": 610896,
+      "sha256": "93c6dbdafdf34bb4f5030ccc9502db72bdfe5c40c13aa0f6447a556e39477e33",
+      "sha1": "307da7b25c9ca7698f9b1af9607216b5e592ca5d"
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "size": 214277,
+      "sha256": "f82a27405548a3d0f463ca1f2334392e6aa75d602f72fc21b760abafcf11aff5",
+      "sha1": "584f5c7727561898b63b8b368db1dd52b259258b"
+    },
+    {
+      "path": "fixed/manifest.json",
+      "size": 4738,
+      "sha256": "9bd3e0c017b5a5d0c2cb9957e9bff01283b5886faa72358aaeaf6a619a8b31f2",
+      "sha1": "74c285379b2fdf4278264c3ea86919db43ec267d"
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "size": 1224757,
+      "sha256": "72fd520ec7ed3ab92d08a9677d8c09ddbcd8cc2b24ca6dd777c56369b0ca92fd",
+      "sha1": "6278a0f49758ff02a68ff46b4414ffce06162fea"
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "size": 186045,
+      "sha256": "aa0c906712b268b5ec30ef7d4d7ad37fe382986947c964caf0247bbf439add08",
+      "sha1": "170d4b4d280896713d2fbd652620c3ddb4a313c9"
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "size": 211607,
+      "sha256": "b84e5fa72a9c1d196285eabedba46ac414900e14f4d9f2f28a465641b94479d9",
+      "sha1": "c7715bb23c7a22084f370da7c6e008f8b6fead4e"
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "size": 364544,
+      "sha256": "de1cc40fd920621d21653d4241c521a2a0bb263683918e6be02862aaeea074f5",
+      "sha1": "945015b87c64e64b5311201d6e712a4695fcc72f"
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "size": 98319,
+      "sha256": "5a721f63b854faf6ff08b3abf388470cecece254eaa412aa9e02b8834a4d71b2",
+      "sha1": "ca539e42d914ad28f12f8f59c4a556c35767731f"
+    },
+    {
+      "path": "fixed/style.json",
+      "size": 732,
+      "sha256": "236f8d01fdbfe9e00bee669598588ea8d234823cb6b5bef58bbfc64c0c436635",
+      "sha1": "2cd6956dce19114c2c23ebfddc6cded70031a950"
+    },
+    {
+      "path": "index.html",
+      "size": 464,
+      "sha256": "b2785053718ef60a04d9202368ad64e82f0132d7250f10edd8c75b87e8adcf8c",
+      "sha1": "fcece240e6d7506e33a55490880d25241d03bf8b"
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "size": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "sha1": "7d1c4f104322abaa420273cc070cd51036f516cb"
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "size": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "sha1": "ddc5ec02a56dbaccbf48ed310251e18727769817"
+    },
+    {
+      "path": "reference/buildings.jpg",
+      "size": 77584,
+      "sha256": "1967f915d6d9fc6394396720c75c8d574f35c7cf85018ff7c4ef54266b70d6be",
+      "sha1": "7497853f47523a61f1eda2c264ae526fd27ad692"
+    },
+    {
+      "path": "reference/label.jpg",
+      "size": 79970,
+      "sha256": "f434b7bb8561e40acfbc2c8cedcb9fadb7cd6239d404760e8a8c15e4ce2b6777",
+      "sha1": "b46b194d78b44838d8cce5ed145977303bc4ac4f"
+    },
+    {
+      "path": "review/after-matte.jpg",
+      "size": 151480,
+      "sha256": "a085d27b36feb63927812f9075ce2374a797715400b92b36db930e921550abc8",
+      "sha1": "6fac8dc76f964ee91ce593bf3f7f2858dba77e7d"
+    },
+    {
+      "path": "review/atlas.jpg",
+      "size": 109696,
+      "sha256": "814ab745c1e0eb18264979c311b19831ded2c2f3493de4814fb1f7aa26284265",
+      "sha1": "9981deb2e052acafd637f5c1242a4e0b9486938c"
+    },
+    {
+      "path": "review/before-matte.jpg",
+      "size": 178294,
+      "sha256": "97c7ab4606c642629cfab8338b4b9cdadbd18e0ee8002ac0d51e7bb0a7648a9c",
+      "sha1": "f8ff777afbb2d60f63ebc83c6d43774137839cdd"
+    },
+    {
+      "path": "review/browser-qa.json",
+      "size": 2104,
+      "sha256": "77be2973ecaf10541fabf3acf90c86fb2c4eff10ab63a72af8e85906efb72d3c",
+      "sha1": "34baa681edeccbc66e364192c4de2e1ec74c052d"
+    },
+    {
+      "path": "review/buildings-comparison.jpg",
+      "size": 214330,
+      "sha256": "a5b77e7b0e8822f3bbe0c3212528245e5f453fc1a0aab9bf96098731d57e7b1a",
+      "sha1": "ad2bf3bea9f268b93e56e7ae5c9e78118b37b1c8"
+    },
+    {
+      "path": "review/buildings-model.png",
+      "size": 360137,
+      "sha256": "8d2fbfc54f0073506fe984fd2e554c5c2ac82cb277e653522395387ae5cfc4c9",
+      "sha1": "e6d4f614371c073830214f563370e5e219dfa42b"
+    },
+    {
+      "path": "review/buildings-overlay.png",
+      "size": 817027,
+      "sha256": "93a59b5797400b4d3e0fd864787c6ea4a4313da103cb47973ff2a7aee006a609",
+      "sha1": "f30a7dfb8386a50509fdfd14a7681b7d145e4d29"
+    },
+    {
+      "path": "review/buildings-reference.jpg",
+      "size": 77584,
+      "sha256": "1967f915d6d9fc6394396720c75c8d574f35c7cf85018ff7c4ef54266b70d6be",
+      "sha1": "7497853f47523a61f1eda2c264ae526fd27ad692"
+    },
+    {
+      "path": "review/camera-calibration.json",
+      "size": 1888,
+      "sha256": "03541bd9f98ee04797e82bf2414463690a080a7b016ca5a391ba347ecd6f3096",
+      "sha1": "8d2fbd2e6c332aa713bcfa5ec16fff325ea3bff9"
+    },
+    {
+      "path": "review/concave.jpg",
+      "size": 149305,
+      "sha256": "b40c12e4d3baa51e17c38b70ab635701cd6d209fb01ae557d6ee39dd546eed2c",
+      "sha1": "923f1df49f1537f930283f4173fd7e219b6239e2"
+    },
+    {
+      "path": "review/convex.jpg",
+      "size": 149415,
+      "sha256": "30839c2f553121cb1e00b586e23185a546cecdb619f61f33ec08e8f4d27b52a2",
+      "sha1": "cba9747a0b4eb7600f5ad1cc92bd80125b09235f"
+    },
+    {
+      "path": "review/desktop.jpg",
+      "size": 78844,
+      "sha256": "5ea71dba1703526dad7694d9e0784e30b45d019bed7dcf66f367a0d71edbfb0c",
+      "sha1": "a7ca46cdfb408854d301a4afe72ad8f666c7fb6f"
+    },
+    {
+      "path": "review/detail.jpg",
+      "size": 149391,
+      "sha256": "af4d85ee8cc27b1e93feefe33f7ff0339bd12eadad9e11df429dbc0c58e9f550",
+      "sha1": "364523fcb01a7ed1178df7a3de46065b921c6f04"
+    },
+    {
+      "path": "review/evidence.json",
+      "size": 217,
+      "sha256": "0d51eba31522953c23d5abe66897ed67184863c99ef9f0b9cee6c16960b1f666",
+      "sha1": "6da10f22635d2a3ab0e8c6f99b0b387940dd05be"
+    },
+    {
+      "path": "review/fixed-quarters.jpg",
+      "size": 97120,
+      "sha256": "3b386f24e308ea27be75527b265f54849971ab9ea0b98d7567ce1a7f2e8b6b92",
+      "sha1": "81612de3a9678cad520f4531f380db5c3168bcce"
+    },
+    {
+      "path": "review/flat.jpg",
+      "size": 107643,
+      "sha256": "8cd06b8d36459d66053b7a0bbb9336dd9c59f7e2b1e405b9d93f68ce3944e40a",
+      "sha1": "a7af1408c969b5201b46ff23e6c3dab23ffdfd75"
+    },
+    {
+      "path": "review/front.jpg",
+      "size": 73085,
+      "sha256": "0e01d4c8830a4bfcc0c6fdf4c0db27bc52025a452696f8a235c75a357f533df6",
+      "sha1": "85ce5886d54ef059928c8056035ae29c2dc28986"
+    },
+    {
+      "path": "review/handle.jpg",
+      "size": 75875,
+      "sha256": "4b7fc39471f8a54528e44415ca1c74ab8a4b0a929e64a2a0077a5a21ea12c3c2",
+      "sha1": "345ed752d26b5c598b86272dbf4910eb03a30aa7"
+    },
+    {
+      "path": "review/height.png",
+      "size": 210963,
+      "sha256": "85fde66440505f44ea8a052fcea93d93a1e77501dbd8a261502a72d86456055e",
+      "sha1": "f9887e0a87b97e38f939a919d9f443a2211dfec5"
+    },
+    {
+      "path": "review/label-comparison.jpg",
+      "size": 224906,
+      "sha256": "5aea7c1f4b1590cd13c23eebd7805913f5c581222b40ff0f9454d8070aa8d40c",
+      "sha1": "29591188fd9eff7762014d978d6aba725aa3abca"
+    },
+    {
+      "path": "review/label-model.png",
+      "size": 413486,
+      "sha256": "6909bc3fd4759591576eb1b055a1bde9dd683644a85ddf0a5cce2d3d7fe17640",
+      "sha1": "e9345e35993eb9901f4414991535f026d6dcd111"
+    },
+    {
+      "path": "review/label-overlay.png",
+      "size": 827631,
+      "sha256": "ee9ed3820c1eac6f003cd7c2fac66e2a84cfff44b89c6b09f1576af0a9524a54",
+      "sha1": "00070248b9d8222d4a5be66513d0a0bfac7ee6db"
+    },
+    {
+      "path": "review/label-reference.jpg",
+      "size": 79970,
+      "sha256": "f434b7bb8561e40acfbc2c8cedcb9fadb7cd6239d404760e8a8c15e4ce2b6777",
+      "sha1": "b46b194d78b44838d8cce5ed145977303bc4ac4f"
+    },
+    {
+      "path": "review/label.png",
+      "size": 8250,
+      "sha256": "f907217d4133455af6070b40654ff4fe56900131772405872621bfc6a594e313",
+      "sha1": "992a13f951b625a54f1af29f674e9e03d040a4c3"
+    },
+    {
+      "path": "review/lines-original.png",
+      "size": 225985,
+      "sha256": "d06be46e6a8c9131ec0987f8f02e46138752f06a938aaf2d195e387d1e73aecb",
+      "sha1": "2fd6f1dd56250495c2e207e860614b9949a0f36a"
+    },
+    {
+      "path": "review/lines.png",
+      "size": 203275,
+      "sha256": "d50ffbc9ac0e4a267253c9e76fcb4d652c214eeeedf30a2c17d16888ab1899a0",
+      "sha1": "870bb22d4744909871077996bd348b503b72ec05"
+    },
+    {
+      "path": "review/metalness.png",
+      "size": 28439,
+      "sha256": "4f38d7f2883838d44d2e29f9945e2e5cbdbd4feb14ad2ce8e84c59386659be51",
+      "sha1": "7fe976cd50fa36766db611d38c6e83488b9a9811"
+    },
+    {
+      "path": "review/mobile.jpg",
+      "size": 130758,
+      "sha256": "5bba890b27b59ac973d9a07e6fe77306500790e417182b8f3ac3c94265c1b529",
+      "sha1": "092906d18372090d9a5128434b9b648a322359b4"
+    },
+    {
+      "path": "review/normal.png",
+      "size": 297528,
+      "sha256": "15b53f7a5cd9f71ac1d5a005671fe1d5990322b41f484ca521ea357651b72722",
+      "sha1": "9d99f8589572ca9aa5a244db8978d4ff8204dca5"
+    },
+    {
+      "path": "review/psd-audit.json",
+      "size": 8548,
+      "sha256": "a74c505e1157bb623d924a9249b99b8d82b2e4b50801536a3b7c7f6209bfbaaa",
+      "sha1": "b6f7af5fedb3a7927b75a13dbc8f328f9b67e50e"
+    },
+    {
+      "path": "review/relief-separation/after-detail.jpg",
+      "size": 242027,
+      "sha256": "aab3906d6deac42d4f9aa7cc088aab95927634ba438ba8c99093eebbc0d6b9f4",
+      "sha1": "79175403cffa0de6975c296e389f6ff594e475ab"
+    },
+    {
+      "path": "review/relief-separation/after-hero.jpg",
+      "size": 122290,
+      "sha256": "6bf6d265a9a5f55e34b93d03033992be942782b8ffe3f5e487ebf4f3644a12c7",
+      "sha1": "c56dea027d1e54e3ba6486990333e9b9c7f98861"
+    },
+    {
+      "path": "review/relief-separation/before-detail.jpg",
+      "size": 235225,
+      "sha256": "31bed08fa477e5d7c58196516a39892e7597c98458dabbbf9e2e3173d088aea6",
+      "sha1": "c259f3a4dfeee43b3add9df11699b5c5d4a412b4"
+    },
+    {
+      "path": "review/relief-separation/before-hero.jpg",
+      "size": 111511,
+      "sha256": "a703245a1404f349a68fad4cca71d888afd16d77739f426dc900ae7b056306c9",
+      "sha1": "cca855e78bdae27e17ed436dae645838a678c0d5"
+    },
+    {
+      "path": "review/relief-separation/comparison.jpg",
+      "size": 269347,
+      "sha256": "ee640497424d7dbf6969c0cbe3de288b67092d9c87a784d0258ef7a8c41637a8",
+      "sha1": "5b5899c119440b5c0082b765dd77a9799ce6bfe1"
+    },
+    {
+      "path": "review/relief-separation/finish-only.jpg",
+      "size": 251028,
+      "sha256": "d5e1d1f8e9177f9e1d889c39c723583066ffc2e296cbc55bfbde8ddbf77a9263",
+      "sha1": "cd4b8dca145c17235a077e0092566b3dcc734d86"
+    },
+    {
+      "path": "review/relief-separation/front.jpg",
+      "size": 100520,
+      "sha256": "70d25287a7a6fe2a02e206a37521a64efe99a233951b7b9507719e7cc27efbf5",
+      "sha1": "fd58fcee5749f53646c097db21bb9ceb1b67e39b"
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-difference-x20.png",
+      "size": 4805,
+      "sha256": "2ffc110b48ab59b7f103b0f0b77cc334e8878e3bdf24ad25d6a4de899ed236f9",
+      "sha1": "9d3fce8b6c36721f271db9d90ac3369b82e67d3d"
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-qa.json",
+      "size": 539,
+      "sha256": "818ff4a57599afb7332ba011fdf1fa8e7c44f1c902da4f8f526a4192d7a29b94",
+      "sha1": "43769958eaaf012468b8e6f5d70cf1c8b8aaa4ed"
+    },
+    {
+      "path": "review/relief-separation/parameters.json",
+      "size": 4157,
+      "sha256": "656568fbb10e464357c8c64d802bb149f40dac128e6018deff8024f3c4c5bbb3",
+      "sha1": "b1396f954fae54044ca7795eaaf23d4cc8058340"
+    },
+    {
+      "path": "review/relief-separation/preferred-earlier.jpg",
+      "size": 287075,
+      "sha256": "f3f9bf717e1f0009fd6c9056e6c47bd6b02182cc7ca8b9c9069168e016c919d5",
+      "sha1": "e72675d7fdc98bbbad84f0a36d850db14d253240"
+    },
+    {
+      "path": "review/relief-separation/reference-temple.png",
+      "size": 720801,
+      "sha256": "5892b95bbca06a65639ab6f75b9a1bf0e96c32e73749dbd18bff1e5a49af2e43",
+      "sha1": "525c9bb58dd607e73723d053a712a932fb0acb26"
+    },
+    {
+      "path": "review/relief-separation/reflection-on.jpg",
+      "size": 100520,
+      "sha256": "70d25287a7a6fe2a02e206a37521a64efe99a233951b7b9507719e7cc27efbf5",
+      "sha1": "fd58fcee5749f53646c097db21bb9ceb1b67e39b"
+    },
+    {
+      "path": "review/relief-separation/reflection-without-handle.jpg",
+      "size": 100436,
+      "sha256": "6c05c46c55d0fa106f3cf348aeda67bc96b0c4ef7705a1726c567abf1b9ce679",
+      "sha1": "ac4840b2a8eb5358fc3ed19bd55d3ecc96e4f920"
+    },
+    {
+      "path": "review/stroke-only.jpg",
+      "size": 59521,
+      "sha256": "61a0670a8565f6d00cf02f8c8d5230aadc7b5860bfa0c49e4209b830c551d37a",
+      "sha1": "6bce6e5add1b53dde3f2814497d91e37faf44353"
+    },
+    {
+      "path": "web/china/baseColor.webp",
+      "size": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "sha1": "a5a2fbe7489cb3441ad3e554feae7044d8f0b398"
+    },
+    {
+      "path": "web/china/metalness.webp",
+      "size": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "sha1": "7b0d376de636f6d47df37507fab84e2186b4ad1f"
+    },
+    {
+      "path": "web/china/normal.webp",
+      "size": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "sha1": "fea1d94204d9107404943a7267ea3781462d5c76"
+    },
+    {
+      "path": "web/china/roughness.webp",
+      "size": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "sha1": "a4a53177b9c1040bad19d1045bbf486dae44b120"
+    },
+    {
+      "path": "web/fixed/body-baseColor.webp",
+      "size": 3717346,
+      "sha256": "182a912df9d7868237912747d0811b045675f2ef89697b04547dbe122f352916",
+      "sha1": "7f1f37835beacc47226f4317e43427fabd39151b"
+    },
+    {
+      "path": "web/fixed/body-metalness.webp",
+      "size": 611078,
+      "sha256": "6b0634c6c05a0e206d1b555150033c4fa9498ff032b320b4a31a244fe5e20784",
+      "sha1": "002914bf4a486f6a1db070ee4d20325740310d15"
+    },
+    {
+      "path": "web/fixed/body-normal.webp",
+      "size": 1145268,
+      "sha256": "25e7c2a82cff5075fc3e3c943e4d27a7ac147a6f15dcc9c0ca70d81e17db26c6",
+      "sha1": "e3c8c58fe96b53a8fff1cfe7570e0b1169e27220"
+    },
+    {
+      "path": "web/fixed/body-roughness.webp",
+      "size": 361548,
+      "sha256": "a1bebacc35787c20ed3114ab0becfe0ad11a6fb7102571334eb548e35d46e892",
+      "sha1": "0465e1a25176d8fa0640fe0654fc0525c509ef54"
+    },
+    {
+      "path": "web/fixed/handle-baseColor.webp",
+      "size": 1136080,
+      "sha256": "0e4d293c21889ebf8cc158e306ab90b72f847f0278c0efec2bf3ab27e99963fd",
+      "sha1": "51d99386bb7cd5de8c8f406812413bd4b88eb49d"
+    },
+    {
+      "path": "web/fixed/handle-metalness.webp",
+      "size": 241800,
+      "sha256": "a1db885eaebf15488984f3d4315fd68970b2a5a3d2a77c2ce3ac7642c1896af3",
+      "sha1": "7f866d0d02b7ecefe674892a267c3b2c53298460"
+    },
+    {
+      "path": "web/fixed/handle-normal.webp",
+      "size": 377260,
+      "sha256": "1eb92f1f33706151363b38564a7964dbf5708739e89cff5966b6995aa42673e9",
+      "sha1": "f0b9a69e02932fb7801fad006e0a5c6899c319c0"
+    },
+    {
+      "path": "web/fixed/handle-roughness.webp",
+      "size": 138248,
+      "sha256": "c679852be3e3e9e645d81889da98600f71f4218f93a9e5188b24d56f65afb144",
+      "sha1": "64927c16876f541c355e21903f5d4d26bb5cf87e"
+    },
+    {
+      "path": "web/fixed/saucer-baseColor.webp",
+      "size": 755014,
+      "sha256": "0b712528ecd37f42339cb632e50482e43f70ad2cbcdc9fee34e7ccedc4a4eb00",
+      "sha1": "d7c7fa5751aeb93de8525cb1dc5a8f510cc31691"
+    },
+    {
+      "path": "web/fixed/saucer-metalness.webp",
+      "size": 97176,
+      "sha256": "9707c0b951fc908c765b625a21bf5566fa35f5a3ad5337c303862097b6403cec",
+      "sha1": "1049a5bbb46f764cee9e7ef24385f624c1b6b9e1"
+    },
+    {
+      "path": "web/fixed/saucer-normal.webp",
+      "size": 248808,
+      "sha256": "dfb5574f66398f2e30071905683a92d3b8b4e7f592ca4458a8b371ebf296747f",
+      "sha1": "d6bac772cf614d2718edf9345312890baa14bda3"
+    },
+    {
+      "path": "web/fixed/saucer-roughness.webp",
+      "size": 60058,
+      "sha256": "a1397cef31f9034061f505071d39a184e03208a12850995b83cb7f64abf6980c",
+      "sha1": "d8cb917f1db540a4d86dc17430165d52879f522f"
+    }
+  ],
+  "totalBytes": 40201772
+}

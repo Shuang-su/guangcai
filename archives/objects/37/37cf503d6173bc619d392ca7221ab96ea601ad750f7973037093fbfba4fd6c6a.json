@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-30T04:46:48.940Z",
+  "checks": [
+    {
+      "name": "built opening assets resolve",
+      "passed": true
+    },
+    {
+      "name": "built lazy viewer loads",
+      "passed": true
+    },
+    {
+      "name": "built fixed materials generate actual poster",
+      "passed": true
+    },
+    {
+      "name": "built result 3D matches preset",
+      "passed": true
+    },
+    {
+      "name": "desktop layout keeps viewer controls clear",
+      "passed": true
+    },
+    {
+      "name": "production no page or resource errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

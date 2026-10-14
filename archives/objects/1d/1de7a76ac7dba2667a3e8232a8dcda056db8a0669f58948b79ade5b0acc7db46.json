@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "8d54f7ee8091a1b5ccf6eb3646d8a269e0abdff7",
+  "productVersion": "4.3.0",
+  "deploy": {
+    "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "site_name": "guangcai-no1-china-v4",
+    "deploy_id": "6acf18984f3abc04fe3cab18",
+    "deploy_url": "https://6acf18984f3abc04fe3cab18--guangcai-no1-china-v4.netlify.app",
+    "logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/deploys/6acf18984f3abc04fe3cab18",
+    "function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/functions",
+    "edge_function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/edge-functions",
+    "url": "https://guangcai-no1-china-v4.netlify.app",
+    "state": "ready",
+    "title": "China cup 4.3 Beijing five palettes 8d54f7e",
+    "cliExit": 0
+  },
+  "filesVerified": 834,
+  "extraServerFiles": [
+    {
+      "id": "/netlify.toml",
+      "path": "/netlify.toml",
+      "sha": "f9f9b6a8501b9301cfc5b60c2daae140b059b806",
+      "mime_type": "application/octet-stream",
+      "size": 1190,
+      "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "deploy_id": "6acf18984f3abc04fe3cab18"
+    }
+  ],
+  "pathNormalization": "Netlify paths case-folded; no collisions and SHA-1 matches all app files",
+  "readbacks": [
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "deployId": "6acf18984f3abc04fe3cab18",
+      "state": "ready",
+      "gitBinding": {}
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "deployId": "6ace443df7425f433e717eb0",
+      "state": "ready",
+      "gitBinding": {}
+    }
+  ],
+  "errors": [],
+  "archive": "deployments/guangcai-no1-china-v4/6acf18984f3abc04fe3cab18"
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-13T14:33:45.095Z",
+  "checks": [
+    "v3 uses UV2 and normalized source region",
+    "v3 saucer repeats without mirroring",
+    "all source channels share offsets",
+    "saucer atlas is installed on the actual physical material",
+    "failed fixed load retains every current map",
+    "invalid atlas rejects atomically and preserves the installed mapping",
+    "prior source-layout package works without atlas",
+    "legacy packages use UV0 and mirrored saucer wrap",
+    "rapid fixed switching commits the latest complete package"
+  ],
+  "passed": 9
+}

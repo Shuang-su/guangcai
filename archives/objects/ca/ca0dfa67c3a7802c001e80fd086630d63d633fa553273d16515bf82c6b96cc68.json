@@ -1,0 +1,185 @@
+{
+  "date": "2026-09-30T04:49:30.613Z",
+  "browser": "Isolated Chrome; IAB visual and interaction checks performed before automation",
+  "checks": [
+    {
+      "name": "first visit enters scroll opening",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "opening does not fetch Three.js or 3DGS",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "scroll changes opening progress",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "reverse scroll reverses opening",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "opening reaches white porcelain landing",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "opening completes into static home",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "creation loads actual geometry",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "creation is neutral white",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "next step is gated by selection",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "first paint contains visible porcelain before interaction",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "drag changes real camera",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "zoom changes camera distance",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "two-finger pinch changes real camera",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "selection persists and leaves porcelain unchanged",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "rules return preserves step and choices",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "refresh restores unfinished draft",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "all five choices leave model white",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "result is a real non-empty image element",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "fixed style and demo provenance recorded",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "P10 matches poster style version",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "return from 3D reuses result",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "share guidance makes no success claim",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "completed revisit enters ranking demo",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "invalid share can directly enter creation",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "address demo never accepts personal data",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "claim preview has no submission request",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no horizontal overflow at 360",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no horizontal overflow at 430",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "no horizontal overflow at 1280",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "normal path console has no page errors",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "WebGL unavailable has explicit retry and return",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "failed texture package cannot produce success",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "reduced-motion opening remains usable",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "restart alone clears all five choices and result",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "shared work enters editor without replay",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "errors": [],
+  "requestCount": 41,
+  "gsRequests": [],
+  "physicalDeviceTested": false
+}

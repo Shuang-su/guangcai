@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-11T17:30:25.697Z",
+  "url": "http://127.0.0.1:5209/",
+  "metrics": [
+    {
+      "view": "hero",
+      "meanRgbDelta": 0.013190277777777778,
+      "rmse": 0.15233825666734027,
+      "maxChannelDelta": 20
+    },
+    {
+      "view": "handle",
+      "meanRgbDelta": 0.05620370370370371,
+      "rmse": 0.5704660213207107,
+      "maxChannelDelta": 63
+    },
+    {
+      "view": "detail",
+      "meanRgbDelta": 0.04008634259259259,
+      "rmse": 0.29896464859764127,
+      "maxChannelDelta": 44
+    },
+    {
+      "view": "front",
+      "meanRgbDelta": 0.031930324074074076,
+      "rmse": 0.35899132095152175,
+      "maxChannelDelta": 49
+    }
+  ],
+  "order": [
+    "old floral",
+    "new source PNG",
+    "new runtime WebP"
+  ],
+  "note": "Identical actual WebGL scene and cameras; differences measured across full frame, including unchanged background",
+  "localCrops": [
+    {
+      "view": "hero",
+      "crop": {
+        "left": 470,
+        "top": 802,
+        "width": 565,
+        "height": 74
+      },
+      "meanRgbDelta": 0.37504584230247945,
+      "rmse": 0.785796336821831,
+      "maxChannelDelta": 14
+    },
+    {
+      "view": "handle",
+      "crop": {
+        "left": 755,
+        "top": 335,
+        "width": 80,
+        "height": 460
+      },
+      "meanRgbDelta": 0.9561322463768116,
+      "rmse": 2.9010758249361537,
+      "maxChannelDelta": 63
+    },
+    {
+      "view": "detail",
+      "crop": {
+        "left": 100,
+        "top": 910,
+        "width": 1240,
+        "height": 90
+      },
+      "meanRgbDelta": 0.46981780167264037,
+      "rmse": 1.0432965742949047,
+      "maxChannelDelta": 44
+    }
+  ]
+}

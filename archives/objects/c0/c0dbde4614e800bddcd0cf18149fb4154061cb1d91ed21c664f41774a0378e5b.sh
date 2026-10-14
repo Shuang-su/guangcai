@@ -1,0 +1,1 @@
+mkdir -p public/references && node --input-type=module -e 'import sharp from "sharp";for(const id of [1220,1221,1230]) await sharp(`/Users/shuangsu/Downloads/IMG_${id}.${id===1220?"JPG":"jpg"}`).rotate().resize({width:1368,withoutEnlargement:true}).jpeg({quality:94}).toFile(`public/references/${id}.jpg`);'

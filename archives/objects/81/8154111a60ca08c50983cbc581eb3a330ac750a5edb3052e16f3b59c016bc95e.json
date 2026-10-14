@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "body mother hash unchanged",
+    "band mother hash unchanged",
+    "high/body/white size and KTX2 header",
+    "high/body/gold size and KTX2 header",
+    "high/band/gold size and KTX2 header",
+    "low/body/white size and KTX2 header",
+    "low/body/gold size and KTX2 header",
+    "low/band/gold size and KTX2 header"
+  ],
+  "edgeChecks": [
+    {
+      "name": "body",
+      "boundaryPixels": 345825,
+      "normalAgreement": 0.9937222583676715,
+      "flatNormalAgreement": 0.9977522939040079
+    },
+    {
+      "name": "band",
+      "boundaryPixels": 201610,
+      "normalAgreement": 0.9987947026437181,
+      "flatNormalAgreement": 0.9551027767760548
+    },
+    {
+      "name": "body-metal-vs-mother-coverage",
+      "edgePixels": 374581,
+      "meanError": 0.001918213721437287,
+      "edgeMeanError": 0.0027322031084015376
+    }
+  ],
+  "note": "Checks pixel-coordinate agreement and content boundaries; does not certify semantic correctness of every gold brushstroke."
+}

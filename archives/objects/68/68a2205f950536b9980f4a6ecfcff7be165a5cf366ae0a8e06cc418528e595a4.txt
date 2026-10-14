@@ -1,0 +1,147 @@
+*** Begin Patch
+*** Add File: outputs/guangcai-viewer/tools/derive-pbr.mjs
++/** PBR data derivation, NOT artwork generation. Color images are generated masters.
++ * Gold segmentation is based on chromaticity, relief on semantic paint boundary
++ * and ink contours; never luminance-to-height. All maps share exact pixel crops. */
++import sharp from 'sharp';
++import { mkdir, writeFile } from 'node:fs/promises';
++import { createHash } from 'node:crypto';
++import { readFile } from 'node:fs/promises';
++
++const out = 'public/artwork'; await mkdir(out, { recursive: true });
++const smooth = (a,b,x) => { const t=Math.max(0,Math.min(1,(x-a)/(b-a))); return t*t*(3-2*t); };
++const configs = [
++  { name: 'body', input: 'assets/masters/body-generated.png', width:1024,height:2048 },
++  { name: 'handle', input: 'assets/masters/body-generated.png', crop:[.47,.07,.22,.82], width:384,height:1536 },
++  { name: 'saucer', input: 'assets/masters/band-generated.png', crop:[0,.38,1,.25], width:2172,height:181 },
++];
++const manifest = { version:1, provenance:'Built-in image_gen; new reference-inspired artwork, not official artwork.', method:'Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.', maxReliefMm:.045, regions:{} };
++for (const c of configs) {
++  let source=sharp(c.input); const meta=await source.metadata();
++  if(c.crop) source=source.extract({left:Math.round(meta.width*c.crop[0]),top:Math.round(meta.height*c.crop[1]),width:Math.floor(meta.width*c.crop[2]),height:Math.floor(meta.height*c.crop[3])});
++  const {data,info}=await source.resize(c.width,c.height).removeAlpha().raw().toBuffer({resolveWithObject:true});
++  const w=info.width,h=info.height,n=w*h, metal=Buffer.alloc(n),rough=Buffer.alloc(n),height=Buffer.alloc(n);
++  for(let i=0;i<n;i++){
++    const r=data[i*3]/255,g=data[i*3+1]/255,b=data[i*3+2]/255;
++    // Ochre ground r:g:b near 1:.80:.43; cream petals are less saturated,
++    // greens have higher g/r and reds lower g/r. Gold mask leaves enamel dielectric.
++    const gr=g/Math.max(.01,r), br=b/Math.max(.01,r);
++    const gold=smooth(.60,.70,gr)*(1-smooth(.87,.97,gr))*smooth(.22,.32,br)*(1-smooth(.53,.64,br))*smooth(.25,.42,r);
++    metal[i]=Math.round(255*gold*.97);
++    rough[i]=Math.round(255*(.22*gold+.29*(1-gold)));
++    const ink=(1-smooth(.20,.39,Math.max(r,g,b)))*(1-gold);
++    height[i]=Math.round(92+(1-gold)*24+ink*16);
++  }
++  const blurred=await sharp(height,{raw:{width:w,height:h,channels:1}}).blur(.8).raw().toBuffer();
++  const normal=Buffer.alloc(n*3);
++  const at=(x,y)=>blurred[Math.max(0,Math.min(h-1,y))*w+Math.max(0,Math.min(w-1,x))]/255;
++  for(let y=0;y<h;y++)for(let x=0;x<w;x++){
++    const dx=(at(x+1,y)-at(x-1,y))*1.6,dy=(at(x,y+1)-at(x,y-1))*1.6;
++    const norm=Math.sqrt(dx*dx+dy*dy+1),i=(y*w+x)*3;
++    normal[i]=Math.round((-dx/norm*.5+.5)*255); normal[i+1]=Math.round((dy/norm*.5+.5)*255); normal[i+2]=Math.round((1/norm*.5+.5)*255);
++  }
++  const maps={baseColor:data,metalness:metal,roughness:rough,height:blurred,normal};
++  const region={width:w,height:h,maps:{}};
++  for(const [channel,buffer]of Object.entries(maps)){
++    const filename=`${c.name}-${channel}.png`;
++    await sharp(buffer,{raw:{width:w,height:h,channels:channel==='baseColor'||channel==='normal'?3:1}}).png().toFile(`${out}/${filename}`);
++    region.maps[channel]={url:`artwork/${filename}`,sha256:createHash('sha256').update(await readFile(`${out}/${filename}`)).digest('hex')};
++  }
++  manifest.regions[c.name]=region;
++}
++await writeFile(`${out}/manifest.json`,JSON.stringify(manifest,null,2));
++console.log(JSON.stringify(manifest,null,2));
+*** Add File: outputs/guangcai-viewer/src/materials/materials.ts
++import { Color, MeshPhysicalMaterial, Vector2, type Texture } from 'three';
++export type Region = 'body' | 'handle' | 'saucer';
++export type MaterialMode = 'pbr' | 'porcelain' | 'clay' | 'normal' | 'metalness';
++export function makeMaterials() {
++  const porcelain = new MeshPhysicalMaterial({color:'#f5f4ec',metalness:0,roughness:.22,clearcoat:1,clearcoatRoughness:.085,ior:1.5});
++  const gold = new MeshPhysicalMaterial({color:'#d9ae50',metalness:1,roughness:.18,clearcoat:.22,clearcoatRoughness:.16});
++  const foot = new MeshPhysicalMaterial({color:'#e7e5de',metalness:0,roughness:.42,clearcoat:.25});
++  const painted = () => new MeshPhysicalMaterial({color:0xffffff,metalness:1,roughness:1,clearcoat:1,clearcoatRoughness:.11,normalScale:new Vector2(.65,.65),clearcoatNormalScale:new Vector2(.35,.35)});
++  const regions: Record<Region,MeshPhysicalMaterial> = {body:painted(),handle:painted(),saucer:painted()};
++  return {porcelain,gold,foot,regions};
++}
++export type Materials = ReturnType<typeof makeMaterials>;
++export type Maps = {baseColor:Texture;normal?:Texture;metalness?:Texture;roughness?:Texture;height?:Texture};
++export function setRegionMaps(material: MeshPhysicalMaterial,maps:Maps){
++  material.color.set(0xffffff); material.map=maps.baseColor;
++  material.normalMap=maps.normal??null; material.clearcoatNormalMap=maps.normal??null;
++  material.metalnessMap=maps.metalness??null; material.metalness=maps.metalness?1:0;
++  material.roughnessMap=maps.roughness??null; material.roughness=maps.roughness?1:.29;
++  // Height is retained as source evidence. Micro-relief uses aligned normals,
++  // never silhouette displacement on low-poly UV boundaries.
++  material.needsUpdate=true;
++}
++export const neutralColor = new Color('#c1c0bc');
+*** Add File: outputs/guangcai-viewer/src/geometry/product.ts
++import { CatmullRomCurve3, CubicBezierCurve3, CurvePath, Group, Mesh, MeshPhysicalMaterial, SphereGeometry, Vector3, type Material } from 'three';
++import { arc, revolve, type ProfilePoint } from './surface';
++import { ribbon } from './ribbon';
++import { defaults, validateDimensions, type Dimensions } from './parameters';
++import type { Materials } from '../materials/materials';
++
++export function buildProduct(m: Materials,p:Dimensions={...defaults}){
++  validateDimensions(p);
++  const root=new Group(),cup=new Group(),lid=new Group(),saucer=new Group();
++  root.add(cup,lid,saucer);
++  const mesh=(name:string,g:ReturnType<typeof revolve>,mat:Material|Material[],parent:Group,offsetY=0)=>{
++    const object=new Mesh(g,mat);object.name=name;object.position.y=offsetY;object.castShadow=true;object.receiveShadow=true;parent.add(object);return object;
++  };
++  const r=p.radius,h=p.height,w=p.wall;
++  const profile:ProfilePoint[]=[
++    [0,2.5],[r-8,2.5],[r-5,2.4],[r-3.8,1.8],[r-3.6,.6],
++    [r-3.1,.12],[r-1.7,.12],[r-.8,.45],[r-.2,1.1],[r,2.8],
++    [r,5],[r,h-2.3],
++    ...arc(r-w/2,h-2.3,w/2,0,Math.PI,16).slice(1),
++    [r-w,12],[r-w-.25,9],[r-w-1.1,7.2],[r-w-3.5,p.bottom+.5],
++    [r-w-6,p.bottom],[0,p.bottom],
++  ];
++  const n=240,bandSegments=Math.round(p.bandAngle/(2*Math.PI)*n), actualBand=bandSegments/n*2*Math.PI;
++  const body=mesh('cup-wall-and-recessed-foot',revolve(profile,n,{
++    start:-actualBand/2,
++    material:(j,i)=>j>=9&&j<=10&&i<bandSegments?1:j===5?2:0,
++    uv:(_rr,y,theta)=>[(theta+actualBand/2)/actualBand,(y-3)/(h-5.3)],
++  }),[m.porcelain,m.regions.body,m.foot],cup,-h/2);
++  body.userData={circleRadius:r,bandRadians:actualBand,wallThickness:w};
++  const reach=p.handleReach, upper=h*.885,lower=h*.255;
++  const path=new CurvePath<Vector3>();
++  path.add(new CubicBezierCurve3(new Vector3(r-.8,upper,0),new Vector3(r+10,upper+.7,0),new Vector3(r+reach-5,upper+2.5,0),new Vector3(r+reach,upper-2,0)));
++  path.add(new CubicBezierCurve3(new Vector3(r+reach,upper-2,0),new Vector3(r+reach+2,upper-33,0),new Vector3(r+reach-4,lower+1,0),new Vector3(r+12,lower,0)));
++  path.add(new CubicBezierCurve3(new Vector3(r+12,lower,0),new Vector3(r+7,lower-.3,0),new Vector3(r+1,lower+.6,0),new Vector3(r-1,lower+1.5,0)));
++  mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
++  for(const y of[upper,lower+1.5]){
++    const rootMesh=new Mesh(new SphereGeometry(1,32,24),m.porcelain);rootMesh.name='porcelain-handle-root';
++    rootMesh.scale.set(3.3,5.1,p.handleWidth*.56);rootMesh.position.set(r-.15,y-h/2,0);rootMesh.castShadow=true;cup.add(rootMesh);
++  }
++  const lr=r+p.lidOverhang;
++  const lidProfile:ProfilePoint[]=[[0,-1.5],[r-7,-1.5],[r-5,-1.65],[r-4.5,-3.3],[r-3.8,-3.8],[r-3,-3.6],[r-2.7,-1.1],[lr-1,-.35],[lr,-.1],[lr+.3,.6],[lr,1.5],[lr-1,1.9],[r-2,2.15],[r-10,3.1],[12,4.4],[0,4.5]];
++  mesh('lid-double-sided-with-seat',revolve(lidProfile,240,{material:j=>j>=8&&j<=10?1:0}),[m.porcelain,m.gold],lid);
++  const knobPath=new CatmullRomCurve3(Array.from({length:41},(_,i)=>{
++    const a=Math.PI-i/40*Math.PI;return new Vector3(Math.cos(a)*12,4+Math.sin(a)*12,0);
++  }));
++  const knob=ribbon(knobPath,7,3.3,96);
++  // Fine transverse gold stripes on the exterior of the arched bridge only.
++  const striped=new MeshPhysicalMaterial({color:'#f4f1e7',roughness:.22,clearcoat:1,metalness:0});
++  mesh('arched-bridge-knob',knob,[m.porcelain,m.gold,striped],lid);
++  for(let i=1;i<24;i++){
++    const a=Math.PI-i/24*Math.PI,b=a-.019;
++    const stripePath=new CatmullRomCurve3([new Vector3(Math.cos(a)*13.68,4+Math.sin(a)*13.68,-2.32),new Vector3(Math.cos((a+b)/2)*13.68,4+Math.sin((a+b)/2)*13.68,0),new Vector3(Math.cos(b)*13.68,4+Math.sin(b)*13.68,2.32)]);
++    // Thin rectangular ribbon rather than a thick decorative ridge.
++    const stripe=mesh('knob-fine-gilded-line',ribbon(stripePath,.21,.08,8,false),m.gold,lid);stripe.castShadow=false;
++  }
++  const sr=p.saucerRadius;
++  const sp:ProfilePoint[]=[[0,2.7],[r-12,2.7],[r-10,2.5],[r-9,.3],[r-8,0],[r-6,0],[r-5.3,2.6],[sr-8,3.4],[sr-5,4.5],[sr-2.1,7.2],[sr-.45,10.1],[sr,11.4],[sr-.2,12.2],[sr-1,12.5],[sr-2.2,11.8],[sr-5,9.3],[sr-10,7.2],[r+7,6.2],[r+3.1,6.3],[r+2.4,7.15],[r+1.3,7.35],[r+.55,6.9],[r-.3,6.25],[r-2,6],[0,6]];
++  mesh('saucer-bowl-and-continuous-rim',revolve(sp,320,{
++    material:j=>j>=8&&j<=10?2:j===11||j===12||j===7||j>=18&&j<=20?1:0,
++    uv:(_rr,y,theta)=>[theta/(Math.PI*2)*4,(y-4.5)/6.9],
++  }),[m.porcelain,m.gold,m.regions.saucer],saucer);
++  cup.position.set(0,6+h/2,0);lid.position.y=6+h-.6;
++  root.updateMatrixWorld(true);
++  return {root,cup,lid,saucer,parameters:p,home:{cup:cup.position.clone(),lid:lid.position.clone(),saucer:saucer.position.clone()},dispose(){
++    root.traverse(o=>{if(o instanceof Mesh)o.geometry.dispose();});striped.dispose();
++  }};
++}
++export type Product=ReturnType<typeof buildProduct>;
+*** End Patch

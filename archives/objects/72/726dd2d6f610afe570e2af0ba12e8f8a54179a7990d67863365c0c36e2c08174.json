@@ -1,0 +1,163 @@
+[
+  {
+    "stage": "china-03-matte",
+    "path": "src/styles/city-artwork.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-relief-separation/before/src/styles/city-artwork.ts",
+    "sha256": "2b486703a879d9da8e5215b771fbebaed546d676a72381cb6574026f662914be",
+    "matched": true
+  },
+  {
+    "stage": "china-03-matte",
+    "path": "tools/china-assets.py",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-relief-separation/before/tools/china-assets.py",
+    "sha256": "fa77917d36a3bcebb2fcbe8ffa73625a2240d4697a2d8d3f1bd56aeddb81f093",
+    "matched": true
+  },
+  {
+    "stage": "china-05-reflections",
+    "path": "src/main.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-china-deployment/before/src/main.ts",
+    "sha256": "961bea8a2ec0e92e37f087271acfdfb5213fe563eda31ba27579acfc1bbb0205",
+    "matched": true
+  },
+  {
+    "stage": "china-05-reflections",
+    "path": "src/styles/style-manager.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-china-deployment/before/src/styles/style-manager.ts",
+    "sha256": "23468c3c8953a5b31771eb33ddab9cb40400f645e3ed55e283add9513fb731a6",
+    "matched": true
+  },
+  {
+    "stage": "china-05-reflections",
+    "path": "src/styles/city-artwork.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-china-deployment/before/src/styles/city-artwork.ts",
+    "sha256": "f3957b0a0957bd9187b9039a7d53d83ab2ef07e655fcf5c37be16714d10c045c",
+    "matched": true
+  },
+  {
+    "stage": "china-05-reflections",
+    "path": "tools/china-qa.mjs",
+    "snapshot": "guangcai-china-preview/docs/changes/20261011-china-deployment/before/tools/china-qa.mjs",
+    "sha256": "0b6bd186949b64c5d7f16c4abf8b9a620dc22385706e05770fc0d9888b71a4c2",
+    "matched": true
+  },
+  {
+    "stage": "china-06-webp",
+    "path": "src/interaction/views.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/views.ts",
+    "sha256": "7f5ca3c223e7c718e1fe1846b56d5a7e59d02b60f99f05e2c4368e8df12ec2e2",
+    "matched": true
+  },
+  {
+    "stage": "china-06-webp",
+    "path": "src/styles/style-manager.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/style-manager.ts",
+    "sha256": "4dca129d940f2aaaebc29091d088c6849f04af66b474f79a88969436e81f2ad4",
+    "matched": true
+  },
+  {
+    "stage": "china-06-webp",
+    "path": "tools/derive-fixed.mjs",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/derive-fixed.mjs",
+    "sha256": "3bd56939a3d2294186901a0a9806ca7b3aadb7450696d37175730ee998409260",
+    "matched": true
+  },
+  {
+    "stage": "china-06-webp",
+    "path": "tools/web-textures.mjs",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/web-textures.mjs",
+    "sha256": "93308761a534f947617c2b81db278b6bcf99e4d2dcdf91dcef6f2df233e54121",
+    "matched": true
+  },
+  {
+    "stage": "china-08-crops",
+    "path": "src/main.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/before/src/main.ts",
+    "sha256": "fae7b865523fe9b5598756c6392d957084b05ac917ad92fdc1b63612ff238929",
+    "matched": true
+  },
+  {
+    "stage": "china-08-crops",
+    "path": "src/materials/materials.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/before/src/materials/materials.ts",
+    "sha256": "937cd876cb6202482e339d311aaeeeed10cd50a3cd770e07c2bffa3ef9aee45a",
+    "matched": true
+  },
+  {
+    "stage": "china-08-crops",
+    "path": "src/materials/render-standard.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/before/src/materials/render-standard.ts",
+    "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283",
+    "matched": true
+  },
+  {
+    "stage": "china-08-crops",
+    "path": "tools/derive-fixed.mjs",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/before/tools/derive-fixed.mjs",
+    "sha256": "1720065fd44d499a3aa99277b70f165b12511bd5dd83a9b8c019c96fd0356b9e",
+    "matched": true
+  },
+  {
+    "stage": "china-09-relief",
+    "path": "src/materials/render-standard.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/intermediate-v5/render-standard.ts",
+    "sha256": "1d5b0b99ad0a621623ea86dfa8593e01a0094ea27e6d6421741455080a1d2f5a",
+    "matched": true
+  },
+  {
+    "stage": "china-10-deeper",
+    "path": "src/main.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/main.ts",
+    "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb",
+    "matched": true
+  },
+  {
+    "stage": "china-10-deeper",
+    "path": "src/geometry/product.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/geometry/product.ts",
+    "sha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20",
+    "matched": true
+  },
+  {
+    "stage": "china-10-deeper",
+    "path": "src/styles/style-manager.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/styles/style-manager.ts",
+    "sha256": "1639e5bb558ea04e24dd3f8e67a7cad30cf35103919ae813c29247f080830805",
+    "matched": true
+  },
+  {
+    "stage": "china-10-deeper",
+    "path": "tools/derive-fixed.mjs",
+    "snapshot": "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/derive-fixed.mjs",
+    "sha256": "e0c6f9b31fd500f4f5fe8eb7fb7c8c20d901fdcfdfae5f8286c84a68d53de60d",
+    "matched": true
+  },
+  {
+    "stage": "china-10-deeper",
+    "path": "tools/geometry.test.ts",
+    "snapshot": "guangcai-china-preview/docs/changes/20261013-fixed-layout/before/tools/geometry.test.ts",
+    "sha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b",
+    "matched": true
+  },
+  {
+    "stage": "original-03-saucer",
+    "path": "src/geometry/product.ts",
+    "snapshot": "original project work/before-handle/product.ts",
+    "sha256": "7b4556b29c97a66e9141f2ef25829b6f04e3afb7956966e49c11ddc0bb07db6b",
+    "matched": true
+  },
+  {
+    "stage": "original-03-saucer",
+    "path": "src/geometry/ribbon.ts",
+    "snapshot": "original project work/before-handle/ribbon.ts",
+    "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252",
+    "matched": true
+  },
+  {
+    "stage": "original-03-saucer",
+    "path": "src/geometry/handle.ts",
+    "snapshot": "original project work/before-handle/handle.ts",
+    "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80",
+    "matched": true
+  }
+]

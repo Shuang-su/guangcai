@@ -1,0 +1,259 @@
+{
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/",
+      "started": 1791903104938,
+      "finished": 1791903105599
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/assets/index-RJAZw6P-.js",
+      "started": 1791903105598,
+      "finished": 1791903107340
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/assets/index-CneZKPP2.css",
+      "started": 1791903105598,
+      "finished": 1791903105939
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+      "started": 1791903107531,
+      "finished": 1791903110836
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+      "started": 1791903107531,
+      "finished": 1791903111036
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+      "started": 1791903107531,
+      "finished": 1791903112701
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/marks/auratic-reference.png",
+      "started": 1791903107531,
+      "finished": 1791903108251
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+      "started": 1791903107531,
+      "finished": 1791903110898
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-roughness-2cf010a49887d95e.webp",
+      "started": 1791903107531,
+      "finished": 1791903108299
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+      "started": 1791903107531,
+      "finished": 1791903108506
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+      "started": 1791903108252,
+      "finished": 1791903122461
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-roughness-9095e03b450273c8.webp",
+      "started": 1791903108299,
+      "finished": 1791903111763
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+      "started": 1791903108506,
+      "finished": 1791903111775
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+      "started": 1791903110898
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+      "started": 1791903111764,
+      "finished": 1791903117487
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+      "started": 1791903111776
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-baseColor-754558a83d8866b8.webp",
+      "started": 1791903117488
+    },
+    {
+      "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-normal-f0662e241725d83b.webp",
+      "started": 1791903122462
+    }
+  ],
+  "state": {
+    "ready": false,
+    "debug": {
+      "version": "3.0.0",
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": false,
+      "view": "hero",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        31.765735672387418,
+        240.54729642798253,
+        909.6516524326336
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "auto",
+        "active": "gray",
+        "busy": false,
+        "hasCustom": false
+      },
+      "environment": "a0e43d9c-e577-4020-aac1-a7f4110eeec1",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": false,
+        "captures": 0,
+        "resolution": 512,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 1,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "c7f2c6ff-7595-4277-97e7-6614ec7eafd1",
+        "ad866e66-314e-4d8e-917f-9ef4bbe6a76d",
+        "4c160566-6da6-48b9-b233-d939408750b9",
+        "035feccc-4e54-42ae-9418-7cff6cf49028",
+        "3b65d497-bb35-4462-9cd5-6688b1469e58",
+        "5c058277-dd56-4f2b-8df0-e845e5d9d32a",
+        "63839c9e-3842-4a75-acee-be3854fe6d28",
+        "3db3652f-61c1-4351-8e05-f880cecb0881",
+        "6e92bd6b-42fa-4eff-950c-805be33f1581",
+        "cc2f277c-2d4e-41b0-9222-5e0e5e961163",
+        "9668261f-ae44-451f-9017-c8b5f2c52843"
+      ],
+      "memory": {
+        "geometries": 13,
+        "textures": 10
+      },
+      "city": {
+        "pack": null,
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 1,
+        "maps": [],
+        "labelSource": "china/label.png",
+        "labelColor": "#ddb538",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.75,
+        "specularIntensity": 0.85
+      },
+      "fixed": {}
+    },
+    "text": "中国 · 共彩\n\n3.0 · 广彩纹饰与金色浅浮雕\n\n素材与对照\n自动旋转\n复位\n材质校准\n背景\n\n左键 / 单指旋转 · 右键 / 双指拖移 · 滚轮 / 捏合缩放\n\n建筑面\n文字面\n把手\n俯视\n杯底\n碟底\n拆解\n杯盖\n浮雕近看\n花纹近看\n正在载入花纸与金色浮雕…",
+    "resources": [
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/assets/index-RJAZw6P-.js",
+        "duration": 1744.2999999523163,
+        "size": 155288
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/assets/index-CneZKPP2.css",
+        "duration": 345.89999997615814,
+        "size": 2201
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+        "duration": 3299.5,
+        "size": 5001612
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+        "duration": 3502.7000000476837,
+        "size": 3771724
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+        "duration": 5166,
+        "size": 24498837
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/marks/auratic-reference.png",
+        "duration": 720.6000000238419,
+        "size": 47084
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-roughness-2cf010a49887d95e.webp",
+        "duration": 768.2000000476837,
+        "size": 189838
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+        "duration": 3366.600000023842,
+        "size": 2532548
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+        "duration": 974.2999999523163,
+        "size": 164726
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+        "duration": 14208.799999952316,
+        "size": 1779642
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-roughness-9095e03b450273c8.webp",
+        "duration": 3463.899999976158,
+        "size": 122426
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+        "duration": 3267,
+        "size": 108714
+      },
+      {
+        "name": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+        "duration": 5723.299999952316,
+        "size": 741474
+      }
+    ]
+  }
+}

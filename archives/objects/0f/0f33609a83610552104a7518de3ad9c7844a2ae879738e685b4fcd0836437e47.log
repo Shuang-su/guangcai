@@ -1,0 +1,39 @@
+
+> apec-guangcai-h5@1.0.0 qa
+> node tools/qa.mjs
+
+PASS first visit enters scroll opening
+PASS opening does not fetch Three.js or 3DGS
+PASS scroll changes opening progress
+PASS reverse scroll reverses opening
+PASS opening reaches white porcelain landing
+PASS opening completes into static home
+PASS creation loads actual geometry
+PASS creation is neutral white
+PASS next step is gated by selection
+PASS first paint contains visible porcelain before interaction
+PASS drag changes real camera
+PASS zoom changes camera distance
+PASS two-finger pinch changes real camera
+PASS selection persists and leaves porcelain unchanged
+PASS rules return preserves step and choices
+PASS refresh restores unfinished draft
+PASS all five choices leave model white
+PASS result is a real non-empty image element
+PASS fixed style and demo provenance recorded
+PASS P10 matches poster style version
+PASS return from 3D reuses result
+PASS share guidance makes no success claim
+PASS completed revisit enters ranking demo
+PASS invalid share can directly enter creation
+PASS address demo never accepts personal data
+PASS claim preview has no submission request
+PASS no horizontal overflow at 360
+PASS no horizontal overflow at 430
+PASS no horizontal overflow at 1280
+PASS normal path console has no page errors
+PASS WebGL unavailable has explicit retry and return
+PASS failed texture package cannot produce success
+PASS reduced-motion opening remains usable
+PASS restart alone clears all five choices and result
+PASS shared work enters editor without replay

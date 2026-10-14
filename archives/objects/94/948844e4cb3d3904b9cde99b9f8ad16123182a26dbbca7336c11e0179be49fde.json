@@ -1,0 +1,65 @@
+{
+  "photo": "IMG_1238",
+  "photoSize": [
+    1368,
+    1824
+  ],
+  "method": "Approximate four extremal gold-rim points; fixed 35 degree lens. Lid and knob dimensions are not fitted to these points. Knob remains an independent validation target.",
+  "pose": {
+    "yaw": 0,
+    "pitch": 2.469329694742335,
+    "roll": 90.0086517880859,
+    "distance": 186.38023902495297,
+    "fov": 35,
+    "cx": 0.5629832664266305,
+    "cy": 0.5511243300743722,
+    "targetY": 109
+  },
+  "rmsPx": 1.8273722954741685,
+  "landmarks": [
+    {
+      "target": [
+        765,
+        274
+      ],
+      "projected": [
+        762.4134595652723,
+        273.7315562880958
+      ],
+      "errorPx": 2.60043331907245
+    },
+    {
+      "target": [
+        763,
+        1737
+      ],
+      "projected": [
+        762.192537915431,
+        1736.7676266396654
+      ],
+      "errorPx": 0.8402335369465536
+    },
+    {
+      "target": [
+        728,
+        1005
+      ],
+      "projected": [
+        729.6898562195837,
+        1005.2446668079557
+      ],
+      "errorPx": 1.7074764682949377
+    },
+    {
+      "target": [
+        793,
+        1005
+      ],
+      "projected": [
+        794.7054835172714,
+        1005.2544843100247
+      ],
+      "errorPx": 1.7243654751047706
+    }
+  ]
+}

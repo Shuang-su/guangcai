@@ -1,0 +1,4 @@
+node --input-type=module - <<'JS'
+import {readFileSync,writeFileSync} from 'node:fs';import{createHash}from'node:crypto';import{execFileSync}from'node:child_process';
+const p=JSON.parse(readFileSync('package-lock.json','utf8')).packages['node_modules/typescript'];const bytes=Buffer.from(await(await fetch(p.resolved)).arrayBuffer());if('sha512-'+createHash('sha512').update(bytes).digest('base64')!==p.integrity)throw Error('integrity mismatch');writeFileSync('.codex-work/cache/typescript-refresh.tgz',bytes);execFileSync('tar',['-xzf','.codex-work/cache/typescript-refresh.tgz','--strip-components=1','-C','node_modules/typescript']);console.log('Restored locked TypeScript dependency with verified SHA-512.');
+JS

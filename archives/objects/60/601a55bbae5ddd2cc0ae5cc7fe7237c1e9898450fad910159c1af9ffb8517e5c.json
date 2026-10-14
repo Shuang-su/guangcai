@@ -1,0 +1,175 @@
+{
+  "sourceHashes": {
+    "assets/source/china-lines.psd": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+    "public/china/lines.png": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+    "public/china/metalness.png": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+    "assets/masters/v4/shenzhen-lines-generated.png": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93"
+  },
+  "layout": [
+    777,
+    2243,
+    6210,
+    4608
+  ],
+  "workingSize": [
+    4096,
+    1783
+  ],
+  "chinaStructure": "existing PSD-derived masks; identical across all six palettes",
+  "shenzhenStructure": "one generated line master shared by both palettes",
+  "pigment": "reference palette with broad unlit vertical washes; ornaments from saved imagegen outputs",
+  "normals": "floating point gradients of structural ink; 16-bit height and RGBA16F, no baked RGB shading",
+  "labels": {
+    "china": "original PSD alpha",
+    "shenzhen": "深圳 / SHENZHEN",
+    "he": "和合共彩",
+    "create": "共创美好",
+    "font": "/System/Library/Fonts/Supplemental/Songti.ttc"
+  },
+  "catalog": [
+    {
+      "id": "china-green",
+      "name": "中国 · 青绿金线",
+      "theme": "china",
+      "reference": 3,
+      "lineStyle": false,
+      "textColor": "#237751",
+      "thumbnail": "china-green-thumb.webp",
+      "maps": {
+        "baseColor": "china-green-baseColor.webp",
+        "coverage": "china-green-coverage.webp",
+        "metalness": "china-green-metalness.webp",
+        "roughness": "china-green-roughness.webp",
+        "clearcoat": "china-green-clearcoat.webp",
+        "normal": "china-green.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-red",
+      "name": "中国 · 红金",
+      "theme": "china",
+      "reference": 4,
+      "lineStyle": false,
+      "textColor": "#a92019",
+      "thumbnail": "china-red-thumb.webp",
+      "maps": {
+        "baseColor": "china-red-baseColor.webp",
+        "coverage": "china-red-coverage.webp",
+        "metalness": "china-red-metalness.webp",
+        "roughness": "china-red-roughness.webp",
+        "clearcoat": "china-red-clearcoat.webp",
+        "normal": "china-red.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-purple",
+      "name": "中国 · 紫金",
+      "theme": "china",
+      "reference": 5,
+      "lineStyle": false,
+      "textColor": "#672c86",
+      "thumbnail": "china-purple-thumb.webp",
+      "maps": {
+        "baseColor": "china-purple-baseColor.webp",
+        "coverage": "china-purple-coverage.webp",
+        "metalness": "china-purple-metalness.webp",
+        "roughness": "china-purple-roughness.webp",
+        "clearcoat": "china-purple-clearcoat.webp",
+        "normal": "china-purple.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-blue",
+      "name": "中国 · 蓝金",
+      "theme": "china",
+      "reference": 6,
+      "lineStyle": false,
+      "textColor": "#266799",
+      "thumbnail": "china-blue-thumb.webp",
+      "maps": {
+        "baseColor": "china-blue-baseColor.webp",
+        "coverage": "china-blue-coverage.webp",
+        "metalness": "china-blue-metalness.webp",
+        "roughness": "china-blue-roughness.webp",
+        "clearcoat": "china-blue-clearcoat.webp",
+        "normal": "china-blue.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-blue-line",
+      "name": "中国 · 蓝色线描",
+      "theme": "china",
+      "reference": 7,
+      "lineStyle": true,
+      "textColor": "#245a90",
+      "thumbnail": "china-blue-line-thumb.webp",
+      "maps": {
+        "baseColor": "china-blue-line-baseColor.webp",
+        "coverage": "china-blue-line-coverage.webp",
+        "metalness": "china-blue-line-metalness.webp",
+        "roughness": "china-blue-line-roughness.webp",
+        "clearcoat": "china-blue-line-clearcoat.webp",
+        "normal": "china-blue-line.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-purple-line",
+      "name": "中国 · 紫色线描",
+      "theme": "china",
+      "reference": 8,
+      "lineStyle": true,
+      "textColor": "#6f348b",
+      "thumbnail": "china-purple-line-thumb.webp",
+      "maps": {
+        "baseColor": "china-purple-line-baseColor.webp",
+        "coverage": "china-purple-line-coverage.webp",
+        "metalness": "china-purple-line-metalness.webp",
+        "roughness": "china-purple-line-roughness.webp",
+        "clearcoat": "china-purple-line-clearcoat.webp",
+        "normal": "china-purple-line.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "shenzhen-red",
+      "name": "深圳 · 红金",
+      "theme": "shenzhen",
+      "reference": 1,
+      "lineStyle": false,
+      "textColor": "#ae221b",
+      "thumbnail": "shenzhen-red-thumb.webp",
+      "maps": {
+        "baseColor": "shenzhen-red-baseColor.webp",
+        "coverage": "shenzhen-red-coverage.webp",
+        "metalness": "shenzhen-red-metalness.webp",
+        "roughness": "shenzhen-red-roughness.webp",
+        "clearcoat": "shenzhen-red-clearcoat.webp",
+        "normal": "shenzhen-red.hfn.gz"
+      },
+      "structureSha256": "5266ecdfa941db14787fd7c7eb9b966f041b2cc99da61eb9447c7a9bcc54da1a"
+    },
+    {
+      "id": "shenzhen-teal",
+      "name": "深圳 · 青蓝金线",
+      "theme": "shenzhen",
+      "reference": 2,
+      "lineStyle": false,
+      "textColor": "#327e85",
+      "thumbnail": "shenzhen-teal-thumb.webp",
+      "maps": {
+        "baseColor": "shenzhen-teal-baseColor.webp",
+        "coverage": "shenzhen-teal-coverage.webp",
+        "metalness": "shenzhen-teal-metalness.webp",
+        "roughness": "shenzhen-teal-roughness.webp",
+        "clearcoat": "shenzhen-teal-clearcoat.webp",
+        "normal": "shenzhen-teal.hfn.gz"
+      },
+      "structureSha256": "5266ecdfa941db14787fd7c7eb9b966f041b2cc99da61eb9447c7a9bcc54da1a"
+    }
+  ]
+}

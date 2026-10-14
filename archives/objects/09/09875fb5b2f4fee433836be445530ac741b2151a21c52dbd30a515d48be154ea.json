@@ -1,0 +1,69 @@
+{
+  "version": "3.0.0",
+  "assetVersion": "3.0-floral-restored-1",
+  "revision": "Generative HD fixed artwork and seamless full-wrap atlas",
+  "status": "manual preview published; visual acceptance pending",
+  "date": "2026-10-13T21:58:55.970048+00:00",
+  "sourceCommit": "9400eaf7f65452cbaa68bee563b9793c632d17ae",
+  "siteId": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+  "siteName": "guangcai-no1-china-v3",
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "deployId": "6ace443df7425f433e717eb0",
+  "immutableUrl": "https://6ace443df7425f433e717eb0--guangcai-no1-china-v3.netlify.app/",
+  "command": "netlify deploy --prod --dir .codex-work/deploy/v3-restored-20261013/site --site 71306515-d3d5-46a9-8f36-e51f4f3ae480 --no-build --json",
+  "manualOnly": true,
+  "gitRepositoryConnected": false,
+  "netlifyBadgeEnabled": false,
+  "files": 147,
+  "totalBytes": 187315002,
+  "publicSha256Match": false,
+  "allPublicFilesVerified": true,
+  "rawSha256Matches": 145,
+  "knownProcessedHtml": 2,
+  "knownNetlifyProcessing": [
+    "nonvisual hosting comment",
+    "single prior-deploy evidence link Pretty URL normalization"
+  ],
+  "userDesktopLoadingConfirmed": "2026-10-14",
+  "archive": "deployments/guangcai-no1-china-v3/6ace443df7425f433e717eb0",
+  "oldSitesUnchanged": [
+    {
+      "siteId": "cdc49df3-1e59-4e37-99ac-962584f050a6",
+      "name": "guangcai-no1",
+      "url": "https://guangcai-no1.netlify.app",
+      "repository": null,
+      "repoUrl": null,
+      "provider": null,
+      "branch": null,
+      "published": "6abbdf78d912b4b6b1d7c3b9",
+      "state": "ready",
+      "badgeEnabled": false
+    },
+    {
+      "siteId": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "url": "https://guangcai-no1-china.netlify.app",
+      "repository": null,
+      "repoUrl": null,
+      "provider": null,
+      "branch": null,
+      "published": "6ace111ab0415c9455a3c6f8",
+      "state": "ready",
+      "badgeEnabled": false
+    }
+  ],
+  "previousDeployId": "6ace32284a3c8d9e272b18ad",
+  "pr": "https://github.com/Shuang-su/guangcai/pull/13",
+  "prIsDraft": true,
+  "formalTagCreated": false,
+  "delivery": {
+    "checks": 14,
+    "coldReadyMs": 7413.5,
+    "warmReadyMs": 2111.1999999284744,
+    "encodedResourceBytes": 52178328,
+    "scope": "Chrome desktop and emulated mobile on this computer and network; not a physical-phone benchmark",
+    "verificationNetwork": "Browser DNS pinned to current IPv4 A record; HTTP/1.1 only; system and site settings unchanged",
+    "errors": [],
+    "badRequests": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-13T12:33:31.318091+00:00",
+  "repository": "https://github.com/Shuang-su/guangcai",
+  "workingRoot": "/Volumes/Prism/Codex/guangcai-github-20261013",
+  "sourceDirectory": "guangcai-china-preview",
+  "branch": "codex/china-3.0",
+  "remoteHead": "de4e366f64c859b4d07af2848e3506f904d23c3a",
+  "matchingTrackedBlobs": 1798,
+  "forbiddenPaths": [],
+  "issue": "https://github.com/Shuang-su/guangcai/issues/11",
+  "pullRequest": {
+    "number": 13,
+    "url": "https://github.com/Shuang-su/guangcai/pull/13",
+    "title": "feat(china): 原始花纸、白瓷与平盖校准 3.0",
+    "state": "open",
+    "draft": true,
+    "base": "main"
+  },
+  "commits": [
+    {
+      "sha": "17bd92f34adb580d8b83adabe17eef8282856db6",
+      "message": "feat(china): integrate original-decal 3.0 work and flat lid (#11)",
+      "tree": "907f7edec861c00e294968018d2195f9ed6540bd",
+      "parents": [
+        "99e26b079ce546fcc4943525b7f72034262a90db"
+      ]
+    },
+    {
+      "sha": "de4e366f64c859b4d07af2848e3506f904d23c3a",
+      "message": "fix(china): align source floral wrap and capture lid comparisons (#11)",
+      "tree": "3c1a9f7b63dd85dbdd90c78fc0523825baf632a1",
+      "parents": [
+        "17bd92f34adb580d8b83adabe17eef8282856db6"
+      ]
+    }
+  ],
+  "runtimeChangeAfterIntegration": [
+    "guangcai-china-preview/src/styles/fixed-layout.json",
+    "guangcai-china-preview/tools/china-qa.mjs",
+    "guangcai-china-preview/tools/original-assets.mjs",
+    "guangcai-china-preview/tools/requirements-assets.txt",
+    "guangcai-china-preview/tools/v3-evidence.mjs"
+  ]
+}

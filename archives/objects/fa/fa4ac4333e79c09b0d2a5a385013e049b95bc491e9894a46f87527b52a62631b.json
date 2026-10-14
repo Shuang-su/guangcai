@@ -1,0 +1,496 @@
+{
+  "started": "2026-09-21T08:42:16.759Z",
+  "cases": [
+    {
+      "name": "webkit initial scene",
+      "pass": true,
+      "data": {
+        "ready": true,
+        "style": "gold",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "high",
+        "qualityLow": false,
+        "geometryIds": [
+          "0d068f56-323c-4c8a-9c0d-8f298688eee6",
+          "c1b929dd-ba06-41e9-85e7-f83a2141e9f2",
+          "7f63b67d-9831-451d-abfb-0ce1d92eb779"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 266190,
+        "calls": 33,
+        "frameCount": 2,
+        "cpuFrameMs": 42,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 0,
+        "pixelRatio": 1,
+        "reflectionSize": 1024,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.037,
+          -0.42492671966552736
+        ]
+      }
+    },
+    {
+      "name": "webkit mouse lid hit",
+      "pass": true
+    },
+    {
+      "name": "webkit handle changes style without geometry replacement",
+      "pass": true
+    },
+    {
+      "name": "webkit drag does not click handle",
+      "pass": true
+    },
+    {
+      "name": "webkit mouse wheel zoom",
+      "pass": true
+    },
+    {
+      "name": "webkit double click body cycles and blank resets",
+      "pass": true
+    },
+    {
+      "name": "webkit help and keyboard equivalents",
+      "pass": true
+    },
+    {
+      "name": "webkit interrupted animation and latest style wins",
+      "pass": true
+    },
+    {
+      "name": "webkit failed style leaves displayed style intact",
+      "pass": true
+    },
+    {
+      "name": "webkit single image clears prior relief and metal mask",
+      "pass": true
+    },
+    {
+      "name": "webkit uncompressed fallback keeps artwork orientation",
+      "pass": true
+    },
+    {
+      "name": "webkit resource counts across repeated changes",
+      "pass": true,
+      "data": [
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        }
+      ]
+    },
+    {
+      "name": "webkit white style preserves gold handle and saucer",
+      "pass": true
+    },
+    {
+      "name": "webkit static render rests",
+      "pass": true,
+      "data": {
+        "stoppedAt": 374
+      }
+    },
+    {
+      "name": "webkit warm moving frame timings",
+      "pass": true,
+      "data": {
+        "p50": 33,
+        "p95": 37,
+        "renderer": "Apple GPU",
+        "state": {
+          "ready": true,
+          "style": "white",
+          "view": "assembly",
+          "lidOpen": false,
+          "tier": "low",
+          "qualityLow": true,
+          "geometryIds": [
+            "0d068f56-323c-4c8a-9c0d-8f298688eee6",
+            "c1b929dd-ba06-41e9-85e7-f83a2141e9f2",
+            "7f63b67d-9831-451d-abfb-0ce1d92eb779"
+          ],
+          "geometries": 19,
+          "textures": 11,
+          "triangles": 266190,
+          "calls": 33,
+          "frameCount": 852,
+          "cpuFrameMs": 1.95,
+          "textureError": "",
+          "regions": {
+            "body": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            },
+            "handle": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            },
+            "saucer": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            }
+          },
+          "frameMs": 33.33888888888889,
+          "pixelRatio": 1,
+          "reflectionSize": 384,
+          "cupBounds": [
+            -0.42493125915527347,
+            0.03699999999999999,
+            -0.42492671966552736
+          ]
+        },
+        "resources": 58274201
+      }
+    },
+    {
+      "name": "webkit no unexpected browser errors",
+      "pass": true
+    },
+    {
+      "name": "webkit touch 390x844",
+      "pass": true,
+      "data": {
+        "lid": [
+          187.2,
+          278.52000000000004
+        ],
+        "body": [
+          117,
+          346.04
+        ],
+        "handle": [
+          280.80000000000007,
+          413.56000000000006
+        ]
+      }
+    },
+    {
+      "name": "webkit touch 430x932",
+      "pass": true,
+      "data": {
+        "lid": [
+          206.4,
+          307.56
+        ],
+        "body": [
+          129,
+          382.12
+        ],
+        "handle": [
+          309.6000000000001,
+          456.68000000000006
+        ]
+      }
+    },
+    {
+      "name": "webkit touch 844x390",
+      "pass": true,
+      "data": {
+        "lid": [
+          405.12,
+          128.70000000000002
+        ],
+        "body": [
+          405.12,
+          159.9
+        ],
+        "handle": [
+          506.4000000000001,
+          159.9
+        ]
+      }
+    },
+    {
+      "name": "webkit reduced motion",
+      "pass": true
+    },
+    {
+      "name": "webkit dispose releases GPU geometry",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "devices": [
+    {
+      "engine": "webkit",
+      "version": "26.6",
+      "viewport": "1440x900",
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": true,
+        "geometryIds": [
+          "0d068f56-323c-4c8a-9c0d-8f298688eee6",
+          "c1b929dd-ba06-41e9-85e7-f83a2141e9f2",
+          "7f63b67d-9831-451d-abfb-0ce1d92eb779"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 266190,
+        "calls": 33,
+        "frameCount": 852,
+        "cpuFrameMs": 1.95,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 33.33888888888889,
+        "pixelRatio": 1,
+        "reflectionSize": 384,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.42492671966552736
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "viewport": "390x844",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": true,
+        "geometryIds": [
+          "57160254-cf21-4c86-964c-d95559cbbf97",
+          "96ec15db-5259-46b6-8b85-58080bf5577a",
+          "90782dca-cdb4-4576-98df-1d52e8da5b24"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 179814,
+        "calls": 35,
+        "frameCount": 122,
+        "cpuFrameMs": 2.051282051282051,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 35.63302752293578,
+        "pixelRatio": 1.1,
+        "reflectionSize": 384,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "viewport": "430x932",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": true,
+        "geometryIds": [
+          "a9b3a8e7-b6a5-4023-893a-d51f84e83be1",
+          "93b8cffb-a6a4-4c14-82f7-41e3bb45a302",
+          "eb883bf5-5fc2-43bd-ac60-f9bd3312b230"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 179814,
+        "calls": 35,
+        "frameCount": 120,
+        "cpuFrameMs": 2.4434782608695653,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 36.018691588785046,
+        "pixelRatio": 1.1,
+        "reflectionSize": 384,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "viewport": "844x390",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": false,
+        "geometryIds": [
+          "e84cd28e-269e-42b0-b341-a28d4590b5ef",
+          "9c63e920-10c1-4ab7-985d-5f5d258f671c",
+          "11eaff0a-2cad-4e98-8a06-8991ffc38b7f"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 174158,
+        "calls": 33,
+        "frameCount": 90,
+        "cpuFrameMs": 2.4047619047619047,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 34.19736842105263,
+        "pixelRatio": 1.7,
+        "reflectionSize": 512,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Browser emulation on Mac; no physical phone tested."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "pure-pattern-pbr-v1",
+  "source": "tools/build-option-maps.mjs",
+  "ids": [
+    "sea",
+    "cross",
+    "star",
+    "tide",
+    "bloom",
+    "birds",
+    "butterfly",
+    "garden",
+    "weave",
+    "reflect",
+    "cluster",
+    "relay",
+    "blue",
+    "gold",
+    "green",
+    "red",
+    "mountain",
+    "new",
+    "together",
+    "future"
+  ],
+  "baseColor": "../../media/options/<id>.webp",
+  "channels": [
+    "normal",
+    "roughness",
+    "metalness",
+    "clearcoat"
+  ],
+  "notes": "Artist-approximated gold/enamel masks from pigment colors, not measured material maps. Used only on option cards; never applied to the cup."
+}

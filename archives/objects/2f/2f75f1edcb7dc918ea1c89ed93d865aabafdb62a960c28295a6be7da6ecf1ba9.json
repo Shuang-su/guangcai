@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "uvLayout": "guangcai-v1",
+  "method": "Generated transparent colour master; alpha is coverage; hue-region classes define enamel and gold-line semantics, never luminance-to-height. Normal is a finite-difference bake of labelled microheight.",
+  "units": "millimetres",
+  "masters": {
+    "body": {
+      "sha256": "38c7419daad0e96eaac9715c46a252b985e853dbb9e45eb756a68ed32a253297",
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 3523202,
+      "width": 1774,
+      "height": 887,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    "band": {
+      "sha256": "bb80ad6b5da166124296dff9bee3bc096cb645bc25ed3146a23d16d2602204fd",
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 2104468,
+      "width": 2172,
+      "height": 724,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 2172,
+        "height": 724
+      }
+    }
+  },
+  "outputs": [
+    {
+      "name": "body",
+      "variant": "white",
+      "tier": "high",
+      "width": 1760,
+      "height": 880,
+      "master": "38c7419daad0e96eaac9715c46a252b985e853dbb9e45eb756a68ed32a253297"
+    },
+    {
+      "name": "body",
+      "variant": "gold",
+      "tier": "high",
+      "width": 1760,
+      "height": 880,
+      "master": "38c7419daad0e96eaac9715c46a252b985e853dbb9e45eb756a68ed32a253297"
+    },
+    {
+      "name": "body",
+      "variant": "white",
+      "tier": "low",
+      "width": 1024,
+      "height": 512,
+      "master": "38c7419daad0e96eaac9715c46a252b985e853dbb9e45eb756a68ed32a253297"
+    },
+    {
+      "name": "body",
+      "variant": "gold",
+      "tier": "low",
+      "width": 1024,
+      "height": 512,
+      "master": "38c7419daad0e96eaac9715c46a252b985e853dbb9e45eb756a68ed32a253297"
+    },
+    {
+      "name": "band",
+      "variant": "gold",
+      "tier": "high",
+      "width": 2048,
+      "height": 384,
+      "master": "bb80ad6b5da166124296dff9bee3bc096cb645bc25ed3146a23d16d2602204fd"
+    },
+    {
+      "name": "band",
+      "variant": "gold",
+      "tier": "low",
+      "width": 1024,
+      "height": 192,
+      "master": "bb80ad6b5da166124296dff9bee3bc096cb645bc25ed3146a23d16d2602204fd"
+    }
+  ]
+}

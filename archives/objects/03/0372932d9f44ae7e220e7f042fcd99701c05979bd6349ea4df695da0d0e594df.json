@@ -1,0 +1,55 @@
+{
+  "version": "3.0.0",
+  "status": "independent preview published; visual acceptance pending",
+  "date": "2026-10-13T12:47:39.246107+00:00",
+  "sourceCommit": "b92e418e547c11c21ce90ccb2baad9ae5198a5a5",
+  "siteId": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+  "siteName": "guangcai-no1-china-v3",
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "deployId": "6ace27aaf19dc1dfbdd9c2a0",
+  "immutableUrl": "https://6ace27aaf19dc1dfbdd9c2a0--guangcai-no1-china-v3.netlify.app/",
+  "command": "netlify deploy --prod --dir .codex-work/deploy/v3-20261013/site --site 71306515-d3d5-46a9-8f36-e51f4f3ae480 --no-build --json",
+  "manualOnly": true,
+  "gitRepositoryConnected": false,
+  "files": 81,
+  "totalBytes": 24222789,
+  "publicSha256Match": true,
+  "archive": "deployments/guangcai-no1-china-v3/6ace27aaf19dc1dfbdd9c2a0",
+  "oldSitesUnchanged": [
+    {
+      "siteId": "cdc49df3-1e59-4e37-99ac-962584f050a6",
+      "name": "guangcai-no1",
+      "url": "https://guangcai-no1.netlify.app",
+      "repository": null,
+      "repoUrl": null,
+      "provider": null,
+      "branch": null,
+      "published": "6abbdf78d912b4b6b1d7c3b9",
+      "state": "ready"
+    },
+    {
+      "siteId": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "url": "https://guangcai-no1-china.netlify.app",
+      "repository": null,
+      "repoUrl": null,
+      "provider": null,
+      "branch": null,
+      "published": "6ace111ab0415c9455a3c6f8",
+      "state": "ready"
+    }
+  ],
+  "pr": "https://github.com/Shuang-su/guangcai/pull/13",
+  "prIsDraft": true,
+  "formalTagCreated": false,
+  "delivery": {
+    "checks": 12,
+    "coldReadyMs": 5536.600000023842,
+    "warmReadyMs": 1117.7999999523163,
+    "encodedResourceBytes": 5277825,
+    "scope": "Chrome desktop and emulated mobile on this computer and network; not a physical-phone benchmark",
+    "errors": [],
+    "badRequests": []
+  },
+  "netlifyBadgeEnabled": false
+}

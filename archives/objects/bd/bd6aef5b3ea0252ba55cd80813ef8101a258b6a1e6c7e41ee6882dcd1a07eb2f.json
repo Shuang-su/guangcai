@@ -1,0 +1,45 @@
+{
+  "sourceCommit": "fc3722cd13bd387bc574cb75f1464f7ee06318f6",
+  "deploy": {
+    "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "site_name": "guangcai-no1-china-v4",
+    "deploy_id": "6acec92d0ea6dae54a033d56",
+    "deploy_url": "https://6acec92d0ea6dae54a033d56--guangcai-no1-china-v4.netlify.app",
+    "logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/deploys/6acec92d0ea6dae54a033d56",
+    "function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/functions",
+    "edge_function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/edge-functions",
+    "url": "https://guangcai-no1-china-v4.netlify.app"
+  },
+  "archive": "deployments/guangcai-no1-china-v4/6acec92d0ea6dae54a033d56",
+  "archiveMethod": "same-volume staging rename after all local/server hashes passed",
+  "filesVerified": 404,
+  "hashErrors": [],
+  "readbacks": [
+    {
+      "siteId": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "siteName": "guangcai-no1-china-v4",
+      "deployId": "6acec92d0ea6dae54a033d56",
+      "state": "ready",
+      "repo": null,
+      "provider": null,
+      "branch": null
+    },
+    {
+      "siteId": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "siteName": "guangcai-no1-china-v3",
+      "deployId": "6ace443df7425f433e717eb0",
+      "state": "ready",
+      "repo": null,
+      "provider": null,
+      "branch": null
+    }
+  ],
+  "publicRotation": {
+    "phase": "online",
+    "url": "https://guangcai-no1-china-v4.netlify.app/",
+    "angularDeltaRadians": 0.05580670205135686,
+    "elapsedMilliseconds": 900,
+    "stoppedDriftRadians": 4.6103799633545606e-07,
+    "errors": []
+  }
+}

@@ -1,0 +1,41 @@
+import { BufferGeometry, CubicBezierCurve3, CurvePath, Float32BufferAttribute, Vector3 } from 'three';
+import type { Dimensions } from './parameters';
+
+/** Side silhouette fitted to IMG_1154 / 1158 / 1163. Dimensions remain estimates.
+ * A short level upper arm, a rounded square shoulder and one continuous lower
+ * return; all joins share tangent directions. No separate hooked lower stem. */
+export function handlePath(p: Dimensions) {
+  const r=p.radius,reach=p.handleReach,upper=p.height*.865,lower=p.height*.325;
+  const v=(x:number,y:number)=>new Vector3(r+x,y,0);
+  const path=new CurvePath<Vector3>();
+  path.add(new CubicBezierCurve3(v(-1,upper),v(5,upper+1.3),v(reach-11,upper+1.3),v(reach-5,upper+1.3)));
+  path.add(new CubicBezierCurve3(v(reach-5,upper+1.3),v(reach-1.4,upper+1.3),v(reach,upper-.3),v(reach,upper-4.5)));
+  path.add(new CubicBezierCurve3(v(reach,upper-4.5),v(reach,lower+(upper-lower)*.43),v(reach*.76,lower),v(-1,lower)));
+  path.arcLengthDivisions=1200;
+  return {path,upper,lower};
+}
+
+/** Shallow flared porcelain collar follows the cylindrical wall rather than
+ * placing a sphere on it. Ends overlap the cup and ribbon to hide their seams. */
+export function handleCollar(radius:number,width:number,thickness:number) {
+  const points:number[]=[],uvs:number[]=[],indices:number[]=[],n=64;
+  const rings=[[-1.5,thickness*.73,width*.57],[-.2,thickness*.71,width*.56],[.8,thickness*.65,width*.54],[1.6,thickness*.55,width*.51],[2.3,thickness*.49,width*.49]];
+  for(let j=0;j<rings.length;j++){
+    const [x,ry,rz]=rings[j];
+    for(let i=0;i<=n;i++){
+      const a=i/n*Math.PI*2,y=Math.cos(a)*ry,z=Math.sin(a)*rz;
+      points.push(Math.sqrt(radius*radius-z*z)+x,y,z);uvs.push(i/n,j/(rings.length-1));
+    }
+  }
+  for(let j=0;j<rings.length-1;j++)for(let i=0;i<n;i++){
+    const a=j*(n+1)+i,b=a+n+1;indices.push(a,b,a+1,b,b+1,a+1);
+  }
+  const g=new BufferGeometry();g.setAttribute('position',new Float32BufferAttribute(points,3));g.setAttribute('uv',new Float32BufferAttribute(uvs,2));g.setIndex(indices);g.computeVertexNormals();
+  // Average the duplicated seam normals for a continuous porcelain highlight.
+  const normals=g.getAttribute('normal');
+  for(let j=0;j<rings.length;j++){
+    const a=j*(n+1),b=a+n,v=new Vector3().fromBufferAttribute(normals,a).add(new Vector3().fromBufferAttribute(normals,b)).normalize();
+    normals.setXYZ(a,v.x,v.y,v.z);normals.setXYZ(b,v.x,v.y,v.z);
+  }
+  g.computeBoundingBox();return g;
+}

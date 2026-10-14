@@ -1,0 +1,2191 @@
+{
+  "createdAt": "2026-09-29T16:03:19.087Z",
+  "root": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs",
+  "scope": "Editable source, generated assets, production build, local and public deployment evidence. Dependencies, task caches, CLI state and this manifest excluded.",
+  "fileCount": 436,
+  "totalBytes": 242689230,
+  "productionUrl": "https://guangcai-no1.netlify.app/",
+  "deployId": "6abbdf78d912b4b6b1d7c3b9",
+  "files": [
+    {
+      "file": "DELIVERY.md",
+      "bytes": 3695,
+      "sha256": "3a6699760fee565a62f6dcace087bd29b01ec85c2a6343090cdc4c4a730af2bc"
+    },
+    {
+      "file": "evidence/asset-verification.json",
+      "bytes": 3024,
+      "sha256": "8704675bae4a627e2b195ab0de599fe59c55906407b76dcdff8042ce9abde1d6"
+    },
+    {
+      "file": "evidence/browser-qa.json",
+      "bytes": 1340,
+      "sha256": "8330fd5d8e4097ab2c31545d22c428a106d47ef585cb32156a455a7780737c0c"
+    },
+    {
+      "file": "evidence/build.log",
+      "bytes": 715,
+      "sha256": "5ec81ae24d0daa44545a2d12ae7324024766dde985024148612c64dc2b890501"
+    },
+    {
+      "file": "evidence/comparison.html",
+      "bytes": 11626,
+      "sha256": "0c2aeac3db06801ea785a12e405f383e6b1de772da62d5a284fdb39a7d36a0fb"
+    },
+    {
+      "file": "evidence/deployment/badge-status.json",
+      "bytes": 221,
+      "sha256": "96dfabd7df638311f09d97e9f652271498eaa614dfbb9fb804c454db991439c8"
+    },
+    {
+      "file": "evidence/deployment/deploy-status.json",
+      "bytes": 497,
+      "sha256": "a7a0693446266067c0dbeebdeff22e87fa8623f8d50c829c65ca096ba972d3f2"
+    },
+    {
+      "file": "evidence/deployment/live-desktop.png",
+      "bytes": 318895,
+      "sha256": "2edcc36976a2dd468492df59b362153a5ec19e604a01173c4456054b9a700af6"
+    },
+    {
+      "file": "evidence/deployment/live-mobile.png",
+      "bytes": 124922,
+      "sha256": "3b9bce71c11c9158c64a70595cde247345ba44c01abebca3c2601df828e931a9"
+    },
+    {
+      "file": "evidence/deployment/live-overlay.png",
+      "bytes": 1154025,
+      "sha256": "d236c73bf1a02149a68de25bbccd9cc641e1d39985455488d02efe5993f9ae85"
+    },
+    {
+      "file": "evidence/deployment/live-standards.png",
+      "bytes": 305651,
+      "sha256": "999afe3b2d345fff4a1ced04e6a6fcf19479ae02cca8c173dc0d9c5ce6c92d60"
+    },
+    {
+      "file": "evidence/deployment/netlify-deploy.json",
+      "bytes": 520,
+      "sha256": "c0177f4528abe7412165ece5773c6a2b4068897085e27f4e456c1109749fd53b"
+    },
+    {
+      "file": "evidence/deployment/online-qa-initial.json",
+      "bytes": 18252,
+      "sha256": "2308d554344d8b51812cd096b55f7f2e3bf399d3efff555e4e2aa937bee2e96c"
+    },
+    {
+      "file": "evidence/deployment/online-qa.json",
+      "bytes": 32395,
+      "sha256": "cdfadb069bb5a470b78166990e9565fada033d1046f11c7a1edda8f4f01ef33f"
+    },
+    {
+      "file": "evidence/deployment/release-manifest.json",
+      "bytes": 13507,
+      "sha256": "b784425e036f5981501c55d6642469098e8b4cab8895e007067ff432c49e3aaf"
+    },
+    {
+      "file": "evidence/final/desktop.png",
+      "bytes": 288193,
+      "sha256": "0dcff2498249fb9c1744852cdc51521e26c971a327b3df241f1d9f32fbf134b5"
+    },
+    {
+      "file": "evidence/final/mobile.png",
+      "bytes": 123563,
+      "sha256": "dbb706863592837e1a9da97f385a16ba0d65e1ec15b6b7a1a1db4610cece434a"
+    },
+    {
+      "file": "evidence/geometry-test.log",
+      "bytes": 930,
+      "sha256": "cf709986d8ccbc2774318f7c6252167ab26d73c6fa9e8514e3e676fdd5d446be"
+    },
+    {
+      "file": "evidence/handle-correction/comparison.png",
+      "bytes": 305756,
+      "sha256": "07d9c4f0cfc83ab913393825d18774c57aa2ae77f82d6b1721971983bdeb06f0"
+    },
+    {
+      "file": "evidence/handle-correction/index.html",
+      "bytes": 1595286,
+      "sha256": "fcc5f2f13289f7ea28129a988e4b999a37d4282c3f21ac959e7998b050465c7e"
+    },
+    {
+      "file": "evidence/handle-correction/user-handle-outline.png",
+      "bytes": 638134,
+      "sha256": "a54645650953c5a5be62cef227fc07ecbe7aeb5819c063082b5c1d62a597b765"
+    },
+    {
+      "file": "evidence/lid-correction/comparison.png",
+      "bytes": 568016,
+      "sha256": "c94ff2e260dea246cea076df4f60737126bf37557d352d67dc553ff4bfa07db8"
+    },
+    {
+      "file": "evidence/lid-correction/index.html",
+      "bytes": 5138267,
+      "sha256": "66f36fa1a6d0782a6d0a5438867d002111593205e64ea68bfcc5c89e047c812c"
+    },
+    {
+      "file": "evidence/matched-views/1142.png",
+      "bytes": 107901,
+      "sha256": "f7c3a52840713fff0fef5ec6d12e0a267c94adb2072583bc7f9cfcfc6142f55f"
+    },
+    {
+      "file": "evidence/matched-views/1145.png",
+      "bytes": 124106,
+      "sha256": "a89add9bc5fec6e65de4f0816434ed5a3e7be4aa2b57454fc307fd4e44cf2e2d"
+    },
+    {
+      "file": "evidence/matched-views/1148.png",
+      "bytes": 101719,
+      "sha256": "37d3acb99b7fc1724fc2f0138028d84c664cb0ab42c04dc43e047304d5f0a7ce"
+    },
+    {
+      "file": "evidence/matched-views/1159.png",
+      "bytes": 274513,
+      "sha256": "a0a481200ca36c690db95071599e1c87df88d72ad1ca692d9172bfbb53ceae5c"
+    },
+    {
+      "file": "evidence/matched-views/1163.png",
+      "bytes": 96257,
+      "sha256": "da42d8e8b9a4468f5da0aaef342d3c34e9c5eae69862634fac9835a9c657c660"
+    },
+    {
+      "file": "evidence/matched-views/1165.png",
+      "bytes": 75898,
+      "sha256": "53cb574a06704d251b27b587ae2de8b392ac8a25d83ba94757d2370af3cd7cd9"
+    },
+    {
+      "file": "evidence/matched-views/1168.png",
+      "bytes": 55848,
+      "sha256": "5ab5918584a9e7657c00979a0ddd0523f04b3f4f1997652bb6dd21075ba91742"
+    },
+    {
+      "file": "evidence/matched-views/1178.png",
+      "bytes": 49079,
+      "sha256": "d6c5b497ee0e894af3c486e0f9e410e0e7b9d642435235e56ab03b1de1e25b56"
+    },
+    {
+      "file": "evidence/matched-views/1182.png",
+      "bytes": 72845,
+      "sha256": "11922494d744a6ef3cc55a2aa4fdcc0cf0683d238d7b7b5ad94098ef569838df"
+    },
+    {
+      "file": "evidence/matched-views/1197.png",
+      "bytes": 127859,
+      "sha256": "1f5dfd713d342d5bacad0dfe43c529c16f620fe20d1a5158d6591bd454911c7e"
+    },
+    {
+      "file": "evidence/matched-views/1198.png",
+      "bytes": 197315,
+      "sha256": "6db1c40578adb7c0f71033710ffd067e14202ecbbeba40516a17e5715ea7cffd"
+    },
+    {
+      "file": "evidence/matched-views/1199.png",
+      "bytes": 148820,
+      "sha256": "bb9278e0cbb0dc07cc3ed46e0ba4eb2625720445e015d40240b1fca5907ee782"
+    },
+    {
+      "file": "evidence/matched-views/1205.png",
+      "bytes": 105508,
+      "sha256": "e92ce7656ccda21f41d30922f6a50c7c07fd86603dbf0566ee6c9890d3dc7c5d"
+    },
+    {
+      "file": "evidence/matched-views/1206.png",
+      "bytes": 127216,
+      "sha256": "8a3cd2755d12d3786296ac34026c09420b823df6d50afc792bb8cd24318a9161"
+    },
+    {
+      "file": "evidence/matched-views/1220.png",
+      "bytes": 126519,
+      "sha256": "fa17578efc5cf65a331eb629ed5075acd735ec666f386d3b65c127156318db10"
+    },
+    {
+      "file": "evidence/matched-views/1221-detail.png",
+      "bytes": 304258,
+      "sha256": "36a55751cae9cc4f18d4018eb4d5cc3935bf5dd408008a394b9dddd16b8ed533"
+    },
+    {
+      "file": "evidence/matched-views/1221.png",
+      "bytes": 75526,
+      "sha256": "0ecf2e0c9eecfd7c17f573158da1e794ea6751dfc7b199f37402b1aed52e33dd"
+    },
+    {
+      "file": "evidence/matched-views/1225.png",
+      "bytes": 79726,
+      "sha256": "6c57d0dcf12cede3bceecc271bf157b6820b1c978e382cb42a4d6ef080ebb0af"
+    },
+    {
+      "file": "evidence/matched-views/1229.png",
+      "bytes": 47018,
+      "sha256": "98c9d9ffa50d8405d191d29f319f708516ec670040f3c7961249ed80863ab27a"
+    },
+    {
+      "file": "evidence/matched-views/1230.png",
+      "bytes": 151056,
+      "sha256": "36695564b4d6eb629bdeb3d7086249544649f2bfa36c5c20e8ce04b346aabd3c"
+    },
+    {
+      "file": "evidence/matched-views/1236.png",
+      "bytes": 25603,
+      "sha256": "72aff9569652a7630de7e28983019102666b80e399d8aadb3e1d2b1f5134e3c2"
+    },
+    {
+      "file": "evidence/matched-views/1237.png",
+      "bytes": 34115,
+      "sha256": "001019437242816da952254180bfb79a23ced1784b9c643db56f5b7a1d2ed9af"
+    },
+    {
+      "file": "evidence/matched-views/cameras.json",
+      "bytes": 53109,
+      "sha256": "af1caa804e3ead9d5441505bd18a9a3541cf2e9b4e123a51476390dacce9beff"
+    },
+    {
+      "file": "evidence/overlay-qa.json",
+      "bytes": 831,
+      "sha256": "8079800330d4aa45b507db8e3fa0bea17b699f055afb82c1d4469f68f2d882d4"
+    },
+    {
+      "file": "evidence/overlays/1220-camera.json",
+      "bytes": 593,
+      "sha256": "700bfaad18949d1faee0f89e4d35767822db81cde54467daac8a219a63018455"
+    },
+    {
+      "file": "evidence/overlays/1220-fit.json",
+      "bytes": 2151,
+      "sha256": "091ff1d3e4394ce530def39262367abbcc9a3584b5900c1235d679cb9960a3e6"
+    },
+    {
+      "file": "evidence/overlays/1220-interface.png",
+      "bytes": 731628,
+      "sha256": "46622f859d56a2ae503c6f57cc42698a054d91ab43a661e236c7e8f86667bce4"
+    },
+    {
+      "file": "evidence/overlays/1220-model.png",
+      "bytes": 346188,
+      "sha256": "a2eb4fa87c55a0de55e916c8eece7afd619c6d2e8004f427a795c1b5cf74ead5"
+    },
+    {
+      "file": "evidence/overlays/1220-pbr.png",
+      "bytes": 716577,
+      "sha256": "1c790e46d0e96303265ae5d0fb82d5c331c6e14477a355be3917d5777dbff715"
+    },
+    {
+      "file": "evidence/overlays/1220-rings.png",
+      "bytes": 717135,
+      "sha256": "8a689a72510cc8da10bb3e71411651e809413e7b50300222cd8869c1da80c955"
+    },
+    {
+      "file": "evidence/overlays/1220-silhouette.png",
+      "bytes": 668255,
+      "sha256": "7eef07d3ffa7c0f155613aae5437307ba8cffa9f0a88905027a0df5be1cd5ec0"
+    },
+    {
+      "file": "evidence/overlays/1221-camera.json",
+      "bytes": 592,
+      "sha256": "bd7946d08c926ef2e77f55fa410ce9c156f19c46cdbdaabf12a238d837a3784b"
+    },
+    {
+      "file": "evidence/overlays/1221-interface.png",
+      "bytes": 2336777,
+      "sha256": "0240334cca3454f2b0f8a76b333a5d750c89ecd1edd9c279c8a7615a24a0081d"
+    },
+    {
+      "file": "evidence/overlays/1221-model.png",
+      "bytes": 611294,
+      "sha256": "f03109ef40b0f4962e2e53d9509080aa5df0cc339c58a524b28ae280d82926c4"
+    },
+    {
+      "file": "evidence/overlays/1221-pbr.png",
+      "bytes": 3177521,
+      "sha256": "ed1f10f149ab29661cf20a529c6effa4ffbc2550fb707429c9351300412f652c"
+    },
+    {
+      "file": "evidence/overlays/1221-rings.png",
+      "bytes": 3212199,
+      "sha256": "883c54c9a23d991c7315611a6c08a8ca5eba123e860a046a0f168e5e60b3d45a"
+    },
+    {
+      "file": "evidence/overlays/1221-silhouette.png",
+      "bytes": 3079722,
+      "sha256": "7c295827ff253f2001ceebd457ae21beac4eb9755f0129482cc51fcf313db17f"
+    },
+    {
+      "file": "evidence/overlays/1230-camera.json",
+      "bytes": 588,
+      "sha256": "0a1b41bfba2dbc3a8687df7dc983130549982a76b151d5e8c9e2edacd5b1eef1"
+    },
+    {
+      "file": "evidence/overlays/1230-fit.json",
+      "bytes": 1907,
+      "sha256": "96c65b8bcb0c105bd61ba96ee047b529d936ea89b7ccd6b6e03e108811cc3259"
+    },
+    {
+      "file": "evidence/overlays/1230-interface.png",
+      "bytes": 2405722,
+      "sha256": "41cdff94a5664807296157f506b3e203523a65de85ef03ae2dcd17b119c9859d"
+    },
+    {
+      "file": "evidence/overlays/1230-model.png",
+      "bytes": 629571,
+      "sha256": "9ffaf714b897098354328a51884726de6b186bda01fd38124835766d47538a8b"
+    },
+    {
+      "file": "evidence/overlays/1230-pbr.png",
+      "bytes": 3578735,
+      "sha256": "0591e9baa210737e82c08d18f9dcf5136ba6587d9b66866d7c913c7dab6b5d99"
+    },
+    {
+      "file": "evidence/overlays/1230-rings.png",
+      "bytes": 3556645,
+      "sha256": "0bb31f3758f86a0fec88b01ce271257308fa3ca92041f2008d56856b72537a8a"
+    },
+    {
+      "file": "evidence/overlays/1230-silhouette.png",
+      "bytes": 3527124,
+      "sha256": "38649ffd98c42c724839c397f43a6f24b96681d094064b5881e710810bd63919"
+    },
+    {
+      "file": "evidence/overlays/1236-camera.json",
+      "bytes": 576,
+      "sha256": "11ca6474d95327091bdafac003930f5411b0d65c97f4dbb0feea65e5ab57faff"
+    },
+    {
+      "file": "evidence/overlays/1236-fit.json",
+      "bytes": 1261,
+      "sha256": "32288abbf6591d250c1434ba39888c9179a84da0ba235ba32566e91a7f656be0"
+    },
+    {
+      "file": "evidence/overlays/1236-interface.png",
+      "bytes": 2201320,
+      "sha256": "d7b43427cf721b5f891e38bac19ce9cb0e0a92e290df901347a44a308931479b"
+    },
+    {
+      "file": "evidence/overlays/1236-model.png",
+      "bytes": 235362,
+      "sha256": "ddda361fdfc141fbe02cb3c41ac2110b2c517bb57e9a92cb2e6df0836f07263a"
+    },
+    {
+      "file": "evidence/overlays/1236-pbr.png",
+      "bytes": 3139365,
+      "sha256": "3878d49a57e2c39e604ebb76b11aee46e20509914ba938de5c40e0397628b8e5"
+    },
+    {
+      "file": "evidence/overlays/1236-rings.png",
+      "bytes": 3146282,
+      "sha256": "889617aca1ed0867e51bec21638a2f6033ecacb7a5c46015677690240f3d3951"
+    },
+    {
+      "file": "evidence/overlays/1236-silhouette.png",
+      "bytes": 3117501,
+      "sha256": "3e10afa843dbd3b75cbe4708712dc040b1acfd0e5bd0b8c503f12b7836a5d46c"
+    },
+    {
+      "file": "evidence/overlays/1238-camera.json",
+      "bytes": 573,
+      "sha256": "b2837cbe85fec764205b7677f84d72196d1ebdb5f40903fba9e5da1261c70f75"
+    },
+    {
+      "file": "evidence/overlays/1238-fit.json",
+      "bytes": 1263,
+      "sha256": "948844e4cb3d3904b9cde99b9f8ad16123182a26dbbca7336c11e0179be49fde"
+    },
+    {
+      "file": "evidence/overlays/1238-interface.png",
+      "bytes": 2298554,
+      "sha256": "e2f6b154cdb9ded8a3886cfa1c101590f3d871725e94bb2e43093be5f52f710e"
+    },
+    {
+      "file": "evidence/overlays/1238-model.png",
+      "bytes": 290008,
+      "sha256": "395ebb3fa6d4cb448400ea207b70213ed7f72cbb739cd6f967535253011b04a5"
+    },
+    {
+      "file": "evidence/overlays/1238-pbr.png",
+      "bytes": 3132724,
+      "sha256": "5dc65367add479828c1ae158ddcbdff040ad92aa666668effab30e9a854bbcd1"
+    },
+    {
+      "file": "evidence/overlays/1238-rings.png",
+      "bytes": 3117964,
+      "sha256": "5e989f0ae2e1659d215827b8be5ae191655b91a79094af5b8ff5b0f58f92fdb2"
+    },
+    {
+      "file": "evidence/overlays/1238-silhouette.png",
+      "bytes": 3083724,
+      "sha256": "2092371ebf6946bd61a004024375ce01db35784c570171a24f2929432d80d28e"
+    },
+    {
+      "file": "evidence/overlays/index.html",
+      "bytes": 5726,
+      "sha256": "4b4d9dbf74660ca9bfe787b935e266a581ebca8004e9e03b6fbe7f7f596be742"
+    },
+    {
+      "file": "evidence/reference-index.html",
+      "bytes": 25823,
+      "sha256": "5caaf97947d34f6a303efc9d7b5b65c646e9492de96c287997d4c314029bdf14"
+    },
+    {
+      "file": "evidence/reference-index.json",
+      "bytes": 38506,
+      "sha256": "3485ba81648b4d325d8157d27c737713bbe66044ccfd9e19ed2286620957323f"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1135.jpg",
+      "bytes": 67059,
+      "sha256": "faf2b9a83f9d2f844192810ae3886cdd8b7cdcf7523f291fa38317524998712d"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1136.jpg",
+      "bytes": 73151,
+      "sha256": "61b095b37009de93635f36d6c5e550a95b642fe7057bd998d5d33eca479c1600"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1137.jpg",
+      "bytes": 64127,
+      "sha256": "4ccd22a0e49794fa4f3a9c771766b304f31cf742cccc2288f1e30eb8eef76060"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1139.jpg",
+      "bytes": 59129,
+      "sha256": "0ee354418ca1c8fe6b681a89efc30b7680abe1a6ae719dbb6ec1b71757100d4b"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1140.jpg",
+      "bytes": 60260,
+      "sha256": "4138af95300865f859b0dedf75f4d091dff992324d06ca5a15976dac0a0fd886"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1141.jpg",
+      "bytes": 63708,
+      "sha256": "200ce8160428e1aae1473ccd1c996bc0a255590518ad18c3a6452f2d7c9c86c5"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1142.jpg",
+      "bytes": 69184,
+      "sha256": "7cb33782c7674085b6e6eadda45c3a5a6f6f295e0a735660c9fbbce719db7b1d"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1144.jpg",
+      "bytes": 53165,
+      "sha256": "3169f779f9df0d1911a76c99be6fe14dcb89d44e8200e78268e462a19cca3f22"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1145.jpg",
+      "bytes": 58420,
+      "sha256": "05c1b33389787e8129ede848e266d0917c5b168ea8b341e925cfedee4dfbac36"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1146.jpg",
+      "bytes": 59467,
+      "sha256": "636393a7662ed16befa6193a281c5192fdec8e23ff11485302508ba9f75559ac"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1147.jpg",
+      "bytes": 59315,
+      "sha256": "46a81078704b9857a1052c3875e6da0dc6d7a56a1b813f701f905259a8a84392"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1148.jpg",
+      "bytes": 63748,
+      "sha256": "0f8a37386b59fafabece40add9d6d3e692d28341af09aa3df0f61752f172c7eb"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1149.jpg",
+      "bytes": 57507,
+      "sha256": "8c049d825566286a8d760e3b4f1f690495fc85741b618a0d2bacb542458c32bd"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1150.jpg",
+      "bytes": 57412,
+      "sha256": "8289539a970b3b3cea13cb1c1b7ef52b079a3964dd546d0e491102bef5efc327"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1151.jpg",
+      "bytes": 63015,
+      "sha256": "90a324dae8c50447f9b9542151467ce0deffa5b5b557bb22ffc748e7d2255056"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1152.jpg",
+      "bytes": 51341,
+      "sha256": "5530fc4773c45eb0ef667d1ecd3101f056024cc293b6ff1d6d954e54d428f692"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1154.jpg",
+      "bytes": 70444,
+      "sha256": "fdd9ba13352e84ad00ae91912984b1778808cdecc43349d1ff78c34e12e3743b"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1155.jpg",
+      "bytes": 74061,
+      "sha256": "f921755e0428df90d46cc24f4bbf60580e848630e7ff030977560059f25dcc3e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1156.jpg",
+      "bytes": 73816,
+      "sha256": "16de5235695aeec8b3ed1723c8896cf71387908cb9368f7f545c215c3329d544"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1157.jpg",
+      "bytes": 74005,
+      "sha256": "809674121c6c6b10725ee0397049163c8c1dd9ec8419368bee81278eb6c3407f"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1158.jpg",
+      "bytes": 75586,
+      "sha256": "6d3e62ff24dfc21b5c95ceb26cff65fe7261e7e5622e0fe9d6f972981826a9ad"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1159.jpg",
+      "bytes": 67957,
+      "sha256": "db987fc4cae8e1232c7f1e8ec1a39f9ed24cb109005f1bec23ebbf2922591852"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1160.jpg",
+      "bytes": 67670,
+      "sha256": "db306336627b44b3b49f47bc6e7b7b0e998d2f846c245fe8effeb696ed7aee55"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1161.jpg",
+      "bytes": 58825,
+      "sha256": "1575e1b75574c9e04d5cf929a5a77eb58eabbad64392ffc93a627642ba182ea7"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1162.jpg",
+      "bytes": 67727,
+      "sha256": "8355350da77363d4b9b846a479d0e150776c3e1376f45dd4d5d056567ae5e4b9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1163.jpg",
+      "bytes": 63893,
+      "sha256": "087fc6b084e18d5bbfa36c579364b5df27e2a80765547ff9b5e5650b2369f7bb"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1164.jpg",
+      "bytes": 57048,
+      "sha256": "467c4f354dda12b4f64f60ebdf4609f2ad79f690a0e0db5690454304d2b2a83e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1165.jpg",
+      "bytes": 52241,
+      "sha256": "864219c5a32a04d467b3ea4937aa3069972330a4997a24154dda939b940404d9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1166.jpg",
+      "bytes": 55807,
+      "sha256": "f44305676fa399feae0cd702d957b2467e4c268a05ceffaef87597578a7a3561"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1167.jpg",
+      "bytes": 65823,
+      "sha256": "9de0d0f00ce8a5125d973aa8213b8b502aaffdef661f3eb69d1021ff42510ed7"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1168.jpg",
+      "bytes": 50354,
+      "sha256": "5bfec439148c9f2cbe3b8c870455f8d05c83f2fbec724266229ca61815555bf9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1169.jpg",
+      "bytes": 63461,
+      "sha256": "ee8ac2f7b5f5b9040d36418bd8ad68764050af9f6158a3f1fef30a89d6b85445"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1170.jpg",
+      "bytes": 52453,
+      "sha256": "efe79c5a89ad69b6760d99f605a956dc0e3f390f76a9ed105815ab6353249c35"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1172.jpg",
+      "bytes": 60006,
+      "sha256": "c9d9a79d7221e9925caed40705af61f74ac15982e7856a71da12eccf8a48177f"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1173.jpg",
+      "bytes": 60752,
+      "sha256": "19c2c7f3a444260e2454e2f18d872c217caf9674275d4ef6a55f93b9483c3d65"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1174.jpg",
+      "bytes": 45191,
+      "sha256": "db1019edb4fd0f4b49316187b83c755587fdc2759472e183332da24d487afac9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1175.jpg",
+      "bytes": 49573,
+      "sha256": "11fb2922d0594a8c51b2704f9f36fb6bae0643bf3d65021e80022f831beac774"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1176.jpg",
+      "bytes": 58818,
+      "sha256": "48590d187d0c976f54725a6ed02e8b1089eb71abbff3c51dbe4885597ec9721c"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1177.jpg",
+      "bytes": 55535,
+      "sha256": "7c0eb523f3bb45784c81554aa6e890778612ad187b764e401157bb15a3aba8fa"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1178.jpg",
+      "bytes": 45327,
+      "sha256": "cf05c071237b8167c115f72b1666419f13a60af900fd549a685e289f6abd5609"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1179.jpg",
+      "bytes": 48831,
+      "sha256": "cc9781f540489fba27b015325447c32973d32c97d3c3367783fe56d572b9b56d"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1180.jpg",
+      "bytes": 47454,
+      "sha256": "0accd5f1736bb992b2417846be0feea3c7172d2ba6875099ba5fd4825b3c95d4"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1181.jpg",
+      "bytes": 53117,
+      "sha256": "05498c2be0ff621c969512492c0652ff659af405da9256e9488580647cb3053e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1182.jpg",
+      "bytes": 57770,
+      "sha256": "1dcd66486deee60665785612d560dc64bc460fec5b80e754be482b13a7f33a94"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1183.jpg",
+      "bytes": 55136,
+      "sha256": "58f0e16a0153d3b884ee1dcd355dbde3fc1bf515d1917500126804085c6bd6e9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1184.jpg",
+      "bytes": 52765,
+      "sha256": "80fbc0452d13feb2d33ec43508de4ea482b852abac45b93be064b9421a573875"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1185.jpg",
+      "bytes": 51910,
+      "sha256": "d60435d6bb0fa9ea6bc1fc4480b04c70c8a0673c44cf02c702ced745e59f8647"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1186.jpg",
+      "bytes": 59120,
+      "sha256": "0828d6c0af0188ab55361c412f12b10e1b0992621aa261caf607c2f0bb588ccb"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1187.jpg",
+      "bytes": 55128,
+      "sha256": "4fffca291a77dd113e62cc76798f2910ea65cb6968fafcaadd47441010ffa185"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1189.jpg",
+      "bytes": 43188,
+      "sha256": "709b9a9308ca392e4054b46c2f4cb93e31cfc2a97f64db308bfdbd81250b044e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1190.jpg",
+      "bytes": 64788,
+      "sha256": "079d112c4a8354ab9d6d3b3275d699728fb24940c86f787108fc3c06dc03f05a"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1191.jpg",
+      "bytes": 50974,
+      "sha256": "9a4bff3536351e318a7349d94dd2e0867b1121a08a75315f25cdc939d53d2fd4"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1192.jpg",
+      "bytes": 52500,
+      "sha256": "8af8690d807e352bac2220a96b928ec509eb5f4fdf32b5c700b8171bcd3e5021"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1193.jpg",
+      "bytes": 43349,
+      "sha256": "595b4efa72b9077f25dd2ff5999ab6b441352f6eacd4f60df8a6acee3d766ede"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1194.jpg",
+      "bytes": 46396,
+      "sha256": "822afdc6b0b561100e35688ec4db65c3c98410574c83928cec96a8edf12a85a5"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1195.jpg",
+      "bytes": 54611,
+      "sha256": "a00f7346824e73bc4e7449fe9b9edefed8080ecd8ec3dad4b01433dc28f9d64e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1196.jpg",
+      "bytes": 51387,
+      "sha256": "9e279c3b4ea2975828770b85892ca2daa169766d8bad78f708050fb0fefc4ea8"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1197.jpg",
+      "bytes": 58394,
+      "sha256": "e4928e366040bde38a658eeb9f50976248340150bf00025c4f1df0b628432638"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1198.jpg",
+      "bytes": 65670,
+      "sha256": "66a4b943a7de9503b905a860556fd40f220fd431ef6063bf2daa959a6ab2408c"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1199.jpg",
+      "bytes": 47209,
+      "sha256": "a472181db827a89cf2f65020f8605adfb73d181477a97af736563b0237ab6aeb"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1200.jpg",
+      "bytes": 62678,
+      "sha256": "b24491db0637ef7222b9c708ce58518f356381af763a0cc83824d84eae29e218"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1201.jpg",
+      "bytes": 73915,
+      "sha256": "3e9d6f486eace94600ec246fe165afd29b706636cdf3700b436fe87fb9fd21e4"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1202.jpg",
+      "bytes": 65851,
+      "sha256": "b807cb146b5f1324b534a740c8cbc7d8d698e52eef69188535c6d7ab67685238"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1203.jpg",
+      "bytes": 66141,
+      "sha256": "0b513fe0fc97123b0cc37d345ae3a01ad9a09f2f97fcc057e08d537688e72ddc"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1204.jpg",
+      "bytes": 64945,
+      "sha256": "254a7d41fa7327971ed2420d49b8e46b51b3efe946f70184f1bfbf6ed79ab957"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1205.jpg",
+      "bytes": 66694,
+      "sha256": "3da83f405b290b979796fd6fc3ed4fd3326cc393d82b586f30eca9228f88837f"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1206.jpg",
+      "bytes": 60893,
+      "sha256": "59a78d153418fc965fb2cad252a3c4219c0a156bc0310eb3588cd8157c46e12d"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1208.jpg",
+      "bytes": 91011,
+      "sha256": "a1bdfb281971deaa39bf67f45b74204a8d3b3052f14db69b08ce2f3c96e14e78"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1220.jpg",
+      "bytes": 33171,
+      "sha256": "4503861aef85fb3ec63ce23dd1b930e85f0a08e6c669c5d9c911e3483903e8d8"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1221.jpg",
+      "bytes": 53611,
+      "sha256": "26ad8408545f5d31d4931085dd53dc2c1383590d84d7fb15e665af03f393e0d8"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1222.jpg",
+      "bytes": 47576,
+      "sha256": "97ac2f51eaf3c28b3f842c74bca5196ead3213ce29cb06f9cd653030955d7284"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1223.jpg",
+      "bytes": 50549,
+      "sha256": "9db2161055e3364950d3108cfd14322f777a9f1ddf7797e29f9de9c0dd6f71cc"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1224.jpg",
+      "bytes": 52720,
+      "sha256": "b932f3ec0dedd88d11bc694c1e0b9e4f227d915d29f1df348c8c68c56e2adaf8"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1225.jpg",
+      "bytes": 43392,
+      "sha256": "29cb3a09e4f920afbafad2a24e94936c1a35633f797a3966113ea9c81b2684d3"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1226.jpg",
+      "bytes": 56644,
+      "sha256": "89f54133ff832385846ac59e23a8e67d01d49dd99b9b7d317b5061fb774b9267"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1227.jpg",
+      "bytes": 44408,
+      "sha256": "22f9331903cbd6acb680f468088ce42d15afa115c4164b78a6ce833a030d2753"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1228.jpg",
+      "bytes": 31944,
+      "sha256": "4c573bbfd2efe076902fa6d263fe1dab6ea329446b7ab990aae247ce751a874a"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1229.jpg",
+      "bytes": 21873,
+      "sha256": "69317d2e2b8c306ddd438141549470357e91ea2f8894b20030d9755cdf2b5174"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1230.jpg",
+      "bytes": 53604,
+      "sha256": "d839c876cd04e71a491195151b0808ef607778cb6ede3769b2d9d579abcf7a7c"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1231.jpg",
+      "bytes": 34922,
+      "sha256": "9940c8be572cca2babbdfdb179e022b1e9d37a22aba314b0a67762152a732b2d"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1232.jpg",
+      "bytes": 17712,
+      "sha256": "f9c6bdaf1e97d3daa96013f4a84d3bbc315d3cea6cf9744aa67e4677fb050a3e"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1233.jpg",
+      "bytes": 41761,
+      "sha256": "5b1fe3b1ccd0ec235962f159e26ad6ef804f96c034eb57f2ba8c8f1100a341f4"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1234.jpg",
+      "bytes": 30809,
+      "sha256": "e1531d863734056127f3c0fe0a8bdde737f2658bfd1040711bb8e91a5351f5d3"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1235.jpg",
+      "bytes": 43932,
+      "sha256": "8a74a1b9d211e4f66ccb4e02966d4f1dcc744eb40d69189a3f31a5ad592d95ad"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1236.jpg",
+      "bytes": 53977,
+      "sha256": "47312bc9744af8bd2e73e67fedcdd4df4d4e36a54bf0e33e439adff34ac96862"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1237.jpg",
+      "bytes": 55593,
+      "sha256": "7949a42be6381926614a6540bbf780096caa4884959311daff764e3decf048d9"
+    },
+    {
+      "file": "evidence/reference-previews/IMG_1238.jpg",
+      "bytes": 58132,
+      "sha256": "ed8b77505818f8b96b47053e2b196d443ffcee812c4f4492592bd48f6f1095c5"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1220.JPG",
+      "bytes": 138481,
+      "sha256": "f4bca7939ab1206ceaa02ef7d3738d4aca140f76b173dccca77c55ce3744b74e"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1221.jpg",
+      "bytes": 265306,
+      "sha256": "39177383d6feeab05c342876f8c519fbe65ace0dfe693e0709972fe1cf59f582"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1222.jpg",
+      "bytes": 234838,
+      "sha256": "7c8dbd3d37bb8486d16b806e2fbbca7f4be2304789f64d57a4c3b5164eeb7742"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1223.jpg",
+      "bytes": 254675,
+      "sha256": "c4ef428b5b808e85fe396e7dbfb648bc9cd98bf43eff21a0b71d8c96d6e16fa6"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1224.jpg",
+      "bytes": 251421,
+      "sha256": "25736308b33e97daa8af76fd179bd77bb1cc4712808b1c2f38d4bd3b96c594eb"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1225.jpg",
+      "bytes": 254329,
+      "sha256": "eced1601e9a939a66ae05488034a7106a23cac7d3245766cb4d486b8e1c9ef78"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1226.jpg",
+      "bytes": 266326,
+      "sha256": "a0a68a242911ea9fc4662cc7369feabfdde2680b4c6763bc88e9b4f6394aaf5b"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1227.jpg",
+      "bytes": 251214,
+      "sha256": "a7e87becfcbc69c1c5a06d91a80d9fa17a7b608f972f9861087e3bd159c9178d"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1228.jpg",
+      "bytes": 183185,
+      "sha256": "82881fc86d9064019d517b5c3129bb921dcd6b1dbc73ce746fba479579fd1151"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1229.jpg",
+      "bytes": 240455,
+      "sha256": "05e0b1c0bc4d92248e31b7088d1ef7437dda71b638897578b8f7befa403d8108"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1230.jpg",
+      "bytes": 258974,
+      "sha256": "c70dbac5a1fe096db9bb6576a2cb05c1e9c12b390adefe1709c99b93065f32b3"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1231.jpg",
+      "bytes": 272736,
+      "sha256": "0afcb8ddb9ae01dda3885b34990f31e77a3e42fd95a0dc1de8636329b8ad97fa"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1232.jpg",
+      "bytes": 272013,
+      "sha256": "66ef5b4eb3bbba3136edc1c873c530239a03bfb876123934422b56f245cefc40"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1234.jpg",
+      "bytes": 188392,
+      "sha256": "141ab894d056dd8dfebf1e88f50dd1ee721e7d3df36ddc060fe23af039bc70a2"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1236.jpg",
+      "bytes": 250545,
+      "sha256": "184cf21ca0adca64a2692877cea34dd236207bb9ac0804ac99d3420f7a903dec"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1237.jpg",
+      "bytes": 254286,
+      "sha256": "a2ae1df6956599287612f63e1b77b65e3d6d7d5077744cebb0d0ef465eb62a62"
+    },
+    {
+      "file": "evidence/reference-supplements/IMG_1238.jpg",
+      "bytes": 260949,
+      "sha256": "9bb198327d672ce8dc360aee9b0900a21a5da5acdce01d1752ef211a9b9ccb27"
+    },
+    {
+      "file": "evidence/saucer-correction/calibration-fit.json",
+      "bytes": 2119,
+      "sha256": "6eabfeb293a726e69796c9c36e5226cd4d7dc045f5181fee3b664f27c66eacfd"
+    },
+    {
+      "file": "evidence/saucer-correction/profile.json",
+      "bytes": 1421,
+      "sha256": "781a40d9db2b682307aa3f85d2393dda986a990cd6f3f1fbc2f8a21ae326d6ab"
+    },
+    {
+      "file": "evidence/saucer-correction/profile.svg",
+      "bytes": 2165,
+      "sha256": "7fb013bceec55f7e928073f807d8b19159b9b1b9b142e05b9d6bf404901cfc4c"
+    },
+    {
+      "file": "evidence/saucer-correction/user-model-outline.png",
+      "bytes": 264909,
+      "sha256": "751fb497276d2acf3be9e0e89084422e07b2d47f18effd69785a116ea49edfe6"
+    },
+    {
+      "file": "evidence/saucer-correction/user-photo-outline.png",
+      "bytes": 13809543,
+      "sha256": "a7a4fc6bfa8a13d2a3f32550fdbb58d13ddab55d6e986af03f99b37b8693298a"
+    },
+    {
+      "file": "evidence/textures-log.txt",
+      "bytes": 3991,
+      "sha256": "d484efc9991f9c6b54ac2dfbbde88dba4f9d99f5e7d9b91632b45ceadaeec17c"
+    },
+    {
+      "file": "evidence/textures/build.log",
+      "bytes": 715,
+      "sha256": "90cbe11af3e1467951b50092319db11f72d2b0393450020cd7874391bfb76a19"
+    },
+    {
+      "file": "evidence/textures/density-final.json",
+      "bytes": 1389,
+      "sha256": "025ae73480e993c0377c03afc6adab6513534d5f0f6a34ad5534937bc1e148a6"
+    },
+    {
+      "file": "evidence/textures/density-in-progress.json",
+      "bytes": 1390,
+      "sha256": "72ddda1bc7a5d7bdede2bc0a486027e522c1e286da97164b7a468a66f479a052"
+    },
+    {
+      "file": "evidence/textures/density-sparse-draft.json",
+      "bytes": 1389,
+      "sha256": "f11a6fc2ebee10d37bbe44f6c55b5543182dbaafd9e6b680f11d67a15d7c2aec"
+    },
+    {
+      "file": "evidence/textures/lotus-butterfly-detail.png",
+      "bytes": 1158193,
+      "sha256": "9e52c83ae1e030f3380519615955acb5ee62999eb13bd24282520563c7b45b2b"
+    },
+    {
+      "file": "evidence/textures/lotus-butterfly-saucer-dense.png",
+      "bytes": 756691,
+      "sha256": "0fe4611ad7e869452d6bd2f0cd081a713ea92d53e8bd74559fe13a662d446a9d"
+    },
+    {
+      "file": "evidence/textures/mobile-settings.png",
+      "bytes": 149179,
+      "sha256": "1faf3d3ac4f633c92d6a8d75c0b5ddf30db0bc983e3b396daed987d5d0c08ead"
+    },
+    {
+      "file": "evidence/textures/original-detail.png",
+      "bytes": 1081218,
+      "sha256": "89522415c3a035cbb2fe99503d418040bee7081d728ece54a479d9cdacf6a632"
+    },
+    {
+      "file": "evidence/textures/peony-magnolia-detail.png",
+      "bytes": 1094200,
+      "sha256": "c2ab2762d31033acd418935676afb8434c2b8728dd66f1a761963ab648222eb5"
+    },
+    {
+      "file": "evidence/textures/peony-magnolia-saucer-dense.png",
+      "bytes": 815235,
+      "sha256": "3ce0e3da4fb4aa9ce2be9f8887d24382fa207f101cd812d95abfd68d9afc74f3"
+    },
+    {
+      "file": "evidence/textures/production-smoke.json",
+      "bytes": 3220,
+      "sha256": "1465beebeb2afbebd52b380b8c56caa897e55de82bb3c54331968b34b3499f2e"
+    },
+    {
+      "file": "evidence/textures/standards-desktop.png",
+      "bytes": 312685,
+      "sha256": "0955a0544a5674dad3abd5c9efc260edf7a692a154b6905c719406691d65ce47"
+    },
+    {
+      "file": "evidence/textures/standards-mobile.png",
+      "bytes": 105137,
+      "sha256": "d1890df9eb2062e3c74ddfba921c7c3dad0c639241a2d64d6a00f713ddb70189"
+    },
+    {
+      "file": "evidence/textures/texture-qa.json",
+      "bytes": 28380,
+      "sha256": "212e5a8d3e3eeaabd36eb8c0a76a3f19dbbd76ca26e95c2d9375991d08afa1f8"
+    },
+    {
+      "file": "evidence/video-1153-samples.jpg",
+      "bytes": 115171,
+      "sha256": "1355ccf21cc7a0552e81009a1f0598ddea316be9a55f4a7705e0053efbb17b9e"
+    },
+    {
+      "file": "evidence/video-1171-samples.jpg",
+      "bytes": 114903,
+      "sha256": "7915c1724d9fb303a124cf4cc4c02a85cf43ff29599eae1b0d7b9258b25e0340"
+    },
+    {
+      "file": "evidence/video-1188-samples.jpg",
+      "bytes": 103566,
+      "sha256": "0f541984fd2f97b3c7d07a49f5e5c7e32fd297f9fa6aa1b4c1357139106c1baf"
+    },
+    {
+      "file": "evidence/video-1207-samples.jpg",
+      "bytes": 107567,
+      "sha256": "a0d4f732c65e3836b46258c5449b26b95933c7cf24f58c30b8e771120a21c2b9"
+    },
+    {
+      "file": "evidence/video-1209-samples.jpg",
+      "bytes": 121096,
+      "sha256": "74285fa6b8cbc5fc863647f721c53e90daa993c8f6f3fced6853a7a05fb5527c"
+    },
+    {
+      "file": "guangcai-viewer/.gitignore",
+      "bytes": 32,
+      "sha256": "54341e20cb85f1f17ecff418bfe6098e669fb5a496411da22a3adae0782caca2"
+    },
+    {
+      "file": "guangcai-viewer/ARTWORK.md",
+      "bytes": 4325,
+      "sha256": "95008427dc2cbb1d7388a9e54342cb1c83c7f75bb9b3389acd8ea62c10f0640a"
+    },
+    {
+      "file": "guangcai-viewer/assets/drafts/sparse-v1-prompts.json",
+      "bytes": 9025,
+      "sha256": "040ec23b9a2c9abd1aa302f0ad1ab56076643441a618ed84941bb786ebcc140d"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/band-generated.png",
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/body-generated.png",
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/lotus-butterfly/band-dense-v3.png",
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/lotus-butterfly/band-generated.png",
+      "bytes": 1674012,
+      "sha256": "173a6274e73aceba832d7e4859d8e1bf54a819679bfe65e682c32187186d5512"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/lotus-butterfly/body-dense-v3.png",
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/lotus-butterfly/body-generated.png",
+      "bytes": 2760414,
+      "sha256": "0f1a1d62ccacd366a248b9b5d02c6bb3cb0ef7c10b1afca54935b2805829670f"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/peony-magnolia/band-dense-v3.png",
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/peony-magnolia/band-generated.png",
+      "bytes": 1642266,
+      "sha256": "3432d6f085598ef0e8adb3a62734c491856c1cf86f5934749726fffa69caf0e4"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/peony-magnolia/body-dense-v3.png",
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606"
+    },
+    {
+      "file": "guangcai-viewer/assets/masters/peony-magnolia/body-generated.png",
+      "bytes": 2646821,
+      "sha256": "0666baf5e953a3fb46e7bfda38145ae91440a548c9fbfe2ef5d206a03c6304ef"
+    },
+    {
+      "file": "guangcai-viewer/assets/prompts.json",
+      "bytes": 3600,
+      "sha256": "68be5aad80e2966eb8cb8032920b933f9860dde3eacdb77061851b5e2c9b7ebb"
+    },
+    {
+      "file": "guangcai-viewer/assets/surface-metrics.json",
+      "bytes": 260,
+      "sha256": "c03e5926d30efd5fa80df03b14bca8f10c9803663cd2a68c5d464ddf24e58198"
+    },
+    {
+      "file": "guangcai-viewer/assets/variant-prompts-dense-v3.json",
+      "bytes": 10801,
+      "sha256": "d1a32a05d99541116da0cced81ca6ba526a62abc66adcbe336c92dc197633530"
+    },
+    {
+      "file": "guangcai-viewer/assets/variant-prompts.json",
+      "bytes": 10801,
+      "sha256": "d1a32a05d99541116da0cced81ca6ba526a62abc66adcbe336c92dc197633530"
+    },
+    {
+      "file": "guangcai-viewer/compare.html",
+      "bytes": 305,
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/body-baseColor.png",
+      "bytes": 4430448,
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/body-height.png",
+      "bytes": 671829,
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/body-metalness.png",
+      "bytes": 694450,
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/body-normal.png",
+      "bytes": 1331343,
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/body-roughness.png",
+      "bytes": 354379,
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/generation.json",
+      "bytes": 3544,
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/handle-baseColor.png",
+      "bytes": 1467136,
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/handle-height.png",
+      "bytes": 215990,
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/handle-metalness.png",
+      "bytes": 287489,
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/handle-normal.png",
+      "bytes": 415117,
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/handle-roughness.png",
+      "bytes": 133029,
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/body-baseColor.png",
+      "bytes": 5124693,
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/body-height.png",
+      "bytes": 756646,
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/body-metalness.png",
+      "bytes": 752098,
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/body-normal.png",
+      "bytes": 1510166,
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/body-roughness.png",
+      "bytes": 385824,
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/generation.json",
+      "bytes": 4505,
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/handle-baseColor.png",
+      "bytes": 2022345,
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/handle-height.png",
+      "bytes": 273223,
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/handle-metalness.png",
+      "bytes": 384463,
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/handle-normal.png",
+      "bytes": 533321,
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/handle-roughness.png",
+      "bytes": 170939,
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/manifest.json",
+      "bytes": 5035,
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/masters/band.png",
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/masters/body.png",
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/preview.jpg",
+      "bytes": 71527,
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/saucer-baseColor.png",
+      "bytes": 1215629,
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/saucer-height.png",
+      "bytes": 197242,
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/saucer-metalness.png",
+      "bytes": 181047,
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/saucer-normal.png",
+      "bytes": 395475,
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/saucer-roughness.png",
+      "bytes": 92882,
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/lotus-butterfly/style.json",
+      "bytes": 720,
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/manifest.json",
+      "bytes": 3889,
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/masters/band.png",
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/masters/body.png",
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/body-baseColor.png",
+      "bytes": 4530401,
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/body-height.png",
+      "bytes": 676602,
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/body-metalness.png",
+      "bytes": 676465,
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/body-normal.png",
+      "bytes": 1342378,
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/body-roughness.png",
+      "bytes": 348281,
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/generation.json",
+      "bytes": 4525,
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/handle-baseColor.png",
+      "bytes": 1493454,
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/handle-height.png",
+      "bytes": 216437,
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/handle-metalness.png",
+      "bytes": 267916,
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/handle-normal.png",
+      "bytes": 412132,
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/handle-roughness.png",
+      "bytes": 125075,
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/manifest.json",
+      "bytes": 5017,
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/masters/band.png",
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/masters/body.png",
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/preview.jpg",
+      "bytes": 71892,
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/saucer-baseColor.png",
+      "bytes": 1186845,
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/saucer-height.png",
+      "bytes": 189507,
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/saucer-metalness.png",
+      "bytes": 181438,
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/saucer-normal.png",
+      "bytes": 376977,
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/saucer-roughness.png",
+      "bytes": 89738,
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/peony-magnolia/style.json",
+      "bytes": 720,
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/preview.jpg",
+      "bytes": 71029,
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/saucer-baseColor.png",
+      "bytes": 1039444,
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/saucer-height.png",
+      "bytes": 161444,
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/saucer-metalness.png",
+      "bytes": 121504,
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/saucer-normal.png",
+      "bytes": 320697,
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/saucer-roughness.png",
+      "bytes": 68359,
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa"
+    },
+    {
+      "file": "guangcai-viewer/dist/artwork/style.json",
+      "bytes": 714,
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f"
+    },
+    {
+      "file": "guangcai-viewer/dist/assets/compare-B2kJLVWD.js",
+      "bytes": 8296,
+      "sha256": "ccaa95c323f1a93dea0c16d6e97cef5a71009ccaec959ba1927f288008644592"
+    },
+    {
+      "file": "guangcai-viewer/dist/assets/compare-MZHawTH_.css",
+      "bytes": 1409,
+      "sha256": "1db9efb173be696661ee02aec5504c8a28b58d96c73a185e4a95e7e7f7750479"
+    },
+    {
+      "file": "guangcai-viewer/dist/assets/main-bbCCIrxu.css",
+      "bytes": 6023,
+      "sha256": "313700e1a8827f3dfae7b845f3cf020bccab5edfcad2af1cb6c0b534d78a6763"
+    },
+    {
+      "file": "guangcai-viewer/dist/assets/main-CwrIcHZa.js",
+      "bytes": 36928,
+      "sha256": "603b1191c2c5246ad2ec8711df86c737f895c143ff74a3369832429701ea7ba5"
+    },
+    {
+      "file": "guangcai-viewer/dist/assets/style-manager-Dyahk5Cb.js",
+      "bytes": 572691,
+      "sha256": "6278fce9b898bb12c587adeb5c98c6f8bbb54235e5e3034e1dca694a55e643a1"
+    },
+    {
+      "file": "guangcai-viewer/dist/compare.html",
+      "bytes": 491,
+      "sha256": "d88226d8966b742d8546cbb9907fd24476705e221827849afab387eeefb66530"
+    },
+    {
+      "file": "guangcai-viewer/dist/index.html",
+      "bytes": 533,
+      "sha256": "ef4c1465b00ad80bf98e1c2d6cbc688737663a5d862eb89af46b58f987a9a28c"
+    },
+    {
+      "file": "guangcai-viewer/dist/marks/auratic-reference.png",
+      "bytes": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155"
+    },
+    {
+      "file": "guangcai-viewer/dist/marks/auratic-reference.svg",
+      "bytes": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99"
+    },
+    {
+      "file": "guangcai-viewer/dist/references/1220.jpg",
+      "bytes": 132972,
+      "sha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92"
+    },
+    {
+      "file": "guangcai-viewer/dist/references/1221.jpg",
+      "bytes": 452592,
+      "sha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94"
+    },
+    {
+      "file": "guangcai-viewer/dist/references/1230.jpg",
+      "bytes": 486039,
+      "sha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b"
+    },
+    {
+      "file": "guangcai-viewer/dist/references/1236.jpg",
+      "bytes": 423874,
+      "sha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874"
+    },
+    {
+      "file": "guangcai-viewer/dist/references/1238.jpg",
+      "bytes": 430227,
+      "sha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19"
+    },
+    {
+      "file": "guangcai-viewer/dist/texture-standards.html",
+      "bytes": 33054,
+      "sha256": "751ab8d373216c66d19a223508960f7553418cafa45a82152665aa1cf2cc536d"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-netlify-deployment/completion.md",
+      "bytes": 3847,
+      "sha256": "043096ce509ec5a3a2e4a5ed2c8044e1cf6d627b7afc096267d2f687aa5095e3"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-netlify-deployment/plan.md",
+      "bytes": 1017,
+      "sha256": "56864a21f6875ec54444193781cdd4f6e4a7e020b70a6c0eee35419e3c1d9d94"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-netlify-deployment/request.md",
+      "bytes": 224,
+      "sha256": "48d286c8f9c14de0062f84a492d7b95156cb9d45b6560194b2ca6de42c4ad658"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-reference-corrections/completion.md",
+      "bytes": 4875,
+      "sha256": "da9cab21006ee50b1342d99b5cf92cbd803185baee01dd03d0101f0313eab471"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-reference-corrections/plan.md",
+      "bytes": 2545,
+      "sha256": "0feffd8573056a4d3342184b67be6fca53e89c70f577cf907a9fca80e2700e2b"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-reference-corrections/request.md",
+      "bytes": 2956,
+      "sha256": "054375ba4b7a496d8073bee2bd1bdd5a6495a16ba9c6b3efcb3ccb0971eb2b15"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-texture-variants/completion.md",
+      "bytes": 4342,
+      "sha256": "2bce94f91be95d6e08aa9642eedc3585cdf19c1a80da231f626e909cd1604059"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-texture-variants/plan.md",
+      "bytes": 1450,
+      "sha256": "7e105f25b634f6eedf93d96e04910000829cf58c4a1ea32c1e28c4ba8295331f"
+    },
+    {
+      "file": "guangcai-viewer/docs/changes/20260929-texture-variants/request.md",
+      "bytes": 659,
+      "sha256": "9d7068364a8da8dccd0336d613c0ed4746957d3abf0b42e65461cd9d7d612ecc"
+    },
+    {
+      "file": "guangcai-viewer/index.html",
+      "bytes": 350,
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "file": "guangcai-viewer/netlify.toml",
+      "bytes": 572,
+      "sha256": "37e45467e6ababd8cb1d03f630ed540bdd096b59342103b16ed63367b22f1efb"
+    },
+    {
+      "file": "guangcai-viewer/package-lock.json",
+      "bytes": 63922,
+      "sha256": "6ea68e662e88c1c354937fabb391376fcb5ee03eef741e0bfcb70ea75f3648ca"
+    },
+    {
+      "file": "guangcai-viewer/package.json",
+      "bytes": 905,
+      "sha256": "5138dc2c07c23bd07dde9b83a4dc0feb16eb6ec629ea9fe0c14146ba1d5710a6"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/body-baseColor.png",
+      "bytes": 4430448,
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/body-height.png",
+      "bytes": 671829,
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/body-metalness.png",
+      "bytes": 694450,
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/body-normal.png",
+      "bytes": 1331343,
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/body-roughness.png",
+      "bytes": 354379,
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/generation.json",
+      "bytes": 3544,
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/handle-baseColor.png",
+      "bytes": 1467136,
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/handle-height.png",
+      "bytes": 215990,
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/handle-metalness.png",
+      "bytes": 287489,
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/handle-normal.png",
+      "bytes": 415117,
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/handle-roughness.png",
+      "bytes": 133029,
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/body-baseColor.png",
+      "bytes": 5124693,
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/body-height.png",
+      "bytes": 756646,
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/body-metalness.png",
+      "bytes": 752098,
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/body-normal.png",
+      "bytes": 1510166,
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/body-roughness.png",
+      "bytes": 385824,
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/generation.json",
+      "bytes": 4505,
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/handle-baseColor.png",
+      "bytes": 2022345,
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/handle-height.png",
+      "bytes": 273223,
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/handle-metalness.png",
+      "bytes": 384463,
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/handle-normal.png",
+      "bytes": 533321,
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/handle-roughness.png",
+      "bytes": 170939,
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/manifest.json",
+      "bytes": 5035,
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/masters/band.png",
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/masters/body.png",
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/preview.jpg",
+      "bytes": 71527,
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/saucer-baseColor.png",
+      "bytes": 1215629,
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/saucer-height.png",
+      "bytes": 197242,
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/saucer-metalness.png",
+      "bytes": 181047,
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/saucer-normal.png",
+      "bytes": 395475,
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/saucer-roughness.png",
+      "bytes": 92882,
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/lotus-butterfly/style.json",
+      "bytes": 720,
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/manifest.json",
+      "bytes": 3889,
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/masters/band.png",
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/masters/body.png",
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/body-baseColor.png",
+      "bytes": 4530401,
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/body-height.png",
+      "bytes": 676602,
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/body-metalness.png",
+      "bytes": 676465,
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/body-normal.png",
+      "bytes": 1342378,
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/body-roughness.png",
+      "bytes": 348281,
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/generation.json",
+      "bytes": 4525,
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/handle-baseColor.png",
+      "bytes": 1493454,
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/handle-height.png",
+      "bytes": 216437,
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/handle-metalness.png",
+      "bytes": 267916,
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/handle-normal.png",
+      "bytes": 412132,
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/handle-roughness.png",
+      "bytes": 125075,
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/manifest.json",
+      "bytes": 5017,
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/masters/band.png",
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/masters/body.png",
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/preview.jpg",
+      "bytes": 71892,
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/saucer-baseColor.png",
+      "bytes": 1186845,
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/saucer-height.png",
+      "bytes": 189507,
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/saucer-metalness.png",
+      "bytes": 181438,
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/saucer-normal.png",
+      "bytes": 376977,
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/saucer-roughness.png",
+      "bytes": 89738,
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/peony-magnolia/style.json",
+      "bytes": 720,
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/preview.jpg",
+      "bytes": 71029,
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/saucer-baseColor.png",
+      "bytes": 1039444,
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/saucer-height.png",
+      "bytes": 161444,
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/saucer-metalness.png",
+      "bytes": 121504,
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/saucer-normal.png",
+      "bytes": 320697,
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/saucer-roughness.png",
+      "bytes": 68359,
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa"
+    },
+    {
+      "file": "guangcai-viewer/public/artwork/style.json",
+      "bytes": 714,
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f"
+    },
+    {
+      "file": "guangcai-viewer/public/marks/auratic-reference.png",
+      "bytes": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155"
+    },
+    {
+      "file": "guangcai-viewer/public/marks/auratic-reference.svg",
+      "bytes": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99"
+    },
+    {
+      "file": "guangcai-viewer/public/references/1220.jpg",
+      "bytes": 132972,
+      "sha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92"
+    },
+    {
+      "file": "guangcai-viewer/public/references/1221.jpg",
+      "bytes": 452592,
+      "sha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94"
+    },
+    {
+      "file": "guangcai-viewer/public/references/1230.jpg",
+      "bytes": 486039,
+      "sha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b"
+    },
+    {
+      "file": "guangcai-viewer/public/references/1236.jpg",
+      "bytes": 423874,
+      "sha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874"
+    },
+    {
+      "file": "guangcai-viewer/public/references/1238.jpg",
+      "bytes": 430227,
+      "sha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19"
+    },
+    {
+      "file": "guangcai-viewer/public/texture-standards.html",
+      "bytes": 33054,
+      "sha256": "751ab8d373216c66d19a223508960f7553418cafa45a82152665aa1cf2cc536d"
+    },
+    {
+      "file": "guangcai-viewer/README.md",
+      "bytes": 8747,
+      "sha256": "edc51b992e06b0fe35444cf9a5fd793fc2761a8829c96eb199e4d0bc19514570"
+    },
+    {
+      "file": "guangcai-viewer/src/compare.ts",
+      "bytes": 9668,
+      "sha256": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3"
+    },
+    {
+      "file": "guangcai-viewer/src/geometry/handle.ts",
+      "bytes": 5144,
+      "sha256": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e"
+    },
+    {
+      "file": "guangcai-viewer/src/geometry/parameters.ts",
+      "bytes": 865,
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    {
+      "file": "guangcai-viewer/src/geometry/product.ts",
+      "bytes": 5738,
+      "sha256": "f42ba3cecd88959429e9c96c3feefbc8141d3f18d30b15539c97ed2a69686dc5"
+    },
+    {
+      "file": "guangcai-viewer/src/geometry/ribbon.ts",
+      "bytes": 3567,
+      "sha256": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7"
+    },
+    {
+      "file": "guangcai-viewer/src/geometry/surface.ts",
+      "bytes": 2537,
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "file": "guangcai-viewer/src/interaction/calibration.ts",
+      "bytes": 2231,
+      "sha256": "254e254ddbd28d2dca5d75dbe67f74d3aea1858fd2d6ceee71a70f2bfdc94bc4"
+    },
+    {
+      "file": "guangcai-viewer/src/interaction/reference-views.ts",
+      "bytes": 2261,
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    },
+    {
+      "file": "guangcai-viewer/src/interaction/views.ts",
+      "bytes": 5701,
+      "sha256": "f0762e1559fd95009850d7aeb8e0252162fd992294d49c70bbd4fc1f694bc1ba"
+    },
+    {
+      "file": "guangcai-viewer/src/main.ts",
+      "bytes": 7173,
+      "sha256": "b6482058a28ffb019cd061e6010c21b1c4b12234673ad8b633af3615132602de"
+    },
+    {
+      "file": "guangcai-viewer/src/materials/materials.ts",
+      "bytes": 2274,
+      "sha256": "880cf6f710530dd0fa021e77c7eb7e9128719e383424c8624c11258cf8bed139"
+    },
+    {
+      "file": "guangcai-viewer/src/materials/render-standard.ts",
+      "bytes": 191,
+      "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283"
+    },
+    {
+      "file": "guangcai-viewer/src/studio/contact-shadow.ts",
+      "bytes": 3108,
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "file": "guangcai-viewer/src/studio/studio.ts",
+      "bytes": 3279,
+      "sha256": "8a165bcbea96248e7ff9c5c1b37ac2894748a77aa82abc9c2a8feca9e1c5ecb2"
+    },
+    {
+      "file": "guangcai-viewer/src/styles/style-manager.ts",
+      "bytes": 6193,
+      "sha256": "2326b704c822f927a04e166ad40dcea31d72c4cb406bcb4e96c3d76f26033913"
+    },
+    {
+      "file": "guangcai-viewer/src/ui/compare.css",
+      "bytes": 1412,
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    {
+      "file": "guangcai-viewer/src/ui/interface.ts",
+      "bytes": 8506,
+      "sha256": "623d71e3d4bfbdde3cdc0b6045bb8d347f9cb0b2728be29188847a71f8a250b2"
+    },
+    {
+      "file": "guangcai-viewer/src/ui/styles.css",
+      "bytes": 6092,
+      "sha256": "3ea0df85fba9a1dbecd1e87a1c0c7846092d2c2c174aa82308b81f5c534d3678"
+    },
+    {
+      "file": "guangcai-viewer/tools/browser-qa.mjs",
+      "bytes": 6307,
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    {
+      "file": "guangcai-viewer/tools/derive-pbr.mjs",
+      "bytes": 5357,
+      "sha256": "e2a2cd0e67db1047c7bff33bd1f95606a64a58166078dc12add22099311f829e"
+    },
+    {
+      "file": "guangcai-viewer/tools/fit-calibration.ts",
+      "bytes": 2775,
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    {
+      "file": "guangcai-viewer/tools/fit-lid-calibrations.ts",
+      "bytes": 2310,
+      "sha256": "4065b7c6e70e49c379a5a8e0c6a076de34e4a8d7b7989e1afd0fb86ab4cf4d68"
+    },
+    {
+      "file": "guangcai-viewer/tools/fit-other-calibrations.ts",
+      "bytes": 3037,
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    {
+      "file": "guangcai-viewer/tools/geometry.test.ts",
+      "bytes": 4998,
+      "sha256": "6b6494763c1ff9b84dc6b282474039b1fa06268857bebfa2a5e991b3d9b372e8"
+    },
+    {
+      "file": "guangcai-viewer/tools/handle-compare.mjs",
+      "bytes": 1655,
+      "sha256": "0fa6cf178227095df847d1c0201a924c104049ca97aeba844d521af8fcd26f09"
+    },
+    {
+      "file": "guangcai-viewer/tools/lid-compare.mjs",
+      "bytes": 1659,
+      "sha256": "eb154101a2e3eb35e7fe3d8a8741c2b313bdd893badb9092a9e69f20eb60f9e6"
+    },
+    {
+      "file": "guangcai-viewer/tools/online-qa.mjs",
+      "bytes": 5987,
+      "sha256": "8ee15d1b1c708ae8e7c03a2b339b0c3a733daf82e2f8d045d5d8300d3e36cc5f"
+    },
+    {
+      "file": "guangcai-viewer/tools/overlay-captures.mjs",
+      "bytes": 1715,
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    {
+      "file": "guangcai-viewer/tools/overlay-qa.mjs",
+      "bytes": 3220,
+      "sha256": "14af901bd914a2f35d1d219d45a9132689074b3db3338e11c7dd900189c88793"
+    },
+    {
+      "file": "guangcai-viewer/tools/overlay-report.mjs",
+      "bytes": 3775,
+      "sha256": "c57db3f2832403eed1801558c859e97c8efd28d2885d82a1519576136d5ce2e4"
+    },
+    {
+      "file": "guangcai-viewer/tools/reference-captures.mjs",
+      "bytes": 1270,
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    {
+      "file": "guangcai-viewer/tools/reference-gallery.mjs",
+      "bytes": 7864,
+      "sha256": "6e2c4c67774ea2ddcdd9223b90552421f250f2bd20ff5af81b65a48718018dc9"
+    },
+    {
+      "file": "guangcai-viewer/tools/saucer-closeup.mjs",
+      "bytes": 906,
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    {
+      "file": "guangcai-viewer/tools/saucer-profile.ts",
+      "bytes": 2239,
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    {
+      "file": "guangcai-viewer/tools/snapshot.mjs",
+      "bytes": 567,
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "file": "guangcai-viewer/tools/surface-metrics.ts",
+      "bytes": 562,
+      "sha256": "fa339dcfc16f086c43b02ca8e9ffd70116b1479bb131d7c4f1f51b218296b0d3"
+    },
+    {
+      "file": "guangcai-viewer/tools/texture-density.mjs",
+      "bytes": 1115,
+      "sha256": "5eedfc6d7eae0bcd92c20b6d9859e5442da39968189ee302780c9d55eddcfb21"
+    },
+    {
+      "file": "guangcai-viewer/tools/texture-qa.mjs",
+      "bytes": 7666,
+      "sha256": "caf6546b5a919498b6b854dca653a89bb7a2b6c84f57be689b6d0c0f73fc5baf"
+    },
+    {
+      "file": "guangcai-viewer/tools/texture-standards.mjs",
+      "bytes": 13255,
+      "sha256": "a91bda81d937537c567251049e2433de212118270b576dd134a43544830e0ec7"
+    },
+    {
+      "file": "guangcai-viewer/tsconfig.json",
+      "bytes": 361,
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "file": "guangcai-viewer/vite.config.ts",
+      "bytes": 267,
+      "sha256": "192f39ae201f12d72915f806a33cd07d8a63f5cbb0429685eabc84f9a03980a1"
+    },
+    {
+      "file": "guangcai-viewer/work/refine_latest.py",
+      "bytes": 1473,
+      "sha256": "9884044970b0baab866a529d9d1a9a2e4f435fb4a4a980fe4c1705e07077a3ed"
+    }
+  ]
+}

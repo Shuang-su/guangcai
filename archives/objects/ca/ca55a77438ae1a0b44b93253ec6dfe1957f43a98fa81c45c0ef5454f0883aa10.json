@@ -1,0 +1,337 @@
+[
+  {
+    "file": "compare.html",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "index.html",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "README.md",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "package-lock.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "package.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "ARTWORK.md",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tsconfig.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "vite.config.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/derive-pbr.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/reference-captures.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/reference-gallery.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/fit-other-calibrations.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/overlay-qa.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/fit-calibration.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/geometry.test.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/overlay-captures.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/browser-qa.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/overlay-report.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/surface-metrics.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/saucer-profile.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/snapshot.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "tools/saucer-closeup.mjs",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "assets/surface-metrics.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "assets/prompts.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/compare.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/main.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/ui/styles.css",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/ui/interface.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/ui/compare.css",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/studio/contact-shadow.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/studio/studio.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/materials/materials.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/styles/style-manager.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/geometry/surface.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/geometry/product.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/geometry/parameters.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/geometry/ribbon.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/geometry/handle.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/interaction/calibration.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/interaction/views.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "src/interaction/reference-views.ts",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "assets/masters/band-generated.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "assets/masters/body-generated.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/handle-metalness.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/saucer-metalness.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/body-metalness.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/handle-height.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/handle-normal.png",
+    "ok": true,
+    "bytes": 405119
+  },
+  {
+    "file": "public/artwork/handle-baseColor.png",
+    "ok": true,
+    "bytes": 1422436
+  },
+  {
+    "file": "public/artwork/body-baseColor.png",
+    "ok": true,
+    "bytes": 4430448
+  },
+  {
+    "file": "public/artwork/saucer-baseColor.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/style.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/body-height.png",
+    "ok": true,
+    "bytes": 671829
+  },
+  {
+    "file": "public/artwork/body-normal.png",
+    "ok": true,
+    "bytes": 1331343
+  },
+  {
+    "file": "public/artwork/body-roughness.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/saucer-roughness.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/handle-roughness.png",
+    "ok": true,
+    "bytes": 130411
+  },
+  {
+    "file": "public/artwork/manifest.json",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/saucer-height.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/artwork/saucer-normal.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/marks/auratic-reference.svg",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/marks/auratic-reference.png",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/references/1230.jpg",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/references/1221.jpg",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "public/references/1220.jpg",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "docs/changes/20260929-reference-corrections/plan.md",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  },
+  {
+    "file": "docs/changes/20260929-reference-corrections/request.md",
+    "ok": false,
+    "error": "[Errno 60] Operation timed out"
+  }
+]

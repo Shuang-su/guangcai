@@ -1,0 +1,18 @@
+{
+  "version": "liuli-pbr-v1",
+  "source": "tools/build-liuli-maps.mjs",
+  "kind": "artist-authored procedural dielectric",
+  "channels": [
+    "baseColor",
+    "normal",
+    "roughness",
+    "metalness",
+    "clearcoat"
+  ],
+  "baseColorSpace": "sRGB",
+  "dataMapColorSpace": "none",
+  "metalness": 0,
+  "ior": 1.46,
+  "clearcoat": "map-controlled",
+  "notes": "Glass reflections from independent studio environment; gold trim uses a separate metallic material."
+}

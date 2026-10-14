@@ -1,0 +1,37 @@
+
+> apec-guangcai-h5@1.0.0 assets:verify
+> node tools/verify-assets.mjs
+
+{
+  "passed": 27,
+  "checks": [
+    "body/baseColor aligned and mobile-sized",
+    "body/normal aligned and mobile-sized",
+    "body/roughness aligned and mobile-sized",
+    "body/metalness aligned and mobile-sized",
+    "handle/baseColor aligned and mobile-sized",
+    "handle/normal aligned and mobile-sized",
+    "handle/roughness aligned and mobile-sized",
+    "handle/metalness aligned and mobile-sized",
+    "saucer/baseColor aligned and mobile-sized",
+    "saucer/normal aligned and mobile-sized",
+    "saucer/roughness aligned and mobile-sized",
+    "saucer/metalness aligned and mobile-sized",
+    "white-cup.png decodes",
+    "styled-cup.png decodes",
+    "landscape.webp decodes",
+    "glass-ribbon.webp decodes",
+    "glass ribbon retains alpha",
+    "original unchanged: surface.ts",
+    "original unchanged: product.ts",
+    "original unchanged: parameters.ts",
+    "original unchanged: ribbon.ts",
+    "original unchanged: handle.ts",
+    "original unchanged: render-standard.ts",
+    "original unchanged: materials.ts",
+    "original unchanged: style-manager.ts",
+    "original unchanged: contact-shadow.ts",
+    "original unchanged: studio.ts"
+  ],
+  "bytes": 3942558
+}
