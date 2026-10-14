@@ -12,5 +12,8 @@
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源清单](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围与剩余项](docs/changes/20261014-source-consolidation/completion.md)。
 
-本轮最终3,075份去重内容覆盖10,918处可读来源；初次目录核对补录955份此前未入库内容，随后继续交叉核验会话附件。包括8份花纸PSD、原始参考资料和旧工程产物。`archives/`为实际Git/Git LFS内容，名称按SHA-256去重；原文件名与全部路径保留在索引中。它与既有16个源码恢复节点互补，不代表曾经存在的每个未保存会话状态均已恢复。
+当前3,223份去重内容覆盖14,524处可读来源；初次目录核对补录955份此前未入库内容，随后继续交叉核验会话附件及下载完成的北京工作区。包括8份花纸PSD、原始参考资料和旧工程产物。`archives/`为实际Git/Git LFS内容，名称按SHA-256去重；原文件名与全部路径保留在索引中。它与既有16个源码恢复节点互补，不代表曾经存在的每个未保存会话状态均已恢复。
+
+- [北京工作区下载后的3593文件核验](docs/changes/20261014-source-consolidation/hydrated-workspace-verification.json)：全部与源码/发布归档字节一致。
+- [9月21日原始提交与154文件快照证明](docs/history/20260921-original-git/README.md)：原提交记录、目录树和内容对应；完整混合仓库祖先链不在此次导入范围。
 

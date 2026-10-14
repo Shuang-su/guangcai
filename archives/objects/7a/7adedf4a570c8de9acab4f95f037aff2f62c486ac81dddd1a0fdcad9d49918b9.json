@@ -1,0 +1,39 @@
+{
+  "name": "guangcai-china-v4",
+  "version": "4.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "textures": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs",
+    "test": "tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts",
+    "qa": "node tools/china-qa.mjs",
+    "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
+    "qa:textures": "node tools/texture-qa.mjs",
+    "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
+    "textures:fixed": "node tools/restored-assets.mjs",
+    "textures:fixed:legacy": "node tools/original-assets.mjs",
+    "textures:china": "python3 tools/china-assets.py",
+    "prebuild": "node tools/web-textures.mjs",
+    "textures:web": "node tools/web-textures.mjs",
+    "evidence:v3": "node tools/v3-evidence.mjs",
+    "qa:background": "node tools/background-qa-v3.mjs",
+    "textures:v4": "python3 tools/compile-city-v4.py && python3 tools/compile-beijing.py && node tools/city-manifest.mjs",
+    "qa:v4": "node tools/v4-qa.mjs",
+    "textures:beijing": "python3 tools/compile-beijing.py && node tools/city-manifest.mjs",
+    "qa:beijing": "node tools/beijing-qa.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.183.1",
+    "vite": "8.3.1",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "sharp": "^0.34.5",
+    "playwright": "^1.58.2"
+  }
+}

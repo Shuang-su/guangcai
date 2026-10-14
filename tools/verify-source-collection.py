@@ -20,4 +20,6 @@ for r in a['content']:
   s=r['sha256'];b=(common/'lfs/objects'/s[:2]/s[2:4]/s).read_bytes();lfs+=1
  assert len(b)==r['bytes'],r['archivePath']
  assert hashlib.sha256(b).hexdigest()==r['sha256'],r['archivePath']
-print(json.dumps({'verifiedContent':len(seen),'lfsObjects':lfs,'sourceOccurrences':sum(len(r['sources']) for r in a['content']),'unreadableExplicitlyRetained':len(a['unreadable']),'blocked':len(a['blocked'])}))
+followup=a.get('hydrationFollowup',{})
+hydrated=followup.get('verifiedPreviouslyUnreadable',0)
+print(json.dumps({'verifiedContent':len(seen),'lfsObjects':lfs,'sourceOccurrences':sum(len(r['sources']) for r in a['content']),'historicallyUnreadable':len(a['unreadable']),'hydratedAndVerified':hydrated,'unreadableRemaining':len(a['unreadable'])-hydrated,'blocked':len(a['blocked'])}))
