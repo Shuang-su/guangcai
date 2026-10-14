@@ -11,6 +11,8 @@
 | 3.0 预览 | `v3.0` | `9400eaf7f65452cbaa68bee563b9793c632d17ae` | `6ace443df7425f433e717eb0` | 原始花纸、白瓷、平盖倒影、新背景；固定纹样高清重建、连续单周图集与高精度凹凸，手动发布 |
 | 4.0 预览 | `v4.0` | `6b35efb104019472cea3679ea26cfee1e13ffc8b` | `6aced018c70635a1ad24cbbe` | 中国／深圳九款图样、三种新款材质、可选文字；包含颜色覆盖、旋转方向及杯身接缝修正，手动发布 |
 
+| 4.1 预览 | `v4.1` | `591d8c56b0819143a2bdab454068fd30921a2977` | `6acef244237630dba7fa87fe` | 金底伪高度清理与侧边釉层反光；按用户要求回溯命名，部署时 UI / package 仍为 4.0 / 4.0.0 |
+
 旧版本首次入库没有原生 Git 历史；实际修改时间与补录提交时间分开记载。[HISTORY.md](HISTORY.md) 保存恢复的 16 个源码节点，全部已进入 main 的可达历史。表中 1.0/2.0/2.1 使用移除本机依赖链接后的提交，应用源码与各发布基线一致；历史 package.json 的内部编号保留原值，产品版本以本索引为准。3.0 开始同步维护产品 package 版本。
 
 ## 查找与继续开发
@@ -40,7 +42,7 @@ V4 最新接缝修正完成 20 项测试、构建及公网浏览器回归；408 
 - [杯身接缝修正记录](docs/changes/20261014-v4-body-seam/completion.md) · [部署清单与公网复核](docs/changes/20261014-v4-body-seam/deployment.json)
 - [线上素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [颜色覆盖对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#color-coverage) · [杯身接缝对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#body-seam)
 
-## 4.0 标签之后的纹饰修正
+## 4.1：纹饰凹凸与侧边反光修正
 
 源码 `591d8c56b0819143a2bdab454068fd30921a2977`，手动部署 `6acef244237630dba7fa87fe`。固定花纹去除金底伪高度、改善侧边釉层反光，法线强度维持 4.4／2.4。`v4.0` 仍指向此前发布基线，不移动标签。
 
