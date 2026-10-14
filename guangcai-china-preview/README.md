@@ -67,7 +67,7 @@ npm run textures:web
 
 - 中国杯 2.2 保留在 https://guangcai-no1-china.netlify.app/ ，已发布部署 ID `6ace111ab0415c9455a3c6f8`。
 - [3.0 高清预览](https://guangcai-no1-china-v3.netlify.app/) 已发布，部署 ID `6ace443df7425f433e717eb0`，继续保留。
-- [4.0 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前记录部署 ID `6aced018c70635a1ad24cbbe`，源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签尚未创建。
+- [4.0 主题预览](https://guangcai-no1-china-v4.netlify.app/) 当前记录部署 ID `6aced018c70635a1ad24cbbe`，源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`。两站均未连接 Git 自动部署；`v3.0`、`v4.0` Git 标签已指向对应发布源码。
 - 原版站与历史发布对应关系见仓库 `VERSION_HISTORY.md` 和 `deployments/`。
 - 早期非 Git 开发、122 文件的旧发布记录等属于 2026-10-11/12 历史状态，原文保留在各日期的 `docs/changes/`；不代表当前开发状态。
 

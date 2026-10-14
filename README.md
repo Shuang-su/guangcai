@@ -21,10 +21,10 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 | --- | --- | --- | --- |
 | 1.0 | `v1.0` | [原版一号杯](https://guangcai-no1.netlify.app/) | `6abbdf78d912b4b6b1d7c3b9` |
 | 2.2 | `v2.2` | [中国杯](https://guangcai-no1-china.netlify.app/) | `6ace111ab0415c9455a3c6f8` |
-| 3.0 预览 | 未创建 | [高清中国杯 V3](https://guangcai-no1-china-v3.netlify.app/) | `6ace443df7425f433e717eb0` |
-| 4.0 预览 | 未创建 | [主题与釉彩 V4](https://guangcai-no1-china-v4.netlify.app/) | `6aced018c70635a1ad24cbbe` |
+| 3.0 预览 | `v3.0` | [高清中国杯 V3](https://guangcai-no1-china-v3.netlify.app/) | `6ace443df7425f433e717eb0` |
+| 4.0 预览 | `v4.0` | [主题与釉彩 V4](https://guangcai-no1-china-v4.netlify.app/) | `6aced018c70635a1ad24cbbe` |
 
-Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，但尚未创建 `v3.0`、`v4.0` 标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。最新 V4 部署对应源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`，详见[部署与公网复核记录](docs/changes/20261014-v4-body-seam/deployment.json)。
+Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，`v3.0`、`v4.0` 标签指向各自已发布源码；后续修复使用新的 commit，不移动已有标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。最新 V4 部署对应源码 `6b35efb104019472cea3679ea26cfee1e13ffc8b`，详见[部署与公网复核记录](docs/changes/20261014-v4-body-seam/deployment.json)。
 
 ## 本地开发
 
@@ -48,7 +48,7 @@ npm --prefix guangcai-china-preview run dev -- --port 5208
 1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，从 main 建立 `codex/<task>` 分支；存在其他修改时使用独立 worktree。
 2. 在本仓库直接修改、验证并形成原子提交，例如 `fix(china): align porcelain at artwork boundary`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
 3. PR 审查和必要验证通过后按授权合并。原始历史补录已经保留为真实可达提交，不对既有分支强推或重写。
-4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
+4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0`、`v4.0`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
 5. 发布仅使用用户已授权的目标站点。从已记录的 Git 提交构建，保存站点 ID、提交 SHA、构建命令、部署 ID、文件哈希及回读结果。`.netlify/` 和凭据只留本地，不入库。
 
 ## 历史完整性
