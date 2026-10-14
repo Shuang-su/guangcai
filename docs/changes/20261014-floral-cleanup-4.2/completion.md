@@ -19,3 +19,11 @@
 限制：只归一确认的空白金底，保留与轮廓相连的细小笔触；未做真实几何位移；浏览器手机视口不等于真实 iPhone 验收。发布与源码 SHA 随后记录。
 
 交互复测通过：真实目录款式 china-green 切换后固定纹理 UUID 不变；材质查看三种模式无着色器错误；对照页滑杆 75 对应 inset(0px 25% 0px 0px)。验证脚本中的带点 HTML ID 改用属性选择器后通过（初次 CSS #floral-cleanup-4.2 解析失败，产品页面原生锚点有效）。
+
+## 发布完成
+
+- 源码/素材/本地验证提交 `ee6e1aff10bf2f9892babc375e723bf360d9d63e`，已推送，annotated tag `v4.2` 指向该提交。上一轮 `v4.1` 仍指向 591d8c5，旧标签不移动。
+- 手动生产部署 `6acefdc52ef3d568cd9acedd`，站点 https://guangcai-no1-china-v4.netlify.app/ 。CLI 退出 1 并报告 422；通过 getSite/getDeploy/listSiteFiles 恢复准确部署身份，ready 且全部 466 个应用文件精确匹配；未重试创建新部署。完整信息见 deployment.json。
+- 公网读到 4.2.0 与 cleanGoldGround=true；真实 catalog 款式切换固定纹理不变；材质查看、5 个机位与手机视口、对照滑杆通过，无控制台错误。
+- V3 仍为 6ace443df7425f433e717eb0；两站 Git 绑定为空。
+- PR #20 关联 Issue #19，由合并关闭；发布归档提交后完成合并回读。
