@@ -12,6 +12,7 @@
 | 4.0 预览 | `v4.0` | `6b35efb104019472cea3679ea26cfee1e13ffc8b` | `6aced018c70635a1ad24cbbe` | 中国／深圳九款图样、三种新款材质、可选文字；包含颜色覆盖、旋转方向及杯身接缝修正，手动发布 |
 | 4.1 预览 | `v4.1` | `591d8c56b0819143a2bdab454068fd30921a2977` | `6acef244237630dba7fa87fe` | 金底伪高度清理与侧边釉层反光；按用户要求回溯命名，部署时 UI / package 仍为 4.0 / 4.0.0 |
 | 4.2 预览 | `v4.2` | `ee6e1aff10bf2f9892babc375e723bf360d9d63e` | `6acefdc52ef3d568cd9acedd` | 独立金底清洗覆盖，保留原始花纹颜色和黄果皮，通道同步；界面/package 4.2/4.2.0 |
+| 4.3 预览 | `v4.3` | `8d54f7ee8091a1b5ccf6eb3646d8a269e0abdff7` | `6acf18984f3abc04fe3cab18` | 北京五款配色、13种材质组合、可选北京文字；原稿对齐与16位高度/浮点法线；界面/package 4.3/4.3.0 |
 
 旧版本首次入库没有原生 Git 历史；实际修改时间与补录提交时间分开记载。[HISTORY.md](HISTORY.md) 保存恢复的 16 个源码节点，全部已进入 main 的可达历史。表中 1.0/2.0/2.1 使用移除本机依赖链接后的提交，应用源码与各发布基线一致；历史 package.json 的内部编号保留原值，产品版本以本索引为准。3.0 开始同步维护产品 package 版本。
 
@@ -56,8 +57,10 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 
 [完成记录](docs/changes/20261014-floral-cleanup-4.2/completion.md) · [部署回读](docs/changes/20261014-floral-cleanup-4.2/deployment.json) · [4.2 对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#floral-cleanup-4.2)。
 
-## 4.3：北京主题（开发验证完成，发布核验中）
+## 4.3：北京主题与五款配色
 
 基于4.2新增北京纯金、青绿金线、红金、紫金、蓝金，共13种有效材质组合。原1942×810透明线稿等比放大为4096×1783通道，16位高度和RGBA16F法线共用结构；生成式候选改变建筑，未采用。全站三个主题十四款，默认中国纯金不变。
 
 21项应用、4项素材、76项浏览器、24项背景和17项生产预览检查通过，生产构建成功。浏览器模拟手机，尚未真机验收。来源、对照与实际发布状态见[完成记录](docs/changes/20261014-beijing-4.3/completion.md)。
+
+手动更新V4部署 `6acf18984f3abc04fe3cab18`，834个应用文件与发布SHA-1完全匹配。V3保持 `6ace443df7425f433e717eb0`，两站Git自动部署绑定为空。[PR #22](https://github.com/Shuang-su/guangcai/pull/22) 记录源码合并状态；[部署与逐文件回读](docs/changes/20261014-beijing-4.3/deployment.json)。
