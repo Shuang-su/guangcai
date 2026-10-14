@@ -32,7 +32,8 @@ product.root.traverse(o=>{if(o instanceof Mesh)for(const m of (Array.isArray(o.m
 const lidReflections=createLidReflections(studio,product,mats.porcelain);
 view=new ViewController(studio,()=>product,()=>{if(view)ui.update(view.view,view.auto);});
 const anisotropy=Math.min(8,studio.renderer.capabilities.getMaxAnisotropy());
-const fixed=new StyleManager(mats,anisotropy,()=>{});city=new CityArtworkManager(mats.city,anisotropy);
+// Fixed floral lines need the full available anisotropy at the saucer silhouette.
+const fixed=new StyleManager(mats,studio.renderer.capabilities.getMaxAnisotropy(),()=>{});city=new CityArtworkManager(mats.city,anisotropy);
 let artworkUI:ReturnType<typeof createArtworkPanel>|undefined;
 const selection=new SelectionController(s=>applyCityArtwork(artworkPack(s,chinaPack,import.meta.env.BASE_URL)),()=>{artworkUI?.render();if(selection.busy)ui.message('正在准备 · '+variantFor(selection.desired.variant).name,true);else if(selection.error)ui.message(selection.error);});
 artworkUI=createArtworkPanel(selection,ui.closePanels);
