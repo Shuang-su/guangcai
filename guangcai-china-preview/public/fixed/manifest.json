@@ -1,161 +1,405 @@
 {
-  "version": 6,
-  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
-  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette plus bounded local chromatic ink ridges, then smoothed. No grayscale-color height conversion.",
-  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "method": "Generative high-definition restoration; coarse source-layout registration; minimal-difference overlap joins; semantic enamel and raised ink; float height and RGBA16F normal atlas",
+  "pilot": false,
+  "parts": [
+    {
+      "id": "saucer-00",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        768,
+        195
+      ],
+      "outputSize": [
+        1804,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        20.202665328979492,
+        12.583353996276855
+      ],
+      "sha256": "961b93ad2684200e837fb428a321649983bb9d1e67074d975a692126b5bd8108"
+    },
+    {
+      "id": "saucer-01",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        28.920690536499023,
+        12.140656471252441
+      ],
+      "sha256": "5ca1d84028d87bacd274b1383c53440d9604d480183e04081b58c62e01ca6e41"
+    },
+    {
+      "id": "saucer-02",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        34.63434982299805,
+        12.044024467468262
+      ],
+      "sha256": "2e4ad0aafdbbaa0a273a1c2d06fbb6ffa376d51fedab310e377181a6178ea2af"
+    },
+    {
+      "id": "saucer-03",
+      "generatedSize": [
+        2169,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        31.85356903076172,
+        12.477331161499023
+      ],
+      "sha256": "afd01b57381208e3d7a3215c3596dda4c903ed2e2d8cad26fcbdced564066ece"
+    },
+    {
+      "id": "saucer-04",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        38.86330032348633,
+        11.966532707214355
+      ],
+      "sha256": "c2d0f402138f33279b7337f75494d77ea501933e186c3eb5dfa2fdafb14eae02"
+    },
+    {
+      "id": "saucer-05",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        28.866365432739258,
+        12.46451473236084
+      ],
+      "sha256": "2197989817e3316b430227496d9ef2cd27ffad4860e2372c896382e09b91e10f"
+    },
+    {
+      "id": "saucer-06",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        32.94744873046875,
+        12.55623722076416
+      ],
+      "sha256": "b073c1e4e8853f10dde16cb81abedf8df190e8bb6d8b8fc79de4ef2146b43e89"
+    },
+    {
+      "id": "saucer-07",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        32.69273376464844,
+        12.736169815063477
+      ],
+      "sha256": "178cd25f370650156c0454533e841af871c5bd0df8972121e8240591ab3f8657"
+    },
+    {
+      "id": "saucer-08",
+      "generatedSize": [
+        2170,
+        725
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        900,
+        195
+      ],
+      "outputSize": [
+        2113,
+        512
+      ],
+      "maxCoarseShiftSourcePixels": [
+        29.531145095825195,
+        12.608739852905273
+      ],
+      "sha256": "fe5eb78cfa7aca543b9ff6115a3af5bb7043fd8f8f9b955ea00ee854320b493d"
+    },
+    {
+      "id": "body",
+      "generatedSize": [
+        808,
+        1946
+      ],
+      "paddingCrop": null,
+      "sourceSize": [
+        637,
+        1534
+      ],
+      "outputSize": [
+        1024,
+        2466
+      ],
+      "maxCoarseShiftSourcePixels": [
+        16.293359756469727,
+        22.846277236938477
+      ],
+      "sha256": "18b5ab63c6861c94ace38d4028cb06680c7f558e00c0830b6c28cb455301a4d8"
+    },
+    {
+      "id": "handle-top",
+      "generatedSize": [
+        725,
+        2170
+      ],
+      "paddingCrop": [
+        190,
+        0,
+        535,
+        2170
+      ],
+      "sourceSize": [
+        148,
+        926
+      ],
+      "outputSize": [
+        384,
+        2403
+      ],
+      "maxCoarseShiftSourcePixels": [
+        4.2773308753967285,
+        6.262566089630127
+      ],
+      "sha256": "75c8bdb4e6ec6bc52aa93f9dcde3b94b52ead3684feb66e3b2d7c94c8ca8e802"
+    },
+    {
+      "id": "handle-bottom",
+      "generatedSize": [
+        725,
+        2170
+      ],
+      "paddingCrop": [
+        187,
+        0,
+        536,
+        2170
+      ],
+      "sourceSize": [
+        148,
+        926
+      ],
+      "outputSize": [
+        384,
+        2403
+      ],
+      "maxCoarseShiftSourcePixels": [
+        3.9711880683898926,
+        5.188814163208008
+      ],
+      "sha256": "0b69139d84982c4bf371cf1c896bd717c53683dfb2271fc8ee61d1e7c88b5277"
+    }
+  ],
+  "saucerJoins": [
+    {
+      "at": 749,
+      "overlap": 153,
+      "pathMin": 8,
+      "pathMax": 152,
+      "meanJoinCost": 0.019652752205729485
+    },
+    {
+      "at": 2557,
+      "overlap": 305,
+      "pathMin": 257,
+      "pathMax": 303,
+      "meanJoinCost": 0.009401263669133186
+    },
+    {
+      "at": 4362,
+      "overlap": 308,
+      "pathMin": 123,
+      "pathMax": 219,
+      "meanJoinCost": 0.008354704827070236
+    },
+    {
+      "at": 6168,
+      "overlap": 307,
+      "pathMin": 200,
+      "pathMax": 289,
+      "meanJoinCost": 0.014663753099739552
+    },
+    {
+      "at": 7975,
+      "overlap": 306,
+      "pathMin": 45,
+      "pathMax": 132,
+      "meanJoinCost": 0.006183100864291191
+    },
+    {
+      "at": 9781,
+      "overlap": 307,
+      "pathMin": 36,
+      "pathMax": 146,
+      "meanJoinCost": 0.003428212832659483
+    },
+    {
+      "at": 11586,
+      "overlap": 308,
+      "pathMin": 18,
+      "pathMax": 153,
+      "meanJoinCost": 0.007071193773299456
+    },
+    {
+      "at": 13394,
+      "overlap": 305,
+      "pathMin": 64,
+      "pathMax": 225,
+      "meanJoinCost": 0.0062669506296515465
+    },
+    {
+      "at": 15354,
+      "overlap": 153,
+      "pathMin": 5,
+      "pathMax": 113,
+      "meanJoinCost": 0.013611044734716415
+    }
+  ],
+  "handleJoins": [
+    {
+      "at": 2070,
+      "overlap": 333,
+      "pathMin": 44,
+      "pathMax": 214,
+      "meanJoinCost": 0.003150360658764839
+    }
+  ],
   "regions": {
     "body": {
-      "offsetU": 0,
-      "width": 1024,
-      "height": 2222,
-      "physical": {
-        "width": 45.0294947014537,
-        "length": 97.7
-      },
-      "source": "assets/masters/china-fixed-body-v4.png",
-      "sourceSize": [
-        887,
-        1774
+      "size": [
+        1024,
+        2466
       ],
-      "crop": null,
-      "layout": "original-cover",
-      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
-      "maps": {
-        "baseColor": {
-          "url": "fixed/body-baseColor.png",
-          "sha256": "a645e69121cefbeb33b3c2fb74fda225b5b744fba997fcaa642c974bc814c047"
-        },
-        "metalness": {
-          "url": "fixed/body-metalness.png",
-          "sha256": "27bd91c4c86b3cd327476fd4edf11d14ab4711408eee7cdd201af7f2c528fe94"
-        },
-        "roughness": {
-          "url": "fixed/body-roughness.png",
-          "sha256": "79da3e2a411d56977112f7cd1ad8dbcb8bfdc005dd210358d3093f9f529fa3e2"
-        },
-        "height": {
-          "url": "fixed/body-height.png",
-          "sha256": "b2dd67de0cb3781c33cf9b1ddd4a389f96306ccf325e73b774cea4899e67991f"
-        },
-        "normal": {
-          "url": "fixed/body-normal.png",
-          "sha256": "f12b7d4c20344ec08b801e96931df90840dd44fc16cd846f426ff5dd5603cca4"
-        }
-      }
+      "effectiveSize": [
+        1024,
+        2466
+      ],
+      "sourceSize": [
+        637,
+        1534
+      ],
+      "normalBytes": 5001612,
+      "normalMaxSlope": 0.15955021977424622,
+      "heightLevels": 10795
     },
     "handle": {
-      "offsetU": 0,
-      "width": 320,
-      "height": 3119,
-      "physical": {
-        "width": 11.9,
-        "length": 115.97543005101365,
-        "aspect": 0.10260794027463917
-      },
-      "source": "assets/masters/china-fixed-body-v4.png",
+      "size": [
+        384,
+        4473
+      ],
+      "effectiveSize": [
+        384,
+        4473
+      ],
       "sourceSize": [
-        887,
-        1774
+        148,
+        1724
       ],
-      "crop": [
-        0.47,
-        0.07,
-        0.16,
-        0.82
-      ],
-      "layout": "original-cover",
-      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
-      "maps": {
-        "baseColor": {
-          "url": "fixed/handle-baseColor.png",
-          "sha256": "bb477218491efafadcf80266b22949d5d06f9fab80b1fd12c6ec3ac5d9227f74"
-        },
-        "metalness": {
-          "url": "fixed/handle-metalness.png",
-          "sha256": "5f5a5da8654c0cbe000a80a37d495b26e39233f831e1a3d8036814668367eb64"
-        },
-        "roughness": {
-          "url": "fixed/handle-roughness.png",
-          "sha256": "b2d64b3c4690868b30c852111fbccf4a8d321f8ec2e7c8375efe7968d6e25a79"
-        },
-        "height": {
-          "url": "fixed/handle-height.png",
-          "sha256": "eb72355188acd90f99a72e991301a64ec637285cfb6805ff753914df13628643"
-        },
-        "normal": {
-          "url": "fixed/handle-normal.png",
-          "sha256": "8dcccf1678d8520abaabec844591dcd2e1ff6356f9e912e145c48328bb2ee5ff"
-        }
-      }
+      "normalBytes": 3771724,
+      "normalMaxSlope": 0.2559864819049835,
+      "heightLevels": 10795
     },
     "saucer": {
-      "offsetU": 0.485,
-      "width": 2172,
-      "height": 213,
-      "physical": {
-        "width": 113.41149479459153,
-        "length": 11.142710621747296
-      },
-      "source": "assets/masters/china-fixed-band-v4.png",
+      "size": [
+        8192,
+        1152
+      ],
+      "effectiveSize": [
+        16256,
+        512
+      ],
       "sourceSize": [
-        2173,
-        724
+        6924,
+        195
       ],
-      "crop": [
-        0,
-        0.285,
-        1,
-        0.375
-      ],
-      "layout": "original-cover",
-      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
-      "maps": {
-        "baseColor": {
-          "url": "fixed/saucer-baseColor.png",
-          "sha256": "b2e17775570604828de532cc2041c51b83a446efd64ff2881332e60d766ffc4c"
-        },
-        "metalness": {
-          "url": "fixed/saucer-metalness.png",
-          "sha256": "a58452f09641558fe93bc98c3499bc88a0ed853144934d9b003e0b6dc32f8d27"
-        },
-        "roughness": {
-          "url": "fixed/saucer-roughness.png",
-          "sha256": "35cb4b6ddb4e7ef95bb1b0c9aba64578a586951267ce63bd57f6fb44ba5a30fd"
-        },
-        "height": {
-          "url": "fixed/saucer-height.png",
-          "sha256": "746b8dff5520145bbd43ef2ecbfd1d6d56d27c307e443d4ed61c3da53c87d38b"
-        },
-        "normal": {
-          "url": "fixed/saucer-normal.png",
-          "sha256": "4fce708fd288b8287c885b293597ea39e526ab7e1ecc056194ffbee3dfe4c0e3"
-        }
-      }
+      "normalBytes": 24498837,
+      "normalMaxSlope": 0.2318655401468277,
+      "heightLevels": 10795
     }
   },
-  "name": "花鸟原图局部 · 参考重建 v4",
-  "renderStandard": {
-    "relief": 4.4,
-    "clearcoatRelief": 2.4,
-    "specularIntensity": 0.85,
-    "clearcoat": 0.75,
-    "clearcoatRoughness": 0.14,
-    "exposure": 1.08
+  "atlas": {
+    "rows": 2,
+    "contentWidth": 8128,
+    "contentHeight": 512,
+    "gutter": 32
   },
-  "reliefRevision": "v5: bounded local chromatic ink ridges, including red hatching and green veins; 2px neighbourhood, 0.8px height rounding. Colour master and layout remain v4. User-requested deeper finish: normal 4.4, glaze normal 2.4. Same height and texture pixels.",
-  "runtimeOffsets": {
-    "saucerU": 0.485
-  },
-  "layoutNote": "Body full master; handle crop [.47,.07,.16,.82]; v4 saucer central ribbon crop [0,.285,1,.375]. Uniform cover, no anisotropic stretching. Existing saucer UV mirrors four quarters with a smooth periodic phase balance; body floral coverage is cropped within the unchanged city UV allocation. Hidden reference motifs are reconstructed, not official source artwork.",
-  "layoutCalibration": {
-    "version": 1,
-    "body": {
-      "visibleEndFraction": 0.3
-    },
-    "saucer": {
-      "offsetU": 0.485,
-      "phaseBalance": 0.145
-    },
-    "note": "2026-10-13 same-camera layout calibration. Crop the body decoration within its original UV allocation; smoothly balance opposite saucer faces. Source pixels and relief remain unchanged."
-  }
+  "limits": "Generated details and strokes are reconstructed, not lossless recovery of the PSD. Actual mobile acceptance remains separate.",
+  "assetVersion": "3.0-floral-restored-1",
+  "fixedNormalScale": 4.4,
+  "clearcoatNormalScale": 2.4
 }

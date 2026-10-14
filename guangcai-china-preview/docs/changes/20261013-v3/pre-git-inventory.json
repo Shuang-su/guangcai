@@ -1,0 +1,4008 @@
+{
+  "source": "/Volumes/Prism_初号機/广彩/guangcai-china-v3",
+  "baselineSource": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview",
+  "files": {
+    "compare.html": {
+      "bytes": 305,
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    "index.html": {
+      "bytes": 360,
+      "sha256": "d4d36635af1548a9e2e3267e00be8f38499bfb05424171f663682f27b184db8e"
+    },
+    "netlify.toml": {
+      "bytes": 808,
+      "sha256": "1815b296632d4ca9acadbb7c1a1fc88de2e9e57032e0dc7199d60fd3cac5c143"
+    },
+    ".gitignore": {
+      "bytes": 32,
+      "sha256": "54341e20cb85f1f17ecff418bfe6098e669fb5a496411da22a3adae0782caca2"
+    },
+    "package-lock.json": {
+      "bytes": 63914,
+      "sha256": "a9fc939585cf6e1504bd668bff1a3ec2d57031569e8aecd8144b1de7e8ea7a17"
+    },
+    "package.json": {
+      "bytes": 1241,
+      "sha256": "a6ca37ccfdbc5a4cd9926d821430d000782f0bc2130fcff712c1a6e02ed93000"
+    },
+    "README.md": {
+      "bytes": 12449,
+      "sha256": "8ee6590a8bd6586e809483ece64674457834ead543159de28c8ce17d985787a5"
+    },
+    "tsconfig.json": {
+      "bytes": 361,
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    "vite.config.ts": {
+      "bytes": 199,
+      "sha256": "9280e0d5aa5c14405a34aef99da64c85b4b3f79ed2801e5a0778ec5f5e9e7bac"
+    },
+    "ARTWORK.md": {
+      "bytes": 4325,
+      "sha256": "95008427dc2cbb1d7388a9e54342cb1c83c7f75bb9b3389acd8ea62c10f0640a"
+    },
+    "tools/derive-pbr.mjs": {
+      "bytes": 5357,
+      "sha256": "e2a2cd0e67db1047c7bff33bd1f95606a64a58166078dc12add22099311f829e"
+    },
+    "tools/background-qa.mjs": {
+      "bytes": 9922,
+      "sha256": "4b184daaada730267a6991c2dc23a6a89d9645cedb03fe9148f4a133b6f46af4"
+    },
+    "tools/reference-captures.mjs": {
+      "bytes": 1270,
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    "tools/handle-compare.mjs": {
+      "bytes": 1655,
+      "sha256": "0fa6cf178227095df847d1c0201a924c104049ca97aeba844d521af8fcd26f09"
+    },
+    "tools/fit-lid-calibrations.ts": {
+      "bytes": 2310,
+      "sha256": "4065b7c6e70e49c379a5a8e0c6a076de34e4a8d7b7989e1afd0fb86ab4cf4d68"
+    },
+    "tools/china-online-qa.mjs": {
+      "bytes": 9549,
+      "sha256": "ba0c03167ec57c8b799969527f5cc06e49271d6d6255253d5423d5f85f487069"
+    },
+    "tools/reference-gallery.mjs": {
+      "bytes": 7864,
+      "sha256": "6e2c4c67774ea2ddcdd9223b90552421f250f2bd20ff5af81b65a48718018dc9"
+    },
+    "tools/floral-quality-qa.mjs": {
+      "bytes": 2466,
+      "sha256": "5d6a69648784f4385e52f769eeeefb368afa391af6d4ab7fc4d7ca9b17ac0129"
+    },
+    "tools/fit-other-calibrations.ts": {
+      "bytes": 3037,
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    "tools/overlay-qa.mjs": {
+      "bytes": 3220,
+      "sha256": "14af901bd914a2f35d1d219d45a9132689074b3db3338e11c7dd900189c88793"
+    },
+    "tools/derive-fixed.mjs": {
+      "bytes": 6762,
+      "sha256": "e5248ac21110ed321ce9dbdaf77170cad7be996fb4f73fee5f266b3605d36968"
+    },
+    "tools/china-calibration.ts": {
+      "bytes": 2333,
+      "sha256": "b382aa9c5a1e71b1b27a05ac48438c33bd223b76ab3063fdec3cd976ce761517"
+    },
+    "tools/background-evidence.mjs": {
+      "bytes": 1516,
+      "sha256": "343ce1d7bccf03349a63480a0ea0f492b5f89c3007a8d1125b35dc0fbcbe0d39"
+    },
+    "tools/fit-calibration.ts": {
+      "bytes": 2775,
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    "tools/floral-relief-qa.mjs": {
+      "bytes": 2449,
+      "sha256": "12c7bc58061c3af4116f4c4997b93ee1f858fdfccfa5e04861bcec0cb4bec1c6"
+    },
+    "tools/texture-density.mjs": {
+      "bytes": 1115,
+      "sha256": "5eedfc6d7eae0bcd92c20b6d9859e5442da39968189ee302780c9d55eddcfb21"
+    },
+    "tools/web-textures.mjs": {
+      "bytes": 2764,
+      "sha256": "acd479f1e7e61d40f639169574e6803b5f3a4ef72da7c2c2a98d7461a0178114"
+    },
+    "tools/verify-delivery.mjs": {
+      "bytes": 2067,
+      "sha256": "4d5adbc669569cbce07d04d0431ed7647bb98f4075c97651f43a306af737243d"
+    },
+    "tools/geometry.test.ts": {
+      "bytes": 9327,
+      "sha256": "a9c996bbe8acd91b12f592caef6e2eceb4979ec27d9120a0ba35181ec4088157"
+    },
+    "tools/overlay-captures.mjs": {
+      "bytes": 1715,
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    "tools/reflections-qa.mjs": {
+      "bytes": 3577,
+      "sha256": "26136b492d8cbbca8270b4fc7d46d29036a6d79e7abf8e22b7a68abc744140d0"
+    },
+    "tools/browser-qa.mjs": {
+      "bytes": 6307,
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    "tools/prepare-china-release.mjs": {
+      "bytes": 1644,
+      "sha256": "0060f9e6f9b77aea862f20493f7e9acb09697a89a68c407b807800287d814121"
+    },
+    "tools/overlay-report.mjs": {
+      "bytes": 3775,
+      "sha256": "c57db3f2832403eed1801558c859e97c8efd28d2885d82a1519576136d5ce2e4"
+    },
+    "tools/lid-compare.mjs": {
+      "bytes": 1659,
+      "sha256": "eb154101a2e3eb35e7fe3d8a8741c2b313bdd893badb9092a9e69f20eb60f9e6"
+    },
+    "tools/texture-qa.mjs": {
+      "bytes": 7666,
+      "sha256": "caf6546b5a919498b6b854dca653a89bb7a2b6c84f57be689b6d0c0f73fc5baf"
+    },
+    "tools/china-assets.py": {
+      "bytes": 9783,
+      "sha256": "ce0c2933382628f5bc77f2d7f1cd2a7399747420f3ce563d785912e81dbe88f8"
+    },
+    "tools/china-qa.mjs": {
+      "bytes": 13423,
+      "sha256": "0591ddfea8e5d982319c4b4f465b57c5894e95aa4e81fc1bcd396d94478fe21d"
+    },
+    "tools/surface-metrics.ts": {
+      "bytes": 562,
+      "sha256": "fa339dcfc16f086c43b02ca8e9ffd70116b1479bb131d7c4f1f51b218296b0d3"
+    },
+    "tools/floral-relief-evidence.mjs": {
+      "bytes": 4424,
+      "sha256": "b2596d847c2f780604f16cf1ac3fab7be4bb89349492b7d2ddb7d72732809507"
+    },
+    "tools/online-qa.mjs": {
+      "bytes": 5987,
+      "sha256": "8ee15d1b1c708ae8e7c03a2b339b0c3a733daf82e2f8d045d5d8300d3e36cc5f"
+    },
+    "tools/saucer-profile.ts": {
+      "bytes": 2239,
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    "tools/snapshot.mjs": {
+      "bytes": 567,
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    "tools/texture-standards.mjs": {
+      "bytes": 13255,
+      "sha256": "a91bda81d937537c567251049e2433de212118270b576dd134a43544830e0ec7"
+    },
+    "tools/layout-evidence.mjs": {
+      "bytes": 3060,
+      "sha256": "7115a033afee9892e0e5d7e255935f204293dbde45e20b0f02fcbe0d52ad6f6e"
+    },
+    "tools/china-evidence.mjs": {
+      "bytes": 3719,
+      "sha256": "5e4a613962f85fc9c1ae8a2f8cb287cfdbcbae7dc97acd6aff5390f78bf0aa86"
+    },
+    "tools/saucer-closeup.mjs": {
+      "bytes": 906,
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    "tools/extract-original-floral.py": {
+      "bytes": 3356,
+      "sha256": "2abbce93dff739ef75be09e91aadfdc414ddaad6df50859e23a5b3e6db3c418a"
+    },
+    "tools/derive-original-fixed.mjs": {
+      "bytes": 5879,
+      "sha256": "896a2da35b92b5535e34a402debaaedf118b07b31db51f70806799574a8585e1"
+    },
+    "tools/calibrate-v3.ts": {
+      "bytes": 3122,
+      "sha256": "f26139a5a900a4e5b68cac820f24776afb7827cf8407bd4911b032bd5ac9163b"
+    },
+    "tools/background-qa-v3.mjs": {
+      "bytes": 10091,
+      "sha256": "2571ef5553cd0d3a83964eaf68e3861fe1f3b2a3388f000d0d7153c59bd9cdc8"
+    },
+    "evidence/source-integrity.json": {
+      "bytes": 12747,
+      "sha256": "9f3b719098416cad57e003ce28ee99a9b50ff1543721a163fbe92eef224e7cab"
+    },
+    "evidence/browser-qa-failure.json": {
+      "bytes": 2309,
+      "sha256": "21af9924eb5dbdcb8fbdb4a2eb866e0d06fdb4629d5dd68178bb80b0c85a6af4"
+    },
+    "evidence/bottom-fix-detail.png": {
+      "bytes": 765717,
+      "sha256": "dcb448c09851da98dd166fe6c08aa2cbd787b6d7e7d399a877026d8899fd5376"
+    },
+    "evidence/first-handle.png": {
+      "bytes": 352065,
+      "sha256": "688f4f559bd6dde2c143c151b1e194258b7277834377bfe6f5f00ec5d1cb89a4"
+    },
+    "evidence/matte-hero.png": {
+      "bytes": 315012,
+      "sha256": "5679538d1da4b8043be5d87cc51d56d458616d5b3886d507d53a6613de571529"
+    },
+    "evidence/browser-qa.json": {
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    "evidence/first-front.png": {
+      "bytes": 326134,
+      "sha256": "a0c90c89a0e8b3b5326f4dbb9db165843f1c24e4d33efc7f7308ff05a369cb2c"
+    },
+    "evidence/china-atlas-preview.png": {
+      "bytes": 334189,
+      "sha256": "5ddb719f15358ec202d5066fc9e28d96136bc1a260afae4f8512478b6fe88358"
+    },
+    "evidence/calibrated-hero.png": {
+      "bytes": 322137,
+      "sha256": "12346ad7a3fa7f44e853f5fc1f6b33896e99f191212cae8c5a1765573e13066d"
+    },
+    "evidence/handle-reflection-qa.json": {
+      "bytes": 539,
+      "sha256": "98484e6c9ba59629bd1502eb0a2a112caebf1fc071be800053cbc5a6851a4b80"
+    },
+    "evidence/web-textures.json": {
+      "bytes": 7790,
+      "sha256": "96574d4d80e344883c943c9dea86d2f26b2dea2960bc932aef31728bf99bfa92"
+    },
+    "evidence/production-qa.json": {
+      "bytes": 4893,
+      "sha256": "7ef99dd7855b8ef60c8a32050db953d09d109533669b31ca3c9ad16671a34c6c"
+    },
+    "evidence/first-hero.png": {
+      "bytes": 403762,
+      "sha256": "b8aa822d5aabe63797b605fa08e193f4ae0863f3ce542397d92d67f62913074b"
+    },
+    "evidence/first-detail.png": {
+      "bytes": 972083,
+      "sha256": "90281a9816e89dcdcec496937c6b2bb49419f311ad7b608a51b453c87ca30af3"
+    },
+    "evidence/camera-calibration.json": {
+      "bytes": 1888,
+      "sha256": "03541bd9f98ee04797e82bf2414463690a080a7b016ca5a391ba347ecd6f3096"
+    },
+    "evidence/relief-protected-verification.json": {
+      "bytes": 88,
+      "sha256": "ee5631ded7ea581fa944f39f9844c7ba84a21f62008146f5055aad578fdd4fea"
+    },
+    "evidence/matte-detail.png": {
+      "bytes": 702036,
+      "sha256": "445666d39052dfe9f44b58b5fd7d5f1ce450aa6c74e0b3fdaa8853ba7b29f5bc"
+    },
+    "evidence/psd-audit.json": {
+      "bytes": 8548,
+      "sha256": "a74c505e1157bb623d924a9249b99b8d82b2e4b50801536a3b7c7f6209bfbaaa"
+    },
+    "evidence/bottom-fix-hero.png": {
+      "bytes": 331298,
+      "sha256": "728176ede22fb180d709a5aef0cedd97a120e1ddac2c35387e4a795cb2c8a28a"
+    },
+    "evidence/calibrated-front.png": {
+      "bytes": 302234,
+      "sha256": "2420462637a21ed763b7c8ee0aa8c9c1f6b1f84b0fa7806886b3cdc333669873"
+    },
+    "evidence/delivery-verification.json": {
+      "bytes": 437,
+      "sha256": "1d9982991ac77b4363193bf620636c2c8793f7033a4c98cd3f0d4cca063c01ad"
+    },
+    "evidence/source-floral-v3.json": {
+      "bytes": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a"
+    },
+    "evidence/camera-calibration-v3.json": {
+      "bytes": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f"
+    },
+    "evidence/load-pan-floral/source-hero.png": {
+      "bytes": 306615,
+      "sha256": "8695c6618ca77a3ead12765814906cfbf8cdf28134ff07221f88e7f226a37610"
+    },
+    "evidence/load-pan-floral/mobile-report.png": {
+      "bytes": 128575,
+      "sha256": "cfdf3330a0e2affeaa55d634a227a6c04fc9a225ffd137a36725e7da9cb54b21"
+    },
+    "evidence/load-pan-floral/old-detail.png": {
+      "bytes": 780896,
+      "sha256": "ca15c4a6c4ed1af8021e15a5bb09c95df72b9bd588186b473592624782839612"
+    },
+    "evidence/load-pan-floral/source-front.png": {
+      "bytes": 277861,
+      "sha256": "453ee7ff1f9dca317e422e39ff3c374664c8ad09dfef7f459a716189e6296f99"
+    },
+    "evidence/load-pan-floral/before-load.json": {
+      "bytes": 5559,
+      "sha256": "75a0c1b6965572e6ce71e0413d09940adeed4ab13266311d92aade18066dcd46"
+    },
+    "evidence/load-pan-floral/quality.json": {
+      "bytes": 1638,
+      "sha256": "d75673819229dae4c2afe7e95f9f33947e85ef127ec8a7f96b9525985df4cfc8"
+    },
+    "evidence/load-pan-floral/web-handle.png": {
+      "bytes": 304598,
+      "sha256": "dce9e1b40c76af2a0db665694bd8253acce4c7969ee76cf159de4e0a0aeb2f1f"
+    },
+    "evidence/load-pan-floral/preservation.json": {
+      "bytes": 459,
+      "sha256": "428907bc15816435e55a187e3dbd477b9a17b0605a757fd019b22bfae8fec895"
+    },
+    "evidence/load-pan-floral/comparison-handle.jpg": {
+      "bytes": 106161,
+      "sha256": "0f8b1640bb26281c62dbd99dbe379fcc1a2d9f65f4631457635e150340c576ff"
+    },
+    "evidence/load-pan-floral/comparison-hero.jpg": {
+      "bytes": 103591,
+      "sha256": "2f86ed797a55e980fc966ba18f8a60ea4367bbc9fab96177bbc2406cf3724a93"
+    },
+    "evidence/load-pan-floral/source-handle.png": {
+      "bytes": 304053,
+      "sha256": "cd8891e82bc00c9b8602ed12b53407f003e86f5fd6f71d9a2b9aee6a117bbefd"
+    },
+    "evidence/load-pan-floral/old-handle.png": {
+      "bytes": 310929,
+      "sha256": "c2893451f3f70fc23d537874b37d773a197069a148a4ae71e51706c95db85110"
+    },
+    "evidence/load-pan-floral/comparison-front.jpg": {
+      "bytes": 98097,
+      "sha256": "9049351fb30e7747cc3331d5f4dc2d6c1debef86a0875495ccbb42c7a86c2bb8"
+    },
+    "evidence/load-pan-floral/web-front.png": {
+      "bytes": 278225,
+      "sha256": "74a22a08b63be73edfc39e73d2b3b50a280adaa8fb33e2bdb8dff5fda03c4656"
+    },
+    "evidence/load-pan-floral/web-detail.png": {
+      "bytes": 776879,
+      "sha256": "cea332c50fb7e91e3b9f2f86350789617d343e4cf6dcfa62d2927f8eaa586167"
+    },
+    "evidence/load-pan-floral/old-front.png": {
+      "bytes": 281551,
+      "sha256": "85e76d6ac30d1dec28c51378441a6487febcf6baf4b7f12336108023e09993d5"
+    },
+    "evidence/load-pan-floral/source-detail.png": {
+      "bytes": 775191,
+      "sha256": "1ec0e4b445515a0174b74299edd340ebead300bc44f661a1568dbccecf041889"
+    },
+    "evidence/load-pan-floral/old-hero.png": {
+      "bytes": 308914,
+      "sha256": "f43471017e4e7f0551e9fd7488d787989b0abcc23e6cf50f0d90d227c7c415c6"
+    },
+    "evidence/load-pan-floral/comparison-detail.jpg": {
+      "bytes": 231903,
+      "sha256": "75d2fb7e8e4701d09cf4631082166d147ac41dc9a4ad32d158926d3251c2dc0b"
+    },
+    "evidence/load-pan-floral/web-hero.png": {
+      "bytes": 306718,
+      "sha256": "ab4c895d0d05a8f26a405b682df959d28469477ac57ae98c7f9552522a1e93db"
+    },
+    "evidence/deployment/old-site-after.json": {
+      "bytes": 799,
+      "sha256": "c4c371fa4b5f6d4c5213e1509558f958f95227dd9f5f3fc0a25a932435c21dff"
+    },
+    "evidence/deployment/remote-files-raw.json": {
+      "bytes": 29408,
+      "sha256": "565cea9f8272b4851bd2e3afc871921967c1909ceda5011f8a1ea0ff7363b1d0"
+    },
+    "evidence/deployment/online-model-stage.json": {
+      "bytes": 990,
+      "sha256": "519ba6b989237cc425bd9abfa0ed57bfaebca1a75862b8ca481958e10cfe6af5"
+    },
+    "evidence/deployment/site-final.json": {
+      "bytes": 6154,
+      "sha256": "e06fc288876c8e3904d5c6c74fb049f37cac14610f0d3bf16aee27336a3e0850"
+    },
+    "evidence/deployment/deploy-status.json": {
+      "bytes": 446,
+      "sha256": "0b0b263acf34ff715775b1ac66830a997806c9c04ff8e9815bf006944ba4b31c"
+    },
+    "evidence/deployment/original-site-final.json": {
+      "bytes": 6043,
+      "sha256": "42805240b745e01291827de34bc43af375e62462a9e246124ace18f36704b0d6"
+    },
+    "evidence/deployment/badge-status.json": {
+      "bytes": 126,
+      "sha256": "fa2d829871dff65554d779f9af4159726400edde61f00263352bc1bb66e899b8"
+    },
+    "evidence/deployment/live-index.html": {
+      "bytes": 974,
+      "sha256": "49d3bb9c0907c743beb6f41b1a6307cd45d8cd460d64e1f4c964c69dec18d255"
+    },
+    "evidence/deployment/live-evidence.png": {
+      "bytes": 639797,
+      "sha256": "6f7dceb616e70f1a53d632bed7c906d9fa94c703cc8bd9fdaacbf05d41bfd6aa"
+    },
+    "evidence/deployment/live-desktop.png": {
+      "bytes": 337103,
+      "sha256": "8699f525b0bc0191a56633a85ecfab9d8aa054c76f28f53440d5105c6fd4bb1c"
+    },
+    "evidence/deployment/live-detail.png": {
+      "bytes": 769292,
+      "sha256": "03a8caa5ab629e475ae634d62b260ae549d517fa87f6acafd8e4e43734e3eb16"
+    },
+    "evidence/deployment/live-text-face.png": {
+      "bytes": 290752,
+      "sha256": "f9e9f229581a711878a30e56c25fefc19008042dbfb8792d0821d35823aafff1"
+    },
+    "evidence/deployment/online-qa-initial-timeout.json": {
+      "bytes": 407,
+      "sha256": "22af989f7efe4c1a03d7eb1047ea391a9e785d815952adef9a5ff9c02c5eebbb"
+    },
+    "evidence/deployment/first-release-manifest.json": {
+      "bytes": 13496,
+      "sha256": "4814f2a60d28b453f323e6218ebe9ce7683d4e36470a7853431f6b7d42dd4889"
+    },
+    "evidence/deployment/site-after.json": {
+      "bytes": 823,
+      "sha256": "eda30289281163230297dc4701407388a6e398e50d2e9494882aeccf6cf272c2"
+    },
+    "evidence/deployment/old-site-final.json": {
+      "bytes": 6043,
+      "sha256": "42805240b745e01291827de34bc43af375e62462a9e246124ace18f36704b0d6"
+    },
+    "evidence/deployment/release-manifest.json": {
+      "bytes": 30775,
+      "sha256": "8f4b571767a81e3efca9e863730aea777faa53b9b72f99e679094aef1dde15fe"
+    },
+    "evidence/deployment/site-created.json": {
+      "bytes": 987,
+      "sha256": "a25cc58f96dbdbd7c64315bf83f90a9f8f193282159905db7bf40649bff63d90"
+    },
+    "evidence/deployment/remote-files.json": {
+      "bytes": 42054,
+      "sha256": "441fb762b67acbc8fe506143ef3f017c08a0b5ae701f4cccea2ed636db7d79c0"
+    },
+    "evidence/deployment/texture-retry-qa.json": {
+      "bytes": 172,
+      "sha256": "3ca131d225f704fd2026f40a776d44f097ba01243e92a88fb485f071a2a9cd98"
+    },
+    "evidence/deployment/cold-load-resources.json": {
+      "bytes": 4304,
+      "sha256": "4a4f16170e56643d5e26f268de0a9029e503c80cb584b523bb8e48441d803dd9"
+    },
+    "evidence/deployment/first-deploy.json": {
+      "bytes": 556,
+      "sha256": "0a54420dbe52b87c3de9552ab65608eb01d2c4c31463472c117085c66c6602db"
+    },
+    "evidence/deployment/old-site-before.json": {
+      "bytes": 232,
+      "sha256": "b7e59d720cd9bdf81a0fd0906b0d4ee636cca15fac990a832dcbc62c66da817b"
+    },
+    "evidence/deployment/online-qa-failure.png": {
+      "bytes": 81150,
+      "sha256": "f56c4b1ca33e98ae5d8b9cf58ea369f3a0438e8f74985eaabbfe536ee6190dc6"
+    },
+    "evidence/deployment/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "6c5e7bbf7cf1912c695fdfe2785bd0e03d5f7cd4047631ba764a8aae0190ea70"
+    },
+    "evidence/deployment/live-mobile.png": {
+      "bytes": 209725,
+      "sha256": "4174c23e60fdc1880b001e073e2dd992a8e9264455af5ed918530ec3ef3338f7"
+    },
+    "evidence/deployment/online-qa.json": {
+      "bytes": 31927,
+      "sha256": "2f70ab03f4996ca67916379422822a3dc141a88c13e8283b6925f2d906e525ab"
+    },
+    "evidence/deployment/protected-files.json": {
+      "bytes": 81,
+      "sha256": "b7306c6675bb9a8328ac89f05f2574f4b27f2fb2e04a800291f381318460d690"
+    },
+    "evidence/deployment/background/mobile-soft.png": {
+      "bytes": 210415,
+      "sha256": "297ac853015a3f97dd4bd4707e11dcbf7a85ab7f4c26875dada091deb77cedea"
+    },
+    "evidence/deployment/background/desktop-soft.png": {
+      "bytes": 457914,
+      "sha256": "9df48cf161c538f74931006cd4e04eec3f8b4560cb5d87d5b8ac3183e3a455fd"
+    },
+    "evidence/deployment/background/small-phone.png": {
+      "bytes": 129280,
+      "sha256": "b26abe04e5496bf05e027fe373a878191e0f475d3480fbd592eb0989b2489442"
+    },
+    "evidence/deployment/background/mobile-landscape.png": {
+      "bytes": 120997,
+      "sha256": "6edeff30ce09be222dc8f2cdaa1b8e502246ca8ea4193c2f86f94d2e3f4dcbc4"
+    },
+    "evidence/deployment/background/mobile-gray.png": {
+      "bytes": 119031,
+      "sha256": "0d7c4c241dc54b05f4607d3878ae6dd1a9ae60f6647d22b5534a2e67eae023a0"
+    },
+    "evidence/deployment/background/mobile-panel.png": {
+      "bytes": 180126,
+      "sha256": "46be28315034716f5e27765379fce7522d929ce207a6bf64c3d4f7ae52db3b22"
+    },
+    "evidence/deployment/background/verification.json": {
+      "bytes": 1558,
+      "sha256": "06d6f17556b68939656b0c1a652363c8b80e6d2327d44da93f620e84802d4145"
+    },
+    "evidence/deployment/background/desktop-gray.png": {
+      "bytes": 337103,
+      "sha256": "8699f525b0bc0191a56633a85ecfab9d8aa054c76f28f53440d5105c6fd4bb1c"
+    },
+    "docs/changes/20261012-floral-relief-calibration/completion.md": {
+      "bytes": 4321,
+      "sha256": "33ebe7bef44968c008c61b02658a84110f9216ae9190c2f3b12e7ce6fee75a35"
+    },
+    "docs/changes/20261012-floral-relief-calibration/plan.md": {
+      "bytes": 1249,
+      "sha256": "199f2f42a71df57d79171b5c571aa07db17119ebcf5216a28cba127c199fb5b0"
+    },
+    "docs/changes/20261012-floral-relief-calibration/request.md": {
+      "bytes": 782,
+      "sha256": "b6f5408aae04ffb24fa2847d0bc3110012f137c6ae95e82b637b3fac4ab1ba2d"
+    },
+    "docs/changes/20261012-floral-relief-calibration/delivered-files.json": {
+      "bytes": 2499,
+      "sha256": "47ff0fb48c67fa35d453571adced9d7af7da2012284ad98e56239fa4b28640b2"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/label-overlay.png": {
+      "bytes": 831974,
+      "sha256": "ae4d796969d86fcffd7f7f142973e8a6c1465368e521963897470427b78300e5"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/label-model.png": {
+      "bytes": 412664,
+      "sha256": "d59abfb358e9266a14505503980bc6bb31c626f041fe0700a98ea1a26054a520"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/buildings-comparison.jpg": {
+      "bytes": 215919,
+      "sha256": "8ffb2525500a02f3de6af63ee997e002cf81f8335acc2fd6d268ed5a67380a3b"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/buildings-model.png": {
+      "bytes": 360784,
+      "sha256": "210f33a93d72d815eab3dc771c2dbfb56c3b3824983b6ceeb37713aa67cde791"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/label-comparison.jpg": {
+      "bytes": 228003,
+      "sha256": "35eabddfddb2c555b47d901e91ab32443b45548eba7910617f63cc38244751eb"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/buildings-overlay.png": {
+      "bytes": 818791,
+      "sha256": "e52a64828fae09a41696e689bd3ec7c5a04da8fd1f4a1fd17f10d4451a2d0653"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/tools/derive-fixed.mjs": {
+      "bytes": 5633,
+      "sha256": "1720065fd44d499a3aa99277b70f165b12511bd5dd83a9b8c019c96fd0356b9e"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/evidence/deployment/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "7087120fd02d4301ec9486c6aecaf8e3c83789e74f462dc2d0ce0f77c29d506c"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/evidence/deployment/online-qa.json": {
+      "bytes": 25080,
+      "sha256": "670d39eade58015705bccef5508e09a60135984a285460b707bab94302353ec6"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/handle-metalness.png": {
+      "bytes": 438666,
+      "sha256": "5f5a5da8654c0cbe000a80a37d495b26e39233f831e1a3d8036814668367eb64"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/saucer-metalness.png": {
+      "bytes": 137609,
+      "sha256": "a58452f09641558fe93bc98c3499bc88a0ed853144934d9b003e0b6dc32f8d27"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/body-metalness.png": {
+      "bytes": 1130961,
+      "sha256": "27bd91c4c86b3cd327476fd4edf11d14ab4711408eee7cdd201af7f2c528fe94"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/handle-height.png": {
+      "bytes": 283262,
+      "sha256": "3ffb4e9bd4fc96b6d6198dd138417c6dda1978a6b48dea48201325d46f31dc99"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/handle-normal.png": {
+      "bytes": 530191,
+      "sha256": "f3ad13277d67058e3f8bae8f8b0aa2c50e6f3107fd91d60e38682e05a822f5d0"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/style.json": {
+      "bytes": 797,
+      "sha256": "77c69f00c1ff3c73fd0d2625f677b19491aa0d5b0170aa9b6cca4bb630adb15a"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/body-height.png": {
+      "bytes": 831278,
+      "sha256": "7770603d646861eb27c2f14bc88e64796e279dc5fa4fc7d3ba3498de5d2dca23"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/body-normal.png": {
+      "bytes": 1538655,
+      "sha256": "b0837a945ff06fa3f00156bc8f636ee185cf413158b90b5f2448219a4711a1e6"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/body-baseColor.png": {
+      "bytes": 5535126,
+      "sha256": "a645e69121cefbeb33b3c2fb74fda225b5b744fba997fcaa642c974bc814c047"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/body-roughness.png": {
+      "bytes": 511556,
+      "sha256": "79da3e2a411d56977112f7cd1ad8dbcb8bfdc005dd210358d3093f9f529fa3e2"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/saucer-baseColor.png": {
+      "bytes": 1165225,
+      "sha256": "b2e17775570604828de532cc2041c51b83a446efd64ff2881332e60d766ffc4c"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/saucer-roughness.png": {
+      "bytes": 69829,
+      "sha256": "35cb4b6ddb4e7ef95bb1b0c9aba64578a586951267ce63bd57f6fb44ba5a30fd"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/handle-roughness.png": {
+      "bytes": 177287,
+      "sha256": "b2d64b3c4690868b30c852111fbccf4a8d321f8ec2e7c8375efe7968d6e25a79"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/handle-baseColor.png": {
+      "bytes": 2339812,
+      "sha256": "bb477218491efafadcf80266b22949d5d06f9fab80b1fd12c6ec3ac5d9227f74"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/manifest.json": {
+      "bytes": 4913,
+      "sha256": "6b7f45f590ed5fb5cf467f6d94aeac968a5fe3f4e04d99b97d1a0c72350969be"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/saucer-height.png": {
+      "bytes": 153218,
+      "sha256": "391fcd32294a5a78a512c54900aa00f363b215c386d8b1bfcf7cf9a1a5518ba0"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/saucer-normal.png": {
+      "bytes": 300224,
+      "sha256": "b9ca37c4395ad0dc6ea817eccc96cae442db3fe7cfc67ba3626c808d630ba4d5"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/public/evidence.html": {
+      "bytes": 17028,
+      "sha256": "59fb16b9cb9ae0d2b174db2a6e9210a70ec636d44107bc77caa26e6f0ce97256"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/src/main.ts": {
+      "bytes": 6981,
+      "sha256": "fae7b865523fe9b5598756c6392d957084b05ac917ad92fdc1b63612ff238929"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/src/materials/render-standard.ts": {
+      "bytes": 191,
+      "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/src/materials/materials.ts": {
+      "bytes": 2428,
+      "sha256": "937cd876cb6202482e339d311aaeeeed10cd50a3cd770e07c2bffa3ef9aee45a"
+    },
+    "docs/changes/20261012-floral-relief-calibration/before/src/styles/web-textures.json": {
+      "bytes": 1267,
+      "sha256": "31af1e3c5ceb099a5d0e7d49713bbb55f7a2b3a31dfbaa7ca612420156641c3f"
+    },
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/render-standard.ts": {
+      "bytes": 185,
+      "sha256": "1d5b0b99ad0a621623ea86dfa8593e01a0094ea27e6d6421741455080a1d2f5a"
+    },
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/comparison-flowers.jpg": {
+      "bytes": 353944,
+      "sha256": "dcced7b13e694db46e16b77732f5d5d848eba3b0157478728e2a2e8753ab3145"
+    },
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/on-gray.jpg": {
+      "bytes": 61837,
+      "sha256": "f5701806e7566e16c00db9dd1301efc28975ed571d102f25d98edd8c445eff9a"
+    },
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "0ab361faa02ed74311ac90ad8e3dca844ce2f1afdd7f8af997920f2fe2dc8e4c"
+    },
+    "docs/changes/20261011-china-relief/changed-files.json": {
+      "bytes": 3163,
+      "sha256": "e2f828ea5877f73743257bebb400eb7d440663555fe4b84a0c68b1625a9ea354"
+    },
+    "docs/changes/20261011-china-relief/completion.md": {
+      "bytes": 7013,
+      "sha256": "eeb55397ee6d5b59702229b0dde7b6a18f60df3b1bd9a4c5d59ff1398ed664b8"
+    },
+    "docs/changes/20261011-china-relief/plan.md": {
+      "bytes": 7648,
+      "sha256": "c5b89f3e6f6d29bf4533f9e4976c3d6339c2be0c1d9099f8c8b432111787757a"
+    },
+    "docs/changes/20261011-china-relief/request.md": {
+      "bytes": 15253,
+      "sha256": "0df743f38b8e80ad1a16eb46b2f38941a6e83d96fb246e309a57e262c2d0e41a"
+    },
+    "docs/changes/20261013-mobile-background/sites-before.json": {
+      "bytes": 408,
+      "sha256": "b836d34f63f856fc487b89fc1a312da357cd82e09a7cf4b712b70ccad615b731"
+    },
+    "docs/changes/20261013-mobile-background/background-asset.json": {
+      "bytes": 136,
+      "sha256": "e7eb2cefdc879ced8957fb096e3753a61b5915338d4b06c109ad2c6fc094dafd"
+    },
+    "docs/changes/20261013-mobile-background/local-background-qa.json": {
+      "bytes": 1475,
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8"
+    },
+    "docs/changes/20261013-mobile-background/browser-qa.json": {
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    "docs/changes/20261013-mobile-background/changes.patch": {
+      "bytes": 26532,
+      "sha256": "570765e84867eafc911dac9699ba6ed4733af721741e4e089a4d88b93b769700"
+    },
+    "docs/changes/20261013-mobile-background/sites-after.json": {
+      "bytes": 408,
+      "sha256": "3159208c116c2de839203c22e727a08c2d73c7ec6e838c3d6b472d6a1e3fa586"
+    },
+    "docs/changes/20261013-mobile-background/completion.md": {
+      "bytes": 3680,
+      "sha256": "831eb234a6e6ad16ed752d58d65281b72498508d7c41eacbbdab0dfe38a9a5e3"
+    },
+    "docs/changes/20261013-mobile-background/release-manifest.json": {
+      "bytes": 30775,
+      "sha256": "8f4b571767a81e3efca9e863730aea777faa53b9b72f99e679094aef1dde15fe"
+    },
+    "docs/changes/20261013-mobile-background/remote-files.json": {
+      "bytes": 42054,
+      "sha256": "441fb762b67acbc8fe506143ef3f017c08a0b5ae701f4cccea2ed636db7d79c0"
+    },
+    "docs/changes/20261013-mobile-background/plan.md": {
+      "bytes": 793,
+      "sha256": "669979ea730f9762147582265cf7ec5dbfd05b5ab35e5109ae69d4e2a4f8047c"
+    },
+    "docs/changes/20261013-mobile-background/request.md": {
+      "bytes": 232,
+      "sha256": "b485f0c3901fd0f07d47d85768e2779e09512e06d649a0c7c2c5fb3b2b6c517d"
+    },
+    "docs/changes/20261013-mobile-background/online-background-qa.json": {
+      "bytes": 1558,
+      "sha256": "06d6f17556b68939656b0c1a652363c8b80e6d2327d44da93f620e84802d4145"
+    },
+    "docs/changes/20261013-mobile-background/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "6c5e7bbf7cf1912c695fdfe2785bd0e03d5f7cd4047631ba764a8aae0190ea70"
+    },
+    "docs/changes/20261013-mobile-background/online-qa.json": {
+      "bytes": 31927,
+      "sha256": "2f70ab03f4996ca67916379422822a3dc141a88c13e8283b6925f2d906e525ab"
+    },
+    "docs/changes/20261013-mobile-background/delivery-verification.json": {
+      "bytes": 437,
+      "sha256": "1d9982991ac77b4363193bf620636c2c8793f7033a4c98cd3f0d4cca063c01ad"
+    },
+    "docs/changes/20261013-mobile-background/protected.json": {
+      "bytes": 3683,
+      "sha256": "0a8937fd15771399b76df99a131e5d4fecddca4e5d24e8edb6d1cecd2ac3efc9"
+    },
+    "docs/changes/20261013-mobile-background/before/netlify.toml": {
+      "bytes": 694,
+      "sha256": "14a0c3efd4fb063f5d3665805cd623f2db250d5cfdc814ac25d515b57241cf21"
+    },
+    "docs/changes/20261013-mobile-background/before/evidence.html": {
+      "bytes": 22248,
+      "sha256": "52d1780e50c73da5a1593bfe48bbd0e27b3b440cb2735aabf913257cf6fab016"
+    },
+    "docs/changes/20261013-mobile-background/before/tools/china-online-qa.mjs": {
+      "bytes": 9549,
+      "sha256": "19dc964c88478fa8e6ec32edf2c5fe252b20a9d27d13c31157dd7cac0b3d3af4"
+    },
+    "docs/changes/20261013-mobile-background/before/tools/prepare-china-release.mjs": {
+      "bytes": 1630,
+      "sha256": "046d1297aad6e526ce88c0835221f7163edb3a2eac36f278bf4a1f85a1780866"
+    },
+    "docs/changes/20261013-mobile-background/before/tools/china-qa.mjs": {
+      "bytes": 13146,
+      "sha256": "2be2453f5820f7493030a49224902a2f788f306341f57f77cbe59a2fb9af7773"
+    },
+    "docs/changes/20261013-mobile-background/before/evidence/deployment/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "3aec09e2cfca275a06aa242183bd3fad89c36cb929fc82f9c63367ceb105f3c2"
+    },
+    "docs/changes/20261013-mobile-background/before/evidence/deployment/online-qa.json": {
+      "bytes": 31007,
+      "sha256": "1057f037b18c1568725d83725cd155587c6e3751e4dbfb1cbcab50a6648b6c6f"
+    },
+    "docs/changes/20261013-mobile-background/before/src/main.ts": {
+      "bytes": 7840,
+      "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb"
+    },
+    "docs/changes/20261013-mobile-background/before/src/ui/styles.css": {
+      "bytes": 6207,
+      "sha256": "ddfaa8a265526f840f4ddfacd202d33dbbfad3c344a0ff37ea25f053848b4bf1"
+    },
+    "docs/changes/20261013-mobile-background/before/src/ui/interface.ts": {
+      "bytes": 5530,
+      "sha256": "0ef6fe581c9896893801f3f89fdaab05b7cf66e5a6068a6fdec39cd5b80f5de4"
+    },
+    "docs/changes/20261013-mobile-background/before/src/studio/studio.ts": {
+      "bytes": 3847,
+      "sha256": "606bba35a55b5eb1b7dac9b7ecfcc603b8d074ed8daf38d44388df5d042dd89d"
+    },
+    "docs/changes/20261013-fixed-layout/sites-before.json": {
+      "bytes": 408,
+      "sha256": "21806ea2b8bbd6075dabd085fcb20681c0e187de25b04a5b0c3efe7a701fb69d"
+    },
+    "docs/changes/20261013-fixed-layout/geometry-before.json": {
+      "bytes": 2365,
+      "sha256": "f6278ff5ab95d7ec04bd631dd75ddc8a8af19e45ffbe4123eab5fd77e283a904"
+    },
+    "docs/changes/20261013-fixed-layout/browser-qa.json": {
+      "bytes": 2583,
+      "sha256": "cc7a1c28dd7769ac8ea3e9c3cbe1819864c4390a6e19254bdcb410ffa5d92471"
+    },
+    "docs/changes/20261013-fixed-layout/changes.patch": {
+      "bytes": 29023,
+      "sha256": "2f0deef799c9b102ce20ae3ee63c4bba5e56d3eaf61508330d9ed36a7192fcb2"
+    },
+    "docs/changes/20261013-fixed-layout/sites-after.json": {
+      "bytes": 408,
+      "sha256": "b836d34f63f856fc487b89fc1a312da357cd82e09a7cf4b712b70ccad615b731"
+    },
+    "docs/changes/20261013-fixed-layout/completion.md": {
+      "bytes": 3098,
+      "sha256": "38d575f95d31434b037281ea18242bcd5d8346d77fb56ab5cd93481fe71d91e9"
+    },
+    "docs/changes/20261013-fixed-layout/release-manifest.json": {
+      "bytes": 29820,
+      "sha256": "6348d5e4875cbe4b9be946091d7cd75fe073a710f66488d5cafe45adb19c1e5d"
+    },
+    "docs/changes/20261013-fixed-layout/previous-online-fixed-manifest.json": {
+      "bytes": 5278,
+      "sha256": "7e7aa36ac137f08ddff568869b1b06e43e8353d7960a6e5494928fc2e3b71d18"
+    },
+    "docs/changes/20261013-fixed-layout/remote-files.json": {
+      "bytes": 40772,
+      "sha256": "1e61b938e20de1868003619297611e48c74786e78de4c465485728fef43a15da"
+    },
+    "docs/changes/20261013-fixed-layout/plan.md": {
+      "bytes": 914,
+      "sha256": "0273bd9690000583a99880a51248b8704250f6bd3e5230f8859b8d89cce98f5f"
+    },
+    "docs/changes/20261013-fixed-layout/verification.json": {
+      "bytes": 3450,
+      "sha256": "39c469e7206c60dfa4f4fdcdb9b61ed91f469be9ecc49364d7c418830ff925fd"
+    },
+    "docs/changes/20261013-fixed-layout/request.md": {
+      "bytes": 273,
+      "sha256": "2c0f57a15eb11c2c590b3a7b9f3e59d13ade068dc257d68b855fc494198b3dc8"
+    },
+    "docs/changes/20261013-fixed-layout/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "3aec09e2cfca275a06aa242183bd3fad89c36cb929fc82f9c63367ceb105f3c2"
+    },
+    "docs/changes/20261013-fixed-layout/online-qa.json": {
+      "bytes": 31007,
+      "sha256": "1057f037b18c1568725d83725cd155587c6e3751e4dbfb1cbcab50a6648b6c6f"
+    },
+    "docs/changes/20261013-fixed-layout/delivery-verification.json": {
+      "bytes": 437,
+      "sha256": "ac6237667d93bb090e50f9922424748b3d4f0a0d1a1e8abeade2db4031d08ae6"
+    },
+    "docs/changes/20261013-fixed-layout/protected.json": {
+      "bytes": 3095,
+      "sha256": "63f9945b5005494235d317ec9b9154413798186cd05630fd024640190c140ce9"
+    },
+    "docs/changes/20261013-fixed-layout/before-captures/buildings.png": {
+      "bytes": 359995,
+      "sha256": "be91838a29b7633c906375c696d57ca57b44224f339b055848457e74c1c1937d"
+    },
+    "docs/changes/20261013-fixed-layout/before-captures/label.png": {
+      "bytes": 412427,
+      "sha256": "647ad10ad28074f6028bafb67182e367563182c3ae4d98e9a4ae8e597af497c0"
+    },
+    "docs/changes/20261013-fixed-layout/experiments/layout-probe.mjs": {
+      "bytes": 2889,
+      "sha256": "2869cf8076de3a220f7be122dd5b471b4204415b1e0204cf8e8ffdd4e20e03f1"
+    },
+    "docs/changes/20261013-fixed-layout/experiments/README.md": {
+      "bytes": 241,
+      "sha256": "914c7490384d89584734cbd2bcd8c2f2324eed62a7b0809cededa27f6151d652"
+    },
+    "docs/changes/20261013-fixed-layout/experiments/layout-balanced-probe.mjs": {
+      "bytes": 3297,
+      "sha256": "4ec4fd96bfee71a339ba49f3adaeb33a3471f6757e7792e1e0c2121406566636"
+    },
+    "docs/changes/20261013-fixed-layout/before/tools/derive-fixed.mjs": {
+      "bytes": 6443,
+      "sha256": "e0c6f9b31fd500f4f5fe8eb7fb7c8c20d901fdcfdfae5f8286c84a68d53de60d"
+    },
+    "docs/changes/20261013-fixed-layout/before/tools/geometry.test.ts": {
+      "bytes": 6069,
+      "sha256": "a7200ce751356cbea2994059cd44aa8956167fbb3a56c77bfdb61cd5dbf8ac3b"
+    },
+    "docs/changes/20261013-fixed-layout/before/evidence/camera-calibration.json": {
+      "bytes": 1888,
+      "sha256": "03541bd9f98ee04797e82bf2414463690a080a7b016ca5a391ba347ecd6f3096"
+    },
+    "docs/changes/20261013-fixed-layout/before/evidence/deployment/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "844ed29fe71970770df4727d6cfbc50862332e6d40eb6c8c465437222780b517"
+    },
+    "docs/changes/20261013-fixed-layout/before/evidence/deployment/online-qa.json": {
+      "bytes": 28853,
+      "sha256": "470c22580c17cd75b68645b684f8ee0017f9a485c47dc3fee3b66cd738c25f90"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/evidence.html": {
+      "bytes": 19974,
+      "sha256": "1446f3879c6c5846c2e53f276ebde5b0ed84ee5e92b623956b8b1b26ea75420c"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/fixed/style.json": {
+      "bytes": 797,
+      "sha256": "77c69f00c1ff3c73fd0d2625f677b19491aa0d5b0170aa9b6cca4bb630adb15a"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/fixed/manifest.json": {
+      "bytes": 5278,
+      "sha256": "7e7aa36ac137f08ddff568869b1b06e43e8353d7960a6e5494928fc2e3b71d18"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/label-overlay.png": {
+      "bytes": 829748,
+      "sha256": "5b07e5aa0720ea29ae2a60f7a2b06cc118f51bf8486abfdf4b9afed01d9fdd0f"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/label-model.png": {
+      "bytes": 412509,
+      "sha256": "e4c7f1e270ece58592a23e9a6347de3dfaf546eb98b723998fa92f6e1b81f254"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/buildings-comparison.jpg": {
+      "bytes": 214789,
+      "sha256": "85433b7127295e3a73ff9bf902e39e4a68b5164a95c495d8e6dae33db247c6ef"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/buildings-model.png": {
+      "bytes": 359832,
+      "sha256": "77d336f33c2dfd8bffa7fef51c3045e0843a60fd12b83cdf735af03da9d20178"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/label-comparison.jpg": {
+      "bytes": 225666,
+      "sha256": "c8503a6a0f5160d29877e73ad0a562b2681fbfa1652a6950262eec961393b4b9"
+    },
+    "docs/changes/20261013-fixed-layout/before/public/review/buildings-overlay.png": {
+      "bytes": 817795,
+      "sha256": "0665dc8cbc7af1f6dec51239a2bdfa692223fa4014642e49e457d8546560e235"
+    },
+    "docs/changes/20261013-fixed-layout/before/src/main.ts": {
+      "bytes": 7840,
+      "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb"
+    },
+    "docs/changes/20261013-fixed-layout/before/src/styles/style-manager.ts": {
+      "bytes": 6592,
+      "sha256": "1639e5bb558ea04e24dd3f8e67a7cad30cf35103919ae813c29247f080830805"
+    },
+    "docs/changes/20261013-fixed-layout/before/src/geometry/product.ts": {
+      "bytes": 6069,
+      "sha256": "2815340557234d9cc2461c73ae6da4f040264e327e1138cfbe45641b280e1d20"
+    },
+    "docs/changes/20261011-relief-separation/completion.md": {
+      "bytes": 5300,
+      "sha256": "9d55cb6cdb32f586b86c7eae1f5497543f2faf6f9a9138887a16876e6f23b30d"
+    },
+    "docs/changes/20261011-relief-separation/plan.md": {
+      "bytes": 1872,
+      "sha256": "9dd0b070a3934c3bf14e0e2c2f89136e6d3154e5d7f7c67610130c002b41d931"
+    },
+    "docs/changes/20261011-relief-separation/request.md": {
+      "bytes": 732,
+      "sha256": "1a5c87a33f3aaef4597838fc2ca6121287742f19376bdcaf9c2ccf8da649e85b"
+    },
+    "docs/changes/20261011-relief-separation/delivered-files.json": {
+      "bytes": 1857,
+      "sha256": "0b5d9ed4392078f84655cd76272a3ddbd500773877fbfb90b9b8b1b5659acb52"
+    },
+    "docs/changes/20261011-relief-separation/protected-before.json": {
+      "bytes": 3431,
+      "sha256": "a6040c286714ff6246ff86b643417ec99926fb02bb45b4ea826ed2eab521f6ee"
+    },
+    "docs/changes/20261011-relief-separation/user-reference/handle-reflection.png": {
+      "bytes": 395305,
+      "sha256": "71ee021d6de1b9bfa57f154f6a8143e9918804e35c38e695311230364ba5c437"
+    },
+    "docs/changes/20261011-relief-separation/user-reference/preferred-earlier.png": {
+      "bytes": 2395437,
+      "sha256": "07f73a1aa985b68c744c02ade5be93944965418be8d00e340015b3a143450bbe"
+    },
+    "docs/changes/20261011-relief-separation/before/README.md": {
+      "bytes": 7480,
+      "sha256": "b915d1cbaa2b9c08eb70eea65585a402b6cd80dff78f4b73a061ad1c4f9db26b"
+    },
+    "docs/changes/20261011-relief-separation/before/tools/china-assets.py": {
+      "bytes": 9067,
+      "sha256": "fa77917d36a3bcebb2fcbe8ffa73625a2240d4697a2d8d3f1bd56aeddb81f093"
+    },
+    "docs/changes/20261011-relief-separation/before/tools/china-qa.mjs": {
+      "bytes": 8801,
+      "sha256": "7076290ac4902e986f9147d8bbc462e7be917a933746a491debc65567d0ee3de"
+    },
+    "docs/changes/20261011-relief-separation/before/evidence/psd-audit.json": {
+      "bytes": 8100,
+      "sha256": "87bb5e4ac15d8afa10dc705d96fd0ec408f1ad8c80974487227648adc2de62fa"
+    },
+    "docs/changes/20261011-relief-separation/before/public/evidence.html": {
+      "bytes": 9791,
+      "sha256": "fc7211b6bac358ad7896e59ffcb035b39d9eb8b9e019d0c9b2938581de6bb85c"
+    },
+    "docs/changes/20261011-relief-separation/before/public/china/city.json": {
+      "bytes": 345,
+      "sha256": "3f4dc12e5aba45f0d25ebbf8aba6040f53f32d198ea57c31fbc7dcbcaf9cbc92"
+    },
+    "docs/changes/20261011-relief-separation/before/public/china/normal.png": {
+      "bytes": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3"
+    },
+    "docs/changes/20261011-relief-separation/before/public/china/height.png": {
+      "bytes": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a"
+    },
+    "docs/changes/20261011-relief-separation/before/public/china/roughness.png": {
+      "bytes": 11231,
+      "sha256": "44a8a57225774ff685f3ceb2beca068851dcb70b7f60f2cb92e4193320e26e52"
+    },
+    "docs/changes/20261011-relief-separation/before/src/main.ts": {
+      "bytes": 6297,
+      "sha256": "3ed29462132f6d784ffe1078af8ba5fe4071d1edaf896c3f77953873c99717e8"
+    },
+    "docs/changes/20261011-relief-separation/before/src/ui/interface.ts": {
+      "bytes": 4758,
+      "sha256": "e5049306726be9219fa6728ca71069b6433e2d8b9f1d984ca1b96c0cd86c2f63"
+    },
+    "docs/changes/20261011-relief-separation/before/src/studio/studio.ts": {
+      "bytes": 3279,
+      "sha256": "8a165bcbea96248e7ff9c5c1b37ac2894748a77aa82abc9c2a8feca9e1c5ecb2"
+    },
+    "docs/changes/20261011-relief-separation/before/src/styles/city-artwork.ts": {
+      "bytes": 7187,
+      "sha256": "2b486703a879d9da8e5215b771fbebaed546d676a72381cb6574026f662914be"
+    },
+    "docs/changes/20261011-china-deployment/completion.md": {
+      "bytes": 6404,
+      "sha256": "fa5b4415a9fbb879b9731dc2b2ddad59d486f55b9e6a6a22a6637f51fa8c4196"
+    },
+    "docs/changes/20261011-china-deployment/plan.md": {
+      "bytes": 2117,
+      "sha256": "76cb7acaa7ab60ee3aec357ec55580d008e9e51add68f4c328bcfd00d1dc6a1c"
+    },
+    "docs/changes/20261011-china-deployment/request.md": {
+      "bytes": 327,
+      "sha256": "f84010e2de586ed78ead9f66848ece9950fa4aaa9824d67d7d916c001b5ecae4"
+    },
+    "docs/changes/20261011-china-deployment/delivered-files.json": {
+      "bytes": 1567,
+      "sha256": "183717d39aa3e74136458411fba9437b8f2c03bc7de40eb2d8b08bd3826e65a1"
+    },
+    "docs/changes/20261011-china-deployment/before/tools/china-qa.mjs": {
+      "bytes": 10267,
+      "sha256": "0b6bd186949b64c5d7f16c4abf8b9a620dc22385706e05770fc0d9888b71a4c2"
+    },
+    "docs/changes/20261011-china-deployment/before/src/main.ts": {
+      "bytes": 6761,
+      "sha256": "961bea8a2ec0e92e37f087271acfdfb5213fe563eda31ba27579acfc1bbb0205"
+    },
+    "docs/changes/20261011-china-deployment/before/src/styles/style-manager.ts": {
+      "bytes": 6209,
+      "sha256": "23468c3c8953a5b31771eb33ddab9cb40400f645e3ed55e283add9513fb731a6"
+    },
+    "docs/changes/20261011-china-deployment/before/src/styles/city-artwork.ts": {
+      "bytes": 7188,
+      "sha256": "f3957b0a0957bd9187b9039a7d53d83ab2ef07e655fcf5c37be16714d10c045c"
+    },
+    "docs/changes/20261012-load-pan-floral/completion.md": {
+      "bytes": 5442,
+      "sha256": "5e8158e6f1bda51b2f29f8d5ab31a4e9d551785cc7c9dc751f9b1f63d02b5dbc"
+    },
+    "docs/changes/20261012-load-pan-floral/plan.md": {
+      "bytes": 1694,
+      "sha256": "e7a9230e626a60cae70648fb30ced1e4fe0604019401ce1d0be53b3af808344c"
+    },
+    "docs/changes/20261012-load-pan-floral/request.md": {
+      "bytes": 820,
+      "sha256": "ff4f212f631cdcb4002ddd89369906041ff25f85264ea652b11e013164928b9d"
+    },
+    "docs/changes/20261012-load-pan-floral/delivered-files.json": {
+      "bytes": 2252,
+      "sha256": "a5396349acf74b540cfb0f7527505ebed2a5115674c8d088c729cf51620916b4"
+    },
+    "docs/changes/20261012-load-pan-floral/before/style-manager.ts": {
+      "bytes": 6155,
+      "sha256": "4dca129d940f2aaaebc29091d088c6849f04af66b474f79a88969436e81f2ad4"
+    },
+    "docs/changes/20261012-load-pan-floral/before/views.ts": {
+      "bytes": 5711,
+      "sha256": "7f5ca3c223e7c718e1fe1846b56d5a7e59d02b60f99f05e2c4368e8df12ec2e2"
+    },
+    "docs/changes/20261012-load-pan-floral/before/derive-fixed.mjs": {
+      "bytes": 5379,
+      "sha256": "3bd56939a3d2294186901a0a9806ca7b3aadb7450696d37175730ee998409260"
+    },
+    "docs/changes/20261012-load-pan-floral/before/web-textures.mjs": {
+      "bytes": 1423,
+      "sha256": "93308761a534f947617c2b81db278b6bcf99e4d2dcdf91dcef6f2df233e54121"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/handle-metalness.png": {
+      "bytes": 512803,
+      "sha256": "2275b0b63288c3c15a2d063aeeccc2945fe570dd2e97fc3a961edf31cc43002b"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/saucer-metalness.png": {
+      "bytes": 211607,
+      "sha256": "b84e5fa72a9c1d196285eabedba46ac414900e14f4d9f2f28a465641b94479d9"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/body-metalness.png": {
+      "bytes": 1263256,
+      "sha256": "fb8d6987a4183635fb784ab91ae51a0779aac861a8146de62d0414619796f84f"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/handle-height.png": {
+      "bytes": 314291,
+      "sha256": "4b01e64ab7c86942bbe6364080674579416390d950da2a06675692a60c70dbff"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/handle-normal.png": {
+      "bytes": 610896,
+      "sha256": "93c6dbdafdf34bb4f5030ccc9502db72bdfe5c40c13aa0f6447a556e39477e33"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/style.json": {
+      "bytes": 732,
+      "sha256": "236f8d01fdbfe9e00bee669598588ea8d234823cb6b5bef58bbfc64c0c436635"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/body-height.png": {
+      "bytes": 853530,
+      "sha256": "f34bfd53d8e7cec82f6911807bd4b965e2d050612a8e6e7cfca90d1e107c9fc4"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/body-normal.png": {
+      "bytes": 1663500,
+      "sha256": "1504418bb55b589665981b9e1c7af1dd6dabc7e6c36b79c11d6c0c863ab100a7"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/body-baseColor.png": {
+      "bytes": 5848898,
+      "sha256": "6233a1179effc841bb6a647b2e272b1fc0248e1c607c6ff252fc22e74452a1ec"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/body-roughness.png": {
+      "bytes": 563566,
+      "sha256": "79a59d6439d174764e41f98241ff8ef4979ac56e27a326382e8d4f9e8db13cb6"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/saucer-baseColor.png": {
+      "bytes": 1224757,
+      "sha256": "72fd520ec7ed3ab92d08a9677d8c09ddbcd8cc2b24ca6dd777c56369b0ca92fd"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/saucer-roughness.png": {
+      "bytes": 98319,
+      "sha256": "5a721f63b854faf6ff08b3abf388470cecece254eaa412aa9e02b8834a4d71b2"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/handle-roughness.png": {
+      "bytes": 214277,
+      "sha256": "f82a27405548a3d0f463ca1f2334392e6aa75d602f72fc21b760abafcf11aff5"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/handle-baseColor.png": {
+      "bytes": 2292356,
+      "sha256": "7b14ad7dec4331861b92a7be330ddd36e93f37f4fdf9da178586efaf2b28dad3"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/manifest.json": {
+      "bytes": 4738,
+      "sha256": "9bd3e0c017b5a5d0c2cb9957e9bff01283b5886faa72358aaeaf6a619a8b31f2"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/saucer-height.png": {
+      "bytes": 186045,
+      "sha256": "aa0c906712b268b5ec30ef7d4d7ad37fe382986947c964caf0247bbf439add08"
+    },
+    "docs/changes/20261012-load-pan-floral/before/fixed/saucer-normal.png": {
+      "bytes": 364544,
+      "sha256": "de1cc40fd920621d21653d4241c521a2a0bb263683918e6be02862aaeea074f5"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/old-site-after.json": {
+      "bytes": 799,
+      "sha256": "c4c371fa4b5f6d4c5213e1509558f958f95227dd9f5f3fc0a25a932435c21dff"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/remote-files-raw.json": {
+      "bytes": 29408,
+      "sha256": "565cea9f8272b4851bd2e3afc871921967c1909ceda5011f8a1ea0ff7363b1d0"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/online-model-stage.json": {
+      "bytes": 990,
+      "sha256": "519ba6b989237cc425bd9abfa0ed57bfaebca1a75862b8ca481958e10cfe6af5"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/site-final.json": {
+      "bytes": 759,
+      "sha256": "5d4ea7a9f90b995f5dd40541f387e9389a727343ed53561ad53df852a8573b2f"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/deploy-status.json": {
+      "bytes": 446,
+      "sha256": "0b0b263acf34ff715775b1ac66830a997806c9c04ff8e9815bf006944ba4b31c"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/badge-status.json": {
+      "bytes": 126,
+      "sha256": "fa2d829871dff65554d779f9af4159726400edde61f00263352bc1bb66e899b8"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-index.html": {
+      "bytes": 974,
+      "sha256": "49d3bb9c0907c743beb6f41b1a6307cd45d8cd460d64e1f4c964c69dec18d255"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-evidence.png": {
+      "bytes": 754968,
+      "sha256": "4e5cee0890bd122ef5c44ec7046effa353595f5c44b147a8cc65a02c7f2164ff"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-desktop.png": {
+      "bytes": 332454,
+      "sha256": "fedd74998caa6d8f6f2c39098ee45bef2cc02fa04ea3fc570e75aecade2dc5ad"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-detail.png": {
+      "bytes": 769511,
+      "sha256": "a3c3478e0c61530d0e3df030928e261418637facdf3d0a662b4fb32c5ea9b46c"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-text-face.png": {
+      "bytes": 304468,
+      "sha256": "d8fe96e05a851d75bde47dedee2e7bf1a934d4cecd6884809d4de7f9f729b7d7"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/online-qa-initial-timeout.json": {
+      "bytes": 407,
+      "sha256": "22af989f7efe4c1a03d7eb1047ea391a9e785d815952adef9a5ff9c02c5eebbb"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/first-release-manifest.json": {
+      "bytes": 13496,
+      "sha256": "4814f2a60d28b453f323e6218ebe9ce7683d4e36470a7853431f6b7d42dd4889"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/site-after.json": {
+      "bytes": 823,
+      "sha256": "eda30289281163230297dc4701407388a6e398e50d2e9494882aeccf6cf272c2"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/old-site-final.json": {
+      "bytes": 735,
+      "sha256": "11562b1fb01bf861c448ff7974d2c7e068ceafe47289dda8efa16e903a914378"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/release-manifest.json": {
+      "bytes": 21821,
+      "sha256": "a372f7b1e72a53c637ccdaa226b12f2ecf462217d197b69f6466a0e6079411c3"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/site-created.json": {
+      "bytes": 987,
+      "sha256": "a25cc58f96dbdbd7c64315bf83f90a9f8f193282159905db7bf40649bff63d90"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/remote-files.json": {
+      "bytes": 29408,
+      "sha256": "565cea9f8272b4851bd2e3afc871921967c1909ceda5011f8a1ea0ff7363b1d0"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/texture-retry-qa.json": {
+      "bytes": 172,
+      "sha256": "3ca131d225f704fd2026f40a776d44f097ba01243e92a88fb485f071a2a9cd98"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/first-deploy.json": {
+      "bytes": 556,
+      "sha256": "0a54420dbe52b87c3de9552ab65608eb01d2c4c31463472c117085c66c6602db"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/old-site-before.json": {
+      "bytes": 232,
+      "sha256": "b7e59d720cd9bdf81a0fd0906b0d4ee636cca15fac990a832dcbc62c66da817b"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/online-qa-failure.png": {
+      "bytes": 81150,
+      "sha256": "f56c4b1ca33e98ae5d8b9cf58ea369f3a0438e8f74985eaabbfe536ee6190dc6"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "003d339e175cef86b461dc723c232a1fa26bdd3f6af28ac43a03b156e5de1ee9"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/live-mobile.png": {
+      "bytes": 116357,
+      "sha256": "2a398a1995cdc65dbed6ad845368f1c5a846e3dbcc8d380d4fa9839f5dd341d3"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/online-qa.json": {
+      "bytes": 22758,
+      "sha256": "fd7f0261494fba2ab7ca167ff84a7e54ecc6fe3de89d93421a668737ba141cc5"
+    },
+    "docs/changes/20261012-load-pan-floral/before/deployment/protected-files.json": {
+      "bytes": 81,
+      "sha256": "b7306c6675bb9a8328ac89f05f2574f4b27f2fb2e04a800291f381318460d690"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/release-manifest.json": {
+      "bytes": 23317,
+      "sha256": "b1fb04c303ff44881b20e1d9831aed1354bba1a86ac4eccbc2cd8c097ba20e60"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/netlify-deploy.json": {
+      "bytes": 556,
+      "sha256": "02a1e1642f1ce1fc34a69fbc70f46820627e3e8091ec7331247191c56a5e7c4c"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/online-qa.json": {
+      "bytes": 24302,
+      "sha256": "9768b6c300dba94f36e17b6356439b2298fe8c645d2edf0e3992cf5c5f40f4a0"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/source-hero.png": {
+      "bytes": 309710,
+      "sha256": "ab26f569438c93bf0566670f3eb120c7e2a308900be01fe2f6cca4dc52b646f3"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/mobile-report.png": {
+      "bytes": 128575,
+      "sha256": "cfdf3330a0e2affeaa55d634a227a6c04fc9a225ffd137a36725e7da9cb54b21"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/old-detail.png": {
+      "bytes": 781541,
+      "sha256": "ec205b5ccea1d6b7dd53b5c090ad83fe1ac7182f38494fd7e4eef108c114817b"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/source-front.png": {
+      "bytes": 284546,
+      "sha256": "990e6691492237c63680e0fe303054406e052c4a2a75e96617f1b3b6f422e78b"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/before-load.json": {
+      "bytes": 5559,
+      "sha256": "75a0c1b6965572e6ce71e0413d09940adeed4ab13266311d92aade18066dcd46"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/quality.json": {
+      "bytes": 1643,
+      "sha256": "7d4dd83a68dd056d4c79f4e708df1bfcdce7c7ecab254958fef090a2eb36e9f0"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/web-handle.png": {
+      "bytes": 314796,
+      "sha256": "c3b69eeeefca08c8499ec5037e74a69f3680cd9e535f807c8f72def7f9359639"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/preservation.json": {
+      "bytes": 582,
+      "sha256": "100cfa6af7038003ce4c09b1b22547ec292ccf0f72ce413d3674e6614043ec1b"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/comparison-handle.jpg": {
+      "bytes": 107443,
+      "sha256": "2c5871349ac631c4766d4e2dd725663d7ff6218f6d9b509b10d1532975307b02"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/comparison-hero.jpg": {
+      "bytes": 103503,
+      "sha256": "4ba5ef2604faa73449227b5d548b2423475ed0b0e3b4d3ee973c88241fe84e59"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/source-handle.png": {
+      "bytes": 315115,
+      "sha256": "4e227bad52d5f6f17b4a54bae8cd4bcdc5990e56620f62e9dbe3c6106d364890"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/old-handle.png": {
+      "bytes": 311216,
+      "sha256": "d29d73d879d0aa5bad4486c8d87e157626c45f80492b782aceaf00d6d2723338"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/comparison-front.jpg": {
+      "bytes": 98704,
+      "sha256": "43f383be49218578f1f4523392ad1406aa6001774d21be23e57e88d425fa7aa7"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/web-front.png": {
+      "bytes": 284627,
+      "sha256": "62ea11acd7f5e49dbd9f749db0673451619a2fc4aa808ece4e9059229180102c"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/web-detail.png": {
+      "bytes": 786551,
+      "sha256": "8ebf33dba740dc0552eb0442a42c3fbcfc4fa3c14709f2ffefd550c2bd8b6ebe"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/old-front.png": {
+      "bytes": 282871,
+      "sha256": "1b1c5cbdd1e088f561c038070515d9f4447a0027adf57b60477b42b64367432a"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/source-detail.png": {
+      "bytes": 786004,
+      "sha256": "ed0f0614f8ba93d8f78d49414ecc502eed6e221472c3b4af81f9bf248bb3ad5f"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/old-hero.png": {
+      "bytes": 309254,
+      "sha256": "e521f2a1e35ef2388c03d0b0fbf70e54c58ca984e34cf1c814173b46ca90eaf4"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/comparison-detail.jpg": {
+      "bytes": 232562,
+      "sha256": "836365dbab7c8c694d5409b7e3ecc77cc0a520b52e11f0afea994a171248c56e"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/web-hero.png": {
+      "bytes": 309561,
+      "sha256": "83a5066e213b91d3716b3c75a9001c0e7d68481d383bf6af0c687619108a9894"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/handle-metalness.png": {
+      "bytes": 548836,
+      "sha256": "b788b3b5498f08444408c4cb3f7ab6069fe8adc7c30a34fc4b06b50a8567c450"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/saucer-metalness.png": {
+      "bytes": 152070,
+      "sha256": "fdaa8ccaef57b15714210f3c74d9888b2bb8521262cd453bdfd288d97af82600"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/body-metalness.png": {
+      "bytes": 1330558,
+      "sha256": "aef63d63eb2881751250d36191257f5e633575e1bff0fadb53a9cda81553bcc0"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/handle-height.png": {
+      "bytes": 341146,
+      "sha256": "9b06383cd0bbb2ef0c1411cfc2e0a6fb7d32d19c0d6e5e10f62959cd5ce78734"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/handle-normal.png": {
+      "bytes": 652649,
+      "sha256": "ee704552d516ab4055571061644688cbce1139e5a2d0f777b8f9bc1d91c8ca5e"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/style.json": {
+      "bytes": 729,
+      "sha256": "43b51d1ab214cae3252fe9f57cf185e129596dd27adc609f8220e0bf8571c868"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/body-height.png": {
+      "bytes": 925516,
+      "sha256": "92acf3a4e89818f73578038bd3bec2248a43e30d48bf2f24dd71b7cbf3938037"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/body-normal.png": {
+      "bytes": 1792437,
+      "sha256": "3a4d8e0d495d23d9d36cf24cb0aa12e0878b6bda7bf6fcf7bc77d014f9777d46"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/body-baseColor.png": {
+      "bytes": 6389266,
+      "sha256": "e6a678ac7de48b60104754daae054a331c0430485f6be3ec9b886f7e5bed7b3e"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/body-roughness.png": {
+      "bytes": 577317,
+      "sha256": "bb16846fa1d6e8e0648197d23fdee3231f39b918dfabe87b6035a77aa642fec4"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/saucer-baseColor.png": {
+      "bytes": 1341614,
+      "sha256": "c2580f379fb33ca3a5c638e04172c7b747bf39baacf5cedc388a441e574ec71c"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/saucer-roughness.png": {
+      "bytes": 82716,
+      "sha256": "b83b119ab8b0a9f2e9bc1c04a986507a81021f16401011c69e7f3880c96e8232"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/handle-roughness.png": {
+      "bytes": 222336,
+      "sha256": "be220554e2ce249a345525a627eee69e0fcfa0909c7f09592461985a59d90fd3"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/handle-baseColor.png": {
+      "bytes": 2646624,
+      "sha256": "9d9f5b6dd82394e8c9693c8d1eb3374286f0102b2f6d1cf663c5242435fd9a7f"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/manifest.json": {
+      "bytes": 4794,
+      "sha256": "723edb2b8d80e4f74d7762e1f87d0597a0b869d0987480c33e63d6d84966b222"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/saucer-height.png": {
+      "bytes": 199159,
+      "sha256": "f9338c156025ea81b77e40492f1a2ab861aa2326e21cae4fc8970a81257e04ba"
+    },
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/saucer-normal.png": {
+      "bytes": 395343,
+      "sha256": "28b612cc6a979396d013436dd2eca878af40e7e1632f0ef16302d93236a4d0eb"
+    },
+    "docs/changes/20261013-v3/baseline-files.json": {
+      "bytes": 177311,
+      "sha256": "1b89074409e027833568c4feb6ede949ff667382121ccfea983bf84efd0c4ab3"
+    },
+    "docs/changes/20261013-v3/sources.json": {
+      "bytes": 1151,
+      "sha256": "fb0b770a695a35040fa21451eacf6067bdcd4d3a1fa9d4868d5c77aa3c396379"
+    },
+    "docs/changes/20261013-v3/plan.md": {
+      "bytes": 6534,
+      "sha256": "20f031c767edc4a5410a624fad99cf1df559bcace6e6a8cf77645e05b972a7a0"
+    },
+    "docs/changes/20261013-v3/request.md": {
+      "bytes": 7054,
+      "sha256": "bf74ecebf9b67943f1e2317434e84f8cf8e1766c79b080938215b0f0c2394dae"
+    },
+    "public/texture-standards.html": {
+      "bytes": 33054,
+      "sha256": "751ab8d373216c66d19a223508960f7553418cafa45a82152665aa1cf2cc536d"
+    },
+    "public/evidence.html": {
+      "bytes": 23419,
+      "sha256": "0eecf935bc0aba2ba29d2219ec94f924c19008a377a28b2334b7a9304153fbc7"
+    },
+    "public/textures/fixed-handle-normal-310c32173827dd4d.webp": {
+      "bytes": 98950,
+      "sha256": "310c32173827dd4d27c3971dcb7cff73cc1331a0742a346c02f0535d1c38ce6c"
+    },
+    "public/textures/fixed-body-normal-4acd3855ec5cb28f.webp": {
+      "bytes": 709148,
+      "sha256": "4acd3855ec5cb28f7726a2f4bc751bda27ffa10078440e00a6bfebaf879c3cc3"
+    },
+    "public/textures/fixed-saucer-normal-1da429581963d6e6.webp": {
+      "bytes": 194174,
+      "sha256": "1da429581963d6e669a356801bd2fca0b6bdf5d7dc3b1f09fae304192131b2bc"
+    },
+    "public/textures/fixed-saucer-normal-5b2fee342903f195.webp": {
+      "bytes": 283668,
+      "sha256": "5b2fee342903f195ded2a3414ec540567a991f1bf3ecf8895ba9e58c64b390f9"
+    },
+    "public/textures/china-normal-f0662e241725d83b.webp": {
+      "bytes": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab"
+    },
+    "public/textures/fixed-body-metalness-3783dc03ee4b6f0f.webp": {
+      "bytes": 509278,
+      "sha256": "3783dc03ee4b6f0f03ad4da6fe0b46901b1e63634ed3d44d1f62ae29ba5a04c9"
+    },
+    "public/textures/china-roughness-40e7b97659e5e028.webp": {
+      "bytes": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8"
+    },
+    "public/textures/fixed-handle-normal-3ab8e8197e4d3659.webp": {
+      "bytes": 408716,
+      "sha256": "3ab8e8197e4d3659c759f41193cdb2ba0a48a710f4d5472f434e85feab1e03a0"
+    },
+    "public/textures/fixed-handle-metalness-c0aa4f772b0c55dc.webp": {
+      "bytes": 87704,
+      "sha256": "c0aa4f772b0c55dc4df4588f291a9b8fe4933d0bbdbe47481f5a2e2f83b9fc28"
+    },
+    "public/textures/fixed-body-normal-f5cc5efca416018a.webp": {
+      "bytes": 924126,
+      "sha256": "f5cc5efca416018a6fd36fc85a7ab4d0cf0b0a2c02fa96abf10b8f8bf89cf86c"
+    },
+    "public/textures/fixed-handle-baseColor-b1b9de1640855126.webp": {
+      "bytes": 359958,
+      "sha256": "b1b9de1640855126bfe4a129e257ce5f309ab74b1df7657215dd9cc33b0ba41d"
+    },
+    "public/textures/fixed-saucer-baseColor-97e166df8783a4d3.webp": {
+      "bytes": 314558,
+      "sha256": "97e166df8783a4d3192e6dab60117e61bbedb02c51358698a38d484d1a74c237"
+    },
+    "public/textures/fixed-handle-normal-01d9c81fa1bf17d2.webp": {
+      "bytes": 148816,
+      "sha256": "01d9c81fa1bf17d25d69d56ad09507988210e235c0caaa7e86f51b666f96b7c6"
+    },
+    "public/textures/fixed-handle-roughness-78b0af47384bf262.webp": {
+      "bytes": 145458,
+      "sha256": "78b0af47384bf2626c10e200b5ded63d6bdb28f2eb7b856760af04ac04bead19"
+    },
+    "public/textures/fixed-body-roughness-dce16945e5890465.webp": {
+      "bytes": 374916,
+      "sha256": "dce16945e589046587286ffb27f5e12323fade43d5889af876a59a1b03c56be9"
+    },
+    "public/textures/fixed-handle-normal-55d219b8a7fda662.webp": {
+      "bytes": 118766,
+      "sha256": "55d219b8a7fda662cc4efa6df5e29a2904fd3c2021f4fa3da46ac3e7a3bd6db7"
+    },
+    "public/textures/fixed-body-baseColor-5e158283df42fdfb.webp": {
+      "bytes": 1258974,
+      "sha256": "5e158283df42fdfbdb1096a7b213fbcf65b854d7d7836572b3673bc4c9113d18"
+    },
+    "public/textures/fixed-body-roughness-5b46c70ed3c66666.webp": {
+      "bytes": 351508,
+      "sha256": "5b46c70ed3c66666656ffe5cb4a2bf3299363d1dadc853c95930f360daf11e20"
+    },
+    "public/textures/fixed-handle-metalness-a4bf861a6450a5bf.webp": {
+      "bytes": 69242,
+      "sha256": "a4bf861a6450a5bf397754557282d0b8064558e85eac98990ae5ddf9909483c2"
+    },
+    "public/textures/fixed-body-metalness-a001482ef1d4593f.webp": {
+      "bytes": 623250,
+      "sha256": "a001482ef1d4593fec80bdd5ec8b60644d9ad993457f811ec53ba2a17925a6ea"
+    },
+    "public/textures/fixed-handle-roughness-8dfc650458946f17.webp": {
+      "bytes": 37702,
+      "sha256": "8dfc650458946f17a408534c184b7ac53bb9b840c0fcf1711ddeca5427a97131"
+    },
+    "public/textures/fixed-saucer-roughness-04fe9e5a2d883578.webp": {
+      "bytes": 49610,
+      "sha256": "04fe9e5a2d88357825e00bfa68be582c8f8722ddf5ae17742a19d1997668f4de"
+    },
+    "public/textures/fixed-handle-metalness-45b5b246853c1dd1.webp": {
+      "bytes": 256104,
+      "sha256": "45b5b246853c1dd108d504ae9d47f0c996cdf79b6534d2623308c9e006665ddc"
+    },
+    "public/textures/fixed-body-normal-fda4a1df240f725b.webp": {
+      "bytes": 1255816,
+      "sha256": "fda4a1df240f725b7d6e47812351a113f9baed4d0d4ebcc6fb41a758bd403c7d"
+    },
+    "public/textures/fixed-body-roughness-e091bf730ddc6c66.webp": {
+      "bytes": 241906,
+      "sha256": "e091bf730ddc6c6676e05b2996b3a18bc0f90222a9f89f613713769fec0ae9b9"
+    },
+    "public/textures/fixed-body-metalness-803a65de90a8ccb7.webp": {
+      "bytes": 620576,
+      "sha256": "803a65de90a8ccb7a12c280a64c4c9f5fa0af27675a03f558eaf05c56e54a2f1"
+    },
+    "public/textures/fixed-handle-baseColor-96585b6001cea8dd.webp": {
+      "bytes": 97688,
+      "sha256": "96585b6001cea8dd1b8491486751bfe7872a046861da8092daf1d01fd0cc8aec"
+    },
+    "public/textures/fixed-handle-roughness-24dff72ebf7a82c7.webp": {
+      "bytes": 48326,
+      "sha256": "24dff72ebf7a82c7dcf56bc04119e64aa82e05cc014340e573607c5c1a1601f1"
+    },
+    "public/textures/china-baseColor-754558a83d8866b8.webp": {
+      "bytes": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b"
+    },
+    "public/textures/fixed-saucer-roughness-ad642521fd3b902b.webp": {
+      "bytes": 40070,
+      "sha256": "ad642521fd3b902b5d5d38bf24f81ceecf604d734a23c588edefc410f890cdc6"
+    },
+    "public/textures/fixed-handle-baseColor-6b97a8da6655c7c3.webp": {
+      "bytes": 122152,
+      "sha256": "6b97a8da6655c7c35130750412bd4aa10d4d4b251dcbc91c48496f39136ac65b"
+    },
+    "public/textures/fixed-saucer-normal-f74ee54395467d94.webp": {
+      "bytes": 375924,
+      "sha256": "f74ee54395467d94b9b46f487fb7faaba43be58120bee62bb064170e717424fc"
+    },
+    "public/textures/fixed-body-normal-f7e890415f2c3a5e.webp": {
+      "bytes": 1365158,
+      "sha256": "f7e890415f2c3a5e8203d085b5a248fb2ff4fb354dd698732fdf69aa0149e0a6"
+    },
+    "public/textures/fixed-saucer-baseColor-1d2be76630af811a.webp": {
+      "bytes": 231182,
+      "sha256": "1d2be76630af811aa75f91539eba8a76568b49654657cffce2168cd6557a00ce"
+    },
+    "public/textures/fixed-saucer-metalness-8d4224209d901321.webp": {
+      "bytes": 74582,
+      "sha256": "8d4224209d90132133c834fad9da686c3807bdba1f207ca84dedcffeb205f765"
+    },
+    "public/textures/fixed-saucer-metalness-b48a365c8f1f85b7.webp": {
+      "bytes": 64468,
+      "sha256": "b48a365c8f1f85b7eae4ad89a2b2c0f008eae09308613cc8b230320305b6b489"
+    },
+    "public/textures/fixed-body-baseColor-5243d1a2d7d630bd.webp": {
+      "bytes": 672942,
+      "sha256": "5243d1a2d7d630bd89362eb0bc4866ccd867b601935f3797687c742a9d23e51f"
+    },
+    "public/textures/fixed-body-baseColor-e98c2541c46d5d45.webp": {
+      "bytes": 896728,
+      "sha256": "e98c2541c46d5d45900ebe487a347df724b6679209030dbd794ab747079e2e9b"
+    },
+    "public/textures/china-metalness-7ac9525c8019fc98.webp": {
+      "bytes": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc"
+    },
+    "public/textures/fixed-body-baseColor-d4877edad4744523.webp": {
+      "bytes": 398446,
+      "sha256": "d4877edad4744523c384df1cc76058b8cc1473fa0550499501b7fca0a35a9bbf"
+    },
+    "public/textures/fixed-body-normal-ee5545c4699e0488.webp": {
+      "bytes": 618362,
+      "sha256": "ee5545c4699e04889846e9bc46954b29e1b2006066bb7569bea3bde0bf9073e9"
+    },
+    "public/textures/fixed-body-roughness-abc7641a2db17569.webp": {
+      "bytes": 78854,
+      "sha256": "abc7641a2db17569e5df44a4046f58fda236c67082818eb91dfe293a9ea6fa67"
+    },
+    "public/textures/fixed-body-metalness-706b3c9f5cad0472.webp": {
+      "bytes": 114218,
+      "sha256": "706b3c9f5cad04723747c95ec8bb8623238e513f11bdfa57d5395365f67eb01d"
+    },
+    "public/textures/fixed-handle-baseColor-ebe308cf4629d743.webp": {
+      "bytes": 117626,
+      "sha256": "ebe308cf4629d7439195aeed9ea45ab494da1fc7b6d865ce1c861e4a1574b8e0"
+    },
+    "public/textures/fixed-handle-normal-22fdb336573d9360.webp": {
+      "bytes": 180894,
+      "sha256": "22fdb336573d936029a7871e4c353393a0f5d2ba92a2a4710b95c67abf391cb4"
+    },
+    "public/textures/fixed-handle-roughness-91d94d19539575b9.webp": {
+      "bytes": 23978,
+      "sha256": "91d94d19539575b950eff69becb23550f7e48ccac780437a3bf8471483a45500"
+    },
+    "public/textures/fixed-handle-metalness-16b092c9c80c4945.webp": {
+      "bytes": 36010,
+      "sha256": "16b092c9c80c4945603b868f8068c86b8ddb53deabdd8bcda8adde2c1c2a22f8"
+    },
+    "public/textures/fixed-saucer-baseColor-8e57fee22596c597.webp": {
+      "bytes": 695878,
+      "sha256": "8e57fee22596c597544efbea4017fe25aaa972b66033c530111ddd657be71b14"
+    },
+    "public/textures/fixed-saucer-normal-3f332fba1f6086d9.webp": {
+      "bytes": 1179010,
+      "sha256": "3f332fba1f6086d9f30982ac562278f64a4eb2dc5c97934646b783feff508607"
+    },
+    "public/textures/fixed-saucer-roughness-bf02e17b05f008b8.webp": {
+      "bytes": 150806,
+      "sha256": "bf02e17b05f008b82a463f0d5aadf0c1c493a03efc36c2facb3de6e6666891db"
+    },
+    "public/textures/fixed-saucer-metalness-df1e211bfca52890.webp": {
+      "bytes": 235500,
+      "sha256": "df1e211bfca5289070333734bb2a27ec0e8ed00183b95a68a93e7c4659e0117d"
+    },
+    "public/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp": {
+      "bytes": 616610,
+      "sha256": "f6e719b2bc268bf7adad04be05e98447a4b3197c994693adb5fc6186a720f6d1"
+    },
+    "public/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp": {
+      "bytes": 1029662,
+      "sha256": "263afcfc74cfeaf66dc354e4b211eee0b6075711ce164c4aad8fd26d30ecd231"
+    },
+    "public/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp": {
+      "bytes": 128684,
+      "sha256": "9a6657df8e5caa9ddb8ffff6c9109aafc76dfce3e965462c96dae52b46531c7c"
+    },
+    "public/textures/fixed-saucer-metalness-2058a91b9c888893.webp": {
+      "bytes": 199804,
+      "sha256": "2058a91b9c888893d0dba29aa5906e0006a555863a36b92f6da727d380cc70c2"
+    },
+    "public/artwork/preview.jpg": {
+      "bytes": 71029,
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda"
+    },
+    "public/artwork/handle-metalness.png": {
+      "bytes": 287489,
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686"
+    },
+    "public/artwork/saucer-metalness.png": {
+      "bytes": 121504,
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716"
+    },
+    "public/artwork/body-metalness.png": {
+      "bytes": 694450,
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c"
+    },
+    "public/artwork/handle-height.png": {
+      "bytes": 215990,
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416"
+    },
+    "public/artwork/handle-normal.png": {
+      "bytes": 415117,
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7"
+    },
+    "public/artwork/style.json": {
+      "bytes": 714,
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f"
+    },
+    "public/artwork/body-height.png": {
+      "bytes": 671829,
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1"
+    },
+    "public/artwork/body-normal.png": {
+      "bytes": 1331343,
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d"
+    },
+    "public/artwork/body-baseColor.png": {
+      "bytes": 4430448,
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415"
+    },
+    "public/artwork/body-roughness.png": {
+      "bytes": 354379,
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335"
+    },
+    "public/artwork/saucer-baseColor.png": {
+      "bytes": 1039444,
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc"
+    },
+    "public/artwork/saucer-roughness.png": {
+      "bytes": 68359,
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa"
+    },
+    "public/artwork/handle-roughness.png": {
+      "bytes": 133029,
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21"
+    },
+    "public/artwork/handle-baseColor.png": {
+      "bytes": 1467136,
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d"
+    },
+    "public/artwork/manifest.json": {
+      "bytes": 3889,
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96"
+    },
+    "public/artwork/generation.json": {
+      "bytes": 3544,
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0"
+    },
+    "public/artwork/saucer-height.png": {
+      "bytes": 161444,
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97"
+    },
+    "public/artwork/saucer-normal.png": {
+      "bytes": 320697,
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe"
+    },
+    "public/artwork/lotus-butterfly/preview.jpg": {
+      "bytes": 71527,
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700"
+    },
+    "public/artwork/lotus-butterfly/handle-metalness.png": {
+      "bytes": 384463,
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6"
+    },
+    "public/artwork/lotus-butterfly/saucer-metalness.png": {
+      "bytes": 181047,
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d"
+    },
+    "public/artwork/lotus-butterfly/body-metalness.png": {
+      "bytes": 752098,
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9"
+    },
+    "public/artwork/lotus-butterfly/handle-height.png": {
+      "bytes": 273223,
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4"
+    },
+    "public/artwork/lotus-butterfly/handle-normal.png": {
+      "bytes": 533321,
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020"
+    },
+    "public/artwork/lotus-butterfly/style.json": {
+      "bytes": 720,
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae"
+    },
+    "public/artwork/lotus-butterfly/body-height.png": {
+      "bytes": 756646,
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f"
+    },
+    "public/artwork/lotus-butterfly/body-normal.png": {
+      "bytes": 1510166,
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023"
+    },
+    "public/artwork/lotus-butterfly/body-baseColor.png": {
+      "bytes": 5124693,
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5"
+    },
+    "public/artwork/lotus-butterfly/body-roughness.png": {
+      "bytes": 385824,
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa"
+    },
+    "public/artwork/lotus-butterfly/saucer-baseColor.png": {
+      "bytes": 1215629,
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015"
+    },
+    "public/artwork/lotus-butterfly/saucer-roughness.png": {
+      "bytes": 92882,
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05"
+    },
+    "public/artwork/lotus-butterfly/handle-roughness.png": {
+      "bytes": 170939,
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388"
+    },
+    "public/artwork/lotus-butterfly/handle-baseColor.png": {
+      "bytes": 2022345,
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278"
+    },
+    "public/artwork/lotus-butterfly/manifest.json": {
+      "bytes": 5035,
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300"
+    },
+    "public/artwork/lotus-butterfly/generation.json": {
+      "bytes": 4505,
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7"
+    },
+    "public/artwork/lotus-butterfly/saucer-height.png": {
+      "bytes": 197242,
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b"
+    },
+    "public/artwork/lotus-butterfly/saucer-normal.png": {
+      "bytes": 395475,
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd"
+    },
+    "public/artwork/lotus-butterfly/masters/band.png": {
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03"
+    },
+    "public/artwork/lotus-butterfly/masters/body.png": {
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f"
+    },
+    "public/artwork/peony-magnolia/preview.jpg": {
+      "bytes": 71892,
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be"
+    },
+    "public/artwork/peony-magnolia/handle-metalness.png": {
+      "bytes": 267916,
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f"
+    },
+    "public/artwork/peony-magnolia/saucer-metalness.png": {
+      "bytes": 181438,
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f"
+    },
+    "public/artwork/peony-magnolia/body-metalness.png": {
+      "bytes": 676465,
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65"
+    },
+    "public/artwork/peony-magnolia/handle-height.png": {
+      "bytes": 216437,
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e"
+    },
+    "public/artwork/peony-magnolia/handle-normal.png": {
+      "bytes": 412132,
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504"
+    },
+    "public/artwork/peony-magnolia/style.json": {
+      "bytes": 720,
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9"
+    },
+    "public/artwork/peony-magnolia/body-height.png": {
+      "bytes": 676602,
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493"
+    },
+    "public/artwork/peony-magnolia/body-normal.png": {
+      "bytes": 1342378,
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1"
+    },
+    "public/artwork/peony-magnolia/body-baseColor.png": {
+      "bytes": 4530401,
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b"
+    },
+    "public/artwork/peony-magnolia/body-roughness.png": {
+      "bytes": 348281,
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9"
+    },
+    "public/artwork/peony-magnolia/saucer-baseColor.png": {
+      "bytes": 1186845,
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d"
+    },
+    "public/artwork/peony-magnolia/saucer-roughness.png": {
+      "bytes": 89738,
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d"
+    },
+    "public/artwork/peony-magnolia/handle-roughness.png": {
+      "bytes": 125075,
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366"
+    },
+    "public/artwork/peony-magnolia/handle-baseColor.png": {
+      "bytes": 1493454,
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d"
+    },
+    "public/artwork/peony-magnolia/manifest.json": {
+      "bytes": 5017,
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f"
+    },
+    "public/artwork/peony-magnolia/generation.json": {
+      "bytes": 4525,
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f"
+    },
+    "public/artwork/peony-magnolia/saucer-height.png": {
+      "bytes": 189507,
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d"
+    },
+    "public/artwork/peony-magnolia/saucer-normal.png": {
+      "bytes": 376977,
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118"
+    },
+    "public/artwork/peony-magnolia/masters/band.png": {
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f"
+    },
+    "public/artwork/peony-magnolia/masters/body.png": {
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606"
+    },
+    "public/artwork/masters/band.png": {
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4"
+    },
+    "public/artwork/masters/body.png": {
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91"
+    },
+    "public/marks/auratic-reference.svg": {
+      "bytes": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99"
+    },
+    "public/marks/auratic-reference.png": {
+      "bytes": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155"
+    },
+    "public/references/1230.jpg": {
+      "bytes": 486039,
+      "sha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b"
+    },
+    "public/references/1221.jpg": {
+      "bytes": 452592,
+      "sha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94"
+    },
+    "public/references/1220.jpg": {
+      "bytes": 132972,
+      "sha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92"
+    },
+    "public/references/1236.jpg": {
+      "bytes": 423874,
+      "sha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874"
+    },
+    "public/references/1238.jpg": {
+      "bytes": 430227,
+      "sha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19"
+    },
+    "public/web/fixed/saucer-baseColor.webp": {
+      "bytes": 755014,
+      "sha256": "0b712528ecd37f42339cb632e50482e43f70ad2cbcdc9fee34e7ccedc4a4eb00"
+    },
+    "public/web/fixed/body-roughness.webp": {
+      "bytes": 361548,
+      "sha256": "a1bebacc35787c20ed3114ab0becfe0ad11a6fb7102571334eb548e35d46e892"
+    },
+    "public/web/fixed/handle-baseColor.webp": {
+      "bytes": 1136080,
+      "sha256": "0e4d293c21889ebf8cc158e306ab90b72f847f0278c0efec2bf3ab27e99963fd"
+    },
+    "public/web/fixed/body-metalness.webp": {
+      "bytes": 611078,
+      "sha256": "6b0634c6c05a0e206d1b555150033c4fa9498ff032b320b4a31a244fe5e20784"
+    },
+    "public/web/fixed/saucer-normal.webp": {
+      "bytes": 248808,
+      "sha256": "dfb5574f66398f2e30071905683a92d3b8b4e7f592ca4458a8b371ebf296747f"
+    },
+    "public/web/fixed/handle-metalness.webp": {
+      "bytes": 241800,
+      "sha256": "a1db885eaebf15488984f3d4315fd68970b2a5a3d2a77c2ce3ac7642c1896af3"
+    },
+    "public/web/fixed/handle-normal.webp": {
+      "bytes": 377260,
+      "sha256": "1eb92f1f33706151363b38564a7964dbf5708739e89cff5966b6995aa42673e9"
+    },
+    "public/web/fixed/body-normal.webp": {
+      "bytes": 1145268,
+      "sha256": "25e7c2a82cff5075fc3e3c943e4d27a7ac147a6f15dcc9c0ca70d81e17db26c6"
+    },
+    "public/web/fixed/handle-roughness.webp": {
+      "bytes": 138248,
+      "sha256": "c679852be3e3e9e645d81889da98600f71f4218f93a9e5188b24d56f65afb144"
+    },
+    "public/web/fixed/body-baseColor.webp": {
+      "bytes": 3717346,
+      "sha256": "182a912df9d7868237912747d0811b045675f2ef89697b04547dbe122f352916"
+    },
+    "public/web/fixed/saucer-metalness.webp": {
+      "bytes": 97176,
+      "sha256": "9707c0b951fc908c765b625a21bf5566fa35f5a3ad5337c303862097b6403cec"
+    },
+    "public/web/fixed/saucer-roughness.webp": {
+      "bytes": 60058,
+      "sha256": "a1397cef31f9034061f505071d39a184e03208a12850995b83cb7f64abf6980c"
+    },
+    "public/web/china/baseColor.webp": {
+      "bytes": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b"
+    },
+    "public/web/china/metalness.webp": {
+      "bytes": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc"
+    },
+    "public/web/china/roughness.webp": {
+      "bytes": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8"
+    },
+    "public/web/china/normal.webp": {
+      "bytes": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab"
+    },
+    "public/backgrounds/soft-light-d9af01e672e4.webp": {
+      "bytes": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c"
+    },
+    "public/backgrounds/soft-light-v3-d06c52a8f2003f50.webp": {
+      "bytes": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454"
+    },
+    "public/fixed/handle-metalness.png": {
+      "bytes": 73953,
+      "sha256": "108b0d7dbb7b295e15b64cdb6660f3f18832bcbd5e50d0c359b70a4269ec9093"
+    },
+    "public/fixed/saucer-metalness.png": {
+      "bytes": 424725,
+      "sha256": "c4f40dbbbd7d1fbab3acfb96b3035b9f64bf26f3b54aab51b71dfe2fd6971419"
+    },
+    "public/fixed/body-metalness.png": {
+      "bytes": 230451,
+      "sha256": "9b50384fbbe162f92080221aeb6c4c5241bce71e1b4c0f5b5e55261dc3ce8208"
+    },
+    "public/fixed/handle-height.png": {
+      "bytes": 128733,
+      "sha256": "af98f2f84d439f58be95b0156aac5eb472a50f84c5f8d1c0f7630c5870af366e"
+    },
+    "public/fixed/handle-normal.png": {
+      "bytes": 255517,
+      "sha256": "320b3a8dd077e7d27dda2f44183318bf951f11a0556628dd7929344f3fe56d3e"
+    },
+    "public/fixed/style.json": {
+      "bytes": 835,
+      "sha256": "3a205e2793ee8ff4a24a92a995455b45d6ddfc6ef780957118b1a36b289795eb"
+    },
+    "public/fixed/body-height.png": {
+      "bytes": 433494,
+      "sha256": "ee3fbcab4d71a114369424d5909e6b3c48ad0d768bd4ff656eceac055c4111ba"
+    },
+    "public/fixed/body-normal.png": {
+      "bytes": 874353,
+      "sha256": "fbd6d2968e0a629dc1b672f16311c19dc7cf90cdc3252fbb9b50d4924b91c31a"
+    },
+    "public/fixed/body-baseColor.png": {
+      "bytes": 1674330,
+      "sha256": "dfbef00ca5336207466bf8d6d1522bbd1921cfa274996cf94a2fc212aa93300d"
+    },
+    "public/fixed/body-roughness.png": {
+      "bytes": 133372,
+      "sha256": "10b91c29380e11776c8fe9bc67654a273fbae3f4938f8d8b422020f885a57b20"
+    },
+    "public/fixed/saucer-baseColor.png": {
+      "bytes": 3403934,
+      "sha256": "fd6f74f3af88aa703e92815dbe6bf507fe399df250292750d01b9816b675b25f"
+    },
+    "public/fixed/saucer-roughness.png": {
+      "bytes": 214896,
+      "sha256": "7ecba5978e1a8112b47127098686bd814ce49dfccd4efd39dfd7d34cba1aa1c9"
+    },
+    "public/fixed/handle-roughness.png": {
+      "bytes": 41264,
+      "sha256": "c03557d81e1102973188f88a829eae602021a7471fcb090248fec57d4ccaf528"
+    },
+    "public/fixed/handle-baseColor.png": {
+      "bytes": 488364,
+      "sha256": "49bea1266fd04ee138f1a4c78a143e32b80addffd1b65a57e676d5aff95bbc78"
+    },
+    "public/fixed/manifest.json": {
+      "bytes": 5191,
+      "sha256": "34f07ab3467d13c34d6305fb5dae508dc2a773f41e1650f7c1b3166b8c889478"
+    },
+    "public/fixed/saucer-height.png": {
+      "bytes": 686492,
+      "sha256": "b51d798064dd66bb80643e884d80b1fa5c12567c357f36b2e2f896a4005c3d61"
+    },
+    "public/fixed/saucer-normal.png": {
+      "bytes": 1401254,
+      "sha256": "035c481ab404457c43dc385b103d849aba9304ba724d6348d534ead78e9fcc67"
+    },
+    "public/china/line-finish.png": {
+      "bytes": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f"
+    },
+    "public/china/lines.png": {
+      "bytes": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4"
+    },
+    "public/china/metalness.png": {
+      "bytes": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2"
+    },
+    "public/china/label.png": {
+      "bytes": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60"
+    },
+    "public/china/city.json": {
+      "bytes": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1"
+    },
+    "public/china/lines-original.png": {
+      "bytes": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc"
+    },
+    "public/china/label-roughness.png": {
+      "bytes": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055"
+    },
+    "public/china/normal.png": {
+      "bytes": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3"
+    },
+    "public/china/cleanup-difference.png": {
+      "bytes": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6"
+    },
+    "public/china/height.png": {
+      "bytes": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a"
+    },
+    "public/china/roughness.png": {
+      "bytes": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500"
+    },
+    "public/china/baseColor.png": {
+      "bytes": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e"
+    },
+    "public/review/fixed-quarters.jpg": {
+      "bytes": 94428,
+      "sha256": "a37d5741ddace41c18aa9900aba06e1a80fd0df675cf4a0f91b4de9f6be48295"
+    },
+    "public/review/evidence.json": {
+      "bytes": 217,
+      "sha256": "0d90e1b56d2ff34538630db112a276cad7723409d9a3ff6ee141e105ea29eed1"
+    },
+    "public/review/label-reference.jpg": {
+      "bytes": 79970,
+      "sha256": "f434b7bb8561e40acfbc2c8cedcb9fadb7cd6239d404760e8a8c15e4ce2b6777"
+    },
+    "public/review/lines.png": {
+      "bytes": 203275,
+      "sha256": "d50ffbc9ac0e4a267253c9e76fcb4d652c214eeeedf30a2c17d16888ab1899a0"
+    },
+    "public/review/buildings-reference.jpg": {
+      "bytes": 77584,
+      "sha256": "1967f915d6d9fc6394396720c75c8d574f35c7cf85018ff7c4ef54266b70d6be"
+    },
+    "public/review/stroke-only.jpg": {
+      "bytes": 60869,
+      "sha256": "c3de1076f8e9433a9eb2cf761c84b7bb6d87dcec14eeac3afcc89947250abdda"
+    },
+    "public/review/label-overlay.png": {
+      "bytes": 802430,
+      "sha256": "5dfc92707da94972f342d749b5cc037bb227e2188a81f3f6ef5ed51535f8393f"
+    },
+    "public/review/desktop.jpg": {
+      "bytes": 80676,
+      "sha256": "48113ca5560134cd8b366db30b74c40c857c237cad84b3a24685468419b9d7c2"
+    },
+    "public/review/flat.jpg": {
+      "bytes": 107735,
+      "sha256": "8bf4bbf8c411990d2b91339b1caf178d8a3c954e7f7c12fcb21307bbbc1f2e49"
+    },
+    "public/review/convex.jpg": {
+      "bytes": 149446,
+      "sha256": "8cc62e9e07953e7ee26251093329e066887baca8d35c380eacd2beb7a2249858"
+    },
+    "public/review/browser-qa.json": {
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    "public/review/handle.jpg": {
+      "bytes": 73037,
+      "sha256": "7e564d300618fdc706128cc2913fd706a579f4fd93ef24470eeb9047c809caf7"
+    },
+    "public/review/label-model.png": {
+      "bytes": 377068,
+      "sha256": "9bcacbf550534907b5d32351c2eff2e302ab8a9729bac814baddbb8c0e326b6f"
+    },
+    "public/review/metalness.png": {
+      "bytes": 28439,
+      "sha256": "4f38d7f2883838d44d2e29f9945e2e5cbdbd4feb14ad2ce8e84c59386659be51"
+    },
+    "public/review/buildings-comparison.jpg": {
+      "bytes": 214875,
+      "sha256": "630e85d53a88fda01edd841ad9c3176586f562ffa5527bdc773928cf54f8a6c8"
+    },
+    "public/review/label.png": {
+      "bytes": 8250,
+      "sha256": "f907217d4133455af6070b40654ff4fe56900131772405872621bfc6a594e313"
+    },
+    "public/review/buildings-model.png": {
+      "bytes": 360366,
+      "sha256": "50b3a5c815bcb53253ab4b6fdf9ed0432fbcd1dfd632e9eb7541387b77154d54"
+    },
+    "public/review/before-matte.jpg": {
+      "bytes": 178294,
+      "sha256": "97c7ab4606c642629cfab8338b4b9cdadbd18e0ee8002ac0d51e7bb0a7648a9c"
+    },
+    "public/review/lines-original.png": {
+      "bytes": 225985,
+      "sha256": "d06be46e6a8c9131ec0987f8f02e46138752f06a938aaf2d195e387d1e73aecb"
+    },
+    "public/review/label-comparison.jpg": {
+      "bytes": 218121,
+      "sha256": "794f6a4daf3c8026bd99a26ecc43b5295093e51e3493f8ba661f7c65f8587960"
+    },
+    "public/review/camera-calibration.json": {
+      "bytes": 1888,
+      "sha256": "03541bd9f98ee04797e82bf2414463690a080a7b016ca5a391ba347ecd6f3096"
+    },
+    "public/review/atlas.jpg": {
+      "bytes": 109696,
+      "sha256": "814ab745c1e0eb18264979c311b19831ded2c2f3493de4814fb1f7aa26284265"
+    },
+    "public/review/mobile.jpg": {
+      "bytes": 134275,
+      "sha256": "c2bc3a9519bac04b4a46878a8d6ec7c8b75f9c5366a22a8e99ca788813c1d7ba"
+    },
+    "public/review/normal.png": {
+      "bytes": 297528,
+      "sha256": "15b53f7a5cd9f71ac1d5a005671fe1d5990322b41f484ca521ea357651b72722"
+    },
+    "public/review/height.png": {
+      "bytes": 210963,
+      "sha256": "85fde66440505f44ea8a052fcea93d93a1e77501dbd8a261502a72d86456055e"
+    },
+    "public/review/after-matte.jpg": {
+      "bytes": 151480,
+      "sha256": "a085d27b36feb63927812f9075ce2374a797715400b92b36db930e921550abc8"
+    },
+    "public/review/detail.jpg": {
+      "bytes": 149535,
+      "sha256": "d01e1e1140cbc8913b33578765d5af2f4c5c4ee98bbd54fc36bd193a90cf5bc5"
+    },
+    "public/review/psd-audit.json": {
+      "bytes": 8548,
+      "sha256": "a74c505e1157bb623d924a9249b99b8d82b2e4b50801536a3b7c7f6209bfbaaa"
+    },
+    "public/review/buildings-overlay.png": {
+      "bytes": 817796,
+      "sha256": "3ac5298ba95561a2b0fcf1016f72b91a2748cd5f8ee7181d48918b73e839d3d0"
+    },
+    "public/review/front.jpg": {
+      "bytes": 72445,
+      "sha256": "03357cc54ee6ad79a30fb91b2de12f7c457f6c2e7a9d886beef952ac964bd395"
+    },
+    "public/review/concave.jpg": {
+      "bytes": 149317,
+      "sha256": "21d03baa9c3a205adc4c67e7e3f1c277097d53e6c8e11e596726f3adb1a67c5a"
+    },
+    "public/review/background/mobile-comparison.jpg": {
+      "bytes": 108055,
+      "sha256": "a24486acadbc2c1a30be3c2ca989fd4c7ec980bbe385fe46b346c446bc27a70f"
+    },
+    "public/review/background/mobile-panel.jpg": {
+      "bytes": 63961,
+      "sha256": "9c6e4d3191e1673b69d9c53fb68901d4edff02b0b27abe07347bf23a4407a37c"
+    },
+    "public/review/background/verification.json": {
+      "bytes": 1475,
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8"
+    },
+    "public/review/floral-relief/before-flowers.jpg": {
+      "bytes": 297536,
+      "sha256": "3f031e628da1322515d03ed1481fd19b66fddf74527c9976aefc8257cea9e724"
+    },
+    "public/review/floral-relief/before-grazing.jpg": {
+      "bytes": 369502,
+      "sha256": "5a3dec399e9ccae2f27fbf3fa8fd63badf7a756934b51c66e0a5747c3d1d9cbd"
+    },
+    "public/review/floral-relief/off-gray.jpg": {
+      "bytes": 22300,
+      "sha256": "8808b8777a1620be4d72d9051b00be8f7bec9d3b7883e3ae8654d29eb1d006ba"
+    },
+    "public/review/floral-relief/after-handle.jpg": {
+      "bytes": 139622,
+      "sha256": "c75c0558395963700ef1f9832bf1f4dd05fff1914428bb8e48838b76eb4008be"
+    },
+    "public/review/floral-relief/before-handle.jpg": {
+      "bytes": 141603,
+      "sha256": "e25595e268daede6efe5e863c63915a0827f71769d16fa7a0bbe586c666d43a0"
+    },
+    "public/review/floral-relief/comparison-handle.jpg": {
+      "bytes": 281213,
+      "sha256": "9e7dfa55fd746aefcc2b95a404e3d467c2666c7bf1bca76abd548e5da942d289"
+    },
+    "public/review/floral-relief/comparison-flowers.jpg": {
+      "bytes": 361516,
+      "sha256": "46339d91b0eb888723c745dafe9e98f0e96b99deb0753ad7abaa35aaeca7c8a3"
+    },
+    "public/review/floral-relief/after-grazing.jpg": {
+      "bytes": 385312,
+      "sha256": "271cde693187107eb96a7d4d977cd1effe5fb5d0f5b247e6031ec7e320f7abc9"
+    },
+    "public/review/floral-relief/depth-comparison.jpg": {
+      "bytes": 160862,
+      "sha256": "4ec59db6d67b6e2cc53441b0229a37b79be8ed75072cb9fe6bb4d1a2d2fbc163"
+    },
+    "public/review/floral-relief/on-gray.jpg": {
+      "bytes": 81812,
+      "sha256": "9c4a743490ff1e7fc90ecdfde0ee705e299d1bd13335c3251de085b02090a4b3"
+    },
+    "public/review/floral-relief/on-flowers.jpg": {
+      "bytes": 183965,
+      "sha256": "a20be4e574c5586e50f696f161cf5302ddb474f46a54561995edffb28f3a9666"
+    },
+    "public/review/floral-relief/after-flowers.jpg": {
+      "bytes": 303229,
+      "sha256": "e0e7402623214cb5d30d87d9804dd849e6bbe88f891048d60255c0805d4bad2a"
+    },
+    "public/review/floral-relief/comparison-grazing.jpg": {
+      "bytes": 754418,
+      "sha256": "3def4e354b1b1808d4b48c75cbcd287d97d296ac99658df13b99c6b931b26950"
+    },
+    "public/review/floral-relief/off-flowers.jpg": {
+      "bytes": 171015,
+      "sha256": "133bfc763df47ece2ef5731f8724e88245c42563c9d32403e6116bb19275e0de"
+    },
+    "public/review/floral-relief/verification.json": {
+      "bytes": 722,
+      "sha256": "f288520f72c9f542e5862baf61a7bf191f4f8822b6638a07c51d08a2840d08e4"
+    },
+    "public/review/floral-relief/petal-before-after.jpg": {
+      "bytes": 198534,
+      "sha256": "002e55b5b8928f88ee5c9861932a4180959c83c1c4d555d8b947049711ed5851"
+    },
+    "public/review/relief-separation/before-hero.jpg": {
+      "bytes": 111511,
+      "sha256": "a703245a1404f349a68fad4cca71d888afd16d77739f426dc900ae7b056306c9"
+    },
+    "public/review/relief-separation/parameters.json": {
+      "bytes": 4157,
+      "sha256": "656568fbb10e464357c8c64d802bb149f40dac128e6018deff8024f3c4c5bbb3"
+    },
+    "public/review/relief-separation/finish-only.jpg": {
+      "bytes": 251028,
+      "sha256": "d5e1d1f8e9177f9e1d889c39c723583066ffc2e296cbc55bfbde8ddbf77a9263"
+    },
+    "public/review/relief-separation/reference-temple.png": {
+      "bytes": 720801,
+      "sha256": "5892b95bbca06a65639ab6f75b9a1bf0e96c32e73749dbd18bff1e5a49af2e43"
+    },
+    "public/review/relief-separation/reflection-without-handle.jpg": {
+      "bytes": 102805,
+      "sha256": "15fb0ca7512dce438e3685d729b5f7b69a699995078cfb925eea28b545f8f2bb"
+    },
+    "public/review/relief-separation/comparison.jpg": {
+      "bytes": 269347,
+      "sha256": "ee640497424d7dbf6969c0cbe3de288b67092d9c87a784d0258ef7a8c41637a8"
+    },
+    "public/review/relief-separation/handle-reflection-qa.json": {
+      "bytes": 539,
+      "sha256": "98484e6c9ba59629bd1502eb0a2a112caebf1fc071be800053cbc5a6851a4b80"
+    },
+    "public/review/relief-separation/handle-reflection-difference-x20.png": {
+      "bytes": 4805,
+      "sha256": "2ffc110b48ab59b7f103b0f0b77cc334e8878e3bdf24ad25d6a4de899ed236f9"
+    },
+    "public/review/relief-separation/after-hero.jpg": {
+      "bytes": 122290,
+      "sha256": "6bf6d265a9a5f55e34b93d03033992be942782b8ffe3f5e487ebf4f3644a12c7"
+    },
+    "public/review/relief-separation/preferred-earlier.jpg": {
+      "bytes": 287075,
+      "sha256": "f3f9bf717e1f0009fd6c9056e6c47bd6b02182cc7ca8b9c9069168e016c919d5"
+    },
+    "public/review/relief-separation/after-detail.jpg": {
+      "bytes": 182961,
+      "sha256": "fec29e4b68d17067a445c07dc8ba945eeb51a8e05b3858d6c76a68108ef1d281"
+    },
+    "public/review/relief-separation/before-detail.jpg": {
+      "bytes": 235225,
+      "sha256": "31bed08fa477e5d7c58196516a39892e7597c98458dabbbf9e2e3173d088aea6"
+    },
+    "public/review/relief-separation/reflection-on.jpg": {
+      "bytes": 102786,
+      "sha256": "0b46f1b47a2e69244ad09c939d87355885ab1fccc7141c455d12cefafab4baa8"
+    },
+    "public/review/relief-separation/front.jpg": {
+      "bytes": 89925,
+      "sha256": "4722154cb5035f0a977b393d66db86ddf4b71eaaf31376d11f81acd7d000aabe"
+    },
+    "public/review/load-pan-floral/before.jpg": {
+      "bytes": 83009,
+      "sha256": "a45ef16724f258706536b7ed2ed789643403763f904de1ad4326095db9c5c16b"
+    },
+    "public/review/load-pan-floral/generated-band.jpg": {
+      "bytes": 324235,
+      "sha256": "078c50277d36ce04930f5bc6da1f242d1b273b36d69ddb5ff2866a58b9af716c"
+    },
+    "public/review/load-pan-floral/quality-handle.jpg": {
+      "bytes": 106161,
+      "sha256": "0f8b1640bb26281c62dbd99dbe379fcc1a2d9f65f4631457635e150340c576ff"
+    },
+    "public/review/load-pan-floral/after.jpg": {
+      "bytes": 96854,
+      "sha256": "3ed0740b9d096b7da74c461b5c98479f96ab887b1c55caf55152fd00a2e85128"
+    },
+    "public/review/load-pan-floral/quality.json": {
+      "bytes": 1638,
+      "sha256": "d75673819229dae4c2afe7e95f9f33947e85ef127ec8a7f96b9525985df4cfc8"
+    },
+    "public/review/load-pan-floral/reference-right.jpg": {
+      "bytes": 228858,
+      "sha256": "52e9a34bc3df8ae67069819468a7e553aa38c85407f04a0b7da31a5c53058259"
+    },
+    "public/review/load-pan-floral/web-textures.json": {
+      "bytes": 7812,
+      "sha256": "2a62efd010106b83a62cee578d7bd690c5a843c44712587eb3fd97b06f4c86af"
+    },
+    "public/review/load-pan-floral/reference-left.jpg": {
+      "bytes": 226555,
+      "sha256": "5068fafce9b8422a8375e3f35a7ce0bf02d58e545d78f50179a3d4620ce79832"
+    },
+    "public/review/fixed-layout/label-after.jpg": {
+      "bytes": 135271,
+      "sha256": "3cb930ac47c62e40345295d128a177dc334385d63efb8e2668c6dedc46be04a0"
+    },
+    "public/review/fixed-layout/label-overlay.png": {
+      "bytes": 802430,
+      "sha256": "5dfc92707da94972f342d749b5cc037bb227e2188a81f3f6ef5ed51535f8393f"
+    },
+    "public/review/fixed-layout/buildings-after.jpg": {
+      "bytes": 131940,
+      "sha256": "3277c5b200974e90691d5adc199ec1a52efc4697c2e82ee8d800b9c2bbed89e7"
+    },
+    "public/review/fixed-layout/buildings-comparison.jpg": {
+      "bytes": 306241,
+      "sha256": "4bf32c525c06488743eefeb3712935ea88264c2ba1ff05e70e3769bc00986b55"
+    },
+    "public/review/fixed-layout/label-comparison.jpg": {
+      "bytes": 238477,
+      "sha256": "628a227f9b4922049f8f85dfa45b83067004ddb627496fc59dc942bccba09eba"
+    },
+    "public/review/fixed-layout/verification.json": {
+      "bytes": 3450,
+      "sha256": "39c469e7206c60dfa4f4fdcdb9b61ed91f469be9ecc49364d7c418830ff925fd"
+    },
+    "public/review/fixed-layout/buildings-overlay.png": {
+      "bytes": 817796,
+      "sha256": "3ac5298ba95561a2b0fcf1016f72b91a2748cd5f8ee7181d48918b73e839d3d0"
+    },
+    "public/review/fixed-layout/buildings-before.jpg": {
+      "bytes": 131834,
+      "sha256": "a1220dd83927cc9f4620a01b8e5762b5ebcbb8dfbfad03328c8a5af814be2c48"
+    },
+    "public/review/fixed-layout/label-before.jpg": {
+      "bytes": 143668,
+      "sha256": "8e82a2c6f3f3edea619604c4254b6c87712711775c57aa5ae6b03a9d392e85ba"
+    },
+    "public/review/v3/before-left.jpg": {
+      "bytes": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72"
+    },
+    "public/review/v3/before-right.jpg": {
+      "bytes": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7"
+    },
+    "public/review/v3/v3-left.jpg": {
+      "bytes": 117038,
+      "sha256": "e5048ac3c8ea9041a6bb0f65ed02f113b4beadfeeb3de4bf48b249723a45a825"
+    },
+    "public/review/v3/v3-right.jpg": {
+      "bytes": 90282,
+      "sha256": "544fd0291498153d70ecabf730c8cdf357d29c8621fed64f613b27b13a3df144"
+    },
+    "public/reference/buildings.jpg": {
+      "bytes": 77584,
+      "sha256": "1967f915d6d9fc6394396720c75c8d574f35c7cf85018ff7c4ef54266b70d6be"
+    },
+    "public/reference/label.jpg": {
+      "bytes": 79970,
+      "sha256": "f434b7bb8561e40acfbc2c8cedcb9fadb7cd6239d404760e8a8c15e4ce2b6777"
+    },
+    "assets/fixed-v4-crop-prompts.json": {
+      "bytes": 4765,
+      "sha256": "f85d19505b91ab68a04550328abb32fdfdabe50ed4c305917fb7688328e1384b"
+    },
+    "assets/variant-prompts-dense-v3.json": {
+      "bytes": 10801,
+      "sha256": "d1a32a05d99541116da0cced81ca6ba526a62abc66adcbe336c92dc197633530"
+    },
+    "assets/surface-metrics.json": {
+      "bytes": 260,
+      "sha256": "c03e5926d30efd5fa80df03b14bca8f10c9803663cd2a68c5d464ddf24e58198"
+    },
+    "assets/prompts.json": {
+      "bytes": 3600,
+      "sha256": "68be5aad80e2966eb8cb8032920b933f9860dde3eacdb77061851b5e2c9b7ebb"
+    },
+    "assets/fixed-band-v2-prompt.json": {
+      "bytes": 1191,
+      "sha256": "93e5e80004c597d90b80894381aac6539c13abdbbcc487eb35105e8897db555e"
+    },
+    "assets/variant-prompts.json": {
+      "bytes": 10801,
+      "sha256": "d1a32a05d99541116da0cced81ca6ba526a62abc66adcbe336c92dc197633530"
+    },
+    "assets/fixed-prompts.json": {
+      "bytes": 2618,
+      "sha256": "82990e0d6f4ab69d32703f70e761f5777c84c161bb633cd168ce7a8fe23636cb"
+    },
+    "assets/fixed-v3-prompts.json": {
+      "bytes": 3379,
+      "sha256": "542385046fcf5147272b9807fbd371dc36ace86002feca0f2529095a30e5613f"
+    },
+    "assets/reference-crops/right-saucer-flower-bird-butterfly.png": {
+      "bytes": 2053156,
+      "sha256": "e7f486c11450188d81cb5d877e96cb7ee61834210040e57177fa0106b711bef3"
+    },
+    "assets/reference-crops/handle-side-vertical-band.png": {
+      "bytes": 382427,
+      "sha256": "90e07edef700847cdcab8a4cf0cbc2a61e197aa4cb06e863d9ebe6ac7b1efc45"
+    },
+    "assets/reference-crops/crops.json": {
+      "bytes": 599,
+      "sha256": "8c2367e6a41074d2c978f8583312c03c027046d3a0d332727ed3927e7399acf8"
+    },
+    "assets/reference-crops/left-saucer-bird-flower.png": {
+      "bytes": 1654062,
+      "sha256": "4064a443477791d939d0bd4daf823440b7544b341223868eea3fb27fb8b226e9"
+    },
+    "assets/drafts/sparse-v1-prompts.json": {
+      "bytes": 9025,
+      "sha256": "040ec23b9a2c9abd1aa302f0ad1ab56076643441a618ed84941bb786ebcc140d"
+    },
+    "assets/source/china-lines.psd": {
+      "bytes": 10238996,
+      "sha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9"
+    },
+    "assets/source/mobile-background-user.jpg": {
+      "bytes": 268476,
+      "sha256": "81191d28f604eb280893612ea33dfc3b400592f1dc99fc66b74f4a4039c4dd84"
+    },
+    "assets/source/china-reference.jpg": {
+      "bytes": 6138938,
+      "sha256": "993243d53a3d849cb32389def25bc11ecd13e190edf925ea3117acc7c7cd90c9"
+    },
+    "assets/source/apac-reference.pdf": {
+      "bytes": 23880754,
+      "sha256": "47446bdbaf9e302792216809c4f2a2ad707b6e8003daee9941e3038677df542e"
+    },
+    "assets/source/floral-export.psd": {
+      "bytes": 25627383,
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37"
+    },
+    "assets/source/mobile-background-v3.png": {
+      "bytes": 612219,
+      "sha256": "35332ace2cc2022434ea893928ae13bbd81e005c258aa3c047b15bb854e6f685"
+    },
+    "assets/source/reference-v3-left.jpg": {
+      "bytes": 9180166,
+      "sha256": "dbfaea7bb75fa9cf371e82d5a5875d2aa5cd24078f4955c6649da1314e1f81b9"
+    },
+    "assets/source/reference-v3-right.jpg": {
+      "bytes": 9332193,
+      "sha256": "5a6c3822284faf4731018aa97225906d62f7a38efbb4a6bf8260b416e0062196"
+    },
+    "assets/source/before-mobile.png": {
+      "bytes": 785221,
+      "sha256": "d40b461bf8de94817bc692529bc2bcaef4ec0f0e8ce2c95c77829355f3c5603e"
+    },
+    "assets/masters/china-fixed-body-v3.png": {
+      "bytes": 3872382,
+      "sha256": "b8e2558b861ceb3881776db32a1b93d18cab5254e005cd0853f7a9f343533419"
+    },
+    "assets/masters/china-fixed-body-v4.png": {
+      "bytes": 3298282,
+      "sha256": "6978689e7edae4672217594734ca8f5d66ee9c1d6f8829324828d3064bdae865"
+    },
+    "assets/masters/band-generated.png": {
+      "bytes": 3065879,
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4"
+    },
+    "assets/masters/china-fixed-band-v4.png": {
+      "bytes": 1841711,
+      "sha256": "f844361d3c1e5d5fd0e65642e657ccbb85186d49724e1428f900b9fecd89c8f5"
+    },
+    "assets/masters/china-fixed-band-v3.png": {
+      "bytes": 2690148,
+      "sha256": "9a114012a3d4dcd68f6c1f54183a2e3d81728b8688370d84e7ccbd8c94fd6e66"
+    },
+    "assets/masters/china-fixed-band-v1.png": {
+      "bytes": 3982020,
+      "sha256": "32d3af1b9880ac62aa7f8d5773a43119c23142d73c7f612b10f63e910a767299"
+    },
+    "assets/masters/china-fixed-body.png": {
+      "bytes": 3724623,
+      "sha256": "a5f97027e110095b08a07c71c5d2355dd297b7f17617344a3c4f5fe9285b8800"
+    },
+    "assets/masters/china-fixed-band.png": {
+      "bytes": 3854979,
+      "sha256": "5241f55a9f52160fb063199c240236095f153d204eac84cee488c8b4259787c6"
+    },
+    "assets/masters/body-generated.png": {
+      "bytes": 3071542,
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91"
+    },
+    "assets/masters/floral-source-v3-srgb.png": {
+      "bytes": 14592407,
+      "sha256": "7e735b62eeed97228a91736c4a0d524509bc6d717b336a56a956a384d98d0240"
+    },
+    "assets/masters/lotus-butterfly/body-dense-v3.png": {
+      "bytes": 3334256,
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f"
+    },
+    "assets/masters/lotus-butterfly/band-generated.png": {
+      "bytes": 1674012,
+      "sha256": "173a6274e73aceba832d7e4859d8e1bf54a819679bfe65e682c32187186d5512"
+    },
+    "assets/masters/lotus-butterfly/band-dense-v3.png": {
+      "bytes": 3358877,
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03"
+    },
+    "assets/masters/lotus-butterfly/body-generated.png": {
+      "bytes": 2760414,
+      "sha256": "0f1a1d62ccacd366a248b9b5d02c6bb3cb0ef7c10b1afca54935b2805829670f"
+    },
+    "assets/masters/versions/china-fixed-body.png": {
+      "bytes": 3724623,
+      "sha256": "a5f97027e110095b08a07c71c5d2355dd297b7f17617344a3c4f5fe9285b8800"
+    },
+    "assets/masters/versions/china-fixed-band.png": {
+      "bytes": 3854979,
+      "sha256": "5241f55a9f52160fb063199c240236095f153d204eac84cee488c8b4259787c6"
+    },
+    "assets/masters/versions/v3/china-fixed-body-v3.png": {
+      "bytes": 3872382,
+      "sha256": "b8e2558b861ceb3881776db32a1b93d18cab5254e005cd0853f7a9f343533419"
+    },
+    "assets/masters/versions/v3/china-fixed-band-v3.png": {
+      "bytes": 2690148,
+      "sha256": "9a114012a3d4dcd68f6c1f54183a2e3d81728b8688370d84e7ccbd8c94fd6e66"
+    },
+    "assets/masters/peony-magnolia/body-dense-v3.png": {
+      "bytes": 3082899,
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606"
+    },
+    "assets/masters/peony-magnolia/band-generated.png": {
+      "bytes": 1642266,
+      "sha256": "3432d6f085598ef0e8adb3a62734c491856c1cf86f5934749726fffa69caf0e4"
+    },
+    "assets/masters/peony-magnolia/band-dense-v3.png": {
+      "bytes": 3225793,
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f"
+    },
+    "assets/masters/peony-magnolia/body-generated.png": {
+      "bytes": 2646821,
+      "sha256": "0666baf5e953a3fb46e7bfda38145ae91440a548c9fbfe2ef5d206a03c6304ef"
+    },
+    "assets/masters/v3/body.png": {
+      "bytes": 1452934,
+      "sha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca"
+    },
+    "assets/masters/v3/handle.png": {
+      "bytes": 414335,
+      "sha256": "d57c227878e2b1bb95e22ea556ab1351aee3a140b6e12ad5c4653ce136d017ad"
+    },
+    "assets/masters/v3/saucer.png": {
+      "bytes": 2497583,
+      "sha256": "f738151b2fd6049f834dd104de75b7ce8de1acbccc658c30c9f6364c489557ee"
+    },
+    "assets/extracted/layer-6-alpha.png": {
+      "bytes": 205993,
+      "sha256": "0cfd310da446d26dc26b1412ec377fb3f96e2c7fecf767551f32082c5c46d775"
+    },
+    "assets/extracted/layer-8-alpha.png": {
+      "bytes": 15654,
+      "sha256": "73233e4bfb46dbaafcbedf99dfaff921701ac6cf73ac5dd0da5f70772c36be21"
+    },
+    "assets/extracted/layer-5-alpha.png": {
+      "bytes": 267701,
+      "sha256": "fcedfb7269fe26639601b97dd9d3a9405be29a64041e8c5f55149a890e752664"
+    },
+    "assets/extracted/layout.json": {
+      "bytes": 1154,
+      "sha256": "f21d43a45994a2689f486bda98cc3b6ee145177e6d86d235abc47898d923ca06"
+    },
+    "assets/extracted/layer-3-alpha.png": {
+      "bytes": 244075,
+      "sha256": "a9a62da73a85fd7e3c3f217da4eb39f7c6d338237f7adf1f27532cc056c68db1"
+    },
+    "assets/extracted/layer-4-alpha.png": {
+      "bytes": 56382,
+      "sha256": "a7ca1fada76ddeff21bb72fdcb3129540db61bb7c65502d38891d97cd050b701"
+    },
+    "assets/extracted/layer-2-alpha.png": {
+      "bytes": 48511,
+      "sha256": "544fdfe47baaf7934bcdf3890b6d036c81b4f977349c315d08c6f0f24d7cd50d"
+    },
+    "src/compare.ts": {
+      "bytes": 9668,
+      "sha256": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3"
+    },
+    "src/main.ts": {
+      "bytes": 9213,
+      "sha256": "8fd7c7a0f73c02e160cba547edf8de5c0f70eb6d375f2aefcbf39da8ff809b01"
+    },
+    "src/ui/background-asset.json": {
+      "bytes": 289,
+      "sha256": "cb7aa60ef126b17289d4a86a8174f8f21b26dd0e636f62c305111ff2261be7b3"
+    },
+    "src/ui/styles.css": {
+      "bytes": 7718,
+      "sha256": "808172a3f939084eb4244f49eaec32cb1247dc59e3ce875d46cfc4bfa261e738"
+    },
+    "src/ui/background.ts": {
+      "bytes": 5519,
+      "sha256": "45fcef1060057c5ee70cd12be8472d13353b43ea0bd0c58551185c32f85686b3"
+    },
+    "src/ui/interface.ts": {
+      "bytes": 9072,
+      "sha256": "de8854876c129ed2904c42d0e35fbbcbaf917d1fbd2c05ee929df57fee1c1a05"
+    },
+    "src/ui/compare.css": {
+      "bytes": 1412,
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    "src/studio/local-reflections.ts": {
+      "bytes": 5455,
+      "sha256": "173baa1af22c50becedd0e6de962e7fb4d775fef44651ed7c82f44be84b49f0d"
+    },
+    "src/studio/contact-shadow.ts": {
+      "bytes": 3108,
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    "src/studio/studio.ts": {
+      "bytes": 4261,
+      "sha256": "7758fa7f4d5c3a9932a882b7dbce9725589b691fdc785c8c460f6cd73f088fda"
+    },
+    "src/studio/lid-reflections.ts": {
+      "bytes": 4383,
+      "sha256": "0cbe18cbd5e513d4c1133a1e2e17e005d300739a8f29fe025fd5fd3f2dbd4bc3"
+    },
+    "src/materials/render-standard.ts": {
+      "bytes": 185,
+      "sha256": "338fe1972e96b7aa19375ac5d323330cedd422e2d3e6aa61eb27b3b96e86a18f"
+    },
+    "src/materials/materials.ts": {
+      "bytes": 2473,
+      "sha256": "83a39166bad36258f781807a79056dc2aa5d4a968ed4eaa333617ca7d98282ba"
+    },
+    "src/materials/porcelain.ts": {
+      "bytes": 1571,
+      "sha256": "1579b56f07953280209902df89c629e4d13c224f33a8cf6ff9e281e8a35bae3b"
+    },
+    "src/styles/style-manager.ts": {
+      "bytes": 7186,
+      "sha256": "3f717eeb410c4b1224b68bcb3890e0f3a11caad90fa5917302a124831e987c88"
+    },
+    "src/styles/load-texture.ts": {
+      "bytes": 1454,
+      "sha256": "23662391bbc40ffaee24e01a66421417ff23759349b6803c1abe918e78a03467"
+    },
+    "src/styles/web-textures.json": {
+      "bytes": 1267,
+      "sha256": "f07a35768b11dc12bf06e87aca80af59c2e351798988322f5052a7e40fff754e"
+    },
+    "src/styles/city-artwork.ts": {
+      "bytes": 7257,
+      "sha256": "308b25b1231c18bffd9f5ac03413fbe84adec7d3eb79d486f9727dc62e7ff63e"
+    },
+    "src/styles/fixed-layout.json": {
+      "bytes": 343,
+      "sha256": "9d95fb0f985eec46e80ecb134edea7e4764e699a558517f2fada07049621bbfa"
+    },
+    "src/geometry/surface.ts": {
+      "bytes": 2537,
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    "src/geometry/product.ts": {
+      "bytes": 7313,
+      "sha256": "5707474753742261058b2d1949061cb3b87b06afd03b5fb7909da30f8310f2a7"
+    },
+    "src/geometry/parameters.ts": {
+      "bytes": 865,
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    "src/geometry/ribbon.ts": {
+      "bytes": 3567,
+      "sha256": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7"
+    },
+    "src/geometry/handle.ts": {
+      "bytes": 5144,
+      "sha256": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e"
+    },
+    "src/interaction/calibration.ts": {
+      "bytes": 2246,
+      "sha256": "ac15652bd6540be9889cb8816ec12f530b24f5703e5653b4235d6be480b9eb49"
+    },
+    "src/interaction/views.ts": {
+      "bytes": 6992,
+      "sha256": "648975198e69307a1ff179fb49d1e2f511c103bb17c670ccf2d0e190653a3b14"
+    },
+    "src/interaction/reference-views.ts": {
+      "bytes": 2261,
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    }
+  },
+  "changes": {
+    "index.html": {
+      "bytes": 360,
+      "sha256": "d4d36635af1548a9e2e3267e00be8f38499bfb05424171f663682f27b184db8e",
+      "status": "modified"
+    },
+    "package-lock.json": {
+      "bytes": 63914,
+      "sha256": "a9fc939585cf6e1504bd668bff1a3ec2d57031569e8aecd8144b1de7e8ea7a17",
+      "status": "modified"
+    },
+    "package.json": {
+      "bytes": 1241,
+      "sha256": "a6ca37ccfdbc5a4cd9926d821430d000782f0bc2130fcff712c1a6e02ed93000",
+      "status": "modified"
+    },
+    "vite.config.ts": {
+      "bytes": 199,
+      "sha256": "9280e0d5aa5c14405a34aef99da64c85b4b3f79ed2801e5a0778ec5f5e9e7bac",
+      "status": "modified"
+    },
+    "tools/web-textures.mjs": {
+      "bytes": 2764,
+      "sha256": "acd479f1e7e61d40f639169574e6803b5f3a4ef72da7c2c2a98d7461a0178114",
+      "status": "modified"
+    },
+    "tools/geometry.test.ts": {
+      "bytes": 9327,
+      "sha256": "a9c996bbe8acd91b12f592caef6e2eceb4979ec27d9120a0ba35181ec4088157",
+      "status": "modified"
+    },
+    "tools/china-qa.mjs": {
+      "bytes": 13423,
+      "sha256": "0591ddfea8e5d982319c4b4f465b57c5894e95aa4e81fc1bcd396d94478fe21d",
+      "status": "modified"
+    },
+    "tools/extract-original-floral.py": {
+      "bytes": 3356,
+      "sha256": "2abbce93dff739ef75be09e91aadfdc414ddaad6df50859e23a5b3e6db3c418a",
+      "status": "added"
+    },
+    "tools/derive-original-fixed.mjs": {
+      "bytes": 5879,
+      "sha256": "896a2da35b92b5535e34a402debaaedf118b07b31db51f70806799574a8585e1",
+      "status": "added"
+    },
+    "tools/calibrate-v3.ts": {
+      "bytes": 3122,
+      "sha256": "f26139a5a900a4e5b68cac820f24776afb7827cf8407bd4911b032bd5ac9163b",
+      "status": "added"
+    },
+    "tools/background-qa-v3.mjs": {
+      "bytes": 10091,
+      "sha256": "2571ef5553cd0d3a83964eaf68e3861fe1f3b2a3388f000d0d7153c59bd9cdc8",
+      "status": "added"
+    },
+    "evidence/browser-qa-failure.json": {
+      "bytes": 2309,
+      "sha256": "21af9924eb5dbdcb8fbdb4a2eb866e0d06fdb4629d5dd68178bb80b0c85a6af4",
+      "status": "modified"
+    },
+    "evidence/web-textures.json": {
+      "bytes": 7790,
+      "sha256": "96574d4d80e344883c943c9dea86d2f26b2dea2960bc932aef31728bf99bfa92",
+      "status": "modified"
+    },
+    "evidence/source-floral-v3.json": {
+      "bytes": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "status": "added"
+    },
+    "evidence/camera-calibration-v3.json": {
+      "bytes": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "status": "added"
+    },
+    "docs/changes/20261013-v3/baseline-files.json": {
+      "bytes": 177311,
+      "sha256": "1b89074409e027833568c4feb6ede949ff667382121ccfea983bf84efd0c4ab3",
+      "status": "added"
+    },
+    "docs/changes/20261013-v3/sources.json": {
+      "bytes": 1151,
+      "sha256": "fb0b770a695a35040fa21451eacf6067bdcd4d3a1fa9d4868d5c77aa3c396379",
+      "status": "added"
+    },
+    "docs/changes/20261013-v3/plan.md": {
+      "bytes": 6534,
+      "sha256": "20f031c767edc4a5410a624fad99cf1df559bcace6e6a8cf77645e05b972a7a0",
+      "status": "added"
+    },
+    "docs/changes/20261013-v3/request.md": {
+      "bytes": 7054,
+      "sha256": "bf74ecebf9b67943f1e2317434e84f8cf8e1766c79b080938215b0f0c2394dae",
+      "status": "added"
+    },
+    "public/textures/fixed-body-baseColor-d4877edad4744523.webp": {
+      "bytes": 398446,
+      "sha256": "d4877edad4744523c384df1cc76058b8cc1473fa0550499501b7fca0a35a9bbf",
+      "status": "added"
+    },
+    "public/textures/fixed-body-normal-ee5545c4699e0488.webp": {
+      "bytes": 618362,
+      "sha256": "ee5545c4699e04889846e9bc46954b29e1b2006066bb7569bea3bde0bf9073e9",
+      "status": "added"
+    },
+    "public/textures/fixed-body-roughness-abc7641a2db17569.webp": {
+      "bytes": 78854,
+      "sha256": "abc7641a2db17569e5df44a4046f58fda236c67082818eb91dfe293a9ea6fa67",
+      "status": "added"
+    },
+    "public/textures/fixed-body-metalness-706b3c9f5cad0472.webp": {
+      "bytes": 114218,
+      "sha256": "706b3c9f5cad04723747c95ec8bb8623238e513f11bdfa57d5395365f67eb01d",
+      "status": "added"
+    },
+    "public/textures/fixed-handle-baseColor-ebe308cf4629d743.webp": {
+      "bytes": 117626,
+      "sha256": "ebe308cf4629d7439195aeed9ea45ab494da1fc7b6d865ce1c861e4a1574b8e0",
+      "status": "added"
+    },
+    "public/textures/fixed-handle-normal-22fdb336573d9360.webp": {
+      "bytes": 180894,
+      "sha256": "22fdb336573d936029a7871e4c353393a0f5d2ba92a2a4710b95c67abf391cb4",
+      "status": "added"
+    },
+    "public/textures/fixed-handle-roughness-91d94d19539575b9.webp": {
+      "bytes": 23978,
+      "sha256": "91d94d19539575b950eff69becb23550f7e48ccac780437a3bf8471483a45500",
+      "status": "added"
+    },
+    "public/textures/fixed-handle-metalness-16b092c9c80c4945.webp": {
+      "bytes": 36010,
+      "sha256": "16b092c9c80c4945603b868f8068c86b8ddb53deabdd8bcda8adde2c1c2a22f8",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-baseColor-8e57fee22596c597.webp": {
+      "bytes": 695878,
+      "sha256": "8e57fee22596c597544efbea4017fe25aaa972b66033c530111ddd657be71b14",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-normal-3f332fba1f6086d9.webp": {
+      "bytes": 1179010,
+      "sha256": "3f332fba1f6086d9f30982ac562278f64a4eb2dc5c97934646b783feff508607",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-roughness-bf02e17b05f008b8.webp": {
+      "bytes": 150806,
+      "sha256": "bf02e17b05f008b82a463f0d5aadf0c1c493a03efc36c2facb3de6e6666891db",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-metalness-df1e211bfca52890.webp": {
+      "bytes": 235500,
+      "sha256": "df1e211bfca5289070333734bb2a27ec0e8ed00183b95a68a93e7c4659e0117d",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp": {
+      "bytes": 616610,
+      "sha256": "f6e719b2bc268bf7adad04be05e98447a4b3197c994693adb5fc6186a720f6d1",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp": {
+      "bytes": 1029662,
+      "sha256": "263afcfc74cfeaf66dc354e4b211eee0b6075711ce164c4aad8fd26d30ecd231",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp": {
+      "bytes": 128684,
+      "sha256": "9a6657df8e5caa9ddb8ffff6c9109aafc76dfce3e965462c96dae52b46531c7c",
+      "status": "added"
+    },
+    "public/textures/fixed-saucer-metalness-2058a91b9c888893.webp": {
+      "bytes": 199804,
+      "sha256": "2058a91b9c888893d0dba29aa5906e0006a555863a36b92f6da727d380cc70c2",
+      "status": "added"
+    },
+    "public/backgrounds/soft-light-v3-d06c52a8f2003f50.webp": {
+      "bytes": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "status": "added"
+    },
+    "public/fixed/handle-metalness.png": {
+      "bytes": 73953,
+      "sha256": "108b0d7dbb7b295e15b64cdb6660f3f18832bcbd5e50d0c359b70a4269ec9093",
+      "status": "modified"
+    },
+    "public/fixed/saucer-metalness.png": {
+      "bytes": 424725,
+      "sha256": "c4f40dbbbd7d1fbab3acfb96b3035b9f64bf26f3b54aab51b71dfe2fd6971419",
+      "status": "modified"
+    },
+    "public/fixed/body-metalness.png": {
+      "bytes": 230451,
+      "sha256": "9b50384fbbe162f92080221aeb6c4c5241bce71e1b4c0f5b5e55261dc3ce8208",
+      "status": "modified"
+    },
+    "public/fixed/handle-height.png": {
+      "bytes": 128733,
+      "sha256": "af98f2f84d439f58be95b0156aac5eb472a50f84c5f8d1c0f7630c5870af366e",
+      "status": "modified"
+    },
+    "public/fixed/handle-normal.png": {
+      "bytes": 255517,
+      "sha256": "320b3a8dd077e7d27dda2f44183318bf951f11a0556628dd7929344f3fe56d3e",
+      "status": "modified"
+    },
+    "public/fixed/style.json": {
+      "bytes": 835,
+      "sha256": "3a205e2793ee8ff4a24a92a995455b45d6ddfc6ef780957118b1a36b289795eb",
+      "status": "modified"
+    },
+    "public/fixed/body-height.png": {
+      "bytes": 433494,
+      "sha256": "ee3fbcab4d71a114369424d5909e6b3c48ad0d768bd4ff656eceac055c4111ba",
+      "status": "modified"
+    },
+    "public/fixed/body-normal.png": {
+      "bytes": 874353,
+      "sha256": "fbd6d2968e0a629dc1b672f16311c19dc7cf90cdc3252fbb9b50d4924b91c31a",
+      "status": "modified"
+    },
+    "public/fixed/body-baseColor.png": {
+      "bytes": 1674330,
+      "sha256": "dfbef00ca5336207466bf8d6d1522bbd1921cfa274996cf94a2fc212aa93300d",
+      "status": "modified"
+    },
+    "public/fixed/body-roughness.png": {
+      "bytes": 133372,
+      "sha256": "10b91c29380e11776c8fe9bc67654a273fbae3f4938f8d8b422020f885a57b20",
+      "status": "modified"
+    },
+    "public/fixed/saucer-baseColor.png": {
+      "bytes": 3403934,
+      "sha256": "fd6f74f3af88aa703e92815dbe6bf507fe399df250292750d01b9816b675b25f",
+      "status": "modified"
+    },
+    "public/fixed/saucer-roughness.png": {
+      "bytes": 214896,
+      "sha256": "7ecba5978e1a8112b47127098686bd814ce49dfccd4efd39dfd7d34cba1aa1c9",
+      "status": "modified"
+    },
+    "public/fixed/handle-roughness.png": {
+      "bytes": 41264,
+      "sha256": "c03557d81e1102973188f88a829eae602021a7471fcb090248fec57d4ccaf528",
+      "status": "modified"
+    },
+    "public/fixed/handle-baseColor.png": {
+      "bytes": 488364,
+      "sha256": "49bea1266fd04ee138f1a4c78a143e32b80addffd1b65a57e676d5aff95bbc78",
+      "status": "modified"
+    },
+    "public/fixed/manifest.json": {
+      "bytes": 5191,
+      "sha256": "34f07ab3467d13c34d6305fb5dae508dc2a773f41e1650f7c1b3166b8c889478",
+      "status": "modified"
+    },
+    "public/fixed/saucer-height.png": {
+      "bytes": 686492,
+      "sha256": "b51d798064dd66bb80643e884d80b1fa5c12567c357f36b2e2f896a4005c3d61",
+      "status": "modified"
+    },
+    "public/fixed/saucer-normal.png": {
+      "bytes": 1401254,
+      "sha256": "035c481ab404457c43dc385b103d849aba9304ba724d6348d534ead78e9fcc67",
+      "status": "modified"
+    },
+    "public/review/v3/before-left.jpg": {
+      "bytes": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "status": "added"
+    },
+    "public/review/v3/before-right.jpg": {
+      "bytes": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "status": "added"
+    },
+    "public/review/v3/v3-left.jpg": {
+      "bytes": 117038,
+      "sha256": "e5048ac3c8ea9041a6bb0f65ed02f113b4beadfeeb3de4bf48b249723a45a825",
+      "status": "added"
+    },
+    "public/review/v3/v3-right.jpg": {
+      "bytes": 90282,
+      "sha256": "544fd0291498153d70ecabf730c8cdf357d29c8621fed64f613b27b13a3df144",
+      "status": "added"
+    },
+    "assets/source/floral-export.psd": {
+      "bytes": 25627383,
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37",
+      "status": "added"
+    },
+    "assets/source/mobile-background-v3.png": {
+      "bytes": 612219,
+      "sha256": "35332ace2cc2022434ea893928ae13bbd81e005c258aa3c047b15bb854e6f685",
+      "status": "added"
+    },
+    "assets/source/reference-v3-left.jpg": {
+      "bytes": 9180166,
+      "sha256": "dbfaea7bb75fa9cf371e82d5a5875d2aa5cd24078f4955c6649da1314e1f81b9",
+      "status": "added"
+    },
+    "assets/source/reference-v3-right.jpg": {
+      "bytes": 9332193,
+      "sha256": "5a6c3822284faf4731018aa97225906d62f7a38efbb4a6bf8260b416e0062196",
+      "status": "added"
+    },
+    "assets/source/before-mobile.png": {
+      "bytes": 785221,
+      "sha256": "d40b461bf8de94817bc692529bc2bcaef4ec0f0e8ce2c95c77829355f3c5603e",
+      "status": "added"
+    },
+    "assets/masters/floral-source-v3-srgb.png": {
+      "bytes": 14592407,
+      "sha256": "7e735b62eeed97228a91736c4a0d524509bc6d717b336a56a956a384d98d0240",
+      "status": "added"
+    },
+    "assets/masters/v3/body.png": {
+      "bytes": 1452934,
+      "sha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+      "status": "added"
+    },
+    "assets/masters/v3/handle.png": {
+      "bytes": 414335,
+      "sha256": "d57c227878e2b1bb95e22ea556ab1351aee3a140b6e12ad5c4653ce136d017ad",
+      "status": "added"
+    },
+    "assets/masters/v3/saucer.png": {
+      "bytes": 2497583,
+      "sha256": "f738151b2fd6049f834dd104de75b7ce8de1acbccc658c30c9f6364c489557ee",
+      "status": "added"
+    },
+    "src/main.ts": {
+      "bytes": 9213,
+      "sha256": "8fd7c7a0f73c02e160cba547edf8de5c0f70eb6d375f2aefcbf39da8ff809b01",
+      "status": "modified"
+    },
+    "src/ui/background-asset.json": {
+      "bytes": 289,
+      "sha256": "cb7aa60ef126b17289d4a86a8174f8f21b26dd0e636f62c305111ff2261be7b3",
+      "status": "modified"
+    },
+    "src/ui/background.ts": {
+      "bytes": 5519,
+      "sha256": "45fcef1060057c5ee70cd12be8472d13353b43ea0bd0c58551185c32f85686b3",
+      "status": "modified"
+    },
+    "src/ui/interface.ts": {
+      "bytes": 9072,
+      "sha256": "de8854876c129ed2904c42d0e35fbbcbaf917d1fbd2c05ee929df57fee1c1a05",
+      "status": "modified"
+    },
+    "src/studio/local-reflections.ts": {
+      "bytes": 5455,
+      "sha256": "173baa1af22c50becedd0e6de962e7fb4d775fef44651ed7c82f44be84b49f0d",
+      "status": "modified"
+    },
+    "src/studio/studio.ts": {
+      "bytes": 4261,
+      "sha256": "7758fa7f4d5c3a9932a882b7dbce9725589b691fdc785c8c460f6cd73f088fda",
+      "status": "modified"
+    },
+    "src/studio/lid-reflections.ts": {
+      "bytes": 4383,
+      "sha256": "0cbe18cbd5e513d4c1133a1e2e17e005d300739a8f29fe025fd5fd3f2dbd4bc3",
+      "status": "added"
+    },
+    "src/materials/materials.ts": {
+      "bytes": 2473,
+      "sha256": "83a39166bad36258f781807a79056dc2aa5d4a968ed4eaa333617ca7d98282ba",
+      "status": "modified"
+    },
+    "src/materials/porcelain.ts": {
+      "bytes": 1571,
+      "sha256": "1579b56f07953280209902df89c629e4d13c224f33a8cf6ff9e281e8a35bae3b",
+      "status": "added"
+    },
+    "src/styles/style-manager.ts": {
+      "bytes": 7186,
+      "sha256": "3f717eeb410c4b1224b68bcb3890e0f3a11caad90fa5917302a124831e987c88",
+      "status": "modified"
+    },
+    "src/styles/web-textures.json": {
+      "bytes": 1267,
+      "sha256": "f07a35768b11dc12bf06e87aca80af59c2e351798988322f5052a7e40fff754e",
+      "status": "modified"
+    },
+    "src/styles/city-artwork.ts": {
+      "bytes": 7257,
+      "sha256": "308b25b1231c18bffd9f5ac03413fbe84adec7d3eb79d486f9727dc62e7ff63e",
+      "status": "modified"
+    },
+    "src/styles/fixed-layout.json": {
+      "bytes": 343,
+      "sha256": "9d95fb0f985eec46e80ecb134edea7e4764e699a558517f2fada07049621bbfa",
+      "status": "modified"
+    },
+    "src/geometry/product.ts": {
+      "bytes": 7313,
+      "sha256": "5707474753742261058b2d1949061cb3b87b06afd03b5fb7909da30f8310f2a7",
+      "status": "modified"
+    },
+    "src/interaction/calibration.ts": {
+      "bytes": 2246,
+      "sha256": "ac15652bd6540be9889cb8816ec12f530b24f5703e5653b4235d6be480b9eb49",
+      "status": "modified"
+    },
+    "src/interaction/views.ts": {
+      "bytes": 6992,
+      "sha256": "648975198e69307a1ff179fb49d1e2f511c103bb17c670ccf2d0e190653a3b14",
+      "status": "modified"
+    }
+  },
+  "missingSinceBaseline": [
+    "._.gitignore",
+    "._ARTWORK.md",
+    "._README.md",
+    "._assets",
+    "._compare.html",
+    "._docs",
+    "._evidence",
+    "._index.html",
+    "._netlify.toml",
+    "._package-lock.json",
+    "._package.json",
+    "._public",
+    "._src",
+    "._tools",
+    "._tsconfig.json",
+    "._vite.config.ts",
+    "assets/._drafts",
+    "assets/._extracted",
+    "assets/._fixed-band-v2-prompt.json",
+    "assets/._fixed-prompts.json",
+    "assets/._fixed-v3-prompts.json",
+    "assets/._fixed-v4-crop-prompts.json",
+    "assets/._masters",
+    "assets/._prompts.json",
+    "assets/._reference-crops",
+    "assets/._source",
+    "assets/._surface-metrics.json",
+    "assets/._variant-prompts-dense-v3.json",
+    "assets/._variant-prompts.json",
+    "assets/drafts/._sparse-v1-prompts.json",
+    "assets/extracted/._layer-2-alpha.png",
+    "assets/extracted/._layer-3-alpha.png",
+    "assets/extracted/._layer-4-alpha.png",
+    "assets/extracted/._layer-5-alpha.png",
+    "assets/extracted/._layer-6-alpha.png",
+    "assets/extracted/._layer-8-alpha.png",
+    "assets/extracted/._layout.json",
+    "assets/masters/._band-generated.png",
+    "assets/masters/._body-generated.png",
+    "assets/masters/._china-fixed-band-v1.png",
+    "assets/masters/._china-fixed-band-v3.png",
+    "assets/masters/._china-fixed-band-v4.png",
+    "assets/masters/._china-fixed-band.png",
+    "assets/masters/._china-fixed-body-v3.png",
+    "assets/masters/._china-fixed-body-v4.png",
+    "assets/masters/._china-fixed-body.png",
+    "assets/masters/._lotus-butterfly",
+    "assets/masters/._peony-magnolia",
+    "assets/masters/._versions",
+    "assets/masters/lotus-butterfly/._band-dense-v3.png",
+    "assets/masters/lotus-butterfly/._band-generated.png",
+    "assets/masters/lotus-butterfly/._body-dense-v3.png",
+    "assets/masters/lotus-butterfly/._body-generated.png",
+    "assets/masters/peony-magnolia/._band-dense-v3.png",
+    "assets/masters/peony-magnolia/._band-generated.png",
+    "assets/masters/peony-magnolia/._body-dense-v3.png",
+    "assets/masters/peony-magnolia/._body-generated.png",
+    "assets/masters/versions/._china-fixed-band.png",
+    "assets/masters/versions/._china-fixed-body.png",
+    "assets/masters/versions/._v3",
+    "assets/masters/versions/v3/._china-fixed-band-v3.png",
+    "assets/masters/versions/v3/._china-fixed-body-v3.png",
+    "assets/reference-crops/._crops.json",
+    "assets/reference-crops/._handle-side-vertical-band.png",
+    "assets/reference-crops/._left-saucer-bird-flower.png",
+    "assets/reference-crops/._right-saucer-flower-bird-butterfly.png",
+    "assets/source/._apac-reference.pdf",
+    "assets/source/._china-lines.psd",
+    "assets/source/._china-reference.jpg",
+    "assets/source/._mobile-background-user.jpg",
+    "docs/._changes",
+    "docs/changes/._20261011-china-deployment",
+    "docs/changes/._20261011-china-relief",
+    "docs/changes/._20261011-relief-separation",
+    "docs/changes/._20261012-floral-relief-calibration",
+    "docs/changes/._20261012-load-pan-floral",
+    "docs/changes/._20261013-fixed-layout",
+    "docs/changes/._20261013-mobile-background",
+    "docs/changes/20261011-china-deployment/._before",
+    "docs/changes/20261011-china-deployment/._completion.md",
+    "docs/changes/20261011-china-deployment/._delivered-files.json",
+    "docs/changes/20261011-china-deployment/._plan.md",
+    "docs/changes/20261011-china-deployment/._request.md",
+    "docs/changes/20261011-china-deployment/before/._src",
+    "docs/changes/20261011-china-deployment/before/._tools",
+    "docs/changes/20261011-china-deployment/before/src/._main.ts",
+    "docs/changes/20261011-china-deployment/before/src/._styles",
+    "docs/changes/20261011-china-deployment/before/src/._ui",
+    "docs/changes/20261011-china-deployment/before/src/styles/._city-artwork.ts",
+    "docs/changes/20261011-china-deployment/before/src/styles/._style-manager.ts",
+    "docs/changes/20261011-china-deployment/before/tools/._china-qa.mjs",
+    "docs/changes/20261011-china-relief/._changed-files.json",
+    "docs/changes/20261011-china-relief/._completion.md",
+    "docs/changes/20261011-china-relief/._plan.md",
+    "docs/changes/20261011-china-relief/._request.md",
+    "docs/changes/20261011-relief-separation/._before",
+    "docs/changes/20261011-relief-separation/._completion.md",
+    "docs/changes/20261011-relief-separation/._delivered-files.json",
+    "docs/changes/20261011-relief-separation/._plan.md",
+    "docs/changes/20261011-relief-separation/._protected-before.json",
+    "docs/changes/20261011-relief-separation/._request.md",
+    "docs/changes/20261011-relief-separation/._user-reference",
+    "docs/changes/20261011-relief-separation/before/._README.md",
+    "docs/changes/20261011-relief-separation/before/._evidence",
+    "docs/changes/20261011-relief-separation/before/._public",
+    "docs/changes/20261011-relief-separation/before/._src",
+    "docs/changes/20261011-relief-separation/before/._tools",
+    "docs/changes/20261011-relief-separation/before/evidence/._psd-audit.json",
+    "docs/changes/20261011-relief-separation/before/public/._china",
+    "docs/changes/20261011-relief-separation/before/public/._evidence.html",
+    "docs/changes/20261011-relief-separation/before/public/china/._city.json",
+    "docs/changes/20261011-relief-separation/before/public/china/._height.png",
+    "docs/changes/20261011-relief-separation/before/public/china/._normal.png",
+    "docs/changes/20261011-relief-separation/before/public/china/._roughness.png",
+    "docs/changes/20261011-relief-separation/before/src/._main.ts",
+    "docs/changes/20261011-relief-separation/before/src/._studio",
+    "docs/changes/20261011-relief-separation/before/src/._styles",
+    "docs/changes/20261011-relief-separation/before/src/._ui",
+    "docs/changes/20261011-relief-separation/before/src/studio/._studio.ts",
+    "docs/changes/20261011-relief-separation/before/src/styles/._city-artwork.ts",
+    "docs/changes/20261011-relief-separation/before/src/ui/._interface.ts",
+    "docs/changes/20261011-relief-separation/before/tools/._china-assets.py",
+    "docs/changes/20261011-relief-separation/before/tools/._china-qa.mjs",
+    "docs/changes/20261011-relief-separation/user-reference/._handle-reflection.png",
+    "docs/changes/20261011-relief-separation/user-reference/._preferred-earlier.png",
+    "docs/changes/20261012-floral-relief-calibration/._before",
+    "docs/changes/20261012-floral-relief-calibration/._completion.md",
+    "docs/changes/20261012-floral-relief-calibration/._delivered-files.json",
+    "docs/changes/20261012-floral-relief-calibration/._intermediate-v5",
+    "docs/changes/20261012-floral-relief-calibration/._plan.md",
+    "docs/changes/20261012-floral-relief-calibration/._request.md",
+    "docs/changes/20261012-floral-relief-calibration/before/._buildings-comparison.jpg",
+    "docs/changes/20261012-floral-relief-calibration/before/._buildings-model.png",
+    "docs/changes/20261012-floral-relief-calibration/before/._buildings-overlay.png",
+    "docs/changes/20261012-floral-relief-calibration/before/._evidence",
+    "docs/changes/20261012-floral-relief-calibration/before/._fixed",
+    "docs/changes/20261012-floral-relief-calibration/before/._label-comparison.jpg",
+    "docs/changes/20261012-floral-relief-calibration/before/._label-model.png",
+    "docs/changes/20261012-floral-relief-calibration/before/._label-overlay.png",
+    "docs/changes/20261012-floral-relief-calibration/before/._public",
+    "docs/changes/20261012-floral-relief-calibration/before/._src",
+    "docs/changes/20261012-floral-relief-calibration/before/._tools",
+    "docs/changes/20261012-floral-relief-calibration/before/evidence/._deployment",
+    "docs/changes/20261012-floral-relief-calibration/before/evidence/deployment/._netlify-deploy.json",
+    "docs/changes/20261012-floral-relief-calibration/before/evidence/deployment/._online-qa.json",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._body-baseColor.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._body-height.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._body-metalness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._body-normal.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._body-roughness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._handle-baseColor.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._handle-height.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._handle-metalness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._handle-normal.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._handle-roughness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._manifest.json",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._saucer-baseColor.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._saucer-height.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._saucer-metalness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._saucer-normal.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._saucer-roughness.png",
+    "docs/changes/20261012-floral-relief-calibration/before/fixed/._style.json",
+    "docs/changes/20261012-floral-relief-calibration/before/public/._evidence.html",
+    "docs/changes/20261012-floral-relief-calibration/before/src/._main.ts",
+    "docs/changes/20261012-floral-relief-calibration/before/src/._materials",
+    "docs/changes/20261012-floral-relief-calibration/before/src/._styles",
+    "docs/changes/20261012-floral-relief-calibration/before/src/materials/._materials.ts",
+    "docs/changes/20261012-floral-relief-calibration/before/src/materials/._render-standard.ts",
+    "docs/changes/20261012-floral-relief-calibration/before/src/styles/._web-textures.json",
+    "docs/changes/20261012-floral-relief-calibration/before/tools/._derive-fixed.mjs",
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/._comparison-flowers.jpg",
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/._netlify-deploy.json",
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/._on-gray.jpg",
+    "docs/changes/20261012-floral-relief-calibration/intermediate-v5/._render-standard.ts",
+    "docs/changes/20261012-load-pan-floral/._before",
+    "docs/changes/20261012-load-pan-floral/._completion.md",
+    "docs/changes/20261012-load-pan-floral/._delivered-files.json",
+    "docs/changes/20261012-load-pan-floral/._intermediate-v3",
+    "docs/changes/20261012-load-pan-floral/._plan.md",
+    "docs/changes/20261012-load-pan-floral/._request.md",
+    "docs/changes/20261012-load-pan-floral/before/._deployment",
+    "docs/changes/20261012-load-pan-floral/before/._derive-fixed.mjs",
+    "docs/changes/20261012-load-pan-floral/before/._fixed",
+    "docs/changes/20261012-load-pan-floral/before/._style-manager.ts",
+    "docs/changes/20261012-load-pan-floral/before/._views.ts",
+    "docs/changes/20261012-load-pan-floral/before/._web-textures.mjs",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._badge-status.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._deploy-status.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._first-deploy.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._first-release-manifest.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-desktop.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-detail.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-evidence.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-index.html",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-mobile.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._live-text-face.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._netlify-deploy.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._old-site-after.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._old-site-before.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._old-site-final.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._online-model-stage.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._online-qa-failure.png",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._online-qa-initial-timeout.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._online-qa.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._protected-files.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._release-manifest.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._remote-files-raw.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._remote-files.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._site-after.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._site-created.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._site-final.json",
+    "docs/changes/20261012-load-pan-floral/before/deployment/._texture-retry-qa.json",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._body-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._body-height.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._body-metalness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._body-normal.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._body-roughness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._handle-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._handle-height.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._handle-metalness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._handle-normal.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._handle-roughness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._manifest.json",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._saucer-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._saucer-height.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._saucer-metalness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._saucer-normal.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._saucer-roughness.png",
+    "docs/changes/20261012-load-pan-floral/before/fixed/._style.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/._fixed",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/._netlify-deploy.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/._online-qa.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/._quality",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/._release-manifest.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._body-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._body-height.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._body-metalness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._body-normal.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._body-roughness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._handle-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._handle-height.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._handle-metalness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._handle-normal.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._handle-roughness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._manifest.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._saucer-baseColor.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._saucer-height.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._saucer-metalness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._saucer-normal.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._saucer-roughness.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/fixed/._style.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._before-load.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._comparison-detail.jpg",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._comparison-front.jpg",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._comparison-handle.jpg",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._comparison-hero.jpg",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._mobile-report.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._old-detail.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._old-front.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._old-handle.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._old-hero.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._preservation.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._quality.json",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._source-detail.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._source-front.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._source-handle.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._source-hero.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._web-detail.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._web-front.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._web-handle.png",
+    "docs/changes/20261012-load-pan-floral/intermediate-v3/quality/._web-hero.png",
+    "docs/changes/20261013-fixed-layout/._before",
+    "docs/changes/20261013-fixed-layout/._before-captures",
+    "docs/changes/20261013-fixed-layout/._browser-qa.json",
+    "docs/changes/20261013-fixed-layout/._changes.patch",
+    "docs/changes/20261013-fixed-layout/._completion.md",
+    "docs/changes/20261013-fixed-layout/._delivery-verification.json",
+    "docs/changes/20261013-fixed-layout/._experiments",
+    "docs/changes/20261013-fixed-layout/._geometry-before.json",
+    "docs/changes/20261013-fixed-layout/._netlify-deploy.json",
+    "docs/changes/20261013-fixed-layout/._online-qa.json",
+    "docs/changes/20261013-fixed-layout/._plan.md",
+    "docs/changes/20261013-fixed-layout/._previous-online-fixed-manifest.json",
+    "docs/changes/20261013-fixed-layout/._protected.json",
+    "docs/changes/20261013-fixed-layout/._release-manifest.json",
+    "docs/changes/20261013-fixed-layout/._remote-files.json",
+    "docs/changes/20261013-fixed-layout/._request.md",
+    "docs/changes/20261013-fixed-layout/._sites-after.json",
+    "docs/changes/20261013-fixed-layout/._sites-before.json",
+    "docs/changes/20261013-fixed-layout/._verification.json",
+    "docs/changes/20261013-fixed-layout/before-captures/._buildings.png",
+    "docs/changes/20261013-fixed-layout/before-captures/._label.png",
+    "docs/changes/20261013-fixed-layout/before/._evidence",
+    "docs/changes/20261013-fixed-layout/before/._public",
+    "docs/changes/20261013-fixed-layout/before/._src",
+    "docs/changes/20261013-fixed-layout/before/._tools",
+    "docs/changes/20261013-fixed-layout/before/evidence/._camera-calibration.json",
+    "docs/changes/20261013-fixed-layout/before/evidence/._deployment",
+    "docs/changes/20261013-fixed-layout/before/evidence/deployment/._netlify-deploy.json",
+    "docs/changes/20261013-fixed-layout/before/evidence/deployment/._online-qa.json",
+    "docs/changes/20261013-fixed-layout/before/public/._evidence.html",
+    "docs/changes/20261013-fixed-layout/before/public/._fixed",
+    "docs/changes/20261013-fixed-layout/before/public/._review",
+    "docs/changes/20261013-fixed-layout/before/public/fixed/._manifest.json",
+    "docs/changes/20261013-fixed-layout/before/public/fixed/._style.json",
+    "docs/changes/20261013-fixed-layout/before/public/review/._buildings-comparison.jpg",
+    "docs/changes/20261013-fixed-layout/before/public/review/._buildings-model.png",
+    "docs/changes/20261013-fixed-layout/before/public/review/._buildings-overlay.png",
+    "docs/changes/20261013-fixed-layout/before/public/review/._label-comparison.jpg",
+    "docs/changes/20261013-fixed-layout/before/public/review/._label-model.png",
+    "docs/changes/20261013-fixed-layout/before/public/review/._label-overlay.png",
+    "docs/changes/20261013-fixed-layout/before/src/._geometry",
+    "docs/changes/20261013-fixed-layout/before/src/._main.ts",
+    "docs/changes/20261013-fixed-layout/before/src/._styles",
+    "docs/changes/20261013-fixed-layout/before/src/geometry/._product.ts",
+    "docs/changes/20261013-fixed-layout/before/src/styles/._style-manager.ts",
+    "docs/changes/20261013-fixed-layout/before/tools/._derive-fixed.mjs",
+    "docs/changes/20261013-fixed-layout/before/tools/._geometry.test.ts",
+    "docs/changes/20261013-fixed-layout/experiments/._README.md",
+    "docs/changes/20261013-fixed-layout/experiments/._layout-balanced-probe.mjs",
+    "docs/changes/20261013-fixed-layout/experiments/._layout-probe.mjs",
+    "docs/changes/20261013-mobile-background/._background-asset.json",
+    "docs/changes/20261013-mobile-background/._before",
+    "docs/changes/20261013-mobile-background/._browser-qa.json",
+    "docs/changes/20261013-mobile-background/._changes.patch",
+    "docs/changes/20261013-mobile-background/._completion.md",
+    "docs/changes/20261013-mobile-background/._delivery-verification.json",
+    "docs/changes/20261013-mobile-background/._local-background-qa.json",
+    "docs/changes/20261013-mobile-background/._netlify-deploy.json",
+    "docs/changes/20261013-mobile-background/._online-background-qa.json",
+    "docs/changes/20261013-mobile-background/._online-qa.json",
+    "docs/changes/20261013-mobile-background/._plan.md",
+    "docs/changes/20261013-mobile-background/._protected.json",
+    "docs/changes/20261013-mobile-background/._release-manifest.json",
+    "docs/changes/20261013-mobile-background/._remote-files.json",
+    "docs/changes/20261013-mobile-background/._request.md",
+    "docs/changes/20261013-mobile-background/._sites-after.json",
+    "docs/changes/20261013-mobile-background/._sites-before.json",
+    "docs/changes/20261013-mobile-background/before/._evidence",
+    "docs/changes/20261013-mobile-background/before/._evidence.html",
+    "docs/changes/20261013-mobile-background/before/._netlify.toml",
+    "docs/changes/20261013-mobile-background/before/._src",
+    "docs/changes/20261013-mobile-background/before/._tools",
+    "docs/changes/20261013-mobile-background/before/evidence/._deployment",
+    "docs/changes/20261013-mobile-background/before/evidence/deployment/._netlify-deploy.json",
+    "docs/changes/20261013-mobile-background/before/evidence/deployment/._online-qa.json",
+    "docs/changes/20261013-mobile-background/before/src/._main.ts",
+    "docs/changes/20261013-mobile-background/before/src/._studio",
+    "docs/changes/20261013-mobile-background/before/src/._ui",
+    "docs/changes/20261013-mobile-background/before/src/studio/._studio.ts",
+    "docs/changes/20261013-mobile-background/before/src/ui/._interface.ts",
+    "docs/changes/20261013-mobile-background/before/src/ui/._styles.css",
+    "docs/changes/20261013-mobile-background/before/tools/._china-online-qa.mjs",
+    "docs/changes/20261013-mobile-background/before/tools/._china-qa.mjs",
+    "docs/changes/20261013-mobile-background/before/tools/._prepare-china-release.mjs",
+    "evidence/._bottom-fix-detail.png",
+    "evidence/._bottom-fix-hero.png",
+    "evidence/._browser-qa-failure.json",
+    "evidence/._browser-qa.json",
+    "evidence/._calibrated-front.png",
+    "evidence/._calibrated-hero.png",
+    "evidence/._camera-calibration.json",
+    "evidence/._china-atlas-preview.png",
+    "evidence/._delivery-verification.json",
+    "evidence/._deployment",
+    "evidence/._first-detail.png",
+    "evidence/._first-front.png",
+    "evidence/._first-handle.png",
+    "evidence/._first-hero.png",
+    "evidence/._handle-reflection-qa.json",
+    "evidence/._load-pan-floral",
+    "evidence/._matte-detail.png",
+    "evidence/._matte-hero.png",
+    "evidence/._production-qa.json",
+    "evidence/._psd-audit.json",
+    "evidence/._relief-protected-verification.json",
+    "evidence/._source-integrity.json",
+    "evidence/._web-textures.json",
+    "evidence/deployment/._background",
+    "evidence/deployment/._badge-status.json",
+    "evidence/deployment/._cold-load-resources.json",
+    "evidence/deployment/._deploy-status.json",
+    "evidence/deployment/._first-deploy.json",
+    "evidence/deployment/._first-release-manifest.json",
+    "evidence/deployment/._live-desktop.png",
+    "evidence/deployment/._live-detail.png",
+    "evidence/deployment/._live-evidence.png",
+    "evidence/deployment/._live-index.html",
+    "evidence/deployment/._live-mobile.png",
+    "evidence/deployment/._live-text-face.png",
+    "evidence/deployment/._netlify-deploy.json",
+    "evidence/deployment/._old-site-after.json",
+    "evidence/deployment/._old-site-before.json",
+    "evidence/deployment/._old-site-final.json",
+    "evidence/deployment/._online-model-stage.json",
+    "evidence/deployment/._online-qa-failure.png",
+    "evidence/deployment/._online-qa-initial-timeout.json",
+    "evidence/deployment/._online-qa.json",
+    "evidence/deployment/._original-site-final.json",
+    "evidence/deployment/._protected-files.json",
+    "evidence/deployment/._release-manifest.json",
+    "evidence/deployment/._remote-files-raw.json",
+    "evidence/deployment/._remote-files.json",
+    "evidence/deployment/._site-after.json",
+    "evidence/deployment/._site-created.json",
+    "evidence/deployment/._site-final.json",
+    "evidence/deployment/._texture-retry-qa.json",
+    "evidence/deployment/background/._desktop-gray.png",
+    "evidence/deployment/background/._desktop-soft.png",
+    "evidence/deployment/background/._mobile-gray.png",
+    "evidence/deployment/background/._mobile-landscape.png",
+    "evidence/deployment/background/._mobile-panel.png",
+    "evidence/deployment/background/._mobile-soft.png",
+    "evidence/deployment/background/._small-phone.png",
+    "evidence/deployment/background/._verification.json",
+    "evidence/load-pan-floral/._before-load.json",
+    "evidence/load-pan-floral/._comparison-detail.jpg",
+    "evidence/load-pan-floral/._comparison-front.jpg",
+    "evidence/load-pan-floral/._comparison-handle.jpg",
+    "evidence/load-pan-floral/._comparison-hero.jpg",
+    "evidence/load-pan-floral/._mobile-report.png",
+    "evidence/load-pan-floral/._old-detail.png",
+    "evidence/load-pan-floral/._old-front.png",
+    "evidence/load-pan-floral/._old-handle.png",
+    "evidence/load-pan-floral/._old-hero.png",
+    "evidence/load-pan-floral/._preservation.json",
+    "evidence/load-pan-floral/._quality.json",
+    "evidence/load-pan-floral/._source-detail.png",
+    "evidence/load-pan-floral/._source-front.png",
+    "evidence/load-pan-floral/._source-handle.png",
+    "evidence/load-pan-floral/._source-hero.png",
+    "evidence/load-pan-floral/._web-detail.png",
+    "evidence/load-pan-floral/._web-front.png",
+    "evidence/load-pan-floral/._web-handle.png",
+    "evidence/load-pan-floral/._web-hero.png",
+    "public/._artwork",
+    "public/._backgrounds",
+    "public/._china",
+    "public/._evidence.html",
+    "public/._fixed",
+    "public/._marks",
+    "public/._reference",
+    "public/._references",
+    "public/._review",
+    "public/._texture-standards.html",
+    "public/._textures",
+    "public/._web",
+    "public/artwork/._body-baseColor.png",
+    "public/artwork/._body-height.png",
+    "public/artwork/._body-metalness.png",
+    "public/artwork/._body-normal.png",
+    "public/artwork/._body-roughness.png",
+    "public/artwork/._generation.json",
+    "public/artwork/._handle-baseColor.png",
+    "public/artwork/._handle-height.png",
+    "public/artwork/._handle-metalness.png",
+    "public/artwork/._handle-normal.png",
+    "public/artwork/._handle-roughness.png",
+    "public/artwork/._lotus-butterfly",
+    "public/artwork/._manifest.json",
+    "public/artwork/._masters",
+    "public/artwork/._peony-magnolia",
+    "public/artwork/._preview.jpg",
+    "public/artwork/._saucer-baseColor.png",
+    "public/artwork/._saucer-height.png",
+    "public/artwork/._saucer-metalness.png",
+    "public/artwork/._saucer-normal.png",
+    "public/artwork/._saucer-roughness.png",
+    "public/artwork/._style.json",
+    "public/artwork/lotus-butterfly/._body-baseColor.png",
+    "public/artwork/lotus-butterfly/._body-height.png",
+    "public/artwork/lotus-butterfly/._body-metalness.png",
+    "public/artwork/lotus-butterfly/._body-normal.png",
+    "public/artwork/lotus-butterfly/._body-roughness.png",
+    "public/artwork/lotus-butterfly/._generation.json",
+    "public/artwork/lotus-butterfly/._handle-baseColor.png",
+    "public/artwork/lotus-butterfly/._handle-height.png",
+    "public/artwork/lotus-butterfly/._handle-metalness.png",
+    "public/artwork/lotus-butterfly/._handle-normal.png",
+    "public/artwork/lotus-butterfly/._handle-roughness.png",
+    "public/artwork/lotus-butterfly/._manifest.json",
+    "public/artwork/lotus-butterfly/._masters",
+    "public/artwork/lotus-butterfly/._preview.jpg",
+    "public/artwork/lotus-butterfly/._saucer-baseColor.png",
+    "public/artwork/lotus-butterfly/._saucer-height.png",
+    "public/artwork/lotus-butterfly/._saucer-metalness.png",
+    "public/artwork/lotus-butterfly/._saucer-normal.png",
+    "public/artwork/lotus-butterfly/._saucer-roughness.png",
+    "public/artwork/lotus-butterfly/._style.json",
+    "public/artwork/lotus-butterfly/masters/._band.png",
+    "public/artwork/lotus-butterfly/masters/._body.png",
+    "public/artwork/masters/._band.png",
+    "public/artwork/masters/._body.png",
+    "public/artwork/peony-magnolia/._body-baseColor.png",
+    "public/artwork/peony-magnolia/._body-height.png",
+    "public/artwork/peony-magnolia/._body-metalness.png",
+    "public/artwork/peony-magnolia/._body-normal.png",
+    "public/artwork/peony-magnolia/._body-roughness.png",
+    "public/artwork/peony-magnolia/._generation.json",
+    "public/artwork/peony-magnolia/._handle-baseColor.png",
+    "public/artwork/peony-magnolia/._handle-height.png",
+    "public/artwork/peony-magnolia/._handle-metalness.png",
+    "public/artwork/peony-magnolia/._handle-normal.png",
+    "public/artwork/peony-magnolia/._handle-roughness.png",
+    "public/artwork/peony-magnolia/._manifest.json",
+    "public/artwork/peony-magnolia/._masters",
+    "public/artwork/peony-magnolia/._preview.jpg",
+    "public/artwork/peony-magnolia/._saucer-baseColor.png",
+    "public/artwork/peony-magnolia/._saucer-height.png",
+    "public/artwork/peony-magnolia/._saucer-metalness.png",
+    "public/artwork/peony-magnolia/._saucer-normal.png",
+    "public/artwork/peony-magnolia/._saucer-roughness.png",
+    "public/artwork/peony-magnolia/._style.json",
+    "public/artwork/peony-magnolia/masters/._band.png",
+    "public/artwork/peony-magnolia/masters/._body.png",
+    "public/backgrounds/._soft-light-d9af01e672e4.webp",
+    "public/china/._baseColor.png",
+    "public/china/._city.json",
+    "public/china/._cleanup-difference.png",
+    "public/china/._height.png",
+    "public/china/._label-roughness.png",
+    "public/china/._label.png",
+    "public/china/._line-finish.png",
+    "public/china/._lines-original.png",
+    "public/china/._lines.png",
+    "public/china/._metalness.png",
+    "public/china/._normal.png",
+    "public/china/._roughness.png",
+    "public/fixed/._body-baseColor.png",
+    "public/fixed/._body-height.png",
+    "public/fixed/._body-metalness.png",
+    "public/fixed/._body-normal.png",
+    "public/fixed/._body-roughness.png",
+    "public/fixed/._handle-baseColor.png",
+    "public/fixed/._handle-height.png",
+    "public/fixed/._handle-metalness.png",
+    "public/fixed/._handle-normal.png",
+    "public/fixed/._handle-roughness.png",
+    "public/fixed/._manifest.json",
+    "public/fixed/._saucer-baseColor.png",
+    "public/fixed/._saucer-height.png",
+    "public/fixed/._saucer-metalness.png",
+    "public/fixed/._saucer-normal.png",
+    "public/fixed/._saucer-roughness.png",
+    "public/fixed/._style.json",
+    "public/marks/._auratic-reference.png",
+    "public/marks/._auratic-reference.svg",
+    "public/reference/._buildings.jpg",
+    "public/reference/._label.jpg",
+    "public/references/._1220.jpg",
+    "public/references/._1221.jpg",
+    "public/references/._1230.jpg",
+    "public/references/._1236.jpg",
+    "public/references/._1238.jpg",
+    "public/review/._after-matte.jpg",
+    "public/review/._atlas.jpg",
+    "public/review/._background",
+    "public/review/._before-matte.jpg",
+    "public/review/._browser-qa.json",
+    "public/review/._buildings-comparison.jpg",
+    "public/review/._buildings-model.png",
+    "public/review/._buildings-overlay.png",
+    "public/review/._buildings-reference.jpg",
+    "public/review/._camera-calibration.json",
+    "public/review/._concave.jpg",
+    "public/review/._convex.jpg",
+    "public/review/._desktop.jpg",
+    "public/review/._detail.jpg",
+    "public/review/._evidence.json",
+    "public/review/._fixed-layout",
+    "public/review/._fixed-quarters.jpg",
+    "public/review/._flat.jpg",
+    "public/review/._floral-relief",
+    "public/review/._front.jpg",
+    "public/review/._handle.jpg",
+    "public/review/._height.png",
+    "public/review/._label-comparison.jpg",
+    "public/review/._label-model.png",
+    "public/review/._label-overlay.png",
+    "public/review/._label-reference.jpg",
+    "public/review/._label.png",
+    "public/review/._lines-original.png",
+    "public/review/._lines.png",
+    "public/review/._load-pan-floral",
+    "public/review/._load-pan-floral-v3",
+    "public/review/._metalness.png",
+    "public/review/._mobile.jpg",
+    "public/review/._normal.png",
+    "public/review/._psd-audit.json",
+    "public/review/._relief-separation",
+    "public/review/._stroke-only.jpg",
+    "public/review/background/._mobile-comparison.jpg",
+    "public/review/background/._mobile-panel.jpg",
+    "public/review/background/._verification.json",
+    "public/review/fixed-layout/._buildings-after.jpg",
+    "public/review/fixed-layout/._buildings-before.jpg",
+    "public/review/fixed-layout/._buildings-comparison.jpg",
+    "public/review/fixed-layout/._buildings-overlay.png",
+    "public/review/fixed-layout/._label-after.jpg",
+    "public/review/fixed-layout/._label-before.jpg",
+    "public/review/fixed-layout/._label-comparison.jpg",
+    "public/review/fixed-layout/._label-overlay.png",
+    "public/review/fixed-layout/._verification.json",
+    "public/review/floral-relief/._after-flowers.jpg",
+    "public/review/floral-relief/._after-grazing.jpg",
+    "public/review/floral-relief/._after-handle.jpg",
+    "public/review/floral-relief/._before-flowers.jpg",
+    "public/review/floral-relief/._before-grazing.jpg",
+    "public/review/floral-relief/._before-handle.jpg",
+    "public/review/floral-relief/._comparison-flowers.jpg",
+    "public/review/floral-relief/._comparison-grazing.jpg",
+    "public/review/floral-relief/._comparison-handle.jpg",
+    "public/review/floral-relief/._depth-comparison.jpg",
+    "public/review/floral-relief/._off-flowers.jpg",
+    "public/review/floral-relief/._off-gray.jpg",
+    "public/review/floral-relief/._on-flowers.jpg",
+    "public/review/floral-relief/._on-gray.jpg",
+    "public/review/floral-relief/._petal-before-after.jpg",
+    "public/review/floral-relief/._verification.json",
+    "public/review/load-pan-floral/._after.jpg",
+    "public/review/load-pan-floral/._before.jpg",
+    "public/review/load-pan-floral/._generated-band.jpg",
+    "public/review/load-pan-floral/._quality-handle.jpg",
+    "public/review/load-pan-floral/._quality.json",
+    "public/review/load-pan-floral/._reference-left.jpg",
+    "public/review/load-pan-floral/._reference-right.jpg",
+    "public/review/load-pan-floral/._web-textures.json",
+    "public/review/relief-separation/._after-detail.jpg",
+    "public/review/relief-separation/._after-hero.jpg",
+    "public/review/relief-separation/._before-detail.jpg",
+    "public/review/relief-separation/._before-hero.jpg",
+    "public/review/relief-separation/._comparison.jpg",
+    "public/review/relief-separation/._finish-only.jpg",
+    "public/review/relief-separation/._front.jpg",
+    "public/review/relief-separation/._handle-reflection-difference-x20.png",
+    "public/review/relief-separation/._handle-reflection-qa.json",
+    "public/review/relief-separation/._parameters.json",
+    "public/review/relief-separation/._preferred-earlier.jpg",
+    "public/review/relief-separation/._reference-temple.png",
+    "public/review/relief-separation/._reflection-on.jpg",
+    "public/review/relief-separation/._reflection-without-handle.jpg",
+    "public/textures/._china-baseColor-754558a83d8866b8.webp",
+    "public/textures/._china-metalness-7ac9525c8019fc98.webp",
+    "public/textures/._china-normal-f0662e241725d83b.webp",
+    "public/textures/._china-roughness-40e7b97659e5e028.webp",
+    "public/textures/._fixed-body-baseColor-5243d1a2d7d630bd.webp",
+    "public/textures/._fixed-body-baseColor-5e158283df42fdfb.webp",
+    "public/textures/._fixed-body-baseColor-e98c2541c46d5d45.webp",
+    "public/textures/._fixed-body-metalness-3783dc03ee4b6f0f.webp",
+    "public/textures/._fixed-body-metalness-803a65de90a8ccb7.webp",
+    "public/textures/._fixed-body-metalness-a001482ef1d4593f.webp",
+    "public/textures/._fixed-body-normal-4acd3855ec5cb28f.webp",
+    "public/textures/._fixed-body-normal-f5cc5efca416018a.webp",
+    "public/textures/._fixed-body-normal-f7e890415f2c3a5e.webp",
+    "public/textures/._fixed-body-normal-fda4a1df240f725b.webp",
+    "public/textures/._fixed-body-roughness-5b46c70ed3c66666.webp",
+    "public/textures/._fixed-body-roughness-dce16945e5890465.webp",
+    "public/textures/._fixed-body-roughness-e091bf730ddc6c66.webp",
+    "public/textures/._fixed-handle-baseColor-6b97a8da6655c7c3.webp",
+    "public/textures/._fixed-handle-baseColor-96585b6001cea8dd.webp",
+    "public/textures/._fixed-handle-baseColor-b1b9de1640855126.webp",
+    "public/textures/._fixed-handle-metalness-45b5b246853c1dd1.webp",
+    "public/textures/._fixed-handle-metalness-a4bf861a6450a5bf.webp",
+    "public/textures/._fixed-handle-metalness-c0aa4f772b0c55dc.webp",
+    "public/textures/._fixed-handle-normal-01d9c81fa1bf17d2.webp",
+    "public/textures/._fixed-handle-normal-310c32173827dd4d.webp",
+    "public/textures/._fixed-handle-normal-3ab8e8197e4d3659.webp",
+    "public/textures/._fixed-handle-normal-55d219b8a7fda662.webp",
+    "public/textures/._fixed-handle-roughness-24dff72ebf7a82c7.webp",
+    "public/textures/._fixed-handle-roughness-78b0af47384bf262.webp",
+    "public/textures/._fixed-handle-roughness-8dfc650458946f17.webp",
+    "public/textures/._fixed-saucer-baseColor-1d2be76630af811a.webp",
+    "public/textures/._fixed-saucer-baseColor-97e166df8783a4d3.webp",
+    "public/textures/._fixed-saucer-metalness-8d4224209d901321.webp",
+    "public/textures/._fixed-saucer-metalness-b48a365c8f1f85b7.webp",
+    "public/textures/._fixed-saucer-normal-1da429581963d6e6.webp",
+    "public/textures/._fixed-saucer-normal-5b2fee342903f195.webp",
+    "public/textures/._fixed-saucer-normal-f74ee54395467d94.webp",
+    "public/textures/._fixed-saucer-roughness-04fe9e5a2d883578.webp",
+    "public/textures/._fixed-saucer-roughness-ad642521fd3b902b.webp",
+    "public/web/._china",
+    "public/web/._fixed",
+    "public/web/china/._baseColor.webp",
+    "public/web/china/._metalness.webp",
+    "public/web/china/._normal.webp",
+    "public/web/china/._roughness.webp",
+    "public/web/fixed/._body-baseColor.webp",
+    "public/web/fixed/._body-metalness.webp",
+    "public/web/fixed/._body-normal.webp",
+    "public/web/fixed/._body-roughness.webp",
+    "public/web/fixed/._handle-baseColor.webp",
+    "public/web/fixed/._handle-metalness.webp",
+    "public/web/fixed/._handle-normal.webp",
+    "public/web/fixed/._handle-roughness.webp",
+    "public/web/fixed/._saucer-baseColor.webp",
+    "public/web/fixed/._saucer-metalness.webp",
+    "public/web/fixed/._saucer-normal.webp",
+    "public/web/fixed/._saucer-roughness.webp",
+    "src/._compare.ts",
+    "src/._geometry",
+    "src/._interaction",
+    "src/._main.ts",
+    "src/._materials",
+    "src/._studio",
+    "src/._styles",
+    "src/._ui",
+    "src/geometry/._handle.ts",
+    "src/geometry/._parameters.ts",
+    "src/geometry/._product.ts",
+    "src/geometry/._ribbon.ts",
+    "src/geometry/._surface.ts",
+    "src/interaction/._calibration.ts",
+    "src/interaction/._reference-views.ts",
+    "src/interaction/._views.ts",
+    "src/materials/._materials.ts",
+    "src/materials/._render-standard.ts",
+    "src/studio/._contact-shadow.ts",
+    "src/studio/._local-reflections.ts",
+    "src/studio/._studio.ts",
+    "src/styles/._city-artwork.ts",
+    "src/styles/._fixed-layout.json",
+    "src/styles/._load-texture.ts",
+    "src/styles/._style-manager.ts",
+    "src/styles/._web-textures.json",
+    "src/ui/._background-asset.json",
+    "src/ui/._background.ts",
+    "src/ui/._compare.css",
+    "src/ui/._interface.ts",
+    "src/ui/._styles.css",
+    "tools/._background-evidence.mjs",
+    "tools/._background-qa.mjs",
+    "tools/._browser-qa.mjs",
+    "tools/._china-assets.py",
+    "tools/._china-calibration.ts",
+    "tools/._china-evidence.mjs",
+    "tools/._china-online-qa.mjs",
+    "tools/._china-qa.mjs",
+    "tools/._derive-fixed.mjs",
+    "tools/._derive-pbr.mjs",
+    "tools/._fit-calibration.ts",
+    "tools/._fit-lid-calibrations.ts",
+    "tools/._fit-other-calibrations.ts",
+    "tools/._floral-quality-qa.mjs",
+    "tools/._floral-relief-evidence.mjs",
+    "tools/._floral-relief-qa.mjs",
+    "tools/._geometry.test.ts",
+    "tools/._handle-compare.mjs",
+    "tools/._layout-evidence.mjs",
+    "tools/._lid-compare.mjs",
+    "tools/._online-qa.mjs",
+    "tools/._overlay-captures.mjs",
+    "tools/._overlay-qa.mjs",
+    "tools/._overlay-report.mjs",
+    "tools/._prepare-china-release.mjs",
+    "tools/._reference-captures.mjs",
+    "tools/._reference-gallery.mjs",
+    "tools/._reflections-qa.mjs",
+    "tools/._saucer-closeup.mjs",
+    "tools/._saucer-profile.ts",
+    "tools/._snapshot.mjs",
+    "tools/._surface-metrics.ts",
+    "tools/._texture-density.mjs",
+    "tools/._texture-qa.mjs",
+    "tools/._texture-standards.mjs",
+    "tools/._verify-delivery.mjs",
+    "tools/._web-textures.mjs"
+  ],
+  "excluded": [
+    ".codex-work",
+    ".git",
+    ".netlify",
+    "__pycache__",
+    "dist",
+    "node_modules",
+    "out",
+    "output"
+  ]
+}

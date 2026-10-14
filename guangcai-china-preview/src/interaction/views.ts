@@ -15,8 +15,8 @@ export class ViewController{
     this.controls.screenSpacePanning=true;
     this.controls.mouseButtons={LEFT:MOUSE.ROTATE,MIDDLE:MOUSE.DOLLY,RIGHT:MOUSE.PAN};
     this.controls.touches={ONE:TOUCH.ROTATE,TWO:TOUCH.DOLLY_PAN};
-    this.controls.minDistance=85;this.controls.maxDistance=750;this.controls.minPolarAngle=.035;this.controls.maxPolarAngle=Math.PI-.035;
-    this.controls.autoRotateSpeed=.7;this.controls.target.set(7,65,0);
+    this.controls.minDistance=85;this.controls.maxDistance=3000;this.controls.minPolarAngle=.035;this.controls.maxPolarAngle=Math.PI-.035;
+    this.controls.autoRotateSpeed=-.7;this.controls.target.set(7,65,0);
     this.controls.addEventListener('start',()=>{this.animateCamera=false;this.setAuto(false);});
     this.set('hero',true);
   }
@@ -46,8 +46,22 @@ export class ViewController{
     if(view==='detail'){pos=[-80,87,-178];this.toTarget.set(-9,38,-11);}
     if(view==='flowers'){pos=[0,23,155];this.toTarget.set(0,9,30);}
     const aspect=this.studio.camera.aspect;
+    this.studio.camera.clearViewOffset();
+    this.studio.camera.fov=33;
     this.toCamera.set(...pos as [number,number,number]);
-    if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);
+    if(view==='hero'||view==='front'){
+      const yaw=MathUtils.degToRad(2),pitch=MathUtils.degToRad(11.0983);
+      this.studio.camera.fov=11.433645;
+      if(view==='hero'){this.cupQuat.setFromAxisAngle(new Vector3(0,1,0),Math.PI);this.lidQuat.copy(this.cupQuat);}
+      const tan=Math.tan(MathUtils.degToRad(this.studio.camera.fov/2));
+      const distance=Math.max(158/(2*tan*aspect*.88),130/(2*tan*(aspect<.8?.60:.70)));
+      this.toTarget.set(0,62,0);
+      this.toCamera.set(Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),Math.cos(yaw)*Math.cos(pitch)).multiplyScalar(distance).add(this.toTarget);
+      const canvas=this.studio.renderer.domElement,w=canvas.clientWidth,h=canvas.clientHeight;
+      const cy=aspect<.8?.43:.49;
+      this.studio.camera.setViewOffset(w,h,0,(.5-cy)*h,w,h);
+    }else if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);
+    this.studio.camera.updateProjectionMatrix();
     this.active=true;this.animateCamera=true;if(instant)this.update(10);this.onChange();
   }
   update(dt:number){
@@ -63,7 +77,7 @@ export class ViewController{
   reference(id:ReferenceId){
     const pose=references[id];if(!pose)return;
     this.set('hero',true);this.active=false;this.animateCamera=false;this.setAuto(false);
-    const p=this.getProduct();p.cup.visible=pose.part==='all'||pose.part==='cup';p.lid.visible=pose.part==='all'||pose.part==='lid';p.saucer.visible=pose.part==='all'||pose.part==='saucer';
+    const p=this.getProduct();p.cup.quaternion.identity();p.lid.quaternion.identity();p.cup.visible=pose.part==='all'||pose.part==='cup';p.lid.visible=pose.part==='all'||pose.part==='lid';p.saucer.visible=pose.part==='all'||pose.part==='saucer';
     if(pose.part==='lid')p.lid.position.set(0,33,0);
     this.controls.target.fromArray(pose.target);this.studio.camera.position.fromArray(pose.camera);
     this.controls.minDistance=50;this.controls.update();

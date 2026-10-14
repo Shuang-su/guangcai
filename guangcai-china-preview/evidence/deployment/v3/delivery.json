@@ -1,0 +1,387 @@
+{
+  "url": "https://guangcai-no1-china-v3.netlify.app/",
+  "date": "2026-10-13T12:47:08.346Z",
+  "checks": [
+    "3.0 is ready with locked city and relief settings",
+    "desktop automatic background is gray",
+    "lid planar reflection is active",
+    "no public badge overlays controls",
+    "background soft-v3",
+    "background soft",
+    "background gray",
+    "mobile automatically uses the 3.0 background",
+    "every current evidence image decodes",
+    "same-camera slider moves the split",
+    "current verification record is readable",
+    "no browser or network errors"
+  ],
+  "errors": [],
+  "badRequests": [],
+  "cold": {
+    "readyMs": 5536.600000023842,
+    "resources": [
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/assets/index-m0B-dQq3.js",
+        "transferSize": 153943,
+        "encodedBodySize": 153643,
+        "duration": 732.3999999761581
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/assets/index-CneZKPP2.css",
+        "transferSize": 2562,
+        "encodedBodySize": 2262,
+        "duration": 277
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/marks/auratic-reference.png",
+        "transferSize": 47384,
+        "encodedBodySize": 47084,
+        "duration": 323
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-roughness-abc7641a2db17569.webp",
+        "transferSize": 79154,
+        "encodedBodySize": 78854,
+        "duration": 402.8000000715256
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-baseColor-d4877edad4744523.webp",
+        "transferSize": 398746,
+        "encodedBodySize": 398446,
+        "duration": 420.5
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-normal-ee5545c4699e0488.webp",
+        "transferSize": 618662,
+        "encodedBodySize": 618362,
+        "duration": 1404.8000000715256
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+        "transferSize": 114518,
+        "encodedBodySize": 114218,
+        "duration": 395.5
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+        "transferSize": 117926,
+        "encodedBodySize": 117626,
+        "duration": 352.1999999284744
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-normal-22fdb336573d9360.webp",
+        "transferSize": 181194,
+        "encodedBodySize": 180894,
+        "duration": 520.3999999761581
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-roughness-91d94d19539575b9.webp",
+        "transferSize": 24278,
+        "encodedBodySize": 23978,
+        "duration": 526.5
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+        "transferSize": 36310,
+        "encodedBodySize": 36010,
+        "duration": 491.10000002384186
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+        "transferSize": 616910,
+        "encodedBodySize": 616610,
+        "duration": 378.2999999523163
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+        "transferSize": 1029962,
+        "encodedBodySize": 1029662,
+        "duration": 1094.3000000715256
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+        "transferSize": 128984,
+        "encodedBodySize": 128684,
+        "duration": 309.2999999523163
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+        "transferSize": 200104,
+        "encodedBodySize": 199804,
+        "duration": 293.39999997615814
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-baseColor-754558a83d8866b8.webp",
+        "transferSize": 648,
+        "encodedBodySize": 348,
+        "duration": 303.89999997615814
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-normal-f0662e241725d83b.webp",
+        "transferSize": 1312830,
+        "encodedBodySize": 1312530,
+        "duration": 664.5
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-roughness-40e7b97659e5e028.webp",
+        "transferSize": 156938,
+        "encodedBodySize": 156638,
+        "duration": 402.89999997615814
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/textures/china-metalness-7ac9525c8019fc98.webp",
+        "transferSize": 40664,
+        "encodedBodySize": 40364,
+        "duration": 543.6000000238419
+      },
+      {
+        "url": "https://guangcai-no1-china-v3.netlify.app/china/label.png",
+        "transferSize": 22108,
+        "encodedBodySize": 21808,
+        "duration": 530.8999999761581
+      }
+    ],
+    "state": {
+      "version": "3.0.0",
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": true,
+      "view": "hero",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        31.765735672387418,
+        240.54729642798253,
+        909.6516524326336
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "auto",
+        "active": "gray",
+        "busy": false,
+        "hasCustom": false
+      },
+      "environment": "880ac258-adab-4893-bbca-010f1cce63e2",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": true,
+        "captures": 1,
+        "resolution": 512,
+        "position": [
+          0,
+          57.5,
+          0
+        ],
+        "envMap": "3bbd361c-fe50-4063-9cb4-47e96b346905",
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 1,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "5c3c9497-98d4-4f99-a2c4-8af051138eaa",
+        "3d2cb4f3-0746-4384-be3d-c06f48bb1a07",
+        "5554213a-ebb0-4fbc-9710-4bdf66bc97b1",
+        "94ab4ceb-87cb-4bdd-bf1a-d3df184710f6",
+        "73be1266-47c3-492b-a19c-927c7db1bdb4",
+        "cf280690-7778-4817-a9d1-0d1f4954ebe3",
+        "50741786-af29-416f-9692-a1208be95f1a",
+        "cb6f5a56-8362-4897-a53a-570bbafdc9b9",
+        "a22fc20c-7817-471d-8385-20f9231a9f18",
+        "e63a4e30-1e6f-46df-817c-4679f064470a",
+        "1bbfb281-003f-4c78-ba3e-666491f7216c"
+      ],
+      "memory": {
+        "geometries": 26,
+        "textures": 30
+      },
+      "city": {
+        "pack": {
+          "placement": {
+            "scale": 0.82,
+            "offsetU": 0.047,
+            "offsetV": 0
+          },
+          "id": "china-draft-20261011",
+          "version": 3,
+          "name": "中国 · 临时线稿",
+          "layout": "blank-300deg-v1",
+          "baseColor": "./textures/china-baseColor-754558a83d8866b8.webp",
+          "normal": "./textures/china-normal-f0662e241725d83b.webp",
+          "roughness": "./textures/china-roughness-40e7b97659e5e028.webp",
+          "metalness": "./textures/china-metalness-7ac9525c8019fc98.webp",
+          "height": "./china/height.png?v=3"
+        },
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 0,
+        "maps": [
+          {
+            "uuid": "d14aa996-d647-4c9d-a91b-65ae619d58f9",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "srgb"
+          },
+          {
+            "uuid": "d995a3f2-815f-4a50-97d2-b9307b46c0a0",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "df3d827a-2426-4208-ba04-109e0f37c767",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "1471a580-bb94-4b59-841f-1c63fb98fa6e",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "db4e8213-8f9f-4d23-a195-dbe99734536e",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          }
+        ],
+        "labelSource": "china/label.png",
+        "labelColor": "#ddb538",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.75,
+        "specularIntensity": 0.85
+      },
+      "fixed": {
+        "body": {
+          "baseColor": "296183b1-7500-4f6d-86f5-3403ff4c63d0",
+          "normal": "8010e959-da69-4e04-aa21-b56a2e6cfa56",
+          "roughness": "3b868c65-1ed7-46bb-a654-50b77032b06b",
+          "metalness": "c0b1f04c-226e-4946-bd78-8d18e1b1ef8f"
+        },
+        "handle": {
+          "baseColor": "5b4cce1a-0a26-4a4b-97d7-26622aa7220d",
+          "normal": "0cf4a429-b9b3-4cf0-a2f3-05bd77ad4a69",
+          "roughness": "d91b1565-1fe1-479d-b12a-9e246d958ff7",
+          "metalness": "f164b8d8-95ab-4785-9b26-4343ded7bcea"
+        },
+        "saucer": {
+          "baseColor": "b1813d8b-5572-49aa-a232-84e7ae6118e2",
+          "normal": "64573d00-e395-49aa-b747-c8605e5fddbf",
+          "roughness": "d7746281-adf3-4eb7-9942-055a1b15dc0a",
+          "metalness": "bfa3c1a9-e514-4654-9ad4-c80a6f8a4c41"
+        }
+      }
+    }
+  },
+  "warmReadyMs": 1117.7999999523163,
+  "images": [
+    {
+      "src": "review/v3/lid-native-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/lid-model-left.png",
+      "ok": true
+    },
+    {
+      "src": "review/v3/reference-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/v3-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/reference-right.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/v3-right.jpg",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-color.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-gray.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-flat.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/quarters.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/handle.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/lid.jpg",
+      "ok": true
+    }
+  ],
+  "scope": "Chrome desktop and emulated mobile on this computer and network; not a physical-phone benchmark"
+}

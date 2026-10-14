@@ -1,0 +1,127 @@
+{
+  "version": 8,
+  "name": "原始广彩花纸 · 高精度连续花带",
+  "mapping": "source-layout-v3",
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2466,
+      "sourceSize": [
+        637,
+        1534
+      ],
+      "physical": {
+        "width": 42.77801996638102,
+        "length": 97.7
+      },
+      "layout": "source-layout-v3",
+      "offsetU": 0,
+      "normalFormat": "rgba16f-gzip-v1",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/body-baseColor.png",
+          "sha256": "9838e5a7f227767ca04dceded2d727537f4bc6d6399c527ea46a68fb50203d66"
+        },
+        "normal": {
+          "url": "fixed/body-normal.hfn.gz",
+          "sha256": "da6d729c9d39471cdbf9d826c349a5e5bc4bb4577d9e8a0376d5a100096a48df"
+        },
+        "height": {
+          "url": "fixed/body-height.png",
+          "sha256": "f6027b40841191802d75755b12a67db26837a38cc2c77b1447a715ff14b0d477"
+        },
+        "roughness": {
+          "url": "fixed/body-roughness.png",
+          "sha256": "26b394e10040b12e5cf428801706750caedc116bd81ca01a81c193768e27d76a"
+        },
+        "metalness": {
+          "url": "fixed/body-metalness.png",
+          "sha256": "d46b5df543a079189007d928a37569b1ebaab8a67be36d651b1855bc8ec655ca"
+        }
+      }
+    },
+    "handle": {
+      "width": 320,
+      "height": 3728,
+      "sourceSize": [
+        148,
+        1724
+      ],
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "layout": "source-layout-v3",
+      "offsetU": 0,
+      "normalFormat": "rgba16f-gzip-v1",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/handle-baseColor.png",
+          "sha256": "53b90a5918ae4a66be73add34fbafd05d2a73652025960fc22724c675381f36f"
+        },
+        "normal": {
+          "url": "fixed/handle-normal.hfn.gz",
+          "sha256": "48261a6369cb5474fb681cd85ce6bbafe6a42787e1b863cef908e488e7edc199"
+        },
+        "height": {
+          "url": "fixed/handle-height.png",
+          "sha256": "7b9279c8d11f6158411119c3a4de0c45c51ca7ef447c6f3a69fa2434fe2ed75c"
+        },
+        "roughness": {
+          "url": "fixed/handle-roughness.png",
+          "sha256": "780a5f5f9dfac2a22ca445d3b688f65f6dc4b9b9df15e2768f604b5dccd5baac"
+        },
+        "metalness": {
+          "url": "fixed/handle-metalness.png",
+          "sha256": "a4cd3cb98807a97f06507f21a436c5d6002384020fd543ad911b8f57abb07573"
+        }
+      }
+    },
+    "saucer": {
+      "width": 8192,
+      "height": 384,
+      "sourceSize": [
+        6924,
+        195
+      ],
+      "physical": {
+        "width": 453.64597917836613,
+        "length": 11.142710621747296
+      },
+      "layout": "source-layout-v3",
+      "offsetU": -0.105,
+      "normalFormat": "rgba16f-gzip-v1",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/saucer-baseColor.png",
+          "sha256": "10d2456c6b1c09f3f67283d8d16fd25fd0a73a2fc3f48a544a807ff5c2b99509"
+        },
+        "normal": {
+          "url": "fixed/saucer-normal.hfn.gz",
+          "sha256": "1f9c565f2e91db1c46a3ff6b6d524f0173096469b14c39629df3ace6c1f23a30"
+        },
+        "height": {
+          "url": "fixed/saucer-height.png",
+          "sha256": "5611372f0be742d67c08790e18adef9f139c5bac830d3598c8ae8c87ca3ea160"
+        },
+        "roughness": {
+          "url": "fixed/saucer-roughness.png",
+          "sha256": "458ff39c1da299f31dd06d5e92b18a9041b3a7c912b2aef291e146e307c49fe5"
+        },
+        "metalness": {
+          "url": "fixed/saucer-metalness.png",
+          "sha256": "5ef21dad0321af604c506d08289d0b02b3ce7678ce2d2e4d9a2616892fe373ff"
+        }
+      }
+    }
+  },
+  "renderStandard": {
+    "relief": 4.4,
+    "clearcoatRelief": 2.4,
+    "exposure": 1.08
+  },
+  "provenance": "Original ICC-converted PSD layout; localized seam repair is separately generated and identified.",
+  "method": "Float32 semantic silhouette/ink height, 16-bit height masters, RGBA16F tangent normals; lossless runtime data",
+  "heightCalibration": "Visual micro-relief; no measured physical height or geometric displacement."
+}

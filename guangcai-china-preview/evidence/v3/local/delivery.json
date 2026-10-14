@@ -1,0 +1,560 @@
+{
+  "url": "http://127.0.0.1:5210/",
+  "date": "2026-10-13T12:38:10.147Z",
+  "checks": [
+    "3.0 is ready with locked city and relief settings",
+    "desktop automatic background is gray",
+    "lid planar reflection is active",
+    "background soft-v3",
+    "background soft",
+    "background gray",
+    "mobile automatically uses the 3.0 background",
+    "every current evidence image decodes",
+    "same-camera slider moves the split",
+    "current verification record is readable",
+    "no browser or network errors"
+  ],
+  "errors": [],
+  "badRequests": [],
+  "cold": {
+    "readyMs": 1728,
+    "resources": [
+      {
+        "url": "http://127.0.0.1:5210/@vite/client",
+        "transferSize": 211069,
+        "encodedBodySize": 210769,
+        "duration": 12.100000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/main.ts?t=1791894943602",
+        "transferSize": 32192,
+        "encodedBodySize": 31892,
+        "duration": 19.40000009536743
+      },
+      {
+        "url": "http://127.0.0.1:5210/node_modules/vite/dist/client/env.mjs",
+        "transferSize": 3778,
+        "encodedBodySize": 3478,
+        "duration": 4.799999952316284
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/ui/styles.css",
+        "transferSize": 8556,
+        "encodedBodySize": 8256,
+        "duration": 5.300000071525574
+      },
+      {
+        "url": "http://127.0.0.1:5210/.codex-work/cache/vite/deps/three.js?v=5f8e4726",
+        "transferSize": 72836,
+        "encodedBodySize": 72536,
+        "duration": 16.90000009536743
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/geometry/product.ts",
+        "transferSize": 27308,
+        "encodedBodySize": 27008,
+        "duration": 22.5
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/materials/materials.ts",
+        "transferSize": 7998,
+        "encodedBodySize": 7698,
+        "duration": 28.100000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/materials/porcelain.ts",
+        "transferSize": 5048,
+        "encodedBodySize": 4748,
+        "duration": 29.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/materials/render-standard.ts",
+        "transferSize": 1013,
+        "encodedBodySize": 713,
+        "duration": 11
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/studio/studio.ts",
+        "transferSize": 15264,
+        "encodedBodySize": 14964,
+        "duration": 7
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/studio/local-reflections.ts",
+        "transferSize": 17170,
+        "encodedBodySize": 16870,
+        "duration": 18.09999990463257
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/studio/lid-reflections.ts",
+        "transferSize": 13904,
+        "encodedBodySize": 13604,
+        "duration": 18.09999990463257
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/styles/style-manager.ts?t=1791894943602",
+        "transferSize": 23807,
+        "encodedBodySize": 23507,
+        "duration": 26.899999976158142
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/styles/city-artwork.ts?t=1791894943602",
+        "transferSize": 25442,
+        "encodedBodySize": 25142,
+        "duration": 23.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/interaction/views.ts",
+        "transferSize": 25844,
+        "encodedBodySize": 25544,
+        "duration": 24.90000009536743
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/interaction/calibration.ts",
+        "transferSize": 7651,
+        "encodedBodySize": 7351,
+        "duration": 25.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/ui/background.ts",
+        "transferSize": 18175,
+        "encodedBodySize": 17875,
+        "duration": 28.800000071525574
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/ui/interface.ts",
+        "transferSize": 26073,
+        "encodedBodySize": 25773,
+        "duration": 28.700000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/styles/load-texture.ts",
+        "transferSize": 5550,
+        "encodedBodySize": 5250,
+        "duration": 29
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/studio/contact-shadow.ts",
+        "transferSize": 10787,
+        "encodedBodySize": 10487,
+        "duration": 16.899999976158142
+      },
+      {
+        "url": "http://127.0.0.1:5210/.codex-work/cache/vite/deps/three.module-Bj7iJlUn.js?v=fa602ddf",
+        "transferSize": 5965987,
+        "encodedBodySize": 5965687,
+        "duration": 111
+      },
+      {
+        "url": "http://127.0.0.1:5210/.codex-work/cache/vite/deps/three_addons_objects_Reflector__js.js?v=89c52f30",
+        "transferSize": 30628,
+        "encodedBodySize": 30328,
+        "duration": 83.10000002384186
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/geometry/surface.ts",
+        "transferSize": 8680,
+        "encodedBodySize": 8380,
+        "duration": 79.69999992847443
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/geometry/ribbon.ts",
+        "transferSize": 13806,
+        "encodedBodySize": 13506,
+        "duration": 80.19999992847443
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/geometry/handle.ts",
+        "transferSize": 19665,
+        "encodedBodySize": 19365,
+        "duration": 80.89999997615814
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/geometry/parameters.ts",
+        "transferSize": 2713,
+        "encodedBodySize": 2413,
+        "duration": 81.30000007152557
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/styles/fixed-layout.json?import",
+        "transferSize": 2476,
+        "encodedBodySize": 2176,
+        "duration": 86.30000007152557
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/styles/web-textures.json?import&t=1791894943602",
+        "transferSize": 6245,
+        "encodedBodySize": 5945,
+        "duration": 84.69999992847443
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/interaction/reference-views.ts",
+        "transferSize": 9722,
+        "encodedBodySize": 9422,
+        "duration": 84.10000002384186
+      },
+      {
+        "url": "http://127.0.0.1:5210/.codex-work/cache/vite/deps/three_addons_controls_OrbitControls__js.js?v=8aa22c97",
+        "transferSize": 122918,
+        "encodedBodySize": 122618,
+        "duration": 85.19999992847443
+      },
+      {
+        "url": "http://127.0.0.1:5210/src/ui/background-asset.json?import",
+        "transferSize": 2248,
+        "encodedBodySize": 1948,
+        "duration": 82.29999995231628
+      },
+      {
+        "url": "http://127.0.0.1:5210/marks/auratic-reference.png",
+        "transferSize": 47384,
+        "encodedBodySize": 47084,
+        "duration": 10.700000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-body-roughness-abc7641a2db17569.webp",
+        "transferSize": 79154,
+        "encodedBodySize": 78854,
+        "duration": 36.300000071525574
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-body-normal-ee5545c4699e0488.webp",
+        "transferSize": 618662,
+        "encodedBodySize": 618362,
+        "duration": 44.89999997615814
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-body-baseColor-d4877edad4744523.webp",
+        "transferSize": 398746,
+        "encodedBodySize": 398446,
+        "duration": 41.10000002384186
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+        "transferSize": 114518,
+        "encodedBodySize": 114218,
+        "duration": 11.700000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+        "transferSize": 117926,
+        "encodedBodySize": 117626,
+        "duration": 11.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-handle-normal-22fdb336573d9360.webp",
+        "transferSize": 181194,
+        "encodedBodySize": 180894,
+        "duration": 13.5
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-handle-roughness-91d94d19539575b9.webp",
+        "transferSize": 24278,
+        "encodedBodySize": 23978,
+        "duration": 10.399999976158142
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+        "transferSize": 36310,
+        "encodedBodySize": 36010,
+        "duration": 7.700000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+        "transferSize": 616910,
+        "encodedBodySize": 616610,
+        "duration": 25.5
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+        "transferSize": 128984,
+        "encodedBodySize": 128684,
+        "duration": 15.700000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+        "transferSize": 1029962,
+        "encodedBodySize": 1029662,
+        "duration": 27.600000023841858
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+        "transferSize": 200104,
+        "encodedBodySize": 199804,
+        "duration": 14.800000071525574
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/china-baseColor-754558a83d8866b8.webp",
+        "transferSize": 648,
+        "encodedBodySize": 348,
+        "duration": 7.199999928474426
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/china-normal-f0662e241725d83b.webp",
+        "transferSize": 1312830,
+        "encodedBodySize": 1312530,
+        "duration": 12.200000047683716
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/china-roughness-40e7b97659e5e028.webp",
+        "transferSize": 156938,
+        "encodedBodySize": 156638,
+        "duration": 4.799999952316284
+      },
+      {
+        "url": "http://127.0.0.1:5210/textures/china-metalness-7ac9525c8019fc98.webp",
+        "transferSize": 40664,
+        "encodedBodySize": 40364,
+        "duration": 2.5
+      },
+      {
+        "url": "http://127.0.0.1:5210/china/label.png",
+        "transferSize": 22108,
+        "encodedBodySize": 21808,
+        "duration": 10.899999976158142
+      }
+    ],
+    "state": {
+      "version": "3.0.0",
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": true,
+      "view": "hero",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        31.765735672387418,
+        240.54729642798253,
+        909.6516524326336
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "auto",
+        "active": "gray",
+        "busy": false,
+        "hasCustom": false
+      },
+      "environment": "d166cffb-80a2-48f8-8c0b-8e816753c2cb",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": true,
+        "captures": 1,
+        "resolution": 512,
+        "position": [
+          0,
+          57.5,
+          0
+        ],
+        "envMap": "c6b56189-555a-4726-954e-ce7ab802ff30",
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 1,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "30de9d4d-243e-4b4e-8b75-42092cb407ce",
+        "d1e38f9e-cfd9-4741-8fce-708d93611324",
+        "d2d1c277-a1f9-4a39-b81b-e6a81da1a360",
+        "bc456ef7-7af5-4764-a986-874fdbc6c7a8",
+        "195a5856-bd2a-49ef-838a-dc6b2afafa14",
+        "564d1fff-d0e6-4b8f-bd73-5c44f07577c1",
+        "6e41d918-83cf-4b4b-843a-90eb27c05cdd",
+        "92f7e242-1791-4eff-9e98-2cf6025ac462",
+        "4fdb704b-5a4b-4f60-a253-06bcf9f837c6",
+        "ba636563-9289-4564-8258-ebdc6631e7af",
+        "72f6ddb5-8e0b-49d9-81c0-b7deadbd212c"
+      ],
+      "memory": {
+        "geometries": 26,
+        "textures": 30
+      },
+      "city": {
+        "pack": {
+          "placement": {
+            "scale": 0.82,
+            "offsetU": 0.047,
+            "offsetV": 0
+          },
+          "id": "china-draft-20261011",
+          "version": 3,
+          "name": "中国 · 临时线稿",
+          "layout": "blank-300deg-v1",
+          "baseColor": "/textures/china-baseColor-754558a83d8866b8.webp",
+          "normal": "/textures/china-normal-f0662e241725d83b.webp",
+          "roughness": "/textures/china-roughness-40e7b97659e5e028.webp",
+          "metalness": "/textures/china-metalness-7ac9525c8019fc98.webp",
+          "height": "/china/height.png?v=3"
+        },
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 0,
+        "maps": [
+          {
+            "uuid": "3b7fa1eb-6eaa-44fc-870c-34702ea8259b",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "srgb"
+          },
+          {
+            "uuid": "f55c7c69-b7ed-43e0-8417-06fc2c546747",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "e7195ed5-7ba0-4ef6-8486-421563448aed",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "bc66ca22-401a-402c-b9f0-feeab50d41e0",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          },
+          {
+            "uuid": "6898ee9d-cbce-47c2-9d31-9c786e8c7010",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": ""
+          }
+        ],
+        "labelSource": "china/label.png",
+        "labelColor": "#ddb538",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.75,
+        "specularIntensity": 0.85
+      },
+      "fixed": {
+        "body": {
+          "baseColor": "ab17e2cf-8cae-40ba-896d-06a17f954421",
+          "normal": "5b32cc58-ac96-4d7f-8195-dbf453c8ddbc",
+          "roughness": "054a6534-99f0-494b-8cc5-4c14d770a29d",
+          "metalness": "9b880285-12d9-4a36-9db1-a6ffdbc5e642"
+        },
+        "handle": {
+          "baseColor": "d305af48-cc16-4360-8e12-4a71b945dbae",
+          "normal": "93ae185e-1e75-431e-ac20-f1f5b507675c",
+          "roughness": "bc2d3b67-4489-44de-8777-995cf5c019a3",
+          "metalness": "fdd61dc3-f127-4b39-b2ff-1af75b8a80b4"
+        },
+        "saucer": {
+          "baseColor": "0576125e-802e-4444-821b-9cf1b8b9386c",
+          "normal": "bcd0cb64-b856-41bd-979e-8df6b3bc719b",
+          "roughness": "b4a8ca4a-d424-4f51-85f2-d34804dbc01c",
+          "metalness": "6e2f9e41-4196-4c0f-8f4f-32f75af13cc7"
+        }
+      }
+    }
+  },
+  "warmReadyMs": 1143.8999999761581,
+  "images": [
+    {
+      "src": "review/v3/lid-native-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/lid-model-left.png",
+      "ok": true
+    },
+    {
+      "src": "review/v3/reference-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/v3-left.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/reference-right.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/v3-right.jpg",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "ok": true
+    },
+    {
+      "src": "textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-color.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-gray.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/floral-flat.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/quarters.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/handle.jpg",
+      "ok": true
+    },
+    {
+      "src": "review/v3/lid.jpg",
+      "ok": true
+    }
+  ],
+  "scope": "Chrome desktop and emulated mobile on this computer and network; not a physical-phone benchmark"
+}

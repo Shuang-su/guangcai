@@ -1,0 +1,902 @@
+{
+  "date": "2026-10-13T14:44:40.473Z",
+  "siteName": "guangcai-no1-china-v3",
+  "staging": ".codex-work/deploy/v3-restored-20261013/site",
+  "allowlist": [
+    "index.html",
+    "evidence.html",
+    "assets",
+    "china",
+    "fixed",
+    "marks",
+    "review/v3",
+    "review/floral-hq",
+    "review/floral-restored",
+    "backgrounds"
+  ],
+  "files": [
+    {
+      "path": "assets/index-CneZKPP2.css",
+      "size": 7591,
+      "sha256": "65a06122223401f2a0776e084c156a96d2dc4e1bbc1ff1e7fe3033a73a724407",
+      "sha1": "35f4c423010886cf91dfe77a2738043d33c4b0a4"
+    },
+    {
+      "path": "assets/index-RJAZw6P-.js",
+      "size": 633821,
+      "sha256": "620e03d63dd27080d0c4813d41a64efcedb8279079d3f9e07936d5ed4c11650f",
+      "sha1": "9b296ea5e0ef8e3f8ac32963b72160a26a49e1f2"
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "size": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c",
+      "sha1": "94b5c952132bb0d0fed2693a7b73749b1b7a886e"
+    },
+    {
+      "path": "backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "size": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454",
+      "sha1": "dcaadac4ddc683645e594bd0d05fbec7e59213ea"
+    },
+    {
+      "path": "china/baseColor.png",
+      "size": 25616,
+      "sha256": "0cb78a9020578ed81de93e9e96e4076d0cdf3f2c9f74524c38b09b42d198ff8e",
+      "sha1": "a286d90c4855076c55b60e5ad20c72433124e5a2"
+    },
+    {
+      "path": "china/city.json",
+      "size": 345,
+      "sha256": "1704fa5d579ed6a1611de74d4af88e5d1480d914a2461fec8ac9c092465765b1",
+      "sha1": "f39e1764578d1a1bd3352d97e8fb308b1969d853"
+    },
+    {
+      "path": "china/cleanup-difference.png",
+      "size": 226538,
+      "sha256": "41e8d8d080bdb0c14b19c88cab7705942c220811e870a9557931997b75674db6",
+      "sha1": "7695cce9abe1f473e21f7273b023bea8fb653cd9"
+    },
+    {
+      "path": "china/height.png",
+      "size": 643905,
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "sha1": "60832e7809ccc4499c7542b4d7a0a28b9d4a2547"
+    },
+    {
+      "path": "china/label-roughness.png",
+      "size": 11230,
+      "sha256": "acf37f54a0529d1d987dc7ac66068f134fec18b83947b73a5c3f596e44f55055",
+      "sha1": "67bd2953f5d4bca4fd0bb5d488e72a8423815930"
+    },
+    {
+      "path": "china/label.png",
+      "size": 21808,
+      "sha256": "3d29c0832ef856d5b4f1eb6dbc4589e3e2a6298e88eda80f37409f980cba7a60",
+      "sha1": "38468c5a3211b4880d5bb60e0313566f2c660150"
+    },
+    {
+      "path": "china/line-finish.png",
+      "size": 537748,
+      "sha256": "3ee36bf8f181e8e5317568b6afb520ec33cca510b78aa58adc7ade3f8bfadf5f",
+      "sha1": "27c94dd2ea280cc285c046dcb34f2201a18a10bd"
+    },
+    {
+      "path": "china/lines-original.png",
+      "size": 713687,
+      "sha256": "29aaccc89f15182ec245cf5a88477c759c493cf499cc7628e8dacbcb77cba0fc",
+      "sha1": "35c6f0e276f348a9e6141f1fb5b952afc37a29a0"
+    },
+    {
+      "path": "china/lines.png",
+      "size": 592733,
+      "sha256": "ff392ed37c1eeecb45fdd161ed48d60fac3af9e1a29cc06b87229f3292bb98e4",
+      "sha1": "ed739682158130187cde84381b7e0d05cf59d83d"
+    },
+    {
+      "path": "china/metalness.png",
+      "size": 64955,
+      "sha256": "9081221afe6e71fbae1898b9c225bacb6849846514c5e7576a93c2438d221de2",
+      "sha1": "4a75aac2ea2c19b64f4c7638ed5ed4a9ed6672be"
+    },
+    {
+      "path": "china/normal.png",
+      "size": 1614035,
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "sha1": "ab710a08e6c492671c21681fcaf21f9f0bb0dbe5"
+    },
+    {
+      "path": "china/roughness.png",
+      "size": 223533,
+      "sha256": "d9507017333974399e253ca498524b080b001ddae60ef0c0cde1e723b3c66500",
+      "sha1": "18dca0e6f0cc7ed5a8c5784354e20f8db4f7f3f3"
+    },
+    {
+      "path": "evidence.html",
+      "size": 12741,
+      "sha256": "b9d3587d9d8674d5424a2ca6e391b9da437e61949dd5fa0c0f125fa222811c3d",
+      "sha1": "8b65bb73a3d7491f16147aabd46b4b5ece2f200c"
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "size": 3461685,
+      "sha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "sha1": "a455960e00edb85b0c697863a72e4073c490d7ae"
+    },
+    {
+      "path": "fixed/body-height.png",
+      "size": 2494217,
+      "sha256": "101a5404eb9df2fad68b71e3db6f51cc5afa63e502b7a4012aef4be9ae51d5c2",
+      "sha1": "8b59bd864613a128c7f561e6cab3bbd7dad9eff3"
+    },
+    {
+      "path": "fixed/body-metalness.png",
+      "size": 216899,
+      "sha256": "c2c3fba0d984592a1a34d6a3fd012075132ce5b530b7891a4ac749a78cd732a0",
+      "sha1": "4ac10af125c1f4a9923b16a1a39a211c91bbdba0"
+    },
+    {
+      "path": "fixed/body-normal.hfn.gz",
+      "size": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3",
+      "sha1": "5c941764c3a8943ca77a2c57704406127c2c9487"
+    },
+    {
+      "path": "fixed/body-normal.png",
+      "size": 1192303,
+      "sha256": "663f3f2b4f5b11cb6911161ed53c6ee7ac4b80669419bbbe44f85cef53092f55",
+      "sha1": "d41b9e7e2ebc3c1d15c4f47f49b1cd98fe5afb86"
+    },
+    {
+      "path": "fixed/body-roughness.png",
+      "size": 238770,
+      "sha256": "0c456cb793bf7f3eb144f45d1c24a0649f77305c9dbd17a687f8cb2e43c6b296",
+      "sha1": "b0174b40bd24f4d608ef090449c0fbd5590d7ac2"
+    },
+    {
+      "path": "fixed/handle-baseColor.png",
+      "size": 2384505,
+      "sha256": "1bbe09ecdef463283f11c7f7319f80a05576311be5f28ff172eaf77751065e7e",
+      "sha1": "02a3d7133d9de4829b53f164c8531b99a9f2e620"
+    },
+    {
+      "path": "fixed/handle-height.png",
+      "size": 1654519,
+      "sha256": "dccf30410ee0153884b22381ef6fc477b57899074b1f78091d674a6d9cace6c5",
+      "sha1": "2cae14e3edbb84b4cc4033406698f81a7bf55a19"
+    },
+    {
+      "path": "fixed/handle-metalness.png",
+      "size": 135589,
+      "sha256": "4a13505d79c8cd57b3ccff0257bc2eb204a872455359fa3fc89202e3f5ef2c2b",
+      "sha1": "48d0f0ca34bca9f9e03d5ba646723e52c0bb9cae"
+    },
+    {
+      "path": "fixed/handle-normal.hfn.gz",
+      "size": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341",
+      "sha1": "01719ae6d8111f898d5b49086319901820b43486"
+    },
+    {
+      "path": "fixed/handle-normal.png",
+      "size": 936945,
+      "sha256": "5ea5659d8d68839eace9c4e2d6a79b0445919a3f240fc88ce4672f3be21dda02",
+      "sha1": "909aecb31205d267fe9841300fa86680c01f8dfb"
+    },
+    {
+      "path": "fixed/handle-roughness.png",
+      "size": 154952,
+      "sha256": "427cdc89517cfd150b0f5ce2a57ef1f283e16079654c09992e975f7c58684329",
+      "sha1": "15b76377a40da7dc1cb755efdf8e0481bf15e948"
+    },
+    {
+      "path": "fixed/manifest.json",
+      "size": 8096,
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30",
+      "sha1": "0850d7daeeaf2ebb596e58d9b729c18ef9640b7e"
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "size": 14503414,
+      "sha256": "055dcb7b469f1dd641de2f5415c69bda9b6f85f450b0efcd902648773cde3225",
+      "sha1": "d9de32cff1d52e85544345c9b5380f187db1718a"
+    },
+    {
+      "path": "fixed/saucer-height.png",
+      "size": 9651740,
+      "sha256": "d747a9deea15f0119b1518c66e1da2293b6ac7ff310da777544ff2ffb98813da",
+      "sha1": "4ac264f8d9f6c97774bb0fab82daa3b63f7fab02"
+    },
+    {
+      "path": "fixed/saucer-metalness.png",
+      "size": 668365,
+      "sha256": "49d1780ab95ff7e824f9b4f9188ebfa96e3d4a80d57b16a350156ff18ce2cbd6",
+      "sha1": "2ce1e9288d913f068f9f4c1c021c6c7f1db8dc96"
+    },
+    {
+      "path": "fixed/saucer-normal.hfn.gz",
+      "size": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1",
+      "sha1": "c6cc126ab7e8a79930fbf107d2db43ced70be01c"
+    },
+    {
+      "path": "fixed/saucer-normal.png",
+      "size": 5452995,
+      "sha256": "2a1221777efec8e7c79dc3c242fa3800355de681d144362dbf71cb08f935d1d5",
+      "sha1": "23b0623858355c826fcf68015d1b5cd5345b5fd5"
+    },
+    {
+      "path": "fixed/saucer-roughness.png",
+      "size": 915703,
+      "sha256": "bccfa79bc99476ded0b697b9836d860edfd4856793c11b0f8f12231fa2864d0e",
+      "sha1": "ac77a19672803cb1659528e144004368b103447b"
+    },
+    {
+      "path": "fixed/style.json",
+      "size": 1103,
+      "sha256": "443ffc8ee37e7afce6095a79c72a74d02142ebd3c3d598663c97b1405b469ed0",
+      "sha1": "11e98fe2cd17066e6cfa595e6d1af2e8eb4b02f0"
+    },
+    {
+      "path": "index.html",
+      "size": 468,
+      "sha256": "f14741ad24c157f336f0fb2aee054833b768fcbe1ff3c65cb4e003e6ca818c37",
+      "sha1": "b716d23e9ba92ee04419d6a9daed1adcf9586187"
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "size": 47084,
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "sha1": "7d1c4f104322abaa420273cc070cd51036f516cb"
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "size": 796,
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "sha1": "ddc5ec02a56dbaccbf48ed310251e18727769817"
+    },
+    {
+      "path": "review/floral-hq/after/capture.json",
+      "size": 4982,
+      "sha256": "e77f9e4ea769ee9effbf40db30130ce582df07331c7b924989eaff1f384c1f0a",
+      "sha1": "aac063ead65f003d0f7feda42a0d9b1aeee0d709"
+    },
+    {
+      "path": "review/floral-hq/after/center-color.png",
+      "size": 1064572,
+      "sha256": "539d61df6d386004fda1501d21f79202a43210114bf75568f7cd4e1f0bd3af75",
+      "sha1": "5efdf209caece8f034966318e7a1aa77b872f108"
+    },
+    {
+      "path": "review/floral-hq/after/center-flat.png",
+      "size": 28649,
+      "sha256": "089082d705155fde066e308ab815c4198826ced558426b347323c6e24329580d",
+      "sha1": "07e9ec3aece1b1b72eb3d295c090030838e05c3e"
+    },
+    {
+      "path": "review/floral-hq/after/center-gray.png",
+      "size": 274417,
+      "sha256": "5a0dee9b6da60e22e5c0d78dcec2c9f9f48757241f6bd724d1b1d54944bee4d3",
+      "sha1": "c826e1e1f324954a9665385cdc4f4ad6e3e94e37"
+    },
+    {
+      "path": "review/floral-hq/after/hero.png",
+      "size": 348230,
+      "sha256": "73014a0a7598bb26f36c9e102268abfcd5cf93ec6de920847f9b721b3ce48548",
+      "sha1": "779a375371cf499bf830ebfdf95fe18a973f2803"
+    },
+    {
+      "path": "review/floral-hq/after/petals-color.png",
+      "size": 1259762,
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "sha1": "5b598fdf72fd7fb95a3c9cfc70ff070ba123cf8f"
+    },
+    {
+      "path": "review/floral-hq/after/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-hq/after/petals-gray.png",
+      "size": 528889,
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "sha1": "80f9f977af2a872633d55e50eabfdd8d1b0fa19c"
+    },
+    {
+      "path": "review/floral-hq/after/seam-color.png",
+      "size": 1197828,
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "sha1": "e81bada36ac2bd53f59aefcdcf454a2618683dd4"
+    },
+    {
+      "path": "review/floral-hq/after/seam-flat.png",
+      "size": 48364,
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "sha1": "460aa8bcd36e9291e73b35b997e5e7e6979abc0e"
+    },
+    {
+      "path": "review/floral-hq/after/seam-gray.png",
+      "size": 493377,
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "sha1": "d651f3cac08e16eef5239fc3c4f242c4d13c708e"
+    },
+    {
+      "path": "review/floral-hq/before/capture.json",
+      "size": 4989,
+      "sha256": "57ce281716f37cb9f24e08e736e2da1d8e5aa43b6a4925068ba6d558872cb43f",
+      "sha1": "a9bb966a469223406dea50deff0600f8ce18e1f1"
+    },
+    {
+      "path": "review/floral-hq/before/center-color.png",
+      "size": 1033483,
+      "sha256": "791a90538baf621875ab2ea2adbbfa17580eb141f1f6a81d50deb3a2781232dc",
+      "sha1": "356a187146eeba14470e32f6367daba77ec1d509"
+    },
+    {
+      "path": "review/floral-hq/before/center-flat.png",
+      "size": 28650,
+      "sha256": "b53401ebe9ab13cb876c0b37ced866d9c43d1ff21e57fb7bdb247e9243df3a8c",
+      "sha1": "5cfb50399e750a8a3d63282cedbb53e934eaf153"
+    },
+    {
+      "path": "review/floral-hq/before/center-gray.png",
+      "size": 259137,
+      "sha256": "8536c4af0604d694c756ec83e1713890e6936d9abbfabe8048616fb0e81a8d0a",
+      "sha1": "5cb4560800d9a898223216cbc3b05d771c474530"
+    },
+    {
+      "path": "review/floral-hq/before/hero.png",
+      "size": 348667,
+      "sha256": "b01dd8de96134d238ae334586a88969ac925f196387ac0e4f289958d945b3b8b",
+      "sha1": "a381bf8b6feaec7b7fc92ef75bed284c9b56d6c5"
+    },
+    {
+      "path": "review/floral-hq/before/petals-color.png",
+      "size": 1197339,
+      "sha256": "f10420ab42207101e380bc201543d76dcb2e09da3af1f82a9b5f89adc2db1df9",
+      "sha1": "318045bbe1013629baf9bb9ff04137c196f46ccc"
+    },
+    {
+      "path": "review/floral-hq/before/petals-flat.png",
+      "size": 88844,
+      "sha256": "26644352c37b8f7dfc6b630ece64a3c4b2be6349b10203a139644c6413e33eff",
+      "sha1": "657d0f78d4435f15f6b3b047da4f28b68635c699"
+    },
+    {
+      "path": "review/floral-hq/before/petals-gray.png",
+      "size": 510822,
+      "sha256": "afd0f2d6eab3a9806d4a678f43ba56dbcc2da36c01be91c5729ef3e18938a4a1",
+      "sha1": "46f533f9223377b5cc76ef64226de6623e28c129"
+    },
+    {
+      "path": "review/floral-hq/before/seam-color.png",
+      "size": 1113516,
+      "sha256": "af07ec8a3bbdba8012696076dbc1a5882fd458669ae38ca4a4f373296be27c2e",
+      "sha1": "6f2dcceaac867c3814edfba23c56dfad09e83f6a"
+    },
+    {
+      "path": "review/floral-hq/before/seam-flat.png",
+      "size": 48365,
+      "sha256": "e7642aa8651fd92c3887db3af3b154149edc68c0b581a14b9e6869825fe33d16",
+      "sha1": "28aa09783c7f07606979a8836e74e265690ad26e"
+    },
+    {
+      "path": "review/floral-hq/before/seam-gray.png",
+      "size": 461893,
+      "sha256": "54df1c0d9d2d35522a840fff2e1f597083865f502e608024ed390054487d1e89",
+      "sha1": "20702baadfe046fcbf566a4fd1436ef1b0b3f8a4"
+    },
+    {
+      "path": "review/floral-hq/derivation.json",
+      "size": 1804,
+      "sha256": "d4da1c5245386a8ddebc7288fecf534ff28d0f5eba388cef0f0a807dbd72cd33",
+      "sha1": "5613c0dee2eee6e41ad4510fc68beef9971df84a"
+    },
+    {
+      "path": "review/floral-hq/verification.json",
+      "size": 5997,
+      "sha256": "0e2fc607bdeee57da2bdd7eff1a20ec89e7bbdc16ea91b715e8885a1aa3bf29b",
+      "sha1": "1a487be117af82e94c26e1c582b0b75e1ff202f9"
+    },
+    {
+      "path": "review/floral-restored/after/bird-color.png",
+      "size": 1217059,
+      "sha256": "caac3b28466916b65c3a645b8848c463b14cc1ce3a3944ca33e2235ce3ee798c",
+      "sha1": "08a8b77daa3746353095864ef43a27ae2691e9f7"
+    },
+    {
+      "path": "review/floral-restored/after/bird-flat.png",
+      "size": 31446,
+      "sha256": "8227b0c1d1126db6451bdccaa7798f2ece6e2dc727e01128e04266db1d09e307",
+      "sha1": "a7c3b7f2d374f19f72b80301b11b79b9691ead26"
+    },
+    {
+      "path": "review/floral-restored/after/bird-gray.png",
+      "size": 271874,
+      "sha256": "e4cb1e5a13f2462db32bffa83cf84a3427555d34bf19074a868c334caea828f9",
+      "sha1": "b9619afb38794985ed410113292f29be71a89012"
+    },
+    {
+      "path": "review/floral-restored/after/capture.json",
+      "size": 5660,
+      "sha256": "ea31a1083e6ccc1403144d0955ba5688883ee1ffa3523eabedaea3b22067bfc3",
+      "sha1": "66a5fdfabda5c65bbe52ffcc932138285fd27154"
+    },
+    {
+      "path": "review/floral-restored/after/hero.png",
+      "size": 346265,
+      "sha256": "06ce5260fbe7dbce10c8102cad278458b9e76cf10978142daded5a71eec8e957",
+      "sha1": "985ccb605bf480ee2d304a67b050e928e8d6f342"
+    },
+    {
+      "path": "review/floral-restored/after/petals-color.png",
+      "size": 1455681,
+      "sha256": "a2ea094ec2ed325c36923dcee76b9be0eb41e22082da6bef8686f826109a904a",
+      "sha1": "ddb1157404fdd41e6fb47356570c7447aefba2cc"
+    },
+    {
+      "path": "review/floral-restored/after/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-restored/after/petals-gray.png",
+      "size": 546441,
+      "sha256": "c220a3b4f9bc76c06f568d6bbe7a407b002a79613d60328c72b2031f9bd8afd7",
+      "sha1": "2ad8c8a64f5bb0868b5383c4bd70edb541c31bec"
+    },
+    {
+      "path": "review/floral-restored/after/seam-color.png",
+      "size": 1370315,
+      "sha256": "09560926ae84bd6cad4237fbfdff7063e2c1771ce5efca8f36691c960c89e20a",
+      "sha1": "3358d758a1f2746df61599164e51eb12bea76a68"
+    },
+    {
+      "path": "review/floral-restored/after/seam-flat.png",
+      "size": 48363,
+      "sha256": "dbbdace2da6ddb12ce3ae117fc17fcb14edc0107e24f2f320e87b48ec2614e8d",
+      "sha1": "9da39ada61e143cc24c631d13554aad509b780c4"
+    },
+    {
+      "path": "review/floral-restored/after/seam-gray.png",
+      "size": 505567,
+      "sha256": "e2899b77bef58931f213c8a19bb6b2da92ef2ed9971a3d9f35ca41f38ae2f29c",
+      "sha1": "5007bb20aee53e412194229e40aa53fc491bcdbc"
+    },
+    {
+      "path": "review/floral-restored/atlas-render.json",
+      "size": 448,
+      "sha256": "4ca8e06107ad5318ca723743b01e6deef474b2a7e67b197015190fac910efaf0",
+      "sha1": "911ef50fb914660e8a396dbc39ac20b3c32fdd0f"
+    },
+    {
+      "path": "review/floral-restored/before/bird-color.png",
+      "size": 1028148,
+      "sha256": "72169320ef6956d34cc5da70fdcf22d273ba2a3bb919e6934b05f8f9689c6769",
+      "sha1": "1f56f6d04d36ea7009cb5217dc4ce3af5a3b935f"
+    },
+    {
+      "path": "review/floral-restored/before/bird-flat.png",
+      "size": 31448,
+      "sha256": "ce31a96baa612d148c400e86f6954af551080321623a8e78e4ca5a242b35129f",
+      "sha1": "0486e7f24cde4dfcb306254220c4fe3b492d6fd5"
+    },
+    {
+      "path": "review/floral-restored/before/bird-gray.png",
+      "size": 272484,
+      "sha256": "42a33656de690b928fc74d8a0fb652b97d120377e54a1d66b42294ff32e0f3d6",
+      "sha1": "d00e73b98bed0ce9b0df74ddd9c1f1db3a9ce155"
+    },
+    {
+      "path": "review/floral-restored/before/capture.json",
+      "size": 5821,
+      "sha256": "066f3a97c6947e07214fdf036e25147796a8ab45cb403a9e1ddce7e54222f64f",
+      "sha1": "0730589ee9953ddfae3c41227d680c959355364b"
+    },
+    {
+      "path": "review/floral-restored/before/hero.png",
+      "size": 348219,
+      "sha256": "009f6b0c138fbcb35373f6d8deb59ac6e156a035fcfac347178e3274181488a0",
+      "sha1": "408ac14abcbcf16273fafc1e43ef186cc3a18996"
+    },
+    {
+      "path": "review/floral-restored/before/petals-color.png",
+      "size": 1259762,
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "sha1": "5b598fdf72fd7fb95a3c9cfc70ff070ba123cf8f"
+    },
+    {
+      "path": "review/floral-restored/before/petals-flat.png",
+      "size": 88843,
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "sha1": "eedec0551fc5b913423c0a04788c168870071b23"
+    },
+    {
+      "path": "review/floral-restored/before/petals-gray.png",
+      "size": 528889,
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "sha1": "80f9f977af2a872633d55e50eabfdd8d1b0fa19c"
+    },
+    {
+      "path": "review/floral-restored/before/seam-color.png",
+      "size": 1197828,
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "sha1": "e81bada36ac2bd53f59aefcdcf454a2618683dd4"
+    },
+    {
+      "path": "review/floral-restored/before/seam-flat.png",
+      "size": 48364,
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "sha1": "460aa8bcd36e9291e73b35b997e5e7e6979abc0e"
+    },
+    {
+      "path": "review/floral-restored/before/seam-gray.png",
+      "size": 493377,
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "sha1": "d651f3cac08e16eef5239fc3c4f242c4d13c708e"
+    },
+    {
+      "path": "review/floral-restored/derivation.json",
+      "size": 8096,
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30",
+      "sha1": "0850d7daeeaf2ebb596e58d9b729c18ef9640b7e"
+    },
+    {
+      "path": "review/floral-restored/joins.json",
+      "size": 1476,
+      "sha256": "86a3b04a249c009c5579ff92abdecfe5fa3233cfada8ac95b0d843d5c2e688dc",
+      "sha1": "13624c1edba213a787857b9db8c962d350ed870b"
+    },
+    {
+      "path": "review/floral-restored/joins/contact.png",
+      "size": 3029818,
+      "sha256": "a6bb024a8d32e08002185d0a4ade14d3e576e080fa2b8c9f0f11524b9113c09c",
+      "sha1": "57592f45be24a5edbd6c388768ef9f23a0fb18de"
+    },
+    {
+      "path": "review/floral-restored/joins/handle.png",
+      "size": 237247,
+      "sha256": "3332a48e3e2f6cad05d9945f979fc0373775c25b1343e66cf3901a12b50603bb",
+      "sha1": "06741b2ad20bfed0599214b8182c65e6eca163c4"
+    },
+    {
+      "path": "review/floral-restored/joins/join-1.png",
+      "size": 1350739,
+      "sha256": "09dc503407242b524033e51bec6082fc891db2a1dc5d0414120f8ba6bb728104",
+      "sha1": "eb19d0ede4cfc201b1535cb8d81db97a7ed73467"
+    },
+    {
+      "path": "review/floral-restored/joins/join-2.png",
+      "size": 1365714,
+      "sha256": "13c6f5fe17112068aa3c0db1f97f1859ce160fac44e8cc63fbca1f64dc3474ee",
+      "sha1": "0de909e589ab845a0999223cddc6f9f2d1d844d7"
+    },
+    {
+      "path": "review/floral-restored/joins/join-3.png",
+      "size": 1505720,
+      "sha256": "3bd667aa7d4ded78978a89fb205f6a35b52cd985f4f46d102c39f507e43f480e",
+      "sha1": "7fe10770cd6c46d7aa693bb7b70c778951a5c9d5"
+    },
+    {
+      "path": "review/floral-restored/joins/join-4.png",
+      "size": 1396166,
+      "sha256": "d77e019d532b848ffec788a4215896352392bdce6f7db4902178ae4f4b0d8345",
+      "sha1": "9a79ac5bb1e43bb80662643d9faf05d5ec26d6e3"
+    },
+    {
+      "path": "review/floral-restored/joins/join-5.png",
+      "size": 1342496,
+      "sha256": "70b0473b960c02b6d4425d10126eb8c82bc2ac9e4d24c8f4dcd0bbeb215f35fd",
+      "sha1": "a3bb005f2a5a2c0dd77d70a174589bf70e18de7c"
+    },
+    {
+      "path": "review/floral-restored/joins/join-6.png",
+      "size": 1308988,
+      "sha256": "2aa306296747755e33312b264c33abd1c7d995734d8288a2f432b2b00715aff2",
+      "sha1": "b556f529ba21041d59b79062ee4e6926526b86c6"
+    },
+    {
+      "path": "review/floral-restored/joins/join-7.png",
+      "size": 1334884,
+      "sha256": "f4db0ee467c89b045c015b327992df01c949fd9c2f0866789fcbdb05255abf74",
+      "sha1": "b86430b4496602d2bd31f6514464d98635a24625"
+    },
+    {
+      "path": "review/floral-restored/joins/join-8.png",
+      "size": 1325121,
+      "sha256": "befdd40c49eb03bbe924d3268700834d1b65affa139f635c6efbe3635b5a55c6",
+      "sha1": "dc83c259dfad52d194b5d7888879d7e1f7cd1461"
+    },
+    {
+      "path": "review/floral-restored/joins/join-9.png",
+      "size": 1306276,
+      "sha256": "9bf41859fb062c9846e017553ba6f7948338628cbfb7ace17fb0e080037109b7",
+      "sha1": "55bca2a3358b06f9ea14c3e3611571230c58d6d2"
+    },
+    {
+      "path": "review/floral-restored/joins/top.png",
+      "size": 203315,
+      "sha256": "63bea27a791497490799f15f87b36bf481b60c81c3235e8d37c8170997cb642b",
+      "sha1": "341ab49b725a72304b099230529ecb2ee49f1e4c"
+    },
+    {
+      "path": "review/floral-restored/saucer-master.webp",
+      "size": 11918114,
+      "sha256": "12c222c556e7dae5e8394e9931f0c7df3a76241ea555042f8da314db7eaef8aa",
+      "sha1": "314a19967957d19c8840bfbdd52a6b4997223e14"
+    },
+    {
+      "path": "review/floral-restored/verification.json",
+      "size": 14581,
+      "sha256": "dfd49fdd764b2fb1788e1a356e3f5bd75a02c30d7fbbd4ff917c92eb971945ea",
+      "sha1": "dab4f2d3c6cc8056c72dd3206a6b58d5fd7503e0"
+    },
+    {
+      "path": "review/v3/before-left.jpg",
+      "size": 118828,
+      "sha256": "22574cfc46343e1226d95b030a6c24276b265a35027aa68c21d809e5cca7df72",
+      "sha1": "d104505cd53d4ff94876250eb347df59c2d61672"
+    },
+    {
+      "path": "review/v3/before-right.jpg",
+      "size": 97114,
+      "sha256": "101e0b8dce7e3ac5b1f128a2ae7b275d1ec98c41bf763e44a21f4a11a951d9a7",
+      "sha1": "0550575b23b3fd3b6c0b51da30b3467652c2394c"
+    },
+    {
+      "path": "review/v3/camera-calibration.json",
+      "size": 2023,
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "sha1": "f492af7fc63b40c65ec7c30c38db590b2595af4e"
+    },
+    {
+      "path": "review/v3/capture.json",
+      "size": 5169,
+      "sha256": "9c4e87affaad51caad533fed6d13e828fc9c39442fd609c8cf4247ea31ed49c7",
+      "sha1": "3302e676552a17c2da0dde24e16cb7df65bca265"
+    },
+    {
+      "path": "review/v3/floral-color.jpg",
+      "size": 211294,
+      "sha256": "52ae8a21ad2a274605b6eefb3a4fc0017196f31eca099783e5b087557f360ad2",
+      "sha1": "5e534a2453fe0358e759cd3e20fc2f159713bed8"
+    },
+    {
+      "path": "review/v3/floral-flat.jpg",
+      "size": 54072,
+      "sha256": "f307f4750d092c268e72abcb5fd1d6cfd34b0975515824f01836efe2e809fd9d",
+      "sha1": "43811cb1c24b492ef700d2399258fa9a4955ce61"
+    },
+    {
+      "path": "review/v3/floral-gray.jpg",
+      "size": 101199,
+      "sha256": "a77824f24f40b78f69b5ffba5e44ea8afe6f00012d5fc42be607660fc1b470cc",
+      "sha1": "ec4f3377a7b2bd44b10d1d78068bf95a6c6e62be"
+    },
+    {
+      "path": "review/v3/front.jpg",
+      "size": 94250,
+      "sha256": "20a9b806e57baf2c4a5e699ea58699474c5ed25dc40987420f2e3631eadb08e5",
+      "sha1": "abbdaa2b86b9e66666d0a3f35e2feefa45f61e99"
+    },
+    {
+      "path": "review/v3/handle.jpg",
+      "size": 90168,
+      "sha256": "56106acaea8305abc8c3ca334b7ce00ee443ea68ffba89d18e08314f508101a4",
+      "sha1": "c08c350549b446f7d84fb38665bcc0723503a143"
+    },
+    {
+      "path": "review/v3/hero.jpg",
+      "size": 124581,
+      "sha256": "bd319ee03ac9b7c2ccba2ff90acbb1d593c6215ef020d67d38a8ba99405d8138",
+      "sha1": "9334d323f5b8d7ee29e5ace9f7e29aad54dd72ab"
+    },
+    {
+      "path": "review/v3/left-comparison.jpg",
+      "size": 299488,
+      "sha256": "8e0e2d2b0cdb69505fd360b811ca47b5da3c1dade5a104b3d50fcca75dce3099",
+      "sha1": "e6f06a4da41b9d5ffec8d8588e97934ec68dd3e6"
+    },
+    {
+      "path": "review/v3/left-overlay.jpg",
+      "size": 170366,
+      "sha256": "1461b9f412b61985d59aeae8df9813a081691deb37da435b9233af56f9479173",
+      "sha1": "393232be26a5724158efee6b299e19afddab23ba"
+    },
+    {
+      "path": "review/v3/lid-model-left.png",
+      "size": 39871,
+      "sha256": "6e25f3e45fd6726ce192affe07b36aadb5c0cb0b397b650549fc17f8288acb2d",
+      "sha1": "4bce79591782569f76e214f0318aca5d25a13699"
+    },
+    {
+      "path": "review/v3/lid-model-right.png",
+      "size": 41479,
+      "sha256": "b63a6608c4505091e593ec6e31cb2af98f312e0a1e5868e6acb8cba2ad723596",
+      "sha1": "a970c51797563e2bc068030bde4cae70f680055c"
+    },
+    {
+      "path": "review/v3/lid-native-left.jpg",
+      "size": 153809,
+      "sha256": "bf5a0ddadef0b2e274753cf9f11a9acb4f312263b5d8b9d583740c847d6c2226",
+      "sha1": "5886c8edd02ced2154d745aa9fcce4ba128b6ed8"
+    },
+    {
+      "path": "review/v3/lid-native-right.jpg",
+      "size": 153153,
+      "sha256": "f48a11030e1740035b9fbbd068daf868c2a2d8fc4dab791bcdb5bbbb3db4761e",
+      "sha1": "2f846d79159bed05434e2dd5dcd08ad468881a8e"
+    },
+    {
+      "path": "review/v3/lid-reference-left.png",
+      "size": 83441,
+      "sha256": "771d818ef556776ee41c6d9250e91b3d0fe0474f7dcc0ff84b48f4051e9e510c",
+      "sha1": "d58969e845aecaa02aea380d49a3a95dea1769f2"
+    },
+    {
+      "path": "review/v3/lid-reference-right.png",
+      "size": 86317,
+      "sha256": "7bf3977ab38d42bb2b81a56ca9060414dd863647a6def2ae989ee325013d10a2",
+      "sha1": "0167f92a7e8fc23e32cd26172bc98f7f517cb455"
+    },
+    {
+      "path": "review/v3/lid.jpg",
+      "size": 55119,
+      "sha256": "5fdf10fdbb9a19c54146220b44c17e9d724de7773217a9b808a5794bb919a7d3",
+      "sha1": "b25095f4323e4dcd1c30c5730b2356a5401efaf9"
+    },
+    {
+      "path": "review/v3/quarters.jpg",
+      "size": 172956,
+      "sha256": "14b7a3533ab84c2710d3ab58f82ddc2cde60bff7f53efdaf88f36bfbc4ca583f",
+      "sha1": "11c6dc021d270eb8f7b6ccd34179f733d2b61c15"
+    },
+    {
+      "path": "review/v3/reference-left.jpg",
+      "size": 211977,
+      "sha256": "85fe4bf207e8f767199134a7333f0288638af4f1a21f753f8ba72b3b097049ab",
+      "sha1": "d3ca0d56745aa86e4b744995211fd98fd42db8c8"
+    },
+    {
+      "path": "review/v3/reference-right.jpg",
+      "size": 211869,
+      "sha256": "5ac9252f0f8fb455eeed76b8b349dc12c83632917058f91f07ab2ab176c683fd",
+      "sha1": "a9202c5b2a7654d89e5f2df6c55250772636cfce"
+    },
+    {
+      "path": "review/v3/right-comparison.jpg",
+      "size": 272770,
+      "sha256": "d2c0c11fd00c8d4fef0fea61ef64a531fba7d7b6bda3de3342f300533e81aaf8",
+      "sha1": "77020be2577ab190008c41d3c756da4c19aae98e"
+    },
+    {
+      "path": "review/v3/right-overlay.jpg",
+      "size": 152526,
+      "sha256": "8a9f784c32fd40df78cd4bc96d1855e3104f20cfd4eb99863ab25f7254aa6712",
+      "sha1": "52bc41ab5ed59d8409e3ed482f7a4b46a21529cf"
+    },
+    {
+      "path": "review/v3/source-floral.json",
+      "size": 1374,
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "sha1": "425a1d20148d5f4d2e545b387ba9618a0703b736"
+    },
+    {
+      "path": "review/v3/v3-left.jpg",
+      "size": 121871,
+      "sha256": "5c8e45c3ddc2845be6ab7debd18c85941c64ba58bd98b53feabe46a30a5c25a3",
+      "sha1": "afc84908d819fa3c8ee4bc462238630a78d2c6eb"
+    },
+    {
+      "path": "review/v3/v3-right.jpg",
+      "size": 94708,
+      "sha256": "d9849b1188b35be19ed6218a1dee4492d48bddf8e21a1e901418a7824b8ba88f",
+      "sha1": "a8b962cf680fa3304eca1638e477e60977ef54aa"
+    },
+    {
+      "path": "review/v3/verification.json",
+      "size": 6497,
+      "sha256": "1cc53109875d509e8e15b5f65837a0ec46c60c4c7a0d52b4d8a12968bc848ec8",
+      "sha1": "4269e3e62349dc0d7eba0877853c440a9669a2c1"
+    },
+    {
+      "path": "textures/china-baseColor-754558a83d8866b8.webp",
+      "size": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "sha1": "a5a2fbe7489cb3441ad3e554feae7044d8f0b398"
+    },
+    {
+      "path": "textures/china-metalness-7ac9525c8019fc98.webp",
+      "size": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "sha1": "7b0d376de636f6d47df37507fab84e2186b4ad1f"
+    },
+    {
+      "path": "textures/china-normal-f0662e241725d83b.webp",
+      "size": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "sha1": "fea1d94204d9107404943a7267ea3781462d5c76"
+    },
+    {
+      "path": "textures/china-roughness-40e7b97659e5e028.webp",
+      "size": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "sha1": "a4a53177b9c1040bad19d1045bbf486dae44b120"
+    },
+    {
+      "path": "textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+      "size": 2532548,
+      "sha256": "09eb4a8337a419e2d3d448c11596764f88aa0bf33e92d43f8359d933c6843df2",
+      "sha1": "cefa5bef259205bd1fc98f8c6fd1a91fe6cc8faa"
+    },
+    {
+      "path": "textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+      "size": 164726,
+      "sha256": "cff904af2a6dfa3db4f2a28f0a4accbd8e4c2551184461c2baf4ea3f42f71ce0",
+      "sha1": "4f9f7cbab01ec00672a38fcad16955879a0f7842"
+    },
+    {
+      "path": "textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+      "size": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3",
+      "sha1": "5c941764c3a8943ca77a2c57704406127c2c9487"
+    },
+    {
+      "path": "textures/fixed-body-roughness-2cf010a49887d95e.webp",
+      "size": 189838,
+      "sha256": "2cf010a49887d95ed47f493184f58002572c20ed31aef41404bbc9e3864c4126",
+      "sha1": "69b28d09e03dff7cb251f26d15c8d2c6a49c92eb"
+    },
+    {
+      "path": "textures/fixed-handle-baseColor-532fac87777aba59.webp",
+      "size": 1779642,
+      "sha256": "532fac87777aba59e25f143b8dd33bc86a629e92fb0ea57e938c58abaebb33f1",
+      "sha1": "204d263cbba7d4e25f5454584ae3834bd790edf0"
+    },
+    {
+      "path": "textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+      "size": 108714,
+      "sha256": "f6ed3020d859c5cbc0addb03dd60055a00cc9745fad700cdc780f1f7f15cca21",
+      "sha1": "b1355f62aabea68e924b661734e2204538c0f5b1"
+    },
+    {
+      "path": "textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+      "size": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341",
+      "sha1": "01719ae6d8111f898d5b49086319901820b43486"
+    },
+    {
+      "path": "textures/fixed-handle-roughness-9095e03b450273c8.webp",
+      "size": 122426,
+      "sha256": "9095e03b450273c8b8bf3d9a24a60fb83aeda978d2b7cdb2344a7575c2ec0019",
+      "sha1": "ff1768962153b10f77f0b9ea4e2bde8c64c6c981"
+    },
+    {
+      "path": "textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+      "size": 11008588,
+      "sha256": "69f9090a7ca74212bb90f9ca1a74a932156b8148b4d8c384da77c7e1b7df4d82",
+      "sha1": "7ea4548291f3cb7f7a3e56c59cb49a71c7ea591d"
+    },
+    {
+      "path": "textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+      "size": 522132,
+      "sha256": "33ea1e54980b7b76edfac64edd521b422042e89619b926b55989a4a6904075fa",
+      "sha1": "c1a8ea31217105c6488f0ecb0883891d75ae622b"
+    },
+    {
+      "path": "textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+      "size": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1",
+      "sha1": "c6cc126ab7e8a79930fbf107d2db43ced70be01c"
+    },
+    {
+      "path": "textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+      "size": 741474,
+      "sha256": "d1c7c328646bb2838081879164ba338a36f265b2102e94066513aa8c68c0c0e5",
+      "sha1": "dbc6275ba3e40f09e42d852b2bb144781da3b7b6"
+    }
+  ],
+  "totalBytes": 187315002
+}

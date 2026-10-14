@@ -1,29 +1,39 @@
 {
-  "name": "花鸟原图局部 · 参考重建 v4",
+  "name": "固定广彩 · 高清重建彩釉与连续花带",
+  "mapping": "source-layout-v3",
   "regions": {
     "body": {
       "baseColor": "body-baseColor.png",
-      "normal": "body-normal.png",
-      "roughness": "body-roughness.png",
-      "metalness": "body-metalness.png",
+      "normal": "body-normal.hfn.gz",
       "height": "body-height.png",
+      "metalness": "body-metalness.png",
+      "roughness": "body-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
       "offsetU": 0
     },
     "handle": {
       "baseColor": "handle-baseColor.png",
-      "normal": "handle-normal.png",
-      "roughness": "handle-roughness.png",
-      "metalness": "handle-metalness.png",
+      "normal": "handle-normal.hfn.gz",
       "height": "handle-height.png",
+      "metalness": "handle-metalness.png",
+      "roughness": "handle-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
       "offsetU": 0
     },
     "saucer": {
       "baseColor": "saucer-baseColor.png",
-      "normal": "saucer-normal.png",
-      "roughness": "saucer-roughness.png",
-      "metalness": "saucer-metalness.png",
+      "normal": "saucer-normal.hfn.gz",
       "height": "saucer-height.png",
-      "offsetU": 0.485
+      "metalness": "saucer-metalness.png",
+      "roughness": "saucer-roughness.png",
+      "normalFormat": "rgba16f-gzip-v1",
+      "offsetU": -0.105,
+      "atlas": {
+        "rows": 2,
+        "contentWidth": 8128,
+        "contentHeight": 512,
+        "gutter": 32
+      }
     }
   }
 }

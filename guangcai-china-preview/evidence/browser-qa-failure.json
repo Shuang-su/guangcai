@@ -46,11 +46,8 @@
     "five swaps release old GPU textures",
     "mobile no horizontal overflow",
     "mobile touch selects view",
-    "mobile touch drag rotates",
-    "mobile two-finger drag pans without rotation or zoom",
-    "mobile pinch still zooms",
-    "mobile reset clears pan"
+    "mobile touch drag rotates"
   ],
   "errors": [],
-  "error": "locator.tap: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#open-settings')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"open-settings\" class=\"open-settings\" aria-expanded=\"false\" aria-controls=\"settings\">材质校准</button>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <button data-view=\"handle\" aria-pressed=\"false\">把手</button> from <footer>…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <button data-view=\"handle\" aria-pressed=\"false\">把手</button> from <footer>…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <button data-view=\"handle\" aria-pressed=\"false\">把手</button> from <footer>…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying tap action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview/tools/china-qa.mjs:96:37"
+  "error": "AssertionError [ERR_ASSERTION]: mobile two-finger drag pans without rotation or zoom\n    at check (file:///Volumes/Prism_%E5%88%9D%E5%8F%B7%E6%A9%9F/%E5%B9%BF%E5%BD%A9/guangcai-china-v3/tools/china-qa.mjs:12:35)\n    at file:///Volumes/Prism_%E5%88%9D%E5%8F%B7%E6%A9%9F/%E5%B9%BF%E5%BD%A9/guangcai-china-v3/tools/china-qa.mjs:90:2"
 }

@@ -1,34 +1,18 @@
 {
-  "date": "2026-10-13T12:18:50.717Z",
-  "format": "WebP quality 94 fixed colors; body/handle capped near native master crop density (820px/142px), full-size saucer and 4096px city. Data channels encoded losslessly at their stated size; original PNGs and masters retained",
-  "sourceBytes": 17196573,
-  "webBytes": 5364256,
+  "date": "2026-10-13T23:40:27.037Z",
+  "format": "High precision fixed decals: lossless color/data WebP, gzip RGBA16F normals, float-height derivatives. City channels unchanged. Original PNG and 16-bit height masters retained.",
+  "sourceBytes": 57880194,
+  "webBytes": 51952141,
   "records": [
     {
       "source": "public/fixed/body-baseColor.png",
-      "web": "public/textures/fixed-body-baseColor-5243d1a2d7d630bd.webp",
-      "sourceBytes": 5535126,
-      "webBytes": 672942,
-      "sha256": "5243d1a2d7d630bd89362eb0bc4866ccd867b601935f3797687c742a9d23e51f",
+      "web": "public/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+      "sourceBytes": 3461685,
+      "webBytes": 2532548,
+      "sha256": "09eb4a8337a419e2d3d448c11596764f88aa0bf33e92d43f8359d933c6843df2",
       "size": [
-        820,
-        1779
-      ],
-      "encoding": "WebP quality 94, smart subsampling",
-      "decodedPixelsIdentical": false,
-      "rmse": 4.602788892663325,
-      "maxDelta": 74,
-      "psnr": 34.87038248079264
-    },
-    {
-      "source": "public/fixed/body-normal.png",
-      "web": "public/textures/fixed-body-normal-f7e890415f2c3a5e.webp",
-      "sourceBytes": 2457646,
-      "webBytes": 1365158,
-      "sha256": "f7e890415f2c3a5e8203d085b5a248fb2ff4fb354dd698732fdf69aa0149e0a6",
-      "size": [
-        820,
-        1779
+        1024,
+        2466
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -37,14 +21,30 @@
       "psnr": null
     },
     {
-      "source": "public/fixed/body-roughness.png",
-      "web": "public/textures/fixed-body-roughness-e091bf730ddc6c66.webp",
-      "sourceBytes": 511556,
-      "webBytes": 241906,
-      "sha256": "e091bf730ddc6c6676e05b2996b3a18bc0f90222a9f89f613713769fec0ae9b9",
+      "source": "public/fixed/body-normal.hfn.gz",
+      "web": "public/textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+      "sourceBytes": 5001612,
+      "webBytes": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3",
       "size": [
-        820,
-        1779
+        1024,
+        2466
+      ],
+      "encoding": "lossless gzip RGBA16F tangent normals",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/body-roughness.png",
+      "web": "public/textures/fixed-body-roughness-2cf010a49887d95e.webp",
+      "sourceBytes": 238770,
+      "webBytes": 189838,
+      "sha256": "2cf010a49887d95ed47f493184f58002572c20ed31aef41404bbc9e3864c4126",
+      "size": [
+        1024,
+        2466
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -54,13 +54,13 @@
     },
     {
       "source": "public/fixed/body-metalness.png",
-      "web": "public/textures/fixed-body-metalness-3783dc03ee4b6f0f.webp",
-      "sourceBytes": 1130961,
-      "webBytes": 509278,
-      "sha256": "3783dc03ee4b6f0f03ad4da6fe0b46901b1e63634ed3d44d1f62ae29ba5a04c9",
+      "web": "public/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+      "sourceBytes": 216899,
+      "webBytes": 164726,
+      "sha256": "cff904af2a6dfa3db4f2a28f0a4accbd8e4c2551184461c2baf4ea3f42f71ce0",
       "size": [
-        820,
-        1779
+        1024,
+        2466
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -70,29 +70,13 @@
     },
     {
       "source": "public/fixed/handle-baseColor.png",
-      "web": "public/textures/fixed-handle-baseColor-96585b6001cea8dd.webp",
-      "sourceBytes": 2339812,
-      "webBytes": 97688,
-      "sha256": "96585b6001cea8dd1b8491486751bfe7872a046861da8092daf1d01fd0cc8aec",
+      "web": "public/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+      "sourceBytes": 2384505,
+      "webBytes": 1779642,
+      "sha256": "532fac87777aba59e25f143b8dd33bc86a629e92fb0ea57e938c58abaebb33f1",
       "size": [
-        142,
-        1384
-      ],
-      "encoding": "WebP quality 94, smart subsampling",
-      "decodedPixelsIdentical": false,
-      "rmse": 4.776299223772967,
-      "maxDelta": 60,
-      "psnr": 34.54897307890444
-    },
-    {
-      "source": "public/fixed/handle-normal.png",
-      "web": "public/textures/fixed-handle-normal-01d9c81fa1bf17d2.webp",
-      "sourceBytes": 778792,
-      "webBytes": 148816,
-      "sha256": "01d9c81fa1bf17d25d69d56ad09507988210e235c0caaa7e86f51b666f96b7c6",
-      "size": [
-        142,
-        1384
+        384,
+        4473
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -101,14 +85,30 @@
       "psnr": null
     },
     {
-      "source": "public/fixed/handle-roughness.png",
-      "web": "public/textures/fixed-handle-roughness-8dfc650458946f17.webp",
-      "sourceBytes": 177287,
-      "webBytes": 37702,
-      "sha256": "8dfc650458946f17a408534c184b7ac53bb9b840c0fcf1711ddeca5427a97131",
+      "source": "public/fixed/handle-normal.hfn.gz",
+      "web": "public/textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+      "sourceBytes": 3771724,
+      "webBytes": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341",
       "size": [
-        142,
-        1384
+        384,
+        4473
+      ],
+      "encoding": "lossless gzip RGBA16F tangent normals",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/handle-roughness.png",
+      "web": "public/textures/fixed-handle-roughness-9095e03b450273c8.webp",
+      "sourceBytes": 154952,
+      "webBytes": 122426,
+      "sha256": "9095e03b450273c8b8bf3d9a24a60fb83aeda978d2b7cdb2344a7575c2ec0019",
+      "size": [
+        384,
+        4473
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -118,13 +118,13 @@
     },
     {
       "source": "public/fixed/handle-metalness.png",
-      "web": "public/textures/fixed-handle-metalness-a4bf861a6450a5bf.webp",
-      "sourceBytes": 438666,
-      "webBytes": 69242,
-      "sha256": "a4bf861a6450a5bf397754557282d0b8064558e85eac98990ae5ddf9909483c2",
+      "web": "public/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+      "sourceBytes": 135589,
+      "webBytes": 108714,
+      "sha256": "f6ed3020d859c5cbc0addb03dd60055a00cc9745fad700cdc780f1f7f15cca21",
       "size": [
-        142,
-        1384
+        384,
+        4473
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -134,29 +134,13 @@
     },
     {
       "source": "public/fixed/saucer-baseColor.png",
-      "web": "public/textures/fixed-saucer-baseColor-1d2be76630af811a.webp",
-      "sourceBytes": 1165225,
-      "webBytes": 231182,
-      "sha256": "1d2be76630af811aa75f91539eba8a76568b49654657cffce2168cd6557a00ce",
+      "web": "public/textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+      "sourceBytes": 14503414,
+      "webBytes": 11008588,
+      "sha256": "69f9090a7ca74212bb90f9ca1a74a932156b8148b4d8c384da77c7e1b7df4d82",
       "size": [
-        2172,
-        213
-      ],
-      "encoding": "WebP quality 94, smart subsampling",
-      "decodedPixelsIdentical": false,
-      "rmse": 5.436506218781504,
-      "maxDelta": 98,
-      "psnr": 33.42440582558777
-    },
-    {
-      "source": "public/fixed/saucer-normal.png",
-      "web": "public/textures/fixed-saucer-normal-f74ee54395467d94.webp",
-      "sourceBytes": 525925,
-      "webBytes": 375924,
-      "sha256": "f74ee54395467d94b9b46f487fb7faaba43be58120bee62bb064170e717424fc",
-      "size": [
-        2172,
-        213
+        8192,
+        1152
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -165,14 +149,30 @@
       "psnr": null
     },
     {
-      "source": "public/fixed/saucer-roughness.png",
-      "web": "public/textures/fixed-saucer-roughness-ad642521fd3b902b.webp",
-      "sourceBytes": 69829,
-      "webBytes": 40070,
-      "sha256": "ad642521fd3b902b5d5d38bf24f81ceecf604d734a23c588edefc410f890cdc6",
+      "source": "public/fixed/saucer-normal.hfn.gz",
+      "web": "public/textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+      "sourceBytes": 24498837,
+      "webBytes": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1",
       "size": [
-        2172,
-        213
+        8192,
+        1152
+      ],
+      "encoding": "lossless gzip RGBA16F tangent normals",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/saucer-roughness.png",
+      "web": "public/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+      "sourceBytes": 915703,
+      "webBytes": 741474,
+      "sha256": "d1c7c328646bb2838081879164ba338a36f265b2102e94066513aa8c68c0c0e5",
+      "size": [
+        8192,
+        1152
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,
@@ -182,13 +182,13 @@
     },
     {
       "source": "public/fixed/saucer-metalness.png",
-      "web": "public/textures/fixed-saucer-metalness-b48a365c8f1f85b7.webp",
-      "sourceBytes": 137609,
-      "webBytes": 64468,
-      "sha256": "b48a365c8f1f85b7eae4ad89a2b2c0f008eae09308613cc8b230320305b6b489",
+      "web": "public/textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+      "sourceBytes": 668365,
+      "webBytes": 522132,
+      "sha256": "33ea1e54980b7b76edfac64edd521b422042e89619b926b55989a4a6904075fa",
       "size": [
-        2172,
-        213
+        8192,
+        1152
       ],
       "encoding": "lossless WebP",
       "decodedPixelsIdentical": true,

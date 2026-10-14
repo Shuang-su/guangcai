@@ -70,5 +70,38 @@
     "immutableUrl": "https://6ace09922a1b2f8945a7a41c--guangcai-no1-china.netlify.app/",
     "verifiedReleaseFiles": 131,
     "allSha256Match": true
+  },
+  {
+    "version": "3.0-preview",
+    "commit": "b92e418e547c11c21ce90ccb2baad9ae5198a5a5",
+    "deployId": "6ace27aaf19dc1dfbdd9c2a0",
+    "siteName": "guangcai-no1-china-v3",
+    "immutableUrl": "https://6ace27aaf19dc1dfbdd9c2a0--guangcai-no1-china-v3.netlify.app/",
+    "verifiedReleaseFiles": 81,
+    "allSha256Match": true,
+    "status": "manual preview; Draft PR; formal tag pending visual acceptance"
+  },
+  {
+    "version": "3.0-preview-floral-hq",
+    "commit": "073167bed69ae46eb716e13bc9ad2de0bfea0084",
+    "deployId": "6ace32284a3c8d9e272b18ad",
+    "siteName": "guangcai-no1-china-v3",
+    "immutableUrl": "https://6ace32284a3c8d9e272b18ad--guangcai-no1-china-v3.netlify.app/",
+    "verifiedReleaseFiles": 108,
+    "allSha256Match": true,
+    "status": "manual preview; high precision and continuous seam; Draft PR; visual acceptance pending"
+  },
+  {
+    "version": "3.0-preview-floral-restored",
+    "commit": "9400eaf7f65452cbaa68bee563b9793c632d17ae",
+    "deployId": "6ace443df7425f433e717eb0",
+    "siteName": "guangcai-no1-china-v3",
+    "immutableUrl": "https://6ace443df7425f433e717eb0--guangcai-no1-china-v3.netlify.app/",
+    "verifiedReleaseFiles": 147,
+    "allSha256Match": false,
+    "allPublicFilesVerified": true,
+    "rawSha256Matches": 145,
+    "processedHtml": 2,
+    "status": "manual preview; generated HD fixed artwork and guarded continuous atlas; Draft PR; visual acceptance pending"
   }
 ]
