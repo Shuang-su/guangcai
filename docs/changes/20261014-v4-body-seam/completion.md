@@ -13,4 +13,8 @@ Validation:
 - Same-camera clay render is byte-identical before/after. Boundary brightness jump in the loading frame dropped from 34.21 to below 0.4 levels on a 0–255 scale; the loaded boundary also passes the <0.4 regression threshold. Precise sample results are stored in output/playwright/v4-body-seam/after/qa.json. This is a browser-rendered comparison, not physical-device acceptance.
 - Added a public same-camera comparison section at evidence.html#body-seam.
 
-Pending: source checkpoint, manual V4 deployment, public readback and immutable archive, then push/PR merge. V3 remains unchanged and Netlify must remain unbound from Git.
+Source checkpoint: 6b35efb104019472cea3679ea26cfee1e13ffc8b.
+
+Manually published V4 deployment 6aced018c70635a1ad24cbbe. All 408 public files match Netlify SHA-1 and local archived SHA-256. Archived by same-volume staging rename. Public browser checks passed with zero page/shader errors; loading boundary jump is 0.091111/255 and loaded original/China/Shenzhen samples have no brightness jump at the old seam boundary. All texture assets remain byte-identical to the preceding deployment; only runtime JS, entry HTML and comparison evidence changed.
+
+V3 remains at 6ace443df7425f433e717eb0. Both sites have no Git binding. Release/evidence checkpoint is to be pushed with the scoped fix PR targeting main, preserving separate manual deployment history. Browser/mobile emulation does not replace physical-device acceptance.

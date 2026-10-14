@@ -1,0 +1,283 @@
+{
+  "sourceCommit": "6b35efb104019472cea3679ea26cfee1e13ffc8b",
+  "deploy": {
+    "site_id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "site_name": "guangcai-no1-china-v4",
+    "deploy_id": "6aced018c70635a1ad24cbbe",
+    "deploy_url": "https://6aced018c70635a1ad24cbbe--guangcai-no1-china-v4.netlify.app",
+    "logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/deploys/6aced018c70635a1ad24cbbe",
+    "function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/functions",
+    "edge_function_logs": "https://app.netlify.com/projects/guangcai-no1-china-v4/logs/edge-functions",
+    "url": "https://guangcai-no1-china-v4.netlify.app"
+  },
+  "archive": "deployments/guangcai-no1-china-v4/6aced018c70635a1ad24cbbe",
+  "filesVerified": 408,
+  "errors": [],
+  "readbacks": [
+    {
+      "siteId": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "deployId": "6aced018c70635a1ad24cbbe",
+      "state": "ready",
+      "gitBinding": {}
+    },
+    {
+      "siteId": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "deployId": "6ace443df7425f433e717eb0",
+      "state": "ready",
+      "gitBinding": {}
+    }
+  ],
+  "publicQA": {
+    "phase": "online",
+    "url": "https://guangcai-no1-china-v4.netlify.app/",
+    "camera": [
+      -925,
+      215,
+      -215
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "metrics": [
+      {
+        "name": "loading",
+        "boundaryJump": 0.09111111111081982
+      },
+      {
+        "name": "gold",
+        "boundaryJump": 0
+      },
+      {
+        "name": "china-green",
+        "boundaryJump": 0
+      },
+      {
+        "name": "shenzhen-teal",
+        "boundaryJump": 0
+      }
+    ],
+    "checks": [
+      "china-green/metal: fixed textures, geometry and exposure preserved",
+      "china-green/paint: fixed textures, geometry and exposure preserved",
+      "shenzhen-teal/metal: fixed textures, geometry and exposure preserved",
+      "shenzhen-teal/paint: fixed textures, geometry and exposure preserved",
+      "no runtime or shader errors"
+    ],
+    "errors": [],
+    "debug": {
+      "version": "4.0.0",
+      "selection": {
+        "current": {
+          "variant": "shenzhen-teal",
+          "finish": "paint",
+          "text": "auto"
+        },
+        "desired": {
+          "variant": "shenzhen-teal",
+          "finish": "paint",
+          "text": "auto"
+        },
+        "busy": false,
+        "error": ""
+      },
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": true,
+      "view": "handle",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        93.8,
+        127.80000000000001,
+        520.0000000000002
+      ],
+      "target": [
+        17,
+        67,
+        0
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "auto",
+        "active": "gray",
+        "busy": true,
+        "hasCustom": false
+      },
+      "environment": "43e58192-f1fb-41f6-b749-b2c141f244c4",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": true,
+        "captures": 10,
+        "resolution": 512,
+        "position": [
+          0,
+          57.5,
+          0
+        ],
+        "envMap": "2e1d005c-90c1-4369-aa88-fe24043e5285",
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 3,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "36f73b68-4cbb-4fb6-b2e1-32272799578a",
+        "af944c6f-746f-423e-b571-f5f6485e330b",
+        "70b7f694-55b6-4c0f-add4-0243d034640e",
+        "6f2d0b04-4d9b-4f45-ac5c-c0899a8047ef",
+        "d436dba6-c6d6-4d2a-8fd9-e7144e97265e",
+        "40ea4c48-26cf-4b85-8f27-541d1ea0a603",
+        "17c5888d-5236-49bf-a709-1da65ee5b23c",
+        "7612ab5f-4f9b-4fa1-af1f-bd82a1636e49",
+        "a8bae845-9819-45e9-85cb-d550472781bd",
+        "4530141a-07fd-4534-a5d6-282fa135e778",
+        "9389e01f-5cd4-47ed-8893-2b8878eb108b"
+      ],
+      "memory": {
+        "geometries": 26,
+        "textures": 31
+      },
+      "city": {
+        "pack": {
+          "id": "shenzhen-teal",
+          "version": 4,
+          "name": "深圳 · 青蓝金线",
+          "layout": "blank-300deg-v1",
+          "baseColor": "./cities/v4/shenzhen-teal-baseColor-964c7c3c31fbb207.webp",
+          "coverage": "./cities/v4/shenzhen-teal-coverage-9168da8875bc29fa.webp",
+          "metalness": "./cities/v4/shenzhen-teal-metalness-9992b719f76510da.webp",
+          "roughness": "./cities/v4/shenzhen-teal-roughness-0e8ab8bb8a281bf2.webp",
+          "clearcoat": "./cities/v4/china-green-clearcoat-aea7a8b419244538.webp",
+          "normal": "./cities/v4/shenzhen-teal-c8c9a345d1685a6f.hfn.gz",
+          "normalEncoding": "rgba16f",
+          "finish": "paint",
+          "label": {
+            "source": "./cities/v4/label-create-5391195266bd432f.webp",
+            "color": "#327e85",
+            "hidden": false,
+            "metalness": 0
+          }
+        },
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 0,
+        "maps": [
+          {
+            "uuid": "b5b85977-f459-4757-99bf-8eb23c16a555",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "srgb",
+            "precision": "8-bit"
+          },
+          {
+            "uuid": "61bef3f8-4305-4d4c-a31a-828201044a98",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "",
+            "precision": "8-bit"
+          },
+          {
+            "uuid": "bb8918eb-c0db-4c1f-b911-82167b731bd7",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "",
+            "precision": "8-bit"
+          },
+          {
+            "uuid": "98a14427-149b-4ac2-a13b-aa4f757c2508",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "",
+            "precision": "8-bit"
+          },
+          {
+            "uuid": "7debe2c5-b20f-49c5-9ed7-e0bea883faa2",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "",
+            "precision": "RGBA16F"
+          },
+          {
+            "uuid": "94420d20-a606-45d5-986e-3a7fb81bc456",
+            "channel": 1,
+            "size": [
+              4096,
+              1783
+            ],
+            "colorSpace": "",
+            "precision": "8-bit"
+          }
+        ],
+        "labelSource": "./cities/v4/label-create-5391195266bd432f.webp",
+        "labelColor": "#327e85",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.75,
+        "specularIntensity": 0.85
+      },
+      "fixed": {
+        "body": {
+          "baseColor": "f9465f53-747a-4047-8911-a66f9247c4ee",
+          "normal": "46cb4eb1-fd1b-4850-8f14-627b682f132a",
+          "roughness": "8ca2c950-8784-4c62-9778-09ca7aee4e23",
+          "metalness": "a6842845-268c-42b3-b2b0-e4a1c9ea9a1d"
+        },
+        "handle": {
+          "baseColor": "a75be7ea-a13e-4c7f-8769-72c0cbcbb1d2",
+          "normal": "20043b3c-af05-4c45-a85e-9119230fcb2b",
+          "roughness": "c6388d1c-a47a-419e-9a3f-bb16a83e5e0b",
+          "metalness": "e2f432bb-7343-4966-8a14-373d09a73c9c"
+        },
+        "saucer": {
+          "baseColor": "e2475a95-bac3-4ef9-a45e-6c4e00704636",
+          "normal": "5ff37d97-e1d6-4e99-a1b5-6f71a0f87f49",
+          "roughness": "9255ab18-c0c7-4ce5-891a-7f16bcb54912",
+          "metalness": "d932c466-3207-4142-8170-476d46a4d9c2"
+        }
+      }
+    }
+  }
+}
