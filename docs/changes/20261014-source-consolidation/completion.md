@@ -28,3 +28,11 @@
 22个历史附件路径已不存在；同名已归档候选在conversation-attachment-index.json列出，同名不当作逐字节证明。该缺口明确保留，不伪造已读取结论。原始线稿、花纸和现存会话素材仍全部保留。
 
 初始补录checkpoint：815d80c5e49bcaadb10b15349f7f701740cc028f。原库的历史节点、4.3未合并分支和所有旧版本标签保留。
+
+## 远端核验与早期提交链边界
+
+2026-10-14 已推送815d80c与会话补录d891db1，远端分支SHA与本地一致。PR #24（https://github.com/Shuang-su/guangcai/pull/24）创建后回读为open、非Draft、未合并、mergeable=true；正文、标题及归档入口回读成功。10个LFS对象上传完成，不能将归档PR与产品部署混为一谈。
+
+另检查`/Users/shuangsu/Documents/New project/.git`中的`codex/guangcai-ceramic-showcase`：可读日志确认40fb17b1e00bf9f5e1f3d2d79d060674ec8eecc0（2026-09-21交付记录）与a84650f（2026-09-21原交互工程），根树为docs、guangcai-viewer、tools。其祖先同时包含memory-watch、AlDente等无关工程提交。尝试读取完整对象时在iCloud占位目录持续等待超过11分钟；终止本轮fetch，没有改动源仓库，也没有向广彩远端推送这条混合历史。
+
+相关可读广彩文件已按内容归档；这不等于原始混合仓库的完整提交链迁移。后续若恢复两份早期提交的patch，应保留原SHA/父节点与来源记录、单独核验项目路径，不整条导入无关项目历史或伪造历史提交。旧工作区仍保留。
