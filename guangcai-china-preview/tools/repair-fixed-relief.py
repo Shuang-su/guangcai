@@ -13,6 +13,7 @@ report={'method':'registered colour master, connected enamel support, gold inter
 for name,native in [('body',637),('handle',148),('saucer',6924)]:
  rgb=np.asarray(Image.open(M/f'{name}-restored.png').convert('RGB'),dtype=np.float32)/255
  metal=np.asarray(Image.open(O/f'{name}-metalness.png'),dtype=np.float32)/247
+ if metal.ndim==3:metal=metal[:,:,2] # 4.2 packs cleanup coverage into R; metalness stays in B.
  if name=='saucer':metal=unpack(metal)
  paper=None
  if name=='body':paper=np.asarray(Image.open(R/'assets/masters/v3/body.png').convert('RGB').resize((1024,2466))).min(2)>251

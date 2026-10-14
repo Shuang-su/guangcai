@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "view": "edge",
+      "changedChannels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0,
+      "comparison": "byte-identical"
+    },
+    {
+      "view": "grazing",
+      "changedChannels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0,
+      "comparison": "byte-identical"
+    },
+    {
+      "view": "handle",
+      "changedChannels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0,
+      "comparison": "byte-identical"
+    },
+    {
+      "view": "petals",
+      "changedChannels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0,
+      "comparison": "byte-identical"
+    },
+    {
+      "view": "pomegranate",
+      "changedChannels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0,
+      "comparison": "byte-identical"
+    }
+  ],
+  "glaze": {
+    "before": {
+      "clearcoat": 0.4,
+      "roughness": 0.22
+    },
+    "after": {
+      "clearcoat": 0.4,
+      "roughness": 0.22
+    }
+  },
+  "limits": "Browser rendering, not physical-device acceptance; normal maps do not displace the geometric silhouette."
+}

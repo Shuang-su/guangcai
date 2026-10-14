@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-14T02:53:58.323Z",
+  "date": "2026-10-14T03:48:58.289Z",
   "format": "High precision fixed decals: lossless color/data WebP, gzip RGBA16F normals, float-height derivatives. City channels unchanged. Original PNG and 16-bit height masters retained.",
-  "sourceBytes": 57606405,
-  "webBytes": 51678352,
+  "sourceBytes": 58732271,
+  "webBytes": 51851231,
   "records": [
     {
       "source": "public/fixed/body-baseColor.png",
@@ -22,10 +22,10 @@
     },
     {
       "source": "public/fixed/body-normal.hfn.gz",
-      "web": "public/textures/fixed-body-normal-994cb15e9320dc94.hfn.gz",
-      "sourceBytes": 4975877,
-      "webBytes": 4975877,
-      "sha256": "994cb15e9320dc94fcf86f9ef08ac5eb3752b3fc0f08944c2a6413a6780ec7f5",
+      "web": "public/textures/fixed-body-normal-35f734f1f0e18386.hfn.gz",
+      "sourceBytes": 4959453,
+      "webBytes": 4959453,
+      "sha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
       "size": [
         1024,
         2466
@@ -38,10 +38,10 @@
     },
     {
       "source": "public/fixed/body-roughness.png",
-      "web": "public/textures/fixed-body-roughness-2cf010a49887d95e.webp",
-      "sourceBytes": 238770,
-      "webBytes": 189838,
-      "sha256": "2cf010a49887d95ed47f493184f58002572c20ed31aef41404bbc9e3864c4126",
+      "web": "public/textures/fixed-body-roughness-102dbdb72defbc0f.webp",
+      "sourceBytes": 236127,
+      "webBytes": 186486,
+      "sha256": "102dbdb72defbc0f0ad68ca07d875465a38ff59eac2bb3ffb6dd89476d9a9a3d",
       "size": [
         1024,
         2466
@@ -54,10 +54,10 @@
     },
     {
       "source": "public/fixed/body-metalness.png",
-      "web": "public/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
-      "sourceBytes": 216899,
-      "webBytes": 164726,
-      "sha256": "cff904af2a6dfa3db4f2a28f0a4accbd8e4c2551184461c2baf4ea3f42f71ce0",
+      "web": "public/textures/fixed-body-metalness-4ebf050fa28829cb.webp",
+      "sourceBytes": 446054,
+      "webBytes": 195426,
+      "sha256": "4ebf050fa28829cb770b82ee6d22f27783ab0562662e66491cc1df1d5af89404",
       "size": [
         1024,
         2466
@@ -86,10 +86,10 @@
     },
     {
       "source": "public/fixed/handle-normal.hfn.gz",
-      "web": "public/textures/fixed-handle-normal-ad665303b31bc1ea.hfn.gz",
-      "sourceBytes": 3700062,
-      "webBytes": 3700062,
-      "sha256": "ad665303b31bc1eaeae8e8045e18bbf58236c9178208847acc02cddd223ac866",
+      "web": "public/textures/fixed-handle-normal-e40aff13da6fbc75.hfn.gz",
+      "sourceBytes": 3697818,
+      "webBytes": 3697818,
+      "sha256": "e40aff13da6fbc75109ea96e218871661f7524a70fde006f41fa86c1019cd1e2",
       "size": [
         384,
         4473
@@ -102,10 +102,10 @@
     },
     {
       "source": "public/fixed/handle-roughness.png",
-      "web": "public/textures/fixed-handle-roughness-9095e03b450273c8.webp",
-      "sourceBytes": 154952,
-      "webBytes": 122426,
-      "sha256": "9095e03b450273c8b8bf3d9a24a60fb83aeda978d2b7cdb2344a7575c2ec0019",
+      "web": "public/textures/fixed-handle-roughness-97a411c84ffbd9fb.webp",
+      "sourceBytes": 154027,
+      "webBytes": 121754,
+      "sha256": "97a411c84ffbd9fb2863fa25ff9d458ec8950fcc27976fdf3c87082349126e2b",
       "size": [
         384,
         4473
@@ -118,10 +118,10 @@
     },
     {
       "source": "public/fixed/handle-metalness.png",
-      "web": "public/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
-      "sourceBytes": 135589,
-      "webBytes": 108714,
-      "sha256": "f6ed3020d859c5cbc0addb03dd60055a00cc9745fad700cdc780f1f7f15cca21",
+      "web": "public/textures/fixed-handle-metalness-03cad18610d2317d.webp",
+      "sourceBytes": 273242,
+      "webBytes": 143034,
+      "sha256": "03cad18610d2317dc84187dd659fb5b1a3f437f38b2ca4acbab0436a5662bf86",
       "size": [
         384,
         4473
@@ -150,10 +150,10 @@
     },
     {
       "source": "public/fixed/saucer-normal.hfn.gz",
-      "web": "public/textures/fixed-saucer-normal-691aac4b5c9cbb36.hfn.gz",
-      "sourceBytes": 24322445,
-      "webBytes": 24322445,
-      "sha256": "691aac4b5c9cbb3623bcea84fdc6d0a0439c58ed7745691593468aec83a0fbb7",
+      "web": "public/textures/fixed-saucer-normal-24251c222bf45839.hfn.gz",
+      "sourceBytes": 24283080,
+      "webBytes": 24283080,
+      "sha256": "24251c222bf4583990212451c3a0c384d9ffdc58cc40ee90329ca9af4fb3f916",
       "size": [
         8192,
         1152
@@ -166,10 +166,10 @@
     },
     {
       "source": "public/fixed/saucer-roughness.png",
-      "web": "public/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
-      "sourceBytes": 915703,
-      "webBytes": 741474,
-      "sha256": "d1c7c328646bb2838081879164ba338a36f265b2102e94066513aa8c68c0c0e5",
+      "web": "public/textures/fixed-saucer-roughness-a4cde265336cff98.webp",
+      "sourceBytes": 913309,
+      "webBytes": 738282,
+      "sha256": "a4cde265336cff989ceee2fb72c6125ba29ac585efa495fd5ec5dedbe9d60312",
       "size": [
         8192,
         1152
@@ -182,10 +182,10 @@
     },
     {
       "source": "public/fixed/saucer-metalness.png",
-      "web": "public/textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
-      "sourceBytes": 668365,
-      "webBytes": 522132,
-      "sha256": "33ea1e54980b7b76edfac64edd521b422042e89619b926b55989a4a6904075fa",
+      "web": "public/textures/fixed-saucer-metalness-c0cbc2a353201be4.webp",
+      "sourceBytes": 1491418,
+      "webBytes": 695240,
+      "sha256": "c0cbc2a353201be439a318f32cbbbfd7b47054764bf1785838c951ea485718eb",
       "size": [
         8192,
         1152

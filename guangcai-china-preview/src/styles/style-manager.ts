@@ -6,10 +6,12 @@ import {validateFixedAtlas,type FixedAtlas} from '../materials/fixed-atlas';
 import fixedRendering from './fixed-rendering.json';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
+import {configureFixedGoldGround} from '../materials/fixed-gold-ground';
 export interface RegionPack {atlas?:FixedAtlas;baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
-export interface StylePack {mapping?:'source-layout-v3';name:string;regions:Record<Region,RegionPack>}
+export interface StylePack {mapping?:'source-layout-v3';cleanGoldGround?:boolean;name:string;regions:Record<Region,RegionPack>}
 export const defaultPack:StylePack={name:'固定广彩 · 高清重建花纸',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
+defaultPack.cleanGoldGround=true;
 for(const [region,atlas]of Object.entries(fixedRendering))defaultPack.regions[region as Region].atlas=atlas as FixedAtlas;
 for(const entry of Object.values(defaultPack.regions))if(entry.normal?.endsWith('.hfn.gz'))entry.normalFormat='rgba16f-gzip-v1';
 export const builtinStyles = [
@@ -76,7 +78,7 @@ export class StyleManager {
       }
     }
     // Atomic swap: only after EVERY channel decodes and passes alignment checks.
-    regions.forEach(region=>setRegionMaps(this.materials.regions[region],maps[region],pack.regions[region].atlas));
+    regions.forEach(region=>{setRegionMaps(this.materials.regions[region],maps[region],pack.regions[region].atlas);configureFixedGoldGround(this.materials.regions[region],pack.cleanGoldGround===true);});
     this.owned.forEach(t=>t.dispose());this.owned=textures;
     this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
   }

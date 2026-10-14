@@ -129,3 +129,4 @@ if active:(R/'src/styles/fixed-rendering.json').write_text(json.dumps({'saucer':
 if active:
  import runpy
  runpy.run_path(str(R/"tools/repair-fixed-relief.py"),run_name="__main__")
+ runpy.run_path(str(R/"tools/clean-fixed-gold.py"),run_name="__main__")

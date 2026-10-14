@@ -407,5 +407,12 @@
     "report": "evidence/fixed-relief-alignment/derivation.json",
     "normalScale": 4.4,
     "clearcoatNormalScale": 2.4
+  },
+  "goldCleanup": {
+    "version": "4.2.0",
+    "shader": "fixed-gold-ground",
+    "report": "evidence/floral-cleanup-4.2/derivation.json",
+    "originalRGBUnchanged": true,
+    "metalnessEncoding": "R: clean gold coverage; B: metalness"
   }
 }
