@@ -1,0 +1,41 @@
+{
+  "verifiedOriginalCommits": 2,
+  "filesPerSnapshot": [
+    154,
+    154
+  ],
+  "treesPerSnapshot": [
+    25,
+    25
+  ],
+  "uniqueScopedBlobs": 152,
+  "changedPaths": [
+    "docs/changes/20260921-guangcai-showcase/completion.md"
+  ],
+  "bothRootsMatchOriginalCommits": true,
+  "oldSourceRequired": false,
+  "regressionTests": {
+    "passed": 5,
+    "cases": [
+      "authentic snapshots",
+      "changed file",
+      "missing file",
+      "wrong tree",
+      "changed commit"
+    ]
+  },
+  "sourceAudit": {
+    "localFiles": 395,
+    "datalessFiles": 0,
+    "fsckReturncode": 0,
+    "danglingBlobs": 72,
+    "duplicateObject": {
+      "path": "objects/fa/459406f8b4115a55d9415f56bdc23bf7cc3956 2",
+      "identicalTo": "objects/fa/459406f8b4115a55d9415f56bdc23bf7cc3956",
+      "sha256": "8f89c1adb9dca289701fbf21dc804c3f8bd83334cd37474cbb61c80e19cb543c",
+      "bytes": 82,
+      "action": "preserved"
+    },
+    "unexpectedMessages": []
+  }
+}
