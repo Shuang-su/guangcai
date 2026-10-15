@@ -1,47 +1,61 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {SelectionController,defaultSelection,normalizeSelection,selectTheme,artworkPack,variants,isFixedGold,themeFor} from '../src/styles/city-selection';
+import {SelectionController,defaultSelection,normalizeSelection,selectTheme,artworkPack,variants} from '../src/styles/city-selection';
+import {presetAppearance,normalizeAppearance,appearanceColors,hexHsl,hslRgb,materialAt,GOLD_LINE,palettes} from '../src/styles/city-appearance';
 import type {CityArtworkPack} from '../src/styles/city-artwork';
 const gold:CityArtworkPack={id:'legacy',version:3,name:'original',layout:'blank-300deg-v1',baseColor:'b',normal:'n',metalness:'m',roughness:'r',placement:{scale:.82,offsetU:.047,offsetV:0}};
-test('all 14 choices resolve; original pack is preserved exactly',()=>{
- assert.equal(variants.length,14);assert.deepEqual(artworkPack(defaultSelection,gold),gold);
- for(const v of variants.slice(1))for(const finish of ['enamel','metal','paint'] as const){
-  const p=artworkPack({variant:v.id,finish,text:'auto'},gold,'/preview/');
-  assert.equal(p.finish,isFixedGold(v)?undefined:finish);assert.ok(p.coverage?.startsWith('/preview/cities/v4/'));assert.equal(p.normalEncoding,'rgba16f');assert.equal(p.placement,undefined);
+test('original China pack and all legacy China palettes retain their interface',()=>{
+ assert.deepEqual(artworkPack(defaultSelection,gold),gold);
+ for(const v of variants.filter(x=>x.theme==='china'&&x.id!=='china-gold')){
+  const p=artworkPack({variant:v.id,finish:'paint',text:'auto'},gold,'/preview/');assert.equal(p.finish,'enamel');assert.ok(p.baseColor.startsWith('/preview/cities/v4/'));
+ }
+ assert.equal(artworkPack({...defaultSelection,text:'none'},gold).label?.hidden,true);
+});
+test('two V5 cities each expose five presets and share all structural channels',()=>{
+ for(const theme of ['beijing','shenzhen']){
+  const city=variants.filter(v=>v.theme===theme);assert.equal(city.length,5);
+  const packs=city.map(v=>artworkPack({variant:v.id,finish:'enamel',text:'name'},gold,'/preview/'));
+  for(const key of ['normal','coverage','baseColor'] as const)assert.equal(new Set(packs.map(p=>p[key])).size,1);
+  for(const p of packs){assert.equal(p.version,5);assert.equal(p.normalEncoding,'rgba16f');assert.equal(p.placement,undefined);assert.ok(p.parametric);assert.match(p.label!.source!,new RegExp(theme+'-label'));}
  }
 });
-test('Beijing shares one normal and coverage across five palettes; gold is fixed',()=>{
- const beijing=variants.filter(v=>v.theme==='beijing');assert.equal(beijing.length,5);
- const packs=beijing.map(v=>artworkPack({variant:v.id,finish:'enamel',text:'auto'},gold));
- assert.equal(new Set(packs.map(p=>p.normal)).size,1);assert.equal(new Set(packs.map(p=>p.coverage)).size,1);
- for(const p of packs){assert.match(p.label!.source!,/label-beijing-/);assert.equal(p.label!.hidden,false);}
- assert.equal(packs[0].finish,undefined);assert.equal(packs[0].label!.metalness,1);
- assert.equal(normalizeSelection(defaultSelection,{variant:'beijing-gold',finish:'paint'}).finish,'enamel');
- assert.equal(selectTheme(defaultSelection,'beijing').variant,'beijing-gold');
- assert.equal(selectTheme({...defaultSelection,text:'none'},'beijing').text,'none');
- assert.equal(selectTheme({variant:'shenzhen-red',finish:'metal',text:'he'},'beijing').text,'auto');
- assert.equal(themeFor(beijing[0]).name,'北京');
- const a=artworkPack({variant:'beijing-green',finish:'enamel',text:'auto'},gold);
- const b=artworkPack({variant:'beijing-green',finish:'enamel',text:'name'},gold);
- assert.deepEqual(a,b);
- const hidden=artworkPack({variant:'beijing-green',finish:'enamel',text:'none'},gold);
- assert.equal(hidden.normal,a.normal);assert.equal(hidden.baseColor,a.baseColor);assert.equal(hidden.label!.hidden,true);
+test('continuous appearance survives theme changes and entire-selection normalization',()=>{
+ const appearance={...presetAppearance('purple'),hue:171,saturation:42,lightness:36,material:.37,relief:1.75};
+ const a=normalizeSelection(defaultSelection,{variant:'beijing-purple',appearance,text:'none'});
+ const b=selectTheme(a,'shenzhen');const c=normalizeSelection(a,b);
+ assert.deepEqual(c.appearance,appearance);assert.equal(c.variant,'shenzhen-purple');assert.equal(c.text,'none');
+ const reset=normalizeSelection(c,{variant:'shenzhen-blue'});assert.deepEqual(reset.appearance,presetAppearance('blue'));
+ assert.equal(normalizeSelection(c,{finish:'paint'}).appearance!.material,0);
+ assert.equal(normalizeSelection(c,{finish:'metal'}).appearance!.material,1);
+ assert.equal(normalizeSelection(c,{variant:'shenzhen-teal'}).variant,'shenzhen-blue');
+ assert.throws(()=>normalizeSelection(c,{variant:'missing'}));
 });
-test('hidden text survives theme changes; Shenzhen slogans reset for China',()=>{
- assert.equal(selectTheme({...defaultSelection,text:'none'},'shenzhen').text,'none');
- assert.equal(selectTheme({variant:'shenzhen-teal',finish:'paint',text:'he'},'china').text,'auto');
- assert.equal(normalizeSelection(defaultSelection,{variant:'china-gold',finish:'metal'}).finish,'enamel');
- assert.throws(()=>normalizeSelection(defaultSelection,{variant:'missing'}));
- const red=artworkPack({variant:'shenzhen-red',finish:'enamel',text:'auto'},gold),teal=artworkPack({variant:'shenzhen-teal',finish:'enamel',text:'auto'},gold);
- assert.match(red.label!.source!,/label-he-/);assert.match(teal.label!.source!,/label-create-/);
- assert.equal(artworkPack({...defaultSelection,text:'none'},gold).label!.hidden,true);
+test('palette endpoints are reproduced in sRGB and HSL edits preserve a shared gradient',()=>{
+ for(const key of Object.keys(palettes) as Array<keyof typeof palettes>){const p=palettes[key],a=presetAppearance(key),c=appearanceColors(a);
+  for(const end of ['dark','light'] as const){const expected=[1,3,5].map(i=>parseInt(p[end].slice(i,i+2),16)/255);assert.ok(c[end].every((v,i)=>Math.abs(v-expected[i])<1e-8));}
+ }
+ assert.deepEqual(hslRgb(...hexHsl('#000000')),[0,0,0]);assert.deepEqual(hslRgb(...hexHsl('#ffffff')),[1,1,1]);
+ assert.equal(normalizeAppearance({...presetAppearance('red'),material:20,relief:-1}).material,1);
+ assert.equal(normalizeAppearance({...presetAppearance('red'),material:20,relief:-1}).relief,0);
+ assert.throws(()=>normalizeAppearance({...presetAppearance('red'),hue:NaN}));
 });
-test('last selection wins; stale failures cannot overwrite newer success',async()=>{
+test('material interpolation keeps independent gold parameters and exact finish endpoints',()=>{
+ assert.deepEqual(materialAt(0),{metalness:0,roughness:.31,clearcoat:191/255});
+ assert.equal(materialAt(1).roughness,72/255);assert.ok(Math.abs(materialAt(1).clearcoat-26/255)<1e-12);
+ for(const t of [0,.25,.5,.75,1]){assert.equal(materialAt(t).metalness,t);assert.equal(GOLD_LINE.metalness,1);assert.equal(GOLD_LINE.color,'#dcb251');}
+});
+test('last selection wins; stale failure and current failure preserve the committed selection',async()=>{
  const pending:Array<{resolve:(v:boolean)=>void,reject:(e:Error)=>void}>=[];
  const controller=new SelectionController(()=>new Promise((resolve,reject)=>pending.push({resolve,reject})),()=>{});
- const first=controller.select({variant:'china-green'}),last=controller.select({variant:'shenzhen-red'});
+ const first=controller.select({variant:'beijing-green'}),last=controller.select({variant:'shenzhen-red'});
  pending[1].resolve(true);assert.equal(await last,true);pending[0].reject(new Error('stale'));assert.equal(await first,false);
  assert.equal(controller.current.variant,'shenzhen-red');assert.equal(controller.error,'');assert.equal(controller.busy,false);
- const failure=controller.select({variant:'china-blue'});pending[2].reject(new Error('failed'));
- assert.equal(await failure,false);assert.equal(controller.current.variant,'shenzhen-red');assert.deepEqual(controller.desired,controller.current);assert.equal(controller.error,'failed');
+ const failure=controller.select({variant:'beijing-blue'});pending[2].reject(new Error('failed'));
+ assert.equal(await failure,false);assert.equal(controller.current.variant,'shenzhen-red');assert.deepEqual(controller.desired,controller.current);
+});
+
+test('Shenzhen explicit slogans remain available and reset outside Shenzhen',()=>{
+ const s=normalizeSelection(defaultSelection,{variant:'shenzhen-red',text:'he'});
+ assert.match(artworkPack(s,gold).label!.source!,/cities\/v4\/label-he-/);
+ assert.equal(selectTheme(s,'beijing').text,'auto');
 });

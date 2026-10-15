@@ -1,0 +1,34 @@
+{
+  "version": "5.0.0",
+  "date": "2026-10-15",
+  "applicationTests": {
+    "passed": 24,
+    "command": "npm test"
+  },
+  "assetTests": {
+    "passed": 4,
+    "command": "python3 tools/test_city_v5_assets.py"
+  },
+  "browserChecks": {
+    "passed": 45,
+    "unexpectedErrors": 0,
+    "file": "browser-qa.json",
+    "command": "QA_URL=http://127.0.0.1:5226/ npm run qa:v5"
+  },
+  "build": {
+    "passed": true,
+    "command": "npm run build -- --outDir .codex-work/tmp/v5/build",
+    "file": "build.json"
+  },
+  "authoritativeMasterPreservation": {
+    "passed": true,
+    "file": "master-preservation.json"
+  },
+  "sourceFiles": "sources.json",
+  "limits": [
+    "Chrome desktop, responsive viewports and touch emulation only; no physical phone or Safari acceptance",
+    "Manufacturing line width and spacing not specified",
+    "Beijing remains a local visual candidate for user review",
+    "Advisory main JS chunk size warning: 664.28 kB vs existing 650 kB threshold"
+  ]
+}

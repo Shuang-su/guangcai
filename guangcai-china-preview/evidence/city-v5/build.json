@@ -1,0 +1,115 @@
+{
+  "version": "5.0.0",
+  "status": "local-build-only",
+  "publicV5FilesMatch": 19,
+  "files": [
+    {
+      "path": "cities/v5/beijing-structure.webp",
+      "bytes": 164086,
+      "sha256": "092b834ad92dfdc298e9a9d56dce5758955f50d76c74e041adafc9c5b8204f70"
+    },
+    {
+      "path": "cities/v5/beijing-normal.hfn.gz",
+      "bytes": 2605765,
+      "sha256": "c2ef75e7d063ecb245fc8efdc154c386863f614778f4fe7d30c3e404571ca37a"
+    },
+    {
+      "path": "cities/v5/beijing-label.webp",
+      "bytes": 5796,
+      "sha256": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1"
+    },
+    {
+      "path": "cities/v5/beijing-thumb.webp",
+      "bytes": 26504,
+      "sha256": "b63e6e00c7b33303709a846254109e33f1786c846d2cee5d78243ca47daac8ee"
+    },
+    {
+      "path": "cities/v5/shenzhen-structure.webp",
+      "bytes": 157664,
+      "sha256": "0aa073e46798e114d93e2cd6ae5127b50f1ac8d1b8f1df89caecbfdb39eccd28"
+    },
+    {
+      "path": "cities/v5/shenzhen-normal.hfn.gz",
+      "bytes": 2789050,
+      "sha256": "c55ffa72ca862e49fe2f562289fa0e90762ff2814369aff089d1a64a4061d1a6"
+    },
+    {
+      "path": "cities/v5/shenzhen-label.webp",
+      "bytes": 7202,
+      "sha256": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92"
+    },
+    {
+      "path": "cities/v5/shenzhen-thumb.webp",
+      "bytes": 19740,
+      "sha256": "1bb0cd73b7c67b501665e0ba47bc9f5aa5b443a957a064b8adef7b030e47ac87"
+    },
+    {
+      "path": "cities/v5/catalog.json",
+      "bytes": 454,
+      "sha256": "efe6173bfcf077d0a1057e13acfe220c18403f79c2fc66b67c3ad5f12f3adf4c"
+    },
+    {
+      "path": "review/v5/beijing-original.jpg",
+      "bytes": 688205,
+      "sha256": "60bc44915f0096cc963473d2c81b59f4292c10af3e40daa79189707aeee3d038"
+    },
+    {
+      "path": "review/v5/beijing-black.png",
+      "bytes": 823068,
+      "sha256": "4c43628d75eb7725d1a572e68c7875e175164e6ab6f0a55de1d2dbb8ea056f79"
+    },
+    {
+      "path": "review/v5/shenzhen-black.png",
+      "bytes": 715133,
+      "sha256": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93"
+    },
+    {
+      "path": "review/v5/psd-temple.png",
+      "bytes": 222953,
+      "sha256": "92289c404f8a19025c0e3a0615f334d5f54adc57db13280f5c4e8c71cc0b358c"
+    },
+    {
+      "path": "review/v5/index.html",
+      "bytes": 4802,
+      "sha256": "1ae0317f6b6c7149127edffed552f39e8382c8915f011ab7005f4b0fd5fd7205"
+    },
+    {
+      "path": "review/v5/beijing.svg",
+      "bytes": 61930,
+      "sha256": "b7e6ba0778a9e4df2413808a26c20a36c845effb3ffc24cbe60457cab3ff81ff"
+    },
+    {
+      "path": "review/v5/shenzhen.svg",
+      "bytes": 60193,
+      "sha256": "c4e2d95e8b26b7dff4e38a71e8ee603944aea05b8d8f5b0be568e13db4ff04ab"
+    },
+    {
+      "path": "review/v5/template.svg",
+      "bytes": 387,
+      "sha256": "225b742db0064d868057017d33e8776625b27394e02ea87204911f091480d7d0"
+    },
+    {
+      "path": "review/v5/beijing-flat.png",
+      "bytes": 214128,
+      "sha256": "1fb8035af6f6ab0cb369925c0a66eca3aeaba54bab11e40893156a7cb3b6ef51"
+    },
+    {
+      "path": "review/v5/shenzhen-flat.png",
+      "bytes": 170907,
+      "sha256": "a88304b00a84e821be4bf0a5baee2188b182aeae6bb09c1fd01dee82930d5f12"
+    }
+  ],
+  "bundles": [
+    {
+      "path": "assets/index-CSfvfjfi.js",
+      "bytes": 664281,
+      "sha256": "c22fe60a4542f6fc4c30d608f885912db829f12f8f3d87cf2af16f2d1a7f671e"
+    },
+    {
+      "path": "assets/index-DFvP3tFU.css",
+      "bytes": 11424,
+      "sha256": "917dc587791b0b2ae09b116eb9916b675b5bd213d76a9fafc56f8d186b15f97f"
+    }
+  ],
+  "warning": "main JS chunk 664.28 kB exceeds existing 650 kB advisory; build succeeded"
+}

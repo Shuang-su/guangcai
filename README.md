@@ -2,11 +2,17 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：4.3
+## V5 本地开发
+
+当前功能分支 `codex/city-v5` 的应用版本为 **5.0.0**：北京／深圳共享结构母版、各五种颜色预设、整体 HSL 调色、固定金线、彩釉至彩色金属连续转换与 0–2 倍视觉浮雕。本轮完成本地样板与验证；尚未 push、PR、合并、打标签或部署。线上记录仍是下面的 4.3。
+
+[本轮完整请求、计划与完成记录](docs/changes/20261015-city-v5/) · [母版制作说明](guangcai-china-preview/assets/masters/v5/README.md)
+
+## 已发布记录：4.3
 
 [打开 V4 三维预览](https://guangcai-no1-china-v4.netlify.app/) · [4.3 北京主题对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#beijing-4.3) · [应用说明](guangcai-china-preview/README.md)
 
-中国杯本轮源码版本为 **4.3 / 4.3.0**，新增北京五款，与中国、深圳合计三个主题十四款。两款纯金维持固定材质，其余十二款支持彩釉金线、彩色金属、轻浮雕彩绘；文字可独立选择或隐藏。首次打开仍为中国原版纯金，固定高清广彩花纸与4.2金底清洗继续保留。4.3 已手动发布；源码与验证由 [PR #22](https://github.com/Shuang-su/guangcai/pull/22) 跟踪，标签和部署对应关系见下表。
+4.3 发布时的源码版本为 **4.3 / 4.3.0**，新增北京五款，与中国、深圳合计三个主题十四款。两款纯金维持固定材质，其余十二款支持彩釉金线、彩色金属、轻浮雕彩绘；文字可独立选择或隐藏。首次打开仍为中国原版纯金，固定高清广彩花纸与4.2金底清洗继续保留。4.3 已手动发布；源码与验证由 [PR #22](https://github.com/Shuang-su/guangcai/pull/22) 跟踪，标签和部署对应关系见下表。
 
 V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
 

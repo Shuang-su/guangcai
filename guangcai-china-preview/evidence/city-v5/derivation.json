@@ -1,0 +1,112 @@
+{
+  "version": 5,
+  "cities": [
+    {
+      "id": "beijing",
+      "source": "assets/source/v5/beijing-baseline-candidate.png",
+      "sourceSha256": "4c43628d75eb7725d1a572e68c7875e175164e6ab6f0a55de1d2dbb8ea056f79",
+      "sourceSize": [
+        1899,
+        828
+      ],
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 2.856280193236715,
+        "offset": [
+          4.461956521739012,
+          232.07125603864733
+        ],
+        "contentBottom": 745
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 130326,
+      "runtimeLinePixels": 371417,
+      "masterSha256": "b7e6ba0778a9e4df2413808a26c20a36c845effb3ffc24cbe60457cab3ff81ff",
+      "maps": {
+        "mask": {
+          "file": "beijing-structure.webp",
+          "sha256": "092b834ad92dfdc298e9a9d56dce5758955f50d76c74e041adafc9c5b8204f70"
+        },
+        "normal": {
+          "file": "beijing-normal.hfn.gz",
+          "sha256": "c2ef75e7d063ecb245fc8efdc154c386863f614778f4fe7d30c3e404571ca37a"
+        },
+        "label": {
+          "file": "beijing-label.webp",
+          "sha256": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1"
+        },
+        "thumbnail": {
+          "file": "beijing-thumb.webp",
+          "sha256": "b63e6e00c7b33303709a846254109e33f1786c846d2cee5d78243ca47daac8ee"
+        }
+      },
+      "candidate": true,
+      "holePolygons": []
+    },
+    {
+      "id": "shenzhen",
+      "source": "assets/masters/v4/shenzhen-lines-generated.png",
+      "sourceSha256": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93",
+      "sourceSize": [
+        1900,
+        828
+      ],
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 2.856280193236715,
+        "offset": [
+          3.0338164251206763,
+          89.25724637681151
+        ],
+        "contentBottom": 795
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 126907,
+      "runtimeLinePixels": 360228,
+      "masterSha256": "c4e2d95e8b26b7dff4e38a71e8ee603944aea05b8d8f5b0be568e13db4ff04ab",
+      "maps": {
+        "mask": {
+          "file": "shenzhen-structure.webp",
+          "sha256": "0aa073e46798e114d93e2cd6ae5127b50f1ac8d1b8f1df89caecbfdb39eccd28"
+        },
+        "normal": {
+          "file": "shenzhen-normal.hfn.gz",
+          "sha256": "c55ffa72ca862e49fe2f562289fa0e90762ff2814369aff089d1a64a4061d1a6"
+        },
+        "label": {
+          "file": "shenzhen-label.webp",
+          "sha256": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92"
+        },
+        "thumbnail": {
+          "file": "shenzhen-thumb.webp",
+          "sha256": "1bb0cd73b7c67b501665e0ba47bc9f5aa5b443a957a064b8adef7b030e47ac87"
+        }
+      },
+      "candidate": false,
+      "holePolygons": []
+    }
+  ],
+  "method": "source-derived polygon outlines; editable vector contours, independent coverage and source holes; no RGB shading as height; native source resolution recorded"
+}

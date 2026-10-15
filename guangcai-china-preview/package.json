@@ -1,6 +1,6 @@
 {
   "name": "guangcai-china-v4",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,7 +23,9 @@
     "textures:v4": "python3 tools/compile-city-v4.py && python3 tools/compile-beijing.py && node tools/city-manifest.mjs",
     "qa:v4": "node tools/v4-qa.mjs",
     "textures:beijing": "python3 tools/compile-beijing.py && node tools/city-manifest.mjs",
-    "qa:beijing": "node tools/beijing-qa.mjs"
+    "qa:beijing": "node tools/beijing-qa.mjs",
+    "qa:v5": "node tools/v5-qa.mjs",
+    "textures:v5": "python3 tools/compile-city-v5.py"
   },
   "dependencies": {
     "three": "0.186.1"
