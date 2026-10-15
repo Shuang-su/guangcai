@@ -22,8 +22,8 @@ def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def png(a):
  b=io.BytesIO();Image.fromarray(np.uint8(np.clip(a,0,255))).save(b,format='PNG');return b.getvalue()
 def vector(a):
- # Trace silhouette boundaries without adding new centre lines or smoothing roofs.
- svg=vtracer.convert_raw_image_to_svg(png(255-a),img_format='png',colormode='binary',mode='polygon',filter_speckle=0,corner_threshold=60,length_threshold=3.5,path_precision=3)
+ # Fit pixel contours locally; never reconstruct landmarks from idealized primitives.
+ svg=vtracer.convert_raw_image_to_svg(png(255-a),img_format='png',colormode='binary',mode='spline',filter_speckle=0,corner_threshold=60,length_threshold=2,path_precision=3)
  tree=ET.fromstring(svg);return '\n'.join(ET.tostring(x,encoding='unicode').replace('ns0:','').replace(':ns0','') for x in tree)
 def render(svg):
  js="import sharp from 'sharp';let b=[];for await(const x of process.stdin)b.push(x);process.stdout.write(await sharp(Buffer.concat(b)).png().toBuffer());"
@@ -44,7 +44,20 @@ def save_webp(a,name):
 records={};audits=[]
 for city in SPEC['cities']:
  ident=city['id'];source=ROOT/city['source'];im=Image.open(source).convert('RGBA');a=np.asarray(im).astype(np.float32);sw,sh=im.size
- if city['extraction']=='orange-ink':
+ if city['extraction']=='black-ink-white':
+  ink=255-np.mean(a[:,:,:3],axis=2);binary=ink>85
+  # Close fill boundaries independently. These helper segments are NEVER ink.
+  barrier=Image.fromarray(np.uint8(np.pad(binary,4))*255)
+  draw=ImageDraw.Draw(barrier)
+  for polyline in city.get('fillClosures',[]):draw.line([(x+4,y+4) for x,y in polyline],fill=255,width=3)
+  barrier=barrier.filter(ImageFilter.MaxFilter(3)).filter(ImageFilter.MinFilter(3))
+  area=barrier.copy();ImageDraw.floodfill(area,(0,0),128)
+  for x,y in city.get('holeSeeds',[]):
+   seed=(x+4,y+4)
+   if area.getpixel(seed)==255:raise ValueError(f'{ident}: hole seed lies on a stroke: {(x,y)}')
+   if area.getpixel(seed)==0:ImageDraw.floodfill(area,seed,64)
+  cover=(np.asarray(area)[4:-4,4:-4]!=128)&(np.asarray(area)[4:-4,4:-4]!=64)
+ elif city['extraction']=='orange-ink':
   ink=np.maximum(0,a[:,:,0]-a[:,:,2]);binary=ink>70
   # Outside flooding only establishes candidates; explicit semantic holes win.
   barriers=Image.fromarray(np.uint8(binary)*255).filter(ImageFilter.MaxFilter(3)).filter(ImageFilter.MinFilter(3))
@@ -76,7 +89,7 @@ for city in SPEC['cities']:
  if native and not master_path.exists():raise ValueError('Missing landmark master; run build-city-landmarks.py first')
  if not native and (not master_path.exists() or '--trace' in sys.argv):
   ink_vector=vector(np.uint8(binary)*255);fill_vector=vector(np.uint8(cover)*255);holes_vector=vector(np.uint8(holes)*255)
-  master=f'<title>{city["name"]} V5 — structure and independent fill</title><metadata>Source {city["source"]}; {digest(source)}; generated artwork, polygon contour paths, not hand-authored centreline splines.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
+  master=f'<title>{city["name"]} V5 — generated artwork, faithful contour extraction</title><metadata>Source {city["source"]}; {digest(source)}; original generated image is authoritative artwork; locally fitted ink contours, not programmatically reconstructed landmarks.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
   master_path.write_text(doc(master,MW,MH))
  # Committed SVG is authoritative after initial tracing; do not overwrite edits.
  tree=ET.fromstring(master_path.read_text())
@@ -98,6 +111,12 @@ for city in SPEC['cities']:
  lines=raster(ink_group)
  fill_mask=f'<defs><mask id="fill-holes" maskUnits="userSpaceOnUse" x="0" y="0" width="{MW}" height="{MH}"><rect width="{MW}" height="{MH}" fill="white"/>{hole_group}</mask></defs><g mask="url(#fill-holes)">{fill_group}</g>'
  coverage=np.maximum(raster(fill_mask),lines)
+ # Native-coordinate comparison proves that curves/details survived tracing.
+ native_view=f'{dx} {dy} {sw*scale} {sh*scale}'
+ traced=render(doc(ink_group,sw,sh,native_view))>127
+ original_support=np.asarray(Image.fromarray(np.uint8(binary)*255).filter(ImageFilter.MaxFilter(3)))>0
+ traced_support=np.asarray(Image.fromarray(np.uint8(traced)*255).filter(ImageFilter.MaxFilter(3)))>0
+ fidelity={'originalStrokeRecallWithin1px':float((binary&traced_support).sum()/max(1,binary.sum())),'tracedStrokePrecisionWithin1px':float((traced&original_support).sum()/max(1,traced.sum()))} if not native else None
  mask=np.stack([lines,coverage,np.zeros_like(lines)],axis=2);maskfile=save_webp(mask,ident+'-structure')
  height=blur(lines.astype(np.float32)/255,.65)
  Image.fromarray(np.rint(height*65535).astype('uint16')).save(MASTER/(ident+'-height16.png'))
@@ -114,15 +133,20 @@ for city in SPEC['cities']:
  thumb=OUT/(ident+'-thumb.webp');Image.fromarray(np.uint8(flat)).resize((768,334),Image.Resampling.LANCZOS).save(thumb,quality=94)
  Image.fromarray(np.uint8(flat)).resize((1536,669),Image.Resampling.LANCZOS).save(EVIDENCE/(ident+'-flat.png'))
  Image.fromarray(lines).save(EVIDENCE/(ident+'-lines.png'));Image.fromarray(coverage).save(EVIDENCE/(ident+'-coverage.png'))
+ # White-backed proof is rendered from the actual runtime line channel.
+ review=ROOT/'public/review/v5';review.mkdir(parents=True,exist_ok=True)
+ proof=np.repeat((255-lines)[:,:,None],3,axis=2)
+ Image.fromarray(proof).resize((1900,827),Image.Resampling.LANCZOS).save(review/(ident+'-line-review.png'))
+ shutil.copyfile(source,review/(ident+'-black.png'))
  record={'mask':maskfile,'normal':npth.name,'label':labelFile,'thumbnail':thumb.name}
  records[ident]={'name':city['name'],**record}
- audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'authoring':authoring,'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[])}
+ audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'authoring':authoring,'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[]),'holeSeeds':city.get('holeSeeds',[]),'fillClosures':city.get('fillClosures',[]),'traceFidelity':fidelity}
  audits.append(audit);print(ident,record,flush=True)
 template=doc(f'<title>City master — PSD frame 5433 × 2365 at 600 ppi</title>{guides}<g id="fill"/><g id="holes"/><g id="lines"/>',MW,MH)
 (MASTER/'template.svg').write_text(template)
 (OUT/'catalog.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/styles/city-catalog-v5.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
-(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'authoritative editable SVG; landmark construction with PSD temple contours; independent coverage and holes; line-only relief; authoring coordinates and bitmap reference resolution recorded separately'},ensure_ascii=False,indent=2)+'\n')
+(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'generated-image artwork with source-faithful spline contours; independent fill-only closure and semantic holes; line-only relief; original native resolution recorded'},ensure_ascii=False,indent=2)+'\n')
 review=ROOT/'public/review/v5';review.mkdir(parents=True,exist_ok=True)
 for name in ['template',*records]:shutil.copyfile(MASTER/(name+'.svg'),review/(name+'.svg'))
 for name in records:shutil.copyfile(EVIDENCE/(name+'-flat.png'),review/(name+'-flat.png'))

@@ -25,7 +25,9 @@
     "textures:beijing": "python3 tools/compile-beijing.py && node tools/city-manifest.mjs",
     "qa:beijing": "node tools/beijing-qa.mjs",
     "qa:v5": "node tools/v5-qa.mjs",
-    "textures:v5": "python3 tools/compile-city-v5.py"
+    "textures:v5": "python3 tools/compile-city-v5.py",
+    "pipeline:v5": "node tools/v5-pipeline.mjs",
+    "deploy:v5": "node tools/deploy-v5.mjs"
   },
   "dependencies": {
     "three": "0.186.1"

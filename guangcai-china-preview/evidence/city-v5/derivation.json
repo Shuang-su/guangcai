@@ -3,20 +3,15 @@
   "cities": [
     {
       "id": "beijing",
-      "source": "assets/source/v5/beijing-baseline-candidate.png",
-      "sourceSha256": "4c43628d75eb7725d1a572e68c7875e175164e6ab6f0a55de1d2dbb8ea056f79",
+      "source": "assets/source/v5/generated-detail/beijing-white.png",
+      "sourceSha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
       "sourceSize": [
         1899,
         828
       ],
       "authoring": {
-        "mode": "landmarks",
-        "size": [
-          1900,
-          828
-        ],
-        "baseline": 790,
-        "manifest": "assets/masters/v5/landmarks/manifest.json"
+        "mode": "image-trace",
+        "authority": "generated source image; no idealized landmark reconstruction"
       },
       "masterSize": [
         5433,
@@ -29,27 +24,27 @@
       "sourceToMaster": {
         "scale": 2.856280193236715,
         "offset": [
-          3.0338164251206763,
-          103.53864734299532
+          4.461956521739012,
+          192.08333333333348
         ],
-        "contentBottom": 790
+        "contentBottom": 759
       },
       "placementAppliedOnce": {
         "scale": 0.82,
         "offsetU": 0.047,
         "offsetV": 0
       },
-      "sourceInkPixels": 130326,
-      "runtimeLinePixels": 276855,
-      "masterSha256": "f8300f3f40b0e3cc9029b697f7c9ecd5394a08da7105172e686bf09f58036900",
+      "sourceInkPixels": 130696,
+      "runtimeLinePixels": 362833,
+      "masterSha256": "1d6b20b6c8779fe15f36fc754552d4b5acfdb7874806c70143f5074e2f6b1d08",
       "maps": {
         "mask": {
           "file": "beijing-structure.webp",
-          "sha256": "a24fde4aad18ed452a44faa0cacf0ecb5e8e7b1476a952d0af1f3ab874cecb61"
+          "sha256": "448d36ddb09b33ff68e08ffd57ee5ce85cc60642702559e3f288e48c1710bada"
         },
         "normal": {
           "file": "beijing-normal.hfn.gz",
-          "sha256": "6849164d6566ab40294edd44fc4dfa2d0ecccb516d7cde998d4a42cfe9d2a397"
+          "sha256": "9f59a505eb6b678dc51f34ce42cb83427e975939be3cbd32a37cef00a41b5111"
         },
         "label": {
           "file": "beijing-label.webp",
@@ -57,28 +52,45 @@
         },
         "thumbnail": {
           "file": "beijing-thumb.webp",
-          "sha256": "61c62933ce01cd707de64dfa231aa4e27929d84a2e9dd4f880de8025a2302135"
+          "sha256": "7b0a90ce53055162fa02ad875c0d5150daa12dc7a2c226c35148c1010ee29ad9"
         }
       },
       "candidate": true,
-      "holePolygons": []
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          195,
+          580
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            1147,
+            748
+          ],
+          [
+            1856,
+            757
+          ]
+        ]
+      ],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9959141825304524,
+        "tracedStrokePrecisionWithin1px": 0.9956871101070521
+      }
     },
     {
       "id": "shenzhen",
-      "source": "assets/masters/v4/shenzhen-lines-generated.png",
-      "sourceSha256": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93",
+      "source": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sourceSha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
       "sourceSize": [
         1900,
         828
       ],
       "authoring": {
-        "mode": "landmarks",
-        "size": [
-          1900,
-          828
-        ],
-        "baseline": 790,
-        "manifest": "assets/masters/v5/landmarks/manifest.json"
+        "mode": "image-trace",
+        "authority": "generated source image; no idealized landmark reconstruction"
       },
       "masterSize": [
         5433,
@@ -92,26 +104,26 @@
         "scale": 2.856280193236715,
         "offset": [
           3.0338164251206763,
-          103.53864734299532
+          77.83212560386482
         ],
-        "contentBottom": 790
+        "contentBottom": 799
       },
       "placementAppliedOnce": {
         "scale": 0.82,
         "offsetU": 0.047,
         "offsetV": 0
       },
-      "sourceInkPixels": 126907,
-      "runtimeLinePixels": 202277,
-      "masterSha256": "0727952895b6428db14be58180bf460f1d6d12bd210b699f0401a10262431a0d",
+      "sourceInkPixels": 126954,
+      "runtimeLinePixels": 351599,
+      "masterSha256": "11b1a91ce28cfe6a7618d6ecc766709299685f4fbeb12122356442f440fda831",
       "maps": {
         "mask": {
           "file": "shenzhen-structure.webp",
-          "sha256": "3bbbfb7412a859d75520f9b89be8adfa4d3560a932da18146db57b5635980152"
+          "sha256": "e39970e19e3a90777b8e5c8ef6e66fc0edaeb28b47205a65659917570acddf18"
         },
         "normal": {
           "file": "shenzhen-normal.hfn.gz",
-          "sha256": "59047b46f7435abc3e516981df598698c303a29b0368ca09ec9804def5668fbb"
+          "sha256": "ff973d1ceb3be85592ff85044d03c27d803a7d38c00ef9f3c9a327870fffc36c"
         },
         "label": {
           "file": "shenzhen-label.webp",
@@ -119,12 +131,23 @@
         },
         "thumbnail": {
           "file": "shenzhen-thumb.webp",
-          "sha256": "cfa427e21b302e75a4b5e6ec7cbe0619eea077a859007c33e6e30703f0f4f9a3"
+          "sha256": "5fd4a4c355f1dacacb3feb549a5cd4dc0c2835f5118f076f5eca9ec09988e8a8"
         }
       },
       "candidate": true,
-      "holePolygons": []
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          925,
+          737
+        ]
+      ],
+      "fillClosures": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9825054744238071,
+        "tracedStrokePrecisionWithin1px": 0.9964492023954634
+      }
     }
   ],
-  "method": "authoritative editable SVG; landmark construction with PSD temple contours; independent coverage and holes; line-only relief; authoring coordinates and bitmap reference resolution recorded separately"
+  "method": "generated-image artwork with source-faithful spline contours; independent fill-only closure and semantic holes; line-only relief; original native resolution recorded"
 }

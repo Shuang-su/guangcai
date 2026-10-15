@@ -90,6 +90,24 @@
         828
       ],
       "mode": "RGBA"
+    },
+    {
+      "path": "assets/source/v5/generated-detail/beijing-white.png",
+      "sha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+      "size": [
+        1900,
+        828
+      ],
+      "mode": "RGB"
     }
   ],
   "generation": {
@@ -121,19 +139,15 @@
   },
   "floralPpi": 400,
   "currentArtwork": {
-    "method": "landmarks-first authored SVG; exact original PSD temple contour",
-    "componentManifest": "assets/masters/v5/landmarks/manifest.json",
-    "builder": "tools/build-city-landmarks.py",
-    "authoringSize": [
-      1900,
-      828
+    "method": "ImageGen source -> faithful spline contours; no idealized landmark reconstruction",
+    "review": "assets/source/v5/generated-detail/review.json",
+    "prompts": "assets/source/v5/generated-detail/white-background-prompts.json",
+    "authoritativeSources": [
+      "assets/source/v5/generated-detail/beijing-white.png",
+      "assets/source/v5/generated-detail/shenzhen-white.png"
     ],
-    "shenzhenBridge": "removed per user request",
-    "studies": "assets/source/v5/rebuild/prompts.json",
-    "studyStatus": "Rejected as final inputs: Beijing cutoff and Shenzhen edge residue",
-    "activeMasters": [
-      "assets/masters/v5/beijing.svg",
-      "assets/masters/v5/shenzhen.svg"
-    ]
+    "shenzhenBridge": "removed",
+    "beijingBoundary": "two visible towers; continuous downhill ending; no horizontal ink underline",
+    "fillClosure": "separate fill-only helper; never embossed"
   }
 }

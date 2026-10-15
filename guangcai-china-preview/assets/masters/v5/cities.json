@@ -18,38 +18,53 @@
     {
       "id": "beijing",
       "name": "北京",
-      "source": "assets/source/v5/beijing-baseline-candidate.png",
-      "extraction": "black-ink-alpha",
+      "source": "assets/source/v5/generated-detail/beijing-white.png",
+      "extraction": "black-ink-white",
       "holes": [],
       "candidate": true,
-      "reference": "Original PSD temple + authored landmarks; curved wall ending",
+      "reference": "Detailed generated image constrained by original references; natural Great Wall ending",
       "authoring": {
-        "mode": "landmarks",
-        "size": [
-          1900,
-          828
-        ],
-        "baseline": 790,
-        "manifest": "assets/masters/v5/landmarks/manifest.json"
-      }
+        "mode": "image-trace",
+        "authority": "generated source image; no idealized landmark reconstruction"
+      },
+      "holeSeeds": [
+        [
+          195,
+          580
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            1147,
+            748
+          ],
+          [
+            1856,
+            757
+          ]
+        ]
+      ]
     },
     {
       "id": "shenzhen",
       "name": "深圳",
-      "source": "assets/masters/v4/shenzhen-lines-generated.png",
-      "extraction": "black-ink-alpha",
+      "source": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "extraction": "black-ink-white",
       "holes": [],
       "authoring": {
-        "mode": "landmarks",
-        "size": [
-          1900,
-          828
-        ],
-        "baseline": 790,
-        "manifest": "assets/masters/v5/landmarks/manifest.json"
+        "mode": "image-trace",
+        "authority": "generated source image; no idealized landmark reconstruction"
       },
       "candidate": true,
-      "reference": "Existing skyline reconstructed as landmarks; right bridge removed per user"
+      "reference": "Original detailed Shenzhen artwork; remove only right bridge",
+      "holeSeeds": [
+        [
+          925,
+          737
+        ]
+      ],
+      "fillClosures": []
     }
   ]
 }

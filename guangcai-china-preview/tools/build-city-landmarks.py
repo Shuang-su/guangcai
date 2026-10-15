@@ -198,6 +198,8 @@ def raster(svg_text,target,width=1900):
 manifest={'method':'landmarks-first; authored vector components plus original PSD temple contour',
           'authoringSize':[1900,828],'baseline':BASE,'cities':{}}
 spec=json.loads((OUT/'cities.json').read_text())
+if any(c.get('authoring',{}).get('mode')!='landmarks' for c in spec['cities']):
+    raise SystemExit('Historical landmark experiment is not active. It must not overwrite the current generated-image masters.')
 for ident,parts in [('beijing',beijing()),('shenzhen',shenzhen())]:
     city=next(c for c in spec['cities'] if c['id']==ident)
     source=ROOT/city['source']

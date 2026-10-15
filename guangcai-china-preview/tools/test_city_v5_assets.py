@@ -29,7 +29,7 @@ class CityAssets(unittest.TestCase):
    height=np.asarray(Image.open(R/f'assets/masters/v5/{a["id"]}-height16.png'))
    self.assertGreater(len(np.unique(height)),256)
  def test_architectural_voids_and_sky_remain_unpainted(self):
-  samples={'beijing':{'empty':[(195,580),(1300,200)],'filled':[(390,470),(745,620)]},'shenzhen':{'empty':[(953,735),(1500,200)],'filled':[(498,500),(685,600)]}}
+  samples={'beijing':{'empty':[(195,580),(1300,200)],'filled':[(390,470),(745,620)]},'shenzhen':{'empty':[(925,737),(1500,200)],'filled':[(460,500),(670,600)]}}
   for a in AUDIT:
    mask=np.asarray(Image.open(R/'public/cities/v5'/a['maps']['mask']['file']).convert('RGB'));t=a['sourceToMaster'];p=a['placementAppliedOnce']
    def point(pos):
@@ -52,16 +52,21 @@ class CityAssets(unittest.TestCase):
     return int(mask[round((v*p['scale']+1-p['scale']-p['offsetV'])*1783),round((u*p['scale']+p['offsetU'])*4096),channel])
    if a['id']=='beijing':
     # Outside both sides of the temple must not become a rectangular fill.
-    for x,y in [(1100,400),(500,400),(16,790),(1860,780),(1810,750)]:self.assertLess(at(x,y),5,(x,y))
+    for x,y in [(1100,400),(500,400),(16,750),(1870,750),(1810,730)]:self.assertLess(at(x,y),5,(x,y))
     # The curved tail still exists near the floor; it was not merely cropped off.
-    self.assertGreater(at(1820,789),245)
+    self.assertGreater(at(1800,754),245)
     # Fill closure below wall is not a visible underline / normal ridge.
-    self.assertGreater(at(1300,788),245);self.assertLess(at(1300,789,0),5)
+    self.assertGreater(at(1300,747),245);self.assertLess(at(1300,747,0),5)
    else:
     for x in range(1380,1881,50):
      for y in range(690,791,20):self.assertLess(at(x,y),5,('removed bridge',x,y))
     # Independent tower bases do not acquire a continuous ground line.
-    for x in [224,385]:self.assertLess(at(x,789),5)
+    for x in [205,353]:self.assertLess(at(x,789),5)
+ def test_generated_detail_survives_tracing(self):
+  for a in AUDIT:
+   self.assertEqual(a['authoring']['mode'],'image-trace')
+   self.assertGreater(a['traceFidelity']['originalStrokeRecallWithin1px'],.98)
+   self.assertGreater(a['traceFidelity']['tracedStrokePrecisionWithin1px'],.99)
  def test_landmark_sources_and_components(self):
   folder=R/'assets/masters/v5/landmarks';manifest=json.loads((folder/'manifest.json').read_text())
   self.assertEqual(manifest['authoringSize'],[1900,828])
