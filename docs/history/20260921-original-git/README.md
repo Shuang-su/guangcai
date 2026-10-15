@@ -20,6 +20,6 @@ python3 -m unittest discover -s tools -p test_hydrated_legacy_git.py
 
 原仓库是 `/Users/shuangsu/Documents/New project/.git` 中的混合项目仓库，原分支为 `codex/guangcai-ceramic-showcase`。本归档只恢复 `guangcai-viewer/` 和 `docs/changes/20260921-guangcai-showcase/` 的完整内容。根到项目路径所经过的原树中，其他子树只保留对象ID作为来源证明；不包含无关项目源码或完整祖先链。两份原commit在此作为可验证证据保存，没有把混合分支合入正式main，不能直接把原SHA当作当前仓库可checkout的版本。
 
-源Git检查：395个文件、0个云占位。`fsck --full --no-reflogs`退出0，仍有72个dangling blob及一个文件名末尾带“ 2”的重复对象提示；重复内容逐字节一致。源目录和这些对象没有删除。22个历史附件缺口与本次Git下载无关，仍保留。
+源Git检查：395个文件、0个云占位。`fsck --full --no-reflogs`退出0，仍有72个dangling blob及一个文件名末尾带“ 2”的重复对象提示；重复内容逐字节一致。源目录和这些对象没有删除。原22个附件旧路径失效与本次Git下载无关；用户后续确认18项由本人移动、PDF保留无水印版、3张截图不再追查，详见[附件处理记录](../../changes/20261015-attachment-resolution-and-duplicates/report.md)。
 
 旧的 `tools/recover-legacy-guangcai.py` 仅用于保留2026-10-14从原工作区重算最终树的方法；迁移后的ExFAT文件模式不适合盲目重跑。当前可重复采集入口为 `tools/capture-hydrated-legacy-git.py --source-git '/Users/shuangsu/Documents/New project/.git'`，它从真实Git对象读取模式与内容，仅写本仓库的证据文件。验证结果和请求见[本轮记录](../../changes/20261015-legacy-git-completion/completion.md)。

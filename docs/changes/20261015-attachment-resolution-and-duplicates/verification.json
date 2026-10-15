@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "attachmentResolutionCounts": {
+    "user-confirmed-moved": 18,
+    "retained-unwatermarked-replacement": 1,
+    "user-waived": 3
+  },
+  "currentRetainedFileRechecks": 19,
+  "duplicateGroups": 1205,
+  "filesInDuplicateGroups": 3220,
+  "duplicateSummaryAndPhysicalCopiesConsistent": true,
+  "buildCandidateFiles": 1017,
+  "buildFilesWithoutSecondExpandedCopy": 68,
+  "buildAlternativesAllOutsideBothDirectories": true,
+  "modifiedMarkdownLinksChecked": 30,
+  "missingLinks": [],
+  "auditPythonSyntax": "passed",
+  "hashReadErrors": [],
+  "sourceFilesDeleted": 0,
+  "productTestsAndBuild": "not run: product code and assets unchanged",
+  "verificationRetry": "Initial Markdown link check accidentally included ExFAT AppleDouble ._ metadata and failed UTF-8 decoding. Excluded those metadata files and reran successfully; source audit already excluded them."
+}
