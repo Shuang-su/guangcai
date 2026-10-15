@@ -28,4 +28,12 @@
 
 ## 发布状态与checkpoint
 
-本文件当前记录源码和本地准备阶段。独立站已创建但尚未发布；实际部署ID、在线验证和源码checkpoint SHA在发布后追加。未push、未开PR、未合并、未打tag。
+源码 checkpoint：`bb61e94d0739a48041e2198f62998c6a76affc3b`（feat(china): restore generated city detail and gate V5 preview deployment (#21)）。
+
+独立 V5 已发布：[https://guangcai-no1-china-v5.netlify.app](https://guangcai-no1-china-v5.netlify.app)。部署 ID `6ad0aae20e2edbe1f1a3b3c4`，服务端 ready，公开 release.json 指向该源码提交。886 个文件摘要匹配，原 V4/V3/中国杯部署 ID 在发布前后完全一致。未push、未开PR、未合并、未打tag；本轮仅执行明确授权的独立预览发布。
+
+线上 45 项浏览器检查全部通过，无意外错误。公开素材页与城市目录 200，缺失纹理路径真实404，noindex/revalidate响应头生效。首次公开 JSON 回读发生临时网络失败；重复运行发布命令复用相同部署 ID、0个文件需重传，随后回读与在线测试成功，没有额外重复发布。
+
+完整不可变发布快照：`deployments/guangcai-no1-china-v5/6ad0aae20e2edbe1f1a3b3c4/site/`，对应 `files.json` 和 `deployment.json`。本轮准备、线上验证与侧面截图在 `evidence/city-v5/generated-pipeline/`。发布结果与完成记录由后续本地checkpoint归档。
+
+附加侧面截图第一次使用默认30秒load等待超时；改为等待DOM与应用ready后，从同一公网V5补拍成功，页面错误为0。补拍没有修改或重发应用。部署器的脏工作树拒绝规则也已通过实际验证。

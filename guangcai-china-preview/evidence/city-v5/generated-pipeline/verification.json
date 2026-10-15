@@ -1,7 +1,7 @@
 {
   "version": "5.0.0",
   "date": "2026-10-15",
-  "status": "local-prepared",
+  "status": "online-verified",
   "applicationTests": 24,
   "assetTests": 7,
   "localBrowserChecks": 45,
@@ -9,10 +9,17 @@
   "build": "passed",
   "siteId": "b1fce272-cf28-41e5-8366-024c314b615f",
   "siteName": "guangcai-no1-china-v5",
-  "online": "pending",
+  "online": "passed",
   "limitations": [
     "Agent visual review; user final visual approval not claimed",
     "No physical phone, Safari or manufacturing validation",
     "Existing 664.28 kB bundle advisory remains"
-  ]
+  ],
+  "sourceCommit": "bb61e94d0739a48041e2198f62998c6a76affc3b",
+  "deployId": "6ad0aae20e2edbe1f1a3b3c4",
+  "url": "https://guangcai-no1-china-v5.netlify.app",
+  "permalink": "https://6ad0aae20e2edbe1f1a3b3c4--guangcai-no1-china-v5.netlify.app",
+  "onlineBrowserChecks": 45,
+  "filesMatched": 886,
+  "existingSitesUnchanged": true
 }

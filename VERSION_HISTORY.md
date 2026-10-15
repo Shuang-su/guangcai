@@ -13,6 +13,7 @@
 | 4.1 预览 | `v4.1` | `591d8c56b0819143a2bdab454068fd30921a2977` | `6acef244237630dba7fa87fe` | 金底伪高度清理与侧边釉层反光；按用户要求回溯命名，部署时 UI / package 仍为 4.0 / 4.0.0 |
 | 4.2 预览 | `v4.2` | `ee6e1aff10bf2f9892babc375e723bf360d9d63e` | `6acefdc52ef3d568cd9acedd` | 独立金底清洗覆盖，保留原始花纹颜色和黄果皮，通道同步；界面/package 4.2/4.2.0 |
 | 4.3 预览 | `v4.3` | `8d54f7ee8091a1b5ccf6eb3646d8a269e0abdff7` | `6acf18984f3abc04fe3cab18` | 北京五款配色、13种材质组合、可选北京文字；原稿对齐与16位高度/浮点法线；界面/package 4.3/4.3.0 |
+| 5.0 独立预览 | 未打标签 | `bb61e94d0739a48041e2198f62998c6a76affc3b` | `6ad0aae20e2edbe1f1a3b3c4` | 北京/深圳详细生图、固定金线、连续材质和HSL；带验证的独立V5发布流水线，旧站不变 |
 
 旧版本首次入库没有原生 Git 历史；实际修改时间与补录提交时间分开记载。[HISTORY.md](HISTORY.md) 保存恢复的 16 个源码节点，全部已进入 main 的可达历史。表中 1.0/2.0/2.1 使用移除本机依赖链接后的提交，应用源码与各发布基线一致；历史 package.json 的内部编号保留原值，产品版本以本索引为准。3.0 开始同步维护产品 package 版本。
 
@@ -71,3 +72,7 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 2026-10-15，分支 `codex/city-v5`，功能 checkpoint `04fbd4e95e33d87fe14f38c38608502388dd3db1`。北京按本轮新请求去掉前景波浪，以原 PSD 天坛线条为参考，建筑统一到底线；深圳沿用已有母稿。统一 5433×2365 SVG 模板与 4096×1783 运行资源。两城各五色预设、HSL 调色、固定金线和统一材质滑杆；移除轻浮雕彩绘，旧 paint 输入归一到彩釉。
 
 本轮从已保留的 4.3/钢笔样段提交 `787c5b6` 建分支；fetch 核实远端 main 仍是 `928ab24`，不宣称已合并。没有新 tag、PR 或部署。[完整实施与验证记录](docs/changes/20261015-city-v5/completion.md)。
+
+## 5.0 独立预览（2026-10-15）
+
+[在线 V5](https://guangcai-no1-china-v5.netlify.app/) · [图样与填色复核](https://guangcai-no1-china-v5.netlify.app/review/v5/) · [请求、计划、验证与部署记录](docs/changes/20261015-v5-generated-pipeline/completion.md)。源码仍在 `codex/city-v5` 的本地 checkpoint，未推送、未合入 main、未打 tag。独立站没有 Git 自动部署绑定；在线45项检查通过不代表实物制造或真实手机验收。
