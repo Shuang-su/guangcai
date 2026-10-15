@@ -1,11 +1,55 @@
 {
   "version": 5,
-  "masterSize": [5433, 2365],
-  "runtimeSize": [4096, 1783],
+  "masterSize": [
+    5433,
+    2365
+  ],
+  "runtimeSize": [
+    4096,
+    1783
+  ],
   "baseline": 2360,
-  "placement": {"scale": 0.82, "offsetU": 0.047, "offsetV": 0},
+  "placement": {
+    "scale": 0.82,
+    "offsetU": 0.047,
+    "offsetV": 0
+  },
   "cities": [
-    {"id":"beijing","name":"北京","source":"assets/source/v5/beijing-baseline-candidate.png","extraction":"black-ink-alpha","holes":[],"candidate":true,"reference":"Original PSD Tian Tan layer; V5 user correction: sparse details and shared straight baseline, no foreground waves"},
-    {"id":"shenzhen","name":"深圳","source":"assets/masters/v4/shenzhen-lines-generated.png","extraction":"black-ink-alpha","holes":[]}
+    {
+      "id": "beijing",
+      "name": "北京",
+      "source": "assets/source/v5/beijing-baseline-candidate.png",
+      "extraction": "black-ink-alpha",
+      "holes": [],
+      "candidate": true,
+      "reference": "Original PSD temple + authored landmarks; curved wall ending",
+      "authoring": {
+        "mode": "landmarks",
+        "size": [
+          1900,
+          828
+        ],
+        "baseline": 790,
+        "manifest": "assets/masters/v5/landmarks/manifest.json"
+      }
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "source": "assets/masters/v4/shenzhen-lines-generated.png",
+      "extraction": "black-ink-alpha",
+      "holes": [],
+      "authoring": {
+        "mode": "landmarks",
+        "size": [
+          1900,
+          828
+        ],
+        "baseline": 790,
+        "manifest": "assets/masters/v5/landmarks/manifest.json"
+      },
+      "candidate": true,
+      "reference": "Existing skyline reconstructed as landmarks; right bridge removed per user"
+    }
   ]
 }

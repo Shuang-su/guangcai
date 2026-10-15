@@ -9,6 +9,15 @@
         1899,
         828
       ],
+      "authoring": {
+        "mode": "landmarks",
+        "size": [
+          1900,
+          828
+        ],
+        "baseline": 790,
+        "manifest": "assets/masters/v5/landmarks/manifest.json"
+      },
       "masterSize": [
         5433,
         2365
@@ -20,10 +29,10 @@
       "sourceToMaster": {
         "scale": 2.856280193236715,
         "offset": [
-          4.461956521739012,
-          232.07125603864733
+          3.0338164251206763,
+          103.53864734299532
         ],
-        "contentBottom": 745
+        "contentBottom": 790
       },
       "placementAppliedOnce": {
         "scale": 0.82,
@@ -31,16 +40,16 @@
         "offsetV": 0
       },
       "sourceInkPixels": 130326,
-      "runtimeLinePixels": 371417,
-      "masterSha256": "b7e6ba0778a9e4df2413808a26c20a36c845effb3ffc24cbe60457cab3ff81ff",
+      "runtimeLinePixels": 276855,
+      "masterSha256": "f8300f3f40b0e3cc9029b697f7c9ecd5394a08da7105172e686bf09f58036900",
       "maps": {
         "mask": {
           "file": "beijing-structure.webp",
-          "sha256": "092b834ad92dfdc298e9a9d56dce5758955f50d76c74e041adafc9c5b8204f70"
+          "sha256": "a24fde4aad18ed452a44faa0cacf0ecb5e8e7b1476a952d0af1f3ab874cecb61"
         },
         "normal": {
           "file": "beijing-normal.hfn.gz",
-          "sha256": "c2ef75e7d063ecb245fc8efdc154c386863f614778f4fe7d30c3e404571ca37a"
+          "sha256": "6849164d6566ab40294edd44fc4dfa2d0ecccb516d7cde998d4a42cfe9d2a397"
         },
         "label": {
           "file": "beijing-label.webp",
@@ -48,7 +57,7 @@
         },
         "thumbnail": {
           "file": "beijing-thumb.webp",
-          "sha256": "b63e6e00c7b33303709a846254109e33f1786c846d2cee5d78243ca47daac8ee"
+          "sha256": "61c62933ce01cd707de64dfa231aa4e27929d84a2e9dd4f880de8025a2302135"
         }
       },
       "candidate": true,
@@ -62,6 +71,15 @@
         1900,
         828
       ],
+      "authoring": {
+        "mode": "landmarks",
+        "size": [
+          1900,
+          828
+        ],
+        "baseline": 790,
+        "manifest": "assets/masters/v5/landmarks/manifest.json"
+      },
       "masterSize": [
         5433,
         2365
@@ -74,9 +92,9 @@
         "scale": 2.856280193236715,
         "offset": [
           3.0338164251206763,
-          89.25724637681151
+          103.53864734299532
         ],
-        "contentBottom": 795
+        "contentBottom": 790
       },
       "placementAppliedOnce": {
         "scale": 0.82,
@@ -84,16 +102,16 @@
         "offsetV": 0
       },
       "sourceInkPixels": 126907,
-      "runtimeLinePixels": 360228,
-      "masterSha256": "c4e2d95e8b26b7dff4e38a71e8ee603944aea05b8d8f5b0be568e13db4ff04ab",
+      "runtimeLinePixels": 202277,
+      "masterSha256": "0727952895b6428db14be58180bf460f1d6d12bd210b699f0401a10262431a0d",
       "maps": {
         "mask": {
           "file": "shenzhen-structure.webp",
-          "sha256": "0aa073e46798e114d93e2cd6ae5127b50f1ac8d1b8f1df89caecbfdb39eccd28"
+          "sha256": "3bbbfb7412a859d75520f9b89be8adfa4d3560a932da18146db57b5635980152"
         },
         "normal": {
           "file": "shenzhen-normal.hfn.gz",
-          "sha256": "c55ffa72ca862e49fe2f562289fa0e90762ff2814369aff089d1a64a4061d1a6"
+          "sha256": "59047b46f7435abc3e516981df598698c303a29b0368ca09ec9804def5668fbb"
         },
         "label": {
           "file": "shenzhen-label.webp",
@@ -101,12 +119,12 @@
         },
         "thumbnail": {
           "file": "shenzhen-thumb.webp",
-          "sha256": "1bb0cd73b7c67b501665e0ba47bc9f5aa5b443a957a064b8adef7b030e47ac87"
+          "sha256": "cfa427e21b302e75a4b5e6ec7cbe0619eea077a859007c33e6e30703f0f4f9a3"
         }
       },
-      "candidate": false,
+      "candidate": true,
       "holePolygons": []
     }
   ],
-  "method": "source-derived polygon outlines; editable vector contours, independent coverage and source holes; no RGB shading as height; native source resolution recorded"
+  "method": "authoritative editable SVG; landmark construction with PSD temple contours; independent coverage and holes; line-only relief; authoring coordinates and bitmap reference resolution recorded separately"
 }

@@ -63,6 +63,33 @@
         3858
       ],
       "mode": "CMYK"
+    },
+    {
+      "path": "assets/extracted/layer-6-alpha.png",
+      "sha256": "0cfd310da446d26dc26b1412ec377fb3f96e2c7fecf767551f32082c5c46d775",
+      "size": [
+        2870,
+        1782
+      ],
+      "mode": "L"
+    },
+    {
+      "path": "assets/source/v5/rebuild/beijing-generated-study.png",
+      "sha256": "b3422294d12e5bb3531773396d155f292beff008a520155cd63138f07de3a4c4",
+      "size": [
+        1898,
+        829
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/source/v5/rebuild/shenzhen-generated-study.png",
+      "sha256": "2169b70bf16700fbbfa2bfc4d18d6cfbee8c435cf814f9a6ffcd9dc3ffcba003",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGBA"
     }
   ],
   "generation": {
@@ -75,7 +102,8 @@
     "selectedForLocalPilot": "assets/source/v5/beijing-baseline-candidate.png",
     "userDirection": "继续细化黑线，类似SVG和深圳一样简洁；参考原PSD祈年殿；去掉前景波浪，建筑到底",
     "acceptance": "local implementation candidate; no physical manufacturing acceptance",
-    "nativeResolution": "1899x828; runtime 4096x1783 is a derived output, not native 4K"
+    "nativeResolution": "1899x828; runtime 4096x1783 is a derived output, not native 4K",
+    "status": "Historical first V5 pilot; superseded by landmark SVG reconstruction."
   },
   "psdFrame": {
     "source": "assets/source/china-lines.psd",
@@ -91,5 +119,21 @@
     ],
     "ppi": 600
   },
-  "floralPpi": 400
+  "floralPpi": 400,
+  "currentArtwork": {
+    "method": "landmarks-first authored SVG; exact original PSD temple contour",
+    "componentManifest": "assets/masters/v5/landmarks/manifest.json",
+    "builder": "tools/build-city-landmarks.py",
+    "authoringSize": [
+      1900,
+      828
+    ],
+    "shenzhenBridge": "removed per user request",
+    "studies": "assets/source/v5/rebuild/prompts.json",
+    "studyStatus": "Rejected as final inputs: Beijing cutoff and Shenzhen edge residue",
+    "activeMasters": [
+      "assets/masters/v5/beijing.svg",
+      "assets/masters/v5/shenzhen.svg"
+    ]
+  }
 }

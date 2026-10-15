@@ -64,15 +64,20 @@ for city in SPEC['cities']:
  holes=Image.fromarray(np.uint8(np.asarray(cavity)==0)*255);draw=ImageDraw.Draw(holes)
  for poly in city.get('holes',[]):draw.polygon([tuple(p) for p in poly],fill=255)
  holes=np.asarray(holes)>0;cover=(cover&~holes)|binary
- ink_vector=vector(np.uint8(binary)*255);fill_vector=vector(np.uint8(cover)*255);holes_vector=vector(np.uint8(holes)*255)
- content=np.where(cover);bottom=int(content[0].max())+1
- scale=min(MW/sw,MH/sh);dy=SPEC['baseline']-bottom*scale;dx=(MW-sw*scale)/2
+ authoring=city.get('authoring',{});native=authoring.get('mode')=='landmarks'
+ if native and '--trace' in sys.argv:raise ValueError('Landmark masters must be rebuilt explicitly with build-city-landmarks.py; bitmap tracing would discard authored geometry')
+ content=np.where(cover);bottom=authoring['baseline'] if native else int(content[0].max())+1
+ aw,ah=authoring['size'] if native else (sw,sh)
+ scale=min(MW/aw,MH/ah);dy=SPEC['baseline']-bottom*scale;dx=(MW-aw*scale)/2
  transform=f'translate({dx:.6f} {dy:.6f}) scale({scale:.9f})'
  guides=f'<g id="guides" display="none" fill="none" stroke="#28a0d0"><rect width="{MW}" height="{MH}"/><path d="M0 {SPEC["baseline"]} H{MW}"/><rect x="{MW*.845:.3f}" y="0" width="{MW*.155:.3f}" height="{MH*.54:.3f}"/></g>'
  # Both groups are actual editable vector paths, not an embedded raster.
- master=f'<title>{city["name"]} V5 — structure and independent fill</title><metadata>Source {city["source"]}; {digest(source)}; generated artwork, polygon contour paths, not hand-authored centreline splines.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
  master_path=MASTER/(ident+'.svg')
- if not master_path.exists() or '--trace' in sys.argv:master_path.write_text(doc(master,MW,MH))
+ if native and not master_path.exists():raise ValueError('Missing landmark master; run build-city-landmarks.py first')
+ if not native and (not master_path.exists() or '--trace' in sys.argv):
+  ink_vector=vector(np.uint8(binary)*255);fill_vector=vector(np.uint8(cover)*255);holes_vector=vector(np.uint8(holes)*255)
+  master=f'<title>{city["name"]} V5 — structure and independent fill</title><metadata>Source {city["source"]}; {digest(source)}; generated artwork, polygon contour paths, not hand-authored centreline splines.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
+  master_path.write_text(doc(master,MW,MH))
  # Committed SVG is authoritative after initial tracing; do not overwrite edits.
  tree=ET.fromstring(master_path.read_text())
  if tree.get('viewBox')!=f'0 0 {MW} {MH}':raise ValueError('Master viewBox must match the PSD frame')
@@ -111,13 +116,17 @@ for city in SPEC['cities']:
  Image.fromarray(lines).save(EVIDENCE/(ident+'-lines.png'));Image.fromarray(coverage).save(EVIDENCE/(ident+'-coverage.png'))
  record={'mask':maskfile,'normal':npth.name,'label':labelFile,'thumbnail':thumb.name}
  records[ident]={'name':city['name'],**record}
- audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[])}
+ audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'authoring':authoring,'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[])}
  audits.append(audit);print(ident,record,flush=True)
 template=doc(f'<title>City master — PSD frame 5433 × 2365 at 600 ppi</title>{guides}<g id="fill"/><g id="holes"/><g id="lines"/>',MW,MH)
 (MASTER/'template.svg').write_text(template)
 (OUT/'catalog.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/styles/city-catalog-v5.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
-(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'source-derived polygon outlines; editable vector contours, independent coverage and source holes; no RGB shading as height; native source resolution recorded'},ensure_ascii=False,indent=2)+'\n')
+(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'authoritative editable SVG; landmark construction with PSD temple contours; independent coverage and holes; line-only relief; authoring coordinates and bitmap reference resolution recorded separately'},ensure_ascii=False,indent=2)+'\n')
 review=ROOT/'public/review/v5';review.mkdir(parents=True,exist_ok=True)
 for name in ['template',*records]:shutil.copyfile(MASTER/(name+'.svg'),review/(name+'.svg'))
 for name in records:shutil.copyfile(EVIDENCE/(name+'-flat.png'),review/(name+'-flat.png'))
+if (MASTER/'landmarks/manifest.json').exists():
+ (review/'landmarks').mkdir(exist_ok=True)
+ for file in (MASTER/'landmarks').glob('*'):
+  if not file.name.startswith('.') and file.suffix in ['.svg','.json']:shutil.copyfile(file,review/'landmarks'/file.name)

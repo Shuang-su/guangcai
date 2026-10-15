@@ -43,4 +43,34 @@ class CityAssets(unittest.TestCase):
  def test_runtime_files_match_manifest(self):
   for a in AUDIT:
    for v in a['maps'].values():self.assertEqual(hashlib.sha256((R/'public/cities/v5'/v['file']).read_bytes()).hexdigest(),v['sha256'])
+ def test_landmark_boundaries_and_removed_bridge(self):
+  for a in AUDIT:
+   mask=np.asarray(Image.open(R/'public/cities/v5'/a['maps']['mask']['file']).convert('RGB'))
+   t=a['sourceToMaster'];p=a['placementAppliedOnce']
+   def at(x,y,channel=1):
+    u=(x*t['scale']+t['offset'][0])/5433;v=(y*t['scale']+t['offset'][1])/2365
+    return int(mask[round((v*p['scale']+1-p['scale']-p['offsetV'])*1783),round((u*p['scale']+p['offsetU'])*4096),channel])
+   if a['id']=='beijing':
+    # Outside both sides of the temple must not become a rectangular fill.
+    for x,y in [(1100,400),(500,400),(16,790),(1860,780),(1810,750)]:self.assertLess(at(x,y),5,(x,y))
+    # The curved tail still exists near the floor; it was not merely cropped off.
+    self.assertGreater(at(1820,789),245)
+    # Fill closure below wall is not a visible underline / normal ridge.
+    self.assertGreater(at(1300,788),245);self.assertLess(at(1300,789,0),5)
+   else:
+    for x in range(1380,1881,50):
+     for y in range(690,791,20):self.assertLess(at(x,y),5,('removed bridge',x,y))
+    # Independent tower bases do not acquire a continuous ground line.
+    for x in [224,385]:self.assertLess(at(x,789),5)
+ def test_landmark_sources_and_components(self):
+  folder=R/'assets/masters/v5/landmarks';manifest=json.loads((folder/'manifest.json').read_text())
+  self.assertEqual(manifest['authoringSize'],[1900,828])
+  for city,parts in manifest['cities'].items():
+   self.assertEqual(len(parts),len({p['id'] for p in parts}))
+   for p in parts:
+    self.assertEqual(hashlib.sha256((folder/p['file']).read_bytes()).hexdigest(),p['sha256'])
+    self.assertFalse(any(n.tag.endswith('image') for n in ET.parse(folder/p['file']).getroot().iter()))
+  self.assertNotIn('bridge',[p['id'] for p in manifest['cities']['shenzhen']])
+  temple=next(p for p in manifest['cities']['beijing'] if p['id']=='hall-of-prayer')
+  self.assertIn(hashlib.sha256((R/'assets/extracted/layer-6-alpha.png').read_bytes()).hexdigest(),temple['source'])
 if __name__=='__main__':unittest.main()
