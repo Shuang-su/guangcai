@@ -1,0 +1,164 @@
+{
+  "version": 4,
+  "size": [
+    4096,
+    1783
+  ],
+  "placementBaked": {
+    "scale": 0.82,
+    "offsetU": 0.047,
+    "offsetV": 0
+  },
+  "variants": [
+    {
+      "id": "china-green",
+      "name": "中国 · 青绿金线",
+      "theme": "china",
+      "reference": 3,
+      "lineStyle": false,
+      "textColor": "#237751",
+      "thumbnail": "china-green-thumb-06cadde26f34b65d.webp",
+      "maps": {
+        "baseColor": "china-green-baseColor-3d0ecbd36e6cd253.webp",
+        "coverage": "china-green-coverage-834d8ef0614acbcf.webp",
+        "metalness": "china-green-metalness-bda496bc6c13e988.webp",
+        "roughness": "china-green-roughness-0e49973dcb22bb16.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-green-a686155c82e74832.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-red",
+      "name": "中国 · 红金",
+      "theme": "china",
+      "reference": 4,
+      "lineStyle": false,
+      "textColor": "#a92019",
+      "thumbnail": "china-red-thumb-8333eddaf139726b.webp",
+      "maps": {
+        "baseColor": "china-red-baseColor-8215428564db8706.webp",
+        "coverage": "china-red-coverage-865719758797ae44.webp",
+        "metalness": "china-red-metalness-6e04c9e171e5bddf.webp",
+        "roughness": "china-red-roughness-f64b9af378edf0f3.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-red-853a9155a4d6f706.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-purple",
+      "name": "中国 · 紫金",
+      "theme": "china",
+      "reference": 5,
+      "lineStyle": false,
+      "textColor": "#672c86",
+      "thumbnail": "china-purple-thumb-a2d78c52b03c228c.webp",
+      "maps": {
+        "baseColor": "china-purple-baseColor-a614dc67a69b79d8.webp",
+        "coverage": "china-purple-coverage-73311ead26018f39.webp",
+        "metalness": "china-purple-metalness-ccd6dc1582f8782d.webp",
+        "roughness": "china-purple-roughness-b3aa5cd5681d0c56.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-purple-8ba5f9cdd2723823.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-blue",
+      "name": "中国 · 蓝金",
+      "theme": "china",
+      "reference": 6,
+      "lineStyle": false,
+      "textColor": "#266799",
+      "thumbnail": "china-blue-thumb-ffe411f8c0c433d1.webp",
+      "maps": {
+        "baseColor": "china-blue-baseColor-65472134905f185c.webp",
+        "coverage": "china-blue-coverage-ea09b8ceb0482dd8.webp",
+        "metalness": "china-blue-metalness-96b572880a7c8fe8.webp",
+        "roughness": "china-blue-roughness-d464f6f134c9ba0a.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-blue-a7d037e5b349b479.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-blue-line",
+      "name": "中国 · 蓝色线描",
+      "theme": "china",
+      "reference": 7,
+      "lineStyle": true,
+      "textColor": "#245a90",
+      "thumbnail": "china-blue-line-thumb-d5489ce65fe3cd34.webp",
+      "maps": {
+        "baseColor": "china-blue-line-baseColor-37f1a27f7d86d911.webp",
+        "coverage": "china-blue-line-coverage-33812078eb659b62.webp",
+        "metalness": "china-blue-line-metalness-1f872cf65156edfa.webp",
+        "roughness": "china-blue-line-roughness-76d42e14b5bb0e37.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-blue-line-abb445fc12901f1e.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "china-purple-line",
+      "name": "中国 · 紫色线描",
+      "theme": "china",
+      "reference": 8,
+      "lineStyle": true,
+      "textColor": "#6f348b",
+      "thumbnail": "china-purple-line-thumb-9c1fdd3df50872dd.webp",
+      "maps": {
+        "baseColor": "china-purple-line-baseColor-09af6a31a550a0fd.webp",
+        "coverage": "china-blue-line-coverage-33812078eb659b62.webp",
+        "metalness": "china-blue-line-metalness-1f872cf65156edfa.webp",
+        "roughness": "china-blue-line-roughness-76d42e14b5bb0e37.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "china-blue-line-abb445fc12901f1e.hfn.gz"
+      },
+      "structureSha256": "7dbd749924e1f857716e3c9ea5c017945d53b9c15692e7f52a9042184b14bc9a"
+    },
+    {
+      "id": "shenzhen-red",
+      "name": "深圳 · 红金",
+      "theme": "shenzhen",
+      "reference": 1,
+      "lineStyle": false,
+      "textColor": "#ae221b",
+      "thumbnail": "shenzhen-red-thumb-e3ce5f5fbd85d7ef.webp",
+      "maps": {
+        "baseColor": "shenzhen-red-baseColor-a061d93590f39d89.webp",
+        "coverage": "shenzhen-red-coverage-6c400fb706d2e61e.webp",
+        "metalness": "shenzhen-red-metalness-45835a5448a62694.webp",
+        "roughness": "shenzhen-red-roughness-c1bace17754a32fd.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "shenzhen-red-e515a4f707c04173.hfn.gz"
+      },
+      "structureSha256": "5266ecdfa941db14787fd7c7eb9b966f041b2cc99da61eb9447c7a9bcc54da1a"
+    },
+    {
+      "id": "shenzhen-teal",
+      "name": "深圳 · 青蓝金线",
+      "theme": "shenzhen",
+      "reference": 2,
+      "lineStyle": false,
+      "textColor": "#327e85",
+      "thumbnail": "shenzhen-teal-thumb-83f0f2ea4d28cd13.webp",
+      "maps": {
+        "baseColor": "shenzhen-teal-baseColor-964c7c3c31fbb207.webp",
+        "coverage": "shenzhen-teal-coverage-9168da8875bc29fa.webp",
+        "metalness": "shenzhen-teal-metalness-9992b719f76510da.webp",
+        "roughness": "shenzhen-teal-roughness-0e8ab8bb8a281bf2.webp",
+        "clearcoat": "china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "shenzhen-teal-c8c9a345d1685a6f.hfn.gz"
+      },
+      "structureSha256": "5266ecdfa941db14787fd7c7eb9b966f041b2cc99da61eb9447c7a9bcc54da1a"
+    }
+  ],
+  "labels": {
+    "china": "label-china-cc5fe88a14e8bcc7.webp",
+    "shenzhen": "label-shenzhen-9d6374680bb7fb1d.webp",
+    "he": "label-he-0c91ba3679e51b3e.webp",
+    "create": "label-create-5391195266bd432f.webp"
+  }
+}

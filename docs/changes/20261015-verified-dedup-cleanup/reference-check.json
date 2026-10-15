@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "openHandleChecks": [
+    {
+      "path": "guangcai-v4-workspace/guangcai-china-preview/dist",
+      "openHandles": 0
+    },
+    {
+      "path": "guangcai-v4-workspace/guangcai-china-preview/.codex-work/deploy/v4-final",
+      "openHandles": 0
+    },
+    {
+      "path": "历史工程/h5/dist",
+      "openHandles": 0
+    },
+    {
+      "path": "历史工程/GuangcaiCeramic/guangcai-viewer/dist",
+      "openHandles": 0
+    },
+    {
+      "path": "历史工程/GuangcaiCeramic/guangcai-viewer/.codex-work/tmp/verified-delivery",
+      "openHandles": 0
+    },
+    {
+      "path": "素材原件/一号杯2/ChatGPT 图像 2026年9月29日 21_17_21.jpg",
+      "openHandles": 0
+    },
+    {
+      "path": "素材原件/微信图片_20260922202625_228_6490.png",
+      "openHandles": 0
+    }
+  ],
+  "removedFilesTrackedByFormalOrLegacyGit": 0,
+  "referenceSearch": "Searched non-Git, non-node_modules, non-AppleDouble text within original materials, H5 and current China app for both duplicate-image filenames and canonical filenames. Only descriptive references to IMG_1226 and the document chapter title were found. Kept IMG_1226 and the entire document package image path.",
+  "preservedCanonicalImages": [
+    {
+      "removed": "素材原件/一号杯2/ChatGPT 图像 2026年9月29日 21_17_21.jpg",
+      "kept": "素材原件/一号杯2/IMG_1226.jpg",
+      "sha256": "d46c30b893734a0d936eb618d6d0374d0d1b023e8a08acc4f728a606aa3f7758"
+    },
+    {
+      "removed": "素材原件/微信图片_20260922202625_228_6490.png",
+      "kept": "素材原件/文档/五次添彩_东方雅韵版_V1/03_万彩落于白瓷.png",
+      "sha256": "54ed74fd57af21b3ec9b1b32a2ad00be5c0e23e6a1a1a92ccce8da91a3dcbb01"
+    }
+  ],
+  "protectedRuntimeFiles": 1136,
+  "metadataBackupVerified": true,
+  "noDeletionYet": true
+}
