@@ -39,4 +39,4 @@
 
 ## Checkpoint
 
-功能、图样、来源与本记录纳入本轮 checkpoint；提交后在后续记录提交中写入实际 SHA。没有上游推送。
+功能、图样、来源与本记录的 checkpoint：`5f3b89ee76f5e98c6606da1e1c112ddd82ce534d`（`feat(artwork): rebuild V5 city landmarks and remove Shenzhen bridge (#21)`），共 92 个任务范围文件。提交后工作树为空。实际 SHA 与验证记录由后续文档提交补记，没有上游推送。
