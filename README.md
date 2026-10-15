@@ -14,11 +14,23 @@
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源与哈希](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围和缺口](docs/changes/20261014-source-consolidation/completion.md) · [整理任务 #23](https://github.com/Shuang-su/guangcai/issues/23)。
 
-已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,614份去重内容、18,040处来源。`archives/`以内容哈希保存实际对象，原文件名和各来源路径在索引中；10个大文件使用Git LFS。旧目录仍保留。北京工作区此前3593个云占位已全部下载并按字节核验；9月旧仓库仍有未下载Git对象，失效附件路径继续单列。此资料补录与既有16个源码恢复节点互补。
+已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,614份去重内容、18,040处来源，11个大文件使用Git LFS。`archives/`保存实际对象，原文件名和各来源路径在索引中。已核验的重复工作区完成迁移与清理，原件和历史工程集中保留在初号機盘，恢复方法见[位置说明](WORKSPACE_LOCATIONS.md)。
+
+北京工作区此前3593个云占位已全部按字节核验；2026-10-15旧 `New project/.git` 的云占位也清零，9月21日两个原提交的完整广彩项目快照均已校验，各154个文件、25个树payload。新增初始完成记录原字节保存在[原始Git证据](docs/history/20260921-original-git/README.md)，其余内容复用档案。此项补录与既有16个源码恢复节点互补，不整条导入混合仓库其他项目历史。22个失效历史附件路径仍单列为缺口。
 
 首次克隆资料库需要安装Git LFS；空间有限时可先用 `GIT_LFS_SKIP_SMUDGE=1 git clone`，再选择所需档案下载。LFS指针不是原文件，读取时应确认真实内容已取回。
 
 V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分支，再由 [PR #13](https://github.com/Shuang-su/guangcai/pull/13) 合入 `main`；杯身饰带旁釉面接缝修正由 [PR #16](https://github.com/Shuang-su/guangcai/pull/16) 合入。当前发布记录包含颜色覆盖、自动旋转方向和接缝修正。
+
+## 三类工程
+
+| 工程 | 用途 | 当前状态 |
+|---|---|---|
+| 早期Web3D试验 | 最初杯、盖、碟展示，验证器型、材质与交互 | 历史工程及原始Git证据，保留可恢复来源 |
+| 广彩流程H5 | 为APEC添彩：开场、五步选择、海报、成果与榜单框架 | 独立非Git工程，文件已归档；尚未作为正式应用接入本仓库 |
+| 正式Git产品工程 | 一号杯和中国杯的持续开发 | 本仓库；两个应用分别为 `guangcai-viewer/`、`guangcai-china-preview/` |
+
+[工程关系、磁盘位置与还原方法](PROJECTS.md)。三类用途不等于三个Git工作树；归档分支与北京修订分支共用本仓库。早期试验版与后来发布的一号杯也不是同一个发布版本。
 
 ## 项目与版本
 

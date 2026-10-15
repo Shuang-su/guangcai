@@ -2,6 +2,8 @@
 
 内容按SHA-256去重；每份源文件的全部路径、mtime和哈希见[source-manifest.json](source-manifest.json)。此索引指向仓库中的实际内容，非外置磁盘链接。大于50MiB的新文件用Git LFS。
 
+工程用途与恢复入口见[三类工程说明](../../../PROJECTS.md)及[当前磁盘位置](../../../WORKSPACE_LOCATIONS.md)。2026-10-15已补齐9月21日两个原Git提交的项目快照证明，见[原始Git记录](../../history/20260921-original-git/README.md)。下方来源分类保留原盘点路径，不代表当前磁盘仍保留重复目录。
+
 ## 花纸原件
 
 - [广彩花纸/糖缸.psd](../../../archives/objects/46/466fe0c030854d6c41cccec1517a79d2ddc5765ba63ace1d2717794cd8e75480.psd) — 16,490,783 bytes；`466fe0c030854d6c41cccec1517a79d2ddc5765ba63ace1d2717794cd8e75480`
