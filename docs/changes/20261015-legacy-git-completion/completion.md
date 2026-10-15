@@ -24,3 +24,9 @@
 
 - 已检查本次文档及来源索引3662个仓库内链接，未发现缺失；git diff --check通过。旧最终快照核验154文件/25树仍通过。
 - 同步外置盘根目录整理说明.md，修正“旧Git仍待下载”的过时描述，链接指向当前归档工作树；变更前后哈希见local-guide-sync.json。没有再次迁移或删除工程。
+
+## 仓库同步
+
+- 文档checkpoint为 `b7bd7c333242e173e7f236f0f6dea4b64bcb6246`；连同c32e2c0、b85a731已推送至origin/codex/source-consolidation，本地与upstream一致。
+- GitHub回读README、PROJECTS及双快照manifest内容成功，三份blob SHA与本地提交完全一致；PR #24头提交匹配，标题/正文更新回读通过，仍open、非Draft、未合并。Issue #23已勾选旧Git下载/历史补录及三类工程说明，22个附件缺口保持未勾选。
+- 以上远端证据固定于内容checkpoint，详见remote-verification.json；本节及证据文件由后续记录提交保存。没有修改main、原始标签或线上站点。
