@@ -73,7 +73,7 @@ def main():
         assert inside or str(rel) in SINGLES | dir_sidecars | single_sidecars
     verified = set()
     for row in manifest["files"]:
-        assert row["storage"] == "git-blob", "This cleanup expects only ordinary Git blobs"
+        assert row["storage"] in {"git-blob", "existing-git-blob"}, "Unexpected archive storage type"
         if row["sha256"] not in verified:
             raw = git_blob(ref, row["archivePath"])
             assert len(raw) == row["bytes"] and hashlib.sha256(raw).hexdigest() == row["sha256"]

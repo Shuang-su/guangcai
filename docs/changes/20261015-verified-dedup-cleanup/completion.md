@@ -27,3 +27,5 @@ python3 tools/restore-source-folder.py cleanup-20261015 /另一个空目录 --pr
 5项旧Git双快照边界测试通过。本轮新写记录与脚本的`git diff --cached --check`通过；包含原字节归档时，已有Three.js编译JS触发21处空白告警，该JS按哈希保留原字节，不为格式检查改写历史产物。正式分支没有配置GitHub CI checks，main当前未保护；合并仍按最新head和本轮本地核验结果执行。
 
 删除前完整归档核验通过：3,661内容、19,534来源、11个LFS对象，原3,593云占位全部已核验、剩余0。实际还原历史H5构建150文件/12,570,495字节，逐文件SHA-256一致；临时还原目录验证后删除，恢复数据仍在Git归档中。
+
+恢复checkpoint为`0afcf96d6ad14b8fc7b29abf1c94c9121f617fac`，已推送。执行器第一次verify-only在storage检查处停止：原索引对复用对象使用`existing-git-blob`而非`git-blob`，此前全归档验证已支持该类型。执行器明确接受这两种普通Git blob分类，并仍逐份校验固定checkpoint里的实际字节；停止时没有删除文件。PR范围检查首次把根文档ARCHIVE_INDEX.md当作未知路径，随后直接核对两个应用目录，确认产品目录diff为空。
