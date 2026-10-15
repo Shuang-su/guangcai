@@ -43,4 +43,6 @@
 
 ## Checkpoint
 
-功能与素材 checkpoint SHA 在本地提交成功后由后续记录提交写入；最终提交信息以本分支 Git 历史为准。
+功能与素材 checkpoint：`04fbd4e95e33d87fe14f38c38608502388dd3db1`（feat(china): add V5 parametric city artwork and masters (#21)）。包含 69 个任务范围内文件。提交后读取工作树状态为空；本条记录由后续文档提交纳入历史。未设置 upstream、未 push。
+
+最终交付：V5 本地功能、两城可编辑 SVG、统一编译流程、可打开的 3D/素材预览、来源与验证证据。用户后续可继续细化北京线条与 UI；本地完成不等于线上发布或实物验收。
