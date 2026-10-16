@@ -20,10 +20,10 @@ try{
  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:180000});
  await page.locator('#open-artwork').click();await page.locator('.city-selector summary').click();await page.locator('[data-theme="beijing"]').click();await idle();await page.locator('[data-variant="beijing-blue"]').click();await idle();
  const slider=await page.locator('#fill-lightness').boundingBox();
- await page.mouse.click(slider.x+slider.width/2,slider.y+10+.45*(slider.height-20));await idle();await page.waitForTimeout(350);
+ await page.mouse.click(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34));await idle();await page.waitForTimeout(350);
  await drag('color-pad',Array.from({length:30},(_,i)=>{const a=i/29*Math.PI*1.6;return [.5+.35*Math.cos(a),.5+.35*Math.sin(a)];}));
- await page.mouse.move(slider.x+slider.width/2,slider.y+10+.45*(slider.height-20));await page.mouse.down();
- for(let i=0;i<=20;i++){const l=.25+.5*Math.sin(i/20*Math.PI);await page.mouse.move(slider.x+slider.width/2,slider.y+10+(1-l)*(slider.height-20));await page.waitForTimeout(55);}
+ await page.mouse.move(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34));await page.mouse.down();
+ for(let i=0;i<=20;i++){const l=.25+.5*Math.sin(i/20*Math.PI);await page.mouse.move(slider.x+slider.width/2,slider.y+17+(1-l)*(slider.height-34));await page.waitForTimeout(55);}
  await page.mouse.up();await idle();await page.waitForTimeout(400);
  await page.locator('#adjust-material-tab').click();
  await drag('material-pad',Array.from({length:28},(_,i)=>[.15+.7*i/27,.5+.32*Math.sin(i/27*Math.PI*2)]));

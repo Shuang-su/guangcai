@@ -58,12 +58,22 @@ try{
  await page.waitForFunction(()=>{const c=document.querySelector('#color-pad .xy-background');return window.cupViewer.debug().selection.current.appearance.lightness===100&&[...c.getContext('2d').getImageData(Math.floor(c.width/2),1,1,1).data].slice(0,3).every(v=>v===255);});
  check('lightness maximum produces a white colour field',(await state()).selection.current.appearance.lightness===100&&(await fieldPixel()).slice(0,3).every(v=>v===255));
  const slider=await page.locator('#fill-lightness').boundingBox();
- await page.mouse.move(slider.x+slider.width/2,slider.y+10);await page.mouse.down();await page.mouse.move(slider.x+slider.width/2,slider.y+10+.45*(slider.height-20),{steps:20});await page.mouse.up();await settled();
+ await page.mouse.move(slider.x+slider.width/2,slider.y+17);await page.mouse.down();await page.mouse.move(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34),{steps:20});await page.waitForTimeout(150);
+ const sliderScale=()=>page.locator('.lightness-thumb').evaluate(e=>new DOMMatrixReadOnly(getComputedStyle(e).transform).a);
+ check('one-axis slider has a floating circular selector and live point canvas',await sliderScale()>1.2&&await page.locator('.lightness-thumb').evaluate(e=>e.clientWidth===e.clientHeight)&&await page.locator('.lightness-dots').evaluate(c=>c.width>0&&c.height>c.width));
+ await shot('lightness-pressed');await page.mouse.up();await settled();await page.waitForTimeout(700);
+ check('one-axis selector settles after pointer release',near(await sliderScale(),1,.001));
  check('real vertical slider drag controls lightness without changing material',near((await state()).selection.current.appearance.lightness,55,2)&&(await state()).selection.current.appearance.material===originalAxes.material&&(await state()).selection.current.appearance.materialX===originalAxes.materialX);
  await page.waitForTimeout(100);const pixel=await fieldPixel(),actualL=(await state()).selection.current.appearance.lightness;
  const red=actualL<=50?255*actualL/50:255,other=actualL<=50?0:255*(actualL-50)/50;
  check('cached lightness field matches HSL colour',Math.abs(pixel[0]-red)<=3&&Math.abs(pixel[1]-other)<=3&&Math.abs(pixel[2]-other)<=3);
  await shot('desktop-lightness');
+ await page.mouse.move(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34));await page.mouse.down();
+ await select({variant:'beijing-blue'});const sliderReset=(await state()).selection.current.appearance;
+ await page.mouse.move(slider.x+slider.width/2,slider.y+17+.2*(slider.height-34),{steps:8});await page.mouse.up();await settled();
+ check('external preset cancels stale native slider edits',same((await state()).selection.current.appearance,sliderReset));
+ await page.emulateMedia({reducedMotion:'reduce'});await page.mouse.down();await page.waitForTimeout(80);const staticSlider=await page.locator('.lightness-dots').evaluate(c=>c.toDataURL());await page.waitForTimeout(100);
+ check('reduced motion keeps slider highlight static without scaling',near(await sliderScale(),1,.001)&&staticSlider===await page.locator('.lightness-dots').evaluate(c=>c.toDataURL()));await page.mouse.up();await page.emulateMedia({reducedMotion:'no-preference'});
  await page.locator('[data-variant="beijing-green"]').click();await settled();
  await page.waitForFunction(()=>{const c=document.querySelector('#color-pad .xy-background'),l=window.cupViewer.debug().selection.current.appearance.lightness;return Math.abs(c.getContext('2d').getImageData(Math.floor(c.width/2),1,1,1).data[0]-Math.min(255,255*l/50))<3;});
  const baseField=await page.locator('#color-pad .xy-background').evaluate(c=>c.toDataURL());
@@ -84,7 +94,7 @@ try{
  await page.locator('#color-pad').press('ArrowLeft');await page.waitForTimeout(400);
  check('keyboard focus is elevated and highlighted without an outer frame',await page.locator('#color-pad').evaluate(e=>document.activeElement===e&&getComputedStyle(e).outlineStyle==='none')&&await knobScale()>1.1);
  await page.locator('#fill-lightness').press('ArrowUp');
- check('lightness focus keeps its accessible name without an enclosing outline',await page.getByRole('slider',{name:'明度',exact:true}).count()===1&&await page.locator('#fill-lightness').evaluate(e=>getComputedStyle(e).outlineStyle==='none'));
+ check('lightness focus keeps its accessible name without an enclosing outline',await page.getByRole('slider',{name:'明度',exact:true}).count()===1&&await page.locator('#fill-lightness').evaluate(e=>getComputedStyle(e).opacity==='0'));
 
  await page.locator('[data-variant="beijing-green"]').click();await settled();
  const resources=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/cities/v5/')).length);
@@ -177,7 +187,7 @@ try{
  await page.evaluate(()=>window.cupViewer.setMode('metalness'));await shot('metalness-inspection');await page.evaluate(()=>{window.cupViewer.setMode('pbr');window.cupViewer.setView('hero',true);});
  await page.evaluate(()=>window.cupViewer.restore());await settled();
  check('original restore and legacy artwork API remain compatible',(await state()).city.relief===1&&(await state()).city.pack.id===initial.city.pack.id&&await page.evaluate(p=>window.cupViewer.applyCityArtwork(p),initial.city.pack));
- for(const [width,height]of [[390,844],[600,900],[844,390]]){
+ for(const [width,height]of [[390,844],[600,900],[844,390],[1280,720]]){
   await close();await page.setViewportSize({width,height});await page.evaluate(()=>window.cupViewer.setView('hero',true));await chooseCity('beijing');await page.locator('[data-variant="beijing-green"]').click();await settled();await page.locator('#adjust-color-tab').click();await page.locator('#artwork-settings').evaluate(e=>{e.scrollTop=0;});await page.waitForTimeout(200);
   check(`viewport ${width} fits without horizontal overflow`,await page.locator('#artwork-settings').evaluate(e=>{const r=e.getBoundingClientRect();return document.documentElement.scrollWidth===innerWidth&&r.x>=0&&r.right<=innerWidth+1&&r.y>=0&&r.bottom<=innerHeight+1;}));
   if(height>520)check(`viewport ${width} shows entire pad and lightness axis on entry`,await page.locator('#color-pad').evaluate(e=>{const r=e.getBoundingClientRect(),p=e.closest('aside').getBoundingClientRect(),s=document.querySelector('#fill-lightness').getBoundingClientRect();return r.y>=p.y&&r.bottom<=p.bottom&&s.y>=p.y&&s.bottom<=p.bottom&&s.right<=p.right;}));
@@ -189,10 +199,14 @@ try{
  const cdp=await mobile.newCDPSession(touch);
  await touch.locator('#adjust-color-tab').tap();await touch.locator('#fill-lightness').scrollIntoViewIfNeeded();
  const lightBox=await touch.locator('#fill-lightness').boundingBox(),lightBefore=(await state(touch)).selection.current.appearance;
- await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:lightBox.x+lightBox.width/2,y:lightBox.y+lightBox.height-10,id:0}]});
- for(let i=1;i<=12;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:lightBox.x+lightBox.width/2,y:lightBox.y+lightBox.height-10-.7*(lightBox.height-20)*i/12,id:0}]});
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:lightBox.x+lightBox.width/2,y:lightBox.y+lightBox.height-17,id:0}]});
+ for(let i=1;i<=12;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:lightBox.x+lightBox.width/2,y:lightBox.y+lightBox.height-17-.7*(lightBox.height-34)*i/12,id:0}]});
  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await settled(touch);
  check('emulated phone lightness drag preserves hue, saturation and material',near((await state(touch)).selection.current.appearance.lightness,70,3)&&(await state(touch)).selection.current.appearance.hue===lightBefore.hue&&(await state(touch)).selection.current.appearance.saturation===lightBefore.saturation&&(await state(touch)).selection.current.appearance.materialX===lightBefore.materialX);
+ await touch.waitForTimeout(200);await touch.screenshot({path:`${out}/phone-lightness-dots.png`});
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:lightBox.x+lightBox.width/2,y:lightBox.y+lightBox.height/2,id:0}]});
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await settled(touch);
+ check('one-axis touch cancellation clears active feedback',!await touch.locator('.lightness-control').evaluate(e=>e.classList.contains('is-dragging')));
  await touch.locator('#adjust-material-tab').tap();
  const a=await point('material-pad',.1,.2,touch),b=await point('material-pad',.8,.7,touch),beforeTouch=await state(touch);
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:a.x,y:a.y,id:0}]});

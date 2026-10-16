@@ -2,6 +2,7 @@ import {variants,variantFor,finishes,selectTheme,themes,themeFor,isFixedGold,isP
 import {palettes,presetAppearance,type Appearance,type Palette} from '../styles/city-appearance';
 import {colorAtPosition,colorPosition} from '../styles/xy-mapping';
 import {createXYPad} from './xy-pad';
+import {createLightnessSlider} from './lightness-slider';
 import {colorField,materialField} from './xy-pad-background';
 
 export function createArtworkPanel(controller:SelectionController,closeOtherPanels:()=>void){
@@ -41,11 +42,9 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   const a=pending??controller.desired.appearance;if(a)edit(colorAtPosition(p,a.hue));
  },onCommit:flush,onCancel:cancelled});
  const materialPad=createXYPad({id:'material-pad',label:'调整材质',onInput:p=>edit({materialX:p.x,material:p.y}),onCommit:flush,onCancel:cancelled});
- const lightness=$<HTMLInputElement>('#fill-lightness');
- lightness.onpointerdown=()=>cancelPending();lightness.oninput=()=>edit({lightness:Number(lightness.value)});
- lightness.onchange=flush;lightness.onpointercancel=cancelled;
+ const lightness=createLightnessSlider($('.lightness-control'),{onStart:cancelPending,onInput:value=>edit({lightness:value}),onCommit:flush,onCancel:cancelled});
  $('#adjust-color-panel .pad-mount').append(colorPad.element);$('#adjust-material-panel .pad-mount').append(materialPad.element);
- function cancelPending(){cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();}
+ function cancelPending(){cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();lightness.cancel();}
  function changeTab(tab:'color'|'material'){
   cancelPending();selectedTab=tab;
   for(const name of ['color','material'] as const){
@@ -53,7 +52,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
    button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;
    $('#adjust-'+name+'-panel').hidden=!active;
   }
-  render();(tab==='color'?colorPad:materialPad).refresh();
+  render();(tab==='color'?colorPad:materialPad).refresh();if(tab==='color')lightness.refresh();
  }
  for(const name of ['color','material'] as const){
   const button=$('#adjust-'+name+'-tab');button.onclick=()=>changeTab(name);
@@ -65,7 +64,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  }
  function setOpen(open:boolean){
   cancelPending();panel.hidden=!open;main.classList.toggle('artwork-open',open);toggle.setAttribute('aria-expanded',String(open));
-  if(open){closeOtherPanels();render();panel.scrollTop=0;$('#close-artwork').focus();colorPad.refresh();materialPad.refresh();}else toggle.focus();
+  if(open){closeOtherPanels();render();panel.scrollTop=0;$('#close-artwork').focus();colorPad.refresh();materialPad.refresh();lightness.refresh();}else toggle.focus();
  }
  toggle.onclick=()=>setOpen(panel.hidden);$('#close-artwork').onclick=()=>setOpen(false);
  const dismiss=()=>{cancelPending();panel.hidden=true;main.classList.remove('artwork-open');toggle.setAttribute('aria-expanded','false');};
@@ -102,8 +101,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
   if(pilot&&s.appearance){
    const a=s.appearance;colorPad.setValue(colorPosition(a.hue,a.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});
-   lightness.value=String(a.lightness);
-   lightness.style.setProperty('--lightness-color',`hsl(${a.hue} ${a.saturation}% 50%)`);
+   lightness.setValue(a.lightness,a.hue,a.saturation);
    colorPad.setBackground(String(a.lightness),colorField(a.lightness));
    materialPad.setBackground([a.hue,a.saturation,a.lightness].join(','),materialField(a));
   }
@@ -113,7 +111,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   if(!controller.busy){progress='';document.querySelector('h1')!.textContent=themeFor(variantFor(controller.current.variant)).name+' · 共彩';}
  }
  render();return {ready:()=>{toggle.disabled=false;},render,progress:(done:number,total:number)=>{progress=`${done} / ${total}`;render();},close:dismiss,dispose(){
-  cancelPending();colorPad.dispose();materialPad.dispose();mobile.removeEventListener('change',responsive);
+  cancelPending();colorPad.dispose();materialPad.dispose();lightness.dispose();mobile.removeEventListener('change',responsive);
   document.removeEventListener('keydown',keyboard);document.querySelector('#open-settings')?.removeEventListener('click',dismiss);document.querySelector('#open-background')?.removeEventListener('click',dismiss);panel.remove();toggle.remove();
  }};
 }
