@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "v7-1",
+  "catalogUrl": "releases/v7-1/catalog.json",
+  "manifestUrl": "releases/v7-1/manifest-ec81ffecfc60c00c.json",
+  "defaultDesign": {
+    "schemaVersion": 1,
+    "resourceReleaseId": "v7-1",
+    "modelVersion": "china-cup-v6",
+    "recipeVersion": "porcelain-city-v6",
+    "cityId": "shenzhen",
+    "sloganId": "open",
+    "appearance": {
+      "preset": "gold",
+      "hue": 42.12765957446809,
+      "saturation": 100,
+      "lightness": 63.13725490196078,
+      "material": 1,
+      "materialX": 0.5,
+      "relief": 1
+    }
+  }
+}
