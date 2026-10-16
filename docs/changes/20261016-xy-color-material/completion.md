@@ -54,3 +54,10 @@ QA_URL=http://127.0.0.1:5236/ QA_OUT=../.codex-work/tmp/xy-controls/qa-motion-li
 ```
 
 构建未运行纹理 prebuild；既有模型、城市源图、纹理清单和 deployments/ 均未修改。产品仍标记 V5.1 基线，本轮未创建新的发布版本。
+
+## 最终交付回读
+
+- 最新功能 checkpoint：885f7825457dfff3dfa491e294a784cee60e7b21（feat(china): add lightness axis and responsive XY feedback (#25)）。
+- 先前 checkpoint：f29b0f1（参数兼容）、5f22bba（XY 控件）、ac9c9fb（初版完整回归）。
+- 分支：codex/xy-color-material。功能提交后工作树干净；本段仅补记已确认 SHA。
+- 面向用户交付摘要：本地预览已切到最新颜色／明度界面；提供 15.8 秒真实操作录像和手机截图。29 项应用测试、88 项浏览器检查、TypeScript 与构建均通过；支持减少动态效果，材质不增加第三滑条。真机和 Safari 尚未验收。未推送、PR、合并、标签或部署。
