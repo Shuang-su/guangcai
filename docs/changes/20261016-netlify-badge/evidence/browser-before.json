@@ -1,0 +1,29 @@
+{
+  "title": "中国杯 V5.3 · 城市与自由创作",
+  "iframes": [
+    {
+      "id": "nl-badge-frame",
+      "title": "Powered by Netlify",
+      "src": "",
+      "style": "position: fixed; bottom: 0px; right: 0px; border: 0px; margin: 0px; padding: 0px; background: transparent; color-scheme: dark; z-index: 2147483645; width: 202px; height: 64px; clip-path: path(\"M 3 3 H 189 V 51 H 3 Z\");"
+    }
+  ],
+  "netlifyElements": [
+    {
+      "tag": "IFRAME",
+      "id": "nl-badge-frame",
+      "class": ""
+    }
+  ],
+  "scripts": [
+    {
+      "src": "https://guangcai-no1-china-v5.netlify.app/assets/index-DFmkqM5-.js",
+      "text": ""
+    },
+    {
+      "src": "https://guangcai-no1-china-v5.netlify.app/.netlify/scripts/hud?variant=public",
+      "text": ""
+    }
+  ],
+  "errors": []
+}
