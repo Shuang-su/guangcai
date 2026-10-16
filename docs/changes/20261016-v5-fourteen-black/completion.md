@@ -44,4 +44,4 @@
 
 ## Checkpoint
 
-任务范围完整保存到 `codex/city-v5-fourteen-black`；源码与证据提交 SHA 在提交后由紧随的记录提交补记。
+源码、素材与验证证据 checkpoint：`ff04eecf89732a4fa79f865c8ab8ff4fa2f2d87b`（`feat(china): add fourteen full-fill city patterns on latest controls (#21)`）。提交后工作树干净；本节 SHA 由后续独立文档提交补记。分支 `codex/city-v5-fourteen-black`，没有远端操作。
