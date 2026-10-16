@@ -1,6 +1,6 @@
 # V5.1 新增 11 城图样
 
-日期：2026-10-16。Issue #21。从干净的 `8d95793` 新建 `codex/city-v5-eleven-source`。本节为源码阶段记录；发布结果将在独立发布归档阶段补充。
+日期：2026-10-16。Issue #21。从干净的 `8d95793` 新建 `codex/city-v5-eleven-source`。已完成源码、验证和独立 V5.1 发布；本轮发布归档与完成记录另成 checkpoint。
 
 ## 实现
 
@@ -23,4 +23,14 @@
 
 ## 状态
 
-本地源码与验证完成，等待本任务 checkpoint 后执行已授权的独立 V5 发布。尚未 push、PR、合并或 tag。最终部署 ID、服务端摘要、线上复测与源码 checkpoint SHA 将在下一份发布归档 checkpoint 中记录。
+源码 checkpoint：`84ef937e2daa576c12358e9722eab8142c25d423`（feat(china): add eleven supplied city patterns alongside V5 samples (#21)）。
+
+独立 V5 已更新到 V5.1：[在线预览](https://guangcai-no1-china-v5.netlify.app)，不可变部署 [本次发布](https://6ad1932bbe33ebee7d4bc174--guangcai-no1-china-v5.netlify.app)。部署 ID `6ad1932bbe33ebee7d4bc174`，服务端 ready，公开 release.json 为 5.1.0 并指向上述源码 SHA。974 个发布文件摘要通过回读核对；61 项线上浏览器检查全部通过，无意外错误。素材页和城市目录 200，缺失路径返回真实 404，noindex 响应头生效。
+
+旧 V4、V3、原中国杯站点发布前后部署 ID 完全一致；独立 V5 未启用 Git 自动部署。没有 push、PR、合并或 tag。当前分支 `codex/city-v5-eleven-source`。
+
+完整新发布快照：`deployments/guangcai-no1-china-v5/6ad1932bbe33ebee7d4bc174/site/`，对应 files.json 和 deployment.json。本地／线上验证、截图和发布回读在 `evidence/city-v5/eleven-city-pipeline/`。终端日志归档去除 ANSI 和行尾空白，原始输出仍保留于项目忽略缓存。
+
+原北京／深圳母版和运行资源逐文件哈希未变；新旧北京／深圳杯面文字图字节一致，只有 UI 选项编号不同。本轮 11 张工程原稿与用户原目录再次哈希核对一致。
+
+归档记录脚本首次运行因相对项目根的 parent 解析失败；改为绝对根路径后重跑完成。只影响本地记录写入，没有重复发布。
