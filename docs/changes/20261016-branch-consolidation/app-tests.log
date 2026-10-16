@@ -1,0 +1,50 @@
+
+> guangcai-china-v4@5.4.2 test
+> tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts
+
+✔ original China pack and all legacy China palettes retain their interface (2.335167ms)
+✔ all registered V5 patterns expose five presets and share structural channels (1.850541ms)
+✔ continuous appearance survives theme changes and entire-selection normalization (1.631417ms)
+✔ palette endpoints are reproduced in sRGB and HSL edits preserve a shared gradient (0.345834ms)
+✔ material interpolation keeps independent gold parameters and exact finish endpoints (0.3425ms)
+✔ last selection wins; stale failure and current failure preserve the committed selection (0.303375ms)
+✔ Shenzhen explicit slogans remain available and reset outside Shenzhen (0.116542ms)
+✔ fixed atlas rejects mismatched dimensions, fractional rows and missing guards (0.942208ms)
+✔ periodic atlas coordinates preserve top/bottom orientation and protect both splits (0.223625ms)
+✔ half-float normal decoder rejects corrupt headers, dimensions, and non-finite values (1.65125ms)
+✔ body normal retains half precision and matches source orientation (91.744542ms)
+✔ handle normal retains half precision and matches source orientation (58.697125ms)
+✔ saucer normal retains half precision and matches source orientation (320.2585ms)
+minimum radial cavity clearance, mm: 1.1500015258789062
+max handle UV longitudinal scale error: 0.0020292070439866805
+triangles checked: 150084
+✔ handle and porcelain collars stay outside the cavity across all UI dimension extremes (412.425875ms)
+✔ handle artwork uses uniform physical scale through the upper corner and lower curve (4.031ms)
+✔ all rendered triangles face the same side as their vertex normals; no invalid attributes (106.940917ms)
+✔ reference-derived assembly retains inset saucer foot, recessed cup base and lid flange (47.110958ms)
+✔ invalid parameters reject before creating a replacement model (0.660583ms)
+✔ bottom marks face outward, sit below the recessed base and share physical scale (35.604667ms)
+✔ city artwork reaches the rounded exterior foot with a continuous upright second UV set (38.635792ms)
+✔ v3 preserves cup and saucer geometry and city coordinates outside the authorized lid correction (30.104417ms)
+✔ narrow floral coverage remains continuous and does not expose the handle roots (35.055542ms)
+✔ balanced saucer UV closes without a new seam, folds or abrupt changes of motif scale (33.527083ms)
+✔ flat lid glaze and knob feet stay in contact after crown removal (31.411792ms)
+✔ native vibration, older iOS labels and newer trusted gestures select separate paths (1.342125ms)
+✔ haptics require trusted touch intent and respect reduced motion/visibility gating (1.04125ms)
+✔ haptics rate limit detents and bound pulse length (0.1205ms)
+✔ unsupported or rejected motor requests cannot break the interaction (0.122209ms)
+✔ movement haptics follow distance and cell crossings without reacting to finger jitter (0.427959ms)
+✔ authoring framing keeps the full canvas and restores the camera projection without accumulation (2.870417ms)
+✔ cached colour field lightness compositing matches direct HSL at both endpoints and in between (0.654417ms)
+✔ square colour mapping reaches all edges and round-trips hue and saturation (0.968792ms)
+✔ material plane preserves the full legacy column and varies in both directions (1.212584ms)
+✔ legacy input, presets and cross-city updates preserve a single material state (0.458958ms)
+✔ uniform-only material edits preserve program, normals and legacy lettering inputs (1.158833ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1113.885542

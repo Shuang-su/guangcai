@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-16T11:50:48.422797+00:00",
+  "branch": "codex/short-screen-lift",
+  "head": "e9d1fcef4006ac2faf84a8a38db399502ca6e62b",
+  "remoteMain": "928ab24e12e5aa383d34db37338314ef6dd88f61",
+  "refs": [
+    {
+      "ref": "refs/heads/codex/beijing-4.3",
+      "sha": "79222c816823783115906017d0f875cb787bf9ac",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/beijing-vector-review",
+      "sha": "787c5b61858854f65f10e35363d34f116032388b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/china-3.0",
+      "sha": "5af1f73aaacbb7ce1662e4ebbe4de0f15a6f231b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/china-4.0",
+      "sha": "eadb18b4c11577dae7b51a77676220f3434d4ac1",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/city-full-fill",
+      "sha": "45f65789ec8fefa2f1ca2e55ff92aad57f443271",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/city-v5",
+      "sha": "8d957939f958fea772867199e59787fe78fcaeb6",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/city-v5-eleven-source",
+      "sha": "743af2cb785c88ae2e7b38f585b6cab1fa9e729a",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/city-v5-fourteen-black",
+      "sha": "7fe96a153e5ab0da4f774648e807205cf746dd0c",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/fixed-relief-alignment",
+      "sha": "af5aa25ad51bef5efea3d8e8b5c7d0ec68a2da8b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/floral-cleanup-4.2",
+      "sha": "d62cabb343eb4411edea0032ebbfdaf739e9ea74",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/hide-netlify-badge",
+      "sha": "32c586f78cb4944f4f3995590c9342aa9ba3737b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/ios-drag-pulses",
+      "sha": "b75ec07b32f2e4b9d9af3827a4a35683512d5dd0",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/ios-haptics",
+      "sha": "f16bc5cbe7ff865ee61bba1a3e2a6a24e19e5f36",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/ios-startup-audit",
+      "sha": "9060bba6cef02e8116c9bad3f35a63f0fa8a7889",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/short-screen-lift",
+      "sha": "e9d1fcef4006ac2faf84a8a38db399502ca6e62b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/source-consolidation",
+      "sha": "1f92fd9a480fe03b7ebc82dae6b701a63bb73ea8",
+      "includedInV542": false
+    },
+    {
+      "ref": "refs/heads/codex/v4-body-seam",
+      "sha": "ae841ca3ad12e884b7a202c56e5dce459210fcb5",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/v4-readme-sync",
+      "sha": "8f86dbbb86f477f1d809077dcf7251bfa9fa3569",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/heads/codex/xy-color-material",
+      "sha": "523b49f7060a0e5c4fae6d3d6f0ff7b236be9e54",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/beijing-4.3",
+      "sha": "79222c816823783115906017d0f875cb787bf9ac",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/beijing-vector-review",
+      "sha": "787c5b61858854f65f10e35363d34f116032388b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/china-3.0",
+      "sha": "4f1c0bc26aa1a8d45459001db495bdc13fcd2eae",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/china-4.0",
+      "sha": "eadb18b4c11577dae7b51a77676220f3434d4ac1",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/development-2.2",
+      "sha": "eacadc390571c26ac6740b24103bf6d5e0225dee",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/fixed-relief-alignment",
+      "sha": "af5aa25ad51bef5efea3d8e8b5c7d0ec68a2da8b",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/floral-cleanup-4.2",
+      "sha": "d62cabb343eb4411edea0032ebbfdaf739e9ea74",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-1.0",
+      "sha": "152a791b51faaa28e4a565809b3250cf7fc75346",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-2.0",
+      "sha": "36f4cdc532cdbe0fbc4165b2821ecf698db65fdf",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-2.1",
+      "sha": "8be5d4045ea48674a6c0080efd5b55672526dd82",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/reconstruct-history",
+      "sha": "e0cc1b635e1637992d2c69988664dcb4c79a0e4e",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/source-consolidation",
+      "sha": "0afcf96d6ad14b8fc7b29abf1c94c9121f617fac",
+      "includedInV542": false
+    },
+    {
+      "ref": "refs/remotes/origin/codex/v4-body-seam",
+      "sha": "ae841ca3ad12e884b7a202c56e5dce459210fcb5",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/v4-readme-sync",
+      "sha": "8f86dbbb86f477f1d809077dcf7251bfa9fa3569",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/codex/verify-dev-handoff",
+      "sha": "a32b183dca3150318fd6e05da216c90d84e784de",
+      "includedInV542": true
+    },
+    {
+      "ref": "refs/remotes/origin/main",
+      "sha": "928ab24e12e5aa383d34db37338314ef6dd88f61",
+      "includedInV542": true
+    }
+  ],
+  "protectedArchiveWorktree": {
+    "worktree": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/.codex-work/archive-index",
+    "head": "1f92fd9a480fe03b7ebc82dae6b701a63bb73ea8",
+    "status": " M ARCHIVE_INDEX.md\u0000 M README.md\u0000 M WORKSPACE_LOCATIONS.md\u0000 M docs/changes/20261014-source-consolidation/completion.md\u0000 M docs/changes/20261015-attachment-resolution-and-duplicates/completion.md\u0000 M docs/changes/20261015-attachment-resolution-and-duplicates/report.md\u0000 M docs/changes/20261015-verified-dedup-cleanup/completion.md\u0000 M docs/changes/20261015-verified-dedup-cleanup/execute_cleanup.py\u0000?? docs/changes/20261015-verified-dedup-cleanup/deletion-result.json\u0000?? docs/changes/20261015-verified-dedup-cleanup/postdelete-verification.json\u0000?? docs/changes/20261015-verified-dedup-cleanup/preview-resource-check.json\u0000?? docs/changes/20261015-verified-dedup-cleanup/remaining-duplicate-paths.json\u0000",
+    "files": {
+      "ARCHIVE_INDEX.md": "9f5b3eaaac4cf57cdab48612ef2514015411c269bdcd24a62e9cb5f294ab6544",
+      "README.md": "f7561688f39a464c86420915df22560a1328b4c97f4ae1a15639674580635c1a",
+      "WORKSPACE_LOCATIONS.md": "30fd26eb7158e9b13c12e36572f64cd4bedf5232a126f366362f778ceaa71f61",
+      "docs/changes/20261014-source-consolidation/completion.md": "b49cf24210c47aabc02038a1bcf8ecb8be517681fb1168f8116798c763de9b96",
+      "docs/changes/20261015-attachment-resolution-and-duplicates/completion.md": "422ada2c1aa4401d6b2511a333df35106aa788a4804156d6d8ad3524e6ac0cea",
+      "docs/changes/20261015-attachment-resolution-and-duplicates/report.md": "bd630464182eda37f0e8edd8cb43884792ebd5f6629a8938696bf5b42abbb106",
+      "docs/changes/20261015-verified-dedup-cleanup/completion.md": "43b76fc9de28a91025499d163439b0d0845f6ce57e1030c89ab057057cba5a10",
+      "docs/changes/20261015-verified-dedup-cleanup/execute_cleanup.py": "1346ab018b2c2ceee00452c2b4f662598a8d3cd7741d80b3e3ea8f2c2a6dd289",
+      "docs/changes/20261015-verified-dedup-cleanup/deletion-result.json": "e103a0caf54f967a2ecc21a3e10a11ecccb7e387dfdef747cdd7d795154e27dd",
+      "docs/changes/20261015-verified-dedup-cleanup/postdelete-verification.json": "6464b1c33bb1c4b9077f0b57c72d2b5af086356f71dbaed54c4aafaf8a9476a9",
+      "docs/changes/20261015-verified-dedup-cleanup/preview-resource-check.json": "f26508f386245f97bf35d35d60141e854ceac3ea4bb02c9635a16ffefe819807",
+      "docs/changes/20261015-verified-dedup-cleanup/remaining-duplicate-paths.json": "b33a832f3dbb17b522fe52d6466fd536e7dd884f76a89a805b5b1b5f9d87cc54"
+    }
+  },
+  "onlineDeploy": "6ad20c45a7780e55fedba3d7",
+  "onlineSource": "156dc368e357ed84f6731d90abc1dc71bf886b8d"
+}
