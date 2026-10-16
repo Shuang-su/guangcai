@@ -3,7 +3,7 @@ import type {Selection} from '../styles/city-selection';
 import type {CityArtworkPack} from '../styles/city-artwork';
 import type {StylePack} from '../styles/style-manager';
 import fixedLayout from '../styles/fixed-layout.json';
-import {normalizeAppearance} from '../styles/city-appearance';
+export {exportDesign,validateDesign} from './design';
 
 declare global {interface Window {GUANGCAI_CONFIG?:{bootstrapUrl?:string;assetBase?:string;apiBase?:string}}}
 export const appBase=new URL(import.meta.env.BASE_URL,document.baseURI).href;
@@ -12,7 +12,7 @@ async function json<T>(url:string){const response=await fetch(url,{signal:AbortS
 export async function loadResources(){
  const bootstrap=await json<Bootstrap>(new URL(config.bootstrapUrl??'api/v1/bootstrap.json',appBase).href);
  if(bootstrap.schemaVersion!==1||bootstrap.releaseId!=='v7-1')throw Error('Unsupported resource release');
- const manifestUrl=new URL(bootstrap.manifestUrl,config.assetBase??appBase).href;
+ const manifestUrl=new URL(bootstrap.manifestUrl,new URL(config.assetBase??appBase,appBase)).href;
  const manifest=await json<ResourceManifest>(manifestUrl);
  if(manifest.schemaVersion!==1||manifest.releaseId!==bootstrap.releaseId||manifest.modelVersion!=='china-cup-v6'||manifest.recipeVersion!=='porcelain-city-v6')throw Error('Unsupported model or recipe');
  const assets:Asset[]=[];
@@ -37,15 +37,3 @@ export async function loadResources(){
  return {bootstrap,manifest,cityPack,fixedPack};
 }
 export type Resources=Awaited<ReturnType<typeof loadResources>>;
-export function exportDesign(selection:Selection,manifest:ResourceManifest):DesignConfig{
- const cityId=selection.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,'');
- const design={schemaVersion:1 as const,resourceReleaseId:manifest.releaseId,modelVersion:manifest.modelVersion,recipeVersion:manifest.recipeVersion,cityId,sloganId:selection.text,appearance:structuredClone(selection.appearance!)};
- validateDesign(design,manifest);return design;
-}
-export function validateDesign(value:unknown,manifest:ResourceManifest):DesignConfig{
- const d=value as DesignConfig;
- if(!d||d.schemaVersion!==1||d.resourceReleaseId!==manifest.releaseId||d.modelVersion!==manifest.modelVersion||d.recipeVersion!==manifest.recipeVersion||!Object.hasOwn(manifest.cities,d.cityId)||!Object.hasOwn(manifest.slogans,d.sloganId))throw Error('作品使用了未知或不支持的资源版本');
- const a=normalizeAppearance(d.appearance);
- for(const key of ['hue','saturation','lightness','material','materialX','relief'] as const)if((d.appearance[key]??.5)!==a[key])throw Error('作品参数超出范围');
- return {schemaVersion:1,resourceReleaseId:d.resourceReleaseId,modelVersion:d.modelVersion,recipeVersion:d.recipeVersion,cityId:d.cityId,sloganId:d.sloganId,appearance:a};
-}

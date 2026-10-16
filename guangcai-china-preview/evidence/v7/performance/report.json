@@ -1,0 +1,165 @@
+{
+  "url": "http://127.0.0.1:5274/",
+  "conditions": {
+    "downloadMbps": 10,
+    "rttMs": 100,
+    "cache": "disabled"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "readyMs": 4053,
+      "encodedBytes": 3689204,
+      "debug": {
+        "quality": {
+          "cityTier": "light",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.5,
+          "renderFrames": 89,
+          "contextLost": false
+        },
+        "resources": {
+          "estimatedGpuBytes": 22085092,
+          "reservedRenderTargetBytes": 103285776,
+          "peakEstimatedBytes": 194576884,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 13,
+          "activeEntries": 13,
+          "decodedBytes": 16563814,
+          "fetchedBodyBytes": 2286310,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    },
+    {
+      "run": 2,
+      "readyMs": 3958,
+      "encodedBytes": 3689204,
+      "debug": {
+        "quality": {
+          "cityTier": "light",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.5,
+          "renderFrames": 89,
+          "contextLost": false
+        },
+        "resources": {
+          "estimatedGpuBytes": 22085092,
+          "reservedRenderTargetBytes": 103285776,
+          "peakEstimatedBytes": 194576884,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 13,
+          "activeEntries": 13,
+          "decodedBytes": 16563814,
+          "fetchedBodyBytes": 2286310,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    },
+    {
+      "run": 3,
+      "readyMs": 3958,
+      "encodedBytes": 3689204,
+      "debug": {
+        "quality": {
+          "cityTier": "light",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.5,
+          "renderFrames": 88,
+          "contextLost": false
+        },
+        "resources": {
+          "estimatedGpuBytes": 22085092,
+          "reservedRenderTargetBytes": 103285776,
+          "peakEstimatedBytes": 194576884,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 13,
+          "activeEntries": 13,
+          "decodedBytes": 16563814,
+          "fetchedBodyBytes": 2286310,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    }
+  ],
+  "visibility": {
+    "simulatedVisibilityEvent": true,
+    "renderPaused": true,
+    "queuesPaused": true,
+    "resumed": true
+  },
+  "cadence": {
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+    "modelRenders": 120,
+    "medianFrameMs": 16.699999999999818,
+    "p95FrameMs": 16.700000000000728,
+    "samples": 119,
+    "device": "Desktop Chrome, mobile viewport; not physical iPhone"
+  },
+  "targets": {
+    "readyMs": 6000,
+    "encodedBytes": 5242880
+  },
+  "passed": true,
+  "physicalIPhoneTested": false
+}

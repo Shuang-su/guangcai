@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:guangcai:design:1",
+  "title": "DesignConfig",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "resourceReleaseId": {
+      "const": "v7-1"
+    },
+    "modelVersion": {
+      "const": "china-cup-v6"
+    },
+    "recipeVersion": {
+      "const": "porcelain-city-v6"
+    },
+    "cityId": {
+      "enum": [
+        "shanghai",
+        "urumqi",
+        "beijing",
+        "nanjing",
+        "nanchang",
+        "xiamen",
+        "hohhot",
+        "harbin",
+        "tianjin",
+        "taiyuan",
+        "guangzhou",
+        "chengdu",
+        "jingdezhen",
+        "hangzhou",
+        "wuhan",
+        "shenyang",
+        "shenzhen",
+        "shijiazhuang",
+        "xian",
+        "zhengzhou",
+        "chongqing",
+        "changchun",
+        "qingdao"
+      ]
+    },
+    "sloganId": {
+      "enum": [
+        "open",
+        "innovation",
+        "cooperation",
+        "sharing",
+        "together",
+        "ocean"
+      ]
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preset": {
+          "enum": [
+            "gold",
+            "red",
+            "green",
+            "purple",
+            "blue"
+          ]
+        },
+        "hue": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "saturation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "lightness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "material": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "materialX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "relief": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "required": [
+        "preset",
+        "hue",
+        "saturation",
+        "lightness",
+        "material",
+        "materialX",
+        "relief"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "resourceReleaseId",
+    "modelVersion",
+    "recipeVersion",
+    "cityId",
+    "sloganId",
+    "appearance"
+  ]
+}

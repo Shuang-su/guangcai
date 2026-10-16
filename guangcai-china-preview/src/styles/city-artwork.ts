@@ -197,6 +197,7 @@ export class CityArtworkManager {
     }catch(e){if(revision===this.revision)this.lastError=(e as Error).message;throw e;}
     finally{this.trimResources();}
   }
+  resetRuntime(){this.controller?.abort();++this.revision;this.leases.forEach(l=>l.release());this.leases=[];this.paramKey=this.textKey='';this.paramMaps=[];}
   setRelief(value:number){if(!Number.isFinite(value)||value< -1||value>2)throw new Error('凹凸强度超出范围');this.relief=value;if(this.current?.parametric){const a={...this.current.parametric.appearance,relief:Math.max(0,value)};this.current.parametric.appearance=a;this.parameters.update(a,!this.current.label?.hidden);}else{this.material.normalScale.setScalar(value*.7);this.material.clearcoatNormalScale.setScalar(value*.7);}}
   setMetal(enabled:boolean){this.metalEnabled=enabled;this.material.metalness=enabled?1:0;this.parameters.metal(enabled);}
   configureMetalnessInspection(material:MeshBasicMaterial){if(this.current?.parametric)this.parameters.inspect(material);}

@@ -13,3 +13,5 @@
 初始 GPU 预算：首屏贴图 64 MiB，移动常态纹理加渲染目标 128 MiB，切换峰值192 MiB；预算不是系统内存上限。冷缓存10Mbps/100ms目标5MiB/6秒；保留反射，达不到时如实记录，不降低约束掩盖失败。
 
 完成记录随每个 checkpoint 更新；不 push、不部署、不创建 PR，不修改 V6 发布归档。制作前检查空间，缓存与构建写项目 .codex-work。
+
+执行位置修订：按用户追加要求，在 `/Volumes/Prism/广彩/guangcai-v7-workspace` 的独立稀疏 worktree 继续。迁移对8499个文件完成SHA-256核对，元数据`.DS_Store`和AppleDouble不参与内容比较；原有Prism缓存和初号機V6现场不改写。

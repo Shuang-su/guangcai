@@ -1,0 +1,8 @@
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+const root='.codex-work/deploy/v7-build',hash=b=>createHash('sha256').update(b).digest('hex');
+const bootstrap=JSON.parse(await fs.readFile(root+'/api/v1/bootstrap.json')),manifest=JSON.parse(await fs.readFile(root+'/'+bootstrap.manifestUrl));
+const assets=[];const walk=v=>{if(v&&typeof v==='object'){if(v.url&&v.sha256)assets.push(v);else for(const x of Object.values(v))walk(x);}};walk(manifest);
+for(const a of assets){const file=path.join(root,path.dirname(bootstrap.manifestUrl),a.url);assert.equal(hash(await fs.readFile(file)),a.sha256,a.id);}
+for(const directory of ['fixed','cities','textures','review','dev','audit','integration','assets/source'])await assert.rejects(fs.stat(path.join(root,directory)),{code:'ENOENT'});
+const files=[];async function inventory(dir){for(const e of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())await inventory(p);else{const bytes=await fs.readFile(p);files.push({path:path.relative(root,p),bytes:bytes.length,sha256:hash(bytes)});}}}await inventory(root);
+await fs.mkdir('evidence/v7',{recursive:true});await fs.writeFile('evidence/v7/consumer-build.json',JSON.stringify({root,files:files.length,bytes:files.reduce((n,f)=>n+f.bytes,0),assetsVerified:assets.length,inventory:files},null,2));console.log(JSON.stringify({passed:true,files:files.length,assetsVerified:assets.length,bytes:files.reduce((n,f)=>n+f.bytes,0)}));

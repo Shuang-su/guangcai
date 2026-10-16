@@ -1,0 +1,808 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Guangcai V7 resource and integration reference",
+    "version": "1.0.0",
+    "description": "Resource delivery contract plus optional in-memory sample API. Company identity and database implementation remain external."
+  },
+  "servers": [
+    {
+      "url": "/api/v1"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "DesignConfig": {
+        "title": "DesignConfig",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "resourceReleaseId": {
+            "const": "v7-1"
+          },
+          "modelVersion": {
+            "const": "china-cup-v6"
+          },
+          "recipeVersion": {
+            "const": "porcelain-city-v6"
+          },
+          "cityId": {
+            "enum": [
+              "shanghai",
+              "urumqi",
+              "beijing",
+              "nanjing",
+              "nanchang",
+              "xiamen",
+              "hohhot",
+              "harbin",
+              "tianjin",
+              "taiyuan",
+              "guangzhou",
+              "chengdu",
+              "jingdezhen",
+              "hangzhou",
+              "wuhan",
+              "shenyang",
+              "shenzhen",
+              "shijiazhuang",
+              "xian",
+              "zhengzhou",
+              "chongqing",
+              "changchun",
+              "qingdao"
+            ]
+          },
+          "sloganId": {
+            "enum": [
+              "open",
+              "innovation",
+              "cooperation",
+              "sharing",
+              "together",
+              "ocean"
+            ]
+          },
+          "appearance": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "preset": {
+                "enum": [
+                  "gold",
+                  "red",
+                  "green",
+                  "purple",
+                  "blue"
+                ]
+              },
+              "hue": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 360
+              },
+              "saturation": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "lightness": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "material": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "materialX": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "relief": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2
+              }
+            },
+            "required": [
+              "preset",
+              "hue",
+              "saturation",
+              "lightness",
+              "material",
+              "materialX",
+              "relief"
+            ]
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "resourceReleaseId",
+          "modelVersion",
+          "recipeVersion",
+          "cityId",
+          "sloganId",
+          "appearance"
+        ]
+      },
+      "Work": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "design": {
+            "$ref": "#/components/schemas/DesignConfig"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "revision",
+          "design",
+          "createdAt",
+          "updatedAt"
+        ]
+      }
+    }
+  },
+  "paths": {
+    "/bootstrap": {
+      "get": {
+        "summary": "Active release and default design",
+        "responses": {
+          "200": {
+            "description": "Bootstrap",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "schemaVersion": {
+                      "const": 1
+                    },
+                    "releaseId": {
+                      "type": "string"
+                    },
+                    "catalogUrl": {
+                      "type": "string"
+                    },
+                    "manifestUrl": {
+                      "type": "string"
+                    },
+                    "defaultDesign": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    }
+                  },
+                  "required": [
+                    "schemaVersion",
+                    "releaseId",
+                    "catalogUrl",
+                    "manifestUrl",
+                    "defaultDesign"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/session": {
+      "get": {
+        "summary": "Mock session; replace with company adapter",
+        "responses": {
+          "200": {
+            "description": "Synthetic session",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "mock": {
+                      "const": true
+                    },
+                    "userId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "mock",
+                    "userId"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mock/session": {
+      "post": {
+        "summary": "LOCAL MOCK ONLY: select alice, bob or anonymous",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "user": {
+                    "enum": [
+                      "alice",
+                      "bob",
+                      null
+                    ]
+                  }
+                },
+                "required": [
+                  "user"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Mock session selected"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      }
+    },
+    "/works": {
+      "get": {
+        "summary": "List own works",
+        "responses": {
+          "200": {
+            "description": "Works",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Work"
+                      }
+                    }
+                  },
+                  "required": [
+                    "items"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a work",
+        "parameters": [
+          {
+            "name": "Idempotency-Key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120
+                  },
+                  "design": {
+                    "$ref": "#/components/schemas/DesignConfig"
+                  }
+                },
+                "required": [
+                  "title",
+                  "design"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Idempotent replay",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "design": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "revision",
+                    "design",
+                    "createdAt",
+                    "updatedAt"
+                  ]
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "design": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "revision",
+                    "design",
+                    "createdAt",
+                    "updatedAt"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      }
+    },
+    "/works/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Own work",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "design": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "revision",
+                    "design",
+                    "createdAt",
+                    "updatedAt"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      },
+      "put": {
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120
+                  },
+                  "design": {
+                    "$ref": "#/components/schemas/DesignConfig"
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "title",
+                  "design",
+                  "revision"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated work",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 120
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "design": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "revision",
+                    "design",
+                    "createdAt",
+                    "updatedAt"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "204": {
+            "description": "Deleted and shares revoked"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      }
+    },
+    "/works/{id}/shares": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "post": {
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "revision": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "revision"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Immutable snapshot link",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "token": {
+                      "type": "string"
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "url",
+                    "token",
+                    "revision"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      }
+    },
+    "/shares/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "delete": {
+        "responses": {
+          "204": {
+            "description": "Share revoked"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Authentication required"
+          },
+          "404": {
+            "description": "Not found or not owned"
+          },
+          "409": {
+            "description": "Revision or idempotency conflict"
+          }
+        }
+      }
+    },
+    "/public/shares/{token}": {
+      "parameters": [
+        {
+          "name": "token",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "summary": "Anonymous read-only snapshot",
+        "responses": {
+          "200": {
+            "description": "Public design",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "design": {
+                      "$ref": "#/components/schemas/DesignConfig"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "revision",
+                    "design"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Missing"
+          },
+          "410": {
+            "description": "Revoked"
+          }
+        }
+      }
+    }
+  }
+}

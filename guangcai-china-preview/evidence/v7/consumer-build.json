@@ -1,0 +1,1098 @@
+{
+  "root": ".codex-work/deploy/v7-build",
+  "files": 218,
+  "bytes": 115173617,
+  "assetsVerified": 195,
+  "inventory": [
+    {
+      "path": "_headers",
+      "bytes": 178,
+      "sha256": "a4d47ec6b77a49ab28e06f1b56c0d4f2810979bb60373dd2aba9c018bb97ec1b"
+    },
+    {
+      "path": "api/v1/bootstrap.json",
+      "bytes": 578,
+      "sha256": "76559e4123dca5d5456151ee70317c39f1c6ef04c174ac3c01f6255a953a399b"
+    },
+    {
+      "path": "assets/decode.worker-BxmOguz0.js",
+      "bytes": 2246,
+      "sha256": "7a5bdf8878c93c50cc62754b7f0f6bcbaaf4ded39fb9913ada5f7e09636ce82a"
+    },
+    {
+      "path": "assets/gpu-D_a3vXZ2.js",
+      "bytes": 152547,
+      "sha256": "a6ecc93916e06a34e3a1652d85c2a9c9e350dd8003eca953c3e361fd520c6fac"
+    },
+    {
+      "path": "assets/index-BQHdFreB.js",
+      "bytes": 880945,
+      "sha256": "62e96dc30d03d68ed5d9c13dc3c0294be6b391529a749cd208d28a85649f41f1"
+    },
+    {
+      "path": "assets/index-DkuqbCai.css",
+      "bytes": 51887,
+      "sha256": "c335dd68f297a3152083fd8965c0a8b1dc83fd2be854ce1127a8b39af67039cc"
+    },
+    {
+      "path": "assets/map-encoder.worker-gG3z5fOt.js",
+      "bytes": 3208,
+      "sha256": "2a047457a45cb65398dfad1fe26a420aa93763b7e3e68d63c2c1f9ad896e568f"
+    },
+    {
+      "path": "backgrounds/soft-light-d9af01e672e4.webp",
+      "bytes": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c"
+    },
+    {
+      "path": "backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "bytes": 91936,
+      "sha256": "d06c52a8f2003f5054ae7f4fb8719e0fd417edcaab970bf1a7c39be679a8c454"
+    },
+    {
+      "path": "icons/HEROICONS-LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "path": "icons/SOURCE.txt",
+      "bytes": 98,
+      "sha256": "1d603a4fecd1d1d377d6e6057e9d0174353ca508684950574da6649df0a66531"
+    },
+    {
+      "path": "icons/arrow-path.svg",
+      "bytes": 386,
+      "sha256": "b191971e5cd0347fb23ea91c87e7468b2a3759613d3dd928fdd326004a5542ae"
+    },
+    {
+      "path": "icons/chevron-left.svg",
+      "bytes": 246,
+      "sha256": "b6730529926d4e494f1115f09b7c8d32480edfd49cf02ceee0ca873a20de88ee"
+    },
+    {
+      "path": "index.html",
+      "bytes": 494,
+      "sha256": "3246cfada1a2d7cee1f9b643365ad8d67d1e566cac99123b1d44acb067fee95b"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-detail-mask-6409b4cf1142dad2.webp",
+      "bytes": 211178,
+      "sha256": "6409b4cf1142dad2d28a5c00d771d03ce7a2c00658b56fcc216dd492cdbdcd22"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-detail-normal-36d0b196daaa7b64.hfn.gz",
+      "bytes": 2902275,
+      "sha256": "36d0b196daaa7b64625d4d5d5a6bcdff7969f800ea980dfeddc567419559da66"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-light-mask-f5eacc8741fb85d2.webp",
+      "bytes": 45244,
+      "sha256": "f5eacc8741fb85d2b45b55af443b3661cafd7d8cb47261ac83e5f401ecbc0b5f"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-light-normal-05be60052498dd86.hfn.gz",
+      "bytes": 206001,
+      "sha256": "05be60052498dd8610366215a9d8855a487398cb21394b76f0a2d97be40517c7"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-standard-mask-5e572a5da3d1923f.webp",
+      "bytes": 121404,
+      "sha256": "5e572a5da3d1923fe1504821d7cbf93c14f17cc2f551d65790eeabc317c384a3"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-standard-normal-a12caf404959a8d4.hfn.gz",
+      "bytes": 782085,
+      "sha256": "a12caf404959a8d41bccc6921d5543daa39e0d22579f5c30660f133d475cebe9"
+    },
+    {
+      "path": "releases/v7-1/assets/beijing-thumbnail-8034a0a47f4b821f.webp",
+      "bytes": 49754,
+      "sha256": "8034a0a47f4b821f6174b6c594afb9951fa0728002545e1f8af7775238b99bbc"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-detail-mask-79c2aabd0558e8a0.webp",
+      "bytes": 145338,
+      "sha256": "79c2aabd0558e8a081e334af62f49eeaed2700422fe591c83a8670b29014f487"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-detail-normal-4e3fb8f8d9487f99.hfn.gz",
+      "bytes": 2205352,
+      "sha256": "4e3fb8f8d9487f99870bf127e2f673ea121e46f430b3e18de7e79b33798d6a3f"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-light-mask-0cbf3e881c00b3b9.webp",
+      "bytes": 36128,
+      "sha256": "0cbf3e881c00b3b99ec1b63f8e50d7c57b61ac259c9ec0bf8e7d4f1ed53ed45d"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-light-normal-e2beec2a380854d3.hfn.gz",
+      "bytes": 163947,
+      "sha256": "e2beec2a380854d3a53ad6096c770e7d738554be29bb39b52ecae9b8a73179e5"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-standard-mask-5774c840b4b87402.webp",
+      "bytes": 91100,
+      "sha256": "5774c840b4b8740285b8166b221924fded2d98d03c93461629cef7cbfb1a8029"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-standard-normal-8957a99ad9c28992.hfn.gz",
+      "bytes": 607613,
+      "sha256": "8957a99ad9c28992a8e924ff60f78bc8c5f1ec08a8541206cfb593ed27dcdf37"
+    },
+    {
+      "path": "releases/v7-1/assets/changchun-thumbnail-cfb678469d809521.webp",
+      "bytes": 41012,
+      "sha256": "cfb678469d8095213c3c720a4c94d9147764b82723d9801c5b4ad930acbb6d60"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-detail-mask-a1e1642d5365fdf0.webp",
+      "bytes": 123392,
+      "sha256": "a1e1642d5365fdf0917114bf5aff54787f7631321ff51e746d29ba133c9da834"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-detail-normal-80062adc97829d07.hfn.gz",
+      "bytes": 1823720,
+      "sha256": "80062adc97829d07b93b6d6933d3b52b17680568e0f7174a93e2809bcdef3c1d"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-light-mask-e278d54df5c9843b.webp",
+      "bytes": 29874,
+      "sha256": "e278d54df5c9843b9313cb2b33d3a302f773d39fbbff13cea85e922723d21f31"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-light-normal-1b42773a4b0f4463.hfn.gz",
+      "bytes": 133405,
+      "sha256": "1b42773a4b0f446365c4acbe0bec0e0ba8d2d5b6889a058a034953b570c9ea03"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-standard-mask-1375ad7e4127244b.webp",
+      "bytes": 74226,
+      "sha256": "1375ad7e4127244b3f165add03b23be9c08f2d4f3fc86a33e87d4aef21908a51"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-standard-normal-9997662161c06dce.hfn.gz",
+      "bytes": 499669,
+      "sha256": "9997662161c06dce0ae1ead2fdf0aac2ea14b562df6be66fd7af90860fbb6beb"
+    },
+    {
+      "path": "releases/v7-1/assets/chengdu-thumbnail-46773139355b800f.webp",
+      "bytes": 34974,
+      "sha256": "46773139355b800f382993e05efbe45f06d6c8e50d3a7c2085323994a480181f"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-detail-mask-7a7c7db7b6037436.webp",
+      "bytes": 233040,
+      "sha256": "7a7c7db7b6037436ceee750fa4bf3854d229123a36fec95af49dfcba34603194"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-detail-normal-5cfa17ee657c530d.hfn.gz",
+      "bytes": 3521217,
+      "sha256": "5cfa17ee657c530d8e783110b89e0eadbacb8303e4430bdd2045127bb38b6cf9"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-light-mask-c4e447fbd252af91.webp",
+      "bytes": 54556,
+      "sha256": "c4e447fbd252af9142586c1f984e7ddad84c1538b5387a406319b34b6e1d6f24"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-light-normal-d1f99b9a9f98987b.hfn.gz",
+      "bytes": 250733,
+      "sha256": "d1f99b9a9f98987bf8fe7961618e61a223f7b288a864b32adbe8157ca478ca96"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-standard-mask-f356d4b7494eece8.webp",
+      "bytes": 138942,
+      "sha256": "f356d4b7494eece81c1b18afbee5b7d15516abdad2750f1fc9cdaed2247855f4"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-standard-normal-933efe5bb248dff7.hfn.gz",
+      "bytes": 949759,
+      "sha256": "933efe5bb248dff7993fc8256635f9d92c36f7db96038df1b0e762b97edd8b26"
+    },
+    {
+      "path": "releases/v7-1/assets/chongqing-thumbnail-b59616052905c32a.webp",
+      "bytes": 59998,
+      "sha256": "b59616052905c32a6ed43c96cad634af197d8dd7db74f5628ddf866d5bdefc0e"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-detail-color-667b175ba4181dce.webp",
+      "bytes": 479504,
+      "sha256": "667b175ba4181dce310c7214424116909e0d2fa60aa63ac1c78bf6d63da1edd1"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-detail-normal-35f734f1f0e18386.hfn.gz",
+      "bytes": 4959453,
+      "sha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-detail-orm-2f29c84c7465fc11.webp",
+      "bytes": 282582,
+      "sha256": "2f29c84c7465fc11947162789e344dd257faf56c173546c8d47056e341b54681"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
+      "bytes": 151206,
+      "sha256": "8c2bf9cbe44a3d18658ede38822ce091abbcd9cfb3dbcf07557edede50cb97e7"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
+      "bytes": 915743,
+      "sha256": "fc1a43461e4250778580bc90584a118e7ce2a694864bf5d10fa539887fa6058d"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
+      "bytes": 113944,
+      "sha256": "038b21ee36c530210af1767d212b5fae5a293adeffbb19dd2c94046e7a89bbe2"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-standard-color-6f9be4cd52c23e29.webp",
+      "bytes": 389520,
+      "sha256": "6f9be4cd52c23e293a2f608eabb4106b22fdabf46f7583ade448798e662ccdc0"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-standard-normal-433099d227c03917.hfn.gz",
+      "bytes": 3466614,
+      "sha256": "433099d227c039173c918048bfdf3c3d4b9056d12eb864ad795e8c56891d7022"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-body-standard-orm-4738736a95e92256.webp",
+      "bytes": 284336,
+      "sha256": "4738736a95e92256e14a8e98e08ecc9a47cabefe79c154082ac221db3b0aa629"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-detail-color-fc81742f4f583386.webp",
+      "bytes": 275636,
+      "sha256": "fc81742f4f5833866f2f89c2a0af1ed866bab0325a1255b6165519d8bc4f1958"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-detail-normal-2a8ea98e34842285.hfn.gz",
+      "bytes": 3115261,
+      "sha256": "2a8ea98e34842285305059c274539b0966dc4ab3842cad2204c6704369edc9ee"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-detail-orm-f5153acf48e024dd.webp",
+      "bytes": 187850,
+      "sha256": "f5153acf48e024dd88b8346073ea561753bd6c3994a926c1c5eeffca10103d26"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-light-color-701bfd4d526ffaeb.webp",
+      "bytes": 39092,
+      "sha256": "701bfd4d526ffaeb41f9d2e58a3df190646c2c06ed04f70881a71a3848ec6a3d"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-light-normal-6c56e311d85ec224.hfn.gz",
+      "bytes": 217835,
+      "sha256": "6c56e311d85ec22428d63ad4e8e395677d52f6410947b34816188fed38556590"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-light-orm-8e8aef807eb4da9a.webp",
+      "bytes": 32544,
+      "sha256": "8e8aef807eb4da9a49d6d18c8b429958c7998a010a72ab7422e6d1596f411b79"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-standard-color-3fff075b8631c221.webp",
+      "bytes": 112134,
+      "sha256": "3fff075b8631c221bd4a6f788bf9ba45a0d99372be2b140053b4c2be26f93630"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-standard-normal-d07668c5b76c4af9.hfn.gz",
+      "bytes": 824847,
+      "sha256": "d07668c5b76c4af977a31a130b91940ec50ee39000b5de9814d6301c3f6c53e5"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-handle-standard-orm-6cdcbc339e7479b7.webp",
+      "bytes": 77988,
+      "sha256": "6cdcbc339e7479b753ec1c0c2dbc74772b162525bc76662f5cc7ebdcdce5c73c"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-detail-color-7c717ddfa7fa788c.webp",
+      "bytes": 743624,
+      "sha256": "7c717ddfa7fa788c7a275e23a3a565ab41d17e902d92867e02c593d35e97094b"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-detail-normal-8fee8918fd1eb40d.hfn.gz",
+      "bytes": 6152797,
+      "sha256": "8fee8918fd1eb40d0673534d57d13f296f6a5d1d8fcf780d2b6237ccaf6af0e9"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-detail-orm-f25ec3669835eab7.webp",
+      "bytes": 424978,
+      "sha256": "f25ec3669835eab771fdb1a863aba9da22041d58d398aa499626f3b3235533e7"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-light-color-f2e319117e64a426.webp",
+      "bytes": 77912,
+      "sha256": "f2e319117e64a4260e65bdaa75559babd76c11938dab9511ef1458563f0c6441"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-light-normal-1d2d34ac35b0e3b1.hfn.gz",
+      "bytes": 376650,
+      "sha256": "1d2d34ac35b0e3b18803bec915d9ef11b9905b4f17f92adf266d4530e2fc49ca"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-light-orm-ab634c9bbc545e1c.webp",
+      "bytes": 67010,
+      "sha256": "ab634c9bbc545e1c9c372bdf88ee60788c8199a8988c24075290e6596c80178d"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-standard-color-36a908c6e2cb8f8f.webp",
+      "bytes": 252234,
+      "sha256": "36a908c6e2cb8f8f1dfb915a6efce45d6be1dace126cbe451cf10b3145c24559"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-standard-normal-1af6a3834d741291.hfn.gz",
+      "bytes": 1452601,
+      "sha256": "1af6a3834d7412912e8f87d236178a3e84d7b702eb9b273f32ee9d6aa52bd2ac"
+    },
+    {
+      "path": "releases/v7-1/assets/fixed-saucer-standard-orm-45eb50f9ce1a7d7e.webp",
+      "bytes": 181566,
+      "sha256": "45eb50f9ce1a7d7ed75afd503860fb5664f5d2ad7d42f47ccb155e2d3cd1e4ca"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-detail-mask-76139a575ea0825f.webp",
+      "bytes": 160876,
+      "sha256": "76139a575ea0825fb123075baa518006a6909e6a3c20e258ce6e6aff9ed6fbbb"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-detail-normal-b6b58e85768e4f0c.hfn.gz",
+      "bytes": 2429146,
+      "sha256": "b6b58e85768e4f0cf5d35ad6d2cb178d39eee80ec7f4cd499498a7df796236f3"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-light-mask-467c70ce5b011f57.webp",
+      "bytes": 34088,
+      "sha256": "467c70ce5b011f57e7e5422aae79c3a69f200e4781a3108c7aa9bfc83fabc3de"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-light-normal-656cce1f1866d857.hfn.gz",
+      "bytes": 159057,
+      "sha256": "656cce1f1866d8575df03d5488fd482cd00b5e90e9b58948322ed77e28b7f1ea"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-standard-mask-32e46cb2fb2a6317.webp",
+      "bytes": 90294,
+      "sha256": "32e46cb2fb2a6317d2c9a898a07473dfe096da8574f6ff9537793e6d87db06c0"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-standard-normal-8a985112520e6c63.hfn.gz",
+      "bytes": 598554,
+      "sha256": "8a985112520e6c63fd3e5435e6f6b67f61446079a1d6309775b69f9c67b01fc5"
+    },
+    {
+      "path": "releases/v7-1/assets/guangzhou-thumbnail-d00114fc388029da.webp",
+      "bytes": 41994,
+      "sha256": "d00114fc388029da0793d2c7a8573fd98d2f793d3038496b1db915670381905f"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-detail-mask-b0fe607bcd5f70ec.webp",
+      "bytes": 188184,
+      "sha256": "b0fe607bcd5f70ec33c9e8fd8ccae1c86f30648a1d15e38b1a40bc83a7adade0"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-detail-normal-9ad9c839a1d96d77.hfn.gz",
+      "bytes": 3098532,
+      "sha256": "9ad9c839a1d96d776ebe698bc5cae177c09104451d3ed960f93b6883e7849e24"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-light-mask-d9aabdd157a6e416.webp",
+      "bytes": 44528,
+      "sha256": "d9aabdd157a6e416e30a15b3dd2c4120f93c3734dc78a63c5ff536434a448018"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-light-normal-98d030015a49a63e.hfn.gz",
+      "bytes": 208992,
+      "sha256": "98d030015a49a63e9bf51a0fb07e981e16f31b754772172605af18d636ffe9fa"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-standard-mask-5d68e77ba029c636.webp",
+      "bytes": 111354,
+      "sha256": "5d68e77ba029c636dc6b16d6a054cfd799f217d21063b4858634074c386e7673"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-standard-normal-a542b17336af2b5d.hfn.gz",
+      "bytes": 774199,
+      "sha256": "a542b17336af2b5d77bb016df34fb2f5fb75ed3e59c0c0b28a50db528df255b9"
+    },
+    {
+      "path": "releases/v7-1/assets/hangzhou-thumbnail-01ed7c08e2499911.webp",
+      "bytes": 48340,
+      "sha256": "01ed7c08e24999114c2b831fd3880609b54fc533536ffeeea7717d66095fa93d"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-detail-mask-7d5f6984d4edc505.webp",
+      "bytes": 159686,
+      "sha256": "7d5f6984d4edc505fd274b1621a896b33a4bef54114e5272a5ba797cce8f11e7"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-detail-normal-9033afbc9ff11529.hfn.gz",
+      "bytes": 2351737,
+      "sha256": "9033afbc9ff115297a1409fa099d80ce222680a22cb4465a3aae3b33e7e93ace"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-light-mask-4a6ecfbddbd0712d.webp",
+      "bytes": 37362,
+      "sha256": "4a6ecfbddbd0712d2f234fe5ac8f2b4086f4a704b30551d9fe0d17465b1f66a4"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-light-normal-ee68b6d8212fb556.hfn.gz",
+      "bytes": 169080,
+      "sha256": "ee68b6d8212fb556d68567258a76888feeb98169ac32d775cc8332e71f8e0148"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-standard-mask-1783adf8575a4528.webp",
+      "bytes": 94820,
+      "sha256": "1783adf8575a452897ce01b7ec6119f30b844e0ddbb24aa5daa90e907b322be4"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-standard-normal-8dfe4deffe672675.hfn.gz",
+      "bytes": 636187,
+      "sha256": "8dfe4deffe67267506e11ab39ecccfd10f331780fe066c28d5955f8f63abe117"
+    },
+    {
+      "path": "releases/v7-1/assets/harbin-thumbnail-cd05bf68c036aea5.webp",
+      "bytes": 47144,
+      "sha256": "cd05bf68c036aea5f1002e5bdb1d50bbd23e6cbf566b4302127e6cd13ff0d96d"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-detail-mask-a7533b3f945787fa.webp",
+      "bytes": 139940,
+      "sha256": "a7533b3f945787fac011a24ce6dd7b930002c6380773d819740401ee225d2107"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-detail-normal-96e7b5872aed1e15.hfn.gz",
+      "bytes": 2206732,
+      "sha256": "96e7b5872aed1e158f44aa6446f8d016cb84884a1448e394ee2ab4f4dccf25e3"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-light-mask-b81cf4ebb619f8c8.webp",
+      "bytes": 37784,
+      "sha256": "b81cf4ebb619f8c81dd472d9a218e67709ded26312041889016eb3112bd4002f"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-light-normal-3cc0ffa8e53e576a.hfn.gz",
+      "bytes": 162648,
+      "sha256": "3cc0ffa8e53e576afb3bdf94cfecf3fc91fb10b0157e4c4bb9aefae27c9329e0"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-standard-mask-14e739fdf4e1a1d1.webp",
+      "bytes": 92760,
+      "sha256": "14e739fdf4e1a1d13ebc54d8c0c346d3152f6c2f771c0efe639c56435356fc96"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-standard-normal-6c875c0639666bef.hfn.gz",
+      "bytes": 604945,
+      "sha256": "6c875c0639666befe40b69b7e944718a6bdb68b9e864c05e9f77cb5a3405f2da"
+    },
+    {
+      "path": "releases/v7-1/assets/hohhot-thumbnail-822464740e1f0899.webp",
+      "bytes": 41490,
+      "sha256": "822464740e1f0899fdefe8aa3944c7c5f1be6146b029a581b37a19fb599384a0"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-detail-mask-bec0e85babda62db.webp",
+      "bytes": 152570,
+      "sha256": "bec0e85babda62db752bed49235482fcc3bdd07847fa1775673367ed69237b32"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-detail-normal-a0facaa861cd7a12.hfn.gz",
+      "bytes": 2322780,
+      "sha256": "a0facaa861cd7a12d5182d0471313e6211e1bf198226ad351befcdc10bd91834"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-light-mask-7f32bd73b7f9a05e.webp",
+      "bytes": 36512,
+      "sha256": "7f32bd73b7f9a05eb9da5342c1a8cc7acbb0769660f24329f8087b4ec51def5a"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-light-normal-e72d2c2d51fa09be.hfn.gz",
+      "bytes": 167661,
+      "sha256": "e72d2c2d51fa09befc5d93260a98c3bbd0aa5c127650ce00a37019c520ff730b"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-standard-mask-83c39ccdace9d379.webp",
+      "bytes": 92830,
+      "sha256": "83c39ccdace9d379b74531c5581f272b771a765e60ce462f9e8b2d4cc83f249a"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-standard-normal-228c56a0def30e0f.hfn.gz",
+      "bytes": 624063,
+      "sha256": "228c56a0def30e0f9a2360c933dd32d2a851c80b2c83cbe2515b9e266c566f3e"
+    },
+    {
+      "path": "releases/v7-1/assets/jingdezhen-thumbnail-56d26f35239d134f.webp",
+      "bytes": 38918,
+      "sha256": "56d26f35239d134fac2e2cb0a5e8e63c35509345090508a9403db2e44057d257"
+    },
+    {
+      "path": "releases/v7-1/assets/mark-619bafa2ff7da748.webp",
+      "bytes": 13842,
+      "sha256": "619bafa2ff7da748ac1c008e33a5abe60c07463b940024344c187441d6f8af87"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-detail-mask-28778287d7d71b6a.webp",
+      "bytes": 193354,
+      "sha256": "28778287d7d71b6a0260d6e392d316f3b9e4e6d7f7898f69a369f66d39df21c4"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-detail-normal-ceb85ad9141b1f83.hfn.gz",
+      "bytes": 2816432,
+      "sha256": "ceb85ad9141b1f839d64646315582571cdcd081051f8a7adf6511bfc70974652"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-light-mask-1cf703752e88303c.webp",
+      "bytes": 47442,
+      "sha256": "1cf703752e88303cefa96c34556579c4bf135bb56886a44467cfa8a7ac56fed7"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-light-normal-39c205b1f6a349d8.hfn.gz",
+      "bytes": 206199,
+      "sha256": "39c205b1f6a349d837f39233e4f17880c172c20dc89e1e5f5faf8b38e6528cef"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-standard-mask-4d93d8034fbf700d.webp",
+      "bytes": 119644,
+      "sha256": "4d93d8034fbf700d6b25c475a3e2988f2a4d19ca4959564979e7d6b4c1ac00dd"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-standard-normal-28b485093e807b30.hfn.gz",
+      "bytes": 776765,
+      "sha256": "28b485093e807b3061d2d23426337e5b5344fb3960b778162644b6c8cfb44613"
+    },
+    {
+      "path": "releases/v7-1/assets/nanchang-thumbnail-5be94aa8d0dd7e7b.webp",
+      "bytes": 52550,
+      "sha256": "5be94aa8d0dd7e7bb5fb1264b916ebda75a8d9fc569027b83e5ca9a8e3184268"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-detail-mask-a4132519d0578cb3.webp",
+      "bytes": 139116,
+      "sha256": "a4132519d0578cb309d101ad52aa9cfdbdc76d61376b28c429d5d4c5bd46ded1"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-detail-normal-337801d125a702a3.hfn.gz",
+      "bytes": 2061172,
+      "sha256": "337801d125a702a3285595243e8062b0789352b578935ba2da9e0e4c28e956c8"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-light-mask-d3a3ef28af213894.webp",
+      "bytes": 32516,
+      "sha256": "d3a3ef28af213894aba2f994faf3cea1871a8553336c8a10b3ca419995a5d5cd"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-light-normal-c562fa4a4317c317.hfn.gz",
+      "bytes": 146389,
+      "sha256": "c562fa4a4317c317aa99a105726f9c271bc26aab9015cdfe648ed1f41a14d6ee"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-standard-mask-8e01c08282387373.webp",
+      "bytes": 84434,
+      "sha256": "8e01c082823873736d27e5db6f404e92eef3883826f370aed9fdac3641558fde"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-standard-normal-66c3b6db680128fb.hfn.gz",
+      "bytes": 552248,
+      "sha256": "66c3b6db680128fbcd90d06f33e0de2039afbf82ab9b82d9d7a1031fc2175571"
+    },
+    {
+      "path": "releases/v7-1/assets/nanjing-thumbnail-a3935f190e7519a5.webp",
+      "bytes": 39396,
+      "sha256": "a3935f190e7519a54065d5977559e840714ea1443ad309c9770bf23529b9131e"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-detail-mask-22a615d811c4fa1a.webp",
+      "bytes": 130412,
+      "sha256": "22a615d811c4fa1a1229c5d3f80df4230ba5db1c4bc336ddf38c86dc593c76d9"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-detail-normal-c3cafc9f2be68ae6.hfn.gz",
+      "bytes": 2016396,
+      "sha256": "c3cafc9f2be68ae621d54805dc6a1f6dc3ea8804133a35d3055525c815e3af24"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-light-mask-aa19d72b6cf9ce32.webp",
+      "bytes": 33570,
+      "sha256": "aa19d72b6cf9ce322db2df443fd4a53d55215e1d0c7abfbf3a9afbc4d3f5c5ab"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-light-normal-e92f27495d87ddfd.hfn.gz",
+      "bytes": 149366,
+      "sha256": "e92f27495d87ddfd5d34a24bab313a645f43dac1967e1a87b8d2e21244a03a0b"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-standard-mask-02fef114a90d943c.webp",
+      "bytes": 81732,
+      "sha256": "02fef114a90d943c1d2f9ab0171e6a34b61df93a1d09c3718e0ac2cba41e9901"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-standard-normal-4ccbbad7e038a4f9.hfn.gz",
+      "bytes": 552952,
+      "sha256": "4ccbbad7e038a4f9e159e199383b0c85da475cf01654a9eb4ef5368ebda9deeb"
+    },
+    {
+      "path": "releases/v7-1/assets/qingdao-thumbnail-37cdb9952c1ad6f7.webp",
+      "bytes": 41152,
+      "sha256": "37cdb9952c1ad6f739fd7f2a7b3a0ebf9c5501237a43dab424ce3dfd769b24bf"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-detail-mask-5d537237921d1ba1.webp",
+      "bytes": 120018,
+      "sha256": "5d537237921d1ba12100e2777e21e82f928459fe1273dd835cfba5cce59d12f5"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-detail-normal-11e201d8e00b6dc5.hfn.gz",
+      "bytes": 1840898,
+      "sha256": "11e201d8e00b6dc52a0c2fc14f6df06339aa0bc8a85e6e0afaea563fce1e6b60"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+      "bytes": 29356,
+      "sha256": "b6851b28ddd0ba0941b591eea38a6a1a781d3b3dea4f96c3a86b3eb138466d17"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-light-normal-177f4734a51b9292.hfn.gz",
+      "bytes": 133267,
+      "sha256": "177f4734a51b92920a8b42241446c97bc050a8b66c26b8b1926c06b20fa22d6b"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-standard-mask-c6473993eee788e7.webp",
+      "bytes": 74772,
+      "sha256": "c6473993eee788e75e6c2a12b938e65a036c376b65b5e3b57d2598fbd9e32ab6"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-standard-normal-0c4c49c602d0fab9.hfn.gz",
+      "bytes": 496494,
+      "sha256": "0c4c49c602d0fab9e702d96f633e75a560f333e18e73c74a205f184341618925"
+    },
+    {
+      "path": "releases/v7-1/assets/shanghai-thumbnail-a2ff84e038f47efb.webp",
+      "bytes": 39504,
+      "sha256": "a2ff84e038f47efb04d3ee691d25f399fdc9b029c148d90d9a01cf2ab5cc090f"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-detail-mask-e48375bd0b7e3d61.webp",
+      "bytes": 188100,
+      "sha256": "e48375bd0b7e3d611cfef6b26ad59fc1ca386ee67a05a39aeac12064d8b65254"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-detail-normal-4bd9378d0cce58de.hfn.gz",
+      "bytes": 2865032,
+      "sha256": "4bd9378d0cce58dedc44ac3fd79b16aad76b063c6e8308110924d10a30f7e20f"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-light-mask-e281f8855a38b83e.webp",
+      "bytes": 44430,
+      "sha256": "e281f8855a38b83eb46136a17717f11212fc9a72b48d32958bc7234dc791d154"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-light-normal-1b3fc00c672b3600.hfn.gz",
+      "bytes": 202706,
+      "sha256": "1b3fc00c672b36006452175e69a1b22613952dde5bd484b1fc4f617d174d692d"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-standard-mask-8b78b3ff09348fea.webp",
+      "bytes": 114444,
+      "sha256": "8b78b3ff09348feac135f6538252df77b431166b75888442931a4c300b980b90"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-standard-normal-9c013275d02f9315.hfn.gz",
+      "bytes": 766364,
+      "sha256": "9c013275d02f93158e045bdbd383b9b9ce9c041453f8f24a29be102a4ab171ed"
+    },
+    {
+      "path": "releases/v7-1/assets/shenyang-thumbnail-3eb2b1d10e5dad32.webp",
+      "bytes": 54094,
+      "sha256": "3eb2b1d10e5dad32e1f0aff8164af3a4411b8998741fd6df1c7142715e691550"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-detail-mask-0f39104d2f4814e7.webp",
+      "bytes": 200284,
+      "sha256": "0f39104d2f4814e767dab2bb770e19f517043ae9195f8168b27278bdc95cdef8"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-detail-normal-6ad0994b9373ebb2.hfn.gz",
+      "bytes": 3071522,
+      "sha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+      "bytes": 46866,
+      "sha256": "069cb8336ce786db604ccd9b27f5c4b38bb272cf40c37cb179537ed6dafe5b61"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-light-normal-9784ef28b68bb7f9.hfn.gz",
+      "bytes": 216196,
+      "sha256": "9784ef28b68bb7f9c1bba1cff3b4e68765144e161c439ebed2eeb4beb69c27a6"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+      "bytes": 117898,
+      "sha256": "e62b8c3f23030aa66a96c345f10c759816a76125ff9bc0e0178d87026fb407e8"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+      "bytes": 803776,
+      "sha256": "1758749aa67986753cce2e6dd5b71e4f191c6d5850a54b107eabc9c352903199"
+    },
+    {
+      "path": "releases/v7-1/assets/shenzhen-thumbnail-ade6718b044e1ae6.webp",
+      "bytes": 52492,
+      "sha256": "ade6718b044e1ae6fc1d9ac8f09c78bb7807a89710620d32fff5a440329992de"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-detail-mask-13270363bc9eac63.webp",
+      "bytes": 157984,
+      "sha256": "13270363bc9eac636c9043c6027066554ebaf8d961e4b8e858aafacd87768d57"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-detail-normal-7f775c28371f35bd.hfn.gz",
+      "bytes": 2348211,
+      "sha256": "7f775c28371f35bd21ad69050c8518c56a9daf740566f1fde7610f107afedde9"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-light-mask-7be6c7fa4e18975a.webp",
+      "bytes": 38582,
+      "sha256": "7be6c7fa4e18975ac61a98bc9d1bcf997c5d1979e728ac232478de5013c396ac"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-light-normal-fdbcd0b5f46c7a9b.hfn.gz",
+      "bytes": 171827,
+      "sha256": "fdbcd0b5f46c7a9b5ab56e7c632af0b271f69af9ce165e34ccff92081c01684f"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-standard-mask-5588d6ddd4af2ec4.webp",
+      "bytes": 96442,
+      "sha256": "5588d6ddd4af2ec4e68fa266bb52380da15948a4eae6cc92ac8c13d54d1a58f0"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-standard-normal-3bba7020ed10d87f.hfn.gz",
+      "bytes": 645164,
+      "sha256": "3bba7020ed10d87ff0c419d183a139f4a58308911247d3f186860c765b45171e"
+    },
+    {
+      "path": "releases/v7-1/assets/shijiazhuang-thumbnail-2cff2718e1c9f4e4.webp",
+      "bytes": 45642,
+      "sha256": "2cff2718e1c9f4e49f7744714b05532142923f9afd21f3b6d00a6a0f68b857cf"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-cooperation-7c0daa11ce6fefa6.webp",
+      "bytes": 17800,
+      "sha256": "7c0daa11ce6fefa68714604c135774448962e1532b3d4e5d67c86925b6140eda"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-innovation-23940d813f68f7f2.webp",
+      "bytes": 18558,
+      "sha256": "23940d813f68f7f2d3e715630a944abb18f74d319b2a0cd78a6acb1fcae60e10"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-ocean-d480bfd4c681c6c2.webp",
+      "bytes": 19178,
+      "sha256": "d480bfd4c681c6c29da216d1976df7ca8b3246c968227310d7d959786ee2fd26"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+      "bytes": 17470,
+      "sha256": "6180ec934a95c4d53387c6a3843dc8134e52e2e9b69db88894e892cbec6988fd"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-sharing-4e868028d70e2abb.webp",
+      "bytes": 16856,
+      "sha256": "4e868028d70e2abb26b69bcca4942271b6823c10d92f4efa893c471fd283114f"
+    },
+    {
+      "path": "releases/v7-1/assets/slogan-together-a77c25b8f7293b3e.webp",
+      "bytes": 16860,
+      "sha256": "a77c25b8f7293b3ed06a879cfaf5a41f6e2a84a4e19bd92d138ee1d5b6f170f7"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-detail-mask-2e10099e01369127.webp",
+      "bytes": 155088,
+      "sha256": "2e10099e0136912792274a0c47b9ea22af0ca4f6787f176e73cce3720aa6feae"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-detail-normal-9c10b1b39119a4e8.hfn.gz",
+      "bytes": 2300882,
+      "sha256": "9c10b1b39119a4e898e328e6d3714355954e6a3d56c98ae61ca7f5b07795366b"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-light-mask-7f600649e8201cba.webp",
+      "bytes": 38754,
+      "sha256": "7f600649e8201cba0b1e02a824140cf45755cbb6e1e513d2c561175c3c61ff74"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-light-normal-2986734d40aa50ee.hfn.gz",
+      "bytes": 170430,
+      "sha256": "2986734d40aa50ee12808c80e39bf0d113f3248b985ebca4e0c127ef356127e4"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-standard-mask-e4f89ddd3c4eb45b.webp",
+      "bytes": 96468,
+      "sha256": "e4f89ddd3c4eb45b66a96c99782ff36abc0ee3519c881215782c39d31d2df56a"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-standard-normal-bd082340c1066f5c.hfn.gz",
+      "bytes": 638067,
+      "sha256": "bd082340c1066f5ceedfd6901ed191b7953ce1f042d43bbac4147cd328e50156"
+    },
+    {
+      "path": "releases/v7-1/assets/taiyuan-thumbnail-84a4f7299d81dd4b.webp",
+      "bytes": 43658,
+      "sha256": "84a4f7299d81dd4b138250077fa35244770db570161b5399b179333e566c2871"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-detail-mask-9828c8b523cdfd06.webp",
+      "bytes": 218052,
+      "sha256": "9828c8b523cdfd06d486a6b7cc6915df4ae22042cf41e27c84d1f0f9289d4c7c"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-detail-normal-4dab3f9766a90e3d.hfn.gz",
+      "bytes": 3155544,
+      "sha256": "4dab3f9766a90e3d0764942d1eba35078a796e9f5d90a8ecdaca8460280341f3"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-light-mask-9b790807d438b9f6.webp",
+      "bytes": 51614,
+      "sha256": "9b790807d438b9f6c6e9bf6f659364ddc9efe727ade7b49bbed9702a918d0453"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-light-normal-aef0aca4b7c43940.hfn.gz",
+      "bytes": 228710,
+      "sha256": "aef0aca4b7c439409f38514aac15d5e42d670539f24464d569ff87778a87b091"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-standard-mask-780ffdb6e972281e.webp",
+      "bytes": 132324,
+      "sha256": "780ffdb6e972281e31acfa34ee6ed910f450d3fd4f2ebbece167976f2013b9d9"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-standard-normal-444e85a220aa4cde.hfn.gz",
+      "bytes": 862585,
+      "sha256": "444e85a220aa4cde948b7e5796bf48889b6c2e146c363f0e2fb52ce22381ae58"
+    },
+    {
+      "path": "releases/v7-1/assets/tianjin-thumbnail-52405ab39d134dd2.webp",
+      "bytes": 56226,
+      "sha256": "52405ab39d134dd2a012bdfa5b087bd6908b0f3633581e1a3c8615b11480b7f8"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-detail-mask-6382710fdf92cff8.webp",
+      "bytes": 153034,
+      "sha256": "6382710fdf92cff85a97de6c962b3a0d05c31503b33f09060ac067d9b2337efa"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-detail-normal-678663c6eeb4f91b.hfn.gz",
+      "bytes": 2282129,
+      "sha256": "678663c6eeb4f91bad8ec8b7d3d1c0cd0211e1d2987e6342001c03b5022ad240"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-light-mask-637d088c4843d463.webp",
+      "bytes": 35952,
+      "sha256": "637d088c4843d46348e669233bd481304ace60b297d6180b7193821bf3813bcd"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-light-normal-a8156536e443b3f6.hfn.gz",
+      "bytes": 164891,
+      "sha256": "a8156536e443b3f624337ab8d760de69070993de484cbe3d7310fe8fa2baee37"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-standard-mask-9f723a9e8e3fc516.webp",
+      "bytes": 92092,
+      "sha256": "9f723a9e8e3fc516ddec5c7e8c67a0405248164a2e4e48bb3ac0e4dad2f30e4e"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-standard-normal-5b6b06c9d9584d67.hfn.gz",
+      "bytes": 617716,
+      "sha256": "5b6b06c9d9584d67b73ea2b9f9b503a9b6d2789b34769c37ce687a2445f3f249"
+    },
+    {
+      "path": "releases/v7-1/assets/urumqi-thumbnail-6b4528ec831723ab.webp",
+      "bytes": 39442,
+      "sha256": "6b4528ec831723ab8f738ce605d0a5daec9a9beb4cdc78466c7392ff432ad384"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-detail-mask-6b2165d5268ad957.webp",
+      "bytes": 176576,
+      "sha256": "6b2165d5268ad957e8659b66ac4dc4bb392a72a2ef7069edd3638539678d911c"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-detail-normal-698824a2455d06ac.hfn.gz",
+      "bytes": 2664730,
+      "sha256": "698824a2455d06ac03ac92f24244a298e3b476ee67c6e8629abd7cff149b123c"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-light-mask-bb1c9931a8426a98.webp",
+      "bytes": 44890,
+      "sha256": "bb1c9931a8426a988fc74e559c9aa7cd420d80205f338d9c21acee4fb7d389d3"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-light-normal-82f122fe7d8e014a.hfn.gz",
+      "bytes": 198057,
+      "sha256": "82f122fe7d8e014a224bbb0df76d32489cdf3481de66181408037657a0fb2c70"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-standard-mask-4b25db6b30af15b9.webp",
+      "bytes": 110332,
+      "sha256": "4b25db6b30af15b98438467453b8376a239c2b81d6edd951994b400e0f6c66d7"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-standard-normal-97d5e04b8344eaf8.hfn.gz",
+      "bytes": 744336,
+      "sha256": "97d5e04b8344eaf804fb7d685c09514fd8ef4abf3c8b3fc21fde66f7fe5b7d45"
+    },
+    {
+      "path": "releases/v7-1/assets/wuhan-thumbnail-e4b736997650de41.webp",
+      "bytes": 49528,
+      "sha256": "e4b736997650de414ae60478228393237e792f2adb296b266044f739cf1318a5"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-detail-mask-6a1e5d9bf6267ad3.webp",
+      "bytes": 198370,
+      "sha256": "6a1e5d9bf6267ad3566279b74cf4a48244dfe69a4ea6e331ffb400b82eb12c7f"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-detail-normal-6f6a8b207df7bf35.hfn.gz",
+      "bytes": 2971007,
+      "sha256": "6f6a8b207df7bf358c0b5cf0f2fabd96b97dabd682d2ef3e107204bbc5d78d5a"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-light-mask-65634b05877a400b.webp",
+      "bytes": 46200,
+      "sha256": "65634b05877a400b30e0782c5c28befea899bc3a81e60504b3b7b21c7ad21d0c"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-light-normal-6f70be1bb66497b2.hfn.gz",
+      "bytes": 213798,
+      "sha256": "6f70be1bb66497b255a113ce66dcd328375cfd2571f16e51a3b77f159ba5951a"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-standard-mask-4d85ba0b13a08bfb.webp",
+      "bytes": 115008,
+      "sha256": "4d85ba0b13a08bfb46becb80883c7e2f7c7f2134ac2f795ac80658760a2518d9"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-standard-normal-439df6fc1d30eb02.hfn.gz",
+      "bytes": 793393,
+      "sha256": "439df6fc1d30eb02627cfbccaf3de9f613cba9a9efaa6d72fd20d74d768d8b52"
+    },
+    {
+      "path": "releases/v7-1/assets/xiamen-thumbnail-55c61f6301f4be10.webp",
+      "bytes": 48994,
+      "sha256": "55c61f6301f4be10456756ac80695335778ed64fdb38d9676b514b771e56e382"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-detail-mask-f40d9db47adcf17a.webp",
+      "bytes": 229468,
+      "sha256": "f40d9db47adcf17ae97bccb97c30eac0e851feb61bdee2c7184021383fcd3886"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-detail-normal-cf3e00ddd05f7dac.hfn.gz",
+      "bytes": 3197163,
+      "sha256": "cf3e00ddd05f7daccaca7cc7dd12673bc384402e496fc48af3c5c10cd5281b39"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-light-mask-61c522ee21f57373.webp",
+      "bytes": 51014,
+      "sha256": "61c522ee21f57373c7ffbf0c7372cbb54bb2c7631cb0131782289f0c2c53bf99"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-light-normal-310d3f93fd8de363.hfn.gz",
+      "bytes": 226663,
+      "sha256": "310d3f93fd8de363f6a8e4c9956e385bac17e298fd1924074eb389700d8bd13a"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-standard-mask-b1514030cd4ba0ed.webp",
+      "bytes": 135466,
+      "sha256": "b1514030cd4ba0ed403c99500d30d2982ac992593219eb469d34ceb15c583913"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-standard-normal-fd3f81fd25fd679c.hfn.gz",
+      "bytes": 871490,
+      "sha256": "fd3f81fd25fd679c357987c614c18d70aa939ded4487b065a1d14c8dc5524ed4"
+    },
+    {
+      "path": "releases/v7-1/assets/xian-thumbnail-f0319b73ccd8c23e.webp",
+      "bytes": 49856,
+      "sha256": "f0319b73ccd8c23e23065878819e7132b807852b6b1539c1db04c98d7862b109"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-detail-mask-0ec8c24a0fcc2cf2.webp",
+      "bytes": 195222,
+      "sha256": "0ec8c24a0fcc2cf27a908796cb6837c273946006d268ae9e0e7cc6292d7542a6"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-detail-normal-c4f9a7567add621d.hfn.gz",
+      "bytes": 2961405,
+      "sha256": "c4f9a7567add621d0e311d06f7d72edb7a117a01da38f8bb13dfc81fcffee021"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-light-mask-145cff0285986210.webp",
+      "bytes": 45888,
+      "sha256": "145cff0285986210ceb9c8b1e4b86f0b3f31febc45ea7a6b41a7050fa314d995"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-light-normal-cde01baab076dcf4.hfn.gz",
+      "bytes": 211224,
+      "sha256": "cde01baab076dcf438c8a3a978dd4774455ff784d206517901289db439d4b404"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-standard-mask-070f119df240e77b.webp",
+      "bytes": 117158,
+      "sha256": "070f119df240e77b304fd18474168435754f0e1097869b0c7998f39a8af68e65"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-standard-normal-e3cd6e542ca2286a.hfn.gz",
+      "bytes": 795932,
+      "sha256": "e3cd6e542ca2286af6720583b15161502b6d1bc1a1a52fd1596fce73f6057aa9"
+    },
+    {
+      "path": "releases/v7-1/assets/zhengzhou-thumbnail-542bfb86a3360f6b.webp",
+      "bytes": 52282,
+      "sha256": "542bfb86a3360f6b5a19c0cad42c119aab91f34696cc45d403e53853a53f29c6"
+    },
+    {
+      "path": "releases/v7-1/catalog.json",
+      "bytes": 3172,
+      "sha256": "d18465aedc0a8a51058c271116637a079fbea370eff3b02c524fe7b6c3945afb"
+    },
+    {
+      "path": "releases/v7-1/manifest-ec81ffecfc60c00c.json",
+      "bytes": 117486,
+      "sha256": "ec81ffecfc60c00c946ede97740920cc61cdd14f22930a112780503e78976173"
+    },
+    {
+      "path": "runtime-config.js",
+      "bytes": 249,
+      "sha256": "3f8b3ab5e9a82164b3ae523f4a73cafec702e9fdf0012b02c7b4e98af6d0a703"
+    },
+    {
+      "path": "third-party/glass-hq-LICENSE.txt",
+      "bytes": 1065,
+      "sha256": "da42a563faf2439d56b7b14261a96e94dc55bacdc05c8a706966261a5aff9122"
+    },
+    {
+      "path": "third-party/glass-hq-SOURCE.txt",
+      "bytes": 473,
+      "sha256": "f2cd8c8c369a47c4780e59d82efd6c57db8a978156734cfb0d478058b8364b08"
+    },
+    {
+      "path": "third-party/ios-vibrator-pro-max-NOTICE.txt",
+      "bytes": 973,
+      "sha256": "1730f71cdf3f01f6ab0bc87e6f238fc59849bb8f848e48a5496ecf6191176fbe"
+    },
+    {
+      "path": "third-party/lisse-core-LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "d2aae7357b679a9d5c1e913712b36d109402e19fe99c95abacaff5d4b7dc87fc"
+    },
+    {
+      "path": "third-party/vgpu-LICENSE.txt",
+      "bytes": 1069,
+      "sha256": "779258e329008bdb9330e6c1daad644ff867f164d11c4cc4404350479f3e92ee"
+    },
+    {
+      "path": "third-party/xy-slider-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "05159ee9439425277b3481eddcf58f9f24556406db289a1e0b08c41e8c7e8d1c"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ const MiB=1024*1024;
 export class ResourcePool {
  private entries=new Map<string,Entry>();private disposed=false;private worker?:Worker;
  private network=new TaskQueue(2);private decoding=new TaskQueue(1);private bytes=0;private peak=0;private transferred=0;private cancelled=0;
- readonly steady:number;readonly maximum:number;readonly reserve=24*MiB;
+ readonly steady:number;readonly maximum:number;reserve=0;
  constructor(mobile:boolean){this.steady=(mobile?128:256)*MiB;this.maximum=(mobile?192:384)*MiB;}
  private disposeEntry(key:string,e:Entry){
   this.entries.delete(key);this.bytes-=e.asset.gpuBytes;e.controller.abort();
@@ -18,6 +18,7 @@ export class ResourcePool {
   const idle=[...this.entries].filter(([,e])=>e.refs===0).sort((a,b)=>a[1].touched-b[1].touched);
   for(const [k,e]of idle){if(this.bytes+this.reserve<=target)break;this.disposeEntry(k,e);}
  }
+ setReserve(bytes:number){this.reserve=bytes;this.trim(this.steady);this.peak=Math.max(this.peak,this.bytes+this.reserve);}
  canFit(assets:Asset[]){const newBytes=[...new Map(assets.map(a=>[a.url,a])).values()].filter(a=>!this.entries.has(a.url)).reduce((n,a)=>n+a.gpuBytes,0);this.trim(this.steady-newBytes);return this.bytes+this.reserve+newBytes<=this.maximum;}
  async acquire(asset:Asset,signal?:AbortSignal):Promise<Lease>{
   if(this.disposed||signal?.aborted)throw abortError();
@@ -59,7 +60,7 @@ export class ResourcePool {
     if(decoded.kind==='bitmap')texture=new Texture(decoded.bitmap);
     else texture=new DataTexture(decoded.data,asset.width,asset.height,asset.encoding==='hfn1-gzip'?RGBAFormat:asset.channels===1?RedFormat:RGFormat,asset.encoding==='hfn1-gzip'?HalfFloatType:UnsignedByteType);
     texture.flipY=false;texture.generateMipmaps=true;texture.minFilter=LinearMipmapLinearFilter;texture.magFilter=LinearFilter;texture.wrapS=texture.wrapT=ClampToEdgeWrapping;
-    texture.colorSpace=asset.colorSpace==='srgb'?SRGBColorSpace:NoColorSpace;texture.needsUpdate=true;texture.userData={assetId:asset.id,gpuBytes:asset.gpuBytes,precision:asset.encoding==='hfn1-gzip'?'RGBA16F':`${asset.channels*8}-bit channels`};return texture;
+    texture.colorSpace=asset.colorSpace==='srgb'?SRGBColorSpace:NoColorSpace;texture.needsUpdate=true;texture.userData={assetId:asset.id,gpuBytes:asset.gpuBytes,precision:asset.encoding==='hfn1-gzip'?'RGBA16F':asset.channels===1?'R8':asset.channels===2?'RG8':'RGBA8'};return texture;
    },signal);
   },signal);
  }
@@ -76,6 +77,6 @@ export class ResourcePool {
  }
  pause(value:boolean){this.network.pause(value);this.decoding.pause(value);}
  clear(){for(const [key,e]of this.entries)this.disposeEntry(key,e);this.worker?.terminate();this.worker=undefined;}
- debug(){return {estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),transferredBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
+ debug(){return {estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),fetchedBodyBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
  dispose(){this.disposed=true;this.clear();}
 }

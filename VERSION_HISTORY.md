@@ -134,3 +134,7 @@ V5.4.1 后续用户确认连续脉冲可用；快速拖动仅震动未跟上，�
 [用户创作页](https://guangcai-no1-china-v6.netlify.app/) · [开发页](https://guangcai-no1-china-v6.netlify.app/dev/) · [审计页](https://guangcai-no1-china-v6.netlify.app/audit/)
 
 V6 使用独立站点，原 V5、V4 和其他历史站部署 ID 均经 API 前后核验未变。发布产物按部署 ID 原样保存，线上文件摘要、路由、124 项浏览器检查及动画专项通过；站点级关闭 Netlify 品牌角标。没有连接 Git 自动部署，没有新增或移动标签。真机触感与 Safari 性能单独待验收。详见 `docs/changes/20261017-v6-webgl2-studio/`。
+
+## 2026-10-17 V7 本地候选（未发布）
+
+基于V6.0.1源码a231937，新增分级资源、Worker解码、按预算缓存与按需渲染，保留反射；交付资源协议、作品数据契约和本地保存/分享mock样例。资源checkpoint为94b5acf。消费者、审计及联调分别构建；真机验收与正式上线仍为独立步骤。完整记录见 `docs/changes/20261017-v7-progressive-resources/`。

@@ -1,0 +1,25 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {gunzipSync} from 'node:zlib';
+import assert from 'node:assert/strict';
+import sharp from 'sharp';
+const bootstrap=JSON.parse(await fs.readFile('public/api/v1/bootstrap.json')),m=JSON.parse(await fs.readFile('public/'+bootstrap.manifestUrl)),base='public/releases/v7-1/';
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const assets=[...Object.values(m.fixed).flatMap(t=>Object.values(t).flatMap(l=>[l.baseColor,l.normal,l.orm])),...Object.values(m.cities).flatMap(c=>[c.thumbnail,...Object.values(c.levels).flatMap(l=>[l.mask,l.normal])]),...Object.values(m.slogans).map(l=>l.asset),m.mark];
+for(const a of assets){const bytes=await fs.readFile(base+a.url);assert.equal(bytes.length,a.bytes);assert.equal(hash(bytes),a.sha256);if(a.encoding==='webp'){const info=await sharp(bytes).metadata();assert.deepEqual([info.width,info.height],[a.width,a.height]);}else{const data=gunzipSync(bytes);assert.equal(data.length,16+a.decodedBytes);assert.equal(data.toString('ascii',0,4),'HFN1');assert.deepEqual([data.readUInt32LE(4),data.readUInt32LE(8)],[a.width,a.height]);for(let i=16;i<data.length;i+=2)assert.ok(data.readUInt16LE(i)<=0x3c00,'finite normal');}}
+for(const [region,levels]of Object.entries(m.fixed))for(const [tier,l]of Object.entries(levels)){
+ assert.deepEqual([l.baseColor.width,l.baseColor.height],[l.normal.width,l.normal.height]);assert.deepEqual([l.baseColor.width,l.baseColor.height],[l.orm.width,l.orm.height]);
+ if(l.atlas){const a=l.atlas;assert.equal(l.baseColor.width,a.contentWidth+2*a.gutter);assert.equal(l.baseColor.height,a.rows*(a.contentHeight+2*a.gutter));assert.ok(a.gutter>=8);
+ const {data,info}=await sharp(base+l.orm.url).raw().toBuffer({resolveWithObject:true});for(let row=0;row<a.rows;row++)for(let y=a.gutter;y<a.contentHeight+a.gutter;y+=7){for(const x of [0,a.gutter-1])for(let k=0;k<3;k++)assert.equal(data[((row*(a.contentHeight+2*a.gutter)+y)*info.width+x)*info.channels+k],data[((row*(a.contentHeight+2*a.gutter)+y)*info.width+a.gutter)*info.channels+k]);}}
+}
+for(const [id,s]of Object.entries(m.slogans)){
+ const original=await sharp(`public/cities/v6/slogan-${id}.webp`).removeAlpha().raw().toBuffer({resolveWithObject:true});
+ const crop=await sharp(base+s.asset.url).removeAlpha().raw().toBuffer({resolveWithObject:true});
+ const [u,v,w,h]=s.uvRect,left=Math.round(u*4096),top=Math.round((1-v-h)*1783);
+ for(let y=0;y<crop.info.height;y++)for(let x=0;x<crop.info.width;x++)assert.equal(crop.data[(y*crop.info.width+x)*crop.info.channels],original.data[((y+top)*4096+x+left)*original.info.channels],id+' glyph mismatch');
+ assert.equal(Math.round(w*4096),crop.info.width);assert.equal(Math.round(h*1783),crop.info.height);
+}
+const initial=Object.values(m.fixed).flatMap(l=>[l.light.baseColor,l.light.normal,l.light.orm]).concat([m.cities.shenzhen.levels.light.mask,m.cities.shenzhen.levels.light.normal,m.slogans.open.asset,m.mark]);
+assert.ok(initial.reduce((n,a)=>n+a.gpuBytes,0)<64*1024**2);assert.ok(initial.reduce((n,a)=>n+a.bytes,0)<5*1024**2);
+assert.equal(Object.keys(m.cities).length,23);assert.equal(Object.keys(m.slogans).length,6);
+console.log(JSON.stringify({passed:true,assets:assets.length,labelsPixelIdentical:6,cities:23,initialEncodedBytes:initial.reduce((n,a)=>n+a.bytes,0),initialGpuBytes:initial.reduce((n,a)=>n+a.gpuBytes,0)}));

@@ -1,3 +1,15 @@
+# 中国杯 V7：渐进资源与部署参考
+
+V7 本地候选从 V6.0.1 演进。首屏加载轻量花纸与城市，近看按资源预算提升当前部件；保留杯壁/杯盖反射。消费者与开发审计分离构建，正式发布状态不由本文件推定。
+
+- `npm run build`：消费者静态产物。
+- `npm run build:integration`、`npm run mock:v7`：本地资源与保存/分享接口参考。
+- 交接规范、数据契约、CDN 和子路径配置见 [integration/README.md](integration/README.md)。
+- 资源生成、契约测试与浏览器检查：`npm run textures:v7`、`npm run test:v7`、`npm run check:v7-assets`、`npm run qa:v7`。
+- iPhone 13 mini / iOS18 的30分钟稳定性、实体触感及帧率需真机验收。
+
+以下为保留的 V6 素材及开发说明。
+
 # 中国杯 V6：城市共彩创作预览
 
 V6 使用一套模型、城市材质与创作状态，分为三个入口：

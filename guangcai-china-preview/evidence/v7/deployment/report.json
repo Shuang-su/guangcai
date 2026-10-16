@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "name": "subpath integration and viewer ready",
+      "passed": true
+    },
+    {
+      "name": "subpath mock saves work",
+      "passed": true
+    },
+    {
+      "name": "cross-origin CDN textures decoded and rendered",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,504 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:guangcai:resource-manifest:1",
+  "title": "ResourceManifest",
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri-reference"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "sourceSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "encoding": {
+          "enum": [
+            "webp",
+            "hfn1-gzip"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "decodedBytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "gpuBytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "channels": {
+          "enum": [
+            1,
+            2,
+            4
+          ]
+        },
+        "colorSpace": {
+          "enum": [
+            "srgb",
+            "linear"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "url",
+        "sha256",
+        "sourceSha256",
+        "encoding",
+        "width",
+        "height",
+        "bytes",
+        "decodedBytes",
+        "gpuBytes",
+        "channels",
+        "colorSpace"
+      ]
+    },
+    "atlas": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rows": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        },
+        "contentWidth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "contentHeight": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "gutter": {
+          "type": "integer",
+          "minimum": 8,
+          "maximum": 128
+        }
+      },
+      "required": [
+        "rows",
+        "contentWidth",
+        "contentHeight",
+        "gutter"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "releaseId": {
+      "type": "string"
+    },
+    "modelVersion": {
+      "type": "string"
+    },
+    "recipeVersion": {
+      "type": "string"
+    },
+    "fixed": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "light": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "standard": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "detail": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            }
+          },
+          "required": [
+            "light",
+            "standard",
+            "detail"
+          ]
+        },
+        "handle": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "light": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "standard": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "detail": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            }
+          },
+          "required": [
+            "light",
+            "standard",
+            "detail"
+          ]
+        },
+        "saucer": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "light": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "standard": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            },
+            "detail": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "baseColor": {
+                  "$ref": "#/$defs/asset"
+                },
+                "normal": {
+                  "$ref": "#/$defs/asset"
+                },
+                "orm": {
+                  "$ref": "#/$defs/asset"
+                },
+                "atlas": {
+                  "$ref": "#/$defs/atlas"
+                }
+              },
+              "required": [
+                "baseColor",
+                "normal",
+                "orm"
+              ]
+            }
+          },
+          "required": [
+            "light",
+            "standard",
+            "detail"
+          ]
+        }
+      },
+      "required": [
+        "body",
+        "handle",
+        "saucer"
+      ]
+    },
+    "cities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "$ref": "#/$defs/asset"
+          },
+          "levels": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "light": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mask": {
+                    "$ref": "#/$defs/asset"
+                  },
+                  "normal": {
+                    "$ref": "#/$defs/asset"
+                  }
+                },
+                "required": [
+                  "mask",
+                  "normal"
+                ]
+              },
+              "standard": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mask": {
+                    "$ref": "#/$defs/asset"
+                  },
+                  "normal": {
+                    "$ref": "#/$defs/asset"
+                  }
+                },
+                "required": [
+                  "mask",
+                  "normal"
+                ]
+              },
+              "detail": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mask": {
+                    "$ref": "#/$defs/asset"
+                  },
+                  "normal": {
+                    "$ref": "#/$defs/asset"
+                  }
+                },
+                "required": [
+                  "mask",
+                  "normal"
+                ]
+              }
+            },
+            "required": [
+              "light",
+              "standard",
+              "detail"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "thumbnail",
+          "levels"
+        ]
+      }
+    },
+    "slogans": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "asset": {
+            "$ref": "#/$defs/asset"
+          },
+          "uvRect": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "text",
+          "asset",
+          "uvRect"
+        ]
+      }
+    },
+    "mark": {
+      "$ref": "#/$defs/asset"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "releaseId",
+    "modelVersion",
+    "recipeVersion",
+    "fixed",
+    "cities",
+    "slogans",
+    "mark"
+  ]
+}

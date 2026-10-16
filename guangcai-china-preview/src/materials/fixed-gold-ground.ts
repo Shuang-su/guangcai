@@ -15,12 +15,12 @@ export function configureFixedGoldGround(material:MeshPhysicalMaterial,enabled=f
    const sample=material.userData.fixedAtlas?'sampleFixedAtlas':'texture2D';
    shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>',`
     #if defined(USE_MAP) && defined(USE_METALNESSMAP)
-      float bareGold=${sample}(metalnessMap,vMetalnessMapUv).r;
+      float bareGold=${sample}(metalnessMap,vMetalnessMapUv).b;
       diffuseColor.rgb=mix(diffuseColor.rgb,vec3(${gold.r.toFixed(9)},${gold.g.toFixed(9)},${gold.b.toFixed(9)}),smoothstep(0.92,0.965,bareGold));
     #endif
     #include <color_fragment>`);
   };
-  material.customProgramCacheKey=()=>key()+'-clean-gold-'+Boolean(material.userData.cleanGoldGround);
+  material.customProgramCacheKey=()=>key()+'-clean-gold-blue-channel-'+Boolean(material.userData.cleanGoldGround);
  }
  material.needsUpdate=true;
 }

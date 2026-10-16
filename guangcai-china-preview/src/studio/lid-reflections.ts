@@ -49,5 +49,5 @@ export function createLidReflections(studio:Studio,product:Product,porcelain:Mes
    uniforms.lidReflectionEnabled.value=1;captures++;lastKey=current;
   }finally{hidden.forEach((o,i)=>o.visible=visibility[i]);plane.visible=false;scene.background=bg;renderer.setClearColor(clear,alpha);}
  }
- return {update,debug:()=>({method:'planar reflection of actual lid knob',captures,resolution:1024}),dispose(){disposed=true;plate.material=original;product.lid.remove(plane);plane.geometry.dispose();plane.dispose();material.dispose();}};
+ return {update,releaseContext(){plane.getRenderTarget().dispose();lastKey='';},invalidate(){lastKey='';material.envMap=studio.porcelainEnvironment;material.needsUpdate=true;},debug:()=>({method:'planar reflection of actual lid knob',captures,resolution:1024}),dispose(){disposed=true;plate.material=original;product.lid.remove(plane);plane.geometry.dispose();plane.dispose();material.dispose();}};
 }

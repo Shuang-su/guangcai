@@ -124,5 +124,6 @@ export class StyleManager {
       this.owned.forEach(t=>t.dispose());this.owned=[];this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
     }catch(e){if(controller.signal.aborted)return false;throw e;}finally{leases.forEach(l=>l.release());}
   }
+  cancelPending(){++this.revision;this.controller?.abort();}
   dispose(){++this.revision;this.controller?.abort();this.leases.forEach(l=>l.release());this.leases=[];this.owned.forEach(t=>t.dispose());this.owned=[];this.currentMaps={};}
 }
