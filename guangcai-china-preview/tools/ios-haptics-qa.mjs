@@ -43,10 +43,23 @@ try{
   await page.locator('#adjust-color-tab').tap();await page.waitForTimeout(400);
   const keyboardBefore=(await state()).haptics.requests;await page.locator('#adjust-material-tab').focus();await page.keyboard.press('Enter');
   check('keyboard button activation does not vibrate',(await state()).haptics.requests===keyboardBefore);await page.locator('#adjust-color-tab').tap();await page.waitForTimeout(400);
+  await page.evaluate(()=>{
+   window.switchMoves=[];
+   document.addEventListener('pointerdown',event=>{window.hapticOrigin={x:event.clientX,y:event.clientY};},{capture:true});
+   document.addEventListener('touchmove',event=>{
+    const input=event.target;if(!(input instanceof HTMLInputElement)||!input.hasAttribute('data-haptic-switch'))return;
+    const rect=input.parentElement.getBoundingClientRect(),origin=window.hapticOrigin;
+    window.switchMoves.push({direction:getComputedStyle(input).direction,trusted:event.isTrusted,defaultPrevented:event.defaultPrevented,anchorError:Math.hypot(rect.x+rect.width/2-origin.x,rect.y+rect.height/2-origin.y)});
+   },{passive:true});
+  });
   const cdp=await context.newCDPSession(page);
   async function drag(selector){
    const el=page.locator(selector),before=await el.boundingBox();assert.ok(before);let x=before.x+before.width*.4,y=before.y+before.height*.5;
    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});await page.waitForTimeout(200);
+   if(backend!=='vibration'&&!(await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches))){
+    const target=await el.locator('[data-haptic-switch]').boundingBox();
+    check(selector+' keeps full native target through touchstart',target.width>=before.width*.9&&target.height>=before.height*.9);
+   }
    const active=await el.boundingBox();
    for(let i=1;i<=12;i++){x=active.x+active.width*(.4+i*.035);y=active.y+active.height*(.5-i*.02);await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y,id:1}]});await page.waitForTimeout(65);}
    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(150);
@@ -54,8 +67,20 @@ try{
   const before=await state();await drag('#color-pad');const after=await state();
   check('drag changes colour',after.selection.current.appearance.hue!==before.selection.current.appearance.hue);
   check('detents request feedback',after.haptics.requests>=before.haptics.requests+3);
+  if(backend!=='vibration'){
+   const native=after.haptics.surfaces.find(s=>s.control==='color-pad');
+   check('native touchmove consumes repeated detents',native.nativeMoves>=5&&native.transitions>=3);
+   const moves=await page.evaluate(()=>window.switchMoves);
+   check('real native target alternates in touchmove without cancelling default',moves.every(m=>m.trusted&&!m.defaultPrevented)&&moves.filter((m,i)=>i&&m.direction!==moves[i-1].direction).length>=3);
+   check('native anchor survives control lift and scale',moves.every(m=>m.anchorError<2));
+  }
   check('camera does not rotate during a control drag',JSON.stringify(after.camera)===JSON.stringify(before.camera));
   check('gesture release clears active state',!(await page.locator('#color-pad').getAttribute('class')).includes('is-dragging'));
+  await page.locator('#adjust-material-tab').tap();await page.waitForTimeout(400);
+  const materialBefore=await state();await drag('#material-pad');const materialAfter=await state();
+  check('material drag changes physical parameters',materialAfter.selection.current.appearance.materialX!==materialBefore.selection.current.appearance.materialX);
+  if(backend!=='vibration')check('material drag reaches repeated native transitions',materialAfter.haptics.surfaces.find(s=>s.control==='material-pad').transitions>=3);
+  await page.locator('#adjust-color-tab').tap();await page.waitForTimeout(400);
   const lightBefore=await state();await drag('.lightness-control');const lightAfter=await state();
   check('lightness still changes',lightAfter.selection.current.appearance.lightness!==lightBefore.selection.current.appearance.lightness);
   check('lightness detents request feedback',lightAfter.haptics.requests>lightBefore.haptics.requests);

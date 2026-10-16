@@ -47,7 +47,7 @@ const color=async(h,s)=>{
 try{
  const started=Date.now();await ready();await page.waitForTimeout(600);const initial=await state();
  timings.push({initialMs:Date.now()-started});
- check('page identity, V5.4 and meaningful canvas',initial.version==='5.4.0'&&(await page.title()).includes('中国')&&(await page.locator('h1').textContent()).includes('共彩'));
+ check('page identity, V5.4.1 and meaningful canvas',initial.version==='5.4.1'&&(await page.title()).includes('中国')&&(await page.locator('h1').textContent()).includes('共彩'));
  check('no framework overlay',await page.locator('vite-error-overlay').count()===0);
  check('China default and lazy city loading unchanged',initial.selection.current.variant==='china-gold'&&!await page.evaluate(()=>performance.getEntriesByType('resource').some(r=>r.name.includes('/cities/v5/'))));
  await chooseCity('beijing');await page.locator('[data-variant="beijing-green"]').click();await settled();await page.waitForTimeout(400);

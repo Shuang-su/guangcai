@@ -44,6 +44,6 @@ export const haptics={pulse(event:TouchIntent,duration=8){
 },
  attachContinuous:(element:HTMLElement)=>init().attachContinuous(element),
  attachButton:(button:HTMLButtonElement)=>init().attachButton(button),
- debug:()=>({backend,continuousBackend:backend.startsWith('ios-')?'ios-gesture':backend,requests:requested,physicalMotorVerified:false}),
+ debug:()=>({backend,continuousBackend:backend.startsWith('ios-')?'ios-gesture':backend,requests:requested,surfaces:runtime?.debug()??[],physicalMotorVerified:false}),
  dispose(){runtime?.dispose();runtime=undefined;backend='none';requested=0;},
 };

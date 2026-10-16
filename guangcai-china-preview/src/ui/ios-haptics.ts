@@ -41,6 +41,7 @@ export function createIOSHaptics(backend:HapticBackend,allowed:()=>boolean){
  const requests=new WeakMap<EventTarget,(duration:number)=>boolean>();
  const touchOrigins=new WeakMap<HTMLButtonElement,boolean>();
  const bindings=new Set<()=>void>();
+ const surfaces=new Map<HTMLElement,()=>unknown>();
  let legacy:HTMLLabelElement|undefined,sequence=0;
  const motion=typeof matchMedia==='function'?matchMedia('(prefers-reduced-motion: reduce)'):undefined;
  const refresh=()=>{for(const update of bindings)update();};
@@ -74,38 +75,61 @@ export function createIOSHaptics(backend:HapticBackend,allowed:()=>boolean){
   const clip=document.createElement('span'),input=switchInput(),events=new AbortController();
   clip.className='ios-haptic-surface';clip.setAttribute('aria-hidden','true');clip.append(input);element.append(clip);
   input.style.cssText='all:revert;position:absolute;width:100%;height:100%;top:50%;left:50%;transform:translate(-50%,-50%);touch-action:none;';
-  let pointer:number|null=null,startX=0,startY=0,x=0,y=0,flipped=false,until=0,resetTimer=0;
+  let pointer:number|null=null,startX=0,startY=0,startClientX=0,startClientY=0,x=0,y=0,resetTimer=0;
+  let moved=false,pending=false,on=false,nativeMoves=0,transitions=0,starts=0,cancels=0,pointerMoves=0,touchMovesSeen=0;
   const owns=(event:PointerEvent)=>event.target===input&&event.isTrusted&&event.pointerType==='touch';
+  const stats=()=>({control:element.id||'lightness',active:pointer!==null,pending,starts,cancels,pointerMoves,touchMovesSeen,nativeMoves,transitions,direction:on?'ltr':'rtl'});
+  surfaces.set(element,stats);
   function reset(){
-   clearTimeout(resetTimer);resetTimer=0;pointer=null;until=0;input.checked=false;
+   clearTimeout(resetTimer);resetTimer=0;pointer=null;moved=false;pending=false;on=false;input.checked=false;
    clip.style.cssText='';input.disabled=!allowed();clip.style.pointerEvents=allowed()?'':'none';
   }
   function cancel(){
    if(pointer===null)return;
-   input.disabled=true;until=0;
-   const id=pointer;pointer=null;if(id!==null&&input.hasPointerCapture(id))input.releasePointerCapture(id);
+   cancels++;input.disabled=true;pending=false;
+   const id=pointer;pointer=null;if(input.hasPointerCapture(id))input.releasePointerCapture(id);
    clearTimeout(resetTimer);resetTimer=window.setTimeout(reset,0);
   }
   function moveStyle(){
-   if(pointer===null)return;
-   const pulse=performance.now()<until,w=28,h=12.4;
-   const angle=Math.atan2(y-startY,x-startX)*180/Math.PI;
-   clip.style.cssText=`position:absolute;inset:auto;width:${w}px;height:${h}px;top:0;left:0;overflow:hidden;opacity:0;direction:${!pulse||flipped?'rtl':'ltr'};transform:translate(${(pulse?startX:x)-w/2}px,${(pulse?startY:y)-h/2}px) rotate(${angle}deg) translateX(${pulse?0:50}px);`;
+   if(pointer===null||!moved)return;
+   const w=28,h=12.4,angle=Math.atan2(y-startY,x-startX)*180/Math.PI;
+   // Keep the finger on the far side of the switch in its own coordinates.
+   // The accepted detent, not pointer-event parity, changes the desired side.
+   clip.style.cssText=`position:absolute;inset:auto;width:${w}px;height:${h}px;top:0;left:0;overflow:hidden;opacity:0;direction:${on?'ltr':'rtl'};transform:translate(${startX-w/2}px,${startY-h/2}px) rotate(${angle}deg);`;
+   // WebKit reads renderer geometry in its touchmove default handler. Flush this
+   // small native target before that handler rather than waiting for a paint.
+   input.getBoundingClientRect();
   }
   function start(event:PointerEvent){
    if(!owns(event)||!event.isPrimary||!allowed())return;
-   reset();pointer=event.pointerId;const r=element.getBoundingClientRect();
-   startX=x=event.clientX-r.left;startY=y=event.clientY-r.top;
+   reset();starts++;pointer=event.pointerId;const r=element.getBoundingClientRect();
+   startClientX=event.clientX;startClientY=event.clientY;
+   startX=x=(event.clientX-r.left)*element.clientWidth/r.width;startY=y=(event.clientY-r.top)*element.clientHeight/r.height;
+   // Leave the full target intact for native touchstart / held tracking.
   }
-  input.addEventListener('pointermove',event=>{
-   if(event.pointerId!==pointer)return;
-   const r=element.getBoundingClientRect();x=event.clientX-r.left;y=event.clientY-r.top;flipped=!flipped;moveStyle();
-  },{signal:events.signal});
-  input.addEventListener('pointerup',()=>{clearTimeout(resetTimer);resetTimer=window.setTimeout(reset,0);},{signal:events.signal});
+  input.addEventListener('pointermove',event=>{if(owns(event))pointerMoves++;},{passive:true,signal:events.signal});
+  input.addEventListener('touchmove',event=>{
+   if(event.isTrusted)touchMovesSeen++;
+   if(!event.isTrusted||pointer===null||!allowed()||event.touches.length!==1)return;
+   const touch=event.targetTouches[0];if(!touch)return;
+   const r=element.getBoundingClientRect(),scaleX=element.clientWidth/r.width,scaleY=element.clientHeight/r.height;
+   // The colour/material controls lift and scale during dragging. Convert both
+   // endpoints back to local CSS pixels so the native anchor stays under the
+   // original screen position instead of moving with that visual animation.
+   startX=(startClientX-r.left)*scaleX;startY=(startClientY-r.top)*scaleY;
+   x=(touch.clientX-r.left)*scaleX;y=(touch.clientY-r.top)*scaleY;
+   moved=true;nativeMoves++;
+   // A short request must survive the interval between pointermove and the
+   // native switch's touchmove. One gesture consumes at most one pending tick.
+   if(pending){pending=false;on=!on;transitions++;}
+   moveStyle();
+  },{passive:true,signal:events.signal});
+  input.addEventListener('pointerup',()=>{pending=false;clearTimeout(resetTimer);resetTimer=window.setTimeout(reset,0);},{signal:events.signal});
   input.addEventListener('pointercancel',cancel,{signal:events.signal});
+  input.addEventListener('touchcancel',cancel,{signal:events.signal});
   const update=()=>{if(!allowed()){cancel();input.disabled=true;clip.style.pointerEvents='none';}else if(pointer===null)reset();};bindings.add(update);reset();
-  requests.set(input,duration=>{if(pointer===null||!allowed())return false;until=performance.now()+duration;moveStyle();return true;});
-  return {owns,start,cancel,dispose(){events.abort();clearTimeout(resetTimer);bindings.delete(update);requests.delete(input);clip.remove();}};
+  requests.set(input,()=>{if(pointer===null||!allowed())return false;pending=true;return true;});
+  return {owns,start,cancel,dispose(){events.abort();clearTimeout(resetTimer);bindings.delete(update);requests.delete(input);surfaces.delete(element);clip.remove();}};
  }
 
  function attachButton(button:HTMLButtonElement){
@@ -137,5 +161,5 @@ export function createIOSHaptics(backend:HapticBackend,allowed:()=>boolean){
   if(!event.isTrusted||event.type!=='click'||!event.detail||typeof Element==='undefined'||!(event.target instanceof Element))return false;
   const button=event.target.closest('button');return !!button&&touchOrigins.get(button)===true;
  }
- return {request,isTouchClick,attachContinuous,attachButton,dispose(){legacy?.remove();bindings.clear();motion?.removeEventListener('change',refresh);if(typeof document!=='undefined')document.removeEventListener('visibilitychange',refresh);}};
+ return {request,isTouchClick,attachContinuous,attachButton,debug:()=>[...surfaces.values()].map(read=>read()),dispose(){legacy?.remove();bindings.clear();surfaces.clear();motion?.removeEventListener('change',refresh);if(typeof document!=='undefined')document.removeEventListener('visibilitychange',refresh);}};
 }
