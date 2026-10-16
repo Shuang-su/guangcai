@@ -13,7 +13,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  <p class="field-label palette-heading">配色预设</p><div class="variant-grid" role="group" aria-label="选择配色预设"></div>
  <div id="creation-controls">
  <div class="adjust-tabs" role="tablist" aria-label="选择调整内容"><button id="adjust-color-tab" role="tab" aria-controls="adjust-color-panel" aria-selected="true">颜色</button><button id="adjust-material-tab" role="tab" aria-controls="adjust-material-panel" aria-selected="false" tabindex="-1">材质</button></div>
- <div id="adjust-color-panel" role="tabpanel" aria-labelledby="adjust-color-tab"><div class="color-pad-row"><div class="pad-mount"></div><label class="lightness-control" for="fill-lightness"><span>明度</span><input id="fill-lightness" type="range" min="0" max="100" step="1" aria-orientation="vertical"><output id="fill-lightness-value" for="fill-lightness"></output></label></div><p class="pad-hint">拖动选色 · 右侧调整明暗</p></div>
+ <div id="adjust-color-panel" role="tabpanel" aria-labelledby="adjust-color-tab"><div class="color-pad-row"><div class="pad-mount"></div><div class="lightness-control"><input id="fill-lightness" type="range" min="0" max="100" step="1" aria-label="明度" aria-orientation="vertical"></div></div><p class="pad-hint">拖动选色 · 右侧调整明暗</p></div>
  <div id="adjust-material-panel" role="tabpanel" aria-labelledby="adjust-material-tab" hidden><div class="pad-mount"></div><p class="pad-hint">拖动调整质感 · 金线保持不变</p></div>
  <button id="reset-palette" class="text-button">恢复当前配色预设</button>
  </div>
@@ -102,7 +102,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
   if(pilot&&s.appearance){
    const a=s.appearance;colorPad.setValue(colorPosition(a.hue,a.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});
-   lightness.value=String(a.lightness);$('#fill-lightness-value').textContent=Math.round(a.lightness)+'%';
+   lightness.value=String(a.lightness);
    lightness.style.setProperty('--lightness-color',`hsl(${a.hue} ${a.saturation}% 50%)`);
    colorPad.setBackground(String(a.lightness),colorField(a.lightness));
    materialPad.setBackground([a.hue,a.saturation,a.lightness].join(','),materialField(a));
