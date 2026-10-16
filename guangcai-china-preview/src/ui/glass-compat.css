@@ -1,0 +1,15 @@
+/* Mobile WebKit: bounded native backdrop surfaces above an unfiltered canvas.
+   Avoid a whole-scene reference filter, promotion, and negative glass z-index. */
+.consumer-scene[data-glass-state=compatible] .lg-surface{visibility:visible}
+[data-profile=consumer] [data-glass-state=compatible] #glass-content{z-index:0;filter:none;will-change:auto;transform:none;overflow:hidden}
+[data-glass-state=compatible] #viewport{z-index:0}
+[data-glass-state=compatible] .creator-glass{z-index:0;pointer-events:none;background:linear-gradient(135deg,#fffaf580,#fffaf54d);border:1px solid #ffffffa8;box-shadow:inset 0 1px 1px #ffffffb3,0 8px 30px #49330d0d;backdrop-filter:blur(18px) saturate(1.12);-webkit-backdrop-filter:blur(18px) saturate(1.12)}
+[data-glass-state=compatible] .creator-content{z-index:1}
+[data-glass-state=compatible] .creator-tabs{z-index:2;box-shadow:inset 0 1px 1px #ffffffbf,inset 0 -1px 1px #b4a48a33;background-color:#fffaf5a6}
+[data-glass-state=compatible] .creator-indicator{background-color:#eddbb7a6!important}
+[data-glass-state=compatible] .slogan-grid button,[data-glass-state=compatible] .city-card{box-shadow:inset 0 1px 1px #ffffffe0,inset 0 -1px 1px #b4a48a33!important}
+[data-glass-state=compatible] .slogan-grid button[aria-pressed=true],[data-glass-state=compatible] .city-card[aria-pressed=true]{background-color:#eadbbfc7!important;color:var(--ui-gold-active);font-weight:600}
+[data-glass-state=compatible] .palette-swatch{position:relative;overflow:hidden;isolation:isolate;border:0!important;box-shadow:inset 0 1px 1px #ffffffb3,inset 0 -1px 2px #4e350b30,0 4px 10px #4b35131a!important}
+[data-glass-state=compatible] .palette-swatch::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,#ffffff4d,transparent 42%,#ffffff14 80%,#ffffff40);box-shadow:inset 0 0 0 1px #ffffff52}
+[data-glass-state=compatible] .consumer-actions .scene-icon{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+[data-glass-state=compatible] .camera-creator[data-collapsed=true] .creator-glass{border-radius:999px}

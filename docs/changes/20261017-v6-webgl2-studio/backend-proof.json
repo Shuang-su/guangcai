@@ -1,0 +1,2912 @@
+{
+  "date": "2026-10-16T20:36:09.915Z",
+  "status": "passed",
+  "result": [
+    {
+      "engine": "chromium",
+      "version": "154.0.8037.98",
+      "mode": "native",
+      "proof": {
+        "mode": "native",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "webgpu",
+            "id": "",
+            "cls": "xy-hdr-field"
+          },
+          {
+            "type": "webgpu",
+            "id": "",
+            "cls": "xy-hdr-selector"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": [
+          {
+            "kind": "adapter",
+            "options": {
+              "powerPreference": "low-power"
+            },
+            "stack": "Error\n    at GPU.value (<anonymous>:8:207)\n    at http://127.0.0.1:5260/src/ui/hdr-surface.ts:34:40\n    at acquire (http://127.0.0.1:5260/src/ui/hdr-surface.ts:66:4)\n    at initialize (http://127.0.0.1:5260/src/ui/hdr-surface.ts:133:27)\n    at Object.update (http://127.0.0.1:5260/src/ui/hdr-surface.ts:289:40)\n    at draw (http://127.0.0.1:5260/src/ui/xy-pad.ts:123:12)"
+          }
+        ]
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 105,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.00003458054425,
+        "saturation": 41.874038064887074,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "ready",
+          "hidden": true,
+          "frames": "22"
+        },
+        {
+          "state": "ready",
+          "hidden": true,
+          "frames": "22"
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "154.0.8037.98",
+      "mode": "absent",
+      "proof": {
+        "mode": "absent",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": []
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 107.50000001490116,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.00003037053287,
+        "saturation": 42.147769432429506,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "154.0.8037.98",
+      "mode": "null-adapter",
+      "proof": {
+        "mode": "null-adapter",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": [
+          {
+            "kind": "adapter-null",
+            "stack": "Error\n    at Object.requestAdapter (<anonymous>:7:183)\n    at http://127.0.0.1:5260/src/ui/hdr-surface.ts:34:40\n    at acquire (http://127.0.0.1:5260/src/ui/hdr-surface.ts:66:4)\n    at initialize (http://127.0.0.1:5260/src/ui/hdr-surface.ts:133:27)\n    at Object.update (http://127.0.0.1:5260/src/ui/hdr-surface.ts:289:40)\n    at draw (http://127.0.0.1:5260/src/ui/xy-pad.ts:123:12)"
+          }
+        ]
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 58,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.00003037049402,
+        "saturation": 42.148530080098844,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "unavailable",
+          "reason": "Extended output unavailable",
+          "hidden": true
+        },
+        {
+          "state": "unavailable",
+          "reason": "Extended output unavailable",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.6",
+      "mode": "native",
+      "proof": {
+        "mode": "native",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": []
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 45,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.43078721700863,
+        "saturation": 50.75757575757576,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.6",
+      "mode": "absent",
+      "proof": {
+        "mode": "absent",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": []
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 33,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.43078721700863,
+        "saturation": 50.75757575757576,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "unavailable",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.6",
+      "mode": "null-adapter",
+      "proof": {
+        "mode": "null-adapter",
+        "contexts": [
+          {
+            "type": "webgl2",
+            "id": "viewport",
+            "cls": ""
+          },
+          {
+            "type": "webgl2",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-background"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": ""
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "lightness-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          },
+          {
+            "type": "2d",
+            "id": "",
+            "cls": "xy-dots"
+          }
+        ],
+        "requests": [
+          {
+            "kind": "adapter-null",
+            "stack": "requestAdapter@web-inspector://bootstrap.js:23:192\n@http://127.0.0.1:5260/src/ui/hdr-surface.ts:34:54\nacquire@http://127.0.0.1:5260/src/ui/hdr-surface.ts:66:4\ninitialize@http://127.0.0.1:5260/src/ui/hdr-surface.ts:133:34\nupdate@http://127.0.0.1:5260/src/ui/hdr-surface.ts:289:50\ndraw@http://127.0.0.1:5260/src/ui/xy-pad.ts:123:18"
+          }
+        ]
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 7,
+        "mapTime": 46,
+        "error": "",
+        "optionSurfaces": 1
+      },
+      "appearance": {
+        "preset": "gold",
+        "hue": 225.43078721700863,
+        "saturation": 50.75757575757576,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      },
+      "hdr": [
+        {
+          "state": "unavailable",
+          "reason": "Extended output unavailable",
+          "hidden": true
+        },
+        {
+          "state": "unavailable",
+          "reason": "Extended output unavailable",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        },
+        {
+          "state": "idle",
+          "hidden": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

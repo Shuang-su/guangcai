@@ -4,12 +4,21 @@ import {disposeMaterialRenderer} from '../../vendor/glass-hq/src/webgl2/index';
 import {attachInteraction} from '../../vendor/glass-hq/src/dom/interaction';
 import {registerShapeContainer} from '../../vendor/glass-hq/src/dom/shape-layout';
 import {connectGlassAnimation} from './glass-animation';
+import {attachNativeGlass,needsNativeGlass} from './glass-compat';
 import {palettes,type Palette} from '../styles/city-appearance';
 import '../../vendor/glass-hq/src/styles.css';
+import './glass-compat.css';
 
 /** Original Glass-HQ materials on visible UI; input and haptic nodes stay intact. */
 export function createGlassStudio(){
  const root=document.querySelector<HTMLElement>('.consumer-scene')!,content=document.querySelector<HTMLElement>('#glass-content')!;
+ // WebGL2 map support does not establish SVG/WebGL compositor correctness.
+ // Select this before warming maps or applying any full-scene filter.
+ if(needsNativeGlass(navigator)){
+  root.dataset.glassState='compatible';
+  const release=attachNativeGlass(root);
+  return {debug:()=>({backend:'native-backdrop',ready:true,maps:0,mapTime:0,error:'',reason:'mobile-webkit-svg-webgl-compositing',optionSurfaces:0}),dispose:release};
+ }
  let scene:GlassSceneController|undefined,disposed=false,optionFrame=0,optionObserver:MutationObserver|undefined;
  const optionSurfaces=new Map<HTMLElement,()=>void>();let releaseCityClip=()=>{},releaseAnimation=()=>{};
  const clearOptions=()=>{cancelAnimationFrame(optionFrame);optionObserver?.disconnect();optionObserver=undefined;optionSurfaces.forEach(release=>release());optionSurfaces.clear();releaseCityClip();releaseCityClip=()=>{};releaseAnimation();releaseAnimation=()=>{};};

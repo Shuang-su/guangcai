@@ -69,3 +69,28 @@
 5. 色彩一级的圆角好像截断了高光的圆角，这个能修复吗（截图）。
 6. 底部菜单切换的时候的胶囊菜单外框能像这个一样有轻微动效吗（原库 Tab bar 截图）。
 7. 底部菜单避免字的跳变；城市一级卡片稍微增加高度，达成 1:1；色彩的位置轻微放大到卡片边缘不要中间截断（两张截图）。
+
+## iOS 27 Safari 真机反馈（2026-10-17）
+
+用户原话：“iOS27safari出现页面层级问题，还有渲染截断”。附件按提交顺序为 IMG_2143.PNG、IMG_2142.PNG、IMG_2141.PNG，原件路径 /Users/shuangsu/Downloads/，原图保存在 ios27-report/。截图确认 6.0.0 的整段背景缺失、面板玻璃截断以及放大杯子盖过部分控件。
+
+## GPU 能力检测疑问（2026-10-17）
+
+用户原话：
+
+有没有这种情况
+核心原因：修改代码中的「设备环境判定」
+当切换到手机模式后，浏览器的 navigator.userAgent 会变成类似 Android 或 iPhone 的标识。如果你的代码（或所用第三方库）中包含以下逻辑，WebGPU 就会失效：
+• 不成熟的平台过滤：代码内用正则判断了如果是 Android 或 iPhone，就自动降级使用 WebGL，从而根本没有去初始化 WebGPU。
+• 修复方法：检查代码中初始化 WebGPU 的部分。不要通过检测手机或电脑来决定是否启用 WebGPU。应该使用特性检测（Feature Detection）：
+```javascript
+if (!navigator.gpu) {
+    console.log("WebGPU 不被当前浏览器支持，降级到 WebGL");
+    // 降级逻辑
+} else {
+    // 正常初始化 WebGPU
+    const adapter = await navigator.gpu.requestAdapter();
+}
+```
+请谨慎使用此类代码。
+好像还是用了webgpu，webgl下就会有问题

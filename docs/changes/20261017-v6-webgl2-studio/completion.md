@@ -67,3 +67,21 @@
 V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没有变化。原始素材及历史发布未改写。PR #28 已建立并关联，合并及最后 Git 状态随后补记。
 
 尚需实际设备验收：iPhone Air／Safari 27.0.1、iPhone 16 标准版／Safari 26.6.1 的振动输出、玻璃合成性能和触屏动效主观观感。自动化只确认事件、参数、布局和已观察的画面，不代替真机结果。
+
+## iOS 27 Safari 失败与 6.0.1 修复
+
+用户提交的三张真机截图已按原字节归档到 ios27-report/，sources.json 保存来源和 SHA-256。6.0.0 的 iOS 27 层级／截断状态现为“已观察失败”，不再泛称只有待验收；先前通过的结果限定为 Chrome。第一版完整不可变发布归档 checkpoint 为 4614a67。
+
+修复在移动 WebKit 初始化玻璃之前选取 native-backdrop：保留 WebGL 模型在独立未过滤的层，玻璃面板／卡片／按钮使用有界原生 backdrop-filter，UI 在画布上层。原库 input springs、随动高光继续使用，菜单和循环选择器沿用既有交互。完整 SVG 折射与原版 morph 保留在桌面路径；移动兼容模式使用原生磨砂和缩放过渡，不宣称二者视觉等价。诊断和审计页已公开区分。
+
+机制判断参考 WebKit 缺陷 322588（https://bugs.webkit.org/show_bug.cgi?id=322588）：加速 WebGL canvas 可能丢失 CSS SVG reference filter，报告包含 Safari 27 Beta；源库另有大滤镜缓冲、分块与重绘范围的特殊处理。这些与截图吻合，但没有这台 iPhone 的远程图层调试证据，因此不能宣称已经唯一确定 WebKit 内部根因。当前修复直接绕过整屏 SVG/WebGL 合成路径。桌面 WebKit 26.6 没有稳定重现用户截图的整段空白，故最终判断仍需要原设备复测。
+
+浏览器插件未提供，按 frontend-testing-debugging 使用项目 Playwright。WebKit 26.6 安装到另一项目卷的 .codex-work/cache/v6-webkit：初号機卷安装解包报 ENOSPC，停止后未更改系统缓存或原件。脚本通过 PLAYWRIGHT_BROWSERS_PATH 指定缓存，不提交本机路径。WebKit 回归使用真实 WebKit 引擎加 iPhone UA／移动尺寸（桌面引擎 touch emulation 的 maxTouchPoints 为 0，因此 UA 用于覆盖移动策略），不是在 Chrome 里伪装 Safari，也不是 iOS 27 真机验证。
+
+开发检查发现兼容模式不能沿用原库等待 clip-path 的隐藏规则，已针对 compatible 状态恢复可见性；模型放大后的命中测试与截图均重新通过。当前本地 WebKit 专项 72 项通过，完整最终构建和发布回读随后补记。
+
+6.0.1 最终准备已通过：42 项单元／契约、资产检查、124 项 Chrome 构建回归、原版运动专项、72 项真实 WebKit 26.6 移动尺寸检查、70 项原触感事件分支。中断后重新跑完最终流水线，没有采用未结束的进程结果。
+
+对用户 GPU 判定疑问追加调用链检查：杯子为 Three WebGLRenderer（WebGL2）；完整玻璃材质图由 dom/backend.ts 固定选 WebGL2，只有 /audit/ 且 backend=webgpu 才初始化原版 WebGPU 材质图。另有独立 hdr-surface.ts 使用 WebGPU 输出可选色盘 HDR，高动态范围＋安全上下文＋navigator.gpu＋adapter/device/configuration 检测后启用，失败保留 SDR；它没有 UA 平台过滤。不能把整个页面描述为完全不含 WebGPU。
+
+追加 6 组运行记录（backend-proof.json）：Chrome 与真实桌面 WebKit 各测原生环境、删除 navigator.gpu、requestAdapter 返回 null；为触达 HDR 能力分支强制 dynamic-range: high。Chrome 原生实际创建两个 WebGPU HDR context，调用栈只来自 hdr-surface；另外两种情况下只有杯子和材质图两个 WebGL2 context。WebKit 本机原生未提供 navigator.gpu，absent 与 null-adapter 同样正常。六组均拖动调色成功、零 pageerror；未证明所有 iOS 27 渲染均正确。移动 WebKit 原生磨砂是单独的合成兼容措施，不是用 UA 决定 WebGPU 支持与否，也不会禁用已有 HDR 能力检测。

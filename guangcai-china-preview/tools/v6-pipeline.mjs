@@ -34,10 +34,12 @@ try{
  for(let i=0;i<60;i++){try{if((await fetch(url)).ok)break;}catch{}if(i===59)throw Error('Built preview unavailable');await new Promise(r=>setTimeout(r,200));}
  await run('built V6 browser checks','node',['tools/v6-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'local-qa')});
  await run('same-frame glass motion and original menu morph','node',['tools/v6-motion-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'motion-qa')});
+ await run('mobile WebKit isolated glass and viewport regression','node',['tools/v6-webkit-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'webkit-qa')});
+ report.webkit=JSON.parse(await readFile(path.join(work,'webkit-qa/webkit-qa.json')));
  await run('legacy haptic paths in dev','node',['tools/ios-haptics-qa.mjs'],{QA_URL:url+'dev/',QA_OUT:path.join(work,'legacy-haptics')});
  const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json')));if(qa.status!=='passed')throw Error('Browser checks incomplete');
  report.browserChecks=qa.checks.length;
- await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:6,status:'browser-and-asset-checks-passed',checks:qa.checks,physicalDevices:'pending',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
+ await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,status:'browser-and-asset-checks-passed',checks:qa.checks,webkit:report.webkit,physicalDevices:'iOS 27 failure observed on 6.0.0; native-backdrop fix awaits physical device retest',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
  report.authorityHashes={};for(const dir of ['src','vendor','assets/source/v6','assets/masters/v6','tools'])for(const file of await files(dir))report.authorityHashes[dir+'/'+file]=hash(await readFile(path.join(dir,file)));
  for(const file of ['package.json','package-lock.json','index.html','dev/index.html','audit/index.html','audit/glass.html','vite.config.ts','design-qa.md'])report.authorityHashes[file]=hash(await readFile(file));
  report.buildFiles={};for(const file of await files(cfg.build))report.buildFiles[file]=hash(await readFile(path.join(cfg.build,file)));
