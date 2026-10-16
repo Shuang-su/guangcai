@@ -81,3 +81,7 @@ A rapid open/close regression was found and fixed in the adapter: keep ending/cl
 ## 6.0.1 mobile WebKit correction
 
 The supplied IMG_2141/2142/2143 screenshots establish a real iOS 27 failure in 6.0.0: blank horizontal bands and a WebGL cup drawn over UI glass. The earlier pass applies to Chrome only. Mobile WebKit now uses bounded native backdrop surfaces with an unfiltered scene. It retains upstream input springs and highlights; it does not claim the full SVG refraction path. Desktop WebKit 26.6 with an emulated iPhone UA and mobile viewport is the regression engine, not a physical iOS 27 device. Physical retest remains pending.
+
+## 6.0.2 startup and city return
+
+Device evidence shows that the blanket initial inert lock also blocks menus while fixed floral maps are still pending. The panel now remains usable, with explicit stage status and final clearing. Hidden city strips retain their last nonzero width; the restored 1:1 card geometry is measured before the panel animation target. Root backgrounds and standalone metadata are supplied for Safari edge handling, but ordinary Safari chrome remains browser-controlled. Added delayed-normal-map and repeated touch navigation checks on Chromium and real desktop WebKit; physical iOS 27 retest remains required.

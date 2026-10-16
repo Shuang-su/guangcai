@@ -36,12 +36,14 @@ try{
  await run('same-frame glass motion and original menu morph','node',['tools/v6-motion-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'motion-qa')});
  await run('mobile WebKit isolated glass and viewport regression','node',['tools/v6-webkit-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'webkit-qa')});
  report.webkit=JSON.parse(await readFile(path.join(work,'webkit-qa/webkit-qa.json')));
+ await run('slow startup, touch navigation and repeated city return','node',['tools/v6-startup-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'startup-qa')});
+ report.startup=JSON.parse(await readFile(path.join(work,'startup-qa/startup-qa.json')));
  await run('legacy haptic paths in dev','node',['tools/ios-haptics-qa.mjs'],{QA_URL:url+'dev/',QA_OUT:path.join(work,'legacy-haptics')});
  const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json')));if(qa.status!=='passed')throw Error('Browser checks incomplete');
  report.browserChecks=qa.checks.length;
- await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,status:'browser-and-asset-checks-passed',checks:qa.checks,webkit:report.webkit,physicalDevices:'iOS 27 failure observed on 6.0.0; native-backdrop fix awaits physical device retest',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
+ await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,status:'browser-and-asset-checks-passed',checks:qa.checks,webkit:report.webkit,startup:report.startup,physicalDevices:'iOS 27 failures observed on 6.0.0 and 6.0.1; 6.0.2 startup and city-layout fixes await physical device retest',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
  report.authorityHashes={};for(const dir of ['src','vendor','assets/source/v6','assets/masters/v6','tools'])for(const file of await files(dir))report.authorityHashes[dir+'/'+file]=hash(await readFile(path.join(dir,file)));
- for(const file of ['package.json','package-lock.json','index.html','dev/index.html','audit/index.html','audit/glass.html','vite.config.ts','design-qa.md'])report.authorityHashes[file]=hash(await readFile(file));
+ for(const file of ['package.json','package-lock.json','index.html','public/manifest.webmanifest','dev/index.html','audit/index.html','audit/glass.html','vite.config.ts','design-qa.md'])report.authorityHashes[file]=hash(await readFile(file));
  report.buildFiles={};for(const file of await files(cfg.build))report.buildFiles[file]=hash(await readFile(path.join(cfg.build,file)));
  report.status='passed';await save();console.log(`Prepared ${Object.keys(report.buildFiles).length} files with ${qa.checks.length} browser checks. Physical iPhone verification remains pending.`);
 }catch(e){report.status='failed';report.error=String(e);await save();console.error(e);process.exitCode=1;}

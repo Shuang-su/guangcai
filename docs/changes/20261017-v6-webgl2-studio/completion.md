@@ -89,3 +89,13 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 6.0.1 发布源码 checkpoint：a2319370175259f1ee22b9ecfd75167041faa91e。独立 V6 部署 6ad28d933b40920e67613f89 已 verified，线上 124 项 Chrome、运动专项及 72 项 WebKit 检查通过；1336 文件远端摘要与本地不可变归档 SHA-256 均核对。四个受保护旧站保持原部署。
 
 后续真机反馈仍存在功能问题：菜单无法点击、准备提示停留、Safari 上下边缘非沉浸；用户进一步确认在其他菜单调整一段时间后返回城市会卡在高度过渡中途，完整玻璃和磨砂模式都可复现。因此 PR 继续 Draft，6.0.1 不代表真机验收完成。下一修复检查共用的加载锁定、提示生命周期、隐藏列表几何及面板测量顺序。
+
+6.0.2 问题定位：consumer-panel 初始化把整个面板设为 inert，main 等所有高清素材结束才 ready；截图可见基础杯子不代表固定花纹已全部解码，故在慢链路上仍不能点菜单。另 selection.busy 结束且没有 error 时没有状态文案分支，导致“正在准备 深圳 纯金”遗留。现取消整面板初始锁定，并按真实 startup pending 更新提示与最终 ready。
+
+城市过渡的共用逻辑问题已确认：ResizeObserver 在 display:none 期间回报零宽度，旧代码把 step 改成 1，进而把城市卡片尺寸写成 -5px；重新显示又在 refresh 前测量动画终点。现在保留最后有效尺寸，先 refresh 再确定高度终点。该修复同时适用于完整玻璃和原生磨砂。
+
+全屏边界：根 html/body 扩展真实柔光背景供 Safari 采样，取消固定 theme-color；保留 viewport-fit=cover，增加 apple-mobile-web-app-capable / black-translucent 和 standalone manifest。普通 Safari 浏览器工具栏并非网页 DOM，不能用 CSS 强行隐藏；主屏幕独立启动与实际 iOS 27 边缘采样仍待设备验收。参考 Apple Configuring Web Applications 和 WebKit Designing Websites for iPhone X。
+
+6.0.1 线上直接采样确认：城市列表隐藏宽度 0，--city-card-size 为 -5px（city-before-6.0.1.json）。6.0.2 构建后专项在 Chrome 和真实桌面 WebKit 各通过 21 项，共 42 项；故意拦住固定花纹的浮点法线请求，仍可触屏切菜单／进出自定义，图样加载完成后提示正确显示“正在载入花纹”，花纹释放加载完成后提示清空。三轮其他菜单调整再返回城市，隐藏尺寸有效、动画目标与最终高度误差小于 1px、卡片 1:1、卡片与菜单无重叠。
+
+完整最终准备通过 42 项单元／契约、资产检查、124 项 Chrome、运动专项、72 项 WebKit、42 项加载／城市回归及 70 项原触感分支。原始素材和五个已确认输入／触感实现文件保持字节不变。源码 checkpoint 与线上回读随后补记。

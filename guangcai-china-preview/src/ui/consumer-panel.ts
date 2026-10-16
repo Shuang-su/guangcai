@@ -15,7 +15,7 @@ const paletteNames={purple:'焕新紫',red:'繁盛红',gold:'同心金',blue:'�
 const menus=['city','color','material','slogan'] as const,typeNames=['城市','色彩','质感','祝福语'];
 type Menu=typeof menus[number];
 export function createConsumerPanel(controller:SelectionController,onView:(view:View)=>void){
- const panel=document.createElement('aside');panel.id='artwork-settings';panel.className='creator-panel camera-creator';panel.dataset.pane='city';panel.dataset.level='overview';panel.inert=true;panel.setAttribute('aria-label','城市与创作');
+ const panel=document.createElement('aside');panel.id='artwork-settings';panel.className='creator-panel camera-creator';panel.dataset.pane='city';panel.dataset.level='overview';panel.setAttribute('aria-label','城市与创作');
  panel.innerHTML=`<div class="creator-glass" aria-hidden="true"></div><button class="panel-handle" aria-label="收起创作面板" aria-expanded="true"><span class="handle-glass lg-surface" data-glass-interactive></span></button><div class="creator-tabs loop-menu lg-surface" role="tablist" aria-label="创作选项，左右循环切换"><div class="creator-indicator" aria-hidden="true"></div>${menus.map((id,i)=>`<button role="tab" id="${id}-tab" data-pane="${id}" aria-controls="${id}-pane" aria-selected="${i===0}">${typeNames[i]}</button>`).join('')}</div>
  <div class="creator-content"><div id="city-pane" role="tabpanel" aria-labelledby="city-tab"><div class="city-cards" role="group" aria-label="选择城市">${Object.entries(v6Themes).map(([id,t])=>`<button class="city-card" data-theme="${id}"><span>${t.name}</span><img alt="" loading="${id==='v6-shenzhen'?'eager':'lazy'}" src="/cities/v6/${id.slice(3)}-choice.webp"></button>`).join('')}</div></div>
  <div id="color-pane" role="tabpanel" aria-labelledby="color-tab" hidden><div class="palette-overview"><div class="palette-viewport"><div class="palette-loop" role="group" aria-label="五种配色，左右循环切换">${paletteOrder.map(p=>`<button class="palette-tile" data-palette="${p}" aria-label="${paletteNames[p]}"><span class="palette-swatch" style="background:linear-gradient(155deg,${palettes[p].light},${palettes[p].dark})"></span><span>${paletteNames[p]}</span></button>`).join('')}</div></div><button class="open-palette-editor lg-surface" aria-label="自定义配色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h8m4 0h4M4 17h3m4 0h9"/><circle cx="14" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>自定义</span></button></div>
@@ -52,7 +52,9 @@ export function createConsumerPanel(controller:SelectionController,onView:(view:
   const reveal=()=>{
    if(token!==transition)return;editor=false;collapsed=false;pane=next;panel.dataset.pane=next;panel.dataset.level='overview';syncCollapsed();$('.creator-tabs').hidden=false;$('.palette-overview').hidden=false;$('.color-editor').hidden=true;
    for(const name of menus){const e=$('#'+name+'-pane');e.hidden=name!==next;e.inert=e.hidden;}
-   if(next==='city')onView('hero');if(next==='slogan')onView('front');render();layoutTo(height);refresh();
+   // City height depends on the now-visible strip width. Measure it before
+   // fixing the shell's animation target, not after the animation has begun.
+   if(next==='city')onView('hero');if(next==='slogan')onView('front');render();refresh();layoutTo(height);
    if(!reduce.matches)motion.push(content.animate([{opacity:0,filter:'blur(7px)',transform:'translateY(5px) scale(.96)'},{opacity:1,filter:'blur(0px)',transform:'none'}],{duration:290,easing:'cubic-bezier(.2,.75,.2,1)'}));
   };
   if(reduce.matches||collapsed){reveal();return;}

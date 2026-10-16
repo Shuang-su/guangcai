@@ -1,6 +1,6 @@
 {
   "name": "guangcai-china-v4",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -32,7 +32,8 @@
     "qa:v6": "node tools/v6-qa.mjs",
     "pipeline:v6": "node tools/v6-pipeline.mjs",
     "deploy:v6": "node tools/deploy-v6.mjs",
-    "qa:webkit": "node tools/v6-webkit-qa.mjs"
+    "qa:webkit": "node tools/v6-webkit-qa.mjs",
+    "qa:startup": "node tools/v6-startup-qa.mjs"
   },
   "dependencies": {
     "@lisse/core": "0.7.2",
