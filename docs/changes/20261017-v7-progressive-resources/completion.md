@@ -52,3 +52,11 @@
 - 构建仍提示主JS超过650kB及原库静态/动态导入重叠；外置runtime-config.js的未打包提示为保留部署配置的预期结果。冷启动传输与时间目标已通过。
 - 此轮为本地候选，没有推送、PR、合并、tag或生产部署。现有V6发布归档未纳入本任务提交。
 - 证据：`guangcai-china-preview/evidence/v7/`；交接：`guangcai-china-preview/integration/README.md`。verification.json记录运行源码哈希，consumer-build.json记录实际产物清单。
+
+## Checkpoint 回读
+
+- 完整运行时、mock、接口契约与验证证据 checkpoint：`c46e3e44efd4385efc44a8721a611d54fbd09701`。
+- 对已提交运行源码逐项回读，均匹配 verification.json 的哈希；该提交后工作树干净。
+- Prism迁移验证完成后，移除了本任务在系统盘创建的临时副本；不涉及用户既有项目或归档。迁移回执在新worktree的 `.codex-work/tmp/v7-relocation.json`。
+- 最终本地页面：http://127.0.0.1:5276/ （纯静态）；联调样例：http://127.0.0.1:5274/integration/ 。
+- 本记录的最终提交号由Git历史确定，运行时代码与上述checkpoint一致。
