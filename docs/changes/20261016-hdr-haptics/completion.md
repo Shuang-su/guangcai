@@ -31,4 +31,4 @@
 
 ## 提交与交付
 
-本轮代码、测试、请求、计划与本完成记录一起进入本地 checkpoint；随后单独补记实际 SHA。没有推送、PR、合并、标签或部署。完成态以本文后续 checkpoint 记录及 Git 状态为准。
+本地实现 checkpoint：`1bfa8f68b07bbd2de6947f6e990052a24f5fd324`（`feat(china): add linear HDR highlights and touch detents`），包含代码、测试、请求、最终计划、完成记录与证据。提交后工作树干净，manifest 中 15 个内容文件的字节数及 SHA-256 全部回读一致；AppleDouble 元数据不进入 manifest。此补记单独形成文档提交。没有推送、PR、合并、标签或部署。
