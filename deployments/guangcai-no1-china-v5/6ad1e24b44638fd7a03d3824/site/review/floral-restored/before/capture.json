@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-13T14:29:20.451Z",
+  "stage": "before",
+  "errors": [],
+  "debug": {
+    "version": "3.0.0",
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      31.765873829006864,
+      240.54520584616395,
+      909.6436231990892
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "gray",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "e6f95374-c3c4-4b25-b8d6-5fae5d0ba142",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 9,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "13916b12-c945-4c32-bbca-9fa641e37a4d",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 96,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "fe91c5d1-d689-4bf4-9762-d31a049542fd",
+      "42fe87a3-21c2-4a6d-949a-13ecfff5ea74",
+      "f30aa3f0-612e-4f9a-b8c3-0b2c6f282242",
+      "4a7a23cf-b7d4-490c-aa56-e2227c4d667a",
+      "e3985bd1-74f3-46e7-b66b-87a144a7db95",
+      "867ebcae-03b8-4e84-ae4e-5a112155f18e",
+      "46663691-8178-4a00-9029-0b4b5f96c78b",
+      "e0b560fb-d61e-432b-8ed7-49fe2a8e1a6a",
+      "00d9387f-58c9-4b15-a1b8-c7160cd3177d",
+      "380d6c25-9347-4f2d-ab43-8e8b0d3fdb93",
+      "333c7620-eb25-441a-9683-922c742b04fc"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 30
+    },
+    "city": {
+      "pack": {
+        "placement": {
+          "scale": 0.82,
+          "offsetU": 0.047,
+          "offsetV": 0
+        },
+        "id": "china-draft-20261011",
+        "version": 3,
+        "name": "中国 · 临时线稿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "/textures/china-baseColor-754558a83d8866b8.webp",
+        "normal": "/textures/china-normal-f0662e241725d83b.webp",
+        "roughness": "/textures/china-roughness-40e7b97659e5e028.webp",
+        "metalness": "/textures/china-metalness-7ac9525c8019fc98.webp",
+        "height": "/china/height.png?v=3"
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "maps": [
+        {
+          "uuid": "a9873c6a-eb08-4eda-88a6-36cdabea796c",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "srgb"
+        },
+        {
+          "uuid": "ab4c31f4-2072-490a-b4e0-5ff2ba03b8f7",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "0b57ab18-dd6e-4734-9a08-5da52efe1402",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "dfabe0f5-9b20-41b8-a204-00b386f03d0c",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "61f32a5e-af32-4335-a00a-d888ba47860b",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        }
+      ],
+      "labelSource": "china/label.png",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.75,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "00b9c4e8-6e9a-4059-a2d0-89ef0105397e",
+        "normal": "8e3f7f48-392c-433d-8a04-371b2441327f",
+        "roughness": "02625547-b34a-4a19-b113-4ce05299512d",
+        "metalness": "1f80a1dd-011d-44fd-8eed-ff2ef63f4bce"
+      },
+      "handle": {
+        "baseColor": "f43d458c-351b-4f33-8036-fea1c452160c",
+        "normal": "0d1d9e89-41e8-4b63-b96a-3253389a430e",
+        "roughness": "a9a8c4aa-48ec-4733-8a39-043cf2b6db5b",
+        "metalness": "e6bb6685-ffde-4bbb-8864-42ea6812d1ac"
+      },
+      "saucer": {
+        "baseColor": "88e2a989-37e9-4a51-b0eb-7d8b0156fece",
+        "normal": "794dd4bf-19cc-4586-97b0-2a0c97209870",
+        "roughness": "ccffc378-c6e1-4bfb-aab1-c79be400ddb3",
+        "metalness": "2fb4e115-536c-43f3-bcd8-6ae58a5ade00"
+      }
+    }
+  },
+  "precision": {
+    "body": {
+      "normalType": 1016,
+      "normalSize": [
+        1024,
+        2466
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    },
+    "handle": {
+      "normalType": 1016,
+      "normalSize": [
+        320,
+        3728
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    },
+    "saucer": {
+      "normalType": 1016,
+      "normalSize": [
+        8192,
+        384
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false
+    }
+  },
+  "baseline": {
+    "sourceCommit": "073167bed69ae46eb716e13bc9ad2de0bfea0084",
+    "deployment": "6ace32284a3c8d9e272b18ad",
+    "capture": "Local pre-activation WebGL rendering with unchanged published fixed maps and material constants. Remote immutable URL navigation timed out; not represented as a remote screenshot."
+  }
+}
