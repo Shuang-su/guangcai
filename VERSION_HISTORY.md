@@ -116,3 +116,7 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 源码 `e715ed1`，部署 `6ad1fef61332ac9c795b3c15`。本地／线上各 122 项完整回归与 70 项触感分支检查通过，1088 个发布文件与不可变快照匹配。用户报告的 iPhone Air／Safari 27.0.1、iPhone 16／Safari 26.6.1 均归入新版路径；实际连续震感尚待这两台设备复测。[在线 V5.4.1](https://guangcai-no1-china-v5.netlify.app/) · [本地诊断入口](https://guangcai-no1-china-v5.netlify.app/?haptics-debug)。
 
 V5.4.1 后续用户确认连续脉冲可用；快速拖动仅震动未跟上，数值正常。每次启动仍有延迟，与 WebKit 原生 switch 约 200 ms 识别等待相符。另记录较短视口的整块放大限制；本次仅诊断记录更新，没有重新发布。[诊断与用户反馈](docs/changes/20261016-ios-startup-audit/completion.md)。
+
+## 5.4.2 短屏幕放大恢复（2026-10-16，验证中）
+
+通过短手机响应式面板间距与高度修正，为原有色盘、材质盘和明度条保留 1.24 倍放大空间。7 个触感／交互／构图文件与 V5.4.1 保持字节一致，连续脉冲逻辑不变。[实施与验证](docs/changes/20261016-short-screen-lift/completion.md)。

@@ -136,3 +136,13 @@ main.artwork-open .gesture-hint{visibility:hidden}
 .ios-haptic-surface,.ios-haptic-button{position:absolute;inset:0;display:block;z-index:4;opacity:0;border-radius:inherit;overflow:hidden;-webkit-tap-highlight-color:transparent}
 .ios-haptic-surface{touch-action:none}
 .ios-haptic-button{cursor:inherit}
+
+/* Preserve full touch areas and lift space when Safari's chrome shortens a phone. */
+@media(max-width:520px) and (min-height:521px) and (max-height:780px){
+ #artwork-settings{bottom:max(6px,env(safe-area-inset-bottom));max-height:min(calc(100dvh - 110px),max(62dvh,calc(242px + min(220px,27dvh))))}
+ #artwork-settings .panel-heading{margin-bottom:0}
+ #artwork-settings .palette-heading{display:none}
+ #artwork-settings .city-selector summary{padding:3px 0;min-height:24px}
+ #artwork-settings .variant-grid.palette-grid{margin-bottom:6px}
+ #artwork-settings .palette-grid .variant-card>span:last-child{padding-top:3px;padding-bottom:3px}
+}
