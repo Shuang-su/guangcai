@@ -29,11 +29,11 @@ export function createGlassStudio(){
   releaseCityClip=registerShapeContainer(document.querySelector<HTMLElement>('.city-cards')!,0);
   const candidates:Array<[HTMLElement,SurfaceOptions]>=[
    ...Array.from(document.querySelectorAll<HTMLElement>('[data-palette]'),tile=>[tile.querySelector<HTMLElement>('.palette-swatch')!,{material:'clear',radius:13,tint:palettes[tile.dataset.palette as Palette].dark,refraction:26}] as [HTMLElement,SurfaceOptions]),
-   ...Array.from(document.querySelectorAll<HTMLElement>('.city-card,.slogan-grid button'),element=>[element,{material:'regular',radius:13,refraction:14,...(element.classList.contains('city-card')?{concentric:{inset:0}}:{})}] as [HTMLElement,SurfaceOptions])
+   ...Array.from(document.querySelectorAll<HTMLElement>('.city-card,.slogan-grid button'),element=>[element,{material:'regular',radius:13,refraction:14,...(element.classList.contains('city-card')?{concentric:{inset:0}}:{interactive:true})}] as [HTMLElement,SurfaceOptions])
   ];
   const syncOptions=()=>{
    optionFrame=0;if(!scene||disposed)return;
-   const visible=new Set(candidates.filter(([element])=>!element.closest('[hidden]')&&getComputedStyle(element).visibility!=='hidden').map(([element])=>element));
+   const visible=new Set(candidates.filter(([element])=>!element.closest('[hidden]')&&(!element.classList.contains('city-card')||element.getAttribute('aria-hidden')==='false')).map(([element])=>element));
    for(const [element,release] of optionSurfaces)if(!visible.has(element)){release();optionSurfaces.delete(element);}
    for(const [element,options] of candidates)if(visible.has(element)&&!optionSurfaces.has(element))optionSurfaces.set(element,scene.addSurface(element,options));
   };

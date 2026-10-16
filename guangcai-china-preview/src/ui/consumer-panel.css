@@ -65,11 +65,15 @@
 [data-profile=consumer] .view-rail button[aria-pressed=true]{color:var(--ui-gold-active);background:#f1d39b80}
 .camera-creator .city-card{background:rgba(255,251,242,.62)!important;backdrop-filter:blur(18px) saturate(1.05);-webkit-backdrop-filter:blur(18px) saturate(1.05)}
 .camera-creator .city-card[aria-pressed=true]{background:rgba(255,247,229,.78)!important}
-.camera-creator .slogan-grid button{color:var(--ui-gold);background:#fffbf2a6;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-[data-glass-state=ready] .camera-creator .city-card,[data-glass-state=ready] .camera-creator .slogan-grid button{background:#fffaf01a!important;backdrop-filter:none;-webkit-backdrop-filter:none}
-[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background:#f5db9d33!important;border-color:#a47b35;color:var(--ui-gold-active);font-weight:600}
+.camera-creator .slogan-grid button{color:var(--ui-gold);background-color:#fffbf2a6;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+[data-glass-state=ready] .camera-creator .city-card,[data-glass-state=ready] .camera-creator .slogan-grid button{background-color:#fffaf01a!important;backdrop-filter:none;-webkit-backdrop-filter:none}
+[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background-color:#f5db9d33!important;border-color:#a47b35;color:var(--ui-gold-active);font-weight:600}
 .camera-creator .creator-indicator{left:37%;width:26%;top:6px;height:36px}
 .camera-creator .creator-tabs button{width:28%;height:38px}
 .camera-creator .city-card,.camera-creator .slogan-grid button{border:0!important}
 .camera-creator .palette-tile[aria-pressed=true] .palette-swatch{outline:none}
-[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background:#eedbb866!important;box-shadow:none!important}
+[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background-color:#eedbb866!important;box-shadow:none!important}
+
+.camera-creator .slogan-grid button{transform-origin:center;transition:transform .24s cubic-bezier(.2,.8,.2,1);user-select:none;-webkit-user-select:none}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.camera-creator .slogan-grid button:hover{transform:scale(1.025)}}
+.camera-creator .slogan-grid button[data-glass-pressed]{z-index:2}

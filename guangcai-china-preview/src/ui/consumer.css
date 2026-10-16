@@ -22,8 +22,8 @@ html[data-profile=consumer]{--accent:#996a2e;--line:#8e70422e;background:#faf9f5
 .city-card>img{width:100%;height:67px;object-fit:contain;mix-blend-mode:multiply;opacity:.85}
 .city-card[aria-pressed=true]{background:#ffefd045;border:1.5px solid #aa7e3b;box-shadow:0 4px 12px #b18e3c13}
 .slogan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:4px 6px 8px}
-.slogan-grid button{padding:16px 4px;border-color:#ad8b5b40;background:#ffffff25;border-radius:14px;font-size:14px;white-space:nowrap}
-.slogan-grid button[aria-pressed=true]{background:#eac88255;color:#754514;border-color:#aa7e3b}
+.slogan-grid button{padding:16px 4px;border-color:#ad8b5b40;background-color:#ffffff25;border-radius:14px;font-size:14px;white-space:nowrap}
+.slogan-grid button[aria-pressed=true]{background-color:#eac88255;color:#754514;border-color:#aa7e3b}
 [data-profile=consumer] .palette-heading{display:none}
 [data-profile=consumer] #artwork-settings .variant-grid.palette-grid{margin:2px 0 10px;gap:6px}
 [data-profile=consumer] .palette-grid .variant-card{background:none;border:0;color:#8b7964;padding:4px 1px;box-shadow:none}

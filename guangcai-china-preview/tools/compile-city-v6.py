@@ -162,4 +162,3 @@ if (MASTER/'landmarks/manifest.json').exists():
  (review/'landmarks').mkdir(exist_ok=True)
  for file in (MASTER/'landmarks').glob('*'):
   if not file.name.startswith('.') and file.suffix in ['.svg','.json']:shutil.copyfile(file,review/'landmarks'/file.name)
-
