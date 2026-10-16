@@ -1,0 +1,68 @@
+{
+  "sourceCommit": "d9a4dbd92d1ae7e86567e9727192d44f9c70f726",
+  "sourceAndEvidence": [
+    {
+      "path": "guangcai-china-preview/src/ui/artwork-panel.ts",
+      "sha256": "3e7c0b658d5c605ae237f7e07ef5e2cce09a4c3f794a47f3fd2787cae0c3815e"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/styles.css",
+      "sha256": "93ab864d2c367194e9534e967180e9dde374bdec3acf5cba2ebfa54bd48c8936"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-BzzSL4oj.css",
+      "sha256": "5bcf860f45dada87983c45674b62d6fb83ec84a55f15af88a47389fedc7c6f81"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-CMAOXA5m.js",
+      "sha256": "a849c3a410ea9c26ea807f4e4e80cc2a8cf4dc1efdcb5e8e0c4d3aa8b18b1fa7"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/._checks.json",
+      "sha256": "577c1946d92803a4d063cc26b7f48f05ca206aaa48b09e08e698c06491832af5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/._desktop.png",
+      "sha256": "577c1946d92803a4d063cc26b7f48f05ca206aaa48b09e08e698c06491832af5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/._landscape.png",
+      "sha256": "577c1946d92803a4d063cc26b7f48f05ca206aaa48b09e08e698c06491832af5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/._narrow.png",
+      "sha256": "577c1946d92803a4d063cc26b7f48f05ca206aaa48b09e08e698c06491832af5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/._phone.png",
+      "sha256": "577c1946d92803a4d063cc26b7f48f05ca206aaa48b09e08e698c06491832af5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/checks.json",
+      "sha256": "3455e0d6d36400fa596cebb66cb7f91dccecf45a1535f96723a0cb511bd04453"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/desktop.png",
+      "sha256": "4e801e12de53ab6c1927494e4c20286b098274c3ea05bf37937d93bed0870b37"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/landscape.png",
+      "sha256": "1d0aeac78fbadaecf3ee46e3ba6a3c17c988850e47c9cf907f93dd6438e8022b"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/narrow.png",
+      "sha256": "1af3ca3cd578be22d7f069517f03c4f3acde46f82efd60075fc0d83dd1799b0f"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/capsule-slider/phone.png",
+      "sha256": "f0417ddfcf56b798ec293800be27661db19e4ed6c06e7d8bf43774ca27f67d77"
+    }
+  ],
+  "checks": 33,
+  "applicationTests": 29,
+  "typecheck": "passed",
+  "build": "passed; existing >650 kB chunk warning",
+  "browser": "In-app browser visual and keyboard check; Chrome automated desktop and emulated mobile input",
+  "realDevice": "not tested",
+  "screenshotNote": "Screenshots include the keyboard focus outline. It is absent after pointer input."
+}
