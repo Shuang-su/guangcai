@@ -1,0 +1,314 @@
+{
+  "checks": [
+    "SDR display uses existing controls without requesting a second GPU device",
+    "mouse input does not request mobile haptics",
+    "HDR initialization succeeds",
+    "actual GPU uses rgba16float extended canvases",
+    "selector float output exceeds SDR white",
+    "colour-field float highlights retain values above one",
+    "HDR preserves channel ratios by applying exposure in linear light",
+    "both HDR surfaces share one GPU device",
+    "drag reuses HDR source texture and existing 3D programs",
+    "HDR surfaces hide after the existing short release animation",
+    "low lightness retains the same linear-light colour response",
+    "GPU loss returns to visible SDR controls without losing input",
+    "no-gpu: unsupported HDR falls back without altering the control",
+    "ignored: unsupported HDR falls back without altering the control",
+    "trusted touch requests short activate/reset/tab pulses",
+    "haptic requests are rate limited across controls",
+    "entering the default material point requests one light detent",
+    "remaining near the same detent and cancelling do not repeatedly vibrate",
+    "travelling through the point grid requests discrete light ticks",
+    "movement ticks retain a minimum 55ms interval",
+    "reduced motion suppresses mobile vibration requests",
+    "programmatic clicks cannot trigger motor requests",
+    "no application or GPU errors"
+  ],
+  "errors": [],
+  "evidence": {
+    "initialization": {
+      "states": [
+        {
+          "hdrState": "ready",
+          "hdrFormat": "rgba16float/extended"
+        },
+        {
+          "hdrState": "ready",
+          "hdrFormat": "rgba16float/extended"
+        }
+      ],
+      "failures": []
+    },
+    "gpuSamples": [
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.1607143878936768,
+        "raw": [
+          0.996078431372549,
+          0.3058823529411765,
+          0.3058823529411765
+        ],
+        "rgba": [
+          1.3935546875,
+          0.4423828125,
+          0.4423828125,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.1607143878936768,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.3984375,
+          1.3984375,
+          1.3984375,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.0714285373687744,
+        "raw": [
+          0.996078431372549,
+          0.3058823529411765,
+          0.3058823529411765
+        ],
+        "rgba": [
+          1.3681640625,
+          0.43359375,
+          0.43359375,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.0714285373687744,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.373046875,
+          1.373046875,
+          1.373046875,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.0117857456207275,
+        "raw": [
+          0.996078431372549,
+          0.3058823529411765,
+          0.3058823529411765
+        ],
+        "rgba": [
+          1.3505859375,
+          0.427734375,
+          0.427734375,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.0117857456207275,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.3564453125,
+          1.3564453125,
+          1.3564453125,
+          1
+        ]
+      }
+    ],
+    "lowLightSamples": [
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.1607143878936768,
+        "raw": [
+          0.4,
+          0,
+          0.00392156862745098
+        ],
+        "rgba": [
+          0.57177734375,
+          0,
+          0.0084686279296875,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.1607143878936768,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.3984375,
+          1.3984375,
+          1.3984375,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.1310713291168213,
+        "raw": [
+          0.4,
+          0,
+          0.00392156862745098
+        ],
+        "rgba": [
+          0.568359375,
+          0,
+          0.00835418701171875,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.1310713291168213,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.390625,
+          1.390625,
+          1.390625,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-field",
+        "gain": 2.101249933242798,
+        "raw": [
+          0.4,
+          0,
+          0.00392156862745098
+        ],
+        "rgba": [
+          0.56494140625,
+          0,
+          0.00823974609375,
+          1
+        ]
+      },
+      {
+        "surface": "xy-hdr-selector",
+        "gain": 2.101249933242798,
+        "raw": [
+          1,
+          1,
+          1
+        ],
+        "rgba": [
+          1.3818359375,
+          1.3818359375,
+          1.3818359375,
+          1
+        ]
+      }
+    ],
+    "hapticRequests": [
+      {
+        "duration": 8,
+        "time": 2558.60000000149
+      },
+      {
+        "duration": 12,
+        "time": 2822.2000000029802
+      },
+      {
+        "duration": 8,
+        "time": 3484.89999999851
+      },
+      {
+        "duration": 8,
+        "time": 3951.5
+      },
+      {
+        "duration": 8,
+        "time": 4400.60000000149
+      },
+      {
+        "duration": 8,
+        "time": 4984.60000000149
+      },
+      {
+        "duration": 4,
+        "time": 5434.10000000149
+      },
+      {
+        "duration": 4,
+        "time": 5550.20000000298
+      },
+      {
+        "duration": 4,
+        "time": 5650.30000000447
+      },
+      {
+        "duration": 4,
+        "time": 5750.70000000298
+      },
+      {
+        "duration": 4,
+        "time": 5850.60000000149
+      },
+      {
+        "duration": 4,
+        "time": 5949.89999999851
+      },
+      {
+        "duration": 6,
+        "time": 6035
+      }
+    ],
+    "movementHaptics": [
+      {
+        "duration": 4,
+        "time": 5434.10000000149
+      },
+      {
+        "duration": 4,
+        "time": 5550.20000000298
+      },
+      {
+        "duration": 4,
+        "time": 5650.30000000447
+      },
+      {
+        "duration": 4,
+        "time": 5750.70000000298
+      },
+      {
+        "duration": 4,
+        "time": 5850.60000000149
+      },
+      {
+        "duration": 4,
+        "time": 5949.89999999851
+      },
+      {
+        "duration": 6,
+        "time": 6035
+      }
+    ]
+  },
+  "environment": "Installed headless Chrome; real WebGPU device and float readback. HDR display media query forced only in HDR test cases. Vibrate mocked to inspect requests.",
+  "physicalHDRDisplay": false,
+  "physicalMotor": false
+}

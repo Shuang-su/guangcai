@@ -5,6 +5,8 @@
  */
 import {normalizePosition,type XYPosition} from '../styles/xy-mapping';
 import {prepareControlLift} from './control-lift';
+import {createHDRSurface} from './hdr-surface';
+import {haptics,createHapticTrack} from './haptics';
 
 export type PadPainter=(context:CanvasRenderingContext2D,size:number,inset:number)=>void;
 interface XYPadOptions {
@@ -25,13 +27,16 @@ export function createXYPad(options:XYPadOptions){
  const dots=element.querySelector<HTMLCanvasElement>('.xy-dots')!;
  const thumb=element.querySelector<HTMLElement>('.xy-thumb')!;
  const referenceMark=element.querySelector<HTMLElement>('.xy-reference')!;
+ const hdrField=createHDRSurface(element,background),hdrSelector=createHDRSurface(thumb);
+ const hapticTrack=createHapticTrack();
  const axes=[...element.querySelectorAll<HTMLInputElement>('input')];
  const events=new AbortController(),eventOptions={signal:events.signal};
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value:XYPosition={x:.5,y:.5},pointer:number|null=null,frame=0,size=0,dpr=0;
  let backgroundKey='',backgroundDirty=true,painter:PadPainter|undefined,disposed=false;
  let feedback:XYPosition|undefined,energy=0,lastFrame=0,activation=0,afterglowUntil=0,keyboardFocused=false;
- let reference:XYPosition={x:.5,y:.5},lastPointer:{x:number;y:number}|undefined;
+ let reference:XYPosition={x:.5,y:.5},lastPointer:{x:number;y:number}|undefined,hapticZone='';
+ const zone=()=>Math.hypot(value.x-reference.x,value.y-reference.y)<.035?'default':[value.x,value.y].some(v=>v===0||v===1)?'edge':'';
  const inset=18;
  function syncPosition(){
   const span=Math.max(1,size-2*inset);
@@ -67,9 +72,10 @@ export function createXYPad(options:XYPadOptions){
    feedback.x+=(value.x-feedback.x)*follow;feedback.y+=(value.y-feedback.y)*follow;
    energy+=(targetEnergy-energy)*engage;
   }
+  let repainted=false;
   if(backgroundDirty&&painter){
    const ctx=background.getContext('2d')!;ctx.setTransform(dpr,0,0,dpr,0,0);
-   ctx.clearRect(0,0,size,size);painter(ctx,size,inset);backgroundDirty=false;
+   ctx.clearRect(0,0,size,size);painter(ctx,size,inset);backgroundDirty=false;repainted=true;
   }
   const ctx=dots.getContext('2d')!;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,size,size);
   const span=size-2*inset,divisions=Math.max(6,Math.round(span/20));
@@ -85,6 +91,7 @@ export function createXYPad(options:XYPadOptions){
   // Activation illuminates the field; the feedback canvas only carries the local spotlight.
   // Screen illumination increases the colour field's brightness, without a white veil.
   background.style.filter=`brightness(${1+activation*.65})`;
+  hdrField.update(1+activation*1.25,repainted);hdrSelector.update(1+activation*1.25);
   if(energy>.003){
    const radius=(64+energy*22)*size/240,light=ctx.createRadialGradient(px,py,0,px,py,radius);
    light.addColorStop(0,`rgba(255,255,255,${energy*.28})`);
@@ -128,17 +135,19 @@ export function createXYPad(options:XYPadOptions){
   if(pointer!==null||!event.isPrimary||event.button!==0)return;
   event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart?.();element.focus({preventScroll:true});
   keyboardFocused=false;activation=1;afterglowUntil=0;pointer=event.pointerId;lastPointer={x:event.clientX,y:event.clientY};element.setPointerCapture(pointer);expansionGeometry();element.classList.add('is-dragging');expand(true);
-  emit(next);
+  emit(next);hapticZone=zone();const span=size-2*inset;hapticTrack.reset(value.x*span,value.y*span,span/Math.max(6,Math.round(span/20)));haptics.pulse(event);
  },eventOptions);
  element.addEventListener('pointermove',event=>{
   if(pointer!==event.pointerId)return;event.preventDefault();event.stopPropagation();
   if(lastPointer?.x===event.clientX&&lastPointer?.y===event.clientY)return;
   lastPointer={x:event.clientX,y:event.clientY};emit(fromPointer(event));
+  const nextZone=zone(),span=size-2*inset,spacing=span/Math.max(6,Math.round(span/20)),tick=hapticTrack.move(value.x*span,value.y*span,spacing);
+  if(nextZone&&nextZone!==hapticZone){haptics.pulse(event,8);hapticTrack.reset(value.x*span,value.y*span,spacing);}else if(tick)haptics.pulse(event,4);hapticZone=nextZone;
  },eventOptions);
  element.addEventListener('pointerup',event=>{
   if(pointer!==event.pointerId)return;event.preventDefault();event.stopPropagation();
   if(lastPointer?.x!==event.clientX||lastPointer?.y!==event.clientY)emit(fromPointer(event));
-  afterglowUntil=performance.now()+80;cancel(true);options.onCommit({...value});
+  afterglowUntil=performance.now()+80;cancel(true);options.onCommit({...value});haptics.pulse(event,6);
  },eventOptions);
  const interrupted=(event:PointerEvent)=>{
   if(pointer!==event.pointerId)return;cancel();options.onCancel();
@@ -170,6 +179,6 @@ export function createXYPad(options:XYPadOptions){
   setReference(next:XYPosition){reference=normalizePosition(next);syncPosition();schedule();},
   setBackground(key:string,paint:PadPainter){if(key!==backgroundKey){backgroundKey=key;painter=paint;backgroundDirty=true;schedule();}},
   refresh:schedule,
-  dispose(){disposed=true;cancel();events.abort();observer.disconnect();cancelAnimationFrame(frame);element.remove();}
+  dispose(){disposed=true;cancel();events.abort();observer.disconnect();cancelAnimationFrame(frame);hdrField.dispose();hdrSelector.dispose();element.remove();}
  };
 }

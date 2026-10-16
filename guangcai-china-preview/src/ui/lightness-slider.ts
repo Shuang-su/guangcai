@@ -1,5 +1,6 @@
 /** Native one-axis input with the same floating selector and point feedback as XYPad. */
 import {prepareControlLift} from './control-lift';
+import {haptics,createHapticTrack} from './haptics';
 interface SliderOptions {
  onStart:()=>void;
  onInput:(value:number)=>void;
@@ -13,11 +14,13 @@ export function createLightnessSlider(element:HTMLElement,options:SliderOptions)
  const canvas=element.querySelector<HTMLCanvasElement>('canvas')!;
  const thumb=element.querySelector<HTMLElement>('.lightness-thumb')!;
  const referenceMark=element.querySelector<HTMLElement>('.lightness-reference')!;let reference=50;
+ const hapticTrack=createHapticTrack();
  const events=new AbortController(),listen={signal:events.signal},motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value=50,feedback=50,energy=0,activation=0,afterglowUntil=0,lastFrame=0,frame=0,pointer:number|null=null,blocked=false,keyboard=false,disposed=false;
- let lastPointer:{x:number;y:number}|undefined;
+ let lastPointer:{x:number;y:number}|undefined,hapticZone='';
  const inset=17,min=Number(input.min),max=Number(input.max),clamp=(n:number)=>Number.isFinite(n)?Math.max(min,Math.min(max,n)):50;
  const position=(v:number)=>(clamp(v)-min)/(max-min);
+ const zone=()=>Math.abs(value-reference)<1?'default':value===min||value===max?'edge':'';
  function sync(){referenceMark.style.top=`${inset+(1-position(reference))*Math.max(0,element.clientHeight-inset*2)}px`;thumb.style.top=`${inset+(1-position(value))*Math.max(0,element.clientHeight-inset*2)}px`;}
  function schedule(){if(!frame&&!disposed)frame=requestAnimationFrame(draw);}
  function draw(now:number){
@@ -60,18 +63,19 @@ export function createLightnessSlider(element:HTMLElement,options:SliderOptions)
   if(pointer!==null||!event.isPrimary||event.button!==0)return;
   event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart();input.focus({preventScroll:true});
   blocked=false;keyboard=false;pointer=event.pointerId;activation=1;afterglowUntil=0;lastPointer={x:event.clientX,y:event.clientY};
-  input.setPointerCapture(pointer);prepareControlLift(element);element.classList.add('is-dragging');element.classList.remove('is-keyboard');emit(next);
+  input.setPointerCapture(pointer);prepareControlLift(element);element.classList.add('is-dragging');element.classList.remove('is-keyboard');emit(next);hapticZone=zone();const span=element.clientHeight-2*inset;hapticTrack.reset(0,position(value)*span,span/Math.max(4,Math.round(span/20)));haptics.pulse(event);
  },listen);
  input.addEventListener('pointermove',event=>{
   if(event.pointerId!==pointer)return;event.preventDefault();event.stopPropagation();
   if(lastPointer?.x===event.clientX&&lastPointer?.y===event.clientY)return;
-  lastPointer={x:event.clientX,y:event.clientY};emit(fromPointer(event));
+  lastPointer={x:event.clientX,y:event.clientY};emit(fromPointer(event));const nextZone=zone(),span=element.clientHeight-2*inset,spacing=span/Math.max(4,Math.round(span/20)),tick=hapticTrack.move(0,position(value)*span,spacing);
+  if(nextZone&&nextZone!==hapticZone){haptics.pulse(event,8);hapticTrack.reset(0,position(value)*span,spacing);}else if(tick)haptics.pulse(event,4);hapticZone=nextZone;
  },listen);
  input.addEventListener('pointerup',event=>{
   if(event.pointerId!==pointer)return;event.preventDefault();event.stopPropagation();
   if(lastPointer?.x!==event.clientX||lastPointer?.y!==event.clientY)emit(fromPointer(event));
   const id=pointer;pointer=null;lastPointer=undefined;if(input.hasPointerCapture(id))input.releasePointerCapture(id);
-  afterglowUntil=performance.now()+80;element.classList.remove('is-dragging');schedule();options.onCommit();
+  afterglowUntil=performance.now()+80;element.classList.remove('is-dragging');schedule();options.onCommit();haptics.pulse(event,6);
  },listen);
  const interrupted=()=>{if(pointer===null)return;cancel();options.onCancel();};
  input.addEventListener('pointercancel',interrupted,listen);input.addEventListener('lostpointercapture',interrupted,listen);

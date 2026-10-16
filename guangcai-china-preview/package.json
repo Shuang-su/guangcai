@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "textures": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs",
-    "test": "tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts",
+    "test": "tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts",
     "qa": "node tools/china-qa.mjs",
     "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
     "qa:textures": "node tools/texture-qa.mjs",
@@ -38,6 +38,7 @@
     "typescript": "^5.9.3",
     "tsx": "^4.20.6",
     "sharp": "^0.34.5",
-    "playwright": "^1.58.2"
+    "playwright": "^1.58.2",
+    "@webgpu/types": "0.1.74"
   }
 }

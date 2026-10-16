@@ -52,6 +52,7 @@ main.artwork-open .gesture-hint{visibility:hidden}
 .xy-pad{position:relative;width:100%;max-width:var(--pad-size);aspect-ratio:1;margin:0 auto;border:0;border-radius:24px;overflow:visible;isolation:isolate;background:#c8c6c3;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;box-shadow:0 0 0 1px #4d46552b,0 5px 18px #30252d12}
 .xy-pad:focus-visible{outline:none}
 .xy-pad canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;pointer-events:none}
+.xy-pad canvas.xy-hdr-field,.xy-pad canvas.xy-hdr-selector{filter:none}
 .xy-thumb{position:absolute;display:block;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #0002;box-shadow:0 2px 9px #0005,0 0 0 1px #ffffff8c;transform:translate(-50%,-50%);pointer-events:none;transition:transform .12s}
 .xy-pad.is-dragging{cursor:grabbing}
 .pad-hint{text-align:center;font-size:11px;color:#727275;margin:12px 0 8px;line-height:1.5}

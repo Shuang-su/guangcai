@@ -4,6 +4,7 @@ import {colorAtPosition,colorPosition} from '../styles/xy-mapping';
 import {createXYPad} from './xy-pad';
 import {createLightnessSlider} from './lightness-slider';
 import {colorField,materialField} from './xy-pad-background';
+import {haptics} from './haptics';
 
 export function createArtworkPanel(controller:SelectionController,closeOtherPanels:()=>void){
  const main=document.querySelector('main')!;
@@ -68,7 +69,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   }
  }
  for(const name of ['color','material'] as const){
-  const button=$('#adjust-'+name+'-tab');button.onclick=()=>changeTab(name);
+  const button=$('#adjust-'+name+'-tab');button.onclick=event=>{if(selectedTab!==name)haptics.pulse(event);changeTab(name);};
   button.onkeydown=event=>{
    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
    event.preventDefault();const tab=event.key==='Home'?'color':event.key==='End'?'material':selectedTab==='color'?'material':'color';
@@ -90,7 +91,8 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  finish.onchange=()=>{cancelPending();void controller.select({finish:finish.value as Finish});};
  text.onchange=()=>{cancelPending();void controller.select({text:text.value as Lettering});};
  $('#default-artwork').onclick=()=>{cancelPending();void controller.restore();};
- $('#reset-palette').onclick=()=>{
+ $('#reset-palette').onclick=event=>{
+  haptics.pulse(event,12);
   cancelPending();const a=controller.desired.appearance;if(!a)return;const target=presetAppearance(a.preset);
   if(reduceMotion.matches){void controller.select({appearance:target});return;}
   const started=performance.now(),hueDelta=((target.hue-a.hue+540)%360)-180;
