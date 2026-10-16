@@ -80,3 +80,16 @@ main.artwork-open .gesture-hint{visibility:hidden}
  main.artwork-open footer{visibility:hidden}
  .xy-pad{max-width:min(240px,29dvh)}
 }
+/* A third colour axis without increasing the bottom sheet height. */
+.color-pad-row{display:flex;justify-content:center;align-items:stretch;gap:10px}
+.color-pad-row .pad-mount{flex:1;min-width:0;max-width:260px}
+.lightness-control{width:44px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:5px;font-size:11px;color:#666368}
+.lightness-control output{font-size:10px;line-height:16px;color:#6d676b}
+#fill-lightness{writing-mode:vertical-lr;direction:rtl;appearance:none;-webkit-appearance:none;width:44px;height:0;min-height:110px;flex:1;margin:0;background:transparent;cursor:ns-resize;touch-action:none;--lightness-color:#777}
+#fill-lightness::-webkit-slider-runnable-track{width:6px;height:100%;border-radius:8px;background:linear-gradient(to top,#000,var(--lightness-color),#fff);box-shadow:0 0 0 1px #00000014}
+#fill-lightness::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin-left:-7px;border:2px solid #fff;border-radius:50%;background:#fff;box-shadow:0 1px 5px #0005}
+#fill-lightness::-moz-range-track{width:6px;height:100%;border-radius:8px;background:linear-gradient(to top,#000,var(--lightness-color),#fff)}
+#fill-lightness::-moz-range-thumb{width:16px;height:16px;border:2px solid #fff;border-radius:50%;background:#fff;box-shadow:0 1px 5px #0005}
+.xy-thumb{transition:transform .24s cubic-bezier(.2,1.5,.4,1),box-shadow .2s}
+.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%) scale(1.18);box-shadow:0 3px 13px #0004,0 0 0 6px #ffffff20,0 0 22px #ffffff60}
+@media(prefers-reduced-motion:reduce){.xy-thumb{transition:none!important}.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%)}}

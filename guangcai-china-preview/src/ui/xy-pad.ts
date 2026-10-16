@@ -27,6 +27,7 @@ export function createXYPad(options:XYPadOptions){
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value:XYPosition={x:.5,y:.5},pointer:number|null=null,frame=0,size=0,dpr=0;
  let backgroundKey='',backgroundDirty=true,painter:PadPainter|undefined,disposed=false;
+ let feedback:XYPosition|undefined,energy=0,lastFrame=0;
  const inset=18;
  function syncPosition(){
   const span=Math.max(1,size-2*inset);
@@ -35,7 +36,7 @@ export function createXYPad(options:XYPadOptions){
   axes[0].value=String(value.x*100);axes[1].value=String(value.y*100);
   axes.forEach((axis,i)=>axis.setAttribute('aria-valuetext',`${Math.round((i?value.y:value.x)*100)}%`));
  }
- function draw(){
+ function draw(now:number){
   frame=0;if(disposed)return;
   const measured=element.clientWidth;if(!measured)return;
   const ratio=Math.min(devicePixelRatio||1,2);
@@ -44,20 +45,33 @@ export function createXYPad(options:XYPadOptions){
    for(const canvas of [background,dots]){canvas.width=Math.round(size*dpr);canvas.height=Math.round(size*dpr);}
   }
   syncPosition();
+  const dt=Math.min(.05,(now-lastFrame)/1000||1/60);lastFrame=now;
+  const targetEnergy=pointer===null?0:1;
+  if(!feedback||motion.matches){feedback={...value};energy=targetEnergy;}
+  else{
+   const follow=1-Math.exp(-dt*23),engage=1-Math.exp(-dt*14);
+   feedback.x+=(value.x-feedback.x)*follow;feedback.y+=(value.y-feedback.y)*follow;
+   energy+=(targetEnergy-energy)*engage;
+  }
   if(backgroundDirty&&painter){
    const ctx=background.getContext('2d')!;ctx.setTransform(dpr,0,0,dpr,0,0);
    ctx.clearRect(0,0,size,size);painter(ctx,size,inset);backgroundDirty=false;
   }
   const ctx=dots.getContext('2d')!;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,size,size);
   const span=size-2*inset,divisions=Math.max(6,Math.round(span/20));
-  const px=inset+value.x*span,py=inset+(1-value.y)*span;
+  const px=inset+feedback.x*span,py=inset+(1-feedback.y)*span;
   for(let row=0;row<=divisions;row++)for(let col=0;col<=divisions;col++){
    const x=inset+col/divisions*span,y=inset+row/divisions*span,distance=Math.hypot(x-px,y-py);
-   const scale=Math.max(1,2-distance/50),opacity=Math.max(.24,1-distance/100);
+   const proximity=Math.exp(-distance*distance/(2*42*42));
+   const scale=1+proximity*(1.4+energy*.95),opacity=Math.min(1,.22+proximity*(.7+energy*.16));
+   const drift=motion.matches?0:proximity*energy*4;
+   const dx=distance?(x-px)/distance*drift:0,dy=distance?(y-py)/distance*drift:0;
    ctx.beginPath();ctx.fillStyle=`rgba(255,255,255,${opacity})`;
-   ctx.shadowColor=`rgba(255,255,255,${opacity*.6})`;ctx.shadowBlur=motion.matches?0:opacity*5;
-   ctx.arc(x,y,1.65*scale,0,Math.PI*2);ctx.fill();
+   ctx.shadowColor=`rgba(255,255,255,${proximity*.7})`;ctx.shadowBlur=motion.matches?0:proximity*(3+energy*8);
+   ctx.arc(x+dx,y+dy,1.65*scale,0,Math.PI*2);ctx.fill();
+   ctx.shadowBlur=0;ctx.strokeStyle='rgba(35,25,35,.16)';ctx.lineWidth=.5;ctx.stroke();
   }
+  if(!motion.matches&&(Math.hypot(feedback.x-value.x,feedback.y-value.y)*span>.1||Math.abs(targetEnergy-energy)>.003))schedule();
  }
  function schedule(){if(!frame&&!disposed)frame=requestAnimationFrame(draw);}
  function setValue(next:XYPosition){
@@ -75,6 +89,7 @@ export function createXYPad(options:XYPadOptions){
  function cancel(){
   const id=pointer;pointer=null;element.classList.remove('is-dragging');
   if(id!==null&&element.hasPointerCapture(id))element.releasePointerCapture(id);
+  schedule();
  }
  element.addEventListener('pointerdown',event=>{
   if(pointer!==null||!event.isPrimary||event.button!==0)return;

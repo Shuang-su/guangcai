@@ -2,11 +2,18 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {MeshPhysicalMaterial,ShaderLib} from 'three';
 import {colorAtPosition,colorPosition,normalizePosition} from '../src/styles/xy-mapping';
-import {materialAt,normalizeAppearance,presetAppearance,GOLD_LINE} from '../src/styles/city-appearance';
+import {materialAt,normalizeAppearance,presetAppearance,GOLD_LINE,hslRgb} from '../src/styles/city-appearance';
 import {normalizeSelection,selectTheme,defaultSelection} from '../src/styles/city-selection';
 import {installCityParameters} from '../src/materials/city-parametric';
 
 const near=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
+test('cached colour field lightness compositing matches direct HSL at both endpoints and in between',()=>{
+ for(const h of [0,37,120,237,300,359.9])for(const s of [0,20,63,100])for(const l of [0,1,25,49,50,51,78,99,100]){
+  const base=hslRgb(h,s,50),direct=hslRgb(h,s,l),amount=l/100;
+  const composed=base.map(v=>amount<.5?v*2*amount:v*2*(1-amount)+(2*amount-1));
+  composed.forEach((v,i)=>near(v,direct[i]));
+ }
+});
 test('square colour mapping reaches all edges and round-trips hue and saturation',()=>{
  for(let h=0;h<=360;h+=5)for(const s of [0,1,25,50,99,100]){
   const p=colorPosition(h,s),c=colorAtPosition(p,h);
