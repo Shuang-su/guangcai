@@ -36,11 +36,11 @@
       },
       "sourceInkPixels": 130696,
       "runtimeLinePixels": 362833,
-      "masterSha256": "1d6b20b6c8779fe15f36fc754552d4b5acfdb7874806c70143f5074e2f6b1d08",
+      "masterSha256": "56628a380503104055c06def44ce98271ff2472ef915fe3716777c5a7f33409c",
       "maps": {
         "mask": {
           "file": "beijing-structure.webp",
-          "sha256": "448d36ddb09b33ff68e08ffd57ee5ce85cc60642702559e3f288e48c1710bada"
+          "sha256": "460cef9e609b4230cda5cc96a860d268234112a6e7732fad2f4ae6ea5ddffb08"
         },
         "normal": {
           "file": "beijing-normal.hfn.gz",
@@ -52,17 +52,12 @@
         },
         "thumbnail": {
           "file": "beijing-thumb.webp",
-          "sha256": "7b0a90ce53055162fa02ad875c0d5150daa12dc7a2c226c35148c1010ee29ad9"
+          "sha256": "a42d56f2a629b79f7f5e2f722a0d4dc64380d113d19fa610f0c467bd7ade2205"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          195,
-          580
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [
         [
           [
@@ -116,11 +111,11 @@
       },
       "sourceInkPixels": 126954,
       "runtimeLinePixels": 351599,
-      "masterSha256": "11b1a91ce28cfe6a7618d6ecc766709299685f4fbeb12122356442f440fda831",
+      "masterSha256": "d431675d127572d90769624f4db81d9a21cf55d9b64d41ed5e7b8de80293509c",
       "maps": {
         "mask": {
           "file": "shenzhen-structure.webp",
-          "sha256": "e39970e19e3a90777b8e5c8ef6e66fc0edaeb28b47205a65659917570acddf18"
+          "sha256": "bedca585481b6b4bb490868b49c48ccc5d3ba55639b19281d75b8eb9171fad30"
         },
         "normal": {
           "file": "shenzhen-normal.hfn.gz",
@@ -132,17 +127,12 @@
         },
         "thumbnail": {
           "file": "shenzhen-thumb.webp",
-          "sha256": "5fd4a4c355f1dacacb3feb549a5cd4dc0c2835f5118f076f5eca9ec09988e8a8"
+          "sha256": "0ced8d55ad909e018e8e2f5a1c2543d72cb8fd420ffb270c546be3c12ee1453b"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          925,
-          737
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
@@ -185,11 +175,11 @@
       },
       "sourceInkPixels": 648704,
       "runtimeLinePixels": 456017,
-      "masterSha256": "b6fba1a5c976cb1f02bbdefbaf5463ef782305f66ed5aeb37f0ffe2ab92a0210",
+      "masterSha256": "c2060d131b25c942d9aa694c9bba724dab1bcb6a30a266c14c77b7572e9736fb",
       "maps": {
         "mask": {
           "file": "beijing-2-structure.webp",
-          "sha256": "d145a3047493020aa0624fcb80377bdaa1d08587a1ac9b987423c0e2c2fa4e61"
+          "sha256": "89ed1f43f4cb99faffd7d5887ec1923b89bb36b2b53eefdc116c65b1b31ca1ed"
         },
         "normal": {
           "file": "beijing-2-normal.hfn.gz",
@@ -201,17 +191,12 @@
         },
         "thumbnail": {
           "file": "beijing-2-thumb.webp",
-          "sha256": "fa03b6c2f3f932c574b6bf7dff04274d06f4a8ecfc4fadba7c6d5e4e4be0df3d"
+          "sha256": "e5aba8fda6f7fcfb8ff24ed44871823554f40fc3990902a7eb5dc609b881986e"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          606,
-          1333
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
@@ -254,11 +239,11 @@
       },
       "sourceInkPixels": 380373,
       "runtimeLinePixels": 270051,
-      "masterSha256": "80f4d5330fb91552e6934737ecf729ac050ef9de61faac3e5a1c38cf14b7660b",
+      "masterSha256": "18a933e8ac58ee46b73a84c5ef1017c1cb4550d158f1ffaf68dc87aaa56b718d",
       "maps": {
         "mask": {
           "file": "shanghai-structure.webp",
-          "sha256": "f88c6d8b4f799566dafb4e28178a770d5735a753a7ceb8e8806c822b3c15e559"
+          "sha256": "a7b48a51eb8f79767990ffd29b6d2e966987f6db5d6cde4be357e19f2d313d09"
         },
         "normal": {
           "file": "shanghai-normal.hfn.gz",
@@ -270,25 +255,12 @@
         },
         "thumbnail": {
           "file": "shanghai-thumb.webp",
-          "sha256": "4b5f136c6a61d0c5af2d405148e72719c6ae8611143ba6ae59d09f101812db06"
+          "sha256": "a6da2a59a3ddcf4b007b18c36e9c17c51e4d5ece5c86a1ea5fa6fb528d69a7ef"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          766,
-          754
-        ],
-        [
-          1008,
-          970
-        ],
-        [
-          1062,
-          970
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
@@ -373,15 +345,15 @@
     },
     {
       "id": "tianjin",
-      "source": "assets/source/v5/user-20261016/tianjin.png",
-      "sourceSha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "source": "assets/source/v5/black-20261016/tianjin-2.png",
+      "sourceSha256": "d0649c9c90208fb7711b86753356489aa6ac33c6d8420c2b623d25f809a90a56",
       "sourceSize": [
         3878,
         1630
       ],
       "authoring": {
         "mode": "image-trace",
-        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+        "authority": "user-supplied transparent black line PNG, 2026-10-16; preserve original construction, scenery and baseline"
       },
       "masterSize": [
         5433,
@@ -404,17 +376,17 @@
         "offsetU": 0.047,
         "offsetV": 0
       },
-      "sourceInkPixels": 757170,
-      "runtimeLinePixels": 537999,
-      "masterSha256": "deb8c5e0dd1bd81c6781baef35a74f6592a38d65f64c64ec1371a4a3ea8e6fc4",
+      "sourceInkPixels": 797237,
+      "runtimeLinePixels": 565349,
+      "masterSha256": "208f58565b7e6dbfb5bed464f87e16f01af83e6309a6410172685a5fe7385caa",
       "maps": {
         "mask": {
           "file": "tianjin-structure.webp",
-          "sha256": "0f5a929bf2998ea33afc0ac2e7da0cae51ca92aa72de1d0a387f186cbe8aeb5d"
+          "sha256": "15d37725dc803ca8e8b6db9d620b5e17ef45a30662747252347ecdc3cf13a8b6"
         },
         "normal": {
           "file": "tianjin-normal.hfn.gz",
-          "sha256": "4dab3f9766a90e3d0764942d1eba35078a796e9f5d90a8ecdaca8460280341f3"
+          "sha256": "7416c53a270288b2457746a6d4515aa60fe0f32b2e91866f84c405fc8de81065"
         },
         "label": {
           "file": "tianjin-label.webp",
@@ -422,239 +394,30 @@
         },
         "thumbnail": {
           "file": "tianjin-thumb.webp",
-          "sha256": "08886577c1c5617f69432c1ac3aa4c3ce77bc57bfbf6bf7e596b44a06caae534"
+          "sha256": "7fe3cbd9aa72e31b6e7713842154d9e739035ee15a1f4a79e2ea80256ac011d7"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          1792,
-          1025
-        ],
-        [
-          1775,
-          1086
-        ],
-        [
-          1743,
-          1141
-        ],
-        [
-          1699,
-          1186
-        ],
-        [
-          1521,
-          1234
-        ],
-        [
-          1457,
-          1218
-        ],
-        [
-          1404,
-          1186
-        ],
-        [
-          1359,
-          1141
-        ],
-        [
-          1327,
-          1086
-        ],
-        [
-          1311,
-          1025
-        ],
-        [
-          1311,
-          965
-        ],
-        [
-          1327,
-          901
-        ],
-        [
-          1359,
-          846
-        ],
-        [
-          1404,
-          801
-        ],
-        [
-          1458,
-          770
-        ],
-        [
-          1520,
-          753
-        ],
-        [
-          1583,
-          753
-        ],
-        [
-          1644,
-          770
-        ],
-        [
-          1699,
-          801
-        ],
-        [
-          1743,
-          846
-        ],
-        [
-          1775,
-          898
-        ],
-        [
-          1792,
-          963
-        ],
-        [
-          1551,
-          1345
-        ],
-        [
-          1406,
-          1397
-        ],
-        [
-          1551,
-          1578
-        ],
-        [
-          2524,
-          1437
-        ],
-        [
-          2448,
-          1462
-        ],
-        [
-          2599,
-          1462
-        ],
-        [
-          2687,
-          1437
-        ],
-        [
-          2797,
-          1437
-        ],
-        [
-          2860,
-          1466
-        ],
-        [
-          2964,
-          1437
-        ],
-        [
-          3037,
-          1466
-        ],
-        [
-          2111,
-          1464
-        ],
-        [
-          2179,
-          1469
-        ],
-        [
-          2235,
-          1464
-        ],
-        [
-          3139,
-          1460
-        ],
-        [
-          3213,
-          1471
-        ],
-        [
-          3269,
-          1483
-        ],
-        [
-          3357,
-          1480
-        ],
-        [
-          2666,
-          1573
-        ],
-        [
-          2225,
-          1578
-        ],
-        [
-          3151,
-          1578
-        ],
-        [
-          1835,
-          911
-        ],
-        [
-          1471,
-          1352
-        ],
-        [
-          1609,
-          1352
-        ],
-        [
-          2467,
-          1382
-        ],
-        [
-          2858,
-          1396
-        ],
-        [
-          2925,
-          1396
-        ],
-        [
-          2671,
-          1440
-        ],
-        [
-          2756,
-          1498
-        ],
-        [
-          1265,
-          897
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
-        "originalStrokeRecallWithin1px": 0.9992353104322675,
-        "tracedStrokePrecisionWithin1px": 0.9996663849472888
+        "originalStrokeRecallWithin1px": 0.9987306158645421,
+        "tracedStrokePrecisionWithin1px": 0.9998519397870841
       }
     },
     {
       "id": "qingdao",
-      "source": "assets/source/v5/user-20261016/qingdao.png",
-      "sourceSha256": "93683bbcbd26e73c0856c88e418a002b55328cec6dea186f9c13f462efea2f82",
+      "source": "assets/source/v5/black-20261016/qingdao-2.png",
+      "sourceSha256": "6680813b73ae554d9a2b04bcde9f923713384d880b014908a1397d955b30ba60",
       "sourceSize": [
         3878,
         1630
       ],
       "authoring": {
         "mode": "image-trace",
-        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+        "authority": "user-supplied transparent black line PNG, 2026-10-16; preserve original construction, scenery and baseline"
       },
       "masterSize": [
         5433,
@@ -668,26 +431,26 @@
         "scale": 1.4009798865394534,
         "offset": [
           0.0,
-          83.40768437338829
+          77.80376482723022
         ],
-        "contentBottom": 1625
+        "contentBottom": 1629
       },
       "placementAppliedOnce": {
         "scale": 0.82,
         "offsetU": 0.047,
         "offsetV": 0
       },
-      "sourceInkPixels": 583031,
-      "runtimeLinePixels": 418439,
-      "masterSha256": "1b5e4034788745d82919161eb8052836ebe0820e421c3067d9a0be86d3cd54d2",
+      "sourceInkPixels": 580097,
+      "runtimeLinePixels": 415891,
+      "masterSha256": "476b1d10e7517f25c1420b3681f1503388f6f378872b8adafc2b5cf16e73fe06",
       "maps": {
         "mask": {
           "file": "qingdao-structure.webp",
-          "sha256": "6d912f51e592d176cc4509e71848fed788601dfb2790d3a6f157b4d28a805bdd"
+          "sha256": "4200ad2c7afd533fb4f2ff94047a4896d496c21eda788b0105e3c28a656f19e4"
         },
         "normal": {
           "file": "qingdao-normal.hfn.gz",
-          "sha256": "178746203ee0c543b36480d4a98808860865cb2f986a89f9358fc1262610d788"
+          "sha256": "a66fed7fe97a4656b4efd1796496a882f5bf525dd49c84732f1f0328343c16bf"
         },
         "label": {
           "file": "qingdao-label.webp",
@@ -695,7 +458,7 @@
         },
         "thumbnail": {
           "file": "qingdao-thumb.webp",
-          "sha256": "c89f19026d7ec0e13e495db136c1c7b274a63ebaf18a81a0b2f09e853e77c8d7"
+          "sha256": "fc513a3bf7ae1f2e67d1bd07f15a1315c75d328a60e752fc02b14cfd3498f9d8"
         }
       },
       "candidate": true,
@@ -704,8 +467,8 @@
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
-        "originalStrokeRecallWithin1px": 0.9978062916037055,
-        "tracedStrokePrecisionWithin1px": 0.9997062947833297
+        "originalStrokeRecallWithin1px": 0.9959748111091765,
+        "tracedStrokePrecisionWithin1px": 0.9954770105261649
       }
     },
     {
@@ -743,11 +506,11 @@
       },
       "sourceInkPixels": 698683,
       "runtimeLinePixels": 504272,
-      "masterSha256": "a1594fbb6c53e75d3cc95451738b50b0e23d71b88ffba36f27d79d8cf08d801d",
+      "masterSha256": "fa0b81b5d6d25d0d6888ba28f0426df5f3813104f881d881fbe353f30eeeaa9a",
       "maps": {
         "mask": {
           "file": "taiyuan-structure.webp",
-          "sha256": "b96860c4a47c2d257df68058856cacb9a8255303bdb8763d5694d361efe77625"
+          "sha256": "d8a8a914a3601a41b0fefb253de5a74e774a106dfb711b9b9420691783b65e21"
         },
         "normal": {
           "file": "taiyuan-normal.hfn.gz",
@@ -759,17 +522,12 @@
         },
         "thumbnail": {
           "file": "taiyuan-thumb.webp",
-          "sha256": "3edf155dd8f540b2a1c0f34652e6d45006ffd31e5175a895ec1da8fa17f568d4"
+          "sha256": "0ca030ef468393d76f94c568c07c1270aded6189c45c2788f62fb6cd14c88fd4"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          2123,
-          1575
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [
         [
           [
@@ -823,11 +581,11 @@
       },
       "sourceInkPixels": 642049,
       "runtimeLinePixels": 452043,
-      "masterSha256": "7b59f345146a39cddb1a39cb3640035fc7654c5f53943b1940a17428104512be",
+      "masterSha256": "73932a504b58a5dab08d579c5c9cff24772ce9ff4b399ebf1908e6429f8477a5",
       "maps": {
         "mask": {
           "file": "hangzhou-structure.webp",
-          "sha256": "7fd575ac5dd0915a018bae4c6d4afe847173aa9007bd586dfd8a82a11b24b172"
+          "sha256": "95063fecafe54cc162799c6247153f10bae88a1530a47371a3e960038218099d"
         },
         "normal": {
           "file": "hangzhou-normal.hfn.gz",
@@ -839,25 +597,12 @@
         },
         "thumbnail": {
           "file": "hangzhou-thumb.webp",
-          "sha256": "a3b0dfeae0620bffabd588b030c240d1f58166e2bb3de149fad33c594fa09f12"
+          "sha256": "ffd1d003c14f861b6ea2b17be8402dd1beeb1af43ece853e9da5ce8d54c6c279"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          504,
-          1595
-        ],
-        [
-          817,
-          1563
-        ],
-        [
-          1115,
-          1595
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
@@ -900,11 +645,11 @@
       },
       "sourceInkPixels": 698506,
       "runtimeLinePixels": 494382,
-      "masterSha256": "68d0ee0478f981a0d7c16ec0cc498603bdaac3736e9aa0bcd1b70448eee371e1",
+      "masterSha256": "a06080f2de1b87beb6dc39b9d1d6f5338d9085e58b3c36d84b1567efb063e483",
       "maps": {
         "mask": {
           "file": "xian-structure.webp",
-          "sha256": "124e63cf8b2ff6b5545f9e6de92a6203fc3b25bf26dec713a46b288224944763"
+          "sha256": "70c070581ba651482d3da47dba51e81deef75c2d24bf7c98988d90aee2d34b28"
         },
         "normal": {
           "file": "xian-normal.hfn.gz",
@@ -916,33 +661,12 @@
         },
         "thumbnail": {
           "file": "xian-thumb.webp",
-          "sha256": "4f89515384f83be371cd0dc2a5d7cf460c39ad023602c56a0d4729963288c28a"
+          "sha256": "50bcc9f33bce70d8567763c8cacad7c3cbbc3cb4b5651e1b1404485641dc6ce8"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          378,
-          1566
-        ],
-        [
-          727,
-          1563
-        ],
-        [
-          2593,
-          1575
-        ],
-        [
-          2702,
-          1575
-        ],
-        [
-          2812,
-          1590
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [
         [
@@ -1040,11 +764,11 @@
       },
       "sourceInkPixels": 716203,
       "runtimeLinePixels": 504064,
-      "masterSha256": "8c3c8aa3746f2a56343050be798d5f3e4009e2693d1ce2d0524af6ec64deab9b",
+      "masterSha256": "12bf76d2db509f301fbb4d3c4d95ab8a9867a3c71605ce697026ab03ab37146a",
       "maps": {
         "mask": {
           "file": "shenzhen-2-structure.webp",
-          "sha256": "59056eaad02d214827778fa8cb2c800bf40b3fcc611511bc040950dc5e7c1635"
+          "sha256": "c785f35e8640b1e7035b0a5ec8f9e28fb713c319d2754284e119373c96b5c217"
         },
         "normal": {
           "file": "shenzhen-2-normal.hfn.gz",
@@ -1056,45 +780,12 @@
         },
         "thumbnail": {
           "file": "shenzhen-2-thumb.webp",
-          "sha256": "6317e79c7ebf48eb28ba67e111899f12ae316a3049001c8ec54ad9e9d4ac4b4a"
+          "sha256": "4930436cca155b82c1bd995483ed6b686661f416bb214a894ac605a7150354ed"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          1941,
-          1491
-        ],
-        [
-          1777,
-          1498
-        ],
-        [
-          2128,
-          1491
-        ],
-        [
-          2797,
-          1590
-        ],
-        [
-          2921,
-          1583
-        ],
-        [
-          3044,
-          1575
-        ],
-        [
-          3180,
-          1575
-        ],
-        [
-          3323,
-          1571
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [],
       "fillPolygons": [],
       "traceFidelity": {
@@ -1137,11 +828,11 @@
       },
       "sourceInkPixels": 770492,
       "runtimeLinePixels": 550252,
-      "masterSha256": "47d6406c1277f984f5707a4bffd6767dbd3c34ec4649d7aeea1784095bb01e1d",
+      "masterSha256": "87f3a260334c4049954a58aafdb926c42ba1a4e2d0e751c8c1fa3d7ad14589ab",
       "maps": {
         "mask": {
           "file": "wuhan-structure.webp",
-          "sha256": "b960221c4aee896308a684bdc491388034f136c8a923fb1064b730689f5b14d6"
+          "sha256": "1c46781fd25d3781eaf1ef842a922442b639eb67df13141797c3a21b47aa5fc5"
         },
         "normal": {
           "file": "wuhan-normal.hfn.gz",
@@ -1153,109 +844,12 @@
         },
         "thumbnail": {
           "file": "wuhan-thumb.webp",
-          "sha256": "ab72a3a7297abcd0574f97b3c2aa1b4429a3a583bb5d3193600f894b1ed00a16"
+          "sha256": "9863f9a0deaa7b394eb5be05582a8169105b2fd8ae2e5388b47a297eaa7423c0"
         }
       },
       "candidate": true,
       "holePolygons": [],
-      "holeSeeds": [
-        [
-          2334,
-          1517
-        ],
-        [
-          2673,
-          1534
-        ],
-        [
-          2981,
-          1554
-        ],
-        [
-          3202,
-          1556
-        ],
-        [
-          2012,
-          1425
-        ],
-        [
-          3410,
-          1515
-        ],
-        [
-          2244,
-          1374
-        ],
-        [
-          2343,
-          1391
-        ],
-        [
-          2401,
-          1415
-        ],
-        [
-          2475,
-          1401
-        ],
-        [
-          2591,
-          1411
-        ],
-        [
-          2638,
-          1435
-        ],
-        [
-          2690,
-          1436
-        ],
-        [
-          2741,
-          1449
-        ],
-        [
-          2787,
-          1435
-        ],
-        [
-          2836,
-          1457
-        ],
-        [
-          2903,
-          1449
-        ],
-        [
-          2955,
-          1464
-        ],
-        [
-          3054,
-          1481
-        ],
-        [
-          3102,
-          1474
-        ],
-        [
-          3151,
-          1488
-        ],
-        [
-          3190,
-          1478
-        ],
-        [
-          3248,
-          1493
-        ],
-        [
-          3296,
-          1492
-        ]
-      ],
+      "holeSeeds": [],
       "fillClosures": [
         [
           [
@@ -1656,70 +1250,6 @@
       "traceFidelity": {
         "originalStrokeRecallWithin1px": 0.9987850994660333,
         "tracedStrokePrecisionWithin1px": 0.9999955369396348
-      }
-    },
-    {
-      "id": "tianjin-2",
-      "source": "assets/source/v5/black-20261016/tianjin-2.png",
-      "sourceSha256": "d0649c9c90208fb7711b86753356489aa6ac33c6d8420c2b623d25f809a90a56",
-      "sourceSize": [
-        3878,
-        1630
-      ],
-      "authoring": {
-        "mode": "image-trace",
-        "authority": "user-supplied transparent black line PNG, 2026-10-16; preserve original construction, scenery and baseline"
-      },
-      "masterSize": [
-        5433,
-        2365
-      ],
-      "runtimeSize": [
-        4096,
-        1783
-      ],
-      "sourceToMaster": {
-        "scale": 1.4009798865394534,
-        "offset": [
-          0.0,
-          77.80376482723022
-        ],
-        "contentBottom": 1629
-      },
-      "placementAppliedOnce": {
-        "scale": 0.82,
-        "offsetU": 0.047,
-        "offsetV": 0
-      },
-      "sourceInkPixels": 797237,
-      "runtimeLinePixels": 565349,
-      "masterSha256": "1a02f5ef0b8294b75d122d0472ac2b9f923b787873ff2224a43f2ae8cb2289ff",
-      "maps": {
-        "mask": {
-          "file": "tianjin-2-structure.webp",
-          "sha256": "15d37725dc803ca8e8b6db9d620b5e17ef45a30662747252347ecdc3cf13a8b6"
-        },
-        "normal": {
-          "file": "tianjin-2-normal.hfn.gz",
-          "sha256": "7416c53a270288b2457746a6d4515aa60fe0f32b2e91866f84c405fc8de81065"
-        },
-        "label": {
-          "file": "tianjin-2-label.webp",
-          "sha256": "787b60d4635f4b4ddb02ab3b9fb5c5d3163c484c91a98de939a63670fe17c9d3"
-        },
-        "thumbnail": {
-          "file": "tianjin-2-thumb.webp",
-          "sha256": "7fe3cbd9aa72e31b6e7713842154d9e739035ee15a1f4a79e2ea80256ac011d7"
-        }
-      },
-      "candidate": true,
-      "holePolygons": [],
-      "holeSeeds": [],
-      "fillClosures": [],
-      "fillPolygons": [],
-      "traceFidelity": {
-        "originalStrokeRecallWithin1px": 0.9987306158645421,
-        "tracedStrokePrecisionWithin1px": 0.9998519397870841
       }
     },
     {
@@ -2168,70 +1698,6 @@
       "traceFidelity": {
         "originalStrokeRecallWithin1px": 0.9998535077346405,
         "tracedStrokePrecisionWithin1px": 1.0
-      }
-    },
-    {
-      "id": "qingdao-2",
-      "source": "assets/source/v5/black-20261016/qingdao-2.png",
-      "sourceSha256": "6680813b73ae554d9a2b04bcde9f923713384d880b014908a1397d955b30ba60",
-      "sourceSize": [
-        3878,
-        1630
-      ],
-      "authoring": {
-        "mode": "image-trace",
-        "authority": "user-supplied transparent black line PNG, 2026-10-16; preserve original construction, scenery and baseline"
-      },
-      "masterSize": [
-        5433,
-        2365
-      ],
-      "runtimeSize": [
-        4096,
-        1783
-      ],
-      "sourceToMaster": {
-        "scale": 1.4009798865394534,
-        "offset": [
-          0.0,
-          77.80376482723022
-        ],
-        "contentBottom": 1629
-      },
-      "placementAppliedOnce": {
-        "scale": 0.82,
-        "offsetU": 0.047,
-        "offsetV": 0
-      },
-      "sourceInkPixels": 580097,
-      "runtimeLinePixels": 415891,
-      "masterSha256": "3048b3fdf46333c0832d73be6c9ac00947af0e64542586f1a8ab89289fafe6ec",
-      "maps": {
-        "mask": {
-          "file": "qingdao-2-structure.webp",
-          "sha256": "4200ad2c7afd533fb4f2ff94047a4896d496c21eda788b0105e3c28a656f19e4"
-        },
-        "normal": {
-          "file": "qingdao-2-normal.hfn.gz",
-          "sha256": "a66fed7fe97a4656b4efd1796496a882f5bf525dd49c84732f1f0328343c16bf"
-        },
-        "label": {
-          "file": "qingdao-2-label.webp",
-          "sha256": "9b7dc5c144bbabad98a5cf65d346ea650727af2759419e0457227c9605b85e19"
-        },
-        "thumbnail": {
-          "file": "qingdao-2-thumb.webp",
-          "sha256": "fc513a3bf7ae1f2e67d1bd07f15a1315c75d328a60e752fc02b14cfd3498f9d8"
-        }
-      },
-      "candidate": true,
-      "holePolygons": [],
-      "holeSeeds": [],
-      "fillClosures": [],
-      "fillPolygons": [],
-      "traceFidelity": {
-        "originalStrokeRecallWithin1px": 0.9959748111091765,
-        "tracedStrokePrecisionWithin1px": 0.9954770105261649
       }
     }
   ],

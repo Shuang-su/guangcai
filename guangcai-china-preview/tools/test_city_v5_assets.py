@@ -29,8 +29,8 @@ class CityAssets(unittest.TestCase):
    self.assertTrue(np.all(normal[~support,:3]==[.5,.5,1]))
    height=np.asarray(Image.open(R/f'assets/masters/v5/{a["id"]}-height16.png'))
    self.assertGreater(len(np.unique(height)),256)
- def test_architectural_voids_and_sky_remain_unpainted(self):
-  samples={'beijing':{'empty':[(195,580),(1300,200)],'filled':[(390,470),(745,620)]},'shenzhen':{'empty':[(925,737),(1500,200)],'filled':[(460,500),(670,600)]}}
+ def test_full_fill_samples_and_unpainted_sky(self):
+  samples={}
   spec=json.loads((R/'assets/masters/v5/cities.json').read_text())
   samples.update({c['id']:c['validationSamples'] for c in spec['cities'] if 'validationSamples' in c})
   for a in AUDIT:
@@ -43,22 +43,28 @@ class CityAssets(unittest.TestCase):
      x,y=point(pos);value=int(mask[y,x,1])
      if group=='empty':self.assertLess(value,5,(a['id'],pos,value))
      else:self.assertGreater(value,245,(a['id'],pos,value))
- def test_added_sources_preserve_originals_and_existing_packs(self):
+ def test_original_orange_sources_preserved(self):
   manifest=json.loads((R/'assets/source/v5/user-20261016/manifest.json').read_text())
-  self.assertEqual(len(manifest['files']),11);self.assertEqual(len(AUDIT),27)
+  self.assertEqual(len(manifest['files']),11);self.assertEqual(len(AUDIT),25)
   for f in manifest['files']:
    source=R/f['source'];self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),f['sha256'])
    im=Image.open(source);self.assertEqual(im.size,(3878,1630));self.assertEqual(im.getextrema()[3],(255,255))
-  for f,sha in manifest['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
- def test_transparent_black_batch_preserves_existing_assets_and_latest_controls(self):
+ def test_original_black_sources_and_city_labels_preserved(self):
   manifest=json.loads((R/'assets/source/v5/black-20261016/manifest.json').read_text())
   self.assertEqual(len(manifest['files']),14)
   for f in manifest['files']:
    source=R/f['source'];self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),f['sha256'])
    im=Image.open(source);self.assertEqual(im.size,(3878,1630));self.assertEqual(im.getextrema(),((0,0),(0,0),(0,0),(0,255)))
-  for f,sha in manifest['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
   for ident in ['tianjin','qingdao']:
    self.assertEqual((R/f'public/cities/v5/{ident}-label.webp').read_bytes(),(R/f'public/cities/v5/{ident}-2-label.webp').read_bytes())
+ def test_full_fill_revision_preserves_structure_and_uses_newest_duplicates(self):
+  revision=json.loads((R/'assets/masters/v5/full-fill-revision.json').read_text())
+  for f,sha in revision['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
+  spec=json.loads((R/'assets/masters/v5/cities.json').read_text())
+  for c in spec['cities']:
+   self.assertEqual(c['fillPolicy'],'all-enclosed-regions');self.assertEqual(c['holes'],[]);self.assertEqual(c['holeSeeds'],[])
+   if c['id'] in revision['replacements']:self.assertEqual(c['source'],f"assets/source/v5/black-20261016/{c['id']}-2.png")
+  self.assertFalse({'tianjin-2','qingdao-2'}&{c['id'] for c in spec['cities']})
  def test_runtime_files_match_manifest(self):
   for a in AUDIT:
    for v in a['maps'].values():self.assertEqual(hashlib.sha256((R/'public/cities/v5'/v['file']).read_bytes()).hexdigest(),v['sha256'])

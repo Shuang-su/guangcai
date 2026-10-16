@@ -47,7 +47,7 @@ const color=async(h,s)=>{
 try{
  const started=Date.now();await ready();await page.waitForTimeout(600);const initial=await state();
  timings.push({initialMs:Date.now()-started});
- check('page identity, V5.2 and meaningful canvas',initial.version==='5.2.0'&&(await page.title()).includes('中国')&&(await page.locator('h1').textContent()).includes('共彩'));
+ check('page identity, V5.3 and meaningful canvas',initial.version==='5.3.0'&&(await page.title()).includes('中国')&&(await page.locator('h1').textContent()).includes('共彩'));
  check('no framework overlay',await page.locator('vite-error-overlay').count()===0);
  check('China default and lazy city loading unchanged',initial.selection.current.variant==='china-gold'&&!await page.evaluate(()=>performance.getEntriesByType('resource').some(r=>r.name.includes('/cities/v5/'))));
  await chooseCity('beijing');await page.locator('[data-variant="beijing-green"]').click();await settled();await page.waitForTimeout(400);
@@ -179,7 +179,7 @@ try{
  for(let i=0;i<80;i++){const p=await point('material-pad',.15+.7*(i%10)/9,.15+.7*Math.floor(i/10)/7);await page.mouse.move(p.x,p.y);}
  await page.mouse.up();await settled();const afterDrag=await state();
  check('sustained drag keeps GPU and reflection resources fixed',same(afterDrag.city.maps,baseline.city.maps)&&afterDrag.memory.textures===baseline.memory.textures&&afterDrag.memory.programs===baseline.memory.programs&&afterDrag.reflections.captures===baseline.reflections.captures&&resourceCount===await page.evaluate(()=>performance.getEntriesByType('resource').length));
- check('twenty-eight city options include all supplied variants',cities.length===27&&await page.locator('[data-theme]').count()===cities.length+1);
+ check('twenty-six city options use newest duplicate sources',cities.length===25&&await page.locator('[data-theme]').count()===cities.length+1);
  const preserved=afterDrag.selection.current.appearance;
  for(const id of cities){
   await chooseCity(id);const s=await state();

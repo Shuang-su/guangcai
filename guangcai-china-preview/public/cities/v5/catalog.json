@@ -127,13 +127,6 @@
       "label": "harbin-label.webp",
       "thumbnail": "harbin-thumb.webp"
     },
-    "tianjin-2": {
-      "name": "天津 2",
-      "mask": "tianjin-2-structure.webp",
-      "normal": "tianjin-2-normal.hfn.gz",
-      "label": "tianjin-2-label.webp",
-      "thumbnail": "tianjin-2-thumb.webp"
-    },
     "chengdu": {
       "name": "成都",
       "mask": "chengdu-structure.webp",
@@ -182,13 +175,6 @@
       "normal": "changchun-normal.hfn.gz",
       "label": "changchun-label.webp",
       "thumbnail": "changchun-thumb.webp"
-    },
-    "qingdao-2": {
-      "name": "青岛 2",
-      "mask": "qingdao-2-structure.webp",
-      "normal": "qingdao-2-normal.hfn.gz",
-      "label": "qingdao-2-label.webp",
-      "thumbnail": "qingdao-2-thumb.webp"
     }
   }
 }

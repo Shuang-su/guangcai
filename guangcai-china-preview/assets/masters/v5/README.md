@@ -46,3 +46,7 @@ npm run deploy:v5
 用户最终要求“可以接受全填上颜色”“不用处理镂空”：**本批以 `fillPolicy=all-enclosed-regions` 填满原稿闭合区域，holeSeeds／holes 为空**，不沿用旧批次的语义挖空规则。天空和外部透明区不着色。黑线 PNG 的 RGB 全为 0，必须由 alpha 提取线条，不能忽略 alpha 或把 alpha 直接当填面。
 
 编译器继续从结构线独立生成法线。已有 13 城源稿、母版、运行资源及最新 XY/HDR/触感源代码的保留哈希见新批次 manifest。复核 HTML 由 `tools/city_review.py` 按同一注册表生成，图片按需加载。此次为最新本地 V5.1 上的扩展，未更新公网部署。
+
+## V5.3：全库填色与来源替换
+
+2026-10-16 用户要求此前图样也全部填色，并用 V5.2 新黑线稿替换本次同城旧稿。全部注册的 V5 图样采用 `all-enclosed-regions`，不额外设置 holes 或 holeSeeds；天津／青岛使用 black-20261016 中对应来源，移除天津 2／青岛 2 选项。旧配置和结构保护摘要见 `full-fill-revision.json`，原始来源仍保留。北京／深圳各两版构图继续保留，共 25 套城市图样，加中国旧款 26 个选项。
