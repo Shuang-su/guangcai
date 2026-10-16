@@ -1,0 +1,551 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "selector": "#color-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "close-artwork",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.16176,
+          "thumbScale": 1.6981,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.23467,
+          "thumbScale": 1.81669,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.24,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "selector": ".lightness-control",
+    "before": {
+      "classes": "lightness-control",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "INPUT",
+      "focusId": "",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.16167,
+          "thumbScale": 1.26168,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.23467,
+          "thumbScale": 1.30625,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.24,
+          "thumbScale": 1.3,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "selector": "#material-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "adjust-material-tab",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.16156,
+          "thumbScale": 1.69748,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.23631,
+          "thumbScale": 1.81127,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.24,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      393,
+      715
+    ],
+    "selector": "#color-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "close-artwork",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.69802,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.81666,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      393,
+      715
+    ],
+    "selector": ".lightness-control",
+    "before": {
+      "classes": "lightness-control",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "INPUT",
+      "focusId": "",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1.26167,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1.30625,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1.3,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      393,
+      715
+    ],
+    "selector": "#material-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "adjust-material-tab",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.6979,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.81667,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      420,
+      890
+    ],
+    "selector": "#color-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "close-artwork",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.1617,
+          "thumbScale": 1.6979,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.23467,
+          "thumbScale": 1.81667,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.24,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "close-artwork",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      420,
+      890
+    ],
+    "selector": ".lightness-control",
+    "before": {
+      "classes": "lightness-control",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "INPUT",
+      "focusId": "",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.16171,
+          "thumbScale": 1.26173,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.23631,
+          "thumbScale": 1.30424,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "lightness-control is-dragging",
+          "scale": 1.24,
+          "thumbScale": 1.3,
+          "focus": "INPUT",
+          "focusId": "",
+          "motion": false
+        }
+      }
+    ]
+  },
+  {
+    "viewport": [
+      420,
+      890
+    ],
+    "selector": "#material-pad",
+    "before": {
+      "classes": "xy-pad",
+      "scale": 1,
+      "thumbScale": 1,
+      "focus": "BUTTON",
+      "focusId": "adjust-material-tab",
+      "motion": false
+    },
+    "samples": [
+      {
+        "wait": 25,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1,
+          "thumbScale": 1,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 70,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.16169,
+          "thumbScale": 1.69789,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 150,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.23631,
+          "thumbScale": 1.8113,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      },
+      {
+        "wait": 200,
+        "state": {
+          "classes": "xy-pad is-dragging is-expanded",
+          "scale": 1.24,
+          "thumbScale": 1.8,
+          "focus": "BUTTON",
+          "focusId": "adjust-material-tab",
+          "motion": false
+        }
+      }
+    ]
+  }
+]

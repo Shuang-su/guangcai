@@ -45,3 +45,7 @@ Browser plugin not available；采用工程现有 Playwright／Chrome。加强�
 本轮发布复用工程已审计的 Netlify 摘要脚本与只在 Node 进程内生效的 DNS 端点修正；没有改变系统设置，也未保存凭据。
 
 [完整线上回归](evidence/online-qa.json) · [触感专项](evidence/haptics-online-qa.json) · [公开回读](evidence/production-readback.json) · [发布回执](evidence/deploy.json) · [归档校验](evidence/archive-validation.json)。
+
+## 用户后续确认与启动延迟（2026-10-16）
+
+用户确认“脉冲已经可以了”，并明确快速拖动时只有震动未跟上、数值正常。此前的“连续脉冲待复测”已收到正向用户反馈，但未获得每台手机分别测得的延迟。WebKit 约 200 ms 识别等待与短视口放大限制另有[诊断记录](../20261016-ios-startup-audit/completion.md)；不将这些边界标为已解决。

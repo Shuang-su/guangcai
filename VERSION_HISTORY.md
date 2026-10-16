@@ -114,3 +114,5 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 用户实机反馈 V5.4 只有第一下震动。修正原生目标初始化、刻度请求到真实 touchmove 的时序、方向保持与控件缩放坐标，增加按需本地诊断入口。旧版本在加强后的初始化测试中复现失败，修正版本专项通过；硬件震感仍待用户复测。[实施与验证记录](docs/changes/20261016-ios-drag-pulses/completion.md)。
 
 源码 `e715ed1`，部署 `6ad1fef61332ac9c795b3c15`。本地／线上各 122 项完整回归与 70 项触感分支检查通过，1088 个发布文件与不可变快照匹配。用户报告的 iPhone Air／Safari 27.0.1、iPhone 16／Safari 26.6.1 均归入新版路径；实际连续震感尚待这两台设备复测。[在线 V5.4.1](https://guangcai-no1-china-v5.netlify.app/) · [本地诊断入口](https://guangcai-no1-china-v5.netlify.app/?haptics-debug)。
+
+V5.4.1 后续用户确认连续脉冲可用；快速拖动仅震动未跟上，数值正常。每次启动仍有延迟，与 WebKit 原生 switch 约 200 ms 识别等待相符。另记录较短视口的整块放大限制；本次仅诊断记录更新，没有重新发布。[诊断与用户反馈](docs/changes/20261016-ios-startup-audit/completion.md)。
