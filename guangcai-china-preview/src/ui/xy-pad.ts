@@ -27,7 +27,7 @@ export function createXYPad(options:XYPadOptions){
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value:XYPosition={x:.5,y:.5},pointer:number|null=null,frame=0,size=0,dpr=0;
  let backgroundKey='',backgroundDirty=true,painter:PadPainter|undefined,disposed=false;
- let feedback:XYPosition|undefined,energy=0,lastFrame=0;
+ let feedback:XYPosition|undefined,energy=0,lastFrame=0,activation=0,keyboardFocused=false;
  const inset=18;
  function syncPosition(){
   const span=Math.max(1,size-2*inset);
@@ -46,7 +46,8 @@ export function createXYPad(options:XYPadOptions){
   }
   syncPosition();
   const dt=Math.min(.05,(now-lastFrame)/1000||1/60);lastFrame=now;
-  const targetEnergy=pointer===null?0:1;
+  const targetEnergy=pointer!==null ? 1 : keyboardFocused ? .48 : 0;
+  activation=motion.matches?0:Math.max(0,activation-dt/.34);
   if(!feedback||motion.matches){feedback={...value};energy=targetEnergy;}
   else{
    const follow=1-Math.exp(-dt*23),engage=1-Math.exp(-dt*14);
@@ -60,6 +61,20 @@ export function createXYPad(options:XYPadOptions){
   const ctx=dots.getContext('2d')!;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,size,size);
   const span=size-2*inset,divisions=Math.max(6,Math.round(span/20));
   const px=inset+feedback.x*span,py=inset+(1-feedback.y)*span;
+  // Activation catches a broad surface highlight; sustained input has a local spotlight.
+  // Both are feedback on this canvas, never changes to the actual HSL colour field.
+  if(activation>0){
+   const wash=ctx.createRadialGradient(size*.5,size*.04,0,size*.5,size*.04,size*.95);
+   wash.addColorStop(0,`rgba(255,255,255,${activation*.44})`);
+   wash.addColorStop(.5,`rgba(255,255,255,${activation*.2})`);wash.addColorStop(1,'rgba(255,255,255,0)');
+   ctx.fillStyle=wash;ctx.fillRect(0,0,size,size);
+  }
+  if(energy>.003){
+   const radius=(64+energy*22)*size/240,light=ctx.createRadialGradient(px,py,0,px,py,radius);
+   light.addColorStop(0,`rgba(255,255,255,${energy*.28})`);
+   light.addColorStop(.45,`rgba(255,255,255,${energy*.13})`);light.addColorStop(1,'rgba(255,255,255,0)');
+   ctx.fillStyle=light;ctx.fillRect(0,0,size,size);
+  }
   for(let row=0;row<=divisions;row++)for(let col=0;col<=divisions;col++){
    const x=inset+col/divisions*span,y=inset+row/divisions*span,distance=Math.hypot(x-px,y-py);
    const proximity=Math.exp(-distance*distance/(2*42*42));
@@ -71,7 +86,7 @@ export function createXYPad(options:XYPadOptions){
    ctx.arc(x+dx,y+dy,1.65*scale,0,Math.PI*2);ctx.fill();
    ctx.shadowBlur=0;ctx.strokeStyle='rgba(35,25,35,.16)';ctx.lineWidth=.5;ctx.stroke();
   }
-  if(!motion.matches&&(Math.hypot(feedback.x-value.x,feedback.y-value.y)*span>.1||Math.abs(targetEnergy-energy)>.003))schedule();
+  if(!motion.matches&&(Math.hypot(feedback.x-value.x,feedback.y-value.y)*span>.1||Math.abs(targetEnergy-energy)>.003||activation>.001))schedule();
  }
  function schedule(){if(!frame&&!disposed)frame=requestAnimationFrame(draw);}
  function setValue(next:XYPosition){
@@ -86,15 +101,16 @@ export function createXYPad(options:XYPadOptions){
   return {x:(event.clientX-rect.left-rect.width*padding)/(rect.width*(1-2*padding)),
    y:1-(event.clientY-rect.top-rect.height*padding)/(rect.height*(1-2*padding))};
  }
- function cancel(){
+ function cancel(animateRelease=false){
   const id=pointer;pointer=null;element.classList.remove('is-dragging');
+  if(!animateRelease){activation=0;energy=0;feedback=undefined;keyboardFocused=false;}
   if(id!==null&&element.hasPointerCapture(id))element.releasePointerCapture(id);
   schedule();
  }
  element.addEventListener('pointerdown',event=>{
   if(pointer!==null||!event.isPrimary||event.button!==0)return;
   event.preventDefault();event.stopPropagation();element.focus({preventScroll:true});
-  pointer=event.pointerId;element.setPointerCapture(pointer);element.classList.add('is-dragging');
+  keyboardFocused=false;activation=1;pointer=event.pointerId;element.setPointerCapture(pointer);element.classList.add('is-dragging');
   emit(fromPointer(event));
  },eventOptions);
  element.addEventListener('pointermove',event=>{
@@ -102,13 +118,17 @@ export function createXYPad(options:XYPadOptions){
  },eventOptions);
  element.addEventListener('pointerup',event=>{
   if(pointer!==event.pointerId)return;event.preventDefault();event.stopPropagation();
-  emit(fromPointer(event));cancel();options.onCommit({...value});
+  emit(fromPointer(event));cancel(true);options.onCommit({...value});
  },eventOptions);
  const interrupted=(event:PointerEvent)=>{
   if(pointer!==event.pointerId)return;cancel();options.onCancel();
  };
  element.addEventListener('pointercancel',interrupted,eventOptions);
  element.addEventListener('lostpointercapture',interrupted,eventOptions);
+ element.addEventListener('focus',()=>{
+  keyboardFocused=element.matches(':focus-visible');if(keyboardFocused)activation=.65;schedule();
+ },eventOptions);
+ element.addEventListener('blur',()=>{keyboardFocused=false;activation=0;schedule();},eventOptions);
  element.addEventListener('keydown',event=>{
   if(event.target!==element)return;
   const step=event.shiftKey ? .001 : .01,next={...value};
@@ -118,7 +138,7 @@ export function createXYPad(options:XYPadOptions){
   else if(event.key==='ArrowDown')next.y-=step;
   else if(event.key==='Home'){next.x=.5;next.y=.5;}
   else return;
-  event.preventDefault();event.stopPropagation();emit(next);options.onCommit({...value});
+  event.preventDefault();event.stopPropagation();if(!keyboardFocused)activation=.65;keyboardFocused=true;emit(next);options.onCommit({...value});
  },eventOptions);
  axes.forEach((axis,i)=>{
   axis.addEventListener('input',event=>{event.stopPropagation();emit({...value,[i?'y':'x']:Number(axis.value)/100});},eventOptions);

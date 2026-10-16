@@ -48,11 +48,11 @@ main.artwork-open .gesture-hint{visibility:hidden}
 .adjust-tabs{display:flex;padding:3px;border-radius:12px;background:#deddd9;gap:3px;margin:0 auto 16px;max-width:260px}
 .adjust-tabs button{flex:1;padding:8px 10px;border:0;border-radius:9px;background:transparent;color:#676568;font-size:13px;-webkit-tap-highlight-color:transparent}
 .adjust-tabs button[aria-selected=true]{background:#faf9f6;color:#29292b;box-shadow:0 1px 4px #0001}
-.xy-pad{position:relative;width:100%;max-width:clamp(180px,calc(100dvh - 490px),260px);aspect-ratio:1;margin:0 auto;border:0;border-radius:24px;overflow:hidden;isolation:isolate;background:#c8c6c3;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;box-shadow:0 0 0 1px #4d46552b,0 5px 18px #30252d12}
-.xy-pad:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.xy-pad canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.xy-pad{position:relative;width:100%;max-width:clamp(180px,calc(100dvh - 490px),260px);aspect-ratio:1;margin:0 auto;border:0;border-radius:24px;overflow:visible;isolation:isolate;background:#c8c6c3;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;box-shadow:0 0 0 1px #4d46552b,0 5px 18px #30252d12}
+.xy-pad:focus-visible{outline:none}
+.xy-pad canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;pointer-events:none}
 .xy-thumb{position:absolute;display:block;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #0002;box-shadow:0 2px 9px #0005,0 0 0 1px #ffffff8c;transform:translate(-50%,-50%);pointer-events:none;transition:transform .12s}
-.xy-pad.is-dragging{cursor:grabbing}.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%) scale(1.06)}
+.xy-pad.is-dragging{cursor:grabbing}
 .pad-hint{text-align:center;font-size:11px;color:#727275;margin:12px 0 8px;line-height:1.5}
 #reset-palette{display:block;margin:9px auto 18px;font-size:11px;padding:6px}
 #artwork-progress{min-height:30px;font-size:11px;line-height:1.5}
@@ -90,6 +90,22 @@ main.artwork-open .gesture-hint{visibility:hidden}
 #fill-lightness::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:32px;height:20px;margin-left:4px;border:2px solid #fff;border-radius:999px;background:#ffffffb3;box-shadow:0 0 0 1px #0003,0 2px 5px #0004}
 #fill-lightness::-moz-range-track{width:40px;height:100%;border-radius:999px;background:linear-gradient(to top,#000,var(--lightness-color),#fff);box-shadow:inset 0 0 0 1px #00000014,0 1px 3px #00000010}
 #fill-lightness::-moz-range-thumb{box-sizing:border-box;width:32px;height:20px;border:2px solid #fff;border-radius:999px;background:#ffffffb3;box-shadow:0 0 0 1px #0003,0 2px 5px #0004}
-.xy-thumb{transition:transform .24s cubic-bezier(.2,1.5,.4,1),box-shadow .2s}
-.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%) scale(1.18);box-shadow:0 3px 13px #0004,0 0 0 6px #ffffff20,0 0 22px #ffffff60}
-@media(prefers-reduced-motion:reduce){.xy-thumb{transition:none!important}.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%)}}
+/* Focus is revealed by elevation and light, never a frame around the control. */
+#fill-lightness:focus-visible{outline:none}
+#fill-lightness::-webkit-slider-thumb{transition:transform .24s cubic-bezier(.2,1.4,.4,1),box-shadow .2s;background:linear-gradient(#fff,#ffffffb3)}
+#fill-lightness::-moz-range-thumb{transition:transform .24s cubic-bezier(.2,1.4,.4,1),box-shadow .2s;background:linear-gradient(#fff,#ffffffb3)}
+#fill-lightness:focus-visible::-webkit-slider-thumb{transform:scale(1.08,1.15);box-shadow:0 5px 10px #0005,0 0 16px #ffffff99,inset 0 1px 2px #fff}
+#fill-lightness:focus-visible::-moz-range-thumb{transform:scale(1.08,1.15);box-shadow:0 5px 10px #0005,0 0 16px #ffffff99,inset 0 1px 2px #fff}
+#fill-lightness:active::-webkit-slider-thumb{transform:scale(1.12,1.35);box-shadow:0 6px 12px #0005,0 0 22px #ffffffb3,inset 0 1px 2px #fff}
+#fill-lightness:active::-moz-range-thumb{transform:scale(1.12,1.35);box-shadow:0 6px 12px #0005,0 0 22px #ffffffb3,inset 0 1px 2px #fff}
+.xy-pad{transition:box-shadow .28s}
+.xy-pad:is(:focus-visible,.is-dragging){box-shadow:0 10px 24px #30252d25,0 3px 7px #30252d18}
+.xy-thumb{transition:transform .3s cubic-bezier(.2,1.35,.4,1),box-shadow .24s;background:linear-gradient(145deg,#fff 30%,#f4f4f4)}
+.xy-pad:focus-visible .xy-thumb{transform:translate(-50%,-50%) scale(1.18);box-shadow:0 5px 12px #0004,0 0 20px #ffffffa6,inset 0 1px 2px #fff}
+.xy-pad.is-dragging .xy-thumb{transform:translate(-50%,-50%) scale(1.55);box-shadow:0 7px 16px #0004,0 0 28px #ffffffa6,inset 0 1px 2px #fff}
+@media(prefers-reduced-motion:reduce){
+ .xy-pad,.xy-thumb{transition:none!important}
+ .xy-pad:is(:focus-visible,.is-dragging) .xy-thumb{transform:translate(-50%,-50%)}
+ #fill-lightness::-webkit-slider-thumb{transition:none!important;transform:none!important}
+ #fill-lightness::-moz-range-thumb{transition:none!important;transform:none!important}
+}

@@ -54,7 +54,8 @@ try{
  check('lightness keyboard minimum changes only the lightness axis',(await state()).selection.current.appearance.lightness===0&&(await state()).selection.current.appearance.hue===originalAxes.hue&&(await state()).selection.current.appearance.saturation===originalAxes.saturation&&(await state()).city.relief===originalAxes.relief);
  const fieldPixel=()=>page.locator('#color-pad .xy-background').evaluate(c=>[...c.getContext('2d').getImageData(Math.floor(c.width/2),1,1,1).data]);
  await page.waitForTimeout(80);check('lightness zero produces a black colour field',(await fieldPixel()).slice(0,3).every(v=>v===0));
- await page.locator('#fill-lightness').press('End');await settled();await page.waitForTimeout(80);
+ await page.locator('#fill-lightness').press('End');await settled();
+ await page.waitForFunction(()=>{const c=document.querySelector('#color-pad .xy-background');return window.cupViewer.debug().selection.current.appearance.lightness===100&&[...c.getContext('2d').getImageData(Math.floor(c.width/2),1,1,1).data].slice(0,3).every(v=>v===255);});
  check('lightness maximum produces a white colour field',(await state()).selection.current.appearance.lightness===100&&(await fieldPixel()).slice(0,3).every(v=>v===255));
  const slider=await page.locator('#fill-lightness').boundingBox();
  await page.mouse.move(slider.x+slider.width/2,slider.y+10);await page.mouse.down();await page.mouse.move(slider.x+slider.width/2,slider.y+10+.45*(slider.height-20),{steps:20});await page.mouse.up();await settled();
@@ -64,15 +65,27 @@ try{
  check('cached lightness field matches HSL colour',Math.abs(pixel[0]-red)<=3&&Math.abs(pixel[1]-other)<=3&&Math.abs(pixel[2]-other)<=3);
  await shot('desktop-lightness');
  await page.locator('[data-variant="beijing-green"]').click();await settled();
+ await page.waitForFunction(()=>{const c=document.querySelector('#color-pad .xy-background'),l=window.cupViewer.debug().selection.current.appearance.lightness;return Math.abs(c.getContext('2d').getImageData(Math.floor(c.width/2),1,1,1).data[0]-Math.min(255,255*l/50))<3;});
+ const baseField=await page.locator('#color-pad .xy-background').evaluate(c=>c.toDataURL());
+ const highlightPixel=()=>page.locator('#color-pad .xy-dots').evaluate(c=>c.getContext('2d').getImageData(Math.round(c.width*.2),Math.round(c.height*8/c.clientHeight),1,1).data[3]);
  const motionPoint=await point('color-pad',.75,.7);await page.mouse.move(motionPoint.x,motionPoint.y);await page.mouse.down();await page.waitForTimeout(80);
  const dotFrame=()=>page.locator('#color-pad .xy-dots').evaluate(c=>c.toDataURL());
+ const activationAlpha=await highlightPixel();
  const firstDots=await dotFrame();await page.waitForTimeout(140);const secondDots=await dotFrame();
  const knobScale=()=>page.locator('#color-pad .xy-thumb').evaluate(e=>new DOMMatrixReadOnly(getComputedStyle(e).transform).a);
  check('pressed knob expands and nearby dots animate',await knobScale()>1.1&&firstDots!==secondDots);await shot('motion-pressed');
  await page.mouse.up();await page.waitForTimeout(850);const settledDots=await dotFrame();await page.waitForTimeout(100);
+ const restingAlpha=await highlightPixel(),baseUnchanged=await page.locator('#color-pad .xy-background').evaluate(c=>c.toDataURL())===baseField;
+ console.log('Spotlight samples',JSON.stringify({activationAlpha,restingAlpha,baseUnchanged}));
+ check('activation surface light fades without repainting the base colour field',activationAlpha>5&&restingAlpha<activationAlpha-5&&baseUnchanged);
  check('release settles the spring and stops dot animation',near(await knobScale(),1,.001)&&settledDots===await dotFrame());
  await page.emulateMedia({reducedMotion:'reduce'});await page.mouse.down();await page.waitForTimeout(80);const reducedDots=await dotFrame();await page.waitForTimeout(140);
  check('reduced motion disables temporal dot animation and knob scaling',near(await knobScale(),1,.001)&&reducedDots===await dotFrame());await page.mouse.up();await page.emulateMedia({reducedMotion:'no-preference'});
+ await page.locator('#color-pad').press('ArrowLeft');await page.waitForTimeout(400);
+ check('keyboard focus is elevated and highlighted without an outer frame',await page.locator('#color-pad').evaluate(e=>document.activeElement===e&&getComputedStyle(e).outlineStyle==='none')&&await knobScale()>1.1);
+ await page.locator('#fill-lightness').press('ArrowUp');
+ check('lightness focus keeps its accessible name without an enclosing outline',await page.getByRole('slider',{name:'明度',exact:true}).count()===1&&await page.locator('#fill-lightness').evaluate(e=>getComputedStyle(e).outlineStyle==='none'));
+
  await page.locator('[data-variant="beijing-green"]').click();await settled();
  const resources=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/cities/v5/')).length);
  for(const preset of ['gold','green','red','purple','blue']){
