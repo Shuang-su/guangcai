@@ -1,0 +1,219 @@
+{
+  "mergeCommit": "bbf645b311108b38f68d3c163e1155199278b3e0",
+  "protectedWorktreeUnchanged": true,
+  "deleteLocal": [
+    {
+      "ref": "refs/heads/codex/beijing-4.3",
+      "sha": "79222c816823783115906017d0f875cb787bf9ac"
+    },
+    {
+      "ref": "refs/heads/codex/beijing-vector-review",
+      "sha": "787c5b61858854f65f10e35363d34f116032388b"
+    },
+    {
+      "ref": "refs/heads/codex/china-3.0",
+      "sha": "5af1f73aaacbb7ce1662e4ebbe4de0f15a6f231b"
+    },
+    {
+      "ref": "refs/heads/codex/china-4.0",
+      "sha": "eadb18b4c11577dae7b51a77676220f3434d4ac1"
+    },
+    {
+      "ref": "refs/heads/codex/city-full-fill",
+      "sha": "45f65789ec8fefa2f1ca2e55ff92aad57f443271"
+    },
+    {
+      "ref": "refs/heads/codex/city-v5",
+      "sha": "8d957939f958fea772867199e59787fe78fcaeb6"
+    },
+    {
+      "ref": "refs/heads/codex/city-v5-eleven-source",
+      "sha": "743af2cb785c88ae2e7b38f585b6cab1fa9e729a"
+    },
+    {
+      "ref": "refs/heads/codex/city-v5-fourteen-black",
+      "sha": "7fe96a153e5ab0da4f774648e807205cf746dd0c"
+    },
+    {
+      "ref": "refs/heads/codex/fixed-relief-alignment",
+      "sha": "af5aa25ad51bef5efea3d8e8b5c7d0ec68a2da8b"
+    },
+    {
+      "ref": "refs/heads/codex/floral-cleanup-4.2",
+      "sha": "d62cabb343eb4411edea0032ebbfdaf739e9ea74"
+    },
+    {
+      "ref": "refs/heads/codex/hide-netlify-badge",
+      "sha": "32c586f78cb4944f4f3995590c9342aa9ba3737b"
+    },
+    {
+      "ref": "refs/heads/codex/ios-drag-pulses",
+      "sha": "b75ec07b32f2e4b9d9af3827a4a35683512d5dd0"
+    },
+    {
+      "ref": "refs/heads/codex/ios-haptics",
+      "sha": "f16bc5cbe7ff865ee61bba1a3e2a6a24e19e5f36"
+    },
+    {
+      "ref": "refs/heads/codex/ios-startup-audit",
+      "sha": "9060bba6cef02e8116c9bad3f35a63f0fa8a7889"
+    },
+    {
+      "ref": "refs/heads/codex/short-screen-lift",
+      "sha": "ac8f53a118c6695a0d8ff4a210c65e7fb985dd0b"
+    },
+    {
+      "ref": "refs/heads/codex/v4-body-seam",
+      "sha": "ae841ca3ad12e884b7a202c56e5dce459210fcb5"
+    },
+    {
+      "ref": "refs/heads/codex/v4-readme-sync",
+      "sha": "8f86dbbb86f477f1d809077dcf7251bfa9fa3569"
+    },
+    {
+      "ref": "refs/heads/codex/xy-color-material",
+      "sha": "523b49f7060a0e5c4fae6d3d6f0ff7b236be9e54"
+    }
+  ],
+  "deleteRemote": [
+    {
+      "ref": "refs/remotes/origin/codex/beijing-4.3",
+      "sha": "79222c816823783115906017d0f875cb787bf9ac"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/beijing-vector-review",
+      "sha": "787c5b61858854f65f10e35363d34f116032388b"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/china-3.0",
+      "sha": "4f1c0bc26aa1a8d45459001db495bdc13fcd2eae"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/china-4.0",
+      "sha": "eadb18b4c11577dae7b51a77676220f3434d4ac1"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/development-2.2",
+      "sha": "eacadc390571c26ac6740b24103bf6d5e0225dee"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/fixed-relief-alignment",
+      "sha": "af5aa25ad51bef5efea3d8e8b5c7d0ec68a2da8b"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/floral-cleanup-4.2",
+      "sha": "d62cabb343eb4411edea0032ebbfdaf739e9ea74"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-1.0",
+      "sha": "152a791b51faaa28e4a565809b3250cf7fc75346"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-2.0",
+      "sha": "36f4cdc532cdbe0fbc4165b2821ecf698db65fdf"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/import-2.1",
+      "sha": "8be5d4045ea48674a6c0080efd5b55672526dd82"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/reconstruct-history",
+      "sha": "e0cc1b635e1637992d2c69988664dcb4c79a0e4e"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/short-screen-lift",
+      "sha": "ac8f53a118c6695a0d8ff4a210c65e7fb985dd0b"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/v4-body-seam",
+      "sha": "ae841ca3ad12e884b7a202c56e5dce459210fcb5"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/v4-readme-sync",
+      "sha": "8f86dbbb86f477f1d809077dcf7251bfa9fa3569"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/verify-dev-handoff",
+      "sha": "a32b183dca3150318fd6e05da216c90d84e784de"
+    }
+  ],
+  "remoteAlreadyAbsent": [],
+  "remoteDeleted": [
+    "codex/beijing-4.3",
+    "codex/beijing-vector-review",
+    "codex/china-3.0",
+    "codex/china-4.0",
+    "codex/development-2.2",
+    "codex/fixed-relief-alignment",
+    "codex/floral-cleanup-4.2",
+    "codex/import-1.0",
+    "codex/import-2.0",
+    "codex/import-2.1",
+    "codex/reconstruct-history",
+    "codex/short-screen-lift",
+    "codex/v4-body-seam",
+    "codex/v4-readme-sync",
+    "codex/verify-dev-handoff"
+  ],
+  "localDeleted": [
+    "codex/beijing-4.3",
+    "codex/beijing-vector-review",
+    "codex/china-3.0",
+    "codex/china-4.0",
+    "codex/city-full-fill",
+    "codex/city-v5",
+    "codex/city-v5-eleven-source",
+    "codex/city-v5-fourteen-black",
+    "codex/fixed-relief-alignment",
+    "codex/floral-cleanup-4.2",
+    "codex/hide-netlify-badge",
+    "codex/ios-drag-pulses",
+    "codex/ios-haptics",
+    "codex/ios-startup-audit",
+    "codex/short-screen-lift",
+    "codex/v4-body-seam",
+    "codex/v4-readme-sync",
+    "codex/xy-color-material"
+  ],
+  "verifiedAt": "2026-10-16T12:01:32.603408+00:00",
+  "remoteHeads": {
+    "refs/heads/codex/source-consolidation": "0afcf96d6ad14b8fc7b29abf1c94c9121f617fac",
+    "refs/heads/main": "bbf645b311108b38f68d3c163e1155199278b3e0"
+  },
+  "pullRequests": {
+    "26": {
+      "headRefOid": "ac8f53a118c6695a0d8ff4a210c65e7fb985dd0b",
+      "mergeCommit": {
+        "oid": "bbf645b311108b38f68d3c163e1155199278b3e0"
+      },
+      "mergedAt": "2026-10-16T11:59:11Z",
+      "number": 26,
+      "state": "MERGED",
+      "url": "https://github.com/Shuang-su/guangcai/pull/26"
+    },
+    "22": {
+      "headRefOid": "79222c816823783115906017d0f875cb787bf9ac",
+      "mergeCommit": {
+        "oid": "79222c816823783115906017d0f875cb787bf9ac"
+      },
+      "mergedAt": "2026-10-16T11:59:12Z",
+      "number": 22,
+      "state": "MERGED",
+      "url": "https://github.com/Shuang-su/guangcai/pull/22"
+    },
+    "24": {
+      "headRefOid": "0afcf96d6ad14b8fc7b29abf1c94c9121f617fac",
+      "mergeCommit": null,
+      "mergedAt": null,
+      "number": 24,
+      "state": "OPEN",
+      "url": "https://github.com/Shuang-su/guangcai/pull/24"
+    }
+  },
+  "versionTagsUnchanged": true,
+  "publishedApplicationTreeUnchanged": true,
+  "newDeployPerformed": false,
+  "preMergeCheckpoint": "ac8f53a118c6695a0d8ff4a210c65e7fb985dd0b",
+  "retryTransport": "HTTP/1.1",
+  "initialPush": "cancelled after transfer stopped; ref absent before retry"
+}
