@@ -1,6 +1,6 @@
 # V5.4 iOS 触感兼容
 
-状态：实现与本地验证通过，等待本轮已授权的 V5 在线发布与回读。基线 `32c586f`，任务分支 `codex/ios-haptics`，关联既有 Issue #25。
+状态：**V5.4 已发布，线上回归及归档核验通过，真实 iPhone 震感待实机验收**。基线 `32c586f`，任务分支 `codex/ios-haptics`，关联既有 Issue #25。
 
 ## 实际改动
 
@@ -27,4 +27,20 @@ V5.3 保存的 171 项保护摘要继续作为历史证据；素材测试检查�
 
 没有连接真实 iPhone，自动化确认的是事件、参数、取消和请求路由，不能证明 Taptic Engine 实际工作。iOS switch 是系统原生反馈，不是任意强度／持续时间的网页振动 API；实际效果受系统、设备和触感设置影响。iOS 17.x 或缺少所需能力的平台静默降级，颜色和材质仍可操作。
 
-本轮未 push、创建 PR、合并或打 tag。源码 checkpoint 的 SHA 将由发布回执固定，并在后续归档 checkpoint 中写回；在线状态尚待下方发布记录确认。
+本轮未 push、创建 PR、合并或打 tag。源码 checkpoint 为 `fb2ce4078d47d618da908348c2d3eaf4a57b65bb`；发布与归档证据随紧接的独立 checkpoint 保存。
+
+## 在线发布与回读
+
+- 站点：https://guangcai-no1-china-v5.netlify.app/ 。
+- 本次不可变预览：https://6ad1f73c185ae5e7e363f9b6--guangcai-no1-china-v5.netlify.app/ 。
+- 部署 ID `6ad1f73c185ae5e7e363f9b6`，源码 `fb2ce4078d47d618da908348c2d3eaf4a57b65bb`，版本 5.4.0。
+- 只上传 6 个内容变化文件；服务端 1088 个发布条目摘要核对通过，published_deploy 与本次部署相同。
+- 完整线上浏览器回归 122 项通过；线上触感能力模拟另 53 项全部通过。页面标题、应用内容、截图、实际调色、触摸取消和控制台均已核验；手机视口为 Chrome 模拟。
+- 主域公开 release.json、目录 25 套城市图样、V5.4 标题一致；Netlify built_with_badge_enabled 仍为 false，公开页面没有 HUD 注入脚本。
+- 旧 V4、V3、早期中国杯站点的 published_deploy 不变，Git 自动部署仍关闭。缺失文件返回 404。
+- 不可变发布保存在 deployments/guangcai-no1-china-v5/6ad1f73c185ae5e7e363f9b6/，1088 个文件逐一 SHA-256 复算一致。
+- 本地 5247 生产预览保留，原 5236 预览未改。5250 开发测试服务已停止。
+
+沿用工程 Netlify 文件摘要发布脚本与现有登录。api.netlify.com 的本机 DNS 存在合成地址映射，本次先通过公开 DNS 与正常 TLS 验证实际端点，再复用仅当前 Node 进程的 DNS 修正；没有更改系统代理／DNS，也没有保存凭据。日志保留构建工具原始空白；源码与文档 diff 检查通过，不改写原始日志或部署字节。
+
+[发布回执](evidence/deploy.json) · [主域回读](evidence/production-readback.json) · [完整线上检查](evidence/online-qa.json) · [线上触感分支检查](evidence/haptics-online-qa.json) · [归档校验](evidence/archive-validation.json)。
