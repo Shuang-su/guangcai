@@ -27,9 +27,10 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  const citySelector=$<HTMLDetailsElement>('.city-selector'),mobile=matchMedia('(max-width:520px)');
  const responsive=()=>{if(mobile.matches)citySelector.open=false;};citySelector.open=false;mobile.addEventListener('change',responsive);
  let displayedTheme='',progress='',frame=0,pending:Appearance|undefined,selectedTab:'color'|'material'='color';
+ let observedAppearance:Appearance|undefined,fromPad=false;
  function flush(){
   cancelAnimationFrame(frame);frame=0;const appearance=pending;pending=undefined;
-  if(appearance)void controller.select({appearance});
+  if(appearance){fromPad=true;try{void controller.select({appearance});}finally{fromPad=false;}}
  }
  const edit=(patch:Partial<Appearance>)=>{
   const a=pending??controller.desired.appearance;if(!a)return;
@@ -77,6 +78,9 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  $('#reset-palette').onclick=()=>{cancelPending();const a=controller.desired.appearance;if(a)void controller.select({appearance:presetAppearance(a.preset)});};
  function render(){
   const s=controller.desired,v=variantFor(s.variant),pilot=isPilot(v.theme);
+  // An external preset, API update or load failure invalidates a captured gesture.
+  if(observedAppearance!==s.appearance&&!fromPad)cancelPending();
+  observedAppearance=s.appearance;
   panel.setAttribute('aria-busy',String(controller.busy));$('#creation-controls').hidden=!pilot;$('#legacy-finish').hidden=pilot;
   $('#current-city').textContent=themeFor(v).name;
   if(v.theme!==displayedTheme){
