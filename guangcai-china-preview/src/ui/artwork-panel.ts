@@ -5,13 +5,15 @@ import {createXYPad} from './xy-pad';
 import {createLightnessSlider} from './lightness-slider';
 import {colorField,materialField} from './xy-pad-background';
 import {haptics} from './haptics';
+import {isV6} from '../styles/city-selection';
+import {slogans} from '../styles/slogans';
 
 export function createArtworkPanel(controller:SelectionController,closeOtherPanels:()=>void){
  const main=document.querySelector('main')!;
  const toggle=document.createElement('button');toggle.disabled=true;toggle.id='open-artwork';toggle.className='open-artwork';toggle.textContent='城市与创作';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','artwork-settings');
  const panel=document.createElement('aside');panel.id='artwork-settings';panel.hidden=true;panel.setAttribute('aria-label','城市与创作');
  panel.innerHTML=`<div class="panel-heading"><h2>城市与创作</h2><button id="close-artwork">收起</button></div>
- <details class="city-selector"><summary>城市 <strong id="current-city"></strong></summary><div class="theme-options" role="group" aria-label="选择城市">${Object.entries(themes).map(([id,t])=>`<button data-theme="${id}">${t.name}</button>`).join('')}</div></details>
+ <details class="city-selector"><summary>城市 <strong id="current-city"></strong></summary><div class="theme-options" role="group" aria-label="选择城市">${Object.entries(themes).map(([id,t])=>`<button data-theme="${id}">${t.name}${isV6(id)?' · V6':''}</button>`).join('')}</div></details>
  <p class="field-label palette-heading">配色预设</p><div class="variant-grid" role="group" aria-label="选择配色预设"></div>
  <div id="creation-controls">
  <div class="adjust-toolbar"><div class="adjust-tabs" role="tablist" aria-label="选择调整内容"><button id="adjust-color-tab" role="tab" aria-controls="adjust-color-panel" aria-selected="true">颜色</button><button id="adjust-material-tab" role="tab" aria-controls="adjust-material-panel" aria-selected="false" tabindex="-1">材质</button></div><button id="reset-palette" class="reset-control" aria-label="恢复当前配色预设" title="恢复当前配色预设"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 5 7l4 4M5 7h7a7 7 0 1 1-6.6 9.3"/></svg></button></div>
@@ -19,7 +21,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  <div id="adjust-material-panel" role="tabpanel" aria-labelledby="adjust-material-tab" hidden><div class="pad-stage"><div class="pad-mount"></div></div></div></div>
  </div>
  <div id="legacy-finish"><label class="field-label" for="artwork-finish">材质</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select><p id="finish-note" class="note"></p></div>
- <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">城市名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option></select>
+ <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">城市名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option>${Object.entries(slogans).map(([id,t])=>`<option value="${id}">${t}</option>`).join('')}</select>
  <p class="note">切换城市保留当前创作。选择配色预设可重新开始。</p>
  <p id="artwork-progress" role="status" aria-live="polite"></p><button id="default-artwork" class="text-button">恢复默认款 · 中国纯金</button>`;
  main.append(toggle,panel);
@@ -130,7 +132,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   panel.querySelectorAll<HTMLElement>('[data-theme]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.theme===v.theme)));
   panel.querySelectorAll<HTMLElement>('[data-variant]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.variant===s.variant)));
   finish.value=s.finish;finish.disabled=isFixedGold(v);text.value=s.text;
-  for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
+  for(const option of text.options)option.hidden=isV6(v.theme)?!Object.hasOwn(slogans,option.value):Object.hasOwn(slogans,option.value)||(!themeFor(v).slogans&&['he','create'].includes(option.value));
   if(pilot&&s.appearance){
    const a=s.appearance;colorPad.setValue(colorPosition(a.hue,a.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});
    const original=presetAppearance(a.preset);

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-16T18:03:23.595Z",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "unit and contract tests",
+      "code": 0,
+      "durationMs": 3564
+    },
+    {
+      "name": "23-city/font asset checks",
+      "code": 0,
+      "durationMs": 563
+    },
+    {
+      "name": "shared consumer/dev/audit build",
+      "code": 0,
+      "durationMs": 55539
+    },
+    {
+      "name": "built V6 browser checks",
+      "code": 0,
+      "durationMs": 78226
+    },
+    {
+      "name": "legacy haptic paths in dev",
+      "code": 0,
+      "durationMs": 50838
+    }
+  ],
+  "browserChecks": 107,
+  "assetValidationDate": "2026-10-16T17:28:11.444Z",
+  "assetFingerprint": "90fca0526ac0317677dfbad0cd6b5f5f185b2b46e1c20a8a62be5368423695f6",
+  "files": 1331,
+  "physicalDevices": "pending"
+}

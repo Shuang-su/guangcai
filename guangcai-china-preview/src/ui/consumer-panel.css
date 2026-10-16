@@ -1,0 +1,75 @@
+.camera-creator .creator-tabs{overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none;height:48px;padding:0;margin:12px 0 0;display:block}
+.camera-creator .creator-tabs[hidden]{display:none}
+.camera-creator .creator-tabs button{position:absolute;top:50%;width:33.333%;height:42px;transform:translate(-50%,-50%);padding:8px 2px;font-size:15px;white-space:nowrap}
+.camera-creator .creator-indicator{left:33.333%;top:3px;width:33.333%;height:42px}
+.camera-creator .palette-loop{position:relative;overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none;height:110px;max-width:400px;margin:0 auto}
+.palette-loop .palette-tile{position:absolute;left:50%;top:50%;width:20%;padding:4px 0;border:0;background:none!important;transform:translate(-50%,-50%) scale(var(--loop-scale,1));transform-origin:center;color:#69533b!important}
+.palette-tile .palette-swatch{display:block;width:56px!important;height:56px!important;border-radius:13px;margin:0 auto 9px!important;border:1px solid #ffffff80;box-shadow:inset 0 0 0 1px #ffffff24,0 6px 16px #4b35131a!important;transform-origin:0 0}
+.palette-tile[aria-pressed=true] .palette-swatch{outline:1px solid #a3845388;outline-offset:3px}
+.palette-tile>span:last-child{font-size:12px;letter-spacing:.06em}
+.open-palette-editor{display:block;margin:3px auto 0;padding:5px 16px;border:0;background:transparent;color:#846b4d;font-size:12px;min-height:32px}
+.camera-creator .editor-toolbar{display:flex;justify-content:space-between;align-items:center;height:40px;padding:0 2px}
+.editor-handle{width:32px;height:4px;margin:0 auto 9px;border-radius:99px;background:#8b79665c}
+.icon-control{display:grid;place-items:center;width:40px;height:40px;flex:none;border:0;padding:9px;border-radius:50%;background:#ffffff20;position:relative}
+.icon-control img{width:20px;height:20px;opacity:.65;pointer-events:none}
+.camera-creator .editor-pad-transition{transform-origin:0 0}
+[data-profile=consumer] .camera-creator #creation-controls{--pad-size:168px}
+[data-profile=consumer] .camera-creator .pad-stage{padding:24px 0 25px}
+[data-profile=consumer] .camera-creator .material-pad-stage{--pad-size:168px;padding-top:8px}
+.camera-creator .material-toolbar{height:31px;display:flex;justify-content:flex-end;margin:-6px 4px 0}
+.camera-creator .material-toolbar .icon-control{width:34px;height:34px;padding:8px}
+.camera-creator [hidden]{display:none!important}
+@media(max-width:520px){.palette-tile .palette-swatch{width:50px!important;height:50px!important}.camera-creator .palette-loop{height:100px}.camera-creator .creator-tabs button{font-size:14px}}
+@media(max-height:700px) and (orientation:portrait){[data-profile=consumer] .camera-creator #creation-controls,[data-profile=consumer] .camera-creator .material-pad-stage{--pad-size:150px}}
+@media(max-height:520px) and (orientation:landscape){[data-profile=consumer] .camera-creator #creation-controls,[data-profile=consumer] .camera-creator .material-pad-stage{--pad-size:136px}}
+
+.camera-creator #reset-palette{display:grid;margin:0;width:40px;height:40px;padding:9px}
+
+.camera-creator .creator-content{transform-origin:50% 100%}
+.camera-creator[data-level=editor]{padding-top:10px}
+@media(max-width:370px){.palette-tile .palette-swatch{width:46px!important;height:46px!important}.palette-tile>span:last-child{font-size:11px;letter-spacing:0}}
+
+[data-profile=consumer] #artwork-settings.camera-creator{padding-top:6px;padding-bottom:76px}
+[data-profile=consumer] #artwork-settings.camera-creator[data-level=editor]{padding-bottom:20px}
+[data-profile=consumer] #artwork-settings.camera-creator.is-resizing{overflow:hidden}
+.camera-creator .creator-tabs{position:absolute;left:50%;right:auto;bottom:12px;width:calc(100% - 48px);max-width:420px;transform:translateX(-50%);margin:0}
+.panel-handle{display:block;width:64px;height:24px;padding:10px 16px;margin:0 auto 4px;border:0;background:transparent;touch-action:none}
+.panel-handle span{display:block;width:32px;height:4px;border-radius:99px;background:#8b79665c}
+.camera-creator[data-collapsed=true] .panel-handle{margin-bottom:0}
+.camera-creator .city-cards{position:relative;display:block;height:112px;padding:0;overflow:hidden;touch-action:pan-y;scrollbar-width:none}
+.camera-creator .city-card{position:absolute;top:50%;left:50%;width:calc(25% - 6px);height:100px;padding:10px 3px 3px;display:flex;justify-content:space-between;transform:translate(-50%,-50%) scale(var(--loop-scale,1));border:1px solid #ad8b5b55;border-radius:13px;background:transparent!important;box-shadow:none!important;text-align:center;user-select:none;-webkit-user-select:none}
+.camera-creator .city-card[aria-pressed=true]{border-color:#a77d40;border-width:1.5px}
+.camera-creator .city-card>span{padding:0;font-size:13px;line-height:20px;white-space:nowrap}
+.camera-creator .city-card>img{width:100%;height:61px;object-fit:contain;object-position:center bottom;mix-blend-mode:normal;opacity:1;pointer-events:none}
+.camera-creator .color-pad-row .pad-mount{transform-origin:0 0}
+@media(min-width:521px){.camera-creator .city-card>span{font-size:16px}.camera-creator .city-card{height:118px}.camera-creator .city-cards{height:130px}.camera-creator .city-card>img{height:79px}}
+/* Native scroll snapping must not shift a transform-driven cyclic strip. */
+.camera-creator .city-cards{overflow:clip;scroll-snap-type:none}
+.camera-creator .city-card{scroll-snap-align:none}
+.camera-creator .creator-tabs,.camera-creator .palette-loop{overflow:clip}
+@media(max-width:520px){.camera-creator .city-cards{height:88px}.camera-creator .city-card{height:76px;padding-top:7px}.camera-creator .city-card>img{height:42px}.camera-creator .city-card>span{line-height:18px}}
+
+[data-profile=consumer] #artwork-settings.camera-creator[data-collapsed=true]{padding:0;width:min(420px,calc(100% - 72px));height:48px}
+.camera-creator[data-collapsed=true] .creator-tabs{position:relative;left:0;bottom:auto;width:100%;max-width:none;transform:none}
+[data-glass-state=ready] .camera-creator .creator-glass{border:0;background:transparent;box-shadow:none}
+/* Gold UI ink stays dark enough to read over porcelain and tinted glass. */
+[data-profile=consumer]{--accent:#926623;--ui-gold:#886426;--ui-gold-active:#805418}
+.camera-creator .creator-tabs button,.camera-creator .palette-tile,.camera-creator .city-card>span,.camera-creator .open-palette-editor{color:var(--ui-gold)!important}
+.camera-creator .creator-tabs button[aria-selected=true],.camera-creator .palette-tile[aria-pressed=true]{color:var(--ui-gold-active)!important}
+.camera-creator .creator-tabs{background:#fff9;backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2)}
+.camera-creator .creator-indicator{background:#f4e1b45c!important;box-shadow:inset 0 0 0 1px #fff9}
+.camera-creator .icon-control{background:#fff9;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px #ffffff80}
+[data-glass-state=ready] .camera-creator .palette-swatch{background:transparent!important;box-shadow:inset 0 0 0 1px #ffffff55!important}
+[data-glass-state=ready] .camera-creator .creator-tabs{background:#ffffff24;backdrop-filter:none;-webkit-backdrop-filter:none}
+[data-profile=consumer] .consumer-actions button,[data-profile=consumer] .view-rail button{color:var(--ui-gold);background:#ffffff45;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+[data-profile=consumer] .view-rail button[aria-pressed=true]{color:var(--ui-gold-active);background:#f1d39b80}
+.camera-creator .city-card{background:rgba(255,251,242,.62)!important;backdrop-filter:blur(18px) saturate(1.05);-webkit-backdrop-filter:blur(18px) saturate(1.05)}
+.camera-creator .city-card[aria-pressed=true]{background:rgba(255,247,229,.78)!important}
+.camera-creator .slogan-grid button{color:var(--ui-gold);background:#fffbf2a6;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+[data-glass-state=ready] .camera-creator .city-card,[data-glass-state=ready] .camera-creator .slogan-grid button{background:#fffaf01a!important;backdrop-filter:none;-webkit-backdrop-filter:none}
+[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background:#f5db9d33!important;border-color:#a47b35;color:var(--ui-gold-active);font-weight:600}
+.camera-creator .creator-indicator{left:37%;width:26%;top:6px;height:36px}
+.camera-creator .creator-tabs button{width:28%;height:38px}
+.camera-creator .city-card,.camera-creator .slogan-grid button{border:0!important}
+.camera-creator .palette-tile[aria-pressed=true] .palette-swatch{outline:none}
+[data-glass-state=ready] .camera-creator .city-card[aria-pressed=true],[data-glass-state=ready] .camera-creator .slogan-grid button[aria-pressed=true]{background:#eedbb866!important;box-shadow:none!important}

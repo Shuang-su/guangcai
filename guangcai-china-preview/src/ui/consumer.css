@@ -1,0 +1,64 @@
+html[data-profile=consumer]{--accent:#996a2e;--line:#8e70422e;background:#faf9f5;color:#4d4135}
+[data-profile=consumer] main{position:relative;isolation:isolate;height:100dvh}
+#glass-content{position:absolute;inset:0;background:#faf9f5}
+[data-profile=consumer] #viewport{position:absolute;inset:0}
+[data-profile=consumer] .consumer-actions{position:absolute;left:22px;top:max(20px,env(safe-area-inset-top));display:flex;gap:4px;z-index:2}
+[data-profile=consumer] .consumer-actions button{background:#ffffff40;border:0;border-radius:999px;padding:10px 14px;color:#79654c;font-size:12px}
+.view-rail{position:absolute;right:0;top:13%;z-index:2;display:flex;flex-direction:column;gap:5px}
+.view-rail button{border:0;background:transparent;border-radius:25px 0 0 25px;padding:11px 16px 11px 20px;color:#9b7a50;font-size:13px;min-height:40px;min-width:64px}
+.view-rail button[aria-pressed=true]{background:#eac88255;color:#754514;font-weight:600;box-shadow:inset 0 0 0 1px #e8ca9955}
+[data-profile=consumer] #artwork-settings{top:auto;left:50%;right:auto;bottom:max(16px,env(safe-area-inset-bottom));width:min(620px,calc(100% - 28px));height:auto;max-height:none;transform:translateX(-50%);padding:12px 12px 20px;border:0;background:none;backdrop-filter:none;box-shadow:none;border-radius:28px;overflow:visible;z-index:3}
+.creator-glass{position:absolute;inset:0;pointer-events:none;z-index:-1;border:1px solid #ffffffa3;background:#fff8;box-shadow:0 12px 36px #66522a16;border-radius:28px;backdrop-filter:blur(16px)}
+[data-glass-state=ready] .creator-glass{background:#ffffff09;backdrop-filter:none;border-color:#ffffff25}
+.creator-tabs{position:relative;display:flex;gap:0;height:52px;border-radius:999px;padding:4px;margin:0 0 16px;isolation:isolate}
+.creator-tabs button{position:relative;flex:1;min-width:0;padding:10px 4px;border:0;background:none;font-size:15px;color:#827569;z-index:1;border-radius:24px}
+.creator-tabs button[aria-selected=true]{color:#79491e;font-weight:600}
+.creator-indicator{position:absolute;left:4px;top:4px;width:calc((100% - 8px)/3);height:44px;pointer-events:none;background:#ffffff32;border-radius:999px}
+[data-glass-state=ready] .creator-indicator{background:#ffffff05}
+.creator-content{position:relative}.creator-content>[hidden]{display:none}
+.city-cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding:3px 6px 8px;scrollbar-width:thin;scrollbar-color:#b6956144 transparent}
+.city-card{position:relative;flex:0 0 178px;height:102px;scroll-snap-align:center;overflow:hidden;padding:12px 0 0;border-radius:16px;border:1px solid #ad8b5b44;background:#ffffff20;display:flex;flex-direction:column;text-align:right;justify-content:space-between}
+.city-card>span{padding:0 14px;font-family:'Songti SC',serif;font-size:18px;line-height:1.2;color:#826342}
+.city-card>img{width:100%;height:67px;object-fit:contain;mix-blend-mode:multiply;opacity:.85}
+.city-card[aria-pressed=true]{background:#ffefd045;border:1.5px solid #aa7e3b;box-shadow:0 4px 12px #b18e3c13}
+.slogan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:4px 6px 8px}
+.slogan-grid button{padding:16px 4px;border-color:#ad8b5b40;background:#ffffff25;border-radius:14px;font-size:14px;white-space:nowrap}
+.slogan-grid button[aria-pressed=true]{background:#eac88255;color:#754514;border-color:#aa7e3b}
+[data-profile=consumer] .palette-heading{display:none}
+[data-profile=consumer] #artwork-settings .variant-grid.palette-grid{margin:2px 0 10px;gap:6px}
+[data-profile=consumer] .palette-grid .variant-card{background:none;border:0;color:#8b7964;padding:4px 1px;box-shadow:none}
+[data-profile=consumer] .palette-grid .variant-card[aria-pressed=true]{color:#754514;font-weight:600}
+[data-profile=consumer] .palette-swatch{width:37px;height:37px;margin:0 auto 6px;box-shadow:inset 0 0 0 2px #ffffff45,0 2px 7px #594e2c18}
+[data-profile=consumer] .variant-card[aria-pressed=true] .palette-swatch{outline:1px solid #ae8749;outline-offset:3px}
+[data-profile=consumer] .adjust-tabs{background:#b4a48919}
+[data-profile=consumer] .adjust-tabs button[aria-selected=true]{background:#fff9;box-shadow:0 1px 4px #80693814}
+[data-profile=consumer] #creation-controls{--pad-size:190px;max-width:430px;margin:auto}
+[data-profile=consumer] .pad-stage{padding:27px 0 18px}
+[data-profile=consumer] #artwork-progress{min-height:0}
+[data-profile=consumer] #status{bottom:auto;top:70px;z-index:5;background:#ffffffe0;color:#7a6448;font-size:12px}
+[data-profile=consumer] #fatal{z-index:8}
+@media(max-width:520px){
+ [data-profile=consumer] #artwork-settings{width:calc(100% - 24px);bottom:max(12px,env(safe-area-inset-bottom));padding:10px 10px 15px}
+ .creator-tabs{margin-bottom:10px;height:48px}.creator-tabs button{font-size:14px}.creator-indicator{height:40px}
+ .view-rail{top:12%;gap:1px}.view-rail button{font-size:12px;padding:9px 12px 9px 17px;min-height:36px;min-width:55px}
+ .city-card{flex-basis:155px;height:96px}.city-card>span{font-size:17px}.city-card>img{height:61px}
+ .slogan-grid{gap:8px}.slogan-grid button{padding:15px 2px;font-size:13px}
+ [data-profile=consumer] #creation-controls{--pad-size:min(190px,24dvh)}
+ [data-profile=consumer] .palette-swatch{width:32px;height:32px}
+ [data-profile=consumer] .consumer-actions{left:12px;top:max(14px,env(safe-area-inset-top))}
+}
+@media(max-height:700px) and (orientation:portrait){
+ [data-profile=consumer] #creation-controls{--pad-size:150px}
+ [data-profile=consumer] #artwork-settings{bottom:max(8px,env(safe-area-inset-bottom));padding-bottom:10px}
+ [data-profile=consumer] .pad-stage{padding:24px 0 16px}
+ .view-rail{top:10%}.view-rail button{min-height:29px;padding-top:6px;padding-bottom:6px;font-size:11px}
+}
+@media(max-height:520px) and (orientation:landscape){
+ [data-profile=consumer] #artwork-settings{left:auto;right:14px;bottom:14px;transform:none;width:330px;max-height:calc(100dvh - 28px);overflow-y:auto}
+ [data-profile=consumer] #creation-controls{--pad-size:120px}.view-rail{left:10px;right:auto;top:68px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:180px}.view-rail button{min-width:0;padding:7px;border-radius:16px}
+ [data-profile=consumer] .pad-stage{padding:20px 0 16px}
+}
+
+[data-profile=consumer] #status:empty{visibility:hidden}
+/* Keep the SVG-filtered live scene in its own stable paint coordinate space. */
+[data-profile=consumer] #glass-content{will-change:transform;transform:translateZ(0)}

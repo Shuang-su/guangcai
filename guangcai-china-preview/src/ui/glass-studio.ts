@@ -1,0 +1,45 @@
+import {createGlassScene,type GlassSceneController,type SurfaceOptions} from '../../vendor/glass-hq/src/dom/index';
+import {getMaterialRenderer} from '../../vendor/glass-hq/src/dom/renderer';
+import {disposeMaterialRenderer} from '../../vendor/glass-hq/src/webgl2/index';
+import {registerShapeContainer} from '../../vendor/glass-hq/src/dom/shape-layout';
+import {palettes,type Palette} from '../styles/city-appearance';
+import '../../vendor/glass-hq/src/styles.css';
+
+/** Original Glass-HQ materials on visible UI; input and haptic nodes stay intact. */
+export function createGlassStudio(){
+ const root=document.querySelector<HTMLElement>('.consumer-scene')!,content=document.querySelector<HTMLElement>('#glass-content')!;
+ let scene:GlassSceneController|undefined,disposed=false,optionFrame=0,optionObserver:MutationObserver|undefined;
+ const optionSurfaces=new Map<HTMLElement,()=>void>();let releaseCityClip=()=>{};
+ const clearOptions=()=>{cancelAnimationFrame(optionFrame);optionObserver?.disconnect();optionObserver=undefined;optionSurfaces.forEach(release=>release());optionSurfaces.clear();releaseCityClip();releaseCityClip=()=>{};};
+ let state:{backend:string;ready:boolean;maps:number;mapTime:number;error:string}={backend:'webgl2',ready:false,maps:0,mapTime:0,error:''};
+ root.dataset.glassState='preparing';
+ const fallback=(e:unknown)=>{if(disposed)return;clearOptions();scene?.dispose();scene=undefined;root.dataset.glassState='fallback';state={...state,backend:'transparent-fallback',ready:false,error:String(e)};};
+ void getMaterialRenderer().then(async renderer=>{
+  await renderer.warmed;if(disposed)return;
+  scene=createGlassScene(root,{onDiagnostic:d=>{if(disposed)return;if(d.error){queueMicrotask(()=>fallback(d.error));return;}state={...state,maps:d.maps,mapTime:d.mapTime,ready:d.maps>0};if(state.ready)root.dataset.glassState='ready';}});
+  scene.setContent(content);
+  // The panel owns its DOM height transition. A second layout spring would
+  // restart against every intermediate height and keep the optical frame chasing it.
+  // Register the content container, so nested lenses are true descendants.
+  // A decorative sibling background is a foreground lens to upstream's compositor.
+  scene.addSurface(document.querySelector<HTMLElement>('#artwork-settings')!,{material:'clear',radius:28});
+  const tabs=document.querySelector<HTMLElement>('.creator-tabs')!,indicator=document.querySelector<HTMLElement>('.creator-indicator')!;
+  scene.addSurface(tabs,{material:'regular',radius:'capsule',refraction:18});
+  scene.addSurface(indicator,{material:'regular',radius:'capsule',refraction:12});
+  releaseCityClip=registerShapeContainer(document.querySelector<HTMLElement>('.city-cards')!,0);
+  const candidates:Array<[HTMLElement,SurfaceOptions]>=[
+   ...Array.from(document.querySelectorAll<HTMLElement>('[data-palette]'),tile=>[tile.querySelector<HTMLElement>('.palette-swatch')!,{material:'clear',radius:13,tint:palettes[tile.dataset.palette as Palette].dark,refraction:26}] as [HTMLElement,SurfaceOptions]),
+   ...Array.from(document.querySelectorAll<HTMLElement>('.city-card,.slogan-grid button'),element=>[element,{material:'regular',radius:13,refraction:14,...(element.classList.contains('city-card')?{concentric:{inset:0}}:{})}] as [HTMLElement,SurfaceOptions])
+  ];
+  const syncOptions=()=>{
+   optionFrame=0;if(!scene||disposed)return;
+   const visible=new Set(candidates.filter(([element])=>!element.closest('[hidden]')&&getComputedStyle(element).visibility!=='hidden').map(([element])=>element));
+   for(const [element,release] of optionSurfaces)if(!visible.has(element)){release();optionSurfaces.delete(element);}
+   for(const [element,options] of candidates)if(visible.has(element)&&!optionSurfaces.has(element))optionSurfaces.set(element,scene.addSurface(element,options));
+  };
+  optionObserver=new MutationObserver(()=>{if(!optionFrame)optionFrame=requestAnimationFrame(syncOptions);});
+  optionObserver.observe(document.querySelector('#artwork-settings')!,{subtree:true,attributes:true,attributeFilter:['aria-hidden','hidden','data-pane','data-level','data-collapsed']});syncOptions();
+  // The three-slot ring uses the same upstream Spring, with a fixed central lens.
+ }).catch(fallback);
+ return {debug:()=>({...state,optionSurfaces:optionSurfaces.size}),dispose(){disposed=true;clearOptions();scene?.dispose();scene=undefined;void disposeMaterialRenderer();}};
+}

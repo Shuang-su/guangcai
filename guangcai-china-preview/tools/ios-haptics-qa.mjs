@@ -91,7 +91,7 @@ try{
   check('reduced motion suppresses requests',(await state()).haptics.requests===quiet);
   if(backend!=='vibration')check('reduced motion removes native gesture interception',await page.locator('.ios-haptic-surface').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).pointerEvents==='none')));
   await page.emulateMedia({reducedMotion:'no-preference'});await page.locator('#close-artwork').tap();
-  check('latest city options preserved',await page.locator('[data-theme]').count()===26);
+  check('latest city options preserved',await page.locator('[data-theme]:not([data-theme^="v6-"])').count()===26);
   check('no application errors',errors.length===0);record.finalHaptics=(await state()).haptics;
   await page.evaluate(()=>window.cupViewer.dispose());
   check('app disposal removes all native helpers',await page.locator('[data-haptic-switch],[data-haptic-legacy]').count()===0);

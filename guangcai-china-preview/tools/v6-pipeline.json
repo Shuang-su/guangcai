@@ -1,0 +1,14 @@
+{
+  "siteId": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+  "siteName": "guangcai-no1-china-v6",
+  "protectedSiteIds": [
+    "b1fce272-cf28-41e5-8366-024c314b615f",
+    "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+    "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+    "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f"
+  ],
+  "review": "assets/masters/v6/review.json",
+  "build": ".codex-work/deploy/v6-build",
+  "work": ".codex-work/deploy/v6-release",
+  "localPort": 5261
+}

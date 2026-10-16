@@ -1,0 +1,23 @@
+import cities from '../styles/city-catalog-v6.json';
+import {slogans} from '../styles/slogans';
+import {glassCases,comparePixels} from './cases';
+import './index.css';
+document.querySelector('#app')!.innerHTML=`<main><header><h1>V6 对比审计</h1><nav><a href="/">用户预览</a><a href="/dev/">开发工作台</a><a href="https://guangcai-no1-china-v5.netlify.app/" target="_blank" rel="noopener">V5 历史预览</a></nav></header><section><h2>Glass-HQ · 两个材质后端</h2><p>同一份几何、材质公式、SVG 合成与动效控制器。WebGL2 生成位移与边缘覆盖图；WebGPU 保留原实现。固定上游 <a href="https://github.com/Glass-HQ/liquid-glass/tree/9f5bfc7daa7be5d20a41b94d841b8f065de655fc" target="_blank" rel="noopener">9f5bfc7</a>。</p><div class="glass-pair"><div><h3>WebGL2 · V6 默认</h3><iframe id="gl" src="/audit/glass.html?backend=webgl2" title="WebGL2 实时玻璃" loading="lazy"></iframe></div><div><h3>WebGPU · 上游对照</h3><iframe id="gpu" src="/audit/glass.html?backend=webgpu" title="WebGPU 原版实时玻璃" loading="lazy"></iframe></div></div><button id="compare">运行 ${glassCases.length} 组材质图对照</button><button id="motion">同步切换动效</button><p id="compare-state" role="status">点击运行后使用当前设备实际生成两套像素；不支持 WebGPU 时明确显示未完成。</p><div class="plane-pair"><canvas id="plane-gl"></canvas><canvas id="plane-gpu"></canvas><canvas id="plane-diff"></canvas></div><pre id="comparison"></pre></section><section><h2>23 城 · 全填色检查</h2><p>展开区 5433 × 2365；运行通道 4096 × 1783。金线固定，填色独立；内部不处理镂空。<a href="/cities/v6/derivation.json">来源与编译记录</a></p><div class="cities">${Object.entries(cities.cities).map(([id,c])=>`<article><h3>${c.name}</h3><a href="/review/v6/${id}-flat.png" target="_blank"><img src="/cities/v6/${c.thumbnail}" alt="${c.name}填色检查" loading="lazy"></a><p><a href="/review/v6/${id}-source.png" target="_blank">原稿</a> · <a href="/review/v6/${id}.svg" target="_blank">母版 SVG</a> · <a href="/review/v6/${id}-line-review.png" target="_blank">结构线</a></p></article>`).join('')}</div></section><section><h2>六组祝福语 · 东方大楷与原稿边框</h2><p>WOFF 与 WOFF2 两种格式均实际渲染并检查；文字、边框固定金色。<a href="/cities/v6/slogans.json">字体生成记录</a> · <a href="/cities/v6/slogan-frame.svg">边框 SVG</a></p><div class="slogans">${Object.entries(slogans).map(([id,t])=>`<figure><img src="/cities/v6/slogan-${id}-proof.webp" alt="${t}竖排金字边框" loading="lazy"><figcaption>${t}</figcaption></figure>`).join('')}</div></section><section><h2>验收记录</h2><p>本页的材质图对照反映当前设备结果。iPhone Air / Safari 27.0.1 与 iPhone 16 / Safari 26.6.1 的玻璃、短屏放大和实际脉冲仍需真机验收；浏览器模拟不代表触觉验收。</p><a href="/audit/verification.json">本次构建的验证记录</a> · <a href="/release.json">线上发布记录</a></section></main>`;
+const $=<T extends HTMLElement>(selector:string)=>document.querySelector<T>(selector)!;
+const api=(id:string)=>{const frame=$<HTMLIFrameElement>('#'+id);return (frame.contentWindow as any)?.glassAudit;};
+function plane(id:string,p:{width:number;height:number;pixels:number[]},difference?:number[]){const c=$<HTMLCanvasElement>(id);c.width=p.width;c.height=p.height*2;const ctx=c.getContext('2d')!,image=ctx.createImageData(c.width,c.height);image.data.set(difference??p.pixels);ctx.putImageData(image,0,0);}
+let result:unknown;
+async function run(){
+ $('#compare').setAttribute('disabled','');$('#compare-state').textContent='正在分别生成材质图…';
+ try{
+  const a=api('gl'),b=api('gpu');if(!a?.status().ready||!b?.status().ready)throw new Error(`后端尚未就绪：${JSON.stringify({webgl2:a?.status(),webgpu:b?.status()})}`);
+  const [gl,gpu]=await Promise.all([a.renderMany(glassCases),b.renderMany(glassCases)]);
+  const comparisons=gl.map((p:any,i:number)=>({geometry:glassCases[i],...comparePixels(p,gpu[i])}));
+  const sample=2;plane('#plane-gl',gl[sample]);plane('#plane-gpu',gpu[sample]);plane('#plane-diff',gl[sample],gl[sample].pixels.map((v:number,i:number)=>i%4===3?255:Math.min(255,Math.abs(v-gpu[sample].pixels[i])*32)));
+  result={date:new Date().toISOString(),backendBaseline:'Glass-HQ 9f5bfc7',passed:comparisons.every((x:any)=>x.passed),comparisons};
+  $('#comparison').textContent=JSON.stringify(result,null,2);$('#compare-state').textContent=(result as any).passed?'材质图对照通过：差异已记录。':'材质图存在超出阈值的差异，需要检查。';return result;
+ }catch(e){$('#compare-state').textContent='未完成：'+String(e);throw e;}finally{$('#compare').removeAttribute('disabled');}
+}
+$('#compare').onclick=()=>void run().catch(()=>{});
+let selected=0;$('#motion').onclick=()=>{selected=(selected+1)%3;for(const id of ['gl','gpu'])$<HTMLIFrameElement>('#'+id).contentDocument?.querySelectorAll<HTMLButtonElement>('[role=tab]')[selected]?.click();};
+Object.assign(window,{v6Audit:{run,result:()=>result}});

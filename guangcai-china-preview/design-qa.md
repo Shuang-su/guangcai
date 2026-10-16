@@ -1,0 +1,63 @@
+# V6 consumer design QA — 2026-10-17
+
+final result: passed
+
+Scope: the supplied cup layout plus camera/color videos, **as revised by the user's explicit UI corrections**. This is an implementation review, not user aesthetic approval or iPhone device acceptance.
+
+## Visual truth and normalized evidence
+
+- Full layout: supplied `素材原件/低代码V2.2~V2.5/永丰源-添彩3.png`, 750×1624, normalized to 393×852. Current `consumer-presets.png` is 393×852 CSS px, DPR 1. Combined input: `.codex-work/tmp/v6-qa/comparison-layout.png`.
+- Five-color state and expanded color state: supplied `素材原件/色盘/ScreenRecording_10-16-2026 13-25-46_1.mov`, source contact sheet `.codex-work/tmp/v6-reference/color-old-0.jpg`; matched overview/editor crops normalized to 393px wide. Current captures: `.codex-work/tmp/v6-qa/final/consumer-presets.png` and `color-393x852.png`. Combined focused comparison: `.codex-work/tmp/v6-qa/comparison-controls.png`.
+- Main loop reference: supplied `ScreenRecording_10-17-2026 00-44-33_1.mov`, contact sheet `.codex-work/tmp/v6-reference/color-video-contact.jpg`. User correction sets four categories, three visible, bidirectional; latest correction places the strip at the bottom.
+- Actual-browser review: local Chrome at `http://127.0.0.1:5260/`; in-app browser tab 12 separately opened and screenshot-reviewed. Browser plugin is not available; repo Playwright used for repeatable QA. Console/page exceptions checked by the QA runner.
+
+Reference camera UI and product UI have different content, background and density. Only relevant control regions are compared for behavior; this report does not claim full-screen pixel identity.
+
+## Findings and iteration history
+
+1. [P1, fixed] Initial UI used three static categories and exposed the color pad immediately. Replaced with four cyclic categories (city/color/material/slogan), with three visible, and two-level color navigation.
+2. [P2, fixed] First cyclic prototype showed only three presets. User explicitly requires all five simultaneously. Five square presets now remain visible at rest; both directions wrap, and clicking an outer preset selects that precise preset.
+3. [P2, fixed] Initial secondary header mixed a palette title and H/S/L readout with back/reset. Removed visible text, aligned icon buttons on one row, added the requested centered short handle. Accessible names remain.
+4. [P2, fixed] Category strip was above content. Moved its actual DOM after content; body/menu order now agrees visually and for keyboard navigation. Entry label is “自定义”.
+5. [P2, fixed] Slogan text was oversized and touched the lower curls. Font remains official Regular/400; size reduced from 0.56 to 0.44 frame width and four glyph centers spaced. WOFF/WOFF2 masks match. Exact optical stroke weight compared with AI reference is a user aesthetic follow-up, not a claim of matching a different font.
+6. Post-fix combined screenshots above show five presets, bottom category strip, clear glass surface, aligned secondary controls and short handle. No current clipping/overlap in six tested viewport sizes.
+
+## Required fidelity surfaces
+
+- Typography: UI uses existing legible system font; selected labels retain contrast and weight. Cup uses supplied Dongfang DaKai Regular without synthetic bold. No missing slogan glyphs. Smaller nonselected preset labels fit all five columns.
+- Spacing/layout: selected central square is enlarged; secondary pad expands from selected square and shrinks back; category content has scale/fade transition. Back/reset are equal 40px boxes at aligned edges; short-screen 1.24 press enlargement is retained. No horizontal overflow at 360×640, 375×667, 393×715, 393×852, 852×393 and 1365×900.
+- Colors/tokens: existing five product palettes retained; gold lines/text/frame remain independent. Light translucent Glass-HQ surfaces intentionally replace dark camera panels and opaque yellow mockup card. Keyboard focus ring remains visible.
+- Image quality: actual Three.js cup, supplied city artwork and original fixed floral textures are used. Frame is traced SVG from the supplied PNG at user's request; icons are licensed Heroicons assets. Palette gradients and pad are functional parameter controls, not substitute image artwork.
+- Copy/content: seven right controls are camera views; category names are 城市／色彩／质感／祝福语. “自定义” only; no visible H/S/L readout. No marketing headings, account, works gallery or publish buttons per scope.
+
+## Interaction evidence and intentional differences
+
+Both category directions wrap through all four; palette directions wrap through all five. Current preset opens the editor; side preset selection updates the cup; back keeps the choice. Reused XY/lightness inputs keep the original touch/haptic nodes; rapid edits change parameters without loading city maps. The main category bar hides during editor use. Reduced-motion disables transition movement.
+
+The vertical lightness rail remains beside the color pad, matching the established cup controls; the reference's horizontal adjustment rail is not introduced. Cup framing is interactive and replaces the static reference product image. Decorative marketing copy and bottom app navigation are intentionally absent.
+
+## Follow-up and acceptance boundaries
+
+- iPhone Air Safari 27.0.1 and iPhone 16 Safari 26.6.1: real SVG-composition performance, physical pulse and touch feel remain pending device acceptance.
+- Minor optical spacing/material tone can be adjusted after the user tries this preview; no unresolved P0/P1/P2 implementation finding in the reviewed states.
+- Full checks and source manifests are recorded in the preparation/release evidence; screenshots do not substitute for actual motor verification.
+
+## Final live-feedback iteration
+
+User requested a centered city carousel with **three complete cards and two half cards**, transparent line thumbnails, less empty space inside cards, collapsible first-level panel, inset bottom menu text, blur transitions, and a calmer glass frame. The new `.city-cards` uses a four-slot pitch with five visible identities; original scroll-snap was removed after it moved transform-positioned cards out of view. This regression was reproduced, fixed with `overflow: clip` and no native snap, and checked again in the actual browser. Transparent alpha thumbnails are cropped from the unchanged line channel; card height is reduced on mobile.
+
+The top handle now works for click and vertical swipe. Collapsed state keeps the handle and bottom categories; selecting a category reopens it. Blur/fade/scale transitions surround category changes, with one 420ms DOM height transition. The color pad grows from the selected swatch with subtle overshoot; lightness and toolbar have delayed reveals. Existing input nodes are reused.
+
+[P1, fixed] User observed a repeatedly popping background frame. Both the page height transition and upstream `fluid` layout spring were active. Consumer outer glass now follows the page's single size transition; audit retains the original fluid demonstration. Idle screenshot comparison after transition shows no repeated frame movement (only a small number of pixels from existing control afterglow). `panel-settling.json` and repeated screenshot assertion record this check.
+
+Final captures: `.codex-work/tmp/v6-qa/final/consumer-city.png`, `consumer-presets.png`, `color-360x640.png`, `color-393x852.png`; short-screen image was opened and reviewed after these fixes. Final QA is scoped to implemented requirements and browser evidence; physical-device and subjective typography approval remain separate.
+
+Durable selected evidence is saved under `evidence/ui-v6/` (latest layout comparison, city, presets, normal/short-screen editor, pressed state, dev and audit). Supplied layout and live-feedback screenshots are preserved under `assets/source/v6/references/` with SHA-256 provenance.
+
+## Final material and clipping corrections
+
+User's live screenshots revealed a remaining embedded-window composition problem after the earlier idle-frame check. Independent Chrome screenshots alone were insufficient. The consumer now registers the actual content container as the outer surface, with a single height/width animation; shrinking reaches exactly the bottom menu's rectangle. No experimental SVG coordinate changes were retained in upstream source. Original background, compositor, materials and shape controllers remain.
+
+Cities and slogans now use upstream **Regular** frosted liquid glass, and palette swatches use **Clear + tint**. Only visible option surfaces are registered (up to six); the 23-city catalog is not rendered as 23 lenses. A reproduced optical overflow at the two half cards is fixed using the original `registerShapeContainer` / `concentric` resolver, so both DOM and optical geometry respect the carousel boundary. Selected options use pale gold fill rather than extra CSS outlines; the central category lens is 26% of the strip, leaving space to adjacent labels.
+
+The reset icon rotation and 420ms parameter interpolation are restored. Pad and lightness expansion start together. Main menu and secondary navigation taps request one haptic through the existing native-button path; continuous drag haptic source files remain unchanged. Latest screenshots are re-captured for release; physical confirmation remains pending.
