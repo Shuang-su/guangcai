@@ -1,0 +1,71 @@
+{
+  "version": 8,
+  "method": "Float32 semantic silhouette/ink height, 16-bit height masters, RGBA16F tangent normals; lossless runtime data",
+  "precisionNote": "Resampling preserves source motifs; it does not create missing source detail.",
+  "seam": {
+    "generatedSource": "assets/masters/v3-hq/seam-repair-generated.png",
+    "prompt": "assets/masters/v3-hq/seam-prompt.txt",
+    "crop": [
+      0,
+      85,
+      2172,
+      637
+    ],
+    "patchWidthSourcePixels": 768,
+    "featherSourcePixels": 128,
+    "periodicU": true
+  },
+  "regions": {
+    "body": {
+      "sourceSize": [
+        637,
+        1534
+      ],
+      "size": [
+        1024,
+        2466
+      ],
+      "normalCompressedBytes": 5666823,
+      "normalRawBytes": 20201488,
+      "floatHeightLevels": 1146978,
+      "savedHeightLevels": 12909,
+      "creamMeanMetalness": 0.0004181804833933711,
+      "boundaryColorMeanDelta": null,
+      "normalHalfFloatMaxError": 0.000244140625
+    },
+    "handle": {
+      "sourceSize": [
+        148,
+        1724
+      ],
+      "size": [
+        320,
+        3728
+      ],
+      "normalCompressedBytes": 2816088,
+      "normalRawBytes": 9543696,
+      "floatHeightLevels": 690135,
+      "savedHeightLevels": 12202,
+      "creamMeanMetalness": 0.0001834377326304093,
+      "boundaryColorMeanDelta": null,
+      "normalHalfFloatMaxError": 0.000244140625
+    },
+    "saucer": {
+      "sourceSize": [
+        6924,
+        195
+      ],
+      "size": [
+        8192,
+        384
+      ],
+      "normalCompressedBytes": 7950113,
+      "normalRawBytes": 25165840,
+      "floatHeightLevels": 1393341,
+      "savedHeightLevels": 12373,
+      "creamMeanMetalness": 2.1759860828751698e-05,
+      "boundaryColorMeanDelta": 12.25954861111111,
+      "normalHalfFloatMaxError": 0.000244140625
+    }
+  }
+}

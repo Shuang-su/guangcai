@@ -109,6 +109,8 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 
 源码 `fb2ce40`，部署 `6ad1f73c185ae5e7e363f9b6`；线上 122 项完整回归及 53 项触感分支模拟通过，1088 个发布文件与不可变快照摘要核对完成。Netlify 标识继续关闭，旧站不变；未 push／PR／合并／tag。网页事件验证不代表真实手机马达验收。[在线 V5.4](https://guangcai-no1-china-v5.netlify.app/) · [不可变预览](https://6ad1f73c185ae5e7e363f9b6--guangcai-no1-china-v5.netlify.app/)。
 
-## 5.4.1 拖动脉冲修正（2026-10-16，验证中）
+## 5.4.1 拖动脉冲修正（2026-10-16，已发布，实机待复测）
 
 用户实机反馈 V5.4 只有第一下震动。修正原生目标初始化、刻度请求到真实 touchmove 的时序、方向保持与控件缩放坐标，增加按需本地诊断入口。旧版本在加强后的初始化测试中复现失败，修正版本专项通过；硬件震感仍待用户复测。[实施与验证记录](docs/changes/20261016-ios-drag-pulses/completion.md)。
+
+源码 `e715ed1`，部署 `6ad1fef61332ac9c795b3c15`。本地／线上各 122 项完整回归与 70 项触感分支检查通过，1088 个发布文件与不可变快照匹配。用户报告的 iPhone Air／Safari 27.0.1、iPhone 16／Safari 26.6.1 均归入新版路径；实际连续震感尚待这两台设备复测。[在线 V5.4.1](https://guangcai-no1-china-v5.netlify.app/) · [本地诊断入口](https://guangcai-no1-china-v5.netlify.app/?haptics-debug)。
