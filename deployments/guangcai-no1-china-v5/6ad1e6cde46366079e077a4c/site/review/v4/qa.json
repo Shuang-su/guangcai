@@ -1,0 +1,581 @@
+{
+  "url": "http://127.0.0.1:5215/",
+  "date": "2026-10-13T22:57:10.028Z",
+  "checks": [
+    "default is the unchanged gold pack, exposure and fixed relief",
+    "no new variant textures are requested on first screen",
+    "V3 versus V4 gold model region mean byte difference < 0.01",
+    "UI variant and finish controls commit together",
+    "hidden lettering survives UI theme change",
+    "china-green/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-green/name: separate text option",
+    "china-green/none: separate text option",
+    "china-red/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-red/name: separate text option",
+    "china-red/none: separate text option",
+    "china-purple/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple/name: separate text option",
+    "china-purple/none: separate text option",
+    "china-blue/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue/name: separate text option",
+    "china-blue/none: separate text option",
+    "china-blue-line/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-blue-line/name: separate text option",
+    "china-blue-line/none: separate text option",
+    "china-purple-line/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "china-purple-line/name: separate text option",
+    "china-purple-line/none: separate text option",
+    "shenzhen-red/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-red/name: separate text option",
+    "shenzhen-red/he: separate text option",
+    "shenzhen-red/create: separate text option",
+    "shenzhen-red/none: separate text option",
+    "shenzhen-teal/enamel: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/metal: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/paint: aligned float normals; fixed assets, geometry and white porcelain retained",
+    "shenzhen-teal/name: separate text option",
+    "shenzhen-teal/he: separate text option",
+    "shenzhen-teal/create: separate text option",
+    "shenzhen-teal/none: separate text option",
+    "failed legacy/API load preserves every active map",
+    "failed selector load retains current and rolls controls back",
+    "rapid changes only commit the latest complete selection",
+    "repeated replacement releases old GPU textures",
+    "artwork changes preserve camera, target and background",
+    "reset changes only view, not chosen artwork",
+    "restore returns original gold and texture budget",
+    "old city package interface remains compatible",
+    "right-button drag translates the camera target",
+    "view front",
+    "view handle",
+    "view top",
+    "view bottom",
+    "view saucerBottom",
+    "view exploded",
+    "view lid",
+    "view detail",
+    "view flowers",
+    "view hero",
+    "viewport 320: no document overflow",
+    "viewport 320: correct automatic background",
+    "viewport 320: panel is on screen",
+    "viewport 390: no document overflow",
+    "viewport 390: correct automatic background",
+    "viewport 390: panel is on screen",
+    "two-finger emulated drag pans",
+    "viewport 844: no document overflow",
+    "viewport 844: correct automatic background",
+    "viewport 844: panel is on screen",
+    "viewport 1440: no document overflow",
+    "viewport 1440: correct automatic background",
+    "viewport 1440: panel is on screen",
+    "no shader errors or uncaught page exceptions"
+  ],
+  "errors": [],
+  "timings": [
+    {
+      "stage": "cold-default-to-ready-including-1900ms-settle",
+      "elapsedMs": 3945,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:5215/assets/index-3kOvj6zO.js",
+          "bytes": 167370,
+          "decoded": 647692,
+          "duration": 33.60000002384186
+        },
+        {
+          "url": "http://127.0.0.1:5215/assets/index-B8bEaOpl.css",
+          "bytes": 3129,
+          "decoded": 9804,
+          "duration": 13.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-body-normal-b11dbeb53fb6a278.hfn.gz",
+          "bytes": 5001912,
+          "decoded": 20201488,
+          "duration": 944
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-handle-normal-be306a82fe97957e.hfn.gz",
+          "bytes": 3772024,
+          "decoded": 13741072,
+          "duration": 218.29999995231628
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-saucer-normal-b3cf69e35ee63a53.hfn.gz",
+          "bytes": 24499137,
+          "decoded": 75497488,
+          "duration": 1097.2000000476837
+        },
+        {
+          "url": "http://127.0.0.1:5215/marks/auratic-reference.png",
+          "bytes": 47384,
+          "decoded": 47084,
+          "duration": 12.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-body-roughness-2cf010a49887d95e.webp",
+          "bytes": 190138,
+          "decoded": 189838,
+          "duration": 20.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-body-metalness-cff904af2a6dfa3d.webp",
+          "bytes": 165026,
+          "decoded": 164726,
+          "duration": 21
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+          "bytes": 2532848,
+          "decoded": 2532548,
+          "duration": 117.19999992847443
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-handle-roughness-9095e03b450273c8.webp",
+          "bytes": 122726,
+          "decoded": 122426,
+          "duration": 15.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+          "bytes": 1779942,
+          "decoded": 1779642,
+          "duration": 20
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-handle-metalness-f6ed3020d859c5cb.webp",
+          "bytes": 109014,
+          "decoded": 108714,
+          "duration": 15.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+          "bytes": 11008888,
+          "decoded": 11008588,
+          "duration": 91.89999997615814
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-saucer-roughness-d1c7c328646bb283.webp",
+          "bytes": 741774,
+          "decoded": 741474,
+          "duration": 24.300000071525574
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/fixed-saucer-metalness-33ea1e54980b7b76.webp",
+          "bytes": 522432,
+          "decoded": 522132,
+          "duration": 19.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/china-baseColor-754558a83d8866b8.webp",
+          "bytes": 648,
+          "decoded": 348,
+          "duration": 23.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/china-normal-f0662e241725d83b.webp",
+          "bytes": 1312830,
+          "decoded": 1312530,
+          "duration": 32.699999928474426
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/china-roughness-40e7b97659e5e028.webp",
+          "bytes": 156938,
+          "decoded": 156638,
+          "duration": 18.399999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5215/textures/china-metalness-7ac9525c8019fc98.webp",
+          "bytes": 40664,
+          "decoded": 40364,
+          "duration": 27.5
+        },
+        {
+          "url": "http://127.0.0.1:5215/china/label.png",
+          "bytes": 22108,
+          "decoded": 21808,
+          "duration": 14.900000095367432
+        }
+      ]
+    },
+    {
+      "goldPixelMeanDifference": 0.0000013185654008438818
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1098
+    },
+    {
+      "variant": "china-green",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 888
+    },
+    {
+      "variant": "china-green",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 1089
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1140
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1117
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 954
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1099
+    },
+    {
+      "variant": "china-red",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 860
+    },
+    {
+      "variant": "china-red",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 947
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 969
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 935
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 895
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1083
+    },
+    {
+      "variant": "china-purple",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 850
+    },
+    {
+      "variant": "china-purple",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 943
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 967
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 945
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 906
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1076
+    },
+    {
+      "variant": "china-blue",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 867
+    },
+    {
+      "variant": "china-blue",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 1019
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1070
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1054
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 939
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1054
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 889
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 978
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 978
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 923
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 916
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 998
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 833
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 920
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 963
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 935
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 915
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1136
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 891
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 955
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1038
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1099
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "he",
+      "elapsedMs": 1133
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "create",
+      "elapsedMs": 1056
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 931
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1141
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "metal",
+      "text": "auto",
+      "elapsedMs": 867
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "paint",
+      "text": "auto",
+      "elapsedMs": 990
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 981
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "name",
+      "elapsedMs": 1001
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "he",
+      "elapsedMs": 1012
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "create",
+      "elapsedMs": 1009
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "none",
+      "elapsedMs": 1111
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1132
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1281
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1124
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1120
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1112
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1090
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1111
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "elapsedMs": 1111
+    }
+  ],
+  "physicalDevice": "not tested; viewport and touch are browser emulation"
+}

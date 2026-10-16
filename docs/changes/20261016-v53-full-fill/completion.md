@@ -1,6 +1,6 @@
 # V5.3 全填色与重复稿替换
 
-状态：本地实现、编译与验证完成，准备发布到既有 V5 站点。分支 `codex/city-full-fill`，基线 `7fe96a1`。
+状态：**已发布并完成线上验证**。分支 `codex/city-full-fill`，基线 `7fe96a1`。
 
 ## 实际变化
 
@@ -21,4 +21,17 @@
 
 ## 发布与 checkpoint
 
-发布结果、部署 ID、源码 SHA 和最终验证在完成后补记。构建准备保存 1086 个文件。本轮沿用用户明确要求的线上更新，不执行 push、PR、合并或 tag。
+- 生产站点：https://guangcai-no1-china-v5.netlify.app/
+- 不可变预览：https://6ad1e6cde46366079e077a4c--guangcai-no1-china-v5.netlify.app/
+- 发布源码 checkpoint：`3288a5e7e29d501c56c2c10421a9dc35ca0f88a2`。
+- 部署 ID：`6ad1e6cde46366079e077a4c`；版本 V5.3／5.3.0。
+- 服务端请求上传 43 个变更文件；1087 个发布条目匹配，响应头策略、公开 release.json 和主域名 V5.3 页面再次回读一致。
+- 线上完整 122 项浏览器检查通过，无意外应用或着色器错误。全部 25 套构图均加载，26 项选择正确，天津 2／青岛 2 已不存在。
+- 75 张复核图均解码成功，26 个下载项可用；缺失纹理返回真实 404。
+- 旧 V4、V3、早期中国杯站点发布 ID 均与发布前一致，Git 自动部署仍关闭。
+- 不可变快照保存于 `deployments/guangcai-no1-china-v5/6ad1e6cde46366079e077a4c/`，1087 个文件逐一复算 SHA-256 匹配。
+- [发布回执](evidence/deploy.json)、[生产回读](evidence/production-readback.json)、[线上验证](evidence/online-qa.json)、[归档校验](evidence/archive-validation.json)。
+
+本轮复用前次仅进程内的 DNS 连接修正，无需改变系统 DNS／代理。独立目录回读脚本最初误把 catalog 顶层当作城市列表；改为读取 `catalog.cities` 后通过，应用目录本身正确。发布只创建一个新部署。
+
+本地 5247 预览保留，原 5236 页面不动。本轮沿用用户明确要求的线上更新，没有 push、PR、合并或 tag；发布归档与记录由紧随的独立 checkpoint 保存。浏览器手机模拟不代表新增真机或工厂制造验收。

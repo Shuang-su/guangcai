@@ -1,0 +1,33 @@
+{
+  "url": "http://127.0.0.1:5208/",
+  "checks": [
+    "desktop auto starts gray without requesting the portrait image",
+    "opaque cup pixels retain the same shading on the new backdrop",
+    "background preserves all materials, relief, geometry, lights and local reflection capture",
+    "a selected local file becomes the backdrop",
+    "only the final custom object URL is retained",
+    "decode failure retains the previous background",
+    "unsupported format retains current background",
+    "repeated selection including the same file releases previous object URLs",
+    "local selection never sends an HTTP upload",
+    "later background selection wins over a slow local decode",
+    "uploaded image remains available for comparison",
+    "Escape closes background panel and returns focus",
+    "reload clears the local image and restores automatic mode",
+    "phone automatically displays the supplied background",
+    "mobile panel and controls fit",
+    "small phone does not overflow",
+    "background controls do not overlap gesture text on small phone",
+    "touch phone keeps soft background in landscape",
+    "landscape background panel remains usable",
+    "dispose releases custom background URLs",
+    "geometry, all cup textures and relief code remain byte-identical",
+    "no browser runtime errors"
+  ],
+  "errors": [],
+  "httpUploads": 0,
+  "opaqueCupMeanPixelDelta": 0,
+  "opaquePixels": 292304,
+  "backgroundBytes": 38714,
+  "protectedFiles": 36
+}

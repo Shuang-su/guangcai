@@ -1,0 +1,40 @@
+{
+  "baseline": "v4.1",
+  "regions": {
+    "body": {
+      "goldInteriorPixels": 86986,
+      "beforeMeanDeviation": 0.0,
+      "afterMeanDeviation": 0.0,
+      "beforeMaxDeviation": 0.0,
+      "afterMaxDeviation": 0.0,
+      "heightUniqueValues": 10795
+    },
+    "handle": {
+      "goldInteriorPixels": 33191,
+      "beforeMeanDeviation": 0.0,
+      "afterMeanDeviation": 0.0,
+      "beforeMaxDeviation": 0.0,
+      "afterMaxDeviation": 0.0,
+      "heightUniqueValues": 10795
+    },
+    "saucer": {
+      "goldInteriorPixels": 101439,
+      "beforeMeanDeviation": 0.0,
+      "afterMeanDeviation": 0.0,
+      "beforeMaxDeviation": 0.0,
+      "afterMaxDeviation": 0.0,
+      "heightUniqueValues": 10795
+    }
+  },
+  "checks": [
+    "body baseColor byte-identical to v4.1",
+    "handle baseColor byte-identical to v4.1",
+    "saucer baseColor byte-identical to v4.1",
+    "src/geometry/product.ts byte-identical to v4.1",
+    "src/styles/city-artwork.ts byte-identical to v4.1",
+    "src/materials/render-standard.ts byte-identical to v4.1",
+    "src/materials/porcelain.ts byte-identical to v4.1",
+    "src/studio/studio.ts byte-identical to v4.1",
+    "src/styles/fixed-layout.json byte-identical to v4.1"
+  ]
+}
