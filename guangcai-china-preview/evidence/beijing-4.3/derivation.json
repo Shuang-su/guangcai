@@ -1,0 +1,145 @@
+{
+  "sourceSha256": "088a582695343fa32b354633476a76fb67e8ef07c4e77ea41b8ca9c0b991aa36",
+  "sourceSize": [
+    1942,
+    810
+  ],
+  "runtimeSize": [
+    4096,
+    1783
+  ],
+  "sourceToRuntime": {
+    "scale": 1.7295159629248196,
+    "paste": [
+      193,
+      394
+    ],
+    "resized": [
+      3359,
+      1389
+    ],
+    "contentBottom": 803,
+    "isotropic": true
+  },
+  "resolution": "source-locked high-quality raster enlargement; no invented source detail",
+  "imagegen": {
+    "candidateSha256": "f101944125c3219919d7f9d5a423d106e5f6251e8327f97166b343439fbe3c92",
+    "size": [
+      1941,
+      810
+    ],
+    "accepted": false,
+    "reason": "candidate redrew roof, wall and cloud details and remained 1941 pixels wide; source geometry wins"
+  },
+  "coverage": "independent architectural/terrain semantic fill, cloud interiors remain unfilled",
+  "height": "source alpha after one isotropic transform and floating Gaussian .65; not RGB",
+  "normal": {
+    "encoding": "rgba16f",
+    "gradientGain": 2.1,
+    "scale": 0.7,
+    "paintScale": 0.22
+  },
+  "allVariantsSharedStructure": true,
+  "plaque": "original source 祈年殿 is never substituted or toggled with the optional 北京 / BEIJING label",
+  "cleanup": {
+    "sourceCorePixels": 79716,
+    "cleanCorePixels": 79716,
+    "maxRuntimeInkDelta": 49.0
+  },
+  "fontSources": [
+    "/System/Library/Fonts/Supplemental/Songti.ttc",
+    "/System/Library/Fonts/Supplemental/Arial.ttf"
+  ],
+  "variants": [
+    {
+      "id": "beijing-gold",
+      "name": "北京 · 纯金",
+      "theme": "beijing",
+      "lineStyle": false,
+      "fixedGold": true,
+      "textColor": "#ddb538",
+      "thumbnail": "beijing-gold-thumb.webp",
+      "maps": {
+        "baseColor": "beijing-gold-baseColor.webp",
+        "coverage": "beijing-coverage.webp",
+        "metalness": "beijing-gold-metalness.webp",
+        "roughness": "beijing-gold-roughness.webp",
+        "clearcoat": "beijing-gold-clearcoat.webp",
+        "normal": "beijing-normal.hfn.gz"
+      },
+      "structureSha256": "fcf14372439b14561ca65e0161c0910e23b46bb131bd3bff871827ccb257eecf"
+    },
+    {
+      "id": "beijing-green",
+      "name": "北京 · 青绿金线",
+      "theme": "beijing",
+      "lineStyle": false,
+      "fixedGold": false,
+      "textColor": "#237751",
+      "thumbnail": "beijing-green-thumb.webp",
+      "maps": {
+        "baseColor": "beijing-green-baseColor.webp",
+        "coverage": "beijing-coverage.webp",
+        "metalness": "beijing-green-metalness.webp",
+        "roughness": "beijing-green-roughness.webp",
+        "clearcoat": "beijing-green-clearcoat.webp",
+        "normal": "beijing-normal.hfn.gz"
+      },
+      "structureSha256": "fcf14372439b14561ca65e0161c0910e23b46bb131bd3bff871827ccb257eecf"
+    },
+    {
+      "id": "beijing-red",
+      "name": "北京 · 红金",
+      "theme": "beijing",
+      "lineStyle": false,
+      "fixedGold": false,
+      "textColor": "#a92019",
+      "thumbnail": "beijing-red-thumb.webp",
+      "maps": {
+        "baseColor": "beijing-red-baseColor.webp",
+        "coverage": "beijing-coverage.webp",
+        "metalness": "beijing-red-metalness.webp",
+        "roughness": "beijing-red-roughness.webp",
+        "clearcoat": "beijing-red-clearcoat.webp",
+        "normal": "beijing-normal.hfn.gz"
+      },
+      "structureSha256": "fcf14372439b14561ca65e0161c0910e23b46bb131bd3bff871827ccb257eecf"
+    },
+    {
+      "id": "beijing-purple",
+      "name": "北京 · 紫金",
+      "theme": "beijing",
+      "lineStyle": false,
+      "fixedGold": false,
+      "textColor": "#672c86",
+      "thumbnail": "beijing-purple-thumb.webp",
+      "maps": {
+        "baseColor": "beijing-purple-baseColor.webp",
+        "coverage": "beijing-coverage.webp",
+        "metalness": "beijing-purple-metalness.webp",
+        "roughness": "beijing-purple-roughness.webp",
+        "clearcoat": "beijing-purple-clearcoat.webp",
+        "normal": "beijing-normal.hfn.gz"
+      },
+      "structureSha256": "fcf14372439b14561ca65e0161c0910e23b46bb131bd3bff871827ccb257eecf"
+    },
+    {
+      "id": "beijing-blue",
+      "name": "北京 · 蓝金",
+      "theme": "beijing",
+      "lineStyle": false,
+      "fixedGold": false,
+      "textColor": "#266799",
+      "thumbnail": "beijing-blue-thumb.webp",
+      "maps": {
+        "baseColor": "beijing-blue-baseColor.webp",
+        "coverage": "beijing-coverage.webp",
+        "metalness": "beijing-blue-metalness.webp",
+        "roughness": "beijing-blue-roughness.webp",
+        "clearcoat": "beijing-blue-clearcoat.webp",
+        "normal": "beijing-normal.hfn.gz"
+      },
+      "structureSha256": "fcf14372439b14561ca65e0161c0910e23b46bb131bd3bff871827ccb257eecf"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "url": "http://127.0.0.1:5236/",
+  "checks": [
+    "desktop page identity and no framework overlay",
+    "desktop no visible slider text or value",
+    "desktop accessible slider name retained",
+    "desktop full-height slider aligned to square",
+    "desktop keyboard minimum",
+    "desktop keyboard maximum",
+    "desktop native mouse drag controls lightness",
+    "desktop hue saturation material and relief preserved",
+    "phone page identity and no framework overlay",
+    "phone no visible slider text or value",
+    "phone accessible slider name retained",
+    "phone full-height slider aligned to square",
+    "phone keyboard minimum",
+    "phone keyboard maximum",
+    "phone native touch drag controls lightness",
+    "phone hue saturation material and relief preserved",
+    "narrow page identity and no framework overlay",
+    "narrow no visible slider text or value",
+    "narrow accessible slider name retained",
+    "narrow full-height slider aligned to square",
+    "narrow keyboard minimum",
+    "narrow keyboard maximum",
+    "narrow native mouse drag controls lightness",
+    "narrow hue saturation material and relief preserved",
+    "landscape page identity and no framework overlay",
+    "landscape no visible slider text or value",
+    "landscape accessible slider name retained",
+    "landscape full-height slider aligned to square",
+    "landscape keyboard minimum",
+    "landscape keyboard maximum",
+    "landscape native touch drag controls lightness",
+    "landscape hue saturation material and relief preserved",
+    "no runtime or console errors"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1200,
+        "height": 900
+      },
+      "slider": {
+        "x": 1109,
+        "y": 397,
+        "width": 44,
+        "height": 240
+      },
+      "pad": {
+        "x": 859,
+        "y": 397,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "name": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "slider": {
+        "x": 308,
+        "y": 552.734375,
+        "width": 44,
+        "height": 240
+      },
+      "pad": {
+        "x": 48,
+        "y": 552.734375,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "name": "narrow",
+      "viewport": {
+        "width": 600,
+        "height": 900
+      },
+      "slider": {
+        "x": 413,
+        "y": 617,
+        "width": 44,
+        "height": 240
+      },
+      "pad": {
+        "x": 153,
+        "y": 617,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "name": "landscape",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "slider": {
+        "x": 759,
+        "y": 159,
+        "width": 44,
+        "height": 220
+      },
+      "pad": {
+        "x": 519,
+        "y": 159,
+        "width": 220,
+        "height": 220
+      }
+    }
+  ],
+  "scope": "Targeted capsule styling and native slider input. Mobile is emulated; no real phone or Safari claim."
+}

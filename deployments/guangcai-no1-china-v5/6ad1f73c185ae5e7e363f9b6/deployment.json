@@ -1,0 +1,70 @@
+{
+  "siteId": "b1fce272-cf28-41e5-8366-024c314b615f",
+  "siteName": "guangcai-no1-china-v5",
+  "sourceCommit": "fb2ce4078d47d618da908348c2d3eaf4a57b65bb",
+  "date": "2026-10-16T10:06:45.524Z",
+  "status": "verified",
+  "protectedBefore": [
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "publishedDeploy": "6acf18984f3abc04fe3cab18",
+      "gitConnected": false
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "publishedDeploy": "6ace443df7425f433e717eb0",
+      "gitConnected": false
+    },
+    {
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "publishedDeploy": "6ace111ab0415c9455a3c6f8",
+      "gitConnected": false
+    }
+  ],
+  "manifestSha256": "5d21ce19449b1525e04aa79122a3b63f299332be07bbecff8ee131e213a90472",
+  "fileCount": 1088,
+  "deployId": "6ad1f73c185ae5e7e363f9b6",
+  "requiredFiles": 6,
+  "url": "https://guangcai-no1-china-v5.netlify.app",
+  "permalink": "https://6ad1f73c185ae5e7e363f9b6--guangcai-no1-china-v5.netlify.app",
+  "remoteFilesMatched": 1088,
+  "protectedAfter": [
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "publishedDeploy": "6acf18984f3abc04fe3cab18",
+      "gitConnected": false
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "publishedDeploy": "6ace443df7425f433e717eb0",
+      "gitConnected": false
+    },
+    {
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "publishedDeploy": "6ace111ab0415c9455a3c6f8",
+      "gitConnected": false
+    }
+  ],
+  "smoke": [
+    {
+      "path": "/review/v5/",
+      "status": 200
+    },
+    {
+      "path": "/cities/v5/catalog.json",
+      "status": 200
+    },
+    {
+      "path": "/this-file-must-not-exist.webp",
+      "status": 404
+    }
+  ],
+  "onlineBrowserChecks": 122,
+  "archive": "deployments/guangcai-no1-china-v5/6ad1f73c185ae5e7e363f9b6"
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://6ad20c45a7780e55fedba3d7--guangcai-no1-china-v5.netlify.app/",
+  "checks": [
+    "page identity, V5.4.2 and meaningful canvas",
+    "no framework overlay",
+    "China default and lazy city loading unchanged",
+    "five presets, two pads, lightness axis and retired controls removed",
+    "city selector folds after choosing and full square is visible",
+    "lightness keyboard minimum changes only the lightness axis",
+    "lightness lower bound retains colour instead of black",
+    "lightness upper bound retains colour instead of white",
+    "one-axis slider has a floating circular selector and live point canvas",
+    "slider activation increases saturation without a white overlay",
+    "one-axis selector settles after pointer release",
+    "real vertical slider drag controls lightness without changing material",
+    "cached lightness field matches HSL colour",
+    "external preset cancels stale native slider edits",
+    "reduced motion keeps slider highlight static without scaling",
+    "pressed knob expands and nearby dots animate",
+    "whole colour pad expands while a stationary press keeps its value",
+    "surface stays illuminated during sustained input",
+    "illumination uses colour brightness without a white canvas veil",
+    "surface afterglow briefly softens release",
+    "activation surface light fades without repainting the base colour field",
+    "release settles the spring and stops dot animation",
+    "reduced motion disables temporal dot animation and knob scaling",
+    "dotted crosshair stays brighter than distant off-axis dots after release",
+    "reference marker stays at the preset origin across gestures",
+    "keyboard focus is elevated and highlighted without an outer frame",
+    "lightness focus keeps its accessible name without an enclosing outline",
+    "preset gold reuses structure and centres material X",
+    "preset green reuses structure and centres material X",
+    "preset red reuses structure and centres material X",
+    "preset purple reuses structure and centres material X",
+    "preset blue reuses structure and centres material X",
+    "beijing material 0,0 updates fill and preserves colour, relief and gold",
+    "beijing material 0.5,0 updates fill and preserves colour, relief and gold",
+    "beijing material 1,0 updates fill and preserves colour, relief and gold",
+    "beijing material 0,0.5 updates fill and preserves colour, relief and gold",
+    "beijing material 0.5,0.5 updates fill and preserves colour, relief and gold",
+    "beijing material 1,0.5 updates fill and preserves colour, relief and gold",
+    "beijing material 0,1 updates fill and preserves colour, relief and gold",
+    "beijing material 0.5,1 updates fill and preserves colour, relief and gold",
+    "beijing material 1,1 updates fill and preserves colour, relief and gold"
+  ],
+  "errors": [],
+  "expectedErrors": [],
+  "timings": [
+    {
+      "initialMs": 10826
+    },
+    {
+      "guidePixels": {
+        "horizontal": 121,
+        "vertical": 144,
+        "offAxis": 43
+      }
+    }
+  ],
+  "environment": "Installed Chrome headless; Browser plugin not available; existing Playwright regression",
+  "physicalDevices": "not tested",
+  "date": "2026-10-16T11:37:47.518Z"
+}

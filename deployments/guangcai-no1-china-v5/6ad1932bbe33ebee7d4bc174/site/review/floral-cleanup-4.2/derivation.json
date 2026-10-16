@@ -1,0 +1,59 @@
+{
+  "version": "4.2.0",
+  "method": "registered semantic gold mask; uniform bare-gold pigment in shader; original RGB unchanged",
+  "goldSRGB": "#ffc846",
+  "relief": [
+    4.4,
+    2.4
+  ],
+  "regions": {
+    "body": {
+      "removedIsolatedPixels": 68,
+      "flatGoldPixels": 135167,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.16006478667259216,
+      "goldInteriorPixels": 110512,
+      "goldInteriorRange": [
+        1.0,
+        1.0
+      ],
+      "originalColorHashes": {
+        "assets/masters/v3-restored/body-restored.png": "0054725e6a217a5d5932e5b0290713dda9beea12cb2fad8d0dd1722c7e94e39e",
+        "public/fixed/body-baseColor.png": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559"
+      },
+      "cleanMetalSha256": "9e0327987000d410ffcf21db48e99ea376b4c6bcd346c7df60c1d598dcfad3db"
+    },
+    "handle": {
+      "removedIsolatedPixels": 145,
+      "flatGoldPixels": 65042,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.2582392990589142,
+      "goldInteriorPixels": 50161,
+      "goldInteriorRange": [
+        1.0,
+        1.0
+      ],
+      "originalColorHashes": {
+        "assets/masters/v3-restored/handle-restored.png": "e62b66d289269563c306576204df7c5318c607110189fb1312bd96f6fd97004a",
+        "public/fixed/handle-baseColor.png": "1bbe09ecdef463283f11c7f7319f80a05576311be5f28ff172eaf77751065e7e"
+      },
+      "cleanMetalSha256": "e5c008ee2698c51957674efba564d4f54499d86a94ec2f0a5ea97d76352c0540"
+    },
+    "saucer": {
+      "removedIsolatedPixels": 1440,
+      "flatGoldPixels": 195775,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.23377050459384918,
+      "goldInteriorPixels": 141541,
+      "goldInteriorRange": [
+        1.0,
+        1.0
+      ],
+      "originalColorHashes": {
+        "assets/masters/v3-restored/saucer-restored.png": "a5b18f8724dfc35769a96d5be37b5fd3cd36598818fe6a8be07a93b8d047738d",
+        "public/fixed/saucer-baseColor.png": "055dcb7b469f1dd641de2f5415c69bda9b6f85f450b0efcd902648773cde3225"
+      },
+      "cleanMetalSha256": "863923904563d8adf0beacafeecb288add6863982e28a8c02f06960699e452a3"
+    }
+  }
+}

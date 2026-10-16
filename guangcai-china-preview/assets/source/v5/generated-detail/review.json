@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-15",
+  "reviewedBy": "Codex visual inspection",
+  "status": "agent-reviewed",
+  "humanVisualApproval": false,
+  "cities": {
+    "beijing": {
+      "source": "assets/source/v5/generated-detail/beijing-white.png",
+      "sha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+      "nativeSize": [
+        1899,
+        828
+      ],
+      "checks": {
+        "curvedProfilesAndDetailsPreserved": true,
+        "realOpeningsIdentified": true,
+        "skyUnpainted": true,
+        "naturalBoundary": true,
+        "noAddedForegroundWaves": true
+      },
+      "specific": "two Great Wall towers, no horizontal ink underline; fill-only bottom closure"
+    },
+    "shenzhen": {
+      "source": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+      "nativeSize": [
+        1900,
+        828
+      ],
+      "checks": {
+        "curvedProfilesAndDetailsPreserved": true,
+        "realOpeningsIdentified": true,
+        "skyUnpainted": true,
+        "naturalBoundary": true,
+        "noAddedForegroundWaves": true
+      },
+      "specific": "right bridge removed; detailed skyline and Civic Center preserved"
+    }
+  }
+}

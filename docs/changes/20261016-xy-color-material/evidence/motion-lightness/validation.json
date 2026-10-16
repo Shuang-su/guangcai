@@ -1,0 +1,36 @@
+{
+  "applicationTests": {
+    "command": "npm test",
+    "passed": 29,
+    "failed": 0
+  },
+  "typescript": {
+    "command": "tsc --noEmit",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "vite build --outDir ../.codex-work/tmp/xy-controls/build --emptyOutDir",
+    "exitCode": 0,
+    "warning": "Main JS chunk 673.98 kB exceeds configured 650 kB warning threshold; gzip 177.43 kB."
+  },
+  "browser": {
+    "checks": 88,
+    "unexpectedErrors": 0,
+    "viewports": [
+      "1200x900",
+      "390x844",
+      "600x900",
+      "844x390"
+    ],
+    "touch": "Chrome emulation, including lightness slider and pad cancellation"
+  },
+  "physicalDevices": "not tested",
+  "video": {
+    "durationSeconds": 15.8,
+    "codec": "vp8",
+    "width": 600,
+    "height": 900,
+    "fps": 25,
+    "source": "real Playwright interactions; system ffmpeg via ignored project-local cache symlink; no dependency download"
+  }
+}

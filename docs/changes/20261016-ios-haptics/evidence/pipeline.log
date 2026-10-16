@@ -1,0 +1,253 @@
+
+> guangcai-china-v4@5.4.0 pipeline:v5
+> node tools/v5-pipeline.mjs
+
+
+[compile]
+beijing {'mask': 'beijing-structure.webp', 'normal': 'beijing-normal.hfn.gz', 'label': 'beijing-label.webp', 'thumbnail': 'beijing-thumb.webp'}
+shenzhen {'mask': 'shenzhen-structure.webp', 'normal': 'shenzhen-normal.hfn.gz', 'label': 'shenzhen-label.webp', 'thumbnail': 'shenzhen-thumb.webp'}
+beijing-2 {'mask': 'beijing-2-structure.webp', 'normal': 'beijing-2-normal.hfn.gz', 'label': 'beijing-2-label.webp', 'thumbnail': 'beijing-2-thumb.webp'}
+shanghai {'mask': 'shanghai-structure.webp', 'normal': 'shanghai-normal.hfn.gz', 'label': 'shanghai-label.webp', 'thumbnail': 'shanghai-thumb.webp'}
+guangzhou {'mask': 'guangzhou-structure.webp', 'normal': 'guangzhou-normal.hfn.gz', 'label': 'guangzhou-label.webp', 'thumbnail': 'guangzhou-thumb.webp'}
+tianjin {'mask': 'tianjin-structure.webp', 'normal': 'tianjin-normal.hfn.gz', 'label': 'tianjin-label.webp', 'thumbnail': 'tianjin-thumb.webp'}
+qingdao {'mask': 'qingdao-structure.webp', 'normal': 'qingdao-normal.hfn.gz', 'label': 'qingdao-label.webp', 'thumbnail': 'qingdao-thumb.webp'}
+taiyuan {'mask': 'taiyuan-structure.webp', 'normal': 'taiyuan-normal.hfn.gz', 'label': 'taiyuan-label.webp', 'thumbnail': 'taiyuan-thumb.webp'}
+hangzhou {'mask': 'hangzhou-structure.webp', 'normal': 'hangzhou-normal.hfn.gz', 'label': 'hangzhou-label.webp', 'thumbnail': 'hangzhou-thumb.webp'}
+xian {'mask': 'xian-structure.webp', 'normal': 'xian-normal.hfn.gz', 'label': 'xian-label.webp', 'thumbnail': 'xian-thumb.webp'}
+shenzhen-2 {'mask': 'shenzhen-2-structure.webp', 'normal': 'shenzhen-2-normal.hfn.gz', 'label': 'shenzhen-2-label.webp', 'thumbnail': 'shenzhen-2-thumb.webp'}
+wuhan {'mask': 'wuhan-structure.webp', 'normal': 'wuhan-normal.hfn.gz', 'label': 'wuhan-label.webp', 'thumbnail': 'wuhan-thumb.webp'}
+nanjing {'mask': 'nanjing-structure.webp', 'normal': 'nanjing-normal.hfn.gz', 'label': 'nanjing-label.webp', 'thumbnail': 'nanjing-thumb.webp'}
+urumqi {'mask': 'urumqi-structure.webp', 'normal': 'urumqi-normal.hfn.gz', 'label': 'urumqi-label.webp', 'thumbnail': 'urumqi-thumb.webp'}
+nanchang {'mask': 'nanchang-structure.webp', 'normal': 'nanchang-normal.hfn.gz', 'label': 'nanchang-label.webp', 'thumbnail': 'nanchang-thumb.webp'}
+xiamen {'mask': 'xiamen-structure.webp', 'normal': 'xiamen-normal.hfn.gz', 'label': 'xiamen-label.webp', 'thumbnail': 'xiamen-thumb.webp'}
+hohhot {'mask': 'hohhot-structure.webp', 'normal': 'hohhot-normal.hfn.gz', 'label': 'hohhot-label.webp', 'thumbnail': 'hohhot-thumb.webp'}
+harbin {'mask': 'harbin-structure.webp', 'normal': 'harbin-normal.hfn.gz', 'label': 'harbin-label.webp', 'thumbnail': 'harbin-thumb.webp'}
+chengdu {'mask': 'chengdu-structure.webp', 'normal': 'chengdu-normal.hfn.gz', 'label': 'chengdu-label.webp', 'thumbnail': 'chengdu-thumb.webp'}
+jingdezhen {'mask': 'jingdezhen-structure.webp', 'normal': 'jingdezhen-normal.hfn.gz', 'label': 'jingdezhen-label.webp', 'thumbnail': 'jingdezhen-thumb.webp'}
+shenyang {'mask': 'shenyang-structure.webp', 'normal': 'shenyang-normal.hfn.gz', 'label': 'shenyang-label.webp', 'thumbnail': 'shenyang-thumb.webp'}
+shijiazhuang {'mask': 'shijiazhuang-structure.webp', 'normal': 'shijiazhuang-normal.hfn.gz', 'label': 'shijiazhuang-label.webp', 'thumbnail': 'shijiazhuang-thumb.webp'}
+zhengzhou {'mask': 'zhengzhou-structure.webp', 'normal': 'zhengzhou-normal.hfn.gz', 'label': 'zhengzhou-label.webp', 'thumbnail': 'zhengzhou-thumb.webp'}
+chongqing {'mask': 'chongqing-structure.webp', 'normal': 'chongqing-normal.hfn.gz', 'label': 'chongqing-label.webp', 'thumbnail': 'chongqing-thumb.webp'}
+changchun {'mask': 'changchun-structure.webp', 'normal': 'changchun-normal.hfn.gz', 'label': 'changchun-label.webp', 'thumbnail': 'changchun-thumb.webp'}
+
+[asset checks]
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 31.263s
+
+OK
+
+[application tests]
+
+> guangcai-china-v4@5.4.0 test
+> tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts
+
+✔ original China pack and all legacy China palettes retain their interface (3.996208ms)
+✔ all registered V5 patterns expose five presets and share structural channels (1.715458ms)
+✔ continuous appearance survives theme changes and entire-selection normalization (0.282833ms)
+✔ palette endpoints are reproduced in sRGB and HSL edits preserve a shared gradient (0.384083ms)
+✔ material interpolation keeps independent gold parameters and exact finish endpoints (0.294083ms)
+✔ last selection wins; stale failure and current failure preserve the committed selection (0.230208ms)
+✔ Shenzhen explicit slogans remain available and reset outside Shenzhen (0.094416ms)
+✔ fixed atlas rejects mismatched dimensions, fractional rows and missing guards (0.929667ms)
+✔ periodic atlas coordinates preserve top/bottom orientation and protect both splits (0.212833ms)
+✔ half-float normal decoder rejects corrupt headers, dimensions, and non-finite values (1.682917ms)
+✔ body normal retains half precision and matches source orientation (86.794167ms)
+✔ handle normal retains half precision and matches source orientation (63.529417ms)
+✔ saucer normal retains half precision and matches source orientation (327.069416ms)
+minimum radial cavity clearance, mm: 1.1500015258789062
+max handle UV longitudinal scale error: 0.0020292070439866805
+triangles checked: 150084
+✔ handle and porcelain collars stay outside the cavity across all UI dimension extremes (409.620208ms)
+✔ handle artwork uses uniform physical scale through the upper corner and lower curve (4.220375ms)
+✔ all rendered triangles face the same side as their vertex normals; no invalid attributes (107.884625ms)
+✔ reference-derived assembly retains inset saucer foot, recessed cup base and lid flange (42.703084ms)
+✔ invalid parameters reject before creating a replacement model (0.675291ms)
+✔ bottom marks face outward, sit below the recessed base and share physical scale (37.094584ms)
+✔ city artwork reaches the rounded exterior foot with a continuous upright second UV set (42.959833ms)
+✔ v3 preserves cup and saucer geometry and city coordinates outside the authorized lid correction (35.411167ms)
+✔ narrow floral coverage remains continuous and does not expose the handle roots (34.443917ms)
+✔ balanced saucer UV closes without a new seam, folds or abrupt changes of motif scale (31.0455ms)
+✔ flat lid glaze and knob feet stay in contact after crown removal (32.396334ms)
+✔ native vibration, older iOS labels and newer trusted gestures select separate paths (0.904292ms)
+✔ haptics require trusted touch intent and respect reduced motion/visibility gating (0.916792ms)
+✔ haptics rate limit detents and bound pulse length (0.096084ms)
+✔ unsupported or rejected motor requests cannot break the interaction (0.141834ms)
+✔ movement haptics follow distance and cell crossings without reacting to finger jitter (0.377167ms)
+✔ authoring framing keeps the full canvas and restores the camera projection without accumulation (2.655375ms)
+✔ cached colour field lightness compositing matches direct HSL at both endpoints and in between (0.6485ms)
+✔ square colour mapping reaches all edges and round-trips hue and saturation (1.048ms)
+✔ material plane preserves the full legacy column and varies in both directions (1.915542ms)
+✔ legacy input, presets and cross-city updates preserve a single material state (0.664875ms)
+✔ uniform-only material edits preserve program, normals and legacy lettering inputs (0.947959ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1111.607084
+
+[production build]
+
+> guangcai-china-v4@5.4.0 prebuild
+> node tools/web-textures.mjs
+
+{"files":16,"sourceBytes":58732271,"webBytes":51851231,"fullResolutionCityAndSaucer":true,"losslessDataChannels":16}
+
+> guangcai-china-v4@5.4.0 build
+> tsc --noEmit && vite build --outDir .codex-work/tmp/v5/black-cities-build
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 51 modules transformed.
+rendering chunks...
+computing gzip size...
+.codex-work/tmp/v5/black-cities-build/index.html                   0.46 kB │ gzip:   0.34 kB
+.codex-work/tmp/v5/black-cities-build/assets/index-CJKj42q4.css   18.34 kB │ gzip:   4.76 kB
+.codex-work/tmp/v5/black-cities-build/assets/index-CJ0If6pj.js   697.92 kB │ gzip: 186.12 kB
+
+✓ built in 8.51s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 650 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 8.3s of this 8.5s build (98%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite:prepare-out-dir renderStart (97%, 8.3s, 1 call)
+Additional callback time came from callbacks under 1s.
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+
+[local browser QA]
+
+> guangcai-china-v4@5.4.0 qa:v5
+> node tools/v5-qa.mjs
+
+PASS page identity, V5.4 and meaningful canvas
+PASS no framework overlay
+PASS China default and lazy city loading unchanged
+PASS five presets, two pads, lightness axis and retired controls removed
+PASS city selector folds after choosing and full square is visible
+PASS lightness keyboard minimum changes only the lightness axis
+PASS lightness lower bound retains colour instead of black
+PASS lightness upper bound retains colour instead of white
+PASS one-axis slider has a floating circular selector and live point canvas
+PASS slider activation increases saturation without a white overlay
+PASS one-axis selector settles after pointer release
+PASS real vertical slider drag controls lightness without changing material
+PASS cached lightness field matches HSL colour
+PASS external preset cancels stale native slider edits
+PASS reduced motion keeps slider highlight static without scaling
+Press feedback {"scale":1.81669,"dotChange":true,"classes":"xy-pad is-dragging is-expanded"}
+PASS pressed knob expands and nearby dots animate
+PASS whole colour pad expands while a stationary press keeps its value
+PASS surface stays illuminated during sustained input
+PASS illumination uses colour brightness without a white canvas veil
+PASS surface afterglow briefly softens release
+Spotlight samples {"activationGain":1.54164,"restingGain":1,"baseUnchanged":true}
+PASS activation surface light fades without repainting the base colour field
+PASS release settles the spring and stops dot animation
+PASS reduced motion disables temporal dot animation and knob scaling
+PASS dotted crosshair stays brighter than distant off-axis dots after release
+PASS reference marker stays at the preset origin across gestures
+PASS keyboard focus is elevated and highlighted without an outer frame
+PASS lightness focus keeps its accessible name without an enclosing outline
+PASS preset gold reuses structure and centres material X
+PASS preset green reuses structure and centres material X
+PASS preset red reuses structure and centres material X
+PASS preset purple reuses structure and centres material X
+PASS preset blue reuses structure and centres material X
+PASS beijing material 0,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0,1 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,1 updates fill and preserves colour, relief and gold
+PASS beijing material 1,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,1 updates fill and preserves colour, relief and gold
+PASS colour and material update actual state independently while retaining hidden lightness and relief
+PASS uniform edits add no city requests, GPU textures, programs or reflection captures
+PASS city switch preserves two axes, colour, hidden text and bounded cache
+PASS preset resets both axes, HSL and relief
+PASS reset button restores both cursor coordinates
+PASS Shenzhen slogan API retained
+PASS legacy metal restores exact centre-column endpoint
+PASS legacy paint restores exact centre-column endpoint
+PASS centre preserves last hue and zero saturation
+PASS hue wraps continuously across red seam
+PASS keyboard and fine adjustment change both axes
+PASS equivalent accessible axis edits the same state
+PASS real drag updates both axes without rotating the cup
+PASS captured drag clamps beyond edges and releases cleanly
+PASS external preset cancels captured gesture and stale pending edits
+PASS sustained drag keeps GPU and reflection resources fixed
+PASS twenty-six city options use newest duplicate sources
+PASS beijing retains creation state, own maps and bounded cache
+PASS shenzhen retains creation state, own maps and bounded cache
+PASS beijing-2 retains creation state, own maps and bounded cache
+PASS shanghai retains creation state, own maps and bounded cache
+PASS guangzhou retains creation state, own maps and bounded cache
+PASS tianjin retains creation state, own maps and bounded cache
+PASS qingdao retains creation state, own maps and bounded cache
+PASS taiyuan retains creation state, own maps and bounded cache
+PASS hangzhou retains creation state, own maps and bounded cache
+PASS xian retains creation state, own maps and bounded cache
+PASS shenzhen-2 retains creation state, own maps and bounded cache
+PASS wuhan retains creation state, own maps and bounded cache
+PASS nanjing retains creation state, own maps and bounded cache
+PASS urumqi retains creation state, own maps and bounded cache
+PASS nanchang retains creation state, own maps and bounded cache
+PASS xiamen retains creation state, own maps and bounded cache
+PASS hohhot retains creation state, own maps and bounded cache
+PASS harbin retains creation state, own maps and bounded cache
+PASS chengdu retains creation state, own maps and bounded cache
+PASS jingdezhen retains creation state, own maps and bounded cache
+PASS shenyang retains creation state, own maps and bounded cache
+PASS shijiazhuang retains creation state, own maps and bounded cache
+PASS zhengzhou retains creation state, own maps and bounded cache
+PASS chongqing retains creation state, own maps and bounded cache
+PASS changchun retains creation state, own maps and bounded cache
+PASS repeated switching does not accumulate textures
+PASS rapid choices commit only latest state
+PASS failed pack retains selection and visible maps
+PASS hidden relief API 0 retains compatibility
+PASS hidden relief API 1 retains compatibility
+PASS hidden relief API 2 retains compatibility
+PASS original restore and legacy artwork API remain compatible
+PASS viewport 390 fits without horizontal overflow
+PASS viewport 390 shows entire pad and lightness axis on entry
+PASS viewport 390 can reach final city option
+PASS viewport 390 last city and material remain reachable
+PASS viewport 600 fits without horizontal overflow
+PASS viewport 600 shows entire pad and lightness axis on entry
+PASS viewport 600 can reach final city option
+PASS viewport 600 last city and material remain reachable
+PASS viewport 844 fits without horizontal overflow
+PASS viewport 844 can reach final city option
+PASS viewport 844 last city and material remain reachable
+PASS viewport 1280 fits without horizontal overflow
+PASS viewport 1280 shows entire pad and lightness axis on entry
+PASS viewport 1280 can reach final city option
+PASS viewport 1280 last city and material remain reachable
+PASS emulated phone lightness drag preserves hue, saturation and material
+PASS one-axis touch cancellation clears active feedback
+PASS emulated touch changes real material without rotating cup
+PASS touch cancellation and reset leave no stale gesture or frame
+PASS two-finger canvas pan remains available outside pad
+PASS source review route resolves to the source page
+PASS all source review images and downloads retained
+PASS no unexpected console or shader errors
+Prepared 1087 files. Local validation complete. Publishing remains a separate authorized action.

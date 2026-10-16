@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2222,
+      "physical": {
+        "width": 45.0294947014537,
+        "length": 97.7
+      },
+      "crop": null,
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/body-baseColor.png",
+          "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415"
+        },
+        "metalness": {
+          "url": "artwork/body-metalness.png",
+          "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c"
+        },
+        "roughness": {
+          "url": "artwork/body-roughness.png",
+          "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335"
+        },
+        "height": {
+          "url": "artwork/body-height.png",
+          "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1"
+        },
+        "normal": {
+          "url": "artwork/body-normal.png",
+          "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d"
+        }
+      }
+    },
+    "handle": {
+      "width": 320,
+      "height": 3119,
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "crop": [
+        0.47,
+        0.07,
+        0.16,
+        0.82
+      ],
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/handle-baseColor.png",
+          "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d"
+        },
+        "metalness": {
+          "url": "artwork/handle-metalness.png",
+          "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686"
+        },
+        "roughness": {
+          "url": "artwork/handle-roughness.png",
+          "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21"
+        },
+        "height": {
+          "url": "artwork/handle-height.png",
+          "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416"
+        },
+        "normal": {
+          "url": "artwork/handle-normal.png",
+          "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7"
+        }
+      }
+    },
+    "saucer": {
+      "width": 2172,
+      "height": 213,
+      "physical": {
+        "width": 113.41149479459153,
+        "length": 11.142710621747296
+      },
+      "crop": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "fit": "cover, uniform scale; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/saucer-baseColor.png",
+          "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc"
+        },
+        "metalness": {
+          "url": "artwork/saucer-metalness.png",
+          "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716"
+        },
+        "roughness": {
+          "url": "artwork/saucer-roughness.png",
+          "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa"
+        },
+        "height": {
+          "url": "artwork/saucer-height.png",
+          "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97"
+        },
+        "normal": {
+          "url": "artwork/saucer-normal.png",
+          "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe"
+        }
+      }
+    }
+  }
+}

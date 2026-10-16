@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2222,
+      "physical": {
+        "width": 45.0294947014537,
+        "length": 97.7
+      },
+      "source": "assets/masters/peony-magnolia/body-dense-v3.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": null,
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/peony-magnolia/body-baseColor.png",
+          "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b"
+        },
+        "metalness": {
+          "url": "artwork/peony-magnolia/body-metalness.png",
+          "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65"
+        },
+        "roughness": {
+          "url": "artwork/peony-magnolia/body-roughness.png",
+          "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9"
+        },
+        "height": {
+          "url": "artwork/peony-magnolia/body-height.png",
+          "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493"
+        },
+        "normal": {
+          "url": "artwork/peony-magnolia/body-normal.png",
+          "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1"
+        }
+      }
+    },
+    "handle": {
+      "width": 320,
+      "height": 3119,
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "source": "assets/masters/peony-magnolia/body-dense-v3.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": [
+        0.47,
+        0.07,
+        0.16,
+        0.82
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/peony-magnolia/handle-baseColor.png",
+          "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d"
+        },
+        "metalness": {
+          "url": "artwork/peony-magnolia/handle-metalness.png",
+          "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f"
+        },
+        "roughness": {
+          "url": "artwork/peony-magnolia/handle-roughness.png",
+          "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366"
+        },
+        "height": {
+          "url": "artwork/peony-magnolia/handle-height.png",
+          "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e"
+        },
+        "normal": {
+          "url": "artwork/peony-magnolia/handle-normal.png",
+          "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504"
+        }
+      }
+    },
+    "saucer": {
+      "width": 2172,
+      "height": 213,
+      "physical": {
+        "width": 113.41149479459153,
+        "length": 11.142710621747296
+      },
+      "source": "assets/masters/peony-magnolia/band-dense-v3.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/peony-magnolia/saucer-baseColor.png",
+          "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d"
+        },
+        "metalness": {
+          "url": "artwork/peony-magnolia/saucer-metalness.png",
+          "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f"
+        },
+        "roughness": {
+          "url": "artwork/peony-magnolia/saucer-roughness.png",
+          "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d"
+        },
+        "height": {
+          "url": "artwork/peony-magnolia/saucer-height.png",
+          "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d"
+        },
+        "normal": {
+          "url": "artwork/peony-magnolia/saucer-normal.png",
+          "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118"
+        }
+      }
+    }
+  },
+  "name": "牡丹玉兰 · 金地",
+  "renderStandard": {
+    "relief": 1.5,
+    "clearcoatRelief": 0.825,
+    "exposure": 1.08
+  },
+  "layoutNote": "Original accepted pipeline restored: body full master; handle crop [.47,.07,.16,.82] of body master; saucer crop [0,.38,1,.25] of band master. Uniform cover. Saucer runtime UV mirrors four quarters."
+}

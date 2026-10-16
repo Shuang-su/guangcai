@@ -1,0 +1,88 @@
+[
+  {
+    "id": "a",
+    "source": "/Users/shuangsu/Downloads/ScreenRecording_10-16-2026 13-24-11_1.mov",
+    "bytes": 35307645,
+    "sha256": "bbcd6372059065da09e8f70c26def18bdf94579d942b9dd0071f5cd33878d089",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1260,
+          "height": 1426,
+          "duration": "19.881667",
+          "nb_frames": "1175"
+        }
+      ],
+      "format": {
+        "duration": "19.881678"
+      }
+    },
+    "decodedFrameCount": 1175,
+    "cropXYWH": [
+      410,
+      900,
+      450,
+      450
+    ],
+    "inspection": "Every decoded frame included in consecutive contact sheets; all sheets visually reviewed in sequence. Key transitions enlarged. No temporal subsampling.",
+    "keyFrames": [
+      {
+        "frame": 260,
+        "time": "4.318333"
+      },
+      {
+        "frame": 261,
+        "time": "4.335000"
+      },
+      {
+        "frame": 280,
+        "time": "4.651667"
+      },
+      {
+        "frame": 360,
+        "time": "5.985000"
+      }
+    ]
+  },
+  {
+    "id": "b",
+    "source": "/Users/shuangsu/Downloads/ScreenRecording_10-16-2026 13-25-46_1.mov",
+    "bytes": 27656295,
+    "sha256": "1672f9144269d82dc836d3ae24a13bb608f1a6829040ed82e8522c80efb85c1d",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1260,
+          "height": 1574,
+          "duration": "17.531667",
+          "nb_frames": "939"
+        }
+      ],
+      "format": {
+        "duration": "17.531701"
+      }
+    },
+    "decodedFrameCount": 939,
+    "cropXYWH": [
+      410,
+      1040,
+      450,
+      450
+    ],
+    "inspection": "Every decoded frame included in consecutive contact sheets; all sheets visually reviewed in sequence. Key transitions enlarged. No temporal subsampling.",
+    "keyFrames": [
+      {
+        "frame": 552,
+        "time": "10.820000"
+      },
+      {
+        "frame": 591,
+        "time": "11.470000"
+      }
+    ]
+  }
+]

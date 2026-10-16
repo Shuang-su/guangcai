@@ -1,0 +1,321 @@
+{
+  "checks": [
+    "1200 color: full expanded plate stays inside panel",
+    "1200 color: stationary activation keeps parameters",
+    "1200: neighbouring slider keeps its vertical centre",
+    "1200 color: default marker follows the same local displacement as the dots",
+    "1200: slider remains visible beside expanded colour plate",
+    "1200 color: independent reset remains visible during activation",
+    "1200 color: expanded top-right drag maps to corner and contracts",
+    "1200 material: full expanded plate stays inside panel",
+    "1200 material: stationary activation keeps parameters",
+    "1200 material: default marker follows the same local displacement as the dots",
+    "1200 material: independent reset remains visible during activation",
+    "1200 material: expanded top-right drag maps to corner and contracts",
+    "1200: reset brings selector exactly onto the sole default marker",
+    "1200: slider alone expands within available vertical space",
+    "1200: neighbouring colour pad keeps its vertical centre",
+    "1200: slider limits lightness to 20–65",
+    "1200: first click switches tab after keyboard adjustment",
+    "1200: cup canvas retains full viewport while controls are open",
+    "390 color: full expanded plate stays inside panel",
+    "390 color: stationary activation keeps parameters",
+    "390: neighbouring slider keeps its vertical centre",
+    "390 color: default marker follows the same local displacement as the dots",
+    "390: slider remains visible beside expanded colour plate",
+    "390 color: independent reset remains visible during activation",
+    "390 color: expanded top-right drag maps to corner and contracts",
+    "390 material: full expanded plate stays inside panel",
+    "390 material: stationary activation keeps parameters",
+    "390 material: default marker follows the same local displacement as the dots",
+    "390 material: independent reset remains visible during activation",
+    "390 material: expanded top-right drag maps to corner and contracts",
+    "390: reset brings selector exactly onto the sole default marker",
+    "390: slider alone expands within available vertical space",
+    "390: neighbouring colour pad keeps its vertical centre",
+    "390: slider limits lightness to 20–65",
+    "390: first click switches tab after keyboard adjustment",
+    "390: cup canvas retains full viewport while controls are open",
+    "844 color: full expanded plate stays inside panel",
+    "844 color: stationary activation keeps parameters",
+    "844: neighbouring slider keeps its vertical centre",
+    "844 color: default marker follows the same local displacement as the dots",
+    "844: slider remains visible beside expanded colour plate",
+    "844 color: independent reset remains visible during activation",
+    "844 color: expanded top-right drag maps to corner and contracts",
+    "844 material: full expanded plate stays inside panel",
+    "844 material: stationary activation keeps parameters",
+    "844 material: default marker follows the same local displacement as the dots",
+    "844 material: independent reset remains visible during activation",
+    "844 material: expanded top-right drag maps to corner and contracts",
+    "844: reset brings selector exactly onto the sole default marker",
+    "844: slider alone expands within available vertical space",
+    "844: neighbouring colour pad keeps its vertical centre",
+    "844: slider limits lightness to 20–65",
+    "844: first click switches tab after keyboard adjustment",
+    "844: cup canvas retains full viewport while controls are open",
+    "1280 color: full expanded plate stays inside panel",
+    "1280 color: stationary activation keeps parameters",
+    "1280: neighbouring slider keeps its vertical centre",
+    "1280 color: default marker follows the same local displacement as the dots",
+    "1280: slider remains visible beside expanded colour plate",
+    "1280 color: independent reset remains visible during activation",
+    "1280 color: expanded top-right drag maps to corner and contracts",
+    "1280 material: full expanded plate stays inside panel",
+    "1280 material: stationary activation keeps parameters",
+    "1280 material: default marker follows the same local displacement as the dots",
+    "1280 material: independent reset remains visible during activation",
+    "1280 material: expanded top-right drag maps to corner and contracts",
+    "1280: reset brings selector exactly onto the sole default marker",
+    "1280: slider alone expands within available vertical space",
+    "1280: neighbouring colour pad keeps its vertical centre",
+    "1280: slider limits lightness to 20–65",
+    "1280: first click switches tab after keyboard adjustment",
+    "1280: cup canvas retains full viewport while controls are open",
+    "no application runtime errors"
+  ],
+  "metrics": [
+    {
+      "width": 1200,
+      "height": 900,
+      "kind": "color",
+      "scale": 1.2399999178372896,
+      "pad": {
+        "x": 850.0399780273438,
+        "y": 384.03997802734375,
+        "width": 257.91998291015625,
+        "height": 257.9200439453125,
+        "top": 384.03997802734375,
+        "right": 1107.9599609375,
+        "bottom": 641.9600219726562,
+        "left": 850.0399780273438
+      },
+      "panel": {
+        "x": 836,
+        "y": 102,
+        "width": 340,
+        "height": 693,
+        "top": 102,
+        "right": 1176,
+        "bottom": 795,
+        "left": 836
+      },
+      "visible": true
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "kind": "material",
+      "scale": 1.2399999178372896,
+      "pad": {
+        "x": 877.0399780273438,
+        "y": 384.03997802734375,
+        "width": 257.91998291015625,
+        "height": 257.9200439453125,
+        "top": 384.03997802734375,
+        "right": 1134.9599609375,
+        "bottom": 641.9600219726562,
+        "left": 877.0399780273438
+      },
+      "panel": {
+        "x": 836,
+        "y": 102,
+        "width": 340,
+        "height": 693,
+        "top": 102,
+        "right": 1176,
+        "bottom": 795,
+        "left": 836
+      },
+      "visible": true
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "sliderScale": 1.2400002112755408,
+      "expectedScale": 1.24
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "kind": "color",
+      "scale": 1.2399999445134944,
+      "pad": {
+        "x": 31.600006103515625,
+        "y": 542.3343505859375,
+        "width": 272.79998779296875,
+        "height": 272.800048828125,
+        "top": 542.3343505859375,
+        "right": 304.3999938964844,
+        "bottom": 815.1343994140625,
+        "left": 31.600006103515625
+      },
+      "panel": {
+        "x": 8,
+        "y": 308.734375,
+        "width": 374,
+        "height": 523.265625,
+        "top": 308.734375,
+        "right": 382,
+        "bottom": 832,
+        "left": 8
+      },
+      "visible": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "kind": "material",
+      "scale": 1.2399999445134944,
+      "pad": {
+        "x": 58.600006103515625,
+        "y": 542.3343505859375,
+        "width": 272.79998779296875,
+        "height": 272.800048828125,
+        "top": 542.3343505859375,
+        "right": 331.3999938964844,
+        "bottom": 815.1343994140625,
+        "left": 58.600006103515625
+      },
+      "panel": {
+        "x": 8,
+        "y": 308.734375,
+        "width": 374,
+        "height": 523.265625,
+        "top": 308.734375,
+        "right": 382,
+        "bottom": 832,
+        "left": 8
+      },
+      "visible": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "sliderScale": 1.2400002219460227,
+      "expectedScale": 1.24
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "kind": "color",
+      "scale": 1.1727272727272726,
+      "pad": {
+        "x": 500,
+        "y": 112,
+        "width": 258,
+        "height": 258,
+        "top": 112,
+        "right": 758,
+        "bottom": 370,
+        "left": 500
+      },
+      "panel": {
+        "x": 486,
+        "y": 10,
+        "width": 340,
+        "height": 370,
+        "top": 10,
+        "right": 826,
+        "bottom": 380,
+        "left": 486
+      },
+      "visible": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "kind": "material",
+      "scale": 1.1818181818181819,
+      "pad": {
+        "x": 526,
+        "y": 110,
+        "width": 260,
+        "height": 260,
+        "top": 110,
+        "right": 786,
+        "bottom": 370,
+        "left": 526
+      },
+      "panel": {
+        "x": 486,
+        "y": 10,
+        "width": 340,
+        "height": 370,
+        "top": 10,
+        "right": 826,
+        "bottom": 380,
+        "left": 486
+      },
+      "visible": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "sliderScale": 1.1818181818181819,
+      "expectedScale": 1.1818181818181819
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "kind": "color",
+      "scale": 1.19,
+      "pad": {
+        "x": 940,
+        "y": 367,
+        "width": 238,
+        "height": 238,
+        "top": 367,
+        "right": 1178,
+        "bottom": 605,
+        "left": 940
+      },
+      "panel": {
+        "x": 916,
+        "y": 102,
+        "width": 340,
+        "height": 513,
+        "top": 102,
+        "right": 1256,
+        "bottom": 615,
+        "left": 916
+      },
+      "visible": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "kind": "material",
+      "scale": 1.21,
+      "pad": {
+        "x": 965,
+        "y": 363,
+        "width": 242,
+        "height": 242,
+        "top": 363,
+        "right": 1207,
+        "bottom": 605,
+        "left": 965
+      },
+      "panel": {
+        "x": 916,
+        "y": 102,
+        "width": 340,
+        "height": 513,
+        "top": 102,
+        "right": 1256,
+        "bottom": 615,
+        "left": 916
+      },
+      "visible": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "sliderScale": 1.21,
+      "expectedScale": 1.21
+    }
+  ],
+  "errors": [],
+  "physicalDevice": false
+}

@@ -1,0 +1,19 @@
+{
+  "version": 5,
+  "cities": {
+    "beijing": {
+      "name": "北京",
+      "mask": "beijing-structure.webp",
+      "normal": "beijing-normal.hfn.gz",
+      "label": "beijing-label.webp",
+      "thumbnail": "beijing-thumb.webp"
+    },
+    "shenzhen": {
+      "name": "深圳",
+      "mask": "shenzhen-structure.webp",
+      "normal": "shenzhen-normal.hfn.gz",
+      "label": "shenzhen-label.webp",
+      "thumbnail": "shenzhen-thumb.webp"
+    }
+  }
+}

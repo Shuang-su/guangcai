@@ -1,0 +1,29 @@
+{
+  "version": "5.0.0",
+  "date": "2026-10-15",
+  "scope": "Beijing/Shenzhen landmark reconstruction; Shenzhen bridge removal",
+  "applicationTests": 24,
+  "assetTests": 6,
+  "browserChecks": 45,
+  "unexpectedBrowserErrors": [],
+  "build": "passed; existing 664.28 kB JS advisory unchanged",
+  "browser": "Chrome; Browser plugin not available; existing Playwright",
+  "viewports": [
+    "1440x1000",
+    "1200x900",
+    "390x844",
+    "844x390"
+  ],
+  "touch": "emulated slider drag and two-finger pan passed",
+  "masterPreservation": "ordinary compile preserves saved SVG; --trace rejects landmark masters",
+  "sources": "../sources.json",
+  "components": "../../../assets/masters/v5/landmarks/manifest.json",
+  "runtimeManifest": "../derivation.json",
+  "limitations": [
+    "Stylized artwork reconstructed from supplied references, not architectural survey drawings",
+    "User visual approval and physical manufacturing acceptance remain separate",
+    "No physical phone or Safari test"
+  ],
+  "implementationCommit": "5f3b89ee76f5e98c6606da1e1c112ddd82ce534d",
+  "statusNote": "Historical technical validation. User rejected simplified drawing quality; superseded by generated-image pipeline."
+}

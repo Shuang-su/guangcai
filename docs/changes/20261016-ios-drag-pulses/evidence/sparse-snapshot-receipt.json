@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-16T10:31:24.594028+00:00",
+  "action": "dematerialize committed sparse-excluded V5.4 snapshot; Git objects retained",
+  "path": "deployments/guangcai-no1-china-v5/6ad1f73c185ae5e7e363f9b6",
+  "trackedFiles": 1090,
+  "bytesVerified": 663854174,
+  "recoveryCommit": "f16bc5cbe7ff865ee61bba1a3e2a6a24e19e5f36",
+  "restoreCommand": "git restore --ignore-skip-worktree-bits --source=f16bc5cbe7ff865ee61bba1a3e2a6a24e19e5f36 -- deployments/guangcai-no1-china-v5/6ad1f73c185ae5e7e363f9b6",
+  "untrackedFilesRemoved": false
+}

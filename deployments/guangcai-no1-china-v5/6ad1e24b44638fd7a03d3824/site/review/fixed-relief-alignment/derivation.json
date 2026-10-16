@@ -1,0 +1,55 @@
+{
+  "method": "registered colour master, connected enamel support, gold interiors flattened, periodic float derivatives",
+  "normalScale": 4.4,
+  "clearcoatNormalScale": 2.4,
+  "regions": {
+    "body": {
+      "removedIsolatedPixels": 100,
+      "flatGoldPixels": 133079,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.1600598692893982,
+      "size": [
+        1024,
+        2466
+      ],
+      "protectedChannels": {
+        "baseColor": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+        "metalness": "c2c3fba0d984592a1a34d6a3fd012075132ce5b530b7891a4ac749a78cd732a0",
+        "roughness": "0c456cb793bf7f3eb144f45d1c24a0649f77305c9dbd17a687f8cb2e43c6b296"
+      },
+      "normalSha256": "994cb15e9320dc94fcf86f9ef08ac5eb3752b3fc0f08944c2a6413a6780ec7f5"
+    },
+    "handle": {
+      "removedIsolatedPixels": 317,
+      "flatGoldPixels": 64422,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.258332222700119,
+      "size": [
+        384,
+        4473
+      ],
+      "protectedChannels": {
+        "baseColor": "1bbe09ecdef463283f11c7f7319f80a05576311be5f28ff172eaf77751065e7e",
+        "metalness": "4a13505d79c8cd57b3ccff0257bc2eb204a872455359fa3fc89202e3f5ef2c2b",
+        "roughness": "427cdc89517cfd150b0f5ce2a57ef1f283e16079654c09992e975f7c58684329"
+      },
+      "normalSha256": "ad665303b31bc1eaeae8e8045e18bbf58236c9178208847acc02cddd223ac866"
+    },
+    "saucer": {
+      "removedIsolatedPixels": 1521,
+      "flatGoldPixels": 192431,
+      "flatGoldMaxSlope": 0.0,
+      "normalMaxSlope": 0.2337706983089447,
+      "size": [
+        8192,
+        1152
+      ],
+      "protectedChannels": {
+        "baseColor": "055dcb7b469f1dd641de2f5415c69bda9b6f85f450b0efcd902648773cde3225",
+        "metalness": "49d1780ab95ff7e824f9b4f9188ebfa96e3d4a80d57b16a350156ff18ce2cbd6",
+        "roughness": "bccfa79bc99476ded0b697b9836d860edfd4856793c11b0f8f12231fa2864d0e"
+      },
+      "normalSha256": "691aac4b5c9cbb3623bcea84fdc6d0a0439c58ed7745691593468aec83a0fbb7"
+    }
+  }
+}

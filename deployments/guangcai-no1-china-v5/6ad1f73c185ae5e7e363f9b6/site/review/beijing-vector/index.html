@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>北京线稿 · 钢笔路径样段</title>
+<style>body{max-width:1200px;margin:auto;padding:28px;font:16px/1.6 system-ui;background:#f3f0e9;color:#222}h1{font-size:30px}p{max-width:900px}section{display:grid;grid-template-columns:1fr 1fr;gap:20px}figure{margin:0;background:white;padding:14px;border-radius:8px}img{width:100%;display:block}figcaption{padding:10px 0}label{display:block;margin:12px 0}.compare{position:relative;background:white}.compare img{display:block;width:100%}.compare .top{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}input{width:100%}@media(max-width:650px){section{grid-template-columns:1fr}}</style>
+<h1>北京线稿：按原稿建立钢笔路径</h1>
+<p>这是一段上层屋顶的制作方法校准，尚未替换线上贴图。原稿决定构图和结构，中国杯 PSD 决定清楚的描线与独立填面原则。生成候选增加的檐口碎线已排除；自动描摹试验也未采用。</p>
+<section><figure><img src="source-roof.png"><figcaption>北京原稿：同一裁切范围，放大查看</figcaption></figure><figure><img src="pen-roof-lines.png"><figcaption>手工定义的贝塞尔路径样段：轮廓与结构线独立；牌匾字形仍为原稿位图</figcaption></figure><figure><img src="rejected-roof.png"><figcaption>被拒绝的生成候选：檐口出现原稿没有的密集碎线</figcaption></figure><figure><img src="pen-roof.png"><figcaption>独立填面示例：填色闭合边界不自动变成凹凸线</figcaption></figure></section>
+<h2>原稿与路径样段同坐标对照</h2><label>拖动查看原稿（左）与钢笔样段（右）<input id="split" type="range" min="0" max="100" value="50"></label><div class="compare"><img src="pen-roof-lines.png"><img class="top" id="overlay" src="source-roof.png"></div>
+<h2>中国杯原 PSD 的线稿标准</h2><img src="china-psd-standard.png" alt="原PSD天坛建筑图层">
+<p>线宽暂为原图坐标下外轮廓2.4、内线1.15，是视觉校准值，尚不是工厂确认的最小线宽。下层屋檐、栏杆台阶、长城、山体、云纹及全幅材质接入尚未完成。</p>
+<script>document.getElementById('split').addEventListener('input',e=>document.getElementById('overlay').style.clipPath=`inset(0 ${100-e.target.value}% 0 0)`)</script></html>

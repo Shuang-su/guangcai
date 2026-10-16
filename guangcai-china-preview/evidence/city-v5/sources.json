@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "path": "assets/source/v5/beijing-original.jpg",
+      "sha256": "60bc44915f0096cc963473d2c81b59f4292c10af3e40daa79189707aeee3d038",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/source/v5/beijing-generated-candidate.png",
+      "sha256": "0b9b7cf5afa656097c4e9dae3ae65855e21b2d45c5d339466181c1d7c26f82a7",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/source/v5/beijing-baseline-candidate.png",
+      "sha256": "4c43628d75eb7725d1a572e68c7875e175164e6ab6f0a55de1d2dbb8ea056f79",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/masters/v4/shenzhen-lines-generated.png",
+      "sha256": "edf2adbff13576f1908977408217aa4777e69fee9ae940131c9e2af00b622b93",
+      "size": [
+        1900,
+        828
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "public/review/beijing-vector/china-psd-standard.png",
+      "sha256": "92289c404f8a19025c0e3a0615f334d5f54adc57db13280f5c4e8c71cc0b358c",
+      "size": [
+        1215,
+        754
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/source/china-lines.psd",
+      "sha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+      "size": [
+        7016,
+        4961
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/source/floral-export.psd",
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37",
+      "size": [
+        6409,
+        3858
+      ],
+      "mode": "CMYK"
+    },
+    {
+      "path": "assets/extracted/layer-6-alpha.png",
+      "sha256": "0cfd310da446d26dc26b1412ec377fb3f96e2c7fecf767551f32082c5c46d775",
+      "size": [
+        2870,
+        1782
+      ],
+      "mode": "L"
+    },
+    {
+      "path": "assets/source/v5/rebuild/beijing-generated-study.png",
+      "sha256": "b3422294d12e5bb3531773396d155f292beff008a520155cd63138f07de3a4c4",
+      "size": [
+        1898,
+        829
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/source/v5/rebuild/shenzhen-generated-study.png",
+      "sha256": "2169b70bf16700fbbfa2bfc4d18d6cfbee8c435cf814f9a6ffcd9dc3ffcba003",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/source/v5/generated-detail/beijing-white.png",
+      "sha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+      "size": [
+        1899,
+        828
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+      "size": [
+        1900,
+        828
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "generation": {
+    "tool": "built-in ImageGen",
+    "prompts": [
+      "assets/source/v5/beijing-generation-prompt.txt",
+      "assets/source/v5/beijing-refinement-prompt.txt"
+    ],
+    "iterations": 2,
+    "selectedForLocalPilot": "assets/source/v5/beijing-baseline-candidate.png",
+    "userDirection": "继续细化黑线，类似SVG和深圳一样简洁；参考原PSD祈年殿；去掉前景波浪，建筑到底",
+    "acceptance": "local implementation candidate; no physical manufacturing acceptance",
+    "nativeResolution": "1899x828; runtime 4096x1783 is a derived output, not native 4K",
+    "status": "Historical first V5 pilot; superseded by landmark SVG reconstruction."
+  },
+  "psdFrame": {
+    "source": "assets/source/china-lines.psd",
+    "bounds": [
+      777,
+      2243,
+      6210,
+      4608
+    ],
+    "size": [
+      5433,
+      2365
+    ],
+    "ppi": 600
+  },
+  "floralPpi": 400,
+  "currentArtwork": {
+    "method": "ImageGen source -> faithful spline contours; no idealized landmark reconstruction",
+    "review": "assets/source/v5/generated-detail/review.json",
+    "prompts": "assets/source/v5/generated-detail/white-background-prompts.json",
+    "authoritativeSources": [
+      "assets/source/v5/generated-detail/beijing-white.png",
+      "assets/source/v5/generated-detail/shenzhen-white.png"
+    ],
+    "shenzhenBridge": "removed",
+    "beijingBoundary": "two visible towers; continuous downhill ending; no horizontal ink underline",
+    "fillClosure": "separate fill-only helper; never embossed"
+  }
+}

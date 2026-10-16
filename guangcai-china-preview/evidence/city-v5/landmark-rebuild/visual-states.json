@@ -1,0 +1,466 @@
+{
+  "beijing": {
+    "version": "5.0.0",
+    "selection": {
+      "current": {
+        "variant": "beijing-green",
+        "finish": "enamel",
+        "text": "none",
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        }
+      },
+      "desired": {
+        "variant": "beijing-green",
+        "finish": "enamel",
+        "text": "none",
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        }
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      31.765735672387418,
+      240.54729642798253,
+      909.6516524326336
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "gray",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "f02c0586-bfe5-43a1-9171-a7b2ec948371",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 3,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "ae03dd83-94a1-4145-8c02-2a7acd34797e",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 1,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "ca3d0233-e4a1-4fb5-8ca0-ed9de6caeab1",
+      "5b4dcb33-b7bf-41fc-8358-ee1ed6e09042",
+      "56566b1d-11d0-4e75-952e-dc941c98183c",
+      "4cb1ff6e-b53f-48a8-b58e-699fc4251f9c",
+      "9bd5d1da-428a-4bc1-b2ed-83996a138af9",
+      "6b5c2917-8d18-4800-a167-49b3504aa2e5",
+      "f7412535-f76a-44e9-af61-4bb05603d052",
+      "689cdbe3-1f57-4a6a-8c00-f6cb16c062f1",
+      "c171a3d2-e89a-45ed-b198-07f8a1908a85",
+      "a08c2530-d651-43c3-bbb0-46e35896140b",
+      "55dcd081-c481-40ad-b4c6-d754bd00f348"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 28,
+      "programs": 26
+    },
+    "city": {
+      "pack": {
+        "id": "beijing-green",
+        "version": 5,
+        "name": "北京 · 青绿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "./cities/v5/beijing-structure.webp",
+        "metalness": "./cities/v5/beijing-structure.webp",
+        "roughness": "./cities/v5/beijing-structure.webp",
+        "normal": "./cities/v5/beijing-normal.hfn.gz",
+        "coverage": "./cities/v5/beijing-structure.webp",
+        "normalEncoding": "rgba16f",
+        "finish": "enamel",
+        "parametric": {
+          "mask": "./cities/v5/beijing-structure.webp",
+          "appearance": {
+            "preset": "green",
+            "hue": 156.45569620253164,
+            "saturation": 63.2,
+            "lightness": 24.50980392156863,
+            "material": 0,
+            "relief": 1
+          }
+        },
+        "label": {
+          "source": "./cities/v5/beijing-label.webp",
+          "hidden": true
+        }
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "parameters": {
+        "enabled": true,
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        },
+        "fill": {
+          "metalness": 0,
+          "roughness": 0.31,
+          "clearcoat": 0.7490196078431373
+        },
+        "line": {
+          "color": "#dcb251",
+          "metalness": 1,
+          "roughness": 0.23,
+          "clearcoat": 0.10196078431372549
+        },
+        "updates": 1
+      },
+      "cachedCities": 1,
+      "uniformOnly": false,
+      "maps": [
+        {
+          "uuid": "49d28e26-2cca-4b69-b6b0-6deae6a33136",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "44c00bad-2acf-40a2-8dd3-f2151946682a",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "RGBA16F"
+        },
+        {
+          "uuid": "f3ade187-f1a7-4388-ae8f-180625810379",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        }
+      ],
+      "labelSource": null,
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "cleanGoldGround": true,
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.4,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "4cc03036-e147-4899-99dc-a8111acf2c6b",
+        "normal": "5b6fc589-f795-4d73-a886-7e93719a2b1c",
+        "roughness": "45764d1c-1ce6-463b-a521-676900a2b644",
+        "metalness": "35604243-60ca-4cb8-b6bd-280aa04b2621"
+      },
+      "handle": {
+        "baseColor": "fb000e61-1471-4eef-9572-be10e0e62d9a",
+        "normal": "9affa5de-30f7-419b-8fc8-38016db3b4cd",
+        "roughness": "d749e78e-7b63-4825-8c12-8962c13c037f",
+        "metalness": "23c2ac98-9e86-49e6-ac72-cd3f8e138989"
+      },
+      "saucer": {
+        "baseColor": "827bbc0f-d06d-4830-af5b-99e1c7f46787",
+        "normal": "65a816e3-5a26-48c3-90d5-36b3a13f55d9",
+        "roughness": "f887e7be-19e5-4359-9afb-8e9e9ad46fb9",
+        "metalness": "dea1f41c-515b-4fa7-986c-8a7bcba5671c"
+      }
+    }
+  },
+  "shenzhen": {
+    "version": "5.0.0",
+    "selection": {
+      "current": {
+        "variant": "shenzhen-green",
+        "finish": "enamel",
+        "text": "none",
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        }
+      },
+      "desired": {
+        "variant": "shenzhen-green",
+        "finish": "enamel",
+        "text": "none",
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        }
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      31.765735672387418,
+      240.54729642798253,
+      909.6516524326336
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "gray",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "f02c0586-bfe5-43a1-9171-a7b2ec948371",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 5,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "ae03dd83-94a1-4145-8c02-2a7acd34797e",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 1,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "ca3d0233-e4a1-4fb5-8ca0-ed9de6caeab1",
+      "5b4dcb33-b7bf-41fc-8358-ee1ed6e09042",
+      "56566b1d-11d0-4e75-952e-dc941c98183c",
+      "4cb1ff6e-b53f-48a8-b58e-699fc4251f9c",
+      "9bd5d1da-428a-4bc1-b2ed-83996a138af9",
+      "6b5c2917-8d18-4800-a167-49b3504aa2e5",
+      "f7412535-f76a-44e9-af61-4bb05603d052",
+      "689cdbe3-1f57-4a6a-8c00-f6cb16c062f1",
+      "c171a3d2-e89a-45ed-b198-07f8a1908a85",
+      "a08c2530-d651-43c3-bbb0-46e35896140b",
+      "55dcd081-c481-40ad-b4c6-d754bd00f348"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 31,
+      "programs": 26
+    },
+    "city": {
+      "pack": {
+        "id": "shenzhen-green",
+        "version": 5,
+        "name": "深圳 · 青绿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "./cities/v5/shenzhen-structure.webp",
+        "metalness": "./cities/v5/shenzhen-structure.webp",
+        "roughness": "./cities/v5/shenzhen-structure.webp",
+        "normal": "./cities/v5/shenzhen-normal.hfn.gz",
+        "coverage": "./cities/v5/shenzhen-structure.webp",
+        "normalEncoding": "rgba16f",
+        "finish": "enamel",
+        "parametric": {
+          "mask": "./cities/v5/shenzhen-structure.webp",
+          "appearance": {
+            "preset": "green",
+            "hue": 156.45569620253164,
+            "saturation": 63.2,
+            "lightness": 24.50980392156863,
+            "material": 0,
+            "relief": 1
+          }
+        },
+        "label": {
+          "source": "./cities/v5/shenzhen-label.webp",
+          "hidden": true
+        }
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "parameters": {
+        "enabled": true,
+        "appearance": {
+          "preset": "green",
+          "hue": 156.45569620253164,
+          "saturation": 63.2,
+          "lightness": 24.50980392156863,
+          "material": 0,
+          "relief": 1
+        },
+        "fill": {
+          "metalness": 0,
+          "roughness": 0.31,
+          "clearcoat": 0.7490196078431373
+        },
+        "line": {
+          "color": "#dcb251",
+          "metalness": 1,
+          "roughness": 0.23,
+          "clearcoat": 0.10196078431372549
+        },
+        "updates": 2
+      },
+      "cachedCities": 2,
+      "uniformOnly": false,
+      "maps": [
+        {
+          "uuid": "410bc2d6-44d8-4d04-8536-658f49f91e29",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "3ddbc23c-ff7e-483f-8e4c-7e61859a57a2",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "RGBA16F"
+        },
+        {
+          "uuid": "a803bcb0-94df-4b96-befe-dad1b7f903ed",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        }
+      ],
+      "labelSource": null,
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "cleanGoldGround": true,
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.4,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "4cc03036-e147-4899-99dc-a8111acf2c6b",
+        "normal": "5b6fc589-f795-4d73-a886-7e93719a2b1c",
+        "roughness": "45764d1c-1ce6-463b-a521-676900a2b644",
+        "metalness": "35604243-60ca-4cb8-b6bd-280aa04b2621"
+      },
+      "handle": {
+        "baseColor": "fb000e61-1471-4eef-9572-be10e0e62d9a",
+        "normal": "9affa5de-30f7-419b-8fc8-38016db3b4cd",
+        "roughness": "d749e78e-7b63-4825-8c12-8962c13c037f",
+        "metalness": "23c2ac98-9e86-49e6-ac72-cd3f8e138989"
+      },
+      "saucer": {
+        "baseColor": "827bbc0f-d06d-4830-af5b-99e1c7f46787",
+        "normal": "65a816e3-5a26-48c3-90d5-36b3a13f55d9",
+        "roughness": "f887e7be-19e5-4359-9afb-8e9e9ad46fb9",
+        "metalness": "dea1f41c-515b-4fa7-986c-8a7bcba5671c"
+      }
+    }
+  }
+}
