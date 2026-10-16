@@ -1,0 +1,400 @@
+{
+  "source": "/Volumes/Prism/Codex/guangcai-viewer-20260929/outputs/guangcai-china-preview",
+  "version": "2.2",
+  "deployId": "6ace111ab0415c9455a3c6f8",
+  "changedFiles": [
+    {
+      "path": "guangcai-china-preview/assets/source/mobile-background-user.jpg",
+      "change": "added",
+      "bytes": 268476,
+      "sha256": "81191d28f604eb280893612ea33dfc3b400592f1dc99fc66b74f4a4039c4dd84"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/background-asset.json",
+      "change": "added",
+      "bytes": 136,
+      "sha256": "e7eb2cefdc879ced8957fb096e3753a61b5915338d4b06c109ad2c6fc094dafd"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/evidence/deployment/netlify-deploy.json",
+      "change": "added",
+      "bytes": 556,
+      "sha256": "3aec09e2cfca275a06aa242183bd3fad89c36cb929fc82f9c63367ceb105f3c2"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/evidence/deployment/online-qa.json",
+      "change": "added",
+      "bytes": 31007,
+      "sha256": "1057f037b18c1568725d83725cd155587c6e3751e4dbfb1cbcab50a6648b6c6f"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/evidence.html",
+      "change": "added",
+      "bytes": 22248,
+      "sha256": "52d1780e50c73da5a1593bfe48bbd0e27b3b440cb2735aabf913257cf6fab016"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/netlify.toml",
+      "change": "added",
+      "bytes": 694,
+      "sha256": "14a0c3efd4fb063f5d3665805cd623f2db250d5cfdc814ac25d515b57241cf21"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/src/main.ts",
+      "change": "added",
+      "bytes": 7840,
+      "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/src/studio/studio.ts",
+      "change": "added",
+      "bytes": 3847,
+      "sha256": "606bba35a55b5eb1b7dac9b7ecfcc603b8d074ed8daf38d44388df5d042dd89d"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/src/ui/interface.ts",
+      "change": "added",
+      "bytes": 5530,
+      "sha256": "0ef6fe581c9896893801f3f89fdaab05b7cf66e5a6068a6fdec39cd5b80f5de4"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/src/ui/styles.css",
+      "change": "added",
+      "bytes": 6207,
+      "sha256": "ddfaa8a265526f840f4ddfacd202d33dbbfad3c344a0ff37ea25f053848b4bf1"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/tools/china-online-qa.mjs",
+      "change": "added",
+      "bytes": 9549,
+      "sha256": "19dc964c88478fa8e6ec32edf2c5fe252b20a9d27d13c31157dd7cac0b3d3af4"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/tools/china-qa.mjs",
+      "change": "added",
+      "bytes": 13146,
+      "sha256": "2be2453f5820f7493030a49224902a2f788f306341f57f77cbe59a2fb9af7773"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/before/tools/prepare-china-release.mjs",
+      "change": "added",
+      "bytes": 1630,
+      "sha256": "046d1297aad6e526ce88c0835221f7163edb3a2eac36f278bf4a1f85a1780866"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/browser-qa.json",
+      "change": "added",
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/changes.patch",
+      "change": "added",
+      "bytes": 26532,
+      "sha256": "570765e84867eafc911dac9699ba6ed4733af721741e4e089a4d88b93b769700"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/completion.md",
+      "change": "added",
+      "bytes": 3680,
+      "sha256": "831eb234a6e6ad16ed752d58d65281b72498508d7c41eacbbdab0dfe38a9a5e3"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/delivery-verification.json",
+      "change": "added",
+      "bytes": 437,
+      "sha256": "1d9982991ac77b4363193bf620636c2c8793f7033a4c98cd3f0d4cca063c01ad"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/local-background-qa.json",
+      "change": "added",
+      "bytes": 1475,
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/netlify-deploy.json",
+      "change": "added",
+      "bytes": 556,
+      "sha256": "6c5e7bbf7cf1912c695fdfe2785bd0e03d5f7cd4047631ba764a8aae0190ea70"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/online-background-qa.json",
+      "change": "added",
+      "bytes": 1558,
+      "sha256": "06d6f17556b68939656b0c1a652363c8b80e6d2327d44da93f620e84802d4145"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/online-qa.json",
+      "change": "added",
+      "bytes": 31927,
+      "sha256": "2f70ab03f4996ca67916379422822a3dc141a88c13e8283b6925f2d906e525ab"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/plan.md",
+      "change": "added",
+      "bytes": 793,
+      "sha256": "669979ea730f9762147582265cf7ec5dbfd05b5ab35e5109ae69d4e2a4f8047c"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/protected.json",
+      "change": "added",
+      "bytes": 3683,
+      "sha256": "0a8937fd15771399b76df99a131e5d4fecddca4e5d24e8edb6d1cecd2ac3efc9"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/release-manifest.json",
+      "change": "added",
+      "bytes": 30775,
+      "sha256": "8f4b571767a81e3efca9e863730aea777faa53b9b72f99e679094aef1dde15fe"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/remote-files.json",
+      "change": "added",
+      "bytes": 42054,
+      "sha256": "441fb762b67acbc8fe506143ef3f017c08a0b5ae701f4cccea2ed636db7d79c0"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/request.md",
+      "change": "added",
+      "bytes": 232,
+      "sha256": "b485f0c3901fd0f07d47d85768e2779e09512e06d649a0c7c2c5fb3b2b6c517d"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/sites-after.json",
+      "change": "added",
+      "bytes": 408,
+      "sha256": "3159208c116c2de839203c22e727a08c2d73c7ec6e838c3d6b472d6a1e3fa586"
+    },
+    {
+      "path": "guangcai-china-preview/docs/changes/20261013-mobile-background/sites-before.json",
+      "change": "added",
+      "bytes": 408,
+      "sha256": "b836d34f63f856fc487b89fc1a312da357cd82e09a7cf4b712b70ccad615b731"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/browser-qa.json",
+      "change": "modified",
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/delivery-verification.json",
+      "change": "modified",
+      "bytes": 437,
+      "sha256": "1d9982991ac77b4363193bf620636c2c8793f7033a4c98cd3f0d4cca063c01ad"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/desktop-gray.png",
+      "change": "added",
+      "bytes": 337103,
+      "sha256": "8699f525b0bc0191a56633a85ecfab9d8aa054c76f28f53440d5105c6fd4bb1c"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/desktop-soft.png",
+      "change": "added",
+      "bytes": 457914,
+      "sha256": "9df48cf161c538f74931006cd4e04eec3f8b4560cb5d87d5b8ac3183e3a455fd"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/mobile-gray.png",
+      "change": "added",
+      "bytes": 119031,
+      "sha256": "0d7c4c241dc54b05f4607d3878ae6dd1a9ae60f6647d22b5534a2e67eae023a0"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/mobile-landscape.png",
+      "change": "added",
+      "bytes": 120997,
+      "sha256": "6edeff30ce09be222dc8f2cdaa1b8e502246ca8ea4193c2f86f94d2e3f4dcbc4"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/mobile-panel.png",
+      "change": "added",
+      "bytes": 180126,
+      "sha256": "46be28315034716f5e27765379fce7522d929ce207a6bf64c3d4f7ae52db3b22"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/mobile-soft.png",
+      "change": "added",
+      "bytes": 210415,
+      "sha256": "297ac853015a3f97dd4bd4707e11dcbf7a85ab7f4c26875dada091deb77cedea"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/small-phone.png",
+      "change": "added",
+      "bytes": 129280,
+      "sha256": "b26abe04e5496bf05e027fe373a878191e0f475d3480fbd592eb0989b2489442"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/background/verification.json",
+      "change": "added",
+      "bytes": 1558,
+      "sha256": "06d6f17556b68939656b0c1a652363c8b80e6d2327d44da93f620e84802d4145"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/cold-load-resources.json",
+      "change": "modified",
+      "bytes": 4304,
+      "sha256": "4a4f16170e56643d5e26f268de0a9029e503c80cb584b523bb8e48441d803dd9"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/live-desktop.png",
+      "change": "modified",
+      "bytes": 337103,
+      "sha256": "8699f525b0bc0191a56633a85ecfab9d8aa054c76f28f53440d5105c6fd4bb1c"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/live-detail.png",
+      "change": "modified",
+      "bytes": 769292,
+      "sha256": "03a8caa5ab629e475ae634d62b260ae549d517fa87f6acafd8e4e43734e3eb16"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/live-evidence.png",
+      "change": "modified",
+      "bytes": 639797,
+      "sha256": "6f7dceb616e70f1a53d632bed7c906d9fa94c703cc8bd9fdaacbf05d41bfd6aa"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/live-mobile.png",
+      "change": "modified",
+      "bytes": 209725,
+      "sha256": "4174c23e60fdc1880b001e073e2dd992a8e9264455af5ed918530ec3ef3338f7"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/live-text-face.png",
+      "change": "modified",
+      "bytes": 290752,
+      "sha256": "f9e9f229581a711878a30e56c25fefc19008042dbfb8792d0821d35823aafff1"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/netlify-deploy.json",
+      "change": "modified",
+      "bytes": 556,
+      "sha256": "6c5e7bbf7cf1912c695fdfe2785bd0e03d5f7cd4047631ba764a8aae0190ea70"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/online-qa.json",
+      "change": "modified",
+      "bytes": 31927,
+      "sha256": "2f70ab03f4996ca67916379422822a3dc141a88c13e8283b6925f2d906e525ab"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/release-manifest.json",
+      "change": "modified",
+      "bytes": 30775,
+      "sha256": "8f4b571767a81e3efca9e863730aea777faa53b9b72f99e679094aef1dde15fe"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/deployment/remote-files.json",
+      "change": "modified",
+      "bytes": 42054,
+      "sha256": "441fb762b67acbc8fe506143ef3f017c08a0b5ae701f4cccea2ed636db7d79c0"
+    },
+    {
+      "path": "guangcai-china-preview/netlify.toml",
+      "change": "modified",
+      "bytes": 808,
+      "sha256": "1815b296632d4ca9acadbb7c1a1fc88de2e9e57032e0dc7199d60fd3cac5c143"
+    },
+    {
+      "path": "guangcai-china-preview/public/backgrounds/soft-light-d9af01e672e4.webp",
+      "change": "added",
+      "bytes": 38714,
+      "sha256": "d9af01e672e47786717543e6908236e997d080c080ba88f6541d815c3f5e870c"
+    },
+    {
+      "path": "guangcai-china-preview/public/evidence.html",
+      "change": "modified",
+      "bytes": 23419,
+      "sha256": "0eecf935bc0aba2ba29d2219ec94f924c19008a377a28b2334b7a9304153fbc7"
+    },
+    {
+      "path": "guangcai-china-preview/public/review/background/mobile-comparison.jpg",
+      "change": "added",
+      "bytes": 108055,
+      "sha256": "a24486acadbc2c1a30be3c2ca989fd4c7ec980bbe385fe46b346c446bc27a70f"
+    },
+    {
+      "path": "guangcai-china-preview/public/review/background/mobile-panel.jpg",
+      "change": "added",
+      "bytes": 63961,
+      "sha256": "9c6e4d3191e1673b69d9c53fb68901d4edff02b0b27abe07347bf23a4407a37c"
+    },
+    {
+      "path": "guangcai-china-preview/public/review/background/verification.json",
+      "change": "added",
+      "bytes": 1475,
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8"
+    },
+    {
+      "path": "guangcai-china-preview/public/review/browser-qa.json",
+      "change": "modified",
+      "bytes": 2583,
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7"
+    },
+    {
+      "path": "guangcai-china-preview/src/main.ts",
+      "change": "modified",
+      "bytes": 8218,
+      "sha256": "c34da316e619e8e04053912d3b92181d78030746a76a06e4ab44906828e212de"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/background-asset.json",
+      "change": "added",
+      "bytes": 136,
+      "sha256": "e7eb2cefdc879ced8957fb096e3753a61b5915338d4b06c109ad2c6fc094dafd"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/background.ts",
+      "change": "added",
+      "bytes": 5324,
+      "sha256": "b14f4a6baa7e9e5c71e92d5efaef495b11ba7e169646ab27ee1086d929bc46fc"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/interface.ts",
+      "change": "modified",
+      "bytes": 8942,
+      "sha256": "b00c0742e4e4cc1a5d398c9052ca1300e44a2eaddd69acd7ea49ad721d925822"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/styles.css",
+      "change": "modified",
+      "bytes": 7718,
+      "sha256": "808172a3f939084eb4244f49eaec32cb1247dc59e3ce875d46cfc4bfa261e738"
+    },
+    {
+      "path": "guangcai-china-preview/tools/background-evidence.mjs",
+      "change": "added",
+      "bytes": 1516,
+      "sha256": "343ce1d7bccf03349a63480a0ea0f492b5f89c3007a8d1125b35dc0fbcbe0d39"
+    },
+    {
+      "path": "guangcai-china-preview/tools/background-qa.mjs",
+      "change": "added",
+      "bytes": 9922,
+      "sha256": "4b184daaada730267a6991c2dc23a6a89d9645cedb03fe9148f4a133b6f46af4"
+    },
+    {
+      "path": "guangcai-china-preview/tools/china-online-qa.mjs",
+      "change": "modified",
+      "bytes": 9549,
+      "sha256": "ba0c03167ec57c8b799969527f5cc06e49271d6d6255253d5423d5f85f487069"
+    },
+    {
+      "path": "guangcai-china-preview/tools/china-qa.mjs",
+      "change": "modified",
+      "bytes": 13168,
+      "sha256": "528200245892308c916bfe64549bb6987d7023ffa41b0b8371b939e9d91379f7"
+    },
+    {
+      "path": "guangcai-china-preview/tools/prepare-china-release.mjs",
+      "change": "modified",
+      "bytes": 1644,
+      "sha256": "0060f9e6f9b77aea862f20493f7e9acb09697a89a68c407b807800287d814121"
+    }
+  ],
+  "removedFiles": [],
+  "deploymentFiles": 135,
+  "deploymentBytes": 43850458
+}

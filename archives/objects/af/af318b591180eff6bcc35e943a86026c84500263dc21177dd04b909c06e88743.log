@@ -1,0 +1,21 @@
+
+> guangcai-object-study@1.0.0 test
+> tsx --test tools/geometry.test.ts
+
+minimum radial cavity clearance, mm: 1.1500015258789062
+max handle UV longitudinal scale error: 0.0020292070439866805
+triangles checked: 150084
+✔ handle and porcelain collars stay outside the cavity across all UI dimension extremes (483.679584ms)
+✔ handle artwork uses uniform physical scale through the upper corner and lower curve (4.907291ms)
+✔ all rendered triangles face the same side as their vertex normals; no invalid attributes (101.924916ms)
+✔ reference-derived assembly retains inset saucer foot, recessed cup base and lid flange (42.745125ms)
+✔ invalid parameters reject before creating a replacement model (1.566083ms)
+✔ bottom marks face outward, sit below the recessed base and share physical scale (38.656916ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 990.691708

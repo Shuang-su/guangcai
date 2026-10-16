@@ -1,0 +1,90 @@
+
+> guangcai-object-study@1.0.0 textures
+> node tools/derive-pbr.mjs
+
+{
+  "version": 1,
+  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
+  "maxReliefMm": 0.045,
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2048,
+      "maps": {
+        "baseColor": {
+          "url": "artwork/body-baseColor.png",
+          "sha256": "455c7584ff23920b28cddd3c789cefd7ab68c7fabcb6b33c351adfc5ed5ab87a"
+        },
+        "metalness": {
+          "url": "artwork/body-metalness.png",
+          "sha256": "133a4e39e212b1bbf7dbad1dde9bd3c19768c7292827af61a9709e248d6e5413"
+        },
+        "roughness": {
+          "url": "artwork/body-roughness.png",
+          "sha256": "80695d48a6ac89cbc2fd0c661ba45099a897ef5799ed370c529a3daf2339351d"
+        },
+        "height": {
+          "url": "artwork/body-height.png",
+          "sha256": "ff09649b1ee1179c8eab006657afb475750a5395a9f3ae323a6bea9674b598da"
+        },
+        "normal": {
+          "url": "artwork/body-normal.png",
+          "sha256": "18d175b08c73f102a6fe1c8d9720c67f7293ace1e688e2e20b00f9fb841defec"
+        }
+      }
+    },
+    "handle": {
+      "width": 384,
+      "height": 1536,
+      "maps": {
+        "baseColor": {
+          "url": "artwork/handle-baseColor.png",
+          "sha256": "6885ceb7d26a08a28cd96c471f68b403732d553b9b130ab3bfd588ed8b556313"
+        },
+        "metalness": {
+          "url": "artwork/handle-metalness.png",
+          "sha256": "2dab79796c264a9bb61219eecf93ea6699e0944ffea390d6ab7b1436e4a122cf"
+        },
+        "roughness": {
+          "url": "artwork/handle-roughness.png",
+          "sha256": "e259e960bb9d170fe73599cb4d0b3fface887be60bef352a939932ab92e904f6"
+        },
+        "height": {
+          "url": "artwork/handle-height.png",
+          "sha256": "056cde38a261736af1dad3fa0d886deeea081a9220e1a406769123baa1ad42eb"
+        },
+        "normal": {
+          "url": "artwork/handle-normal.png",
+          "sha256": "360e20f86e33501868a71ac1d6d2f6e51f5347108f524d9ef57cefe30212fa3a"
+        }
+      }
+    },
+    "saucer": {
+      "width": 2172,
+      "height": 181,
+      "maps": {
+        "baseColor": {
+          "url": "artwork/saucer-baseColor.png",
+          "sha256": "37f3216406c293717c756a8b28c66b9fa35a2e88b302c5293f5287247a4dd0b6"
+        },
+        "metalness": {
+          "url": "artwork/saucer-metalness.png",
+          "sha256": "932f32f67a69ab47ece6e5d11d869aeb3bff3a1d09c6d081522727e6f71e6151"
+        },
+        "roughness": {
+          "url": "artwork/saucer-roughness.png",
+          "sha256": "379ecf0577977270e1e0e4297ecdbae5bb35bec359aecee9f5476a93e626534b"
+        },
+        "height": {
+          "url": "artwork/saucer-height.png",
+          "sha256": "bf3c4db0f3b50e476831a1ebd5e3d8bdf60673d0a61ab3f1ae64389c892367f3"
+        },
+        "normal": {
+          "url": "artwork/saucer-normal.png",
+          "sha256": "7f30c5d277f00d2d124b6247b128fbdaf52e20e813e858fed385ac93faeb7d63"
+        }
+      }
+    }
+  }
+}

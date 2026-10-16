@@ -1,0 +1,20 @@
+{
+  "onlineCheckCount": 81,
+  "errors": [],
+  "defaultToReadyIncluding1900msSettle": 9929,
+  "defaultTransferBytes": 52188422,
+  "conditions": "Fresh Playwright Chromium desktop context, no artificial network throttling, same machine. Process-only proxy DNS mapping and HTTP/2 disabled to accommodate this machine network. Includes browser decode/render; not a real mobile network benchmark.",
+  "physicalDevice": "not tested",
+  "firstRecordedVariantSelectionsMs": {
+    "china-green": 1297,
+    "china-red": 3002,
+    "china-purple": 2815,
+    "china-blue": 3461,
+    "china-blue-line": 2229,
+    "china-purple-line": 2167,
+    "shenzhen-red": 1734,
+    "shenzhen-teal": 4266
+  },
+  "firstRecordedVariantSelectionMedianMs": 2522.0,
+  "variantTimingNote": "Each selection measurement includes 200 ms render settle. China green was already loaded by preceding UI checks; other seven first recorded variants had not yet been selected. These are single observations, not repeated cold benchmarks."
+}

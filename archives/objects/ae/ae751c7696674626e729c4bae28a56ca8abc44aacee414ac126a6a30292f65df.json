@@ -1,0 +1,244 @@
+{
+  "version": "1.0-pre.1",
+  "title": "初始参数化杯盖碟与 PBR",
+  "sessionId": "01a0ed06-5ea9-7532-a412-9c5a7a53716e",
+  "sourceLineCutoff": 149,
+  "project": "guangcai-viewer",
+  "sourceReplay": "original-01-initial",
+  "deploymentSnapshot": null,
+  "commands": [
+    {
+      "command": "node tools/derive-pbr.mjs",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.1/derive-pbr.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.1/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "6ca9ddb2d68db26f0ddaf7a825e94964ec3fe089a6b20d77aeff7711cc657162"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a74e29a48d6f1abd7e4fd029a7aa44671cb40cd2751ff302c34325bb4e1a28f3"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "6f27978d2da7165d2d15146cb07bc12a729e6e57c6b3f5338ce22b41e607e5b1"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "ac99794a71a4b7e5eacaf50fd1d721451bab534125541d3738955a5b3e2fd1f7"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "9d50866559579bdc9e9d1271b311eecd4e01d6debd75812301573d71df35d98c"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "b5e1989e02e627575671e42d92b8722cff403738cd16947927b43c583395e471"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "081b919e3dd2ed0e0486d5c185cd46d698636c735ae84000206872b0d765eea3"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "012acffba287a23635e9bb93c39ca1b8c7eaeb238dee9f7e1feab3cbb121f52a"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "5e07bda926a8f3a11e7c8dfdaa977ad2052a45dc2e94e4d0c20c7bbeafd741bb"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "85526d0a0f57cfac6a33adcce04d0aa620e5944172b13efeec027af51bec0c8a"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "ff3ca6814706791fd84abd28cd5ad3ce109be6d15184dcfa06b7aa76d6ce10b5"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "305e78385d5ed99231ff82e4f7c9ca83d7c115d090dc764e00c481ebb2d122b6"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "2a66774b3bcb1c6f11f64370c35c4cb4d1718cfdddfc82b5690d1358d110d4a6"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "fd5a8f227639647059a3057a1b8aaabe229be913891c3f16fda075327bc670cf"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    }
+  ],
+  "originalTimeUTC": "2026-09-29T12:16:25.963Z",
+  "reconstructedAtUTC": "2026-10-13T11:10:36Z",
+  "scopeNotes": [
+    "Source checkpoints are reconstructed now from saved file writes/patches. They were not Git commits at the original time.",
+    "assets/ retains the collected masters and inputs, including unused later alternatives. Runtime references are determined by each checkpoint source.",
+    "Early runtime maps are re-derived locally from retained masters/PSD with the historical scripts and current retained dependency lock. They are not claimed to be original exported bytes.",
+    "Historical release comparison checks every path in the preserved release; ancillary retained assets outside that release are not deployment contents.",
+    "No historical shell command or deployment was replayed. The original project and online sites were not modified.",
+    "Source fit-calibration metadata uses preserved calibration outputs; ephemeral renderer candidates and unsaved editor states are not all recoverable."
+  ],
+  "sourceWriteEvidence": [
+    {
+      "line": 100,
+      "path": "package.json",
+      "sha256": "a74e29a48d6f1abd7e4fd029a7aa44671cb40cd2751ff302c34325bb4e1a28f3"
+    },
+    {
+      "line": 100,
+      "path": "tsconfig.json",
+      "sha256": "fd5a8f227639647059a3057a1b8aaabe229be913891c3f16fda075327bc670cf"
+    },
+    {
+      "line": 100,
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    },
+    {
+      "line": 100,
+      "path": "index.html",
+      "sha256": "6ca9ddb2d68db26f0ddaf7a825e94964ec3fe089a6b20d77aeff7711cc657162"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "6f27978d2da7165d2d15146cb07bc12a729e6e57c6b3f5338ce22b41e607e5b1"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/surface.ts",
+      "sha256": "b5e1989e02e627575671e42d92b8722cff403738cd16947927b43c583395e471"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "7a7f8715c6ec489be0c3b069d036ba0f2c69bf96890b98576931262204e42008"
+    },
+    {
+      "line": 108,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "2a66774b3bcb1c6f11f64370c35c4cb4d1718cfdddfc82b5690d1358d110d4a6"
+    },
+    {
+      "line": 108,
+      "path": "src/materials/materials.ts",
+      "sha256": "5e07bda926a8f3a11e7c8dfdaa977ad2052a45dc2e94e4d0c20c7bbeafd741bb"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/product.ts",
+      "sha256": "4223d377ad0f4586f225ce01f6939399b19a1019b362dd6aab0de841d4c5f06c"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "9d50866559579bdc9e9d1271b311eecd4e01d6debd75812301573d71df35d98c"
+    },
+    {
+      "line": 132,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "62f68c862ff711ad97eb23e037a5d07945c55c5345b5b9bffdf2ad083df9f7a1"
+    },
+    {
+      "line": 132,
+      "path": "src/studio/studio.ts",
+      "sha256": "85526d0a0f57cfac6a33adcce04d0aa620e5944172b13efeec027af51bec0c8a"
+    },
+    {
+      "line": 132,
+      "path": "src/interaction/views.ts",
+      "sha256": "081b919e3dd2ed0e0486d5c185cd46d698636c735ae84000206872b0d765eea3"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/interface.ts",
+      "sha256": "305e78385d5ed99231ff82e4f7c9ca83d7c115d090dc764e00c481ebb2d122b6"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "line": 141,
+      "path": "src/main.ts",
+      "sha256": "012acffba287a23635e9bb93c39ca1b8c7eaeb238dee9f7e1feab3cbb121f52a"
+    },
+    {
+      "line": 149,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "ff3ca6814706791fd84abd28cd5ad3ce109be6d15184dcfa06b7aa76d6ce10b5"
+    },
+    {
+      "line": 149,
+      "path": "src/geometry/product.ts",
+      "sha256": "ac99794a71a4b7e5eacaf50fd1d721451bab534125541d3738955a5b3e2fd1f7"
+    }
+  ],
+  "operationDigests": [
+    {
+      "line": 100,
+      "timeUTC": "2026-09-29T12:06:58.356Z",
+      "tool": "apply_patch",
+      "sha256": "069dbf79465d66afa9a1088ec4e1014d417de79ae6048fb3225e8b1f7e759035"
+    },
+    {
+      "line": 100,
+      "timeUTC": "2026-09-29T12:06:58.356Z",
+      "tool": "exec_command",
+      "sha256": "ee8f1ed5b3d93b0017037ae8c87257d9d7b9af34874fcd1c010858831de764ef"
+    },
+    {
+      "line": 108,
+      "timeUTC": "2026-09-29T12:09:43.061Z",
+      "tool": "apply_patch",
+      "sha256": "0ed27175a569039080ddff2b60c434d4dc23fc959c27bda2d91fe80405389d29"
+    },
+    {
+      "line": 108,
+      "timeUTC": "2026-09-29T12:09:43.061Z",
+      "tool": "exec_command",
+      "sha256": "dea8b44157055ac2f5af8cdae92f997fbe6ef39e93111856437aef4121a63133"
+    },
+    {
+      "line": 132,
+      "timeUTC": "2026-09-29T12:12:52.680Z",
+      "tool": "apply_patch",
+      "sha256": "0e305db77d04b580937d31cfad1ee3c66a84f9b24aab6538ae39b15fdfaed78b"
+    },
+    {
+      "line": 141,
+      "timeUTC": "2026-09-29T12:15:49.566Z",
+      "tool": "apply_patch",
+      "sha256": "c3b1c17e29f780f7bdf39e5aeb6d6a61003014e8f9998b092f28ecccbd15be02"
+    },
+    {
+      "line": 141,
+      "timeUTC": "2026-09-29T12:15:49.566Z",
+      "tool": "exec_command",
+      "sha256": "60d2591a43e77aa247e40075a275a4f084cad21b75a24f33484be6730509fef3"
+    },
+    {
+      "line": 149,
+      "timeUTC": "2026-09-29T12:16:25.963Z",
+      "tool": "exec_command",
+      "sha256": "305fb20b55547afb736990bf2faa85569187d49591e1932ee79b6558ed59235a"
+    }
+  ]
+}

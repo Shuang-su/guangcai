@@ -1,0 +1,29 @@
+{
+  "checks": [
+    "Scroll narration supports backward movement",
+    "Skip keeps the same cup into home",
+    "Same cup into creator",
+    "Five actual PBR channels",
+    "Emulated two-finger pinch changes camera distance",
+    "Real mesh wipe is active",
+    "Step transition never recreates cup",
+    "Earlier choice retained",
+    "Refresh retains choices",
+    "Failed texture pack retains neutral cup",
+    "Material retry produces fixed result",
+    "Offscreen export leaves visible canvas at viewport size",
+    "Old template upgrades without changing result ID",
+    "Retired purple clears only that step",
+    "Completed result survives purple migration",
+    "Reachable CTA and no overflow 360x640",
+    "Reachable CTA and no overflow 390x844",
+    "Reachable CTA and no overflow 430x932",
+    "Reachable CTA and no overflow 780x958",
+    "780 portrait stays vertically arranged",
+    "Reachable CTA and no overflow 1366x900",
+    "No 3DGS request",
+    "Poster failure preserves the loaded fixed cup",
+    "Poster export retries successfully"
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Reduced motion reaches same start button"
+}

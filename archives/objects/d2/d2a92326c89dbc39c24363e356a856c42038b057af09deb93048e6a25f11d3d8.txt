@@ -1,0 +1,85 @@
+TAP version 13
+# Subtest: body: closed, finite, outward, nondegenerate mesh
+ok 1 - body: closed, finite, outward, nondegenerate mesh
+  ---
+  duration_ms: 1122.623
+  ...
+# Subtest: handle: closed, finite, outward, nondegenerate mesh
+ok 2 - handle: closed, finite, outward, nondegenerate mesh
+  ---
+  duration_ms: 151.059375
+  ...
+# Subtest: lid: closed, finite, outward, nondegenerate mesh
+ok 3 - lid: closed, finite, outward, nondegenerate mesh
+  ---
+  duration_ms: 143.75825
+  ...
+# Subtest: saucer: closed, finite, outward, nondegenerate mesh
+ok 4 - saucer: closed, finite, outward, nondegenerate mesh
+  ---
+  duration_ms: 92.932625
+  ...
+# Subtest: D section has an actual flat side and tangent circular transitions
+ok 5 - D section has an actual flat side and tangent circular transitions
+  ---
+  duration_ms: 0.960291
+  ...
+# Subtest: flutes displace geometry and fade at edges
+ok 6 - flutes displace geometry and fade at edges
+  ---
+  duration_ms: 0.479458
+  ...
+# Subtest: body artwork UV uses only outer arc, stays in 0..1
+ok 7 - body artwork UV uses only outer arc, stays in 0..1
+  ---
+  duration_ms: 331.005959
+  ...
+# Subtest: changing quality preserves exact flat section and support bounds
+ok 8 - changing quality preserves exact flat section and support bounds
+  ---
+  duration_ms: 518.3205
+  ...
+# Subtest: reject parameters that break physical wall or floor
+ok 9 - reject parameters that break physical wall or floor
+  ---
+  duration_ms: 2.660958
+  ...
+# Subtest: minimum wall clearance survives waves at several heights
+ok 10 - minimum wall clearance survives waves at several heights
+  ---
+  duration_ms: 503.430458
+  ...
+# Subtest: quality preserves decorated surface U/V anchors
+ok 11 - quality preserves decorated surface U/V anchors
+  ---
+  duration_ms: 648.196542
+  ...
+# Subtest: a complete style switches once, after all three regions finish
+ok 12 - a complete style switches once, after all three regions finish
+  ---
+  duration_ms: 14.341791
+  ...
+# Subtest: failed style preserves the previous material set and releases staged materials
+ok 13 - failed style preserves the previous material set and releases staged materials
+  ---
+  duration_ms: 3.007292
+  ...
+# Subtest: latest style wins even when an older request fails later
+ok 14 - latest style wins even when an older request fails later
+  ---
+  duration_ms: 17.167292
+  ...
+# Subtest: a mismatched UV contract is rejected without loading
+ok 15 - a mismatched UV contract is rejected without loading
+  ---
+  duration_ms: 1.134083
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5116.436458

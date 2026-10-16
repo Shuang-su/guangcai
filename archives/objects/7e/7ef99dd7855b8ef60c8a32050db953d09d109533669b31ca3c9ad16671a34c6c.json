@@ -1,0 +1,222 @@
+{
+  "url": "http://127.0.0.1:5209/",
+  "date": "2026-10-11T15:47:04.632Z",
+  "cityVersion": 3,
+  "module": "./assets/index-z6XtFCbQ.js",
+  "assets": [
+    {
+      "path": "review/relief-separation/comparison.jpg",
+      "status": 200,
+      "bytes": 269347
+    },
+    {
+      "path": "review/relief-separation/reference-temple.png",
+      "status": 200,
+      "bytes": 720801
+    },
+    {
+      "path": "review/relief-separation/after-detail.jpg",
+      "status": 200,
+      "bytes": 242027
+    },
+    {
+      "path": "review/relief-separation/parameters.json",
+      "status": 200,
+      "bytes": 3975
+    },
+    {
+      "path": "china/line-finish.png",
+      "status": 200,
+      "bytes": 537748
+    },
+    {
+      "path": "china/roughness.png",
+      "status": 200,
+      "bytes": 223533
+    },
+    {
+      "path": "review/relief-separation/front.jpg",
+      "status": 200,
+      "bytes": 100520
+    },
+    {
+      "path": "review/relief-separation/reflection-on.jpg",
+      "status": 200,
+      "bytes": 100520
+    },
+    {
+      "path": "review/relief-separation/reflection-without-handle.jpg",
+      "status": 200,
+      "bytes": 100436
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-qa.json",
+      "status": 200,
+      "bytes": 539
+    },
+    {
+      "path": "review/relief-separation/handle-reflection-difference-x20.png",
+      "status": 200,
+      "bytes": 4805
+    },
+    {
+      "path": "review/desktop.jpg",
+      "status": 200,
+      "bytes": 78844
+    },
+    {
+      "path": "review/before-matte.jpg",
+      "status": 200,
+      "bytes": 178294
+    },
+    {
+      "path": "review/after-matte.jpg",
+      "status": 200,
+      "bytes": 151480
+    },
+    {
+      "path": "review/buildings-reference.jpg",
+      "status": 200,
+      "bytes": 77584
+    },
+    {
+      "path": "review/buildings-model.png",
+      "status": 200,
+      "bytes": 360137
+    },
+    {
+      "path": "review/buildings-comparison.jpg",
+      "status": 200,
+      "bytes": 214330
+    },
+    {
+      "path": "review/buildings-overlay.png",
+      "status": 200,
+      "bytes": 817027
+    },
+    {
+      "path": "review/label-reference.jpg",
+      "status": 200,
+      "bytes": 79970
+    },
+    {
+      "path": "review/label-model.png",
+      "status": 200,
+      "bytes": 413486
+    },
+    {
+      "path": "review/label-comparison.jpg",
+      "status": 200,
+      "bytes": 224906
+    },
+    {
+      "path": "review/label-overlay.png",
+      "status": 200,
+      "bytes": 827631
+    },
+    {
+      "path": "review/atlas.jpg",
+      "status": 200,
+      "bytes": 109696
+    },
+    {
+      "path": "review/lines.png",
+      "status": 200,
+      "bytes": 203275
+    },
+    {
+      "path": "review/metalness.png",
+      "status": 200,
+      "bytes": 28439
+    },
+    {
+      "path": "review/normal.png",
+      "status": 200,
+      "bytes": 297528
+    },
+    {
+      "path": "review/convex.jpg",
+      "status": 200,
+      "bytes": 149415
+    },
+    {
+      "path": "review/flat.jpg",
+      "status": 200,
+      "bytes": 107643
+    },
+    {
+      "path": "review/concave.jpg",
+      "status": 200,
+      "bytes": 149305
+    },
+    {
+      "path": "review/stroke-only.jpg",
+      "status": 200,
+      "bytes": 59521
+    },
+    {
+      "path": "china/city.json",
+      "status": 200,
+      "bytes": 345
+    },
+    {
+      "path": "china/height.png",
+      "status": 200,
+      "bytes": 643905
+    },
+    {
+      "path": "china/label.png",
+      "status": 200,
+      "bytes": 21808
+    },
+    {
+      "path": "review/psd-audit.json",
+      "status": 200,
+      "bytes": 8548
+    },
+    {
+      "path": "review/fixed-quarters.jpg",
+      "status": 200,
+      "bytes": 97120
+    },
+    {
+      "path": "fixed/body-baseColor.png",
+      "status": 200,
+      "bytes": 5848898
+    },
+    {
+      "path": "fixed/saucer-baseColor.png",
+      "status": 200,
+      "bytes": 1224757
+    },
+    {
+      "path": "fixed/style.json",
+      "status": 200,
+      "bytes": 732
+    },
+    {
+      "path": "fixed/manifest.json",
+      "status": 200,
+      "bytes": 4738
+    },
+    {
+      "path": "review/browser-qa.json",
+      "status": 200,
+      "bytes": 2104
+    },
+    {
+      "path": "review/camera-calibration.json",
+      "status": 200,
+      "bytes": 1888
+    }
+  ],
+  "checks": [
+    "All 41 evidence assets and download links match current dist bytes",
+    "City manifest version 3 and current production JS module served",
+    "Existing in-app browser tabs reloaded: current report and loaded 3D text view visible",
+    "All 24 report images loaded in actual in-app browser; no horizontal overflow",
+    "Material panel exposes checked local-reflections control",
+    "In-app preview error/warning log empty"
+  ],
+  "browserMethod": "CUA existing user tabs, DOM asset readback and actual screenshot; desktop responsive viewport 1051 x 1187. Mobile interaction covered separately by browser-qa.json."
+}

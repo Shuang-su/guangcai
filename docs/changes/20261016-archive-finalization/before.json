@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-16T13:35:23.589978+00:00",
+  "branch": "codex/source-consolidation",
+  "head": "1f92fd9a480fe03b7ebc82dae6b701a63bb73ea8",
+  "main": "219ee8b669139eaf624af63f39632f37c46d67b8",
+  "remoteArchive": "0afcf96d6ad14b8fc7b29abf1c94c9121f617fac",
+  "existingChanges": {
+    "ARCHIVE_INDEX.md": "9f5b3eaaac4cf57cdab48612ef2514015411c269bdcd24a62e9cb5f294ab6544",
+    "README.md": "f7561688f39a464c86420915df22560a1328b4c97f4ae1a15639674580635c1a",
+    "WORKSPACE_LOCATIONS.md": "30fd26eb7158e9b13c12e36572f64cd4bedf5232a126f366362f778ceaa71f61",
+    "docs/changes/20261014-source-consolidation/completion.md": "b49cf24210c47aabc02038a1bcf8ecb8be517681fb1168f8116798c763de9b96",
+    "docs/changes/20261015-attachment-resolution-and-duplicates/completion.md": "422ada2c1aa4401d6b2511a333df35106aa788a4804156d6d8ad3524e6ac0cea",
+    "docs/changes/20261015-attachment-resolution-and-duplicates/report.md": "bd630464182eda37f0e8edd8cb43884792ebd5f6629a8938696bf5b42abbb106",
+    "docs/changes/20261015-verified-dedup-cleanup/completion.md": "43b76fc9de28a91025499d163439b0d0845f6ce57e1030c89ab057057cba5a10",
+    "docs/changes/20261015-verified-dedup-cleanup/execute_cleanup.py": "1346ab018b2c2ceee00452c2b4f662598a8d3cd7741d80b3e3ea8f2c2a6dd289",
+    "docs/changes/20261015-verified-dedup-cleanup/deletion-result.json": "e103a0caf54f967a2ecc21a3e10a11ecccb7e387dfdef747cdd7d795154e27dd",
+    "docs/changes/20261015-verified-dedup-cleanup/postdelete-verification.json": "6464b1c33bb1c4b9077f0b57c72d2b5af086356f71dbaed54c4aafaf8a9476a9",
+    "docs/changes/20261015-verified-dedup-cleanup/preview-resource-check.json": "f26508f386245f97bf35d35d60141e854ceac3ea4bb02c9635a16ffefe819807",
+    "docs/changes/20261015-verified-dedup-cleanup/remaining-duplicate-paths.json": "b33a832f3dbb17b522fe52d6466fd536e7dd884f76a89a805b5b1b5f9d87cc54"
+  },
+  "sourceManifest": "ef0b35c64fae297ba3dbfe1a1817645a1505a72ed98dfe517330069e1155651c",
+  "tags": [
+    "refs/tags/v1.0 5d2d794c4e3e69e77de9b9bf86512fa4a37a3dd2",
+    "refs/tags/v2.0 079af4c04a9567cac8a16d9ac41ba345fcd44742",
+    "refs/tags/v2.1 226756ac604c6ae036bdb00c58f4cd46e9800f79",
+    "refs/tags/v2.2 e1755703069f2c16d36f6e48c70003dde0f374aa",
+    "refs/tags/v3.0 c8dc984613fc7e6dde0c78f03044f32f1972e06b",
+    "refs/tags/v4.0 c24b4428697d4ba188971ee96dd29d85326957c1",
+    "refs/tags/v4.1 4471801566a4a48b883ec2e3468d4844d15a90f1",
+    "refs/tags/v4.2 5fa3c91caabdeb293d03b4a3cdd1852e84d0fe73",
+    "refs/tags/v4.3 b9e2e979012a4e500c43c23ac444d3704503011b"
+  ]
+}

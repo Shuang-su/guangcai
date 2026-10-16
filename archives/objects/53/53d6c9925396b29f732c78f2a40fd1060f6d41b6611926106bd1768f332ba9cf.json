@@ -1,0 +1,87 @@
+[
+  {
+    "name": "trusted touch drag and pinch suppress clicks",
+    "pass": true,
+    "data": {
+      "before": [
+        0.900126300345991,
+        2.7938798032871777,
+        5.905853559944638
+      ],
+      "after": [
+        0.5317066481956175,
+        2.007351829564132,
+        3.693517857686365
+      ]
+    }
+  },
+  {
+    "name": "long press blank opens temporary instructions",
+    "pass": true
+  },
+  {
+    "name": "orientation change retains current style and functional view",
+    "pass": true
+  },
+  {
+    "name": "mobile warm frame timings",
+    "pass": true,
+    "data": {
+      "p50": 16.69999998807907,
+      "p95": 18.399999991059303,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": false,
+        "geometryIds": [
+          "e9b93b4f-5af4-4618-ba30-80c45e61b07e",
+          "19017260-a2ca-47e5-b531-35f255bd2ddf",
+          "d06e4040-3bbd-4df7-acd8-595f3585d409"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 179814,
+        "calls": 35,
+        "frameCount": 420,
+        "cpuFrameMs": 1.4416666661699613,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 16.666666666666668,
+        "pixelRatio": 1.7,
+        "reflectionSize": 512,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.037,
+          -0.4248616027832031
+        ]
+      }
+    }
+  },
+  {
+    "name": "WebGL unavailable shows explicit message",
+    "pass": true,
+    "data": "暂时无法完成显示：Error creating WebGL context.。请检查浏览器的图形加速和本地资源连接后刷新。"
+  }
+]

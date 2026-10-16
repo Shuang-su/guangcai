@@ -1,0 +1,133 @@
+{
+  "version": "1.0-pre.2",
+  "title": "把手净空、UV 与参考器型修订",
+  "sessionId": "01a0ed06-5ea9-7532-a412-9c5a7a53716e",
+  "sourceLineCutoff": 903,
+  "project": "guangcai-viewer",
+  "sourceReplay": "original-02-refinement",
+  "deploymentSnapshot": null,
+  "commands": [
+    {
+      "command": "node_modules/.bin/tsx tools/surface-metrics.ts",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/surface-metrics.log"
+    },
+    {
+      "command": "node tools/derive-pbr.mjs",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/derive-pbr.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/geometry-tests.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0-pre.2/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "path": "package.json",
+      "sha256": "60948c9ec4af4fefda7b9cd597176f64c3621037b12ab020489cb20d3706aac4"
+    },
+    {
+      "path": "src/geometry/handle.ts",
+      "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "a9b33476332aaa77509064588c9245c3578faa91251f7ed9c794f8d0c8e6fe4b"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "b64a80ac82839f19ce0953fa3e31314718d4e5908dac9aca903d81212b1bce90"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "473328d83481afbc2a4e9ae4bd6adfb8b7f2c41ef438334a0b5f1e0fdf39e869"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "a3b81985949c51332d4d2ba99ad67a6e619124c6050408f922335ec3a859a423"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "ef5def51478ff774256e5ec2ccb06b25812272ce194aadb78b017a653cc6813b"
+    },
+    {
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "a352d32c4f62f38e016d2c6b138c766ea09db6ae67cdb72e56a2106b635d73c7"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "d7ae9b57f7fb8d20bc30745610e7c48c5b52156e8dbc0a2f3f63b1c71fca8094"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "1b35781ff72e20342de137fe689c2e6a4727e72d78dca443536690ba17b7017c"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "path": "tools/browser-qa.mjs",
+      "sha256": "b1df114db0b14ca9e1e155db980cb7901e66f7f3a4c1a4bfe6ee56fd71cb3036"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "c98fa59bf967bde233088eb8d9401aaaa2fd0b2e0c608a2d2a33813bc5c20833"
+    },
+    {
+      "path": "tools/geometry.test.ts",
+      "sha256": "53e637b10a8e9641b8f1be3e12c0a3ab5e4bbebf8e176a01967d9b3ea7d236a5"
+    },
+    {
+      "path": "tools/reference-captures.mjs",
+      "sha256": "9a6adcc3b68c0d2c52c1606950478ee4fbe8e10ce54261424a857c27a16ddc23"
+    },
+    {
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "a206b9f1d0f2608f1e568e1debda65064f0b9de7d56dd81e9acaec3834964e8a"
+    },
+    {
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-13T12:25:05.906Z",
+  "format": "WebP quality 94 fixed colors; native original floral crops, native-size full saucer wrap and 4096px city. Data channels encoded losslessly at their stated size; original PNGs and masters retained",
+  "sourceBytes": 11144552,
+  "webBytes": 5053028,
+  "records": [
+    {
+      "source": "public/fixed/body-baseColor.png",
+      "web": "public/textures/fixed-body-baseColor-d4877edad4744523.webp",
+      "sourceBytes": 1674330,
+      "webBytes": 398446,
+      "sha256": "d4877edad4744523c384df1cc76058b8cc1473fa0550499501b7fca0a35a9bbf",
+      "size": [
+        637,
+        1534
+      ],
+      "encoding": "WebP quality 94, smart subsampling",
+      "decodedPixelsIdentical": false,
+      "rmse": 5.486675623346008,
+      "maxDelta": 108,
+      "psnr": 33.34461790632532
+    },
+    {
+      "source": "public/fixed/body-normal.png",
+      "web": "public/textures/fixed-body-normal-ee5545c4699e0488.webp",
+      "sourceBytes": 874353,
+      "webBytes": 618362,
+      "sha256": "ee5545c4699e04889846e9bc46954b29e1b2006066bb7569bea3bde0bf9073e9",
+      "size": [
+        637,
+        1534
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/body-roughness.png",
+      "web": "public/textures/fixed-body-roughness-abc7641a2db17569.webp",
+      "sourceBytes": 133372,
+      "webBytes": 78854,
+      "sha256": "abc7641a2db17569e5df44a4046f58fda236c67082818eb91dfe293a9ea6fa67",
+      "size": [
+        637,
+        1534
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/body-metalness.png",
+      "web": "public/textures/fixed-body-metalness-706b3c9f5cad0472.webp",
+      "sourceBytes": 230451,
+      "webBytes": 114218,
+      "sha256": "706b3c9f5cad04723747c95ec8bb8623238e513f11bdfa57d5395365f67eb01d",
+      "size": [
+        637,
+        1534
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/handle-baseColor.png",
+      "web": "public/textures/fixed-handle-baseColor-ebe308cf4629d743.webp",
+      "sourceBytes": 488364,
+      "webBytes": 117626,
+      "sha256": "ebe308cf4629d7439195aeed9ea45ab494da1fc7b6d865ce1c861e4a1574b8e0",
+      "size": [
+        148,
+        1724
+      ],
+      "encoding": "WebP quality 94, smart subsampling",
+      "decodedPixelsIdentical": false,
+      "rmse": 6.8238917204795975,
+      "maxDelta": 93,
+      "psnr": 31.450161069555726
+    },
+    {
+      "source": "public/fixed/handle-normal.png",
+      "web": "public/textures/fixed-handle-normal-22fdb336573d9360.webp",
+      "sourceBytes": 255517,
+      "webBytes": 180894,
+      "sha256": "22fdb336573d936029a7871e4c353393a0f5d2ba92a2a4710b95c67abf391cb4",
+      "size": [
+        148,
+        1724
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/handle-roughness.png",
+      "web": "public/textures/fixed-handle-roughness-91d94d19539575b9.webp",
+      "sourceBytes": 41264,
+      "webBytes": 23978,
+      "sha256": "91d94d19539575b950eff69becb23550f7e48ccac780437a3bf8471483a45500",
+      "size": [
+        148,
+        1724
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/handle-metalness.png",
+      "web": "public/textures/fixed-handle-metalness-16b092c9c80c4945.webp",
+      "sourceBytes": 73953,
+      "webBytes": 36010,
+      "sha256": "16b092c9c80c4945603b868f8068c86b8ddb53deabdd8bcda8adde2c1c2a22f8",
+      "size": [
+        148,
+        1724
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/saucer-baseColor.png",
+      "web": "public/textures/fixed-saucer-baseColor-f6e719b2bc268bf7.webp",
+      "sourceBytes": 3403934,
+      "webBytes": 616610,
+      "sha256": "f6e719b2bc268bf7adad04be05e98447a4b3197c994693adb5fc6186a720f6d1",
+      "size": [
+        6924,
+        195
+      ],
+      "encoding": "WebP quality 94, smart subsampling",
+      "decodedPixelsIdentical": false,
+      "rmse": 4.994487473581376,
+      "maxDelta": 95,
+      "psnr": 34.16098504398895
+    },
+    {
+      "source": "public/fixed/saucer-normal.png",
+      "web": "public/textures/fixed-saucer-normal-263afcfc74cfeaf6.webp",
+      "sourceBytes": 1401254,
+      "webBytes": 1029662,
+      "sha256": "263afcfc74cfeaf66dc354e4b211eee0b6075711ce164c4aad8fd26d30ecd231",
+      "size": [
+        6924,
+        195
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/saucer-roughness.png",
+      "web": "public/textures/fixed-saucer-roughness-9a6657df8e5caa9d.webp",
+      "sourceBytes": 214896,
+      "webBytes": 128684,
+      "sha256": "9a6657df8e5caa9ddb8ffff6c9109aafc76dfce3e965462c96dae52b46531c7c",
+      "size": [
+        6924,
+        195
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/fixed/saucer-metalness.png",
+      "web": "public/textures/fixed-saucer-metalness-2058a91b9c888893.webp",
+      "sourceBytes": 424725,
+      "webBytes": 199804,
+      "sha256": "2058a91b9c888893d0dba29aa5906e0006a555863a36b92f6da727d380cc70c2",
+      "size": [
+        6924,
+        195
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/china/baseColor.png",
+      "web": "public/textures/china-baseColor-754558a83d8866b8.webp",
+      "sourceBytes": 25616,
+      "webBytes": 348,
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "size": [
+        4096,
+        1783
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/china/normal.png",
+      "web": "public/textures/china-normal-f0662e241725d83b.webp",
+      "sourceBytes": 1614035,
+      "webBytes": 1312530,
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "size": [
+        4096,
+        1783
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/china/roughness.png",
+      "web": "public/textures/china-roughness-40e7b97659e5e028.webp",
+      "sourceBytes": 223533,
+      "webBytes": 156638,
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "size": [
+        4096,
+        1783
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    },
+    {
+      "source": "public/china/metalness.png",
+      "web": "public/textures/china-metalness-7ac9525c8019fc98.webp",
+      "sourceBytes": 64955,
+      "webBytes": 40364,
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "size": [
+        4096,
+        1783
+      ],
+      "encoding": "lossless WebP",
+      "decodedPixelsIdentical": true,
+      "rmse": 0,
+      "maxDelta": 0,
+      "psnr": null
+    }
+  ]
+}

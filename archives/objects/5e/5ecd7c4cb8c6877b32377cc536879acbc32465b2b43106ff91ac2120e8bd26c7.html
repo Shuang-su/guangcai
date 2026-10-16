@@ -1,0 +1,159 @@
+<div id="file" class="md" data-path="HISTORY.md"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 class="heading-element" dir="auto">补建的开发历史</h1><a id="user-content-补建的开发历史" class="anchor" aria-label="Permalink: 补建的开发历史" href="#补建的开发历史"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">本分支从两次原始开发会话的真实文件写入、补丁和保留快照恢复了 <strong>16 个源码节点</strong>：13 个基线前开发节点，以及 1.0、2.0、2.1。补录提交使用 2026-10-13 的真实提交时间；原修改时间只作为来源元数据，不伪造当时已有 Git 的历史。</p>
+<p dir="auto"><code>1.0</code> / <code>2.0</code> 继续代表本次约定的上线基线，<code>2.1</code> 是其后的布局修订。<code>pre.N</code> 仅表示早于该编号基线；其中一些节点当时也上线过，是否发布以下方清单为准。以后正常开发继续按 1.1、1.2 / 2.2、2.3 等编号。</p>
+<markdown-accessiblity-table><table>
+<thead>
+<tr>
+<th>节点</th>
+<th>原修改时间（北京时间）</th>
+<th>实际修改</th>
+<th>恢复 commit</th>
+<th>本次验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0-pre.1</td>
+<td>09-29 20:16</td>
+<td>初始参数化杯盖碟与 PBR</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/5e94cd22949b94e490dccdca6f4d4532ef51143a">5e94cd22</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>1.0-pre.2</td>
+<td>09-29 21:11</td>
+<td>把手净空、UV 与参考器型修订</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/2c74efb6fde4bd36da5e6b2ff8976dd4541e26d5">2c74efb6</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>1.0-pre.3</td>
+<td>09-29 22:08</td>
+<td>底碟剖面与实拍叠图</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/8c078aec9719adeba92cac8ae1aaad47f0ff0013">8c078aec</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>1.0-pre.4</td>
+<td>09-29 22:47</td>
+<td>把手独立内外轮廓与盖把校准</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/d5f6ad5982ed17548504492d930a7a915385cc83">d5f6ad59</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>09-30 00:03</td>
+<td>统一材质与密铺花纸，原版上线基线</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/8c7ad0b70d6a643e86aba303a91384c830321599">8c7ad0b7</a></td>
+<td>78 / 78 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0-pre.1</td>
+<td>10-11 22:40</td>
+<td>中国线稿金属面与城市图样</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/c5320ee1a02c012416870931c5eecf38bb5188b1">c5320ee1</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>2.0-pre.2</td>
+<td>10-11 22:56</td>
+<td>图样延伸至杯身底缘</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/2faa4db6c7b32bb1cd1a706cbad1902eacd73c54">2faa4db6</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>2.0-pre.3</td>
+<td>10-11 23:10</td>
+<td>金属哑光与柔和反光</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/e6eae6d506df74774e82ab9ef80c19f4e7ebb50a">e6eae6d5</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>2.0-pre.4</td>
+<td>10-11 23:21</td>
+<td>线条和金属底面参数分离</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/3d207e0486971e43620e3975cc16cb235ad170ff">3d207e04</a></td>
+<td>构建通过；运行素材由历史脚本重派生</td>
+</tr>
+<tr>
+<td>2.0-pre.5</td>
+<td>10-11 23:48</td>
+<td>恢复线条层次并加入邻近部件反射</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/fd536a775b3b860a6d64ad2983a87f52cec6c0cc">fd536a77</a></td>
+<td>82 / 82 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0-pre.6</td>
+<td>10-12 00:25</td>
+<td>WebP 与纹理加载重试</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/36a2ba73495d8822618caa6b10190efabd8a6f0b">36a2ba73</a></td>
+<td>98 / 98 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0-pre.7</td>
+<td>10-12 01:34</td>
+<td>首屏优化、右键双指平移与浓彩花鸟</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/667d6a5b2470661926da9323c4b9ebe34b713818">667d6a5b</a></td>
+<td>103 / 103 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0-pre.8</td>
+<td>10-12 01:55</td>
+<td>按效果图局部重建花鸟纹样并定位</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/4b283cc29a991a0eac1671305c0caf1f916a1b68">4b283cc2</a></td>
+<td>106 / 106 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0-pre.9</td>
+<td>10-12 02:10</td>
+<td>彩色花纹浅起伏与独立检查开关</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/c2115573a8752e842672bf00823cc268bf40d643">c2115573</a></td>
+<td>121 / 121 发布文件一致</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>10-12 02:18</td>
+<td>加深彩色描线起伏，中国杯上线基线</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/23c23e3353188a57153555c21ef0f19642c93361">23c23e33</a></td>
+<td>122 / 122 发布文件一致</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>10-13 18:38</td>
+<td>杯碟周向排列和把手侧饰带宽度</td>
+<td><a href="https://github.com/Shuang-su/guangcai/commit/ea96b85295f2ee26ae2fd1cb599495d3ca2f3e63">ea96b852</a></td>
+<td>131 / 131 发布文件一致</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">如何找到和运行某个版本</h2><a id="user-content-如何找到和运行某个版本" class="anchor" aria-label="Permalink: 如何找到和运行某个版本" href="#如何找到和运行某个版本"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">直接打开表中的 commit，可查看当时完整源码及相邻节点差异。在独立检出目录中使用相应 SHA：</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="git clone git@github.com:Shuang-su/guangcai.git
+git switch --detach &lt;表中的完整 commit SHA&gt;
+cd guangcai-viewer # 中国杯使用 guangcai-china-preview
+npm ci
+npm run build
+npm run dev"><pre>git clone git@github.com:Shuang-su/guangcai.git
+git switch --detach <span class="pl-k">&lt;</span>表中的完整 commit SHA<span class="pl-k">&gt;</span>
+<span class="pl-c1">cd</span> guangcai-viewer <span class="pl-c"><span class="pl-c">#</span> 中国杯使用 guangcai-china-preview</span>
+npm ci
+npm run build
+npm run dev</pre></div>
+<p dir="auto">如果已有本地修改，先保留现场，使用另外的工作目录或 worktree，不要强制切换。这里的源码恢复与构建不触发任何线上发布。</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">来源与验证边界</h2><a id="user-content-来源与验证边界" class="anchor" aria-label="Permalink: 来源与验证边界" href="#来源与验证边界"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>原版会话 <code>01a0ed06-5ea9-7532-a412-9c5a7a53716e</code>，中国杯会话 <code>01a12b50-f453-7bb0-b232-93ddb671fa2c</code>。源码操作按原顺序在内存文件系统回放；实际历史 shell、部署、安装和清理命令未重放。这里只执行了独立副本内已审阅的素材派生、构建及几何测试。</li>
+<li>16 个节点均通过 TypeScript / Vite 构建；已有几何测试的 15 个节点全部通过。8 个节点对应的发布目录共核对 841 项文件，SHA-256 全部一致。23 份独立保存的修改前源码也全部匹配。</li>
+<li>原版最终恢复的源码和工具与 1.0 归档一致；中国杯最终源码、配置和工具与 2.1 归档一致。最终工作树重新汇入完整归档后，1421 个项目、证据和部署文件与 <code>codex/import-2.1 @ 17e5d12</code> 一致。</li>
+<li><code>assets/</code> 保存补录时汇总的素材全集，包含各节点尚未使用的后续备选。实际运行引用由各节点源码和派生脚本决定。早期运行贴图使用保留母版或 PSD 与历史脚本重新导出，未宣称这些重新导出字节就是当时文件。</li>
+<li>原版旧 Documents 目录的首次依赖锁曾因云端占位而不可读，2026-09-29 已重新生成现有外置盘锁；本次使用这份保留锁对应的安装依赖。当前验证环境 Node v26.3.0 / npm 11.16.0。本次没有对每个旧节点新增浏览器或实体手机视觉验收。</li>
+<li>没有恢复每一次临时试调、仅浏览器内注入的候选、失败命令产生的半成品或未保存的编辑状态。保留的会话能证明本次列出的完整源码阶段，但不能证明不存在其他中间状态。</li>
+<li>加载优化首次比对选中了名字带 <code>final</code> 的较早目录，JS 和 HTML 有两处差异；真实发布清单指向 <code>china-20261012-network</code>，改按该目录后 98 / 98 一致。首次差异记录仍保留，未通过修改源码掩盖差异。</li>
+</ul>
+<p dir="auto">详细记录：<a href="docs/history/checkpoints/">各节点来源与文件哈希</a>、<a href="docs/history/validation/">本次构建和测试日志</a>、<a href="docs/history/snapshot-checks.json">独立快照交叉核对</a>、<a href="docs/history/source-endpoint-verification.json">完整归档端点核验</a>。原始会话未上传；未包含隐藏推理、系统信息或凭据。</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto">线上状态与补录范围</h2><a id="user-content-线上状态与补录范围" class="anchor" aria-label="Permalink: 线上状态与补录范围" href="#线上状态与补录范围"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">本次补录到 2.1（部署 <code>6ace09922a1b2f8945a7a41c</code>）为止。19:14 回读时，另一会话已于 19:08 独立发布后续背景功能 <code>6ace111ab0415c9455a3c6f8</code>；该新增功能尚未包含在本次历史链中，不将此分支称为当前中国杯线上源码。原版仍为 <code>6abbdf78d912b4b6b1d7c3b9</code>。</p>
+<p dir="auto">两个站点的 Git 关联仍为空。本次恢复没有执行 Netlify 发布、回滚、Git 自动部署绑定、PR 合并或 tag。回读见 <a href="docs/history/site-readback.json">站点记录</a>。</p>
+<p dir="auto">历史补录审查：<a href="https://github.com/Shuang-su/guangcai/issues/7" data-hovercard-type="issue" data-hovercard-url="/Shuang-su/guangcai/issues/7/hovercard">Issue #7</a> · <a href="https://github.com/Shuang-su/guangcai/pull/8" data-hovercard-type="pull_request" data-hovercard-url="/Shuang-su/guangcai/pull/8/hovercard">PR #8</a>（基于 <code>codex/import-2.1</code>，未合并）。</p>
+<p dir="auto"><a href="docs/history/deployment-map.json">历史部署与源码对应表</a> · <a href="docs/history/github-readback.json">GitHub 分支、文件与 16 个 commit 回读</a>。</p>
+</article></div>

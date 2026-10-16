@@ -1,0 +1,28 @@
+{
+  "error": "Error: ENOENT: no such file or directory, open 'public/china/._line-finish.png'\n    at async open (node:internal/fs/promises:1287:25)\n    at async readFile (node:internal/fs/promises:1935:14)\n    at async file:///Volumes/Prism/Codex/guangcai-github-20261013/guangcai-china-preview/tools/background-qa-v3.mjs:67:245",
+  "checks": [
+    "desktop auto starts gray without requesting the portrait image",
+    "opaque cup pixels retain the same shading on the new backdrop",
+    "background preserves all materials, relief, geometry, lights and local reflection capture",
+    "original soft background is still selectable",
+    "a selected local file becomes the backdrop",
+    "only the final custom object URL is retained",
+    "decode failure retains the previous background",
+    "unsupported format retains current background",
+    "repeated selection including the same file releases previous object URLs",
+    "local selection never sends an HTTP upload",
+    "later background selection wins over a slow local decode",
+    "uploaded image remains available for comparison",
+    "Escape closes background panel and returns focus",
+    "reload clears the local image and restores automatic mode",
+    "phone automatically displays the supplied background",
+    "mobile panel and controls fit",
+    "small phone does not overflow",
+    "background controls do not overlap gesture text on small phone",
+    "tablet gesture hint does not overlap wrapped view controls",
+    "touch phone keeps soft background in landscape",
+    "landscape background panel remains usable",
+    "dispose releases custom background URLs"
+  ],
+  "errors": []
+}

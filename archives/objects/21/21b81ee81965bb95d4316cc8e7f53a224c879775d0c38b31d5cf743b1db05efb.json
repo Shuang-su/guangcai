@@ -1,0 +1,309 @@
+{
+  "phase": "online",
+  "views": [
+    [
+      "pomegranate",
+      [
+        -112,
+        105,
+        5
+      ],
+      [
+        -74,
+        90,
+        0
+      ]
+    ],
+    [
+      "edge",
+      [
+        70,
+        28,
+        150
+      ],
+      [
+        48,
+        11,
+        38
+      ]
+    ],
+    [
+      "handle",
+      [
+        -112,
+        80,
+        5
+      ],
+      [
+        -74,
+        65,
+        0
+      ]
+    ],
+    [
+      "grazing",
+      [
+        0,
+        24,
+        155
+      ],
+      [
+        57,
+        12,
+        30
+      ]
+    ],
+    [
+      "petals",
+      [
+        95,
+        12,
+        74
+      ],
+      [
+        56,
+        11,
+        44
+      ]
+    ]
+  ],
+  "errors": [],
+  "debug": {
+    "version": "4.2.0",
+    "selection": {
+      "current": {
+        "variant": "china-gold",
+        "finish": "enamel",
+        "text": "auto"
+      },
+      "desired": {
+        "variant": "china-gold",
+        "finish": "enamel",
+        "text": "auto"
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      0,
+      24.000000000000007,
+      155
+    ],
+    "target": [
+      52,
+      12,
+      30
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "gray",
+      "busy": true,
+      "hasCustom": false
+    },
+    "environment": "9e70a0ff-a844-4b6b-9f04-883ca8630cfb",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 13,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "3771de0d-cf6a-4c61-96ec-97edd39d7944",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 2,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "14d0a4e7-521d-423e-bb57-f84ccec812e7",
+      "f3a28871-420e-424b-b355-0b40261a37d3",
+      "6c2ea74b-a0c3-40d8-a888-63c79c6a5b9f",
+      "9318425d-48a6-4d30-b9e0-0d2d2ab6d83f",
+      "5898dd1c-53a4-4f0b-ab53-a8db804059b5",
+      "d4774f4f-43eb-4fd0-8bde-5c6b953f4ef8",
+      "3ef4bd68-a06e-4568-9ee7-2da1bedd7f69",
+      "10eb7912-e058-4a64-8ea6-a3ca46a4b9d6",
+      "4f485c23-64cb-4929-8e6a-a10eeafa5f92",
+      "84098689-88bd-457c-bbce-55353ee38777",
+      "e9bf4f2a-a1f9-4c5f-a0ba-b23ff858760f"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 30
+    },
+    "city": {
+      "pack": {
+        "placement": {
+          "scale": 0.82,
+          "offsetU": 0.047,
+          "offsetV": 0
+        },
+        "id": "china-draft-20261011",
+        "version": 3,
+        "name": "中国 · 临时线稿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "./textures/china-baseColor-754558a83d8866b8.webp",
+        "normal": "./textures/china-normal-f0662e241725d83b.webp",
+        "roughness": "./textures/china-roughness-40e7b97659e5e028.webp",
+        "metalness": "./textures/china-metalness-7ac9525c8019fc98.webp",
+        "height": "./china/height.png?v=3"
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "maps": [
+        {
+          "uuid": "73b757e5-a2de-4987-bc93-4afce66b84c3",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "srgb",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "3237c54f-79e0-4661-ba11-b0b49f4da08d",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "2f068588-13ca-4740-a494-df9f4eaab955",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "31f7e4e5-244a-4ad3-a1ee-63468501f88f",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "79056a5d-43c0-4c79-9c57-6f57f7fedafb",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        }
+      ],
+      "labelSource": "china/label.png",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "cleanGoldGround": true,
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.4,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "c9c008a0-526b-4223-8ae6-aae632b2ddeb",
+        "normal": "f05be2fa-4e68-415b-8110-fb5874ddf0a3",
+        "roughness": "6a3a36f8-0b41-412c-a9e9-466ac0eed8b9",
+        "metalness": "10a928fc-fb21-4ab5-9dc7-ff4104fee38a"
+      },
+      "handle": {
+        "baseColor": "c2ef8a98-d0c5-4e9f-b95f-7be4651a814d",
+        "normal": "45851ad9-7947-4810-b846-fa72935817a3",
+        "roughness": "5d8a963a-53c8-4ea2-a68b-9ad6b52f2a3a",
+        "metalness": "eb74e1e7-bf7d-4d98-9d13-3c2a4a1f19f2"
+      },
+      "saucer": {
+        "baseColor": "f97743eb-7fec-4ef5-8238-86ff612b00ca",
+        "normal": "b6f501ee-0254-4d54-a9b6-17c22f6a5c69",
+        "roughness": "c9be0144-947f-4c2a-b6fc-044d477574ce",
+        "metalness": "5ef15c36-f514-4998-9ed4-51f2f3e24bff"
+      }
+    }
+  },
+  "precision": {
+    "body": {
+      "normalType": 1016,
+      "anisotropy": 16,
+      "normalSize": [
+        1024,
+        2466
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": null
+    },
+    "handle": {
+      "normalType": 1016,
+      "anisotropy": 16,
+      "normalSize": [
+        384,
+        4473
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": null
+    },
+    "saucer": {
+      "normalType": 1016,
+      "anisotropy": 16,
+      "normalSize": [
+        8192,
+        1152
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": {
+        "rows": 2,
+        "contentWidth": 8128,
+        "contentHeight": 512,
+        "gutter": 32
+      }
+    }
+  }
+}

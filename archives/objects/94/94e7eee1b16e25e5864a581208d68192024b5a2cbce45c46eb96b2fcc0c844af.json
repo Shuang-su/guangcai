@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:5187/",
+  "date": "2026-09-29T14:07:05.045Z",
+  "checks": [
+    "initial aligned PBR maps loaded",
+    "UI view front",
+    "UI view handle",
+    "UI view top",
+    "UI view bottom",
+    "flipped cup clears ground",
+    "UI view saucerBottom",
+    "UI view exploded",
+    "UI view lid",
+    "UI view detail",
+    "UI view hero",
+    "auto rotate moves camera",
+    "drag stops auto rotation and changes camera",
+    "wheel zoom",
+    "material clay",
+    "material normal",
+    "material metalness",
+    "material porcelain",
+    "material pbr",
+    "photo selector applies pose",
+    "dimension edit rebuilds geometry",
+    "single image clears obsolete channels",
+    "single image preserves geometry",
+    "flat artwork fit preserves proportions",
+    "failed package retains existing maps",
+    "mismatched channel resolution is rejected atomically",
+    "last style request wins",
+    "five style swaps keep geometry and texture counts stable",
+    "mobile no horizontal overflow",
+    "mobile settings stay inside viewport",
+    "dispose frees GPU geometries",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "initialMemory": {
+    "geometries": 13,
+    "textures": 19
+  },
+  "stableMemory": {
+    "geometries": 13,
+    "textures": 19
+  },
+  "disposedMemory": {
+    "geometries": 0,
+    "textures": 3
+  }
+}

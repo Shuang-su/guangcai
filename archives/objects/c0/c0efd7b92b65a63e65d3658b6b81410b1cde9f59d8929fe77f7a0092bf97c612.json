@@ -1,0 +1,252 @@
+{
+  "phase": "after",
+  "url": "http://127.0.0.1:5215/",
+  "camera": [
+    -925,
+    215,
+    -215
+  ],
+  "target": [
+    0,
+    62,
+    0
+  ],
+  "metrics": [
+    {
+      "name": "loading",
+      "boundaryJump": 0.09111111111081982
+    },
+    {
+      "name": "gold",
+      "boundaryJump": 0
+    },
+    {
+      "name": "china-green",
+      "boundaryJump": 0
+    },
+    {
+      "name": "shenzhen-teal",
+      "boundaryJump": 0
+    }
+  ],
+  "checks": [
+    "china-green/metal: fixed textures, geometry and exposure preserved",
+    "china-green/paint: fixed textures, geometry and exposure preserved",
+    "shenzhen-teal/metal: fixed textures, geometry and exposure preserved",
+    "shenzhen-teal/paint: fixed textures, geometry and exposure preserved",
+    "before/after clay render identical",
+    "no runtime or shader errors"
+  ],
+  "errors": [],
+  "debug": {
+    "version": "4.0.0",
+    "selection": {
+      "current": {
+        "variant": "shenzhen-teal",
+        "finish": "paint",
+        "text": "auto"
+      },
+      "desired": {
+        "variant": "shenzhen-teal",
+        "finish": "paint",
+        "text": "auto"
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "handle",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      65,
+      105,
+      325
+    ],
+    "target": [
+      17,
+      67,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "soft-v3",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "ae5b9120-7019-4a35-83fd-8c2c047ba0bf",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 10,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "3e506612-7153-4b3f-9f05-6c0c15d75f04",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 2,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "1d9314a4-99bf-4d71-995e-bb5afd6faca5",
+      "fd4b8efe-a3fa-413b-9e5a-c83c2b4c022f",
+      "028f4a57-f9ee-494b-ac73-3c7118ee55a3",
+      "c49e39cd-880d-4e6c-bab7-733d80c9d98c",
+      "6477d269-95ca-4acc-8a6d-c22e4b96cbb6",
+      "f5dd89d4-8534-4acb-a101-e9f37f6b82ad",
+      "4186dc4a-1b25-4d06-87b3-669ab52e6906",
+      "9462d9a2-e2b9-4a45-a16e-ff6c5f646418",
+      "aa1595c0-805d-4408-8841-b2a289b6dad9",
+      "e18e18ef-1fd8-4618-a285-5498835d8e8f",
+      "f0a84cec-d65f-4e18-bad5-44c48d73e3ba"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 31
+    },
+    "city": {
+      "pack": {
+        "id": "shenzhen-teal",
+        "version": 4,
+        "name": "深圳 · 青蓝金线",
+        "layout": "blank-300deg-v1",
+        "baseColor": "./cities/v4/shenzhen-teal-baseColor-964c7c3c31fbb207.webp",
+        "coverage": "./cities/v4/shenzhen-teal-coverage-9168da8875bc29fa.webp",
+        "metalness": "./cities/v4/shenzhen-teal-metalness-9992b719f76510da.webp",
+        "roughness": "./cities/v4/shenzhen-teal-roughness-0e8ab8bb8a281bf2.webp",
+        "clearcoat": "./cities/v4/china-green-clearcoat-aea7a8b419244538.webp",
+        "normal": "./cities/v4/shenzhen-teal-c8c9a345d1685a6f.hfn.gz",
+        "normalEncoding": "rgba16f",
+        "finish": "paint",
+        "label": {
+          "source": "./cities/v4/label-create-5391195266bd432f.webp",
+          "color": "#327e85",
+          "hidden": false,
+          "metalness": 0
+        }
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "maps": [
+        {
+          "uuid": "d90d1a77-cafc-4b75-8870-dae93d6a6721",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "srgb",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "fd68fd41-d5d1-4898-898d-e1d4270d841f",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "70a735b1-9bcb-4296-a38e-b21d2e4bcef4",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "6fd17269-8d9c-4707-ab43-bfd48ab006f4",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        },
+        {
+          "uuid": "0b466e24-acac-426f-abdc-40649b01445b",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "RGBA16F"
+        },
+        {
+          "uuid": "da21aaf3-effb-4dc0-aaf7-69de69333326",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "",
+          "precision": "8-bit"
+        }
+      ],
+      "labelSource": "./cities/v4/label-create-5391195266bd432f.webp",
+      "labelColor": "#327e85",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.75,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "66023433-8153-4a47-91f7-b266314264e0",
+        "normal": "b7137b8d-b5cf-4f87-8608-225bde48c4ae",
+        "roughness": "174aaaea-67a4-4c7d-8fb6-479ec8b0d911",
+        "metalness": "2e13d39a-9335-4254-ae7a-6f71b50b8bd1"
+      },
+      "handle": {
+        "baseColor": "b0037518-6efe-4ee6-8185-7da2fed14403",
+        "normal": "14ce2643-8aec-427e-b041-953192d59ff5",
+        "roughness": "3c7ff0b9-5c53-4f28-8c3c-e54c0e48d0d1",
+        "metalness": "0898e22b-626e-4c29-ab68-ad012d16dca6"
+      },
+      "saucer": {
+        "baseColor": "729c959c-2a2f-4b65-8b10-eccf850685f4",
+        "normal": "ff2eac48-05c9-4083-8baa-31bc646f8bad",
+        "roughness": "f8bbb43b-f784-4691-a1e0-af61b6713d5c",
+        "metalness": "51ccb905-731e-42f2-9096-2cb518a41ff9"
+      }
+    }
+  }
+}

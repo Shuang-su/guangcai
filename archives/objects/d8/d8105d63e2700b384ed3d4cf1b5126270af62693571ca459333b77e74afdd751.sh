@@ -1,0 +1,16 @@
+cat > tools/fit-calibration.ts <<'EOF'
+import {PerspectiveCamera,Vector3} from 'three';
+import {applyPose,type Pose} from '../src/interaction/calibration';
+import {writeFileSync} from 'node:fs';
+const camera=new PerspectiveCamera();const W=1368,H=1824;
+function ring(p:Pose,r:number,y:number){applyPose(camera,p,W,H);return Array.from({length:360},(_,i)=>{const a=i*Math.PI/180;const v=new Vector3(r*Math.cos(a),y,r*Math.sin(a)).project(camera);return[(v.x+1)*W/2,(1-v.y)*H/2];});}
+const refs=[{r:75.5,y:17.35,target:[882,810],edge:'right'},{r:68.7,y:5.9,target:[796,1008],edge:'right'},{r:63.1,y:1,target:[696,1078],edge:'right'},{r:62.7,y:0,target:[680,1094],edge:'right'},{r:75.5,y:17.35,target:[0,683],edge:'top'},{r:62.7,y:0,target:[0,1107],edge:'bottom'},{r:68.7,y:5.9,target:[0,986],edge:'bottom'}];
+function point(p:Pose,ref:typeof refs[number]){const pts=ring(p,ref.r,ref.y);if(ref.edge==='right')return pts.reduce((a,b)=>b[0]>a[0]?b:a);const ints=[];for(let i=0;i<pts.length;i++){const a=pts[i],b=pts[(i+1)%pts.length];if(a[0]*b[0]<=0){const t=-a[0]/(b[0]-a[0]);ints.push(a[1]+t*(b[1]-a[1]));}}return[0,ints.length?(ref.edge==='top'?Math.min(...ints):Math.max(...ints)):1e4];}
+const pose=(v:number[]):Pose=>({yaw:0,pitch:v[0],roll:v[1],distance:v[2],fov:v[5],cx:v[3],cy:v[4],targetY:9});
+const score=(v:number[])=>{if(v[2]<85||v[2]>500||Math.abs(v[0])>25||v[5]<15||v[5]>80)return 1e10;const p=pose(v);return refs.reduce((s,r)=>{const pt=point(p,r);return s+(pt[0]-r.target[0])**2+(pt[1]-r.target[1])**2;},0);};
+function minimize(start:number[],steps:number[],cost:(x:number[])=>number){let s=[start,...steps.map((v,i)=>start.map((x,j)=>x+(i===j?v:0)))].map(x=>({x,y:cost(x)}));for(let iter=0;iter<1800;iter++){s.sort((a,b)=>a.y-b.y);const n=start.length,c=start.map((_,j)=>s.slice(0,n).reduce((v,a)=>v+a.x[j]/n,0));const at=(k:number)=>{const x=c.map((v,j)=>v+k*(c[j]-s[n].x[j]));return{x,y:cost(x)}};const r=at(1);if(r.y<s[0].y){const e=at(2);s[n]=e.y<r.y?e:r;}else if(r.y<s[n-1].y)s[n]=r;else{const k=r.y<s[n].y?.5:-.5,q=at(k);if(q.y<Math.min(r.y,s[n].y))s[n]=q;else s=s.map((a,i)=>i?{x:a.x.map((v,j)=>(v+s[0].x[j])/2),y:0}:a).map(a=>({x:a.x,y:cost(a.x)}));}}return s.sort((a,b)=>a.y-b.y)[0];}
+const result=minimize([0,-7,170,-.3,.48,45],[2,2,20,.1,.03,5],score),p=pose(result.x);
+const landmarks=refs.map(r=>({...r,projected:point(p,r),errorPx:Math.hypot(...point(p,r).map((v,i)=>v-r.target[i]))}));
+writeFileSync('../evidence/saucer-correction/calibration-fit.json',JSON.stringify({photo:'IMG_1221',photoSize:[W,H],method:'Manual image landmarks + least squares perspective camera fit; geometry fixed; no image warp; landmarks approximate.',pose:p,rmsPx:Math.sqrt(result.y/refs.length),landmarks},null,2));console.log(JSON.stringify({pose:p,rmsPx:Math.sqrt(result.y/refs.length),landmarks},null,2));
+EOF
+./node_modules/.bin/tsx tools/fit-calibration.ts

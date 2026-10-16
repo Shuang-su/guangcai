@@ -1,0 +1,32 @@
+{
+  "name": "guangcai-china-v3",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "textures": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs",
+    "test": "tsx --test tools/geometry.test.ts",
+    "qa": "node tools/china-qa.mjs",
+    "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
+    "qa:textures": "node tools/texture-qa.mjs",
+    "evidence": "tsx tools/china-calibration.ts && node tools/china-evidence.mjs",
+    "textures:fixed": "python3 tools/extract-original-floral.py && node tools/derive-original-fixed.mjs",
+    "textures:china": "python3 tools/china-assets.py",
+    "prebuild": "node tools/web-textures.mjs",
+    "textures:web": "node tools/web-textures.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.183.1",
+    "vite": "8.3.1",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "sharp": "^0.34.5",
+    "playwright": "^1.58.2"
+  }
+}

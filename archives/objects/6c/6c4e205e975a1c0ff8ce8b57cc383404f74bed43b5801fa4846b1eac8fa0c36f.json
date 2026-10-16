@@ -1,0 +1,1027 @@
+{
+  "errors": [
+    {
+      "line": 462,
+      "pythonLine": 2,
+      "error": "disabled import html"
+    },
+    {
+      "line": 462,
+      "pythonLine": 6,
+      "error": ""
+    },
+    {
+      "line": 462,
+      "pythonLine": 12,
+      "error": ""
+    },
+    {
+      "line": 501,
+      "pythonLine": 4,
+      "error": "../../work/video-review/1153.jpg"
+    },
+    {
+      "line": 501,
+      "pythonLine": 9,
+      "error": "'Path' object has no attribute 'open'"
+    },
+    {
+      "line": 1576,
+      "pythonLine": 13,
+      "error": "'Path' object has no attribute 'parents'"
+    },
+    {
+      "line": 1944,
+      "pythonLine": 4,
+      "error": "'calls'"
+    },
+    {
+      "line": 2014,
+      "pythonLine": 5,
+      "error": "'Path' object has no attribute 'is_symlink'"
+    },
+    {
+      "line": 2014,
+      "pythonLine": 6,
+      "error": "'Path' object has no attribute 'resolve'"
+    },
+    {
+      "line": 2065,
+      "pythonLine": 7,
+      "error": "'Path' object has no attribute 'resolve'"
+    },
+    {
+      "line": 2065,
+      "pythonLine": 8,
+      "error": "name 'report' is not defined"
+    },
+    {
+      "line": 2173,
+      "pythonLine": 29,
+      "error": "list index out of range"
+    },
+    {
+      "line": 2474,
+      "pythonLine": 4,
+      "error": "assets/masters/peony-magnolia/body-dense-v3.png"
+    }
+  ],
+  "fallbackSourceReads": [],
+  "events": [
+    {
+      "line": 100,
+      "path": "package.json",
+      "sha256": "a74e29a48d6f1abd7e4fd029a7aa44671cb40cd2751ff302c34325bb4e1a28f3"
+    },
+    {
+      "line": 100,
+      "path": "tsconfig.json",
+      "sha256": "fd5a8f227639647059a3057a1b8aaabe229be913891c3f16fda075327bc670cf"
+    },
+    {
+      "line": 100,
+      "path": "vite.config.ts",
+      "sha256": "475ceb560e14c625be43620a88437fe2b6e0c46d2e46cdba0eb4ee64c9b050a0"
+    },
+    {
+      "line": 100,
+      "path": "index.html",
+      "sha256": "6ca9ddb2d68db26f0ddaf7a825e94964ec3fe089a6b20d77aeff7711cc657162"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "6f27978d2da7165d2d15146cb07bc12a729e6e57c6b3f5338ce22b41e607e5b1"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/surface.ts",
+      "sha256": "b5e1989e02e627575671e42d92b8722cff403738cd16947927b43c583395e471"
+    },
+    {
+      "line": 100,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "7a7f8715c6ec489be0c3b069d036ba0f2c69bf96890b98576931262204e42008"
+    },
+    {
+      "line": 108,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "2a66774b3bcb1c6f11f64370c35c4cb4d1718cfdddfc82b5690d1358d110d4a6"
+    },
+    {
+      "line": 108,
+      "path": "src/materials/materials.ts",
+      "sha256": "5e07bda926a8f3a11e7c8dfdaa977ad2052a45dc2e94e4d0c20c7bbeafd741bb"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/product.ts",
+      "sha256": "4223d377ad0f4586f225ce01f6939399b19a1019b362dd6aab0de841d4c5f06c"
+    },
+    {
+      "line": 108,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "9d50866559579bdc9e9d1271b311eecd4e01d6debd75812301573d71df35d98c"
+    },
+    {
+      "line": 132,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "62f68c862ff711ad97eb23e037a5d07945c55c5345b5b9bffdf2ad083df9f7a1"
+    },
+    {
+      "line": 132,
+      "path": "src/studio/studio.ts",
+      "sha256": "85526d0a0f57cfac6a33adcce04d0aa620e5944172b13efeec027af51bec0c8a"
+    },
+    {
+      "line": 132,
+      "path": "src/interaction/views.ts",
+      "sha256": "081b919e3dd2ed0e0486d5c185cd46d698636c735ae84000206872b0d765eea3"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/interface.ts",
+      "sha256": "305e78385d5ed99231ff82e4f7c9ca83d7c115d090dc764e00c481ebb2d122b6"
+    },
+    {
+      "line": 141,
+      "path": "src/ui/styles.css",
+      "sha256": "f5c04e506f0d8102ce640dc7e7438a42c14a3614fab228635e74342a9d3bf09b"
+    },
+    {
+      "line": 141,
+      "path": "src/main.ts",
+      "sha256": "012acffba287a23635e9bb93c39ca1b8c7eaeb238dee9f7e1feab3cbb121f52a"
+    },
+    {
+      "line": 149,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "ff3ca6814706791fd84abd28cd5ad3ce109be6d15184dcfa06b7aa76d6ce10b5"
+    },
+    {
+      "line": 149,
+      "path": "src/geometry/product.ts",
+      "sha256": "ac99794a71a4b7e5eacaf50fd1d721451bab534125541d3738955a5b3e2fd1f7"
+    },
+    {
+      "line": 216,
+      "path": "src/studio/studio.ts",
+      "sha256": "cacaef7a559d0c1b99349c41a07a0983329175d19596ed146e8b4ebf40c1a547"
+    },
+    {
+      "line": 216,
+      "path": "src/materials/materials.ts",
+      "sha256": "910c98d6c82539601c32a6e51df12d671a4d6a307974b17aeadc76cfc8ff602f"
+    },
+    {
+      "line": 231,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "dac24cfb193c6805d4701d96b7016ea5de63451d889134f55fc34ed6647d354a"
+    },
+    {
+      "line": 246,
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "line": 246,
+      "path": "src/studio/studio.ts",
+      "sha256": "125029de560853d0c2540fafb32dffbab62564bf5e7f9887753271e51ba1385e"
+    },
+    {
+      "line": 246,
+      "path": "src/main.ts",
+      "sha256": "bb953737e08057db60c618db4e5b183a58d39d12a6db7a31debbe7bbef0521ae"
+    },
+    {
+      "line": 246,
+      "path": "src/interaction/views.ts",
+      "sha256": "c546fad7f0e165b1378726e486674371365fb2284464ff3598a0f2e7ccfbc656"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/handle.ts",
+      "sha256": "7deceb137c42c92285fb2c26a8391a1c90470bda968098acbd7b0a23bc4852f3"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/product.ts",
+      "sha256": "f493a901025973eb17a199edb52396f2d0d8e5250930bdede87c41e8a5008296"
+    },
+    {
+      "line": 310,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "b3b524f5c81ee68cb78a41da583540f492b7e5d0454f191e8c69c89130b59de9"
+    },
+    {
+      "line": 310,
+      "path": "src/interaction/views.ts",
+      "sha256": "7d0f42388ee21d52a7ef1618d22195e91537e7fd0b328f7c8319563774e01a6e"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "abcf8355244804f33aef16087abcc519d4d123899eb4a9c54ac8f5f9abd552f1"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/handle.ts",
+      "sha256": "18f5667ff5faac5dc5058e68f3b64750830135c9e60c32c32d09abaa83b4f30f"
+    },
+    {
+      "line": 509,
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "line": 516,
+      "path": "src/geometry/product.ts",
+      "sha256": "54f5fa4bc1bc6674c80711bc4301940b7ffa466f3f78aa6c544646a734d17dea"
+    },
+    {
+      "line": 516,
+      "path": "src/materials/materials.ts",
+      "sha256": "6b0a1a920e050f6a1c5ef6b760a508b7bde4024298f26d4bf8cd53671b2a7b60"
+    },
+    {
+      "line": 516,
+      "path": "src/studio/studio.ts",
+      "sha256": "335457e9d15fa2272caf2f1647077f723b66505932ecc8a37cfb9021f07cdac7"
+    },
+    {
+      "line": 516,
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "line": 522,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "7dd44c1c9e48954b8ee271bb382d912fa8153c3c233744953a48dfc9949e1aca"
+    },
+    {
+      "line": 522,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "873233cd2e7e8717daab6b29b2c53d68a408f6944d4156a5e004080b66482590"
+    },
+    {
+      "line": 578,
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "line": 593,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "e643ba729faa3cff4fa5ce4d8328aac70ff2e8d2b3784149325f552ff00ad1d9"
+    },
+    {
+      "line": 593,
+      "path": "src/geometry/product.ts",
+      "sha256": "aae8def4206a581aa6bfd67922059567a0f3a9283f8427864009616cbf60e9d3"
+    },
+    {
+      "line": 616,
+      "path": "src/materials/materials.ts",
+      "sha256": "6513d5d70c156dc895739f8cf727599363042e579f15e17e44afc718eba3737b"
+    },
+    {
+      "line": 616,
+      "path": "src/studio/studio.ts",
+      "sha256": "10ce949c8279f08fe9d910ba61a39cc5b40479074779152c9b2d60dbff8a3301"
+    },
+    {
+      "line": 623,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "730a54d84634b24c8be90d496b10b6d0e40a1df0462495df3c18676b0e4b119a"
+    },
+    {
+      "line": 623,
+      "path": "src/interaction/views.ts",
+      "sha256": "2ad6bdd505e1b0b5770e12ea9a446f4438a882b8d212165f8cde27ded599952e"
+    },
+    {
+      "line": 623,
+      "path": "src/ui/interface.ts",
+      "sha256": "de0699e53c09606dbd5b214cc2cc5aea079c0a2c735e76064462b7f85edd50e9"
+    },
+    {
+      "line": 623,
+      "path": "src/main.ts",
+      "sha256": "c8571e8cd8957661f0a1611a5c83d700f911d19a9c81d16dce435c801d178380"
+    },
+    {
+      "line": 683,
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "line": 683,
+      "path": "package.json",
+      "sha256": "60948c9ec4af4fefda7b9cd597176f64c3621037b12ab020489cb20d3706aac4"
+    },
+    {
+      "line": 683,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "c71cf9e9ea0b6bb43fd0047fb5aaf18e69a7f528a059d16ec103ba51915dbe12"
+    },
+    {
+      "line": 683,
+      "path": "src/main.ts",
+      "sha256": "d8e1289557f371e18adcec402b700649f990875d5b0fd1695ad53e130795313f"
+    },
+    {
+      "line": 683,
+      "path": "src/ui/interface.ts",
+      "sha256": "1b35781ff72e20342de137fe689c2e6a4727e72d78dca443536690ba17b7017c"
+    },
+    {
+      "line": 683,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "afc2bad8fc37321b084cdf7974445805dfd690c641cd23d1b1062702824a84c7"
+    },
+    {
+      "line": 708,
+      "path": "src/main.ts",
+      "sha256": "744ab3f00d942ae3b3fe7a202c2835c865b7316c5489fe44d842078b8eef8db4"
+    },
+    {
+      "line": 708,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "a9b33476332aaa77509064588c9245c3578faa91251f7ed9c794f8d0c8e6fe4b"
+    },
+    {
+      "line": 708,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "cfcfe949477a362a1d0ee7cde28d3c5a0e73dd8022180964c5a436d4daebd8b6"
+    },
+    {
+      "line": 708,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "9a6adcc3b68c0d2c52c1606950478ee4fbe8e10ce54261424a857c27a16ddc23"
+    },
+    {
+      "line": 739,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "d7ae9b57f7fb8d20bc30745610e7c48c5b52156e8dbc0a2f3f63b1c71fca8094"
+    },
+    {
+      "line": 739,
+      "path": "src/main.ts",
+      "sha256": "b81f35ce912a4fd0626395318febf65e79977f9eb8ec1bc267f83bfb58979c6d"
+    },
+    {
+      "line": 739,
+      "path": "src/studio/studio.ts",
+      "sha256": "038142b131b4fdff53119ae027e5ffdb047628a52cdce82527abc3fdc4311bb1"
+    },
+    {
+      "line": 739,
+      "path": "src/materials/materials.ts",
+      "sha256": "1e7bfcbdb7c952a615116c63dd36f4cfc5185dbcb99dc9d7d5ebe473a19ff9fb"
+    },
+    {
+      "line": 739,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a27bfbddd0e2e2e1049697287187e5802ae3aa0e82a64c73d1cf988b3791e252"
+    },
+    {
+      "line": 739,
+      "path": "src/main.ts",
+      "sha256": "2ed435d4e38122873ba633c981719bccd94c0b37d79ce27bbf914163ea1094dc"
+    },
+    {
+      "line": 739,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "002ef41167dc5fbbf98c0140381532c550c64c279fd885bdf32aa2de5d104b16"
+    },
+    {
+      "line": 754,
+      "path": "src/interaction/views.ts",
+      "sha256": "616ca83ab6eb6868c9d1a358fafe04a9cb13398ed274f5fca13fdbcd3bc31405"
+    },
+    {
+      "line": 788,
+      "path": "src/geometry/product.ts",
+      "sha256": "2775f2d222f3d7acd95d23a678a22c591a744dabb263774ba5b50e1d3e6abf7b"
+    },
+    {
+      "line": 788,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "line": 788,
+      "path": "src/materials/materials.ts",
+      "sha256": "94cb4a3ef88b861dfe2952ccb399e98b603ca87b0fc1aa79537bfef095639d48"
+    },
+    {
+      "line": 788,
+      "path": "src/studio/studio.ts",
+      "sha256": "27f720a12300ed45b5e67ed46eaec1ceee87fd7f127b7324cc92e11ebd9833c5"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/views.ts",
+      "sha256": "2dea51b2a703ee1f87c68df75c0ef8672c7e1b766029e7b42f71a91c9cf92053"
+    },
+    {
+      "line": 788,
+      "path": "src/geometry/product.ts",
+      "sha256": "2775f2d222f3d7acd95d23a678a22c591a744dabb263774ba5b50e1d3e6abf7b"
+    },
+    {
+      "line": 788,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "f82570c994e47f45ce9e6b5563321f0f5ecd16a14dae7110780f4eef5d14d689"
+    },
+    {
+      "line": 788,
+      "path": "src/materials/materials.ts",
+      "sha256": "94cb4a3ef88b861dfe2952ccb399e98b603ca87b0fc1aa79537bfef095639d48"
+    },
+    {
+      "line": 788,
+      "path": "src/studio/studio.ts",
+      "sha256": "27f720a12300ed45b5e67ed46eaec1ceee87fd7f127b7324cc92e11ebd9833c5"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "4a04c0bbdcef50ad1fd3a1d51cde1db899b2c65b9ccb61c5395dbc6ba4cf1ad2"
+    },
+    {
+      "line": 788,
+      "path": "src/interaction/views.ts",
+      "sha256": "473328d83481afbc2a4e9ae4bd6adfb8b7f2c41ef438334a0b5f1e0fdf39e869"
+    },
+    {
+      "line": 796,
+      "path": "tools/geometry.test.ts",
+      "sha256": "53e637b10a8e9641b8f1be3e12c0a3ab5e4bbebf8e176a01967d9b3ea7d236a5"
+    },
+    {
+      "line": 810,
+      "path": "tools/browser-qa.mjs",
+      "sha256": "b1df114db0b14ca9e1e155db980cb7901e66f7f3a4c1a4bfe6ee56fd71cb3036"
+    },
+    {
+      "line": 820,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "a206b9f1d0f2608f1e568e1debda65064f0b9de7d56dd81e9acaec3834964e8a"
+    },
+    {
+      "line": 848,
+      "path": "src/materials/materials.ts",
+      "sha256": "b7d5eeb2da5af997c448f53893d3bff8903d8705888cefd2ef2964d0ef5bc11a"
+    },
+    {
+      "line": 848,
+      "path": "src/studio/studio.ts",
+      "sha256": "a352d32c4f62f38e016d2c6b138c766ea09db6ae67cdb72e56a2106b635d73c7"
+    },
+    {
+      "line": 848,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "c98fa59bf967bde233088eb8d9401aaaa2fd0b2e0c608a2d2a33813bc5c20833"
+    },
+    {
+      "line": 848,
+      "path": "src/geometry/product.ts",
+      "sha256": "16d08a7719e0528f4e013b3ab658d997251487f37a58cf1c63a35a608ee7a595"
+    },
+    {
+      "line": 903,
+      "path": "src/materials/materials.ts",
+      "sha256": "ef5def51478ff774256e5ec2ccb06b25812272ce194aadb78b017a653cc6813b"
+    },
+    {
+      "line": 903,
+      "path": "src/geometry/handle.ts",
+      "sha256": "b3368591ebf9a6fc1a819e3bad6e38523fc95f4bff312c2bde479c9968aede80"
+    },
+    {
+      "line": 903,
+      "path": "src/geometry/product.ts",
+      "sha256": "b64a80ac82839f19ce0953fa3e31314718d4e5908dac9aca903d81212b1bce90"
+    },
+    {
+      "line": 903,
+      "path": "src/main.ts",
+      "sha256": "a3b81985949c51332d4d2ba99ad67a6e619124c6050408f922335ec3a859a423"
+    },
+    {
+      "line": 910,
+      "path": "src/interaction/views.ts",
+      "sha256": "6b593fa2ccd1b12950dcccdf2d190f1d54b7e1ebd2f0fc9b933e519b287bb35a"
+    },
+    {
+      "line": 910,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "67fcd63c723e7889cf42a835891ce5451e755a27c047708152c98a1d7fd5c348"
+    },
+    {
+      "line": 910,
+      "path": "src/ui/interface.ts",
+      "sha256": "e6d081a6e9e9b445a6d399fb47226c1cfd5ea19513c404f2751dff7a1b4ebf09"
+    },
+    {
+      "line": 910,
+      "path": "src/ui/styles.css",
+      "sha256": "9afae6357ae9431863a158e7a4be9a7616d5e4540d431747e6bd830fa888da6f"
+    },
+    {
+      "line": 916,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "e56b9eaa146753c7b5ac40ac1e5584790a46d1146bb8fc2e0c92e4d814f753a7"
+    },
+    {
+      "line": 916,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "3a2eb9dd6e15c13d78fe9dfe56f055ca9e55ac737d3efcc3463eaea54a9e4022"
+    },
+    {
+      "line": 916,
+      "path": "tools/browser-qa.mjs",
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    {
+      "line": 1111,
+      "path": "src/geometry/product.ts",
+      "sha256": "18720bdf712d2028b835c68d0c7674aa50eed24f3514e0217d1dc6976339d4a6"
+    },
+    {
+      "line": 1111,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "95532dfa2df9b9148a4d7379f79363e29917e8c504e23e288277c7c0244018a8"
+    },
+    {
+      "line": 1111,
+      "path": "tools/geometry.test.ts",
+      "sha256": "7a78866df5dd1557b3a6f5df84fa436930c75adbe7a0098bd60f9ded8fa242c9"
+    },
+    {
+      "line": 1111,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "12cfa5b6056e4afeb403545f5b5b124d3d8b720817ceb5932a0f3fb3a04cd1de"
+    },
+    {
+      "line": 1119,
+      "path": "tools/saucer-profile.ts",
+      "sha256": "b74f662d4e46db92b8d862740c7c5fc3abd6001b236dc5812dfecdc80b0ed465"
+    },
+    {
+      "line": 1119,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "8cb9c50ecea0482ed52b89487dd72a8d9d71cb1ace80f8221d8f3b8e1128a0fa"
+    },
+    {
+      "line": 1119,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "4f23fb13b5698683c75cc9d2fc511b88238a5563459cfdf0c7c8ec6a08cdc063"
+    },
+    {
+      "line": 1132,
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    },
+    {
+      "line": 1132,
+      "path": "src/interaction/views.ts",
+      "sha256": "5bf942d2618f729e9b433c516dbb9419985b26fdba9d93f3c37230ad14e320ea"
+    },
+    {
+      "line": 1132,
+      "path": "tools/reference-captures.mjs",
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    {
+      "line": 1132,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "8b74517c1e6cb64d7ebe2591388d2b54fba6376612fa677ac172388c372066c8"
+    },
+    {
+      "line": 1132,
+      "path": "tools/saucer-closeup.mjs",
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    {
+      "line": 1199,
+      "path": "src/studio/studio.ts",
+      "sha256": "c0ae5ca9dd2414f58129c87ada5c255dd5aee056d1d65da0aa5254951ab28f3b"
+    },
+    {
+      "line": 1199,
+      "path": "vite.config.ts",
+      "sha256": "192f39ae201f12d72915f806a33cd07d8a63f5cbb0429685eabc84f9a03980a1"
+    },
+    {
+      "line": 1199,
+      "path": "compare.html",
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    {
+      "line": 1199,
+      "path": "src/interaction/calibration.ts",
+      "sha256": "0d82fef028bcebbab6d9eb63340077187f2ce26b9864b5ba4f54ef5fa0c614dc"
+    },
+    {
+      "line": 1199,
+      "path": "src/compare.ts",
+      "sha256": "67a9e2db354ebc29cce0099a49b8649b515bea7beba563534244df1384743e23"
+    },
+    {
+      "line": 1199,
+      "path": "src/ui/compare.css",
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    {
+      "line": 1206,
+      "path": "src/compare.ts",
+      "sha256": "9e8bea1c282700a0d09d1d9196167204acde7cef1b532fa3d64789e80f0aadca"
+    },
+    {
+      "line": 1206,
+      "path": "src/ui/interface.ts",
+      "sha256": "eefde5f67d5ba262dab6047fe8c434acd19cfed52a2e0ab8df880af34190f7e9"
+    },
+    {
+      "line": 1213,
+      "path": "tools/fit-calibration.ts",
+      "sha256": "6f1792e1f7c59ad525f3c82e25549f736ffd6805a056f41745dc1a87e4848d79"
+    },
+    {
+      "line": 1220,
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "ab84e1ffe4931fce74a2e7b8c82684a3ecf9487ec9cdf1163c607d63915a8a5b"
+    },
+    {
+      "line": 1243,
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "6f1792e1f7c59ad525f3c82e25549f736ffd6805a056f41745dc1a87e4848d79"
+    },
+    {
+      "line": 1243,
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "33887aeb535335d1a11cc4ee847fb32319cfc1220af16ce591296eb00b514bda"
+    },
+    {
+      "line": 1250,
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "2e49c0c095459308d385b5294958108f442ceba8ab9fdaf5d323f1ccfb2f3f49"
+    },
+    {
+      "line": 1250,
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "ab6f3d2a04321d337d714f3782747c7096a099826d84007dc5b9bda974acfa96"
+    },
+    {
+      "line": 1257,
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    {
+      "line": 1297,
+      "path": "tools/fit-calibration.ts",
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    {
+      "line": 1310,
+      "path": "src/geometry/product.ts",
+      "sha256": "7b4556b29c97a66e9141f2ef25829b6f04e3afb7956966e49c11ddc0bb07db6b"
+    },
+    {
+      "line": 1310,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "fe0ddf532fd9b3c00d774e3c0407a3eb316f5a6d005bba90cff736576c1870e5"
+    },
+    {
+      "line": 1310,
+      "path": "tools/saucer-profile.ts",
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    {
+      "line": 1310,
+      "path": "src/compare.ts",
+      "sha256": "b742fbb2b74aad7c62b863b90ff14449d3aba9e4eec1c259bf1580a3bd682cfa"
+    },
+    {
+      "line": 1316,
+      "path": "src/interaction/calibration.ts",
+      "sha256": "6127895044670d00572c39a126a9223bb42399d80bced88d4f8743827728f78c"
+    },
+    {
+      "line": 1325,
+      "path": "tools/overlay-qa.mjs",
+      "sha256": "eadf28ef82ef2df61c84085176f814c5820129275604a429e3d5b051656939ba"
+    },
+    {
+      "line": 1353,
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    {
+      "line": 1412,
+      "path": "tools/overlay-report.mjs",
+      "sha256": "a956be4ad2814fafc219cac06da18465810832b21e8ad2116e789d95363f8062"
+    },
+    {
+      "line": 1412,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "3fe19b59a7ebc21ac532a2202d41f414dc8e65514a2b8cb1fb4667e1204c6f73"
+    },
+    {
+      "line": 1436,
+      "path": "tools/overlay-report.mjs",
+      "sha256": "135cb171e3c816ed1b60ffadf370cf0a0eaf454e68e4319de2ea7fbd8eb683ad"
+    },
+    {
+      "line": 1725,
+      "path": "src/geometry/handle.ts",
+      "sha256": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e"
+    },
+    {
+      "line": 1725,
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7"
+    },
+    {
+      "line": 1725,
+      "path": "src/geometry/product.ts",
+      "sha256": "80bfa6f591c4c9f78254ab9702a7aa64e3e129290a2a6a3228b46f76fe7775fe"
+    },
+    {
+      "line": 1725,
+      "path": "tools/surface-metrics.ts",
+      "sha256": "fa339dcfc16f086c43b02ca8e9ffd70116b1479bb131d7c4f1f51b218296b0d3"
+    },
+    {
+      "line": 1725,
+      "path": "tools/geometry.test.ts",
+      "sha256": "a6c5eee06e6406287e05dcbb0367e1788a7679fb2907f40465bb39c65502fae2"
+    },
+    {
+      "line": 1725,
+      "path": "src/interaction/views.ts",
+      "sha256": "f0762e1559fd95009850d7aeb8e0252162fd992294d49c70bbd4fc1f694bc1ba"
+    },
+    {
+      "line": 1806,
+      "path": "tools/handle-compare.mjs",
+      "sha256": "0fa6cf178227095df847d1c0201a924c104049ca97aeba844d521af8fcd26f09"
+    },
+    {
+      "line": 1829,
+      "path": "src/geometry/parameters.ts",
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    {
+      "line": 1829,
+      "path": "tools/geometry.test.ts",
+      "sha256": "ce121b71d6b438da4d272ae69a04f0f60b419e1bdcbd6d6e7bf74928a1e61178"
+    },
+    {
+      "line": 1829,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "828e2b6b5ab7922159849fe77e1d3a2c631f42b1b8fdb6345169fea61564d0f5"
+    },
+    {
+      "line": 1895,
+      "path": "src/interaction/calibration.ts",
+      "sha256": "144b7987eeae52045a1bc030549182b49d825a687d0804b36a90ded626589e3e"
+    },
+    {
+      "line": 1895,
+      "path": "src/compare.ts",
+      "sha256": "faa26fa076b3a283a9a16bd8d626f0ce3e9043e161a2f71694d214725f5dc43b"
+    },
+    {
+      "line": 1895,
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "6e2c4c67774ea2ddcdd9223b90552421f250f2bd20ff5af81b65a48718018dc9"
+    },
+    {
+      "line": 1895,
+      "path": "tools/geometry.test.ts",
+      "sha256": "6b6494763c1ff9b84dc6b282474039b1fa06268857bebfa2a5e991b3d9b372e8"
+    },
+    {
+      "line": 1895,
+      "path": "tools/fit-lid-calibrations.ts",
+      "sha256": "4065b7c6e70e49c379a5a8e0c6a076de34e4a8d7b7989e1afd0fb86ab4cf4d68"
+    },
+    {
+      "line": 1922,
+      "path": "src/geometry/product.ts",
+      "sha256": "613472efb0175966ee753e0210501bf140c570989be2a06d7a15944170725c68"
+    },
+    {
+      "line": 1922,
+      "path": "src/interaction/calibration.ts",
+      "sha256": "254e254ddbd28d2dca5d75dbe67f74d3aea1858fd2d6ceee71a70f2bfdc94bc4"
+    },
+    {
+      "line": 1922,
+      "path": "tools/overlay-qa.mjs",
+      "sha256": "14af901bd914a2f35d1d219d45a9132689074b3db3338e11c7dd900189c88793"
+    },
+    {
+      "line": 1944,
+      "path": "src/compare.ts",
+      "sha256": "07f9fe9424a0fd39b4416ee9a274ee9c7454b3f9cc5c9b4c0c6f19d7499c10f1"
+    },
+    {
+      "line": 1944,
+      "path": "tools/overlay-report.mjs",
+      "sha256": "c57db3f2832403eed1801558c859e97c8efd28d2885d82a1519576136d5ce2e4"
+    },
+    {
+      "line": 2014,
+      "path": "tools/lid-compare.mjs",
+      "sha256": "eb154101a2e3eb35e7fe3d8a8741c2b313bdd893badb9092a9e69f20eb60f9e6"
+    },
+    {
+      "line": 2033,
+      "path": "src/geometry/product.ts",
+      "sha256": "f42ba3cecd88959429e9c96c3feefbc8141d3f18d30b15539c97ed2a69686dc5"
+    },
+    {
+      "line": 2165,
+      "path": "src/materials/render-standard.ts",
+      "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283"
+    },
+    {
+      "line": 2165,
+      "path": "src/materials/materials.ts",
+      "sha256": "880cf6f710530dd0fa021e77c7eb7e9128719e383424c8624c11258cf8bed139"
+    },
+    {
+      "line": 2165,
+      "path": "src/studio/studio.ts",
+      "sha256": "8a165bcbea96248e7ff9c5c1b37ac2894748a77aa82abc9c2a8feca9e1c5ecb2"
+    },
+    {
+      "line": 2165,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "2364c795a600a74a3adcc13fea531b50b145bd1b6e079c2614dced855e333fc3"
+    },
+    {
+      "line": 2165,
+      "path": "src/main.ts",
+      "sha256": "999f9527753d50498f6b057dfa31a1a33f26c4642f4c25219d4edb90200bf6a6"
+    },
+    {
+      "line": 2165,
+      "path": "src/ui/interface.ts",
+      "sha256": "0f3f1fb94f80b678d033366ceb7f5c6e653f943c97874fdc7c09d2bce74c2aea"
+    },
+    {
+      "line": 2165,
+      "path": "src/ui/styles.css",
+      "sha256": "7a4af1bca38d6841cbf8d850d199f9477f72c03f5f4c838550074899952ad316"
+    },
+    {
+      "line": 2173,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "f5dcb56016e59c2c34f997e46d8c1108a29e93cd6a69c832ef6f97d9e1d71874"
+    },
+    {
+      "line": 2173,
+      "path": "package.json",
+      "sha256": "b1e560e92c540ee8654799fff6e4002f2fc4a6fd81fd902cceb2aada97f34669"
+    },
+    {
+      "line": 2186,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "9e07849a3e84787f0bec0060902baa950d1379959866e6377df93527b17b3fb2"
+    },
+    {
+      "line": 2186,
+      "path": "src/ui/interface.ts",
+      "sha256": "6cb4dc633edf438ee4563c47a8658db4fd8e393438cde2e33e6b281f14869c37"
+    },
+    {
+      "line": 2186,
+      "path": "src/ui/styles.css",
+      "sha256": "3ea0df85fba9a1dbecd1e87a1c0c7846092d2c2c174aa82308b81f5c534d3678"
+    },
+    {
+      "line": 2195,
+      "path": "tools/texture-standards.mjs",
+      "sha256": "a072dd8886c009161fcaa76dba2f2cd880efde81826fb08b45bb8c1374796507"
+    },
+    {
+      "line": 2209,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "673476f3ddcc132958c69430f21831340b3663e084c365eb566c335d34535e34"
+    },
+    {
+      "line": 2231,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "bc50f35e3a24443026f90717a3dcf178ae84d8269db4ea302170e814ba652ba0"
+    },
+    {
+      "line": 2246,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "fa3dbefe6f2bff498fb1c9d8f970694c6df3cbb25286fe748553398bece42efb"
+    },
+    {
+      "line": 2255,
+      "path": "src/main.ts",
+      "sha256": "b6482058a28ffb019cd061e6010c21b1c4b12234673ad8b633af3615132602de"
+    },
+    {
+      "line": 2255,
+      "path": "src/compare.ts",
+      "sha256": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3"
+    },
+    {
+      "line": 2255,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "20869bc89b78bd197a1fc455b2e882230c4b74b60216dda25b3407c740a5abae"
+    },
+    {
+      "line": 2255,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "3c3b18452dad800dc137b27abc490aec9f1c83453cef7884c99ac06bc864c426"
+    },
+    {
+      "line": 2287,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "253bb508e0599d95602bf2dcf36384be9a422242325923543ed924e082e7b553"
+    },
+    {
+      "line": 2342,
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "e2a2cd0e67db1047c7bff33bd1f95606a64a58166078dc12add22099311f829e"
+    },
+    {
+      "line": 2355,
+      "path": "tools/texture-standards.mjs",
+      "sha256": "27e02acfb0980cc5416c259efa0bd8900619c18a06b5caa3338a5b748355c7ad"
+    },
+    {
+      "line": 2355,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "2be0d2d1f56b0f5c60fc19e23ed6f5ed868217b2abb36fd495a6a82855ed9cc7"
+    },
+    {
+      "line": 2355,
+      "path": "src/ui/interface.ts",
+      "sha256": "10ba012cb458d11438f6fa6eb6f927e3cfb5df937e470b15a14c7daba807cc4a"
+    },
+    {
+      "line": 2368,
+      "path": "tools/texture-density.mjs",
+      "sha256": "5eedfc6d7eae0bcd92c20b6d9859e5442da39968189ee302780c9d55eddcfb21"
+    },
+    {
+      "line": 2474,
+      "path": "package.json",
+      "sha256": "5138dc2c07c23bd07dde9b83a4dc0feb16eb6ec629ea9fe0c14146ba1d5710a6"
+    },
+    {
+      "line": 2474,
+      "path": "tools/texture-standards.mjs",
+      "sha256": "a91bda81d937537c567251049e2433de212118270b576dd134a43544830e0ec7"
+    },
+    {
+      "line": 2474,
+      "path": "tools/texture-qa.mjs",
+      "sha256": "caf6546b5a919498b6b854dca653a89bb7a2b6c84f57be689b6d0c0f73fc5baf"
+    },
+    {
+      "line": 2481,
+      "path": "src/styles/style-manager.ts",
+      "sha256": "2326b704c822f927a04e166ad40dcea31d72c4cb406bcb4e96c3d76f26033913"
+    },
+    {
+      "line": 2481,
+      "path": "src/ui/interface.ts",
+      "sha256": "623d71e3d4bfbdde3cdc0b6045bb8d347f9cb0b2728be29188847a71f8a250b2"
+    },
+    {
+      "line": 2607,
+      "path": "netlify.toml",
+      "sha256": "37e45467e6ababd8cb1d03f630ed540bdd096b59342103b16ed63367b22f1efb"
+    },
+    {
+      "line": 2644,
+      "path": "tools/online-qa.mjs",
+      "sha256": "293a7c8455f6ccedd38d28444b11e34b7d935f78686786d3e66dd27abb293296"
+    },
+    {
+      "line": 2697,
+      "path": "tools/online-qa.mjs",
+      "sha256": "b35847cacf3364c7e62a335d91102ff8d1baf52a46940efd2e0cf68e4cdb030e"
+    },
+    {
+      "line": 2730,
+      "path": "tools/online-qa.mjs",
+      "sha256": "8ee15d1b1c708ae8e7c03a2b339b0c3a733daf82e2f8d045d5d8300d3e36cc5f"
+    }
+  ]
+}

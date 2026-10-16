@@ -1,0 +1,24 @@
+{
+  "url": "http://127.0.0.1:5178",
+  "checks": [
+    "Cup is top-down before lids assemble",
+    "Lid and saucer use separate moving 3D groups",
+    "Main title appears after assembly",
+    "Same cup survives intro into cards",
+    "Glass uses transmission, no opaque backplate",
+    "Current heading remains visible during sweep",
+    "Multi-layer sweep moves left to right",
+    "Rule close keeps card choices",
+    "Result observation slot reaches both screen edges",
+    "Result button uses generated ink slice",
+    "Poster return preserves result",
+    "Background transforms during route transition",
+    "No overflow at 360",
+    "No overflow at 390",
+    "No overflow at 780",
+    "No overflow at 1366",
+    "No runtime or shader errors"
+  ],
+  "errors": [],
+  "limitations": "Desktop Chromium and emulated touch only. Not real mobile GPU acceptance."
+}

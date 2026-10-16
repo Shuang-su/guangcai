@@ -1,0 +1,674 @@
+{
+  "version": "1.0",
+  "title": "统一材质与密铺花纸，原版上线基线",
+  "sessionId": "01a0ed06-5ea9-7532-a412-9c5a7a53716e",
+  "sourceLineCutoff": 2809,
+  "project": "guangcai-viewer",
+  "sourceReplay": "original-06-final",
+  "deploymentSnapshot": "original",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0/geometry-tests.log"
+    },
+    {
+      "command": "npm run build -- --outDir /Volumes/Prism/Codex/guangcai-github-20261013/.codex-work/reconstruction/.codex-work/current-build --emptyOutDir",
+      "exitCode": 0,
+      "log": ".codex-work/history-validation/1.0/build.log"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "compare.html",
+      "sha256": "e273edc1bc2bd1bcaced5f6ca1b8afa5278199d034818c2f3136483f0818fff3"
+    },
+    {
+      "path": "index.html",
+      "sha256": "42d0ba9debd50e1682b1f402149da15704e7cc5c82440191f209d39a6972b052"
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "37e45467e6ababd8cb1d03f630ed540bdd096b59342103b16ed63367b22f1efb"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5138dc2c07c23bd07dde9b83a4dc0feb16eb6ec629ea9fe0c14146ba1d5710a6"
+    },
+    {
+      "path": "src/compare.ts",
+      "sha256": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3"
+    },
+    {
+      "path": "src/geometry/handle.ts",
+      "sha256": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e"
+    },
+    {
+      "path": "src/geometry/parameters.ts",
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    {
+      "path": "src/geometry/product.ts",
+      "sha256": "f42ba3cecd88959429e9c96c3feefbc8141d3f18d30b15539c97ed2a69686dc5"
+    },
+    {
+      "path": "src/geometry/ribbon.ts",
+      "sha256": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7"
+    },
+    {
+      "path": "src/geometry/surface.ts",
+      "sha256": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793"
+    },
+    {
+      "path": "src/interaction/calibration.ts",
+      "sha256": "254e254ddbd28d2dca5d75dbe67f74d3aea1858fd2d6ceee71a70f2bfdc94bc4"
+    },
+    {
+      "path": "src/interaction/reference-views.ts",
+      "sha256": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4"
+    },
+    {
+      "path": "src/interaction/views.ts",
+      "sha256": "f0762e1559fd95009850d7aeb8e0252162fd992294d49c70bbd4fc1f694bc1ba"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "b6482058a28ffb019cd061e6010c21b1c4b12234673ad8b633af3615132602de"
+    },
+    {
+      "path": "src/materials/materials.ts",
+      "sha256": "880cf6f710530dd0fa021e77c7eb7e9128719e383424c8624c11258cf8bed139"
+    },
+    {
+      "path": "src/materials/render-standard.ts",
+      "sha256": "f0674c4252ab06da105907b6f83ea0c32d04b05813041161a2616e2680691283"
+    },
+    {
+      "path": "src/studio/contact-shadow.ts",
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0"
+    },
+    {
+      "path": "src/studio/studio.ts",
+      "sha256": "8a165bcbea96248e7ff9c5c1b37ac2894748a77aa82abc9c2a8feca9e1c5ecb2"
+    },
+    {
+      "path": "src/styles/style-manager.ts",
+      "sha256": "2326b704c822f927a04e166ad40dcea31d72c4cb406bcb4e96c3d76f26033913"
+    },
+    {
+      "path": "src/ui/compare.css",
+      "sha256": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5"
+    },
+    {
+      "path": "src/ui/interface.ts",
+      "sha256": "623d71e3d4bfbdde3cdc0b6045bb8d347f9cb0b2728be29188847a71f8a250b2"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "3ea0df85fba9a1dbecd1e87a1c0c7846092d2c2c174aa82308b81f5c534d3678"
+    },
+    {
+      "path": "tools/browser-qa.mjs",
+      "sha256": "daa9f8d9446e15794563be0b3e44048398d619b5ee713ddcfbe7a7b73345d26e"
+    },
+    {
+      "path": "tools/derive-pbr.mjs",
+      "sha256": "e2a2cd0e67db1047c7bff33bd1f95606a64a58166078dc12add22099311f829e"
+    },
+    {
+      "path": "tools/fit-calibration.ts",
+      "sha256": "03d526256024dc0c8a942a2681ae7a61f89ffbdb35fcc2ccefc764bcb13f599d"
+    },
+    {
+      "path": "tools/fit-lid-calibrations.ts",
+      "sha256": "4065b7c6e70e49c379a5a8e0c6a076de34e4a8d7b7989e1afd0fb86ab4cf4d68"
+    },
+    {
+      "path": "tools/fit-other-calibrations.ts",
+      "sha256": "387cd9f7cdebf3a280d436ea29a9a27e27b61efc04d8dec67f46bde41e56a516"
+    },
+    {
+      "path": "tools/geometry.test.ts",
+      "sha256": "6b6494763c1ff9b84dc6b282474039b1fa06268857bebfa2a5e991b3d9b372e8"
+    },
+    {
+      "path": "tools/handle-compare.mjs",
+      "sha256": "0fa6cf178227095df847d1c0201a924c104049ca97aeba844d521af8fcd26f09"
+    },
+    {
+      "path": "tools/lid-compare.mjs",
+      "sha256": "eb154101a2e3eb35e7fe3d8a8741c2b313bdd893badb9092a9e69f20eb60f9e6"
+    },
+    {
+      "path": "tools/online-qa.mjs",
+      "sha256": "8ee15d1b1c708ae8e7c03a2b339b0c3a733daf82e2f8d045d5d8300d3e36cc5f"
+    },
+    {
+      "path": "tools/overlay-captures.mjs",
+      "sha256": "4cbb1750223918b66711f0a6b190c88daf827e25458bab54be3ea86fed294c2a"
+    },
+    {
+      "path": "tools/overlay-qa.mjs",
+      "sha256": "14af901bd914a2f35d1d219d45a9132689074b3db3338e11c7dd900189c88793"
+    },
+    {
+      "path": "tools/overlay-report.mjs",
+      "sha256": "c57db3f2832403eed1801558c859e97c8efd28d2885d82a1519576136d5ce2e4"
+    },
+    {
+      "path": "tools/reference-captures.mjs",
+      "sha256": "b2813c7466426b2dff1a0dd77c410d9e6ff16f97ecb51fd6dd3f17cf944a20a3"
+    },
+    {
+      "path": "tools/reference-gallery.mjs",
+      "sha256": "6e2c4c67774ea2ddcdd9223b90552421f250f2bd20ff5af81b65a48718018dc9"
+    },
+    {
+      "path": "tools/saucer-closeup.mjs",
+      "sha256": "be2fb4da9fd99a2fc20edc5ec79f1cd5bbf777f7233f1dbbde397ac64a3989a3"
+    },
+    {
+      "path": "tools/saucer-profile.ts",
+      "sha256": "d274fb031161c9bea7298bf1048d9d7932ab02395ae31a2bffe2e78262890b1c"
+    },
+    {
+      "path": "tools/snapshot.mjs",
+      "sha256": "35bccf698043bd002677bb676edd9e1e138329b9b6031104adc3b3b8dd5382b1"
+    },
+    {
+      "path": "tools/surface-metrics.ts",
+      "sha256": "fa339dcfc16f086c43b02ca8e9ffd70116b1479bb131d7c4f1f51b218296b0d3"
+    },
+    {
+      "path": "tools/texture-density.mjs",
+      "sha256": "5eedfc6d7eae0bcd92c20b6d9859e5442da39968189ee302780c9d55eddcfb21"
+    },
+    {
+      "path": "tools/texture-qa.mjs",
+      "sha256": "caf6546b5a919498b6b854dca653a89bb7a2b6c84f57be689b6d0c0f73fc5baf"
+    },
+    {
+      "path": "tools/texture-standards.mjs",
+      "sha256": "a91bda81d937537c567251049e2433de212118270b576dd134a43544830e0ec7"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "60b6a84151836d66f72e883188a926e20555a3967d007337454b18ae87b8bbe4"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "192f39ae201f12d72915f806a33cd07d8a63f5cbb0429685eabc84f9a03980a1"
+    }
+  ],
+  "releaseFiles": [
+    {
+      "path": "artwork/body-baseColor.png",
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415",
+      "size": 4430448,
+      "matched": true
+    },
+    {
+      "path": "artwork/body-height.png",
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1",
+      "size": 671829,
+      "matched": true
+    },
+    {
+      "path": "artwork/body-metalness.png",
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c",
+      "size": 694450,
+      "matched": true
+    },
+    {
+      "path": "artwork/body-normal.png",
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d",
+      "size": 1331343,
+      "matched": true
+    },
+    {
+      "path": "artwork/body-roughness.png",
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335",
+      "size": 354379,
+      "matched": true
+    },
+    {
+      "path": "artwork/generation.json",
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0",
+      "size": 3544,
+      "matched": true
+    },
+    {
+      "path": "artwork/handle-baseColor.png",
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d",
+      "size": 1467136,
+      "matched": true
+    },
+    {
+      "path": "artwork/handle-height.png",
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416",
+      "size": 215990,
+      "matched": true
+    },
+    {
+      "path": "artwork/handle-metalness.png",
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686",
+      "size": 287489,
+      "matched": true
+    },
+    {
+      "path": "artwork/handle-normal.png",
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7",
+      "size": 415117,
+      "matched": true
+    },
+    {
+      "path": "artwork/handle-roughness.png",
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21",
+      "size": 133029,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-baseColor.png",
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5",
+      "size": 5124693,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-height.png",
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f",
+      "size": 756646,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-metalness.png",
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9",
+      "size": 752098,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-normal.png",
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023",
+      "size": 1510166,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/body-roughness.png",
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa",
+      "size": 385824,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/generation.json",
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7",
+      "size": 4505,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-baseColor.png",
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278",
+      "size": 2022345,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-height.png",
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4",
+      "size": 273223,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-metalness.png",
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6",
+      "size": 384463,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-normal.png",
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020",
+      "size": 533321,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/handle-roughness.png",
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388",
+      "size": 170939,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/manifest.json",
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300",
+      "size": 5035,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/masters/band.png",
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03",
+      "size": 3358877,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/masters/body.png",
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f",
+      "size": 3334256,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/preview.jpg",
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700",
+      "size": 71527,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-baseColor.png",
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015",
+      "size": 1215629,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-height.png",
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b",
+      "size": 197242,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-metalness.png",
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d",
+      "size": 181047,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-normal.png",
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd",
+      "size": 395475,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/saucer-roughness.png",
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05",
+      "size": 92882,
+      "matched": true
+    },
+    {
+      "path": "artwork/lotus-butterfly/style.json",
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae",
+      "size": 720,
+      "matched": true
+    },
+    {
+      "path": "artwork/manifest.json",
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96",
+      "size": 3889,
+      "matched": true
+    },
+    {
+      "path": "artwork/masters/band.png",
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4",
+      "size": 3065879,
+      "matched": true
+    },
+    {
+      "path": "artwork/masters/body.png",
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91",
+      "size": 3071542,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/body-baseColor.png",
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b",
+      "size": 4530401,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/body-height.png",
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493",
+      "size": 676602,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/body-metalness.png",
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65",
+      "size": 676465,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/body-normal.png",
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1",
+      "size": 1342378,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/body-roughness.png",
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9",
+      "size": 348281,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/generation.json",
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f",
+      "size": 4525,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-baseColor.png",
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d",
+      "size": 1493454,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-height.png",
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e",
+      "size": 216437,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-metalness.png",
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f",
+      "size": 267916,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-normal.png",
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504",
+      "size": 412132,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/handle-roughness.png",
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366",
+      "size": 125075,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/manifest.json",
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f",
+      "size": 5017,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/masters/band.png",
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f",
+      "size": 3225793,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/masters/body.png",
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606",
+      "size": 3082899,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/preview.jpg",
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be",
+      "size": 71892,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-baseColor.png",
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d",
+      "size": 1186845,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-height.png",
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d",
+      "size": 189507,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-metalness.png",
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f",
+      "size": 181438,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-normal.png",
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118",
+      "size": 376977,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/saucer-roughness.png",
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d",
+      "size": 89738,
+      "matched": true
+    },
+    {
+      "path": "artwork/peony-magnolia/style.json",
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9",
+      "size": 720,
+      "matched": true
+    },
+    {
+      "path": "artwork/preview.jpg",
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda",
+      "size": 71029,
+      "matched": true
+    },
+    {
+      "path": "artwork/saucer-baseColor.png",
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc",
+      "size": 1039444,
+      "matched": true
+    },
+    {
+      "path": "artwork/saucer-height.png",
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97",
+      "size": 161444,
+      "matched": true
+    },
+    {
+      "path": "artwork/saucer-metalness.png",
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716",
+      "size": 121504,
+      "matched": true
+    },
+    {
+      "path": "artwork/saucer-normal.png",
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe",
+      "size": 320697,
+      "matched": true
+    },
+    {
+      "path": "artwork/saucer-roughness.png",
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa",
+      "size": 68359,
+      "matched": true
+    },
+    {
+      "path": "artwork/style.json",
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f",
+      "size": 714,
+      "matched": true
+    },
+    {
+      "path": "assets/compare-B2kJLVWD.js",
+      "sha256": "ccaa95c323f1a93dea0c16d6e97cef5a71009ccaec959ba1927f288008644592",
+      "size": 8296,
+      "matched": true
+    },
+    {
+      "path": "assets/compare-MZHawTH_.css",
+      "sha256": "1db9efb173be696661ee02aec5504c8a28b58d96c73a185e4a95e7e7f7750479",
+      "size": 1409,
+      "matched": true
+    },
+    {
+      "path": "assets/main-CwrIcHZa.js",
+      "sha256": "603b1191c2c5246ad2ec8711df86c737f895c143ff74a3369832429701ea7ba5",
+      "size": 36928,
+      "matched": true
+    },
+    {
+      "path": "assets/main-bbCCIrxu.css",
+      "sha256": "313700e1a8827f3dfae7b845f3cf020bccab5edfcad2af1cb6c0b534d78a6763",
+      "size": 6023,
+      "matched": true
+    },
+    {
+      "path": "assets/style-manager-Dyahk5Cb.js",
+      "sha256": "6278fce9b898bb12c587adeb5c98c6f8bbb54235e5e3034e1dca694a55e643a1",
+      "size": 572691,
+      "matched": true
+    },
+    {
+      "path": "compare.html",
+      "sha256": "d88226d8966b742d8546cbb9907fd24476705e221827849afab387eeefb66530",
+      "size": 491,
+      "matched": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "ef4c1465b00ad80bf98e1c2d6cbc688737663a5d862eb89af46b58f987a9a28c",
+      "size": 533,
+      "matched": true
+    },
+    {
+      "path": "marks/auratic-reference.png",
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "size": 47084,
+      "matched": true
+    },
+    {
+      "path": "marks/auratic-reference.svg",
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "size": 796,
+      "matched": true
+    },
+    {
+      "path": "references/1220.jpg",
+      "sha256": "5bf6db19f062d1104486bd5b727be147263d967521a59f0d1f97d8c423913a92",
+      "size": 132972,
+      "matched": true
+    },
+    {
+      "path": "references/1221.jpg",
+      "sha256": "c952538d56111c6d7a20c0c93e626bcc837181d468678b5ed0641c7d688efe94",
+      "size": 452592,
+      "matched": true
+    },
+    {
+      "path": "references/1230.jpg",
+      "sha256": "1326a07260ab4e1bb26ca2c136f295a66f76c401850c6ce49fbfc1322b2ce49b",
+      "size": 486039,
+      "matched": true
+    },
+    {
+      "path": "references/1236.jpg",
+      "sha256": "3c59fef03feeee528dd85852da8d9d3df8c49c16da7714ea1108b07d5931c874",
+      "size": 423874,
+      "matched": true
+    },
+    {
+      "path": "references/1238.jpg",
+      "sha256": "2404828246a72ef283ecbd2031178a51749e26cc3a425eb59a4f324a874e1d19",
+      "size": 430227,
+      "matched": true
+    },
+    {
+      "path": "texture-standards.html",
+      "sha256": "751ab8d373216c66d19a223508960f7553418cafa45a82152665aa1cf2cc536d",
+      "size": 33054,
+      "matched": true
+    }
+  ],
+  "releaseDifferences": []
+}

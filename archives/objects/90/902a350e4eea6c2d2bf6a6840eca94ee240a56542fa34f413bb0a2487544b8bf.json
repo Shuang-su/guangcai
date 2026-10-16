@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-04",
+  "preferences_before": {
+    "LaunchAtLogin__hasMigrated": true,
+    "STP_is_first_launch": false,
+    "automaticDischarge": false,
+    "checkForUpdates": true,
+    "clamshellDischargeMessage": true,
+    "dashboardBackgroundUpdates": false,
+    "heatProtectMode": false,
+    "lastSailingCheckpoint": 1,
+    "launchAtLogin": false,
+    "lowChargeLimitWarning": false,
+    "magsafeBlinkDischarge": false,
+    "menubarItemUpdateInterval": 5.0,
+    "receiveBetaUpdates": false,
+    "sailingLevel": 5.0,
+    "sailingMode": false
+  },
+  "bundle_sha256_before": {
+    "Contents/Info.plist": "dca131f5d6cf8a68a82819e34787b351d6ae3d41632a48295aecf97668acc0a0",
+    "Contents/MacOS/AlDente": "bd99aa7b3d525b2c1247329501c2dc13160e07ece94bf715432433baa608ffb1",
+    "Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper": "44853285a740b92d5ad2d0e668c2dc0f803fcdd2881120463a04119cfc38de0b"
+  },
+  "standalone_before": {
+    "path": "/Applications/AlDente.app",
+    "version": "1.38",
+    "identifier": "com.apphousekitchen.aldente-pro",
+    "team": "3WVC84GB99"
+  },
+  "startup_items_before": [
+    "/Applications/AlDente.app",
+    "/Applications/Setapp/AlDente Pro.app"
+  ],
+  "standalone_action": "Moved exact standalone application to Trash through Finder; removed only its matching login item",
+  "setapp_auto_install_ui_value_before": 0,
+  "preferences_after": {
+    "LaunchAtLogin__hasMigrated": true,
+    "STP_is_first_launch": false,
+    "automaticDischarge": false,
+    "checkForUpdates": false,
+    "clamshellDischargeMessage": true,
+    "dashboardBackgroundUpdates": false,
+    "heatProtectMode": false,
+    "lastSailingCheckpoint": 1,
+    "launchAtLogin": false,
+    "lowChargeLimitWarning": false,
+    "magsafeBlinkDischarge": false,
+    "menubarItemUpdateInterval": 5.0,
+    "receiveBetaUpdates": false,
+    "sailingLevel": 5.0,
+    "sailingMode": false
+  },
+  "preference_changes": {
+    "checkForUpdates": {
+      "before": true,
+      "after": false
+    }
+  },
+  "bundle_sha256_after": {
+    "Contents/Info.plist": "dca131f5d6cf8a68a82819e34787b351d6ae3d41632a48295aecf97668acc0a0",
+    "Contents/MacOS/AlDente": "bd99aa7b3d525b2c1247329501c2dc13160e07ece94bf715432433baa608ffb1",
+    "Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper": "44853285a740b92d5ad2d0e668c2dc0f803fcdd2881120463a04119cfc38de0b"
+  },
+  "startup_items_after": [
+    "/Applications/Setapp/AlDente Pro.app"
+  ],
+  "standalone_absent_from_applications": true,
+  "running_processes": [
+    "35275 /Applications/Setapp/AlDente Pro.app/Contents/MacOS/AlDente",
+    "35279 /Library/PrivilegedHelperTools/com.apphousekitchen.aldente-pro-setapp.helper"
+  ],
+  "helper_running": true,
+  "setapp_update_preferences": {
+    "4766321432293575660-ForbiddenAutomaticAppsRefresh": true,
+    "SUAutomaticallyUpdate": false,
+    "SUEnableAutomaticChecks": false
+  },
+  "checks": {
+    "app_updates_disabled": true,
+    "bundle_core_unchanged": true,
+    "standalone_removed": true,
+    "one_aldente_login_item": true,
+    "helper_running": true,
+    "setapp_auto_install_off": true
+  },
+  "signature_verification": {
+    "main_signature_valid": {
+      "passed": true,
+      "output": ""
+    },
+    "system_helper_strict_signature_valid": {
+      "passed": true,
+      "output": ""
+    }
+  }
+}

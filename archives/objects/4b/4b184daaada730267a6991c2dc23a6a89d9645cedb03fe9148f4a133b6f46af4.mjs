@@ -1,0 +1,72 @@
+import {chromium} from 'playwright';
+import sharp from 'sharp';
+import assert from 'node:assert/strict';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const url=process.env.QA_URL??'http://127.0.0.1:5208/';
+const out=process.env.QA_URL?.startsWith('https:')?'evidence/deployment/background':'output/playwright/background';await mkdir(out,{recursive:true});
+const checks=[],errors=[],writes=[];const check=(n,v)=>{assert.ok(v,n);checks.push(n);console.log('PASS',n);};
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const desktop=await browser.newContext({viewport:{width:1440,height:1000}});
+const page=await desktop.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url())&&r.method()!=='GET')writes.push(r.url());});
+await page.addInitScript(()=>{window.backgroundObjectUrls=new Set();const create=URL.createObjectURL.bind(URL),revoke=URL.revokeObjectURL.bind(URL);URL.createObjectURL=b=>{const u=create(b);window.backgroundObjectUrls.add(u);return u;};URL.revokeObjectURL=u=>{window.backgroundObjectUrls.delete(u);revoke(u);};});
+const wait=async()=>page.waitForFunction(()=>window.cupViewer?.ready()&&!window.cupViewer.debug().background.busy);
+const state=()=>page.evaluate(()=>window.cupViewer.debug());
+const select=async name=>{await page.locator(`[data-background-choice="${name}"]`).click();await wait();await page.waitForTimeout(100);};
+const readCanvas=async()=>sharp(Buffer.from(await page.evaluate(()=>document.querySelector('canvas').toDataURL().split(',')[1]),'base64')).ensureAlpha().raw().toBuffer();
+const stateMaterials=s=>({city:s.city,fixed:s.fixed,geometries:s.geometries,environment:s.environment,fixedFinish:s.fixedFinish,exposure:s.exposure,reflections:s.reflections});
+try{
+ await page.goto(url);await wait();await page.waitForTimeout(2000);const initial=await state();
+ check('desktop auto starts gray without requesting the portrait image',initial.background.active==='gray'&&await page.evaluate(()=>!performance.getEntriesByType('resource').some(r=>r.name.includes('/backgrounds/'))));
+ await page.screenshot({path:out+'/desktop-gray.png'});
+ const oldPixels=await readCanvas();await page.locator('#open-background').click();await select('soft');await page.locator('#close-background').click();
+ const newPixels=await readCanvas();let count=0,diff=0;for(let i=0;i<oldPixels.length;i+=4)if(newPixels[i+3]===255){count++;for(let c=0;c<3;c++)diff+=Math.abs(oldPixels[i+c]-newPixels[i+c]);}
+ check('opaque cup pixels retain the same shading on the new backdrop',count>30000&&diff/(count*3)<.02);
+ check('background preserves all materials, relief, geometry, lights and local reflection capture',JSON.stringify(stateMaterials(initial))===JSON.stringify(stateMaterials(await state())));
+ await page.screenshot({path:out+'/desktop-soft.png'});
+ await page.locator('#open-background').click();
+ const custom=await sharp({create:{width:900,height:1600,channels:3,background:'#cfdae8'}}).png().toBuffer();
+ await page.locator('#background-file').setInputFiles({name:'local-preview.png',mimeType:'image/png',buffer:custom});await page.waitForFunction(()=>window.cupViewer.debug().background.active==='custom'&&!window.cupViewer.debug().background.busy);
+ check('a selected local file becomes the backdrop',await page.locator('#scene-background').evaluate(e=>e.style.backgroundImage.startsWith('url("blob:')));
+ check('only the final custom object URL is retained',await page.evaluate(()=>window.backgroundObjectUrls.size===1));
+ const customStyle=await page.locator('#scene-background').getAttribute('style');
+ await page.locator('#background-file').setInputFiles({name:'broken.png',mimeType:'image/png',buffer:Buffer.from('broken')});await page.waitForFunction(()=>document.querySelector('#background-status').classList.contains('error'));
+ check('decode failure retains the previous background',await page.locator('#scene-background').getAttribute('style')===customStyle);
+ await page.locator('#background-file').setInputFiles({name:'unaccepted.svg',mimeType:'image/svg+xml',buffer:Buffer.from('<svg/>')});await page.waitForFunction(()=>document.querySelector('#background-status').textContent.includes('请选择'));
+ check('unsupported format retains current background',await page.locator('#scene-background').getAttribute('style')===customStyle);
+ for(let i=0;i<3;i++){await page.locator('#background-file').setInputFiles({name:'local-preview.png',mimeType:'image/png',buffer:custom});await wait();}
+ check('repeated selection including the same file releases previous object URLs',await page.evaluate(()=>window.backgroundObjectUrls.size===1));
+ check('local selection never sends an HTTP upload',writes.length===0);
+ // Delay local-file decoding to verify a later preset choice wins without leaked URLs.
+ await page.evaluate(()=>{window.originalImageDescriptor=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');const d=window.originalImageDescriptor;Object.defineProperty(HTMLImageElement.prototype,'src',{...d,set(v){if(v.startsWith('blob:'))setTimeout(()=>d.set.call(this,v),300);else d.set.call(this,v);}});});
+ await page.locator('#background-file').setInputFiles({name:'slow.png',mimeType:'image/png',buffer:custom});await select('gray');await page.waitForTimeout(500);
+ check('later background selection wins over a slow local decode',(await state()).background.active==='gray'&&await page.evaluate(()=>window.backgroundObjectUrls.size===1));
+ await page.evaluate(()=>Object.defineProperty(HTMLImageElement.prototype,'src',window.originalImageDescriptor));
+ await select('custom');check('uploaded image remains available for comparison',(await state()).background.active==='custom');
+ await page.keyboard.press('Escape');check('Escape closes background panel and returns focus',await page.locator('#background-settings').isHidden()&&await page.locator('#open-background').evaluate(e=>e===document.activeElement));
+ await page.reload();await wait();check('reload clears the local image and restores automatic mode',(await state()).background.choice==='auto'&&!(await state()).background.hasCustom);
+ await page.setViewportSize({width:390,height:844});await wait();await page.waitForFunction(()=>window.cupViewer.debug().background.active==='soft');await page.locator('#reset').click();await page.waitForTimeout(2000);
+ check('phone automatically displays the supplied background',(await state()).background.active==='soft');
+ await page.waitForFunction(()=>!document.querySelector('#status').classList.contains('visible'));
+ await page.screenshot({path:out+'/mobile-soft.png'});
+ await page.locator('#open-background').click();await page.screenshot({path:out+'/mobile-panel.png'});
+ check('mobile panel and controls fit',await page.locator('#background-settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight&&e.scrollWidth===e.clientWidth;}));
+ await select('gray');await page.locator('#close-background').click();await page.screenshot({path:out+'/mobile-gray.png'});
+ await page.locator('#open-background').click();await select('auto');await page.locator('#close-background').click();
+ await page.setViewportSize({width:320,height:568});await page.waitForTimeout(300);
+ check('small phone does not overflow',await page.evaluate(()=>document.documentElement.scrollWidth===innerWidth));
+ check('background controls do not overlap gesture text on small phone',await page.evaluate(()=>{const a=document.querySelector('#open-background').getBoundingClientRect(),b=document.querySelector('.gesture-hint').getBoundingClientRect();return a.left>=b.right||a.bottom<=b.top||a.top>=b.bottom;}));
+ await page.screenshot({path:out+'/small-phone.png'});
+ await page.setViewportSize({width:708,height:962});await page.waitForTimeout(300);
+ check('tablet gesture hint does not overlap wrapped view controls',await page.evaluate(()=>{const a=document.querySelector('.gesture-hint').getBoundingClientRect(),b=document.querySelector('footer nav').getBoundingClientRect();return a.bottom<=b.top;}));
+ const mobile=await browser.newContext({viewport:{width:844,height:390},isMobile:true,hasTouch:true});const mp=await mobile.newPage();mp.on('pageerror',e=>errors.push(e.message));await mp.goto(url);await mp.waitForFunction(()=>window.cupViewer?.ready()&&!window.cupViewer.debug().background.busy);
+ check('touch phone keeps soft background in landscape',(await mp.evaluate(()=>window.cupViewer.debug().background.active))==='soft');
+ await mp.locator('#open-background').tap();check('landscape background panel remains usable',await mp.locator('#background-settings').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&r.height>280;}));
+ await mp.screenshot({path:out+'/mobile-landscape.png'});await mobile.close();
+ await page.evaluate(()=>window.cupViewer.dispose());check('dispose releases custom background URLs',await page.evaluate(()=>window.backgroundObjectUrls.size===0));
+ const protectedFiles=JSON.parse(await readFile('docs/changes/20261013-mobile-background/protected.json','utf8'));for(const[p,h]of Object.entries(protectedFiles))assert.equal(createHash('sha256').update(await readFile(p)).digest('hex'),h,p);
+ check('geometry, all cup textures and relief code remain byte-identical',true);check('no browser runtime errors',errors.length===0);
+ await writeFile(out+'/verification.json',JSON.stringify({url,checks,errors,httpUploads:writes.length,opaqueCupMeanPixelDelta:diff/(count*3),opaquePixels:count,backgroundBytes:38714,protectedFiles:Object.keys(protectedFiles).length},null,2));
+ console.log(JSON.stringify({checks:checks.length,errors,out}));
+}catch(e){await page.screenshot({path:out+'/failure.png'});await writeFile(out+'/failure.json',JSON.stringify({error:e.stack,checks,errors},null,2));throw e;}
+finally{await browser.close();}

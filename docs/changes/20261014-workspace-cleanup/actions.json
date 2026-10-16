@@ -1,0 +1,48 @@
+{
+  "started": "2026-10-14T18:01:45+0800",
+  "freeBefore": {
+    "/System/Volumes/Data": 4124348416,
+    "/Volumes/Prism": 593879040,
+    "/Volumes/Prism_初号機": 1224998912
+  },
+  "actions": [
+    {
+      "path": "/Volumes/Prism_初号機/广彩/h5/node_modules",
+      "action": "remove-reinstallable-dependencies",
+      "reason": "No open files; package-lock SHA-256 exists in verified source archive",
+      "lockSha256": "606206721edda7527538fb53d1388e9ffa70c6115cdd1909ddf8bfddc6c2ef06",
+      "allocatedBytesBefore": 1896349696,
+      "removed": true
+    },
+    {
+      "action": "stop-obsolete-internal-previews",
+      "processes": [
+        {
+          "pid": 16193,
+          "command": "node /Users/shuangsu/Documents/Codex/guangcai-beijing-4.3/guangcai-china-preview/node_modules/.bin/vite --host 127.0.0.1 --port 5216"
+        },
+        {
+          "pid": 18033,
+          "command": "node /Users/shuangsu/Documents/Codex/guangcai-beijing-4.3/guangcai-china-preview/node_modules/.bin/vite preview --host 127.0.0.1 --port 5218"
+        },
+        {
+          "pid": 16171,
+          "command": "npm run dev --port 5216"
+        },
+        {
+          "pid": 17837,
+          "command": "npm run preview --port 5218"
+        }
+      ],
+      "preservedPorts": [
+        5221,
+        5212
+      ]
+    }
+  ],
+  "freeAfterDependencies": {
+    "/System/Volumes/Data": 4121387008,
+    "/Volumes/Prism": 593879040,
+    "/Volumes/Prism_初号機": 3121086464
+  }
+}

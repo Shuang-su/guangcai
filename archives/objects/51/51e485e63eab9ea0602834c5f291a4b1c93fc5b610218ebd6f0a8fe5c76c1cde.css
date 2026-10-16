@@ -1,0 +1,242 @@
+.route-intro .app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  z-index: 20;
+}
+.intro-scroll {
+  height: 390svh;
+  position: relative;
+}
+.intro-stage {
+  height: 100svh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  isolation: isolate;
+  --p: 0;
+  --cup: 0;
+  --line-reveal: 0;
+  background: #f6f3ec;
+}
+.intro-landscape {
+  position: absolute;
+  inset: -140px -10% -130px;
+  background: url("/media/landscape.webp") center bottom/cover no-repeat;
+  transform: translateY(var(--land-y));
+  opacity: calc(0.24 + var(--p) * 0.6);
+  z-index: -2;
+  will-change: transform;
+}
+.intro-glow {
+  position: absolute;
+  top: 32%;
+  left: calc(50% - 140px);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(ellipse, #eed9a160, transparent 65%);
+  opacity: calc(1 - var(--p) * 0.4);
+  transform: translateY(calc(var(--p) * -150px)) scale(calc(1 + var(--p)));
+  pointer-events: none;
+}
+.intro-light {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c7aa6c;
+  box-shadow: 0 0 15px 4px #dac39b66;
+  transform: translate(-50%, calc(var(--p) * 120px)) scale(calc(1 - var(--p)));
+  opacity: calc(1 - var(--p));
+  z-index: 2;
+}
+.intro-lines {
+  position: absolute;
+  inset: 3% 0 0;
+  width: 100%;
+  height: 90%;
+  transform: translateY(var(--line-y)) rotate(calc(var(--p) * 16deg - 8deg));
+  opacity: calc(0.1 + var(--line-reveal) * 0.7);
+  pointer-events: none;
+  will-change: transform;
+}
+.intro-lines path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: calc(1 - var(--line-reveal));
+  vector-effect: non-scaling-stroke;
+}
+.intro-orbit {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 250px;
+  height: 95px;
+  border: 1px solid #ae926744;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(calc(var(--p) * 30deg))
+    scale(calc(0.4 + var(--p) * 1.5));
+  opacity: calc(var(--line-reveal) * (1 - var(--cup)));
+}
+.intro-cup {
+  position: absolute;
+  width: min(510px, 76vw);
+  max-width: none;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%, var(--cup-y)) scale(calc(0.72 + var(--cup) * 0.28));
+  opacity: var(--cup);
+  pointer-events: none;
+  z-index: 4;
+  will-change: transform, opacity;
+}
+.intro-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  text-align: center;
+  padding: 0 22px;
+  z-index: 5;
+}
+.intro-copy h1 {
+  font-size: clamp(36px, 5.5vw, 60px);
+  color: #ad925f;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+.chapter-label {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: #9f895f;
+  margin-bottom: 17px;
+}
+.intro-description {
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: #66736f;
+  margin-top: 12px;
+}
+.intro-controls {
+  position: absolute;
+  bottom: max(35px, env(safe-area-inset-bottom));
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  background: none;
+  color: #967b49;
+  font-family: var(--serif);
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  padding: 12px;
+}
+.scroll-hint span {
+  transform: rotate(90deg);
+  height: 20px;
+}
+.intro-track {
+  height: 1px;
+  width: 150px;
+  background: #bba57555;
+  margin-top: 16px;
+  overflow: hidden;
+}
+.intro-track span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ae4b3c;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.intro-motion-note {
+  font-size: 10px;
+  color: #8b897e;
+  letter-spacing: 0.08em;
+  margin-top: 12px;
+}
+.intro-finish {
+  min-width: 280px;
+}
+.intro-scroll.reduced {
+  height: 100svh;
+}
+.intro-scroll.reduced .intro-stage {
+  position: relative;
+}
+.intro-scroll.reduced .intro-landscape,
+.intro-scroll.reduced .intro-lines,
+.intro-scroll.reduced .intro-cup {
+  will-change: auto;
+}
+.intro-scroll.reduced .intro-light,
+.intro-scroll.reduced .intro-orbit {
+  display: none;
+}
+@media (max-width: 760px) {
+  .intro-copy {
+    top: 17%;
+  }
+  .intro-copy h1 {
+    font-size: 39px;
+  }
+  .intro-description {
+    font-size: 12px;
+  }
+  .intro-cup {
+    width: 104vw;
+    top: 33%;
+  }
+  .intro-lines {
+    width: 180%;
+    left: -40%;
+    height: 86%;
+    top: 10%;
+  }
+  .intro-landscape {
+    inset: -30px -20% -160px;
+    background-size: auto 100%;
+  }
+  .intro-controls {
+    bottom: 37px;
+  }
+  .intro-finish {
+    min-width: 265px;
+  }
+  .chapter-label {
+    margin-bottom: 14px;
+  }
+  .intro-glow {
+    top: 42%;
+  }
+  .intro-copy:has(+ .intro-controls .intro-finish:not([hidden])) {
+    top: 13%;
+  }
+}
+@media (max-width: 370px) {
+  .intro-copy h1 {
+    font-size: 34px;
+  }
+  .intro-copy {
+    top: 16%;
+  }
+  .intro-cup {
+    top: 35%;
+  }
+  .intro-controls {
+    bottom: 25px;
+  }
+}

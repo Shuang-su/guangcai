@@ -1,0 +1,26 @@
+{
+  "files": 85,
+  "matches": 85,
+  "mismatches": 0,
+  "pathAdjustments": [
+    {
+      "source": "output/playwright/v3/initial-hero.png",
+      "destination": "guangcai-china-preview/evidence/v3/initial/initial-hero.png",
+      "bytes": 275514,
+      "sha256": "9cc4fe6a89c967dfc7edd2c74f86a1570e1f2b3103cb305157d1dbce8a4992fe",
+      "previousSha256": null,
+      "status": "added"
+    },
+    {
+      "source": "output/playwright/v3/before-flat-lid.png",
+      "destination": "guangcai-china-preview/evidence/v3/initial/before-flat-lid.png",
+      "bytes": 306031,
+      "sha256": "259df316a8a329e8af62cb4bdf0f8296f503e742817cf38b9de8411d2c246127",
+      "previousSha256": null,
+      "status": "added"
+    }
+  ],
+  "typecheck": "pass",
+  "geometryTests": 11,
+  "issue": "https://github.com/Shuang-su/guangcai/issues/11"
+}

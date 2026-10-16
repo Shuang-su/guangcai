@@ -1,0 +1,496 @@
+{
+  "started": "2026-09-21T08:39:52.093Z",
+  "cases": [
+    {
+      "name": "chromium initial scene",
+      "pass": true,
+      "data": {
+        "ready": true,
+        "style": "gold",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "high",
+        "qualityLow": false,
+        "geometryIds": [
+          "26583449-739a-48e2-a55e-426e56c73b31",
+          "42bd8bcd-60fb-4316-8518-5baac5e3a764",
+          "ac381c1f-facc-4d36-ac64-cc4d551c449c"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 266190,
+        "calls": 33,
+        "frameCount": 2,
+        "cpuFrameMs": 93.1000000089407,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 0,
+        "pixelRatio": 1,
+        "reflectionSize": 1024,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.037,
+          -0.42492671966552736
+        ]
+      }
+    },
+    {
+      "name": "chromium mouse lid hit",
+      "pass": true
+    },
+    {
+      "name": "chromium handle changes style without geometry replacement",
+      "pass": true
+    },
+    {
+      "name": "chromium drag does not click handle",
+      "pass": true
+    },
+    {
+      "name": "chromium mouse wheel zoom",
+      "pass": true
+    },
+    {
+      "name": "chromium double click body cycles and blank resets",
+      "pass": true
+    },
+    {
+      "name": "chromium help and keyboard equivalents",
+      "pass": true
+    },
+    {
+      "name": "chromium interrupted animation and latest style wins",
+      "pass": true
+    },
+    {
+      "name": "chromium failed style leaves displayed style intact",
+      "pass": true
+    },
+    {
+      "name": "chromium single image clears prior relief and metal mask",
+      "pass": true
+    },
+    {
+      "name": "chromium uncompressed fallback keeps artwork orientation",
+      "pass": true
+    },
+    {
+      "name": "chromium resource counts across repeated changes",
+      "pass": true,
+      "data": [
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "white",
+          "geometries": 19,
+          "textures": 11
+        },
+        {
+          "style": "gold",
+          "geometries": 19,
+          "textures": 11
+        }
+      ]
+    },
+    {
+      "name": "chromium white style preserves gold handle and saucer",
+      "pass": true
+    },
+    {
+      "name": "chromium static render rests",
+      "pass": true,
+      "data": {
+        "stoppedAt": 682
+      }
+    },
+    {
+      "name": "chromium warm moving frame timings",
+      "pass": true,
+      "data": {
+        "p50": 16.700000002980232,
+        "p95": 17.5,
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+        "state": {
+          "ready": true,
+          "style": "white",
+          "view": "assembly",
+          "lidOpen": false,
+          "tier": "high",
+          "qualityLow": false,
+          "geometryIds": [
+            "26583449-739a-48e2-a55e-426e56c73b31",
+            "42bd8bcd-60fb-4316-8518-5baac5e3a764",
+            "ac381c1f-facc-4d36-ac64-cc4d551c449c"
+          ],
+          "geometries": 19,
+          "textures": 11,
+          "triangles": 266190,
+          "calls": 33,
+          "frameCount": 1450,
+          "cpuFrameMs": 1.7416666661699614,
+          "textureError": "",
+          "regions": {
+            "body": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            },
+            "handle": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            },
+            "saucer": {
+              "normal": true,
+              "metalness": true,
+              "clearcoatNormal": true,
+              "metallic": 1
+            }
+          },
+          "frameMs": 16.666666666666668,
+          "pixelRatio": 1,
+          "reflectionSize": 1024,
+          "cupBounds": [
+            -0.42493125915527347,
+            0.03699999999999999,
+            -0.42492671966552736
+          ]
+        },
+        "resources": 16250193
+      }
+    },
+    {
+      "name": "chromium no unexpected browser errors",
+      "pass": true
+    },
+    {
+      "name": "chromium touch 390x844",
+      "pass": true,
+      "data": {
+        "lid": [
+          187.2,
+          278.52000000000004
+        ],
+        "body": [
+          117,
+          346.04
+        ],
+        "handle": [
+          280.80000000000007,
+          413.56000000000006
+        ]
+      }
+    },
+    {
+      "name": "chromium touch 430x932",
+      "pass": true,
+      "data": {
+        "lid": [
+          206.4,
+          307.56
+        ],
+        "body": [
+          129,
+          382.12
+        ],
+        "handle": [
+          309.6000000000001,
+          456.68000000000006
+        ]
+      }
+    },
+    {
+      "name": "chromium touch 844x390",
+      "pass": true,
+      "data": {
+        "lid": [
+          405.12,
+          128.70000000000002
+        ],
+        "body": [
+          405.12,
+          159.9
+        ],
+        "handle": [
+          506.4000000000001,
+          159.9
+        ]
+      }
+    },
+    {
+      "name": "chromium reduced motion",
+      "pass": true
+    },
+    {
+      "name": "chromium dispose releases GPU geometry",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "devices": [
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.138",
+      "viewport": "1440x900",
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "high",
+        "qualityLow": false,
+        "geometryIds": [
+          "26583449-739a-48e2-a55e-426e56c73b31",
+          "42bd8bcd-60fb-4316-8518-5baac5e3a764",
+          "ac381c1f-facc-4d36-ac64-cc4d551c449c"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 266190,
+        "calls": 33,
+        "frameCount": 1451,
+        "cpuFrameMs": 1.7361111106144058,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 16.66999999999999,
+        "pixelRatio": 1,
+        "reflectionSize": 1024,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.42492671966552736
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "viewport": "390x844",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": false,
+        "geometryIds": [
+          "ed05b597-e20d-4598-bced-c8f76fc1d84c",
+          "e69a5c9b-cccb-4c53-9e25-062c4bd76bfa",
+          "82c1a8a5-bd33-4df5-afa6-a011dfe3b73a"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 179814,
+        "calls": 35,
+        "frameCount": 182,
+        "cpuFrameMs": 2.720567375844252,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 18.236231884057972,
+        "pixelRatio": 1.7,
+        "reflectionSize": 512,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "viewport": "430x932",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": false,
+        "geometryIds": [
+          "12f3077a-d86a-4735-9cd6-ce4910c254b9",
+          "de78dfdd-1c13-40b2-ba47-654461e0e222",
+          "62134776-199f-4dfd-90ca-fcd74a805d5d"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 179814,
+        "calls": 35,
+        "frameCount": 186,
+        "cpuFrameMs": 2.7928057553099213,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 19.829197080291976,
+        "pixelRatio": 1.7,
+        "reflectionSize": 512,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "viewport": "844x390",
+      "emulated": true,
+      "state": {
+        "ready": true,
+        "style": "white",
+        "view": "assembly",
+        "lidOpen": false,
+        "tier": "low",
+        "qualityLow": false,
+        "geometryIds": [
+          "7ef22a90-2e39-4ac9-a7b8-937a9b1e9348",
+          "1a69ce71-a119-4b76-b7a9-9791c97f8e2e",
+          "b8226a05-3b1b-4d20-a4b3-f27eedabdcc2"
+        ],
+        "geometries": 19,
+        "textures": 11,
+        "triangles": 174158,
+        "calls": 33,
+        "frameCount": 151,
+        "cpuFrameMs": 2.896899224944817,
+        "textureError": "",
+        "regions": {
+          "body": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "handle": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          },
+          "saucer": {
+            "normal": true,
+            "metalness": true,
+            "clearcoatNormal": true,
+            "metallic": 1
+          }
+        },
+        "frameMs": 19.837571428571426,
+        "pixelRatio": 1.7,
+        "reflectionSize": 512,
+        "cupBounds": [
+          -0.42493125915527347,
+          0.03699999999999999,
+          -0.4248616027832031
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Browser emulation on Mac; no physical phone tested."
+  ]
+}

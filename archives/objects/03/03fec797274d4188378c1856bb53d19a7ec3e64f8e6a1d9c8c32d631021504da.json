@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-30",
+  "source": "ink-button.png",
+  "runtime": "public/media/ui/ink-button.webp",
+  "reference": "public/media/v2/result-portrait.webp",
+  "prompt": "Use case: stylized-concept. Create a production UI button background asset, not a mockup, on a genuinely transparent background. One horizontal Chinese ink watercolor brushstroke, approximately 5.8:1 aspect ratio, generous transparent padding. Sophisticated muted deep teal-blue ink (qingdai) dense enough through the middle for cream text to be overlaid later. Organic feathered pigment bleeding, visible silk-like flowing grain and xuan paper fibers inside the brush stroke, tapered hand-brushed ends, very restrained thin warm gold pigment along part of the lower edge. A small graceful sweep resembling water ripples at the far right, integrated into the ink. Calm refined Guangcai ceramic / Chinese watercolor visual aesthetic. The provided reference is ONLY the matching color and watercolor style of our app, do not reproduce its flowers, mountains, or full scene. No text, no characters, no logo, no arrow, no rectangular frame, no sharp geometric polygon, no red block, no glossy glass. Asset should occupy most of the width with clean alpha outside its natural painted edge. Horizontal wide output.",
+  "processing": "Alpha-preserving trim and WebP resize to 1000px; no baked text."
+}

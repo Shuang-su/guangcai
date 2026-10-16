@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-15",
+  "contentCheckpoint": "a3e53b9a7958b395310106624eb2397be14041dc",
+  "branch": "codex/source-consolidation",
+  "pr": {
+    "url": "https://github.com/Shuang-su/guangcai/pull/24",
+    "state": "open",
+    "merged": false,
+    "draft": false,
+    "headSha": "a3e53b9a7958b395310106624eb2397be14041dc",
+    "bodyReadbackMatched": true
+  },
+  "issue": {
+    "url": "https://github.com/Shuang-su/guangcai/issues/23",
+    "state": "open",
+    "bodyReadbackMatched": true
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "gitBlob": "bb310568d122c56e978c3166842f4c3d6df26a4a",
+      "matchedLocal": true
+    },
+    {
+      "path": "docs/changes/20261015-attachment-resolution-and-duplicates/report.md",
+      "gitBlob": "0ed96b023f34337a1217d550f823dd324e267275",
+      "matchedLocal": true
+    }
+  ],
+  "note": "This records the verified content checkpoint. A subsequent documentation-only commit records this readback; no product changes, deletion, merge, deployment or tag update."
+}

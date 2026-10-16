@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Full bundle: all architectures, deep, strict",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: valid on disk\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: satisfies its Designated Requirement"
+    },
+    {
+      "name": "Helper: all architectures, strict",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement"
+    },
+    {
+      "name": "Candidate client matches pinned certificate and ID",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLCipher.framework/Versions/Current/.\n--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Frameworks/SQLite.framework/Versions/Current/.\n--prepared:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n--validated:/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LoginItems/LaunchAtLoginHelper.app\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: valid on disk\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: satisfies its Designated Requirement\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: explicit requirement satisfied"
+    },
+    {
+      "name": "Candidate helper matches pinned certificate and ID",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: explicit requirement satisfied"
+    },
+    {
+      "name": "Original ad hoc client rejected by new client rule",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app: valid on disk (not all contents verified)\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "Original vendor helper rejected by new helper rule",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: valid on disk (not all contents verified)\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-20260904/backup/AlDente Pro.app/Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "Client rejected by helper-ID rule despite matching certificate",
+      "passed": true,
+      "exit_code": 3,
+      "expected_success": false,
+      "details": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: valid on disk (not all contents verified)\n/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app: satisfies its Designated Requirement\ntest-requirement: code failed to satisfy specified code requirement(s)"
+    },
+    {
+      "name": "main: executable instruction sections unchanged",
+      "passed": true,
+      "details": {
+        "original": {
+          "16777223": "0509926e7d11c67d3fb122cf7271531f61273274120d5611dda419703d59b6f9",
+          "16777228": "b20fc89dca4ec433441e6007342ef3b68edc50715b26fc978bf3e4ff0d9f5e5f"
+        },
+        "candidate": {
+          "16777223": "0509926e7d11c67d3fb122cf7271531f61273274120d5611dda419703d59b6f9",
+          "16777228": "b20fc89dca4ec433441e6007342ef3b68edc50715b26fc978bf3e4ff0d9f5e5f"
+        }
+      }
+    },
+    {
+      "name": "helper: executable instruction sections unchanged",
+      "passed": true,
+      "details": {
+        "original": {
+          "16777223": "4054927f1748ac6ac016d00952dff53c9462dd1e30745057b74cf6d4fe905c35",
+          "16777228": "5e0aa335157844c3ae1061261bee1bd3fa08c732f6028317b450c7b305753dfa"
+        },
+        "candidate": {
+          "16777223": "4054927f1748ac6ac016d00952dff53c9462dd1e30745057b74cf6d4fe905c35",
+          "16777228": "5e0aa335157844c3ae1061261bee1bd3fa08c732f6028317b450c7b305753dfa"
+        }
+      }
+    },
+    {
+      "name": "Application permits only pinned helper rule",
+      "passed": true,
+      "details": {
+        "com.apphousekitchen.aldente-pro-setapp.helper": "identifier \"com.apphousekitchen.aldente-pro-setapp.helper\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+      }
+    },
+    {
+      "name": "Both helper architectures permit only pinned client rule",
+      "passed": true,
+      "details": [
+        [
+          "identifier \"com.apphousekitchen.aldente-pro-setapp\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+        ],
+        [
+          "identifier \"com.apphousekitchen.aldente-pro-setapp\" and certificate leaf = H\"E7FD455E4F44D319B42E6B2C81995034873725AD\""
+        ]
+      ]
+    },
+    {
+      "name": "Installed original files unchanged",
+      "passed": true,
+      "details": {
+        "Contents/MacOS/AlDente": true,
+        "Contents/Info.plist": true,
+        "Contents/Library/LaunchServices/com.apphousekitchen.aldente-pro-setapp.helper": true
+      }
+    },
+    {
+      "name": "Local certificate trusted for code signing",
+      "passed": true,
+      "exit_code": 0,
+      "expected_success": true,
+      "details": "...certificate verification successful."
+    },
+    {
+      "name": "Local certificate not accepted for SSL",
+      "passed": true,
+      "exit_code": 1,
+      "expected_success": false,
+      "details": "---\nNo extended validation result found\nCertificate Transparency (CT) status: \u001b[31mnot verified\u001b[0m\nUnable to find at least 2 signed certificate timestamps (SCTs) from approved logs\nCert Verify Result: CSSMERR_TP_NOT_TRUSTED"
+    },
+    {
+      "name": "Modified helper system service is absent",
+      "passed": true,
+      "exit_code": 113,
+      "expected_success": false,
+      "details": "Bad request.\nCould not find service \"com.apphousekitchen.aldente-pro-setapp.helper\" in domain for system"
+    }
+  ],
+  "candidate": "/Users/shuangsu/Documents/New project/.codex-work/tmp/aldente-helper-10y-20260904/verified-image/AlDente Pro.app",
+  "readonly_image": true,
+  "scope": "Signature/resource/identity checks and system service presence; runtime behavior is checked separately."
+}

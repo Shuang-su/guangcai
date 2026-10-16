@@ -1,0 +1,23 @@
+{
+  "version": "petal-glass-v1",
+  "source": "tools/build-ribbon-maps.mjs",
+  "palettes": [
+    "cyan",
+    "blue",
+    "coral",
+    "amber",
+    "mint",
+    "violet"
+  ],
+  "cloud": "Original vector cloud curl; not traced from poster",
+  "channels": [
+    "baseColor",
+    "normal",
+    "roughness",
+    "metalness",
+    "clearcoat"
+  ],
+  "metalness": 0,
+  "ior": 1.48,
+  "kind": "Artist authored PBR approximation, not measured glass"
+}

@@ -1,0 +1,6 @@
+{
+  "repairCommand": "git worktree repair",
+  "result": "timeout after 20 seconds while original mixed Git metadata remains cloud placeholders",
+  "worktreeGitdirPlaceholder": true,
+  "fallback": "Preserved old registered path as symlink to migrated directory; did not overwrite unread cloud Git metadata"
+}

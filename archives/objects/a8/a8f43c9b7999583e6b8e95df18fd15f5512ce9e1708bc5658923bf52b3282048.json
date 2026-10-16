@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "v3 uses UV2 and a single unmapped source region",
+    "v3 saucer repeats without mirroring",
+    "all source channels share offsets",
+    "failed fixed load retains every current map",
+    "legacy packages continue to use UV0 and mirrored saucer wrap",
+    "rapid fixed switching commits the latest complete package"
+  ],
+  "passed": 6
+}

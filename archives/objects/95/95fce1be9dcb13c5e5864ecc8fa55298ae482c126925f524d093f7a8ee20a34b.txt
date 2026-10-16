@@ -1,0 +1,67 @@
+*** Begin Patch
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/materials/materials.ts
+@@
+   const foot = new MeshPhysicalMaterial({color:'#e7e5de',metalness:0,roughness:.42,clearcoat:.25});
++  const mark = new MeshPhysicalMaterial({color:0xffffff,metalness:0,roughness:.22,clearcoat:1,clearcoatRoughness:.065,transparent:true,alphaTest:.02,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-1});
+@@
+-  return {porcelain,gold,foot,regions};
++  return {porcelain,gold,foot,mark,regions};
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/geometry/handle.ts
+@@
+ export function handleCollar(radius:number,width:number,thickness:number) {
+@@
+ }
++
++/** IMG_1237: porcelain spreads into the lid with a tangent fillet, then narrows
++ * into the bridge. The ends are buried within the lid and bridge respectively. */
++export function knobFoot(width:number,thickness:number){
++  const vertices:number[]=[],uvs:number[]=[],indices:number[]=[],segments=64,rings=16;
++  for(let j=0;j<=rings;j++){
++    const t=j/rings,angle=t*Math.PI/2;
++    const y=-.16+2.3*(1-Math.cos(angle));
++    const rx=thickness*.5+1.6*(1-Math.sin(angle));
++    const rz=width*.5+1.4*(1-Math.sin(angle));
++    for(let i=0;i<=segments;i++){
++      const a=i/segments*Math.PI*2;
++      vertices.push(Math.cos(a)*rx,y,Math.sin(a)*rz);uvs.push(i/segments,t);
++    }
++  }
++  for(let j=0;j<rings;j++)for(let i=0;i<segments;i++){
++    const a=j*(segments+1)+i,b=a+segments+1;indices.push(a,b,a+1,b,b+1,a+1);
++  }
++  const g=new BufferGeometry();g.setAttribute('position',new Float32BufferAttribute(vertices,3));g.setAttribute('uv',new Float32BufferAttribute(uvs,2));g.setIndex(indices);g.computeVertexNormals();
++  const normals=g.getAttribute('normal');
++  for(let j=0;j<=rings;j++){
++    const a=j*(segments+1),b=a+segments,v=new Vector3().fromBufferAttribute(normals,a).add(new Vector3().fromBufferAttribute(normals,b)).normalize();normals.setXYZ(a,v.x,v.y,v.z);normals.setXYZ(b,v.x,v.y,v.z);
++  }
++  g.computeBoundingBox();return g;
++}
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/geometry/product.ts
+@@
+-import { CatmullRomCurve3, Group, Mesh, MeshPhysicalMaterial, Vector3, type Material } from 'three';
++import { CatmullRomCurve3, Group, Mesh, MeshPhysicalMaterial, PlaneGeometry, Vector3, type Material } from 'three';
+@@
+-import { handlePath, handleCollar } from './handle';
++import { handlePath, handleCollar, knobFoot } from './handle';
+@@
+   for(const x of [-12.8,12.8]){
+-    const collar=handleCollar(1000,9.5,4.4);collar.translate(-1000,0,0);collar.rotateZ(Math.PI/2);collar.translate(x,3.2,0);
++    const collar=knobFoot(9.5,4.4);collar.translate(x,3.22,0);
+@@
+   mesh('saucer-bowl-and-continuous-rim',sg,[m.porcelain,m.gold,m.regions.saucer,m.foot],saucer);
++  // A glaze-thin print on the recessed underside; no paper, border or QR label.
++  for(const [parent,y,name] of [[cup,2.5-h/2,'cup-bottom-mark'],[saucer,2.25,'saucer-bottom-mark']] as const){
++    const mark=new Mesh(new PlaneGeometry(20,14),m.mark);mark.name=name;mark.rotation.x=Math.PI/2;mark.position.y=y-.012;parent.add(mark);
++  }
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/main.ts
+@@
+-import { Material, Mesh, MeshBasicMaterial, MeshNormalMaterial, MeshStandardMaterial, Vector2 } from 'three';
++import { Material, Mesh, MeshBasicMaterial, MeshNormalMaterial, MeshStandardMaterial, SRGBColorSpace, TextureLoader } from 'three';
+@@
+-manager.apply(defaultPack).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
++const markReady=new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(texture=>{texture.colorSpace=SRGBColorSpace;texture.anisotropy=4;mats.mark.map=texture;mats.mark.needsUpdate=true;});
++Promise.all([manager.apply(defaultPack),markReady]).then(()=>{ui.style(manager.currentName);ui.canvas.dataset.ready='true';}).catch(e=>ui.message(e.message,true));
+@@
+-  dispose:()=>{disposed=true;cancelAnimationFrame(raf);manager.dispose();view.dispose();restoreMaterials();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();studio.dispose();},
++  dispose:()=>{disposed=true;cancelAnimationFrame(raf);manager.dispose();view.dispose();restoreMaterials();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();studio.dispose();},
+*** End Patch

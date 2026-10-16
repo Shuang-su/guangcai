@@ -1,0 +1,122 @@
+[
+  {
+    "engine": "chromium",
+    "passed": true,
+    "errors": [],
+    "state": {
+      "ready": true,
+      "style": "white",
+      "view": "bottom",
+      "lidOpen": true,
+      "tier": "high",
+      "qualityLow": false,
+      "geometryIds": [
+        "27557b33-7bdb-42d2-902a-3e4a280de23d",
+        "2c788d2b-2613-4b9b-bab4-8192ff554ca8",
+        "89452ac3-1784-4a8c-89b5-5f0ca0463b8c"
+      ],
+      "geometries": 19,
+      "textures": 11,
+      "triangles": 236150,
+      "calls": 19,
+      "frameCount": 3,
+      "cpuFrameMs": 76.80000000447035,
+      "textureError": "",
+      "regions": {
+        "body": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        },
+        "handle": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        },
+        "saucer": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        }
+      },
+      "frameMs": 0,
+      "pixelRatio": 1,
+      "reflectionSize": 1024,
+      "cupBounds": [
+        -0.41950373259724516,
+        0.13002601957341908,
+        -1.0753610499969615
+      ]
+    },
+    "productionInspectionBlocked": true,
+    "reducedMotionBottomClearance": 0.13002601957341908,
+    "blankPageRafBaseline": {
+      "p50": 16.700000002980232,
+      "p95": 17.5
+    },
+    "ktxVsPngMeanChannelError": 0.541944263717198
+  },
+  {
+    "engine": "webkit",
+    "passed": true,
+    "errors": [],
+    "state": {
+      "ready": true,
+      "style": "white",
+      "view": "bottom",
+      "lidOpen": true,
+      "tier": "high",
+      "qualityLow": false,
+      "geometryIds": [
+        "9263de9f-3a47-472a-8f29-b36c7d195f64",
+        "a05441d4-fa33-4070-9760-1d2dd18b0bb8",
+        "4ea61db0-d738-4ff5-8bb0-072e3bcc0d6b"
+      ],
+      "geometries": 19,
+      "textures": 11,
+      "triangles": 236150,
+      "calls": 19,
+      "frameCount": 3,
+      "cpuFrameMs": 34,
+      "textureError": "",
+      "regions": {
+        "body": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        },
+        "handle": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        },
+        "saucer": {
+          "normal": true,
+          "metalness": true,
+          "clearcoatNormal": true,
+          "metallic": 1
+        }
+      },
+      "frameMs": 0,
+      "pixelRatio": 1,
+      "reflectionSize": 1024,
+      "cupBounds": [
+        -0.41950373259724516,
+        0.13002601957341908,
+        -1.0753610499969615
+      ]
+    },
+    "productionInspectionBlocked": true,
+    "reducedMotionBottomClearance": 0.13002601957341908,
+    "blankPageRafBaseline": {
+      "p50": 33,
+      "p95": 35
+    },
+    "ktxVsPngMeanChannelError": 0.6506189004554327
+  }
+]

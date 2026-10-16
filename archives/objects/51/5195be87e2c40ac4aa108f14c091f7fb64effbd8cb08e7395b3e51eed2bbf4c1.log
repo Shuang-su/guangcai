@@ -1,0 +1,23 @@
+PASS desktop auto starts gray without requesting the portrait image
+PASS opaque cup pixels retain the same shading on the new backdrop
+PASS background preserves all materials, relief, geometry, lights and local reflection capture
+PASS a selected local file becomes the backdrop
+PASS only the final custom object URL is retained
+PASS decode failure retains the previous background
+PASS unsupported format retains current background
+PASS repeated selection including the same file releases previous object URLs
+PASS local selection never sends an HTTP upload
+PASS later background selection wins over a slow local decode
+PASS uploaded image remains available for comparison
+PASS Escape closes background panel and returns focus
+PASS reload clears the local image and restores automatic mode
+PASS phone automatically displays the supplied background
+PASS mobile panel and controls fit
+PASS small phone does not overflow
+PASS background controls do not overlap gesture text on small phone
+PASS touch phone keeps soft background in landscape
+PASS landscape background panel remains usable
+PASS dispose releases custom background URLs
+PASS geometry, all cup textures and relief code remain byte-identical
+PASS no browser runtime errors
+{"checks":22,"errors":[],"out":"output/playwright/background"}

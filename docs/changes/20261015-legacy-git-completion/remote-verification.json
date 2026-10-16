@@ -1,0 +1,46 @@
+{
+  "verifiedDate": "2026-10-15",
+  "contentCommit": "b7bd7c333242e173e7f236f0f6dea4b64bcb6246",
+  "branch": "codex/source-consolidation",
+  "pullRequest": {
+    "number": 24,
+    "state": "open",
+    "merged": false,
+    "headMatchesContentCommit": true,
+    "bodyReadbackMatches": true
+  },
+  "issue": {
+    "number": 23,
+    "state": "open",
+    "bodyReadbackMatches": true,
+    "gitHydrationChecklistComplete": true,
+    "missingAttachments": 22
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "blobSha": "e15e0ac69b1b167b46ad49e7bddffba8e9b22910",
+      "encoding": "utf-8",
+      "contentLength": 5087,
+      "requiredTextPresent": true,
+      "localGitBlobMatches": true
+    },
+    {
+      "path": "PROJECTS.md",
+      "blobSha": "66d6f28cd621c2dcdfca43c507a15cc72be9e8d8",
+      "encoding": "utf-8",
+      "contentLength": 2109,
+      "requiredTextPresent": true,
+      "localGitBlobMatches": true
+    },
+    {
+      "path": "docs/history/20260921-original-git/hydrated-manifest.json",
+      "blobSha": "70848bf45489ca398b3526ef64904e65cfb6d8ab",
+      "encoding": "utf-8",
+      "contentLength": 157930,
+      "requiredTextPresent": true,
+      "localGitBlobMatches": true
+    }
+  ],
+  "boundary": "This records the content checkpoint readback. A later record-only commit contains this evidence; no merge or deployment occurred."
+}

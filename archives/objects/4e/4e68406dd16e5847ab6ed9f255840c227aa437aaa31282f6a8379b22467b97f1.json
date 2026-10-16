@@ -1,0 +1,269 @@
+[
+  [
+    89,
+    "cmd",
+    "mkdir -p outputs/guangcai-viewer/{src/{geometry,materials,styles,"
+  ],
+  [
+    99,
+    "patch"
+  ],
+  [
+    107,
+    "patch"
+  ],
+  [
+    131,
+    "patch"
+  ],
+  [
+    140,
+    "patch"
+  ],
+  [
+    245,
+    "patch"
+  ],
+  [
+    309,
+    "patch"
+  ],
+  [
+    439,
+    "cmd",
+    "mkdir -p work/video-review python3 - <<'PY' import subprocess, js"
+  ],
+  [
+    461,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path import json,html root=P"
+  ],
+  [
+    500,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path import json,shutil out="
+  ],
+  [
+    508,
+    "cmd",
+    "mkdir -p ../../work/pre-reference-correction cp -R src tools ../."
+  ],
+  [
+    515,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/geometry/pr"
+  ],
+  [
+    521,
+    "cmd",
+    "cat > tools/surface-metrics.ts <<'EOF' import {writeFileSync} fro"
+  ],
+  [
+    577,
+    "cmd",
+    "cat > tools/snapshot.mjs <<'EOF' import {chromium} from 'playwrig"
+  ],
+  [
+    592,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path for file in ['src/geome"
+  ],
+  [
+    615,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/materials/m"
+  ],
+  [
+    622,
+    "cmd",
+    "cat > src/interaction/reference-views.ts <<'EOF' /** Approximate "
+  ],
+  [
+    682,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path import json p=Path('tsc"
+  ],
+  [
+    682,
+    "cmd",
+    "cat > tools/reference-captures.mjs <<'EOF' import {chromium} from"
+  ],
+  [
+    707,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/main.ts');s"
+  ],
+  [
+    738,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/styles/styl"
+  ],
+  [
+    753,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/interaction"
+  ],
+  [
+    787,
+    "cmd",
+    "cat > work/refine_latest.py <<'PY' from pathlib import Path root="
+  ],
+  [
+    795,
+    "cmd",
+    "cat > tools/geometry.test.ts <<'EOF' import test from 'node:test'"
+  ],
+  [
+    809,
+    "cmd",
+    "cat > tools/browser-qa.mjs <<'EOF' import {chromium} from 'playwr"
+  ],
+  [
+    819,
+    "cmd",
+    "cat > tools/reference-gallery.mjs <<'EOF' import sharp from 'shar"
+  ],
+  [
+    847,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/materials/m"
+  ],
+  [
+    902,
+    "patch"
+  ],
+  [
+    909,
+    "cmd",
+    "mkdir -p public/marks cat > public/marks/auratic-reference.svg <<"
+  ],
+  [
+    915,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('tools/reference"
+  ],
+  [
+    1005,
+    "cmd",
+    "mkdir -p .codex-work/cache curl --fail --max-time 30 -L https://r"
+  ],
+  [
+    1013,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path import json root=Path('"
+  ],
+  [
+    1041,
+    "cmd",
+    "node --input-type=module <<'JS' import fs from 'node:fs/promises'"
+  ],
+  [
+    1047,
+    "cmd",
+    "mkdir -p docs/changes/20260929-reference-corrections cat > docs/c"
+  ],
+  [
+    1079,
+    "cmd",
+    "cp src/geometry/product.ts ../../work/product-before-saucer-profi"
+  ],
+  [
+    1110,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/geometry/pr"
+  ],
+  [
+    1118,
+    "cmd",
+    "cat > tools/saucer-profile.ts <<'EOF' import {writeFileSync} from"
+  ],
+  [
+    1131,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/interaction"
+  ],
+  [
+    1192,
+    "cmd",
+    "mkdir -p public/references && node --input-type=module -e 'import"
+  ],
+  [
+    1198,
+    "patch"
+  ],
+  [
+    1205,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/compare.ts'"
+  ],
+  [
+    1212,
+    "cmd",
+    "cat > tools/fit-calibration.ts <<'EOF' import {PerspectiveCamera,"
+  ],
+  [
+    1219,
+    "cmd",
+    "cat > tools/overlay-captures.mjs <<'EOF' import {chromium} from '"
+  ],
+  [
+    1242,
+    "cmd",
+    "cp tools/fit-calibration.ts tools/fit-other-calibrations.ts pytho"
+  ],
+  [
+    1249,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('tools/fit-other"
+  ],
+  [
+    1256,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('tools/fit-other"
+  ],
+  [
+    1296,
+    "cmd",
+    "cp ../evidence/saucer-correction/calibration-fit.json ../../work/"
+  ],
+  [
+    1309,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('src/geometry/pr"
+  ],
+  [
+    1315,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path import json,re p=Path('"
+  ],
+  [
+    1324,
+    "cmd",
+    "cat > tools/overlay-qa.mjs <<'EOF' import {chromium} from 'playwr"
+  ],
+  [
+    1338,
+    "cmd",
+    "tar -xzf .codex-work/cache/types-three-0.183.1.tgz --strip-compon"
+  ],
+  [
+    1352,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('tools/overlay-c"
+  ],
+  [
+    1403,
+    "cmd",
+    "node --input-type=module - <<'JS' import {readFileSync,writeFileS"
+  ],
+  [
+    1411,
+    "cmd",
+    "cat > tools/overlay-report.mjs <<'EOF' import {readFile,writeFile"
+  ],
+  [
+    1435,
+    "cmd",
+    "python3 - <<'PY' from pathlib import Path p=Path('tools/overlay-r"
+  ]
+]

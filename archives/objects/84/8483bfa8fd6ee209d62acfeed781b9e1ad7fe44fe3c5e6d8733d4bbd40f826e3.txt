@@ -1,0 +1,145 @@
+*** Begin Patch
+*** Add File: outputs/guangcai-viewer/package.json
++{
++  "name": "guangcai-object-study",
++  "version": "1.0.0",
++  "private": true,
++  "type": "module",
++  "scripts": {
++    "dev": "vite --host 127.0.0.1",
++    "build": "tsc --noEmit && vite build",
++    "preview": "vite preview --host 127.0.0.1",
++    "textures": "node tools/derive-pbr.mjs",
++    "test": "tsx --test tools/geometry.test.ts",
++    "qa": "node tools/browser-qa.mjs"
++  },
++  "dependencies": { "three": "0.186.1" },
++  "devDependencies": { "@types/three": "^0.183.1", "vite": "8.3.1", "typescript": "^5.9.3", "tsx": "^4.20.6", "sharp": "^0.34.5", "playwright": "^1.58.2" }
++}
+*** Add File: outputs/guangcai-viewer/tsconfig.json
++{
++  "compilerOptions": {
++    "target": "ES2022", "lib": ["ES2022", "DOM", "DOM.Iterable"],
++    "module": "ESNext", "moduleResolution": "Bundler", "strict": true,
++    "skipLibCheck": true, "noEmit": true, "allowImportingTsExtensions": true,
++    "types": ["vite/client"]
++  },
++  "include": ["src", "tools/*.ts"]
++}
+*** Add File: outputs/guangcai-viewer/vite.config.ts
++import { defineConfig } from 'vite';
++export default defineConfig({ base: './', cacheDir: '.codex-work/cache/vite', server: { port: 5187, strictPort: true }, build: { chunkSizeWarningLimit: 650 } });
+*** Add File: outputs/guangcai-viewer/index.html
++<!doctype html>
++<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#b6b7b8"><title>广彩 · 器物 — 一号杯</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+*** Add File: outputs/guangcai-viewer/src/geometry/parameters.ts
++/** Millimetres. Photo-based estimates, NOT measurements or production CAD. */
++export interface Dimensions {
++  radius: number; height: number; wall: number; bottom: number;
++  bandAngle: number; handleReach: number; handleWidth: number; handleThickness: number;
++  saucerRadius: number; lidOverhang: number;
++}
++export const defaults: Dimensions = {
++  radius: 43, height: 112, wall: 2.2, bottom: 5.5,
++  bandAngle: Math.PI / 3, handleReach: 34, handleWidth: 14, handleThickness: 5.5,
++  saucerRadius: 70, lidOverhang: 2.4,
++};
++export function validateDimensions(p: Dimensions) {
++  for (const v of Object.values(p)) if (!Number.isFinite(v) || v <= 0) throw new Error('尺寸必须为有限正数');
++  if (p.wall >= p.radius / 4 || p.bottom >= p.height / 4 || p.saucerRadius <= p.radius + 10 || p.bandAngle >= Math.PI) throw new Error('尺寸超出有效器型范围');
++}
+*** Add File: outputs/guangcai-viewer/src/geometry/surface.ts
++import { BufferGeometry, Float32BufferAttribute, Vector2 } from 'three';
++export type ProfilePoint = [number, number];
++
++/** True surface of revolution. Profile ordered underside -> exterior -> interior.
++ * Normals use the analytic meridian tangent; angular seam normals agree exactly.
++ * Indices are grouped by material, never an overlapping decal plane. */
++export function revolve(profile: ProfilePoint[], segments = 240,
++  options: { start?: number; material?: (segment: number, angleIndex: number) => number; uv?: (r: number, y: number, theta: number, j: number) => [number, number] } = {}) {
++  const pos: number[] = [], normal: number[] = [], uv: number[] = [];
++  const buckets = new Map<number, number[]>();
++  const start = options.start ?? 0, rows = profile.length;
++  for (let i = 0; i <= segments; i++) {
++    const theta = start + i / segments * Math.PI * 2;
++    for (let j = 0; j < rows; j++) {
++      const [r, y] = profile[j];
++      const prev = profile[Math.max(0, j - 1)], next = profile[Math.min(rows - 1, j + 1)];
++      const tangent = new Vector2(next[0] - prev[0], next[1] - prev[1]).normalize();
++      pos.push(r * Math.cos(theta), y, r * Math.sin(theta));
++      normal.push(tangent.y * Math.cos(theta), -tangent.x, tangent.y * Math.sin(theta));
++      uv.push(...(options.uv?.(r, y, theta, j) ?? [i / segments, j / (rows - 1)]));
++    }
++  }
++  for (let j = 0; j < rows - 1; j++) for (let i = 0; i < segments; i++) {
++    const a = i * rows + j, b = (i + 1) * rows + j;
++    const m = options.material?.(j, i) ?? 0;
++    const bucket = buckets.get(m) ?? []; buckets.set(m, bucket);
++    if (profile[j][0] > 0) bucket.push(a, a + 1, b);
++    if (profile[j + 1][0] > 0) bucket.push(b, a + 1, b + 1);
++  }
++  const g = new BufferGeometry(), indices: number[] = [];
++  for (const [m, data] of buckets) { g.addGroup(indices.length, data.length, m); indices.push(...data); }
++  g.setAttribute('position', new Float32BufferAttribute(pos, 3));
++  g.setAttribute('normal', new Float32BufferAttribute(normal, 3));
++  g.setAttribute('uv', new Float32BufferAttribute(uv, 2)); g.setIndex(indices);
++  g.computeBoundingBox(); g.computeBoundingSphere(); return g;
++}
++
++export function arc(cx: number, cy: number, radius: number, from: number, to: number, steps = 10): ProfilePoint[] {
++  return Array.from({ length: steps + 1 }, (_, i) => {
++    const a = from + (to - from) * i / steps;
++    return [cx + radius * Math.cos(a), cy + radius * Math.sin(a)];
++  });
++}
+*** Add File: outputs/guangcai-viewer/src/geometry/ribbon.ts
++import { BufferGeometry, Curve, Float32BufferAttribute, Vector3 } from 'three';
++
++/** Sweep a rounded rectangular section: local a points outside the handle,
++ * b spans its broad width. No circular tube approximation. Open ends bury in roots.
++ * materials: 0 porcelain inner surface, 1 gilded side/bevel, 2 artwork outer face. */
++export function ribbon(path: Curve<Vector3>, width: number, thickness: number, segments = 128, decoration = true) {
++  const g = new BufferGeometry(), pos: number[] = [], normals: number[] = [], uvs: number[] = [];
++  const section: { a: number; b: number; na: number; nb: number; material: number }[] = [];
++  const halfT = thickness / 2, halfW = width / 2, bevel = Math.min(1.15, thickness * .22);
++  // Clockwise section viewed along the descending centreline, with duplicate
++  // boundary vertices for material/UV changes. Flat faces + true rounded bevels.
++  for (let corner = 0; corner < 4; corner++) {
++    const sa = corner < 2 ? 1 : -1, sb = corner === 0 || corner === 3 ? 1 : -1;
++    const begin = [0, Math.PI / 2, Math.PI, Math.PI * 1.5][corner];
++    for (let k = 0; k <= 6; k++) {
++      const angle = begin + k / 6 * Math.PI / 2;
++      const na = Math.cos(angle), nb = Math.sin(angle);
++      // section travels outer -> +width -> inner -> -width
++      const ca = Math.cos(begin + Math.PI / 4) > 0 ? halfT - bevel : -halfT + bevel;
++      const cb = Math.sin(begin + Math.PI / 4) > 0 ? halfW - bevel : -halfW + bevel;
++      section.push({ a: ca + bevel * na, b: cb + bevel * nb, na, nb, material: sa + sb });
++    }
++  }
++  const n = section.length, buckets = [[], [], []] as number[][];
++  const lengths: number[] = [0]; let previous = path.getPointAt(0);
++  for (let i = 1; i <= segments; i++) { const p = path.getPointAt(i / segments); lengths.push(lengths[i - 1] + p.distanceTo(previous)); previous = p; }
++  for (let i = 0; i <= segments; i++) {
++    const t = i / segments, p = path.getPointAt(t), tangent = path.getTangentAt(t).normalize();
++    const outward = new Vector3(-tangent.y, tangent.x, 0);
++    for (let j = 0; j <= n; j++) {
++      const s = section[j % n];
++      pos.push(p.x + outward.x * s.a, p.y + outward.y * s.a, p.z + s.b);
++      normals.push(outward.x * s.na, outward.y * s.na, s.nb);
++      uvs.push((s.b + halfW) / width, 1 - lengths[i] / lengths[segments]);
++    }
++  }
++  for (let i = 0; i < segments; i++) for (let j = 0; j < n; j++) {
++    const a = i * (n + 1) + j, b = (i + 1) * (n + 1) + j;
++    const s = section[j], next = section[(j + 1) % n];
++    const outer = s.a > halfT - .01 && next.a > halfT - .01;
++    const inner = s.a < -halfT + .01 && next.a < -halfT + .01;
++    const mat = outer && decoration ? 2 : inner ? 0 : 1;
++    buckets[mat].push(a, b, a + 1, b, b + 1, a + 1);
++  }
++  const indices: number[] = [];
++  buckets.forEach((data, m) => { g.addGroup(indices.length, data.length, m); indices.push(...data); });
++  g.setAttribute('position', new Float32BufferAttribute(pos, 3)); g.setAttribute('normal', new Float32BufferAttribute(normals, 3));
++  g.setAttribute('uv', new Float32BufferAttribute(uvs, 2)); g.setIndex(indices); g.computeBoundingBox(); return g;
++}
+*** End Patch

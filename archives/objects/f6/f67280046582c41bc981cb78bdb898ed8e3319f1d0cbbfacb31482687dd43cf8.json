@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "current": {
+      "specular": 0.55,
+      "coat": 0.35,
+      "coatRough": 0.14,
+      "normal": 1.5,
+      "coatNormal": 0.825
+    },
+    "oldGlaze": {
+      "specular": 1,
+      "coat": 1,
+      "coatRough": 0.11,
+      "normal": 1.5,
+      "coatNormal": 0.825
+    },
+    "balanced": {
+      "specular": 0.85,
+      "coat": 0.75,
+      "coatRough": 0.14,
+      "normal": 2.2,
+      "coatNormal": 1.6
+    },
+    "strong": {
+      "specular": 0.85,
+      "coat": 0.75,
+      "coatRough": 0.14,
+      "normal": 3,
+      "coatNormal": 2.2
+    },
+    "flat": {
+      "specular": 0.85,
+      "coat": 0.75,
+      "coatRough": 0.14,
+      "normal": 0,
+      "coatNormal": 0
+    }
+  },
+  "errors": [],
+  "note": "Same v4 maps, camera and studio; only fixed decoration material parameters differ."
+}

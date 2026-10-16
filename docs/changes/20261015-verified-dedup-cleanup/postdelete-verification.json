@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-15",
+  "contentFilesAbsent": 1494,
+  "metadataFilesAbsent": 1603,
+  "protectedRuntimeFilesSha256Unchanged": 1136,
+  "protectedRuntimeBytes": 863594315,
+  "canonicalImagesRetained": 2,
+  "gitStates": {
+    "formal": {
+      "headUnchanged": true,
+      "trackedStatusUnchanged": true,
+      "preexistingTrackedDiffPreserved": false
+    },
+    "legacy": {
+      "headUnchanged": true,
+      "trackedStatusUnchanged": true,
+      "preexistingTrackedDiffPreserved": true
+    }
+  },
+  "oldDuplicateGroupsWithMultiplePathsRemaining": 399,
+  "originalMaterialsDuplicateGroupsRemaining": 0,
+  "netFreeIncreaseImmediatelyAfterCleanup": 1579941888,
+  "currentFreeBytes": 4427874304,
+  "note": "Remaining groups are prior-audit path survival, not a fresh hash inventory of newly written records; retained runtime aliases, source/master copies, evidence and Git worktrees are intentional."
+}

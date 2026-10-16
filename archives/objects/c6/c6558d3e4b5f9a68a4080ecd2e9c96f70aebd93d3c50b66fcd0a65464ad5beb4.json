@@ -1,0 +1,160 @@
+{
+  "checkedAtUTC": "2026-10-13T11:23:49.270516+00:00",
+  "repository": "https://github.com/Shuang-su/guangcai",
+  "private": true,
+  "branch": "codex/reconstruct-history",
+  "head": "acacdafcdf64757161be9201d2a8e79f684514d2",
+  "remoteFilesVerified": 1527,
+  "forbiddenPaths": [],
+  "checkpoints": [
+    {
+      "version": "1.0-pre.1",
+      "sha": "5e94cd22949b94e490dccdca6f4d4532ef51143a",
+      "treeSha": "44d568d304d8c1a4c58670f027ef32203175acf9",
+      "authorDate": "2026-10-13T11:10:37Z",
+      "committerDate": "2026-10-13T11:10:37Z",
+      "verified": true
+    },
+    {
+      "version": "1.0-pre.2",
+      "sha": "2c74efb6fde4bd36da5e6b2ff8976dd4541e26d5",
+      "treeSha": "a4b87d5ff531ca4b284a794a8157f73f60d59eec",
+      "authorDate": "2026-10-13T11:10:51Z",
+      "committerDate": "2026-10-13T11:10:51Z",
+      "verified": true
+    },
+    {
+      "version": "1.0-pre.3",
+      "sha": "8c078aec9719adeba92cac8ae1aaad47f0ff0013",
+      "treeSha": "4ac496466708de86d25d128f52e399db81c0d4cc",
+      "authorDate": "2026-10-13T11:10:55Z",
+      "committerDate": "2026-10-13T11:10:55Z",
+      "verified": true
+    },
+    {
+      "version": "1.0-pre.4",
+      "sha": "d5f6ad5982ed17548504492d930a7a915385cc83",
+      "treeSha": "b4461bec29f06f9639b2fef5718f47ca029e8c39",
+      "authorDate": "2026-10-13T11:10:59Z",
+      "committerDate": "2026-10-13T11:10:59Z",
+      "verified": true
+    },
+    {
+      "version": "1.0",
+      "sha": "8c7ad0b70d6a643e86aba303a91384c830321599",
+      "treeSha": "6fbe3736346a8377f42467a047b0790e5e8bc643",
+      "authorDate": "2026-10-13T11:11:03Z",
+      "committerDate": "2026-10-13T11:11:03Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.1",
+      "sha": "c5320ee1a02c012416870931c5eecf38bb5188b1",
+      "treeSha": "d2458cae13b4155914da275fda2f95c21e6ea0bc",
+      "authorDate": "2026-10-13T11:11:57Z",
+      "committerDate": "2026-10-13T11:11:57Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.2",
+      "sha": "2faa4db6c7b32bb1cd1a706cbad1902eacd73c54",
+      "treeSha": "2413ad94ca064b416b76cd21cbf0021a81c3054d",
+      "authorDate": "2026-10-13T11:12:05Z",
+      "committerDate": "2026-10-13T11:12:05Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.3",
+      "sha": "e6eae6d506df74774e82ab9ef80c19f4e7ebb50a",
+      "treeSha": "d287017f1dc80c12c4cc29e912da72300c8f7667",
+      "authorDate": "2026-10-13T11:12:11Z",
+      "committerDate": "2026-10-13T11:12:11Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.4",
+      "sha": "3d207e0486971e43620e3975cc16cb235ad170ff",
+      "treeSha": "e027d853a3c20c2149f15496586e371ed252b4b2",
+      "authorDate": "2026-10-13T11:12:18Z",
+      "committerDate": "2026-10-13T11:12:18Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.5",
+      "sha": "fd536a775b3b860a6d64ad2983a87f52cec6c0cc",
+      "treeSha": "4a44953601a80c6756ebc140cbbb37045ddd5884",
+      "authorDate": "2026-10-13T11:12:21Z",
+      "committerDate": "2026-10-13T11:12:21Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.6",
+      "sha": "36a2ba73495d8822618caa6b10190efabd8a6f0b",
+      "treeSha": "5eaae0573df9762b9bd2174716782a387ce8ecb4",
+      "authorDate": "2026-10-13T11:14:00Z",
+      "committerDate": "2026-10-13T11:14:00Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.7",
+      "sha": "667d6a5b2470661926da9323c4b9ebe34b713818",
+      "treeSha": "4bc152ea9ec64fb138a76954de947f100703f79f",
+      "authorDate": "2026-10-13T11:14:11Z",
+      "committerDate": "2026-10-13T11:14:11Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.8",
+      "sha": "4b283cc29a991a0eac1671305c0caf1f916a1b68",
+      "treeSha": "dbe4022dc22ea2839d7d5c89d789cd7f1fc0fc96",
+      "authorDate": "2026-10-13T11:14:22Z",
+      "committerDate": "2026-10-13T11:14:22Z",
+      "verified": true
+    },
+    {
+      "version": "2.0-pre.9",
+      "sha": "c2115573a8752e842672bf00823cc268bf40d643",
+      "treeSha": "2d6dfec81dc4e050fc13c12aaa0160442a7fdab7",
+      "authorDate": "2026-10-13T11:14:34Z",
+      "committerDate": "2026-10-13T11:14:34Z",
+      "verified": true
+    },
+    {
+      "version": "2.0",
+      "sha": "23c23e3353188a57153555c21ef0f19642c93361",
+      "treeSha": "22561a411bb1c7869b2900d9e1f85a8efded7759",
+      "authorDate": "2026-10-13T11:14:45Z",
+      "committerDate": "2026-10-13T11:14:45Z",
+      "verified": true
+    },
+    {
+      "version": "2.1",
+      "sha": "ea96b85295f2ee26ae2fd1cb599495d3ca2f3e63",
+      "treeSha": "d20e362496c876e24020e78644d16246b51ef23d",
+      "authorDate": "2026-10-13T11:14:57Z",
+      "committerDate": "2026-10-13T11:14:57Z",
+      "verified": true
+    }
+  ],
+  "pr": {
+    "number": 8,
+    "url": "https://github.com/Shuang-su/guangcai/pull/8",
+    "title": "[历史补录] 恢复 16 个源码节点并保留真实修改证据",
+    "state": "OPEN",
+    "headRefOid": "acacdafcdf64757161be9201d2a8e79f684514d2",
+    "headRefName": "codex/reconstruct-history",
+    "baseRefName": "codex/import-2.1",
+    "mergeable": true,
+    "labels": [
+      {
+        "name": "documentation"
+      }
+    ]
+  },
+  "issue": {
+    "number": 7,
+    "url": "https://github.com/Shuang-su/guangcai/issues/7",
+    "title": "[历史补录] 根据原会话恢复 1.0 与 2.0 的中间源码节点",
+    "state": "OPEN"
+  }
+}

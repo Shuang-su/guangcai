@@ -1,0 +1,27 @@
+{
+  "name": "Prior 3.0 full-strip fixture",
+  "mapping": "source-layout-v3",
+  "regions": {
+    "body": {
+      "baseColor": "/textures/fixed-body-baseColor-64e1ed7bba0e7ab9.webp",
+      "normal": "/textures/fixed-body-normal-da6d729c9d39471c.hfn.gz",
+      "roughness": "/textures/fixed-body-roughness-406db82aa5cbd883.webp",
+      "metalness": "/textures/fixed-body-metalness-70f7baa13bf3fe53.webp",
+      "normalFormat": "rgba16f-gzip-v1"
+    },
+    "handle": {
+      "baseColor": "/textures/fixed-handle-baseColor-463ed5b77f55f9e4.webp",
+      "normal": "/textures/fixed-handle-normal-48261a6369cb5474.hfn.gz",
+      "roughness": "/textures/fixed-handle-roughness-80bad06e6d018eab.webp",
+      "metalness": "/textures/fixed-handle-metalness-988aad2bac78d4eb.webp",
+      "normalFormat": "rgba16f-gzip-v1"
+    },
+    "saucer": {
+      "baseColor": "/textures/fixed-saucer-baseColor-dc3db9d3d36c6066.webp",
+      "normal": "/textures/fixed-saucer-normal-1f9c565f2e91db1c.hfn.gz",
+      "roughness": "/textures/fixed-saucer-roughness-9939470bdc5d8c96.webp",
+      "metalness": "/textures/fixed-saucer-metalness-0df7fe0475bb2010.webp",
+      "normalFormat": "rgba16f-gzip-v1"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+> guangcai-china-preview@1.0.0 qa
+> node tools/china-qa.mjs
+
+PASS initial independent city + fixed packages loaded
+PASS city uses UV1, aligned maps, and zero geometry displacement
+PASS old full-floral replacement controls removed
+PASS local geometry reflection initialized
+PASS view button front
+PASS view button handle
+PASS view button top
+PASS view button bottom
+PASS turned cup clears the floor
+PASS view button saucerBottom
+PASS view button exploded
+PASS local probe follows exploded cup
+PASS view button lid
+PASS view button detail
+PASS view button flowers
+PASS view button hero
+PASS auto rotation changes camera
+PASS drag stops auto and rotates
+PASS camera rotation reuses the local reflection capture
+PASS wheel zoom
+PASS right drag translates camera and target without rotating or zooming
+PASS canvas right click suppresses context menu
+PASS reset restores centered framing after pan
+PASS floral relief off keeps city textures, geometry, and fixed maps
+PASS floral relief restores both paint and glaze normals
+PASS reflection toggle restores studio-only environment
+PASS reflection toggle restores local geometry capture
+PASS five reflection toggles reuse GPU resources
+PASS relief 0 retains metal + geometry
+PASS relief -1 retains metal + geometry
+PASS relief 1 retains metal + geometry
+PASS inspection clay
+PASS inspection relief
+PASS inspection floral
+PASS inspection metalness
+PASS inspection pbr
+PASS metal off retains stroke normal
+PASS city replacement keeps geometry and all fixed maps
+PASS rendered label stays unchanged after recoloring
+PASS failed load preserves entire current version
+PASS mismatched channel dimensions rejected atomically
+PASS out-of-bounds placement rejected atomically
+PASS rapid switching commits only last request
+PASS five swaps release old GPU textures
+PASS mobile no horizontal overflow
+PASS mobile touch selects view
+PASS mobile touch drag rotates
+PASS mobile two-finger drag pans without rotation or zoom
+PASS mobile pinch still zooms
+PASS mobile reset clears pan
+PASS mobile calibration panel fits viewport
+PASS dispose frees GPU geometry
+PASS no browser runtime errors
+{"passed":53,"errors":[],"labelDelta":0,"memory":{"geometries":26,"textures":28}}

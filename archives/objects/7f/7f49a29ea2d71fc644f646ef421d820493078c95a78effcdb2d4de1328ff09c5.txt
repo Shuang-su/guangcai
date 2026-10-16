@@ -1,0 +1,94 @@
+*** Begin Patch
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/studio/studio.ts
+@@
+-export function createStudio(canvas:HTMLCanvasElement){
+-  const renderer=new WebGLRenderer({canvas,antialias:true,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
++export function createStudio(canvas:HTMLCanvasElement,transparent=false){
++  const renderer=new WebGLRenderer({canvas,antialias:true,alpha:transparent,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+@@
+-  const scene=new Scene();scene.background=new Color('#b7b8ba');
++  const scene=new Scene();scene.background=transparent?null:new Color('#b7b8ba');
++  if(transparent)renderer.setClearColor(0x000000,0);
+*** Update File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/vite.config.ts
+@@
+-export default defineConfig({ base: './', cacheDir: '.codex-work/cache/vite', server: { port: 5187, strictPort: true }, build: { chunkSizeWarningLimit: 650 } });
++export default defineConfig({ base: './', cacheDir: '.codex-work/cache/vite', server: { port: 5187, strictPort: true }, build: { chunkSizeWarningLimit: 650, rollupOptions: {input: {main:'index.html',compare:'compare.html'}} } });
+*** Add File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/compare.html
++<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><link rel="icon" href="data:,"><meta name="viewport" content="width=device-width, initial-scale=1"><title>广彩 · 实拍叠图校准</title></head><body><div id="app"></div><script type="module" src="/src/compare.ts"></script></body></html>
+*** Add File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/interaction/calibration.ts
++import {PerspectiveCamera,Vector3,MathUtils} from 'three';
++export interface Pose {yaw:number;pitch:number;roll:number;distance:number;fov:number;cx:number;cy:number;targetY:number}
++export const calibrations:Record<string,{label:string;part:'all'|'saucer';pose:Pose}>={
++ '1221':{label:'1221 · 碟侧缘与底足',part:'saucer',pose:{yaw:0,pitch:0,roll:-7,distance:170,fov:45,cx:-.65,cy:.5,targetY:9}},
++ '1220':{label:'1220 · 整体比例',part:'all',pose:{yaw:-3,pitch:12,roll:0,distance:440,fov:33,cx:.49,cy:.60,targetY:57}},
++ '1230':{label:'1230 · 碟底与圈足',part:'saucer',pose:{yaw:0,pitch:-78,roll:0,distance:210,fov:48,cx:.5,cy:.48,targetY:4}},
++};
++/** Lens framing, not an image warp. All modes use the identical 3D geometry. */
++export function applyPose(camera:PerspectiveCamera,p:Pose,width:number,height:number){
++ const yaw=MathUtils.degToRad(p.yaw),pitch=MathUtils.degToRad(p.pitch),target=new Vector3(0,p.targetY,0);
++ camera.position.set(Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),Math.cos(yaw)*Math.cos(pitch)).multiplyScalar(p.distance).add(target);
++ camera.up.set(0,1,0);camera.lookAt(target);camera.rotateZ(MathUtils.degToRad(p.roll));
++ camera.fov=p.fov;camera.aspect=width/height;
++ camera.setViewOffset(width,height,(.5-p.cx)*width,(.5-p.cy)*height,width,height);
++ camera.updateProjectionMatrix();camera.updateMatrixWorld(true);
++}
+*** Add File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/compare.ts
++import './ui/compare.css';
++import {BufferGeometry,Group,LineLoop,LineBasicMaterial,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace,TextureLoader,Vector3} from 'three';
++import {buildProduct} from './geometry/product';
++import {makeMaterials} from './materials/materials';
++import {createStudio} from './studio/studio';
++import {defaultPack,StyleManager} from './styles/style-manager';
++import {applyPose,calibrations,type Pose} from './interaction/calibration';
++
++const fields:[keyof Pose,string,number,number,number][]=[['pitch','俯仰 / °',-90,90,.05],['yaw','朝向 / °',-180,180,.1],['roll','画面倾斜 / °',-180,180,.05],['distance','距离 / mm',90,900,.25],['fov','垂直视角 / °',10,90,.1],['cx','水平中心 / 画幅',-2,2,.001],['cy','垂直中心 / 画幅',-1,2,.001]];
++document.querySelector('#app')!.innerHTML=`<main><aside><a href="./">← 三维观察器</a><h1>实拍叠图校准</h1><p>同一器型、同一相机。调整机位后，用透明叠加与显隐切换检查轮廓。</p><label>参考照片<select id="reference">${Object.entries(calibrations).map(([id,c])=>`<option value="${id}">${c.label}</option>`).join('')}</select></label><label>模型显示<select id="mode"><option value="pbr">实际材质</option><option value="clay">中性灰器型</option><option value="silhouette">青色轮廓</option><option value="rings">关键交界线</option></select></label><label>模型不透明度 <output id="opacity-value">50%</output><input id="opacity" type="range" min="0" max="1" step=".01" value=".5"></label><div class="buttons"><button id="photo-only">只看实拍</button><button id="model-only">只看模型</button><button id="overlay">重叠对比</button></div><label class="check"><input id="show-photo" type="checkbox" checked>显示实拍</label><details open><summary>精调相机</summary><div class="fields">${fields.map(([id,label,min,max,step])=>`<label>${label}<input id="${id}" type="number" min="${min}" max="${max}" step="${step}"></label>`).join('')}</div><button id="reset-pose">恢复校准机位</button></details><div class="buttons"><button id="save-image">保存叠图 PNG</button><button id="save-pose">保存机位 JSON</button></div><p id="state" role="status">载入中…</p><p class="note">照片保留原始比例，不作透视拉伸。机位和器型尺寸均为照片估计；151 mm 碟径来自产品参数。金彩使用统一摄影棚反射，花纸是参考风格生成稿。</p></aside><section class="workspace"><div id="frame"><img id="photo" alt="用于器型对比的用户实拍"><canvas id="model" aria-label="与实拍共用画幅的三维模型"></canvas></div></section></main>`;
++const $=<T extends HTMLElement>(id:string)=>document.getElementById(id) as T;
++const photo=$<HTMLImageElement>('photo'),canvas=$<HTMLCanvasElement>('model'),frame=$('frame');
++const mats=makeMaterials(),product=buildProduct(mats),studio=createStudio(canvas,true);
++studio.scene.add(product.root);studio.floor.visible=false;
++const manager=new StyleManager(mats,8,()=>{});
++manager.fit({body:product.parameters.radius*product.parameters.bandAngle/(product.parameters.height-5.3),handle:(product.cup.getObjectByName('wide-ribbon-handle') as Mesh).geometry.userData.surfaceMetrics.aspect,saucer:(product.saucer.children[0] as Mesh).geometry.userData.surfaceMetrics.aspect});
++const originals=new Map<Mesh,Material|Material[]>();product.root.traverse(o=>{if(o instanceof Mesh)originals.set(o,o.material);});
++const silhouette=new MeshBasicMaterial({color:'#00d7ee'}),clay=new MeshStandardMaterial({color:'#a5b7bd',roughness:.65});
++const lines=new Group(),lineMaterial=new LineBasicMaterial({color:'#00efff',depthTest:false});
++for(const[r,y]of [[75.5,17.35],[68.7,5.9],[69.15,4.8],[65.4,3.7],[63.1,1],[62.7,0]])lines.add(new LineLoop(new BufferGeometry().setFromPoints(Array.from({length:512},(_,i)=>{const a=i/512*Math.PI*2;return new Vector3(r*Math.cos(a),y,r*Math.sin(a));})),lineMaterial));
++studio.scene.add(lines);lines.visible=false;
++let id='1221',pose:Pose={...calibrations[id].pose},ready=false,disposed=false;
++function controls(){for(const[key]of fields)$<HTMLInputElement>(key).value=String(pose[key]);}
++function render(){
++ if(disposed)return;const w=photo.naturalWidth||1368,h=photo.naturalHeight||1824;
++ applyPose(studio.camera,pose,w,h);studio.renderer.render(studio.scene,studio.camera);
++}
++function presentation(){canvas.style.opacity=$<HTMLInputElement>('opacity').value;$('opacity-value').textContent=`${Math.round(Number(canvas.style.opacity)*100)}%`;photo.style.visibility=$<HTMLInputElement>('show-photo').checked?'visible':'hidden';render();}
++function setMode(mode:string){
++ for(const [mesh,material]of originals)mesh.material=mode==='silhouette'?silhouette:mode==='clay'?clay:material;
++ product.root.visible=mode!=='rings';lines.visible=mode==='rings';render();
++}
++async function select(next:string,reset=false){
++ id=next;const c=calibrations[id];pose={...c.pose};
++ if(!reset){try{const saved=JSON.parse(localStorage.getItem(`guangcai-calibration-${id}`)||'null');if(saved&&Object.keys(pose).every(k=>Number.isFinite(saved[k])))pose=saved;}catch{}}
++ product.cup.visible=c.part==='all';product.lid.visible=c.part==='all';product.saucer.visible=true;
++ photo.src=`${import.meta.env.BASE_URL}references/${id}.jpg`;await photo.decode();frame.style.aspectRatio=`${photo.naturalWidth}/${photo.naturalHeight}`;controls();studio.resize();render();
++ $('state').textContent=`IMG_${id} · 已载入校准机位，可继续微调`;
++}
++for(const[key]of fields)$<HTMLInputElement>(key).oninput=()=>{const value=+$<HTMLInputElement>(key).value;if(Number.isFinite(value)){pose[key]=value;localStorage.setItem(`guangcai-calibration-${id}`,JSON.stringify(pose));render();$('state').textContent='机位修改已保存在此浏览器';}};
++$<HTMLSelectElement>('reference').onchange=e=>void select((e.target as HTMLSelectElement).value);
++$<HTMLSelectElement>('mode').onchange=e=>setMode((e.target as HTMLSelectElement).value);
++$<HTMLInputElement>('opacity').oninput=presentation;$<HTMLInputElement>('show-photo').onchange=presentation;
++$('photo-only').onclick=()=>{$<HTMLInputElement>('opacity').value='0';$<HTMLInputElement>('show-photo').checked=true;presentation();};
++$('model-only').onclick=()=>{$<HTMLInputElement>('opacity').value='1';$<HTMLInputElement>('show-photo').checked=false;presentation();};
++$('overlay').onclick=()=>{$<HTMLInputElement>('opacity').value='.5';$<HTMLInputElement>('show-photo').checked=true;presentation();};
++$('reset-pose').onclick=()=>{localStorage.removeItem(`guangcai-calibration-${id}`);void select(id,true);};
++function state(){return{id,pose:{...pose},photoSize:[photo.naturalWidth,photo.naturalHeight],mode:$<HTMLSelectElement>('mode').value,opacity:Number(canvas.style.opacity||.5),parameters:product.parameters};}
++function download(href:string,name:string){const a=document.createElement('a');a.href=href;a.download=name;a.click();}
++function capture(){render();const output=document.createElement('canvas');output.width=photo.naturalWidth;output.height=photo.naturalHeight;const c=output.getContext('2d')!;c.fillStyle='#e6e5e3';c.fillRect(0,0,output.width,output.height);if($<HTMLInputElement>('show-photo').checked)c.drawImage(photo,0,0);c.globalAlpha=Number(canvas.style.opacity||.5);c.drawImage(canvas,0,0,output.width,output.height);return output.toDataURL('image/png');}
++$('save-image').onclick=()=>download(capture(),`IMG_${id}-overlay.png`);
++$('save-pose').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(state(),null,2)],{type:'application/json'}));download(url,`IMG_${id}-camera.json`);setTimeout(()=>URL.revokeObjectURL(url),1000);};
++const observer=new ResizeObserver(()=>render());observer.observe(canvas);
++Object.assign(window,{cupCompare:{ready:()=>ready,state,select,setPose:(p:Partial<Pose>)=>{Object.assign(pose,p);controls();render();},setMode,capture,render}});
++Promise.all([manager.apply(defaultPack),new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;}),select(new URLSearchParams(location.search).get('ref')in calibrations?new URLSearchParams(location.search).get('ref')!:'1221')]).then(()=>{ready=true;presentation();}).catch(e=>$('state').textContent=e.message);
++if(import.meta.hot)import.meta.hot.dispose(()=>{disposed=true;observer.disconnect();manager.dispose();product.dispose();lines.children.forEach(o=>(o as LineLoop).geometry.dispose());lineMaterial.dispose();clay.dispose();silhouette.dispose();mats.mark.map?.dispose();[mats.porcelain,mats.gold,mats.foot,mats.mark,...Object.values(mats.regions)].forEach(m=>m.dispose());studio.dispose();});
+*** Add File: /Users/shuangsu/Documents/Codex/2026-09-29/3d-vite-typescript-three-js-buffergeometry/outputs/guangcai-viewer/src/ui/compare.css
++*{box-sizing:border-box}body{margin:0;background:#d6d5d2;color:#242420;font:14px/1.5 system-ui}main{display:grid;grid-template-columns:290px 1fr;min-height:100vh}aside{background:#f5f4f0;padding:24px;max-height:100vh;overflow:auto;position:sticky;top:0}a{color:#6b521b}h1{font-size:23px;font-weight:550;margin:16px 0 8px}p{color:#65635c}label{display:block;margin:14px 0 6px}select,input[type=number],button{font:inherit;border:1px solid #cac6bb;border-radius:6px;background:#fffefa;padding:7px;color:inherit}select{width:100%}input[type=range]{width:100%;accent-color:#8c712c}input[type=number]{width:100%;margin-top:5px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.fields label{font-size:12px}.buttons{display:flex;gap:5px;flex-wrap:wrap;margin:16px 0}button{cursor:pointer;font-size:12px}.check{display:flex;align-items:center;gap:6px}.note{font-size:12px}.workspace{display:flex;align-items:flex-start;justify-content:center;padding:24px;overflow:hidden}#frame{position:relative;width:min(100%,900px);background:#e6e5e3;line-height:0}#photo,#model{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}#model{opacity:.5;pointer-events:none}#state{font-size:12px;color:#76591a}@media(max-width:700px){main{grid-template-columns:1fr}aside{position:relative;max-height:none}.workspace{padding:12px;grid-row:1}.fields{grid-template-columns:repeat(3,1fr)}#frame{max-height:none}} 
+*** End Patch

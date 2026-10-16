@@ -1,0 +1,152 @@
+{
+  "version": 7,
+  "provenance": "User supplied original 450 ml cup and 151 saucer decals, ICC converted from floral-export.psd.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette plus bounded local chromatic ink ridges, then smoothed. No grayscale-color height conversion.",
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "regions": {
+    "body": {
+      "offsetU": 0,
+      "width": 637,
+      "height": 1534,
+      "physical": {
+        "width": 42.77801996638102,
+        "length": 97.7
+      },
+      "source": "assets/masters/v3/body.png",
+      "sourceSize": [
+        637,
+        1534
+      ],
+      "crop": null,
+      "layout": "source-layout-v3",
+      "fit": "Full original region; all channels share UV2; full saucer circumference without mirroring",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/body-baseColor.png",
+          "sha256": "dfbef00ca5336207466bf8d6d1522bbd1921cfa274996cf94a2fc212aa93300d"
+        },
+        "metalness": {
+          "url": "fixed/body-metalness.png",
+          "sha256": "9b50384fbbe162f92080221aeb6c4c5241bce71e1b4c0f5b5e55261dc3ce8208"
+        },
+        "roughness": {
+          "url": "fixed/body-roughness.png",
+          "sha256": "10b91c29380e11776c8fe9bc67654a273fbae3f4938f8d8b422020f885a57b20"
+        },
+        "height": {
+          "url": "fixed/body-height.png",
+          "sha256": "ee3fbcab4d71a114369424d5909e6b3c48ad0d768bd4ff656eceac055c4111ba"
+        },
+        "normal": {
+          "url": "fixed/body-normal.png",
+          "sha256": "fbd6d2968e0a629dc1b672f16311c19dc7cf90cdc3252fbb9b50d4924b91c31a"
+        }
+      }
+    },
+    "handle": {
+      "offsetU": 0,
+      "width": 148,
+      "height": 1724,
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "source": "assets/masters/v3/handle.png",
+      "sourceSize": [
+        148,
+        1724
+      ],
+      "crop": null,
+      "layout": "source-layout-v3",
+      "fit": "Full original region; all channels share UV2; full saucer circumference without mirroring",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/handle-baseColor.png",
+          "sha256": "49bea1266fd04ee138f1a4c78a143e32b80addffd1b65a57e676d5aff95bbc78"
+        },
+        "metalness": {
+          "url": "fixed/handle-metalness.png",
+          "sha256": "108b0d7dbb7b295e15b64cdb6660f3f18832bcbd5e50d0c359b70a4269ec9093"
+        },
+        "roughness": {
+          "url": "fixed/handle-roughness.png",
+          "sha256": "c03557d81e1102973188f88a829eae602021a7471fcb090248fec57d4ccaf528"
+        },
+        "height": {
+          "url": "fixed/handle-height.png",
+          "sha256": "af98f2f84d439f58be95b0156aac5eb472a50f84c5f8d1c0f7630c5870af366e"
+        },
+        "normal": {
+          "url": "fixed/handle-normal.png",
+          "sha256": "320b3a8dd077e7d27dda2f44183318bf951f11a0556628dd7929344f3fe56d3e"
+        }
+      }
+    },
+    "saucer": {
+      "offsetU": -0.105,
+      "width": 6924,
+      "height": 195,
+      "physical": {
+        "width": 453.64597917836613,
+        "length": 11.142710621747296
+      },
+      "source": "assets/masters/v3/saucer.png",
+      "sourceSize": [
+        6924,
+        195
+      ],
+      "crop": null,
+      "layout": "source-layout-v3",
+      "fit": "Full original region; all channels share UV2; full saucer circumference without mirroring",
+      "maps": {
+        "baseColor": {
+          "url": "fixed/saucer-baseColor.png",
+          "sha256": "fd6f74f3af88aa703e92815dbe6bf507fe399df250292750d01b9816b675b25f"
+        },
+        "metalness": {
+          "url": "fixed/saucer-metalness.png",
+          "sha256": "c4f40dbbbd7d1fbab3acfb96b3035b9f64bf26f3b54aab51b71dfe2fd6971419"
+        },
+        "roughness": {
+          "url": "fixed/saucer-roughness.png",
+          "sha256": "7ecba5978e1a8112b47127098686bd814ce49dfccd4efd39dfd7d34cba1aa1c9"
+        },
+        "height": {
+          "url": "fixed/saucer-height.png",
+          "sha256": "b51d798064dd66bb80643e884d80b1fa5c12567c357f36b2e2f896a4005c3d61"
+        },
+        "normal": {
+          "url": "fixed/saucer-normal.png",
+          "sha256": "035c481ab404457c43dc385b103d849aba9304ba724d6348d534ead78e9fcc67"
+        }
+      }
+    }
+  },
+  "name": "原始广彩花纸 · 450 杯 / 151 碟",
+  "mapping": "source-layout-v3",
+  "renderStandard": {
+    "relief": 4.4,
+    "clearcoatRelief": 2.4,
+    "specularIntensity": 0.85,
+    "clearcoat": 0.75,
+    "clearcoatRoughness": 0.14,
+    "exposure": 1.08
+  },
+  "reliefRevision": "Existing v5 height profile and strengths applied to the original source contours; visual approximation, not measured physical height.",
+  "runtimeOffsets": {
+    "saucerU": -0.105
+  },
+  "layoutCalibration": {
+    "version": 3,
+    "body": {
+      "visibleEndFraction": 0.45
+    },
+    "saucer": {
+      "offsetU": 0.485,
+      "phaseBalance": 0.145,
+      "sourceOffsetU": -0.105
+    },
+    "note": "Source-layout-v3 uses normalized UV2, one full 151 saucer arc with no mirroring or old phase compensation. Legacy UV0 and offsets remain available for older packages."
+  }
+}

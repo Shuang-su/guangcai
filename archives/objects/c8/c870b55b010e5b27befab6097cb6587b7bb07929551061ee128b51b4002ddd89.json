@@ -1,0 +1,163 @@
+{
+  "verifiedAt": "2026-10-13T18:54:42.484912+08:00",
+  "repository": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "isPrivate": true,
+    "url": "https://github.com/Shuang-su/guangcai"
+  },
+  "branches": [
+    {
+      "branch": "main",
+      "commit": "f84c41184590f8232c7534b36ea0abc2161e535b",
+      "files": 8,
+      "remoteTreeMatchesLocal": true,
+      "forbiddenPaths": [],
+      "bytes": 12584
+    },
+    {
+      "branch": "codex/import-1.0",
+      "commit": "152a791b51faaa28e4a565809b3250cf7fc75346",
+      "files": 447,
+      "remoteTreeMatchesLocal": true,
+      "forbiddenPaths": [],
+      "bytes": 242916729
+    },
+    {
+      "branch": "codex/import-2.0",
+      "commit": "e50528015a727ea0689a0ca277a0ab2f6731cf8e",
+      "files": 1237,
+      "remoteTreeMatchesLocal": true,
+      "forbiddenPaths": [],
+      "bytes": 636609584
+    },
+    {
+      "branch": "codex/import-2.1",
+      "commit": "c00951f602e56f2090ce36caeb46bd4f18a8a8e5",
+      "files": 1446,
+      "remoteTreeMatchesLocal": true,
+      "forbiddenPaths": [],
+      "bytes": 695416433
+    }
+  ],
+  "pullRequests": [
+    {
+      "baseRefName": "main",
+      "body": "原版已上线，但源码目录此前没有 Git 历史。本 PR 首次保存 1.0 的完整源码、运行素材、生成母版、提示词、历史记录与证据，并按部署清单保留 78 个实际发布文件。\n\n- 源码：`guangcai-viewer/`；公共证据：`evidence/`；部署：`6abbdf78d912b4b6b1d7c3b9`。\n- 437 个来源文件逐项 SHA-256 校验通过。6 项几何测试及 TypeScript / Vite 构建通过；重新构建的 78 个发布文件全部匹配原清单。\n- 1.0 与中国杯 2.0 / 2.1 统一归档到此私有仓库，以后者的 PR 接续本提交，不创建无依据的历史 commit。\n- 未修改原工作目录、连接 Netlify 或执行部署。后续原版改动按 1.1 / 1.2 编号。\n\n验收记录：`docs/archive/original-validation.json`、`original-inventory.json`。\n\nCloses #1\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Low Risk**\n> Bulk archival and documentation with verified reproducible build; no runtime, auth, or deployment pipeline changes in this PR.\n> \n> **Overview**\n> **首次将广彩一号杯 1.0 完整归档进 Git**：导入可编辑工程 `guangcai-viewer/`（源码、构建产物、花纸母版与 PBR 资源、工具脚本），并保留根级 `evidence/` 验收与对照材料。\n> \n> 新增 **`DELIVERY.md`** 与 **`delivery-manifest.json`**（约 436 个文件的 SHA-256 清单），以及 **`deployments/guangcai-no1/6abbdf78d912b4b6b1d7c3b9/`** 与线上发布一致的 78 文件快照。 **`docs/archive/`** 记录来源路径、清单与 **`original-validation.json`**（几何测试与构建通过，发布包哈希与历史部署一致）。 **`.gitignore`** 仅将 `node_modules/` 改为 `node_modules`。\n> \n> 本 PR **不连接 Netlify、不重新部署**；行为相对既有线上版本无功能性改动。\n> \n> <sup>Reviewed by [Cursor Bugbot](https://cursor.com/bugbot) for commit 152a791b51faaa28e4a565809b3250cf7fc75346. Bugbot is set up for automated code reviews on this repo. Configure [here](https://www.cursor.com/dashboard/bugbot).</sup>\n<!-- /CURSOR_SUMMARY -->",
+      "headRefName": "codex/import-1.0",
+      "headRefOid": "152a791b51faaa28e4a565809b3250cf7fc75346",
+      "isDraft": false,
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s5Lxw",
+          "name": "version:1.0",
+          "description": "产品版本 1.0",
+          "color": "215A71"
+        }
+      ],
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "title": "[1.0] 归档一号杯原版源码、素材和发布快照",
+      "url": "https://github.com/Shuang-su/guangcai/pull/4"
+    },
+    {
+      "baseRefName": "codex/import-1.0",
+      "body": "中国杯从原版复制演化，本 PR 在 1.0 导入提交上保存其已上线 2.0 基线。保留相邻项目目录、完整源码、PSD / PDF / JPG 原稿副本、母版、PBR / WebP、历史记录及 122 个实际发布文件。\n\n- 源码：`guangcai-china-preview/`；部署：`6acbd24fa545c331cdd20dae`。\n- 导入时本地已在进行后续布局修订；用真实 before 文件和实际发布文件恢复 2.0，保留恢复摘要和最初差异记录。\n- 7 项几何测试、WebP 生成、TypeScript / Vite 构建通过；重新构建的 122 个发布文件全部与原清单一致。3 份原稿副本及原版 104 个保护文件通过核验。\n- 本 PR 基线为 1.0 导入分支，需先审查 1.0。独立发布的新布局版本将在后续 2.1 PR 中记录，2.0 基线继续保留。\n- 本次没有执行部署。归档期间另一个已获授权的任务更新了中国杯站点，事件和新部署 ID 已如实记录于完成记录。\n\n验收记录：`docs/archive/china-validation.json`、`china-2.0-recovery.json`、`VERSION_HISTORY.md`。\n\nCloses #2\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Low Risk**\n> Read-only source and evidence archival with explicit no-deploy scope; main risk is repository size and ensuring the recovered 2.0 tree stays aligned with the frozen deploy manifest.\n> \n> **Overview**\n> **Archives the deployed China Cup (2.0) baseline** on top of the 1.0 import: adds the full `guangcai-china-preview/` tree (Three.js viewer, PSD-derived city assets, fixed floral PBR, tools, and change history) plus a **byte-verified Netlify snapshot** under `deployments/guangcai-no1-china/6acbd24fa545c331cdd20dae/`.\n> \n> Introduces **`VERSION_HISTORY.md`** and README updates that label live sites as **1.0 / 2.0**, link review branches (`codex/import-1.0` / `codex/import-2.0`), and separate product versions from legacy `package.json` / manifest numbers. **`docs/archive/`** records import audit, build validation (122 release files matching deploy `6acbd24fa545c331cdd20dae`), and **`china-2.0-recovery.json`** documenting rollback of in-progress **2.1** layout work from the captured tree. Branch naming in the GitHub archive plan shifts to `codex/import-1.0` / `codex/import-2.0`. No Netlify deploy or credentials are added; `.gitignore` normalizes `node_modules`.\n> \n> <sup>Reviewed by [Cursor Bugbot](https://cursor.com/bugbot) for commit e50528015a727ea0689a0ca277a0ab2f6731cf8e. Bugbot is set up for automated code reviews on this repo. Configure [here](https://www.cursor.com/dashboard/bugbot).</sup>\n<!-- /CURSOR_SUMMARY -->",
+      "headRefName": "codex/import-2.0",
+      "headRefOid": "e50528015a727ea0689a0ca277a0ab2f6731cf8e",
+      "isDraft": false,
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s5NZA",
+          "name": "version:2.0",
+          "description": "产品版本 2.0",
+          "color": "AF7737"
+        }
+      ],
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "title": "[2.0] 在原版历史上归档中国杯上线基线",
+      "url": "https://github.com/Shuang-su/guangcai/pull/5"
+    },
+    {
+      "baseRefName": "codex/import-2.0",
+      "body": "中国杯已由另一任务于 2026-10-13 18:36 独立发布布局修订。本 PR 在 2.0 基线上保存真实的 2.1 差异：杯碟花纹相位和把手旁饰带宽度调整，保留原凹凸强度，并追加完整修订证据及 131 个实际发布文件。\n\n- 部署：`6ace09922a1b2f8945a7a41c`；当前网址：https://guangcai-no1-china.netlify.app/ 。\n- 10 项几何测试、WebP 生成、TypeScript / Vite 构建通过；131 个发布文件 SHA-256 与新部署清单全部一致。\n- 2.0 精确源码保留于 `b86503cd52fa54758c085786589de0266ba55c13` 和上一 PR；归档校验器同时校验 1.0、Git 历史中的 2.0 和当前 2.1。\n- 此分支包含完整双项目，可直接检出。审查顺序：1.0 → 2.0 → 2.1。所有 PR 保持待审，不进行自动合并。\n- 本次归档只读取 Netlify 状态并上传 GitHub，不连接 Git 自动部署、不执行重新发布；两个站点都仍没有仓库关联。\n\n验证与来源：`docs/archive/china-2.1-validation.json`、`china-2.1-inventory.json`、`guangcai-china-preview/docs/changes/20261013-fixed-layout/`。\n\nCloses #3\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Medium Risk**\n> Changes live 3D floral placement and UV mapping for the China preview, but scope is layout-only with 10 geometry tests and full deploy byte verification; no auth or deployment automation in-repo.\n> \n> **Overview**\n> **Archives China cup 2.1** after an independent 2026-10-13 Netlify release: updates version docs (`README`, `VERSION_HISTORY`, import plan) for `codex/import-2.1`, deployment `6ace09922a1b2f8945a7a41c`, and adds archive validation (`china-2.1-validation.json`, audit) plus a **131-file** published snapshot under `deployments/guangcai-no1-china/6ace09922a1b2f8945a7a41c/`.\n> \n> **Product change (layout only, relief unchanged):** introduces `src/styles/fixed-layout.json` and wires it through geometry, style loading, and `derive-fixed.mjs`. The cup body floral band is **narrowed** (material split, city UV1 untouched); the saucer uses **offsetU 0.485** and a **smooth periodic UV phase** (`0.145 × sin(θ)`). Fixed PBR maps and normal strengths stay byte-identical to 2.0; evidence, before/after captures, and three extra geometry tests document the calibration.\n> \n> <sup>Reviewed by [Cursor Bugbot](https://cursor.com/bugbot) for commit c00951f602e56f2090ce36caeb46bd4f18a8a8e5. Bugbot is set up for automated code reviews on this repo. Configure [here](https://www.cursor.com/dashboard/bugbot).</sup>\n<!-- /CURSOR_SUMMARY -->",
+      "headRefName": "codex/import-2.1",
+      "headRefOid": "c00951f602e56f2090ce36caeb46bd4f18a8a8e5",
+      "isDraft": false,
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s8fzA",
+          "name": "version:2.1",
+          "description": "产品版本 2.1",
+          "color": "AF7737"
+        }
+      ],
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "title": "[2.1] 记录已发布的花纹布局与饰带宽度修订",
+      "url": "https://github.com/Shuang-su/guangcai/pull/6"
+    }
+  ],
+  "issues": [
+    {
+      "body": "归档目前独立运行的一号杯原版，建立产品版本 **1.0** 的可追溯源码基线。\n\n- 线上：https://guangcai-no1.netlify.app/\n- 部署 ID：`6abbdf78d912b4b6b1d7c3b9`。\n- 目录：`guangcai-viewer/`；共享历史证据在根级 `evidence/`。\n- 保留完整源码、锁文件、运行素材、生成母版、提示词、历史变更记录及 78 个实际发布文件。\n- 初始来源没有 Git 历史；此次为真实首次导入，不补造历史提交。\n- 验证：6 项几何测试通过，TypeScript / Vite 构建通过，78 个发布文件 SHA-256 与原部署清单全部一致。\n- 原版和中国杯统一保存在本私有仓库中。后续原版改动按 1.1、1.2 等记录。\n- 本次只归档，不修改原工作目录、不连接 Netlify、不重新部署。PR 保持待审。\n\n验收证据：`docs/archive/original-inventory.json`、`original-validation.json`、`original.md`。\n",
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s5Lxw",
+          "name": "version:1.0",
+          "description": "产品版本 1.0",
+          "color": "215A71"
+        }
+      ],
+      "state": "OPEN",
+      "title": "[1.0] 归档一号杯原版的源码、素材与部署记录",
+      "url": "https://github.com/Shuang-su/guangcai/issues/1"
+    },
+    {
+      "body": "归档从原版衍生的中国杯，建立产品版本 **2.0** 的准确已上线源码基线。\n\n- 线上：https://guangcai-no1-china.netlify.app/\n- 部署 ID：`6acbd24fa545c331cdd20dae`。\n- 目录：`guangcai-china-preview/`，与 1.0 同仓库，导入提交继承 1.0。\n- 保留完整源码、锁文件、PSD / PDF / JPG 原稿副本、图层、母版、提示词、PBR / WebP、历史记录和 122 个实际发布文件。\n- 导入时发现原工作目录正在进行后续布局修订。已用真实 before 源文件和已发布文件恢复 2.0；进行中的 2.1 不标成已上线版本。\n- 验证：7 项几何测试、WebP 生成、TypeScript / Vite 构建通过；122 个发布文件 SHA-256 全部匹配原部署清单；3 份设计原稿副本和原版 104 个保护文件通过摘要核验。\n- 两个项目同为 TypeScript / Three.js / Vite，中国杯是在原版基础上演化，并非两个无关联仓库。当前先保留独立目录，共享代码重构另行进行。\n- 后续中国杯改动按 2.1、2.2 等记录。此 PR 以 1.0 导入分支为基线，须先审查 1.0。\n- 不连接 Netlify、不重新部署、不合并 PR。\n\n验收证据：`docs/archive/china-inventory.json`、`china-validation.json`、`china-2.0-recovery.json`，以及 `VERSION_HISTORY.md`。\n",
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s5NZA",
+          "name": "version:2.0",
+          "description": "产品版本 2.0",
+          "color": "AF7737"
+        }
+      ],
+      "state": "OPEN",
+      "title": "[2.0] 归档中国杯已上线基线并保留与原版的继承关系",
+      "url": "https://github.com/Shuang-su/guangcai/issues/2"
+    },
+    {
+      "body": "中国杯布局调整已由另一任务独立发布，本次将其归档为 **2.1**，在 2.0 导入提交之上保存真实差异。\n\n- 部署 ID：`6ace09922a1b2f8945a7a41c`；发布时间 2026-10-13 18:36（Asia/Shanghai）。\n- 保留花纹法线 4.4、釉层法线 2.4，调整杯碟花纹相位与把手旁饰带宽度。具体来源见原任务 `docs/changes/20261013-fixed-layout/`。\n- 验证：10 项几何测试、WebP 生成、TypeScript / Vite 构建通过；131 个发布文件的 SHA-256 与新部署清单全部一致。\n- 2.0 的精确源码保留在 `codex/import-2.0` 和 commit `b86503cd52fa54758c085786589de0266ba55c13`；2.0 / 2.1 实际发布文件按部署 ID 同时保留。\n- 本次只读取新部署状态并上传 GitHub，没有执行 Netlify 发布或改变仓库关联。\n- 此 PR 以 2.0 导入分支为基线；先审查 1.0，再审查 2.0，最后审查 2.1。编号表示清晰的产品演化，不伪造过去 Git 历史。\n",
+      "labels": [
+        {
+          "id": "LA_kwDOVHOIjs8AAAAC8s8fzA",
+          "name": "version:2.1",
+          "description": "产品版本 2.1",
+          "color": "AF7737"
+        }
+      ],
+      "state": "OPEN",
+      "title": "[2.1] 归档已发布的杯碟布局与饰带宽度修订",
+      "url": "https://github.com/Shuang-su/guangcai/issues/3"
+    }
+  ],
+  "webhooks": 0,
+  "actionsWorkflows": 0,
+  "renderedDocuments": [
+    {
+      "endpoint": "repos/Shuang-su/guangcai/readme",
+      "bytes": 8720,
+      "sha256": "3c25ec94b80a4c94373ddb000e35c55f1c84240b17e25d1fb7442f25a065be9e",
+      "expectedLinkOrVersionPresent": true
+    },
+    {
+      "endpoint": "repos/Shuang-su/guangcai/contents/VERSION_HISTORY.md?ref=codex/import-2.1",
+      "bytes": 6387,
+      "sha256": "428ca9e8d700119f130980d41e8be9b9ebf6f2c74d1cff7e767f02a6a4b34b46",
+      "expectedLinkOrVersionPresent": true
+    }
+  ]
+}

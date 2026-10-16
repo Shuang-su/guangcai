@@ -1,0 +1,34 @@
+{
+  "originalSourceFiles": 18,
+  "chinaSourceFiles": 22,
+  "identicalSourceFiles": [
+    "compare.ts",
+    "geometry/handle.ts",
+    "geometry/parameters.ts",
+    "geometry/ribbon.ts",
+    "geometry/surface.ts",
+    "interaction/calibration.ts",
+    "interaction/reference-views.ts",
+    "studio/contact-shadow.ts",
+    "ui/compare.css"
+  ],
+  "changedSourceFiles": [
+    "geometry/product.ts",
+    "interaction/views.ts",
+    "main.ts",
+    "materials/materials.ts",
+    "materials/render-standard.ts",
+    "studio/studio.ts",
+    "styles/style-manager.ts",
+    "ui/interface.ts",
+    "ui/styles.css"
+  ],
+  "addedChinaSourceFiles": [
+    "studio/local-reflections.ts",
+    "styles/city-artwork.ts",
+    "styles/load-texture.ts",
+    "styles/web-textures.json"
+  ],
+  "removedFromChinaSourceFiles": [],
+  "relationship": "China cup was derived from the original project; two independent directories, common technology stack; no shared package extraction in this archive."
+}
