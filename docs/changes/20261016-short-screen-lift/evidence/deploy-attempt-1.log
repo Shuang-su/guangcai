@@ -1,0 +1,61 @@
+
+> guangcai-china-v4@5.4.2 qa:v5
+> node tools/v5-qa.mjs
+
+PASS page identity, V5.4.2 and meaningful canvas
+PASS no framework overlay
+PASS China default and lazy city loading unchanged
+PASS five presets, two pads, lightness axis and retired controls removed
+PASS city selector folds after choosing and full square is visible
+PASS lightness keyboard minimum changes only the lightness axis
+PASS lightness lower bound retains colour instead of black
+PASS lightness upper bound retains colour instead of white
+PASS one-axis slider has a floating circular selector and live point canvas
+PASS slider activation increases saturation without a white overlay
+PASS one-axis selector settles after pointer release
+PASS real vertical slider drag controls lightness without changing material
+PASS cached lightness field matches HSL colour
+PASS external preset cancels stale native slider edits
+PASS reduced motion keeps slider highlight static without scaling
+Press feedback {"scale":1.81669,"dotChange":true,"classes":"xy-pad is-dragging is-expanded"}
+PASS pressed knob expands and nearby dots animate
+PASS whole colour pad expands while a stationary press keeps its value
+PASS surface stays illuminated during sustained input
+PASS illumination uses colour brightness without a white canvas veil
+PASS surface afterglow briefly softens release
+Spotlight samples {"activationGain":1.54164,"restingGain":1,"baseUnchanged":true}
+PASS activation surface light fades without repainting the base colour field
+PASS release settles the spring and stops dot animation
+PASS reduced motion disables temporal dot animation and knob scaling
+PASS dotted crosshair stays brighter than distant off-axis dots after release
+PASS reference marker stays at the preset origin across gestures
+PASS keyboard focus is elevated and highlighted without an outer frame
+PASS lightness focus keeps its accessible name without an enclosing outline
+PASS preset gold reuses structure and centres material X
+PASS preset green reuses structure and centres material X
+PASS preset red reuses structure and centres material X
+PASS preset purple reuses structure and centres material X
+PASS preset blue reuses structure and centres material X
+PASS beijing material 0,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0,1 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,1 updates fill and preserves colour, relief and gold
+PASS beijing material 1,1 updates fill and preserves colour, relief and gold
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 30000ms exceeded.
+    at settled (/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/guangcai-china-preview/tools/v5-qa.mjs:17:27)
+    at chooseCity (/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/guangcai-china-preview/tools/v5-qa.mjs:24:56)
+    at async file:///Volumes/Prism_%E5%88%9D%E5%8F%B7%E6%A9%9F/%E5%B9%BF%E5%BD%A9/guangcai-v4-workspace/guangcai-china-preview/tools/v5-qa.mjs:123:3 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v26.3.0
+Online browser QA failed

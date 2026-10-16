@@ -1,6 +1,6 @@
 # V5.4.2 短屏幕放大恢复
 
-状态：布局修正与完整本地验证通过，等待本轮已授权的 V5 在线发布。基线 9060bba，分支 codex/short-screen-lift，关联 Issue #25。
+状态：**V5.4.2 已发布，线上回归及归档校验完成，V5.4.1 脉冲逻辑保留**。基线 9060bba，分支 codex/short-screen-lift，关联 Issue #25。
 
 ## 实际修改
 
@@ -31,4 +31,20 @@ Browser plugin not available；采用工程现有 Playwright／Chrome，不新�
 - 7 个保护文件分别对照用户确认可用的 e715ed1 Git 内容和当前工作树，SHA-256 完全一致。
 - 已目视检查短屏幕展开截图：杯子仍可见，色盘／明度／材质的放大空间完整，界面没有新增 Netlify 遮挡。
 
-本轮没有改动或声称消除 Safari 的启动等待；新的真实手机验收仍需用户使用线上版本确认。源码 checkpoint SHA 将由发布回执固定，再随归档记录写回。
+本轮没有改动或声称消除 Safari 的启动等待；新的真实手机验收仍需用户使用线上版本确认。源码 checkpoint 为 `156dc368e357ed84f6731d90abc1dc71bf886b8d`；归档与完成记录由后续独立 checkpoint 保存。
+
+## 在线发布与复核
+
+- 现有站点：https://guangcai-no1-china-v5.netlify.app/ 。
+- 不可变预览：https://6ad20c45a7780e55fedba3d7--guangcai-no1-china-v5.netlify.app/ 。
+- 部署 ID `6ad20c45a7780e55fedba3d7`，源码 `156dc368e357ed84f6731d90abc1dc71bf886b8d`，产品 V5.4.2／5.4.2。
+- 初次上传 4 个变化文件；1088 个发布条目摘要一致，公开标题、release.json、当前 published_deploy 对应同一版本。
+- 线上 135 项短屏幕专项通过：五种视口、三个控件均达到 1.24 倍，原生触感锚点误差最大约 0.19 px，无应用错误。
+- 首次完整线上回归在第 41 项后加载深圳图样时，等待 settled 超过 30 秒，报告没有应用错误；保留原始日志。没有改变代码，在同一部署 ID 上串行重跑，122 项全部通过，第二次无需上传文件。具体超时传输原因未单独测得，不将其描述为已定位的应用 bug。
+- 25 套城市图样、26 个选择、全填色和金线保持，Netlify badge 仍为 false，公开页面没有 HUD 注入。旧 V4、V3、早期中国杯的发布 ID 未变，Git 自动部署仍关闭。
+- 不可变快照位于 deployments/guangcai-no1-china-v5/6ad20c45a7780e55fedba3d7/；1088 个文件逐一复算 SHA-256 匹配。
+- 保留本地 5247 生产预览与原 5236 预览；本轮 5250 开发服务已关闭。没有 push、PR、合并或 tag。
+
+发布沿用工程 Netlify 摘要脚本和只在当前 Node 进程内生效的 DNS 修正，没有更改系统设置或保存凭据。
+
+[线上短屏幕检查](evidence/short-screen-online-qa.json) · [完整线上回归](evidence/online-qa.json) · [脉冲源码保留核对](evidence/haptics-preserved.json) · [公开回读](evidence/production-readback.json) · [归档校验](evidence/archive-validation.json)。
