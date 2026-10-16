@@ -21,3 +21,14 @@ PR #24 两条旧审查意见均为入口统计/位置说明滞后，需与当前
 - 对整合结果相对 main 执行差异检查通过。最初对旧分支检查整个主分支导入时，既有不可变 bundle/引用源码的空白被报告；这些原字节保留，没有为了消除提示改写历史资产。
 
 原始素材目录、旧 H5/早期 Web3D 工程、旧混合 Git、元数据备份、历史快照及版本标签未删除或重写。本轮不重复执行 2026-10-15 的清理脚本，不重新部署线上站点。
+
+## 最终合并与推送
+
+- 资料分支整合 checkpoint：`b3f0eca919676edd1862252d9aa8e4ab40b53abd`，已推送。
+- [PR #24](https://github.com/Shuang-su/guangcai/pull/24) 于 2026-10-16 21:48:08（北京时间）合并，merge commit 为 `77c88772b447aeaee8dae1ed51d3b2063a8b3b05`。远端树与核验后的整合提交完全一致，来源清单 Git blob 与本地一致。
+- 两条历史审查意见已修正并回读为 resolved；[Issue #23](https://github.com/Shuang-su/guangcai/issues/23) 更新当前统计、保留历史阶段说明，已关闭为 COMPLETED。原 Issue 正文保存在 issue-before.json，最终正文及读回结果见 remote-state.json。
+- 主目录已快进至 main；资料分支所有提交均被 main 包含。仅删除本地/远端 codex/source-consolidation 分支名称，恢复 SHA 见 branch-cleanup.json。目前远端只剩 main，未强推或改写任何既有提交。
+- `.codex-work/archive-index/` 目录及其中内容保留，停留在上述合并提交的 detached HEAD，工作树干净。它继续共用同一 Git 对象库，可用于查阅核验记录；没有删除旧工作树或源资料。
+- 9 个既有产品标签不变，两个产品目录和已有部署快照不变。原始素材目录、历史工程、元数据备份及来源清单保持，Git LFS 真实原件经远端下载回读核验。仅清除了本轮创建且已经校验完的下载/还原临时副本。
+
+本次完成记录将单独形成 main 上的文档 checkpoint 并正常推送；最终提交 SHA 以本目录 Git 日志及面向用户回复为准。没有新的产品发布或设备验收声明。

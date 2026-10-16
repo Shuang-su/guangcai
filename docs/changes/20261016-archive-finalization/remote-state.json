@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-16T13:53:26.046903+00:00",
+  "pullRequest": {
+    "body": "原始 PSD、线稿、照片视频、旧工程和清理恢复资料原先分散在多个目录。此 PR 将它们的实际 Git/Git LFS 内容、来源路径和可验证历史证明纳入正式 main，并补齐此前未提交的去重收尾记录。资料与 V5.4.2 最新 main 已整合，两个产品目录和所有已有部署快照保持不变。\n\n- 当前清单为 **3,661 份独立内容、19,534 处来源、11 个 Git LFS 原件**。原文件名、路径、文件摘要及存储位置均可追溯；包含原始花纸 PSD、建筑线稿及制作/验收证据。\n- 保存 9 月 21 日两个原始 commit payload、各 154 个项目文件和 25 个树证明；可在本仓库独立重算原 Git 身份。旧混合仓库的无关项目与完整祖先链不导入，原目录和未引用对象保留，不伪造旧提交。\n- 保存 2026-10-15 去重的 1,494 个内容文件、1,603 份元数据的清单和执行结果；1,494 处内容均有归档恢复路径。此次仅对账和收尾，不重复执行删除。原始素材、历史工程、元数据备份和旧版本记录继续保留。\n- README、ARCHIVE_INDEX、PROJECTS、WORKSPACE_LOCATIONS 同步当前数量、位置及恢复方法；当前产品说明更新到已合并发布的 V5.4.2。历史阶段的“未完成/未发布”按当时事实保留，并补上当前状态入口。\n\n验证（2026-10-16）：\n\n- 3,661 个实际 Git/LFS 内容逐份长度/SHA-256 通过；来源清单没有改写。\n- 从 GitHub 下载到全新临时存储的 11 个 LFS 对象（1,121,252,021 字节）全部通过 SHA-256，确认远端可恢复。\n- 两个旧 Git 快照证明、5 项篡改/遗漏回归、6 项归档核验器回归通过。\n- 实际还原并逐字节核对旧 H5 构建 150 文件/12,570,495 字节；未执行旧脚本。\n- 8 份入口文档的 3,758 个相对链接无缺失。\n- 整合前资料分支 7,045 个、main 11,524 个受保护的归档/历史/部署文件，其模式与 Git blob 全部保留。两个应用目录与 main 的 219ee8b 完全一致。\n- 既有 12 个未提交文件的原字节均已保存在 354f07f；整合 checkpoint 为 b3f0eca。完成证据：docs/changes/20261016-archive-finalization/。\n\n两个旧审查意见涉及过期数量及位置说明，已按当前清单修正。应用未改变，本轮未重新运行产品构建、浏览器或真机验收。当前线上 V5.4.2、已有版本标签和 Git 未绑定自动部署的方式保持；本 PR 不发布站点。Refs #23。\n",
+    "headRefOid": "b3f0eca919676edd1862252d9aa8e4ab40b53abd",
+    "mergeCommit": {
+      "oid": "77c88772b447aeaee8dae1ed51d3b2063a8b3b05"
+    },
+    "mergedAt": "2026-10-16T13:48:08Z",
+    "number": 24,
+    "state": "MERGED",
+    "url": "https://github.com/Shuang-su/guangcai/pull/24"
+  },
+  "issue": {
+    "body": "根据用户确认，补齐原始 PSD、线稿、会话素材、旧工作区与构建的 Git 记录，并整理到初号機盘。此次资料检查与收尾已完成；PR #24 已合并至 main，merge commit 为 `77c88772b447aeaee8dae1ed51d3b2063a8b3b05`。\n\n当前来源清单包含 **3,661 份独立内容、19,534 处来源、11 个 Git LFS 原件**。原文件名、原路径和恢复映射均保留；原始素材、历史工程、旧混合 Git、元数据备份及版本标签继续保留。\n\n- [x] 实际 Git/LFS 字节逐份核对长度与 SHA-256；原始花纸 PSD、建筑线稿和制作/验收内容可恢复。\n- [x] 旧北京工作区 3,593 个历史云占位已核验完成，来源清单中剩余待下载项为 0。\n- [x] 9 月 21 日两个原 commit payload、各 154 个项目文件/25 个树证明通过原 Git 身份验证；5 项篡改/遗漏测试通过。\n- [x] 从 GitHub 下载至全新临时存储的全部 11 份 LFS 原件，共 1,121,252,021 字节，逐份 SHA-256 与清单一致。\n- [x] 2026-10-15 去重执行记录完成提交：1,494 内容和 1,603 元数据清单完整对账，内容均有恢复来源；元数据备份和两张保留图片摘要一致。本轮未重复删除。\n- [x] 实际还原历史 H5 构建 150 文件/12,570,495 字节并核对 SHA-256，未运行历史脚本。\n- [x] 6 项归档核验器测试通过；8 份入口文档的 3,758 个相对链接无缺失。\n- [x] README、ARCHIVE_INDEX、PROJECTS、WORKSPACE_LOCATIONS 和版本入口同步当前状态；PR 中两个过期统计/位置说明意见已解决。\n- [x] 整合 V5.4.2 main 并合并 PR #24。两条分支的所有既有归档/历史/部署文件保留，两个产品目录与整合前 main 完全一致。\n\n之前各阶段的盘点数量、只读查重、迁移及磁盘回收测量继续保留在原记录中：旧工作区迁移约 12.2 GiB，2026-10-15 后续去重约 1.47 GiB，不能混作本轮回收量。原 22 个附件按用户确认区分 18 项移动、1 份无水印替代版、3 张放弃追查截图，不宣称失去的旧版本字节被恢复。\n\n旧混合仓库的无关项目、72 个未引用 blob 和原目录没有删除；本归档不是完整混合父链导入。H5 保持历史非 Git 工程归档身份，不虚构其原本没有的提交。V5 版本链及旧 PR #22 已在 PR #26 合并，本资料任务不重新发布站点、不连接 Git 自动部署、不移动已有标签。\n\n当前核验、恢复及合并记录：`docs/changes/20261016-archive-finalization/`。历史记录：`docs/changes/20261014-source-consolidation/`、`docs/changes/20261014-workspace-cleanup/`、`docs/changes/20261015-legacy-git-completion/`、`docs/changes/20261015-attachment-resolution-and-duplicates/`、`docs/changes/20261015-verified-dedup-cleanup/`。\n",
+    "number": 23,
+    "state": "CLOSED",
+    "stateReason": "COMPLETED",
+    "url": "https://github.com/Shuang-su/guangcai/issues/23"
+  },
+  "reviewThreads": [
+    {
+      "id": "PRRT_kwDOVHOIjs6sOlFq",
+      "isResolved": true,
+      "isOutdated": true
+    },
+    {
+      "id": "PRRT_kwDOVHOIjs6sRzJI",
+      "isResolved": true,
+      "isOutdated": true
+    }
+  ],
+  "remainingRemoteHeads": [
+    "77c88772b447aeaee8dae1ed51d3b2063a8b3b05\trefs/heads/main"
+  ],
+  "tagsUnchanged": true,
+  "archiveWorktreeRetainedClean": true,
+  "originalMaterialDeletionPerformed": false,
+  "deploymentPerformed": false
+}
