@@ -6,7 +6,7 @@ export const palettes = {
  blue:{name:'蓝',dark:'#124d80',light:'#75b4d0',material:0},
 } as const;
 export type Palette=keyof typeof palettes;
-export interface Appearance {preset:Palette;hue:number;saturation:number;lightness:number;material:number;relief:number}
+export interface Appearance {preset:Palette;hue:number;saturation:number;lightness:number;material:number;materialX?:number;relief:number}
 const clamp=(x:number,a=0,b=1)=>Math.min(b,Math.max(a,x));
 export function hexHsl(hex:string):[number,number,number]{
  const [r,g,b]=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255),max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min,l=(max+min)/2;
@@ -21,16 +21,25 @@ export function hslRgb(h:number,s:number,l:number):[number,number,number]{
 }
 export function presetAppearance(preset:Palette):Appearance{
  const [hue,saturation,lightness]=hexHsl(palettes[preset].dark);
- return {preset,hue,saturation,lightness,material:palettes[preset].material,relief:1};
+ return {preset,hue,saturation,lightness,material:palettes[preset].material,materialX:.5,relief:1};
 }
 export function normalizeAppearance(value:Appearance):Appearance{
  if(!value||!Object.hasOwn(palettes,value.preset))throw new Error('未知配色预设');
  for(const key of ['hue','saturation','lightness','material','relief'] as const)if(!Number.isFinite(value[key]))throw new Error('创作参数必须为有限数值');
- return {...value,hue:clamp(value.hue,0,360),saturation:clamp(value.saturation,0,100),lightness:clamp(value.lightness,0,100),material:clamp(value.material),relief:clamp(value.relief,0,2)};
+ const materialX=value.materialX??.5;
+ if(!Number.isFinite(materialX))throw new Error('材质位置必须为有限数值');
+ return {...value,hue:clamp(value.hue,0,360),saturation:clamp(value.saturation,0,100),lightness:clamp(value.lightness,0,100),material:clamp(value.material),materialX:clamp(materialX),relief:clamp(value.relief,0,2)};
 }
 export function appearanceColors(a:Appearance):{dark:[number,number,number];light:[number,number,number]}{
  const p=palettes[a.preset],base=hexHsl(p.dark),light=hexHsl(p.light);
  return {dark:hslRgb(a.hue,a.saturation,a.lightness),light:hslRgb(a.hue+light[0]-base[0],a.saturation+light[1]-base[1],a.lightness+light[2]-base[2])};
 }
-export function materialAt(t:number){return {metalness:t,roughness:.31+(72/255-.31)*t,clearcoat:191/255+(26/255-191/255)*t};}
+/** The centre column reproduces every legacy material value exactly. */
+export function materialAt(t:number,x=.5){
+ if(!Number.isFinite(t)||!Number.isFinite(x))throw new Error('材质位置必须为有限数值');
+ t=clamp(t);x=clamp(x);
+ const roughness=.31+(72/255-.31)*t,clearcoat=191/255+(26/255-191/255)*t;
+ const fromCentre=(base:number,left:number,right:number)=>x<.5?base+(left-base)*(1-2*x):base+(right-base)*(2*x-1);
+ return {metalness:t,roughness:fromCentre(roughness,.75,.08),clearcoat:fromCentre(clearcoat,0,1)};
+}
 export const GOLD_LINE=Object.freeze({color:'#dcb251',metalness:1,roughness:.23,clearcoat:26/255});

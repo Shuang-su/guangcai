@@ -29,7 +29,7 @@ export function normalizeSelection(previous:Selection,patch:Partial<Selection>):
  if(isPilot(v.theme)){
   const p=next.variant.slice(v.theme.length+1) as Palette;
   next.appearance=normalizeAppearance(patch.appearance??(patch.variant?presetAppearance(p):previous.appearance??presetAppearance(p)));
-  if(patch.finish&&!patch.appearance)next.appearance={...next.appearance,material:next.finish==='metal'?1:0};
+  if(patch.finish&&!patch.appearance)next.appearance={...next.appearance,material:next.finish==='metal'?1:0,materialX:.5};
   next.finish=next.appearance.material===1?'metal':'enamel';
  }else if(next.appearance)next.appearance=normalizeAppearance(next.appearance);
  return next;
