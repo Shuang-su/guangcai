@@ -39,10 +39,10 @@ try{
  let exited=false;server.on('exit',()=>exited=true);server.stderr.on('data',b=>process.stderr.write(b));
  for(let i=0;i<50;i++){if(exited)throw new Error('Preview server exited');try{if((await fetch(url)).ok)break;}catch{}await new Promise(r=>setTimeout(r,200));if(i===49)throw new Error('Preview server unavailable');}
  await run('local browser QA','npm',['run','qa:v5'],{QA_URL:url,QA_OUT:path.join(work,'local-qa')});
- const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json'),'utf8'));if(qa.errors.length||qa.checks.length<45)throw new Error('Incomplete browser QA');
+ const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json'),'utf8'));if(qa.errors.length||qa.checks.length<100||spec.cities.some(c=>!qa.checks.includes(`${c.id} retains creation state, own maps and bounded cache`)))throw new Error('Incomplete browser QA');
  report.browserChecks=qa.checks.length;report.buildFiles={};
  for(const f of await files(cfg.build))report.buildFiles[f]=digest(await readFile(path.join(cfg.build,f)));
- report.authorityHashes={};for(const f of [cfg.review,'tools/v5-pipeline.mjs','tools/deploy-v5.mjs','tools/compile-city-v5.py','tools/test_city_v5_assets.py','tools/v5-pipeline.json','assets/masters/v5/cities.json',...spec.cities.flatMap(c=>[c.source,`assets/masters/v5/${c.id}.svg`])])report.authorityHashes[f]=digest(await readFile(f));
- report.status='passed';await save();console.log(`Prepared ${Object.keys(report.buildFiles).length} files. Commit the reviewed source, then run npm run deploy:v5.`);
+ report.authorityHashes={};for(const f of [cfg.review,'package.json','package-lock.json','index.html',...(await files('src')).map(f=>'src/'+f),'tools/v5-qa.mjs','tools/v5-pipeline.mjs','tools/deploy-v5.mjs','tools/compile-city-v5.py','tools/city_review.py','tools/test_city_v5_assets.py','tools/v5-pipeline.json','assets/masters/v5/cities.json',...spec.cities.flatMap(c=>[c.source,`assets/masters/v5/${c.id}.svg`])])report.authorityHashes[f]=digest(await readFile(f));
+ report.status='passed';await save();console.log(`Prepared ${Object.keys(report.buildFiles).length} files. Local validation complete. Publishing remains a separate authorized action.`);
 }catch(e){report.status='failed';report.error=e.message;await save();process.exitCode=1;console.error(e.message);}
 finally{if(server&&!server.killed)server.kill('SIGTERM');}

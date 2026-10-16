@@ -11,9 +11,10 @@ test('original China pack and all legacy China palettes retain their interface',
  }
  assert.equal(artworkPack({...defaultSelection,text:'none'},gold).label?.hidden,true);
 });
-test('all thirteen V5 patterns expose five presets and share structural channels',()=>{
- const ids=Object.keys(themes).filter(id=>id!=='china');assert.equal(ids.length,13);
+test('all registered V5 patterns expose five presets and share structural channels',()=>{
+ const ids=Object.keys(themes).filter(id=>id!=='china');assert.equal(ids.length,27);
  assert.equal(themes['beijing-2'].name,'北京 2');assert.equal(themes['shenzhen-2'].name,'深圳 2');
+ assert.equal(themes['tianjin-2'].name,'天津 2');assert.equal(themes['qingdao-2'].name,'青岛 2');
  for(const theme of ids){
   const city=variants.filter(v=>v.theme===theme);assert.equal(city.length,5);
   const packs=city.map(v=>artworkPack({variant:v.id,finish:'enamel',text:'name'},gold,'/preview/'));

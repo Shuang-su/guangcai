@@ -84,3 +84,9 @@ Netlify CLI 末尾返回 422，但服务端显示对应命名部署 ready；逐�
 新增 11 张用户原稿；北京 2／深圳 2 与旧款并列保留，13 个城市图样加中国旧款。新稿保持原构图；固定金线、五色、HSL、材质与法线浮雕共用既有参数。8 项素材、24 项应用和本地／线上各 61 项浏览器检查通过。原始文件与旧两城哈希均核对，974 个发布文件摘要匹配。
 
 [在线 V5.1](https://guangcai-no1-china-v5.netlify.app) · [本次不可变预览](https://6ad1932bbe33ebee7d4bc174--guangcai-no1-china-v5.netlify.app) · [13 组原稿与填色对照](https://guangcai-no1-china-v5.netlify.app/review/v5/) · [完整记录](docs/changes/20261016-v5-eleven-city/completion.md)。源码分支 `codex/city-v5-eleven-source`；未 push／PR／合并／tag，旧站部署不变。浏览器手机模拟不等于真实设备或工厂验收。
+
+## 5.1 后续本地开发：14 张透明黑线城市稿（2026-10-16，未发布）
+
+基于最新二维调色／材质、HDR 与触感实现 `523b49f`，在 `codex/city-v5-fourteen-black` 增加 12 座新城市及天津 2／青岛 2，共 23 座城市、27 套城市图样，加中国旧款共 28 个选项。本批按用户要求统一填满闭合区域，不额外处理镂空；金线固定，已有 13 套图样继续保留。
+
+9 项素材、34 项应用、124 项浏览器检查及 14 张新稿杯面目视检查通过；原稿、旧资产和最新前端源码摘要核对成功。本轮仅本地实施与 checkpoint，沿用 V5.1／5.1.0 编号，未更新上方线上部署。[完整记录与本地预览](docs/changes/20261016-v5-fourteen-black/completion.md)。

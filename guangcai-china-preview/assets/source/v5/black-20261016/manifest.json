@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-16",
+  "baseCommit": "523b49f",
+  "sourceDirectory": "/Volumes/Prism_初号機/广彩/素材原件/14个城市线稿黑色",
+  "origin": "14 transparent black line PNGs supplied by the user; original bytes preserved",
+  "decision": "User explicitly requested full enclosed fill without semantic cutouts. Add all fourteen patterns; retain existing thirteen. Independent Tianjin 2 and Qingdao 2 follow the earlier same-city-variant rule. Continue the latest XY/HDR/haptic local implementation.",
+  "files": [
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "originalFile": "乌鲁木齐@2x.png",
+      "source": "assets/source/v5/black-20261016/urumqi.png",
+      "sha256": "1100a5f612874b2ceb386c7f0a56d09a566f4999331763169710bb68a93e7a9a",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "originalFile": "南昌@2x.png",
+      "source": "assets/source/v5/black-20261016/nanchang.png",
+      "sha256": "7fdb5bf6e1b89190061b1cebb88fc3642451eb74c3d4de9bc9eac803c848d33b",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "originalFile": "厦门@2x.png",
+      "source": "assets/source/v5/black-20261016/xiamen.png",
+      "sha256": "a21315d69155c3317900c44eade62569711d1046b8024a49d2cfe1b99f5488b8",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "originalFile": "呼和浩特@2x.png",
+      "source": "assets/source/v5/black-20261016/hohhot.png",
+      "sha256": "1437b5b496e2af16904908ffc960f82a98fe14d3712845a607ec948ec7a8acd4",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "originalFile": "哈尔滨@2x.png",
+      "source": "assets/source/v5/black-20261016/harbin.png",
+      "sha256": "d9abb1a940af2327c21edd9feba88aca1b0dceb518fe14856ef899e193fc3a7d",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "tianjin-2",
+      "name": "天津",
+      "originalFile": "天津@2x.png",
+      "source": "assets/source/v5/black-20261016/tianjin-2.png",
+      "sha256": "d0649c9c90208fb7711b86753356489aa6ac33c6d8420c2b623d25f809a90a56",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "originalFile": "成都@2x.png",
+      "source": "assets/source/v5/black-20261016/chengdu.png",
+      "sha256": "473e8b5cc79d7bda6e7735d5657397496478b16f2494fa1b9b56084d139010dd",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "originalFile": "景德镇@2x.png",
+      "source": "assets/source/v5/black-20261016/jingdezhen.png",
+      "sha256": "0db10ff61bc6701b0855c41b7d4ea57efb38871f4c83b97dfd669da3ceb608ed",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "originalFile": "沈阳@2x.png",
+      "source": "assets/source/v5/black-20261016/shenyang.png",
+      "sha256": "725e094219551ebfeba23fc31f6bd7b557131629b7d3235a16b3beba38f3d010",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "originalFile": "石家庄@2x.png",
+      "source": "assets/source/v5/black-20261016/shijiazhuang.png",
+      "sha256": "4bf5645fa1108683e676fb9aad7e12e3efdba8ead581ba7ca36460149926e0e7",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "originalFile": "郑州@2x.png",
+      "source": "assets/source/v5/black-20261016/zhengzhou.png",
+      "sha256": "c3e30aec791a7d6c79713e564c7232f9c33081fb5f9936eee7fafebe3f44e200",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "originalFile": "重庆@2x.png",
+      "source": "assets/source/v5/black-20261016/chongqing.png",
+      "sha256": "1cc27db4753a38a3989779270ca16053a4a3e3c41c0b1546b3cb9707dd4e49a8",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "originalFile": "长春@2x.png",
+      "source": "assets/source/v5/black-20261016/changchun.png",
+      "sha256": "cdf89fb3c7f85edfaf14dd1231b664b3105d9ef9809e3b8d7b093255ed9ae2af",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    },
+    {
+      "id": "qingdao-2",
+      "name": "青岛",
+      "originalFile": "青岛@2x.png",
+      "source": "assets/source/v5/black-20261016/qingdao-2.png",
+      "sha256": "6680813b73ae554d9a2b04bcde9f923713384d880b014908a1397d955b30ba60",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "0-255 line coverage; RGB all zero"
+    }
+  ],
+  "preservedFiles": {
+    "assets/source/v5/generated-detail/beijing-white.png": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+    "assets/masters/v5/beijing.svg": "1d6b20b6c8779fe15f36fc754552d4b5acfdb7874806c70143f5074e2f6b1d08",
+    "assets/masters/v5/beijing-height16.png": "aa9c567a09c7293dad12fc9bcce58ad48a1dfb23435b95afc6e53c6ff344737f",
+    "public/cities/v5/beijing-structure.webp": "448d36ddb09b33ff68e08ffd57ee5ce85cc60642702559e3f288e48c1710bada",
+    "public/cities/v5/beijing-normal.hfn.gz": "9f59a505eb6b678dc51f34ce42cb83427e975939be3cbd32a37cef00a41b5111",
+    "public/cities/v5/beijing-label.webp": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1",
+    "public/cities/v5/beijing-thumb.webp": "7b0a90ce53055162fa02ad875c0d5150daa12dc7a2c226c35148c1010ee29ad9",
+    "public/cities/v5/beijing-2-structure.webp": "d145a3047493020aa0624fcb80377bdaa1d08587a1ac9b987423c0e2c2fa4e61",
+    "public/cities/v5/beijing-2-normal.hfn.gz": "36d0b196daaa7b64625d4d5d5a6bcdff7969f800ea980dfeddc567419559da66",
+    "public/cities/v5/beijing-2-label.webp": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1",
+    "public/cities/v5/beijing-2-thumb.webp": "fa03b6c2f3f932c574b6bf7dff04274d06f4a8ecfc4fadba7c6d5e4e4be0df3d",
+    "assets/source/v5/generated-detail/shenzhen-white.png": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+    "assets/masters/v5/shenzhen.svg": "11b1a91ce28cfe6a7618d6ecc766709299685f4fbeb12122356442f440fda831",
+    "assets/masters/v5/shenzhen-height16.png": "80d6b5bd09303f0475a8012d5b8a39aa1fc2015922da4468402e8f91b254d351",
+    "public/cities/v5/shenzhen-structure.webp": "e39970e19e3a90777b8e5c8ef6e66fc0edaeb28b47205a65659917570acddf18",
+    "public/cities/v5/shenzhen-normal.hfn.gz": "ff973d1ceb3be85592ff85044d03c27d803a7d38c00ef9f3c9a327870fffc36c",
+    "public/cities/v5/shenzhen-label.webp": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92",
+    "public/cities/v5/shenzhen-thumb.webp": "5fd4a4c355f1dacacb3feb549a5cd4dc0c2835f5118f076f5eca9ec09988e8a8",
+    "public/cities/v5/shenzhen-2-structure.webp": "59056eaad02d214827778fa8cb2c800bf40b3fcc611511bc040950dc5e7c1635",
+    "public/cities/v5/shenzhen-2-normal.hfn.gz": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133",
+    "public/cities/v5/shenzhen-2-label.webp": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92",
+    "public/cities/v5/shenzhen-2-thumb.webp": "6317e79c7ebf48eb28ba67e111899f12ae316a3049001c8ec54ad9e9d4ac4b4a",
+    "assets/source/v5/user-20261016/beijing-2.png": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+    "assets/masters/v5/beijing-2.svg": "b6fba1a5c976cb1f02bbdefbaf5463ef782305f66ed5aeb37f0ffe2ab92a0210",
+    "assets/masters/v5/beijing-2-height16.png": "11e8034ee3b90e8f31740b479143f18983cbb3c20c53f4cced216b09465518e5",
+    "assets/source/v5/user-20261016/shanghai.png": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+    "assets/masters/v5/shanghai.svg": "80f4d5330fb91552e6934737ecf729ac050ef9de61faac3e5a1c38cf14b7660b",
+    "assets/masters/v5/shanghai-height16.png": "6ad36cedf1a8a27d731d372be1b721ef95bce1209f934001f17a2e236ed26cd9",
+    "public/cities/v5/shanghai-structure.webp": "f88c6d8b4f799566dafb4e28178a770d5735a753a7ceb8e8806c822b3c15e559",
+    "public/cities/v5/shanghai-normal.hfn.gz": "11e201d8e00b6dc52a0c2fc14f6df06339aa0bc8a85e6e0afaea563fce1e6b60",
+    "public/cities/v5/shanghai-label.webp": "7f87795b607f686d2a859ccd79a3814707eb2e6807aadafbb3d5e4e9e4e38c69",
+    "public/cities/v5/shanghai-thumb.webp": "4b5f136c6a61d0c5af2d405148e72719c6ae8611143ba6ae59d09f101812db06",
+    "assets/source/v5/user-20261016/guangzhou.png": "a3e37412d771df519d7f7d8eaabbf53bf4575ab464b1d3a73e999bd7e7aac5b5",
+    "assets/masters/v5/guangzhou.svg": "ad940a4016a2c1466f90103ee5fcbf52ff098fe90b488f0ff87e27da63bc84ac",
+    "assets/masters/v5/guangzhou-height16.png": "b15a8c35cf78282eb0bce838d3030e5e2a23738906553968e4f57dc253ea4bc9",
+    "public/cities/v5/guangzhou-structure.webp": "87c7875e1ac1c8ea6a8e877b09f3d10cc611d7b9499968793f2202122f932f4d",
+    "public/cities/v5/guangzhou-normal.hfn.gz": "b6b58e85768e4f0cf5d35ad6d2cb178d39eee80ec7f4cd499498a7df796236f3",
+    "public/cities/v5/guangzhou-label.webp": "93c2ad7407eac60fbe48fcc44ffddf937a946eb4e4281230753e49a992b2a6dc",
+    "public/cities/v5/guangzhou-thumb.webp": "1c9be9080598caedeb30c9cb1ddf28af8563437c0710ab02649fb95f05ebf1a2",
+    "assets/source/v5/user-20261016/tianjin.png": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+    "assets/masters/v5/tianjin.svg": "deb8c5e0dd1bd81c6781baef35a74f6592a38d65f64c64ec1371a4a3ea8e6fc4",
+    "assets/masters/v5/tianjin-height16.png": "1a6315ec4c36fa2cc34a5dc8fd169e0446a21edef45ef89f3afaaf825e49950b",
+    "public/cities/v5/tianjin-structure.webp": "0f5a929bf2998ea33afc0ac2e7da0cae51ca92aa72de1d0a387f186cbe8aeb5d",
+    "public/cities/v5/tianjin-normal.hfn.gz": "4dab3f9766a90e3d0764942d1eba35078a796e9f5d90a8ecdaca8460280341f3",
+    "public/cities/v5/tianjin-label.webp": "787b60d4635f4b4ddb02ab3b9fb5c5d3163c484c91a98de939a63670fe17c9d3",
+    "public/cities/v5/tianjin-thumb.webp": "08886577c1c5617f69432c1ac3aa4c3ce77bc57bfbf6bf7e596b44a06caae534",
+    "assets/source/v5/user-20261016/qingdao.png": "93683bbcbd26e73c0856c88e418a002b55328cec6dea186f9c13f462efea2f82",
+    "assets/masters/v5/qingdao.svg": "1b5e4034788745d82919161eb8052836ebe0820e421c3067d9a0be86d3cd54d2",
+    "assets/masters/v5/qingdao-height16.png": "3d8a803b45d29512d7ec6d1f4bbaa4ba2513eb14c8d6faec2a3359e363803294",
+    "public/cities/v5/qingdao-structure.webp": "6d912f51e592d176cc4509e71848fed788601dfb2790d3a6f157b4d28a805bdd",
+    "public/cities/v5/qingdao-normal.hfn.gz": "178746203ee0c543b36480d4a98808860865cb2f986a89f9358fc1262610d788",
+    "public/cities/v5/qingdao-label.webp": "9b7dc5c144bbabad98a5cf65d346ea650727af2759419e0457227c9605b85e19",
+    "public/cities/v5/qingdao-thumb.webp": "c89f19026d7ec0e13e495db136c1c7b274a63ebaf18a81a0b2f09e853e77c8d7",
+    "assets/source/v5/user-20261016/taiyuan.png": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+    "assets/masters/v5/taiyuan.svg": "a1594fbb6c53e75d3cc95451738b50b0e23d71b88ffba36f27d79d8cf08d801d",
+    "assets/masters/v5/taiyuan-height16.png": "44b03b9fc831b74940fd96dab70c7934a03dc3f20415e35de4d2c1fc713fe8b4",
+    "public/cities/v5/taiyuan-structure.webp": "b96860c4a47c2d257df68058856cacb9a8255303bdb8763d5694d361efe77625",
+    "public/cities/v5/taiyuan-normal.hfn.gz": "9c10b1b39119a4e898e328e6d3714355954e6a3d56c98ae61ca7f5b07795366b",
+    "public/cities/v5/taiyuan-label.webp": "9ae7837d3eaa4f5a5158cbbd49349750cb7125381f6f1df5e706efba99cdf7c6",
+    "public/cities/v5/taiyuan-thumb.webp": "3edf155dd8f540b2a1c0f34652e6d45006ffd31e5175a895ec1da8fa17f568d4",
+    "assets/source/v5/user-20261016/hangzhou.png": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+    "assets/masters/v5/hangzhou.svg": "7b59f345146a39cddb1a39cb3640035fc7654c5f53943b1940a17428104512be",
+    "assets/masters/v5/hangzhou-height16.png": "f5a5151b47e241e4958789b1ae3faa826ea2abd2f09dddb461cd33120d632013",
+    "public/cities/v5/hangzhou-structure.webp": "7fd575ac5dd0915a018bae4c6d4afe847173aa9007bd586dfd8a82a11b24b172",
+    "public/cities/v5/hangzhou-normal.hfn.gz": "9ad9c839a1d96d776ebe698bc5cae177c09104451d3ed960f93b6883e7849e24",
+    "public/cities/v5/hangzhou-label.webp": "d02b776016ed472c36ff271c2060a00b3e488a8474c7fa005bc1eed110091a75",
+    "public/cities/v5/hangzhou-thumb.webp": "a3b0dfeae0620bffabd588b030c240d1f58166e2bb3de149fad33c594fa09f12",
+    "assets/source/v5/user-20261016/xian.png": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+    "assets/masters/v5/xian.svg": "68d0ee0478f981a0d7c16ec0cc498603bdaac3736e9aa0bcd1b70448eee371e1",
+    "assets/masters/v5/xian-height16.png": "ae5b7db5ba3815a58e9361d42c8aac89b5073c9807d8214dbaecac19b52e88ad",
+    "public/cities/v5/xian-structure.webp": "124e63cf8b2ff6b5545f9e6de92a6203fc3b25bf26dec713a46b288224944763",
+    "public/cities/v5/xian-normal.hfn.gz": "cf3e00ddd05f7daccaca7cc7dd12673bc384402e496fc48af3c5c10cd5281b39",
+    "public/cities/v5/xian-label.webp": "8d2308d7548d1eb35850148636505f80f2f4d1a78dc9c57be0082fe030bc10b2",
+    "public/cities/v5/xian-thumb.webp": "4f89515384f83be371cd0dc2a5d7cf460c39ad023602c56a0d4729963288c28a",
+    "assets/source/v5/user-20261016/shenzhen-2.png": "757c96e1b6c5490a3394435ac29ef685df6750a20f706686e9cf59675a7dcf88",
+    "assets/masters/v5/shenzhen-2.svg": "8c3c8aa3746f2a56343050be798d5f3e4009e2693d1ce2d0524af6ec64deab9b",
+    "assets/masters/v5/shenzhen-2-height16.png": "514ae4731215c55a69f6c7edb226285808816cbf3b1ff90e9cc438312ade8fef",
+    "assets/source/v5/user-20261016/wuhan.png": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+    "assets/masters/v5/wuhan.svg": "47d6406c1277f984f5707a4bffd6767dbd3c34ec4649d7aeea1784095bb01e1d",
+    "assets/masters/v5/wuhan-height16.png": "2e35651ff249f8a16e5f29c7504cc9e3dff9aad19a62e3dba3f413dd77f22cfc",
+    "public/cities/v5/wuhan-structure.webp": "b960221c4aee896308a684bdc491388034f136c8a923fb1064b730689f5b14d6",
+    "public/cities/v5/wuhan-normal.hfn.gz": "698824a2455d06ac03ac92f24244a298e3b476ee67c6e8629abd7cff149b123c",
+    "public/cities/v5/wuhan-label.webp": "7f63e09d99b138491459c3439c2fe5fbe71e13039ac5f0a1ee119016e4bd8fed",
+    "public/cities/v5/wuhan-thumb.webp": "ab72a3a7297abcd0574f97b3c2aa1b4429a3a583bb5d3193600f894b1ed00a16",
+    "assets/source/v5/user-20261016/nanjing.png": "0d3ebe08be354a85a2d6716809bed9bfd93f43c213c9b62a177a369bf10c73ba",
+    "assets/masters/v5/nanjing.svg": "e135dc5f29e867fb7d3aff1c2a28658796613ed0014d40b66eb89a92fc410923",
+    "assets/masters/v5/nanjing-height16.png": "97f885c0b0169b1413da40bf193bf202ea79d84d3a6a1b1abc619b3815e35282",
+    "public/cities/v5/nanjing-structure.webp": "0999cb152f9ed1824fb85f55bbb2a9fbd02b4691602e4bd2c6b291f9b74d564f",
+    "public/cities/v5/nanjing-normal.hfn.gz": "337801d125a702a3285595243e8062b0789352b578935ba2da9e0e4c28e956c8",
+    "public/cities/v5/nanjing-label.webp": "70e5ea5fa5938f32af77980e231bc53d62841927cf792a37215e458b89c1207b",
+    "public/cities/v5/nanjing-thumb.webp": "22f2261981c190e12cd4af175c62a3c6272f3d2b513adb88604d13634e330295",
+    "src/compare.ts": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3",
+    "src/main.ts": "4fd144d8f77d5de82cdaf0ce4888f454f14e9985afe7834845647dd421b09d7d",
+    "src/geometry/handle.ts": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e",
+    "src/geometry/parameters.ts": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001",
+    "src/geometry/product.ts": "ea70aabb89a35b5c06fbb325a3be82eeb262e4d164d93df2ac9173714d198c3f",
+    "src/geometry/ribbon.ts": "a2001b2b21a7c4dc136bb6336c0b3c25d8d56ad641f72acc89df984d0b317ef7",
+    "src/geometry/surface.ts": "c17e39ae8626d2cc5d16950fbff3107879fb08f024bc921622732f1289f76793",
+    "src/interaction/calibration.ts": "ac15652bd6540be9889cb8816ec12f530b24f5703e5653b4235d6be480b9eb49",
+    "src/interaction/reference-views.ts": "544ead04d30ad56af7c2b213fa327b28e72b1cc12feda7bf32f3d452e7b682d4",
+    "src/interaction/views.ts": "ecaa29d59b9da2995743ec046fb13fe791db090acdea051407db41cdf2a7e1b0",
+    "src/interaction/authoring-framing.ts": "d95c1b84b8b322a71db371211b318499bbf8bf3e6c7f790f4124d822d5ebf576",
+    "src/materials/fixed-atlas.ts": "91f07e2e5736d777bc0eaff5d02be094c1dde0feb95def2af774edd22864b6bb",
+    "src/materials/materials.ts": "46dc9f610d33daa9f250e12a067a73d9bd2ad49e0154573a3901cd957c49f901",
+    "src/materials/porcelain.ts": "4a395812d3ded90a12004d5c9473a67b85084a6a13dc1a4fd9fcc8732ec7cff5",
+    "src/materials/render-standard.ts": "338fe1972e96b7aa19375ac5d323330cedd422e2d3e6aa61eb27b3b96e86a18f",
+    "src/materials/fixed-gold-ground.ts": "775c736aad62a421a9ea9895044a185870adf380ca7cd80eccd6583c95eb1621",
+    "src/materials/city-parametric.ts": "fe4360914864611ff5177402f3bdbaab744825d2dcc39dc9101ca7eb2e1922a8",
+    "src/studio/contact-shadow.ts": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0",
+    "src/studio/lid-reflections.ts": "0cbe18cbd5e513d4c1133a1e2e17e005d300739a8f29fe025fd5fd3f2dbd4bc3",
+    "src/studio/local-reflections.ts": "e7c6bf3ea955028c2057663849b20843b3ffd23b9e420d0de2292e0dc3eab5a4",
+    "src/studio/studio.ts": "7758fa7f4d5c3a9932a882b7dbce9725589b691fdc785c8c460f6cd73f088fda",
+    "src/styles/city-artwork.ts": "597a411255388773ddf7a7476eed4381a400e64b99da2f02e2da567c8af09209",
+    "src/styles/fixed-layout.json": "8d145fe78cbd9cab56f954c1d6ca1c6a038f4f949baff85c3cc0e2ccfa7ed4e0",
+    "src/styles/fixed-rendering.json": "5d3522631aaf66f39d4477bf57b21c0ad2615b538c8462235b47f25a2a747259",
+    "src/styles/float-normal.ts": "95faf3c04d88b990eae029d8b3148aab7a7cb6d4e5a2a165b7c24890dbcd6394",
+    "src/styles/load-texture.ts": "23662391bbc40ffaee24e01a66421417ff23759349b6803c1abe918e78a03467",
+    "src/styles/style-manager.ts": "91d30dbd6226bd3d0c1499e784fce1ce3fa9ec50a595e9f970e50baf5981a946",
+    "src/styles/web-textures.json": "5dbf543964bece05bcca0602c0e39ea3504ca2eecd5885c2daf93aa6bf58a0f0",
+    "src/styles/city-selection.ts": "9a2222e8c1448bf041b061be7485c2f80b6890443e6541349b52a61c0e747330",
+    "src/styles/city-catalog.json": "727d23c3934a1e5deb9906d6ec061c3d643f552c56e1ea1da83a7d2a13e1bfff",
+    "src/styles/city-appearance.ts": "1c9ede8cb261f81df0c3e063afb693175afdfa0dbe48f32429e56cf62480f845",
+    "src/styles/xy-mapping.ts": "787e120d4e6723e10fdf6016789d1bc3e122bd5e0c0eb9222765ad82d00eb80c",
+    "src/ui/background-asset.json": "cb7aa60ef126b17289d4a86a8174f8f21b26dd0e636f62c305111ff2261be7b3",
+    "src/ui/background.ts": "45fcef1060057c5ee70cd12be8472d13353b43ea0bd0c58551185c32f85686b3",
+    "src/ui/compare.css": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5",
+    "src/ui/interface.ts": "b0a420f13a6f2c3e79c9481a7176c249fbf685c85463f84374085ded97983a9a",
+    "src/ui/styles.css": "1bbc7935bb411d8ee35dc4d000940cdee881697c4b2db1401128db22a5275a8b",
+    "src/ui/artwork-panel.ts": "bf7406ef934426d2831f68e73da7e40dca2bfd03468b1d3cf83ef067ab53e6ad",
+    "src/ui/xy-pad.ts": "fc5d1f212cd45d3e49416478916b74b086bfcc316b73fe814304c0bdb1db290b",
+    "src/ui/xy-pad-background.ts": "d25fd283e61b5c7b01b351c7e197b94bd7f55809cfe366d2b846b76d6427638d",
+    "src/ui/lightness-slider.ts": "e01fb6d0fe068517e4916eaa3ba735672b75fb1d2352dfd23f6b138e1c9c0944",
+    "src/ui/control-lift.ts": "bcdce41423eddbc19cadcb4e05126c8d1b823f9f64d40b6ec1d30ea36b76912d",
+    "src/ui/haptics.ts": "3ae54f8135c6285faf94c2987304835a9b3a788c12c2f74393b1be0b0aa32460",
+    "src/ui/hdr-surface.ts": "6a184a64618439ef353b62608e341737a7a884868da7ff679a72681cb4db35a1"
+  }
+}

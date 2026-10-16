@@ -8,6 +8,7 @@ import io,json,hashlib,struct,gzip,subprocess,sys,shutil,re,xml.etree.ElementTre
 import numpy as np
 from PIL import Image,ImageFilter,ImageDraw,ImageFont
 import vtracer
+from city_review import write_review
 
 ROOT=Path(__file__).resolve().parents[1]
 MASTER=ROOT/'assets/masters/v5';OUT=ROOT/'public/cities/v5'
@@ -44,9 +45,11 @@ def save_webp(a,name):
 records={};audits=[]
 for city in SPEC['cities']:
  ident=city['id'];source=ROOT/city['source'];im=Image.open(source).convert('RGBA');a=np.asarray(im).astype(np.float32);sw,sh=im.size
- if city['extraction'] in ['black-ink-white','orange-ink']:
+ if city['extraction'] in ['black-ink-white','orange-ink','black-ink-alpha']:
   orange=city['extraction']=='orange-ink'
   ink=np.maximum(0,a[:,:,0]-a[:,:,2]) if orange else 255-np.mean(a[:,:,:3],axis=2)
+  # Transparent black PNGs store RGB=0 even in empty pixels; alpha is ink, not fill.
+  if city['extraction']=='black-ink-alpha':ink*=a[:,:,3]/255
   binary=ink>(70 if orange else 85)
   # Close fill boundaries independently. These helper segments are NEVER ink.
   barrier=Image.fromarray(np.uint8(np.pad(binary,4))*255)
@@ -154,3 +157,4 @@ if (MASTER/'landmarks/manifest.json').exists():
  (review/'landmarks').mkdir(exist_ok=True)
  for file in (MASTER/'landmarks').glob('*'):
   if not file.name.startswith('.') and file.suffix in ['.svg','.json']:shutil.copyfile(file,review/'landmarks'/file.name)
+write_review(ROOT,SPEC,audits)

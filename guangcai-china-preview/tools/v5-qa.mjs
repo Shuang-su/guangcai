@@ -179,7 +179,7 @@ try{
  for(let i=0;i<80;i++){const p=await point('material-pad',.15+.7*(i%10)/9,.15+.7*Math.floor(i/10)/7);await page.mouse.move(p.x,p.y);}
  await page.mouse.up();await settled();const afterDrag=await state();
  check('sustained drag keeps GPU and reflection resources fixed',same(afterDrag.city.maps,baseline.city.maps)&&afterDrag.memory.textures===baseline.memory.textures&&afterDrag.memory.programs===baseline.memory.programs&&afterDrag.reflections.captures===baseline.reflections.captures&&resourceCount===await page.evaluate(()=>performance.getEntriesByType('resource').length));
- check('fourteen city options include supplied variants',await page.locator('[data-theme]').count()===14);
+ check('twenty-eight city options include all supplied variants',cities.length===27&&await page.locator('[data-theme]').count()===cities.length+1);
  const preserved=afterDrag.selection.current.appearance;
  for(const id of cities){
   await chooseCity(id);const s=await state();
@@ -207,8 +207,8 @@ try{
   await close();await page.setViewportSize({width,height});await page.evaluate(()=>window.cupViewer.setView('hero',true));await chooseCity('beijing');await page.locator('[data-variant="beijing-green"]').click();await settled();await page.locator('#adjust-color-tab').click();await page.locator('#artwork-settings').evaluate(e=>{e.scrollTop=0;});await page.waitForTimeout(200);
   check(`viewport ${width} fits without horizontal overflow`,await page.locator('#artwork-settings').evaluate(e=>{const r=e.getBoundingClientRect();return document.documentElement.scrollWidth===innerWidth&&r.x>=0&&r.right<=innerWidth+1&&r.y>=0&&r.bottom<=innerHeight+1;}));
   if(height>520)check(`viewport ${width} shows entire pad and lightness axis on entry`,await page.locator('#color-pad').evaluate(e=>{const r=e.getBoundingClientRect(),p=e.closest('aside').getBoundingClientRect(),s=document.querySelector('#fill-lightness').getBoundingClientRect();return r.y>=p.y&&r.bottom<=p.bottom&&s.y>=p.y&&s.bottom<=p.bottom&&s.right<=p.right;}));
-  await shot(`mobile-${width}-color`);await chooseCity('nanjing');await material(.7,.3);
-  check(`viewport ${width} last city and material remain reachable`,(await state()).selection.current.variant.startsWith('nanjing-')&&near((await state()).city.parameters.fill.metalness,.3));
+  await shot(`mobile-${width}-color`);await chooseCity(cities.at(-1));check(`viewport ${width} can reach final city option`,(await state()).selection.current.variant.startsWith(cities.at(-1)+'-'));await material(.7,.3);
+  check(`viewport ${width} last city and material remain reachable`,(await state()).selection.current.variant.startsWith(cities.at(-1)+'-')&&near((await state()).city.parameters.fill.metalness,.3));
   await shot(`mobile-${width}-material`);
  }
  const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),touch=await mobile.newPage();watch(touch);await ready(touch);await chooseCity('beijing',touch);await touch.locator('[data-variant="beijing-green"]').tap();await settled(touch);await touch.locator('#adjust-material-tab').tap();
@@ -239,9 +239,9 @@ try{
  for(let i=1;i<=6;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:130+i*4,y:240+i*2,id:0},{x:220+i*4,y:240+i*2,id:1}]});
  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await touch.waitForTimeout(250);
  check('two-finger canvas pan remains available outside pad',!same(target,(await state(touch)).target));await mobile.close();
- const review=await context.newPage();await review.goto(new URL('review/v5/index.html',url).href);check('source review route resolves to the source page',(await review.title()).includes('城市图样原稿'));await review.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0));
+ const review=await context.newPage();await review.goto(new URL('review/v5/index.html',url).href);check('source review route resolves to the source page',(await review.title()).includes('城市图样原稿'));for(const image of await review.locator('img').all()){await image.scrollIntoViewIfNeeded();await image.evaluate(el=>el.decode());}
  check('all source review images and downloads retained',await review.locator('img').count()===cities.length*3&&await review.locator('a[download]').count()===cities.length+1);await review.close();
  check('no unexpected console or shader errors',errors.length===0);
 }finally{
- await writeFile(`${out}/qa.json`,JSON.stringify({url,checks,errors,expectedErrors,timings,environment:'Installed Chrome headless; existing Playwright regression plus separate in-app Browser visual checks',physicalDevices:'not tested',date:new Date().toISOString()},null,2));await browser.close();
+ await writeFile(`${out}/qa.json`,JSON.stringify({url,checks,errors,expectedErrors,timings,environment:'Installed Chrome headless; Browser plugin not available; existing Playwright regression',physicalDevices:'not tested',date:new Date().toISOString()},null,2));await browser.close();
 }

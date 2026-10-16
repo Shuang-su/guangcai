@@ -45,11 +45,20 @@ class CityAssets(unittest.TestCase):
      else:self.assertGreater(value,245,(a['id'],pos,value))
  def test_added_sources_preserve_originals_and_existing_packs(self):
   manifest=json.loads((R/'assets/source/v5/user-20261016/manifest.json').read_text())
-  self.assertEqual(len(manifest['files']),11);self.assertEqual(len(AUDIT),13)
+  self.assertEqual(len(manifest['files']),11);self.assertEqual(len(AUDIT),27)
   for f in manifest['files']:
    source=R/f['source'];self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),f['sha256'])
    im=Image.open(source);self.assertEqual(im.size,(3878,1630));self.assertEqual(im.getextrema()[3],(255,255))
   for f,sha in manifest['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
+ def test_transparent_black_batch_preserves_existing_assets_and_latest_controls(self):
+  manifest=json.loads((R/'assets/source/v5/black-20261016/manifest.json').read_text())
+  self.assertEqual(len(manifest['files']),14)
+  for f in manifest['files']:
+   source=R/f['source'];self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),f['sha256'])
+   im=Image.open(source);self.assertEqual(im.size,(3878,1630));self.assertEqual(im.getextrema(),((0,0),(0,0),(0,0),(0,255)))
+  for f,sha in manifest['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
+  for ident in ['tianjin','qingdao']:
+   self.assertEqual((R/f'public/cities/v5/{ident}-label.webp').read_bytes(),(R/f'public/cities/v5/{ident}-2-label.webp').read_bytes())
  def test_runtime_files_match_manifest(self):
   for a in AUDIT:
    for v in a['maps'].values():self.assertEqual(hashlib.sha256((R/'public/cities/v5'/v['file']).read_bytes()).hexdigest(),v['sha256'])
