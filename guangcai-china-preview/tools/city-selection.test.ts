@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {SelectionController,defaultSelection,normalizeSelection,selectTheme,artworkPack,variants} from '../src/styles/city-selection';
+import {SelectionController,defaultSelection,normalizeSelection,selectTheme,artworkPack,variants,themes} from '../src/styles/city-selection';
 import {presetAppearance,normalizeAppearance,appearanceColors,hexHsl,hslRgb,materialAt,GOLD_LINE,palettes} from '../src/styles/city-appearance';
 import type {CityArtworkPack} from '../src/styles/city-artwork';
 const gold:CityArtworkPack={id:'legacy',version:3,name:'original',layout:'blank-300deg-v1',baseColor:'b',normal:'n',metalness:'m',roughness:'r',placement:{scale:.82,offsetU:.047,offsetV:0}};
@@ -11,8 +11,10 @@ test('original China pack and all legacy China palettes retain their interface',
  }
  assert.equal(artworkPack({...defaultSelection,text:'none'},gold).label?.hidden,true);
 });
-test('two V5 cities each expose five presets and share all structural channels',()=>{
- for(const theme of ['beijing','shenzhen']){
+test('all thirteen V5 patterns expose five presets and share structural channels',()=>{
+ const ids=Object.keys(themes).filter(id=>id!=='china');assert.equal(ids.length,13);
+ assert.equal(themes['beijing-2'].name,'北京 2');assert.equal(themes['shenzhen-2'].name,'深圳 2');
+ for(const theme of ids){
   const city=variants.filter(v=>v.theme===theme);assert.equal(city.length,5);
   const packs=city.map(v=>artworkPack({variant:v.id,finish:'enamel',text:'name'},gold,'/preview/'));
   for(const key of ['normal','coverage','baseColor'] as const)assert.equal(new Set(packs.map(p=>p[key])).size,1);

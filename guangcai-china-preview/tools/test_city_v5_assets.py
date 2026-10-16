@@ -14,7 +14,8 @@ class CityAssets(unittest.TestCase):
    groups={g.get('id'):g for g in tree if g.tag.endswith('g')}
    self.assertTrue(all(x in groups for x in ['fill','holes','lines','guides']))
    self.assertFalse(any(n.tag.endswith('image') for n in tree.iter()))
-   self.assertGreater(len(list(groups['holes'])),0)
+   # A city with no enclosed semantic openings may have an empty holes group.
+   self.assertGreater(len(list(groups['lines'])),0)
  def test_channels_aligned_and_background_flat(self):
   for a in AUDIT:
    mask=np.asarray(Image.open(R/'public/cities/v5'/a['maps']['mask']['file']).convert('RGB'))
@@ -30,6 +31,8 @@ class CityAssets(unittest.TestCase):
    self.assertGreater(len(np.unique(height)),256)
  def test_architectural_voids_and_sky_remain_unpainted(self):
   samples={'beijing':{'empty':[(195,580),(1300,200)],'filled':[(390,470),(745,620)]},'shenzhen':{'empty':[(925,737),(1500,200)],'filled':[(460,500),(670,600)]}}
+  spec=json.loads((R/'assets/masters/v5/cities.json').read_text())
+  samples.update({c['id']:c['validationSamples'] for c in spec['cities'] if 'validationSamples' in c})
   for a in AUDIT:
    mask=np.asarray(Image.open(R/'public/cities/v5'/a['maps']['mask']['file']).convert('RGB'));t=a['sourceToMaster'];p=a['placementAppliedOnce']
    def point(pos):
@@ -40,6 +43,13 @@ class CityAssets(unittest.TestCase):
      x,y=point(pos);value=int(mask[y,x,1])
      if group=='empty':self.assertLess(value,5,(a['id'],pos,value))
      else:self.assertGreater(value,245,(a['id'],pos,value))
+ def test_added_sources_preserve_originals_and_existing_packs(self):
+  manifest=json.loads((R/'assets/source/v5/user-20261016/manifest.json').read_text())
+  self.assertEqual(len(manifest['files']),11);self.assertEqual(len(AUDIT),13)
+  for f in manifest['files']:
+   source=R/f['source'];self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),f['sha256'])
+   im=Image.open(source);self.assertEqual(im.size,(3878,1630));self.assertEqual(im.getextrema()[3],(255,255))
+  for f,sha in manifest['preservedFiles'].items():self.assertEqual(hashlib.sha256((R/f).read_bytes()).hexdigest(),sha,f)
  def test_runtime_files_match_manifest(self):
   for a in AUDIT:
    for v in a['maps'].values():self.assertEqual(hashlib.sha256((R/'public/cities/v5'/v['file']).read_bytes()).hexdigest(),v['sha256'])
@@ -57,7 +67,7 @@ class CityAssets(unittest.TestCase):
     self.assertGreater(at(1800,754),245)
     # Fill closure below wall is not a visible underline / normal ridge.
     self.assertGreater(at(1300,747),245);self.assertLess(at(1300,747,0),5)
-   else:
+   elif a['id']=='shenzhen':
     for x in range(1380,1881,50):
      for y in range(690,791,20):self.assertLess(at(x,y),5,('removed bridge',x,y))
     # Independent tower bases do not acquire a continuous ground line.

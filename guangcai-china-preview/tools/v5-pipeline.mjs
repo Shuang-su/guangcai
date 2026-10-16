@@ -42,7 +42,7 @@ try{
  const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json'),'utf8'));if(qa.errors.length||qa.checks.length<45)throw new Error('Incomplete browser QA');
  report.browserChecks=qa.checks.length;report.buildFiles={};
  for(const f of await files(cfg.build))report.buildFiles[f]=digest(await readFile(path.join(cfg.build,f)));
- report.authorityHashes={};for(const f of [cfg.review,'tools/v5-pipeline.mjs','tools/deploy-v5.mjs','tools/compile-city-v5.py','tools/test_city_v5_assets.py','tools/v5-pipeline.json','assets/masters/v5/cities.json','assets/masters/v5/beijing.svg','assets/masters/v5/shenzhen.svg'])report.authorityHashes[f]=digest(await readFile(f));
+ report.authorityHashes={};for(const f of [cfg.review,'tools/v5-pipeline.mjs','tools/deploy-v5.mjs','tools/compile-city-v5.py','tools/test_city_v5_assets.py','tools/v5-pipeline.json','assets/masters/v5/cities.json',...spec.cities.flatMap(c=>[c.source,`assets/masters/v5/${c.id}.svg`])])report.authorityHashes[f]=digest(await readFile(f));
  report.status='passed';await save();console.log(`Prepared ${Object.keys(report.buildFiles).length} files. Commit the reviewed source, then run npm run deploy:v5.`);
 }catch(e){report.status='failed';report.error=e.message;await save();process.exitCode=1;console.error(e.message);}
 finally{if(server&&!server.killed)server.kill('SIGTERM');}

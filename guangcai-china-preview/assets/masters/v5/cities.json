@@ -65,6 +65,872 @@
         ]
       ],
       "fillClosures": []
+    },
+    {
+      "id": "beijing-2",
+      "name": "北京 2",
+      "labelName": "北京",
+      "labelEnglish": "BEIJING",
+      "source": "assets/source/v5/user-20261016/beijing-2.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          606,
+          1333
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            606,
+            1333
+          ]
+        ],
+        "filled": [
+          [
+            1600,
+            1212
+          ]
+        ]
+      }
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "labelName": "上海",
+      "labelEnglish": "SHANGHAI",
+      "source": "assets/source/v5/user-20261016/shanghai.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          766,
+          754
+        ],
+        [
+          1008,
+          970
+        ],
+        [
+          1062,
+          970
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            766,
+            754
+          ]
+        ],
+        "filled": [
+          [
+            1382,
+            1115
+          ]
+        ]
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "labelName": "广州",
+      "labelEnglish": "GUANGZHOU",
+      "source": "assets/source/v5/user-20261016/guangzhou.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [],
+      "fillClosures": [
+        [
+          [
+            64,
+            1629
+          ],
+          [
+            3338,
+            1629
+          ]
+        ]
+      ],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ]
+        ],
+        "filled": [
+          [
+            1091,
+            970
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "labelName": "天津",
+      "labelEnglish": "TIANJIN",
+      "source": "assets/source/v5/user-20261016/tianjin.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          1792,
+          1025
+        ],
+        [
+          1775,
+          1086
+        ],
+        [
+          1743,
+          1141
+        ],
+        [
+          1699,
+          1186
+        ],
+        [
+          1521,
+          1234
+        ],
+        [
+          1457,
+          1218
+        ],
+        [
+          1404,
+          1186
+        ],
+        [
+          1359,
+          1141
+        ],
+        [
+          1327,
+          1086
+        ],
+        [
+          1311,
+          1025
+        ],
+        [
+          1311,
+          965
+        ],
+        [
+          1327,
+          901
+        ],
+        [
+          1359,
+          846
+        ],
+        [
+          1404,
+          801
+        ],
+        [
+          1458,
+          770
+        ],
+        [
+          1520,
+          753
+        ],
+        [
+          1583,
+          753
+        ],
+        [
+          1644,
+          770
+        ],
+        [
+          1699,
+          801
+        ],
+        [
+          1743,
+          846
+        ],
+        [
+          1775,
+          898
+        ],
+        [
+          1792,
+          963
+        ],
+        [
+          1551,
+          1345
+        ],
+        [
+          1406,
+          1397
+        ],
+        [
+          1551,
+          1578
+        ],
+        [
+          2524,
+          1437
+        ],
+        [
+          2448,
+          1462
+        ],
+        [
+          2599,
+          1462
+        ],
+        [
+          2687,
+          1437
+        ],
+        [
+          2797,
+          1437
+        ],
+        [
+          2860,
+          1466
+        ],
+        [
+          2964,
+          1437
+        ],
+        [
+          3037,
+          1466
+        ],
+        [
+          2111,
+          1464
+        ],
+        [
+          2179,
+          1469
+        ],
+        [
+          2235,
+          1464
+        ],
+        [
+          3139,
+          1460
+        ],
+        [
+          3213,
+          1471
+        ],
+        [
+          3269,
+          1483
+        ],
+        [
+          3357,
+          1480
+        ],
+        [
+          2666,
+          1573
+        ],
+        [
+          2225,
+          1578
+        ],
+        [
+          3151,
+          1578
+        ],
+        [
+          1835,
+          911
+        ],
+        [
+          1471,
+          1352
+        ],
+        [
+          1609,
+          1352
+        ],
+        [
+          2467,
+          1382
+        ],
+        [
+          2858,
+          1396
+        ],
+        [
+          2925,
+          1396
+        ],
+        [
+          2671,
+          1440
+        ],
+        [
+          2756,
+          1498
+        ],
+        [
+          1265,
+          897
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            1792,
+            1025
+          ],
+          [
+            1265,
+            897
+          ]
+        ],
+        "filled": [
+          [
+            606,
+            1066
+          ]
+        ]
+      }
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "labelName": "青岛",
+      "labelEnglish": "QINGDAO",
+      "source": "assets/source/v5/user-20261016/qingdao.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ]
+        ],
+        "filled": [
+          [
+            1575,
+            1285
+          ]
+        ]
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "labelName": "太原",
+      "labelEnglish": "TAIYUAN",
+      "source": "assets/source/v5/user-20261016/taiyuan.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          2123,
+          1575
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            36,
+            1629
+          ],
+          [
+            3841,
+            1629
+          ]
+        ]
+      ],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            2123,
+            1575
+          ]
+        ],
+        "filled": [
+          [
+            1309,
+            1091
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "labelName": "杭州",
+      "labelEnglish": "HANGZHOU",
+      "source": "assets/source/v5/user-20261016/hangzhou.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          504,
+          1595
+        ],
+        [
+          817,
+          1563
+        ],
+        [
+          1115,
+          1595
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            504,
+            1595
+          ]
+        ],
+        "filled": [
+          [
+            1042,
+            1018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "labelName": "西安",
+      "labelEnglish": "XI'AN",
+      "source": "assets/source/v5/user-20261016/xian.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          378,
+          1566
+        ],
+        [
+          727,
+          1563
+        ],
+        [
+          2593,
+          1575
+        ],
+        [
+          2702,
+          1575
+        ],
+        [
+          2812,
+          1590
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ]
+        ],
+        "filled": [
+          [
+            1697,
+            1503
+          ],
+          [
+            921,
+            1229
+          ],
+          [
+            2351,
+            1483
+          ]
+        ]
+      },
+      "fillPolygons": [
+        [
+          [
+            797,
+            1200
+          ],
+          [
+            999,
+            1185
+          ],
+          [
+            1001,
+            1256
+          ],
+          [
+            771,
+            1277
+          ]
+        ],
+        [
+          [
+            766,
+            1297
+          ],
+          [
+            999,
+            1280
+          ],
+          [
+            999,
+            1365
+          ],
+          [
+            751,
+            1365
+          ]
+        ],
+        [
+          [
+            2278,
+            1445
+          ],
+          [
+            2477,
+            1445
+          ],
+          [
+            2477,
+            1612
+          ],
+          [
+            2278,
+            1612
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "shenzhen-2",
+      "name": "深圳 2",
+      "labelName": "深圳",
+      "labelEnglish": "SHENZHEN",
+      "source": "assets/source/v5/user-20261016/shenzhen-2.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          1941,
+          1491
+        ],
+        [
+          1777,
+          1498
+        ],
+        [
+          2128,
+          1491
+        ],
+        [
+          2797,
+          1590
+        ],
+        [
+          2921,
+          1583
+        ],
+        [
+          3044,
+          1575
+        ],
+        [
+          3180,
+          1575
+        ],
+        [
+          3323,
+          1571
+        ]
+      ],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            1941,
+            1491
+          ]
+        ],
+        "filled": [
+          [
+            1066,
+            1091
+          ]
+        ]
+      }
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "labelName": "武汉",
+      "labelEnglish": "WUHAN",
+      "source": "assets/source/v5/user-20261016/wuhan.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [
+        [
+          2334,
+          1517
+        ],
+        [
+          2673,
+          1534
+        ],
+        [
+          2981,
+          1554
+        ],
+        [
+          3202,
+          1556
+        ],
+        [
+          2012,
+          1425
+        ],
+        [
+          3410,
+          1515
+        ],
+        [
+          2244,
+          1374
+        ],
+        [
+          2343,
+          1391
+        ],
+        [
+          2401,
+          1415
+        ],
+        [
+          2475,
+          1401
+        ],
+        [
+          2591,
+          1411
+        ],
+        [
+          2638,
+          1435
+        ],
+        [
+          2690,
+          1436
+        ],
+        [
+          2741,
+          1449
+        ],
+        [
+          2787,
+          1435
+        ],
+        [
+          2836,
+          1457
+        ],
+        [
+          2903,
+          1449
+        ],
+        [
+          2955,
+          1464
+        ],
+        [
+          3054,
+          1481
+        ],
+        [
+          3102,
+          1474
+        ],
+        [
+          3151,
+          1488
+        ],
+        [
+          3190,
+          1478
+        ],
+        [
+          3248,
+          1493
+        ],
+        [
+          3296,
+          1492
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            28,
+            1629
+          ],
+          [
+            3810,
+            1629
+          ]
+        ]
+      ],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ],
+          [
+            2334,
+            1517
+          ]
+        ],
+        "filled": [
+          [
+            1478,
+            1503
+          ]
+        ]
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "labelName": "南京",
+      "labelEnglish": "NANJING",
+      "source": "assets/source/v5/user-20261016/nanjing.png",
+      "batch": "user-20261016",
+      "extraction": "orange-ink",
+      "holes": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "candidate": true,
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "validationSamples": {
+        "empty": [
+          [
+            100,
+            100
+          ]
+        ],
+        "filled": [
+          [
+            1309,
+            1503
+          ]
+        ]
+      }
     }
   ]
 }

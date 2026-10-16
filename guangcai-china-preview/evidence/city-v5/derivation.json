@@ -75,6 +75,7 @@
           ]
         ]
       ],
+      "fillPolygons": [],
       "traceFidelity": {
         "originalStrokeRecallWithin1px": 0.9959141825304524,
         "tracedStrokePrecisionWithin1px": 0.9956871101070521
@@ -143,11 +144,1200 @@
         ]
       ],
       "fillClosures": [],
+      "fillPolygons": [],
       "traceFidelity": {
         "originalStrokeRecallWithin1px": 0.9825054744238071,
         "tracedStrokePrecisionWithin1px": 0.9964492023954634
       }
+    },
+    {
+      "id": "beijing-2",
+      "source": "assets/source/v5/user-20261016/beijing-2.png",
+      "sourceSha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 648704,
+      "runtimeLinePixels": 456017,
+      "masterSha256": "b6fba1a5c976cb1f02bbdefbaf5463ef782305f66ed5aeb37f0ffe2ab92a0210",
+      "maps": {
+        "mask": {
+          "file": "beijing-2-structure.webp",
+          "sha256": "d145a3047493020aa0624fcb80377bdaa1d08587a1ac9b987423c0e2c2fa4e61"
+        },
+        "normal": {
+          "file": "beijing-2-normal.hfn.gz",
+          "sha256": "36d0b196daaa7b64625d4d5d5a6bcdff7969f800ea980dfeddc567419559da66"
+        },
+        "label": {
+          "file": "beijing-2-label.webp",
+          "sha256": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1"
+        },
+        "thumbnail": {
+          "file": "beijing-2-thumb.webp",
+          "sha256": "fa03b6c2f3f932c574b6bf7dff04274d06f4a8ecfc4fadba7c6d5e4e4be0df3d"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          606,
+          1333
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995899516574586,
+        "tracedStrokePrecisionWithin1px": 0.9999227354923558
+      }
+    },
+    {
+      "id": "shanghai",
+      "source": "assets/source/v5/user-20261016/shanghai.png",
+      "sourceSha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 380373,
+      "runtimeLinePixels": 270051,
+      "masterSha256": "80f4d5330fb91552e6934737ecf729ac050ef9de61faac3e5a1c38cf14b7660b",
+      "maps": {
+        "mask": {
+          "file": "shanghai-structure.webp",
+          "sha256": "f88c6d8b4f799566dafb4e28178a770d5735a753a7ceb8e8806c822b3c15e559"
+        },
+        "normal": {
+          "file": "shanghai-normal.hfn.gz",
+          "sha256": "11e201d8e00b6dc52a0c2fc14f6df06339aa0bc8a85e6e0afaea563fce1e6b60"
+        },
+        "label": {
+          "file": "shanghai-label.webp",
+          "sha256": "7f87795b607f686d2a859ccd79a3814707eb2e6807aadafbb3d5e4e9e4e38c69"
+        },
+        "thumbnail": {
+          "file": "shanghai-thumb.webp",
+          "sha256": "4b5f136c6a61d0c5af2d405148e72719c6ae8611143ba6ae59d09f101812db06"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          766,
+          754
+        ],
+        [
+          1008,
+          970
+        ],
+        [
+          1062,
+          970
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9971501657583477,
+        "tracedStrokePrecisionWithin1px": 0.9981583896202165
+      }
+    },
+    {
+      "id": "guangzhou",
+      "source": "assets/source/v5/user-20261016/guangzhou.png",
+      "sourceSha256": "a3e37412d771df519d7f7d8eaabbf53bf4575ab464b1d3a73e999bd7e7aac5b5",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 473719,
+      "runtimeLinePixels": 330238,
+      "masterSha256": "ad940a4016a2c1466f90103ee5fcbf52ff098fe90b488f0ff87e27da63bc84ac",
+      "maps": {
+        "mask": {
+          "file": "guangzhou-structure.webp",
+          "sha256": "87c7875e1ac1c8ea6a8e877b09f3d10cc611d7b9499968793f2202122f932f4d"
+        },
+        "normal": {
+          "file": "guangzhou-normal.hfn.gz",
+          "sha256": "b6b58e85768e4f0cf5d35ad6d2cb178d39eee80ec7f4cd499498a7df796236f3"
+        },
+        "label": {
+          "file": "guangzhou-label.webp",
+          "sha256": "93c2ad7407eac60fbe48fcc44ffddf937a946eb4e4281230753e49a992b2a6dc"
+        },
+        "thumbnail": {
+          "file": "guangzhou-thumb.webp",
+          "sha256": "1c9be9080598caedeb30c9cb1ddf28af8563437c0710ab02649fb95f05ebf1a2"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [
+        [
+          [
+            64,
+            1629
+          ],
+          [
+            3338,
+            1629
+          ]
+        ]
+      ],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997720167441035,
+        "tracedStrokePrecisionWithin1px": 0.9996567043162656
+      }
+    },
+    {
+      "id": "tianjin",
+      "source": "assets/source/v5/user-20261016/tianjin.png",
+      "sourceSha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          77.80376482723022
+        ],
+        "contentBottom": 1629
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 757170,
+      "runtimeLinePixels": 537999,
+      "masterSha256": "deb8c5e0dd1bd81c6781baef35a74f6592a38d65f64c64ec1371a4a3ea8e6fc4",
+      "maps": {
+        "mask": {
+          "file": "tianjin-structure.webp",
+          "sha256": "0f5a929bf2998ea33afc0ac2e7da0cae51ca92aa72de1d0a387f186cbe8aeb5d"
+        },
+        "normal": {
+          "file": "tianjin-normal.hfn.gz",
+          "sha256": "4dab3f9766a90e3d0764942d1eba35078a796e9f5d90a8ecdaca8460280341f3"
+        },
+        "label": {
+          "file": "tianjin-label.webp",
+          "sha256": "787b60d4635f4b4ddb02ab3b9fb5c5d3163c484c91a98de939a63670fe17c9d3"
+        },
+        "thumbnail": {
+          "file": "tianjin-thumb.webp",
+          "sha256": "08886577c1c5617f69432c1ac3aa4c3ce77bc57bfbf6bf7e596b44a06caae534"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          1792,
+          1025
+        ],
+        [
+          1775,
+          1086
+        ],
+        [
+          1743,
+          1141
+        ],
+        [
+          1699,
+          1186
+        ],
+        [
+          1521,
+          1234
+        ],
+        [
+          1457,
+          1218
+        ],
+        [
+          1404,
+          1186
+        ],
+        [
+          1359,
+          1141
+        ],
+        [
+          1327,
+          1086
+        ],
+        [
+          1311,
+          1025
+        ],
+        [
+          1311,
+          965
+        ],
+        [
+          1327,
+          901
+        ],
+        [
+          1359,
+          846
+        ],
+        [
+          1404,
+          801
+        ],
+        [
+          1458,
+          770
+        ],
+        [
+          1520,
+          753
+        ],
+        [
+          1583,
+          753
+        ],
+        [
+          1644,
+          770
+        ],
+        [
+          1699,
+          801
+        ],
+        [
+          1743,
+          846
+        ],
+        [
+          1775,
+          898
+        ],
+        [
+          1792,
+          963
+        ],
+        [
+          1551,
+          1345
+        ],
+        [
+          1406,
+          1397
+        ],
+        [
+          1551,
+          1578
+        ],
+        [
+          2524,
+          1437
+        ],
+        [
+          2448,
+          1462
+        ],
+        [
+          2599,
+          1462
+        ],
+        [
+          2687,
+          1437
+        ],
+        [
+          2797,
+          1437
+        ],
+        [
+          2860,
+          1466
+        ],
+        [
+          2964,
+          1437
+        ],
+        [
+          3037,
+          1466
+        ],
+        [
+          2111,
+          1464
+        ],
+        [
+          2179,
+          1469
+        ],
+        [
+          2235,
+          1464
+        ],
+        [
+          3139,
+          1460
+        ],
+        [
+          3213,
+          1471
+        ],
+        [
+          3269,
+          1483
+        ],
+        [
+          3357,
+          1480
+        ],
+        [
+          2666,
+          1573
+        ],
+        [
+          2225,
+          1578
+        ],
+        [
+          3151,
+          1578
+        ],
+        [
+          1835,
+          911
+        ],
+        [
+          1471,
+          1352
+        ],
+        [
+          1609,
+          1352
+        ],
+        [
+          2467,
+          1382
+        ],
+        [
+          2858,
+          1396
+        ],
+        [
+          2925,
+          1396
+        ],
+        [
+          2671,
+          1440
+        ],
+        [
+          2756,
+          1498
+        ],
+        [
+          1265,
+          897
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9992353104322675,
+        "tracedStrokePrecisionWithin1px": 0.9996663849472888
+      }
+    },
+    {
+      "id": "qingdao",
+      "source": "assets/source/v5/user-20261016/qingdao.png",
+      "sourceSha256": "93683bbcbd26e73c0856c88e418a002b55328cec6dea186f9c13f462efea2f82",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 583031,
+      "runtimeLinePixels": 418439,
+      "masterSha256": "1b5e4034788745d82919161eb8052836ebe0820e421c3067d9a0be86d3cd54d2",
+      "maps": {
+        "mask": {
+          "file": "qingdao-structure.webp",
+          "sha256": "6d912f51e592d176cc4509e71848fed788601dfb2790d3a6f157b4d28a805bdd"
+        },
+        "normal": {
+          "file": "qingdao-normal.hfn.gz",
+          "sha256": "178746203ee0c543b36480d4a98808860865cb2f986a89f9358fc1262610d788"
+        },
+        "label": {
+          "file": "qingdao-label.webp",
+          "sha256": "9b7dc5c144bbabad98a5cf65d346ea650727af2759419e0457227c9605b85e19"
+        },
+        "thumbnail": {
+          "file": "qingdao-thumb.webp",
+          "sha256": "c89f19026d7ec0e13e495db136c1c7b274a63ebaf18a81a0b2f09e853e77c8d7"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9978062916037055,
+        "tracedStrokePrecisionWithin1px": 0.9997062947833297
+      }
+    },
+    {
+      "id": "taiyuan",
+      "source": "assets/source/v5/user-20261016/taiyuan.png",
+      "sourceSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 698683,
+      "runtimeLinePixels": 504272,
+      "masterSha256": "a1594fbb6c53e75d3cc95451738b50b0e23d71b88ffba36f27d79d8cf08d801d",
+      "maps": {
+        "mask": {
+          "file": "taiyuan-structure.webp",
+          "sha256": "b96860c4a47c2d257df68058856cacb9a8255303bdb8763d5694d361efe77625"
+        },
+        "normal": {
+          "file": "taiyuan-normal.hfn.gz",
+          "sha256": "9c10b1b39119a4e898e328e6d3714355954e6a3d56c98ae61ca7f5b07795366b"
+        },
+        "label": {
+          "file": "taiyuan-label.webp",
+          "sha256": "9ae7837d3eaa4f5a5158cbbd49349750cb7125381f6f1df5e706efba99cdf7c6"
+        },
+        "thumbnail": {
+          "file": "taiyuan-thumb.webp",
+          "sha256": "3edf155dd8f540b2a1c0f34652e6d45006ffd31e5175a895ec1da8fa17f568d4"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          2123,
+          1575
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            36,
+            1629
+          ],
+          [
+            3841,
+            1629
+          ]
+        ]
+      ],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997609788702458,
+        "tracedStrokePrecisionWithin1px": 0.9995519812959609
+      }
+    },
+    {
+      "id": "hangzhou",
+      "source": "assets/source/v5/user-20261016/hangzhou.png",
+      "sourceSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          79.20474471376974
+        ],
+        "contentBottom": 1628
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 642049,
+      "runtimeLinePixels": 452043,
+      "masterSha256": "7b59f345146a39cddb1a39cb3640035fc7654c5f53943b1940a17428104512be",
+      "maps": {
+        "mask": {
+          "file": "hangzhou-structure.webp",
+          "sha256": "7fd575ac5dd0915a018bae4c6d4afe847173aa9007bd586dfd8a82a11b24b172"
+        },
+        "normal": {
+          "file": "hangzhou-normal.hfn.gz",
+          "sha256": "9ad9c839a1d96d776ebe698bc5cae177c09104451d3ed960f93b6883e7849e24"
+        },
+        "label": {
+          "file": "hangzhou-label.webp",
+          "sha256": "d02b776016ed472c36ff271c2060a00b3e488a8474c7fa005bc1eed110091a75"
+        },
+        "thumbnail": {
+          "file": "hangzhou-thumb.webp",
+          "sha256": "a3b0dfeae0620bffabd588b030c240d1f58166e2bb3de149fad33c594fa09f12"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          504,
+          1595
+        ],
+        [
+          817,
+          1563
+        ],
+        [
+          1115,
+          1595
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9990234390210093,
+        "tracedStrokePrecisionWithin1px": 0.9998451839017609
+      }
+    },
+    {
+      "id": "xian",
+      "source": "assets/source/v5/user-20261016/xian.png",
+      "sourceSha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 698506,
+      "runtimeLinePixels": 494382,
+      "masterSha256": "68d0ee0478f981a0d7c16ec0cc498603bdaac3736e9aa0bcd1b70448eee371e1",
+      "maps": {
+        "mask": {
+          "file": "xian-structure.webp",
+          "sha256": "124e63cf8b2ff6b5545f9e6de92a6203fc3b25bf26dec713a46b288224944763"
+        },
+        "normal": {
+          "file": "xian-normal.hfn.gz",
+          "sha256": "cf3e00ddd05f7daccaca7cc7dd12673bc384402e496fc48af3c5c10cd5281b39"
+        },
+        "label": {
+          "file": "xian-label.webp",
+          "sha256": "8d2308d7548d1eb35850148636505f80f2f4d1a78dc9c57be0082fe030bc10b2"
+        },
+        "thumbnail": {
+          "file": "xian-thumb.webp",
+          "sha256": "4f89515384f83be371cd0dc2a5d7cf460c39ad023602c56a0d4729963288c28a"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          378,
+          1566
+        ],
+        [
+          727,
+          1563
+        ],
+        [
+          2593,
+          1575
+        ],
+        [
+          2702,
+          1575
+        ],
+        [
+          2812,
+          1590
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [
+        [
+          [
+            797,
+            1200
+          ],
+          [
+            999,
+            1185
+          ],
+          [
+            1001,
+            1256
+          ],
+          [
+            771,
+            1277
+          ]
+        ],
+        [
+          [
+            766,
+            1297
+          ],
+          [
+            999,
+            1280
+          ],
+          [
+            999,
+            1365
+          ],
+          [
+            751,
+            1365
+          ]
+        ],
+        [
+          [
+            2278,
+            1445
+          ],
+          [
+            2477,
+            1445
+          ],
+          [
+            2477,
+            1612
+          ],
+          [
+            2278,
+            1612
+          ]
+        ]
+      ],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9998754484571356,
+        "tracedStrokePrecisionWithin1px": 0.9999909214844583
+      }
+    },
+    {
+      "id": "shenzhen-2",
+      "source": "assets/source/v5/user-20261016/shenzhen-2.png",
+      "sourceSha256": "757c96e1b6c5490a3394435ac29ef685df6750a20f706686e9cf59675a7dcf88",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 716203,
+      "runtimeLinePixels": 504064,
+      "masterSha256": "8c3c8aa3746f2a56343050be798d5f3e4009e2693d1ce2d0524af6ec64deab9b",
+      "maps": {
+        "mask": {
+          "file": "shenzhen-2-structure.webp",
+          "sha256": "59056eaad02d214827778fa8cb2c800bf40b3fcc611511bc040950dc5e7c1635"
+        },
+        "normal": {
+          "file": "shenzhen-2-normal.hfn.gz",
+          "sha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133"
+        },
+        "label": {
+          "file": "shenzhen-2-label.webp",
+          "sha256": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92"
+        },
+        "thumbnail": {
+          "file": "shenzhen-2-thumb.webp",
+          "sha256": "6317e79c7ebf48eb28ba67e111899f12ae316a3049001c8ec54ad9e9d4ac4b4a"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          1941,
+          1491
+        ],
+        [
+          1777,
+          1498
+        ],
+        [
+          2128,
+          1491
+        ],
+        [
+          2797,
+          1590
+        ],
+        [
+          2921,
+          1583
+        ],
+        [
+          3044,
+          1575
+        ],
+        [
+          3180,
+          1575
+        ],
+        [
+          3323,
+          1571
+        ]
+      ],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995113117370354,
+        "tracedStrokePrecisionWithin1px": 0.9999227117475171
+      }
+    },
+    {
+      "id": "wuhan",
+      "source": "assets/source/v5/user-20261016/wuhan.png",
+      "sourceSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 770492,
+      "runtimeLinePixels": 550252,
+      "masterSha256": "47d6406c1277f984f5707a4bffd6767dbd3c34ec4649d7aeea1784095bb01e1d",
+      "maps": {
+        "mask": {
+          "file": "wuhan-structure.webp",
+          "sha256": "b960221c4aee896308a684bdc491388034f136c8a923fb1064b730689f5b14d6"
+        },
+        "normal": {
+          "file": "wuhan-normal.hfn.gz",
+          "sha256": "698824a2455d06ac03ac92f24244a298e3b476ee67c6e8629abd7cff149b123c"
+        },
+        "label": {
+          "file": "wuhan-label.webp",
+          "sha256": "7f63e09d99b138491459c3439c2fe5fbe71e13039ac5f0a1ee119016e4bd8fed"
+        },
+        "thumbnail": {
+          "file": "wuhan-thumb.webp",
+          "sha256": "ab72a3a7297abcd0574f97b3c2aa1b4429a3a583bb5d3193600f894b1ed00a16"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [
+        [
+          2334,
+          1517
+        ],
+        [
+          2673,
+          1534
+        ],
+        [
+          2981,
+          1554
+        ],
+        [
+          3202,
+          1556
+        ],
+        [
+          2012,
+          1425
+        ],
+        [
+          3410,
+          1515
+        ],
+        [
+          2244,
+          1374
+        ],
+        [
+          2343,
+          1391
+        ],
+        [
+          2401,
+          1415
+        ],
+        [
+          2475,
+          1401
+        ],
+        [
+          2591,
+          1411
+        ],
+        [
+          2638,
+          1435
+        ],
+        [
+          2690,
+          1436
+        ],
+        [
+          2741,
+          1449
+        ],
+        [
+          2787,
+          1435
+        ],
+        [
+          2836,
+          1457
+        ],
+        [
+          2903,
+          1449
+        ],
+        [
+          2955,
+          1464
+        ],
+        [
+          3054,
+          1481
+        ],
+        [
+          3102,
+          1474
+        ],
+        [
+          3151,
+          1488
+        ],
+        [
+          3190,
+          1478
+        ],
+        [
+          3248,
+          1493
+        ],
+        [
+          3296,
+          1492
+        ]
+      ],
+      "fillClosures": [
+        [
+          [
+            28,
+            1629
+          ],
+          [
+            3810,
+            1629
+          ]
+        ]
+      ],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9996430851975102,
+        "tracedStrokePrecisionWithin1px": 0.9999659262671681
+      }
+    },
+    {
+      "id": "nanjing",
+      "source": "assets/source/v5/user-20261016/nanjing.png",
+      "sourceSha256": "0d3ebe08be354a85a2d6716809bed9bfd93f43c213c9b62a177a369bf10c73ba",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {
+        "mode": "image-trace",
+        "authority": "user-supplied 2026-10-16 original PNG; preserve all supplied landmarks, bridge, hills and baseline"
+      },
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 520535,
+      "runtimeLinePixels": 368736,
+      "masterSha256": "e135dc5f29e867fb7d3aff1c2a28658796613ed0014d40b66eb89a92fc410923",
+      "maps": {
+        "mask": {
+          "file": "nanjing-structure.webp",
+          "sha256": "0999cb152f9ed1824fb85f55bbb2a9fbd02b4691602e4bd2c6b291f9b74d564f"
+        },
+        "normal": {
+          "file": "nanjing-normal.hfn.gz",
+          "sha256": "337801d125a702a3285595243e8062b0789352b578935ba2da9e0e4c28e956c8"
+        },
+        "label": {
+          "file": "nanjing-label.webp",
+          "sha256": "70e5ea5fa5938f32af77980e231bc53d62841927cf792a37215e458b89c1207b"
+        },
+        "thumbnail": {
+          "file": "nanjing-thumb.webp",
+          "sha256": "22f2261981c190e12cd4af175c62a3c6272f3d2b513adb88604d13634e330295"
+        }
+      },
+      "candidate": true,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995908056134554,
+        "tracedStrokePrecisionWithin1px": 0.9999797388335646
+      }
     }
   ],
-  "method": "generated-image artwork with source-faithful spline contours; independent fill-only closure and semantic holes; line-only relief; original native resolution recorded"
+  "method": "source-faithful spline contours from supplied or generated artwork; independent fill-only closure and semantic holes; line-only relief; original native resolution and authority recorded per city"
 }

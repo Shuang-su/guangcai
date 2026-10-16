@@ -17,7 +17,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  </div>
  <div id="legacy-finish"><label class="field-label" for="artwork-finish">材质</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select><p id="finish-note" class="note"></p></div>
  <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">城市名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option></select>
- <p class="note">北京与深圳换城时保留创作参数。选择配色预设可重新开始。</p>
+ <p class="note">城市图样之间切换时保留创作参数。选择配色预设可重新开始。</p>
  <p id="artwork-progress" role="status" aria-live="polite"></p><button id="default-artwork" class="text-button">恢复默认款 · 中国纯金</button>`;
  main.append(toggle,panel);
  const $=<T extends HTMLElement>(s:string)=>panel.querySelector<T>(s)!;

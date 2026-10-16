@@ -42,7 +42,7 @@ try{
  const site=await api(`/sites/${cfg.siteId}`);
  if(site.name!==cfg.siteName||site.build_settings?.repo_url)throw new Error('Target name changed or Git CD unexpectedly enabled');
  receipt.protectedBefore=[];for(const id of cfg.protectedSiteIds)receipt.protectedBefore.push(siteSummary(await api(`/sites/${id}`)));
- await writeFile(path.join(cfg.build,'release.json'),JSON.stringify({version:'5.0.0',kind:'independent-preview',sourceCommit:receipt.sourceCommit,reviewSha256:prepared.reviewSha256,sourceHashes:prepared.sourceHashes},null,2)+'\n');
+ await writeFile(path.join(cfg.build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,reviewSha256:prepared.reviewSha256,sourceHashes:prepared.sourceHashes},null,2)+'\n');
  const manifest={},bySha=new Map(),casePaths=new Set();
  for(const file of await fileList(cfg.build)){
   if(/[?#]/.test(file)||casePaths.has(file.toLowerCase()))throw new Error(`Unsafe or case-colliding deployment path: ${file}`);casePaths.add(file.toLowerCase());
@@ -52,7 +52,7 @@ try{
  let old;try{old=JSON.parse(await readFile(receiptFile,'utf8'));}catch{}
  let deploy;
  if(old?.deployId&&old.sourceCommit===receipt.sourceCommit&&old.manifestSha256===receipt.manifestSha256){receipt.deployId=old.deployId;deploy=await api(`/deploys/${old.deployId}`);}
- else{deploy=await api(`/sites/${cfg.siteId}/deploys`,'POST',{async:true,draft:false,title:`V5 detailed generated city artwork ${receipt.sourceCommit.slice(0,7)}`,files:Object.fromEntries(Object.entries(manifest).map(([p,v])=>[p,v.sha1]))});receipt.deployId=deploy.id;await save();}
+ else{deploy=await api(`/sites/${cfg.siteId}/deploys`,'POST',{async:true,draft:false,title:`V5 city artwork library ${receipt.sourceCommit.slice(0,7)}`,files:Object.fromEntries(Object.entries(manifest).map(([p,v])=>[p,v.sha1]))});receipt.deployId=deploy.id;await save();}
  while(deploy.state==='preparing'){await delay(2000);deploy=await api(`/deploys/${receipt.deployId}`);}
  if(deploy.state==='error')throw new Error('Netlify rejected the upload manifest');
  const queue=[...(deploy.required??[])];let uploaded=0;receipt.requiredFiles=queue.length;receipt.status='uploading';await save();

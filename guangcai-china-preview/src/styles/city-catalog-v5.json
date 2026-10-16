@@ -14,6 +14,83 @@
       "normal": "shenzhen-normal.hfn.gz",
       "label": "shenzhen-label.webp",
       "thumbnail": "shenzhen-thumb.webp"
+    },
+    "beijing-2": {
+      "name": "北京 2",
+      "mask": "beijing-2-structure.webp",
+      "normal": "beijing-2-normal.hfn.gz",
+      "label": "beijing-2-label.webp",
+      "thumbnail": "beijing-2-thumb.webp"
+    },
+    "shanghai": {
+      "name": "上海",
+      "mask": "shanghai-structure.webp",
+      "normal": "shanghai-normal.hfn.gz",
+      "label": "shanghai-label.webp",
+      "thumbnail": "shanghai-thumb.webp"
+    },
+    "guangzhou": {
+      "name": "广州",
+      "mask": "guangzhou-structure.webp",
+      "normal": "guangzhou-normal.hfn.gz",
+      "label": "guangzhou-label.webp",
+      "thumbnail": "guangzhou-thumb.webp"
+    },
+    "tianjin": {
+      "name": "天津",
+      "mask": "tianjin-structure.webp",
+      "normal": "tianjin-normal.hfn.gz",
+      "label": "tianjin-label.webp",
+      "thumbnail": "tianjin-thumb.webp"
+    },
+    "qingdao": {
+      "name": "青岛",
+      "mask": "qingdao-structure.webp",
+      "normal": "qingdao-normal.hfn.gz",
+      "label": "qingdao-label.webp",
+      "thumbnail": "qingdao-thumb.webp"
+    },
+    "taiyuan": {
+      "name": "太原",
+      "mask": "taiyuan-structure.webp",
+      "normal": "taiyuan-normal.hfn.gz",
+      "label": "taiyuan-label.webp",
+      "thumbnail": "taiyuan-thumb.webp"
+    },
+    "hangzhou": {
+      "name": "杭州",
+      "mask": "hangzhou-structure.webp",
+      "normal": "hangzhou-normal.hfn.gz",
+      "label": "hangzhou-label.webp",
+      "thumbnail": "hangzhou-thumb.webp"
+    },
+    "xian": {
+      "name": "西安",
+      "mask": "xian-structure.webp",
+      "normal": "xian-normal.hfn.gz",
+      "label": "xian-label.webp",
+      "thumbnail": "xian-thumb.webp"
+    },
+    "shenzhen-2": {
+      "name": "深圳 2",
+      "mask": "shenzhen-2-structure.webp",
+      "normal": "shenzhen-2-normal.hfn.gz",
+      "label": "shenzhen-2-label.webp",
+      "thumbnail": "shenzhen-2-thumb.webp"
+    },
+    "wuhan": {
+      "name": "武汉",
+      "mask": "wuhan-structure.webp",
+      "normal": "wuhan-normal.hfn.gz",
+      "label": "wuhan-label.webp",
+      "thumbnail": "wuhan-thumb.webp"
+    },
+    "nanjing": {
+      "name": "南京",
+      "mask": "nanjing-structure.webp",
+      "normal": "nanjing-normal.hfn.gz",
+      "label": "nanjing-label.webp",
+      "thumbnail": "nanjing-thumb.webp"
     }
   }
 }

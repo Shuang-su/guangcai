@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-16",
+  "reviewedBy": "Codex source and compiled-flat inspection; final output gated by automated checks and cup-view QA",
+  "status": "agent-reviewed",
+  "humanVisualApproval": false,
+  "cities": {
+    "beijing": {
+      "source": "assets/source/v5/generated-detail/beijing-white.png",
+      "sha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+      "nativeSize": [
+        1899,
+        828
+      ],
+      "checks": {
+        "curvedProfilesAndDetailsPreserved": true,
+        "realOpeningsIdentified": true,
+        "skyUnpainted": true,
+        "naturalBoundary": true,
+        "noAddedForegroundWaves": true
+      },
+      "specific": "two Great Wall towers, no horizontal ink underline; fill-only bottom closure"
+    },
+    "shenzhen": {
+      "source": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+      "nativeSize": [
+        1900,
+        828
+      ],
+      "checks": {
+        "curvedProfilesAndDetailsPreserved": true,
+        "realOpeningsIdentified": true,
+        "skyUnpainted": true,
+        "naturalBoundary": true,
+        "noAddedForegroundWaves": true
+      },
+      "specific": "right bridge removed; detailed skyline and Civic Center preserved"
+    },
+    "beijing-2": {
+      "source": "assets/source/v5/user-20261016/beijing-2.png",
+      "sha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "shanghai": {
+      "source": "assets/source/v5/user-20261016/shanghai.png",
+      "sha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "guangzhou": {
+      "source": "assets/source/v5/user-20261016/guangzhou.png",
+      "sha256": "a3e37412d771df519d7f7d8eaabbf53bf4575ab464b1d3a73e999bd7e7aac5b5",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "tianjin": {
+      "source": "assets/source/v5/user-20261016/tianjin.png",
+      "sha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Wheel voids, truss apertures and bridge spans identified; final upper-left wheel sector added after first compiled-flat review and covered by validation sample."
+    },
+    "qingdao": {
+      "source": "assets/source/v5/user-20261016/qingdao.png",
+      "sha256": "93683bbcbd26e73c0856c88e418a002b55328cec6dea186f9c13f462efea2f82",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "taiyuan": {
+      "source": "assets/source/v5/user-20261016/taiyuan.png",
+      "sha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "hangzhou": {
+      "source": "assets/source/v5/user-20261016/hangzhou.png",
+      "sha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "xian": {
+      "source": "assets/source/v5/user-20261016/xian.png",
+      "sha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Gate openings remain white; three independent fill polygons close leaking pagoda faces and wall; no new gold strokes."
+    },
+    "shenzhen-2": {
+      "source": "assets/source/v5/user-20261016/shenzhen-2.png",
+      "sha256": "757c96e1b6c5490a3394435ac29ef685df6750a20f706686e9cf59675a7dcf88",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "wuhan": {
+      "source": "assets/source/v5/user-20261016/wuhan.png",
+      "sha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    },
+    "nanjing": {
+      "source": "assets/source/v5/user-20261016/nanjing.png",
+      "sha256": "0d3ebe08be354a85a2d6716809bed9bfd93f43c213c9b62a177a369bf10c73ba",
+      "nativeSize": [
+        3878,
+        1630
+      ],
+      "checks": {
+        "sourceInspected": true,
+        "sourceAndFillPlanInspected": true,
+        "sourceCompositionPreserved": true
+      },
+      "specific": "Original supplied line geometry preserved; semantic openings in independent fill; actual cup-view verification before publication."
+    }
+  },
+  "humanImportDecision": "11 new options; 北京 2 / 深圳 2 coexist with old samples"
+}

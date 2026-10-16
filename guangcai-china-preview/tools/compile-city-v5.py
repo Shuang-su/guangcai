@@ -44,8 +44,10 @@ def save_webp(a,name):
 records={};audits=[]
 for city in SPEC['cities']:
  ident=city['id'];source=ROOT/city['source'];im=Image.open(source).convert('RGBA');a=np.asarray(im).astype(np.float32);sw,sh=im.size
- if city['extraction']=='black-ink-white':
-  ink=255-np.mean(a[:,:,:3],axis=2);binary=ink>85
+ if city['extraction'] in ['black-ink-white','orange-ink']:
+  orange=city['extraction']=='orange-ink'
+  ink=np.maximum(0,a[:,:,0]-a[:,:,2]) if orange else 255-np.mean(a[:,:,:3],axis=2)
+  binary=ink>(70 if orange else 85)
   # Close fill boundaries independently. These helper segments are NEVER ink.
   barrier=Image.fromarray(np.uint8(np.pad(binary,4))*255)
   draw=ImageDraw.Draw(barrier)
@@ -57,16 +59,14 @@ for city in SPEC['cities']:
    if area.getpixel(seed)==255:raise ValueError(f'{ident}: hole seed lies on a stroke: {(x,y)}')
    if area.getpixel(seed)==0:ImageDraw.floodfill(area,seed,64)
   cover=(np.asarray(area)[4:-4,4:-4]!=128)&(np.asarray(area)[4:-4,4:-4]!=64)
- elif city['extraction']=='orange-ink':
-  ink=np.maximum(0,a[:,:,0]-a[:,:,2]);binary=ink>70
-  # Outside flooding only establishes candidates; explicit semantic holes win.
-  barriers=Image.fromarray(np.uint8(binary)*255).filter(ImageFilter.MaxFilter(3)).filter(ImageFilter.MinFilter(3))
-  area=barriers.copy()
-  for seed in [(0,0),(sw-1,0),(0,sh-1),(sw-1,sh-1)]:
-   if area.getpixel(seed)==0:ImageDraw.floodfill(area,seed,128)
-  cover=np.asarray(area)!=128
  else:
   alpha=a[:,:,3]/255;ink=(255-np.mean(a[:,:,:3],axis=2))*alpha;binary=ink>85;cover=alpha>.5
+ # Source faces with open contour seams can have a separately reviewed fill polygon.
+ # This never changes the source ink, its metallic reflection or the relief.
+ if city.get('fillPolygons'):
+  faces=Image.fromarray(np.uint8(cover)*255);draw=ImageDraw.Draw(faces)
+  for poly in city['fillPolygons']:draw.polygon([tuple(p) for p in poly],fill=255)
+  cover=np.asarray(faces)>0
  # Isolated anti-alias/color residue is not a new architectural stroke.
  # A 3-pixel support around solid ink keeps fine connected details.
  support=np.asarray(Image.fromarray(np.uint8(ink>130)*255).filter(ImageFilter.MaxFilter(3)))>0
@@ -89,7 +89,7 @@ for city in SPEC['cities']:
  if native and not master_path.exists():raise ValueError('Missing landmark master; run build-city-landmarks.py first')
  if not native and (not master_path.exists() or '--trace' in sys.argv):
   ink_vector=vector(np.uint8(binary)*255);fill_vector=vector(np.uint8(cover)*255);holes_vector=vector(np.uint8(holes)*255)
-  master=f'<title>{city["name"]} V5 — generated artwork, faithful contour extraction</title><metadata>Source {city["source"]}; {digest(source)}; original generated image is authoritative artwork; locally fitted ink contours, not programmatically reconstructed landmarks.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
+  master=f'<title>{city["name"]} V5 — source-faithful contour extraction</title><metadata>Source {city["source"]}; {digest(source)}; {authoring.get("authority","original source image")}; locally fitted ink contours, not programmatically reconstructed landmarks.</metadata>{guides}<g id="fill" transform="{transform}">{fill_vector.replace("#000000","#dddddd")}</g><g id="holes" transform="{transform}" display="none">{holes_vector}</g><g id="lines" transform="{transform}">{ink_vector}</g>'
   master_path.write_text(doc(master,MW,MH))
  # Committed SVG is authoritative after initial tracing; do not overwrite edits.
  tree=ET.fromstring(master_path.read_text())
@@ -124,8 +124,8 @@ for city in SPEC['cities']:
  normal=np.ones((H,W,4),dtype='<f2');normal[:,:,:3]=norm*.5+.5
  npth=OUT/(ident+'-normal.hfn.gz');npth.write_bytes(gzip.compress(b'HFN1'+struct.pack('<III',W,H,1)+normal[::-1].tobytes(),compresslevel=6,mtime=0))
  label=Image.new('L',(W,H));d=ImageDraw.Draw(label)
- d.text((W*.81,H*.257),city['name'],font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Songti.ttc',112),fill=255,anchor='mm')
- d.text((W*.81,H*.335),ident.upper(),font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf',83),fill=255,anchor='mm')
+ d.text((W*.81,H*.257),city.get('labelName',city['name']),font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Songti.ttc',112),fill=255,anchor='mm')
+ d.text((W*.81,H*.335),city.get('labelEnglish',ident.upper()),font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf',83),fill=255,anchor='mm')
  labelFile=save_webp(np.asarray(label),ident+'-label')
  # Inspectable flat output is evidence; runtime tint is entirely parameterized.
  c=coverage.astype(np.float32)[:,:,None]/255;l=lines.astype(np.float32)[:,:,None]/255
@@ -137,16 +137,16 @@ for city in SPEC['cities']:
  review=ROOT/'public/review/v5';review.mkdir(parents=True,exist_ok=True)
  proof=np.repeat((255-lines)[:,:,None],3,axis=2)
  Image.fromarray(proof).resize((1900,827),Image.Resampling.LANCZOS).save(review/(ident+'-line-review.png'))
- shutil.copyfile(source,review/(ident+'-black.png'))
+ shutil.copyfile(source,review/(ident+('-source.png' if city.get('batch') else '-black.png')))
  record={'mask':maskfile,'normal':npth.name,'label':labelFile,'thumbnail':thumb.name}
  records[ident]={'name':city['name'],**record}
- audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'authoring':authoring,'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[]),'holeSeeds':city.get('holeSeeds',[]),'fillClosures':city.get('fillClosures',[]),'traceFidelity':fidelity}
+ audit={'id':ident,'source':city['source'],'sourceSha256':digest(source),'sourceSize':[sw,sh],'authoring':authoring,'masterSize':[MW,MH],'runtimeSize':[W,H],'sourceToMaster':{'scale':scale,'offset':[dx,dy],'contentBottom':bottom},'placementAppliedOnce':p,'sourceInkPixels':int(binary.sum()),'runtimeLinePixels':int((lines>127).sum()),'masterSha256':digest(MASTER/(ident+'.svg')),'maps':{k:{'file':v,'sha256':digest(OUT/v)} for k,v in record.items()},'candidate':city.get('candidate',False),'holePolygons':city.get('holes',[]),'holeSeeds':city.get('holeSeeds',[]),'fillClosures':city.get('fillClosures',[]),'fillPolygons':city.get('fillPolygons',[]),'traceFidelity':fidelity}
  audits.append(audit);print(ident,record,flush=True)
 template=doc(f'<title>City master — PSD frame 5433 × 2365 at 600 ppi</title>{guides}<g id="fill"/><g id="holes"/><g id="lines"/>',MW,MH)
 (MASTER/'template.svg').write_text(template)
 (OUT/'catalog.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/styles/city-catalog-v5.json').write_text(json.dumps({'version':5,'cities':records},ensure_ascii=False,indent=2)+'\n')
-(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'generated-image artwork with source-faithful spline contours; independent fill-only closure and semantic holes; line-only relief; original native resolution recorded'},ensure_ascii=False,indent=2)+'\n')
+(EVIDENCE/'derivation.json').write_text(json.dumps({'version':5,'cities':audits,'method':'source-faithful spline contours from supplied or generated artwork; independent fill-only closure and semantic holes; line-only relief; original native resolution and authority recorded per city'},ensure_ascii=False,indent=2)+'\n')
 review=ROOT/'public/review/v5';review.mkdir(parents=True,exist_ok=True)
 for name in ['template',*records]:shutil.copyfile(MASTER/(name+'.svg'),review/(name+'.svg'))
 for name in records:shutil.copyfile(EVIDENCE/(name+'-flat.png'),review/(name+'-flat.png'))
