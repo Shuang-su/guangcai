@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "masterHashes": {
+    "assets/masters/v5/beijing.svg": "b7e6ba0778a9e4df2413808a26c20a36c845effb3ffc24cbe60457cab3ff81ff",
+    "assets/masters/v5/shenzhen.svg": "c4e2d95e8b26b7dff4e38a71e8ee603944aea05b8d8f5b0be568e13db4ff04ab"
+  },
+  "check": "default compiler preserves authoritative SVG masters"
+}

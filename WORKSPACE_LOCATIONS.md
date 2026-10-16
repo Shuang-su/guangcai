@@ -7,7 +7,7 @@
 | 用途 | 位置 |
 |---|---|
 | 当前正式 Git 仓库 | `/Volumes/Prism_初号機/广彩/guangcai-v4-workspace` |
-| 本机归档分支工作树 | 正式仓库内 `.codex-work/archive-index/` |
+| 本机资料归档核验工作树 | 正式仓库内 `.codex-work/archive-index/` |
 | 中国杯应用 | 正式仓库内 `guangcai-china-preview/` |
 | 原始 PSD、花纸、线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
 | 旧 h5 工程 | `/Volumes/Prism_初号機/广彩/历史工程/h5/` |
@@ -16,9 +16,9 @@
 | 本地会话摘录与旧站点绑定 | `/Volumes/Prism_初号機/广彩/历史工程/本地恢复资料/`，仅本地保存 |
 | 原路径、文件哈希、恢复入口 | [来源索引](docs/changes/20261014-source-consolidation/source-index.md)与[本轮清理记录](docs/changes/20261014-workspace-cleanup/completion.md) |
 
-Prism旧正式库、9月viewer输出、原型输出、内盘北京4.3副本及旧非Git 3.0副本中的已核验内容，均由Git/Git LFS归档恢复。内盘4.3工作树已注销，分支与原提交保留。旧依赖可按对应锁文件重新安装。
+Prism旧正式库、9月viewer输出、原型输出、内盘北京4.3副本及旧非Git 3.0副本中的已核验内容，均由Git/Git LFS归档恢复。内盘4.3工作树已注销，原提交保留在正式 Git 历史；已合并的旧分支名称于 2026-10-16 整理。旧依赖可按对应锁文件重新安装。
 
-按原文件名恢复旧目录：在归档分支运行 `python3 tools/restore-source-folder.py --list` 查询来源；然后运行 `python3 tools/restore-source-folder.py prism-viewer /足够空间的空目录`。恢复过程核验每份文件哈希，不执行历史脚本。可用 `--prefix` 选择来源内的子目录。大文件需有真实Git LFS对象，不能仅下载指针。
+按原文件名恢复旧目录：在包含归档的工作树运行 `python3 tools/restore-source-folder.py --list` 查询来源；然后运行 `python3 tools/restore-source-folder.py prism-viewer /足够空间的空目录`。恢复过程核验每份文件哈希，不执行历史脚本。可用 `--prefix` 选择来源内的子目录。大文件需有真实Git LFS对象，不能仅下载指针。
 
 素材原件是在同一卷内改名归位，保留原始字节；历史索引仍记录原始路径。实际位置变化见[迁移映射](docs/changes/20261014-workspace-cleanup/relocations.json)。
 
@@ -30,4 +30,4 @@ H5文件已归档，但H5本身仍是非Git历史工程。Git归档PR与产品�
 
 2026-10-15去重收尾：删除当前中国杯`dist/`和`.codex-work/deploy/v4-final/`、旧H5的`dist/`、早期Web3D的`dist/`和`.codex-work/tmp/verified-delivery/`，以及两张外围重复图片，共1,494个内容文件及1,603份配套元数据。删除内容已纳入`cleanup-20261015`恢复来源；元数据备份在`历史工程/Git元数据/20261015-duplicate-cleanup-metadata.tar.gz`。初号機可用空间从约2.65 GiB增至4.12 GiB（净增加约1.47 GiB，测量时点见结果文件）。
 
-文档配图保留在`素材原件/文档/五次添彩_东方雅韵版_V1/03_万彩落于白瓷.png`；另一图片保留为`素材原件/一号杯2/IMG_1226.jpg`。原始PSD、制作母版、运行资源和验收证据保持用途对应。当前与旧工作树的HEAD及原有跟踪状态不变；当前开发分支没有切换。
+文档配图保留在`素材原件/文档/五次添彩_东方雅韵版_V1/03_万彩落于白瓷.png`；另一图片保留为`素材原件/一号杯2/IMG_1226.jpg`。原始PSD、制作母版、运行资源和验收证据保持用途对应。该次删除时，当前与旧工作树的HEAD及原有跟踪状态不变；该阶段没有切换开发分支。

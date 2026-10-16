@@ -9,7 +9,7 @@
 - [历史重建来源及验证](docs/history/)
 - [Git 开发接入记录](docs/changes/20261013-git-development/)
 
-旧导入分支及 PR 保留为来源记录；后续开发使用功能分支并合入 main。历史文件中的“未合并”“非 Git”等描述对应当时状态，不是当前工作方式。
+旧导入提交及 PR 保留为来源记录；已合并的冗余分支名称可以清理；后续开发使用功能分支并合入 main。历史文件中的“未合并”“非 Git”等描述对应当时状态，不是当前工作方式。
 # 2026-10-14 原件与工作区补录
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源清单](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围与剩余项](docs/changes/20261014-source-consolidation/completion.md)。
@@ -19,5 +19,6 @@
 - [北京工作区下载后的3593文件核验](docs/changes/20261014-source-consolidation/hydrated-workspace-verification.json)：全部与源码/发布归档字节一致。
 - [9月21日原始提交与154文件快照证明](docs/history/20260921-original-git/README.md)：原提交记录、目录树和内容对应；完整混合仓库祖先链不在此次导入范围。
 
-
 - [2026-10-15核对与实际去重](docs/changes/20261015-verified-dedup-cleanup/completion.md)：清理前将47份真实可达Git内容补入原件索引，新增1,494处清理来源。已删除的5处构建／部署暂存及2张重复图片可按`cleanup-20261015`来源还原；不改写原内容或伪造历史日期。
+
+2026-10-16 收尾核验见[资料归档检查与合并记录](docs/changes/20261016-archive-finalization/completion.md)。历史阶段的数量与状态保留在原记录中，入口采用当前来源清单的 3,661 份内容、19,534 处来源及 11 份 LFS 原件。

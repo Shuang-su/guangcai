@@ -1,0 +1,46 @@
+{
+  "baseline": "v4.0",
+  "regions": {
+    "body": {
+      "goldInteriorPixels": 298611,
+      "beforeMeanDeviation": 4.321242158766836e-06,
+      "afterMeanDeviation": 3.235738176954328e-06,
+      "beforeMaxDeviation": 0.0006905339541845024,
+      "afterMaxDeviation": 0.0006905339541845024,
+      "heightUniqueValues": 10795
+    },
+    "handle": {
+      "goldInteriorPixels": 178075,
+      "beforeMeanDeviation": 3.4630334994290024e-05,
+      "afterMeanDeviation": 2.547035001043696e-05,
+      "beforeMaxDeviation": 0.001091830083169043,
+      "afterMaxDeviation": 0.000732421875,
+      "heightUniqueValues": 10795
+    },
+    "saucer": {
+      "goldInteriorPixels": 444562,
+      "beforeMeanDeviation": 1.6985091860988177e-05,
+      "afterMeanDeviation": 6.909471267135814e-06,
+      "beforeMaxDeviation": 0.0027295751497149467,
+      "afterMaxDeviation": 0.000732421875,
+      "heightUniqueValues": 10795
+    }
+  },
+  "checks": [
+    "body baseColor byte-identical to v4.0",
+    "body metalness byte-identical to v4.0",
+    "body roughness byte-identical to v4.0",
+    "handle baseColor byte-identical to v4.0",
+    "handle metalness byte-identical to v4.0",
+    "handle roughness byte-identical to v4.0",
+    "saucer baseColor byte-identical to v4.0",
+    "saucer metalness byte-identical to v4.0",
+    "saucer roughness byte-identical to v4.0",
+    "src/geometry/product.ts byte-identical to v4.0",
+    "src/styles/city-artwork.ts byte-identical to v4.0",
+    "src/materials/render-standard.ts byte-identical to v4.0",
+    "src/materials/porcelain.ts byte-identical to v4.0",
+    "src/studio/studio.ts byte-identical to v4.0",
+    "src/styles/fixed-layout.json byte-identical to v4.0"
+  ]
+}

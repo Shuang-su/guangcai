@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "date": "2026-10-11",
+  "decision": "Return toward user-selected early metal relief; lift dark reflection, brighten highlights; add geometry-aware local reflections",
+  "material": {
+    "baseRoughness": 0.26,
+    "lineRoughness": 0.22,
+    "lineFinishMask": "line-finish.png",
+    "roundedHeightProfile": {
+      "coreSigmaPx": 0.65,
+      "coreWeight": 1
+    },
+    "normalGradientGain": 2.1,
+    "normalScale": 0.7,
+    "clearcoatCoverage": 0.10196078431372549,
+    "reflectionEnvironment": {
+      "darkFlagRadiance": 0.045,
+      "softboxMultiplier": 1.65,
+      "roomRadiance": 0.42,
+      "localGeometryCapture": true
+    },
+    "labelRoughness": 0.25882352941176473,
+    "labelClearcoatCoverage": 0.10196078431372549
+  },
+  "reflection": {
+    "resolution": 512,
+    "approximation": "Single centre CubeCamera with finite-volume correction near handle; not ray traced",
+    "receiver": "blank cup wall, porcelain and city/text material",
+    "capturedObjects": [
+      "handle",
+      "lid",
+      "saucer"
+    ],
+    "refresh": "After geometry pose settles; no recapture for camera-only rotation"
+  },
+  "browserQa": {
+    "url": "http://127.0.0.1:5209/",
+    "date": "2026-10-11T16:11:05.551Z",
+    "checks": [
+      "initial independent city + fixed packages loaded",
+      "city uses UV1, aligned maps, and zero geometry displacement",
+      "old full-floral replacement controls removed",
+      "local geometry reflection initialized",
+      "view button front",
+      "view button handle",
+      "view button top",
+      "view button bottom",
+      "turned cup clears the floor",
+      "view button saucerBottom",
+      "view button exploded",
+      "local probe follows exploded cup",
+      "view button lid",
+      "view button detail",
+      "view button hero",
+      "auto rotation changes camera",
+      "drag stops auto and rotates",
+      "camera rotation reuses the local reflection capture",
+      "wheel zoom",
+      "reflection toggle restores studio-only environment",
+      "reflection toggle restores local geometry capture",
+      "five reflection toggles reuse GPU resources",
+      "relief 0 retains metal + geometry",
+      "relief -1 retains metal + geometry",
+      "relief 1 retains metal + geometry",
+      "inspection clay",
+      "inspection relief",
+      "inspection metalness",
+      "inspection pbr",
+      "metal off retains stroke normal",
+      "city replacement keeps geometry and all fixed maps",
+      "rendered label stays unchanged after recoloring",
+      "failed load preserves entire current version",
+      "mismatched channel dimensions rejected atomically",
+      "out-of-bounds placement rejected atomically",
+      "rapid switching commits only last request",
+      "five swaps release old GPU textures",
+      "mobile no horizontal overflow",
+      "mobile touch selects view",
+      "mobile touch drag rotates",
+      "mobile calibration panel fits viewport",
+      "dispose frees GPU geometry",
+      "no browser runtime errors"
+    ],
+    "errors": [],
+    "labelMeanPixelDelta": 0,
+    "initialMemory": {
+      "geometries": 26,
+      "textures": 28
+    },
+    "cycledMemory": {
+      "geometries": 26,
+      "textures": 28
+    },
+    "disposedMemory": {
+      "geometries": 0,
+      "textures": 3
+    },
+    "scope": "Desktop Chrome and emulated mobile Chrome; not physical iPhone/Safari"
+  },
+  "handleContribution": {
+    "date": "2026-10-11T15:42:55.008Z",
+    "url": "http://127.0.0.1:5208/",
+    "whitePorcelainCrop": {
+      "left": 780,
+      "top": 320,
+      "width": 100,
+      "height": 380
+    },
+    "meanRgbDelta": 0.3516666666666667,
+    "maxChannelDelta": 8,
+    "pixelsOverOneLevel": 1662,
+    "errors": [],
+    "method": "Real handle hidden only for cube capture, restored in camera image; compares white body pixels at identical pose",
+    "scope": "Local finite-volume reflection approximation; difference amplification image is labeled x20, not an actual render"
+  },
+  "webTransport": {
+    "lossless": true,
+    "pixelsIdentical": true,
+    "runtimeMaps": 16,
+    "sourceBytes": 16796918,
+    "webBytes": 10399564,
+    "networkRetryAttempts": 3
+  }
+}

@@ -53,6 +53,13 @@ class HistoricalVerificationTests(unittest.TestCase):
         self.assertEqual(len(result['historyUnavailable']), len(VERIFIER.EXPECTED))
         self.assertIn('git fetch --unshallow origin', result['remedy'])
 
+    def test_appledouble_metadata_is_not_an_inventory(self):
+        metadata = self.root / 'docs/archive/._original-inventory.json'
+        metadata.write_bytes(b'\x00\x05\x16\x07\xff')
+        code, result = self.run_verifier()
+        self.assertEqual(code, 0)
+        self.assertTrue(result['complete'])
+
     def test_wrong_manifest_version_fails(self):
         self.save('china-inventory.json', {'version': 'wrong', 'files': []})
         code, result = self.run_verifier()

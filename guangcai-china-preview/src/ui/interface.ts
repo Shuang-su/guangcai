@@ -2,10 +2,10 @@ import {viewLabels,type View} from '../interaction/views';
 import type {BackgroundChoice,BackgroundState} from './background';
 export interface Actions{view:(v:View)=>void;auto:()=>void;reset:()=>void;relief:(v:number)=>void;fixedRelief:(v:boolean)=>void;metal:(v:boolean)=>void;mode:(v:string)=>void;reflection:(v:boolean)=>void;restore:()=>Promise<void>;background:(choice:BackgroundChoice)=>Promise<void>;uploadBackground:(file:File)=>Promise<void>;}
 export function createInterface(actions:Actions){
- document.querySelector<HTMLDivElement>('#app')!.innerHTML=`<main aria-label="中国杯 4.2 三维预览">
+ document.querySelector<HTMLDivElement>('#app')!.innerHTML=`<main aria-label="中国杯 V5 三维预览">
  <div id="scene-background" class="scene-background" aria-hidden="true"></div>
  <canvas id="viewport" tabindex="0" aria-label="左键或单指旋转中国杯，右键或双指拖移，滚轮或双指捏合缩放"></canvas>
- <header><div><h1>中国 · 共彩</h1><p>4.2 · 城市主题与釉彩</p></div><div class="top-actions"><a class="standards-top" href="./evidence.html">素材与对照</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div></header>
+ <header><div><h1>中国 · 共彩</h1><p>V5.4.2 · 城市与自由创作</p></div><div class="top-actions"><a class="standards-top" href="./review/v5/">素材与对照</a><button id="auto" aria-pressed="false">自动旋转</button><button id="reset">复位</button></div></header>
  <button id="open-settings" class="open-settings" aria-expanded="false" aria-controls="settings">材质校准</button>
  <button id="open-background" class="open-background" aria-expanded="false" aria-controls="background-settings">背景</button>
  <aside id="background-settings" hidden aria-label="背景设置"><div class="panel-heading"><h2>背景</h2><button id="close-background">关闭</button></div>
@@ -17,7 +17,7 @@ export function createInterface(actions:Actions){
  <section><label class="field-label" for="relief">城市线条凹凸</label><select id="relief"><option value="1">凸纹 · 当前预览</option><option value="0">关闭凹凸</option><option value="-1">凹纹 · 对照</option></select><p class="note">仅改变城市线条的表面起伏。实际凹凸方向和高度仍待工艺确认。</p><label class="check-label"><input id="city-metal" type="checkbox" checked> 城市金属反射</label><label class="check-label"><input id="local-reflections" type="checkbox" checked> 邻近部件反射</label></section>
  <section><label class="check-label"><input id="fixed-relief" type="checkbox" checked> 彩色花纹浅起伏</label><p class="note">杯碟、把手与纵向饰带的花瓣描线和叶脉。选“花纹近看”，开关比较。</p></section>
  <section><label class="field-label" for="material-mode">观察方式</label><select id="material-mode"><option value="pbr">完整材质</option><option value="clay">中性灰 · 检查器型</option><option value="relief">中性灰 · 检查线条</option><option value="floral">中性灰 · 检查花纹</option><option value="metalness">金属覆盖区域</option></select><p class="note">关闭金属后仍保留线条起伏；金色底面没有整体位移。</p></section>
- <section><h3>当前素材</h3><p id="style-name" class="current-style">中国 · 临时线稿</p><p class="note">中国建筑沿用 PSD 定位，深圳采用统一预览母稿。把手、纵向饰带和杯碟花纹固定。</p><button id="restore" class="text-button">恢复默认款</button></section>
+ <section><h3>当前素材</h3><p id="style-name" class="current-style">中国 · 临时线稿</p><p class="note">中国建筑沿用 PSD 定位，北京与深圳采用统一结构母版。把手、纵向饰带和杯碟花纹固定。</p><button id="restore" class="text-button">恢复默认款</button></section>
  <p class="provenance">广彩纹样采用提供的原始花纸。凹凸为贴图视觉近似，不代表实测高度。城市图样与点缀为依据参考制作的可修订预览。</p>
  </aside><footer><p class="gesture-hint">左键 / 单指旋转 · 右键 / 双指拖移 · 滚轮 / 捏合缩放</p><nav aria-label="观察视角">${Object.entries(viewLabels).map(([key,label])=>`<button data-view="${key}" aria-pressed="${key==='hero'}">${label}</button>`).join('')}</nav></footer>
  <div id="status" role="status" aria-live="polite"></div><div id="fatal" hidden role="alert"></div></main>`;

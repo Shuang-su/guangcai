@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-16",
+  "url": "http://127.0.0.1:5236/",
+  "browser": "Native in-app browser, no media-query overrides",
+  "low": [
+    {
+      "hdrFormat": "rgba16float/extended",
+      "hdrFrames": "4",
+      "hdrGain": "1.648828124999966",
+      "hdrState": "ready",
+      "hdrUploads": "1"
+    },
+    {
+      "hdrFormat": "rgba16float/extended",
+      "hdrFrames": "4",
+      "hdrGain": "1.648828124999966",
+      "hdrState": "ready",
+      "hdrUploads": "1"
+    }
+  ],
+  "high": [
+    {
+      "hdrFormat": "rgba16float/extended",
+      "hdrFrames": "10",
+      "hdrGain": "1.7511718750000682",
+      "hdrState": "ready",
+      "hdrUploads": "2"
+    },
+    {
+      "hdrFormat": "rgba16float/extended",
+      "hdrFrames": "10",
+      "hdrGain": "1.7511718750000682",
+      "hdrState": "ready",
+      "hdrUploads": "1"
+    }
+  ],
+  "logs": [],
+  "physicalBrightnessMeasured": false,
+  "physicalMotorTested": false
+}

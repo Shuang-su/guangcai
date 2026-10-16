@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "provenance": "Built-in image_gen; new reference-inspired artwork, not official artwork.",
+  "method": "Gold: ochre chromaticity mask. Relief: paint silhouette and dark chromatic ink contours, then smoothed. No grayscale-color height conversion.",
+  "heightCalibration": "Artistic micro-relief only; not measured, no geometric displacement",
+  "regions": {
+    "body": {
+      "width": 1024,
+      "height": 2222,
+      "physical": {
+        "width": 45.0294947014537,
+        "length": 97.7
+      },
+      "source": "assets/masters/lotus-butterfly/body-dense-v3.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": null,
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/lotus-butterfly/body-baseColor.png",
+          "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5"
+        },
+        "metalness": {
+          "url": "artwork/lotus-butterfly/body-metalness.png",
+          "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9"
+        },
+        "roughness": {
+          "url": "artwork/lotus-butterfly/body-roughness.png",
+          "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa"
+        },
+        "height": {
+          "url": "artwork/lotus-butterfly/body-height.png",
+          "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f"
+        },
+        "normal": {
+          "url": "artwork/lotus-butterfly/body-normal.png",
+          "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023"
+        }
+      }
+    },
+    "handle": {
+      "width": 320,
+      "height": 3119,
+      "physical": {
+        "width": 11.9,
+        "length": 115.97543005101365,
+        "aspect": 0.10260794027463917
+      },
+      "source": "assets/masters/lotus-butterfly/body-dense-v3.png",
+      "sourceSize": [
+        887,
+        1774
+      ],
+      "crop": [
+        0.47,
+        0.07,
+        0.16,
+        0.82
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/lotus-butterfly/handle-baseColor.png",
+          "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278"
+        },
+        "metalness": {
+          "url": "artwork/lotus-butterfly/handle-metalness.png",
+          "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6"
+        },
+        "roughness": {
+          "url": "artwork/lotus-butterfly/handle-roughness.png",
+          "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388"
+        },
+        "height": {
+          "url": "artwork/lotus-butterfly/handle-height.png",
+          "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4"
+        },
+        "normal": {
+          "url": "artwork/lotus-butterfly/handle-normal.png",
+          "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020"
+        }
+      }
+    },
+    "saucer": {
+      "width": 2172,
+      "height": 213,
+      "physical": {
+        "width": 113.41149479459153,
+        "length": 11.142710621747296
+      },
+      "source": "assets/masters/lotus-butterfly/band-dense-v3.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "crop": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "layout": "original-cover",
+      "fit": "cover, uniform scale; original normalized crop; all channels use identical pixel coordinates",
+      "maps": {
+        "baseColor": {
+          "url": "artwork/lotus-butterfly/saucer-baseColor.png",
+          "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015"
+        },
+        "metalness": {
+          "url": "artwork/lotus-butterfly/saucer-metalness.png",
+          "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d"
+        },
+        "roughness": {
+          "url": "artwork/lotus-butterfly/saucer-roughness.png",
+          "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05"
+        },
+        "height": {
+          "url": "artwork/lotus-butterfly/saucer-height.png",
+          "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b"
+        },
+        "normal": {
+          "url": "artwork/lotus-butterfly/saucer-normal.png",
+          "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd"
+        }
+      }
+    }
+  },
+  "name": "莲荷双蝶 · 金地",
+  "renderStandard": {
+    "relief": 1.5,
+    "clearcoatRelief": 0.825,
+    "exposure": 1.08
+  },
+  "layoutNote": "Original accepted pipeline restored: body full master; handle crop [.47,.07,.16,.82] of body master; saucer crop [0,.38,1,.25] of band master. Uniform cover. Saucer runtime UV mirrors four quarters."
+}

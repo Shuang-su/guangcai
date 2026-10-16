@@ -24,7 +24,8 @@ def sha256(path):
 
 
 def main():
-    manifests = sorted((ROOT / 'docs/archive').glob('*-inventory.json'))
+    manifests = sorted(path for path in (ROOT / 'docs/archive').glob('*-inventory.json')
+                       if not path.name.startswith('._'))
     present = {path.name for path in manifests}
     missing = sorted(set(EXPECTED) - present)
     if missing:

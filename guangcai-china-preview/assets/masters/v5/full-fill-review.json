@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-16",
+  "reviewedBy": "Codex source inspection; previous original-source reviews retained in source manifests",
+  "status": "agent-reviewed",
+  "humanVisualApproval": false,
+  "cities": {
+    "beijing": {
+      "source": "assets/source/v5/generated-detail/beijing-white.png",
+      "sha256": "ca7b15fb3d90b1133b9cf41c486ff5abd683082838f054b342f0a4a15655bf65",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "shenzhen": {
+      "source": "assets/source/v5/generated-detail/shenzhen-white.png",
+      "sha256": "e8fc271dd5b0ab0ca1c468a012e597384dafb217f7e54995bf8e53476d80062d",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "beijing-2": {
+      "source": "assets/source/v5/user-20261016/beijing-2.png",
+      "sha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "shanghai": {
+      "source": "assets/source/v5/user-20261016/shanghai.png",
+      "sha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "guangzhou": {
+      "source": "assets/source/v5/user-20261016/guangzhou.png",
+      "sha256": "a3e37412d771df519d7f7d8eaabbf53bf4575ab464b1d3a73e999bd7e7aac5b5",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "tianjin": {
+      "source": "assets/source/v5/black-20261016/tianjin-2.png",
+      "sha256": "d0649c9c90208fb7711b86753356489aa6ac33c6d8420c2b623d25f809a90a56",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "qingdao": {
+      "source": "assets/source/v5/black-20261016/qingdao-2.png",
+      "sha256": "6680813b73ae554d9a2b04bcde9f923713384d880b014908a1397d955b30ba60",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "taiyuan": {
+      "source": "assets/source/v5/user-20261016/taiyuan.png",
+      "sha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "hangzhou": {
+      "source": "assets/source/v5/user-20261016/hangzhou.png",
+      "sha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "xian": {
+      "source": "assets/source/v5/user-20261016/xian.png",
+      "sha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "shenzhen-2": {
+      "source": "assets/source/v5/user-20261016/shenzhen-2.png",
+      "sha256": "757c96e1b6c5490a3394435ac29ef685df6750a20f706686e9cf59675a7dcf88",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "wuhan": {
+      "source": "assets/source/v5/user-20261016/wuhan.png",
+      "sha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "nanjing": {
+      "source": "assets/source/v5/user-20261016/nanjing.png",
+      "sha256": "0d3ebe08be354a85a2d6716809bed9bfd93f43c213c9b62a177a369bf10c73ba",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "urumqi": {
+      "source": "assets/source/v5/black-20261016/urumqi.png",
+      "sha256": "1100a5f612874b2ceb386c7f0a56d09a566f4999331763169710bb68a93e7a9a",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "nanchang": {
+      "source": "assets/source/v5/black-20261016/nanchang.png",
+      "sha256": "7fdb5bf6e1b89190061b1cebb88fc3642451eb74c3d4de9bc9eac803c848d33b",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "xiamen": {
+      "source": "assets/source/v5/black-20261016/xiamen.png",
+      "sha256": "a21315d69155c3317900c44eade62569711d1046b8024a49d2cfe1b99f5488b8",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "hohhot": {
+      "source": "assets/source/v5/black-20261016/hohhot.png",
+      "sha256": "1437b5b496e2af16904908ffc960f82a98fe14d3712845a607ec948ec7a8acd4",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "harbin": {
+      "source": "assets/source/v5/black-20261016/harbin.png",
+      "sha256": "d9abb1a940af2327c21edd9feba88aca1b0dceb518fe14856ef899e193fc3a7d",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "chengdu": {
+      "source": "assets/source/v5/black-20261016/chengdu.png",
+      "sha256": "473e8b5cc79d7bda6e7735d5657397496478b16f2494fa1b9b56084d139010dd",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "jingdezhen": {
+      "source": "assets/source/v5/black-20261016/jingdezhen.png",
+      "sha256": "0db10ff61bc6701b0855c41b7d4ea57efb38871f4c83b97dfd669da3ceb608ed",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "shenyang": {
+      "source": "assets/source/v5/black-20261016/shenyang.png",
+      "sha256": "725e094219551ebfeba23fc31f6bd7b557131629b7d3235a16b3beba38f3d010",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "shijiazhuang": {
+      "source": "assets/source/v5/black-20261016/shijiazhuang.png",
+      "sha256": "4bf5645fa1108683e676fb9aad7e12e3efdba8ead581ba7ca36460149926e0e7",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "zhengzhou": {
+      "source": "assets/source/v5/black-20261016/zhengzhou.png",
+      "sha256": "c3e30aec791a7d6c79713e564c7232f9c33081fb5f9936eee7fafebe3f44e200",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "chongqing": {
+      "source": "assets/source/v5/black-20261016/chongqing.png",
+      "sha256": "1cc27db4753a38a3989779270ca16053a4a3e3c41c0b1546b3cb9707dd4e49a8",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    },
+    "changchun": {
+      "source": "assets/source/v5/black-20261016/changchun.png",
+      "sha256": "cdf89fb3c7f85edfaf14dd1231b664b3105d9ef9809e3b8d7b093255ed9ae2af",
+      "checks": {
+        "originalCompositionReviewed": true,
+        "allEnclosedFillAuthorized": true
+      },
+      "specific": "All enclosed regions filled per user instruction; structural lines and normals preserved. Full compiled and cup QA required before publication."
+    }
+  },
+  "humanImportDecision": "User requested all previous patterns filled and the new V5.2 duplicate sources to replace old ones."
+}

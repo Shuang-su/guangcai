@@ -1,0 +1,394 @@
+{
+  "checks": [
+    "Every floral segment is restored; no low-resolution fallback",
+    "body channels are aligned",
+    "body height retains more than 8-bit precision",
+    "handle channels are aligned",
+    "handle height retains more than 8-bit precision",
+    "saucer channels are aligned",
+    "saucer height retains more than 8-bit precision",
+    "saucer baseColor row 0 exact periodic guards",
+    "saucer baseColor row 1 exact periodic guards",
+    "saucer normal row 0 exact periodic guards",
+    "saucer normal row 1 exact periodic guards",
+    "saucer metalness row 0 exact periodic guards",
+    "saucer metalness row 1 exact periodic guards",
+    "saucer roughness row 0 exact periodic guards",
+    "saucer roughness row 1 exact periodic guards",
+    "saucer height row 0 exact periodic guards",
+    "saucer height row 1 exact periodic guards",
+    "half-float normals keep exact wrap guards 0",
+    "half-float normals keep exact wrap guards 1",
+    "unchanged city source baseColor.png",
+    "unchanged city source city.json",
+    "unchanged city source cleanup-difference.png",
+    "unchanged city source height.png",
+    "unchanged city source label-roughness.png",
+    "unchanged city source label.png",
+    "unchanged city source line-finish.png",
+    "unchanged city source lines-original.png",
+    "unchanged city source lines.png",
+    "unchanged city source metalness.png",
+    "unchanged city source normal.png",
+    "unchanged city source roughness.png",
+    "unchanged protected code src/geometry/product.ts",
+    "unchanged protected code src/geometry/parameters.ts",
+    "unchanged protected code src/styles/city-artwork.ts",
+    "unchanged protected code src/materials/porcelain.ts",
+    "unchanged protected code src/materials/render-standard.ts",
+    "unchanged protected code src/studio/studio.ts",
+    "unchanged protected code src/studio/lid-reflections.ts",
+    "unchanged protected code src/studio/local-reflections.ts",
+    "unchanged protected code src/ui/background.ts"
+  ],
+  "passed": 40,
+  "protectedBaseline": "073167bed69ae46eb716e13bc9ad2de0bfea0084",
+  "protectedFiles": [
+    "public/china/baseColor.png",
+    "public/china/city.json",
+    "public/china/cleanup-difference.png",
+    "public/china/height.png",
+    "public/china/label-roughness.png",
+    "public/china/label.png",
+    "public/china/line-finish.png",
+    "public/china/lines-original.png",
+    "public/china/lines.png",
+    "public/china/metalness.png",
+    "public/china/normal.png",
+    "public/china/roughness.png",
+    "src/geometry/product.ts",
+    "src/geometry/parameters.ts",
+    "src/styles/city-artwork.ts",
+    "src/materials/porcelain.ts",
+    "src/materials/render-standard.ts",
+    "src/studio/studio.ts",
+    "src/studio/lid-reflections.ts",
+    "src/studio/local-reflections.ts",
+    "src/ui/background.ts"
+  ],
+  "sourceFiles": [
+    {
+      "path": "assets/masters/v3-restored/body-generated.png",
+      "bytes": 2743911,
+      "sha256": "18b5ab63c6861c94ace38d4028cb06680c7f558e00c0830b6c28cb455301a4d8"
+    },
+    {
+      "path": "assets/masters/v3-restored/body-height-16.png",
+      "bytes": 2494217,
+      "sha256": "101a5404eb9df2fad68b71e3db6f51cc5afa63e502b7a4012aef4be9ae51d5c2"
+    },
+    {
+      "path": "assets/masters/v3-restored/body-prompt.txt",
+      "bytes": 1392,
+      "sha256": "a897fe5253aaf82918d21c504f14d2cf9da6353a66e2575d9e59d9a32437cdd7"
+    },
+    {
+      "path": "assets/masters/v3-restored/body-restored.png",
+      "bytes": 3960182,
+      "sha256": "0054725e6a217a5d5932e5b0290713dda9beea12cb2fad8d0dd1722c7e94e39e"
+    },
+    {
+      "path": "assets/masters/v3-restored/generation.json",
+      "bytes": 2338,
+      "sha256": "2b08bc98949de3fb597a763dd8316566674c2227f6f38ed23276ef8adca5e19c"
+    },
+    {
+      "path": "assets/masters/v3-restored/handle-bottom-generated.png",
+      "bytes": 1690771,
+      "sha256": "0b69139d84982c4bf371cf1c896bd717c53683dfb2271fc8ee61d1e7c88b5277"
+    },
+    {
+      "path": "assets/masters/v3-restored/handle-height-16.png",
+      "bytes": 1654519,
+      "sha256": "dccf30410ee0153884b22381ef6fc477b57899074b1f78091d674a6d9cace6c5"
+    },
+    {
+      "path": "assets/masters/v3-restored/handle-prompt.txt",
+      "bytes": 1370,
+      "sha256": "2b22e82033847101d27def4fb70da93496d4ef0f007e78daf12de43469e50fda"
+    },
+    {
+      "path": "assets/masters/v3-restored/handle-restored.png",
+      "bytes": 2771639,
+      "sha256": "e62b66d289269563c306576204df7c5318c607110189fb1312bd96f6fd97004a"
+    },
+    {
+      "path": "assets/masters/v3-restored/handle-top-generated.png",
+      "bytes": 1663295,
+      "sha256": "75c8bdb4e6ec6bc52aa93f9dcde3b94b52ead3684feb66e3b2d7c94c8ca8e802"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/body.png",
+      "bytes": 1452934,
+      "sha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/handle-bottom.png",
+      "bytes": 263611,
+      "sha256": "c84f3174ee2aa47ffcd1de743eb0eb5a62aec8e7bc367f54ffc35bfd4e5321cf"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/handle-top.png",
+      "bytes": 277264,
+      "sha256": "069ef225e8719b90cdbc59478f99f18cebb18c3aaf44bdf03152338c22a370c5"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-01.png",
+      "bytes": 458617,
+      "sha256": "9edb0baf81f7a61f8d767750d2676eeac2109c259963fe980d40a6649e9e65b4"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-02.png",
+      "bytes": 465972,
+      "sha256": "138b0f6a966fce13a1fff303debfb21b580ec65ffaff100af1cde9670ac26bb9"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-03.png",
+      "bytes": 481615,
+      "sha256": "14221d924e0ef5f586d2e0ae1a3b8927e50cb9624c1ff68c1a8558d10c939997"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-04.png",
+      "bytes": 458080,
+      "sha256": "11b4a9d9fc4a8cacf84bd029f1bd8eb2e5e4495aa3055c411427516b07cb4678"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-05.png",
+      "bytes": 475320,
+      "sha256": "934c67d9f6b8a2e9f9c4a06b13b3882be28efd8133282bd786b72bcb09ffb09d"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-06.png",
+      "bytes": 464748,
+      "sha256": "ce72fcccc29a362a8ac75087e75112866e6078d7c6e3018fa774e8d1bc91622f"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-07.png",
+      "bytes": 484670,
+      "sha256": "0982c8c25e7cda918e02d6c1e401f4f1ba58ab2f5938157b589c0eabe995fa6a"
+    },
+    {
+      "path": "assets/masters/v3-restored/inputs/saucer-08.png",
+      "bytes": 465902,
+      "sha256": "8b16bb882d957f76213191ddfbd871554b387aa959672b2d2ebad02f32b2ea6b"
+    },
+    {
+      "path": "assets/masters/v3-restored/layout.json",
+      "bytes": 1652,
+      "sha256": "d0b8632e37115c51cc73777a38eb8baf671bd59f6328984f25fd05aff88e842a"
+    },
+    {
+      "path": "assets/masters/v3-restored/pilot-generated.png",
+      "bytes": 2520431,
+      "sha256": "961b93ad2684200e837fb428a321649983bb9d1e67074d975a692126b5bd8108"
+    },
+    {
+      "path": "assets/masters/v3-restored/pilot-prompt.txt",
+      "bytes": 1563,
+      "sha256": "beb3d81c16192fc1ca14b205d7ccbcebd6670a33298a4a9d4267f9a3c145c9ec"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-00-registered.png",
+      "bytes": 1637355,
+      "sha256": "e210f4dfa2819b0b327227cc5f3b30ed349285dd1c3b1f0cff1a92f6d4c2b388"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-01-generated.png",
+      "bytes": 2611893,
+      "sha256": "5ca1d84028d87bacd274b1383c53440d9604d480183e04081b58c62e01ca6e41"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-01-registered.png",
+      "bytes": 1917541,
+      "sha256": "7202637f4604b3f691e6ebed96808598157ce566ec3d1b41137ae1a615f807ba"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-02-generated.png",
+      "bytes": 2777353,
+      "sha256": "2e4ad0aafdbbaa0a273a1c2d06fbb6ffa376d51fedab310e377181a6178ea2af"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-02-registered.png",
+      "bytes": 2006003,
+      "sha256": "7721177a555fe616a75175f72292797b245fdb2c6a6629fc2c53739a7662de6f"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-03-generated.png",
+      "bytes": 2974482,
+      "sha256": "afd01b57381208e3d7a3215c3596dda4c903ed2e2d8cad26fcbdced564066ece"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-03-registered.png",
+      "bytes": 2081351,
+      "sha256": "d69e294f2390e9bb1ee060d1387f498b72a7a87aefe9b958239a4bbb8619d2c5"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-04-generated.png",
+      "bytes": 2777524,
+      "sha256": "c2d0f402138f33279b7337f75494d77ea501933e186c3eb5dfa2fdafb14eae02"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-04-registered.png",
+      "bytes": 2001403,
+      "sha256": "6902e3145e82f5c735773b5189d3a53e004006fd3064bedf03923553c4947a12"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-05-generated.png",
+      "bytes": 2831009,
+      "sha256": "2197989817e3316b430227496d9ef2cd27ffad4860e2372c896382e09b91e10f"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-05-registered.png",
+      "bytes": 2039776,
+      "sha256": "b2ff0c2fd32e0ea9a455cb72e5d11a37b560f55f64555821ec7b75da630d6aa8"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-06-generated.png",
+      "bytes": 2701382,
+      "sha256": "b073c1e4e8853f10dde16cb81abedf8df190e8bb6d8b8fc79de4ef2146b43e89"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-06-registered.png",
+      "bytes": 1947705,
+      "sha256": "45602e357c402a9c2b534215eb3e2b3e61ad240d23cd6f39f9442053171adce0"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-07-generated.png",
+      "bytes": 2851914,
+      "sha256": "178cd25f370650156c0454533e841af871c5bd0df8972121e8240591ab3f8657"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-07-registered.png",
+      "bytes": 2033421,
+      "sha256": "df271f9b6550589a8f26e0095f4a2c092e9cd9d74d259eff7747b5dad6409468"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-08-generated.png",
+      "bytes": 2766717,
+      "sha256": "fe5eb78cfa7aca543b9ff6115a3af5bb7043fd8f8f9b955ea00ee854320b493d"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-08-registered.png",
+      "bytes": 2003884,
+      "sha256": "299d21d7caffd5f9e6b54f865c75b0e4a25b34885785ac35013f90d41a4d1000"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-height-16.png",
+      "bytes": 9577652,
+      "sha256": "336696d1b0845b411efcf1fcc0ccaa8fcc39f88f6c2f414ea4e2bfac2edf42c5"
+    },
+    {
+      "path": "assets/masters/v3-restored/saucer-restored.png",
+      "bytes": 15508762,
+      "sha256": "a5b18f8724dfc35769a96d5be37b5fd3cd36598818fe6a8be07a93b8d047738d"
+    },
+    {
+      "path": "assets/masters/v3-restored/segment-prompt.txt",
+      "bytes": 1163,
+      "sha256": "b1d0f803cbe4e7e9a5f02df1d3fee636aa1ef2817d4b30dfa938aa34b3fe0f7c"
+    }
+  ],
+  "outputFiles": [
+    {
+      "path": "public/fixed/body-baseColor.png",
+      "bytes": 3461685,
+      "sha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559"
+    },
+    {
+      "path": "public/fixed/body-height.png",
+      "bytes": 2494217,
+      "sha256": "101a5404eb9df2fad68b71e3db6f51cc5afa63e502b7a4012aef4be9ae51d5c2"
+    },
+    {
+      "path": "public/fixed/body-metalness.png",
+      "bytes": 216899,
+      "sha256": "c2c3fba0d984592a1a34d6a3fd012075132ce5b530b7891a4ac749a78cd732a0"
+    },
+    {
+      "path": "public/fixed/body-normal.hfn.gz",
+      "bytes": 5001612,
+      "sha256": "b11dbeb53fb6a2786c235ddb0008c555b0de495167ac2857d2ca509de09e09c3"
+    },
+    {
+      "path": "public/fixed/body-normal.png",
+      "bytes": 1192303,
+      "sha256": "663f3f2b4f5b11cb6911161ed53c6ee7ac4b80669419bbbe44f85cef53092f55"
+    },
+    {
+      "path": "public/fixed/body-roughness.png",
+      "bytes": 238770,
+      "sha256": "0c456cb793bf7f3eb144f45d1c24a0649f77305c9dbd17a687f8cb2e43c6b296"
+    },
+    {
+      "path": "public/fixed/handle-baseColor.png",
+      "bytes": 2384505,
+      "sha256": "1bbe09ecdef463283f11c7f7319f80a05576311be5f28ff172eaf77751065e7e"
+    },
+    {
+      "path": "public/fixed/handle-height.png",
+      "bytes": 1654519,
+      "sha256": "dccf30410ee0153884b22381ef6fc477b57899074b1f78091d674a6d9cace6c5"
+    },
+    {
+      "path": "public/fixed/handle-metalness.png",
+      "bytes": 135589,
+      "sha256": "4a13505d79c8cd57b3ccff0257bc2eb204a872455359fa3fc89202e3f5ef2c2b"
+    },
+    {
+      "path": "public/fixed/handle-normal.hfn.gz",
+      "bytes": 3771724,
+      "sha256": "be306a82fe97957e8ae9fc92fef6740443d2540d2780e1f0c6f7e7f9a8487341"
+    },
+    {
+      "path": "public/fixed/handle-normal.png",
+      "bytes": 936945,
+      "sha256": "5ea5659d8d68839eace9c4e2d6a79b0445919a3f240fc88ce4672f3be21dda02"
+    },
+    {
+      "path": "public/fixed/handle-roughness.png",
+      "bytes": 154952,
+      "sha256": "427cdc89517cfd150b0f5ce2a57ef1f283e16079654c09992e975f7c58684329"
+    },
+    {
+      "path": "public/fixed/manifest.json",
+      "bytes": 8096,
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30"
+    },
+    {
+      "path": "public/fixed/saucer-baseColor.png",
+      "bytes": 14503414,
+      "sha256": "055dcb7b469f1dd641de2f5415c69bda9b6f85f450b0efcd902648773cde3225"
+    },
+    {
+      "path": "public/fixed/saucer-height.png",
+      "bytes": 9651740,
+      "sha256": "d747a9deea15f0119b1518c66e1da2293b6ac7ff310da777544ff2ffb98813da"
+    },
+    {
+      "path": "public/fixed/saucer-metalness.png",
+      "bytes": 668365,
+      "sha256": "49d1780ab95ff7e824f9b4f9188ebfa96e3d4a80d57b16a350156ff18ce2cbd6"
+    },
+    {
+      "path": "public/fixed/saucer-normal.hfn.gz",
+      "bytes": 24498837,
+      "sha256": "b3cf69e35ee63a53adfb022267c8ca95d7ba182d7ba19dfb727924b3e86b0ca1"
+    },
+    {
+      "path": "public/fixed/saucer-normal.png",
+      "bytes": 5452995,
+      "sha256": "2a1221777efec8e7c79dc3c242fa3800355de681d144362dbf71cb08f935d1d5"
+    },
+    {
+      "path": "public/fixed/saucer-roughness.png",
+      "bytes": 915703,
+      "sha256": "bccfa79bc99476ded0b697b9836d860edfd4856793c11b0f8f12231fa2864d0e"
+    },
+    {
+      "path": "public/fixed/style.json",
+      "bytes": 1103,
+      "sha256": "443ffc8ee37e7afce6095a79c72a74d02142ebd3c3d598663c97b1405b469ed0"
+    }
+  ],
+  "limits": "AI-generated strokes and washes are reconstructed; this verifies packing, precision, provenance and scope, not exact source drawing fidelity or physical device acceptance."
+}

@@ -1,0 +1,110 @@
+{
+  "method": "landmarks-first; authored vector components plus original PSD temple contour",
+  "authoringSize": [
+    1900,
+    828
+  ],
+  "baseline": 790,
+  "cities": {
+    "beijing": [
+      {
+        "id": "great-wall",
+        "file": "beijing-great-wall.svg",
+        "source": "authored vector",
+        "sha256": "65ff097dcc6ec66d200282319838ffd51dd2300036866824ef00aaf4883a0e33"
+      },
+      {
+        "id": "watchtower-1",
+        "file": "beijing-watchtower-1.svg",
+        "source": "authored vector",
+        "sha256": "9fd6742655e9250e559f2f9dc7320044928b79a239aee5c83b44e9a642a36994"
+      },
+      {
+        "id": "watchtower-2",
+        "file": "beijing-watchtower-2.svg",
+        "source": "authored vector",
+        "sha256": "131120fd965d546924dd60b2e216c158e72962c0c2853a634b5727c1b10bedd5"
+      },
+      {
+        "id": "watchtower-3",
+        "file": "beijing-watchtower-3.svg",
+        "source": "authored vector",
+        "sha256": "652dedd2d812e69932b456305420efcb64e29aaafd0d5373839efbe2a7b3d1a3"
+      },
+      {
+        "id": "cctv-headquarters",
+        "file": "beijing-cctv-headquarters.svg",
+        "source": "authored vector",
+        "sha256": "168f2ff7deb259d80dc4093aeab5d3bba22a0a0002a03aa733eba94c5fea3d0f"
+      },
+      {
+        "id": "china-zun",
+        "file": "beijing-china-zun.svg",
+        "source": "authored vector",
+        "sha256": "893452a7e7e67ee62159e1dfcde3c42381c1d84044022e04e2a030aca45ea00d"
+      },
+      {
+        "id": "hall-of-prayer",
+        "file": "beijing-hall-of-prayer.svg",
+        "source": "original PSD layer-6-alpha.png sha256:0cfd310da446d26dc26b1412ec377fb3f96e2c7fecf767551f32082c5c46d775",
+        "sha256": "58b66a286c3a75e7320b09eb7473c4583a9386d27fedea00ae285441238096af"
+      }
+    ],
+    "shenzhen": [
+      {
+        "id": "west-rounded-tower",
+        "file": "shenzhen-west-rounded-tower.svg",
+        "source": "authored vector",
+        "sha256": "e6b14564144f3850a0dbf0fb9fec4a75c070091dea8a842f46dc1463392cf70a"
+      },
+      {
+        "id": "twin-spire-tower",
+        "file": "shenzhen-twin-spire-tower.svg",
+        "source": "authored vector",
+        "sha256": "92ffde7fb7f99db3c5b2d81b1cfa56499fd5daa3d80e8ab52c87f86f6e0c4b5e"
+      },
+      {
+        "id": "ping-an-tower",
+        "file": "shenzhen-ping-an-tower.svg",
+        "source": "authored vector",
+        "sha256": "d6761e55e2eeab2b313e7e4ee0bc9fddcd7c42e7fd3f01b8d59dc168f65ee1a0"
+      },
+      {
+        "id": "middle-rounded-tower",
+        "file": "shenzhen-middle-rounded-tower.svg",
+        "source": "authored vector",
+        "sha256": "15518b8c440548c70189f1abf85cbbfbb6555a74ffb53bf85467a3d2afbcc07c"
+      },
+      {
+        "id": "middle-step-tower",
+        "file": "shenzhen-middle-step-tower.svg",
+        "source": "authored vector",
+        "sha256": "070ad3d6ef7adaf144a66db989b30b2a42b9196c5846243e6110dc0d75c32d21"
+      },
+      {
+        "id": "middle-faceted-tower",
+        "file": "shenzhen-middle-faceted-tower.svg",
+        "source": "authored vector",
+        "sha256": "f1dac3be61f6c76a57c39afe950dd8bdb0e5e65a28221a680058f0b7a33ec139"
+      },
+      {
+        "id": "east-braced-tower",
+        "file": "shenzhen-east-braced-tower.svg",
+        "source": "authored vector",
+        "sha256": "f6251557bdfef3e2e91bee997d24bcc413ad8822ec7a751aca8d174d3f0cbf93"
+      },
+      {
+        "id": "civic-center-body",
+        "file": "shenzhen-civic-center-body.svg",
+        "source": "authored vector",
+        "sha256": "3d6cb4db67baa3bab4c6f74477d08b5513c946bb6eeebae79db86bf8f427003a"
+      },
+      {
+        "id": "civic-center-roof",
+        "file": "shenzhen-civic-center-roof.svg",
+        "source": "authored vector",
+        "sha256": "fc2a545ef47bd6552a9dfe017d786e84d0548d1fb686795af23fb64ddafbf474"
+      }
+    ]
+  }
+}

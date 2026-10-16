@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-16",
+  "origin": "user-supplied files; original bytes preserved",
+  "sourceDirectory": "/Volumes/Prism_初号機/广彩/素材原件/11城市图案调整(1)",
+  "decision": "Add all eleven patterns; retain existing Beijing/Shenzhen; new alternatives named 北京 2 and 深圳 2. Preserve supplied bridge, hills and bottom line.",
+  "files": [
+    {
+      "id": "beijing-2",
+      "name": "北京",
+      "originalFile": "北京@2x.png",
+      "source": "assets/source/v5/user-20261016/beijing-2.png",
+      "sha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "originalFile": "上海@2x.png",
+      "source": "assets/source/v5/user-20261016/shanghai.png",
+      "sha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "originalFile": "广州@2x.png",
+      "source": "assets/source/v5/user-20261016/guangzhou.png",
+      "sha256": "a3e37412d771df519d7f7d8eaabbf53bf4575ab464b1d3a73e999bd7e7aac5b5",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "originalFile": "天津@2x.png",
+      "source": "assets/source/v5/user-20261016/tianjin.png",
+      "sha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "originalFile": "青岛@2x.png",
+      "source": "assets/source/v5/user-20261016/qingdao.png",
+      "sha256": "93683bbcbd26e73c0856c88e418a002b55328cec6dea186f9c13f462efea2f82",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "originalFile": "太原@2x.png",
+      "source": "assets/source/v5/user-20261016/taiyuan.png",
+      "sha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "originalFile": "杭州@2x.png",
+      "source": "assets/source/v5/user-20261016/hangzhou.png",
+      "sha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "originalFile": "西安@2x.png",
+      "source": "assets/source/v5/user-20261016/xian.png",
+      "sha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "shenzhen-2",
+      "name": "深圳",
+      "originalFile": "深圳@2x.png",
+      "source": "assets/source/v5/user-20261016/shenzhen-2.png",
+      "sha256": "757c96e1b6c5490a3394435ac29ef685df6750a20f706686e9cf59675a7dcf88",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "originalFile": "武汉@2x.png",
+      "source": "assets/source/v5/user-20261016/wuhan.png",
+      "sha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "originalFile": "南京@2x.png",
+      "source": "assets/source/v5/user-20261016/nanjing.png",
+      "sha256": "0d3ebe08be354a85a2d6716809bed9bfd93f43c213c9b62a177a369bf10c73ba",
+      "size": [
+        3878,
+        1630
+      ],
+      "alpha": "fully opaque white background; derive ink from red minus blue"
+    }
+  ],
+  "preservedFiles": {
+    "assets/masters/v5/beijing.svg": "1d6b20b6c8779fe15f36fc754552d4b5acfdb7874806c70143f5074e2f6b1d08",
+    "public/cities/v5/beijing-structure.webp": "448d36ddb09b33ff68e08ffd57ee5ce85cc60642702559e3f288e48c1710bada",
+    "public/cities/v5/beijing-normal.hfn.gz": "9f59a505eb6b678dc51f34ce42cb83427e975939be3cbd32a37cef00a41b5111",
+    "public/cities/v5/beijing-label.webp": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1",
+    "public/cities/v5/beijing-thumb.webp": "7b0a90ce53055162fa02ad875c0d5150daa12dc7a2c226c35148c1010ee29ad9",
+    "assets/masters/v5/shenzhen.svg": "11b1a91ce28cfe6a7618d6ecc766709299685f4fbeb12122356442f440fda831",
+    "public/cities/v5/shenzhen-structure.webp": "e39970e19e3a90777b8e5c8ef6e66fc0edaeb28b47205a65659917570acddf18",
+    "public/cities/v5/shenzhen-normal.hfn.gz": "ff973d1ceb3be85592ff85044d03c27d803a7d38c00ef9f3c9a327870fffc36c",
+    "public/cities/v5/shenzhen-label.webp": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92",
+    "public/cities/v5/shenzhen-thumb.webp": "5fd4a4c355f1dacacb3feb549a5cd4dc0c2835f5118f076f5eca9ec09988e8a8"
+  }
+}

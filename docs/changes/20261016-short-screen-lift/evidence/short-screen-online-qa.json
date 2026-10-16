@@ -1,0 +1,356 @@
+{
+  "url": "https://6ad20c45a7780e55fedba3d7--guangcai-no1-china-v5.netlify.app/",
+  "date": "2026-10-16T11:38:18.405Z",
+  "checks": [
+    "src/ui/haptics.ts stays byte-identical to working V5.4.1",
+    "src/ui/ios-haptics.ts stays byte-identical to working V5.4.1",
+    "src/ui/xy-pad.ts stays byte-identical to working V5.4.1",
+    "src/ui/lightness-slider.ts stays byte-identical to working V5.4.1",
+    "src/ui/control-lift.ts stays byte-identical to working V5.4.1",
+    "src/interaction/authoring-framing.ts stays byte-identical to working V5.4.1",
+    "src/ui/artwork-panel.ts stays byte-identical to working V5.4.1",
+    "actual iOS gesture branch is exercised",
+    "360x640 has no horizontal overflow",
+    "360x640 #color-pad is fully visible on entry",
+    "360x640 #color-pad restores 1.24 lift",
+    "360x640 #color-pad lifted bounds remain inside panel",
+    "360x640 #color-pad starts without moving or scrolling sheet",
+    "360x640 #color-pad retains repeated native detents",
+    "360x640 #color-pad preserves native haptic touch coordinates",
+    "360x640 #color-pad drag does not rotate camera",
+    "360x640 #color-pad releases to original size",
+    "360x640 .lightness-control is fully visible on entry",
+    "360x640 .lightness-control restores 1.24 lift",
+    "360x640 .lightness-control lifted bounds remain inside panel",
+    "360x640 .lightness-control starts without moving or scrolling sheet",
+    "360x640 .lightness-control retains repeated native detents",
+    "360x640 .lightness-control preserves native haptic touch coordinates",
+    "360x640 .lightness-control drag does not rotate camera",
+    "360x640 .lightness-control releases to original size",
+    "360x640 #material-pad is fully visible on entry",
+    "360x640 #material-pad restores 1.24 lift",
+    "360x640 #material-pad lifted bounds remain inside panel",
+    "360x640 #material-pad starts without moving or scrolling sheet",
+    "360x640 #material-pad retains repeated native detents",
+    "360x640 #material-pad preserves native haptic touch coordinates",
+    "360x640 #material-pad drag does not rotate camera",
+    "360x640 #material-pad releases to original size",
+    "375x667 has no horizontal overflow",
+    "375x667 #color-pad is fully visible on entry",
+    "375x667 #color-pad restores 1.24 lift",
+    "375x667 #color-pad lifted bounds remain inside panel",
+    "375x667 #color-pad starts without moving or scrolling sheet",
+    "375x667 #color-pad retains repeated native detents",
+    "375x667 #color-pad preserves native haptic touch coordinates",
+    "375x667 #color-pad drag does not rotate camera",
+    "375x667 #color-pad releases to original size",
+    "375x667 .lightness-control is fully visible on entry",
+    "375x667 .lightness-control restores 1.24 lift",
+    "375x667 .lightness-control lifted bounds remain inside panel",
+    "375x667 .lightness-control starts without moving or scrolling sheet",
+    "375x667 .lightness-control retains repeated native detents",
+    "375x667 .lightness-control preserves native haptic touch coordinates",
+    "375x667 .lightness-control drag does not rotate camera",
+    "375x667 .lightness-control releases to original size",
+    "375x667 #material-pad is fully visible on entry",
+    "375x667 #material-pad restores 1.24 lift",
+    "375x667 #material-pad lifted bounds remain inside panel",
+    "375x667 #material-pad starts without moving or scrolling sheet",
+    "375x667 #material-pad retains repeated native detents",
+    "375x667 #material-pad preserves native haptic touch coordinates",
+    "375x667 #material-pad drag does not rotate camera",
+    "375x667 #material-pad releases to original size",
+    "393x715 has no horizontal overflow",
+    "393x715 #color-pad is fully visible on entry",
+    "393x715 #color-pad restores 1.24 lift",
+    "393x715 #color-pad lifted bounds remain inside panel",
+    "393x715 #color-pad starts without moving or scrolling sheet",
+    "393x715 #color-pad retains repeated native detents",
+    "393x715 #color-pad preserves native haptic touch coordinates",
+    "393x715 #color-pad drag does not rotate camera",
+    "393x715 #color-pad releases to original size",
+    "393x715 .lightness-control is fully visible on entry",
+    "393x715 .lightness-control restores 1.24 lift",
+    "393x715 .lightness-control lifted bounds remain inside panel",
+    "393x715 .lightness-control starts without moving or scrolling sheet",
+    "393x715 .lightness-control retains repeated native detents",
+    "393x715 .lightness-control preserves native haptic touch coordinates",
+    "393x715 .lightness-control drag does not rotate camera",
+    "393x715 .lightness-control releases to original size",
+    "393x715 #material-pad is fully visible on entry",
+    "393x715 #material-pad restores 1.24 lift",
+    "393x715 #material-pad lifted bounds remain inside panel",
+    "393x715 #material-pad starts without moving or scrolling sheet",
+    "393x715 #material-pad retains repeated native detents",
+    "393x715 #material-pad preserves native haptic touch coordinates",
+    "393x715 #material-pad drag does not rotate camera",
+    "393x715 #material-pad releases to original size",
+    "390x844 has no horizontal overflow",
+    "390x844 #color-pad is fully visible on entry",
+    "390x844 #color-pad restores 1.24 lift",
+    "390x844 #color-pad lifted bounds remain inside panel",
+    "390x844 #color-pad starts without moving or scrolling sheet",
+    "390x844 #color-pad retains repeated native detents",
+    "390x844 #color-pad preserves native haptic touch coordinates",
+    "390x844 #color-pad drag does not rotate camera",
+    "390x844 #color-pad releases to original size",
+    "390x844 .lightness-control is fully visible on entry",
+    "390x844 .lightness-control restores 1.24 lift",
+    "390x844 .lightness-control lifted bounds remain inside panel",
+    "390x844 .lightness-control starts without moving or scrolling sheet",
+    "390x844 .lightness-control retains repeated native detents",
+    "390x844 .lightness-control preserves native haptic touch coordinates",
+    "390x844 .lightness-control drag does not rotate camera",
+    "390x844 .lightness-control releases to original size",
+    "390x844 #material-pad is fully visible on entry",
+    "390x844 #material-pad restores 1.24 lift",
+    "390x844 #material-pad lifted bounds remain inside panel",
+    "390x844 #material-pad starts without moving or scrolling sheet",
+    "390x844 #material-pad retains repeated native detents",
+    "390x844 #material-pad preserves native haptic touch coordinates",
+    "390x844 #material-pad drag does not rotate camera",
+    "390x844 #material-pad releases to original size",
+    "420x890 has no horizontal overflow",
+    "420x890 #color-pad is fully visible on entry",
+    "420x890 #color-pad restores 1.24 lift",
+    "420x890 #color-pad lifted bounds remain inside panel",
+    "420x890 #color-pad starts without moving or scrolling sheet",
+    "420x890 #color-pad retains repeated native detents",
+    "420x890 #color-pad preserves native haptic touch coordinates",
+    "420x890 #color-pad drag does not rotate camera",
+    "420x890 #color-pad releases to original size",
+    "420x890 .lightness-control is fully visible on entry",
+    "420x890 .lightness-control restores 1.24 lift",
+    "420x890 .lightness-control lifted bounds remain inside panel",
+    "420x890 .lightness-control starts without moving or scrolling sheet",
+    "420x890 .lightness-control retains repeated native detents",
+    "420x890 .lightness-control preserves native haptic touch coordinates",
+    "420x890 .lightness-control drag does not rotate camera",
+    "420x890 .lightness-control releases to original size",
+    "420x890 #material-pad is fully visible on entry",
+    "420x890 #material-pad restores 1.24 lift",
+    "420x890 #material-pad lifted bounds remain inside panel",
+    "420x890 #material-pad starts without moving or scrolling sheet",
+    "420x890 #material-pad retains repeated native detents",
+    "420x890 #material-pad preserves native haptic touch coordinates",
+    "420x890 #material-pad drag does not rotate camera",
+    "420x890 #material-pad releases to original size",
+    "short screen still respects reduced motion",
+    "no application errors"
+  ],
+  "errors": [],
+  "measurements": [
+    {
+      "viewport": [
+        360,
+        640
+      ],
+      "control": "color-pad",
+      "scale": 1.24,
+      "restingSize": [
+        172.796875,
+        172.796875
+      ],
+      "anchorError": 0.1886252237974772,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        360,
+        640
+      ],
+      "control": "lightness",
+      "scale": 1.24,
+      "restingSize": [
+        44,
+        172.796875
+      ],
+      "anchorError": 0.14044799804685226,
+      "nativeTransitions": 3
+    },
+    {
+      "viewport": [
+        360,
+        640
+      ],
+      "control": "material-pad",
+      "scale": 1.24,
+      "restingSize": [
+        172.796875,
+        172.796875
+      ],
+      "anchorError": 0.1886252237974772,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        375,
+        667
+      ],
+      "control": "color-pad",
+      "scale": 1.24,
+      "restingSize": [
+        180.078125,
+        180.078125
+      ],
+      "anchorError": 0.07873135933624292,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        375,
+        667
+      ],
+      "control": "lightness",
+      "scale": 1.24,
+      "restingSize": [
+        44,
+        180.078125
+      ],
+      "anchorError": 0.062042236328125,
+      "nativeTransitions": 3
+    },
+    {
+      "viewport": [
+        375,
+        667
+      ],
+      "control": "material-pad",
+      "scale": 1.24,
+      "restingSize": [
+        180.078125,
+        180.078125
+      ],
+      "anchorError": 0.07873135933624292,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        393,
+        715
+      ],
+      "control": "color-pad",
+      "scale": 1.24,
+      "restingSize": [
+        193.046875,
+        193.046875
+      ],
+      "anchorError": 0.04912389819290366,
+      "nativeTransitions": 5
+    },
+    {
+      "viewport": [
+        393,
+        715
+      ],
+      "control": "lightness",
+      "scale": 1.24,
+      "restingSize": [
+        44,
+        193.046875
+      ],
+      "anchorError": 0.039581298828125,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        393,
+        715
+      ],
+      "control": "material-pad",
+      "scale": 1.24,
+      "restingSize": [
+        193.046875,
+        193.046875
+      ],
+      "anchorError": 0.04912389819290366,
+      "nativeTransitions": 5
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "control": "color-pad",
+      "scale": 1.24,
+      "restingSize": [
+        220,
+        220
+      ],
+      "anchorError": 0.0057983448630863355,
+      "nativeTransitions": 5
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "control": "lightness",
+      "scale": 1.24,
+      "restingSize": [
+        44,
+        220
+      ],
+      "anchorError": 0.005828857421875,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "control": "material-pad",
+      "scale": 1.24,
+      "restingSize": [
+        220,
+        220
+      ],
+      "anchorError": 0.0057983448630863355,
+      "nativeTransitions": 5
+    },
+    {
+      "viewport": [
+        420,
+        890
+      ],
+      "control": "color-pad",
+      "scale": 1.24,
+      "restingSize": [
+        220,
+        220
+      ],
+      "anchorError": 0.0057983448630863355,
+      "nativeTransitions": 5
+    },
+    {
+      "viewport": [
+        420,
+        890
+      ],
+      "control": "lightness",
+      "scale": 1.24,
+      "restingSize": [
+        44,
+        220
+      ],
+      "anchorError": 0.005828857421875,
+      "nativeTransitions": 4
+    },
+    {
+      "viewport": [
+        420,
+        890
+      ],
+      "control": "material-pad",
+      "scale": 1.24,
+      "restingSize": [
+        220,
+        220
+      ],
+      "anchorError": 0.0057983448630863355,
+      "nativeTransitions": 5
+    }
+  ],
+  "physicalMotorVerified": false,
+  "environment": "Installed Chrome with iOS capability simulation; layout and native event routing, not motor verification."
+}

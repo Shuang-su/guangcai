@@ -1,0 +1,130 @@
+Uploaded 25/43
+
+> guangcai-china-v4@5.3.0 qa:v5
+> node tools/v5-qa.mjs
+
+PASS page identity, V5.3 and meaningful canvas
+PASS no framework overlay
+PASS China default and lazy city loading unchanged
+PASS five presets, two pads, lightness axis and retired controls removed
+PASS city selector folds after choosing and full square is visible
+PASS lightness keyboard minimum changes only the lightness axis
+PASS lightness lower bound retains colour instead of black
+PASS lightness upper bound retains colour instead of white
+PASS one-axis slider has a floating circular selector and live point canvas
+PASS slider activation increases saturation without a white overlay
+PASS one-axis selector settles after pointer release
+PASS real vertical slider drag controls lightness without changing material
+PASS cached lightness field matches HSL colour
+PASS external preset cancels stale native slider edits
+PASS reduced motion keeps slider highlight static without scaling
+Press feedback {"scale":1.81669,"dotChange":true,"classes":"xy-pad is-dragging is-expanded"}
+PASS pressed knob expands and nearby dots animate
+PASS whole colour pad expands while a stationary press keeps its value
+PASS surface stays illuminated during sustained input
+PASS illumination uses colour brightness without a white canvas veil
+PASS surface afterglow briefly softens release
+Spotlight samples {"activationGain":1.54164,"restingGain":1,"baseUnchanged":true}
+PASS activation surface light fades without repainting the base colour field
+PASS release settles the spring and stops dot animation
+PASS reduced motion disables temporal dot animation and knob scaling
+PASS dotted crosshair stays brighter than distant off-axis dots after release
+PASS reference marker stays at the preset origin across gestures
+PASS keyboard focus is elevated and highlighted without an outer frame
+PASS lightness focus keeps its accessible name without an enclosing outline
+PASS preset gold reuses structure and centres material X
+PASS preset green reuses structure and centres material X
+PASS preset red reuses structure and centres material X
+PASS preset purple reuses structure and centres material X
+PASS preset blue reuses structure and centres material X
+PASS beijing material 0,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0 updates fill and preserves colour, relief and gold
+PASS beijing material 0,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 1,0.5 updates fill and preserves colour, relief and gold
+PASS beijing material 0,1 updates fill and preserves colour, relief and gold
+PASS beijing material 0.5,1 updates fill and preserves colour, relief and gold
+PASS beijing material 1,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,0 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,0.5 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 0.5,1 updates fill and preserves colour, relief and gold
+PASS shenzhen material 1,1 updates fill and preserves colour, relief and gold
+PASS colour and material update actual state independently while retaining hidden lightness and relief
+PASS uniform edits add no city requests, GPU textures, programs or reflection captures
+PASS city switch preserves two axes, colour, hidden text and bounded cache
+PASS preset resets both axes, HSL and relief
+PASS reset button restores both cursor coordinates
+PASS Shenzhen slogan API retained
+PASS legacy metal restores exact centre-column endpoint
+PASS legacy paint restores exact centre-column endpoint
+PASS centre preserves last hue and zero saturation
+PASS hue wraps continuously across red seam
+PASS keyboard and fine adjustment change both axes
+PASS equivalent accessible axis edits the same state
+PASS real drag updates both axes without rotating the cup
+PASS captured drag clamps beyond edges and releases cleanly
+PASS external preset cancels captured gesture and stale pending edits
+PASS sustained drag keeps GPU and reflection resources fixed
+PASS twenty-six city options use newest duplicate sources
+PASS beijing retains creation state, own maps and bounded cache
+PASS shenzhen retains creation state, own maps and bounded cache
+PASS beijing-2 retains creation state, own maps and bounded cache
+PASS shanghai retains creation state, own maps and bounded cache
+PASS guangzhou retains creation state, own maps and bounded cache
+PASS tianjin retains creation state, own maps and bounded cache
+PASS qingdao retains creation state, own maps and bounded cache
+PASS taiyuan retains creation state, own maps and bounded cache
+PASS hangzhou retains creation state, own maps and bounded cache
+PASS xian retains creation state, own maps and bounded cache
+PASS shenzhen-2 retains creation state, own maps and bounded cache
+PASS wuhan retains creation state, own maps and bounded cache
+PASS nanjing retains creation state, own maps and bounded cache
+PASS urumqi retains creation state, own maps and bounded cache
+PASS nanchang retains creation state, own maps and bounded cache
+PASS xiamen retains creation state, own maps and bounded cache
+PASS hohhot retains creation state, own maps and bounded cache
+PASS harbin retains creation state, own maps and bounded cache
+PASS chengdu retains creation state, own maps and bounded cache
+PASS jingdezhen retains creation state, own maps and bounded cache
+PASS shenyang retains creation state, own maps and bounded cache
+PASS shijiazhuang retains creation state, own maps and bounded cache
+PASS zhengzhou retains creation state, own maps and bounded cache
+PASS chongqing retains creation state, own maps and bounded cache
+PASS changchun retains creation state, own maps and bounded cache
+PASS repeated switching does not accumulate textures
+PASS rapid choices commit only latest state
+PASS failed pack retains selection and visible maps
+PASS hidden relief API 0 retains compatibility
+PASS hidden relief API 1 retains compatibility
+PASS hidden relief API 2 retains compatibility
+PASS original restore and legacy artwork API remain compatible
+PASS viewport 390 fits without horizontal overflow
+PASS viewport 390 shows entire pad and lightness axis on entry
+PASS viewport 390 can reach final city option
+PASS viewport 390 last city and material remain reachable
+PASS viewport 600 fits without horizontal overflow
+PASS viewport 600 shows entire pad and lightness axis on entry
+PASS viewport 600 can reach final city option
+PASS viewport 600 last city and material remain reachable
+PASS viewport 844 fits without horizontal overflow
+PASS viewport 844 can reach final city option
+PASS viewport 844 last city and material remain reachable
+PASS viewport 1280 fits without horizontal overflow
+PASS viewport 1280 shows entire pad and lightness axis on entry
+PASS viewport 1280 can reach final city option
+PASS viewport 1280 last city and material remain reachable
+PASS emulated phone lightness drag preserves hue, saturation and material
+PASS one-axis touch cancellation clears active feedback
+PASS emulated touch changes real material without rotating cup
+PASS touch cancellation and reset leave no stale gesture or frame
+PASS two-finger canvas pan remains available outside pad
+PASS source review route resolves to the source page
+PASS all source review images and downloads retained
+PASS no unexpected console or shader errors
+{"url":"https://guangcai-no1-china-v5.netlify.app","permalink":"https://6ad1e6cde46366079e077a4c--guangcai-no1-china-v5.netlify.app","deployId":"6ad1e6cde46366079e077a4c","files":1087,"onlineChecks":122,"oldSitesUnchanged":true}

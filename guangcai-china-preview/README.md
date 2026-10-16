@@ -1,19 +1,17 @@
-# 中国杯 4.2：城市主题与固定花纹金底清洗
+# 中国杯 V5：城市母版与自由创作
 
-[打开 V4](https://guangcai-no1-china-v4.netlify.app/) · [素材与对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#v4) · [版本与部署索引](../VERSION_HISTORY.md)
+本目录继续承载中国杯的版本演进。本功能分支基于 **5.1.0**，新增 Issue #25 的方形调色盘与二维材质控制；本轮改动仅完成本地实现和验证，未发布。线上历史由 [版本索引](../VERSION_HISTORY.md) 单独记录。
 
-本目录是 [Shuang-su/guangcai](https://github.com/Shuang-su/guangcai) 的中国杯应用，2.x、3.x、4.x 沿用同一源码目录。当前源码版本 **4.2.0**；发布与合并状态以末尾记录和根目录版本索引为准，开发与发布遵循[仓库约定](../AGENTS.md)。站点手动发布，不随代码推送或 PR 合并自动更新。
+- 13 套 V5 城市图样各有纯金、青绿、朱红、紫、蓝五个配色预设；源结构和法线每城只存一套。
+- “颜色／材质”切换共享方形点阵控制区。颜色盘控制色相与饱和度，右侧明度条独立调整明暗；材质盘联动金属度、粗糙度和清漆层，金线独立固定。
+- 鼠标／单指点击或拖动选点，方向键调整位置，Shift 加方向键精细调整，Home 回到面板中心；读屏提供等价双轴控件。手机及窄窗口采用底部面板，城市入口默认折叠。
+- 选点位置即时跟手，按下／松开时弹性缩放；附近点阵放大、提亮并小幅位移，停止后收拢。系统“减少动态效果”会取消时间缓动和位移。明度绘制复用缓存色盘，不在每次拖动时重新计算逐像素色相。
+- 新面板不提供浮雕调节，保留原有效果。底层 0–2 倍法线强度接口继续兼容，不改变真实几何；旧 paint 参数归一为彩釉。
+- 换城保留创作参数、相机、背景与文字隐藏状态；选择配色预设恢复该预设参数。中国原版及既有配色继续兼容，默认仍为中国原版纯金。
+- 城市包按需加载，最多保留两个；拖动仅更新着色器 uniform，不重建纹理或反射环境。
+- 北京以原 PSD 天坛层作线条参考，去除前景波浪并让建筑直接到底线。当前为可继续调整的图样候选，真实工艺与设备验收单列。
 
-## 主题、款式与文字
-
-- **中国七款：** 原版纯金、青绿金线、红金、紫金、蓝金、蓝色线描、紫色线描。
-- **深圳两款：** 红金、青蓝金线。
-- **新款三种材质：** 彩釉金线、彩色金属、轻浮雕彩绘；原版纯金保留 3.0 基准参数。
-- **文字独立可选：** 随款式、主题名称、不显示；深圳另可选择“和合共彩”或“共创美好”及对应边框。文字颜色随款式，原版纯金仍为金色。
-
-首次打开为中国原版纯金。新款按需加载，换款保留相机、缩放和背景；“复位”恢复观察视角，“恢复默认款”恢复中国纯金。“不显示文字”可跨主题保持，刷新后恢复默认款。
-
-V4 沿用 3.0 的固定高清广彩花纹、连续单周图集、白瓷补光、平盖及盖钮倒影。城市图样、文字与固定装饰独立管理；颜色覆盖和杯身饰带旁釉面接缝已修正。素材来源及重建边界见下方记录。
+运行后打开 `/review/v5/index.html` 查看 13 套图样的原稿、SVG 与填面检查；页面提供模板和各城 SVG 下载。[制作规范](assets/masters/v5/README.md) · [原 V5 制作记录](../docs/changes/20261015-city-v5/) · [Issue #25 请求、计划与完成记录](../docs/changes/20261016-xy-color-material/)。
 
 ## 本地运行
 
@@ -24,16 +22,20 @@ npm test
 npm run build
 ```
 
-打开 http://127.0.0.1:5210/ 。右上角“素材与对照”查看原图、同机位滑杆、叠图与局部细节。
+打开 http://127.0.0.1:5210/ 。右上角“素材与对照”打开 V5 母版审阅页；历史对照保留在 evidence.html。
 
 ```sh
-QA_URL=http://127.0.0.1:5210/ npm run qa
+QA_URL=http://127.0.0.1:5210/ npm run qa:v5
 npm run qa:background
 npm run qa:v4
 # 需要复查 3.0 机位时：npm run evidence:v3
 ```
 
 浏览器脚本使用已安装的 Chrome 与 Playwright。手机视口和多点触摸模拟不等于真机或 Safari 验收。
+
+仅调整控制与材质参数时，复用已验证的纹理并直接运行 `npx tsc --noEmit`、`npx vite build --outDir ../.codex-work/tmp/xy-controls/build`；常规 `npm run build` 的 prebuild 会重新生成纹理与清单。输出、浏览器截图和缓存放在项目 `.codex-work/`。
+
+`Appearance.material` 保持为纵轴，新增可选 `materialX`（默认 `0.5`）。旧单参数材质曲线完整保留为中间一列；`finish` 兼容输入恢复原端点和横轴中值。SwiftUI 点阵反馈参考与 MIT 声明保存在本轮记录的 `references/`，分发许可见 `public/third-party/xy-slider-LICENSE.txt`。
 
 ## 原稿与导出
 
@@ -42,7 +44,7 @@ npm run qa:v4
 - `assets/masters/v3/`：3.0 原稿裁切／弧长展开记录；后续高清重建及连续图集见 `docs/changes/20261013-v3-restored/`。
 - `public/fixed/`：对齐的颜色、法线、高度、金属度和粗糙度；高度源保留，不做几何位移。
 - `public/china/`：原版纯金城市与文字材质源。
-- `public/cities/v4/catalog.json`：八款新图样目录；运行通道为 4096 × 1783，包含独立覆盖、颜色、金属度、粗糙度、清漆和高精度法线。文字独立保存。
+- `public/cities/v4/catalog.json`：十三款编译图样目录（另有原版中国纯金包）；运行通道为 4096 × 1783，包含独立覆盖、颜色、金属度、粗糙度、清漆和高精度法线。文字独立保存。
 - `public/textures/`：内容哈希运行资产；颜色与数据通道分开编码，高精度法线通过浮点编码加载。具体文件以当前清单为准。
 - `evidence/source-floral-v3.json`：裁切、极坐标展开和来源哈希。
 
@@ -92,3 +94,17 @@ V4 六款中国新图样共用 PSD 建筑结构，深圳两款共用母稿；花
 生成样张和未采用原因见 `evidence/floral-cleanup-4.2/imagegen-note.md`；局部生成改变了描线，因此只作对照，未接入生产纹样。与描线相连的细小色痕仍可能保留。
 
 复核：`python3 tools/test_gold_cleanup.py`、`python3 tools/test_floral_relief.py`、`python3 tools/verify-gold-cleanup.py`，需要 `tools/requirements-assets.txt` 的依赖。浏览器使用 `QA_PHASE=after node tools/floral-cleanup-review.mjs`（默认 5212）。历史核验脚本按其对应版本标签使用，不应以新版本材质通道去断言旧版通道不变。
+
+## 4.3 北京主题
+
+北京四个彩色款沿用中国对应配色与三种材质，纯金采用固定基准参数。新增独立“北京 / BEIJING”文字资产；“祈年殿”牌匾属于建筑，不受文字开关影响。主题目录集中定义默认款、名称与标语能力，`applyCityArtwork(pack)` 继续兼容旧包。
+
+`assets/source/beijing/` 保存用户原图；`assets/masters/beijing-4.3/` 保存高清线条、覆盖、高度与超分候选；`tools/compile-beijing.py` 生成独立对齐通道。生成式超分候选被拒绝，最终保留原稿构图；4096×1783 是等比放大的运行尺寸，不代表新增真实细节。
+
+```sh
+npm run textures:beijing  # 需要 Pillow / NumPy，增量保留旧款
+python3 tools/test_beijing_assets.py
+QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
+```
+
+[本轮请求、计划与完成记录](../docs/changes/20261014-beijing-4.3/) · [北京同机位对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#beijing-4.3)。

@@ -1,0 +1,9 @@
+{
+  "url": "http://127.0.0.1:5250/?haptics-debug",
+  "checks": [
+    "opt-in panel renders",
+    "copy exposes local version and routing",
+    "motor status stays unverified"
+  ],
+  "physicalMotor": false
+}

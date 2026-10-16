@@ -1,43 +1,151 @@
-import {variants,variantFor,finishes,selectTheme,type SelectionController,type Finish,type Lettering,type Theme} from '../styles/city-selection';
+import {variants,variantFor,finishes,selectTheme,themes,themeFor,isFixedGold,isPilot,type SelectionController,type Finish,type Lettering,type Theme} from '../styles/city-selection';
+import {palettes,presetAppearance,type Appearance,type Palette} from '../styles/city-appearance';
+import {colorAtPosition,colorPosition} from '../styles/xy-mapping';
+import {createXYPad} from './xy-pad';
+import {createLightnessSlider} from './lightness-slider';
+import {colorField,materialField} from './xy-pad-background';
+import {haptics} from './haptics';
+
 export function createArtworkPanel(controller:SelectionController,closeOtherPanels:()=>void){
  const main=document.querySelector('main')!;
- const toggle=document.createElement('button');toggle.disabled=true;toggle.id='open-artwork';toggle.className='open-artwork';toggle.textContent='主题与款式';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','artwork-settings');
- const panel=document.createElement('aside');panel.id='artwork-settings';panel.hidden=true;panel.setAttribute('aria-label','主题与款式');
- panel.innerHTML=`<div class="panel-heading"><h2>主题与款式</h2><button id="close-artwork">收起</button></div>
- <div class="theme-options" role="group" aria-label="选择主题"><button data-theme="china">中国</button><button data-theme="shenzhen">深圳</button></div>
- <div class="variant-grid" role="group" aria-label="选择配色款式"></div>
- <label class="field-label" for="artwork-finish">材质试看</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select>
- <p id="finish-note" class="note"></p>
- <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">主题名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option></select>
- <p class="note">换款保留当前视角与背景。文字可独立关闭。</p>
+ const toggle=document.createElement('button');toggle.disabled=true;toggle.id='open-artwork';toggle.className='open-artwork';toggle.textContent='城市与创作';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','artwork-settings');
+ const panel=document.createElement('aside');panel.id='artwork-settings';panel.hidden=true;panel.setAttribute('aria-label','城市与创作');
+ panel.innerHTML=`<div class="panel-heading"><h2>城市与创作</h2><button id="close-artwork">收起</button></div>
+ <details class="city-selector"><summary>城市 <strong id="current-city"></strong></summary><div class="theme-options" role="group" aria-label="选择城市">${Object.entries(themes).map(([id,t])=>`<button data-theme="${id}">${t.name}</button>`).join('')}</div></details>
+ <p class="field-label palette-heading">配色预设</p><div class="variant-grid" role="group" aria-label="选择配色预设"></div>
+ <div id="creation-controls">
+ <div class="adjust-toolbar"><div class="adjust-tabs" role="tablist" aria-label="选择调整内容"><button id="adjust-color-tab" role="tab" aria-controls="adjust-color-panel" aria-selected="true">颜色</button><button id="adjust-material-tab" role="tab" aria-controls="adjust-material-panel" aria-selected="false" tabindex="-1">材质</button></div><button id="reset-palette" class="reset-control" aria-label="恢复当前配色预设" title="恢复当前配色预设"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 5 7l4 4M5 7h7a7 7 0 1 1-6.6 9.3"/></svg></button></div>
+ <div class="adjust-panels"><div id="adjust-color-panel" role="tabpanel" aria-labelledby="adjust-color-tab"><div class="pad-stage"><div class="color-pad-row"><div class="pad-mount"></div><div class="lightness-control"><input id="fill-lightness" type="range" min="20" max="65" step="1" aria-label="明度" aria-orientation="vertical"></div></div></div></div>
+ <div id="adjust-material-panel" role="tabpanel" aria-labelledby="adjust-material-tab" hidden><div class="pad-stage"><div class="pad-mount"></div></div></div></div>
+ </div>
+ <div id="legacy-finish"><label class="field-label" for="artwork-finish">材质</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select><p id="finish-note" class="note"></p></div>
+ <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">城市名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option></select>
+ <p class="note">切换城市保留当前创作。选择配色预设可重新开始。</p>
  <p id="artwork-progress" role="status" aria-live="polite"></p><button id="default-artwork" class="text-button">恢复默认款 · 中国纯金</button>`;
  main.append(toggle,panel);
  const $=<T extends HTMLElement>(s:string)=>panel.querySelector<T>(s)!;
  const finish=$<HTMLSelectElement>('#artwork-finish'),text=$<HTMLSelectElement>('#artwork-text');
- let displayedTheme='',progress='';
- function setOpen(open:boolean){panel.hidden=!open;main.classList.toggle('artwork-open',open);toggle.setAttribute('aria-expanded',String(open));if(open){closeOtherPanels();render();$('#close-artwork').focus();}else toggle.focus();}
- toggle.onclick=()=>setOpen(panel.hidden);$('#close-artwork').onclick=()=>setOpen(false);
- const dismiss=()=>{panel.hidden=true;main.classList.remove('artwork-open');toggle.setAttribute('aria-expanded','false');};
- document.querySelector('#open-settings')!.addEventListener('click',dismiss);document.querySelector('#open-background')!.addEventListener('click',dismiss);
- const keyboard=(e:KeyboardEvent)=>{if(e.key==='Escape'&&!panel.hidden)setOpen(false);};document.addEventListener('keydown',keyboard);
- panel.querySelectorAll<HTMLButtonElement>('[data-theme]').forEach(b=>b.onclick=()=>{void controller.select(selectTheme(controller.desired,b.dataset.theme as Theme));});
- finish.onchange=()=>{void controller.select({finish:finish.value as Finish});};text.onchange=()=>{void controller.select({text:text.value as Lettering});};
- $('#default-artwork').onclick=()=>{void controller.restore();};
- function render(){
-  const s=controller.desired,v=variantFor(s.variant);
-  panel.setAttribute('aria-busy',String(controller.busy));
-  if(!panel.hidden&&v.theme!==displayedTheme){displayedTheme=v.theme;
-   $('.variant-grid').innerHTML=variants.filter(x=>x.theme===v.theme).map(x=>`<button class="variant-card" data-variant="${x.id}">${x.thumbnail?`<img alt="" loading="eager" src="${import.meta.env.BASE_URL}cities/v4/${x.thumbnail}">`:'<span class="gold-swatch" aria-hidden="true">金</span>'}<span>${x.name.split(' · ')[1]}</span></button>`).join('');
-   panel.querySelectorAll<HTMLButtonElement>('[data-variant]').forEach(b=>b.onclick=()=>{void controller.select({variant:b.dataset.variant!,finish:'enamel'});});
-  }
-  panel.querySelectorAll<HTMLElement>('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===v.theme)));
-  panel.querySelectorAll<HTMLElement>('[data-variant]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.variant===s.variant)));
-  finish.value=s.finish;finish.disabled=s.variant==='china-gold';text.value=s.text;
-  for(const option of text.options)option.hidden=v.theme==='china'&&['he','create'].includes(option.value);
-  $('#finish-note').textContent=s.variant==='china-gold'?'原版纯金保留 3.0 材质。其他配色可比较三种材质。':s.finish==='enamel'?'釉彩填面与凸起描线独立反光。':s.finish==='metal'?'彩色图样呈现金属反射。':'柔和彩绘釉面，降低线条起伏与金属感。';
-  $('#artwork-progress').textContent=controller.busy?`正在准备 ${v.name} · ${progress||'读取素材…'}`:controller.error||`当前：${variantFor(controller.current.variant).name}`;
-  $('#artwork-progress').classList.toggle('error',!!controller.error);
-  if(!controller.busy){progress='';document.querySelector('h1')!.textContent=variantFor(controller.current.variant).theme==='china'?'中国 · 共彩':'深圳 · 共彩';}
+ const citySelector=$<HTMLDetailsElement>('.city-selector'),mobile=matchMedia('(max-width:520px)');
+ const responsive=()=>{if(mobile.matches)citySelector.open=false;};citySelector.open=false;mobile.addEventListener('change',responsive);
+ let displayedTheme='',progress='',frame=0,pending:Appearance|undefined,selectedTab:'color'|'material'='color';
+ let observedAppearance:Appearance|undefined,restoreTarget:Appearance|undefined,fromPad=false,restoringFrame=0,transitionId=0;
+ const hapticButtons:Array<()=>void>=[];
+ const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+ const tabPanels=[$('#adjust-color-panel'),$('#adjust-material-panel')];
+ function flush(){
+  cancelAnimationFrame(frame);frame=0;const appearance=pending;pending=undefined;
+  if(appearance){fromPad=true;try{void controller.select({appearance});}finally{fromPad=false;}}
  }
- render();return {ready:()=>{toggle.disabled=false;},render,progress:(done:number,total:number)=>{progress=`${done} / ${total}`;render();},close:dismiss,dispose(){document.removeEventListener('keydown',keyboard);document.querySelector('#open-settings')?.removeEventListener('click',dismiss);document.querySelector('#open-background')?.removeEventListener('click',dismiss);panel.remove();toggle.remove();}};
+ const edit=(patch:Partial<Appearance>)=>{
+  const a=pending??controller.desired.appearance;if(!a)return;
+  pending={...a,...patch};if(!frame)frame=requestAnimationFrame(flush);
+ };
+ const cancelled=()=>{cancelPending();render();};
+ const colorPad=createXYPad({id:'color-pad',label:'调整颜色',onStart:cancelPending,onInput:p=>{
+  const a=pending??controller.desired.appearance;if(a)edit(colorAtPosition(p,a.hue));
+ },onCommit:flush,onCancel:cancelled});
+ const materialPad=createXYPad({id:'material-pad',label:'调整材质',onStart:cancelPending,onInput:p=>edit({materialX:p.x,material:p.y}),onCommit:flush,onCancel:cancelled});
+ const lightness=createLightnessSlider($('.lightness-control'),{onStart:cancelPending,onInput:value=>edit({lightness:value}),onCommit:flush,onCancel:cancelled});
+ $('#adjust-color-panel .pad-mount').append(colorPad.element);$('#adjust-material-panel .pad-mount').append(materialPad.element);
+ function cancelPending(){
+  ++transitionId;for(const p of tabPanels){p.getAnimations().forEach(a=>a.cancel());const active=p.id===`adjust-${selectedTab}-panel`;p.hidden=!active;p.inert=!active;p.setAttribute('aria-hidden',String(!active));}
+  cancelAnimationFrame(restoringFrame);restoringFrame=0;restoreTarget=undefined;delete panel.dataset.restoring;cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();lightness.cancel();
+ }
+ function finishRestore(){const target=restoreTarget;cancelPending();if(target){fromPad=true;try{void controller.select({appearance:target});}finally{fromPad=false;}}}
+ function changeTab(tab:'color'|'material'){
+  const previous=selectedTab;finishRestore();selectedTab=tab;const id=++transitionId;
+  for(const p of tabPanels){p.getAnimations().forEach(a=>a.cancel());p.inert=false;p.style.opacity='';}
+  for(const name of ['color','material'] as const){
+   const active=name===tab,button=$('#adjust-'+name+'-tab');
+   button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;
+   $('#adjust-'+name+'-panel').hidden=!active;$('#adjust-'+name+'-panel').setAttribute('aria-hidden',String(!active));
+  }
+  render();(tab==='color'?colorPad:materialPad).refresh();if(tab==='color')lightness.refresh();
+  if(previous!==tab&&!reduceMotion.matches){
+   const incoming=$('#adjust-'+tab+'-panel'),outgoing=$('#adjust-'+previous+'-panel');
+   outgoing.hidden=false;outgoing.inert=true;outgoing.setAttribute('aria-hidden','true');incoming.removeAttribute('aria-hidden');
+   const leave=outgoing.animate([{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(.96)'}],{duration:180,easing:'ease-out',fill:'forwards'});
+   const enter=incoming.animate([{opacity:0,transform:'translateY(7px) scale(.96)'},{opacity:1,transform:'none'}],{duration:300,easing:'cubic-bezier(.2,.8,.2,1)'});
+   void Promise.all([leave.finished,enter.finished]).then(()=>{if(id===transitionId){outgoing.hidden=true;leave.cancel();}},()=>{});
+  }
+ }
+ for(const name of ['color','material'] as const){
+  const button=$<HTMLButtonElement>('#adjust-'+name+'-tab');button.onclick=event=>{if(selectedTab!==name)haptics.pulse(event);changeTab(name);};
+  hapticButtons.push(haptics.attachButton(button));
+  button.onkeydown=event=>{
+   if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+   event.preventDefault();const tab=event.key==='Home'?'color':event.key==='End'?'material':selectedTab==='color'?'material':'color';
+   changeTab(tab);$('#adjust-'+tab+'-tab').focus();
+  };
+ }
+ function setOpen(open:boolean){
+  finishRestore();panel.hidden=!open;main.classList.toggle('artwork-open',open);toggle.setAttribute('aria-expanded',String(open));
+  if(open){closeOtherPanels();render();panel.scrollTop=0;$('#close-artwork').focus();colorPad.refresh();materialPad.refresh();lightness.refresh();}else toggle.focus();
+ }
+ toggle.onclick=()=>setOpen(panel.hidden);$('#close-artwork').onclick=()=>setOpen(false);
+ const dismiss=()=>{finishRestore();panel.hidden=true;main.classList.remove('artwork-open');toggle.setAttribute('aria-expanded','false');};
+ document.querySelector('#open-settings')!.addEventListener('click',dismiss);document.querySelector('#open-background')!.addEventListener('click',dismiss);
+ const keyboard=(event:KeyboardEvent)=>{if(event.key==='Escape'&&!panel.hidden)setOpen(false);};document.addEventListener('keydown',keyboard);
+ panel.querySelectorAll<HTMLButtonElement>('[data-theme]').forEach(button=>button.onclick=()=>{
+  cancelPending();citySelector.open=false;
+  void controller.select(selectTheme(controller.desired,button.dataset.theme as Theme));
+ });
+ finish.onchange=()=>{cancelPending();void controller.select({finish:finish.value as Finish});};
+ text.onchange=()=>{cancelPending();void controller.select({text:text.value as Lettering});};
+ $('#default-artwork').onclick=()=>{cancelPending();void controller.restore();};
+ $('#reset-palette').onclick=event=>{
+  haptics.pulse(event,12);
+  cancelPending();const a=controller.desired.appearance;if(!a)return;const target=presetAppearance(a.preset);
+  if(reduceMotion.matches){void controller.select({appearance:target});return;}
+  const started=performance.now(),hueDelta=((target.hue-a.hue+540)%360)-180;
+  $('#reset-palette svg').getAnimations().forEach(animation=>animation.cancel());
+  $('#reset-palette svg').animate([{transform:'rotate(-180deg)'},{transform:'rotate(0deg)'}],{duration:420,easing:'ease-out'});
+  panel.dataset.restoring='true';restoreTarget=target;
+  const restore=(now:number)=>{
+   const t=Math.min(1,(now-started)/420),ease=1-(1-t)**3;
+   const next:Appearance={...target,hue:(a.hue+hueDelta*ease+360)%360};
+   for(const key of ['saturation','lightness','material','materialX','relief'] as const)next[key]=(a[key]??.5)+((target[key]??.5)-(a[key]??.5))*ease;
+   fromPad=true;try{void controller.select({appearance:t===1?target:next});}finally{fromPad=false;}
+   if(t<1)restoringFrame=requestAnimationFrame(restore);else{restoringFrame=0;restoreTarget=undefined;delete panel.dataset.restoring;}
+  };restoringFrame=requestAnimationFrame(restore);
+ };
+ hapticButtons.push(haptics.attachButton($<HTMLButtonElement>('#reset-palette')));
+ function render(){
+  const s=controller.desired,v=variantFor(s.variant),pilot=isPilot(v.theme);
+  // An external preset, API update or load failure invalidates a captured gesture.
+  if(observedAppearance!==s.appearance&&!fromPad)cancelPending();
+  observedAppearance=s.appearance;
+  panel.setAttribute('aria-busy',String(controller.busy));$('#creation-controls').hidden=!pilot;$('#legacy-finish').hidden=pilot;
+  $('#current-city').textContent=themeFor(v).name;
+  if(v.theme!==displayedTheme){
+   displayedTheme=v.theme;$('.variant-grid').classList.toggle('palette-grid',pilot);
+   $('.variant-grid').innerHTML=variants.filter(x=>x.theme===v.theme).map(x=>{
+    const p=pilot?palettes[x.id.slice(v.theme.length+1) as Palette]:null;
+    return `<button class="variant-card" data-variant="${x.id}">${p?`<span class="palette-swatch" style="background:linear-gradient(145deg,${p.dark},${p.light})" aria-hidden="true"></span>`:x.thumbnail?`<img alt="" loading="lazy" src="${import.meta.env.BASE_URL}cities/v4/${x.thumbnail}">`:'<span class="gold-swatch" aria-hidden="true">金</span>'}<span>${x.name.split(' · ')[1]}</span></button>`;
+   }).join('');
+   panel.querySelectorAll<HTMLButtonElement>('[data-variant]').forEach(button=>button.onclick=()=>{
+    cancelPending();void controller.select(pilot?{variant:button.dataset.variant!}:{variant:button.dataset.variant!,finish:'enamel'});
+   });
+  }
+  panel.querySelectorAll<HTMLElement>('[data-theme]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.theme===v.theme)));
+  panel.querySelectorAll<HTMLElement>('[data-variant]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.variant===s.variant)));
+  finish.value=s.finish;finish.disabled=isFixedGold(v);text.value=s.text;
+  for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
+  if(pilot&&s.appearance){
+   const a=s.appearance;colorPad.setValue(colorPosition(a.hue,a.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});
+   const original=presetAppearance(a.preset);
+   colorPad.setReference(colorPosition(original.hue,original.saturation));materialPad.setReference({x:original.materialX??.5,y:original.material});
+   lightness.setValue(a.lightness,a.hue,a.saturation,original.lightness);
+   colorPad.setBackground(String(a.lightness),colorField(a.lightness));
+   materialPad.setBackground([a.hue,a.saturation,a.lightness].join(','),materialField(a));
+  }
+  $('#finish-note').textContent=isFixedGold(v)?'中国原版纯金保留原始材质。':'沿用已有中国图样与配色。';
+  $('#artwork-progress').textContent=controller.busy?`正在准备 ${v.name}${progress?' · '+progress:''}`:controller.error||`当前：${variantFor(controller.current.variant).name}`;
+  $('#artwork-progress').classList.toggle('error',!!controller.error);
+  if(!controller.busy){progress='';document.querySelector('h1')!.textContent=themeFor(variantFor(controller.current.variant)).name+' · 共彩';}
+ }
+ render();return {ready:()=>{toggle.disabled=false;},render,progress:(done:number,total:number)=>{progress=`${done} / ${total}`;render();},close:dismiss,dispose(){
+  cancelPending();colorPad.dispose();materialPad.dispose();lightness.dispose();hapticButtons.forEach(dispose=>dispose());mobile.removeEventListener('change',responsive);
+  document.removeEventListener('keydown',keyboard);document.querySelector('#open-settings')?.removeEventListener('click',dismiss);document.querySelector('#open-background')?.removeEventListener('click',dismiss);panel.remove();toggle.remove();
+ }};
 }

@@ -1,0 +1,107 @@
+{
+  "sourceCommit": "19ff43702a6da02df31479231c4cf68995c13272",
+  "checks": 99,
+  "applicationTests": 29,
+  "typecheck": "passed",
+  "build": "passed with existing >650 kB warning",
+  "video": {
+    "durationSeconds": 15.8,
+    "width": 600,
+    "height": 900,
+    "fps": 25,
+    "codec": "VP8",
+    "fullDecode": "passed"
+  },
+  "browser": "Chrome headless with native input and simulated phone; separate in-app browser visual/keyboard check",
+  "physicalDevices": "not tested",
+  "files": [
+    {
+      "path": "guangcai-china-preview/src/ui/xy-pad.ts",
+      "sha256": "1589ad8f3c217e5caccf6cdce6ce1cfca1312d88d6ea64894eeda1f6420267cf"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/lightness-slider.ts",
+      "sha256": "a4ceda6c886740bf2fe88887df181cc5385fab2b4241249c4e65772ae123dede"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/artwork-panel.ts",
+      "sha256": "8ab362a0348a45dd07953ee78543a9a2f0f0c0d9fa3dd1ad861ca4fef357e78c"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/styles.css",
+      "sha256": "50e865eb43c74ad221d00b37b584fc2355a45b341730582d5dc56b4606dc1a71"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/xy-pad-background.ts",
+      "sha256": "d25fd283e61b5c7b01b351c7e197b94bd7f55809cfe366d2b846b76d6427638d"
+    },
+    {
+      "path": "guangcai-china-preview/tools/v5-qa.mjs",
+      "sha256": "34be23de0537af42932b9cd28e53448db91e63995bca09fb5fefe8c1a7af9cf5"
+    },
+    {
+      "path": "guangcai-china-preview/tools/xy-motion-demo.mjs",
+      "sha256": "1afef98fc5c3772a5d7f1b704c63011ee69c90d635273040a6fd0061ec63f715"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-Ck6Dqh7l.js",
+      "sha256": "fe29c7a0ccad9368343e9f3a3f8b7eef9a62ba4b9ffca5d6b67af6ba6f6d7bed"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-uWEsIAfU.css",
+      "sha256": "f405fac86b91f30212e15769671ac6db4c02c4a18b3ac4ae7e30898fe41d917f"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/index.html",
+      "sha256": "c54f429982bafeb92e0fd474c09766666e7913ed68208cddf38d337c99716351"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/capture.json",
+      "sha256": "e5c78de9eff4ab89fe6f163bc0f349f59bcb97eba083a982c658105919ba3fbf"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/desktop-color.png",
+      "sha256": "af1a46518e0dd35f2616eabd3cbe53223b4c05088677c8e3d2b63a7bda8e042f"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/desktop-lightness.png",
+      "sha256": "c45b1f79e20e34e162fb88f47331b0291325bc0791e2963f31e006b6dd1bb8c6"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/interaction.webm",
+      "sha256": "2d34d75f8b65b64ce3bc705af48ecddc81d6d5d58c1761366867bd1efd47b322"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/lightness-pressed.png",
+      "sha256": "06e57f76fa1912b5cb39101156b7c9b25184ce2381c19bc87acb3de32bd6d478"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/mobile-1280-color.png",
+      "sha256": "0812be69c748d7372ace173fe29296d8a577096b1891c82a3cf137375ea3e019"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/mobile-600-color.png",
+      "sha256": "d1a3a76b4038a7f2e94727084d88e4efcf6fee2fc7de966916aed1df4ccbce11"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/mobile-844-color.png",
+      "sha256": "0fc3bc9a59497f778bb929a9241894686df1b69f0ee700c89f0b74abd8e97865"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/motion-pressed.png",
+      "sha256": "b7409e08749d9b54ce28cd6e5e5ecc729d6d328445f6ef1053dfc479d080133b"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/phone-lightness-dots.png",
+      "sha256": "fd8bead1dce6ff0d6b6452fc750f02da850fad37a6c5c6c24d53ded24970ca7a"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/phone-touch-panel.png",
+      "sha256": "0ac54f31f0f846cd10beb7696be1e6d6e24d6ae0303e6228bf261165d571376c"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/floating-focus/qa.json",
+      "sha256": "ada6fde0098873291064ee9ebd6d3541d887ab89a759a6f0bac966f1b83eed41"
+    }
+  ]
+}

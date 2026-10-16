@@ -1,0 +1,95 @@
+EEE.E
+======================================================================
+ERROR: test_current_source_can_change_while_history_is_preserved (__main__.HistoricalVerificationTests.test_current_source_can_change_while_history_is_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 77, in test_current_source_can_change_while_history_is_preserved
+    code, result = self.check_file('guangcai-viewer/src/main.ts')
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 74, in check_file
+    return self.run_verifier(contents=blob)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 39, in run_verifier
+    code = VERIFIER.main()
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/verify-archive.py", line 35, in main
+    data = json.loads(manifest.read_text())
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte
+
+======================================================================
+ERROR: test_frozen_deployment_cannot_change (__main__.HistoricalVerificationTests.test_frozen_deployment_cannot_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 82, in test_frozen_deployment_cannot_change
+    code, result = self.check_file('deployments/site/deploy/index.html')
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 74, in check_file
+    return self.run_verifier(contents=blob)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 39, in run_verifier
+    code = VERIFIER.main()
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/verify-archive.py", line 35, in main
+    data = json.loads(manifest.read_text())
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte
+
+======================================================================
+ERROR: test_missing_history_is_explicit_and_never_success (__main__.HistoricalVerificationTests.test_missing_history_is_explicit_and_never_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 50, in test_missing_history_is_explicit_and_never_success
+    code, result = self.run_verifier(missing_history=True)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 39, in run_verifier
+    code = VERIFIER.main()
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/verify-archive.py", line 35, in main
+    data = json.loads(manifest.read_text())
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte
+
+======================================================================
+ERROR: test_wrong_manifest_version_fails (__main__.HistoricalVerificationTests.test_wrong_manifest_version_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 58, in test_wrong_manifest_version_fails
+    code, result = self.run_verifier()
+                   ~~~~~~~~~~~~~~~~~^^
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/test_verify_archive.py", line 39, in run_verifier
+    code = VERIFIER.main()
+  File "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/tools/verify-archive.py", line 35, in main
+    data = json.loads(manifest.read_text())
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.185s
+
+FAILED (errors=4)

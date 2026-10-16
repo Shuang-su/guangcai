@@ -1,0 +1,191 @@
+{
+  "url": "http://127.0.0.1:5247/",
+  "results": [
+    {
+      "backend": "vibration",
+      "checks": [
+        "selected capability path",
+        "document body remains native",
+        "scoped surfaces only",
+        "tab activates once with one request",
+        "same tab has no repeated pulse",
+        "keyboard button activation does not vibrate",
+        "drag changes colour",
+        "detents request feedback",
+        "camera does not rotate during a control drag",
+        "gesture release clears active state",
+        "material drag changes physical parameters",
+        "lightness still changes",
+        "lightness detents request feedback",
+        "touch cancellation clears active state",
+        "reduced motion suppresses requests",
+        "latest city options preserved",
+        "no application errors",
+        "app disposal removes all native helpers"
+      ],
+      "errors": [],
+      "finalHaptics": {
+        "backend": "vibration",
+        "continuousBackend": "vibration",
+        "requests": 27,
+        "surfaces": [],
+        "physicalMotorVerified": false
+      }
+    },
+    {
+      "backend": "ios-label",
+      "checks": [
+        "selected capability path",
+        "document body remains native",
+        "scoped surfaces only",
+        "tab activates once with one request",
+        "same tab has no repeated pulse",
+        "keyboard button activation does not vibrate",
+        "#color-pad keeps full native target through touchstart",
+        "drag changes colour",
+        "detents request feedback",
+        "native touchmove consumes repeated detents",
+        "real native target alternates in touchmove without cancelling default",
+        "native anchor survives control lift and scale",
+        "camera does not rotate during a control drag",
+        "gesture release clears active state",
+        "#material-pad keeps full native target through touchstart",
+        "material drag changes physical parameters",
+        "material drag reaches repeated native transitions",
+        ".lightness-control keeps full native target through touchstart",
+        "lightness still changes",
+        "lightness detents request feedback",
+        "touch cancellation clears active state",
+        "reduced motion suppresses requests",
+        "reduced motion removes native gesture interception",
+        "latest city options preserved",
+        "no application errors",
+        "app disposal removes all native helpers"
+      ],
+      "errors": [],
+      "finalHaptics": {
+        "backend": "ios-label",
+        "continuousBackend": "ios-gesture",
+        "requests": 27,
+        "surfaces": [
+          {
+            "control": "color-pad",
+            "active": false,
+            "pending": false,
+            "starts": 2,
+            "cancels": 1,
+            "pointerMoves": 12,
+            "touchMovesSeen": 11,
+            "nativeMoves": 11,
+            "transitions": 6,
+            "direction": "rtl"
+          },
+          {
+            "control": "material-pad",
+            "active": false,
+            "pending": false,
+            "starts": 1,
+            "cancels": 0,
+            "pointerMoves": 12,
+            "touchMovesSeen": 11,
+            "nativeMoves": 11,
+            "transitions": 6,
+            "direction": "rtl"
+          },
+          {
+            "control": "lightness",
+            "active": false,
+            "pending": false,
+            "starts": 1,
+            "cancels": 0,
+            "pointerMoves": 12,
+            "touchMovesSeen": 10,
+            "nativeMoves": 10,
+            "transitions": 4,
+            "direction": "rtl"
+          }
+        ],
+        "physicalMotorVerified": false
+      }
+    },
+    {
+      "backend": "ios-gesture",
+      "checks": [
+        "selected capability path",
+        "document body remains native",
+        "scoped surfaces only",
+        "tab activates once with one request",
+        "same tab has no repeated pulse",
+        "keyboard button activation does not vibrate",
+        "#color-pad keeps full native target through touchstart",
+        "drag changes colour",
+        "detents request feedback",
+        "native touchmove consumes repeated detents",
+        "real native target alternates in touchmove without cancelling default",
+        "native anchor survives control lift and scale",
+        "camera does not rotate during a control drag",
+        "gesture release clears active state",
+        "#material-pad keeps full native target through touchstart",
+        "material drag changes physical parameters",
+        "material drag reaches repeated native transitions",
+        ".lightness-control keeps full native target through touchstart",
+        "lightness still changes",
+        "lightness detents request feedback",
+        "touch cancellation clears active state",
+        "reduced motion suppresses requests",
+        "reduced motion removes native gesture interception",
+        "latest city options preserved",
+        "no application errors",
+        "app disposal removes all native helpers"
+      ],
+      "errors": [],
+      "finalHaptics": {
+        "backend": "ios-gesture",
+        "continuousBackend": "ios-gesture",
+        "requests": 27,
+        "surfaces": [
+          {
+            "control": "color-pad",
+            "active": false,
+            "pending": false,
+            "starts": 2,
+            "cancels": 1,
+            "pointerMoves": 12,
+            "touchMovesSeen": 11,
+            "nativeMoves": 11,
+            "transitions": 6,
+            "direction": "rtl"
+          },
+          {
+            "control": "material-pad",
+            "active": false,
+            "pending": false,
+            "starts": 1,
+            "cancels": 0,
+            "pointerMoves": 12,
+            "touchMovesSeen": 11,
+            "nativeMoves": 11,
+            "transitions": 6,
+            "direction": "rtl"
+          },
+          {
+            "control": "lightness",
+            "active": false,
+            "pending": false,
+            "starts": 1,
+            "cancels": 0,
+            "pointerMoves": 12,
+            "touchMovesSeen": 10,
+            "nativeMoves": 10,
+            "transitions": 4,
+            "direction": "rtl"
+          }
+        ],
+        "physicalMotorVerified": false
+      }
+    }
+  ],
+  "physicalMotor": false,
+  "environment": "Installed Chrome with capability simulation; this validates event routing and state, not iOS motor output.",
+  "date": "2026-10-16T10:38:48.282Z"
+}
