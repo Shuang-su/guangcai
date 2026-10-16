@@ -8,7 +8,7 @@
 
 V6 消费者页面提供 23 城、六组东方大楷祝福语和五种配色，保留自由调色、明度、材质和视觉浮雕。Glass-HQ 原算法与 SVG 合成保留，材质图后端迁移到 WebGL2；原 WebGPU 在审计页独立对比。城市、文字和金线分离，颜色／材质不改变固定金色。原始城市稿、字体、上游源码及许可均保存。
 
-发布源码 `45e8c5cfb68adcbd142ff94473b229c846a386b3`，部署 `6ad276ccaae8ef493bdd8f97`。线上 124 项浏览器检查、同帧光学动效专项、1336 个文件摘要回读通过；本地另有 40 项单元／契约、资产验证、70 项旧触感路径检查。两台 iPhone 的实际触感与 Safari 性能待真机验收。源码与发布归档由 [PR #28](https://github.com/Shuang-su/guangcai/pull/28) 整合，合并状态见 [完成记录](docs/changes/20261017-v6-webgl2-studio/completion.md)。
+当前独立预览为 **6.0.2**：发布源码 `81cd1f9efc805074cec72fbbdb71f920270ce20e`，部署 `6ad295b03953db1e0b268b8f`。修复加载期间菜单锁定、状态提示遗留和返回城市时的错误高度。线上通过 124 项 Chrome、运动专项、72 项 WebKit 和 42 项慢加载／城市返回回归；1337 个文件摘要核对。iPhone 暂用原生磨砂兼容，完整液态折射与本轮真机体验仍待验收。[PR #28](https://github.com/Shuang-su/guangcai/pull/28) 保持 Draft，详见[完成记录](docs/changes/20261017-v6-webgl2-studio/completion.md)。
 
 V5.4.2 的[历史预览](https://guangcai-no1-china-v5.netlify.app/)继续保留，部署 `6ad20c45a7780e55fedba3d7` 未改变。4.3 的[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)、标签和部署同样保留。本仓库未连接 Netlify Git 自动部署。
 

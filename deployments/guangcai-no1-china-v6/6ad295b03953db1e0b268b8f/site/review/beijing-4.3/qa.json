@@ -1,0 +1,729 @@
+{
+  "url": "http://127.0.0.1:5216/",
+  "checks": [
+    "4.3 default retains original China gold, exposure and fixed relief",
+    "default screen does not fetch Beijing or other optional artwork",
+    "4.2 vs 4.3 default model region unchanged",
+    "Beijing theme selects fixed gold with exactly five choices",
+    "beijing-gold/enamel shares fixed assets, camera, porcelain and high precision",
+    "beijing-gold/auto separate Beijing lettering",
+    "beijing-gold/name separate Beijing lettering",
+    "beijing-gold/none separate Beijing lettering",
+    "beijing-green/enamel shares fixed assets, camera, porcelain and high precision",
+    "beijing-green/metal shares fixed assets, camera, porcelain and high precision",
+    "beijing-green/paint shares fixed assets, camera, porcelain and high precision",
+    "beijing-green/auto separate Beijing lettering",
+    "beijing-green/name separate Beijing lettering",
+    "beijing-green/none separate Beijing lettering",
+    "beijing-red/enamel shares fixed assets, camera, porcelain and high precision",
+    "beijing-red/metal shares fixed assets, camera, porcelain and high precision",
+    "beijing-red/paint shares fixed assets, camera, porcelain and high precision",
+    "beijing-red/auto separate Beijing lettering",
+    "beijing-red/name separate Beijing lettering",
+    "beijing-red/none separate Beijing lettering",
+    "beijing-purple/enamel shares fixed assets, camera, porcelain and high precision",
+    "beijing-purple/metal shares fixed assets, camera, porcelain and high precision",
+    "beijing-purple/paint shares fixed assets, camera, porcelain and high precision",
+    "beijing-purple/auto separate Beijing lettering",
+    "beijing-purple/name separate Beijing lettering",
+    "beijing-purple/none separate Beijing lettering",
+    "beijing-blue/enamel shares fixed assets, camera, porcelain and high precision",
+    "beijing-blue/metal shares fixed assets, camera, porcelain and high precision",
+    "beijing-blue/paint shares fixed assets, camera, porcelain and high precision",
+    "beijing-blue/auto separate Beijing lettering",
+    "beijing-blue/name separate Beijing lettering",
+    "beijing-blue/none separate Beijing lettering",
+    "hidden text survives Beijing to Shenzhen",
+    "Shenzhen slogan resets to Beijing theme name",
+    "legacy china-green/enamel",
+    "legacy china-green/metal",
+    "legacy china-green/paint",
+    "legacy china-red/enamel",
+    "legacy china-red/metal",
+    "legacy china-red/paint",
+    "legacy china-purple/enamel",
+    "legacy china-purple/metal",
+    "legacy china-purple/paint",
+    "legacy china-blue/enamel",
+    "legacy china-blue/metal",
+    "legacy china-blue/paint",
+    "legacy china-blue-line/enamel",
+    "legacy china-blue-line/metal",
+    "legacy china-blue-line/paint",
+    "legacy china-purple-line/enamel",
+    "legacy china-purple-line/metal",
+    "legacy china-purple-line/paint",
+    "legacy shenzhen-red/enamel",
+    "legacy shenzhen-red/metal",
+    "legacy shenzhen-red/paint",
+    "legacy shenzhen-teal/enamel",
+    "legacy shenzhen-teal/metal",
+    "legacy shenzhen-teal/paint",
+    "failed new palette preserves the complete previous set",
+    "rapid switching commits only latest complete choice",
+    "replaced GPU textures are released",
+    "palette switch preserves camera, target and background",
+    "reset preserves selected style",
+    "right-button pan works",
+    "restore returns original China gold",
+    "legacy applyCityArtwork interface remains compatible",
+    "viewport 320 no overflow and default background",
+    "viewport 320 Beijing panel fits",
+    "viewport 390 no overflow and default background",
+    "viewport 390 Beijing panel fits",
+    "emulated two-finger drag pans",
+    "viewport 844 no overflow and default background",
+    "viewport 844 Beijing panel fits",
+    "viewport 1440 no overflow and default background",
+    "viewport 1440 Beijing panel fits",
+    "no shader errors or uncaught exceptions"
+  ],
+  "errors": [],
+  "timings": [
+    {
+      "stage": "default-cold-ready-plus-settle",
+      "ms": 4243,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:5216/@vite/client",
+          "bytes": 300,
+          "duration": 1.2000000476837158
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/main.ts?t=1791955637808",
+          "bytes": 300,
+          "duration": 1.1999999284744263
+        },
+        {
+          "url": "http://127.0.0.1:5216/node_modules/vite/dist/client/env.mjs",
+          "bytes": 300,
+          "duration": 0.7000000476837158
+        },
+        {
+          "url": "http://127.0.0.1:5216/.codex-work/cache/vite/deps/three.js?v=32d9bda1",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/materials/fixed-atlas.ts",
+          "bytes": 300,
+          "duration": 1.100000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/ui/styles.css",
+          "bytes": 300,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/geometry/product.ts",
+          "bytes": 300,
+          "duration": 2.3000000715255737
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/materials/materials.ts",
+          "bytes": 300,
+          "duration": 2.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/materials/porcelain.ts",
+          "bytes": 300,
+          "duration": 3.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/materials/render-standard.ts",
+          "bytes": 300,
+          "duration": 3.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/studio/studio.ts",
+          "bytes": 300,
+          "duration": 4.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/studio/local-reflections.ts",
+          "bytes": 300,
+          "duration": 3
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/studio/lid-reflections.ts",
+          "bytes": 300,
+          "duration": 3.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/style-manager.ts",
+          "bytes": 300,
+          "duration": 3.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/city-artwork.ts",
+          "bytes": 300,
+          "duration": 4.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/interaction/views.ts",
+          "bytes": 300,
+          "duration": 4.5
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/interaction/calibration.ts",
+          "bytes": 300,
+          "duration": 4
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/ui/interface.ts",
+          "bytes": 300,
+          "duration": 4.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/city-selection.ts?t=1791955637808",
+          "bytes": 300,
+          "duration": 4.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/ui/artwork-panel.ts?t=1791955637808",
+          "bytes": 300,
+          "duration": 4.699999928474426
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/ui/background.ts",
+          "bytes": 300,
+          "duration": 4.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/load-texture.ts",
+          "bytes": 300,
+          "duration": 5.199999928474426
+        },
+        {
+          "url": "http://127.0.0.1:5216/.codex-work/cache/vite/deps/three.module-Bj7iJlUn.js?v=ae870af4",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/geometry/surface.ts",
+          "bytes": 300,
+          "duration": 1.399999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/geometry/ribbon.ts",
+          "bytes": 300,
+          "duration": 1.7000000476837158
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/geometry/handle.ts",
+          "bytes": 300,
+          "duration": 1.6999999284744263
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/geometry/parameters.ts",
+          "bytes": 300,
+          "duration": 1.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/fixed-layout.json?import",
+          "bytes": 300,
+          "duration": 2
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/studio/contact-shadow.ts",
+          "bytes": 300,
+          "duration": 1.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/.codex-work/cache/vite/deps/three_addons_objects_Reflector__js.js?v=b0d9e452",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/float-normal.ts",
+          "bytes": 300,
+          "duration": 1.399999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/fixed-rendering.json?import",
+          "bytes": 300,
+          "duration": 1.7000000476837158
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/web-textures.json?import",
+          "bytes": 300,
+          "duration": 1.399999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/materials/fixed-gold-ground.ts",
+          "bytes": 300,
+          "duration": 1.8000000715255737
+        },
+        {
+          "url": "http://127.0.0.1:5216/.codex-work/cache/vite/deps/three_addons_controls_OrbitControls__js.js?v=7b12e35f",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/interaction/reference-views.ts",
+          "bytes": 300,
+          "duration": 1.7999999523162842
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/styles/city-catalog.json?import&t=1791955637808",
+          "bytes": 300,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:5216/src/ui/background-asset.json?import",
+          "bytes": 300,
+          "duration": 2.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-body-normal-35f734f1f0e18386.hfn.gz",
+          "bytes": 4959753,
+          "duration": 906.8999999761581
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-handle-normal-e40aff13da6fbc75.hfn.gz",
+          "bytes": 3698118,
+          "duration": 200.09999990463257
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-saucer-normal-24251c222bf45839.hfn.gz",
+          "bytes": 24283380,
+          "duration": 1043.7999999523163
+        },
+        {
+          "url": "http://127.0.0.1:5216/marks/auratic-reference.png",
+          "bytes": 300,
+          "duration": 1.6999999284744263
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-body-baseColor-09eb4a8337a419e2.webp",
+          "bytes": 300,
+          "duration": 1.7999999523162842
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-body-roughness-102dbdb72defbc0f.webp",
+          "bytes": 300,
+          "duration": 1.6999999284744263
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-body-metalness-4ebf050fa28829cb.webp",
+          "bytes": 300,
+          "duration": 2.899999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-handle-baseColor-532fac87777aba59.webp",
+          "bytes": 300,
+          "duration": 9.100000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-handle-roughness-97a411c84ffbd9fb.webp",
+          "bytes": 300,
+          "duration": 5.699999928474426
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-handle-metalness-03cad18610d2317d.webp",
+          "bytes": 300,
+          "duration": 5.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-saucer-baseColor-69f9090a7ca74212.webp",
+          "bytes": 7338872,
+          "duration": 70.5
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-saucer-roughness-a4cde265336cff98.webp",
+          "bytes": 738582,
+          "duration": 18.399999976158142
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/fixed-saucer-metalness-c0cbc2a353201be4.webp",
+          "bytes": 695540,
+          "duration": 18.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/china-baseColor-754558a83d8866b8.webp",
+          "bytes": 648,
+          "duration": 20.100000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/china-normal-f0662e241725d83b.webp",
+          "bytes": 1312830,
+          "duration": 20.600000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/china-roughness-40e7b97659e5e028.webp",
+          "bytes": 156938,
+          "duration": 16.100000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/textures/china-metalness-7ac9525c8019fc98.webp",
+          "bytes": 40664,
+          "duration": 17.100000023841858
+        },
+        {
+          "url": "http://127.0.0.1:5216/china/label.png",
+          "bytes": 22108,
+          "duration": 13.900000095367432
+        }
+      ]
+    },
+    {
+      "baselinePixelMeanDifference": 0
+    },
+    {
+      "variant": "beijing-gold",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 802
+    },
+    {
+      "variant": "beijing-gold",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 880
+    },
+    {
+      "variant": "beijing-gold",
+      "finish": "enamel",
+      "text": "name",
+      "ms": 869
+    },
+    {
+      "variant": "beijing-gold",
+      "finish": "enamel",
+      "text": "none",
+      "ms": 874
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 1028
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 773
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 909
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 922
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "name",
+      "ms": 947
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "none",
+      "ms": 824
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 928
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 1006
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 884
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 940
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "name",
+      "ms": 913
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "none",
+      "ms": 825
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 935
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 763
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 916
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 924
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "enamel",
+      "text": "name",
+      "ms": 969
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "enamel",
+      "text": "none",
+      "ms": 871
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 963
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 802
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 862
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 874
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "enamel",
+      "text": "name",
+      "ms": 920
+    },
+    {
+      "variant": "beijing-blue",
+      "finish": "enamel",
+      "text": "none",
+      "ms": 810
+    },
+    {
+      "variant": "china-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 1030
+    },
+    {
+      "variant": "china-green",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 733
+    },
+    {
+      "variant": "china-green",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 859
+    },
+    {
+      "variant": "china-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 1002
+    },
+    {
+      "variant": "china-red",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 736
+    },
+    {
+      "variant": "china-red",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 808
+    },
+    {
+      "variant": "china-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 950
+    },
+    {
+      "variant": "china-purple",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 717
+    },
+    {
+      "variant": "china-purple",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 789
+    },
+    {
+      "variant": "china-blue",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 935
+    },
+    {
+      "variant": "china-blue",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 836
+    },
+    {
+      "variant": "china-blue",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 827
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 907
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 743
+    },
+    {
+      "variant": "china-blue-line",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 808
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 855
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 710
+    },
+    {
+      "variant": "china-purple-line",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 805
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 972
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 740
+    },
+    {
+      "variant": "shenzhen-red",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 809
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 1025
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "metal",
+      "text": "auto",
+      "ms": 735
+    },
+    {
+      "variant": "shenzhen-teal",
+      "finish": "paint",
+      "text": "auto",
+      "ms": 826
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 959
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 1006
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 874
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 870
+    },
+    {
+      "variant": "beijing-red",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 868
+    },
+    {
+      "variant": "beijing-green",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 840
+    },
+    {
+      "variant": "beijing-purple",
+      "finish": "enamel",
+      "text": "auto",
+      "ms": 852
+    }
+  ],
+  "date": "2026-10-14T05:29:50.323Z",
+  "physicalDevice": "not tested; browser viewport and touch emulation only"
+}

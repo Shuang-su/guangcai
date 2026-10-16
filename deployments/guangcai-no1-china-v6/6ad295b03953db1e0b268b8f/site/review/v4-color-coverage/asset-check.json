@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "variant": "china-green",
+      "interiorPixels": 141448,
+      "coloredFraction": 1.0
+    },
+    {
+      "variant": "china-red",
+      "interiorPixels": 141445,
+      "coloredFraction": 1.0
+    },
+    {
+      "variant": "china-purple",
+      "interiorPixels": 141437,
+      "coloredFraction": 1.0
+    },
+    {
+      "variant": "china-blue",
+      "interiorPixels": 141445,
+      "coloredFraction": 1.0
+    }
+  ],
+  "unchangedChannelIdentityChecked": true,
+  "threshold": "98% of opaque nonmetal base interiors must have saturation > 0.22"
+}
