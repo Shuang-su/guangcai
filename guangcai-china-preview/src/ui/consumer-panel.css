@@ -9,7 +9,7 @@
 .palette-tile>span:last-child{font-size:12px;letter-spacing:.06em}
 .open-palette-editor{display:block;margin:3px auto 0;padding:5px 16px;border:0;background:transparent;color:#846b4d;font-size:12px;min-height:32px}
 .camera-creator .editor-toolbar{display:flex;justify-content:space-between;align-items:center;height:40px;padding:0 2px}
-.editor-handle{width:32px;height:4px;margin:0 auto 9px;border-radius:99px;background:#8b79665c}
+.editor-handle{width:32px;height:4px;margin:0 auto 9px;border-radius:99px;background-color:#8b79665c}
 .icon-control{display:grid;place-items:center;width:40px;height:40px;flex:none;border:0;padding:9px;border-radius:50%;background:#ffffff20;position:relative}
 .icon-control img{width:20px;height:20px;opacity:.65;pointer-events:none}
 .camera-creator .editor-pad-transition{transform-origin:0 0}
@@ -33,8 +33,8 @@
 [data-profile=consumer] #artwork-settings.camera-creator[data-level=editor]{padding-bottom:20px}
 [data-profile=consumer] #artwork-settings.camera-creator.is-resizing{overflow:hidden}
 .camera-creator .creator-tabs{position:absolute;left:50%;right:auto;bottom:12px;width:calc(100% - 48px);max-width:420px;transform:translateX(-50%);margin:0}
-.panel-handle{display:block;width:64px;height:24px;padding:10px 16px;margin:0 auto 4px;border:0;background:transparent;touch-action:none}
-.panel-handle span{display:block;width:32px;height:4px;border-radius:99px;background:#8b79665c}
+.panel-handle{display:block;width:64px;height:24px;padding:10px 16px;margin:0 auto 4px;border:0;background-color:transparent;touch-action:none}
+.panel-handle span{display:block;width:32px;height:4px;border-radius:99px;background-color:#8b79665c}
 .camera-creator[data-collapsed=true] .panel-handle{margin-bottom:0}
 .camera-creator .city-cards{position:relative;display:block;height:112px;padding:0;overflow:hidden;touch-action:pan-y;scrollbar-width:none}
 .camera-creator .city-card{position:absolute;top:50%;left:50%;width:calc(25% - 6px);height:100px;padding:10px 3px 3px;display:flex;justify-content:space-between;transform:translate(-50%,-50%) scale(var(--loop-scale,1));border:1px solid #ad8b5b55;border-radius:13px;background:transparent!important;box-shadow:none!important;text-align:center;user-select:none;-webkit-user-select:none}
@@ -56,11 +56,11 @@
 [data-profile=consumer]{--accent:#926623;--ui-gold:#886426;--ui-gold-active:#805418}
 .camera-creator .creator-tabs button,.camera-creator .palette-tile,.camera-creator .city-card>span,.camera-creator .open-palette-editor{color:var(--ui-gold)!important}
 .camera-creator .creator-tabs button[aria-selected=true],.camera-creator .palette-tile[aria-pressed=true]{color:var(--ui-gold-active)!important}
-.camera-creator .creator-tabs{background:#fff9;backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2)}
+.camera-creator .creator-tabs{background-color:#fff9;backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2)}
 .camera-creator .creator-indicator{background:#f4e1b45c!important;box-shadow:inset 0 0 0 1px #fff9}
 .camera-creator .icon-control{background:#fff9;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px #ffffff80}
 [data-glass-state=ready] .camera-creator .palette-swatch{background:transparent!important;box-shadow:inset 0 0 0 1px #ffffff55!important}
-[data-glass-state=ready] .camera-creator .creator-tabs{background:#ffffff24;backdrop-filter:none;-webkit-backdrop-filter:none}
+[data-glass-state=ready] .camera-creator .creator-tabs{background-color:#ffffff24;backdrop-filter:none;-webkit-backdrop-filter:none}
 [data-profile=consumer] .consumer-actions button,[data-profile=consumer] .view-rail button{color:var(--ui-gold);background:#ffffff45;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 [data-profile=consumer] .view-rail button[aria-pressed=true]{color:var(--ui-gold-active);background:#f1d39b80}
 .camera-creator .city-card{background:rgba(255,251,242,.62)!important;backdrop-filter:blur(18px) saturate(1.05);-webkit-backdrop-filter:blur(18px) saturate(1.05)}
@@ -77,3 +77,28 @@
 .camera-creator .slogan-grid button{transform-origin:center;transition:transform .24s cubic-bezier(.2,.8,.2,1);user-select:none;-webkit-user-select:none}
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.camera-creator .slogan-grid button:hover{transform:scale(1.025)}}
 .camera-creator .slogan-grid button[data-glass-pressed]{z-index:2}
+.camera-creator .open-palette-editor{display:flex;align-items:center;justify-content:center;gap:7px;width:112px;min-height:40px;margin:7px auto 2px;padding:9px 15px;border-radius:99px;background-color:#fffc;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px #ffffffb3,0 3px 12px #604a1210;font-size:13px;font-weight:500}
+.open-palette-editor svg{width:19px;height:19px;pointer-events:none}
+[data-glass-state=ready] .camera-creator .open-palette-editor{background-color:#fffaf040;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+
+.camera-creator .panel-handle{display:grid;place-items:center;width:64px;height:24px;padding:0;background:none;border:0;box-shadow:none;position:relative;z-index:2}
+.camera-creator .panel-handle .handle-glass{display:block;width:36px;height:6px;border-radius:99px;background-color:#d5c5a49e;box-shadow:inset 0 1px 0 #fff8,0 1px 3px #5b45192b;pointer-events:none}
+[data-glass-state=ready] .camera-creator .panel-handle .handle-glass{background-color:#e3d8c41a;box-shadow:none}
+
+/* Cities reach the panel edges; palettes retain a quieter inset. The optical
+   viewport uses these exact same live boxes, including during shell resizing. */
+.camera-creator{--creator-inset:12px}
+.camera-creator .city-cards{width:calc(100% + var(--creator-inset)*2);margin-inline:calc(-1 * var(--creator-inset))}
+.camera-creator .palette-loop{width:calc(100% - 16px);max-width:400px}
+@media(max-width:520px){.camera-creator{--creator-inset:10px}}
+
+/* The original optical map owns the rim; a square CSS border clipped by its
+   superellipse was cutting the corner highlights into short straight lines. */
+[data-glass-state=ready] .camera-creator .palette-swatch{border:0;box-shadow:none!important}
+.palette-copy:focus{outline:none}
+
+.camera-creator .city-cards{height:calc(var(--city-card-size,87px) + 12px)}
+.camera-creator .city-card{height:var(--city-card-size,87px);aspect-ratio:1}
+.camera-creator .creator-tabs button,.camera-creator .creator-tabs button[aria-selected=true]{font-weight:500}
+.camera-creator .palette-viewport{position:relative;left:50%;transform:translateX(-50%);width:calc(100% + var(--creator-inset)*2);max-width:424px;overflow:clip}
+.camera-creator .palette-loop{width:calc(100% - 24px);overflow:visible}

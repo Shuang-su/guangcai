@@ -16,11 +16,11 @@ export class ViewController{
     this.controls.mouseButtons={LEFT:MOUSE.ROTATE,MIDDLE:MOUSE.DOLLY,RIGHT:MOUSE.PAN};
     this.controls.touches={ONE:TOUCH.ROTATE,TWO:TOUCH.DOLLY_PAN};
     this.controls.minDistance=85;this.controls.maxDistance=3000;this.controls.minPolarAngle=.035;this.controls.maxPolarAngle=Math.PI-.035;
-    this.controls.autoRotateSpeed=-.7;this.controls.target.set(7,65,0);
+    this.controls.autoRotateSpeed=-.9;this.controls.target.set(7,65,0);
     this.controls.addEventListener('start',()=>{this.animateCamera=false;this.setAuto(false);});
     this.set('hero',true);
   }
-  setAuto(v:boolean){this.auto=v;this.controls.autoRotate=v;this.onChange();}
+  setAuto(v:boolean){if(v)this.animateCamera=false;this.auto=v;this.controls.autoRotate=v;this.onChange();}
   set(view:View,instant=false){
     this.setAuto(false);this.view=view;this.studio.camera.up.set(0,1,0);
     const p=this.getProduct(),h=p.parameters.height;
@@ -72,7 +72,7 @@ export class ViewController{
       if(this.animateCamera){this.studio.camera.position.lerp(this.toCamera,a);this.controls.target.lerp(this.toTarget,a);}
       if((!this.animateCamera||this.studio.camera.position.distanceTo(this.toCamera)<.005)&&p.cup.position.distanceTo(this.cupPos)<.001&&p.lid.position.distanceTo(this.lidPos)<.001&&p.cup.quaternion.angleTo(this.cupQuat)<.0001)this.active=false;
     }
-    this.controls.update();
+    this.controls.update(dt);
   }
   reference(id:ReferenceId){
     const pose=references[id];if(!pose)return;

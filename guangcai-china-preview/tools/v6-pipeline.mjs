@@ -33,6 +33,7 @@ try{
  server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--host','127.0.0.1','--port',String(cfg.localPort),'--strictPort','--outDir',cfg.build],{stdio:['ignore','pipe','pipe']});server.stderr.on('data',b=>process.stderr.write(b));
  for(let i=0;i<60;i++){try{if((await fetch(url)).ok)break;}catch{}if(i===59)throw Error('Built preview unavailable');await new Promise(r=>setTimeout(r,200));}
  await run('built V6 browser checks','node',['tools/v6-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'local-qa')});
+ await run('same-frame glass motion and original menu morph','node',['tools/v6-motion-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'motion-qa')});
  await run('legacy haptic paths in dev','node',['tools/ios-haptics-qa.mjs'],{QA_URL:url+'dev/',QA_OUT:path.join(work,'legacy-haptics')});
  const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json')));if(qa.status!=='passed')throw Error('Browser checks incomplete');
  report.browserChecks=qa.checks.length;

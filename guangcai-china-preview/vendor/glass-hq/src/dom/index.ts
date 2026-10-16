@@ -57,11 +57,15 @@ export interface GlassDiagnostic {
   error?: Error;
 }
 export interface GlassSceneOptions {
+  /** Downstream opt-in: DOM and optical geometry share every animation frame. */
+  synchronizedMotion?: boolean;
   onDiagnostic?: (diagnostic: GlassDiagnostic) => void;
   maxSurfaces?: number;
 }
 /** Material plus the motion a registered surface takes part in. */
 export interface SurfaceOptions extends MaterialOptions {
+  /** Downstream carousel viewport: crop the existing optical maps after placement. */
+  clipTo?: () => HTMLElement | null;
   /** React to touch and pointer input: grow, stretch toward a drag, settle with
    * overshoot, and light up beneath the pointer. */
   interactive?: boolean;
@@ -129,6 +133,7 @@ interface Lens {
   borderRadius: string;
   releaseShape: () => void;
   resolveShape?: () => ShapePoint[] | undefined;
+  clipBounds?: {x:number;y:number;width:number;height:number};
   x: number;
   y: number;
   w: number;
@@ -509,8 +514,11 @@ export function createGlassScene(
           const image = (plane: MapPlane, result: string) => {
             const memberImage = (member: Lens, name: string, imagePlane: MapPlane = plane) => {
               const place = member.place;
-              if (!place) return mapImage(member.maps!, imagePlane, name, member.x - 2, member.y - 2, member.w + 4, member.h + 4);
-              return blendMapImage(imagePlane, name, place, member, gecko);
+              const clip = member.clipBounds, raw = clip ? `${name}Unclipped` : name;
+              const markup = !place ? mapImage(member.maps!, imagePlane, raw, member.x - 2, member.y - 2, member.w + 4, member.h + 4) : blendMapImage(imagePlane, raw, place, member, gecko);
+              // A scroller cuts a moving card; it does not give that card a new
+              // luminous edge. Reuse its full map instead of GPU-baking each slice.
+              return clip ? markup + `<feFlood flood-color="white" ${region(clip)} result="${name}Viewport"/><feComposite in="${raw}" in2="${name}Viewport" operator="in" result="${name}" ${region(clip)}/>` : markup;
             };
             if (compound) return compoundFieldImage(compound.source, compound.popup, plane, result, box,
               (member, imagePlane, name) => memberImage(member, name, imagePlane));
@@ -886,7 +894,16 @@ export function createGlassScene(
         lensMoved = true;
         dirty = true;
       }
-      l.baseOpacity = effectiveOpacity(l.element, root) * (l.outline?.opacity() ?? 1);
+      const clipElement = l.options.clipTo?.();
+      let outsideClip = false;
+      if (clipElement) {
+        const clip = clipElement.getBoundingClientRect();
+        const next = {x:clip.left-r.left,y:clip.top-r.top,width:clip.width,height:clip.height};
+        if (!l.clipBounds || Object.entries(next).some(([key,value])=>Math.abs(value-l.clipBounds![key as keyof typeof next])>.01)) dirty = true;
+        l.clipBounds = next;
+        outsideClip = x+w<=next.x || x>=next.x+next.width || y+h<=next.y || y>=next.y+next.height;
+      } else if (l.clipBounds) { l.clipBounds = undefined; dirty = true; }
+      l.baseOpacity = outsideClip || getComputedStyle(l.element).visibility === 'hidden' ? 0 : effectiveOpacity(l.element, root) * (l.outline?.opacity() ?? 1);
       const opacity = l.baseOpacity * (1 - (absorbed.get(l.element) ?? 0));
       if (Math.abs(opacity - l.opacity) > 0.001) { l.opacity = opacity; dirty = true; }
       const dpr = Math.min(devicePixelRatio || 1, 2);
@@ -1009,7 +1026,7 @@ export function createGlassScene(
     const zoom = `${pageZoom()} ${devicePixelRatio}`;
     if (zoom !== composedZoom) { composedZoom = zoom; dirty = true; }
     const changed = dirty;
-    const moving = (busy || lensMoved) && now - composedAt < 15;
+    const moving = !config.synchronizedMotion && (busy || lensMoved) && now - composedAt < 15;
     const rebuild = dirty && !holding && !moving;
     if (rebuild) composedAt = now;
     if (!holding && !moving) dirty = false;

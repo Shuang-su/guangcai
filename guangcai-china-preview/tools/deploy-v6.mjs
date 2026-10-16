@@ -77,6 +77,8 @@ try{
  const code=await new Promise((resolve,reject)=>{const p=spawn('npm',['run','qa:v6'],{cwd:root,env:{...process.env,QA_URL:receipt.permalink+'/',QA_OUT:path.join(work,'online-qa')},stdio:'inherit'});p.once('error',reject);p.once('close',resolve);});
  if(code!==0)throw new Error('Online browser QA failed');
  const qa=JSON.parse(await readFile(path.join(work,'online-qa/qa.json'),'utf8'));receipt.onlineBrowserChecks=qa.checks.length;
+ const motionCode=await new Promise((resolve,reject)=>{const p=spawn('node',['tools/v6-motion-qa.mjs'],{cwd:root,env:{...process.env,QA_URL:receipt.permalink+'/',QA_OUT:path.join(work,'online-motion')},stdio:'inherit'});p.once('error',reject);p.once('close',resolve);});
+ if(motionCode!==0)throw new Error('Online glass motion QA failed');receipt.onlineMotion='passed';
  const archive=path.resolve('..','deployments',cfg.siteName,receipt.deployId);await mkdir(archive,{recursive:true});
  for(const file of Object.keys(manifest)){const dest=path.join(archive,'site',file.slice(1));await mkdir(path.dirname(dest),{recursive:true});try{const existing=await readFile(dest);if(hash(existing)!==manifest[file].sha256)throw new Error('Immutable archive differs');}catch(e){if(e.code!=='ENOENT')throw e;await copyFile(path.join(cfg.build,file.slice(1)),dest);}}
  receipt.archive=path.relative(path.resolve('..'),archive);receipt.status='verified';await save();

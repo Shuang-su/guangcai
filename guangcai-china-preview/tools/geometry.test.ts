@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {Mesh, Vector3} from 'three';
+import {Mesh, Vector3, PerspectiveCamera, Box3} from 'three';
+import {createCameraClipping} from '../src/interaction/camera-clipping';
 import {defaults} from '../src/geometry/parameters';
 import {handlePath,handleRails,handleCollar} from '../src/geometry/handle';
 import {ribbon} from '../src/geometry/ribbon';
@@ -140,3 +141,19 @@ test('balanced saucer UV closes without a new seam, folds or abrupt changes of m
   for(const foot of p.lid.children.filter(o=>o.name==='knob-porcelain-fillet') as Mesh[]){foot.geometry.computeBoundingBox();const b=foot.geometry.boundingBox!;assert.ok(b.min.y<lid.userData.topHeight&&b.max.y>lid.userData.topHeight);}
   p.dispose();
  });
+
+// Exercise the actual complete model, including off-axis panning and exploded geometry.
+test('camera far plane encloses the assembly through distant dolly, rotation and pan',()=>{
+ const product=buildProduct(makeMaterials()),camera=new PerspectiveCamera(33,1,.5,2500);
+ const update=createCameraClipping(camera,product.root);
+ for(const exploded of [false,true]){
+  product.lid.position.y=product.home.lid.y+(exploded?72:0);
+  for(const position of [[0,480,2450],[2900,220,700],[-2000,1800,-2200],[8500,150,1000]]){
+   camera.position.fromArray(position);camera.lookAt(0,62,0);camera.updateMatrixWorld(true);update();
+   const bounds=new Box3().setFromObject(product.root);
+   for(const x of [bounds.min.x,bounds.max.x])for(const y of [bounds.min.y,bounds.max.y])for(const z of [bounds.min.z,bounds.max.z])assert.ok(new Vector3(x,y,z).project(camera).z<1,'model corner beyond far plane');
+   assert.equal(camera.near,.5);
+  }
+ }
+ camera.position.set(0,120,400);update();assert.equal(camera.far,2500);product.dispose();
+});
