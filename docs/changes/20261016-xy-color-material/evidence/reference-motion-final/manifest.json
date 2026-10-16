@@ -1,0 +1,338 @@
+{
+  "sourceCommit": "0468a048f047406de9b3c0baf19bd3cce755e024",
+  "baselineCommit": "3c372b7",
+  "preview": "http://127.0.0.1:5236/",
+  "sources": [
+    {
+      "path": "guangcai-china-preview/src/interaction/authoring-framing.ts",
+      "bytes": 947,
+      "sha256": "d95c1b84b8b322a71db371211b318499bbf8bf3e6c7f790f4124d822d5ebf576"
+    },
+    {
+      "path": "guangcai-china-preview/src/main.ts",
+      "bytes": 12026,
+      "sha256": "4fd144d8f77d5de82cdaf0ce4888f454f14e9985afe7834845647dd421b09d7d"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/artwork-panel.ts",
+      "bytes": 13990,
+      "sha256": "1dbb482ee2232cb6857b4a22e4baedfc9649f8e2792985cd1f68d9af7ef274b2"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/control-lift.ts",
+      "bytes": 2172,
+      "sha256": "bcdce41423eddbc19cadcb4e05126c8d1b823f9f64d40b6ec1d30ea36b76912d"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/lightness-slider.ts",
+      "bytes": 7352,
+      "sha256": "120ba30c6b8fdcbcd33c9b8554f865b8fa6cb5869226b9964ab76bd5954a1d2b"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/styles.css",
+      "bytes": 18897,
+      "sha256": "b6d26790260dc0455ba2d3e6d542c28a1083b8609dd7a0967d55f216c6219f8d"
+    },
+    {
+      "path": "guangcai-china-preview/src/ui/xy-pad.ts",
+      "bytes": 10865,
+      "sha256": "a38ae19007a371716db69923872a1d9208fe6561f1dc347f3c9d864b9a3ed0cb"
+    },
+    {
+      "path": "guangcai-china-preview/tools/v5-qa.mjs",
+      "bytes": 31518,
+      "sha256": "b7ef889f6ebddc7e7813cf2163a91513fe6ecd38a5971e26a703e008d9807ef7"
+    },
+    {
+      "path": "guangcai-china-preview/tools/xy-controls.test.ts",
+      "bytes": 6328,
+      "sha256": "bf4364ec40d500426488679e1afbaaacb40cf3938a9f980a5f621a4ab00b3d86"
+    },
+    {
+      "path": "guangcai-china-preview/tools/xy-expansion-qa.mjs",
+      "bytes": 8160,
+      "sha256": "0dcf59cafbcff9db35ac3d9c81e434d63cbd15de37090c0c0eb25769b49b456c"
+    },
+    {
+      "path": "guangcai-china-preview/tools/xy-motion-demo.mjs",
+      "bytes": 3811,
+      "sha256": "1623cc9c1110c3918e693a4c59224490b5c11700ce2bbfe5071d97a7c2c023e7"
+    },
+    {
+      "path": "guangcai-china-preview/tools/xy-transition-qa.mjs",
+      "bytes": 3895,
+      "sha256": "a9331fb049bcee9146d708c995f1579faf6d2e231cee80a9b69264104c958058"
+    }
+  ],
+  "build": [
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-Me27q86z.js",
+      "bytes": 683461,
+      "sha256": "67b662404155ef839c299f9132cebb15252aef3aa147fcb957713bb641ea5b4d"
+    },
+    {
+      "path": ".codex-work/tmp/xy-controls/build/assets/index-CykkjOXX.css",
+      "bytes": 18025,
+      "sha256": "ae06f1630628094fb3614a5e9303cbb7e3f97c320e1fa9dbaeead048e43896e1"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/qa-delivery.json",
+      "bytes": 7633,
+      "sha256": "a3f0f1748ead86e583d39d9f091269a792d4b7e197c710e01247f85c30a65421"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/qa-axis-light-final.json",
+      "bytes": 10000,
+      "sha256": "604af6c691a3d9d852ab7c0adb4ec06b4d8fa601d062837fc6ab837ca955d3d7"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/qa-transitions-final.json",
+      "bytes": 564,
+      "sha256": "c3ee5a5d7a8daff9a745754f88baecab6f5878a54233d0cdc36c1055795c1624"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/phone-before.png",
+      "bytes": 172801,
+      "sha256": "123354b6d6ff5d8d6e817235b6b98b9653e48c80978848ae6b362b065d413113"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/390-color-pressed.png",
+      "bytes": 205040,
+      "sha256": "935e3d5dd9ca7f7d6331b5f56cdc4a39a8ce29d9b9f120268056cc881a89ef87"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/390-slider-pressed.png",
+      "bytes": 190618,
+      "sha256": "e33684dd5daba69bf0aa27f0856972292844494354908de1c2e60ef918caa88a"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/1200-color-pressed.png",
+      "bytes": 360540,
+      "sha256": "3a0de808d53e7940a183efc191246e4f316b939ba8abbd3521d32726328e55dd"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/844-material-pressed.png",
+      "bytes": 150494,
+      "sha256": "15d9c977f767799c12888494fc4b8b691667c61b0e4f98e6fcaaa96ce04f13c9"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/phone-close-up.png",
+      "bytes": 185178,
+      "sha256": "0db821911ab13d8f3bf54a851b94e0f3738d9e3ce3a851fc2c5eb56f254a12ba"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/tab-crossfade.png",
+      "bytes": 240473,
+      "sha256": "40e42d1399f790557ca0aa2cc734cd0047454f02164dd6915bae39291063db3d"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/interaction.webm",
+      "bytes": 2435999,
+      "sha256": "a5cc140a902892e4d65d115ba00236e1c6ddb6fbc2600bdb37965d4b4e1408c3"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/capture.json",
+      "bytes": 193,
+      "sha256": "e5c78de9eff4ab89fe6f163bc0f349f59bcb97eba083a982c658105919ba3fbf"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/video-metadata.json",
+      "bytes": 280,
+      "sha256": "f01cf43e736a8a4e97bc72d8c1d46e785403ed3a46fac6c40ebf174c8c9eb660"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/video-at6.png",
+      "bytes": 336128,
+      "sha256": "01c8bd89b0ac1752f27290d5e3efbbb0122cd21cd0fea0b0ad4e50485ae84f08"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/evidence/reference-motion-final/validation.json",
+      "bytes": 678,
+      "sha256": "753d57a881293b2388a68d4260e710376335c89a3e93c99b9eab47ad7c3fdf16"
+    }
+  ],
+  "references": [
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/sources.json",
+      "bytes": 2014,
+      "sha256": "c4eb2c8ffb03cf1ff201cedb27769694c116258a9ec5ef74cafdff9b5c1b8202"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/analysis.md",
+      "bytes": 1612,
+      "sha256": "f78aa80e23bc3bdc7ac17c3ff004ea595a791468f0994a4e0d3fefecde7f96ef"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-01.jpg",
+      "bytes": 340621,
+      "sha256": "2b953cb99a37869441cbc7ca8351dae83e73d28affc4fca2d11a06ae05f9687b"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-02.jpg",
+      "bytes": 377236,
+      "sha256": "2a732dfdb94694b6bc39d9ff61a63ced4e9c64543486861bffb8a55910c50df7"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-03.jpg",
+      "bytes": 614640,
+      "sha256": "c80a27be598e1d00d1a3d1d5da160ca4a9665d0ec16e27327440326212e095b5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-04.jpg",
+      "bytes": 652324,
+      "sha256": "7f2cbf6274d3439e41c3b11cbd9dc38ab3ba370d74ec8b516902bc85b778f07a"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-05.jpg",
+      "bytes": 636167,
+      "sha256": "7392e23f3c1c2af6f0c18380ccfecacade65804f73d875d353592e442fa04188"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-06.jpg",
+      "bytes": 688180,
+      "sha256": "408e24e8347f68f2b3478dac54216713d2e9e472330b53a2cb2342d98950385c"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-07.jpg",
+      "bytes": 703457,
+      "sha256": "d9c15912ab73d5c3d38a0c4cbf4051fa8082ad7ab3dd95c7b4d204ed0257b769"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-08.jpg",
+      "bytes": 643856,
+      "sha256": "496235728beacaeb99692d3e13770aa98041621c5efc460404b24d3a947b5a3c"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-09.jpg",
+      "bytes": 636173,
+      "sha256": "99e70fdcfa8ad9c67d299087bcff4f5de905c51a0aade8d547dd80b7b4809b00"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-10.jpg",
+      "bytes": 703131,
+      "sha256": "5ba8bc445614fe1784cdb2ba293c1f3ca657edc4af62131b51b35cfdc85d9f2d"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-11.jpg",
+      "bytes": 603187,
+      "sha256": "a288956e3de8eda1cf16e6be5a42f26ae72781c092b73ea519a680618b98e1a1"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/every-frame-12.jpg",
+      "bytes": 456180,
+      "sha256": "b60dfe76a004d600dd361c67806ce03a0694475ab338b3b4d4c2202391f62254"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/timestamps.json",
+      "bytes": 91078,
+      "sha256": "fb1c5394cc073b3e8fa21f655fe4f1ec624dd5a1366fd80c93801c5f7bd47bb4"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/frame-0260.jpg",
+      "bytes": 10029,
+      "sha256": "1990ff14dc93d2ee150e6d1b72266927338e2ede685238840efbf0295a73a241"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/frame-0261.jpg",
+      "bytes": 10651,
+      "sha256": "aca1566bd8264d54a539cb7cf6382cdd80f92a061de1af98664b27b37f13b80c"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/frame-0280.jpg",
+      "bytes": 12873,
+      "sha256": "8f5bec10d4e94c7aa9bef0727df168f8775722138004a8fcc1730712ea02840e"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/a/frame-0360.jpg",
+      "bytes": 10834,
+      "sha256": "2446ffcc33b20091b9b007b14b030abab797186b746a4b1c4bd00325cdd1bbe3"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-01.jpg",
+      "bytes": 354706,
+      "sha256": "5c6fb691b4217c53d18a4a4661398422dda54a755d12e035c8c7be087e5af534"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-02.jpg",
+      "bytes": 606849,
+      "sha256": "8b82c9f6b62cdc345a2a8afae29a10e2b1e671e69fe53426f9b4c44c998a2387"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-03.jpg",
+      "bytes": 598257,
+      "sha256": "a464b292cace0625de0566d2884e2e3fe06620c0d162242c9c442cdb50773979"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-04.jpg",
+      "bytes": 613714,
+      "sha256": "5da38d33351695823724042cea59b8e932a6dc8dc341fbd22dd704917f14377e"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-05.jpg",
+      "bytes": 381361,
+      "sha256": "bd723bc0b52cbbd5f130af7dc0735028f61a000a63cdd162df0b9e8b3bc21401"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-06.jpg",
+      "bytes": 618193,
+      "sha256": "df4674e4128674dfbf1de11fbe573e1a707f50931f43e5669efa213d3d2d5ba8"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-07.jpg",
+      "bytes": 514979,
+      "sha256": "f29e2fbaa56eae662e5e03df44a8c75842f6f8f88651eca4fabb1b1e4d4f7551"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-08.jpg",
+      "bytes": 546476,
+      "sha256": "8591b9ddb45eca12e67fa683c79ea0db5f5746eba2c04758a9c9b74128fbc2ae"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-09.jpg",
+      "bytes": 600466,
+      "sha256": "7807e28b871a92d85a91a729de4268521e0042d1ccb79d69afbabba1fb678641"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/every-frame-10.jpg",
+      "bytes": 295548,
+      "sha256": "f85c422d2fc1fa71cf078db73c8d1d06100d69b68519e89e03bfe71b53c1caae"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/timestamps.json",
+      "bytes": 72804,
+      "sha256": "ae28acbe50008f2d44e9e8dbf20b4fea83ca8fd4ba92190cfe7b68590bb71d5f"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/frame-0552.jpg",
+      "bytes": 10611,
+      "sha256": "a2d32e888f3f9a07c720c72038c85cbdf644628f20da3101f43c5eb465e0bed5"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/b/frame-0591.jpg",
+      "bytes": 10495,
+      "sha256": "2218f12e63e63333466ef8098aafed9356fcec44da80c8b84e730ce72e9c8d2c"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/user-feedback/default-point.png",
+      "bytes": 361704,
+      "sha256": "d977ad1bd56271f3e82c1ec0f99f07f7a5a2feb7c50bf93f6ece97e1daf2be91"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/user-feedback/lightness.png",
+      "bytes": 544310,
+      "sha256": "7e56444dc206a964bc0205e7066e82731e6566f861512e3f400f8d52d5f52ef7"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/user-feedback/clipped-cup.png",
+      "bytes": 698764,
+      "sha256": "2d651e5f13704cfd46295b70e915acb700e54a039f0ab0459e781e1894e99d78"
+    },
+    {
+      "path": "docs/changes/20261016-xy-color-material/references/zoom-guides-recordings/user-feedback/sources.json",
+      "bytes": 738,
+      "sha256": "2c431ab50f7d9a51a85952849d21e49e3413d26f157cbd1ac2396c697a45b8cf"
+    }
+  ]
+}

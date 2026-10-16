@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "reset interpolates actual cup parameters, not just the icon",
+    "reset lands exactly on the original preset",
+    "tab switch animates both outgoing and incoming panels",
+    "tab switch leaves one interactive panel",
+    "rapid tab switching retains only the last panel",
+    "new input cancels an in-progress restore",
+    "switching tabs completes a requested reset instead of leaving partial values",
+    "reduced motion applies reset and tab change without temporal animation",
+    "no application runtime errors"
+  ],
+  "errors": []
+}

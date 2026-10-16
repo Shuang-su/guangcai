@@ -1,0 +1,32 @@
+{
+  "sourceCommit": "0468a048f047406de9b3c0baf19bd3cce755e024",
+  "applicationTests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "typeScript": "passed",
+  "vite": "passed; existing chunk-size warning",
+  "browserChecks": {
+    "fullV5": 106,
+    "independentControlsAndViewport": 73,
+    "transitions": 9,
+    "unexpectedErrors": 0,
+    "expectedNetworkFailures": 6
+  },
+  "physicalDevices": "not tested",
+  "preview": "http://127.0.0.1:5236/",
+  "video": {
+    "nativeCapture": true,
+    "decode": "passed",
+    "durationSeconds": 31.8,
+    "viewport": [
+      600,
+      900
+    ]
+  },
+  "releaseTiming": {
+    "holdMs": 80,
+    "fadeMs": "256-320",
+    "shrinkMs": 340
+  }
+}

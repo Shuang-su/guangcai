@@ -127,3 +127,5 @@ QA_URL=http://127.0.0.1:5236/ QA_OUT=../.codex-work/tmp/xy-controls/qa-motion-li
 ### 本轮交付
 
 本地预览仍为 http://127.0.0.1:5236/ 。用户可刷新载入最终版。交付源码、逐帧来源证据、最终手机／桌面截图、近看截图、原生操作录像和本地 checkpoint；不推送、创建 PR、合并、打标签或部署。功能 checkpoint 的实际 SHA 在提交后回读补记。
+
+- 功能 checkpoint 回读：`0468a048f047406de9b3c0baf19bd3cce755e024`（feat(china): refine independent control motion and full cup viewport (#25)）。本轮源码、请求、计划与完成记录已进入该提交；逐帧与最终浏览器证据随下一文档 checkpoint 保存。
