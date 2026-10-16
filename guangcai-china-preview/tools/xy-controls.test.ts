@@ -1,12 +1,25 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {MeshPhysicalMaterial,ShaderLib} from 'three';
+import {MeshPhysicalMaterial,ShaderLib,PerspectiveCamera,Vector3} from 'three';
+import {createAuthoringFraming} from '../src/interaction/authoring-framing';
 import {colorAtPosition,colorPosition,normalizePosition} from '../src/styles/xy-mapping';
 import {materialAt,normalizeAppearance,presetAppearance,GOLD_LINE,hslRgb} from '../src/styles/city-appearance';
 import {normalizeSelection,selectTheme,defaultSelection} from '../src/styles/city-selection';
 import {installCityParameters} from '../src/materials/city-parametric';
 
 const near=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
+test('authoring framing keeps the full canvas and restores the camera projection without accumulation',()=>{
+ for(const [width,height] of [[390,844],[600,900],[1200,900],[844,390]]){
+  const camera=new PerspectiveCamera(33,width/height,.5,2500),original=camera.projectionMatrix.clone(),position=camera.position.clone();
+  const canvas={clientWidth:width,clientHeight:height,closest:()=>({classList:{contains:()=>true}})} as unknown as HTMLCanvasElement;
+  const framing=createAuthoringFraming(camera,canvas);
+  for(let frame=0;frame<10;frame++){
+   framing.apply();const centre=new Vector3(0,0,-10).applyMatrix4(camera.projectionMatrix);
+   near(centre.x,width<=700&&height>520?0:-(height<=520?310:340)/width);near(centre.y,width<=700&&height>520?.48:0);
+   framing.restore();assert.deepEqual(camera.projectionMatrix.elements,original.elements);assert.deepEqual(camera.position,position);
+  }
+ }
+});
 test('cached colour field lightness compositing matches direct HSL at both endpoints and in between',()=>{
  for(const h of [0,37,120,237,300,359.9])for(const s of [0,20,63,100])for(const l of [0,1,25,49,50,51,78,99,100]){
   const base=hslRgb(h,s,50),direct=hslRgb(h,s,l),amount=l/100;

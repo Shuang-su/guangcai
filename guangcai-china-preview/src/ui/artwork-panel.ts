@@ -13,10 +13,9 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  <details class="city-selector"><summary>城市 <strong id="current-city"></strong></summary><div class="theme-options" role="group" aria-label="选择城市">${Object.entries(themes).map(([id,t])=>`<button data-theme="${id}">${t.name}</button>`).join('')}</div></details>
  <p class="field-label palette-heading">配色预设</p><div class="variant-grid" role="group" aria-label="选择配色预设"></div>
  <div id="creation-controls">
- <div class="adjust-tabs" role="tablist" aria-label="选择调整内容"><button id="adjust-color-tab" role="tab" aria-controls="adjust-color-panel" aria-selected="true">颜色</button><button id="adjust-material-tab" role="tab" aria-controls="adjust-material-panel" aria-selected="false" tabindex="-1">材质</button></div>
- <div id="adjust-color-panel" role="tabpanel" aria-labelledby="adjust-color-tab"><div class="color-pad-row"><div class="pad-mount"></div><div class="lightness-control"><input id="fill-lightness" type="range" min="0" max="100" step="1" aria-label="明度" aria-orientation="vertical"></div></div><p class="pad-hint">拖动选色 · 右侧调整明暗</p></div>
- <div id="adjust-material-panel" role="tabpanel" aria-labelledby="adjust-material-tab" hidden><div class="pad-mount"></div><p class="pad-hint">拖动调整质感 · 金线保持不变</p></div>
- <button id="reset-palette" class="text-button">恢复当前配色预设</button>
+ <div class="adjust-toolbar"><div class="adjust-tabs" role="tablist" aria-label="选择调整内容"><button id="adjust-color-tab" role="tab" aria-controls="adjust-color-panel" aria-selected="true">颜色</button><button id="adjust-material-tab" role="tab" aria-controls="adjust-material-panel" aria-selected="false" tabindex="-1">材质</button></div><button id="reset-palette" class="reset-control" aria-label="恢复当前配色预设" title="恢复当前配色预设"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 5 7l4 4M5 7h7a7 7 0 1 1-6.6 9.3"/></svg></button></div>
+ <div class="adjust-panels"><div id="adjust-color-panel" role="tabpanel" aria-labelledby="adjust-color-tab"><div class="pad-stage"><div class="color-pad-row"><div class="pad-mount"></div><div class="lightness-control"><input id="fill-lightness" type="range" min="20" max="65" step="1" aria-label="明度" aria-orientation="vertical"></div></div></div></div>
+ <div id="adjust-material-panel" role="tabpanel" aria-labelledby="adjust-material-tab" hidden><div class="pad-stage"><div class="pad-mount"></div></div></div></div>
  </div>
  <div id="legacy-finish"><label class="field-label" for="artwork-finish">材质</label><select id="artwork-finish">${Object.entries(finishes).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select><p id="finish-note" class="note"></p></div>
  <label class="field-label" for="artwork-text">文字</label><select id="artwork-text"><option value="auto">随款式</option><option value="name">城市名称</option><option value="he">和合共彩</option><option value="create">共创美好</option><option value="none">不显示</option></select>
@@ -28,7 +27,9 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  const citySelector=$<HTMLDetailsElement>('.city-selector'),mobile=matchMedia('(max-width:520px)');
  const responsive=()=>{if(mobile.matches)citySelector.open=false;};citySelector.open=false;mobile.addEventListener('change',responsive);
  let displayedTheme='',progress='',frame=0,pending:Appearance|undefined,selectedTab:'color'|'material'='color';
- let observedAppearance:Appearance|undefined,fromPad=false;
+ let observedAppearance:Appearance|undefined,restoreTarget:Appearance|undefined,fromPad=false,restoringFrame=0,transitionId=0;
+ const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+ const tabPanels=[$('#adjust-color-panel'),$('#adjust-material-panel')];
  function flush(){
   cancelAnimationFrame(frame);frame=0;const appearance=pending;pending=undefined;
   if(appearance){fromPad=true;try{void controller.select({appearance});}finally{fromPad=false;}}
@@ -38,21 +39,33 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   pending={...a,...patch};if(!frame)frame=requestAnimationFrame(flush);
  };
  const cancelled=()=>{cancelPending();render();};
- const colorPad=createXYPad({id:'color-pad',label:'调整颜色',onInput:p=>{
+ const colorPad=createXYPad({id:'color-pad',label:'调整颜色',onStart:cancelPending,onInput:p=>{
   const a=pending??controller.desired.appearance;if(a)edit(colorAtPosition(p,a.hue));
  },onCommit:flush,onCancel:cancelled});
- const materialPad=createXYPad({id:'material-pad',label:'调整材质',onInput:p=>edit({materialX:p.x,material:p.y}),onCommit:flush,onCancel:cancelled});
+ const materialPad=createXYPad({id:'material-pad',label:'调整材质',onStart:cancelPending,onInput:p=>edit({materialX:p.x,material:p.y}),onCommit:flush,onCancel:cancelled});
  const lightness=createLightnessSlider($('.lightness-control'),{onStart:cancelPending,onInput:value=>edit({lightness:value}),onCommit:flush,onCancel:cancelled});
  $('#adjust-color-panel .pad-mount').append(colorPad.element);$('#adjust-material-panel .pad-mount').append(materialPad.element);
- function cancelPending(){cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();lightness.cancel();}
+ function cancelPending(){
+  ++transitionId;for(const p of tabPanels){p.getAnimations().forEach(a=>a.cancel());const active=p.id===`adjust-${selectedTab}-panel`;p.hidden=!active;p.inert=!active;p.setAttribute('aria-hidden',String(!active));}
+  cancelAnimationFrame(restoringFrame);restoringFrame=0;restoreTarget=undefined;delete panel.dataset.restoring;cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();lightness.cancel();
+ }
+ function finishRestore(){const target=restoreTarget;cancelPending();if(target){fromPad=true;try{void controller.select({appearance:target});}finally{fromPad=false;}}}
  function changeTab(tab:'color'|'material'){
-  cancelPending();selectedTab=tab;
+  const previous=selectedTab;finishRestore();selectedTab=tab;const id=++transitionId;
+  for(const p of tabPanels){p.getAnimations().forEach(a=>a.cancel());p.inert=false;p.style.opacity='';}
   for(const name of ['color','material'] as const){
    const active=name===tab,button=$('#adjust-'+name+'-tab');
    button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;
-   $('#adjust-'+name+'-panel').hidden=!active;
+   $('#adjust-'+name+'-panel').hidden=!active;$('#adjust-'+name+'-panel').setAttribute('aria-hidden',String(!active));
   }
   render();(tab==='color'?colorPad:materialPad).refresh();if(tab==='color')lightness.refresh();
+  if(previous!==tab&&!reduceMotion.matches){
+   const incoming=$('#adjust-'+tab+'-panel'),outgoing=$('#adjust-'+previous+'-panel');
+   outgoing.hidden=false;outgoing.inert=true;outgoing.setAttribute('aria-hidden','true');incoming.removeAttribute('aria-hidden');
+   const leave=outgoing.animate([{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(.96)'}],{duration:180,easing:'ease-out',fill:'forwards'});
+   const enter=incoming.animate([{opacity:0,transform:'translateY(7px) scale(.96)'},{opacity:1,transform:'none'}],{duration:300,easing:'cubic-bezier(.2,.8,.2,1)'});
+   void Promise.all([leave.finished,enter.finished]).then(()=>{if(id===transitionId){outgoing.hidden=true;leave.cancel();}},()=>{});
+  }
  }
  for(const name of ['color','material'] as const){
   const button=$('#adjust-'+name+'-tab');button.onclick=()=>changeTab(name);
@@ -63,11 +76,11 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   };
  }
  function setOpen(open:boolean){
-  cancelPending();panel.hidden=!open;main.classList.toggle('artwork-open',open);toggle.setAttribute('aria-expanded',String(open));
+  finishRestore();panel.hidden=!open;main.classList.toggle('artwork-open',open);toggle.setAttribute('aria-expanded',String(open));
   if(open){closeOtherPanels();render();panel.scrollTop=0;$('#close-artwork').focus();colorPad.refresh();materialPad.refresh();lightness.refresh();}else toggle.focus();
  }
  toggle.onclick=()=>setOpen(panel.hidden);$('#close-artwork').onclick=()=>setOpen(false);
- const dismiss=()=>{cancelPending();panel.hidden=true;main.classList.remove('artwork-open');toggle.setAttribute('aria-expanded','false');};
+ const dismiss=()=>{finishRestore();panel.hidden=true;main.classList.remove('artwork-open');toggle.setAttribute('aria-expanded','false');};
  document.querySelector('#open-settings')!.addEventListener('click',dismiss);document.querySelector('#open-background')!.addEventListener('click',dismiss);
  const keyboard=(event:KeyboardEvent)=>{if(event.key==='Escape'&&!panel.hidden)setOpen(false);};document.addEventListener('keydown',keyboard);
  panel.querySelectorAll<HTMLButtonElement>('[data-theme]').forEach(button=>button.onclick=()=>{
@@ -77,7 +90,21 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  finish.onchange=()=>{cancelPending();void controller.select({finish:finish.value as Finish});};
  text.onchange=()=>{cancelPending();void controller.select({text:text.value as Lettering});};
  $('#default-artwork').onclick=()=>{cancelPending();void controller.restore();};
- $('#reset-palette').onclick=()=>{cancelPending();const a=controller.desired.appearance;if(a)void controller.select({appearance:presetAppearance(a.preset)});};
+ $('#reset-palette').onclick=()=>{
+  cancelPending();const a=controller.desired.appearance;if(!a)return;const target=presetAppearance(a.preset);
+  if(reduceMotion.matches){void controller.select({appearance:target});return;}
+  const started=performance.now(),hueDelta=((target.hue-a.hue+540)%360)-180;
+  $('#reset-palette svg').getAnimations().forEach(animation=>animation.cancel());
+  $('#reset-palette svg').animate([{transform:'rotate(-180deg)'},{transform:'rotate(0deg)'}],{duration:420,easing:'ease-out'});
+  panel.dataset.restoring='true';restoreTarget=target;
+  const restore=(now:number)=>{
+   const t=Math.min(1,(now-started)/420),ease=1-(1-t)**3;
+   const next:Appearance={...target,hue:(a.hue+hueDelta*ease+360)%360};
+   for(const key of ['saturation','lightness','material','materialX','relief'] as const)next[key]=(a[key]??.5)+((target[key]??.5)-(a[key]??.5))*ease;
+   fromPad=true;try{void controller.select({appearance:t===1?target:next});}finally{fromPad=false;}
+   if(t<1)restoringFrame=requestAnimationFrame(restore);else{restoringFrame=0;restoreTarget=undefined;delete panel.dataset.restoring;}
+  };restoringFrame=requestAnimationFrame(restore);
+ };
  function render(){
   const s=controller.desired,v=variantFor(s.variant),pilot=isPilot(v.theme);
   // An external preset, API update or load failure invalidates a captured gesture.
@@ -101,7 +128,9 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   for(const option of text.options)option.hidden=!themeFor(v).slogans&&['he','create'].includes(option.value);
   if(pilot&&s.appearance){
    const a=s.appearance;colorPad.setValue(colorPosition(a.hue,a.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});
-   lightness.setValue(a.lightness,a.hue,a.saturation);
+   const original=presetAppearance(a.preset);
+   colorPad.setReference(colorPosition(original.hue,original.saturation));materialPad.setReference({x:original.materialX??.5,y:original.material});
+   lightness.setValue(a.lightness,a.hue,a.saturation,original.lightness);
    colorPad.setBackground(String(a.lightness),colorField(a.lightness));
    materialPad.setBackground([a.hue,a.saturation,a.lightness].join(','),materialField(a));
   }

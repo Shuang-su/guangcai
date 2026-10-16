@@ -1,0 +1,31 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {mkdir,writeFile} from 'node:fs/promises';
+const out=process.env.QA_OUT??'../.codex-work/tmp/xy-controls/qa-transitions';await mkdir(out,{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:600,height:900}}),checks=[],errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+const check=(name,ok)=>{assert.ok(ok,name);checks.push(name);console.log('PASS',name);};
+const state=()=>page.evaluate(()=>window.cupViewer.debug().selection.current.appearance);
+const idle=()=>page.waitForFunction(()=>!window.cupViewer.debug().selection.busy&&!document.querySelector('#artwork-settings').hasAttribute('data-restoring'));
+try{
+ await page.goto(process.env.QA_URL??'http://127.0.0.1:5236/');await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:180000});
+ await page.locator('#open-artwork').click();await page.locator('.city-selector summary').click();await page.locator('[data-theme="beijing"]').click();await idle();await page.locator('[data-variant="beijing-green"]').click();await idle();const preset=await state();
+ const pad=await page.locator('#color-pad').boundingBox();await page.mouse.click(pad.x+pad.width*.8,pad.y+pad.height*.2);await idle();const edited=await state();
+ await page.locator('#reset-palette').click();await page.waitForTimeout(100);const middle=await state();
+ check('reset interpolates actual cup parameters, not just the icon',middle.hue!==edited.hue&&middle.hue!==preset.hue);
+ await idle();check('reset lands exactly on the original preset',JSON.stringify(await state())===JSON.stringify(preset));
+ await page.locator('#adjust-material-tab').click();
+ check('tab switch animates both outgoing and incoming panels',await page.locator('.adjust-panels').evaluate(e=>[...e.children].every(p=>p.getAnimations().length>0)));
+ await page.waitForTimeout(100);await page.screenshot({path:`${out}/tab-crossfade.png`});await page.waitForTimeout(250);
+ check('tab switch leaves one interactive panel',await page.locator('#adjust-color-panel').isVisible()===false&&await page.locator('#adjust-material-panel').isVisible());
+ await page.locator('#adjust-color-tab').click();await page.locator('#adjust-material-tab').click();await page.locator('#adjust-color-tab').click();await page.waitForTimeout(400);
+ check('rapid tab switching retains only the last panel',await page.locator('#adjust-color-panel').isVisible()&&!await page.locator('#adjust-material-panel').isVisible());
+ await page.locator('#color-pad').press('ArrowRight');await idle();await page.locator('#reset-palette').click();await page.waitForTimeout(80);
+ await page.locator('#color-pad').press('ArrowLeft');await idle();const interrupted=await state();await page.waitForTimeout(500);
+ check('new input cancels an in-progress restore',JSON.stringify(await state())===JSON.stringify(interrupted));
+ await page.locator('#reset-palette').click();await page.waitForTimeout(70);await page.locator('#adjust-material-tab').click();await idle();check('switching tabs completes a requested reset instead of leaving partial values',JSON.stringify(await state())===JSON.stringify(preset));
+ await page.locator('#adjust-color-tab').click();await page.waitForTimeout(350);await page.emulateMedia({reducedMotion:'reduce'});await page.locator('#reset-palette').click();await idle();await page.locator('#adjust-material-tab').click();
+ check('reduced motion applies reset and tab change without temporal animation',JSON.stringify(await state())===JSON.stringify(preset)&&await page.locator('.adjust-panels').evaluate(e=>[...e.children].every(p=>p.getAnimations().length===0)));
+ check('no application runtime errors',errors.length===0);
+}finally{await writeFile(out+'/qa.json',JSON.stringify({checks,errors},null,2)+'\n');await browser.close();}

@@ -6,15 +6,16 @@ const out=process.env.QA_OUT??'../.codex-work/tmp/xy-controls/motion-demo';await
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const context=await browser.newContext({viewport:{width:600,height:900},recordVideo:{dir:out,size:{width:600,height:900}}});
 const page=await context.newPage(),video=page.video(),errors=[];page.on('pageerror',e=>errors.push(e.message));
-const idle=()=>page.waitForFunction(()=>!window.cupViewer.debug().selection.busy);
+const idle=()=>page.waitForFunction(()=>!window.cupViewer.debug().selection.busy&&!document.querySelector('#artwork-settings')?.hasAttribute('data-restoring'));
 async function point(id,x,y){
- const pad=page.locator('#'+id);await pad.scrollIntoViewIfNeeded();const b=await pad.boundingBox();
- return {x:b.x+18+x*(b.width-36),y:b.y+18+(1-y)*(b.height-36)};
+ const pad=page.locator('#'+id);await pad.scrollIntoViewIfNeeded();await pad.evaluate(async e=>{await Promise.all([...e.getAnimations(),...(e.closest('.color-pad-row')?.getAnimations()??[]),...(e.closest('[role=tabpanel]')?.getAnimations()??[])].map(a=>a.finished.catch(()=>{})));});
+ const b=await pad.boundingBox(),scale=await pad.evaluate(e=>e.getBoundingClientRect().width/e.clientWidth),edge=18*scale;
+ return {x:b.x+edge+x*(b.width-2*edge),y:b.y+edge+(1-y)*(b.height-2*edge)};
 }
 async function drag(id,positions){
- const first=await point(id,...positions[0]);await page.mouse.move(first.x,first.y);await page.mouse.down();await page.waitForTimeout(220);
+ const first=await point(id,...positions[0]);await page.mouse.move(first.x,first.y);await page.mouse.down();await page.waitForTimeout(800);
  for(const [x,y]of positions.slice(1)){const p=await point(id,x,y);await page.mouse.move(p.x,p.y,{steps:3});await page.waitForTimeout(55);}
- await page.mouse.up();await idle();await page.waitForTimeout(600);
+ await page.mouse.up();await idle();await page.waitForTimeout(900);
 }
 try{
  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:180000});
@@ -23,8 +24,9 @@ try{
  await page.mouse.click(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34));await idle();await page.waitForTimeout(350);
  await drag('color-pad',Array.from({length:30},(_,i)=>{const a=i/29*Math.PI*1.6;return [.5+.35*Math.cos(a),.5+.35*Math.sin(a)];}));
  await page.mouse.move(slider.x+slider.width/2,slider.y+17+.45*(slider.height-34));await page.mouse.down();
- for(let i=0;i<=20;i++){const l=.25+.5*Math.sin(i/20*Math.PI);await page.mouse.move(slider.x+slider.width/2,slider.y+17+(1-l)*(slider.height-34));await page.waitForTimeout(55);}
- await page.mouse.up();await idle();await page.waitForTimeout(400);
+ await page.waitForTimeout(400);const expandedSlider=await page.locator('#fill-lightness').boundingBox(),sliderEdge=17*expandedSlider.height/slider.height;
+ for(let i=0;i<=20;i++){const l=.25+.5*Math.sin(i/20*Math.PI);await page.mouse.move(expandedSlider.x+expandedSlider.width/2,expandedSlider.y+sliderEdge+(1-l)*(expandedSlider.height-2*sliderEdge));await page.waitForTimeout(55);}
+ await page.mouse.up();await idle();await page.waitForTimeout(900);
  await page.locator('#adjust-material-tab').click();
  await drag('material-pad',Array.from({length:28},(_,i)=>[.15+.7*i/27,.5+.32*Math.sin(i/27*Math.PI*2)]));
  await page.locator('#adjust-color-tab').click();await page.locator('#fill-lightness').press('End');await page.locator('#fill-lightness').press('ArrowDown');await idle();
