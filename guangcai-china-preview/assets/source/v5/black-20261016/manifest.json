@@ -267,7 +267,7 @@
     "public/cities/v5/nanjing-label.webp": "70e5ea5fa5938f32af77980e231bc53d62841927cf792a37215e458b89c1207b",
     "public/cities/v5/nanjing-thumb.webp": "22f2261981c190e12cd4af175c62a3c6272f3d2b513adb88604d13634e330295",
     "src/compare.ts": "08d56466b3dd0ad0fa2b8b8a451d90127b81501afc1fd3ac6a36798e02b720b3",
-    "src/main.ts": "4fd144d8f77d5de82cdaf0ce4888f454f14e9985afe7834845647dd421b09d7d",
+    "src/main.ts": "d85dec9df3de458ead5afd0b4a3398f3eb2406bc752ca3c80d45b9c47f774a3f",
     "src/geometry/handle.ts": "7e5ef348abfba65c4d5fdda6638405147b0d08aaca6e9e6e11ba5807899c0e0e",
     "src/geometry/parameters.ts": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001",
     "src/geometry/product.ts": "ea70aabb89a35b5c06fbb325a3be82eeb262e4d164d93df2ac9173714d198c3f",
@@ -301,7 +301,7 @@
     "src/ui/background-asset.json": "cb7aa60ef126b17289d4a86a8174f8f21b26dd0e636f62c305111ff2261be7b3",
     "src/ui/background.ts": "45fcef1060057c5ee70cd12be8472d13353b43ea0bd0c58551185c32f85686b3",
     "src/ui/compare.css": "4dc21e53bb6e296af21f41ac780bc566fb995338ba44c28a85ee9447585e71f5",
-    "src/ui/interface.ts": "b0a420f13a6f2c3e79c9481a7176c249fbf685c85463f84374085ded97983a9a",
+    "src/ui/interface.ts": "7c62acd04a4feec535b70ef31a933da88319a76c8daf6d05c90ee20c6ed99d0d",
     "src/ui/styles.css": "1bbc7935bb411d8ee35dc4d000940cdee881697c4b2db1401128db22a5275a8b",
     "src/ui/artwork-panel.ts": "bf7406ef934426d2831f68e73da7e40dca2bfd03468b1d3cf83ef067ab53e6ad",
     "src/ui/xy-pad.ts": "fc5d1f212cd45d3e49416478916b74b086bfcc316b73fe814304c0bdb1db290b",
@@ -310,5 +310,20 @@
     "src/ui/control-lift.ts": "bcdce41423eddbc19cadcb4e05126c8d1b823f9f64d40b6ec1d30ea36b76912d",
     "src/ui/haptics.ts": "3ae54f8135c6285faf94c2987304835a9b3a788c12c2f74393b1be0b0aa32460",
     "src/ui/hdr-surface.ts": "6a184a64618439ef353b62608e341737a7a884868da7ff679a72681cb4db35a1"
+  },
+  "releaseMetadataUpdates": {
+    "version": "5.2.0",
+    "files": {
+      "src/main.ts": {
+        "beforeSha256": "4fd144d8f77d5de82cdaf0ce4888f454f14e9985afe7834845647dd421b09d7d",
+        "afterSha256": "d85dec9df3de458ead5afd0b4a3398f3eb2406bc752ca3c80d45b9c47f774a3f",
+        "reason": "V5.2 release version text only; reversing the version substitution exactly matches the previous source hash."
+      },
+      "src/ui/interface.ts": {
+        "beforeSha256": "b0a420f13a6f2c3e79c9481a7176c249fbf685c85463f84374085ded97983a9a",
+        "afterSha256": "7c62acd04a4feec535b70ef31a933da88319a76c8daf6d05c90ee20c6ed99d0d",
+        "reason": "V5.2 release version text only; reversing the version substitution exactly matches the previous source hash."
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@
 
 ## 验证
 
-从中国杯目录执行现有 `npm run prepare:v5` 流水线，Python 使用已安装的运行时和项目内 vector-tools；设置 `PYTHONDONTWRITEBYTECODE=1`。最终证据在 [black-city-pipeline](../../../guangcai-china-preview/evidence/city-v5/black-city-pipeline/)。
+从中国杯目录执行现有 `npm run pipeline:v5` 流水线，Python 使用已安装的运行时和项目内 vector-tools；设置 `PYTHONDONTWRITEBYTECODE=1`。最终证据在 [black-city-pipeline](../../../guangcai-china-preview/evidence/city-v5/black-city-pipeline/)。
 
 | 检查 | 结果 |
 | --- | --- |
