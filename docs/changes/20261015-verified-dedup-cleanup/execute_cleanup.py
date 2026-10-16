@@ -86,13 +86,18 @@ def main():
         assert digest(ROOT / row["path"]) == row["sha256"]
     result = {"checkpoint": ref, "verifiedContentFiles": len(manifest["files"]),
               "verifiedUniqueArchiveContents": len(verified), "verifiedMetadataFiles": len(manifest["metadata"]),
-              "protectedRuntimeFiles": 1136, "apply": args.apply, "deleted": [], "removedDirectories": []}
+              "protectedRuntimeFiles": 1136, "apply": args.apply, "deleted": [],
+              "associatedMetadataAlreadyRemoved": [], "removedDirectories": []}
     free = lambda: os.statvfs(ROOT).f_bavail * os.statvfs(ROOT).f_frsize
     result["freeBytesBefore"] = free()
     if args.apply:
         try:
             for row in entries:
                 path = ROOT / row["path"]
+                # macOS may remove a verified AppleDouble sidecar with its data file.
+                if row in manifest["metadata"] and not path.exists():
+                    result["associatedMetadataAlreadyRemoved"].append(row["path"])
+                    continue
                 # Recheck directly before unlinking; keep all retained copies in place.
                 assert digest(path) == row["sha256"]
                 path.unlink()

@@ -1,0 +1,60 @@
+{
+  "baseUrl": "http://127.0.0.1:5212",
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "bytes": 424
+    },
+    {
+      "route": "/src/main.ts",
+      "status": 200,
+      "bytes": 38394
+    },
+    {
+      "route": "/evidence.html",
+      "status": 200,
+      "bytes": 31167
+    },
+    {
+      "route": "/cities/v4/catalog.json",
+      "status": 200,
+      "bytes": 10332
+    },
+    {
+      "route": "/review/beijing-vector/",
+      "status": 200,
+      "bytes": 424,
+      "scope": "HTTP 200 is SPA fallback, not proof of the review document",
+      "verifiedAsReviewPage": false
+    },
+    {
+      "route": "/fixed/manifest.json",
+      "status": 200,
+      "bytes": 8532,
+      "matchesDisk": true
+    },
+    {
+      "route": "/textures/china-baseColor-754558a83d8866b8.webp",
+      "status": 200,
+      "bytes": 348,
+      "matchesDisk": true
+    },
+    {
+      "route": "/review/beijing-vector/index.html",
+      "status": 200,
+      "bytes": 2412,
+      "matchesDisk": true,
+      "verifiedAsReviewPage": true
+    },
+    {
+      "route": "/fixed/body-baseColor.png",
+      "status": 200,
+      "bytes": 3461685,
+      "matchesDisk": true
+    }
+  ],
+  "scope": "HTTP dev-page/module, evidence, catalog and fixed texture resources. The review directory URL returned the SPA fallback; only an exact review index file match, if present, verifies that document. No rendered browser or actual-device acceptance claimed.",
+  "sourceBranch": "codex/beijing-vector-review",
+  "productBuildRun": false
+}

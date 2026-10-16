@@ -14,11 +14,11 @@
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源与哈希](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围和缺口](docs/changes/20261014-source-consolidation/completion.md) · [整理任务 #23](https://github.com/Shuang-su/guangcai/issues/23)。
 
-已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,614份去重内容、18,040处来源，11个大文件使用Git LFS。`archives/`保存实际对象，原文件名和各来源路径在索引中。已核验的重复工作区完成迁移与清理，原件和历史工程集中保留在初号機盘，恢复方法见[位置说明](WORKSPACE_LOCATIONS.md)。
+已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,661份去重内容、19,534处来源，11个大文件使用Git LFS。`archives/`保存实际对象，原文件名和各来源路径在索引中。已核验的重复工作区完成迁移与清理，原件和历史工程集中保留在初号機盘，恢复方法见[位置说明](WORKSPACE_LOCATIONS.md)。
 
 北京工作区此前3593个云占位已全部按字节核验；2026-10-15旧 `New project/.git` 的云占位也清零，9月21日两个原提交的完整广彩项目快照均已校验，各154个文件、25个树payload。新增初始完成记录原字节保存在[原始Git证据](docs/history/20260921-original-git/README.md)，其余内容复用档案。此项补录与既有16个源码恢复节点互补，不整条导入混合仓库其他项目历史。
 
-原22个失效附件路径现已按用户确认处理：17张照片与1份PSD为用户移动，PDF保留无水印版，3张旧临时截图不再追查。19份保留文件均与Git归档SHA-256一致；旧路径失效事实保留，不把无水印PDF或放弃追查的截图写成原字节找回。[附件处理与内部查重](docs/changes/20261015-attachment-resolution-and-duplicates/report.md)记录1,205组完全相同的内容及用途，其中素材原件内部仅2组重复。本轮仅查重，没有删除文件；构建副本和工程必需资源分别记录。
+原22个失效附件路径现已按用户确认处理：17张照片与1份PSD为用户移动，PDF保留无水印版，3张旧临时截图不再追查。19份保留文件均与Git归档SHA-256一致；旧路径失效事实保留，不把无水印PDF或放弃追查的截图写成原字节找回。[附件处理与内部查重](docs/changes/20261015-attachment-resolution-and-duplicates/report.md)记录1,205组完全相同的内容及用途，其中素材原件内部仅2组重复。该次盘点仅查重；随后按用户明确授权完成[核对与实际去重](docs/changes/20261015-verified-dedup-cleanup/completion.md)：删除5处已归档构建／部署暂存和2张重复图片，共1,494个内容文件及1,603份配套元数据，初号機净回收约1.47 GiB。当前应用的1,136份受保护文件与保留图片哈希不变；有运行、制作或验收用途的相同内容继续保留。
 
 首次克隆资料库需要安装Git LFS；空间有限时可先用 `GIT_LFS_SKIP_SMUDGE=1 git clone`，再选择所需档案下载。LFS指针不是原文件，读取时应确认真实内容已取回。
 

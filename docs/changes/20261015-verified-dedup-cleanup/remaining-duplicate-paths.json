@@ -1,0 +1,3415 @@
+{
+  "scope": "Rehashed surviving paths from the previous duplicate audit; excludes new archive materializations and records written in this round.",
+  "rehashedFiles": 995,
+  "confirmedGroups": 399,
+  "categories": {
+    "当前运行资源": 44,
+    "制作母版 + 原始素材": 2,
+    "H5源素材与运行资源 + 当前运行资源": 59,
+    "H5源素材与运行资源 + 制作母版 + 当前运行资源": 6,
+    "Git工作树记录 + 历史工作记录/参考": 5,
+    "制作母版 + 当前运行资源": 2,
+    "当前运行资源 + 验收证据": 99,
+    "制作母版": 7,
+    "验收证据": 50,
+    "历史工作记录/参考 + 验收证据": 3,
+    "Git工作树记录 + 源码/说明": 65,
+    "H5源素材与运行资源": 4,
+    "源码/说明 + 验收证据": 27,
+    "当前运行资源 + 源码/说明": 6,
+    "历史工作记录/参考 + 源码/说明": 16,
+    "历史工作记录/参考": 2,
+    "源码/说明": 2
+  },
+  "groups": [
+    {
+      "sha256": "24251c222bf4583990212451c3a0c384d9ffdc58cc40ee90329ca9af4fb3f916",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/fixed-saucer-normal-24251c222bf45839.hfn.gz",
+        "guangcai-v4-workspace/guangcai-china-preview/public/fixed/saucer-normal.hfn.gz"
+      ],
+      "bytesPerFile": 24283080
+    },
+    {
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37",
+      "paths": [
+        "素材原件/广彩花纸/导出图.psd",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/source/floral-export.psd"
+      ],
+      "bytesPerFile": 25627383
+    },
+    {
+      "sha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/fixed-body-normal-35f734f1f0e18386.hfn.gz",
+        "guangcai-v4-workspace/guangcai-china-preview/public/fixed/body-normal.hfn.gz"
+      ],
+      "bytesPerFile": 4959453
+    },
+    {
+      "sha256": "e40aff13da6fbc75109ea96e218871661f7524a70fde006f41fa86c1019cd1e2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/fixed-handle-normal-e40aff13da6fbc75.hfn.gz",
+        "guangcai-v4-workspace/guangcai-china-preview/public/fixed/handle-normal.hfn.gz"
+      ],
+      "bytesPerFile": 3697818
+    },
+    {
+      "sha256": "04b471cebcf9658fe875e1446ab987c5aa795eed6351909a0c872afad70621e5",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/body-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/body-baseColor.png"
+      ],
+      "bytesPerFile": 5124693
+    },
+    {
+      "sha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+      "paths": [
+        "素材原件/中国杯线稿(1)(3).psd",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/source/china-lines.psd"
+      ],
+      "bytesPerFile": 10238996
+    },
+    {
+      "sha256": "59203e8e51922676df20a891b20f4382bcbc6b8c6b5155d76e4290f0add68f03",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/lotus-butterfly/band-dense-v3.png"
+      ],
+      "bytesPerFile": 3358877
+    },
+    {
+      "sha256": "82a4b078b6182c6ea2524ae564b668e7fd806c85c093603599d6245e6d3a794f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/lotus-butterfly/body-dense-v3.png"
+      ],
+      "bytesPerFile": 3334256
+    },
+    {
+      "sha256": "8b51c07027fc017c9e3879609ca51c66146b3b5fbfe558ed5e7b7d10c0573a6f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/peony-magnolia/band-dense-v3.png"
+      ],
+      "bytesPerFile": 3225793
+    },
+    {
+      "sha256": "62af6d3afcb9123741fd543691b971dc700be767561a06e4b96c27f76bed0606",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/peony-magnolia/body-dense-v3.png"
+      ],
+      "bytesPerFile": 3082899
+    },
+    {
+      "sha256": "b45eabbc974a9b630d6befba084e294cb8569bcb1328e2a4e131e292974bde91",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/masters/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/body-generated.png"
+      ],
+      "bytesPerFile": 3071542
+    },
+    {
+      "sha256": "dcf2dcff70f5e439a9901d0a0590c0a5242391015ae416687f3654b9d01d6fd4",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/masters/band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/band-generated.png"
+      ],
+      "bytesPerFile": 3065879
+    },
+    {
+      "sha256": "e64d4edbe4c5ac754d5bb5e5ef96999053d62fbb66919e6bcce6c3dde304989b",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/body-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/body-baseColor.png"
+      ],
+      "bytesPerFile": 4530401
+    },
+    {
+      "sha256": "5510da7661cd79c859856853f0cc8fbb52b6391ecbb753d76427ac4a2642b415",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/body-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/body-baseColor.png"
+      ],
+      "bytesPerFile": 4430448
+    },
+    {
+      "sha256": "9696b6e72bc647f56056a3320e1f2a78d9ab5c4247b983a37d1c6022ea347812",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/cleanup-verification.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-workspace-cleanup/file-verification.json"
+      ],
+      "bytesPerFile": 7130105
+    },
+    {
+      "sha256": "2f4aa93bad1bf7e37ecad8f801755090ac78e565df6fb45976cfb662a5f1bec8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/seam-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/seam-color.png"
+      ],
+      "bytesPerFile": 1197828
+    },
+    {
+      "sha256": "36351319aa1cebcb2eecd5a8ee5b9ac6c5b6e6918ce41e72fdb111f9db958678",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/petals-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/petals-color.png"
+      ],
+      "bytesPerFile": 1259762
+    },
+    {
+      "sha256": "f0662e241725d83b7294b8d7b41c2ed675e95643bf28c1d164d9215899d917ab",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/web/china/normal.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/china-normal-f0662e241725d83b.webp"
+      ],
+      "bytesPerFile": 1312530
+    },
+    {
+      "sha256": "d7d170db5bdfbe25e43063dfa96d9216c8b9347daeab673462f80eff694f44d3",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/china/normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261011-relief-separation/before/public/china/normal.png"
+      ],
+      "bytesPerFile": 1614035
+    },
+    {
+      "sha256": "75b154230dc0ef433f0dbc832eaeba3ae12891c9bd634203208228d4b411a33f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/fixed/body-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v4.2-cleanup/body-height-16.png"
+      ],
+      "bytesPerFile": 2457171
+    },
+    {
+      "sha256": "c8fcad8a999c75a64c867b5286ad8f44692e71a7d36c6aa691ed157e88f4ae40",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/gold-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/before/gold-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/gold-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/gold-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4/online/gold-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4/initial/gold.png"
+      ],
+      "bytesPerFile": 371944
+    },
+    {
+      "sha256": "85c89b0e15f832eed7f859ac174aa4edb496b6e978c48ee1be43bc53f5cfd278",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/handle-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/handle-baseColor.png"
+      ],
+      "bytesPerFile": 2022345
+    },
+    {
+      "sha256": "4d1ef074f61dcc1bbb10d5547e76df73dbd09456cc02967daff505dd51569149",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/petals-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/petals-gray.png"
+      ],
+      "bytesPerFile": 528889
+    },
+    {
+      "sha256": "5241f55a9f52160fb063199c240236095f153d204eac84cee488c8b4259787c6",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/versions/china-fixed-band.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/china-fixed-band.png"
+      ],
+      "bytesPerFile": 3854979
+    },
+    {
+      "sha256": "a5f97027e110095b08a07c71c5d2355dd297b7f17617344a3c4f5fe9285b8800",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/versions/china-fixed-body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/china-fixed-body.png"
+      ],
+      "bytesPerFile": 3724623
+    },
+    {
+      "sha256": "b8e2558b861ceb3881776db32a1b93d18cab5254e005cd0853f7a9f343533419",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/versions/v3/china-fixed-body-v3.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/china-fixed-body-v3.png"
+      ],
+      "bytesPerFile": 3872382
+    },
+    {
+      "sha256": "38fce6a239d7a9b6f92ae85ad283d4700c0e476400f728e91f6c44c674801031",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/fixed/handle-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v4.2-cleanup/handle-height-16.png"
+      ],
+      "bytesPerFile": 1608412
+    },
+    {
+      "sha256": "c57af7fa4b755467af76004e943b98ae839992333c13009edc755bfb70133809",
+      "paths": [
+        "历史工程/h5/evidence/visual-v2/walkthrough.webm",
+        "历史工程/h5/evidence/visual-v2/video/page@00e968f751653df5d4933f1ce60e1f64.webm"
+      ],
+      "bytesPerFile": 3349523
+    },
+    {
+      "sha256": "3ac5298ba95561a2b0fcf1016f72b91a2748cd5f8ee7181d48918b73e839d3d0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-layout/buildings-overlay.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/buildings-overlay.png"
+      ],
+      "bytesPerFile": 817796
+    },
+    {
+      "sha256": "41b08ad9c279996add370372d88cc14f7d45ac9e2ff8cf07227df7f096413fc1",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/body-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/body-normal.png"
+      ],
+      "bytesPerFile": 1342378
+    },
+    {
+      "sha256": "497df8b628be6274ddcf68f8765867f266c22ec56504e961ec881ebb73f4b023",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/body-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/body-normal.png"
+      ],
+      "bytesPerFile": 1510166
+    },
+    {
+      "sha256": "4b280055e5f7073536be4ce016ce28d6fd65ceccc568b0fec42853cd2844373d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/body-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/body-normal.png"
+      ],
+      "bytesPerFile": 1331343
+    },
+    {
+      "sha256": "5dfc92707da94972f342d749b5cc037bb227e2188a81f3f6ef5ed51535f8393f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/label-overlay.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-layout/label-overlay.png"
+      ],
+      "bytesPerFile": 802430
+    },
+    {
+      "sha256": "751f8e1825bc8a24d4fd8978789da29339446a66226b8a4796d787c774935310",
+      "paths": [
+        "历史工程/h5/evidence/glass-revision/interaction.webm",
+        "历史工程/h5/evidence/glass-revision/video/page@0f55cac2c9f89df600b2531ebab62aba.webm"
+      ],
+      "bytesPerFile": 3002150
+    },
+    {
+      "sha256": "a811d09507f25d68396b841d17381ec06f51384200ca94ee3af9f10e225fa36d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/handle-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/handle-baseColor.png"
+      ],
+      "bytesPerFile": 1493454
+    },
+    {
+      "sha256": "aac5cf938c2e85044d412b65338438f4cb8957de7be42df2c801d4d2b834f10d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/handle-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/handle-baseColor.png"
+      ],
+      "bytesPerFile": 1467136
+    },
+    {
+      "sha256": "c0825d1bad192bd43eedf67784d34b938a1d82bfa05e5cad5b1d89cbb3b9f350",
+      "paths": [
+        "历史工程/h5/evidence/petal-ribbons/interaction.webm",
+        "历史工程/h5/evidence/petal-ribbons/video/page@df4c553feb6651add8f1b387453d2795.webm"
+      ],
+      "bytesPerFile": 3032999
+    },
+    {
+      "sha256": "9a114012a3d4dcd68f6c1f54183a2e3d81728b8688370d84e7ccbd8c94fd6e66",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/versions/v3/china-fixed-band-v3.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/china-fixed-band-v3.png"
+      ],
+      "bytesPerFile": 2690148
+    },
+    {
+      "sha256": "412c22cfc5e25f34a771bd4d12738b24eaa8845dbf6488784a38eecea0288156",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/seam-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/seam-gray.png"
+      ],
+      "bytesPerFile": 493377
+    },
+    {
+      "sha256": "92f96c006047cd2757dc5b1ddc3fe7d3d96265b7764333ea44d659721ab45c7d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/saucer-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/saucer-baseColor.png"
+      ],
+      "bytesPerFile": 1186845
+    },
+    {
+      "sha256": "98f4e19decb0c783be19ed05ddcf43d404029c26280de7d1702fbadb7b857015",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/saucer-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/saucer-baseColor.png"
+      ],
+      "bytesPerFile": 1215629
+    },
+    {
+      "sha256": "9984c964ee6f479394e0bd239dbd8da51ff8b71d10fcf2a90f747671c3a960c1",
+      "paths": [
+        "历史工程/h5/evidence/walkthrough.webm",
+        "历史工程/h5/.codex-work/cache/h5-qa-history/page@a91607f870c918d8d73fba174a7dc1a1.webm"
+      ],
+      "bytesPerFile": 2518299
+    },
+    {
+      "sha256": "c83c053d6b9a43b8316aeb1cebf55c0a2c253e41aa5104cb7da903cf8030b07a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/china/height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261011-relief-separation/before/public/china/height.png"
+      ],
+      "bytesPerFile": 643905
+    },
+    {
+      "sha256": "07941e7816c047aeeafc925909c2f9b77d8f22b45fe14a6c6e909f31e1f2a2ad",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54545
+    },
+    {
+      "sha256": "23af52d23bd3cb0111940ca5433ac201c1f362a0ab90f2715cd27db7f89a9ff4",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-line-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-line-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-line-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 55110
+    },
+    {
+      "sha256": "246ffe3ee48595cee20ffa09ffe1d910867d9a3f7567c407f48689629d83eba1",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-enamel-gray-off.jpg"
+      ],
+      "bytesPerFile": 51130
+    },
+    {
+      "sha256": "26fa58e64fe02c0aa9c03e94b8f20b7546f060f9b459e5351ede8bf65d5042ee",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/user-report.png",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/user-report.png"
+      ],
+      "bytesPerFile": 1874332
+    },
+    {
+      "sha256": "3d53fd6f4485c303c50316fb7a98862dc4f3d4b5268f66340c852bf3e04c8b04",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/after/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/petals-flat.png"
+      ],
+      "bytesPerFile": 88843
+    },
+    {
+      "sha256": "614cec439a37f0043477b51e0842169396e949f2bca99b475cd90b8f38cce751",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-red-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-red-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-red-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54967
+    },
+    {
+      "sha256": "642a761117083db98438da9af64c3863e34cb6e746860eebcfb060b75e8ea242",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-line-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-line-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-line-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 55117
+    },
+    {
+      "sha256": "75dc460b32d32c5789d791bcdd3d81d06bb6b34bc26d94d02b3206eb303a3afa",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-red-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-red-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-red-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54713
+    },
+    {
+      "sha256": "7d1a51e230336541119a24b4c718483d9815f07cb606ff03218cc75012c09d40",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-enamel-gray-off.jpg"
+      ],
+      "bytesPerFile": 51115
+    },
+    {
+      "sha256": "7ed62d3c380be4340783651c0f9f79c6e653e2644dc75c486cad927b81c7d754",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/handle-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/handle-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/handle-color.png"
+      ],
+      "bytesPerFile": 1022221
+    },
+    {
+      "sha256": "84faca679d66539bb2fca17c4281b46182a7dfa30d775c91424f1b19a9e425fd",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/green-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/before/green-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/green-gray.png"
+      ],
+      "bytesPerFile": 334142
+    },
+    {
+      "sha256": "93b69f94875480ef3fa4f95c75a6278ad1016095aa55b0f510e3dbb507e479a2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/edge-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/edge-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/edge-color.png"
+      ],
+      "bytesPerFile": 968566
+    },
+    {
+      "sha256": "9f8cde6ba2074eff90da997a53d05b0227a2fcb8b2ef1b4bace935fccf8a92e9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-enamel-gray-off.jpg"
+      ],
+      "bytesPerFile": 51117
+    },
+    {
+      "sha256": "ab8f10865029fe73bd33d13743aaba4e11ecf2b3a481dd1cb5ab0bcfd153fdd0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/petals-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/petals-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/petals-color.png"
+      ],
+      "bytesPerFile": 905513
+    },
+    {
+      "sha256": "b4a841346342708cccd31e0652556d3ccb7c029dd02f88ce94caea753be553d1",
+      "paths": [
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/chromium-ktx-baseline.png",
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/chromium-gold-hero-1440x900.png",
+        "历史工程/GuangcaiCeramic/guangcai-viewer/.codex-work/qa/chromium-gold-hero.png"
+      ],
+      "bytesPerFile": 353021
+    },
+    {
+      "sha256": "b542a84cfce23a3040db0d9c5ac3fd93f03a471e017448694de07fb99c4f68f1",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54542
+    },
+    {
+      "sha256": "cde1b986a7dd9c227b9b7ab3c47667dbbd9be7258a571a77b9b290e3574df646",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54541
+    },
+    {
+      "sha256": "d774e7faa440f2204828b471ce6bca16c3fa4e1f365501aedfc47384561ea802",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-paint-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-metal-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-enamel-gray-off.jpg"
+      ],
+      "bytesPerFile": 51360
+    },
+    {
+      "sha256": "dd3d175d780b5ab24057263e9402fe01ecfb601b8d5dab56584d49381f628657",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54861
+    },
+    {
+      "sha256": "e4798da528a8e5832cdb16998ba52603ecde05296fb4e6addc547f60527bab08",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-teal-paint-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-teal-metal-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/shenzhen-teal-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 53573
+    },
+    {
+      "sha256": "fd4891ee0b52e77cb8cd226f6e1c32929cf4456d38249c8f7d7f49868f89a0bc",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/saucer-baseColor.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/saucer-baseColor.png"
+      ],
+      "bytesPerFile": 1039444
+    },
+    {
+      "sha256": "19dc134b9ce8c813532d9ba69236abe61e202fdea1151b2022faed04ff5a4c93",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/after-grazing-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-grazing-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-grazing-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/before-grazing-flat.jpg"
+      ],
+      "bytesPerFile": 37851
+    },
+    {
+      "sha256": "c909f7c218cafaf0b6dbf4e779571d21dcb1ed7ca5c27d3882ddead06da442bc",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/after-edge-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-edge-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-edge-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/before-edge-flat.jpg"
+      ],
+      "bytesPerFile": 39491
+    },
+    {
+      "sha256": "e30715d384c173ee6d9091ebe4cecadf78208fc51de71343cc1fd15cae721980",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/after-petals-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-petals-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-petals-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/before-petals-flat.jpg"
+      ],
+      "bytesPerFile": 29397
+    },
+    {
+      "sha256": "0a3ff80c77ae139d75e4195299c9fab5bd42eaa4e55582aaa3108907871cf33e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v4/china-purple-line-height16.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v4/china-blue-line-height16.png"
+      ],
+      "bytesPerFile": 1387831
+    },
+    {
+      "sha256": "223525934edb9164d78f24e400a732ca1bbb8f0063f78bfe53ae88c4d52f0fe1",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/body-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/body-height.png"
+      ],
+      "bytesPerFile": 671829
+    },
+    {
+      "sha256": "2a0a4580dfa795bc3525a6c6cdce55ccee7510751ebe841dc9f6c0f1637ba621",
+      "paths": [
+        "历史工程/h5/assets/source/visual-v2/pure-patterns/cross.png",
+        "历史工程/h5/assets/source/visual-v2/cards/cross.png"
+      ],
+      "bytesPerFile": 1362373
+    },
+    {
+      "sha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v3/body.png",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/masters/v3-restored/inputs/body.png"
+      ],
+      "bytesPerFile": 1452934
+    },
+    {
+      "sha256": "437b1b78f22537f41060876eb4f6968f1c72cf564ee1097942ae52746ca056d9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-body-seam/after-loaded.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/shenzhen-teal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/shenzhen-teal.png"
+      ],
+      "bytesPerFile": 381112
+    },
+    {
+      "sha256": "4ed90b19c1612a9232d91c73fa22add188c95300955ba0f30a55752cef0b84cc",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/v3-gold-baseline.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4/baseline/gold-hero.png"
+      ],
+      "bytesPerFile": 370723
+    },
+    {
+      "sha256": "50af210e639ad01be9ee70e9d76cfcaebe7f1ab3bea8437cd4f5ece030a92b65",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/body-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/body-metalness.png"
+      ],
+      "bytesPerFile": 676465
+    },
+    {
+      "sha256": "7c52ecb57d76e4521bc552728dd15e2133e00e21498f7621e987c1193653ff76",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/china-purple-enamel-detail.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/china-purple-enamel-detail.png"
+      ],
+      "bytesPerFile": 684585
+    },
+    {
+      "sha256": "912e47545958f80382ee879f25b41608cebdd6378f9b40e78dd0feb9dc1a8493",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/body-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/body-height.png"
+      ],
+      "bytesPerFile": 676602
+    },
+    {
+      "sha256": "99a97452696d6497af95d30eae7b5f08c0c5d34038599c4e70e92f6a64d3718f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/body-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/body-height.png"
+      ],
+      "bytesPerFile": 756646
+    },
+    {
+      "sha256": "a221b51e4f9eb74c0584fc20729d0bdaee182016d7bdf83c5842762cc79ec00e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-petals-color.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-petals-color.jpg"
+      ],
+      "bytesPerFile": 269290
+    },
+    {
+      "sha256": "b7f8b2e1932891f5ae08e6e2fc8aba6501b739c57bcb72d89ee01c9e94feddf9",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/body-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/body-metalness.png"
+      ],
+      "bytesPerFile": 752098
+    },
+    {
+      "sha256": "bba320b7a3bffe429795ad924d2a924f7421addb9be79ccb4f6c2bb7af1ad945",
+      "paths": [
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/chromium-production.png",
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/chromium-white-hero-1440x900.png"
+      ],
+      "bytesPerFile": 353835
+    },
+    {
+      "sha256": "bcb9990f598750efbf47f310b84777650122e7212485e5fbf4a71c693a587543",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/grazing-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/grazing-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/grazing-color.png"
+      ],
+      "bytesPerFile": 619608
+    },
+    {
+      "sha256": "c3390fd73c14745fe3c72c7c6994213a9e0e57668c71680e02aa0df59b05028f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-handle-color.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-handle-color.jpg"
+      ],
+      "bytesPerFile": 264008
+    },
+    {
+      "sha256": "cbefe286fa33da4a7a5acf595b03e00538764499600c4153828c0289084a3967",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-edge-color.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-edge-color.jpg"
+      ],
+      "bytesPerFile": 301069
+    },
+    {
+      "sha256": "dd854d1797b2e905c32249df482f2fab125899432fd60c54dd5f5b5aac2ef4a1",
+      "paths": [
+        "历史工程/h5/assets/source/visual-v2/pure-patterns/star.png",
+        "历史工程/h5/assets/source/visual-v2/cards/star.png"
+      ],
+      "bytesPerFile": 1348652
+    },
+    {
+      "sha256": "dde9fce4d9286a6f49d40d5f30267d1a7637cbd67be9ceb8e3f05ac0d27af1c0",
+      "paths": [
+        "历史工程/h5/assets/source/visual-v2/pure-patterns/tide.png",
+        "历史工程/h5/assets/source/visual-v2/cards/tide.png"
+      ],
+      "bytesPerFile": 1346104
+    },
+    {
+      "sha256": "eed0989039829904ef6554d01e7b9d5ade0072d4d44895eb9114578cec5f1c5c",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/body-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/body-metalness.png"
+      ],
+      "bytesPerFile": 694450
+    },
+    {
+      "sha256": "f0b59304542886776b0781893bfdc50186e90d574c49e693e6d89ffc4985e78a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/china-red-enamel-detail.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/china-red-enamel-detail.png"
+      ],
+      "bytesPerFile": 655593
+    },
+    {
+      "sha256": "f383b4e699ea5d9efe7dfbf2b93dd9306a8ca2a0c5591bf08a0ba859f071dd9b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/china-green-enamel-detail.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/china-green-enamel-detail.png"
+      ],
+      "bytesPerFile": 687083
+    },
+    {
+      "sha256": "f5b9dfc4179e26e5770d55e37981c38612fec409b6bbd1287247bb645da7063f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/after/china-blue-enamel-detail.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/online/china-blue-enamel-detail.png"
+      ],
+      "bytesPerFile": 709791
+    },
+    {
+      "sha256": "fc48889cc746122a93bb0d66b073ed704e04052f7973b24389aace95233ea020",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/handle-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/handle-normal.png"
+      ],
+      "bytesPerFile": 533321
+    },
+    {
+      "sha256": "fd0db90ec76b02eefb6d192ffa40aa2af76c73a10b81e79991288b60d7f2b62f",
+      "paths": [
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/webkit-gold-hero-1440x900.png",
+        "历史工程/GuangcaiCeramic/guangcai-viewer/evidence/webkit-ktx-baseline.png"
+      ],
+      "bytesPerFile": 480598
+    },
+    {
+      "sha256": "15b031edaffea61351663291af4a06cb3c30d8c2b67e7cac1beb411463101252",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-enamel-gray.jpg"
+      ],
+      "bytesPerFile": 67460
+    },
+    {
+      "sha256": "18a8fd03224933002ab5657a3bc227eb8036e9583174bd134eef13d6b8c91df4",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-auto-text.jpg"
+      ],
+      "bytesPerFile": 94815
+    },
+    {
+      "sha256": "2ec72cc980432c417f4d289ba0da2d2b484ab6ce3ce13467a43b809ce61e1326",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/edge-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/edge-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/edge-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/before/edge-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/edge-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/edge-flat.png"
+      ],
+      "bytesPerFile": 105682
+    },
+    {
+      "sha256": "370f247168419fb1cfd05c317f0329cbaffacafecaa5cffcbb352b13d630499f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-enamel-text.jpg"
+      ],
+      "bytesPerFile": 102342
+    },
+    {
+      "sha256": "41617e8e533cc91b1a4d67ac39d1dac2d3885dc79f989ab417a5c28c9c316679",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/pomegranate-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/pomegranate-color.png"
+      ],
+      "bytesPerFile": 1171867
+    },
+    {
+      "sha256": "468e9a2765577ba70f4792e084fcbc93ede40a96dd4685a522abfa7097c5bd03",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-auto-text.jpg"
+      ],
+      "bytesPerFile": 94604
+    },
+    {
+      "sha256": "471be8dbfc379a70df4dfdfda1e162a752e61b1de31197ee5492e9b6e5ac18eb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-auto-text.jpg"
+      ],
+      "bytesPerFile": 93081
+    },
+    {
+      "sha256": "4856923fc43917c7bf54c2b4e6ab516ef9838cc4828b78318963fdec6b34cd66",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-line-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-blue-line-enamel-text.jpg"
+      ],
+      "bytesPerFile": 92196
+    },
+    {
+      "sha256": "519e2dbff92aec0c35b6488c55f90586116dea26af4d1c1b2f2fe3e8c938df7d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/after-handle-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-handle-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-handle-flat.jpg"
+      ],
+      "bytesPerFile": 28836
+    },
+    {
+      "sha256": "527213fd24403e8f2497b598a6246737c054f6c465f469afb96a2775f72ac8b7",
+      "paths": [
+        "历史工程/h5/assets/source/visual-v2/pure-patterns/sea.png",
+        "历史工程/h5/assets/source/visual-v2/cards/sea.png"
+      ],
+      "bytesPerFile": 1107244
+    },
+    {
+      "sha256": "5ad75d14ec4e6a08bbffd9aee54692dd6242c9c05e48693cd7f816a3ca270610",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-enamel-gray.jpg"
+      ],
+      "bytesPerFile": 67215
+    },
+    {
+      "sha256": "67c18fc63f1cb0194cfe2368599dc888ae2fe03f153e5d5fecda6b4382ba4374",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-enamel-gray.jpg"
+      ],
+      "bytesPerFile": 67198
+    },
+    {
+      "sha256": "6dde172af203d971395a21e15e768e8909ec9eeea69dfa25531e9a04630238c2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/grazing-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/grazing-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/grazing-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/before/grazing-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/grazing-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/grazing-flat.png"
+      ],
+      "bytesPerFile": 162929
+    },
+    {
+      "sha256": "74c6a97e4eacf55209b2687335aaaa39f01922e7607c14b1eb50cf3272c2f05f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-enamel-text.jpg"
+      ],
+      "bytesPerFile": 99917
+    },
+    {
+      "sha256": "754558a83d8866b88978a311616abb7ffe3da1ea32dab634996fd2ba295bd64b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/cities/v4/beijing-gold-baseColor-754558a83d8866b8.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/web/china/baseColor.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/china-baseColor-754558a83d8866b8.webp"
+      ],
+      "bytesPerFile": 348
+    },
+    {
+      "sha256": "83abfe9252c6925321a28766c756ad5fecd5512518b6aaedb096508ed808eb5a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/before/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/petals-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/petals-flat.png"
+      ],
+      "bytesPerFile": 44681
+    },
+    {
+      "sha256": "909fcc82e3be166bbccfe365005b0a499d8b95331113f854997d3d97ef89542a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-metal-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-enamel-gray.jpg"
+      ],
+      "bytesPerFile": 67207
+    },
+    {
+      "sha256": "b3ebc873ca1c47b3bb00e8037af1da6dc659ba5c0634487fbfccbb08dc2c048a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-auto-text.jpg"
+      ],
+      "bytesPerFile": 93490
+    },
+    {
+      "sha256": "b9121e4f418259601bcbdb4147b100d8aa8ccdb9cf159b4e7e6b93e3c750b347",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-line-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-purple-line-enamel-text.jpg"
+      ],
+      "bytesPerFile": 92158
+    },
+    {
+      "sha256": "d676f2d31caab9fe41b296c0a11a4e388ccc5fb77df97eb3768d9db7b20e258d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-red-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-red-enamel-text.jpg"
+      ],
+      "bytesPerFile": 95258
+    },
+    {
+      "sha256": "e291d73a3e39288f37168dff7c29341836ab00fc1a47924609a7e35aa9e83c48",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/before/seam-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/after/seam-flat.png"
+      ],
+      "bytesPerFile": 48364
+    },
+    {
+      "sha256": "eee16a12888888934d3c7cc6169ae3fa4303e3e5ab4d7d3ea09b0a591e2af5e9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-green-lettering-name.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4/china-green-enamel-text.jpg"
+      ],
+      "bytesPerFile": 97835
+    },
+    {
+      "sha256": "f814e91af585035d5b94258a3ed7041ae4b027c20bb1a31c792a82a5eb3f6dfb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-auto-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-name-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-auto-text.jpg"
+      ],
+      "bytesPerFile": 93513
+    },
+    {
+      "sha256": "03a5646f93ae3645e7f849813f29f379ebc38b85e63fc46785e7b0b700def686",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/handle-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/handle-metalness.png"
+      ],
+      "bytesPerFile": 287489
+    },
+    {
+      "sha256": "060d664b697c55f3404fef95dc27a36c4d320f8dc1daf4ead82551f177fcc050",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/handle-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/handle-color.png"
+      ],
+      "bytesPerFile": 1018558
+    },
+    {
+      "sha256": "09f710dcb58893791ea7cf02fe0ac8bbb2cfa6702bd698ad5b35dd2cedd5a4c4",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/handle-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/handle-height.png"
+      ],
+      "bytesPerFile": 273223
+    },
+    {
+      "sha256": "189ecde7303413e06d2c9b1c7832d8dc316d7ba532be40a901a8e1a09cc87a99",
+      "paths": [
+        "历史工程/h5/public/marks/auratic-reference.svg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/marks/auratic-reference.svg"
+      ],
+      "bytesPerFile": 796
+    },
+    {
+      "sha256": "2185afe8acb613d0038655662de0d408d4a7d06b1dd3f69844331c2ff0757be9",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/body-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/body-roughness.png"
+      ],
+      "bytesPerFile": 348281
+    },
+    {
+      "sha256": "271c0375357d5f5c5ff12a2b5a07e883d29e7c40e9914ee994a11f2a748edf8a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-body-seam/before-loaded.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/before/shenzhen-teal.png"
+      ],
+      "bytesPerFile": 381203
+    },
+    {
+      "sha256": "32a53a48c0ff2733b49b3771674a8275bd04d57121937a3e79c211b65b7e548e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/edge-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/edge-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/edge-gray.png"
+      ],
+      "bytesPerFile": 351248
+    },
+    {
+      "sha256": "40e7b97659e5e028ba04076e98a3c2bd1ac090ad602c64463804da2c257963b8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/web/china/roughness.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/china-roughness-40e7b97659e5e028.webp"
+      ],
+      "bytesPerFile": 156638
+    },
+    {
+      "sha256": "50b3a5c815bcb53253ab4b6fdf9ed0432fbcd1dfd632e9eb7541387b77154d54",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/buildings-model.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/china/reference-pose-buildings.png"
+      ],
+      "bytesPerFile": 360366
+    },
+    {
+      "sha256": "5480c86279aacaac3e5c43912c1c288e8996cd7c857b3f532a278c0bb53d6118",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/saucer-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/saucer-normal.png"
+      ],
+      "bytesPerFile": 376977
+    },
+    {
+      "sha256": "55111789f22a6c748f108e0adb8adf481779b47be3dc32fabd807b91a6ad2cb7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/grazing-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/grazing-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/grazing-gray.png"
+      ],
+      "bytesPerFile": 305928
+    },
+    {
+      "sha256": "6ca8b0b28e2f914734d03fe09af0b1a442818aaa5b9364679792ff654c28b2d6",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/petals-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/petals-color.png"
+      ],
+      "bytesPerFile": 905453
+    },
+    {
+      "sha256": "7ac9525c8019fc98bce59d3c23ea3918750a1298a43d1ef262a0dc042f6349cc",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/web/china/metalness.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/textures/china-metalness-7ac9525c8019fc98.webp"
+      ],
+      "bytesPerFile": 40364
+    },
+    {
+      "sha256": "88c95b39a3b544f35a0bcd42f131c1d6388a25eb75911260a0438a3819047504",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/handle-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/handle-normal.png"
+      ],
+      "bytesPerFile": 412132
+    },
+    {
+      "sha256": "93215911ff911da5b7992eda22e6e8f343c94eb555581d432762dea24794dd30",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/derivation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/derivation.json"
+      ],
+      "bytesPerFile": 8096
+    },
+    {
+      "sha256": "941fc4cefb0dd5d768b32d91c260f0b27ce3e52caa6312274d44b136913bb28f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/handle-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/handle-metalness.png"
+      ],
+      "bytesPerFile": 267916
+    },
+    {
+      "sha256": "96cca092e0fbe8fd5a60483e64179ed65d9e12fd42c0eb3fba6578c73c111335",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/body-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/body-roughness.png"
+      ],
+      "bytesPerFile": 354379
+    },
+    {
+      "sha256": "9b6ab0738892be103ffa4e432380dacd06af00b1baac61273c853f893371f0fe",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/saucer-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/saucer-normal.png"
+      ],
+      "bytesPerFile": 320697
+    },
+    {
+      "sha256": "9bcacbf550534907b5d32351c2eff2e302ab8a9729bac814baddbb8c0e326b6f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/label-model.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/china/reference-pose-label.png"
+      ],
+      "bytesPerFile": 377068
+    },
+    {
+      "sha256": "9d00e181cb5f9f044d3ec5eed912a6d2d7e805b946b6d069505483ef20b068fa",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/body-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/body-roughness.png"
+      ],
+      "bytesPerFile": 385824
+    },
+    {
+      "sha256": "a97c159b81d1b55c7b643e00704b1f6f202a13f21b1c80065e373b449c2f7bbd",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/saucer-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/saucer-normal.png"
+      ],
+      "bytesPerFile": 395475
+    },
+    {
+      "sha256": "af157659b321fd2b656bdf59c6d59c358f4edf7f5d02f3523f6847bb2b910155",
+      "paths": [
+        "历史工程/h5/public/marks/auratic-reference.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/marks/auratic-reference.png"
+      ],
+      "bytesPerFile": 47084
+    },
+    {
+      "sha256": "b1594846bda31f7055454300c84b4d9c0c19a581f52eb81c83e6069b2c727af7",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/handle-normal.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/handle-normal.png"
+      ],
+      "bytesPerFile": 415117
+    },
+    {
+      "sha256": "b6c348ab2100f3df1d4a8a6348db03916bf42d5c6c8e7acec29e8258373f059b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/petals-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/petals-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/petals-gray.png"
+      ],
+      "bytesPerFile": 333366
+    },
+    {
+      "sha256": "be91838a29b7633c906375c696d57ca57b44224f339b055848457e74c1c1937d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/layout-probe-balanced/before-buildings.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before-captures/buildings.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/layout-probe/before-buildings.png"
+      ],
+      "bytesPerFile": 359995
+    },
+    {
+      "sha256": "db09cd8810cd1fd4f93d1d0ec793f98423193cbef21b5307d5bdc985e3881ca6",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/handle-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/handle-metalness.png"
+      ],
+      "bytesPerFile": 384463
+    },
+    {
+      "sha256": "df7ed36830b04df7f98972b535b9179d0a89211ff97ff4329a744a07cbb7a315",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/edge-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/edge-color.png"
+      ],
+      "bytesPerFile": 967857
+    },
+    {
+      "sha256": "eb6c09f0dae3ad54285a9ef2ab0bc4622925e76f35d8690e79ac5a6d25d91f6c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/handle-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/handle-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/handle-gray.png"
+      ],
+      "bytesPerFile": 399846
+    },
+    {
+      "sha256": "f61897f79c21611fb09d8dd522d8f4f1590476d26eed273855feadb45f19a6ee",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/handle-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/handle-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/online/handle-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/handle-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/handle-flat.png"
+      ],
+      "bytesPerFile": 55529
+    },
+    {
+      "sha256": "0125e06aca31b186aeaa9fecb5736751fadd5a7d012c24b31f0f12cc407a5a9a",
+      "paths": [
+        "历史工程/h5/evidence/final-creation-desktop.png",
+        "历史工程/h5/evidence/create-1280.png"
+      ],
+      "bytesPerFile": 734680
+    },
+    {
+      "sha256": "03541bd9f98ee04797e82bf2414463690a080a7b016ca5a391ba347ecd6f3096",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/camera-calibration.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/camera-calibration.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/evidence/camera-calibration.json"
+      ],
+      "bytesPerFile": 1888
+    },
+    {
+      "sha256": "0e2fc607bdeee57da2bdd7eff1a20ec89e7bbdc16ea91b715e8885a1aa3bf29b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-hq/verification.json"
+      ],
+      "bytesPerFile": 5997
+    },
+    {
+      "sha256": "0ef45d80b0ad680c2b9dd7cc2110d7ed5887ad345137f7cf24c158159dc65ac7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/after-pomegranate-flat.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-pomegranate-flat.jpg"
+      ],
+      "bytesPerFile": 32879
+    },
+    {
+      "sha256": "1967f915d6d9fc6394396720c75c8d574f35c7cf85018ff7c4ef54266b70d6be",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/reference/buildings.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/buildings-reference.jpg"
+      ],
+      "bytesPerFile": 77584
+    },
+    {
+      "sha256": "324c73b57d7eea69dd0ed21b061744afcabe0bc77edc5e2bcd8069ed1b27baca",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/grazing-color.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/grazing-color.png"
+      ],
+      "bytesPerFile": 619188
+    },
+    {
+      "sha256": "35e579d4c3851f0ee2862e63990fbaf85a6b2f2f31d17a00bad837aa66b4057a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v3/source-floral.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/source-floral-v3.json"
+      ],
+      "bytesPerFile": 1374
+    },
+    {
+      "sha256": "4702ff09312e7ae6b2aef4d2af4fabe2670ad38a0df1874dceb4e016f25166d1",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-edge-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-edge-gray.jpg"
+      ],
+      "bytesPerFile": 103032
+    },
+    {
+      "sha256": "47ee968ca10e919525bc366a9d0e8f82095b4d4add4f4144cc1af27a4830d93f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v3/camera-calibration.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/camera-calibration-v3.json"
+      ],
+      "bytesPerFile": 2023
+    },
+    {
+      "sha256": "4ca8e06107ad5318ca723743b01e6deef474b2a7e67b197015190fac910efaf0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/atlas-render.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/atlas-render.json"
+      ],
+      "bytesPerFile": 448
+    },
+    {
+      "sha256": "4caa898b5380d3d8dd23e39d899e5f4d22201eef35570c10058bab1d1d652b20",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-petals-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-petals-gray.jpg"
+      ],
+      "bytesPerFile": 96914
+    },
+    {
+      "sha256": "6067c58f7bcec50f5545f5e825cafdbe038c039007ceb91ef62a8e6bc045f4a9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-body-seam/after-loading.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/loading.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/loading.png"
+      ],
+      "bytesPerFile": 152309
+    },
+    {
+      "sha256": "7605d763dc7c36d16b188bddb56404f47256d88c73afc8a9d0d0ea24db5ae058",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/v3/local/mobile.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/v3/mobile.png"
+      ],
+      "bytesPerFile": 751640
+    },
+    {
+      "sha256": "86a3b04a249c009c5579ff92abdecfe5fa3233cfada8ac95b0d843d5c2e688dc",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/joins.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/joins.json"
+      ],
+      "bytesPerFile": 1476
+    },
+    {
+      "sha256": "92b22e45424d6c29e897471cdde3c24cd453df058b6d90f0bf8d5213c876ed13",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-handle-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-handle-gray.jpg"
+      ],
+      "bytesPerFile": 98087
+    },
+    {
+      "sha256": "a779110a6af55914ffa7aab1a940d135b5b3b35e10d6d64070fe77ff5b7d1dce",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/local/mobile.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-restored/mobile.png"
+      ],
+      "bytesPerFile": 750112
+    },
+    {
+      "sha256": "b3feb1799a6007d3d7ac4afbd711e039498ae85e15739da6e7657ab228d039ed",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-grazing-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-grazing-gray.jpg"
+      ],
+      "bytesPerFile": 78376
+    },
+    {
+      "sha256": "b5b8e520d68843e0a8f95deeb61b6dc9afd26db29a1ccd3301663f711021afa7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-hq/local-delivery/mobile.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-hq/mobile.png"
+      ],
+      "bytesPerFile": 750621
+    },
+    {
+      "sha256": "d4da1c5245386a8ddebc7288fecf534ff28d0f5eba388cef0f0a807dbd72cd33",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-hq/derivation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-hq/derivation.json"
+      ],
+      "bytesPerFile": 1804
+    },
+    {
+      "sha256": "dcef5f286b29c325fde32a45d0efb6208a16c37ef4807adfec19c166136e63b2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/before-grazing-color.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/after-grazing-color.jpg"
+      ],
+      "bytesPerFile": 179992
+    },
+    {
+      "sha256": "dfd49fdd764b2fb1788e1a356e3f5bd75a02c30d7fbbd4ff917c92eb971945ea",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-restored/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/assets.json"
+      ],
+      "bytesPerFile": 14581
+    },
+    {
+      "sha256": "f434b7bb8561e40acfbc2c8cedcb9fadb7cd6239d404760e8a8c15e4ce2b6777",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/label-reference.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/reference/label.jpg"
+      ],
+      "bytesPerFile": 79970
+    },
+    {
+      "sha256": "0069e6f83373d4fd1b5a0645de8933235be2efee7b3d1a99fa9c07a0a419c1ae",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/style.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/style.json"
+      ],
+      "bytesPerFile": 720
+    },
+    {
+      "sha256": "009ede69ebe1fc5a2aaffe807afda3fe690213d30a7e36adf41714a3e4acd492",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-none-text.jpg"
+      ],
+      "bytesPerFile": 91166
+    },
+    {
+      "sha256": "01c05483e1102868d8148fc374bb810a03d52913710523eb2284833628634d9c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-paint-gray.jpg"
+      ],
+      "bytesPerFile": 55786
+    },
+    {
+      "sha256": "03a3f55afba485d3e00ff09f595c8565d0e60fd55325c34233b9e448001c6aca",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/edge-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/edge-gray.png"
+      ],
+      "bytesPerFile": 351127
+    },
+    {
+      "sha256": "055e1c072e8a7f5fe74d4b32bac3ea86c92623326b8832f8b9e7ddf9938be653",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-none-text.jpg"
+      ],
+      "bytesPerFile": 91387
+    },
+    {
+      "sha256": "0795c78392b6a0fdddcf66b0037414174f5c81c52b80a7a785f97cfcacf44dbb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-paint-detail.jpg"
+      ],
+      "bytesPerFile": 153113
+    },
+    {
+      "sha256": "0ebb672a62beddcc031ecdd007b21b7a7768e82c3dcb5075233cf9e3808736e8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-enamel-grazing.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-enamel-grazing.jpg"
+      ],
+      "bytesPerFile": 54554
+    },
+    {
+      "sha256": "0f8b1640bb26281c62dbd99dbe379fcc1a2d9f65f4631457635e150340c576ff",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/load-pan-floral/quality-handle.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/load-pan-floral/comparison-handle.jpg"
+      ],
+      "bytesPerFile": 106161
+    },
+    {
+      "sha256": "0fd206dd206ec6245f1daf25365c898633579ebdfe16f8a58e7a77432ea1e47f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/manifest.json"
+      ],
+      "bytesPerFile": 5017
+    },
+    {
+      "sha256": "1527a27504009bacb19d8092b2d2a2035a6726c663da13484fc1988e555c8e3d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-color-coverage/asset-check.json",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-color-coverage/asset-check.json"
+      ],
+      "bytesPerFile": 570
+    },
+    {
+      "sha256": "1a68a4624ea33bf57af462a0a670fd0b4d68286a4c9940ab1c6d69141fe95e96",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/manifest.json"
+      ],
+      "bytesPerFile": 3889
+    },
+    {
+      "sha256": "1b17e40049e25ec4c4590267df6bffd7f4f4f6953a1ff7c66022c109dbc7e6a3",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-844-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/viewport-844-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-844-panel.jpg"
+      ],
+      "bytesPerFile": 52333
+    },
+    {
+      "sha256": "22cfa429421cdc2cc8657043b8f08a7e7ea64718a2b5058537c3ebf4a31538b7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/browser-qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/browser-qa.json"
+      ],
+      "bytesPerFile": 2583
+    },
+    {
+      "sha256": "28c7391b0d164f54f8a2629ead676ea09ddea1fde311b8fa8df82184b8bf1a40",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/china-green.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/china-green.png"
+      ],
+      "bytesPerFile": 383803
+    },
+    {
+      "sha256": "29bb612719793cf7aceb261e64b7e81cd839d69411840c8878d651255dcdd0be",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/preview.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/preview.jpg"
+      ],
+      "bytesPerFile": 71892
+    },
+    {
+      "sha256": "2caa5bf6464adaa6c8a9c960753ec44dc89edbf8d8d84c1ccb16ccaa4170d163",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/cities/v4/beijing-green-metalness-2caa5bf6464adaa6.webp",
+        "guangcai-v4-workspace/guangcai-china-preview/public/cities/v4/beijing-structural-lines.webp"
+      ],
+      "bytesPerFile": 439780
+    },
+    {
+      "sha256": "2d50746ff7a834d1fb24266190afc7871d69ed8733ad55723389d3e8c1239ed9",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/style.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/style.json"
+      ],
+      "bytesPerFile": 720
+    },
+    {
+      "sha256": "2f8057d828f1156af940af77ffba17765c4196669498af5069bd15e82930eb79",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-paint-detail.jpg"
+      ],
+      "bytesPerFile": 149723
+    },
+    {
+      "sha256": "2ffc110b48ab59b7f103b0f0b77cc334e8878e3bdf24ad25d6a4de899ed236f9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/relief-separation/handle-reflection-difference-x20.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/relief-separation/handle-reflection-difference-x20.png"
+      ],
+      "bytesPerFile": 4805
+    },
+    {
+      "sha256": "30466c8a7149f1d337abe94b32d3b9cc9cbc08630a6600494f778175e083476d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-enamel-hero.jpg"
+      ],
+      "bytesPerFile": 110408
+    },
+    {
+      "sha256": "35cfc9212aeda978d9eb99a89f7849eb4e6b20ac139be608ca796422f2536c20",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/layout-probe/d-buildings.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/layout-probe/b-buildings.png"
+      ],
+      "bytesPerFile": 359598
+    },
+    {
+      "sha256": "39c469e7206c60dfa4f4fdcdb9b61ed91f469be9ecc49364d7c418830ff925fd",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-layout/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/verification.json"
+      ],
+      "bytesPerFile": 3450
+    },
+    {
+      "sha256": "3a28f7c842fedd491e92fd76d1911105946a1a6c0fb82e21c3ec0c1e41157994",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/china-gold-baseline.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/china-gold-baseline.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/china-gold-baseline.jpg"
+      ],
+      "bytesPerFile": 116162
+    },
+    {
+      "sha256": "3c8ed78ed9291e856fe676aafc4c44156c4ef7e35966638d823879573ff24bb0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-metal-detail.jpg"
+      ],
+      "bytesPerFile": 177794
+    },
+    {
+      "sha256": "3d7647aed72a08558536a7588fc8dc8677d1722cbb9eade2e7301b565ec944dd",
+      "paths": [
+        "历史工程/GuangcaiCeramic/guangcai-viewer/tools/qa/production.mjs",
+        "历史工程/GuangcaiCeramic/guangcai-viewer/.codex-work/qa/production.mjs"
+      ],
+      "bytesPerFile": 2386
+    },
+    {
+      "sha256": "3fac2615de7530425aeeb41d7bc63fbc35eea2849c4779a3a4c024227d0f75fd",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-paint-hero.jpg"
+      ],
+      "bytesPerFile": 109580
+    },
+    {
+      "sha256": "43ab641f1f131a93aab74638dc2507574769d1f7b654ad4a018e2af4d238561b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-enamel-gray-off.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-enamel-gray-off.jpg"
+      ],
+      "bytesPerFile": 51133
+    },
+    {
+      "sha256": "447adc3e50737993599604b667280911a98a19b1a06b72c0d3ce78d8a0095f97",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/saucer-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/saucer-height.png"
+      ],
+      "bytesPerFile": 161444
+    },
+    {
+      "sha256": "4685dc377fcdc797fad89b2ee9bf683fd267aa9d545b1f3c7cfeefbb232b798b",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/saucer-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/saucer-height.png"
+      ],
+      "bytesPerFile": 197242
+    },
+    {
+      "sha256": "46be771937e582d30eb9fd8236e6cd03ddec80de9f22a40e245b9f0dfab5206d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/saucer-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/saucer-roughness.png"
+      ],
+      "bytesPerFile": 89738
+    },
+    {
+      "sha256": "46e000bc13185704d08534dc9d16b37f2997a03b725c32dd0f00b8a11baaf16a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/reflections-off.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/reflections-off.png"
+      ],
+      "bytesPerFile": 382214
+    },
+    {
+      "sha256": "4747165a879f08a5f3c0c6f7cda7ec33c052af6c6b27e223a4549051e456789e",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/handle-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/handle-height.png"
+      ],
+      "bytesPerFile": 216437
+    },
+    {
+      "sha256": "48e4cf039431b02ad027d5a362fe25571d985dfe086c313aa36205ce18e5c62a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/pomegranate-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/pomegranate-flat.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/pomegranate-flat.png"
+      ],
+      "bytesPerFile": 72535
+    },
+    {
+      "sha256": "4a0101f0b79b5fcb62d40adccad47192cda9d8246bb30f8978b0d0a2f6a09091",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-844-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/viewport-844-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-844-hero.jpg"
+      ],
+      "bytesPerFile": 48125
+    },
+    {
+      "sha256": "4a6aebb89dba54ce5171e4c855f94aa89dfd5a0f7c1a61539ca7e099f0d77c2c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-enamel-detail.jpg"
+      ],
+      "bytesPerFile": 160336
+    },
+    {
+      "sha256": "4ab2b22743f8f83b73c38fa2b35e5bbf35c8664a80cfde74a59b3e502e8acb84",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/derivation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-cleanup-4.2/derivation.json"
+      ],
+      "bytesPerFile": 2113
+    },
+    {
+      "sha256": "4e458f5f08643e7fd94312638dae4c7750e31be80006d9b3755814562263eba7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/fixed-relief-alignment/after/mobile-grazing.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/before/mobile-grazing.png"
+      ],
+      "bytesPerFile": 335934
+    },
+    {
+      "sha256": "506bb6ed1ff0c9740092b82c53c94a8c0cde28f21409bf2ceb9db937db2ac4c7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-320-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/viewport-320-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-320-hero.jpg"
+      ],
+      "bytesPerFile": 43278
+    },
+    {
+      "sha256": "5128534bfcbc1313e0fb6c2561000906d58c9af3257c09237c973d5a0d4effe3",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-hq/local-delivery/lid.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-hq/lid.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/v3/lid.png"
+      ],
+      "bytesPerFile": 145802
+    },
+    {
+      "sha256": "543f3acf39e24c3cd08771c7663b61f0bb3eac1a6c0789b215fc72a4f473c3fc",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-enamel-detail.jpg"
+      ],
+      "bytesPerFile": 163052
+    },
+    {
+      "sha256": "551733f56208af7a79eb29018826faf7d02080737704d7841875f5aed952e1cf",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/clay.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/before/clay.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/clay.png"
+      ],
+      "bytesPerFile": 130237
+    },
+    {
+      "sha256": "565cea9f8272b4851bd2e3afc871921967c1909ceda5011f8a1ea0ff7363b1d0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/remote-files-raw.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/remote-files.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/remote-files-raw.json"
+      ],
+      "bytesPerFile": 29408
+    },
+    {
+      "sha256": "5679538d1da4b8043be5d87cc51d56d458616d5b3886d507d53a6613de571529",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/matte-hero.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/china/production.png"
+      ],
+      "bytesPerFile": 315012
+    },
+    {
+      "sha256": "5877d9daab39f2b4d630ba33577710622cafd9f8cb9e1f1288d66b7f2938d357",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-paint-gray.jpg"
+      ],
+      "bytesPerFile": 55805
+    },
+    {
+      "sha256": "59cb55a85adbab9b05051ae979214f4074a982d58fae857d134ed306979619aa",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/saucer-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/saucer-roughness.png"
+      ],
+      "bytesPerFile": 68359
+    },
+    {
+      "sha256": "5d4fd3d4c827b86e827e02a11e37b8a21f30f6e16d45564b124fa460961d9343",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-metal-hero.jpg"
+      ],
+      "bytesPerFile": 121736
+    },
+    {
+      "sha256": "5da9275f81c7dd74eb51c88f7a28ee20e20029926f527b918b870784b6fa63c8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/background/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/local-background-qa.json"
+      ],
+      "bytesPerFile": 1475
+    },
+    {
+      "sha256": "618b304fc1b6a24f18838ef2c151804aed966d537825c84365e9156688a3aebe",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-390-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/viewport-390-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-390-hero.jpg"
+      ],
+      "bytesPerFile": 56407
+    },
+    {
+      "sha256": "647ad10ad28074f6028bafb67182e367563182c3ae4d98e9a4ae8e597af497c0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/layout-probe-balanced/before-label.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before-captures/label.png"
+      ],
+      "bytesPerFile": 412427
+    },
+    {
+      "sha256": "689b21928cf915cf88ed0ceade9c02a805154e16ddd3e213f07ada95c2a6e7a2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-enamel-hero.jpg"
+      ],
+      "bytesPerFile": 113294
+    },
+    {
+      "sha256": "69b48f08c210fec32ee79fa4beca62ad3ed744ba5dd6164306780d792aab431e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/grazing-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/grazing-gray.png"
+      ],
+      "bytesPerFile": 305570
+    },
+    {
+      "sha256": "6f56b22520cb2d316c2ec172c0c04bc9b9330feed8d83e80506f7d470eb01f05",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/saucer-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/saucer-roughness.png"
+      ],
+      "bytesPerFile": 92882
+    },
+    {
+      "sha256": "6fe31f0b9d540e780aeb8c79332f579486e58dfa6eeea8d0e266cb3fd76ec9d1",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/v4-body-seam/before-loading.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/before/loading.png"
+      ],
+      "bytesPerFile": 153715
+    },
+    {
+      "sha256": "7414c5cbf73cf4dbe6b27446a08c68bd87bf55ac34c4755ce7bb7b70c4168c60",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-metal-detail.jpg"
+      ],
+      "bytesPerFile": 182292
+    },
+    {
+      "sha256": "761be596e3dc2a0831b043485b4f6bd02d7bc73cf0c5c02f831dc5b7aeb781d0",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/generation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/generation.json"
+      ],
+      "bytesPerFile": 3544
+    },
+    {
+      "sha256": "784edaed0babd07c6a6842dd5a38427c41147a41f6f3a126967b1239b832d20a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-restored/local/desktop.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-restored/desktop.png"
+      ],
+      "bytesPerFile": 444364
+    },
+    {
+      "sha256": "786c0715cf3150b70b8e90362e0133fde7bc0d240b199bf912832b62a849254f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/style.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/style.json"
+      ],
+      "bytesPerFile": 714
+    },
+    {
+      "sha256": "7b3bd0ce759b6ed03439da4e19bcc7d96f6f0221d109924abc5ebd3155b0c34c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-paint-hero.jpg"
+      ],
+      "bytesPerFile": 114138
+    },
+    {
+      "sha256": "7cbacb83c664337a67d60f672883cbc2f92e7dee67ad74f1306f68cb3c132300",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/manifest.json"
+      ],
+      "bytesPerFile": 5035
+    },
+    {
+      "sha256": "81ce9fb3f4d74cdd8e82a44913eeacb4c14f5c5d906e7c4b0539402e12aacb76",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/derivation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/fixed-relief-alignment/derivation.json"
+      ],
+      "bytesPerFile": 2024
+    },
+    {
+      "sha256": "81f9923f37a9eb39286a91f1e080ba2d42c4f79a26cd3997c3e5e83fea794c8a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-paint-hero.jpg"
+      ],
+      "bytesPerFile": 107084
+    },
+    {
+      "sha256": "8699f525b0bc0191a56633a85ecfab9d8aa054c76f28f53440d5105c6fd4bb1c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/live-desktop.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/background/desktop-gray.png"
+      ],
+      "bytesPerFile": 337103
+    },
+    {
+      "sha256": "8ae327d209b4a72b66eb01666efbf5ae2bbf39cccc321a9a76e8197553112443",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-enamel-detail.jpg"
+      ],
+      "bytesPerFile": 168449
+    },
+    {
+      "sha256": "8b0389f4aaae2e9a50ac1644ddd7907d408c8b30b95f000d10c00e5a7eb3328a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/handle-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/handle-gray.png"
+      ],
+      "bytesPerFile": 400130
+    },
+    {
+      "sha256": "8dcf86b02db1610eaefe88375e0c27b3ec6f08c8f1098beaf713076292da298f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/fixed-relief-alignment/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/fixed-relief-alignment/verification.json"
+      ],
+      "bytesPerFile": 1696
+    },
+    {
+      "sha256": "9208e74c14af4187832df97b4102dde93f8866f0f1f3796c901810f8459f174f",
+      "paths": [
+        "历史工程/h5/evidence/final-creation-mobile.png",
+        "历史工程/h5/evidence/mobile-create-390.png"
+      ],
+      "bytesPerFile": 356777
+    },
+    {
+      "sha256": "946b7d8d128f67c1033e8c989856f137807a0e7f07631d2ca50c0d1029036233",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/tmp/color-coverage-v3-after.json",
+        "guangcai-v4-workspace/guangcai-china-preview/.codex-work/tmp/rotation/v3-seam-readback.json",
+        "guangcai-v4-workspace/guangcai-china-preview/.codex-work/tmp/rotation/v3-readback.json"
+      ],
+      "bytesPerFile": 6156
+    },
+    {
+      "sha256": "951b8270ed72a089cfe5eaa0ff302be294650391f6f1f4bf5a4be6f61a87fcf6",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-paint-gray.jpg"
+      ],
+      "bytesPerFile": 56045
+    },
+    {
+      "sha256": "957b0798ba4a0ee088b500dc3553d49c0d6281081f0feb99eeed010fd7594af7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-paint-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-paint-gray.jpg"
+      ],
+      "bytesPerFile": 55799
+    },
+    {
+      "sha256": "97760bd75f23a184b6906ae4f6ecd88f208593234a47ae209c629426dd5b7716",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/saucer-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/saucer-metalness.png"
+      ],
+      "bytesPerFile": 121504
+    },
+    {
+      "sha256": "98484e6c9ba59629bd1502eb0a2a112caebf1fc071be800053cbc5a6851a4b80",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/relief-separation/handle-reflection-qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/handle-reflection-qa.json"
+      ],
+      "bytesPerFile": 539
+    },
+    {
+      "sha256": "98c2cc9bd71aff2b04f5ec642a02965b145f5878f95f06e9ac79d1debb2cf47f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/pomegranate-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/pomegranate-gray.png"
+      ],
+      "bytesPerFile": 440886
+    },
+    {
+      "sha256": "996412f78b0b9e6e43d1247567475892c2a79b3c52db8e6b71ccf441abb8536d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/saucer-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/saucer-metalness.png"
+      ],
+      "bytesPerFile": 181047
+    },
+    {
+      "sha256": "9dafea60c2bf09517226a8e2fdbc543f4a08c7fe644cf3da53c75013c6aa4f55",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-paint-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-paint-hero.jpg"
+      ],
+      "bytesPerFile": 109231
+    },
+    {
+      "sha256": "a5f9a9b4854bd5671676529174b7828fdd71b9ec4a45b130341a9f19e9adfac7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-enamel-hero.jpg"
+      ],
+      "bytesPerFile": 114888
+    },
+    {
+      "sha256": "a73702d1243e987d9cdfd9d60f579fc4b40e817ddc9a8bd3c9a2ecc9c40431eb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-enamel-gray.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-enamel-gray.jpg"
+      ],
+      "bytesPerFile": 67222
+    },
+    {
+      "sha256": "a74c505e1157bb623d924a9249b99b8d82b2e4b50801536a3b7c7f6209bfbaaa",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/psd-audit.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/psd-audit.json"
+      ],
+      "bytesPerFile": 8548
+    },
+    {
+      "sha256": "a7da0835f200544be3769f63f11533bb6a2576a30c85ae737fc13f53a71ef416",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/handle-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/handle-height.png"
+      ],
+      "bytesPerFile": 215990
+    },
+    {
+      "sha256": "a95929fd4d62ce7a9bb199e0268a8be1c1f0c96fa7dddf520da3a6355495ac58",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-metal-hero.jpg"
+      ],
+      "bytesPerFile": 119471
+    },
+    {
+      "sha256": "a9d9b12888abeb49170d77f0585bd8a256de409ed646e20fe32b3de5db73f9e5",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-enamel-detail.jpg"
+      ],
+      "bytesPerFile": 163332
+    },
+    {
+      "sha256": "acf38f6b4a345d44dc12eb2e7191cfb1f4f9fe705af976ac5ac2dcd9fe969f31",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/online/gold.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/v4-body-seam/after/gold.png"
+      ],
+      "bytesPerFile": 372505
+    },
+    {
+      "sha256": "b1d0af5b83037372ed01f919bddd070a38e0697145651353e226fec3a8b42d5b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/online/petals-gray.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/floral-cleanup-4.2/after/petals-gray.png"
+      ],
+      "bytesPerFile": 333354
+    },
+    {
+      "sha256": "b4e84636c030ca999d007fe560078551ddcd26f604f41dc99cf8d80c7b9e0e7e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-none-text.jpg"
+      ],
+      "bytesPerFile": 91274
+    },
+    {
+      "sha256": "b7fb12027f656c72a0ee442fd18d908a9de2f87ff818211343955a1b0bdb09e7",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/generation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/generation.json"
+      ],
+      "bytesPerFile": 4505
+    },
+    {
+      "sha256": "b9717fbb7504d1784297f85d1984e8bee66c11a79fd6dabc50a5c4bf7e93d366",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/handle-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/handle-roughness.png"
+      ],
+      "bytesPerFile": 125075
+    },
+    {
+      "sha256": "ba1f80070bd1bf38667ff1604c2172bd698778315ac83ce3a214bf567f65134d",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/saucer-height.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/saucer-height.png"
+      ],
+      "bytesPerFile": 189507
+    },
+    {
+      "sha256": "bb1b0ec69a3fb7c4b00d7c8925a95f6df246eeadf5426f96979af608a844e5f9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-1440-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/viewport-1440-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-1440-hero.jpg"
+      ],
+      "bytesPerFile": 131495
+    },
+    {
+      "sha256": "c39f9d49963497354a26e703d55993d07a797a2574c7c5a4a3776f43f8079700",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/preview.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/preview.jpg"
+      ],
+      "bytesPerFile": 71527
+    },
+    {
+      "sha256": "c9be7ed397113064c01bd0bb82de47f148085cde6a6dfb6b1958604100409150",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-metal-detail.jpg"
+      ],
+      "bytesPerFile": 180098
+    },
+    {
+      "sha256": "d38b3729d91fc1d905b27479f7cea7fa20995829aeff9a1966c203cbc698e72f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/generation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/generation.json"
+      ],
+      "bytesPerFile": 4525
+    },
+    {
+      "sha256": "d4bd54669c11bf9393822921ab9298db960b6de4e25f84aca1f5e804555dd616",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-hq/local-delivery/desktop.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-hq/desktop.png"
+      ],
+      "bytesPerFile": 447162
+    },
+    {
+      "sha256": "d75673819229dae4c2afe7e95f9f33947e85ef127ec8a7f96b9525985df4cfc8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/load-pan-floral/quality.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/load-pan-floral/quality.json"
+      ],
+      "bytesPerFile": 1638
+    },
+    {
+      "sha256": "df6396a38aadd0de0ea519325b703a36fad98f16444266e3013eb1defa40492e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-gold-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-gold-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-gold-none-text.jpg"
+      ],
+      "bytesPerFile": 92409
+    },
+    {
+      "sha256": "e0f440c28c6cfdf4666ec7e873bdffd68e5db32e5d6dd42d9443eadc0ba38388",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/lotus-butterfly/handle-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/lotus-butterfly/handle-roughness.png"
+      ],
+      "bytesPerFile": 170939
+    },
+    {
+      "sha256": "e545e818dfeaa9523622443b92e598ec9b394b04f967a60b33c16793f04c15cf",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-metal-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-metal-detail.jpg"
+      ],
+      "bytesPerFile": 175908
+    },
+    {
+      "sha256": "e5f18a619330c109f10a7169778c146a267e4aba042747729185142be8e990e7",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-paint-detail.jpg"
+      ],
+      "bytesPerFile": 158475
+    },
+    {
+      "sha256": "e6d609eff4179f6994e7906c7c19a220f1aae606e851fb73cef8a8f816ec462f",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/peony-magnolia/saucer-metalness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/peony-magnolia/saucer-metalness.png"
+      ],
+      "bytesPerFile": 181438
+    },
+    {
+      "sha256": "e89c42e5f7aa9dd0fa484bc5962e45db7025610ea128de9408f58ef90fc0c7a9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-enamel-hero.jpg"
+      ],
+      "bytesPerFile": 112240
+    },
+    {
+      "sha256": "eb07eafaa5148572ab40a288ccb5d7c8ad9395440d0163f6cc0c8470d35553be",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/floral-cleanup-4.2/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/floral-cleanup-4.2/verification.json"
+      ],
+      "bytesPerFile": 1213
+    },
+    {
+      "sha256": "eb92eb4048c8decbfb09fa3962a5c96679a11173330ad1414726354b3a07fd75",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/relief-separation/handle-in-reflection.png",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/relief-separation/final-front.png"
+      ],
+      "bytesPerFile": 278234
+    },
+    {
+      "sha256": "ef731c41b63c79393052c6f33720807217d6e849694d966feb8fc84b9c321d2a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-enamel-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-enamel-detail.jpg"
+      ],
+      "bytesPerFile": 167876
+    },
+    {
+      "sha256": "f16e8c6a5e273c208bb0332154d985d0c30ac535c1d319554e9773baf8d145a4",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-blue-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-blue-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-blue-metal-hero.jpg"
+      ],
+      "bytesPerFile": 121667
+    },
+    {
+      "sha256": "f1fb1ee7e150885a1ff5cedd453e59c353e8f0d2fee9e067ff9734ccd5a69eda",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/preview.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/preview.jpg"
+      ],
+      "bytesPerFile": 71029
+    },
+    {
+      "sha256": "f30b019a34ac46b43ce3a0bda928c1b5f9be817ac36e2b5c8a1d6c22a4945742",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-purple-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-purple-enamel-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-purple-enamel-hero.jpg"
+      ],
+      "bytesPerFile": 110843
+    },
+    {
+      "sha256": "f574cfa36961497b9584d98bcfa78b53ba6ce1a47da15ff8871cf9fbe790ed03",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-paint-detail.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-paint-detail.jpg"
+      ],
+      "bytesPerFile": 147631
+    },
+    {
+      "sha256": "f82a1fe38e5c6883dd10b27151c479f6c4f172d8486daf829492eb3c18a9da94",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/v3/local/desktop.png",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/v3/desktop.png"
+      ],
+      "bytesPerFile": 447571
+    },
+    {
+      "sha256": "fac6f0c64ed0faac06dd8895db8fc9160f3614d1a5c645169f5d73e190642d36",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-green-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-green-metal-hero.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-green-metal-hero.jpg"
+      ],
+      "bytesPerFile": 119632
+    },
+    {
+      "sha256": "fdea26b4280b827b05e3b63590f662459f30b044d4c49fcee9026bd959e77a21",
+      "paths": [
+        "历史工程/h5/assets/source/artwork/handle-roughness.png",
+        "guangcai-v4-workspace/guangcai-china-preview/public/artwork/handle-roughness.png"
+      ],
+      "bytesPerFile": 133029
+    },
+    {
+      "sha256": "fe93959dc1e95ead3331af9b49c0251f908ad48677b557e66bcebf5f41b6e13b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-red-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online/beijing-red-none-text.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-red-none-text.jpg"
+      ],
+      "bytesPerFile": 92457
+    },
+    {
+      "sha256": "06d6f17556b68939656b0c1a652363c8b80e6d2327d44da93f620e84802d4145",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/background/verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/online-background-qa.json"
+      ],
+      "bytesPerFile": 1558
+    },
+    {
+      "sha256": "07a32538474622f56805e5f166d139ee00aa832c1fc39ce49fd516f806e6980d",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/2.2-source-transfer.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/2.2-source-transfer.json"
+      ],
+      "bytesPerFile": 15226
+    },
+    {
+      "sha256": "07a43753e0302c4b83e5b88158a296d001d3cddb023e01b36869bd979bb09502",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/completion.md"
+      ],
+      "bytesPerFile": 1495
+    },
+    {
+      "sha256": "082c4ca4ae2aa6cb3ca5cdc2b4f7e8a66ad785c933d14d0b123211375b733236",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-source-consolidation/target-refs-before.txt",
+        "guangcai-v4-workspace/.codex-work/tmp/target-refs.txt"
+      ],
+      "bytesPerFile": 2284
+    },
+    {
+      "sha256": "0a54420dbe52b87c3de9552ab65608eb01d2c4c31463472c117085c66c6602db",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/first-deploy.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/first-deploy.json"
+      ],
+      "bytesPerFile": 556
+    },
+    {
+      "sha256": "0b0b263acf34ff715775b1ac66830a997806c9c04ff8e9815bf006944ba4b31c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/deploy-status.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/deploy-status.json"
+      ],
+      "bytesPerFile": 446
+    },
+    {
+      "sha256": "0bae6979f5302754be68b574942299739653d3742aa7579b78398782bda2932f",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/plan.md"
+      ],
+      "bytesPerFile": 447
+    },
+    {
+      "sha256": "0e8bd5b791c68ac71b415fc596126c05c0069f09820888962531aa5d1b78ba71",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/history-verification.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/history-verification.json"
+      ],
+      "bytesPerFile": 857
+    },
+    {
+      "sha256": "1057f037b18c1568725d83725cd155587c6e3751e4dbfb1cbcab50a6648b6c6f",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/online-qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/before/evidence/deployment/online-qa.json"
+      ],
+      "bytesPerFile": 31007
+    },
+    {
+      "sha256": "114d52f4ca3fe321c6d24cd5e17ae633ad72d75ab50a281354df5301dfbf0171",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-source-consolidation/inventory-script.py",
+        "guangcai-v4-workspace/.codex-work/tmp/source-audit.py"
+      ],
+      "bytesPerFile": 3304
+    },
+    {
+      "sha256": "152cf8360f6939659be52e9857456558a8f66ed23849bd8535f59d6e613f04fa",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/china-test.log",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/china-test.log"
+      ],
+      "bytesPerFile": 1345
+    },
+    {
+      "sha256": "16eaf1232ee5e11e9cc2cee4939c372307c74cde5c793686df8b5818f89c1658",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/deployment.json"
+      ],
+      "bytesPerFile": 460
+    },
+    {
+      "sha256": "186d2c670712ae15f9047a5e5b71bd11cc6e4f8a644276b6d56b7807cb526011",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/migration.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/migration.json"
+      ],
+      "bytesPerFile": 29401
+    },
+    {
+      "sha256": "19e016b3c4dfa5a876aff114fed28a419cf4df02d37f40136f3d232063f23478",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-github-archive/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-github-archive/completion.md"
+      ],
+      "bytesPerFile": 3386
+    },
+    {
+      "sha256": "1d9982991ac77b4363193bf620636c2c8793f7033a4c98cd3f0d4cca063c01ad",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/delivery-verification.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/delivery-verification.json"
+      ],
+      "bytesPerFile": 437
+    },
+    {
+      "sha256": "1df3cf71583d5d6a3bfed4c133b7b17f9d910cca1fec3096914e63e9eaffc1d9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/production-preview/evidence.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/online-preview/evidence.jpg"
+      ],
+      "bytesPerFile": 89075
+    },
+    {
+      "sha256": "22af989f7efe4c1a03d7eb1047ea391a9e785d815952adef9a5ff9c02c5eebbb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/online-qa-initial-timeout.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/online-qa-initial-timeout.json"
+      ],
+      "bytesPerFile": 407
+    },
+    {
+      "sha256": "257e1d908bedeb697e65dba59f326088b0b8ee6121a00d1194a94803f92563b1",
+      "paths": [
+        "历史工程/h5/.codex-work/qa-petal-ribbons.mjs",
+        "历史工程/h5/tools/qa-petal-ribbons.mjs"
+      ],
+      "bytesPerFile": 6670
+    },
+    {
+      "sha256": "25a2603d0600e95ec8224ef76bdf7429c30ac13c053fff80f7b2f2c05c6cf68a",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/geometry/surface.ts",
+        "历史工程/h5/src/viewer/geometry/surface.ts"
+      ],
+      "bytesPerFile": 2818
+    },
+    {
+      "sha256": "26606e711c85a42ebfe4e1c68c9d8b895a0acb0c95ed508a5be403aba7df61f8",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/plan.md"
+      ],
+      "bytesPerFile": 4126
+    },
+    {
+      "sha256": "2bc4ba9e31cb0863a01ce44add2e0d30a9d7eab1d7f6c9eb67f667ad0f2e1bcf",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-github-archive/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-github-archive/request.md"
+      ],
+      "bytesPerFile": 1576
+    },
+    {
+      "sha256": "2f70ab03f4996ca67916379422822a3dc141a88c13e8283b6925f2d906e525ab",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/online-qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/online-qa.json"
+      ],
+      "bytesPerFile": 31927
+    },
+    {
+      "sha256": "31c503834cea1960e63f051ad3e0cd873760906cc9ebadf432eadf9e3bbebf9c",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-source-consolidation/legacy-refs.txt",
+        "guangcai-v4-workspace/.codex-work/tmp/legacy-refs.txt"
+      ],
+      "bytesPerFile": 1484
+    },
+    {
+      "sha256": "3232036e4091f9c26301b81f9b6faa2fa7e5776b0cc695dcf388f208584aa647",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-rotation/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-rotation/plan.md"
+      ],
+      "bytesPerFile": 315
+    },
+    {
+      "sha256": "32f5d7b12f4370aceddbf80eb2481a081fe8fc6bdc1dfec20c3cd91e67636274",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/derivation.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/beijing-4.3/derivation.json"
+      ],
+      "bytesPerFile": 4693
+    },
+    {
+      "sha256": "34ce7b6853ce3c9b2bc415c7c853dfed3dcd811882f557ce70a1e85f5b267b60",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/materials/materials.ts",
+        "历史工程/h5/src/viewer/materials/materials.ts"
+      ],
+      "bytesPerFile": 2663
+    },
+    {
+      "sha256": "352276a92c5916e6d26389f6b0b20a66e782bb029d1bc5f0af0f935624dd14a7",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/site-before.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/site-before.json"
+      ],
+      "bytesPerFile": 143
+    },
+    {
+      "sha256": "3717a29baec6c029a9f8bc4658fa3c663a7ef02aa2b77e850859065b66a95ba6",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/migration-verification.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/migration-verification.json"
+      ],
+      "bytesPerFile": 824
+    },
+    {
+      "sha256": "3788ec543ffa379f2497ac115c011bd581881e6208007ece7e658eb854a0ecf1",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/baseline-validation.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/baseline-validation.json"
+      ],
+      "bytesPerFile": 958
+    },
+    {
+      "sha256": "37e30b235dd15ce3220c4cb2d591a5bd9ba3365a3fbc4d38525d20016b227176",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/studio/contact-shadow.ts",
+        "历史工程/h5/src/viewer/studio/contact-shadow.ts"
+      ],
+      "bytesPerFile": 3780
+    },
+    {
+      "sha256": "3872f5a85da677f909ec5c55a5821758c34e2394460567a29f8043b480cc1105",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/verifier-tests.log",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/verifier-tests.log"
+      ],
+      "bytesPerFile": 103
+    },
+    {
+      "sha256": "394f1743ce6d8ee672c98bcaf4e668eb4b0e98e9c8d89af87b2b4969dffb9f45",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-rotation/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-rotation/completion.md"
+      ],
+      "bytesPerFile": 1851
+    },
+    {
+      "sha256": "3a6699760fee565a62f6dcace087bd29b01ec85c2a6343090cdc4c4a730af2bc",
+      "paths": [
+        "guangcai-v4-workspace/DELIVERY.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/DELIVERY.md"
+      ],
+      "bytesPerFile": 3695
+    },
+    {
+      "sha256": "3aec09e2cfca275a06aa242183bd3fad89c36cb929fc82f9c63367ceb105f3c2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/netlify-deploy.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/before/evidence/deployment/netlify-deploy.json"
+      ],
+      "bytesPerFile": 556
+    },
+    {
+      "sha256": "3ca131d225f704fd2026f40a776d44f097ba01243e92a88fb485f071a2a9cd98",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/texture-retry-qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/texture-retry-qa.json"
+      ],
+      "bytesPerFile": 172
+    },
+    {
+      "sha256": "3d68b342d4b21623aab7614bd103f849b77b8217e84f03335e596ca24e79e3c5",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-fixed-relief-alignment/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-fixed-relief-alignment/completion.md"
+      ],
+      "bytesPerFile": 2641
+    },
+    {
+      "sha256": "3d8db98af5242aeb476d3ce1c3fdbb6702817c64ae34e5df4a0802feb29b95ba",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/site-created.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/site-created.json"
+      ],
+      "bytesPerFile": 253
+    },
+    {
+      "sha256": "3e700d5d4edfb9be51f3ce092615419c3bcbce1a8c855caa0f791df5ed2d995c",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-floral-cleanup-4.2/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-floral-cleanup-4.2/completion.md"
+      ],
+      "bytesPerFile": 3465
+    },
+    {
+      "sha256": "42805240b745e01291827de34bc43af375e62462a9e246124ace18f36704b0d6",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/original-site-final.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/old-site-final.json"
+      ],
+      "bytesPerFile": 6043
+    },
+    {
+      "sha256": "428afb9dfbdd92c9e12ec02211bd561f4c5490292e72454a6ef191175b620b72",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/media/stage.ts",
+        "历史工程/h5/src/media/stage.ts"
+      ],
+      "bytesPerFile": 673
+    },
+    {
+      "sha256": "42e2329d928a4b4db39cfa63be6e25a78f13d71bbac7d5a6020890fe1dcc0109",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/deployment.json"
+      ],
+      "bytesPerFile": 714
+    },
+    {
+      "sha256": "43268cef98ba093459db50a0d58eed106788cfebeb148ad49338b804c5b83374",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-fixed-relief-alignment/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-fixed-relief-alignment/request.md"
+      ],
+      "bytesPerFile": 413
+    },
+    {
+      "sha256": "441fb762b67acbc8fe506143ef3f017c08a0b5ae701f4cccea2ed636db7d79c0",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/remote-files.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/remote-files.json"
+      ],
+      "bytesPerFile": 42054
+    },
+    {
+      "sha256": "45a516196634d9b63e7fe9498796e132890444722710a3d9c7693d1bef5fa7c9",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-fixed-relief-alignment/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-fixed-relief-alignment/plan.md"
+      ],
+      "bytesPerFile": 537
+    },
+    {
+      "sha256": "471e83f630e5a03e77209cf61e22f3f33f289ed971a5fbdcfa7751c5e96417c0",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/site-readback.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/site-readback.json"
+      ],
+      "bytesPerFile": 467
+    },
+    {
+      "sha256": "4814f2a60d28b453f323e6218ebe9ce7683d4e36470a7853431f6b7d42dd4889",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/first-release-manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/first-release-manifest.json"
+      ],
+      "bytesPerFile": 13496
+    },
+    {
+      "sha256": "49d3bb9c0907c743beb6f41b1a6307cd45d8cd460d64e1f4c964c69dec18d255",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/live-index.html",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/live-index.html"
+      ],
+      "bytesPerFile": 974
+    },
+    {
+      "sha256": "4b8cc63a7832fddd183ca3332cf245b7498280e54e2c53211067b76a18fb5dd5",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/completion.md"
+      ],
+      "bytesPerFile": 8334
+    },
+    {
+      "sha256": "4c1c6f91748f718c90ee04025b76b3962b8146d7551c03e907b93c037455a63d",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/completion.md"
+      ],
+      "bytesPerFile": 4518
+    },
+    {
+      "sha256": "4c726bf15e1ca6784a64d54c9a4ad9cf01ddb8a057c26424899231cca1ffe2c3",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/pr-body.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/pr-body.md"
+      ],
+      "bytesPerFile": 1982
+    },
+    {
+      "sha256": "519ba6b989237cc425bd9abfa0ed57bfaebca1a75862b8ca481958e10cfe6af5",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/online-model-stage.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/online-model-stage.json"
+      ],
+      "bytesPerFile": 990
+    },
+    {
+      "sha256": "52a88968035f2ad8f92c10d58bf3d6f87dacc457c3e1ef468b310faa8745c2cd",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-floral-cleanup-4.2/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-floral-cleanup-4.2/request.md"
+      ],
+      "bytesPerFile": 399
+    },
+    {
+      "sha256": "5314824d83269edc50bd39fd28992be5610f6c1a5ed0e8ed0adc3872fee7203f",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/request.md"
+      ],
+      "bytesPerFile": 1261
+    },
+    {
+      "sha256": "5346afb2b28966de88e0d901050c756eadae25f7e1e20845e2291a18a0562de1",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/archive-index/tools/test_verify_archive.py",
+        "guangcai-v4-workspace/tools/test_verify_archive.py"
+      ],
+      "bytesPerFile": 3878
+    },
+    {
+      "sha256": "545254e9bddead1838fcde4ece4edb73d02b558562f5008503c576a2c0d6e6ad",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/geometry/product.ts",
+        "历史工程/h5/src/viewer/geometry/product.ts"
+      ],
+      "bytesPerFile": 7514
+    },
+    {
+      "sha256": "5973b43b77861a7fb1ce76713f4ac47a86123181d9ff4f168a8af687dd6da010",
+      "paths": [
+        "guangcai-v4-workspace/.gitignore",
+        "guangcai-v4-workspace/.codex-work/archive-index/.gitignore"
+      ],
+      "bytesPerFile": 93
+    },
+    {
+      "sha256": "5bc813e3aa7dffefd9c65331a816cdd2f0f0ec8c60b1a678da77ff0c81a69faa",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/request.md"
+      ],
+      "bytesPerFile": 4502
+    },
+    {
+      "sha256": "63342376afe2251c26ccfb0a14d1faa917c7e3c2cdbc996e92150a7c4e1ca7f5",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/completion.md"
+      ],
+      "bytesPerFile": 3141
+    },
+    {
+      "sha256": "6605d1c0b883a2639eec7bd183f35545ccf9ae2c698bfa4e20f54d47e657f97c",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-restored/delivery-failure.json",
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/floral-restored/http2-failure.json"
+      ],
+      "bytesPerFile": 351
+    },
+    {
+      "sha256": "679c08fdb5994491e2df45eefeeda26c884b7e428d721b9d51688124b746735b",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/cleanup-old-refs.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-workspace-cleanup/old-refs.json"
+      ],
+      "bytesPerFile": 2893
+    },
+    {
+      "sha256": "6c5e7bbf7cf1912c695fdfe2785bd0e03d5f7cd4047631ba764a8aae0190ea70",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/netlify-deploy.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/netlify-deploy.json"
+      ],
+      "bytesPerFile": 556
+    },
+    {
+      "sha256": "6fb58cc5b78d3e57489ef61920db088746eb57d7d83fa6a0a422b0ca751354ae",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/services/local.ts",
+        "历史工程/h5/src/services/local.ts"
+      ],
+      "bytesPerFile": 3386
+    },
+    {
+      "sha256": "70e14ce8fd28e7c589f74a6885f9a7d3ffce4b64aea6c626e9e0ac8b3e5da3b0",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/restore-smoke/pre-reference-correction/src/studio/contact-shadow.ts",
+        "guangcai-v4-workspace/guangcai-china-preview/src/studio/contact-shadow.ts"
+      ],
+      "bytesPerFile": 3108
+    },
+    {
+      "sha256": "727d23c3934a1e5deb9906d6ec061c3d643f552c56e1ea1da83a7d2a13e1bfff",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/cities/v4/catalog.json",
+        "guangcai-v4-workspace/guangcai-china-preview/src/styles/city-catalog.json"
+      ],
+      "bytesPerFile": 10332
+    },
+    {
+      "sha256": "75a0c1b6965572e6ce71e0413d09940adeed4ab13266311d92aade18066dcd46",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/load-pan-floral/before-load.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/intermediate-v3/quality/before-load.json"
+      ],
+      "bytesPerFile": 5559
+    },
+    {
+      "sha256": "77c69f00c1ff3c73fd0d2625f677b19491aa0d5b0170aa9b6cca4bb630adb15a",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/fixed/style.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-floral-relief-calibration/before/fixed/style.json"
+      ],
+      "bytesPerFile": 797
+    },
+    {
+      "sha256": "7a5c8a506e9a5ad122d1e3d402860cc871f912a82b99651cf92f88feb05debb7",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/readme-rendered-check.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/readme-rendered-check.json"
+      ],
+      "bytesPerFile": 122
+    },
+    {
+      "sha256": "7d6aeb84fab798b37dfc5923a9ee6386ec3c572c0b4647f0b0e8db5d0e446beb",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/before/src/main.ts",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/src/main.ts"
+      ],
+      "bytesPerFile": 7840
+    },
+    {
+      "sha256": "7e7aa36ac137f08ddff568869b1b06e43e8353d7960a6e5494928fc2e3b71d18",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/previous-online-fixed-manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/before/public/fixed/manifest.json"
+      ],
+      "bytesPerFile": 5278
+    },
+    {
+      "sha256": "7eb910981684d43d26ac95e16c53ed1cfe558fc43778da9d7fc6ae5ad944d554",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-rotation/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-rotation/request.md"
+      ],
+      "bytesPerFile": 235
+    },
+    {
+      "sha256": "843fba0f74e9842a1822bc45456574f9b0c77f419bcc1448747cc7208ca175c3",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/original-build.log",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/original-build.log"
+      ],
+      "bytesPerFile": 715
+    },
+    {
+      "sha256": "8ab88fba9cb5335bc057f0e1be524e278288fadeecec3e078f637d70582974ba",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/sites-after-main-integration.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/sites-after-main-integration.json"
+      ],
+      "bytesPerFile": 591
+    },
+    {
+      "sha256": "8c492d9da2e2d991f0e36fcb17fa0dd1ffbab74b6f90f50efc4a1f3b42478d65",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-body-seam/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-body-seam/plan.md"
+      ],
+      "bytesPerFile": 543
+    },
+    {
+      "sha256": "8e0a8b40026db075a28c4f645ab88d8c7a4efc702270905713b68655afa17730",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/plan.md"
+      ],
+      "bytesPerFile": 5959
+    },
+    {
+      "sha256": "8e4e706f0faa97cae119348b7f21c32af5a502839ee4dbbd49645a5045af1cee",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/styles/style-manager.ts",
+        "历史工程/h5/src/viewer/styles/style-manager.ts"
+      ],
+      "bytesPerFile": 8434
+    },
+    {
+      "sha256": "8f4b571767a81e3efca9e863730aea777faa53b9b72f99e679094aef1dde15fe",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/release-manifest.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/release-manifest.json"
+      ],
+      "bytesPerFile": 30775
+    },
+    {
+      "sha256": "909da0285334db90b9a77acfeca4f5817d7be76056cb7f79d1f26a71ec6add03",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/old-sites-unchanged.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/old-sites-unchanged.json"
+      ],
+      "bytesPerFile": 424
+    },
+    {
+      "sha256": "92bef26adbcb91071752037ab77dece5558938cd45e8945cc7a441df4be80c49",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-floral-cleanup-4.2/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-floral-cleanup-4.2/plan.md"
+      ],
+      "bytesPerFile": 820
+    },
+    {
+      "sha256": "94b3dbb5771d9523f334a66f10e9792e4b308e1696b0976736f327e940229e58",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/geometry/parameters.ts",
+        "历史工程/h5/src/viewer/geometry/parameters.ts"
+      ],
+      "bytesPerFile": 921
+    },
+    {
+      "sha256": "9b26b403e5c3ba470c1421352e62cae4b0d0b619f092f58b6654a46757f7dc9e",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-history-reconstruction/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-history-reconstruction/request.md"
+      ],
+      "bytesPerFile": 415
+    },
+    {
+      "sha256": "9e35da07901b908e11dea42574d78e6f7c53ef69d75e84a4cf0965dcd83d5f05",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/plan.md"
+      ],
+      "bytesPerFile": 975
+    },
+    {
+      "sha256": "a25cc58f96dbdbd7c64315bf83f90a9f8f193282159905db7bf40649bff63d90",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/site-created.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/site-created.json"
+      ],
+      "bytesPerFile": 987
+    },
+    {
+      "sha256": "aa064d39c2321382e989594742508dda79698db9713c8daf682e75c71812d39c",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/services/contracts.ts",
+        "历史工程/h5/src/services/contracts.ts"
+      ],
+      "bytesPerFile": 1399
+    },
+    {
+      "sha256": "aa411d94c6779eaed314c8b6ca5daea19ae4779098174a3cb4239121ca2d0e06",
+      "paths": [
+        "历史工程/h5/evidence/petal-ribbons/continuity-qa.json",
+        "历史工程/h5/evidence/visual-v2/continuity-qa.json"
+      ],
+      "bytesPerFile": 1342
+    },
+    {
+      "sha256": "ab04dcfeb87e46574e89a7095c6640b88f423dcd0adc0c2d4edfb1760606ede6",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-body-seam/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-body-seam/deployment.json"
+      ],
+      "bytesPerFile": 8443
+    },
+    {
+      "sha256": "abee9c976261dacc3c6d0e905b0cf0a904a26d367f0a66a2ae292e635d117d5b",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/github-main-readback.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/github-main-readback.json"
+      ],
+      "bytesPerFile": 2258
+    },
+    {
+      "sha256": "af318b591180eff6bcc35e943a86026c84500263dc21177dd04b909c06e88743",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/original-test.log",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/original-test.log"
+      ],
+      "bytesPerFile": 928
+    },
+    {
+      "sha256": "b7306c6675bb9a8328ac89f05f2574f4b27f2fb2e04a800291f381318460d690",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/protected-files.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/protected-files.json"
+      ],
+      "bytesPerFile": 81
+    },
+    {
+      "sha256": "b7e59d720cd9bdf81a0fd0906b0d4ee636cca15fac990a832dcbc62c66da817b",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/old-site-before.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/old-site-before.json"
+      ],
+      "bytesPerFile": 232
+    },
+    {
+      "sha256": "b836d34f63f856fc487b89fc1a312da357cd82e09a7cf4b712b70ccad615b731",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-mobile-background/sites-before.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261013-fixed-layout/sites-after.json"
+      ],
+      "bytesPerFile": 408
+    },
+    {
+      "sha256": "b9bfacc025dc8e66e80f94dbf68f14ba8ec016d61713647b26e919ac7d7c086e",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-github-archive/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-github-archive/plan.md"
+      ],
+      "bytesPerFile": 3205
+    },
+    {
+      "sha256": "bb14032729194ad5b28b250966713b2e11bdee812364328893787b4c58dccd08",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/studio/studio.ts",
+        "历史工程/h5/src/viewer/studio/studio.ts"
+      ],
+      "bytesPerFile": 3845
+    },
+    {
+      "sha256": "bd6aef5b3ea0252ba55cd80813ef8101a258b6a1e6c7e41ee6882dcd1a07eb2f",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-rotation/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-rotation/deployment.json"
+      ],
+      "bytesPerFile": 1646
+    },
+    {
+      "sha256": "bf0c7cf8a0aac6c4c04c1af4779994929f7a41188d84f2457401d608053d6db0",
+      "paths": [
+        "guangcai-v4-workspace/.codex-work/archive-index/tools/verify-archive.py",
+        "guangcai-v4-workspace/tools/verify-archive.py"
+      ],
+      "bytesPerFile": 4883
+    },
+    {
+      "sha256": "c02cbf45168a15706af53134bd0ebcf0962224a966361d69e2bdd6734a231b46",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-1440-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-1440-panel.jpg"
+      ],
+      "bytesPerFile": 137532
+    },
+    {
+      "sha256": "c1451ea395d6ccd8c9d606c55c460e79b5200a21d017c2c35902bd4c1960647b",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-color-coverage/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-color-coverage/request.md"
+      ],
+      "bytesPerFile": 328
+    },
+    {
+      "sha256": "c32d5e1f6846d9c43faea4572edb41cf5284fb82d627bd9c29cddc96775ad499",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-fixed-relief-alignment/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-fixed-relief-alignment/deployment.json"
+      ],
+      "bytesPerFile": 1648
+    },
+    {
+      "sha256": "c465a2a1739eccd1130f1a1a4b13a454f144d0d435f9daa0b93ac9f21edbb0ec",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-history-reconstruction/plan.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-history-reconstruction/plan.md"
+      ],
+      "bytesPerFile": 950
+    },
+    {
+      "sha256": "c4c371fa4b5f6d4c5213e1509558f958f95227dd9f5f3fc0a25a932435c21dff",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/old-site-after.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/old-site-after.json"
+      ],
+      "bytesPerFile": 799
+    },
+    {
+      "sha256": "c5b4598d7c0c7db41c62ce32c4ec7cd826a5630d795a90efc608db945ac42e2c",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/geometry/handle.ts",
+        "历史工程/h5/src/viewer/geometry/handle.ts"
+      ],
+      "bytesPerFile": 6674
+    },
+    {
+      "sha256": "c6408e220ca6749dd9d8c63993c5d3bb46ee0fe8e117ae72560a64dbe49b2fa9",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/qa.json",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/qa.json"
+      ],
+      "bytesPerFile": 19941
+    },
+    {
+      "sha256": "c9615f6fef8a2b9c459f331ef4a3f44b41d752596ebe2291efc70a04257d4a78",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/china-build.log",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/china-build.log"
+      ],
+      "bytesPerFile": 607
+    },
+    {
+      "sha256": "cb76ab0b4fb5ea3c5e65d84b57d1faa07d5520e40d26e1c1cbac26595f9087a7",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-body-seam/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-body-seam/completion.md"
+      ],
+      "bytesPerFile": 2787
+    },
+    {
+      "sha256": "cbc2e06ad11e7d95578234a162fd6e9b0fffb0792ba8c55b50fc67679b425c60",
+      "paths": [
+        "guangcai-v4-workspace/delivery-manifest.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/delivery-manifest.json"
+      ],
+      "bytesPerFile": 79240
+    },
+    {
+      "sha256": "cfdf3330a0e2affeaa55d634a227a6c04fc9a225ffd137a36725e7da9cb54b21",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/load-pan-floral/mobile-report.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/intermediate-v3/quality/mobile-report.png"
+      ],
+      "bytesPerFile": 128575
+    },
+    {
+      "sha256": "cff47e0e935c4ed49b8e08053e44ade7d8a29a3ca4cdd1b31665b8c76dcb27bf",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/v3-migration-independent-check.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/v3-migration-independent-check.json"
+      ],
+      "bytesPerFile": 663
+    },
+    {
+      "sha256": "d1a32a05d99541116da0cced81ca6ba526a62abc66adcbe336c92dc197633530",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/assets/variant-prompts.json",
+        "guangcai-v4-workspace/guangcai-china-preview/assets/variant-prompts-dense-v3.json"
+      ],
+      "bytesPerFile": 10801
+    },
+    {
+      "sha256": "d78452e5047af88360297ce522deb4d258630a378d62d61c4eba16064875d41e",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/.codex-work/tmp/rotation/v4-post-merge-readback.json",
+        "guangcai-v4-workspace/guangcai-china-preview/.codex-work/tmp/rotation/v4-readback.json"
+      ],
+      "bytesPerFile": 6105
+    },
+    {
+      "sha256": "de1f5f590da24c6938c79bbe68b181a851dbfef9b7552e028a2a9a74e6b1a027",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/beijing-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/beijing-panel.jpg"
+      ],
+      "bytesPerFile": 118724
+    },
+    {
+      "sha256": "de578da3bb9a6f4781dd8ce66c08330d9f5b26f1b35763faf8c04de91150e2c7",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-history-reconstruction/completion.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-history-reconstruction/completion.md"
+      ],
+      "bytesPerFile": 3981
+    },
+    {
+      "sha256": "e094fc1cfed9e8e2b881c7de8f0568d888655fe1921cefa087d905319e330ae0",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4-body-seam/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4-body-seam/request.md"
+      ],
+      "bytesPerFile": 419
+    },
+    {
+      "sha256": "e56565a75e5c298443b5ebb8744267b157bfdd63973792dd6ca78807d67bcd94",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-390-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-390-panel.jpg"
+      ],
+      "bytesPerFile": 54481
+    },
+    {
+      "sha256": "e824b4093c58a95d8aa4c06ed995ebcfd25af0015b4e06185a4f98b2c226d5a9",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/request.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/request.md"
+      ],
+      "bytesPerFile": 4400
+    },
+    {
+      "sha256": "eb37cab41fef8a7011019d7a731a156b8340012df994c9b8a66e80a2df7aea0d",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/materials/render-standard.ts",
+        "历史工程/h5/src/viewer/materials/render-standard.ts"
+      ],
+      "bytesPerFile": 201
+    },
+    {
+      "sha256": "ed1af8b0579d80cc028aeebf7ea103b4fd5e5d8b630b794185d01617591b017b",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-v3-git-integration/issue-body.md",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-v3-git-integration/issue-body.md"
+      ],
+      "bytesPerFile": 799
+    },
+    {
+      "sha256": "eda30289281163230297dc4701407388a6e398e50d2e9494882aeccf6cf272c2",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/site-after.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/site-after.json"
+      ],
+      "bytesPerFile": 823
+    },
+    {
+      "sha256": "ef85126f77c90e9082fd6aeebd71efd77ca5d7c6cec43d5c6e29a6cf00963e2f",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/v3-github-readback.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/v3-github-readback.json"
+      ],
+      "bytesPerFile": 1589
+    },
+    {
+      "sha256": "f31cd9c2f9e3aad0acdedeeda307455dfbf511542dac30fdd847ee2422f8da04",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-v4/site-readback.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-v4/site-readback.json"
+      ],
+      "bytesPerFile": 881
+    },
+    {
+      "sha256": "f56c4b1ca33e98ae5d8b9cf58ea369f3a0438e8f74985eaabbfe536ee6190dc6",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/online-qa-failure.png",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/online-qa-failure.png"
+      ],
+      "bytesPerFile": 81150
+    },
+    {
+      "sha256": "f779118ff04e3d361466f63d3c10d22ee2677e54e409737de79fc232b8ad850d",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/public/review/beijing-4.3/viewport-320-panel.jpg",
+        "guangcai-v4-workspace/guangcai-china-preview/output/playwright/beijing-4.3/local/viewport-320-panel.jpg"
+      ],
+      "bytesPerFile": 40468
+    },
+    {
+      "sha256": "fa2d829871dff65554d779f9af4159726400edde61f00263352bc1bb66e899b8",
+      "paths": [
+        "guangcai-v4-workspace/guangcai-china-preview/evidence/deployment/badge-status.json",
+        "guangcai-v4-workspace/guangcai-china-preview/docs/changes/20261012-load-pan-floral/before/deployment/badge-status.json"
+      ],
+      "bytesPerFile": 126
+    },
+    {
+      "sha256": "fe43b963fea03075bf3ac75a7cc048ecc63bf8b67a8e9f3f4623634916d129dc",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261013-git-development/sites-before.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261013-git-development/sites-before.json"
+      ],
+      "bytesPerFile": 652
+    },
+    {
+      "sha256": "febee0ba790c3ccd398475ba98dac552bde1e3aff417ce65edb5f4386050e9fa",
+      "paths": [
+        "guangcai-v4-workspace/docs/changes/20261014-floral-cleanup-4.2/deployment.json",
+        "guangcai-v4-workspace/.codex-work/archive-index/docs/changes/20261014-floral-cleanup-4.2/deployment.json"
+      ],
+      "bytesPerFile": 1737
+    },
+    {
+      "sha256": "ff99aa44699c3aadd04c05cbc9de5b7b40b7336a130dee5f1f71c9db42ea403e",
+      "paths": [
+        "历史工程/h5/.codex-work/cache/visual-v2-backup/src/viewer/geometry/ribbon.ts",
+        "历史工程/h5/src/viewer/geometry/ribbon.ts"
+      ],
+      "bytesPerFile": 4592
+    },
+    {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "paths": [
+        "历史工程/h5/evidence/video-decode.log",
+        "guangcai-v4-workspace/.codex-work/cache/vector-tools/vtracer-0.6.12.dist-info/REQUESTED",
+        "guangcai-v4-workspace/.codex-work/tmp/index-beijing.txt",
+        "guangcai-v4-workspace/.codex-work/cache/npm/_update-notifier-last-checked",
+        ".codex-work/cache/npm/_update-notifier-last-checked"
+      ],
+      "bytesPerFile": 0
+    }
+  ]
+}
