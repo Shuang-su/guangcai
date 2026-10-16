@@ -1,6 +1,21 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHaptics,createHapticTrack} from '../src/ui/haptics';
+import {chooseHapticBackend} from '../src/ui/ios-haptics';
+test('native vibration, older iOS labels and newer trusted gestures select separate paths',()=>{
+ const c={vibrate:false,touchPoints:5,switchSupported:true,labelForwardsTrusted:true,userAgent:'Version/18.6 Mobile Safari/605.1'};
+ assert.equal(chooseHapticBackend(c),'ios-label');
+ assert.equal(chooseHapticBackend({...c,userAgent:'Version/26.4 Mobile Safari/605.1'}),'ios-label');
+ assert.equal(chooseHapticBackend({...c,userAgent:'Version/26.5 Mobile Safari/605.1'}),'ios-gesture');
+ assert.equal(chooseHapticBackend({...c,userAgent:'Version/27.0 Mobile Safari/605.1'}),'ios-gesture');
+ assert.equal(chooseHapticBackend({...c,labelForwardsTrusted:false}),'ios-gesture');
+ assert.equal(chooseHapticBackend({...c,userAgent:'iPhone OS 26_5 like Mac OS X CriOS/140.0'}),'ios-gesture');
+ assert.equal(chooseHapticBackend({...c,vibrate:true}),'vibration');
+ assert.equal(chooseHapticBackend({...c,userAgent:'Version/17.4 Mobile Safari/605.1'}),'none');
+ assert.equal(chooseHapticBackend({...c,switchSupported:false}),'none');
+ assert.equal(chooseHapticBackend({...c,touchPoints:0}),'none');
+ assert.equal(chooseHapticBackend({...c,userAgent:'future WebKit'}),'ios-gesture');
+});
 test('haptics require trusted touch intent and respect reduced motion/visibility gating',()=>{
  const calls:number[]=[];let allowed=false;
  const h=createHaptics({allowed:()=>allowed,vibrate:n=>{calls.push(n);return true;},now:()=>1000});

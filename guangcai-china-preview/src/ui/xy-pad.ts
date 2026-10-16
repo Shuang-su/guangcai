@@ -30,6 +30,7 @@ export function createXYPad(options:XYPadOptions){
  const hdrField=createHDRSurface(element,background),hdrSelector=createHDRSurface(thumb);
  const hapticTrack=createHapticTrack();
  const axes=[...element.querySelectorAll<HTMLInputElement>('input')];
+ const hapticSurface=haptics.attachContinuous(element);
  const events=new AbortController(),eventOptions={signal:events.signal};
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value:XYPosition={x:.5,y:.5},pointer:number|null=null,frame=0,size=0,dpr=0;
@@ -129,23 +130,25 @@ export function createXYPad(options:XYPadOptions){
   const id=pointer;pointer=null;lastPointer=undefined;element.classList.remove('is-dragging');expand(false);
   if(!animateRelease){activation=0;afterglowUntil=0;energy=0;feedback=undefined;keyboardFocused=false;}
   if(id!==null&&element.hasPointerCapture(id))element.releasePointerCapture(id);
+  if(!animateRelease)hapticSurface?.cancel();
   schedule();
  }
  element.addEventListener('pointerdown',event=>{
   if(pointer!==null||!event.isPrimary||event.button!==0)return;
-  event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart?.();element.focus({preventScroll:true});
-  keyboardFocused=false;activation=1;afterglowUntil=0;pointer=event.pointerId;lastPointer={x:event.clientX,y:event.clientY};element.setPointerCapture(pointer);expansionGeometry();element.classList.add('is-dragging');expand(true);
+  const native=hapticSurface?.owns(event);if(!native)event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart?.();
+  hapticSurface?.start(event);if(!native)element.focus({preventScroll:true});
+  keyboardFocused=false;activation=1;afterglowUntil=0;pointer=event.pointerId;lastPointer={x:event.clientX,y:event.clientY};if(!native)element.setPointerCapture(pointer);expansionGeometry();element.classList.add('is-dragging');expand(true);
   emit(next);hapticZone=zone();const span=size-2*inset;hapticTrack.reset(value.x*span,value.y*span,span/Math.max(6,Math.round(span/20)));haptics.pulse(event);
  },eventOptions);
  element.addEventListener('pointermove',event=>{
-  if(pointer!==event.pointerId)return;event.preventDefault();event.stopPropagation();
+  if(pointer!==event.pointerId)return;if(!hapticSurface?.owns(event))event.preventDefault();event.stopPropagation();
   if(lastPointer?.x===event.clientX&&lastPointer?.y===event.clientY)return;
   lastPointer={x:event.clientX,y:event.clientY};emit(fromPointer(event));
   const nextZone=zone(),span=size-2*inset,spacing=span/Math.max(6,Math.round(span/20)),tick=hapticTrack.move(value.x*span,value.y*span,spacing);
   if(nextZone&&nextZone!==hapticZone){haptics.pulse(event,8);hapticTrack.reset(value.x*span,value.y*span,spacing);}else if(tick)haptics.pulse(event,4);hapticZone=nextZone;
  },eventOptions);
  element.addEventListener('pointerup',event=>{
-  if(pointer!==event.pointerId)return;event.preventDefault();event.stopPropagation();
+  if(pointer!==event.pointerId)return;if(!hapticSurface?.owns(event))event.preventDefault();event.stopPropagation();
   if(lastPointer?.x!==event.clientX||lastPointer?.y!==event.clientY)emit(fromPointer(event));
   afterglowUntil=performance.now()+80;cancel(true);options.onCommit({...value});haptics.pulse(event,6);
  },eventOptions);
@@ -179,6 +182,6 @@ export function createXYPad(options:XYPadOptions){
   setReference(next:XYPosition){reference=normalizePosition(next);syncPosition();schedule();},
   setBackground(key:string,paint:PadPainter){if(key!==backgroundKey){backgroundKey=key;painter=paint;backgroundDirty=true;schedule();}},
   refresh:schedule,
-  dispose(){disposed=true;cancel();events.abort();observer.disconnect();cancelAnimationFrame(frame);hdrField.dispose();hdrSelector.dispose();element.remove();}
+  dispose(){disposed=true;cancel();hapticSurface?.dispose();events.abort();observer.disconnect();cancelAnimationFrame(frame);hdrField.dispose();hdrSelector.dispose();element.remove();}
  };
 }

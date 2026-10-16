@@ -15,6 +15,7 @@ export function createLightnessSlider(element:HTMLElement,options:SliderOptions)
  const thumb=element.querySelector<HTMLElement>('.lightness-thumb')!;
  const referenceMark=element.querySelector<HTMLElement>('.lightness-reference')!;let reference=50;
  const hapticTrack=createHapticTrack();
+ const hapticSurface=haptics.attachContinuous(element);
  const events=new AbortController(),listen={signal:events.signal},motion=matchMedia('(prefers-reduced-motion: reduce)');
  let value=50,feedback=50,energy=0,activation=0,afterglowUntil=0,lastFrame=0,frame=0,pointer:number|null=null,blocked=false,keyboard=false,disposed=false;
  let lastPointer:{x:number;y:number}|undefined,hapticZone='';
@@ -53,32 +54,33 @@ export function createLightnessSlider(element:HTMLElement,options:SliderOptions)
  function cancel(){
   if(pointer!==null){blocked=true;const id=pointer;pointer=null;if(input.hasPointerCapture(id))input.releasePointerCapture(id);}
   lastPointer=undefined;keyboard=false;energy=0;activation=0;afterglowUntil=0;feedback=value;element.classList.remove('is-dragging','is-keyboard');schedule();
+  hapticSurface?.cancel();
  }
  function fromPointer(event:PointerEvent){
   const rect=element.getBoundingClientRect(),edge=inset/element.clientHeight*rect.height;
   return clamp(min+(1-(event.clientY-rect.top-edge)/(rect.height-2*edge))*(max-min));
  }
  function emit(next:number){value=next;input.value=String(value);sync();schedule();options.onInput(value);}
- input.addEventListener('pointerdown',event=>{
+ element.addEventListener('pointerdown',event=>{
   if(pointer!==null||!event.isPrimary||event.button!==0)return;
-  event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart();input.focus({preventScroll:true});
+  const native=hapticSurface?.owns(event);if(!native)event.preventDefault();event.stopPropagation();const next=fromPointer(event);options.onStart();hapticSurface?.start(event);if(!native)input.focus({preventScroll:true});
   blocked=false;keyboard=false;pointer=event.pointerId;activation=1;afterglowUntil=0;lastPointer={x:event.clientX,y:event.clientY};
-  input.setPointerCapture(pointer);prepareControlLift(element);element.classList.add('is-dragging');element.classList.remove('is-keyboard');emit(next);hapticZone=zone();const span=element.clientHeight-2*inset;hapticTrack.reset(0,position(value)*span,span/Math.max(4,Math.round(span/20)));haptics.pulse(event);
+  if(!native)input.setPointerCapture(pointer);prepareControlLift(element);element.classList.add('is-dragging');element.classList.remove('is-keyboard');emit(next);hapticZone=zone();const span=element.clientHeight-2*inset;hapticTrack.reset(0,position(value)*span,span/Math.max(4,Math.round(span/20)));haptics.pulse(event);
  },listen);
- input.addEventListener('pointermove',event=>{
-  if(event.pointerId!==pointer)return;event.preventDefault();event.stopPropagation();
+ element.addEventListener('pointermove',event=>{
+  if(event.pointerId!==pointer)return;if(!hapticSurface?.owns(event))event.preventDefault();event.stopPropagation();
   if(lastPointer?.x===event.clientX&&lastPointer?.y===event.clientY)return;
   lastPointer={x:event.clientX,y:event.clientY};emit(fromPointer(event));const nextZone=zone(),span=element.clientHeight-2*inset,spacing=span/Math.max(4,Math.round(span/20)),tick=hapticTrack.move(0,position(value)*span,spacing);
   if(nextZone&&nextZone!==hapticZone){haptics.pulse(event,8);hapticTrack.reset(0,position(value)*span,spacing);}else if(tick)haptics.pulse(event,4);hapticZone=nextZone;
  },listen);
- input.addEventListener('pointerup',event=>{
-  if(event.pointerId!==pointer)return;event.preventDefault();event.stopPropagation();
+ element.addEventListener('pointerup',event=>{
+  if(event.pointerId!==pointer)return;if(!hapticSurface?.owns(event))event.preventDefault();event.stopPropagation();
   if(lastPointer?.x!==event.clientX||lastPointer?.y!==event.clientY)emit(fromPointer(event));
   const id=pointer;pointer=null;lastPointer=undefined;if(input.hasPointerCapture(id))input.releasePointerCapture(id);
   afterglowUntil=performance.now()+80;element.classList.remove('is-dragging');schedule();options.onCommit();haptics.pulse(event,6);
  },listen);
  const interrupted=()=>{if(pointer===null)return;cancel();options.onCancel();};
- input.addEventListener('pointercancel',interrupted,listen);input.addEventListener('lostpointercapture',interrupted,listen);
+ element.addEventListener('pointercancel',interrupted,listen);element.addEventListener('lostpointercapture',interrupted,listen);
  input.addEventListener('input',()=>{
   if(blocked){input.value=String(value);return;}
   value=clamp(Number(input.value));sync();schedule();options.onInput(value);
@@ -98,6 +100,6 @@ export function createLightnessSlider(element:HTMLElement,options:SliderOptions)
    rail.style.setProperty('--lightness-mid',`hsl(${hue} ${saturation}% ${(min+max)/2}%)`);
    rail.style.setProperty('--lightness-high',`hsl(${hue} ${saturation}% ${max}%)`);sync();schedule();
   },
-  dispose(){disposed=true;cancel();events.abort();observer.disconnect();cancelAnimationFrame(frame);}
+  dispose(){disposed=true;cancel();hapticSurface?.dispose();events.abort();observer.disconnect();cancelAnimationFrame(frame);}
  };
 }

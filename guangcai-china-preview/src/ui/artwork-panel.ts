@@ -29,6 +29,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
  const responsive=()=>{if(mobile.matches)citySelector.open=false;};citySelector.open=false;mobile.addEventListener('change',responsive);
  let displayedTheme='',progress='',frame=0,pending:Appearance|undefined,selectedTab:'color'|'material'='color';
  let observedAppearance:Appearance|undefined,restoreTarget:Appearance|undefined,fromPad=false,restoringFrame=0,transitionId=0;
+ const hapticButtons:Array<()=>void>=[];
  const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
  const tabPanels=[$('#adjust-color-panel'),$('#adjust-material-panel')];
  function flush(){
@@ -69,7 +70,8 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   }
  }
  for(const name of ['color','material'] as const){
-  const button=$('#adjust-'+name+'-tab');button.onclick=event=>{if(selectedTab!==name)haptics.pulse(event);changeTab(name);};
+  const button=$<HTMLButtonElement>('#adjust-'+name+'-tab');button.onclick=event=>{if(selectedTab!==name)haptics.pulse(event);changeTab(name);};
+  hapticButtons.push(haptics.attachButton(button));
   button.onkeydown=event=>{
    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
    event.preventDefault();const tab=event.key==='Home'?'color':event.key==='End'?'material':selectedTab==='color'?'material':'color';
@@ -107,6 +109,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
    if(t<1)restoringFrame=requestAnimationFrame(restore);else{restoringFrame=0;restoreTarget=undefined;delete panel.dataset.restoring;}
   };restoringFrame=requestAnimationFrame(restore);
  };
+ hapticButtons.push(haptics.attachButton($<HTMLButtonElement>('#reset-palette')));
  function render(){
   const s=controller.desired,v=variantFor(s.variant),pilot=isPilot(v.theme);
   // An external preset, API update or load failure invalidates a captured gesture.
@@ -142,7 +145,7 @@ export function createArtworkPanel(controller:SelectionController,closeOtherPane
   if(!controller.busy){progress='';document.querySelector('h1')!.textContent=themeFor(variantFor(controller.current.variant)).name+' · 共彩';}
  }
  render();return {ready:()=>{toggle.disabled=false;},render,progress:(done:number,total:number)=>{progress=`${done} / ${total}`;render();},close:dismiss,dispose(){
-  cancelPending();colorPad.dispose();materialPad.dispose();lightness.dispose();mobile.removeEventListener('change',responsive);
+  cancelPending();colorPad.dispose();materialPad.dispose();lightness.dispose();hapticButtons.forEach(dispose=>dispose());mobile.removeEventListener('change',responsive);
   document.removeEventListener('keydown',keyboard);document.querySelector('#open-settings')?.removeEventListener('click',dismiss);document.querySelector('#open-background')?.removeEventListener('click',dismiss);panel.remove();toggle.remove();
  }};
 }

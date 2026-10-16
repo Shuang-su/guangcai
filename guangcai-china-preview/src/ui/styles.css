@@ -131,3 +131,8 @@ main.artwork-open .gesture-hint{visibility:hidden}
 .adjust-panels{display:grid;isolation:isolate}
 .adjust-panels>[role=tabpanel]{grid-area:1/1;min-width:0;transform-origin:center;z-index:1}
 .adjust-panels>[role=tabpanel][aria-hidden=true]{pointer-events:none;z-index:0}
+
+/* iOS native gesture targets stay inside each control; the visible UI is unchanged. */
+.ios-haptic-surface,.ios-haptic-button{position:absolute;inset:0;display:block;z-index:4;opacity:0;border-radius:inherit;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.ios-haptic-surface{touch-action:none}
+.ios-haptic-button{cursor:inherit}
