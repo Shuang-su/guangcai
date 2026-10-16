@@ -85,3 +85,7 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 对用户 GPU 判定疑问追加调用链检查：杯子为 Three WebGLRenderer（WebGL2）；完整玻璃材质图由 dom/backend.ts 固定选 WebGL2，只有 /audit/ 且 backend=webgpu 才初始化原版 WebGPU 材质图。另有独立 hdr-surface.ts 使用 WebGPU 输出可选色盘 HDR，高动态范围＋安全上下文＋navigator.gpu＋adapter/device/configuration 检测后启用，失败保留 SDR；它没有 UA 平台过滤。不能把整个页面描述为完全不含 WebGPU。
 
 追加 6 组运行记录（backend-proof.json）：Chrome 与真实桌面 WebKit 各测原生环境、删除 navigator.gpu、requestAdapter 返回 null；为触达 HDR 能力分支强制 dynamic-range: high。Chrome 原生实际创建两个 WebGPU HDR context，调用栈只来自 hdr-surface；另外两种情况下只有杯子和材质图两个 WebGL2 context。WebKit 本机原生未提供 navigator.gpu，absent 与 null-adapter 同样正常。六组均拖动调色成功、零 pageerror；未证明所有 iOS 27 渲染均正确。移动 WebKit 原生磨砂是单独的合成兼容措施，不是用 UA 决定 WebGPU 支持与否，也不会禁用已有 HDR 能力检测。
+
+6.0.1 发布源码 checkpoint：a2319370175259f1ee22b9ecfd75167041faa91e。独立 V6 部署 6ad28d933b40920e67613f89 已 verified，线上 124 项 Chrome、运动专项及 72 项 WebKit 检查通过；1336 文件远端摘要与本地不可变归档 SHA-256 均核对。四个受保护旧站保持原部署。
+
+后续真机反馈仍存在功能问题：菜单无法点击、准备提示停留、Safari 上下边缘非沉浸；用户进一步确认在其他菜单调整一段时间后返回城市会卡在高度过渡中途，完整玻璃和磨砂模式都可复现。因此 PR 继续 Draft，6.0.1 不代表真机验收完成。下一修复检查共用的加载锁定、提示生命周期、隐藏列表几何及面板测量顺序。
