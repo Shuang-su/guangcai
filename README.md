@@ -2,17 +2,15 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：V5.4.2
+## 当前版本：V6 独立预览
 
-[打开 V5 在线预览](https://guangcai-no1-china-v5.netlify.app/) · [应用说明](guangcai-china-preview/README.md) · [版本与部署索引](VERSION_HISTORY.md)
+[用户创作页](https://guangcai-no1-china-v6.netlify.app/) · [完整开发工作台](https://guangcai-no1-china-v6.netlify.app/dev/) · [对比审计](https://guangcai-no1-china-v6.netlify.app/audit/) · [应用说明](guangcai-china-preview/README.md) · [版本索引](VERSION_HISTORY.md)
 
-中国杯目前为 **5.4.2**，已发布版本链通过 [PR #26](https://github.com/Shuang-su/guangcai/pull/26) 合入 `main`。23 座城市提供 25 套图样，加中国款共 26 个选择；城市全填色、固定金线，支持五种预设、二维调色与材质控制、明度和视觉浮雕。保留已确认可用的 iOS 连续拖动脉冲，短屏幕恢复控件放大；原生触感启动等待的设备边界见验证记录。
+V6 消费者页面提供 23 城、六组东方大楷祝福语和五种配色，保留自由调色、明度、材质和视觉浮雕。Glass-HQ 原算法与 SVG 合成保留，材质图后端迁移到 WebGL2；原 WebGPU 在审计页独立对比。城市、文字和金线分离，颜色／材质不改变固定金色。原始城市稿、字体、上游源码及许可均保存。
 
-V5.4.2 发布源码为 `156dc368e357ed84f6731d90abc1dc71bf886b8d`，部署为 `6ad20c45a7780e55fedba3d7`。源码、验证、部署与 Git 合并分别记录；本次资料整理不改变线上部署。
+当前独立预览为 **6.0.4**：发布源码 `833a8b33561d36e72f1164743e80f28fc63d96b2`，部署 `6ad314a2a5e661a14e469026`。移动 WebKit 使用原 Glass-HQ 位移／高光图和交互的独立 WebGL2 折射合成，修复收起时胶囊上跳，以及大法线文件持续下载被总超时中断。线上通过 124 项 Chrome、运动专项、74 项 WebKit、42 项慢加载／城市返回和 49 项独立折射／收起专项；1337 项发布文件已校验归档。iOS 27 真机效果与物理触感仍待复测。[PR #28](https://github.com/Shuang-su/guangcai/pull/28) 保持 Draft，详见[完成记录](docs/changes/20261017-v6-webgl2-studio/completion.md)。
 
-[短屏放大与发布验证](docs/changes/20261016-short-screen-lift/completion.md) · [版本链合并与分支恢复清单](docs/changes/20261016-branch-consolidation/completion.md) · [母版制作说明](guangcai-china-preview/assets/masters/v5/README.md)
-
-4.3 是保留的 [V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)，标签 `v4.3` 和部署 `6acf18984f3abc04fe3cab18` 未改变。[PR #22](https://github.com/Shuang-su/guangcai/pull/22) 的提交已随 V5 版本链合并；4.3 当时的视觉问题、候选稿及验证边界仍保存在其原始完成记录中。
+V5.4.2 的[历史预览](https://guangcai-no1-china-v5.netlify.app/)继续保留，部署 `6ad20c45a7780e55fedba3d7` 未改变。4.3 的[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)、标签和部署同样保留。本仓库未连接 Netlify Git 自动部署。
 
 ## 原件与旧工作区
 

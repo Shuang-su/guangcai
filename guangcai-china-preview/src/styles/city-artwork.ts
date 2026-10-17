@@ -12,7 +12,7 @@ export interface CityArtworkPack {
   baseColor: string; normal: string; roughness: string; metalness: string; height?: string;
   coverage?:string; clearcoat?:string; normalEncoding?:'rgba16f';
   finish?:'enamel'|'metal'|'paint';
-  label?:{source?:string;color?:string;hidden?:boolean;metalness?:number};
+  label?:{source?:string;color?:string;hidden?:boolean;metalness?:number;fixedGold?:boolean};
   parametric?:{mask:string;appearance:Appearance};
 }
 export const chinaPack: CityArtworkPack = {
@@ -42,6 +42,7 @@ export class CityArtworkManager {
   uniformOnly=false;
   private parameters:ReturnType<typeof installCityParameters>;
   private parametricCache=new Map<string,Promise<Texture[]>>();private paramKey='';private paramMaps:Texture[]=[];
+  private textCache=new Map<string,Promise<Texture[]>>();private textKey='';private requestedStructure='';private requestedText='';
   constructor(private material:MeshPhysicalMaterial,private anisotropy:number){this.parameters=installCityParameters(material);}
   private labelPixels(source?:string){
     const url=source??`${import.meta.env.BASE_URL}china/label.png`;
@@ -113,7 +114,7 @@ export class CityArtworkManager {
       if(outCoverage)staged.push(canvasTexture(outCoverage,w,h,false,this.anisotropy));
       if(revision!==this.revision||this.disposed)return false;
       const mat=this.material;
-      this.parameters.disable();this.paramKey='';this.paramMaps=[];
+      this.parameters.disable();this.paramKey='';this.textKey='';this.paramMaps=[];
       [mat.map,mat.metalnessMap,mat.roughnessMap,mat.clearcoatMap,mat.normalMap]=staged;
       setPorcelainCoverage(mat,staged[5]??null);
       mat.clearcoatNormalMap=mat.normalMap;mat.metalness=this.metalEnabled?1:0;mat.roughness=1;mat.color.set(0xffffff);
@@ -125,45 +126,58 @@ export class CityArtworkManager {
     }catch(e){this.lastError=(e as Error).message;throw e;}
     finally{loaded.filter(t=>t!==transferredNormal).forEach(t=>t.dispose());staged.forEach(t=>this.release(t));}
   }
+  private resource(cache:Map<string,Promise<Texture[]>>,key:string,load:()=>Promise<Texture[]>){
+    let promise=cache.get(key);
+    if(!promise){
+      promise=load().then(maps=>{
+        if(maps.some(t=>{const image=t.image as {width:number;height:number};return image.width!==4096||image.height!==1783;})){maps.forEach(t=>t.dispose());throw new Error('城市通道尺寸不一致');}
+        maps.forEach(t=>{t.channel=1;t.colorSpace=NoColorSpace;t.anisotropy=this.anisotropy;t.wrapS=t.wrapT=ClampToEdgeWrapping;});return maps;
+      });
+      cache.set(key,promise);const original=promise;
+      void promise.catch(()=>{if(cache.get(key)===original)cache.delete(key);});
+    }else{cache.delete(key);cache.set(key,promise);}
+    return promise;
+  }
+  private trimResources(){
+    for(const [cache,limit,protectedKeys] of [[this.parametricCache,2,[this.paramKey,this.requestedStructure]],[this.textCache,6,[this.textKey,this.requestedText]]] as const){
+      for(const [key,promise] of cache){if(cache.size<=limit)break;if(protectedKeys.includes(key))continue;cache.delete(key);void promise.then(maps=>maps.forEach(t=>this.release(t)),()=>{});}
+    }
+  }
   private async applyParametric(pack:CityArtworkPack,revision:number){
     try{
       const appearance=normalizeAppearance(pack.parametric!.appearance);
       if(pack.normalEncoding!=='rgba16f'||pack.placement||!pack.label?.source||!pack.parametric!.mask)throw new Error('参数化城市包需要完整对齐的遮罩、法线和文字');
-      const key=[pack.parametric!.mask,pack.normal,pack.label.source].join('|');
-      if(this.paramKey===key){
-        this.uniformOnly=true;this.parameters.update(appearance,!pack.label.hidden);this.relief=appearance.relief;
+      const key=[pack.parametric!.mask,pack.normal].join('|'),textKey=pack.label.source;
+      this.requestedStructure=key;this.requestedText=textKey;
+      if(this.paramKey===key&&this.textKey===textKey){
+        this.uniformOnly=true;this.parameters.fixedGold(!!pack.label.fixedGold);this.parameters.update(appearance,!pack.label.hidden);this.relief=appearance.relief;
         this.current={...pack,parametric:{...pack.parametric!,appearance}};this.lastError='';return true;
       }
-      let loading=this.parametricCache.get(key);
-      if(!loading){
-        loading=Promise.allSettled([loadTexture(pack.parametric!.mask),loadFloatNormal(pack.normal),loadTexture(pack.label.source)]).then(results=>{
-          const maps=results.flatMap(r=>r.status==='fulfilled'?[r.value]:[]);
-          if(results.some(r=>r.status==='rejected')||maps.some(t=>t.image.width!==4096||t.image.height!==1783)){
-            maps.forEach(t=>t.dispose());throw new Error('城市结构资源读取失败或尺寸不一致，已保留当前效果');
-          }
-          maps.forEach(t=>{t.channel=1;t.colorSpace=NoColorSpace;t.anisotropy=this.anisotropy;t.wrapS=t.wrapT=ClampToEdgeWrapping;});return maps;
-        });
-        this.parametricCache.set(key,loading);
-        void loading.catch(()=>{if(this.parametricCache.get(key)===loading)this.parametricCache.delete(key);});
-      }
-      const maps=await loading;
+      const structure=this.resource(this.parametricCache,key,async()=>{
+        const result=await Promise.allSettled([loadTexture(pack.parametric!.mask),loadFloatNormal(pack.normal)]);
+        const maps=result.flatMap(r=>r.status==='fulfilled'?[r.value]:[]);
+        if(result.some(r=>r.status==='rejected')){maps.forEach(t=>t.dispose());throw new Error('城市结构读取失败，已保留当前效果');}return maps;
+      });
+      const lettering=this.resource(this.textCache,textKey,async()=>[await loadTexture(textKey)]);
+      const [maps,text]=await Promise.all([structure,lettering]);
       if(revision!==this.revision||this.disposed)return false;
-      this.parametricCache.delete(key);this.parametricCache.set(key,loading);
-      const mat=this.material;mat.map=maps[0];mat.metalnessMap=maps[0];mat.roughnessMap=null;mat.clearcoatMap=null;
-      mat.normalMap=mat.clearcoatNormalMap=maps[1];mat.clearcoat=1;mat.metalness=this.metalEnabled?1:0;mat.roughness=1;mat.color.set(0xffffff);
-      mat.displacementMap=null;mat.displacementScale=0;setPorcelainCoverage(mat,maps[0]);
-      this.parameters.enable(maps[0],maps[2],!pack.label.hidden);this.parameters.update(appearance,!pack.label.hidden);this.parameters.metal(this.metalEnabled);mat.needsUpdate=true;
-      this.owned.forEach(t=>this.release(t));this.owned=[];this.paramMaps=maps;this.paramKey=key;this.relief=appearance.relief;
-      this.current={...pack,parametric:{...pack.parametric!,appearance}};this.lastError='';
-      // At most two city packs; further cities use the same bounded LRU.
-      for(const [old,promise]of this.parametricCache){if(this.parametricCache.size<=2)break;if(old!==key){this.parametricCache.delete(old);void promise.then(ts=>ts.forEach(t=>t.dispose()),()=>{});}}
-      return true;
+      const mat=this.material,structureChanged=this.paramKey!==key;
+      this.uniformOnly=!structureChanged;
+      if(structureChanged){
+        mat.map=mat.metalnessMap=maps[0];mat.roughnessMap=null;mat.clearcoatMap=null;
+        mat.normalMap=mat.clearcoatNormalMap=maps[1];mat.clearcoat=1;mat.metalness=this.metalEnabled?1:0;mat.roughness=1;mat.color.set(0xffffff);
+        mat.displacementMap=null;mat.displacementScale=0;setPorcelainCoverage(mat,maps[0]);mat.needsUpdate=true;
+      }
+      this.parameters.enable(maps[0],text[0],!pack.label.hidden);this.parameters.fixedGold(!!pack.label.fixedGold);this.parameters.update(appearance,!pack.label.hidden);this.parameters.metal(this.metalEnabled);
+      this.owned.forEach(t=>this.release(t));this.owned=[];this.paramMaps=[...maps,...text];this.paramKey=key;this.textKey=textKey;this.relief=appearance.relief;
+      this.current={...pack,parametric:{...pack.parametric!,appearance}};this.lastError='';return true;
     }catch(e){if(revision===this.revision)this.lastError=(e as Error).message;throw e;}
+    finally{this.trimResources();}
   }
   setRelief(value:number){if(!Number.isFinite(value)||value< -1||value>2)throw new Error('凹凸强度超出范围');this.relief=value;if(this.current?.parametric){const a={...this.current.parametric.appearance,relief:Math.max(0,value)};this.current.parametric.appearance=a;this.parameters.update(a,!this.current.label?.hidden);}else{this.material.normalScale.setScalar(value*.7);this.material.clearcoatNormalScale.setScalar(value*.7);}}
   setMetal(enabled:boolean){this.metalEnabled=enabled;this.material.metalness=enabled?1:0;this.parameters.metal(enabled);}
   configureMetalnessInspection(material:MeshBasicMaterial){if(this.current?.parametric)this.parameters.inspect(material);}
   private release(t:Texture){t.dispose();if(t.image instanceof HTMLCanvasElement)t.image.width=t.image.height=1;}
-  debug(){return {pack:this.current,relief:this.relief,metalEnabled:this.metalEnabled,displacementScale:this.material.displacementScale,parameters:this.parameters.debug(),cachedCities:this.parametricCache.size,uniformOnly:this.uniformOnly,maps:[...this.owned,...this.paramMaps].map(t=>({uuid:t.uuid,channel:t.channel,size:[(t.image as {width:number;height:number}).width,(t.image as {width:number;height:number}).height],colorSpace:t.colorSpace,precision:t.userData.precision??'8-bit'})),labelSource:this.current?.label?.hidden?null:this.current?.label?.source??'china/label.png',labelColor:this.current?.label?.color??'#ddb538',lastError:this.lastError};}
-  dispose(){this.disposed=true;++this.revision;this.owned.forEach(t=>this.release(t));this.owned=[];for(const p of this.parametricCache.values())void p.then(ts=>ts.forEach(t=>t.dispose()),()=>{});this.parametricCache.clear();this.paramMaps=[];this.label=undefined;}
+  debug(){return {pack:this.current,relief:this.relief,metalEnabled:this.metalEnabled,displacementScale:this.material.displacementScale,parameters:this.parameters.debug(),cachedCities:this.parametricCache.size,cachedLabels:this.textCache.size,uniformOnly:this.uniformOnly,maps:[...this.owned,...this.paramMaps].map(t=>({uuid:t.uuid,channel:t.channel,size:[(t.image as {width:number;height:number}).width,(t.image as {width:number;height:number}).height],colorSpace:t.colorSpace,precision:t.userData.precision??'8-bit'})),labelSource:this.current?.label?.hidden?null:this.current?.label?.source??'china/label.png',labelColor:this.current?.label?.color??'#ddb538',lastError:this.lastError};}
+  dispose(){this.disposed=true;++this.revision;this.owned.forEach(t=>this.release(t));this.owned=[];for(const p of [...this.parametricCache.values(),...this.textCache.values()])void p.then(ts=>ts.forEach(t=>t.dispose()),()=>{});this.parametricCache.clear();this.textCache.clear();this.paramMaps=[];this.label=undefined;}
 }

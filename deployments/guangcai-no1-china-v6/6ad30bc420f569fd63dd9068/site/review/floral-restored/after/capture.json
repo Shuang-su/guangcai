@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-13T14:33:33.758Z",
+  "stage": "after",
+  "errors": [],
+  "debug": {
+    "version": "3.0.0",
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      31.76581273266682,
+      240.5461303541477,
+      909.6471739285785
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "auto",
+      "active": "gray",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "115a550b-a20a-40c0-bbc6-63ad2931823e",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 9,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "7ce57323-7e1a-46b8-aeba-0d546e85a65b",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 101,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "7a88d2ae-5d23-4c4a-98e7-4cd7bcc46e3f",
+      "46c34a5a-1a7c-476a-8ba8-013590ea81d0",
+      "8fbde7d9-6644-4748-94d6-9b36611130e9",
+      "96dbeb1a-787f-489c-a3d8-3d482a729970",
+      "d3164972-cdae-4e11-8080-2b39e0e87bce",
+      "e0884719-219c-4f70-a72a-08c716f0ec67",
+      "c4c46369-9f08-4528-a366-43dc06cebd64",
+      "92d16c0f-9292-41e7-aa53-e41e263dd670",
+      "625cf826-688a-4791-a9d1-413381069066",
+      "55d65443-801e-439b-8dcd-cf62964a0807",
+      "3561fa8e-d192-459b-9a5b-32a77385bd74"
+    ],
+    "memory": {
+      "geometries": 26,
+      "textures": 30
+    },
+    "city": {
+      "pack": {
+        "placement": {
+          "scale": 0.82,
+          "offsetU": 0.047,
+          "offsetV": 0
+        },
+        "id": "china-draft-20261011",
+        "version": 3,
+        "name": "中国 · 临时线稿",
+        "layout": "blank-300deg-v1",
+        "baseColor": "/textures/china-baseColor-754558a83d8866b8.webp",
+        "normal": "/textures/china-normal-f0662e241725d83b.webp",
+        "roughness": "/textures/china-roughness-40e7b97659e5e028.webp",
+        "metalness": "/textures/china-metalness-7ac9525c8019fc98.webp",
+        "height": "/china/height.png?v=3"
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "maps": [
+        {
+          "uuid": "c58ee01d-9a19-4f5c-b77a-d3d864002209",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": "srgb"
+        },
+        {
+          "uuid": "0a967491-31fa-47ff-a420-6467284c574d",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "d998e155-7682-40d6-bac1-cead5421ae1a",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "c304afe0-c8bf-47eb-9ade-6770aeb13361",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        },
+        {
+          "uuid": "8bc1a0ee-022e-47cd-8e05-6da8cad1ffe8",
+          "channel": 1,
+          "size": [
+            4096,
+            1783
+          ],
+          "colorSpace": ""
+        }
+      ],
+      "labelSource": "china/label.png",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.75,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "8a67a6af-c051-40bf-9282-814a158be3aa",
+        "normal": "c7965590-c13d-4579-9c42-2c94e095b9f9",
+        "roughness": "9644c14c-f9a5-4a40-a786-8e2861807eea",
+        "metalness": "9faf0b58-cd9e-4800-af02-69d7f9c2f4b0"
+      },
+      "handle": {
+        "baseColor": "dd052b60-a89e-4fde-b00a-b94d6d6d14b3",
+        "normal": "1e274253-1afa-45bf-8a22-f05ce478b8e5",
+        "roughness": "8bc28b4b-cec3-4429-abbd-e427dd17e8e6",
+        "metalness": "d1dbf877-11e4-4f8a-8000-dc251494d093"
+      },
+      "saucer": {
+        "baseColor": "1e73f521-0b8e-437c-8e10-dcc281e09848",
+        "normal": "ef32ebf3-b6cd-4592-83f5-7b177edb1c59",
+        "roughness": "24b013d7-3b3d-44fa-961d-b6f5cd8d6d59",
+        "metalness": "9a2e225d-0e9b-47e0-8f3f-23b803ddc15f"
+      }
+    }
+  },
+  "precision": {
+    "body": {
+      "normalType": 1016,
+      "normalSize": [
+        1024,
+        2466
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": null
+    },
+    "handle": {
+      "normalType": 1016,
+      "normalSize": [
+        384,
+        4473
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": null
+    },
+    "saucer": {
+      "normalType": 1016,
+      "normalSize": [
+        8192,
+        1152
+      ],
+      "precision": "RGBA16F",
+      "normalFlipY": false,
+      "atlas": {
+        "rows": 2,
+        "contentWidth": 8128,
+        "contentHeight": 512,
+        "gutter": 32
+      }
+    }
+  }
+}

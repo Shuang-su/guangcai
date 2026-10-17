@@ -1,0 +1,189 @@
+{
+  "status": "passed",
+  "url": "https://6ad295b03953db1e0b268b8f--guangcai-no1-china-v6.netlify.app/",
+  "results": [
+    {
+      "engine": "chromium",
+      "version": "154.0.8037.98",
+      "checks": [
+        {
+          "name": "initial panel is interactive before all assets arrive",
+          "passed": true
+        },
+        {
+          "name": "touch changes menu while floral textures are pending",
+          "passed": true
+        },
+        {
+          "name": "editor opens before asset readiness",
+          "passed": true
+        },
+        {
+          "name": "status identifies outstanding floral assets",
+          "passed": true
+        },
+        {
+          "name": "scene is not falsely marked fully loaded",
+          "passed": true
+        },
+        {
+          "name": "status clears once startup actually completes",
+          "passed": true
+        },
+        {
+          "name": "round 0: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 0: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 0: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 0: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "round 1: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 1: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 1: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 1: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "round 2: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 2: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 2: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 2: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "root and body retain the backdrop for browser edge sampling",
+          "passed": true
+        },
+        {
+          "name": "standalone viewport metadata",
+          "passed": true
+        },
+        {
+          "name": "zero runtime errors",
+          "passed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.6",
+      "checks": [
+        {
+          "name": "initial panel is interactive before all assets arrive",
+          "passed": true
+        },
+        {
+          "name": "touch changes menu while floral textures are pending",
+          "passed": true
+        },
+        {
+          "name": "editor opens before asset readiness",
+          "passed": true
+        },
+        {
+          "name": "status identifies outstanding floral assets",
+          "passed": true
+        },
+        {
+          "name": "scene is not falsely marked fully loaded",
+          "passed": true
+        },
+        {
+          "name": "status clears once startup actually completes",
+          "passed": true
+        },
+        {
+          "name": "round 0: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 0: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 0: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 0: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "round 1: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 1: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 1: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 1: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "round 2: hidden cities retain positive cached size",
+          "passed": true
+        },
+        {
+          "name": "round 2: city transition targets its final height",
+          "passed": true
+        },
+        {
+          "name": "round 2: city card stays square",
+          "passed": true
+        },
+        {
+          "name": "round 2: cards clear the menu",
+          "passed": true
+        },
+        {
+          "name": "root and body retain the backdrop for browser edge sampling",
+          "passed": true
+        },
+        {
+          "name": "standalone viewport metadata",
+          "passed": true
+        },
+        {
+          "name": "zero runtime errors",
+          "passed": true
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "physicalIOS": "pending device retest; browser chrome cannot be asserted by desktop WebKit"
+}

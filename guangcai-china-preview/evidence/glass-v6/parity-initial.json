@@ -1,0 +1,513 @@
+{
+  "date": "2026-10-16T16:30:32.422Z",
+  "backendBaseline": "Glass-HQ 9f5bfc7",
+  "passed": true,
+  "comparisons": [
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 1,
+        "appearance": "light"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 1,
+        "appearance": "light"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 1,
+        "appearance": "light"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 1,
+        "appearance": "light"
+      },
+      "width": 127,
+      "height": 127,
+      "channels": 129032,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 2,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 2,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 2,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 2,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 254,
+      "channels": 516128,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 3,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 3,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 3,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 3,
+        "appearance": "light"
+      },
+      "width": 254,
+      "height": 254,
+      "channels": 516128,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 1,
+        "appearance": "dark"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 1,
+        "appearance": "dark"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 1,
+        "appearance": "dark"
+      },
+      "width": 127,
+      "height": 61,
+      "channels": 61976,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 1,
+        "appearance": "dark"
+      },
+      "width": 127,
+      "height": 127,
+      "channels": 129032,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 2,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 2,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 2,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 2,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 254,
+      "channels": 516128,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 0,
+        "dpr": 3,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": 17,
+        "dpr": 3,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 57,
+        "radius": "capsule",
+        "dpr": 3,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 122,
+      "channels": 247904,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 123,
+        "height": 123,
+        "radius": "circle",
+        "dpr": 3,
+        "appearance": "dark"
+      },
+      "width": 254,
+      "height": 254,
+      "channels": 516128,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 142.5,
+        "height": 71.25,
+        "radius": 12,
+        "dpr": 1.5,
+        "outline": [
+          [
+            15,
+            0
+          ],
+          [
+            127,
+            0
+          ],
+          [
+            142.5,
+            15
+          ],
+          [
+            142.5,
+            50
+          ],
+          [
+            125,
+            71.25
+          ],
+          [
+            12,
+            71.25
+          ],
+          [
+            0,
+            52
+          ],
+          [
+            0,
+            15
+          ]
+        ]
+      },
+      "width": 220,
+      "height": 113,
+      "channels": 198880,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 1,
+        "height": 1,
+        "radius": 0,
+        "dpr": 1
+      },
+      "width": 5,
+      "height": 5,
+      "channels": 200,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 393,
+        "height": 410,
+        "radius": 28,
+        "dpr": 2
+      },
+      "width": 794,
+      "height": 828,
+      "channels": 5259456,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    },
+    {
+      "geometry": {
+        "width": 860,
+        "height": 48,
+        "radius": "capsule",
+        "dpr": 2
+      },
+      "width": 1728,
+      "height": 104,
+      "channels": 1437696,
+      "maximum": 0,
+      "mean": 0,
+      "overTwo": 0,
+      "withinTwo": 1,
+      "passed": true
+    }
+  ]
+}

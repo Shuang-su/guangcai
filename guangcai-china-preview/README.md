@@ -1,41 +1,50 @@
-# 中国杯 V5：城市母版与自由创作
+# 中国杯 V6：城市共彩创作预览
 
-本目录继续承载中国杯的版本演进。本功能分支基于 **5.1.0**，新增 Issue #25 的方形调色盘与二维材质控制；本轮改动仅完成本地实现和验证，未发布。线上历史由 [版本索引](../VERSION_HISTORY.md) 单独记录。
+V6 使用一套模型、城市材质与创作状态，分为三个入口：
 
-- 13 套 V5 城市图样各有纯金、青绿、朱红、紫、蓝五个配色预设；源结构和法线每城只存一套。
-- “颜色／材质”切换共享方形点阵控制区。颜色盘控制色相与饱和度，右侧明度条独立调整明暗；材质盘联动金属度、粗糙度和清漆层，金线独立固定。
-- 鼠标／单指点击或拖动选点，方向键调整位置，Shift 加方向键精细调整，Home 回到面板中心；读屏提供等价双轴控件。手机及窄窗口采用底部面板，城市入口默认折叠。
-- 选点位置即时跟手，按下／松开时弹性缩放；附近点阵放大、提亮并小幅位移，停止后收拢。系统“减少动态效果”会取消时间缓动和位移。明度绘制复用缓存色盘，不在每次拖动时重新计算逐像素色相。
-- 新面板不提供浮雕调节，保留原有效果。底层 0–2 倍法线强度接口继续兼容，不改变真实几何；旧 paint 参数归一为彩釉。
-- 换城保留创作参数、相机、背景与文字隐藏状态；选择配色预设恢复该预设参数。中国原版及既有配色继续兼容，默认仍为中国原版纯金。
-- 城市包按需加载，最多保留两个；拖动仅更新着色器 uniform，不重建纹理或反射环境。
-- 北京以原 PSD 天坛层作线条参考，去除前景波浪并让建筑直接到底线。当前为可继续调整的图样候选，真实工艺与设备验收单列。
+- `/`：消费者页面。23 城、六组东方大楷祝福语、五个配色预设及自由颜色／明度／质感调整；默认深圳＋同心金＋开放包容。
+- `/dev/`：完整开发工作台。保留原 26 个图样选项和所有调试、背景、材质及视角功能，另加 23 城新稿。
+- `/audit/`：Glass-HQ WebGL2／原 WebGPU 对比、23 城原稿／SVG／填色，以及六组字框证明图。
 
-运行后打开 `/review/v5/index.html` 查看 13 套图样的原稿、SVG 与填面检查；页面提供模板和各城 SVG 下载。[制作规范](assets/masters/v5/README.md) · [原 V5 制作记录](../docs/changes/20261015-city-v5/) · [Issue #25 请求、计划与完成记录](../docs/changes/20261016-xy-color-material/)。
+当前源码关联 [Issue #27](https://github.com/Shuang-su/guangcai/issues/27)，发布状态以 [版本索引](../VERSION_HISTORY.md) 和 [完成记录](../docs/changes/20261017-v6-webgl2-studio/completion.md) 为准。V5 独立站保留历史部署，不由本次构建重发。
 
-## 本地运行
+## 创作交互
+
+底部四个分类（城市、色彩、质感、祝福语）双向循环，每次显示三个；顶部短横杆可点击或上下滑动收起／展开。城市居中选择，三张完整卡片和两侧半张共五张可见，缩略图仅透明金色描线。
+
+五个方形配色同时显示并循环；点击当前色块或“自定义”进入二级调色盘。返回保持当前配色，重置恢复配色预设。色相与饱和度用方形点阵控制，明度用右侧滑杆；界面不展示数值读数。质感控制延续既有二维材质参数。原生触摸节点、iOS 脉冲路径和短屏按压放大保持 V5.4.2 实现。
+
+城市结构与文字分别缓存；切换祝福语不重复加载城市法线，调色和质感只更新着色器参数。线条、文字和边框固定金色，建筑内部全填色，天空保留白瓷。
+
+## 液态玻璃
+
+上游 `Glass-HQ/liquid-glass` 固定到 `9f5bfc7daa7be5d20a41b94d841b8f065de655fc`，来源与 MIT 许可位于 `vendor/glass-hq/`。WGSL 材质图公式逐项迁移为 GLSL ES 3.00；独立 WebGL2 上下文、RGBA8 输出、只读轮廓纹理、PBO/fence 回读。原 SVG 合成、几何和动效源码保留。消费者默认 WebGL2，失败时透明玻璃降级；原 WebGPU 仅供审计。
+
+消费者外框由页面高度动画统一驱动，避免同时启用 `fluid` 布局弹簧产生重复回弹。审计页仍保留上游 fluid 示例。WebGL2 不消除 Safari 的 SVG 合成开销，真实设备性能和触觉验收单独记录。
+
+## 本地运行与验证
 
 ```sh
 npm ci
-npm run dev -- --port 5210
+npm run dev -- --port 5260
 npm test
 npm run build
+QA_URL=http://127.0.0.1:5260/ npm run qa:v6
 ```
 
-打开 http://127.0.0.1:5210/ 。右上角“素材与对照”打开 V5 母版审阅页；历史对照保留在 evidence.html。
+打开 `http://127.0.0.1:5260/`，开发及审计入口分别为 `/dev/`、`/audit/`。测试需要已安装的 Chrome；浏览器模拟不证明真实 iPhone 震动。
 
-```sh
-QA_URL=http://127.0.0.1:5210/ npm run qa:v5
-npm run qa:background
-npm run qa:v4
-# 需要复查 3.0 机位时：npm run evidence:v3
-```
+`npm run pipeline:v6` 校验原稿审核哈希、城市／字框资产、正式构建和浏览器行为，产物只写 `.codex-work/`。可用 `CITY_PYTHON` 指定已具备 Pillow、NumPy 的 Python；生成 SVG 还需 `tools/requirements-v6.txt` 中的 vtracer。`npm run deploy:v6` 只允许独立 V6 站点，并校验干净提交、构建哈希、线上文件和旧站未变；不会连接 Git 自动部署或重写现有 `.netlify` 链接。
 
-浏览器脚本使用已安装的 Chrome 与 Playwright。手机视口和多点触摸模拟不等于真机或 Safari 验收。
+## V6 原稿与生成
 
-仅调整控制与材质参数时，复用已验证的纹理并直接运行 `npx tsc --noEmit`、`npx vite build --outDir ../.codex-work/tmp/xy-controls/build`；常规 `npm run build` 的 prebuild 会重新生成纹理与清单。输出、浏览器截图和缓存放在项目 `.codex-work/`。
+- `assets/source/v6/`：23 城原始 PNG、官方原样 WOFF/WOFF2、原边框和 UI 参考；哈希来源记录一同保存。
+- `assets/masters/v6/`：5433×2365 可编辑 SVG、配置、审核与编译记录。
+- `public/cities/v6/`：4096×1783 结构和法线、六套独立字框、透明选择缩略图。
+- `evidence/city-v6/`、`evidence/glass-v6/`、`evidence/ui-v6/`：来源、字体、材质一致性和界面证据。
+- 生成顺序：`python3 tools/compile-city-v6.py`、`python3 tools/compile-slogan-frame.py`、`node tools/compile-slogans-v6.mjs`。常规 UI 修改无需重新生成这些资产。
 
-`Appearance.material` 保持为纵轴，新增可选 `materialX`（默认 `0.5`）。旧单参数材质曲线完整保留为中间一列；`finish` 兼容输入恢复原端点和横轴中值。SwiftUI 点阵反馈参考与 MIT 声明保存在本轮记录的 `references/`，分发许可见 `public/third-party/xy-slider-LICENSE.txt`。
+以下保留固定花纸及历史技术记录，当前页面入口以上文为准。
 
 ## 原稿与导出
 

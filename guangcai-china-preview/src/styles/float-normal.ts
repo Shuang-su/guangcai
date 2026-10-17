@@ -1,4 +1,5 @@
 import {DataTexture, HalfFloatType, RGBAFormat, LinearFilter, LinearMipmapLinearFilter} from 'three';
+import {downloadBytes} from './download-bytes';
 
 /** HFN1: 16-byte LE header, then bottom-up RGBA IEEE binary16 texels.
  * No browser image decode, sRGB conversion, or 8-bit intermediate. */
@@ -22,21 +23,17 @@ export function decodeFloatNormal(buffer:ArrayBuffer):DataTexture {
 export async function loadFloatNormal(url:string):Promise<DataTexture> {
   let lastError:unknown;
   for(let i=0;i<3;i++){
-    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),120000);
     try{
       const address=new URL(url,document.baseURI);
       if(i&&/^https?:$/.test(address.protocol))address.searchParams.set('_normalRetry',`${i}-${Date.now()}`);
-      const response=await fetch(address,{signal:controller.signal});
-      if(!response.ok||!response.body)throw new Error(`高精度法线读取失败 (${response.status})`);
       // Some static hosts set Content-Encoding:gzip for .gz assets, so fetch
       // already decompresses them. Other hosts deliver the gzip file verbatim.
-      const bytes=await response.arrayBuffer(),magic=new Uint8Array(bytes,0,Math.min(4,bytes.byteLength));
+      const bytes=await downloadBytes(address),magic=new Uint8Array(bytes,0,Math.min(4,bytes.byteLength));
       const raw=magic[0]===0x1f&&magic[1]===0x8b
         ?await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
         :bytes;
       return decodeFloatNormal(raw);
     }catch(e){lastError=e;if(!/^https?:/.test(new URL(url,document.baseURI).protocol))break;}
-    finally{clearTimeout(timer);}
   }
   throw lastError;
 }

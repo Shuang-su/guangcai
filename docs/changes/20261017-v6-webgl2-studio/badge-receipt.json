@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-16T19:14:11.513Z",
+  "before": {
+    "id": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+    "name": "guangcai-no1-china-v6",
+    "badge": true,
+    "published": "6ad276ccaae8ef493bdd8f97",
+    "gitConnected": false
+  },
+  "patch": {
+    "built_with_badge_enabled": false
+  },
+  "after": {
+    "id": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+    "name": "guangcai-no1-china-v6",
+    "badge": false,
+    "published": "6ad276ccaae8ef493bdd8f97",
+    "gitConnected": false
+  },
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "badgeScript": false
+    },
+    {
+      "route": "/dev/",
+      "status": 200,
+      "badgeScript": false
+    },
+    {
+      "route": "/audit/",
+      "status": 200,
+      "badgeScript": false
+    }
+  ]
+}

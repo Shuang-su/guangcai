@@ -1,0 +1,59 @@
+{
+  "phase": "before",
+  "url": "http://127.0.0.1:5215/",
+  "date": "2026-10-13T23:35:45.172Z",
+  "checks": [
+    {
+      "name": "china-green/enamel",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-green/metal",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-green/paint",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-red/enamel",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-red/metal",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-red/paint",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-purple/enamel",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-purple/metal",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-purple/paint",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-blue/enamel",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-blue/metal",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "china-blue/paint",
+      "fixedGeometryAndPorcelainUnchanged": true
+    },
+    {
+      "name": "no runtime or shader exceptions"
+    }
+  ],
+  "errors": []
+}

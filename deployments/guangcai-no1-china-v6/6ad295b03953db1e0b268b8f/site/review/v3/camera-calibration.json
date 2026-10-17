@@ -1,0 +1,96 @@
+[
+  {
+    "id": "left",
+    "width": 1920,
+    "height": 1280,
+    "yaw": 2,
+    "targets": [
+      [
+        754,
+        1164,
+        415,
+        490
+      ],
+      [
+        618,
+        1297,
+        797,
+        947
+      ]
+    ],
+    "pose": {
+      "cupYaw": 180,
+      "yaw": 2,
+      "pitch": 11.098302515999864,
+      "distance": 1407.775878696726,
+      "fov": 11.43364497027386,
+      "cx": 0.4990868333284256,
+      "cy": 0.5380921147865261,
+      "roll": 0,
+      "targetY": 57
+    },
+    "projected": [
+      [
+        749.1343821221016,
+        1167.372176210348,
+        419.91255950440404,
+        492.2389869916327
+      ],
+      [
+        616.8196010135621,
+        1299.6738389675922,
+        793.3775649210972,
+        943.4708904644285
+      ]
+    ],
+    "rmsPx": 3.5055584428001314,
+    "method": "Manual approximate lid and saucer rim extrema at normalized 1920x1280; actual flat-lid mesh and saucer rim, perspective camera fit, no image warp. RMS only describes 8 chosen bounds."
+  },
+  {
+    "id": "right",
+    "width": 1920,
+    "height": 1280,
+    "yaw": 2,
+    "targets": [
+      [
+        754,
+        1164,
+        415,
+        490
+      ],
+      [
+        618,
+        1297,
+        797,
+        947
+      ]
+    ],
+    "pose": {
+      "cupYaw": 0,
+      "yaw": 2,
+      "pitch": 11.098302515999864,
+      "distance": 1407.775878696726,
+      "fov": 11.43364497027386,
+      "cx": 0.4990868333284256,
+      "cy": 0.5380921147865261,
+      "roll": 0,
+      "targetY": 57
+    },
+    "projected": [
+      [
+        749.1343821221016,
+        1167.372176210348,
+        419.91255950440404,
+        492.2389869916327
+      ],
+      [
+        616.8196010135621,
+        1299.6738389675922,
+        793.3775649210972,
+        943.4708904644285
+      ]
+    ],
+    "rmsPx": 3.5055584428001314,
+    "method": "Manual approximate lid and saucer rim extrema at normalized 1920x1280; actual flat-lid mesh and saucer rim, perspective camera fit, no image warp. RMS only describes 8 chosen bounds."
+  }
+]
