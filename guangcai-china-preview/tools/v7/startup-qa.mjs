@@ -14,25 +14,26 @@ for(const engine of ['chromium','webkit']){
   await page.route('**/api/v1/bootstrap.json',async route=>{await catalogPending;await route.continue();});
   await page.route('**/assets/fixed-saucer-light-normal-*.hfn.gz',async route=>{await pending;await route.continue();});
   await page.goto(url,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.cupViewer&&document.querySelector('#color-tab'),null,{timeout:60000});
-  check('initial panel is interactive before all assets arrive',await page.locator('#artwork-settings').evaluate(e=>!e.inert));
+  check('design is locked while startup is incomplete',await page.locator('#app').evaluate(e=>e.inert));
   await page.evaluate(()=>{void window.cupViewer.selectArtwork({variant:'v6-beijing-gold'});void window.cupViewer.selectArtwork({variant:'v6-shanghai-gold'});});
   check('pre-catalog selection does not load legacy maps',await page.evaluate(()=>!performance.getEntriesByType('resource').some(r=>/\/(fixed|textures|cities\/v[456])\//.test(r.name))));
   openCatalog();
-  await page.locator('#color-tab').tap();await page.waitForTimeout(700);
-  check('touch changes menu while floral textures are pending',await page.locator('#artwork-settings').getAttribute('data-pane')==='color');
-  await page.locator('.open-palette-editor').tap();await page.waitForTimeout(700);
-  check('editor opens before asset readiness',await page.locator('#artwork-settings').getAttribute('data-level')==='editor');
-  await page.locator('#palette-back').tap();await page.waitForTimeout(700);
+  check('entry page hides the unfinished cup',await page.locator('#app').evaluate(e=>e.inert&&getComputedStyle(e).visibility==='hidden'));
+  check('entry progress is visible',await page.locator('#entry-loading').isVisible());
   await page.waitForFunction(()=>!window.cupViewer.debug().selection.busy,null,{timeout:120000});
   check('latest early selection survives resource bootstrap',await page.evaluate(()=>window.cupViewer.debug().selection.current.variant==='v6-shanghai-gold'));
-  check('status identifies outstanding floral assets',await page.locator('#status').textContent().then(s=>s.includes('花纹')&&!s.includes('深圳')));
+  const progress=await page.evaluate(()=>window.cupViewer.debug().entryLoading);
+  check('real received bytes advance before readiness',progress.received>0&&progress.received<progress.total&&progress.completed<progress.count);
+  check('graphics memory has a labelled estimate',await page.locator('#entry-graphics').textContent().then(s=>s.includes('MiB')));
   check('scene is not falsely marked fully loaded',await page.evaluate(()=>!window.cupViewer.ready()));
   await page.screenshot({path:`${out}/${engine}-loading-interactive.png`,scale:'css'});
   release();await page.waitForFunction(()=>window.cupViewer.ready(),null,{timeout:120000});
+  check('entry disappears only after complete rendering',await page.locator('#entry-loading').isHidden()&&await page.locator('#app').evaluate(e=>!e.inert&&getComputedStyle(e).visibility==='visible'));
   check('status clears once startup actually completes',await page.locator('#status').textContent()==='');
   for(let round=0;round<3;round++){
    // Move through both editors while the city list is display:none long
    // enough for its ResizeObserver to receive the zero-sized hidden box.
+   await page.locator('#color-tab').tap();await page.waitForTimeout(700);
    await page.locator('#material-tab').tap();await page.waitForTimeout(700);
    await page.locator('#material-pad').tap({position:{x:75+round*5,y:90}});await page.waitForTimeout(500);
    await page.locator('#slogan-tab').tap();await page.waitForTimeout(700);

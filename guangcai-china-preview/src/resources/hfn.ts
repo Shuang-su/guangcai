@@ -6,9 +6,9 @@ export function parseHFN(buffer:ArrayBuffer){
  const data=new Uint16Array(buffer,16);for(let i=0;i<data.length;i++)if(data[i]>0x3c00)throw Error('高精度法线数值越界');
  return {data,width,height};
 }
-export async function readBounded(stream:ReadableStream<Uint8Array>,limit:number){
+export async function readBounded(stream:ReadableStream<Uint8Array>,limit:number,onProgress?:(received:number)=>void){
  const reader=stream.getReader(),chunks:Uint8Array[]=[];let size=0;
- try{while(true){const r=await reader.read();if(r.done)break;size+=r.value.byteLength;if(size>limit)throw Error('Resource exceeds declared byte budget');chunks.push(r.value);}}
+ try{while(true){const r=await reader.read();if(r.done)break;size+=r.value.byteLength;if(size>limit)throw Error('Resource exceeds declared byte budget');chunks.push(r.value);onProgress?.(size);}}
  catch(e){await reader.cancel();throw e;}finally{reader.releaseLock();}
  const bytes=new Uint8Array(size);let offset=0;for(const c of chunks){bytes.set(c,offset);offset+=c.length;}return bytes.buffer;
 }

@@ -2,10 +2,12 @@ import {Texture,DataTexture,HalfFloatType,RGBAFormat,RedFormat,RGFormat,Unsigned
 import type {Asset} from './types';
 import {TaskQueue,abortError} from './queue';
 import {readBounded} from './hfn';
+import {decodeImage} from './image-decode';
 export interface Lease {texture:Texture;release:()=>void}
 type Entry={asset:Asset;refs:number;touched:number;texture?:Texture;controller:AbortController;promise:Promise<Texture>};
 const MiB=1024*1024;
 export class ResourcePool {
+ private received=new Map<string,number>();private decodeTask:{asset:string;phase:string}|null=null;private decodeRetries=0;
  private entries=new Map<string,Entry>();private disposed=false;private worker?:Worker;
  private network=new TaskQueue(2);private decoding=new TaskQueue(1);private bytes=0;private peak=0;private transferred=0;private cancelled=0;
  readonly steady:number;readonly maximum:number;reserve=0;
@@ -51,32 +53,36 @@ export class ResourcePool {
   return this.network.run(async()=>{
    const timeout=AbortSignal.timeout(20000),combined=AbortSignal.any([signal,timeout]);
    const response=await fetch(asset.url,{signal:combined});if(!response.ok||!response.body)throw Error(`Resource HTTP ${response.status}`);
-   const bytes=await readBounded(response.body,Math.max(asset.bytes,asset.decodedBytes+16));this.transferred+=bytes.byteLength;
+   this.received.set(asset.url,0);const bytes=await readBounded(response.body,Math.max(asset.bytes,asset.decodedBytes+16),size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;
    return this.decoding.run(async()=>{
     if(signal.aborted)throw abortError();
-    const decoded=await this.decode(bytes,asset,signal);
-    if(signal.aborted){decoded.bitmap?.close();throw abortError();}
+    this.decodeTask={asset:asset.id,phase:'decode'};
+    let decoded:Awaited<ReturnType<typeof decodeImage>>|Awaited<ReturnType<ResourcePool['decode']>>;
+    try{if(asset.encoding==='webp')decoded=await decodeImage(bytes,asset,signal);else{try{decoded=await this.decode(bytes.slice(0),asset,signal);}catch(e){if(signal.aborted||!String(e).includes('timed out'))throw e;this.decodeRetries++;decoded=await this.decode(bytes.slice(0),asset,signal);}}}finally{this.decodeTask=null;}
+    if(signal.aborted){if(decoded.kind==='image')decoded.image.close();throw abortError();}
     let texture:Texture;
-    if(decoded.kind==='bitmap')texture=new Texture(decoded.bitmap);
+    if(decoded.kind==='image')texture=new Texture(decoded.image);
     else texture=new DataTexture(decoded.data,asset.width,asset.height,asset.encoding==='hfn1-gzip'?RGBAFormat:asset.channels===1?RedFormat:RGFormat,asset.encoding==='hfn1-gzip'?HalfFloatType:UnsignedByteType);
-    texture.flipY=false;texture.generateMipmaps=true;texture.minFilter=LinearMipmapLinearFilter;texture.magFilter=LinearFilter;texture.wrapS=texture.wrapT=ClampToEdgeWrapping;
+    texture.flipY=decoded.kind==='image';texture.generateMipmaps=true;texture.minFilter=LinearMipmapLinearFilter;texture.magFilter=LinearFilter;texture.wrapS=texture.wrapT=ClampToEdgeWrapping;
     texture.colorSpace=asset.colorSpace==='srgb'?SRGBColorSpace:NoColorSpace;texture.needsUpdate=true;texture.userData={assetId:asset.id,gpuBytes:asset.gpuBytes,precision:asset.encoding==='hfn1-gzip'?'RGBA16F':asset.channels===1?'R8':asset.channels===2?'RG8':'RGBA8'};return texture;
    },signal);
   },signal);
  }
- private decode(bytes:ArrayBuffer,asset:Asset,signal:AbortSignal):Promise<{kind:string;bitmap?:ImageBitmap;data?:Uint8Array|Uint16Array}>{
+ private decode(bytes:ArrayBuffer,asset:Asset,signal:AbortSignal):Promise<{kind:'normal';data:Uint16Array}>{
   return new Promise((resolve,reject)=>{
    const worker=this.worker??=new Worker(new URL('./decode.worker.ts',import.meta.url),{type:'module'});
-   const clean=()=>{signal.removeEventListener('abort',abort);worker.onmessage=null;worker.onerror=null;};
-   const abort=()=>{clean();worker.terminate();if(this.worker===worker)this.worker=undefined;reject(abortError());};
+   const clean=()=>{clearTimeout(timer);signal.removeEventListener('abort',abort);worker.onmessage=null;worker.onerror=null;};
+   const fail=(error:Error)=>{clean();worker.terminate();if(this.worker===worker)this.worker=undefined;reject(error);};
+   const abort=()=>fail(abortError()),timer=setTimeout(()=>fail(Error('Normal decode timed out')),15000);
    signal.addEventListener('abort',abort,{once:true});
-   worker.onmessage=e=>{clean();if(e.data.error)reject(Error(e.data.error));else resolve(e.data);};
+   worker.onmessage=e=>{if(e.data.stage){this.decodeTask={asset:asset.id,phase:e.data.stage};return;}clean();if(e.data.error)reject(Error(e.data.error));else resolve(e.data);};
    worker.onerror=e=>{clean();worker.terminate();this.worker=undefined;reject(Error(e.message));};
    worker.postMessage({bytes,asset},[bytes]);
   });
  }
+ progress(assets:Asset[]){const unique=[...new Map(assets.map(a=>[a.url,a])).values()];return {total:unique.reduce((n,a)=>n+a.bytes,0),received:unique.reduce((n,a)=>n+Math.min(a.bytes,this.received.get(a.url)??0),0),completed:unique.filter(a=>!!this.entries.get(a.url)?.texture).length,count:unique.length};}
  pause(value:boolean){this.network.pause(value);this.decoding.pause(value);}
- clear(){for(const [key,e]of this.entries)this.disposeEntry(key,e);this.worker?.terminate();this.worker=undefined;}
- debug(){return {estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),fetchedBodyBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
+ clear(){this.received.clear();for(const [key,e]of this.entries)this.disposeEntry(key,e);this.worker?.terminate();this.worker=undefined;}
+ debug(){return {decodeTask:this.decodeTask,decodeRetries:this.decodeRetries,estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),fetchedBodyBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
  dispose(){this.disposed=true;this.clear();}
 }

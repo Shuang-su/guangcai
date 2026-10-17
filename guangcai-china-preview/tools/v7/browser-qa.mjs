@@ -2,13 +2,16 @@
 import {chromium,webkit} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs/promises';import {createHash} from 'node:crypto';
 const url=process.env.QA_URL??'http://127.0.0.1:5274/',out=process.env.QA_OUT??'.codex-work/tmp/v7-qa/final';await fs.mkdir(out,{recursive:true});
 const browser=process.env.QA_WEBKIT?await webkit.launch({headless:true}):await chromium.launch({channel:'chrome',headless:true});
-let expectedNetworkFailure=false;
+let expectedNetworkFailure=false;let activePage;
+async function bounded(name,promise){let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Timed out: '+name)),45000);})]);}catch(e){report.timeoutDebug=await Promise.race([activePage.evaluate(()=>({hidden:document.hidden,resources:window.cupViewer.debug().resources})),new Promise(resolve=>setTimeout(()=>resolve({unavailable:true}),2000))]);throw e;}finally{clearTimeout(timer);}}
 const report={engine:process.env.QA_WEBKIT?'Desktop WebKit with mobile policy':'Chrome',url,checks:[],errors:[],metrics:{},physicalIPhoneTested:false};
 function check(name,value){report.checks.push({name,passed:!!value});if(report.checks.length%10===0)console.log('checks',report.checks.length,name);assert.ok(value,name);}
 try{
  const page=await browser.newPage({viewport:{width:375,height:812},deviceScaleFactor:2,isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1'});
+ activePage=page;
+ if(process.env.QA_ASSET_BASE)await page.addInitScript(base=>{window.GUANGCAI_CONFIG={assetBase:base};},process.env.QA_ASSET_BASE);
  page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().includes('404')&&!(expectedNetworkFailure&&m.text().includes('net::ERR_FAILED')))report.errors.push(m.text().slice(0,1500));});
- const started=performance.now();await page.goto(url,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000});
+ console.log('loading',url);const started=performance.now();await bounded('navigation',page.goto(url,{waitUntil:'domcontentloaded'}));await bounded('initial readiness',page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000,polling:100}));
  report.metrics.unthrottledReadyMs=Math.round(performance.now()-started);const read=()=>page.evaluate(()=>window.cupViewer.debug());let state=await read();
  check('correct page and meaningful content',(await page.title())==='城市共彩'&&await page.locator('#artwork-settings').isVisible());
  check('no framework overlay',await page.locator('vite-error-overlay').count()===0);
@@ -30,8 +33,8 @@ try{
  const cities=Object.keys(JSON.parse(await fs.readFile('src/styles/city-catalog-v6.json')).cities);
  await page.evaluate(async ids=>{await Promise.all(ids.map(id=>window.cupViewer.selectArtwork({variant:`v6-${id}-gold`})) );},cities);
  check('last fast city selection wins',(await read()).selection.current.variant===`v6-${cities.at(-1)}-gold`);
- for(let round=0;round<2;round++)for(const id of cities)check(`city ${round+1}/${id}`,await page.evaluate(id=>window.cupViewer.selectArtwork({variant:`v6-${id}-gold`}),id));
- for(const id of ['open','innovation','cooperation','sharing','together','ocean'])check('slogan '+id,await page.evaluate(text=>window.cupViewer.selectArtwork({text}),id));
+ for(let round=0;round<2;round++)for(const id of cities)check(`city ${round+1}/${id}`,await bounded(`city ${round+1}/${id}`,page.evaluate(id=>window.cupViewer.selectArtwork({variant:`v6-${id}-gold`}),id)));
+ for(const id of ['open','innovation','cooperation','sharing','together','ocean'])check('slogan '+id,await bounded('slogan '+id,page.evaluate(text=>window.cupViewer.selectArtwork({text}),id)));
  state=await read();check('repeated switching budget bounded',state.resources.estimatedGpuBytes+state.resources.reservedRenderTargetBytes<=state.resources.steadyBudget);check('peak accounts for reflection scratch buffers',state.resources.peakEstimatedBytes<=state.resources.peakBudget);check('no pending jobs',state.resources.network.active===0&&state.resources.decode.active===0);report.metrics.afterSwitching=state.resources;
  const original=await page.evaluate(()=>window.cupViewer.exportDesign());
  check('invalid design rejected',await page.evaluate(async()=>{try{await window.cupViewer.importDesign({...window.cupViewer.exportDesign(),cityId:'invalid'});return false;}catch{return true;}}));

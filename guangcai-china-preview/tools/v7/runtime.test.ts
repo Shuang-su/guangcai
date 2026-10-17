@@ -10,3 +10,12 @@ test('adaptive DPR responds to sustained load, excludes idle gaps and never drop
 test('design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers',()=>{const d=validateDesign(boot.defaultDesign,manifest);assert.deepEqual(exportDesign({variant:`v6-${d.cityId}-${d.appearance.preset}`,text:'open',finish:'metal',appearance:d.appearance},manifest),d);for(const patch of [{resourceReleaseId:'future'},{modelVersion:'unknown'},{cityId:'unknown'},{sloganId:'unknown'},{appearance:{...d.appearance,lightness:101}},{appearance:{...d.appearance,material:NaN}}])assert.throws(()=>validateDesign({...d,...patch},manifest));});
 test('bounded decompression input rejects excess bytes and HFN headers cannot overallocate',async()=>{await assert.rejects(readBounded(new Blob([new Uint8Array(20)]).stream(),10),/byte budget/);const raw=new ArrayBuffer(24),v=new DataView(raw);v.setUint32(0,0x48464e31);v.setUint32(4,1,true);v.setUint32(8,1,true);v.setUint32(12,1,true);assert.equal(parseHFN(raw).width,1);v.setUint32(4,8192,true);assert.throws(()=>parseHFN(raw));});
 test('merged ORM uses blue metalness for the bare-gold override and retains original controls',()=>{assert.match(readFileSync('src/materials/fixed-gold-ground.ts','utf8'),/metalnessMap,vMetalnessMapUv\)\.b/);const protectedFiles=JSON.parse(readFileSync('../docs/changes/20261016-short-screen-lift/protected-haptics.json','utf8'));assert.equal(Object.keys(protectedFiles).length>0,true);});
+
+// A partially received stream must be visible before EOF, with no duplicate byte count.
+test('stream progress reports actual cumulative bytes before completion',async()=>{
+ let controller!:ReadableStreamDefaultController<Uint8Array>;const seen:number[]=[];
+ const stream=new ReadableStream<Uint8Array>({start(c){controller=c;}});
+ const result=readBounded(stream,6,n=>seen.push(n));controller.enqueue(new Uint8Array([1,2,3,4]));
+ await new Promise(r=>setTimeout(r,0));assert.deepEqual(seen,[4]);
+ controller.enqueue(new Uint8Array([5,6]));controller.close();assert.equal((await result).byteLength,6);assert.deepEqual(seen,[4,6]);
+});
