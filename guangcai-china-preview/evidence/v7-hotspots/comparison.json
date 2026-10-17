@@ -1,0 +1,32 @@
+{
+  "browser": "Desktop Chrome mobile viewport, not iPhone",
+  "beforeMedianMs": 34.8999999910593,
+  "afterMedianMs": 16,
+  "beforeCityCaptureCount": 23,
+  "afterCityCaptureCount": 0,
+  "beforeFlowerCaptures": 3,
+  "afterFlowerCaptures": 1,
+  "comparisons": [
+    {
+      "name": "detail",
+      "bytes": 3654000,
+      "changedChannels": 0,
+      "maxDifference": 0,
+      "meanDifference": 0
+    },
+    {
+      "name": "flowers",
+      "bytes": 3654000,
+      "changedChannels": 0,
+      "maxDifference": 0,
+      "meanDifference": 0
+    },
+    {
+      "name": "lettering",
+      "bytes": 3654000,
+      "changedChannels": 0,
+      "maxDifference": 0,
+      "meanDifference": 0
+    }
+  ]
+}

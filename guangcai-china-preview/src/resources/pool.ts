@@ -1,7 +1,7 @@
 import {Texture,DataTexture,HalfFloatType,RGBAFormat,RedFormat,RGFormat,UnsignedByteType,LinearFilter,LinearMipmapLinearFilter,SRGBColorSpace,NoColorSpace,ClampToEdgeWrapping} from 'three';
 import type {Asset} from './types';
 import {TaskQueue,abortError} from './queue';
-import {readBounded} from './hfn';
+import {readExact} from './hfn';
 import {decodeImage} from './image-decode';
 import {EncodedCache} from './encoded-cache';
 export interface Lease {texture:Texture;release:()=>void}
@@ -50,7 +50,7 @@ export class ResourcePool {
  }
  private fetchBytes(asset:Asset,signal:AbortSignal){return this.network.run(async()=>{
   const combined=AbortSignal.any([signal,AbortSignal.timeout(20000)]),response=await fetch(asset.url,{signal:combined});if(!response.ok||!response.body)throw Error(`Resource HTTP ${response.status}`);
-  this.received.set(asset.url,0);const bytes=await readBounded(response.body,asset.bytes,size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;return bytes;
+  this.received.set(asset.url,0);const bytes=await readExact(response.body,asset.bytes,size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;return bytes;
  },signal);}
  private async load(asset:Asset,signal:AbortSignal){
   const source=await this.encoded.acquire(asset,signal),bytes=source.bytes;

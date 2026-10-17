@@ -1,0 +1,39 @@
+{
+  "slogans": {
+    "oldDimensions": [
+      4096,
+      1783
+    ],
+    "oldGpuEstimateMiB": 222.875,
+    "currentDimensions": [
+      289,
+      934
+    ],
+    "currentGpuEstimateMiB": 2.059375762939453,
+    "glyphAreaFraction": 0.03696012470204711
+  },
+  "normalAssemblyCopiesAvoided": [
+    {
+      "tier": "light",
+      "rawMiB": 3.4843902587890625,
+      "oldRawAssemblyMiB": 6.968780517578125,
+      "newRawDestinationMiB": 3.4843902587890625,
+      "note": "Destination only; stream internals/current chunk/encoded data and GPU are additional"
+    },
+    {
+      "tier": "standard",
+      "rawMiB": 13.937515258789062,
+      "oldRawAssemblyMiB": 27.875030517578125,
+      "newRawDestinationMiB": 13.937515258789062,
+      "note": "Destination only; stream internals/current chunk/encoded data and GPU are additional"
+    },
+    {
+      "tier": "detail",
+      "rawMiB": 55.71876525878906,
+      "oldRawAssemblyMiB": 111.43753051757812,
+      "newRawDestinationMiB": 55.71876525878906,
+      "note": "Destination only; stream internals/current chunk/encoded data and GPU are additional"
+    }
+  ],
+  "backgroundDecodedRgbaMiB": 12.35888671875
+}

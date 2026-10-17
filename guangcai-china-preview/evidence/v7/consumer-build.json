@@ -1,7 +1,7 @@
 {
   "root": ".codex-work/deploy/v7-build",
   "files": 219,
-  "bytes": 115187831,
+  "bytes": 115188034,
   "assetsVerified": 195,
   "inventory": [
     {
@@ -15,24 +15,24 @@
       "sha256": "76559e4123dca5d5456151ee70317c39f1c6ef04c174ac3c01f6255a953a399b"
     },
     {
-      "path": "assets/decode.worker-45gfPemT.js",
-      "bytes": 1678,
-      "sha256": "71d6054e0f1c72cd5e62afa66841bf1f8afc29e4cf2a795121b31303e766fa77"
+      "path": "assets/decode.worker-CJfs9al4.js",
+      "bytes": 1798,
+      "sha256": "24632bca9643a1e1865a605653b0d6f0d5e8b8f14aad21a3349bfe554ca4384c"
     },
     {
-      "path": "assets/gpu-DCcurUBW.js",
+      "path": "assets/gpu-L9vy-VUk.js",
       "bytes": 152547,
-      "sha256": "044171f3786497b2cf1b675c30b438fb5308569f5d96d1574d2ce4c64848c4ce"
+      "sha256": "9b8b9155090ea383d9546057d99f08dccaa9a55ca959604eb3431c1eae7f4431"
+    },
+    {
+      "path": "assets/index-BsfAM8PB.js",
+      "bytes": 891966,
+      "sha256": "859485283ab693146ef723547b6bbd390a3a4fae6a96e0f8b790edcd0678fc18"
     },
     {
       "path": "assets/index-CEDbFCZ3.css",
       "bytes": 52022,
       "sha256": "795c900d081f713876634599930735d59603c4360e9fe31ec1afacfd4558e0a1"
-    },
-    {
-      "path": "assets/index-DB5hw2vA.js",
-      "bytes": 891883,
-      "sha256": "1daf2cd66c0903f884f70f4a129b31bc52dbf6065da1ac1fdf31b4804be85d15"
     },
     {
       "path": "assets/map-encoder.worker-gG3z5fOt.js",
@@ -72,7 +72,7 @@
     {
       "path": "index.html",
       "bytes": 4011,
-      "sha256": "2b25f36042f455b60ef72bc7932a0a2abba0b3f02039f9e4955b386fa1ae2176"
+      "sha256": "6b2962587a87cad1b0027c6d0c91f850ac8173d2f010d6617cda611cb69fa4d4"
     },
     {
       "path": "manifest.webmanifest",
