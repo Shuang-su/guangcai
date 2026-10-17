@@ -138,3 +138,9 @@ V6 使用独立站点，原 V5、V4 和其他历史站部署 ID 均经 API 前�
 ## 2026-10-17 V7 本地候选（未发布）
 
 基于V6.0.1源码a231937，新增分级资源、Worker解码、按预算缓存与按需渲染，保留反射；交付资源协议、作品数据契约和本地保存/分享mock样例。资源checkpoint为94b5acf。消费者、审计及联调分别构建；真机验收与正式上线仍为独立步骤。完整记录见 `docs/changes/20261017-v7-progressive-resources/`。
+
+## 2026-10-17 V7.0.1 独立预览（真机待测）
+
+[预览站点](https://guangcai-no1-china-v7.netlify.app/) · [固定部署](https://6ad2ffb0fe9651b1a32349cc--guangcai-no1-china-v7.netlify.app/)
+
+源码 `922fad662aecaad16e1b874c6e8d62e8f453dab3`，部署 `6ad2ffb0fe9651b1a32349cc`。同步 V6.0.2 的启动、城市返回与 Safari 元信息修复，保留 V7 分级资源。220 个文件摘要已核验，Chrome 线上 81 项通过；桌面 WebKit 公网长流程发现解码停等，未通过，继续修复。当前网络首屏约 9.8 秒，线上 6 秒目标未达标。V6 及四个旧站发布 ID 未变，未连接 Git 自动部署。详见 `docs/changes/20261017-v7-preview-release/completion.md`。

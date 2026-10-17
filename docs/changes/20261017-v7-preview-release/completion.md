@@ -32,4 +32,19 @@ V6 6.0.2 发布 ID 为 `6ad295b03953db1e0b268b8f`，V6 原工作区清洁。V7 �
 
 真机 iPhone 13 mini / iOS 18 的连续 30 分钟稳定性、真实触感、Safari 系统栏与视觉体验仍待用户实测。浏览器自动化未充当真机验收。正式后端仍为后续接入工作，本次公开站仅部署消费者静态应用，模拟保存/分享服务保留在本地交接包。
 
-源码 checkpoint 与发布结果将在部署核验后补记；当前阶段尚未声称线上浏览器验收完成。
+## 源码 checkpoint 与线上发布
+
+源码 checkpoint：`922fad662aecaad16e1b874c6e8d62e8f453dab3`，`fix(v7): sync V6 startup fixes and prepare isolated preview (refs #27)`。
+
+- 独立预览：https://guangcai-no1-china-v7.netlify.app/
+- 固定部署：https://6ad2ffb0fe9651b1a32349cc--guangcai-no1-china-v7.netlify.app/
+- 部署 ID：`6ad2ffb0fe9651b1a32349cc`，官方 API 确认 ready 且为该独立站点的当前发布。
+- 线上 `/release.json` 读取版本 7.0.1、源码 922fad6、V6 同步至 923a54d、资源 v7-1。
+- 220 个部署文件与服务端摘要匹配；入口、运行配置、manifest、bootstrap、JS/Worker 公共响应核验通过。Netlify 会在 HTML 添加平台说明注释，移除这一已识别注释后与本地入口一致，其他核对文件字节一致。法线无额外 Content-Encoding，CORS 为 *，版本资源长期 immutable 缓存；开发/审计/联调入口及缺失文件返回 404。
+- 首轮服务端核对使用了大小写敏感路径，而 Netlify files API 返回小写路径，因此误报 Worker 文件不一致。公共原始大小写 URL 的 SHA-256 一致；已增加大小写冲突检查，并修正索引比较。无需重发应用。
+- 平台徽章设置实际为站点顶层 `built_with_badge_enabled`，初次嵌套参数被忽略；已更正并 API 回读为 false，仅修改新建 V7 站点。
+- 发布前后五个历史站点的发布 ID、Git 连接状态均一致，包含 V6 的 `6ad295b03953db1e0b268b8f`。
+- 线上 Chrome 81 项通过，初次公网就绪 9759ms；本机实际网络不等同于 10Mbps/100ms 模拟，线上 6 秒目标仍为未通过，不能用本地模拟成绩代替。
+- 桌面 WebKit 第一次公网遍历在第 50 个已完成检查后未继续输出。诊断重测确认：页面 visible、请求已完成、后台暂停关闭，但解码队列中一个任务未返回（45 秒超时），因此线上 WebKit 长流程未通过。保留失败报告；下一轮加载页改动同时修复解码任务的退出边界，不把本次已部署解释为真机验收通过。
+
+发布文件已原样保存到 `deployments/guangcai-no1-china-v7/6ad2ffb0fe9651b1a32349cc/`，最终浏览器验收记录追加为独立文件，不改写归档的文件快照。

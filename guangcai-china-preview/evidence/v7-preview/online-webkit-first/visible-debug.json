@@ -1,0 +1,514 @@
+{
+  "engine": "Desktop WebKit with mobile policy",
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "checks": [
+    {
+      "name": "correct page and meaningful content",
+      "passed": true
+    },
+    {
+      "name": "no framework overlay",
+      "passed": true
+    },
+    {
+      "name": "light first render and preserved reflections",
+      "passed": true
+    },
+    {
+      "name": "initial texture budget",
+      "passed": true
+    },
+    {
+      "name": "initial model GPU estimate within steady budget",
+      "passed": true
+    },
+    {
+      "name": "consumer never requests legacy large texture paths",
+      "passed": true
+    },
+    {
+      "name": "initial encoded resources below 5 MiB",
+      "passed": true
+    },
+    {
+      "name": "stationary model stops rendering",
+      "passed": true
+    },
+    {
+      "name": "near view preserves design",
+      "passed": true
+    },
+    {
+      "name": "near view stays within mobile budget",
+      "passed": true
+    },
+    {
+      "name": "flower focus promotes only inspected region",
+      "passed": true
+    },
+    {
+      "name": "last fast city selection wins",
+      "passed": true
+    },
+    {
+      "name": "city 1/shanghai",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "unthrottledReadyMs": 6440,
+    "initial": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 126,
+        "contextLost": false
+      },
+      "resources": {
+        "estimatedGpuBytes": 22085092,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 194576884,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 16563814,
+        "fetchedBodyBytes": 2286310,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      },
+      "renderTargets": {
+        "environments": 28311552,
+        "shadow": 8388608,
+        "contact": 4194304,
+        "framebuffer": 24642576
+      }
+    },
+    "initialResourceEncodedBytes": 2696301,
+    "near": {
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 201,
+        "contextLost": false
+      },
+      "resources": {
+        "estimatedGpuBytes": 40353252,
+        "reservedRenderTargetBytes": 89605200,
+        "peakEstimatedBytes": 199164468,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 30264934,
+        "fetchedBodyBytes": 3207984,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  },
+  "physicalIPhoneTested": false,
+  "timeoutDebug": {
+    "hidden": false,
+    "visibility": "visible",
+    "debug": {
+      "version": "7.0.1",
+      "profile": "consumer",
+      "loading": {
+        "pending": [],
+        "error": ""
+      },
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 380,
+        "contextLost": false
+      },
+      "resources": {
+        "estimatedGpuBytes": 37305828,
+        "reservedRenderTargetBytes": 89605200,
+        "peakEstimatedBytes": 199164468,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 15,
+        "activeEntries": 15,
+        "decodedBytes": 24325734,
+        "fetchedBodyBytes": 5903849,
+        "cancelled": 0,
+        "network": {
+          "active": 1,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 1,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      },
+      "renderTargets": {
+        "environments": 28311552,
+        "shadow": 8388608,
+        "contact": 4194304,
+        "framebuffer": 10962000
+      },
+      "glass": {
+        "backend": "native-backdrop",
+        "ready": true,
+        "maps": 0,
+        "mapTime": 0,
+        "error": "",
+        "reason": "mobile-webkit-svg-webgl-compositing",
+        "optionSurfaces": 0
+      },
+      "haptics": {
+        "backend": "none",
+        "continuousBackend": "none",
+        "requests": 0,
+        "surfaces": [],
+        "physicalMotorVerified": false
+      },
+      "selection": {
+        "current": {
+          "variant": "v6-shanghai-gold",
+          "finish": "metal",
+          "text": "open",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "desired": {
+          "variant": "v6-urumqi-gold",
+          "finish": "metal",
+          "text": "open",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "busy": true,
+        "error": ""
+      },
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": true,
+      "view": "front",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        66.49864281298908,
+        435.7723254024968,
+        1904.2719785628906
+      ],
+      "clipping": {
+        "near": 0.5,
+        "far": 2500
+      },
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "soft-v3",
+        "active": "soft-v3",
+        "busy": false,
+        "hasCustom": false
+      },
+      "environment": "66f97ad2-9b92-4fd0-bae6-bcecbef4526d",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": true,
+        "captures": 8,
+        "resolution": 512,
+        "position": [
+          0,
+          57.5,
+          0
+        ],
+        "envMap": "cfaa8d61-58f2-4713-8ded-52fae277dba9",
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 3,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "e8bcb4bc-2d53-4c4f-b5c3-251b4cc96775",
+        "bea6d835-8132-4148-b75c-df3558c3aa2d",
+        "92add654-82af-4f63-808f-92c62ab47a20",
+        "800849ce-8d08-407a-890e-cf6c5eafa3b9",
+        "3a984056-7993-4820-98ab-8dedafefe673",
+        "d035b7fc-5f06-4f6e-b2ed-4ca5b97164c8",
+        "d56b5f5d-a6ec-4f13-a861-418d2fc51fc9",
+        "e8b93ddb-8b96-4ae4-9e2d-0f104c0ea488",
+        "fbf09949-a97a-4308-b013-ff382354f064",
+        "eb8277b1-05eb-451d-98b4-91f846dc4d5a",
+        "cf6d7c54-86d4-4393-918e-ea75935f9ea2"
+      ],
+      "memory": {
+        "geometries": 14,
+        "textures": 23,
+        "programs": 24
+      },
+      "city": {
+        "pack": {
+          "id": "v6-shanghai-gold",
+          "version": 7,
+          "name": "上海",
+          "layout": "blank-300deg-v1",
+          "baseColor": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+          "normal": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-normal-177f4734a51b9292.hfn.gz",
+          "roughness": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+          "metalness": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+          "coverage": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+          "normalEncoding": "rgba16f",
+          "parametric": {
+            "mask": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+            "appearance": {
+              "preset": "gold",
+              "hue": 41.80851063829786,
+              "saturation": 100,
+              "lightness": 63.13725490196078,
+              "material": 1,
+              "materialX": 0.5,
+              "relief": 1
+            }
+          },
+          "label": {
+            "source": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+            "fixedGold": true
+          },
+          "runtime": {
+            "mask": {
+              "id": "shanghai-light-mask",
+              "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+              "sha256": "b6851b28ddd0ba0941b591eea38a6a1a781d3b3dea4f96c3a86b3eb138466d17",
+              "sourceSha256": "5d537237921d1ba12100e2777e21e82f928459fe1273dd835cfba5cce59d12f5",
+              "encoding": "webp",
+              "width": 1024,
+              "height": 446,
+              "bytes": 29356,
+              "decodedBytes": 913408,
+              "gpuBytes": 1217878,
+              "channels": 2,
+              "colorSpace": "linear"
+            },
+            "normal": {
+              "id": "shanghai-light-normal",
+              "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-normal-177f4734a51b9292.hfn.gz",
+              "sha256": "177f4734a51b92920a8b42241446c97bc050a8b66c26b8b1926c06b20fa22d6b",
+              "sourceSha256": "11e201d8e00b6dc52a0c2fc14f6df06339aa0bc8a85e6e0afaea563fce1e6b60",
+              "encoding": "hfn1-gzip",
+              "width": 1024,
+              "height": 446,
+              "bytes": 133267,
+              "decodedBytes": 3653632,
+              "gpuBytes": 4871510,
+              "channels": 4,
+              "colorSpace": "linear"
+            },
+            "label": {
+              "text": "开放包容",
+              "asset": {
+                "id": "slogan-open",
+                "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+                "sha256": "6180ec934a95c4d53387c6a3843dc8134e52e2e9b69db88894e892cbec6988fd",
+                "sourceSha256": "8264d0763a1afdf47c7c70d00b3c8f694dd913af270d9b408c1bd619ee34109e",
+                "encoding": "webp",
+                "width": 289,
+                "height": 934,
+                "bytes": 17470,
+                "decodedBytes": 269926,
+                "gpuBytes": 359902,
+                "channels": 1,
+                "colorSpace": "linear"
+              },
+              "uvRect": [
+                0.774658203125,
+                0.3881099270891756,
+                0.070556640625,
+                0.5238362310712282
+              ]
+            }
+          }
+        },
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 0,
+        "parameters": {
+          "enabled": true,
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          },
+          "fill": {
+            "metalness": 1,
+            "roughness": 0.2823529411764706,
+            "clearcoat": 0.10196078431372546
+          },
+          "line": {
+            "color": "#dcb251",
+            "metalness": 1,
+            "roughness": 0.23,
+            "clearcoat": 0.10196078431372549
+          },
+          "fixedGoldLabel": true,
+          "updates": 5
+        },
+        "cachedCities": 0,
+        "cachedLabels": 0,
+        "uniformOnly": false,
+        "maps": [
+          {
+            "uuid": "1e1b5884-9137-4159-b621-7165a51acc56",
+            "channel": 1,
+            "size": [
+              1024,
+              446
+            ],
+            "colorSpace": "",
+            "precision": "RG8"
+          },
+          {
+            "uuid": "7dd09ab0-71e9-4c06-b6d4-640bb3679d2c",
+            "channel": 1,
+            "size": [
+              1024,
+              446
+            ],
+            "colorSpace": "",
+            "precision": "RGBA16F"
+          },
+          {
+            "uuid": "927cb48c-8802-4c82-8bb0-c1ae88576171",
+            "channel": 1,
+            "size": [
+              289,
+              934
+            ],
+            "colorSpace": "",
+            "precision": "R8"
+          }
+        ],
+        "labelSource": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+        "labelColor": "#ddb538",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "cleanGoldGround": true,
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.4,
+        "specularIntensity": 0.85
+      },
+      "fixed": {
+        "body": {
+          "baseColor": "eb1b256e-cd57-4dba-9a39-9f8a40753cf8",
+          "normal": "6f623845-6447-45d5-98ff-1dc8282fcb9f",
+          "roughness": "f1e10118-9d8e-4d43-a1b0-e32bf06fda3a",
+          "metalness": "f1e10118-9d8e-4d43-a1b0-e32bf06fda3a"
+        },
+        "handle": {
+          "baseColor": "1f8a5d3d-2ddd-4f6a-be76-7d1d478ae643",
+          "normal": "d25a9ba5-37e8-4e6e-981e-1f211139b3d5",
+          "roughness": "3bccecaa-d532-4821-aabe-039512986fdf",
+          "metalness": "3bccecaa-d532-4821-aabe-039512986fdf"
+        },
+        "saucer": {
+          "baseColor": "7884ccb1-d80e-4793-bfe0-44bdcba8efbc",
+          "normal": "405f8a08-d42d-4f35-8dca-004dcaed8350",
+          "roughness": "bd0751b5-8647-4c22-b908-cd4fa6bc91e8",
+          "metalness": "bd0751b5-8647-4c22-b908-cd4fa6bc91e8"
+        }
+      }
+    }
+  },
+  "failure": "Error: Timed out: city 0/urumqi; requests: []\n    at Timeout.<anonymous> (file:///Volumes/Prism/%E5%B9%BF%E5%BD%A9/guangcai-v7-workspace/guangcai-china-preview/.codex-work/tmp/browser-qa-visible.mjs:7:166)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+}

@@ -38,7 +38,7 @@ try{
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');
  receipt.protectedBefore=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));
  await writeFile(path.join(build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,sourceBranch:receipt.sourceBranch,v6SyncedThrough:'923a54d',resourceRelease:'v7-1'},null,2)+'\n');
- const manifest={},bySha=new Map();for(const file of await files(build)){if(/[?#]/.test(file))throw Error('Unsafe deployment path');const bytes=await readFile(path.join(build,file)),sha1=hash(bytes,'sha1');manifest['/'+file]={sha1,sha256:hash(bytes),bytes:bytes.length};bySha.set(sha1,file);}
+ const manifest={},bySha=new Map(),casePaths=new Set();for(const file of await files(build)){if(/[?#]/.test(file)||casePaths.has(file.toLowerCase()))throw Error('Unsafe or case-colliding deployment path');casePaths.add(file.toLowerCase());const bytes=await readFile(path.join(build,file)),sha1=hash(bytes,'sha1');manifest['/'+file]={sha1,sha256:hash(bytes),bytes:bytes.length};bySha.set(sha1,file);}
  receipt.fileCount=Object.keys(manifest).length;receipt.manifestSha256=hash(JSON.stringify(manifest));
  let deploy;if(old?.deployId&&old.sourceCommit===receipt.sourceCommit&&old.manifestSha256===receipt.manifestSha256){receipt.deployId=old.deployId;deploy=await api(`/deploys/${old.deployId}`);}else{deploy=await api(`/sites/${siteId}/deploys`,'POST',{async:true,draft:false,title:`V7.0.1 independent iPhone preview ${receipt.sourceCommit.slice(0,7)}`,files:Object.fromEntries(Object.entries(manifest).map(([p,v])=>[p,v.sha1]))});receipt.deployId=deploy.id;await save();}
  if(deploy.site_id!==siteId)throw Error('Deployment ownership mismatch');
@@ -50,7 +50,7 @@ try{
  if(deploy.state!=='ready')throw Error('Deploy not ready');
  receipt.url=`https://${siteName}.netlify.app/`;receipt.permalink=`https://${receipt.deployId}--${siteName}.netlify.app/`;
  const current=await api(`/sites/${siteId}`);if(current.published_deploy?.id!==receipt.deployId)throw Error('Published deployment mismatch');
- const remote=new Map((await api(`/sites/${siteId}/files`)).map(f=>[f.path,f.sha]));let matched=0;for(const [file,entry]of Object.entries(manifest)){if(file==='/_headers'&&!remote.has(file))continue;if(remote.get(file)!==entry.sha1)throw Error(`Remote digest mismatch: ${file}`);matched++;}receipt.remoteFilesMatched=matched;
+ const remote=new Map((await api(`/sites/${siteId}/files`)).map(f=>[f.path.toLowerCase(),f.sha]));let matched=0;for(const [file,entry]of Object.entries(manifest)){if(file==='/_headers'&&!remote.has(file))continue;if(remote.get(file.toLowerCase())!==entry.sha1)throw Error(`Remote digest mismatch: ${file}`);matched++;}receipt.remoteFilesMatched=matched;
  const response=await fetch(receipt.url,{signal:AbortSignal.timeout(30000)});if(!response.ok||!(await response.text()).includes('城市共彩'))throw Error('Anonymous public entry unavailable');
  const release=await fetch(new URL('release.json',receipt.url)).then(r=>r.json());if(release.sourceCommit!==receipt.sourceCommit)throw Error('Public source metadata mismatch');
  receipt.protectedAfter=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));if(JSON.stringify(receipt.protectedBefore)!==JSON.stringify(receipt.protectedAfter))throw Error('Protected site state changed');
