@@ -13,6 +13,7 @@ import type { ProgressiveRegion } from "./progressive.js";
 /** A surface's border box on screen and the scale its transforms apply. */
 export interface LayerFrame { left: number; top: number; sx: number; sy: number; clientLeft: number; clientTop: number }
 export interface LayerLens {
+  clipBounds?: {x:number;y:number;width:number;height:number};
   serial: number;
   element: HTMLElement;
   options: MaterialOptions;

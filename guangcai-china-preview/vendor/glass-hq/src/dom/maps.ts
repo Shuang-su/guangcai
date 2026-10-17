@@ -130,6 +130,8 @@ function materialMaps(g: MapGeometry, sliceCapsule = false, persist = true): Pro
 }
 /** Decoded images, kept alive while their maps are cached. */
 const decoded = new Map<string, HTMLImageElement>();
+/** Raster composition can upload an admitted map in its first draw frame. */
+export const decodedMaterialImage = (url:string):HTMLImageElement|undefined => decoded.get(url);
 export async function decode(url: string): Promise<void> {
   if (decoded.has(url) || typeof Image === "undefined") return;
   const image = new Image();

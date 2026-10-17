@@ -5,7 +5,7 @@ import {attachInteraction,resolveMotion} from '../../vendor/glass-hq/src/dom/int
  * of the DOM controls. Keep that accelerated canvas entirely unfiltered.
  * Includes iPadOS desktop UA and other iOS browser brands using WebKit.
  */
-export function needsNativeGlass(agent:Pick<Navigator,'userAgent'|'vendor'|'maxTouchPoints'>){
+export function needsIsolatedGlass(agent:Pick<Navigator,'userAgent'|'vendor'|'maxTouchPoints'>){
  return isWebKit(agent)&&(agent.maxTouchPoints>0||/iP(?:hone|ad|od)/.test(agent.userAgent));
 }
 

@@ -76,6 +76,10 @@ export function createLoopSelector(host:HTMLElement,items:HTMLButtonElement[],op
   button.onkeydown=event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();move(event.key==='ArrowRight'?1:-1);items[target].focus({preventScroll:true});}else if(event.key==='Home'||event.key==='End'){event.preventDefault();set(event.key==='Home'?0:n-1);options.onSelect(index);items[index].focus({preventScroll:true});}};
  });
  function set(next:number){next=loopIndex(next,n);if(next===target)return;target=index=next;pending=false;position.jump(0);paint();}
- const observer=new ResizeObserver(resize);observer.observe(host);resize();
- return {move,set,selected:()=>target,refresh:resize,dispose(){disposed=true;stopAnimation?.();observer.disconnect();host.removeEventListener('pointerdown',down);host.removeEventListener('pointermove',dragMove);host.removeEventListener('pointerup',up);host.removeEventListener('pointercancel',cancel);host.removeEventListener('click',click,true);for(const b of items){b.onclick=null;b.onkeydown=null;}copies.forEach(c=>c.button.remove());}};
+ // City width also determines the observed strip's height. Write on the
+ // following frame, outside ResizeObserver delivery, to avoid WebKit's loop
+ // error during orientation changes. Explicit show/refresh stays synchronous.
+ let resizeFrame=0;
+ const observer=new ResizeObserver(()=>{if(!resizeFrame)resizeFrame=requestAnimationFrame(()=>{resizeFrame=0;resize();});});observer.observe(host);resize();
+ return {move,set,selected:()=>target,refresh:resize,dispose(){disposed=true;cancelAnimationFrame(resizeFrame);stopAnimation?.();observer.disconnect();host.removeEventListener('pointerdown',down);host.removeEventListener('pointermove',dragMove);host.removeEventListener('pointerup',up);host.removeEventListener('pointercancel',cancel);host.removeEventListener('click',click,true);for(const b of items){b.onclick=null;b.onkeydown=null;}copies.forEach(c=>c.button.remove());}};
 }

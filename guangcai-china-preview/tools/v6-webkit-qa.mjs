@@ -36,9 +36,11 @@ async function tab(id){
 try{
  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:120000});await pause();
  check('page identity',await page.title()==='城市共彩');
- check('native mobile WebKit compositor selected',await page.evaluate(()=>window.cupViewer.debug().glass.backend==='native-backdrop'));
+ check('isolated WebGL2 liquid compositor selected',await page.evaluate(()=>window.cupViewer.debug().glass.backend==='webgl2-isolated'));
+ check('refraction canvas draws prepared lenses',await page.evaluate(()=>{const d=window.cupViewer.debug().glass;return d.maps>0&&d.compositor.frames>0&&d.compositor.lenses>0}));
  check('WebGL scene has no SVG filter or transformed ancestor',await page.evaluate(()=>{let e=document.querySelector('#viewport');for(;e;e=e.parentElement){const s=getComputedStyle(e);if(s.filter!=='none'||s.transform!=='none')return false;}return true;}));
- check('no full-screen reference filter graph created',await page.locator('.consumer-scene filter').count()===0);
+ check('scene uses no SVG reference filter',await page.locator('#glass-content').evaluate(e=>getComputedStyle(e).filter==='none'));
+ check('only transparent canvas composites glass',await page.locator('.glass-raster').count()===1);
  await screenshot('city');
  await tab('color');await screenshot('color');
  await page.evaluate(()=>{const {camera,target}=window.cupViewer.debug();window.cupViewer.setCamera(camera.map((v,i)=>target[i]+(v-target[i])*.42),target);});await pause();

@@ -26,7 +26,7 @@ try{
  const before=await readFile('evidence/web-textures.json');
  try{await run('shared consumer/dev/audit build','npm',['run','build','--','--outDir',cfg.build]);}
  finally{const a=JSON.parse(await readFile('evidence/web-textures.json')),b=JSON.parse(before);delete a.date;delete b.date;if(JSON.stringify(a)===JSON.stringify(b))await writeFile('evidence/web-textures.json',before);}
- await writeFile(path.join(cfg.build,'_headers'),'/*\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/dev/*\n  X-Robots-Tag: noindex, nofollow\n/audit/*\n  X-Robots-Tag: noindex, nofollow\n/review/*\n  X-Robots-Tag: noindex, nofollow\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n');
+ await writeFile(path.join(cfg.build,'_headers'),'/*\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/dev/*\n  X-Robots-Tag: noindex, nofollow\n/audit/*\n  X-Robots-Tag: noindex, nofollow\n/review/*\n  X-Robots-Tag: noindex, nofollow\n/manifest.webmanifest\n  Content-Type: application/manifest+json\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n');
  await writeFile(path.join(cfg.build,'_redirects'),'/dev /dev/ 301\n/audit /audit/ 301\n');
  await writeFile(path.join(cfg.build,'robots.txt'),'User-agent: *\nDisallow: /dev/\nDisallow: /audit/\nDisallow: /review/\n');
  const url=`http://127.0.0.1:${cfg.localPort}/`;
@@ -38,10 +38,12 @@ try{
  report.webkit=JSON.parse(await readFile(path.join(work,'webkit-qa/webkit-qa.json')));
  await run('slow startup, touch navigation and repeated city return','node',['tools/v6-startup-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'startup-qa')});
  report.startup=JSON.parse(await readFile(path.join(work,'startup-qa/startup-qa.json')));
+ await run('isolated refraction pixels, collapse anchors and context loss','node',['tools/v6-liquid-qa.mjs'],{QA_URL:url,QA_OUT:path.join(work,'liquid-qa')});
+ report.liquid=JSON.parse(await readFile(path.join(work,'liquid-qa/liquid-qa.json')));
  await run('legacy haptic paths in dev','node',['tools/ios-haptics-qa.mjs'],{QA_URL:url+'dev/',QA_OUT:path.join(work,'legacy-haptics')});
  const qa=JSON.parse(await readFile(path.join(work,'local-qa/qa.json')));if(qa.status!=='passed')throw Error('Browser checks incomplete');
  report.browserChecks=qa.checks.length;
- await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,status:'browser-and-asset-checks-passed',checks:qa.checks,webkit:report.webkit,startup:report.startup,physicalDevices:'iOS 27 failures observed on 6.0.0 and 6.0.1; 6.0.2 startup and city-layout fixes await physical device retest',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
+ await writeFile(path.join(cfg.build,'audit/verification.json'),JSON.stringify({version:JSON.parse(await readFile('package.json','utf8')).version,status:'browser-and-asset-checks-passed',checks:qa.checks,webkit:report.webkit,startup:report.startup,liquid:report.liquid,physicalDevices:'iOS 27 failures observed on 6.0.0 and 6.0.1; 6.0.3 isolated liquid refraction and collapse-anchor fixes await physical device retest',sourceReview:review,glassParity:JSON.parse(await readFile(path.join(work,'local-qa/glass-parity.json')))},null,2)+'\n');
  report.authorityHashes={};for(const dir of ['src','vendor','assets/source/v6','assets/masters/v6','tools'])for(const file of await files(dir))report.authorityHashes[dir+'/'+file]=hash(await readFile(path.join(dir,file)));
  for(const file of ['package.json','package-lock.json','index.html','public/manifest.webmanifest','dev/index.html','audit/index.html','audit/glass.html','vite.config.ts','design-qa.md'])report.authorityHashes[file]=hash(await readFile(file));
  report.buildFiles={};for(const file of await files(cfg.build))report.buildFiles[file]=hash(await readFile(path.join(cfg.build,file)));

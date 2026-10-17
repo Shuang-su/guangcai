@@ -1,0 +1,2729 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:5261/",
+  "checks": [
+    {
+      "name": "chromium: full isolated refraction active",
+      "passed": true,
+      "detail": {
+        "backend": "webgl2-isolated",
+        "ready": true,
+        "maps": 14,
+        "mapTime": 156.09999994933605,
+        "error": "",
+        "optionSurfaces": 8,
+        "compositor": {
+          "frames": 89,
+          "lenses": 12,
+          "textures": 14,
+          "renderMs": 0.1,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: city collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 208.25,
+          "width": 321
+        },
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 208.25,
+          "width": 321
+        },
+        {
+          "top": 781.796875,
+          "bottom": 829.796875,
+          "panelBottom": 840,
+          "height": 184.421875,
+          "width": 321
+        },
+        {
+          "top": 783.578125,
+          "bottom": 831.578125,
+          "panelBottom": 840,
+          "height": 160.59375,
+          "width": 321
+        },
+        {
+          "top": 785.25,
+          "bottom": 833.25,
+          "panelBottom": 840,
+          "height": 138.3125,
+          "width": 321
+        },
+        {
+          "top": 786.703125,
+          "bottom": 834.703125,
+          "panelBottom": 840,
+          "height": 118.765625,
+          "width": 321
+        },
+        {
+          "top": 787.890625,
+          "bottom": 835.890625,
+          "panelBottom": 840,
+          "height": 102.984375,
+          "width": 321
+        },
+        {
+          "top": 788.8125,
+          "bottom": 836.8125,
+          "panelBottom": 840,
+          "height": 90.609375,
+          "width": 321
+        },
+        {
+          "top": 789.515625,
+          "bottom": 837.515625,
+          "panelBottom": 840,
+          "height": 81.28125,
+          "width": 321
+        },
+        {
+          "top": 790.046875,
+          "bottom": 838.046875,
+          "panelBottom": 840,
+          "height": 74.109375,
+          "width": 321
+        },
+        {
+          "top": 790.46875,
+          "bottom": 838.46875,
+          "panelBottom": 840,
+          "height": 68.59375,
+          "width": 321
+        },
+        {
+          "top": 790.796875,
+          "bottom": 838.796875,
+          "panelBottom": 840,
+          "height": 64.25,
+          "width": 321
+        },
+        {
+          "top": 791.046875,
+          "bottom": 839.046875,
+          "panelBottom": 840,
+          "height": 60.828125,
+          "width": 321
+        },
+        {
+          "top": 791.25,
+          "bottom": 839.25,
+          "panelBottom": 840,
+          "height": 58.109375,
+          "width": 321
+        },
+        {
+          "top": 791.421875,
+          "bottom": 839.421875,
+          "panelBottom": 840,
+          "height": 55.921875,
+          "width": 321
+        },
+        {
+          "top": 791.546875,
+          "bottom": 839.546875,
+          "panelBottom": 840,
+          "height": 54.15625,
+          "width": 321
+        },
+        {
+          "top": 791.65625,
+          "bottom": 839.65625,
+          "panelBottom": 840,
+          "height": 52.734375,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 51.578125,
+          "width": 321
+        },
+        {
+          "top": 791.8125,
+          "bottom": 839.8125,
+          "panelBottom": 840,
+          "height": 50.65625,
+          "width": 321
+        },
+        {
+          "top": 791.859375,
+          "bottom": 839.859375,
+          "panelBottom": 840,
+          "height": 49.921875,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 49.328125,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 48.875,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.546875,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.296875,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.03125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "chromium: city closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "chromium: city reopens",
+      "passed": true
+    },
+    {
+      "name": "chromium: color collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 259,
+          "width": 321
+        },
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 259,
+          "width": 321
+        },
+        {
+          "top": 781.796875,
+          "bottom": 829.796875,
+          "panelBottom": 840,
+          "height": 227.4375,
+          "width": 321
+        },
+        {
+          "top": 783.59375,
+          "bottom": 831.59375,
+          "panelBottom": 840,
+          "height": 196.0625,
+          "width": 321
+        },
+        {
+          "top": 785.265625,
+          "bottom": 833.265625,
+          "panelBottom": 840,
+          "height": 166.578125,
+          "width": 321
+        },
+        {
+          "top": 786.71875,
+          "bottom": 834.71875,
+          "panelBottom": 840,
+          "height": 140.890625,
+          "width": 321
+        },
+        {
+          "top": 787.90625,
+          "bottom": 835.90625,
+          "panelBottom": 840,
+          "height": 120.171875,
+          "width": 321
+        },
+        {
+          "top": 788.828125,
+          "bottom": 836.828125,
+          "panelBottom": 840,
+          "height": 104.015625,
+          "width": 321
+        },
+        {
+          "top": 789.515625,
+          "bottom": 837.515625,
+          "panelBottom": 840,
+          "height": 91.765625,
+          "width": 321
+        },
+        {
+          "top": 790.0625,
+          "bottom": 838.0625,
+          "panelBottom": 840,
+          "height": 82.328125,
+          "width": 321
+        },
+        {
+          "top": 790.46875,
+          "bottom": 838.46875,
+          "panelBottom": 840,
+          "height": 75.046875,
+          "width": 321
+        },
+        {
+          "top": 790.796875,
+          "bottom": 838.796875,
+          "panelBottom": 840,
+          "height": 69.375,
+          "width": 321
+        },
+        {
+          "top": 791.046875,
+          "bottom": 839.046875,
+          "panelBottom": 840,
+          "height": 64.875,
+          "width": 321
+        },
+        {
+          "top": 791.25,
+          "bottom": 839.25,
+          "panelBottom": 840,
+          "height": 61.296875,
+          "width": 321
+        },
+        {
+          "top": 791.421875,
+          "bottom": 839.421875,
+          "panelBottom": 840,
+          "height": 58.40625,
+          "width": 321
+        },
+        {
+          "top": 791.546875,
+          "bottom": 839.546875,
+          "panelBottom": 840,
+          "height": 56.078125,
+          "width": 321
+        },
+        {
+          "top": 791.65625,
+          "bottom": 839.65625,
+          "panelBottom": 840,
+          "height": 54.203125,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 52.703125,
+          "width": 321
+        },
+        {
+          "top": 791.8125,
+          "bottom": 839.8125,
+          "panelBottom": 840,
+          "height": 51.484375,
+          "width": 321
+        },
+        {
+          "top": 791.859375,
+          "bottom": 839.859375,
+          "panelBottom": 840,
+          "height": 50.515625,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 49.75,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 49.15625,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.71875,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.390625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.171875,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.046875,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "chromium: color closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "chromium: color reopens",
+      "passed": true
+    },
+    {
+      "name": "chromium: material collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 336,
+          "width": 321
+        },
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 336,
+          "width": 321
+        },
+        {
+          "top": 781.796875,
+          "bottom": 829.796875,
+          "panelBottom": 840,
+          "height": 292.921875,
+          "width": 321
+        },
+        {
+          "top": 783.578125,
+          "bottom": 831.578125,
+          "panelBottom": 840,
+          "height": 250.359375,
+          "width": 321
+        },
+        {
+          "top": 785.25,
+          "bottom": 833.25,
+          "panelBottom": 840,
+          "height": 210.09375,
+          "width": 321
+        },
+        {
+          "top": 786.703125,
+          "bottom": 834.703125,
+          "panelBottom": 840,
+          "height": 175.171875,
+          "width": 321
+        },
+        {
+          "top": 787.90625,
+          "bottom": 835.90625,
+          "panelBottom": 840,
+          "height": 146.515625,
+          "width": 321
+        },
+        {
+          "top": 788.8125,
+          "bottom": 836.8125,
+          "panelBottom": 840,
+          "height": 124.578125,
+          "width": 321
+        },
+        {
+          "top": 789.515625,
+          "bottom": 837.515625,
+          "panelBottom": 840,
+          "height": 107.734375,
+          "width": 321
+        },
+        {
+          "top": 790.0625,
+          "bottom": 838.0625,
+          "panelBottom": 840,
+          "height": 94.859375,
+          "width": 321
+        },
+        {
+          "top": 790.46875,
+          "bottom": 838.46875,
+          "panelBottom": 840,
+          "height": 84.96875,
+          "width": 321
+        },
+        {
+          "top": 790.796875,
+          "bottom": 838.796875,
+          "panelBottom": 840,
+          "height": 77.21875,
+          "width": 321
+        },
+        {
+          "top": 791.046875,
+          "bottom": 839.046875,
+          "panelBottom": 840,
+          "height": 71.03125,
+          "width": 321
+        },
+        {
+          "top": 791.25,
+          "bottom": 839.25,
+          "panelBottom": 840,
+          "height": 66.1875,
+          "width": 321
+        },
+        {
+          "top": 791.421875,
+          "bottom": 839.421875,
+          "panelBottom": 840,
+          "height": 62.21875,
+          "width": 321
+        },
+        {
+          "top": 791.546875,
+          "bottom": 839.546875,
+          "panelBottom": 840,
+          "height": 59.046875,
+          "width": 321
+        },
+        {
+          "top": 791.65625,
+          "bottom": 839.65625,
+          "panelBottom": 840,
+          "height": 56.484375,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 54.421875,
+          "width": 321
+        },
+        {
+          "top": 791.8125,
+          "bottom": 839.8125,
+          "panelBottom": 840,
+          "height": 52.765625,
+          "width": 321
+        },
+        {
+          "top": 791.859375,
+          "bottom": 839.859375,
+          "panelBottom": 840,
+          "height": 51.4375,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 50.390625,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 49.59375,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.96875,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.53125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.234375,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.0625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "chromium: material closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "chromium: material reopens",
+      "passed": true
+    },
+    {
+      "name": "chromium: slogan collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 226,
+          "width": 321
+        },
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 226,
+          "width": 321
+        },
+        {
+          "top": 781.796875,
+          "bottom": 829.796875,
+          "panelBottom": 840,
+          "height": 199.375,
+          "width": 321
+        },
+        {
+          "top": 783.59375,
+          "bottom": 831.59375,
+          "panelBottom": 840,
+          "height": 172.90625,
+          "width": 321
+        },
+        {
+          "top": 785.25,
+          "bottom": 833.25,
+          "panelBottom": 840,
+          "height": 148.171875,
+          "width": 321
+        },
+        {
+          "top": 786.71875,
+          "bottom": 834.71875,
+          "panelBottom": 840,
+          "height": 126.484375,
+          "width": 321
+        },
+        {
+          "top": 787.890625,
+          "bottom": 835.890625,
+          "panelBottom": 840,
+          "height": 108.984375,
+          "width": 321
+        },
+        {
+          "top": 788.8125,
+          "bottom": 836.8125,
+          "panelBottom": 840,
+          "height": 95.328125,
+          "width": 321
+        },
+        {
+          "top": 789.515625,
+          "bottom": 837.515625,
+          "panelBottom": 840,
+          "height": 84.921875,
+          "width": 321
+        },
+        {
+          "top": 790.046875,
+          "bottom": 838.046875,
+          "panelBottom": 840,
+          "height": 77,
+          "width": 321
+        },
+        {
+          "top": 790.46875,
+          "bottom": 838.46875,
+          "panelBottom": 840,
+          "height": 70.84375,
+          "width": 321
+        },
+        {
+          "top": 790.796875,
+          "bottom": 838.796875,
+          "panelBottom": 840,
+          "height": 66.0625,
+          "width": 321
+        },
+        {
+          "top": 791.046875,
+          "bottom": 839.046875,
+          "panelBottom": 840,
+          "height": 62.25,
+          "width": 321
+        },
+        {
+          "top": 791.25,
+          "bottom": 839.25,
+          "panelBottom": 840,
+          "height": 59.21875,
+          "width": 321
+        },
+        {
+          "top": 791.421875,
+          "bottom": 839.421875,
+          "panelBottom": 840,
+          "height": 56.78125,
+          "width": 321
+        },
+        {
+          "top": 791.546875,
+          "bottom": 839.546875,
+          "panelBottom": 840,
+          "height": 54.828125,
+          "width": 321
+        },
+        {
+          "top": 791.65625,
+          "bottom": 839.65625,
+          "panelBottom": 840,
+          "height": 53.25,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 51.96875,
+          "width": 321
+        },
+        {
+          "top": 791.8125,
+          "bottom": 839.8125,
+          "panelBottom": 840,
+          "height": 50.9375,
+          "width": 321
+        },
+        {
+          "top": 791.859375,
+          "bottom": 839.859375,
+          "panelBottom": 840,
+          "height": 50.125,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 49.46875,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 48.984375,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.59375,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.328125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.140625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.03125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "chromium: slogan closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "chromium: slogan reopens",
+      "passed": true
+    },
+    {
+      "name": "chromium: graphics context healthy",
+      "passed": true
+    },
+    {
+      "name": "chromium: transparent optical layer does not block editor",
+      "passed": true
+    },
+    {
+      "name": "chromium: actual context loss activates readable fallback",
+      "passed": true
+    },
+    {
+      "name": "chromium: fallback editor remains clickable",
+      "passed": true
+    },
+    {
+      "name": "chromium: displacement shifts the sampled scene pixels",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: nested glass samples the already refracted parent",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: model updates reach the glass live",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: optical viewport clips pixels at the same boundary",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: original rounded field and highlight remain intact",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "chromium: freshly prepared map renders on its first frame",
+      "passed": true,
+      "detail": [
+        136,
+        97,
+        129,
+        255
+      ]
+    },
+    {
+      "name": "chromium: pixel probe has no renderer errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "webkit: full isolated refraction active",
+      "passed": true,
+      "detail": {
+        "backend": "webgl2-isolated",
+        "ready": true,
+        "maps": 14,
+        "mapTime": 93,
+        "error": "",
+        "optionSurfaces": 8,
+        "compositor": {
+          "frames": 65,
+          "lenses": 12,
+          "textures": 14,
+          "renderMs": 7,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: city collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 208.25,
+          "width": 321
+        },
+        {
+          "top": 782.15625,
+          "bottom": 830.15625,
+          "panelBottom": 840,
+          "height": 179.53125,
+          "width": 321
+        },
+        {
+          "top": 784.46875,
+          "bottom": 832.46875,
+          "panelBottom": 840,
+          "height": 148.640625,
+          "width": 321
+        },
+        {
+          "top": 786.96875,
+          "bottom": 834.96875,
+          "panelBottom": 840,
+          "height": 115.21875,
+          "width": 321
+        },
+        {
+          "top": 788.1875,
+          "bottom": 836.1875,
+          "panelBottom": 840,
+          "height": 99.09375,
+          "width": 321
+        },
+        {
+          "top": 789,
+          "bottom": 837,
+          "panelBottom": 840,
+          "height": 88.125,
+          "width": 321
+        },
+        {
+          "top": 789.671875,
+          "bottom": 837.671875,
+          "panelBottom": 840,
+          "height": 79.203125,
+          "width": 321
+        },
+        {
+          "top": 790.203125,
+          "bottom": 838.203125,
+          "panelBottom": 840,
+          "height": 72.046875,
+          "width": 321
+        },
+        {
+          "top": 790.625,
+          "bottom": 838.625,
+          "panelBottom": 840,
+          "height": 66.359375,
+          "width": 321
+        },
+        {
+          "top": 791.015625,
+          "bottom": 839.015625,
+          "panelBottom": 840,
+          "height": 61.25,
+          "width": 321
+        },
+        {
+          "top": 791.265625,
+          "bottom": 839.265625,
+          "panelBottom": 840,
+          "height": 57.953125,
+          "width": 321
+        },
+        {
+          "top": 791.484375,
+          "bottom": 839.484375,
+          "panelBottom": 840,
+          "height": 54.984375,
+          "width": 321
+        },
+        {
+          "top": 791.609375,
+          "bottom": 839.609375,
+          "panelBottom": 840,
+          "height": 53.359375,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 51.671875,
+          "width": 321
+        },
+        {
+          "top": 791.828125,
+          "bottom": 839.828125,
+          "panelBottom": 840,
+          "height": 50.46875,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 49.375,
+          "width": 321
+        },
+        {
+          "top": 791.953125,
+          "bottom": 839.953125,
+          "panelBottom": 840,
+          "height": 48.75,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.3125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.03125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "webkit: city closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "webkit: city reopens",
+      "passed": true
+    },
+    {
+      "name": "webkit: color collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 259,
+          "width": 321
+        },
+        {
+          "top": 780.109375,
+          "bottom": 828.109375,
+          "panelBottom": 840,
+          "height": 257.125,
+          "width": 321
+        },
+        {
+          "top": 782.046875,
+          "bottom": 830.046875,
+          "panelBottom": 840,
+          "height": 223.078125,
+          "width": 321
+        },
+        {
+          "top": 784.46875,
+          "bottom": 832.46875,
+          "panelBottom": 840,
+          "height": 180.515625,
+          "width": 321
+        },
+        {
+          "top": 786.8125,
+          "bottom": 834.8125,
+          "panelBottom": 840,
+          "height": 139.234375,
+          "width": 321
+        },
+        {
+          "top": 787.9375,
+          "bottom": 835.9375,
+          "panelBottom": 840,
+          "height": 119.515625,
+          "width": 321
+        },
+        {
+          "top": 788.859375,
+          "bottom": 836.859375,
+          "panelBottom": 840,
+          "height": 103.265625,
+          "width": 321
+        },
+        {
+          "top": 789.53125,
+          "bottom": 837.53125,
+          "panelBottom": 840,
+          "height": 91.5625,
+          "width": 321
+        },
+        {
+          "top": 790.359375,
+          "bottom": 838.359375,
+          "panelBottom": 840,
+          "height": 77.078125,
+          "width": 321
+        },
+        {
+          "top": 790.765625,
+          "bottom": 838.765625,
+          "panelBottom": 840,
+          "height": 69.890625,
+          "width": 321
+        },
+        {
+          "top": 791.03125,
+          "bottom": 839.03125,
+          "panelBottom": 840,
+          "height": 65.203125,
+          "width": 321
+        },
+        {
+          "top": 791.265625,
+          "bottom": 839.265625,
+          "panelBottom": 840,
+          "height": 61.109375,
+          "width": 321
+        },
+        {
+          "top": 791.421875,
+          "bottom": 839.421875,
+          "panelBottom": 840,
+          "height": 58.21875,
+          "width": 321
+        },
+        {
+          "top": 791.5625,
+          "bottom": 839.5625,
+          "panelBottom": 840,
+          "height": 55.765625,
+          "width": 321
+        },
+        {
+          "top": 791.6875,
+          "bottom": 839.6875,
+          "panelBottom": 840,
+          "height": 53.734375,
+          "width": 321
+        },
+        {
+          "top": 791.765625,
+          "bottom": 839.765625,
+          "panelBottom": 840,
+          "height": 52.140625,
+          "width": 321
+        },
+        {
+          "top": 791.84375,
+          "bottom": 839.84375,
+          "panelBottom": 840,
+          "height": 50.84375,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 49.328125,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.25,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.015625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "webkit: color closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "webkit: color reopens",
+      "passed": true
+    },
+    {
+      "name": "webkit: material collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 336,
+          "width": 321
+        },
+        {
+          "top": 781.734375,
+          "bottom": 829.734375,
+          "panelBottom": 840,
+          "height": 294.734375,
+          "width": 321
+        },
+        {
+          "top": 783.859375,
+          "bottom": 831.859375,
+          "panelBottom": 840,
+          "height": 243.609375,
+          "width": 321
+        },
+        {
+          "top": 785.984375,
+          "bottom": 833.984375,
+          "panelBottom": 840,
+          "height": 192.5,
+          "width": 321
+        },
+        {
+          "top": 788.125,
+          "bottom": 836.125,
+          "panelBottom": 840,
+          "height": 141.25,
+          "width": 321
+        },
+        {
+          "top": 789,
+          "bottom": 837,
+          "panelBottom": 840,
+          "height": 120.109375,
+          "width": 321
+        },
+        {
+          "top": 789.640625,
+          "bottom": 837.640625,
+          "panelBottom": 840,
+          "height": 104.90625,
+          "width": 321
+        },
+        {
+          "top": 790.09375,
+          "bottom": 838.09375,
+          "panelBottom": 840,
+          "height": 93.796875,
+          "width": 321
+        },
+        {
+          "top": 790.46875,
+          "bottom": 838.46875,
+          "panelBottom": 840,
+          "height": 84.96875,
+          "width": 321
+        },
+        {
+          "top": 790.78125,
+          "bottom": 838.78125,
+          "panelBottom": 840,
+          "height": 77.46875,
+          "width": 321
+        },
+        {
+          "top": 791.046875,
+          "bottom": 839.046875,
+          "panelBottom": 840,
+          "height": 71.15625,
+          "width": 321
+        },
+        {
+          "top": 791.265625,
+          "bottom": 839.265625,
+          "panelBottom": 840,
+          "height": 65.890625,
+          "width": 321
+        },
+        {
+          "top": 791.4375,
+          "bottom": 839.4375,
+          "panelBottom": 840,
+          "height": 61.734375,
+          "width": 321
+        },
+        {
+          "top": 791.5625,
+          "bottom": 839.5625,
+          "panelBottom": 840,
+          "height": 58.765625,
+          "width": 321
+        },
+        {
+          "top": 791.671875,
+          "bottom": 839.671875,
+          "panelBottom": 840,
+          "height": 56.09375,
+          "width": 321
+        },
+        {
+          "top": 791.75,
+          "bottom": 839.75,
+          "panelBottom": 840,
+          "height": 54.0625,
+          "width": 321
+        },
+        {
+          "top": 791.828125,
+          "bottom": 839.828125,
+          "panelBottom": 840,
+          "height": 52.28125,
+          "width": 321
+        },
+        {
+          "top": 791.890625,
+          "bottom": 839.890625,
+          "panelBottom": 840,
+          "height": 50.90625,
+          "width": 321
+        },
+        {
+          "top": 791.9375,
+          "bottom": 839.9375,
+          "panelBottom": 840,
+          "height": 49.734375,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.96875,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.484375,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.140625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "webkit: material closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "webkit: material reopens",
+      "passed": true
+    },
+    {
+      "name": "webkit: slogan collapse keeps capsule at bottom",
+      "passed": true,
+      "detail": [
+        {
+          "top": 780,
+          "bottom": 828,
+          "panelBottom": 840,
+          "height": 222,
+          "width": 321
+        },
+        {
+          "top": 782.375,
+          "bottom": 830.375,
+          "panelBottom": 840,
+          "height": 187.6875,
+          "width": 321
+        },
+        {
+          "top": 785.15625,
+          "bottom": 833.15625,
+          "panelBottom": 840,
+          "height": 147.3125,
+          "width": 321
+        },
+        {
+          "top": 787.625,
+          "bottom": 835.625,
+          "panelBottom": 840,
+          "height": 111.65625,
+          "width": 321
+        },
+        {
+          "top": 788.671875,
+          "bottom": 836.671875,
+          "panelBottom": 840,
+          "height": 96.40625,
+          "width": 321
+        },
+        {
+          "top": 789.5,
+          "bottom": 837.5,
+          "panelBottom": 840,
+          "height": 84.453125,
+          "width": 321
+        },
+        {
+          "top": 790.09375,
+          "bottom": 838.09375,
+          "panelBottom": 840,
+          "height": 75.65625,
+          "width": 321
+        },
+        {
+          "top": 790.53125,
+          "bottom": 838.53125,
+          "panelBottom": 840,
+          "height": 69.390625,
+          "width": 321
+        },
+        {
+          "top": 790.859375,
+          "bottom": 838.859375,
+          "panelBottom": 840,
+          "height": 64.59375,
+          "width": 321
+        },
+        {
+          "top": 791.09375,
+          "bottom": 839.09375,
+          "panelBottom": 840,
+          "height": 61.21875,
+          "width": 321
+        },
+        {
+          "top": 791.296875,
+          "bottom": 839.296875,
+          "panelBottom": 840,
+          "height": 58.203125,
+          "width": 321
+        },
+        {
+          "top": 791.5,
+          "bottom": 839.5,
+          "panelBottom": 840,
+          "height": 55.359375,
+          "width": 321
+        },
+        {
+          "top": 791.625,
+          "bottom": 839.625,
+          "panelBottom": 840,
+          "height": 53.5625,
+          "width": 321
+        },
+        {
+          "top": 791.734375,
+          "bottom": 839.734375,
+          "panelBottom": 840,
+          "height": 51.921875,
+          "width": 321
+        },
+        {
+          "top": 791.828125,
+          "bottom": 839.828125,
+          "panelBottom": 840,
+          "height": 50.578125,
+          "width": 321
+        },
+        {
+          "top": 791.90625,
+          "bottom": 839.90625,
+          "panelBottom": 840,
+          "height": 49.46875,
+          "width": 321
+        },
+        {
+          "top": 791.953125,
+          "bottom": 839.953125,
+          "panelBottom": 840,
+          "height": 48.84375,
+          "width": 321
+        },
+        {
+          "top": 791.96875,
+          "bottom": 839.96875,
+          "panelBottom": 840,
+          "height": 48.515625,
+          "width": 321
+        },
+        {
+          "top": 791.984375,
+          "bottom": 839.984375,
+          "panelBottom": 840,
+          "height": 48.28125,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.109375,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48.015625,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        },
+        {
+          "top": 792,
+          "bottom": 840,
+          "panelBottom": 840,
+          "height": 48,
+          "width": 321
+        }
+      ]
+    },
+    {
+      "name": "webkit: slogan closes completely",
+      "passed": true,
+      "detail": {
+        "top": 792,
+        "bottom": 840,
+        "panelBottom": 840,
+        "height": 48,
+        "width": 321
+      }
+    },
+    {
+      "name": "webkit: slogan reopens",
+      "passed": true
+    },
+    {
+      "name": "webkit: graphics context healthy",
+      "passed": true
+    },
+    {
+      "name": "webkit: transparent optical layer does not block editor",
+      "passed": true
+    },
+    {
+      "name": "webkit: actual context loss activates readable fallback",
+      "passed": true
+    },
+    {
+      "name": "webkit: fallback editor remains clickable",
+      "passed": true
+    },
+    {
+      "name": "webkit: displacement shifts the sampled scene pixels",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: nested glass samples the already refracted parent",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: model updates reach the glass live",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: optical viewport clips pixels at the same boundary",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: original rounded field and highlight remain intact",
+      "passed": true,
+      "detail": {
+        "neutral": [
+          112,
+          97,
+          129,
+          255
+        ],
+        "refracted": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "nested": [
+          137,
+          110,
+          136,
+          255
+        ],
+        "live": [
+          148,
+          110,
+          136,
+          255
+        ],
+        "clipped": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inside": [
+          121,
+          97,
+          129,
+          255
+        ],
+        "firstFrame": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "corner": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "edge": [
+          72,
+          97,
+          129,
+          255
+        ],
+        "center": [
+          136,
+          97,
+          129,
+          255
+        ],
+        "errors": [],
+        "debug": {
+          "frames": 17,
+          "lenses": 1,
+          "textures": 4,
+          "renderMs": 0,
+          "dpr": 1.5
+        }
+      }
+    },
+    {
+      "name": "webkit: freshly prepared map renders on its first frame",
+      "passed": true,
+      "detail": [
+        136,
+        97,
+        129,
+        255
+      ]
+    },
+    {
+      "name": "webkit: pixel probe has no renderer errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no application errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "physicalDevice": "pending"
+}

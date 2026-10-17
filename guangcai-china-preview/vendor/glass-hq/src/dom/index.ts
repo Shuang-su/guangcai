@@ -57,6 +57,8 @@ export interface GlassDiagnostic {
   error?: Error;
 }
 export interface GlassSceneOptions {
+  /** Downstream compositor; reuses the original geometry, maps and motion. */
+  layers?: ReturnType<typeof createLensLayers>;
   /** Downstream opt-in: DOM and optical geometry share every animation frame. */
   synchronizedMotion?: boolean;
   onDiagnostic?: (diagnostic: GlassDiagnostic) => void;
@@ -183,7 +185,7 @@ export function createGlassScene(
   root: HTMLElement,
   config: GlassSceneOptions = {},
 ): GlassSceneController {
-  const releaseSceneLayer = webkit ? acquireSceneCompositingLayer(root) : undefined;
+  const releaseSceneLayer = webkit && !config.layers ? acquireSceneCompositingLayer(root) : undefined;
   const owner = ++serial;
   const svg = document.createElementNS(ns, "svg");
   svg.setAttribute("aria-hidden", "true");
@@ -246,7 +248,9 @@ export function createGlassScene(
     );
   };
   const progressive = createProgressiveLayer(root, (error) => notify(error));
-  const warmer = createMapWarmer(root);
+  // Raster compositors upload decoded maps directly; SVG's first-paint
+  // probes would start the affected WebKit filter engine for no benefit.
+  const warmer = config.layers ? {warm(_maps:MaterialMaps){},has:(_maps:MaterialMaps)=>true,owns:(_node:Node)=>false,dispose(){}} : createMapWarmer(root);
   // Resting glass draws from stored maps without a GPU device. The device is
   // brought up shortly after, while the page is quiet: a device's first work
   // waits for painting to stop, which would hold a menu's first opening back
@@ -258,7 +262,7 @@ export function createGlassScene(
   let progressiveOutsets = 0;
   let composedZoom = `${pageZoom()} ${devicePixelRatio}`;
   /** Gecko draws each surface's glass in a layer of its own. */
-  const layers = gecko ? createLensLayers(root) : undefined;
+  const layers = config.layers ?? (gecko ? createLensLayers(root) : undefined);
   let contentRect = { left: 0, top: 0, width: 0, height: 0 };
   let lastPaintOrder = "";
   interface FilterStyle { original: string; base: string; priority: string; applied?: string; releasePaint?: () => void }
@@ -267,7 +271,7 @@ export function createGlassScene(
     // CSS-wide keywords cannot be concatenated with filter functions. Keep
     // the authored declaration for cleanup and compose its resolved value.
     const base = /^(initial|inherit|unset|revert|revert-layer)$/i.test(original.trim()) ? getComputedStyle(element).filter : original;
-    return { original, base, priority: element.style.getPropertyPriority("filter"), releasePaint: webkit ? acquireFilterPaintRoot(element) : undefined };
+    return { original, base, priority: element.style.getPropertyPriority("filter"), releasePaint: webkit && !config.layers ? acquireFilterPaintRoot(element) : undefined };
   };
   const applyFilter = (element: HTMLElement, style: FilterStyle, filters: string) => {
     const original = style.base.trim().toLowerCase() === "none" ? "" : style.base;
@@ -633,7 +637,7 @@ export function createGlassScene(
       // Gecko renders on the GPU.
       const layered = new Map(drawn.filter((l) => l.frame).map((l) => [l, {
         serial: l.serial, element: l.element, options: l.options, maps: l.maps!, place: l.place,
-        x: l.x, y: l.y, w: l.w, h: l.h, opacity: l.opacity, refraction: wanted.get(l)!, frame: l.frame!,
+        x: l.x, y: l.y, w: l.w, h: l.h, opacity: l.opacity, refraction: wanted.get(l)!, frame: l.frame!, clipBounds:l.clipBounds,
         parents: [] as LayerLens[], beneath: [] as LayerLens[],
       } satisfies LayerLens] as const));
       for (const [l, layer] of layered) {

@@ -103,3 +103,17 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 6.0.2 源码 checkpoint：81cd1f9efc805074cec72fbbdb71f920270ce20e，已推送。独立 V6 部署 6ad295b03953db1e0b268b8f 已 verified：1337 个远端文件摘要匹配，完整不可变归档再次逐一 SHA-256 核对；线上 124 项 Chrome、运动专项、72 项 WebKit、42 项慢加载／触屏／城市返回检查均通过。四个旧站部署完全保持。归档核对后回收本轮可再生成的 .codex-work/deploy/v6-build，原件、源码、不可变发布文件保留。
 
 当前仍有明确验收边界：iPhone 用户页保持原生磨砂兼容，完整液态折射尚未恢复与验收；这不是 iPhone 硬件不能实现玻璃的结论。普通 Safari 地址栏不能由页面 CSS 隐藏；主屏幕独立启动的实际 iOS 27 状态栏处理仍需真机。WebKit 对应问题可见 https://bugs.webkit.org/show_bug.cgi?id=206854 和 https://www2.webkit.org/show_bug.cgi?id=317153 。PR #28 继续 Draft，未合并，未创建或移动标签。
+
+## 6.0.3：移动 WebKit 独立折射与面板收起锚点
+
+本轮实现保留 Glass-HQ 原位移场、高光、覆盖图、胶囊切片、形变和交互弹簧，把最终材质图合成移植到透明 WebGL2 图层。模型画布不再经过 SVG 引用滤镜；有色玻璃、Regular 磨砂折射与嵌套父玻璃取样都在独立累积缓冲中完成。原曲线和 tint 常量复用，模糊采用两 CSS 像素采样步长，输出 DPR 限定 1.5，因此没有声称最终像素与浏览器 SVG 栅格化逐字节相同。原图已解码时在第一帧直接上传；实际初始化或上下文丢失才进入可操作的 native-backdrop，并在诊断里保留原因。五个触感／二维输入核心文件未改。
+
+收起跳位的具体原因是 collapsed CSS 把胶囊从 absolute/bottom 改为 relative 正常文档流。现在两种状态保留相同底部锚点，胶囊内距与宽度跟随外框 420ms 过渡；内容按展开关键帧逆序淡出、缩回，不再跳到面板顶部。城市 ResizeObserver 的高度写入移至下一帧，显式切回城市时仍先同步 refresh 再测量动画终点。
+
+本轮回答了祝福语来源：边框母版为 SVG，阿里妈妈东方大楷文字与边框在构建时合成 4096×1783 无损 WebP 遮罩，运行时由杯身 UV 和固定金色材质渲染；菜单标签为 HTML 文字，未改动该素材链。
+
+容量与失败记录：第一次资产检查用到系统 Python 缺少 numpy，随后改为现有 bundled Python；通过指纹复核重用未变化的资产检查。两次构建／写入遭遇 ENOSPC，其中有效构建已完成、后续 QA 写报告时空间不足。定位到无进程占用、无索引的 Git 临时包 tmp_pack_tw2MJ9（1590165504 字节）和 tmp_pack_I3xknk（229113856 字节），连同两个 AppleDouble 伴随文件完整备份、双向 SHA256 验证后移出原卷，未改动有效 Git 对象包。恢复目录：/Users/shuangsu/Codex/guangcai-v6-recovery/.codex-work/cache/abandoned-git-packs-20261017/；recovery.json 和 verified.json 保存精确来源与摘要。macOS 随主体删除伴随 ._ 文件导致一次 ENOENT，复查四份备份均完整、原四路径均已离开；Git connectivity fsck 通过。测试缓存分别在 /Volumes/Prism/广彩/.codex-work/cache/v6-before-6.0.3-20261017/ 和 v6-tmp-preserved-20261017/ 按逐文件哈希搬存，没有清理原稿、模型或发布归档。部署工具增加可选同卷原子移动构建到归档，并再按已发布清单回读，避免重复占用约 1.3GiB。
+
+最终打包与线上检查、源码 checkpoint 和部署摘要由本节后续发布回读补齐。物理 iPhone Air / Safari 27.0.1、iPhone 16 / Safari 26.6.1 的最终效果和帧率仍需真机复测；桌面 WebKit 26.6 的成功不等于真机验收。
+
+6.0.3 最终打包结果：42 项单元／契约、哈希一致的 23 城／六套字体边框资产、124 项 Chrome、原库同帧高光与菜单 morph、74 项 WebKit、42 项慢加载／城市返回、49 项独立折射像素／首帧／四菜单底部锚点／上下文丢失检查、70 项原触感分支全部通过。构建清单 1336 个文件，发布时再增加 release.json。build-6.0.3.json、webkit-6.0.3.json、liquid-6.0.3.json、startup-6.0.3.json 与 evidence/ui-v6/safari-6.0.3/ 保存本轮证据；无应用运行时错误。
