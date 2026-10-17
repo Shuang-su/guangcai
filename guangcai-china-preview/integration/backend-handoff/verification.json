@@ -1,0 +1,30 @@
+{
+  "sourceCommit": "ec6f9bb0b606f319435f57dc18fbc6375ed6566a",
+  "resourceReleaseId": "v7-2",
+  "counts": {
+    "cities": 23,
+    "colors": 5,
+    "slogans": 6,
+    "resources": 195
+  },
+  "xlsxReopenedExact": true,
+  "sourceAndFileHashesVerified": true,
+  "hslIndependentReference": true,
+  "materialNineSamples": true,
+  "rangeAndUnknownFieldsRejected": true,
+  "excelToMockSaveRestore": true,
+  "accountIsolation": true,
+  "files": [
+    {
+      "name": "backend-config.json",
+      "bytes": 241449,
+      "sha256": "8ca17a0ccd306c5bb13ec1f60d1448f8fff092b804dee2274fbc71b35a3c4a95"
+    },
+    {
+      "name": "V7后台配置数据表.xlsx",
+      "bytes": 55132,
+      "sha256": "429a6f8c44ed7c035bf048a2342ff86fa81f269994ac41f2aa6ebed616713174"
+    }
+  ],
+  "scope": "数据与交接导出；不是新增真机或COS验收"
+}

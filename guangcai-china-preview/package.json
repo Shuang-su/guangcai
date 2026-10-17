@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "export:backend-data": "tsx tools/v7/export-backend-data.ts",
+    "check:backend-handoff": "tsx tools/v7/verify-backend-handoff.ts",
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",

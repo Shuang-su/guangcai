@@ -2,6 +2,8 @@
 
 # V7 资源与模拟接口交接
 
+**后台同事从这里开始：[配置表与完整录入说明](backend-handoff/README.md)**，包含 [Excel](backend-handoff/V7后台配置数据表.xlsx)、[JSON](backend-handoff/backend-config.json) 和 [本轮验证](backend-handoff/verification.json)。城市拓展为JSON引用对象；深浅HEX数组与HSL数组分开说明；材质保存二维参数和配方版本。新增菜单内容仍需同步前端白名单，不能只在后台新增一行。
+
 这里提供现有资源的部署结构、加载协议和可运行的联调参考。正式登录、数据库、业务界面与生产服务由接入方按自己的技术栈实现。
 
 ## 本地运行
