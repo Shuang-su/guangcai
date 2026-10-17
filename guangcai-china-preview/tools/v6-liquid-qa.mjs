@@ -9,7 +9,7 @@ for(const [name,engine]of [['chromium',chromium],['webkit',webkit]]){
  const page=await browser.newPage({viewport:{width:393,height:852},deviceScaleFactor:2,isMobile:true,hasTouch:true,userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1'});
  page.on('pageerror',e=>errors.push(name+': '+e.message));
  try{
-  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:120000});await page.waitForTimeout(1200);
+  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:Number(process.env.QA_READY_TIMEOUT??120000)});await page.waitForTimeout(1200);
   const debug=await page.evaluate(()=>window.cupViewer.debug().glass);
   // Chromium's Apple UA deliberately exercises the same portable compositor.
   check(name+': full isolated refraction active',debug.backend==='webgl2-isolated'&&debug.maps>0&&debug.compositor.frames>0,debug);

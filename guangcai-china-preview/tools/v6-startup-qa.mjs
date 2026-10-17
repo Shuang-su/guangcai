@@ -18,11 +18,11 @@ for(const engine of ['chromium','webkit']){
   await page.locator('.open-palette-editor').tap();await page.waitForTimeout(700);
   check('editor opens before asset readiness',await page.locator('#artwork-settings').getAttribute('data-level')==='editor');
   await page.locator('#palette-back').tap();await page.waitForTimeout(700);
-  await page.waitForFunction(()=>!window.cupViewer.debug().selection.busy,null,{timeout:120000});
+  await page.waitForFunction(()=>!window.cupViewer.debug().selection.busy,null,{timeout:Number(process.env.QA_READY_TIMEOUT??120000)});
   check('status identifies outstanding floral assets',await page.locator('#status').textContent().then(s=>s.includes('花纹')&&!s.includes('深圳')));
   check('scene is not falsely marked fully loaded',await page.evaluate(()=>!window.cupViewer.ready()));
   await page.screenshot({path:`${out}/${engine}-loading-interactive.png`,scale:'css'});
-  release();await page.waitForFunction(()=>window.cupViewer.ready(),null,{timeout:120000});
+  release();await page.waitForFunction(()=>window.cupViewer.ready(),null,{timeout:Number(process.env.QA_READY_TIMEOUT??120000)});
   check('status clears once startup actually completes',await page.locator('#status').textContent()==='');
   for(let round=0;round<3;round++){
    // Move through both editors while the city list is display:none long

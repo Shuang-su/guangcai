@@ -121,3 +121,9 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 6.0.3 发布候选：源码 checkpoint `2ad92f6352119a014637da1b46f0e7ed788ab82d` 已推送；部署 `6ad30bc420f569fd63dd9068` 已在 V6 发布，1337 项服务器摘要匹配、旧站未改变，但线上完整 QA 未通过，未标记验证完成。Chrome 网络证据显示杯碟法线为 24,283,080 字节，120 秒时仍下载了 17,055,301 字节，应用总时长 AbortController 中断了正常进度并从头重试。候选完整文件已按准备清单回读，并保存到不可变归档，deployment.json 明确 published-online-qa-failed。
 
 容量后续：再次发现无人占用的 tmp_pack_erBDJL（含伴随文件共 1,704,726,528 字节），以同样逐文件哈希方法搬存到内置盘 recovery 下 abandoned-git-packs-20261017-repeat/。为防止容量不足期间自动维护反复产生临时包，仅在本仓库把 gc.auto 从未设置改为 0、maintenance.auto 从未设置改为 false；旧值保存为 automatic-maintenance-before.json，未修改全局 Git 配置。有效对象包与历史仍保留。
+
+## 6.0.4：持续传输不中断
+
+新增 downloadBytes 流式读取，保留原 120 秒容忍度但按最后一个非空数据块重置空闲计时；fetch、gzip 检测、HFN 格式、RGBA16F 精度和三次重试都保留。正常持续传输不再被总时长强制丢弃。新增三个传输契约均通过；直接从线上读回 24,283,080 字节杯碟法线，耗时 28.8 秒，SHA256 与本地原件完全一致，见 progress-download-6.0.4.json。QA_READY_TIMEOUT 仅配置线上慢链路等待，所有功能、素材完成、点击和像素断言保留。
+
+最终打包通过：45 项单元／契约、未改变资产的哈希复核、124 项 Chrome、原库运动同步、74 项 WebKit、42 项慢加载／城市返回、49 项独立玻璃／首帧／收起检查、70 项原触感分支；新构建 1336 项，发布附加 release.json。源码 checkpoint、部署和线上结果在下方发布回读记录。

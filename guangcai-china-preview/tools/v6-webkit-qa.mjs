@@ -34,7 +34,7 @@ async function tab(id){
  throw new Error(`Cannot reach ${id}`);
 }
 try{
- await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:120000});await pause();
+ await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:Number(process.env.QA_READY_TIMEOUT??120000)});await pause();
  check('page identity',await page.title()==='城市共彩');
  check('isolated WebGL2 liquid compositor selected',await page.evaluate(()=>window.cupViewer.debug().glass.backend==='webgl2-isolated'));
  check('refraction canvas draws prepared lenses',await page.evaluate(()=>{const d=window.cupViewer.debug().glass;return d.maps>0&&d.compositor.frames>0&&d.compositor.lenses>0}));
