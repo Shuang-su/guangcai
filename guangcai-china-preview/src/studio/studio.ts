@@ -1,6 +1,6 @@
 import { createContactShadow } from './contact-shadow';
 import { RENDER_STANDARD } from '../materials/render-standard';
-import { ACESFilmicToneMapping, BoxGeometry, Color, DirectionalLight, HalfFloatType, HemisphereLight, Mesh, MeshBasicMaterial, MeshStandardMaterial, PCFShadowMap, PerspectiveCamera, PlaneGeometry, PMREMGenerator, Scene, SRGBColorSpace, ShadowMaterial, WebGLRenderer, BackSide } from 'three';
+import { ACESFilmicToneMapping, BoxGeometry, Color, DirectionalLight, HalfFloatType, HemisphereLight, Mesh, MeshBasicMaterial, MeshStandardMaterial, PCFShadowMap, PerspectiveCamera, PlaneGeometry, PMREMGenerator, type WebGLRenderTarget, Scene, SRGBColorSpace, ShadowMaterial, WebGLRenderer, BackSide } from 'three';
 
 export function createStudio(canvas:HTMLCanvasElement,transparent=false,options:{consumer?:boolean;mobile?:boolean}={}){
   const renderer=new WebGLRenderer({canvas,antialias:true,alpha:transparent,preserveDrawingBuffer:!options.consumer,powerPreference:'high-performance'});
@@ -10,6 +10,13 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false,options:
   const scene=new Scene();scene.background=transparent?null:new Color('#b7b8ba');
   if(transparent)renderer.setClearColor(0x000000,0);
   const camera=new PerspectiveCamera(33,1,.5,2500);camera.position.set(205,175,285);
+  // PMREM.fromScene needs depth only while capturing the studio cards. Retain
+  // a byte-preserving GPU copy without that unused depth buffer afterwards.
+  function retainEnvironment(source:WebGLRenderTarget){
+    if(!options.consumer)return source;
+    const result=source.clone();result.depthBuffer=false;
+    renderer.initRenderTarget(result);renderer.copyTextureToTexture(source.texture,result.texture);source.dispose();return result;
+  }
   function buildEnvironments(){
   const environment=new Scene();environment.background=new Color('#565961');
   const room=new Mesh(new BoxGeometry(100,100,100),new MeshBasicMaterial({color:new Color().setScalar(.30),side:BackSide}));environment.add(room);
@@ -23,7 +30,7 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false,options:
   for(const[x,y,z,w,h,intensity]of cards){
     const card=new Mesh(new PlaneGeometry(w,h),new MeshBasicMaterial({color:new Color().setScalar(intensity)}));card.position.set(x,y,z);card.lookAt(0,0,0);environment.add(card);
   }
-  const pmrem=new PMREMGenerator(renderer);const env=pmrem.fromScene(environment,.025,.1,200);scene.environment=env.texture;scene.environmentIntensity=1.0;
+  const pmrem=new PMREMGenerator(renderer);const env=retainEnvironment(pmrem.fromScene(environment,.025,.1,200));scene.environment=env.texture;scene.environmentIntensity=1.0;
   // A brighter studio for the cup-wall reflections: lift nearly black flags,
   // retain their broad shape, and strengthen the large softboxes.
   for(const object of environment.children){
@@ -32,10 +39,10 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false,options:
     const intensity=material.color.r;
     material.color.setScalar(intensity<.10?.045:intensity>=2?intensity*1.65:intensity===.30?.42:intensity);
   }
-  const cupEnvironment=pmrem.fromScene(environment,.035,.1,200);
+  const cupEnvironment=retainEnvironment(pmrem.fromScene(environment,.035,.1,200));
   // Broad bright cards for white glaze only. Gold retains the original environments.
   for(const object of environment.children)if(object instanceof Mesh){const m=object.material as MeshBasicMaterial;m.color.setScalar(m.color.r<.5?.65:Math.min(m.color.r,4.5));}
-  const porcelainEnvironment=pmrem.fromScene(environment,.10,.1,200);pmrem.dispose();
+  const porcelainEnvironment=retainEnvironment(pmrem.fromScene(environment,.10,.1,200));pmrem.dispose();
   environment.traverse(o=>{if(o instanceof Mesh){o.geometry.dispose();(o.material as MeshBasicMaterial).dispose();}});
     return {env,cupEnvironment,porcelainEnvironment};
   }
@@ -49,7 +56,7 @@ export function createStudio(canvas:HTMLCanvasElement,transparent=false,options:
   const resize=()=>{const {width,height}=canvas.getBoundingClientRect();renderer.setSize(width,height,false);camera.aspect=width/Math.max(height,1);camera.updateProjectionMatrix();canvas.dispatchEvent(new Event('viewport-resize'));};
   const observer=new ResizeObserver(resize);observer.observe(canvas);resize();
   const samples=Math.max(1,renderer.getContext().getParameter(renderer.getContext().SAMPLES));
-  const memory=()=>({environments:Object.values(environments).reduce((n,e)=>n+e.width*e.height*12,0),shadow:key.shadow.mapSize.x*key.shadow.mapSize.y*8,contact:512*512*8*2,framebuffer:canvas.width*canvas.height*(4+8*samples)});
+  const memory=()=>({environments:Object.values(environments).reduce((n,e)=>n+e.width*e.height*(8+(e.depthBuffer?4:0)),0),shadow:key.shadow.mapSize.x*key.shadow.mapSize.y*8,contact:512*512*8*2,framebuffer:canvas.width*canvas.height*(4+8*samples)});
   return{memory,renderer,scene,camera,resize,floor,contact,get cupEnvironment(){return environments.cupEnvironment.texture;},get porcelainEnvironment(){return environments.porcelainEnvironment.texture;},releaseContext(){Object.values(environments).forEach(e=>e.dispose());environmentReleased=true;key.shadow.map?.dispose();contact.releaseContext();},rebuildEnvironment(){if(!environmentReleased)Object.values(environments).forEach(e=>e.dispose());environments=buildEnvironments();environmentReleased=false;},dispose(){observer.disconnect();Object.values(environments).forEach(e=>e.dispose());contact.dispose();renderer.dispose();}};
 }
 export type Studio=ReturnType<typeof createStudio>;

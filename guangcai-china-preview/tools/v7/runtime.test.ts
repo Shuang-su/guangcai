@@ -39,7 +39,11 @@ test('upstream cancellation/error keeps its original reason and unlocks the read
 });
 test('streamed high precision normals are byte-identical to native decompression at every city tier',async()=>{
  const {gunzipSync}=await import('node:zlib');
- for(const tier of ['light','standard','detail']){const a=manifest.cities.shenzhen.levels[tier].normal,compressed=readFileSync('public/releases/v7-1/'+a.url),raw=await readExact(new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip')),a.decodedBytes+16);
+ for(const tier of ['light','standard','detail']){const a=manifest.cities.shenzhen.levels[tier].normal,compressed=readFileSync('public/'+boot.manifestUrl.slice(0,boot.manifestUrl.lastIndexOf('/')+1)+a.url),raw=await readExact(new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip')),a.decodedBytes+16);
   assert.deepEqual(Buffer.from(raw),gunzipSync(compressed));const parsed=parseHFN(raw);assert.equal(parsed.data.buffer,raw);assert.equal(parsed.width,a.width);assert.equal(parsed.height,a.height);
  }
 });
+
+// Selection transactions can overlap while the last request wins; each must
+// release its own allowance even when cancelled or superseded.
+test('resource swaps track temporary overlap and release their allowance once',async()=>{const {ResourcePool}=await import('../../src/resources/pool');const pool=new ResourcePool(true),first=pool.beginSwap(),second=pool.beginSwap();assert.equal(pool.transitioning,true);assert.equal(pool.debug().transitions,2);first();first();assert.equal(pool.debug().transitions,1);second();assert.equal(pool.transitioning,false);pool.dispose();});

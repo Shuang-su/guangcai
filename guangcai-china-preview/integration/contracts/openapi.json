@@ -21,7 +21,10 @@
             "const": 1
           },
           "resourceReleaseId": {
-            "const": "v7-1"
+            "enum": [
+              "v7-1",
+              "v7-2"
+            ]
           },
           "modelVersion": {
             "const": "china-cup-v6"

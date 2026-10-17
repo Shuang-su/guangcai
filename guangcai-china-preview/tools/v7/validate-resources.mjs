@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import assert from 'node:assert/strict';
 import sharp from 'sharp';
-const bootstrap=JSON.parse(await fs.readFile('public/api/v1/bootstrap.json')),m=JSON.parse(await fs.readFile('public/'+bootstrap.manifestUrl)),base='public/releases/v7-1/';
+const bootstrap=JSON.parse(await fs.readFile('public/api/v1/bootstrap.json')),m=JSON.parse(await fs.readFile('public/'+bootstrap.manifestUrl)),base='public/'+bootstrap.manifestUrl.slice(0,bootstrap.manifestUrl.lastIndexOf('/')+1);
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const assets=[...Object.values(m.fixed).flatMap(t=>Object.values(t).flatMap(l=>[l.baseColor,l.normal,l.orm])),...Object.values(m.cities).flatMap(c=>[c.thumbnail,...Object.values(c.levels).flatMap(l=>[l.mask,l.normal])]),...Object.values(m.slogans).map(l=>l.asset),m.mark];
 for(const a of assets){const bytes=await fs.readFile(base+a.url);assert.equal(bytes.length,a.bytes);assert.equal(hash(bytes),a.sha256);if(a.encoding==='webp'){const info=await sharp(bytes).metadata();assert.deepEqual([info.width,info.height],[a.width,a.height]);}else{const data=gunzipSync(bytes);assert.equal(data.length,16+a.decodedBytes);assert.equal(data.toString('ascii',0,4),'HFN1');assert.deepEqual([data.readUInt32LE(4),data.readUInt32LE(8)],[a.width,a.height]);for(let i=16;i<data.length;i+=2)assert.ok(data.readUInt16LE(i)<=0x3c00,'finite normal');}}

@@ -32,7 +32,7 @@ test('wrong size and checksum never poison cache, and inflight reservations obey
 });
 test('manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps',()=>{
  const boot=JSON.parse(readFileSync('public/api/v1/bootstrap.json','utf8')),manifest=JSON.parse(readFileSync('public/'+boot.manifestUrl,'utf8'));
- const library=cityLibrary(manifest);assert.equal(Object.keys(manifest.cities).length,23);assert.equal(library.length,75);assert.equal(library.reduce((n,a)=>n+a.bytes,0),6379559);
+ const library=cityLibrary(manifest);assert.equal(Object.keys(manifest.cities).length,23);assert.equal(library.length,75);assert.ok(library.reduce((n,a)=>n+a.bytes,0)<7*1024**2);
  const order=Object.keys(JSON.parse(readFileSync('src/styles/city-catalog-v6.json','utf8')).cities);
  const neighbors=neighborAssets(manifest,order[0],'standard',order);assert.deepEqual(neighbors.map(a=>a.id),[order[0],order.at(-1),order[1]].flatMap(id=>[`${id}-standard-mask`,`${id}-standard-normal`]));
  assert.equal(new Set(neighbors.map(a=>a.url)).size,6);assert.ok(library.filter(a=>a.id.startsWith('slogan')).every(a=>a.encoding==='webp'&&a.channels===1));

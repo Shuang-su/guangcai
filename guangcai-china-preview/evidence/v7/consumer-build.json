@@ -1,7 +1,7 @@
 {
   "root": ".codex-work/deploy/v7-build",
-  "files": 219,
-  "bytes": 115206619,
+  "files": 224,
+  "bytes": 115744037,
   "assetsVerified": 195,
   "inventory": [
     {
@@ -12,22 +12,22 @@
     {
       "path": "api/v1/bootstrap.json",
       "bytes": 578,
-      "sha256": "76559e4123dca5d5456151ee70317c39f1c6ef04c174ac3c01f6255a953a399b"
+      "sha256": "e44e6094db664eca400d33100d2e1efe122214ccb9fcc45f00c5d3ee6d04fd85"
     },
     {
-      "path": "assets/decode.worker-CJfs9al4.js",
-      "bytes": 1798,
-      "sha256": "24632bca9643a1e1865a605653b0d6f0d5e8b8f14aad21a3349bfe554ca4384c"
+      "path": "assets/decode.worker-DszJvlSf.js",
+      "bytes": 6238,
+      "sha256": "d196cee26593e72eccb1da1aab9b2e73fa7691c0bfc218e5f35c6abba45082eb"
     },
     {
-      "path": "assets/gpu-Cq8Hi4dL.js",
+      "path": "assets/gpu-WWMmkHTa.js",
       "bytes": 152552,
-      "sha256": "1014136c3b3bbfacedc53b28ef828e72dd6f0e51e330c2b40af636787a37a5d6"
+      "sha256": "db596dd6feaff40a2cb352d876a9bbf85bf34cd469c20a9a6aece67ce0d28589"
     },
     {
-      "path": "assets/index-D7cRWtCC.js",
-      "bytes": 910280,
-      "sha256": "c3a915fb08fe6883f0523c19d652238d7d9446abdb13426ae4e98d4a7288484c"
+      "path": "assets/index-kvzCXkQ0.js",
+      "bytes": 912458,
+      "sha256": "dcc69d208ee7572f6f9e12a411360ac4f0ccfae1ca5f8bad46f11d9dae8a57b2"
     },
     {
       "path": "assets/index-m0pXmlyI.css",
@@ -72,7 +72,7 @@
     {
       "path": "index.html",
       "bytes": 4047,
-      "sha256": "eb088290564fa281e13948cbd801be7c3ca0121474b5357596a2333aa6f29a1e"
+      "sha256": "ce52a8390c0ba005dd1c5a4dff994e79d287cbb3839f3fae21adc95635992610"
     },
     {
       "path": "manifest.webmanifest",
@@ -1063,6 +1063,31 @@
       "path": "releases/v7-1/manifest-ec81ffecfc60c00c.json",
       "bytes": 117486,
       "sha256": "ec81ffecfc60c00c946ede97740920cc61cdd14f22930a112780503e78976173"
+    },
+    {
+      "path": "releases/v7-2/assets/xian-detail-mask-cd07e2cae76c63a6.webp",
+      "bytes": 225744,
+      "sha256": "cd07e2cae76c63a69d83bf8f441b536dc21ac0f993dd9e0be745f85823017721"
+    },
+    {
+      "path": "releases/v7-2/assets/xian-light-mask-02a6808d8532b8af.webp",
+      "bytes": 49984,
+      "sha256": "02a6808d8532b8af51e4534af62fe125e6c398470fd8435bbfa8a3196e658816"
+    },
+    {
+      "path": "releases/v7-2/assets/xian-standard-mask-547ec8ef8b249bce.webp",
+      "bytes": 132694,
+      "sha256": "547ec8ef8b249bce47baa9a35fdea3f65921e870f51d5e5f369d412bdb8a2bba"
+    },
+    {
+      "path": "releases/v7-2/catalog.json",
+      "bytes": 3356,
+      "sha256": "4de9ed12629dfa22bcee33713a051c28bc09bf98146629d06dc596c90be1f708"
+    },
+    {
+      "path": "releases/v7-2/manifest-c3af02ef5468edcb.json",
+      "bytes": 119022,
+      "sha256": "c3af02ef5468edcb425f9a9761528ea3c002aa6902215bca5dec0688764c5236"
     },
     {
       "path": "runtime-config.js",

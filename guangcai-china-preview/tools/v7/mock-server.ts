@@ -15,12 +15,12 @@ export async function createMockServer(root=resolve('.codex-work/deploy/v7-integ
  const origins=new Set(options.allowedOrigins??[]);for(const origin of origins)if(new URL(origin).origin!==origin||!/^https?:/.test(origin))throw Error('Use exact HTTP(S) origins');
  if(!/^\/[a-zA-Z0-9/_-]*\/$/.test(base)&&base!=='/')throw Error('MOCK_BASE must be an absolute path ending in /');
  const bootstrap=JSON.parse(await readFile(resolve(root,'api/v1/bootstrap.json'),'utf8'));
- const manifest=JSON.parse(await readFile(resolve(root,bootstrap.manifestUrl),'utf8')) as ResourceManifest;
+ const manifests=new Map<string,ResourceManifest>();for(const id of ['v7-1','v7-2']){const catalog=JSON.parse(await readFile(resolve(root,'releases',id,'catalog.json'),'utf8'));manifests.set(id,JSON.parse(await readFile(resolve(root,'releases',id,catalog.manifestUrl),'utf8')));}
  const works=new Map<string,Work>(),shares=new Map<string,Share>(),idempotency=new Map<string,{body:string;workId:string}>();
  const json=(res:ServerResponse,status:number,value:unknown)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(value));};
  const fail=(status:number,message:string)=>Object.assign(Error(message),{status});
  async function body(req:IncomingMessage){if(!req.headers['content-type']?.startsWith('application/json'))throw fail(415,'JSON required');let text='';for await(const chunk of req){text+=chunk;if(Buffer.byteLength(text)>32768)throw fail(413,'Body too large');}try{return JSON.parse(text);}catch{throw fail(400,'Invalid JSON');}}
- function design(value:unknown){try{return validateDesign(value,manifest);}catch(e){throw fail(400,String(e));}}
+ function design(value:unknown){try{const manifest=manifests.get((value as DesignConfig)?.resourceReleaseId);if(!manifest)throw Error('Unsupported resource release');return validateDesign(value,manifest);}catch(e){throw fail(400,String(e));}}
  const title=(value:unknown)=>{if(typeof value!=='string'||!value.trim()||value.length>120)throw fail(400,'Title must contain 1–120 characters');return value.trim();};
  const user=(req:IncomingMessage)=>{const value=req.headers.cookie?.match(/(?:^|;\s*)mock-user=(alice|bob)(?:;|$)/)?.[1];if(!value)throw fail(401,'Choose a mock user');return value;};
  const own=(req:IncomingMessage,id:string)=>{const w=works.get(id);if(!w||w.owner!==user(req))throw fail(404,'Work not found');return w;};

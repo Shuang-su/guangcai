@@ -1,3 +1,4 @@
+import {configurePackedNormals} from '../materials/packed-normals';
 import { ClampToEdgeWrapping, MirroredRepeatWrapping, RepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
@@ -109,7 +110,7 @@ export class StyleManager {
   }
   precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
   private async applyRuntime(pack:StylePack,revision:number){
-    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];
+    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
     try{
       const assets=regions.flatMap(r=>{const a=pack.regions[r].runtime!;return [a.baseColor,a.normal,a.orm];});
       leases=await this.pool!.acquireAll(assets,controller.signal);if(revision!==this.revision)return false;
@@ -119,10 +120,10 @@ export class StyleManager {
         for(const t of [baseColor,normal,orm]){t.channel=2;t.anisotropy=this.anisotropy;t.wrapS=r==='saucer'?RepeatWrapping:ClampToEdgeWrapping;}
         maps[r]={baseColor,normal,roughness:orm,metalness:orm};
       });
-      regions.forEach(r=>{setRegionMaps(this.materials.regions[r],maps[r],pack.regions[r].atlas);configureFixedGoldGround(this.materials.regions[r],true);});
+      regions.forEach(r=>{setRegionMaps(this.materials.regions[r],maps[r],pack.regions[r].atlas);configureFixedGoldGround(this.materials.regions[r],true);configurePackedNormals(this.materials.regions[r]);});
       const old=this.leases;this.leases=leases;leases=[];old.forEach(l=>l.release());
       this.owned.forEach(t=>t.dispose());this.owned=[];this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
-    }catch(e){if(controller.signal.aborted)return false;throw e;}finally{leases.forEach(l=>l.release());}
+    }catch(e){if(controller.signal.aborted)return false;throw e;}finally{leases.forEach(l=>l.release());finishSwap();}
   }
   cancelPending(){++this.revision;this.controller?.abort();}
   dispose(){++this.revision;this.controller?.abort();this.leases.forEach(l=>l.release());this.leases=[];this.owned.forEach(t=>t.dispose());this.owned=[];this.currentMaps={};}

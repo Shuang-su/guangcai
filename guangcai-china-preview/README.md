@@ -1,8 +1,8 @@
-# 中国杯 V7.1：渐进资源与开发交接
+# 中国杯 V7.1.1：渐进资源与开发交接
 
-[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261017-v7-v6-sync-handoff/completion.md)
+[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261017-v7-v6-sync-handoff/completion.md)
 
-V7.1 基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；按需解码/提清与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
+V7.1.1 基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；当前城市高清真正显示后进入，切城后自动提清；按需解码与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
 
 | 命令 | 用途 |
 | --- | --- |
@@ -15,6 +15,8 @@ V7.1 基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无
 | `npm run check:v7-assets` | 检查195资源与裁切文字 |
 | `npm run build:audit` | 单独构建历史开发/审计入口，不进入消费者包 |
 | `node tools/v7/package-handoff.mjs` | 从干净提交生成带哈希清单的消费者/源码交接包 |
+
+资源默认 v7-2（西安全填色），保留 v7-1 不可变目录和旧作品回放。性能文档详细说明每个加载、缓存、预算、降级与恢复条件。
 
 API与资源地址通过公开 `runtime-config.js` 配置；公司身份、数据库和真实业务后端不由mock承担。完整接口、Schema、数据关系、CORS/COS及部署步骤见交接主文档。消费者包不包含母版和历史审计素材，资源变动才运行生成器。
 

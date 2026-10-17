@@ -7,6 +7,7 @@ import sharp from 'sharp';
 
 // Run from the application root. Originals are read-only. Outputs are reproducible.
 const root='public/releases/v7-1',tiers={light:1024,standard:2048,detail:4096};
+try{await fs.access(root+'/catalog.json');throw Error('v7-1 is immutable. Create a new release generator/configuration; do not overwrite a published catalog.');}catch(e){if(e.code!=='ENOENT')throw e;}
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const catalog=JSON.parse(await fs.readFile('src/styles/city-catalog-v6.json','utf8'));
 const fixedAtlas=JSON.parse(await fs.readFile('src/styles/fixed-rendering.json','utf8'));

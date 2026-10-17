@@ -1,3 +1,4 @@
+import {configurePackedNormals} from '../materials/packed-normals';
 import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Texture, type MeshPhysicalMaterial, type MeshBasicMaterial } from 'three';
 import {loadTexture} from './load-texture';
 import {loadFloatNormal} from './float-normal';
@@ -147,7 +148,7 @@ export class CityArtworkManager {
     const runtime=pack.runtime!,key=[runtime.mask.url,runtime.normal.url].join('|'),textKey=runtime.label.asset.url;
     const appearance=normalizeAppearance(pack.parametric!.appearance);
     if(key===this.paramKey&&textKey===this.textKey){this.controller?.abort();this.uniformOnly=true;this.parameters.update(appearance,true);this.current=structuredClone(pack);this.relief=appearance.relief;return true;}
-    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];
+    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
     try{
       leases=await this.pool!.acquireAll([runtime.mask,runtime.normal,runtime.label.asset],controller.signal);
       if(revision!==this.revision||this.disposed)return false;
@@ -155,11 +156,11 @@ export class CityArtworkManager {
       const mat=this.material;this.uniformOnly=this.paramKey===key;
       mat.map=mat.metalnessMap=mask;mat.normalMap=mat.clearcoatNormalMap=normal;mat.roughnessMap=mat.clearcoatMap=null;
       mat.clearcoat=1;mat.roughness=1;mat.metalness=this.metalEnabled?1:0;mat.color.set(0xffffff);mat.displacementMap=null;mat.displacementScale=0;
-      setPorcelainCoverage(mat,mask);if(!this.uniformOnly)mat.needsUpdate=true;
+      configurePackedNormals(mat);setPorcelainCoverage(mat,mask);if(!this.uniformOnly)mat.needsUpdate=true;
       this.parameters.enable(mask,label,true,runtime.label.uvRect);this.parameters.fixedGold(true);this.parameters.update(appearance,true);this.parameters.metal(this.metalEnabled);
       const old=this.leases;this.leases=leases;leases=[];old.forEach(l=>l.release());this.owned.forEach(t=>this.release(t));this.owned=[];
       this.paramKey=key;this.textKey=textKey;this.paramMaps=[mask,normal,label];this.current=structuredClone(pack);this.relief=appearance.relief;this.lastError='';return true;
-    }catch(e){if(controller.signal.aborted)return false;this.lastError=String(e);throw e;}finally{leases.forEach(l=>l.release());}
+    }catch(e){if(controller.signal.aborted)return false;this.lastError=String(e);throw e;}finally{leases.forEach(l=>l.release());finishSwap();}
   }
   private trimResources(){
     for(const [cache,limit,protectedKeys] of [[this.parametricCache,2,[this.paramKey,this.requestedStructure]],[this.textCache,6,[this.textKey,this.requestedText]]] as const){

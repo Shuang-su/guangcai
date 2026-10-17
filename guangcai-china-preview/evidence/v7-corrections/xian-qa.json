@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "tier": "light",
+      "changes": 4074,
+      "maxLoss": 0,
+      "faces": [
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        }
+      ],
+      "sky": [
+        {
+          "before": 0,
+          "after": 0
+        },
+        {
+          "before": 0,
+          "after": 0
+        }
+      ],
+      "linesUnchanged": true,
+      "normalUnchanged": true
+    },
+    {
+      "tier": "standard",
+      "changes": 15160,
+      "maxLoss": 0,
+      "faces": [
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        }
+      ],
+      "sky": [
+        {
+          "before": 0,
+          "after": 0
+        },
+        {
+          "before": 0,
+          "after": 0
+        }
+      ],
+      "linesUnchanged": true,
+      "normalUnchanged": true
+    },
+    {
+      "tier": "detail",
+      "changes": 55852,
+      "maxLoss": 0,
+      "faces": [
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        },
+        {
+          "before": 0,
+          "after": 255
+        }
+      ],
+      "sky": [
+        {
+          "before": 0,
+          "after": 0
+        },
+        {
+          "before": 0,
+          "after": 0
+        }
+      ],
+      "linesUnchanged": true,
+      "normalUnchanged": true
+    }
+  ]
+}
