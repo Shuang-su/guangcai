@@ -58,3 +58,6 @@ V6先合并后，V7合入origin/main：重叠的版本/首屏/玻璃代码采用
 源码纠错checkpoint：209da08cfc50d875190a1ceb0da55ae6aee5c6d4；玻璃/加载/重试证据checkpoint：6bab7e220b651ad0a0133040b55dbb145333e596。补充回归全部通过：玻璃53项、加载50项、Worker丢回复/资源缺失/进入中上下文恢复、分域六条。10Mbps/100ms冷缓存13.599、13.595、13.604秒，实际总传输12,132,070字节/轮，计划资源10,928,395字节；原5MiB/6秒目标未通过，15秒工程观察线通过。M1 Pro浏览器帧间隔P95 16.8ms不代表iPhone；受管图形峰值201,191,548字节（191.87MiB），仍在192MiB预算内。
 
 提交时ExFAT初号機因256KiB分配单元与新Git对象AppleDouble耗尽空间。仅把失败git add产生、与本任务文件SHA1吻合的38个新blob及配套侧文件先备份核验，再归并为验证过的pack；新增64个对象在Prism暂存，正常git commit后验证pack并归回原对象库。未运行全库gc/prune、未改历史、未跳过hooks。临时alternate撤销、原对象库能独立读回提交，V6索引SHA256不变；具体回执在evidence/v7-corrections/。跨卷pack默认rename失败一次，随后把Git临时对象目录也指定到Prism成功；只有验证成功的pack被接回，没删除未核实的数据。
+
+
+V7.1.1已发布：源码快照4189efcf325540d489213edbdc21419d8291f846，部署6ad336a18e5052baf0191481，固定链接https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/。225项服务端摘要匹配，五个受保护站点的部署指针前后相同，V6未重发。线上浏览器回读进行中。
