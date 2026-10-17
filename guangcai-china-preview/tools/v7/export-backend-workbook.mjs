@@ -18,7 +18,7 @@ function sheet(name,title,headers,rows,widths,heights=38){
  const area=s.getRangeByIndexes(0,0,rows.length+5,headers.length);
  area.format.font={name:'Arial',size:10,color:'#302A23'};area.format.verticalAlignment='center';
  s.getRange('A2').values=[[title]];s.getRange('A2').format.font={name:'Arial',size:16,bold:true,color:'#795423'};
- s.getRange('A3').values=[[`V7.1.1 / ${d.resourceReleaseId} / ${d.sourceCommit.slice(0,12)} · JSON为配置参考，作品接口保持原格式`]];
+ s.getRange('A3').values=[[`V${d.productVersion} / ${d.resourceReleaseId} / ${d.sourceCommit.slice(0,12)} · JSON为配置参考，作品接口保持原格式`]];
  s.getRange('A3').format.font={italic:true,size:10,color:'#665D51'};
  const range=s.getRangeByIndexes(4,0,rows.length+1,headers.length);range.values=[headers,...rows];
  const table=s.tables.add(`A5:${col(headers.length)}${rows.length+5}`,true,'ConfigTable'+built.length);table.style='TableStyleLight1';table.showFilterButton=true;
@@ -71,8 +71,8 @@ material.getRange('G15:G20').format.rowHeight=26;
 
 sheet('祝福语','六组裁切遮罩与UV定位',
  ['顺序','祝福语ID','文字','资源ID','宽(px)','高(px)','uvRect [u,v,width,height]','编码与加载'],
- d.slogans.map(s=>[s.order,s.id,s.text,s.assetId,s.width,s.height,JSON.stringify(s.uvRect),'WebP线性R8；左下UV原点；4px护边；六组首屏解码上传；运行时不渲染SVG']),
- [9,20,20,30,12,12,105,85],45);
+ d.slogans.map(s=>[s.order,s.id,s.text,s.assetId,s.width,s.height,JSON.stringify(s.uvRect),`${s.fontFamily} Bold ${s.fontWeight}；${s.resourceReleaseId}；WebP线性R8；4px护边；六组首屏预热；字体仅制作使用`]),
+ [9,20,20,30,12,12,105,85],65);
 
 sheet('资源明细','195项运行资源与传输格式',
  ['资源ID','所属对象','用途','档位','编码','色彩空间','宽(px)','高(px)','清单通道','文件字节','清单decodedBytes','清单gpuBytes','运行格式','运行保留字节','运行GPU估算','原始URL','发布根相对路径','当前预览URL','SHA256','sourceSHA256'],

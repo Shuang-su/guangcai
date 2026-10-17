@@ -44,7 +44,7 @@ export async function collectBackendData(sourceRef='HEAD'){
  const colorOrder=uiConstant(ui,'paletteOrder') as (keyof typeof palettes)[];
  const colorNames=uiConstant(ui,'paletteNames') as Record<keyof typeof palettes,string>;
  const cityCatalog=await json('src/styles/city-catalog-v6.json');
- const sourcePaths=['src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
+ const sourcePaths=['package.json','evidence/v7.1.2/slogans-source.json','evidence/v7.1.2/cities/review.json','src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
  const sources=[];
  for(const p of sourcePaths){
   const bytes=await readFile(resolve(app,p)),gitPath='guangcai-china-preview/'+p;
@@ -82,15 +82,16 @@ export async function collectBackendData(sourceRef='HEAD'){
   return {order:i+1,preset,name:colorNames[preset],sourceName:p.name,colorSpace:'srgb',darkHex:p.dark,lightHex:p.light,
    hexPair:[p.dark,p.light],darkRgb255:rgb(p.dark),lightRgb255:rgb(p.light),hsl:[a.hue,a.saturation,a.lightness],appearance:a};
  });
+ const typography=await json('evidence/v7.1.2/slogans-source.json');
  const labels=[];
  for(const [i,[id,text]] of Object.entries(slogans).entries()){
   const s=manifest.slogans[id];assert.equal(s.text,text);await asset(s.asset,id,'slogan','shared');
-  labels.push({order:i+1,id,text,assetId:s.asset.id,width:s.asset.width,height:s.asset.height,uvRect:s.uvRect});
+  labels.push({order:i+1,id,text,assetId:s.asset.id,width:s.asset.width,height:s.asset.height,uvRect:s.uvRect,fontFamily:typography.font.family,fontWeight:typography.font.weight,fontSha256:typography.font.sha256,resourceReleaseId:manifest.releaseId});
  }
  await asset(manifest.mark,'mark','mark','shared');
  const materialSamples=[0,.5,1].flatMap(material=>[0,.5,1].map(materialX=>({material,materialX,...materialAt(material,materialX)})));
  const descriptions:Record<string,[string,string]>={
-  schemaVersion:['作品格式版本','当前固定为1'],resourceReleaseId:['资源发布版本','默认v7-2；旧作品v7-1按原版本回放'],modelVersion:['几何模型版本','模型由前端生成，不是模型图片URL'],recipeVersion:['材质与照明配方版本','绑定源码计算规则；后台不能仅改版本名'],cityId:['城市稳定ID','来自城市配置表；不存中文名代替ID'],sloganId:['祝福语稳定ID','来自祝福语表'],preset:['配色预设ID','决定深浅色偏移及重置默认参数'],hue:['色相','单位度；数组HSL第1项'],saturation:['饱和度','0～100数值；不是0～1'],lightness:['明度','契约0～100；UI滑块20～65'],material:['材质纵轴','0～1；金属度等于该值；同时影响粗糙度与清漆'],materialX:['材质横轴','0～1；默认0.5；调整粗糙度和清漆'],relief:['法线强度系数','0～2；normalScale=clearcoatNormalScale=0.7×relief；当前消费者面板不提供该滑块']};
+  schemaVersion:['作品格式版本','当前固定为1'],resourceReleaseId:['资源发布版本','默认v7-3；旧作品v7-1/v7-2按原版本回放'],modelVersion:['几何模型版本','模型由前端生成，不是模型图片URL'],recipeVersion:['材质与照明配方版本','绑定源码计算规则；后台不能仅改版本名'],cityId:['城市稳定ID','来自城市配置表；不存中文名代替ID'],sloganId:['祝福语稳定ID','来自祝福语表'],preset:['配色预设ID','决定深浅色偏移及重置默认参数'],hue:['色相','单位度；数组HSL第1项'],saturation:['饱和度','0～100数值；不是0～1'],lightness:['明度','契约0～100；UI滑块20～65'],material:['材质纵轴','0～1；金属度等于该值；同时影响粗糙度与清漆'],materialX:['材质横轴','0～1；默认0.5；调整粗糙度和清漆'],relief:['法线强度系数','0～2；normalScale=clearcoatNormalScale=0.7×relief；当前消费者面板不提供该滑块']};
  const fields:any[]=[];
  const appearanceSchema=schema.properties.appearance;
  for(const [key,def] of [...Object.entries(schema.properties).filter(([key])=>key!=='appearance'),...Object.entries(appearanceSchema.properties)] as [string,any][]){
@@ -113,10 +114,10 @@ export async function collectBackendData(sourceRef='HEAD'){
  assert.equal(cities.length,23);assert.equal(colors.length,5);assert.equal(labels.length,6);assert.equal(resources.length,195);
  assert.equal(new Set(resources.map(r=>r.id)).size,195);
  assert.deepEqual(Object.keys(manifest.cities),cities.map(c=>c.cityId));
- return {format:'guangcai-backend-handoff-v1',productVersion:'7.1.1',sourceCommit,resourceReleaseId:manifest.releaseId,
+ return {format:'guangcai-backend-handoff-v1',productVersion:(await json('package.json')).version,sourceCommit,resourceReleaseId:manifest.releaseId,
   modelVersion:manifest.modelVersion,recipeVersion:manifest.recipeVersion,catalogPath,manifestPath,previewBase,
   notice:'配置参考导出，不新增前端接口；城市拓展JSON通过manifest与resourceIds引用完整资源描述。',
-  fields,cities,colors,materialSamples,goldLine:GOLD_LINE,slogans:labels,resources,fixed:manifest.fixed,defaultDesign:bootstrap.defaultDesign,sources};
+  typography,fields,cities,colors,materialSamples,goldLine:GOLD_LINE,slogans:labels,resources,fixed:manifest.fixed,defaultDesign:bootstrap.defaultDesign,sources};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const data=await collectBackendData(process.argv[2]??'HEAD');

@@ -1,0 +1,60 @@
+
+> guangcai-china-v4@7.1.2 test
+> tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts tools/v6-selection.test.ts tools/loop-selector.test.ts tools/glass-compat.test.ts tools/download-bytes.test.ts
+
+✔ original China pack and all legacy China palettes retain their interface (2.068916ms)
+✔ all registered V5 patterns expose five presets and share structural channels (1.720208ms)
+✔ continuous appearance survives theme changes and entire-selection normalization (0.270875ms)
+✔ palette endpoints are reproduced in sRGB and HSL edits preserve a shared gradient (0.272209ms)
+✔ material interpolation keeps independent gold parameters and exact finish endpoints (0.157667ms)
+✔ last selection wins; stale failure and current failure preserve the committed selection (9.916083ms)
+✔ Shenzhen explicit slogans remain available and reset outside Shenzhen (0.139458ms)
+✔ a progressing transfer survives longer than its idle deadline (218.891ms)
+✔ a stalled transfer is aborted instead of holding startup forever (36.554ms)
+✔ failed HTTP status is rejected without waiting for a body (0.310583ms)
+✔ fixed atlas rejects mismatched dimensions, fractional rows and missing guards (1.013458ms)
+✔ periodic atlas coordinates preserve top/bottom orientation and protect both splits (0.26575ms)
+✔ half-float normal decoder rejects corrupt headers, dimensions, and non-finite values (3.393166ms)
+✔ body normal retains half precision and matches source orientation (149.201125ms)
+✔ handle normal retains half precision and matches source orientation (57.131833ms)
+✔ saucer normal retains half precision and matches source orientation (340.622083ms)
+minimum radial cavity clearance, mm: 1.1500015258789062
+max handle UV longitudinal scale error: 0.0020292070439866805
+triangles checked: 150084
+✔ handle and porcelain collars stay outside the cavity across all UI dimension extremes (505.740458ms)
+✔ handle artwork uses uniform physical scale through the upper corner and lower curve (4.5045ms)
+✔ all rendered triangles face the same side as their vertex normals; no invalid attributes (121.199208ms)
+✔ reference-derived assembly retains inset saucer foot, recessed cup base and lid flange (50.071125ms)
+✔ invalid parameters reject before creating a replacement model (0.706459ms)
+✔ bottom marks face outward, sit below the recessed base and share physical scale (34.817375ms)
+✔ city artwork reaches the rounded exterior foot with a continuous upright second UV set (38.460584ms)
+✔ v3 preserves cup and saucer geometry and city coordinates outside the authorized lid correction (32.294959ms)
+✔ narrow floral coverage remains continuous and does not expose the handle roots (42.310125ms)
+✔ balanced saucer UV closes without a new seam, folds or abrupt changes of motif scale (33.811375ms)
+✔ flat lid glaze and knob feet stay in contact after crown removal (30.995209ms)
+✔ camera far plane encloses the assembly through distant dolly, rotation and pan (32.464667ms)
+✔ mobile WebKit uses an unfiltered scene, including iPad desktop UA and iOS browser brands (0.942375ms)
+✔ desktop Safari and Android Chromium retain the original optical renderer (0.125417ms)
+✔ native vibration, older iOS labels and newer trusted gestures select separate paths (8.055083ms)
+✔ haptics require trusted touch intent and respect reduced motion/visibility gating (0.978792ms)
+✔ haptics rate limit detents and bound pulse length (0.104583ms)
+✔ unsupported or rejected motor requests cannot break the interaction (0.111083ms)
+✔ movement haptics follow distance and cell crossings without reacting to finger jitter (1.071916ms)
+✔ four menus and five palettes cycle both ways with three menu slots and five palette slots (2.319ms)
+✔ all 23 V6 cities share six independent gold labels, without duplicated city channels (3.218083ms)
+✔ consumer restore returns Shenzhen, gold and open while city switches keep creation (1.280666ms)
+✔ fixed-gold lettering is independent of fill metal, palette and clearcoat, with legacy defaults (1.158583ms)
+✔ authoring framing keeps the full canvas and restores the camera projection without accumulation (2.833166ms)
+✔ cached colour field lightness compositing matches direct HSL at both endpoints and in between (0.715083ms)
+✔ square colour mapping reaches all edges and round-trips hue and saturation (1.033208ms)
+✔ material plane preserves the full legacy column and varies in both directions (1.66175ms)
+✔ legacy input, presets and cross-city updates preserve a single material state (0.922166ms)
+✔ uniform-only material edits preserve program, normals and legacy lettering inputs (1.448208ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1371.097792

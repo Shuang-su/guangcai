@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "protectedFileCount": 304,
+  "sourcePngSvgAndOldReleasesUnchanged": true,
+  "citiesReviewed": 23,
+  "changedCities": [
+    "xiamen",
+    "xian"
+  ],
+  "rows": [
+    {
+      "cityId": "xiamen",
+      "tier": "light",
+      "changedPixels": 182,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    },
+    {
+      "cityId": "xiamen",
+      "tier": "standard",
+      "changedPixels": 742,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    },
+    {
+      "cityId": "xiamen",
+      "tier": "detail",
+      "changedPixels": 2950,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    },
+    {
+      "cityId": "xian",
+      "tier": "light",
+      "changedPixels": 3,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    },
+    {
+      "cityId": "xian",
+      "tier": "standard",
+      "changedPixels": 18,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    },
+    {
+      "cityId": "xian",
+      "tier": "detail",
+      "changedPixels": 69,
+      "outlineIdentical": true,
+      "normalIdentical": true,
+      "outsideCorrectionIdentical": true
+    }
+  ],
+  "slogans": [
+    {
+      "id": "open",
+      "width": 288,
+      "height": 936,
+      "bytes": 13680,
+      "gpuBytes": 359424
+    },
+    {
+      "id": "innovation",
+      "width": 288,
+      "height": 936,
+      "bytes": 15024,
+      "gpuBytes": 359424
+    },
+    {
+      "id": "cooperation",
+      "width": 288,
+      "height": 936,
+      "bytes": 12632,
+      "gpuBytes": 359424
+    },
+    {
+      "id": "sharing",
+      "width": 288,
+      "height": 936,
+      "bytes": 11912,
+      "gpuBytes": 359424
+    },
+    {
+      "id": "together",
+      "width": 288,
+      "height": 936,
+      "bytes": 11890,
+      "gpuBytes": 359424
+    },
+    {
+      "id": "ocean",
+      "width": 288,
+      "height": 936,
+      "bytes": 15404,
+      "gpuBytes": 359424
+    }
+  ],
+  "fontWeight": 700,
+  "fontRuntimeBytes": 0,
+  "sloganGpuBytes": 2156544,
+  "referenceGlyphIoU": 0.9914075370793417,
+  "referenceFrameIoU": 0.9806924536946136
+}

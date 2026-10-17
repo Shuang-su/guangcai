@@ -1,6 +1,6 @@
 {
   "name": "guangcai-china-v4",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -45,7 +45,9 @@
     "qa:v7-startup": "node tools/v7/startup-qa.mjs",
     "deploy:v7": "node tools/v7/deploy-preview.mjs",
     "qa:v7-split": "tsx tools/v7/split-qa.ts",
-    "qa:v7-glass": "node tools/v7/glass-qa.mjs"
+    "qa:v7-glass": "node tools/v7/glass-qa.mjs",
+    "textures:v7-3": "node tools/v7/compile-v7-3.mjs",
+    "check:v7-3": "node tools/v7/validate-v7-3.mjs"
   },
   "dependencies": {
     "@lisse/core": "0.7.2",

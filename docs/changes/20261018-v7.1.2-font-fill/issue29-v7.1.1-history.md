@@ -1,0 +1,383 @@
+# V7.1.1 Issue正文历史快照
+
+仅保留上一轮状态，不代表V7.1.2验收。
+
+# 后台同事从这里开始（2026-10-17补充）
+
+本次补齐可直接查阅/复制的配置数据和录入说明。适用V7.1.1、资源v7-2，数据来源为合并基线ec6f9bb；公司尚无固定后台模板，表格用于字段映射，不声称可直接导入公司后台。数据/文档交付不重发V6/V7。
+
+- [下载 Excel：六张配置表](https://github.com/Shuang-su/guangcai/raw/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/backend-handoff/V7%E5%90%8E%E5%8F%B0%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E8%A1%A8.xlsx)
+- [完整 JSON：23城、5配色、材质、6祝福语和195资源](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/backend-handoff/backend-config.json)
+- [字段、录入步骤、完整参数示例和新增内容边界](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/backend-handoff/README.md)
+- [12项性能机制与故障处理（固定提交版）](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/PERFORMANCE.md)
+- [OpenAPI](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/contracts/openapi.json)
+- [本轮数据验证记录](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/backend-handoff/verification.json)
+
+## 同事提出的三个问题
+
+1. **城市拓展数据：JSON object。** 保存cityId、资源/模型/配方版本、manifest路径和七项资源ID；完整文件描述从对应版本manifest或JSON的resources表读取。后台只有文本字段时JSON序列化一次，取用时解析一次。图片在COS，作品只存城市ID和版本，不复制纹理。
+2. **颜色数组：分别提供深浅sRGB HEX数组 `[darkHex,lightHex]` 和默认HSL数组 `[H,S,L]`。** 另有RGB 0～255数组。当前接口没有colorGamut字段，保存作品仍使用hue/saturation/lightness；H=0～360，S/L=0～100，UI明度20～65是单独的交互限制。
+3. **材质：保存recipeVersion与material/materialX/relief。** 前两项0～1、relief为0～2；前端计算金属度、粗糙度、清漆层和法线强度。金线与花纸独立，九个采样是参考点，不是九个固定材质预设。
+
+| 预设ID | 菜单名称 | darkHex | lightHex | 默认material |
+| --- | --- | --- | --- | --- |
+| purple | 焕新紫 | #57287f | #ad83c5 | 0 |
+| red | 繁盛红 | #941c16 | #c94a33 | 0 |
+| gold | 同心金 | #ffc643 | #ffc643 | 1 |
+| blue | 开放蓝 | #124d80 | #75b4d0 | 0 |
+| green | 共融绿 | #176647 | #82b89c | 0 |
+
+深圳城市拓展的完整引用示例（此对象不是DesignConfig新增字段）：
+
+```json
+{
+  "cityId": "shenzhen",
+  "name": "深圳",
+  "resourceReleaseId": "v7-2",
+  "modelVersion": "china-cup-v6",
+  "recipeVersion": "porcelain-city-v6",
+  "manifestUrl": "releases/v7-2/manifest-c3af02ef5468edcb.json",
+  "resourceIds": {
+    "thumbnail": "shenzhen-thumbnail",
+    "light": {
+      "mask": "shenzhen-light-mask",
+      "normal": "shenzhen-light-normal"
+    },
+    "standard": {
+      "mask": "shenzhen-standard-mask",
+      "normal": "shenzhen-standard-normal"
+    },
+    "detail": {
+      "mask": "shenzhen-detail-mask",
+      "normal": "shenzhen-detail-normal"
+    }
+  }
+}
+```
+
+## 接入顺序与边界
+
+上传完整v7-1/v7-2目录并校验哈希 → 配置bootstrap/apiBase/assetBase及CORS/MIME → 按已有ID录入目录和默认appearance → 前端whenReady后importDesign → 保存使用exportDesign → 按原resourceReleaseId还原。作品归属由公司服务端会话确定；版本入口、哈希URL和资源不能被后台图片压缩器改写。
+
+新增城市、配色、祝福语和版本仍需同步编译资源、前端目录/白名单、Schema及兼容校验。当前后台新增一行不会自动新增消费者菜单；具体各类步骤已写入交接说明。
+
+## 本轮已验证
+
+六张Excel保存后重新打开，单元格与同源JSON逐项相等；23城/5色/6文字/195资源的ID、顺序、长度和哈希通过。HSL独立转换、材质九点与非法范围检查通过。从Excel取西安、开放蓝、自定义材质后，mock保存/读取一致，其他账号读取404。六表及长JSON/URL区域已目视检查，原生筛选/冻结窗格已核对。45基础+31V7测试、类型检查通过。
+
+历史性能结果仍只代表当时记录的浏览器环境。实体iPhone13mini/iOS18连续30分钟、触感、Air/mini6的V7复测和正式COS/账号联调保留未验状态。
+
+文件校验：
+- backend-config.json：241449 bytes，SHA-256 `8ca17a0ccd306c5bb13ec1f60d1448f8fff092b804dee2274fbc71b35a3c4a95`。
+- V7后台配置数据表.xlsx：55132 bytes，SHA-256 `429a6f8c44ed7c035bf048a2342ff86fa81f269994ac41f2aa6ebed616713174`。
+
+---
+
+# V7.1.1 开发交接与验收清单
+
+V7.1.1已上线独立预览，源代码/资源/契约/模拟服务/部署归档和README均已提交。V6已先通过PR #28合并，随后V7通过PR #30合并；main已读回为 `ec6f9bb0b606f319435f57dc18fbc6375ed6566a`。公司生产后端与COS接入不在本轮上线范围；本Issue保持开放跟踪真机及正式接入。
+
+## 交接入口
+
+- [稳定V7预览](https://guangcai-no1-china-v7.netlify.app/?v=7.1.1) / [不可变V7.1.1预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/)
+- [开发交接主文档](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/README.md)：账号映射、数据关系、前后端分工、配置、模拟接口、COS/CDN部署。
+- [逐项性能机制](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/PERFORMANCE.md)：下面附全文，后续以仓库版本为准。
+- [OpenAPI](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/contracts/openapi.json)、[作品Schema](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/contracts/design.schema.json)、[资源Schema](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/contracts/resource-manifest.schema.json)、[示例作品](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/integration/contracts/example-design.json)。
+- [README](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/README.md)、[完整完成记录](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/docs/changes/20261017-v7-v6-sync-handoff/completion.md)、[验证目录](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/evidence/v7-corrections/)、[不可变发布文件](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/deployments/guangcai-no1-china-v7/6ad336a18e5052baf0191481/)。
+
+## 这次修复的真实问题
+
+1. 文件预载成功但主视角仍为低清：进入门槛改为当前高清已应用；切城稳定后自动升级，左右邻城动态预载。
+2. WebKit Worker原生法线解压流停在inflate：改固定解压器和精确长度预分配，线上24次高清城市检查全部0次超时重试。
+3. 普通切城触发永久磨砂：新旧材质短暂重叠按峰值预算处理，结束后回常态；真实持续超预算和上下文丢失仍保留磨砂路径。
+4. 西安漏填：按用户最终“全填满”要求补塔身、檐口、山坡、城墙及内部孔洞，仅外部天空透明；R金线/全部法线不变，新v7-2保留v7-1旧作品回放。
+
+## 提交、发布与独立交付包
+
+- 功能修正：209da08cfc50d875190a1ceb0da55ae6aee5c6d4；发布源码快照：4189efcf325540d489213edbdc21419d8291f846；当前完整记录：5f227f4ce32a891c078f764aba7c52effc7f1bbe。
+- 部署6ad336a18e5052baf0191481，225项服务端摘要匹配；V6及其他旧站指针前后不变。V6部署仍为6ad314a2a5e661a14e469026。
+- 便携包v7.1.1-handoff-5e3a6a2.tar.gz，221,993,306字节，SHA256 `86f1c6271631bf6cada3d8fa25e0d2b5326c839a1d736ee92ba20703d6fc3577`。包固定5e3a6a2源码和4189efc构建，809份payload均校验；包在本机交付目录，Git中有全部必要源代码/资源与生成脚本。
+- 独立解包、npm ci、消费者build、integration build、31项V7测试通过；224个重建文件与发布产物逐项一致。内置临时目录已删除，[回执](https://github.com/Shuang-su/guangcai/blob/5f227f4ce32a891c078f764aba7c52effc7f1bbe/guangcai-china-preview/evidence/v7-corrections/handoff-verification.json)。最终线上状态以本Issue/仓库记录补充到固定包快照。
+
+## 运行联调样例
+
+在guangcai-china-preview内执行：
+
+```sh
+npm ci --cache .codex-work/cache/npm
+npm run build
+npm run build:integration
+npm run test:v7
+npm run mock:v7
+```
+
+联调入口 http://127.0.0.1:5271/integration/。仅Alice/Bob合成身份和内存数据，重启即清空，不能用于生产账号或数据库。业务保存提交作品参数/版本引用，不上传重复贴图；公司账号归属由服务端会话判定。前端/API/COS可配置为三个Origin及/cup/子路径。
+
+## 已完成与待验
+
+- [x] 本轮全部源码/资源/文档/发布归档已推送，V6先合并#28、V7随后合并#30；main树与已验证分支完全一致。
+- [x] 45基础+31V7单元、195资源与6文字像素、两个浏览器各85项、两个浏览器各24次高清/液态城市检查、玻璃53、加载50、故障恢复、分域6条。
+- [x] 线上WebKit83项与24次高清/快速切换/旧版本回放，0应用错误、0法线超时重试。
+- [x] 10Mbps/100ms受控冷缓存13.595–13.604秒，12,132,070字节/轮；15秒工程观察线通过。
+- [ ] 原5MiB/6秒目标未通过（用户选全部低清+邻城高清后，计划资源10,928,395字节）。
+- [ ] iPhone13mini/iOS18连续30分钟真实稳定性、Air/iOS27.0.1及mini6/iPadOS16.6.1上的V7复测、实体触感。已有后两台V6正常折射反馈只属于V6。
+- [ ] 公司身份、数据库、业务后端和正式COS接入/生产发布。
+
+线上Netlify本次未限速冷启动37.496秒单列，不与受控本地13.6秒混算；用户已明确地域网络不作为COS上线方案的阻塞项。图形估算不是浏览器/机器真实RAM。
+
+---
+
+# V7.1.1 性能机制与故障处理交接
+
+本文件逐项说明消费者页面的运行机制、取舍、诊断与验证。当前代码沿用 V6.0.4 的几何、金线/配色/材质、杯壁局部反射、杯盖平面反射和触感输入路径。对应 Issue #29；本轮纠错证据在 `evidence/v7-corrections/`，V7.1.0 历史证据在 `evidence/v7-sync/`。自动化与实体设备验收分别记录。
+
+后台录入先看 [配置表、JSON与字段映射](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/integration/backend-handoff/README.md)。以下每节的接入核对表以V7.1.1实际代码为准，历史验证均明确指向 `evidence/v7-corrections/`；2026-10-17补充文档与数据导出不构成新的真机性能验收。源码路径相对 `guangcai-china-preview/`。这些机制当前由前端实现，公司后端主要负责稳定的版本、资源字节与业务数据，不应另造一套下载/提清门槛覆盖它们。
+
+## 1. 进入门槛：已下载与已显示是两件事
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 冷启动、重新加载；上下文恢复走第10节的轻量例外。 |
+| 流程 | bootstrap→manifest→必要文件校验→解码上传→当前高清材质应用→模型与玻璃首帧→开放设计操作。 |
+| 数据 | Bootstrap、ResourceManifest；LoadState的phase/receivedBytes/totalBytes/lastProgressAt/error。 |
+| 阈值 | 23城轻量+缩略图、当前±1城高清、六文字；手机当前2048、桌面4096；不能设固定总秒数判失败。 |
+| 失败与诊断 | phase=error保留重试入口；检查quality.cityTier与实际normal.width，下载100%不代表就绪。 |
+| 源码 | [src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts)、[src/resources/readiness.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/readiness.ts)、[src/ui/entry-loading.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/ui/entry-loading.ts)。 |
+| 历史验证 | [tools/v7/startup-qa.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/startup-qa.mjs)、[tools/v7/entry-qa.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/entry-qa.mjs)；`evidence/v7-corrections/startup/startup-qa.json`。 |
+| 接入方 | 嵌入端等待whenReady；后端准确返回manifest和字节，不用自制进度条提前显示空杯。 |
+
+1. 获取 bootstrap 与指定版本 manifest，校验版本、尺寸、字节数和编码约束。
+2. 首先准备固定花纸轻量档、杯底标识、背景、当前城市与文字。设计区域在加载层下保持 `inert` 与透明，允许布局和玻璃预热，但用户看不到空杯。
+3. 下载并 SHA-256 校验全部 23 城的轻量遮罩/法线和缩略图、六组裁切文字，以及当前城市和左右各一座的高清文件。文件预载仅进入压缩字节缓存，不把 23 城全部解码为 GPU 纹理。
+4. 六组文字一次解码并上传。手机当前城市实际切到 standard（2048 宽），桌面切到 detail（4096 宽），等待材质替换、模型首帧与玻璃准备完成后才允许进入。
+5. 上下文恢复例外：先用已经缓存的 light 重建，恢复可用后再升级，避免在恢复阶段集中分配高清资源。
+
+加载页的总量/完成量来自本轮资源清单和实际流读取，不是时间动画。速度反映收到的文件字节；纹理/缓冲是工程估算，不是机器总内存。JS heap 仅在浏览器提供时显示，Safari 缺失时显示不可用，不伪造。完成下载仍可能处于解码、上传、反射生成和首帧阶段。
+
+**纠错**：7.1.0 只保证高清文件预载，主视角仍等近看才尝试显示，预算又可能拒绝升级。7.1.1 的门槛明确包含当前城市高清材质已应用；回归同时检查 `quality.cityTier` 与实际 normal.width，不能只看请求成功。
+
+入口：[src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts) initialize、`resources/readiness.ts`、`ui/entry-loading.ts`。嵌入端使用 `whenReady({signal})` 或 `onLoadStateChange`；不另设固定总加载秒数冒充失败。
+
+## 2. 城市切换与动态相邻预载
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 当前城市变化、选择稳定，以及初始化后预载。 |
+| 流程 | 取消旧邻城任务→优先当前城→预载左右各一城→按预算解码→整组替换；首尾环绕。 |
+| 数据 | 城市ID、light/standard/detail的mask/normal、当前选择的appearance；预载仅保留编码文件。 |
+| 阈值 | 稳定约350ms自动升级；手机2048、桌面4096；每侧1个邻城。 |
+| 失败与诊断 | 保留当前可用材质；过期结果释放。查看debug().preload、quality.error及解码阶段。 |
+| 源码 | [src/resources/preload.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/preload.ts)、[src/styles/city-artwork.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/styles/city-artwork.ts)、[src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts) warmNeighbors/upgradeQuality。 |
+| 历史验证 | [tools/v7/preload.test.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/preload.test.ts)、[tools/v7/city-glass-qa.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/city-glass-qa.mjs)；`evidence/v7-corrections/city-webkit/report.json`。 |
+| 接入方 | 保留目录ID和顺序；换菜单顺序须同步前端。不得把预载全城误实现为全城GPU常驻。 |
+
+- 城市顺序与选择器一致，首尾环绕。每次选中当前城市后，旧邻城任务取消，先确保当前高清文件，再预载左/右各一城。手机“高清”指 2048，桌面指 4096；不把所有 4096 常驻。
+- 已缓存的低清可先完成切换；稳定约 350ms 后自动切到当前高清，主视角也升级。近看/缩放只额外决定固定花纸区域是否升级，不再是城市高清的必需条件。
+- 高清候选完整下载、哈希、解码和尺寸检查后，整组材质一次替换。失败或被新选择取消时保留已有可用图；调色、材质、文字参数不会因提清改变。
+- 最新选择获胜，过期请求和排队任务取消。无法打断的结果返回后释放，不反向覆盖新城市。
+- 文件预载不等于 GPU 预热；相邻城市首次显示仍有解码/上传成本。低清切换和高清完成耗时分别记录，不能把低清响应时间称为高清完成。
+
+入口：`resources/preload.ts`、`styles/city-selection.ts`、`styles/city-artwork.ts`、main warmNeighbors/upgradeQuality。`debug().preload.neighborCity/neighborError`、`quality.error` 可定位重试或预算拒绝。
+
+## 3. 清晰度与固定图集
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 发布资源时生成各档；运行时近看/缩放检查可见部件质量。 |
+| 流程 | 母版分区缩放与护边重建→带atlas参数发布→选择部件档位→验证后替换。调色只改uniform。 |
+| 数据 | 城市RG遮罩；固定baseColor、normal、ORM；atlas的rows/contentWidth/contentHeight/gutter。 |
+| 阈值 | 城市宽1024/2048/4096；消费者不加载原始8K花纸；档位遵守预算。 |
+| 失败与诊断 | 预算不足保留现有档位；尺寸/哈希错误拒绝。接缝排查UV、gutter和档位一致性。 |
+| 源码 | [tools/v7/compile-resources.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/compile-resources.mjs)、[src/resources/quality.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/quality.ts)、[src/materials/fixed-atlas.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/materials/fixed-atlas.ts)。 |
+| 历史验证 | [tools/v7/validate-resources.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/validate-resources.mjs)；`evidence/v7-corrections/validation.json`；母版与视觉对比另见相应证据。 |
+| 接入方 | COS原样托管数据贴图与参数，禁用自动有损转码/缩放；更新资源必须新版本。 |
+
+城市展开宽度为 1024/2048/4096；固定花纸按最大边长分三级。花纸每个分区单独缩放、重建复制护边，再更新 atlas 参数，避免直接缩整张图造成分区串色与法线接缝。消费者不加载原始 8K 母版。
+
+颜色/结构遮罩为 WebP；城市 R 是金线、G 是覆盖区域，颜色和材质由参数着色。固定花纸粗糙度存 G、金属度存 B，共用 ORM；金底校正同样读取 B。消费者颜色变化不生成新图片。
+
+近看花碟只申请对应花碟档位；近看把手申请把手及相连杯身饰带。先核算候选常态占用，超预算延后升级并保留已有图，不通过回退城市高清来腾空间。光照/两类反射继续保留。
+
+## 4. 高精度法线：磁盘 RGBA16F，运行时 RG16F
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 法线候选进入单Worker解码队列。 |
+| 流程 | 校验压缩字节→按声明长度解压→校验HFN头/尺寸/数值→保留半浮点XY→基础与清漆法线重建正Z。 |
+| 数据 | HFN1 gzip：16字节头+bottom-up RGBA binary16；清单通道4，运行RG16F通道2。 |
+| 阈值 | 源8字节/像素、运行4字节/像素；mipmap乘4/3；不是转8位。 |
+| 失败与诊断 | 长度/哈希/HFN/负Z非法拒绝；inflate长期不回复按第6节终止；检查decodeTask.phase。 |
+| 源码 | [src/resources/decode.worker.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/decode.worker.ts)、`inflate.ts`、`hfn.ts`、`texture-budget.ts`、[src/materials/packed-normals.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/materials/packed-normals.ts)。 |
+| 历史验证 | [tools/v7/packed-normals.test.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/packed-normals.test.ts)全部78项解压/XY位值及角度验证；线上逐城检查无重试见online/report.json。 |
+| 接入方 | 不解包、不重压缩或转格式；HTTP不给Content-Encoding:gzip；按清单保留原字节。 |
+
+HFN1 gzip 文件及来源哈希保持完整。Worker 用固定版本 fflate 解压器按清单长度预分配输出；SHA-256、gzip声明长度、HFN头/尺寸/值范围均校验。运行时只保留原始半浮点X/Y，Three的RG法线分支重建正Z；清漆法线也在强度缩放之前重建Z，保留既有图集UV修正。
+
+每个法线像素GPU和保留CPU数据从8字节降到4字节，GPU mipmap估算乘4/3。XY没有转为8位。manifest `decodedBytes/gpuBytes` 仍描述文件RGBA源表达；运行时使用 `texture-budget.ts` 按实际RG16F估算，二者不能混淆。
+
+78张各档法线逐字节验证：固定解压器输出与Node原生gzip完全相同；XY半浮点位值完全相同；重建方向与归一化原法线最大差约 **0.081835°**。这不是最终渲染像素完全相同声明，mipmap/强高光仍需画面回归。负Z或非法值拒绝，不默默翻面。
+
+**真实停等修复**：WebKit逐城回归记录到文件缓存完整、网络空闲，但 `decodeTask.phase=inflate` 持续停留，Worker超时重试后仍可能停等。原生 `DecompressionStream` 从正式Worker路径移除，使用Three锁定依赖附带的fflate，仍在单个可终止Worker执行。改后WebKit逐城高清、快速切换、版本回放通过。排查中的RGBA8编码候选未采用；不能把早期测试服务旧清单/自动化等待问题误判成GPU格式缺陷。
+
+入口：`decode.worker.ts`、`inflate.ts`、`texture-budget.ts`、`materials/packed-normals.ts`；测试 `packed-normals.test.ts` 检查全部资源解压/精度、长度拒绝和图集清漆重建。
+
+## 5. 祝福语：裁切 R8，不在切换时画整张 4K
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 首屏准备六组遮罩；文字选择变化时更换已持有引用。 |
+| 流程 | 构建时字体+SVG边框光栅化→裁字框→记录UV→一次上传六组→切换纹理/参数。 |
+| 数据 | WebP线性遮罩，GPU R8；uvRect=[u,v,width,height]，左下原点归一化坐标。 |
+| 阈值 | 4px护边；六组含mipmap约2.06MiB；不保留六张完整4K展开图。 |
+| 失败与诊断 | 首屏遮罩失败保留加载错误；字框错位查UV，字形变化查母版/字体/裁切，不重画运行时Canvas。 |
+| 源码 | [tools/v7/compile-resources.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/compile-resources.mjs)、[src/materials/city-parametric.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/materials/city-parametric.ts)、[src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts) sloganLeases。 |
+| 历史验证 | [tools/v7/validate-resources.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/validate-resources.mjs)六组裁切像素比对；浏览器文字切换见chrome/report.json、webkit/report.json。 |
+| 接入方 | 后台保存sloganId并发布对应遮罩/UV；新祝福语需走编译与前端白名单更新，不能只返回文案。 |
+
+字形/边框来自既有字体与 SVG 制作母版，运行时使用构建出的遮罩，不直接渲染 SVG。只保留实际字框包围区域和 4px 护边；`uvRect` 把它定位回杯身 4096×1783 原展开坐标。六组文字合计约 2.06MiB GPU（含 mipmap），首屏统一上传，切换只替换已持有纹理/均匀参数。无整张展开画布重绘、无重复反射捕获。原字形逐像素与旧裁切区域一致，菜单标签仍是 DOM 文字。
+
+入口：`compile-resources.mjs`、`city-parametric.ts`、main sloganLeases；`validate-resources.mjs` 检查六组裁切像素。
+
+## 6. 队列、取消与下载容错
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 图片、法线请求或解码入队；切城/销毁/后台时取消或暂停。 |
+| 流程 | 共享网络队列→精确字节读取/校验→单解码任务→完成后交付；取消贯穿排队、退避与结果释放。 |
+| 数据 | ArrayBuffer与描述中的bytes/sha256；HTTP状态、AbortSignal、Worker消息。 |
+| 阈值 | 请求2、解码1；下载120秒无非空数据进度；网络/408/429/5xx最多3次，退避400/800ms；Worker15秒无回复只重试1次。 |
+| 失败与诊断 | 404/哈希/长度/主动取消不重试；后台不计无进度超时；不要把持续大文件下载当超时。 |
+| 源码 | [src/resources/queue.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/queue.ts)、`download.ts`、`pool.ts`、`decode.worker.ts`、[src/styles/download-bytes.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/styles/download-bytes.ts)。 |
+| 历史验证 | [tools/v7/download.test.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/download.test.ts)、`runtime.test.ts`；`evidence/v7-corrections/retry/report.json`。 |
+| 接入方 | 缺文件正确返回404而非SPA HTML；服务器支持稳定流式传输；网关超时策略配合持续下载。 |
+
+网络并发 2，解码并发 1；图片与法线共享额度。法线 SHA-256、固定解压器解压和验证在 Worker；精确长度读取直接拷入预分配缓冲，避免末尾再合并整份大文件。Worker 15 秒无回复会终止并仅重试一次；主动取消不重试。
+
+文件下载沿用 V6.0.4 的 **120 秒无进度**期限：每个非空数据块重置计时，持续下载可超过120秒总时长；空块不续期。后台暂停时不计闲置超时，返回前台重置。网络错误、408/429/5xx 最多3次，400/800ms退避；404、错误长度、哈希失败直接报错。取消也结束排队和退避，不把取消当故障重新下载。
+
+法线 URL 的 `.hfn.gz` 是应用协议容器：HTTP 必须返回原 gzip 字节，`Content-Type: application/octet-stream`，**不设置 Content-Encoding:gzip**，避免 CDN/浏览器透明解压后哈希与长度不符。Vite、mock 与 COS 配置说明一致。
+
+## 7. 两层缓存与替换峰值
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 资源入缓存、申请GPU候选、替换、释放、临时反射分配。 |
+| 流程 | 预留在途成本→检查常态/事务峰值→引用计数与LRU→整组交换→释放旧引用→回落预算。 |
+| 数据 | 文件编码字节、实际纹理格式+mipmap、受管渲染目标；CPU临时内存单列。 |
+| 阈值 | 编码手机12/桌面24MiB；GPU常态128/256MiB、峰值192/384MiB。 |
+| 失败与诊断 | 淘汰闲置与拒绝非必要升级；异常/取消也结束beginSwap事务；不是浏览器总RAM承诺。 |
+| 源码 | [src/resources/encoded-cache.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/encoded-cache.ts)、`pool.ts`、`texture-budget.ts`、[src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts)。 |
+| 历史验证 | [tools/v7/runtime.test.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/runtime.test.ts)、`glass-policy.test.ts`；city-webkit/report.json和performance/report.json。 |
+| 接入方 | 不另缓存已解码的23套全城纹理；不把后台图片压缩率等同于GPU占用降低。 |
+
+| 层 | 手机 / 桌面额度 | 内容 | 淘汰与释放 |
+| --- | --- | --- | --- |
+| 压缩文件 | 12 / 24 MiB | 已校验 WebP/HFN；预留排队及在途字节 | 固定轻量、23城轻量、文字和缩略图固定保留；邻城高清按最近使用淘汰 |
+| GPU 纹理与受管渲染目标 | 常态128 / 256 MiB；峰值192 / 384 MiB | 当前图、候选图、反射/阴影/画布/玻璃 | 引用计数+字节预算；淘汰同时 texture.dispose、ImageBitmap.close、清空CPU数据引用 |
+
+两种额度不能相加冒充进程内存限制。还存在 CPU 解压临时数据、几何/程序、DOM/CSS、图片解码、驱动与浏览器缓冲，应用无法完整测得；`decodedBytes` 和玻璃 CPU 字节单列。Safari 进程上限没有公开可依赖的查询。
+
+**切城误降级修复**：旧实现把旧城市+候选城市的短暂叠加按128MiB常态判断，触发会话永久磨砂。现在材质事务 `beginSwap()` 标记替换期间，允许到192MiB峰值，结束后释放旧引用并裁剪回常态。峰值仍始终检查，取消/异常也必须结束自己的事务。
+
+## 8. 反射、阴影、环境和按需渲染
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 相机、器件或实际影响捕获结果的材质变化；静止/后台退出连续绘制。 |
+| 流程 | 标记失效→必要时重捕获→复用环境与模型纹理→动画完成停绘；截图显式绘制后立即读取。 |
+| 数据 | 局部反射、杯盖平面反射、PMREM颜色、阴影和玻璃临时目标，不是后端图片接口。 |
+| 阈值 | 512局部探针、1024盖面；反射临时预留约66MiB，生成后释放PMREM深度约9MiB。 |
+| 失败与诊断 | 检查目标生命周期和预算；preserveDrawingBuffer=false时直接读未重绘画布可能为空。 |
+| 源码 | [src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts)、[src/studio/local-reflections.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/studio/local-reflections.ts)、[src/studio/lid-reflections.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/studio/lid-reflections.ts)；具体失效调用由main统一安排。 |
+| 历史验证 | Chrome/WebKit画面、空闲渲染与capture检查；`evidence/v7-corrections/chrome/report.json`、webkit/report.json。 |
+| 接入方 | 使用viewer.capture；保留页面可见性和失效调度，不加永久requestAnimationFrame驱动整个模型。 |
+
+- 保留512局部杯壁探针和1024杯盖平面反射。相机/器件/可见材质真正影响结果时更新；杯壁在局部探针捕获时本来隐藏，切换其城市/文字不再重复捕获。
+- 环境 PMREM 生成需要深度，生成后用同格式 GPU 纹理复制保留颜色并释放原深度附件，三份静态环境约省9MiB。保留反射色彩和半浮点精度。
+- 生成局部反射的66MiB临时预留与新旧贴图一起核算；捕获前暂时释放可重建的玻璃中间缓冲，捕获后再建。
+- 静止、自动旋转关闭、动画完成后停止模型与玻璃重复绘制；UI变化可以复用已捕获模型图。先同步绘制模型再取其画布，避免 `preserveDrawingBuffer=false` 时拿到清空帧。
+- 消费者关闭 preserveDrawingBuffer。导出接口显式绘制后立即捕获。
+- 后台停止RAF、暂停非必要队列；恢复时重置帧耗计时。
+
+## 9. 液态玻璃保留和回退条件
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 初始尝试液态；分配预算、持续前台活动帧耗或上下文错误改变策略。 |
+| 流程 | 手机独立WebGL2合成→复用模型捕获→先清闲置缓存/降低主DPR→持续不足才回退原生磨砂。 |
+| 数据 | glass.backend/error/memory、资源预算、活动帧P95；缺失deviceMemory为null。 |
+| 阈值 | 玻璃DPR≤1.25；主DPR初始1.5、1～2、步长0.25；连续两个2秒窗口P95>约33.83ms。 |
+| 失败与诊断 | 加载/切换/解码/近看升级/静止/后台不计入持续帧耗；回退本会话锁定，重进再尝试。 |
+| 源码 | [src/resources/glass-policy.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/glass-policy.ts)、[src/ui/glass-studio.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/ui/glass-studio.ts)、[src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts)。 |
+| 历史验证 | [tools/v7/glass-policy.test.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/glass-policy.test.ts)、`glass-qa.mjs`、`city-glass-qa.mjs`；liquid/liquid-qa.json与逐城报告。 |
+| 接入方 | 不按iPhone型号或Safari无内存接口强制磨砂；新UI合成层需重新核算帧耗与缓冲预算。 |
+
+手机 WebKit 使用独立 WebGL2 光学合成，保留材质图、嵌套折射、裁剪与 V6 收起动画。玻璃输出上限1.25 DPR；DOM文字保持设备原生清晰度。背景只上传当前可见的1 CSS像素裁切，不再上传大量屏外区域；主背景仍使用原图。UI-only帧复用模型纹理；材质图按可见使用加载并限制解码缓存。
+
+降级判断依据实际受管分配估算和前台持续帧耗，不按 iPhone型号/iOS版本禁用，也不把 `navigator.deviceMemory` 缺失当低内存。该接口即使存在也是粗粒度提示，不是可用RAM。
+
+1. 分配超预算先淘汰闲置纹理、降低主画面DPR（手机初始1.5，范围1～2，步长.25）。
+2. 高清升级先检查预算；放不下就保留已有清晰度。
+3. 最低DPR仍无法容纳真实常态/峰值，或连续两个2秒前台活动窗口 P95 超过约33.83ms，回退原生磨砂。
+4. 初始加载、资源切换/解码、近看升级、静止与后台不计入持续交互帧耗窗口。孤立慢帧不直接触发。
+5. WebGL丢失也进入可交互磨砂；本次会话锁定，防止来回抖动。重新进入页面再尝试液态。
+
+必须同时观察 `glass.backend/error/memory` 与 `resources`。`webgl2-isolated` 表示手机光学层、`webgl2` 表示桌面路径、`native-backdrop` 表示回退。不能仅凭CSS class存在就声称折射有效；测试有像素位移、嵌套、裁剪和首帧检查。
+
+## 10. 上下文丢失与重建
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | WebGL上下文丢失/恢复事件。 |
+| 流程 | 保存成功应用的作品参数与版本→取消过期任务并释放GPU→显示准备层→重建轻量资源/反射→恢复后提清。 |
+| 数据 | DesignConfig、已验证编码文件；旧WebGL对象不可复用。 |
+| 阈值 | 从light开始而非一次申请全部高清；仍遵守128/192MiB手机预算及请求/解码限额。 |
+| 失败与诊断 | 继续显示错误与重试；玻璃可磨砂；检查恢复首帧，不露出半完成空杯。 |
+| 源码 | [src/main.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/main.ts)上下文事件、[src/resources/readiness.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/readiness.ts)、`pool.ts`。 |
+| 历史验证 | 故障注入与恢复场景见 `evidence/v7-corrections/retry/report.json`；不能代替真实Safari内存终止测试。 |
+| 接入方 | 不因事件清空后台作品，不偷偷换最新资源版本；容器保留加载/重试状态。 |
+
+保存的是当前作品参数和资源版本。丢失时取消过期资源、清空GPU租约及渲染目标、遮挡设计并重新进入准备状态。恢复时先重建轻量花纸/城市/环境及两种反射，再自动提清；不会马上解码所有最高档。六组文字恢复后仍可直接切换。失败继续保留加载错误和重试入口，不能露出半完成空杯。
+
+## 11. 西安修正与旧作品回放
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 发布西安填色修正，或导入指定旧release的作品。 |
+| 流程 | 修正层派生三级G通道→新v7-2清单→其他资源引用v7-1；导入按作品release加载。 |
+| 数据 | 修正SVG、mask哈希、sourceSha256；R金线和HFN法线保留。 |
+| 阈值 | 只替换西安3个mask；旧v7-1不覆盖；未知版本明确拒绝。 |
+| 失败与诊断 | 找不到旧目录会404；检查manifest相对路径、源/派生哈希与填色点。 |
+| 源码 | [tools/v7/patch-xian.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/patch-xian.mjs)、[src/resources/client.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/client.ts)、`design.ts`、[tools/v7/mock-server.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/mock-server.ts)。 |
+| 历史验证 | [tools/v7/xian-qa.mjs](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/xian-qa.mjs)；xian.json、xian-qa.json、city-webkit/report.json的双版本回放。 |
+| 接入方 | 保留两个目录和历史作品引用；新资源版本同步白名单、契约及兼容分支，先上传校验再切入口。 |
+
+v7-2 只替换西安三个清晰度的填色 G 通道：塔下两层、檐口接缝、右侧山坡和城墙漏填。源 PNG、V6 SVG、所有 R 金线和 HFN 法线保持字节不变；可审查补面为 `assets/masters/v7/xian-fill-correction.svg`，生成器 `patch-xian.mjs`，记录源哈希与修正哈希。每档验证原漏填点变满、外部天空不变、其他通道不变。
+
+v7-1 的 catalog/manifest/资源不覆盖。v7-2 的其他资源引用 `../v7-1/`，避免复制整包。导入 DesignConfig 按指定发布版本加载对应 manifest；mock也校验该版本。旧作品保持v7-1的外观，新作品默认v7-2。未知版本明确拒绝，不能静默用最新资源替换。线上需同时发布两个目录。基础编译器遇到已经存在的v7-1目录入口会拒绝覆盖；常规build不编译资源。制作新资源版本时要先定义新releaseId和审核修正层，再生成新清单，不能直接重跑冻结的母版编译覆盖已发布入口。
+
+## 12. 部署与验收边界
+
+| 接入核对 | 具体实现与责任 |
+| --- | --- |
+| 触发 | 静态部署到COS、接公司身份/API、保存/还原/分享，或更新资源入口。 |
+| 流程 | 上传资源并核验→配置公开地址和响应头→切bootstrap→验证就绪/保存/旧版/分享；归属从服务端会话取得。 |
+| 数据 | Bootstrap、DesignConfig、ResourceManifest、OpenAPI；本次Excel/JSON只提供映射参考。 |
+| 阈值 | 哈希URL长期immutable；bootstrap/runtime-config不长缓存；有凭据API精确Origin，公开资源可*。 |
+| 失败与诊断 | 401登录、409修订/幂等冲突、410已撤销；缺资源404；检查CORS/MIME/字节而非盲目重试。 |
+| 源码 | `integration/contracts/`、[src/resources/client.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/src/resources/client.ts)、[tools/v7/mock-server.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/mock-server.ts)、[tools/v7/split-qa.ts](https://github.com/Shuang-su/guangcai/blob/d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85/guangcai-china-preview/tools/v7/split-qa.ts)。 |
+| 历史验证 | `evidence/v7-corrections/split/report.json`、handoff-verification.json、online/report.json；本轮数据证据见backend-handoff/verification.json。 |
+| 接入方 | 公司负责正式身份、数据库、权限、CDN和上线联调；删除生产mock入口。真机30分钟与COS时延另验，不把Netlify/桌面模拟数字当生产承诺。 |
+
+公司 COS/CDN 接入只替换公开 bootstrap/API/assetBase 配置。不可变哈希资源长缓存；bootstrap与runtime-config可更新且不长缓存。配置 CORS、Timing-Allow-Origin、MIME 与上面的 gzip规则；有 Cookie 的业务 API 只允许明确 Origin，不用 `*`。
+
+保存仅提交 DesignConfig 和版本引用，不保存清晰度、DPR、缓存或设备档位；归属从公司服务端登录会话取得。账号、修订、409并发、幂等、分享快照、撤销及匿名数据最小化见交接主文档/OpenAPI；模拟登录仅供本地。
+
+全部低清+邻城高清策略会增加首次字节数。原5MiB/6秒目标不得标为通过；10Mbps/100ms条件与当前15秒工程观察线分别报告。Netlify跨地区等待不等于COS效果。桌面Chrome/WebKit模拟并不证明iPhone进程内存、真实30fps或马达触感。
+
+仍需实体 iPhone13mini/iOS18 连续30分钟（23城、6文字、近看、旋转、拆解、快速切换、前后台）以及用户Air/mini6上的V7复测。V6在后两台设备的用户确认不能代替V7验收。生产COS和正式后端联调留在上线阶段。
+
+
+### V7.1.1 已记录的本地结果
+
+45基础+31V7单元、195资源、六组文字像素；Chrome/WebKit各85项应用/联调、各24次高清城市检查及快速切换/双版本回放；玻璃53、加载50、故障恢复、三Origin子路径六条均通过。10Mbps/100ms三轮13.595–13.604秒、每轮12,132,070传输字节；资源清单91项10,928,395字节。初始纹理约27.41MiB，375×812常态图形约122.68MiB，记录峰值191.87MiB。帧间隔P95 16.8ms仅是M1 Pro桌面模拟。真机仍pending。

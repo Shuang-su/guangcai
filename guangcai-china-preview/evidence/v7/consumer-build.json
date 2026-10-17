@@ -1,7 +1,7 @@
 {
   "root": ".codex-work/deploy/v7-build",
-  "files": 224,
-  "bytes": 115744037,
+  "files": 238,
+  "bytes": 116715287,
   "assetsVerified": 195,
   "inventory": [
     {
@@ -12,7 +12,7 @@
     {
       "path": "api/v1/bootstrap.json",
       "bytes": 578,
-      "sha256": "e44e6094db664eca400d33100d2e1efe122214ccb9fcc45f00c5d3ee6d04fd85"
+      "sha256": "0cdeaff1114932539f77e28acf51c059d9a68d58ab2f908b67a1315691ccde34"
     },
     {
       "path": "assets/decode.worker-DszJvlSf.js",
@@ -20,14 +20,14 @@
       "sha256": "d196cee26593e72eccb1da1aab9b2e73fa7691c0bfc218e5f35c6abba45082eb"
     },
     {
-      "path": "assets/gpu-WWMmkHTa.js",
+      "path": "assets/gpu-aRm-Ipqq.js",
       "bytes": 152552,
-      "sha256": "db596dd6feaff40a2cb352d876a9bbf85bf34cd469c20a9a6aece67ce0d28589"
+      "sha256": "9b767f88001daf1e1ce362c6122df7b655b51abae0136c857e034faf0c717cd8"
     },
     {
-      "path": "assets/index-kvzCXkQ0.js",
-      "bytes": 912458,
-      "sha256": "dcc69d208ee7572f6f9e12a411360ac4f0ccfae1ca5f8bad46f11d9dae8a57b2"
+      "path": "assets/index-CeB2n1ik.js",
+      "bytes": 912472,
+      "sha256": "5e13623956143111fd77cf6e0094637f126726a588b398d4e3a2c7cd977e1b0e"
     },
     {
       "path": "assets/index-m0pXmlyI.css",
@@ -72,7 +72,7 @@
     {
       "path": "index.html",
       "bytes": 4047,
-      "sha256": "ce52a8390c0ba005dd1c5a4dff994e79d287cbb3839f3fae21adc95635992610"
+      "sha256": "6e01d7d9d8011a1230656174c67ac7a7264d723655117db731d1d7351608d64d"
     },
     {
       "path": "manifest.webmanifest",
@@ -1088,6 +1088,76 @@
       "path": "releases/v7-2/manifest-c3af02ef5468edcb.json",
       "bytes": 119022,
       "sha256": "c3af02ef5468edcb425f9a9761528ea3c002aa6902215bca5dec0688764c5236"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-cooperation-e2c5f6b534591635.webp",
+      "bytes": 12632,
+      "sha256": "e2c5f6b534591635051fa826c08b3b55e13bbecb42e6a2e2a25c5fe931181fe9"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-innovation-0c31d18458db52dd.webp",
+      "bytes": 15024,
+      "sha256": "0c31d18458db52dd67f18cb0a7a94e82a0c5e934f4b629664994b37075798556"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-ocean-4fcdcbb818dbd1a2.webp",
+      "bytes": 15404,
+      "sha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+      "bytes": 13680,
+      "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-sharing-7d2d7bf570a46ce8.webp",
+      "bytes": 11912,
+      "sha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2"
+    },
+    {
+      "path": "releases/v7-3/assets/slogan-together-7e3a2c69d745a00f.webp",
+      "bytes": 11890,
+      "sha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b"
+    },
+    {
+      "path": "releases/v7-3/assets/xiamen-detail-mask-7e7d2ac8b97d19f8.webp",
+      "bytes": 198398,
+      "sha256": "7e7d2ac8b97d19f8cb09377952d34074d35422fda354872913e8e765af287549"
+    },
+    {
+      "path": "releases/v7-3/assets/xiamen-light-mask-43538debb37bd826.webp",
+      "bytes": 46286,
+      "sha256": "43538debb37bd8265ff918e4e42f28c77124e94e95159ba5bc80f143c361d6cf"
+    },
+    {
+      "path": "releases/v7-3/assets/xiamen-standard-mask-403c47be25586d7a.webp",
+      "bytes": 115220,
+      "sha256": "403c47be25586d7a21c449c260d4f035e121746385c468e4a2f82843c91d92b9"
+    },
+    {
+      "path": "releases/v7-3/assets/xian-detail-mask-2fec346956d39c3b.webp",
+      "bytes": 225564,
+      "sha256": "2fec346956d39c3bcc25967e818c297c9927383fcfc05ce6e33418328a563fc2"
+    },
+    {
+      "path": "releases/v7-3/assets/xian-light-mask-c5024f591539dc71.webp",
+      "bytes": 50280,
+      "sha256": "c5024f591539dc7123cac1cf19e119bf146d59fcb5b249dd3e581ec1c1c3a89e"
+    },
+    {
+      "path": "releases/v7-3/assets/xian-standard-mask-6765eb28884cba73.webp",
+      "bytes": 132670,
+      "sha256": "6765eb28884cba73b5aeab4fb4a93bbc8d6ef3478c2f40e13ac5341e8374a071"
+    },
+    {
+      "path": "releases/v7-3/catalog.json",
+      "bytes": 3356,
+      "sha256": "5efd3f2ada5bece80ab5efd3b70c0030d892673eec6cc21bb5367f4ecca785c5"
+    },
+    {
+      "path": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+      "bytes": 118920,
+      "sha256": "b27eb343b846cdc4237d3df7adde61edbb304ad0155ea6da9ac47d375ade11b4"
     },
     {
       "path": "runtime-config.js",

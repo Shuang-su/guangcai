@@ -1,4 +1,4 @@
-> 当前实现：V7.1.1 / 默认资源 v7-2。[逐项性能机制与故障处理](PERFORMANCE.md) 是交接必读，覆盖高清显示、邻城预载、祝福语、预算、液态降级、上下文恢复和旧版本回放；如以下历史策略描述冲突，以该文档为准。
+> 当前实现：V7.1.2 / 默认资源 v7-3。[逐项性能机制与故障处理](PERFORMANCE.md) 是交接必读，覆盖高清显示、邻城预载、祝福语、预算、液态降级、上下文恢复和旧版本回放；如以下历史策略描述冲突，以该文档为准。
 
 # V7 资源与模拟接口交接
 
@@ -38,7 +38,7 @@ window.GUANGCAI_CONFIG = {
 };
 ```
 
-省略配置时，前端读取应用根路径下 `api/v1/bootstrap.json`。bootstrap 内的 catalog/manifest 地址相对 `assetBase`（默认应用 base），manifest 内资源 URL 相对 manifest 自身位置。保持 `releases/v7-1/` 与 `releases/v7-2/` 目录结构即可换域名；v7-2复用v7-1的未变资源。不要把路径写成制作机器上的绝对文件路径。
+省略配置时，前端读取应用根路径下 `api/v1/bootstrap.json`。bootstrap 内的 catalog/manifest 地址相对 `assetBase`（默认应用 base），manifest 内资源 URL 相对 manifest 自身位置。保持 `releases/v7-1/`、`releases/v7-2/`、`releases/v7-3/` 目录结构即可换域名；v7-3按相对URL复用旧版未变资源。不要把路径写成制作机器上的绝对文件路径。
 
 子路径示例：
 
@@ -51,7 +51,7 @@ MOCK_BASE=/cup/ PORT=5273 npm run mock:v7
 
 ## 资源结构与通道
 
-- `releases/v7-2/catalog.json`（当前；v7-1目录保留旧作品回放）：23 个城市、六个祝福语、三级清晰度和 manifest 地址。
+- `releases/v7-3/catalog.json`（当前；v7-1、v7-2目录保留旧作品回放）：23 个城市、六个祝福语、三级清晰度和 manifest 地址。
 - `manifest-<hash>.json`：模型版本、材质配方版本、固定花纸、城市结构与法线、文字和底标；每项提供尺寸、编码、传输文件大小、解码大小、GPU/mipmap 估算、来源哈希与内容哈希。
 - `assets/<id>-<hash>.webp`：颜色为 sRGB；遮罩、ORM 是线性数据，禁止 CDN 进行有损转码或色彩调整。
 - 城市结构上传为 RG8：R 是金线、G 是覆盖；文字上传为 R8，`uvRect=[u,v,width,height]` 采用模型 UV 的左下原点。裁切边缘留保护像素，字形沿用原稿像素。

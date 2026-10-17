@@ -11,8 +11,8 @@ export const config=window.GUANGCAI_CONFIG??{};
 async function json<T>(url:string){const response=await fetch(url,{signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error(`资源目录读取失败 (${response.status})`);return response.json() as Promise<T>;}
 export async function loadResources(releaseId?:string){
  let bootstrap=await json<Bootstrap>(new URL(config.bootstrapUrl??'api/v1/bootstrap.json',appBase).href);
- if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
- if(bootstrap.schemaVersion!==1||!['v7-1','v7-2'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
+ if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
+ if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
  const manifestUrl=new URL(bootstrap.manifestUrl,new URL(config.assetBase??appBase,appBase)).href;
  const manifest=await json<ResourceManifest>(manifestUrl);
  if(manifest.schemaVersion!==1||manifest.releaseId!==bootstrap.releaseId||manifest.modelVersion!=='china-cup-v6'||manifest.recipeVersion!=='porcelain-city-v6')throw Error('Unsupported model or recipe');

@@ -1,0 +1,827 @@
+[
+  {
+    "city": "xiamen",
+    "tier": "light",
+    "closedHoles": [
+      {
+        "pixels": 23,
+        "bbox": [
+          266,
+          389,
+          268,
+          401
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 2,
+        "bbox": [
+          262,
+          374,
+          264,
+          375
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          237,
+          367,
+          238,
+          368
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          248,
+          375,
+          249,
+          376
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          254,
+          376,
+          255,
+          377
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          265,
+          379,
+          266,
+          380
+        ],
+        "boundary": false
+      }
+    ],
+    "openCandidates": []
+  },
+  {
+    "city": "xiamen",
+    "tier": "standard",
+    "closedHoles": [
+      {
+        "pixels": 1,
+        "bbox": [
+          498,
+          730,
+          499,
+          731
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          505,
+          738,
+          506,
+          739
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          517,
+          744,
+          518,
+          745
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          518,
+          745,
+          519,
+          746
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          519,
+          747,
+          520,
+          748
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          484,
+          748,
+          485,
+          749
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          494,
+          749,
+          495,
+          750
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          501,
+          751,
+          502,
+          752
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          507,
+          752,
+          508,
+          753
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          520,
+          756,
+          521,
+          757
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          525,
+          757,
+          526,
+          758
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          533,
+          769,
+          534,
+          770
+        ],
+        "boundary": false
+      }
+    ],
+    "openCandidates": [
+      {
+        "pixels": 181,
+        "bbox": [
+          459,
+          692,
+          465,
+          728
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 165,
+        "bbox": [
+          320,
+          694,
+          325,
+          729
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 108,
+        "bbox": [
+          197,
+          782,
+          204,
+          803
+        ],
+        "boundary": false
+      }
+    ]
+  },
+  {
+    "city": "xiamen",
+    "tier": "detail",
+    "closedHoles": [],
+    "openCandidates": [
+      {
+        "pixels": 724,
+        "bbox": [
+          641,
+          1386,
+          653,
+          1457
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 670,
+        "bbox": [
+          920,
+          1384,
+          931,
+          1456
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 430,
+        "bbox": [
+          396,
+          1562,
+          409,
+          1605
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 370,
+        "bbox": [
+          1066,
+          1551,
+          1074,
+          1605
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 266,
+        "bbox": [
+          1678,
+          1588,
+          1719,
+          1612
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 116,
+        "bbox": [
+          750,
+          1242,
+          755,
+          1271
+        ],
+        "boundary": false
+      }
+    ]
+  },
+  {
+    "city": "xian",
+    "tier": "light",
+    "closedHoles": [
+      {
+        "pixels": 3,
+        "bbox": [
+          211,
+          349,
+          214,
+          350
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          210,
+          348,
+          211,
+          349
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1,
+        "bbox": [
+          214,
+          350,
+          215,
+          351
+        ],
+        "boundary": false
+      }
+    ],
+    "openCandidates": [
+      {
+        "pixels": 478,
+        "bbox": [
+          307,
+          311,
+          326,
+          345
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 451,
+        "bbox": [
+          483,
+          312,
+          501,
+          346
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 390,
+        "bbox": [
+          497,
+          350,
+          515,
+          379
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 284,
+        "bbox": [
+          87,
+          366,
+          102,
+          392
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 214,
+        "bbox": [
+          293,
+          350,
+          312,
+          372
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 207,
+        "bbox": [
+          318,
+          289,
+          338,
+          308
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 199,
+        "bbox": [
+          471,
+          290,
+          490,
+          309
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 135,
+        "bbox": [
+          92,
+          351,
+          107,
+          365
+        ],
+        "boundary": false
+      }
+    ]
+  },
+  {
+    "city": "xian",
+    "tier": "standard",
+    "closedHoles": [
+      {
+        "pixels": 1,
+        "bbox": [
+          431,
+          701,
+          432,
+          702
+        ],
+        "boundary": false
+      }
+    ],
+    "openCandidates": [
+      {
+        "pixels": 1877,
+        "bbox": [
+          615,
+          622,
+          653,
+          691
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1843,
+        "bbox": [
+          966,
+          622,
+          1003,
+          692
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1603,
+        "bbox": [
+          994,
+          699,
+          1031,
+          759
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 1084,
+        "bbox": [
+          176,
+          735,
+          204,
+          785
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 872,
+        "bbox": [
+          586,
+          699,
+          624,
+          745
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 852,
+        "bbox": [
+          636,
+          576,
+          676,
+          616
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 819,
+        "bbox": [
+          942,
+          577,
+          981,
+          617
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 557,
+        "bbox": [
+          184,
+          699,
+          214,
+          730
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 214,
+        "bbox": [
+          1118,
+          740,
+          1137,
+          759
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 209,
+        "bbox": [
+          1314,
+          745,
+          1333,
+          764
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 137,
+        "bbox": [
+          431,
+          629,
+          437,
+          658
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 126,
+        "bbox": [
+          423,
+          666,
+          428,
+          695
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 117,
+        "bbox": [
+          439,
+          594,
+          444,
+          622
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 112,
+        "bbox": [
+          569,
+          706,
+          574,
+          732
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 107,
+        "bbox": [
+          447,
+          560,
+          452,
+          587
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 106,
+        "bbox": [
+          561,
+          668,
+          565,
+          697
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 104,
+        "bbox": [
+          553,
+          631,
+          557,
+          660
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 102,
+        "bbox": [
+          545,
+          595,
+          549,
+          623
+        ],
+        "boundary": false
+      }
+    ]
+  },
+  {
+    "city": "xian",
+    "tier": "detail",
+    "closedHoles": [],
+    "openCandidates": [
+      {
+        "pixels": 7553,
+        "bbox": [
+          1231,
+          1239,
+          1306,
+          1381
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 7333,
+        "bbox": [
+          1933,
+          1239,
+          2007,
+          1383
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 6389,
+        "bbox": [
+          1989,
+          1396,
+          2063,
+          1518
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 4335,
+        "bbox": [
+          354,
+          1468,
+          410,
+          1569
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 3503,
+        "bbox": [
+          1173,
+          1392,
+          1250,
+          1490
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 3435,
+        "bbox": [
+          1273,
+          1148,
+          1353,
+          1231
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 3268,
+        "bbox": [
+          1885,
+          1146,
+          1963,
+          1234
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 2166,
+        "bbox": [
+          371,
+          1400,
+          431,
+          1459
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 845,
+        "bbox": [
+          2237,
+          1479,
+          2275,
+          1516
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 795,
+        "bbox": [
+          2630,
+          1490,
+          2666,
+          1527
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 551,
+        "bbox": [
+          847,
+          1329,
+          859,
+          1389
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 517,
+        "bbox": [
+          864,
+          1257,
+          875,
+          1316
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 475,
+        "bbox": [
+          1139,
+          1408,
+          1150,
+          1463
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 472,
+        "bbox": [
+          1107,
+          1257,
+          1116,
+          1319
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 447,
+        "bbox": [
+          1123,
+          1334,
+          1132,
+          1394
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 443,
+        "bbox": [
+          880,
+          1186,
+          890,
+          1243
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 418,
+        "bbox": [
+          910,
+          1052,
+          919,
+          1107
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 399,
+        "bbox": [
+          896,
+          1120,
+          905,
+          1173
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 397,
+        "bbox": [
+          1091,
+          1189,
+          1099,
+          1245
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 386,
+        "bbox": [
+          1075,
+          1121,
+          1083,
+          1176
+        ],
+        "boundary": false
+      },
+      {
+        "pixels": 344,
+        "bbox": [
+          1059,
+          1055,
+          1067,
+          1107
+        ],
+        "boundary": false
+      }
+    ]
+  }
+]
