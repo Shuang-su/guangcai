@@ -4,7 +4,7 @@
 
 ## 当前开发交付候选：V7.1.1
 
-[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.1 预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [验证与完成记录](docs/changes/20261017-v7-v6-sync-handoff/completion.md)
+[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.1 预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [V7 PR #30](https://github.com/Shuang-su/guangcai/pull/30) · [验证与完成记录](docs/changes/20261017-v7-v6-sync-handoff/completion.md)
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
@@ -23,7 +23,7 @@ npm run mock:v7                 # http://127.0.0.1:5271/integration/
 
 V7.1.1 补充：当前深圳高清实际显示后才进入，稳定切城自动提清、左右邻城动态预载；正常材质替换按峰值额度核算，不因新旧图短暂叠加误降级。西安内部填色补齐为 v7-2，v7-1 保留回放。法线保留半浮点 X/Y、运行时重建 Z，环境反射释放用完的深度缓冲。每项触发条件、缓存、取消、预算、失败处理及测试见性能文档。
 
-最新验证以完成记录和 evidence/v7-corrections 为准；此前V7.1.0自动化没有覆盖切城后实际高清及玻璃保留，不能用旧通过记录代替本次复核。iPhone13mini/iOS18连续30分钟、实际触感，以及Air/mini6上的V7视觉复测仍待用户验收。原5MiB/6秒目标未通过，不将桌面浏览器结果写成真机验收。
+V7.1.1验证：45基础+31V7单元，Chrome/WebKit各85项，玻璃53、加载50、分域6条；线上WebKit83项及24次高清城市/液态检查通过。独立交接包全新安装构建和31项测试通过，224构建文件与发布一致。详细证据在完成记录和 evidence/v7-corrections。iPhone13mini/iOS18连续30分钟、实际触感，以及Air/mini6上的V7视觉复测仍待用户验收。原5MiB/6秒目标未通过，不将桌面浏览器结果写成真机验收。
 
 ## V6 与历史站点
 

@@ -61,3 +61,12 @@ V6先合并后，V7合入origin/main：重叠的版本/首屏/玻璃代码采用
 
 
 V7.1.1已发布：源码快照4189efcf325540d489213edbdc21419d8291f846，部署6ad336a18e5052baf0191481，固定链接https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/。225项服务端摘要匹配，五个受保护站点的部署指针前后相同，V6未重发。线上浏览器回读进行中。
+
+
+线上 V7.1.1 WebKit完整83项通过，24次城市高清检查/快速切换/双版本回放通过，无应用错误，全部城市检查的Worker超时重试数为0，液态保持。线上未限速冷启动本次37.496秒，和受控10Mbps/100ms的13.6秒分开记录；Netlify地域网络不代表后续COS，也不拿它冒充6秒达标。不可变部署新增verification.json，不修改已发布文件。
+
+交接包固定仓库快照5e3a6a22abe3677b296e96705d943caa6711d112，809份payload逐一SHA256核验。内置盘独立解包后全新npm ci、消费者build、integration build、31项V7单元全部通过；224个重新构建文件与已发布构建逐项SHA256一致。npm默认未执行可选webgpu依赖postinstall；消费者WebGL构建和V7测试不依赖该原生模块，无需开启它。临时内置目录完成后已删除并复查不存在；Finder生成.DS_Store时第一次删除未完成，检查仅剩元数据后重试，最终回执见handoff-verification.json。包的代码/静态产物冻结在5e3a6a2/4189efc；最终线上及移交状态由仓库和Issue补充，避免重打同一包改变哈希。
+
+交付归档：v7.1.1-handoff-5e3a6a2.tar.gz，221,993,306字节，SHA256 86f1c6271631bf6cada3d8fa25e0d2b5326c839a1d736ee92ba20703d6fc3577。源码、资源、契约和完整部署均在Git；便携tar为本地便利副本，不把重复221MB构建缓存塞进Git。
+
+V7使用PR #30（https://github.com/Shuang-su/guangcai/pull/30）承载本轮合并，V6已先合并#28。Issue #29保持开放承载完整交接和待办真机/COS验收，合并后状态与最终SHA在GitHub读回记录，不把预览验证视作生产验收。所有修改都有checkpoint；没有创建版本标签、生产业务后端或COS部署。
