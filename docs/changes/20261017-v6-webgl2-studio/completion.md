@@ -117,3 +117,7 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 最终打包与线上检查、源码 checkpoint 和部署摘要由本节后续发布回读补齐。物理 iPhone Air / Safari 27.0.1、iPhone 16 / Safari 26.6.1 的最终效果和帧率仍需真机复测；桌面 WebKit 26.6 的成功不等于真机验收。
 
 6.0.3 最终打包结果：42 项单元／契约、哈希一致的 23 城／六套字体边框资产、124 项 Chrome、原库同帧高光与菜单 morph、74 项 WebKit、42 项慢加载／城市返回、49 项独立折射像素／首帧／四菜单底部锚点／上下文丢失检查、70 项原触感分支全部通过。构建清单 1336 个文件，发布时再增加 release.json。build-6.0.3.json、webkit-6.0.3.json、liquid-6.0.3.json、startup-6.0.3.json 与 evidence/ui-v6/safari-6.0.3/ 保存本轮证据；无应用运行时错误。
+
+6.0.3 发布候选：源码 checkpoint `2ad92f6352119a014637da1b46f0e7ed788ab82d` 已推送；部署 `6ad30bc420f569fd63dd9068` 已在 V6 发布，1337 项服务器摘要匹配、旧站未改变，但线上完整 QA 未通过，未标记验证完成。Chrome 网络证据显示杯碟法线为 24,283,080 字节，120 秒时仍下载了 17,055,301 字节，应用总时长 AbortController 中断了正常进度并从头重试。候选完整文件已按准备清单回读，并保存到不可变归档，deployment.json 明确 published-online-qa-failed。
+
+容量后续：再次发现无人占用的 tmp_pack_erBDJL（含伴随文件共 1,704,726,528 字节），以同样逐文件哈希方法搬存到内置盘 recovery 下 abandoned-git-packs-20261017-repeat/。为防止容量不足期间自动维护反复产生临时包，仅在本仓库把 gc.auto 从未设置改为 0、maintenance.auto 从未设置改为 false；旧值保存为 automatic-maintenance-before.json，未修改全局 Git 配置。有效对象包与历史仍保留。
