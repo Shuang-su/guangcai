@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "frontend": "http://127.0.0.1:58465",
+  "api": "http://127.0.0.1:58466",
+  "cdn": "http://127.0.0.1:58467",
+  "base": "/cup/",
+  "checks": [
+    "subpath viewer ready through cross-origin bootstrap/CDN",
+    "credentialed CORS create",
+    "anonymous share restores on frontend origin",
+    "Bob cannot list Alice works",
+    "revoked anonymous share returns 410",
+    "session and saved work survive frontend reload"
+  ],
+  "errors": []
+}
