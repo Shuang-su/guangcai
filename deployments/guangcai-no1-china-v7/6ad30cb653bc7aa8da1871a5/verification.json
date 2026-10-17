@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-17T05:58:44.669Z",
+  "version": "7.0.3",
+  "sourceCommit": "8e05ba76f06747ea4e76278f9f962582c04146a5",
+  "deployId": "6ad30cb653bc7aa8da1871a5",
+  "status": "functional-checks-passed-performance-targets-not-met",
+  "archiveFilesVerified": 220,
+  "online": {
+    "chromeFullChecks": 83,
+    "webkitPreloadChecks": 56,
+    "uncaughtErrors": [],
+    "chromeReadyMs": 123312
+  },
+  "performance": {
+    "originalFirstLoad5MiB6Seconds": "not-met",
+    "local10Mbps100msReadyMs": [
+      13445,
+      13455,
+      13387
+    ],
+    "publicSingleDiagnosticReadyByMs": 106357,
+    "publicChromeRegressionReadyMs": 123312
+  },
+  "physicalIPhone": "pending",
+  "published": [
+    {
+      "id": "52e02ef9-e2d8-4fcb-98ed-1d14e283c74c",
+      "name": "guangcai-no1-china-v7",
+      "deploy": "6ad30cb653bc7aa8da1871a5"
+    },
+    {
+      "id": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+      "name": "guangcai-no1-china-v6",
+      "deploy": "6ad30bc420f569fd63dd9068"
+    },
+    {
+      "id": "b1fce272-cf28-41e5-8366-024c314b615f",
+      "name": "guangcai-no1-china-v5",
+      "deploy": "6ad20c45a7780e55fedba3d7"
+    },
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "deploy": "6acf18984f3abc04fe3cab18"
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "deploy": "6ace443df7425f433e717eb0"
+    },
+    {
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "deploy": "6ace111ab0415c9455a3c6f8"
+    }
+  ],
+  "preservedInputs": true,
+  "evidence": "guangcai-china-preview/evidence/v7-preload"
+}

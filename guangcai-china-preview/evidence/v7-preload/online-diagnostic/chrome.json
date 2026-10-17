@@ -1,0 +1,1240 @@
+{
+  "d": {
+    "version": "7.0.3",
+    "profile": "consumer",
+    "preload": {
+      "neighborCity": "shenzhen",
+      "neighborError": "",
+      "readyCities": 23,
+      "slogans": 6
+    },
+    "entryLoading": {
+      "prepared": true,
+      "entered": true,
+      "error": "",
+      "total": 10929425,
+      "received": 10929425,
+      "completed": 91,
+      "count": 91
+    },
+    "loading": {
+      "pending": [],
+      "error": ""
+    },
+    "quality": {
+      "cityTier": "light",
+      "fixedTiers": {
+        "body": "light",
+        "handle": "light",
+        "saucer": "light"
+      },
+      "mobile": true,
+      "upgrading": false,
+      "error": "",
+      "dpr": 1.5,
+      "renderFrames": 142,
+      "contextLost": false
+    },
+    "resources": {
+      "fileCache": {
+        "bytes": 10929425,
+        "reservedBytes": 10929425,
+        "peakBytes": 10929425,
+        "limit": 12582912,
+        "entries": 91,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 23884602,
+      "reservedRenderTargetBytes": 103285776,
+      "peakEstimatedBytes": 196376394,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 18,
+      "decodedBytes": 17913444,
+      "fetchedBodyBytes": 10929425,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    },
+    "renderTargets": {
+      "environments": 28311552,
+      "shadow": 8388608,
+      "contact": 4194304,
+      "framebuffer": 24642576
+    },
+    "glass": {
+      "backend": "webgl2",
+      "ready": true,
+      "maps": 14,
+      "mapTime": 188.80000008642673,
+      "error": "",
+      "optionSurfaces": 8
+    },
+    "haptics": {
+      "backend": "vibration",
+      "continuousBackend": "vibration",
+      "requests": 0,
+      "surfaces": [],
+      "physicalMotorVerified": false
+    },
+    "selection": {
+      "current": {
+        "variant": "v6-shenzhen-gold",
+        "finish": "metal",
+        "text": "open",
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        }
+      },
+      "desired": {
+        "variant": "v6-shenzhen-gold",
+        "finish": "metal",
+        "text": "open",
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        }
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "hero",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      66.49864281298906,
+      435.7723254024968,
+      1904.2719785628906
+    ],
+    "clipping": {
+      "near": 0.5,
+      "far": 2500
+    },
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "soft-v3",
+      "active": "soft-v3",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "ce78c508-4cd8-48dc-8eac-3717891c1548",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 1,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "924460f1-75ac-4922-9ac8-e1dbb56030f6",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 1,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "17bc33ae-9de1-4929-bf76-105cc91dce63",
+      "b5d3ae88-2366-4156-8a8b-6ea94eedaa60",
+      "a08dc5ab-823a-4fa9-a514-7f2d23562ddd",
+      "4a7b5bc1-2739-4fea-a3cd-9d8616821e30",
+      "f243835f-1c92-4e92-a2df-5f348d2261b4",
+      "4bd7e51a-41fd-4420-9f12-a14bccc69e09",
+      "cf7a55c6-02f5-46f6-973d-95b86fb88d3f",
+      "68c5230f-a634-40f8-99be-e91d6663e390",
+      "0e043c4d-5146-4fb3-a0d0-09606d523403",
+      "b0d91a63-d497-40e3-887e-4669ab037b6c",
+      "141c3734-5c73-41b8-a7c7-84699b83cf1f"
+    ],
+    "memory": {
+      "geometries": 14,
+      "textures": 28,
+      "programs": 23
+    },
+    "city": {
+      "pack": {
+        "id": "v6-shenzhen-gold",
+        "version": 7,
+        "name": "深圳",
+        "layout": "blank-300deg-v1",
+        "baseColor": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+        "normal": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-normal-9784ef28b68bb7f9.hfn.gz",
+        "roughness": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+        "metalness": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+        "coverage": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+        "normalEncoding": "rgba16f",
+        "parametric": {
+          "mask": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "label": {
+          "source": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+          "fixedGold": true
+        },
+        "runtime": {
+          "mask": {
+            "id": "shenzhen-light-mask",
+            "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+            "sha256": "069cb8336ce786db604ccd9b27f5c4b38bb272cf40c37cb179537ed6dafe5b61",
+            "sourceSha256": "0f39104d2f4814e767dab2bb770e19f517043ae9195f8168b27278bdc95cdef8",
+            "encoding": "webp",
+            "width": 1024,
+            "height": 446,
+            "bytes": 46866,
+            "decodedBytes": 913408,
+            "gpuBytes": 1217878,
+            "channels": 2,
+            "colorSpace": "linear"
+          },
+          "normal": {
+            "id": "shenzhen-light-normal",
+            "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-normal-9784ef28b68bb7f9.hfn.gz",
+            "sha256": "9784ef28b68bb7f9c1bba1cff3b4e68765144e161c439ebed2eeb4beb69c27a6",
+            "sourceSha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133",
+            "encoding": "hfn1-gzip",
+            "width": 1024,
+            "height": 446,
+            "bytes": 216196,
+            "decodedBytes": 3653632,
+            "gpuBytes": 4871510,
+            "channels": 4,
+            "colorSpace": "linear"
+          },
+          "label": {
+            "text": "开放包容",
+            "asset": {
+              "id": "slogan-open",
+              "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+              "sha256": "6180ec934a95c4d53387c6a3843dc8134e52e2e9b69db88894e892cbec6988fd",
+              "sourceSha256": "8264d0763a1afdf47c7c70d00b3c8f694dd913af270d9b408c1bd619ee34109e",
+              "encoding": "webp",
+              "width": 289,
+              "height": 934,
+              "bytes": 17470,
+              "decodedBytes": 269926,
+              "gpuBytes": 359902,
+              "channels": 1,
+              "colorSpace": "linear"
+            },
+            "uvRect": [
+              0.774658203125,
+              0.3881099270891756,
+              0.070556640625,
+              0.5238362310712282
+            ]
+          }
+        }
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "parameters": {
+        "enabled": true,
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        },
+        "fill": {
+          "metalness": 1,
+          "roughness": 0.2823529411764706,
+          "clearcoat": 0.10196078431372546
+        },
+        "line": {
+          "color": "#dcb251",
+          "metalness": 1,
+          "roughness": 0.23,
+          "clearcoat": 0.10196078431372549
+        },
+        "fixedGoldLabel": true,
+        "updates": 1
+      },
+      "cachedCities": 0,
+      "cachedLabels": 0,
+      "uniformOnly": false,
+      "maps": [
+        {
+          "uuid": "249eac79-3fcc-420a-9121-61a49b57f974",
+          "channel": 1,
+          "size": [
+            1024,
+            446
+          ],
+          "colorSpace": "",
+          "precision": "RG8"
+        },
+        {
+          "uuid": "7d08ccd4-4f09-4440-a10c-90acd091b793",
+          "channel": 1,
+          "size": [
+            1024,
+            446
+          ],
+          "colorSpace": "",
+          "precision": "RGBA16F"
+        },
+        {
+          "uuid": "98ab7fed-d117-4493-8afd-e3fa721fb850",
+          "channel": 1,
+          "size": [
+            289,
+            934
+          ],
+          "colorSpace": "",
+          "precision": "R8"
+        }
+      ],
+      "labelSource": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "cleanGoldGround": true,
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.4,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "a4a998ab-73a2-49be-8ad9-70c5a229d04c",
+        "normal": "46eb676d-1720-4d5c-8da9-0e03bf8eb4b2",
+        "roughness": "cad71808-e107-44d9-b87b-99b8024ff8cb",
+        "metalness": "cad71808-e107-44d9-b87b-99b8024ff8cb"
+      },
+      "handle": {
+        "baseColor": "c776b061-d91e-47dd-813d-d5df6672f095",
+        "normal": "fc786ea9-948b-4444-8405-5e25f8d16b97",
+        "roughness": "f3a96026-625f-4a28-b40d-6918a977751d",
+        "metalness": "f3a96026-625f-4a28-b40d-6918a977751d"
+      },
+      "saucer": {
+        "baseColor": "44713104-5d32-4795-8d26-6c33d20627cf",
+        "normal": "c4feedae-9493-4d4d-bc96-fd04f6e600f7",
+        "roughness": "285f45a0-e40d-40f2-b496-37d5e24ceb3d",
+        "metalness": "285f45a0-e40d-40f2-b496-37d5e24ceb3d"
+      }
+    }
+  },
+  "timings": [
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/assets/index-DB5hw2vA.js",
+      "ms": 664.5,
+      "fetch": 447.70000000298023,
+      "body": 238641
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/assets/index-CEDbFCZ3.css",
+      "ms": 452,
+      "fetch": 409.90000000596046,
+      "body": 10300
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/runtime-config.js",
+      "ms": 569.2000000029802,
+      "fetch": 555.7000000029802,
+      "body": 249
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/backgrounds/soft-light-v3-d06c52a8f2003f50.webp",
+      "ms": 308.79999999701977,
+      "fetch": 294,
+      "body": 91936
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/api/v1/bootstrap.json",
+      "ms": 298.09999999403954,
+      "fetch": 297.59999999403954,
+      "body": 578
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/icons/chevron-left.svg",
+      "ms": 293.59999999403954,
+      "fetch": 293,
+      "body": 246
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/icons/arrow-path.svg",
+      "ms": 422.3999999910593,
+      "fetch": 421.59999999403954,
+      "body": 386
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/assets/map-encoder.worker-gG3z5fOt.js",
+      "ms": 302.29999999701977,
+      "fetch": 301.1000000089407,
+      "body": 1477
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/manifest-ec81ffecfc60c00c.json",
+      "ms": 338,
+      "fetch": 337.09999999403954,
+      "body": 14484
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/mark-619bafa2ff7da748.webp",
+      "ms": 292.5,
+      "fetch": 291.79999999701977,
+      "body": 13842
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
+      "ms": 409.90000000596046,
+      "fetch": 296.70000000298023,
+      "body": 151206
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
+      "ms": 2452.0999999940395,
+      "fetch": 293.6000000089407,
+      "body": 915743
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
+      "ms": 1734.7000000029802,
+      "fetch": 1157.9000000059605,
+      "body": 113944
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-handle-light-color-701bfd4d526ffaeb.webp",
+      "ms": 698.4000000059605,
+      "fetch": 599.1000000089407,
+      "body": 39092
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-handle-light-normal-6c56e311d85ec224.hfn.gz",
+      "ms": 2719.2000000029802,
+      "fetch": 394.20000000298023,
+      "body": 217835
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-handle-light-orm-8e8aef807eb4da9a.webp",
+      "ms": 2745.1000000089407,
+      "fetch": 2618.2000000029802,
+      "body": 32544
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-saucer-light-color-f2e319117e64a426.webp",
+      "ms": 820.9000000059605,
+      "fetch": 534.7000000029802,
+      "body": 77912
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/assets/decode.worker-45gfPemT.js",
+      "ms": -5.100000008940697,
+      "fetch": 0,
+      "body": 907
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-saucer-light-normal-1d2d34ac35b0e3b1.hfn.gz",
+      "ms": 1746.199999988079,
+      "fetch": 697.8999999910593,
+      "body": 376650
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-saucer-light-orm-ab634c9bbc545e1c.webp",
+      "ms": 1151.8999999910593,
+      "fetch": 1046.1000000089407,
+      "body": 67010
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-mask-069cb8336ce786db.webp",
+      "ms": 376.59999999403954,
+      "fetch": 301.20000000298023,
+      "body": 46866
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-light-normal-9784ef28b68bb7f9.hfn.gz",
+      "ms": 942.4000000059605,
+      "fetch": 293.90000000596046,
+      "body": 216196
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-open-6180ec934a95c4d5.webp",
+      "ms": 1194.3999999910593,
+      "fetch": 669.2999999970198,
+      "body": 17470
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-mask-b6851b28ddd0ba09.webp",
+      "ms": 1816.7999999970198,
+      "fetch": 1694.3999999910593,
+      "body": 29356
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-light-normal-177f4734a51b9292.hfn.gz",
+      "ms": 2235.2999999970198,
+      "fetch": 1815.7999999970198,
+      "body": 133267
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shanghai-thumbnail-a2ff84e038f47efb.webp",
+      "ms": 492.29999999701977,
+      "fetch": 418.09999999403954,
+      "body": 39504
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/urumqi-light-mask-637d088c4843d463.webp",
+      "ms": 369,
+      "fetch": 366.59999999403954,
+      "body": 35952
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/urumqi-light-normal-a8156536e443b3f6.hfn.gz",
+      "ms": 1878.7000000029802,
+      "fetch": 315.20000000298023,
+      "body": 164891
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/urumqi-thumbnail-6b4528ec831723ab.webp",
+      "ms": 1750.2000000029802,
+      "fetch": 1579.800000011921,
+      "body": 39442
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/beijing-light-mask-f5eacc8741fb85d2.webp",
+      "ms": 582.5,
+      "fetch": 301.90000000596046,
+      "body": 45244
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/beijing-light-normal-05be60052498dd86.hfn.gz",
+      "ms": 1417.2000000029802,
+      "fetch": 476.5,
+      "body": 206001
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/beijing-thumbnail-8034a0a47f4b821f.webp",
+      "ms": 1329.5999999940395,
+      "fetch": 1001.2000000029802,
+      "body": 49754
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanjing-light-mask-d3a3ef28af213894.webp",
+      "ms": 878.5,
+      "fetch": 330.09999999403954,
+      "body": 32516
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanjing-light-normal-c562fa4a4317c317.hfn.gz",
+      "ms": 3838.5999999940395,
+      "fetch": 549.7000000029802,
+      "body": 146389
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanjing-thumbnail-a3935f190e7519a5.webp",
+      "ms": 3450.7000000029802,
+      "fetch": 3287.2000000029802,
+      "body": 39396
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanchang-light-mask-1cf703752e88303c.webp",
+      "ms": 1221.0999999940395,
+      "fetch": 622.4000000059605,
+      "body": 47442
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanchang-light-normal-39c205b1f6a349d8.hfn.gz",
+      "ms": 2120.6000000089407,
+      "fetch": 1057.6000000089407,
+      "body": 206199
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/nanchang-thumbnail-5be94aa8d0dd7e7b.webp",
+      "ms": 1803.7999999970198,
+      "fetch": 1062.1000000089407,
+      "body": 52550
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xiamen-light-mask-65634b05877a400b.webp",
+      "ms": 1017.3999999910593,
+      "fetch": 740.0999999940395,
+      "body": 46200
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xiamen-light-normal-6f70be1bb66497b2.hfn.gz",
+      "ms": 1693,
+      "fetch": 767.5,
+      "body": 213798
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xiamen-thumbnail-55c61f6301f4be10.webp",
+      "ms": 2034.2000000029802,
+      "fetch": 1416,
+      "body": 48994
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hohhot-light-mask-b81cf4ebb619f8c8.webp",
+      "ms": 1201,
+      "fetch": 667.7999999970198,
+      "body": 37784
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hohhot-light-normal-3cc0ffa8e53e576a.hfn.gz",
+      "ms": 2376.2000000029802,
+      "fetch": 627,
+      "body": 162648
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hohhot-thumbnail-822464740e1f0899.webp",
+      "ms": 1986.5,
+      "fetch": 1790.199999988079,
+      "body": 41490
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/harbin-light-mask-4a6ecfbddbd0712d.webp",
+      "ms": 1344.800000011921,
+      "fetch": 525.7999999970198,
+      "body": 37362
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/harbin-light-normal-ee68b6d8212fb556.hfn.gz",
+      "ms": 2047.2000000029802,
+      "fetch": 1150.5999999940395,
+      "body": 169080
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/harbin-thumbnail-cd05bf68c036aea5.webp",
+      "ms": 1072.7000000029802,
+      "fetch": 893.6999999880791,
+      "body": 47144
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/tianjin-light-mask-9b790807d438b9f6.webp",
+      "ms": 633.4000000059605,
+      "fetch": 419.6000000089407,
+      "body": 51614
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/tianjin-light-normal-aef0aca4b7c43940.hfn.gz",
+      "ms": 2624.6000000089407,
+      "fetch": 455.29999999701977,
+      "body": 228710
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/tianjin-thumbnail-52405ab39d134dd2.webp",
+      "ms": 2512.0999999940395,
+      "fetch": 2167.4000000059605,
+      "body": 56226
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/taiyuan-light-mask-7f600649e8201cba.webp",
+      "ms": 447,
+      "fetch": 342.20000000298023,
+      "body": 38754
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/taiyuan-light-normal-2986734d40aa50ee.hfn.gz",
+      "ms": 2102,
+      "fetch": 521.5999999940395,
+      "body": 170430
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/taiyuan-thumbnail-84a4f7299d81dd4b.webp",
+      "ms": 2147.7000000029802,
+      "fetch": 1995.5999999940395,
+      "body": 43658
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/guangzhou-light-mask-467c70ce5b011f57.webp",
+      "ms": 779.2999999970198,
+      "fetch": 512.2999999970198,
+      "body": 34088
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/guangzhou-light-normal-656cce1f1866d857.hfn.gz",
+      "ms": 2527.5999999940395,
+      "fetch": 629.2999999970198,
+      "body": 159057
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/guangzhou-thumbnail-d00114fc388029da.webp",
+      "ms": 2077.2000000029802,
+      "fetch": 1946.199999988079,
+      "body": 41994
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chengdu-light-mask-e278d54df5c9843b.webp",
+      "ms": 457.1000000089407,
+      "fetch": 312.6000000089407,
+      "body": 29874
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chengdu-light-normal-1b42773a4b0f4463.hfn.gz",
+      "ms": 2253.0999999940395,
+      "fetch": 288.09999999403954,
+      "body": 133405
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chengdu-thumbnail-46773139355b800f.webp",
+      "ms": 2488.3999999910593,
+      "fetch": 1976.5,
+      "body": 34974
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/jingdezhen-light-mask-7f32bd73b7f9a05e.webp",
+      "ms": 1692,
+      "fetch": 509.79999999701977,
+      "body": 36512
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/jingdezhen-light-normal-e72d2c2d51fa09be.hfn.gz",
+      "ms": 2344.3999999910593,
+      "fetch": 1178.4000000059605,
+      "body": 167661
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/jingdezhen-thumbnail-56d26f35239d134f.webp",
+      "ms": 1952.7000000029802,
+      "fetch": 1163.2999999970198,
+      "body": 38918
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hangzhou-light-mask-d9aabdd157a6e416.webp",
+      "ms": 1285.5,
+      "fetch": 785.8999999910593,
+      "body": 44528
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hangzhou-light-normal-98d030015a49a63e.hfn.gz",
+      "ms": 3816.699999988079,
+      "fetch": 498.09999999403954,
+      "body": 208992
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/hangzhou-thumbnail-01ed7c08e2499911.webp",
+      "ms": 3494.1000000089407,
+      "fetch": 3316.2000000029802,
+      "body": 48340
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/wuhan-light-mask-bb1c9931a8426a98.webp",
+      "ms": 418.69999998807907,
+      "fetch": 303.20000000298023,
+      "body": 44890
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/wuhan-light-normal-82f122fe7d8e014a.hfn.gz",
+      "ms": 4349.5,
+      "fetch": 339,
+      "body": 198057
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/wuhan-thumbnail-e4b736997650de41.webp",
+      "ms": 7107.79999999702,
+      "fetch": 4107.20000000298,
+      "body": 49528
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenyang-light-mask-e281f8855a38b83e.webp",
+      "ms": 3331.2999999970198,
+      "fetch": 2999.3999999910593,
+      "body": 44430
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenyang-light-normal-1b3fc00c672b3600.hfn.gz",
+      "ms": 1532.2999999970198,
+      "fetch": 582.8000000119209,
+      "body": 202706
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenyang-thumbnail-3eb2b1d10e5dad32.webp",
+      "ms": 1351,
+      "fetch": 1200.7000000029802,
+      "body": 54094
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-thumbnail-ade6718b044e1ae6.webp",
+      "ms": 2989,
+      "fetch": 2754.800000011921,
+      "body": 52492
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shijiazhuang-light-mask-7be6c7fa4e18975a.webp",
+      "ms": 2840,
+      "fetch": 2839.199999988079,
+      "body": 38582
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shijiazhuang-light-normal-fdbcd0b5f46c7a9b.hfn.gz",
+      "ms": 1574.5,
+      "fetch": 737.9000000059605,
+      "body": 171827
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shijiazhuang-thumbnail-2cff2718e1c9f4e4.webp",
+      "ms": 525.6000000089407,
+      "fetch": 395.40000000596046,
+      "body": 45642
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xian-light-mask-61c522ee21f57373.webp",
+      "ms": 743.2000000029802,
+      "fetch": 623.5,
+      "body": 51014
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xian-light-normal-310d3f93fd8de363.hfn.gz",
+      "ms": 1217.7999999970198,
+      "fetch": 499,
+      "body": 226663
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/xian-thumbnail-f0319b73ccd8c23e.webp",
+      "ms": 1063.199999988079,
+      "fetch": 912.1000000089407,
+      "body": 49856
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/zhengzhou-light-mask-145cff0285986210.webp",
+      "ms": 749.7999999970198,
+      "fetch": 670.0999999940395,
+      "body": 45888
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/zhengzhou-light-normal-cde01baab076dcf4.hfn.gz",
+      "ms": 1205.1000000089407,
+      "fetch": 615.5,
+      "body": 211224
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/zhengzhou-thumbnail-542bfb86a3360f6b.webp",
+      "ms": 858.7999999970198,
+      "fetch": 659.1000000089407,
+      "body": 52282
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chongqing-light-mask-c4e447fbd252af91.webp",
+      "ms": 1480.699999988079,
+      "fetch": 625,
+      "body": 54556
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chongqing-light-normal-d1f99b9a9f98987b.hfn.gz",
+      "ms": 4017.9000000059605,
+      "fetch": 1227.2999999970198,
+      "body": 250733
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/chongqing-thumbnail-b59616052905c32a.webp",
+      "ms": 3092.7000000029802,
+      "fetch": 2789.7999999970198,
+      "body": 59998
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/changchun-light-mask-0cbf3e881c00b3b9.webp",
+      "ms": 1716.0999999940395,
+      "fetch": 553.0999999940395,
+      "body": 36128
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/changchun-light-normal-e2beec2a380854d3.hfn.gz",
+      "ms": 2591.0999999940395,
+      "fetch": 1413.300000011921,
+      "body": 163947
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/changchun-thumbnail-cfb678469d809521.webp",
+      "ms": 2231.7000000029802,
+      "fetch": 1176.8999999910593,
+      "body": 41012
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/qingdao-light-mask-aa19d72b6cf9ce32.webp",
+      "ms": 1589.0999999940395,
+      "fetch": 1054,
+      "body": 33570
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/qingdao-light-normal-e92f27495d87ddfd.hfn.gz",
+      "ms": 1725.5999999940395,
+      "fetch": 534.4000000059605,
+      "body": 149366
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/qingdao-thumbnail-37cdb9952c1ad6f7.webp",
+      "ms": 2129,
+      "fetch": 1190.3999999910593,
+      "body": 41152
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-innovation-23940d813f68f7f2.webp",
+      "ms": 1106.800000011921,
+      "fetch": 937.5999999940395,
+      "body": 18558
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-cooperation-7c0daa11ce6fefa6.webp",
+      "ms": 474.20000000298023,
+      "fetch": 377.5,
+      "body": 17800
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-sharing-4e868028d70e2abb.webp",
+      "ms": 470.40000000596046,
+      "fetch": 430.90000000596046,
+      "body": 16856
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-together-a77c25b8f7293b3e.webp",
+      "ms": 409.70000000298023,
+      "fetch": 374.6000000089407,
+      "body": 16860
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/slogan-ocean-d480bfd4c681c6c2.webp",
+      "ms": 510.6000000089407,
+      "fetch": 443.20000000298023,
+      "body": 19178
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+      "ms": 835,
+      "fetch": 310.79999999701977,
+      "body": 117898
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+      "ms": 9459.20000000298,
+      "fetch": 568.7000000029802,
+      "body": 803776
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenyang-standard-mask-8b78b3ff09348fea.webp",
+      "ms": 5928.9000000059605,
+      "fetch": 5357.29999999702,
+      "body": 114444
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shenyang-standard-normal-9c013275d02f9315.hfn.gz",
+      "ms": 15893.800000011921,
+      "fetch": 2960,
+      "body": 766364
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shijiazhuang-standard-mask-5588d6ddd4af2ec4.webp",
+      "ms": 12751.20000000298,
+      "fetch": 7970.29999999702,
+      "body": 96442
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/shijiazhuang-standard-normal-3bba7020ed10d87f.hfn.gz",
+      "ms": 5843.5999999940395,
+      "fetch": 481.20000000298023,
+      "body": 645164
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    },
+    {
+      "url": "",
+      "ms": 0,
+      "fetch": 0,
+      "body": 0
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,24 @@
+{
+  "version": "7.1.1",
+  "unit": {
+    "base": 45,
+    "v7": 31,
+    "passed": true
+  },
+  "normalPacking": {
+    "assets": 78,
+    "portableGzipBytesIdentical": true,
+    "halfFloatXYIdentical": true,
+    "maxDirectionErrorDegrees": 0.08183487404404731
+  },
+  "assets": {
+    "passed": true,
+    "assets": 195,
+    "labelsPixelIdentical": 6,
+    "cities": 23,
+    "preloadEncodedBytes": 10928395,
+    "initialGpuBytes": 23884602,
+    "original5MiBTargetMet": false
+  },
+  "physicalDeviceAcceptance": "pending"
+}

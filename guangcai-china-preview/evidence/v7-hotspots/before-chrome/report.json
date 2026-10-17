@@ -1,0 +1,363 @@
+{
+  "url": "http://127.0.0.1:5276/",
+  "engine": "Chrome",
+  "baseline": true,
+  "checks": [
+    {
+      "name": "correct nonblank app",
+      "passed": true
+    },
+    {
+      "name": "city shanghai",
+      "passed": true
+    },
+    {
+      "name": "city urumqi",
+      "passed": true
+    },
+    {
+      "name": "city beijing",
+      "passed": true
+    },
+    {
+      "name": "city nanjing",
+      "passed": true
+    },
+    {
+      "name": "city nanchang",
+      "passed": true
+    },
+    {
+      "name": "city xiamen",
+      "passed": true
+    },
+    {
+      "name": "city hohhot",
+      "passed": true
+    },
+    {
+      "name": "city harbin",
+      "passed": true
+    },
+    {
+      "name": "city tianjin",
+      "passed": true
+    },
+    {
+      "name": "city taiyuan",
+      "passed": true
+    },
+    {
+      "name": "city guangzhou",
+      "passed": true
+    },
+    {
+      "name": "city chengdu",
+      "passed": true
+    },
+    {
+      "name": "city jingdezhen",
+      "passed": true
+    },
+    {
+      "name": "city hangzhou",
+      "passed": true
+    },
+    {
+      "name": "city wuhan",
+      "passed": true
+    },
+    {
+      "name": "city shenyang",
+      "passed": true
+    },
+    {
+      "name": "city shenzhen",
+      "passed": true
+    },
+    {
+      "name": "city shijiazhuang",
+      "passed": true
+    },
+    {
+      "name": "city xian",
+      "passed": true
+    },
+    {
+      "name": "city zhengzhou",
+      "passed": true
+    },
+    {
+      "name": "city chongqing",
+      "passed": true
+    },
+    {
+      "name": "city changchun",
+      "passed": true
+    },
+    {
+      "name": "city qingdao",
+      "passed": true
+    },
+    {
+      "name": "six prewarmed slogans remain available",
+      "passed": true
+    },
+    {
+      "name": "assembly changes still refresh actual reflections",
+      "passed": true
+    },
+    {
+      "name": "both reflection types stay enabled",
+      "passed": true
+    },
+    {
+      "name": "resource GPU peak remains within budget",
+      "passed": true
+    },
+    {
+      "name": "no framework error overlay",
+      "passed": true
+    },
+    {
+      "name": "no uncaught application errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "cities": [
+    {
+      "id": "shanghai",
+      "ok": true,
+      "ms": 25.900000005960464,
+      "captures": 2
+    },
+    {
+      "id": "urumqi",
+      "ok": true,
+      "ms": 57.400000005960464,
+      "captures": 3
+    },
+    {
+      "id": "beijing",
+      "ok": true,
+      "ms": 39.1000000089407,
+      "captures": 4
+    },
+    {
+      "id": "nanjing",
+      "ok": true,
+      "ms": 28.799999997019768,
+      "captures": 5
+    },
+    {
+      "id": "nanchang",
+      "ok": true,
+      "ms": 27.700000002980232,
+      "captures": 6
+    },
+    {
+      "id": "xiamen",
+      "ok": true,
+      "ms": 36.29999999701977,
+      "captures": 7
+    },
+    {
+      "id": "hohhot",
+      "ok": true,
+      "ms": 55.80000001192093,
+      "captures": 8
+    },
+    {
+      "id": "harbin",
+      "ok": true,
+      "ms": 34.8999999910593,
+      "captures": 9
+    },
+    {
+      "id": "tianjin",
+      "ok": true,
+      "ms": 37.599999994039536,
+      "captures": 10
+    },
+    {
+      "id": "taiyuan",
+      "ok": true,
+      "ms": 39.6000000089407,
+      "captures": 11
+    },
+    {
+      "id": "guangzhou",
+      "ok": true,
+      "ms": 38.80000001192093,
+      "captures": 12
+    },
+    {
+      "id": "chengdu",
+      "ok": true,
+      "ms": 32.1000000089407,
+      "captures": 13
+    },
+    {
+      "id": "jingdezhen",
+      "ok": true,
+      "ms": 30.599999994039536,
+      "captures": 14
+    },
+    {
+      "id": "hangzhou",
+      "ok": true,
+      "ms": 35.19999998807907,
+      "captures": 15
+    },
+    {
+      "id": "wuhan",
+      "ok": true,
+      "ms": 37.3999999910593,
+      "captures": 16
+    },
+    {
+      "id": "shenyang",
+      "ok": true,
+      "ms": 27.400000005960464,
+      "captures": 17
+    },
+    {
+      "id": "shenzhen",
+      "ok": true,
+      "ms": 30.400000005960464,
+      "captures": 18
+    },
+    {
+      "id": "shijiazhuang",
+      "ok": true,
+      "ms": 26.700000002980232,
+      "captures": 19
+    },
+    {
+      "id": "xian",
+      "ok": true,
+      "ms": 30,
+      "captures": 20
+    },
+    {
+      "id": "zhengzhou",
+      "ok": true,
+      "ms": 26.799999997019768,
+      "captures": 21
+    },
+    {
+      "id": "chongqing",
+      "ok": true,
+      "ms": 30.100000008940697,
+      "captures": 22
+    },
+    {
+      "id": "changchun",
+      "ok": true,
+      "ms": 50,
+      "captures": 23
+    },
+    {
+      "id": "qingdao",
+      "ok": true,
+      "ms": 35,
+      "captures": 24
+    }
+  ],
+  "before": {
+    "captures": 1,
+    "resources": {
+      "fileCache": {
+        "bytes": 10929425,
+        "reservedBytes": 10929425,
+        "peakBytes": 10929425,
+        "limit": 12582912,
+        "entries": 91,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 23884602,
+      "reservedRenderTargetBytes": 103285776,
+      "peakEstimatedBytes": 196376394,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 18,
+      "decodedBytes": 17913444,
+      "fetchedBodyBytes": 10929425,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    }
+  },
+  "afterCities": 24,
+  "flowerCaptures": 3,
+  "assemblyCaptures": 1,
+  "final": {
+    "resources": {
+      "fileCache": {
+        "bytes": 11935018,
+        "reservedBytes": 11935018,
+        "peakBytes": 12558292,
+        "limit": 12582912,
+        "entries": 92,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 33015950,
+      "reservedRenderTargetBytes": 89605200,
+      "peakEstimatedBytes": 200963978,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 18,
+      "decodedBytes": 24761956,
+      "fetchedBodyBytes": 34403212,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": true,
+      "captures": 32,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "081137b0-1d90-4b21-b3d0-5ef5457c78c0",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lid": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 5,
+      "resolution": 1024
+    }
+  }
+}

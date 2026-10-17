@@ -1,3 +1,4 @@
+import {pinMaterialMaps} from './maps';
 import { polygonClip } from "../core/concentric.js";
 import type { ShapePoint } from "../core/concentric.js";
 import { createConcentricResolver, setResolvedShape, registerShapeContainer } from "./shape-layout.js";
@@ -632,6 +633,7 @@ export function createGlassScene(
       return parts.join("");
     };
     filterError = undefined;
+    try{pinMaterialMaps(drawn.flatMap(l=>[l.maps,l.place?.a.maps,l.place?.b.maps].filter((m):m is MaterialMaps=>Boolean(m))));}catch(error){notify(error instanceof Error?error:new Error(String(error)));return;}
     if (layers) {
       // Every surface draws its own glass; the content keeps only passes
       // Gecko renders on the GPU.
@@ -790,7 +792,7 @@ export function createGlassScene(
    * the writes that follow. Reads happen here; every style write and the
    * filter rebuild run in the shared write phase, after all tickers measured. */
   function tick(now: number) {
-    if (disposed) return false;
+    if (disposed || document.hidden) return false;
     const writes: (() => void)[] = [];
     let busy = updateControlMotion(root, now);
     let lensMoved = false, settling = false;

@@ -1,21 +1,22 @@
-import {Color,NoColorSpace,SRGBColorSpace,type MeshBasicMaterial,type MeshPhysicalMaterial,type Texture} from 'three';
+import {Vector4,Color,NoColorSpace,SRGBColorSpace,type MeshBasicMaterial,type MeshPhysicalMaterial,type Texture} from 'three';
 import {appearanceColors,GOLD_LINE,materialAt,normalizeAppearance,type Appearance} from '../styles/city-appearance';
 
 /** One program for both finishes. No texture allocation or shader recompilation on input. */
 export function installCityParameters(material:MeshPhysicalMaterial){
  const prior=material.onBeforeCompile,key=material.customProgramCacheKey.bind(material);
- const uniforms={v5Enabled:{value:0},v6FixedLabel:{value:0},v5Dark:{value:new Color()},v5Light:{value:new Color()},v5Gold:{value:new Color(GOLD_LINE.color)},v5Porcelain:{value:new Color('#fffdf7')},v5Blend:{value:0},v5FillRoughness:{value:.31},v5FillClearcoat:{value:191/255},v5Label:{value:null as Texture|null},v5TextVisible:{value:0},v5TextGold:{value:0},v5MetalEnabled:{value:1}};
+ const uniforms={labelRect:{value:new Vector4(0,0,1,1)},v5Enabled:{value:0},v6FixedLabel:{value:0},v5Dark:{value:new Color()},v5Light:{value:new Color()},v5Gold:{value:new Color(GOLD_LINE.color)},v5Porcelain:{value:new Color('#fffdf7')},v5Blend:{value:0},v5FillRoughness:{value:.31},v5FillClearcoat:{value:191/255},v5Label:{value:null as Texture|null},v5TextVisible:{value:0},v5TextGold:{value:0},v5MetalEnabled:{value:1}};
  let appearance:Appearance|undefined,updates=0,fixedGold=false;
  material.onBeforeCompile=(shader,renderer)=>{
   prior.call(material,shader,renderer);Object.assign(shader.uniforms,uniforms);
-  shader.fragmentShader=`uniform float v6FixedLabel,v5Enabled,v5Blend,v5FillRoughness,v5FillClearcoat,v5TextVisible,v5TextGold,v5MetalEnabled;\nuniform vec3 v5Dark,v5Light,v5Gold,v5Porcelain;\nuniform sampler2D v5Label;\n`+shader.fragmentShader;
+  shader.fragmentShader=`uniform float v6FixedLabel,v5Enabled,v5Blend,v5FillRoughness,v5FillClearcoat,v5TextVisible,v5TextGold,v5MetalEnabled;\nuniform vec3 v5Dark,v5Light,v5Gold,v5Porcelain;\nuniform sampler2D v5Label;uniform vec4 labelRect;\n`+shader.fragmentShader;
   shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
    float cityCoverage=0.0,cityLine=0.0,cityLabel=0.0;
    #ifdef USE_MAP
    if(v5Enabled>0.5){
     vec2 shape=texture2D(map,vMapUv).rg;
     cityCoverage=shape.g;cityLine=min(shape.r,cityCoverage);
-    cityLabel=texture2D(v5Label,vMapUv).r*v5TextVisible;
+    vec2 labelUv=(vMapUv-labelRect.xy)/labelRect.zw;
+    cityLabel=texture2D(v5Label,labelUv).r*v5TextVisible*step(0.0,labelUv.x)*step(0.0,labelUv.y)*step(labelUv.x,1.0)*step(labelUv.y,1.0);
     float gradient=clamp(((1.0-vMapUv.y)-0.28)/0.72,0.0,1.0);
     vec3 fillColor=mix(v5Dark,v5Light,gradient);
     diffuseColor.rgb=v5Porcelain*(1.0-cityCoverage)+fillColor*(cityCoverage-cityLine)+v5Gold*cityLine;
@@ -36,7 +37,7 @@ export function installCityParameters(material:MeshPhysicalMaterial){
  };
  material.customProgramCacheKey=()=>key()+'-city-parameters-v6-fixed-lettering';
  return {
-  enable(mask:Texture,label:Texture,showText:boolean){mask.colorSpace=NoColorSpace;uniforms.v5Enabled.value=1;uniforms.v5Label.value=label;uniforms.v5TextVisible.value=showText?1:0;},
+  enable(mask:Texture,label:Texture,showText:boolean,rect:readonly number[]=[0,0,1,1]){uniforms.labelRect.value.fromArray(rect);mask.colorSpace=NoColorSpace;uniforms.v5Enabled.value=1;uniforms.v5Label.value=label;uniforms.v5TextVisible.value=showText?1:0;},
   disable(){uniforms.v5Enabled.value=0;},
   fixedGold(value:boolean){fixedGold=value;uniforms.v6FixedLabel.value=value?1:0;},
   update(value:Appearance,showText:boolean){appearance=normalizeAppearance(value);const c=appearanceColors(appearance);uniforms.v5Dark.value.setRGB(...c.dark,SRGBColorSpace);uniforms.v5Light.value.setRGB(...c.light,SRGBColorSpace);const fill=materialAt(appearance.material,appearance.materialX);uniforms.v5Blend.value=fill.metalness;uniforms.v5FillRoughness.value=fill.roughness;uniforms.v5FillClearcoat.value=fill.clearcoat;uniforms.v5TextVisible.value=showText?1:0;uniforms.v5TextGold.value=fixedGold||appearance.preset==='gold'?1:0;material.normalScale.setScalar(.7*appearance.relief);material.clearcoatNormalScale.setScalar(.7*appearance.relief);updates++;},
@@ -45,10 +46,10 @@ export function installCityParameters(material:MeshPhysicalMaterial){
    target.userData.cityParameterInspection=true;
    target.onBeforeCompile=shader=>{
     Object.assign(shader.uniforms,uniforms);
-    shader.fragmentShader='uniform float v5Blend,v5TextVisible,v5TextGold;uniform sampler2D v5Label;\n'+shader.fragmentShader;
+    shader.fragmentShader='uniform float v5Blend,v5TextVisible,v5TextGold;uniform sampler2D v5Label;uniform vec4 labelRect;\n'+shader.fragmentShader;
     shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
      vec2 shape=texture2D(map,vMapUv).rg;
-     float text=texture2D(v5Label,vMapUv).r*v5TextVisible;
+     vec2 labelUv=(vMapUv-labelRect.xy)/labelRect.zw;float text=texture2D(v5Label,labelUv).r*v5TextVisible*step(0.0,labelUv.x)*step(0.0,labelUv.y)*step(labelUv.x,1.0)*step(labelUv.y,1.0);
      float metallic=mix((shape.g-shape.r)*v5Blend+shape.r,mix(v5Blend,1.0,v5TextGold),text);
      diffuseColor.rgb=vec3(metallic);`);
    };

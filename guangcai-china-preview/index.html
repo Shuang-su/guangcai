@@ -1,2 +1,20 @@
 <!doctype html>
-<html lang="zh-CN"><head><link rel="icon" href="data:,"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="城市共彩"><link rel="manifest" href="/manifest.webmanifest"><title>城市共彩</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+<html lang="zh-CN"><head><link rel="icon" href="data:,"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="城市共彩"><link rel="manifest" href="%BASE_URL%manifest.webmanifest"><title>城市共彩</title>
+<style>
+html,body{margin:0;background:#faf9f5}#app[aria-hidden=true]{opacity:0;pointer-events:none}
+#entry-loading{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:32px 26px;box-sizing:border-box;background:#faf9f5 url('%BASE_URL%backgrounds/soft-light-v3-d06c52a8f2003f50.webp') center/cover;color:#79664b;font:13px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;transition:opacity .22s ease}
+#entry-loading[hidden]{display:none}#entry-loading.is-leaving{opacity:0;pointer-events:none}
+.entry-content{width:min(400px,100%)}.entry-brand{font:18px/1.4 "Songti SC",serif;letter-spacing:.2em;margin:0 0 56px}.entry-title{font:26px/1.5 "Songti SC",serif;letter-spacing:.03em;margin:0 0 20px;font-weight:400}
+.entry-progress-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}.entry-progress-row strong{font:28px/1.2 -apple-system,sans-serif;font-variant-numeric:tabular-nums;font-weight:300}
+#entry-loading progress{display:block;width:100%;height:3px;border:0;border-radius:9px;overflow:hidden;accent-color:#ae8a48;background:#b3946329}#entry-loading progress::-webkit-progress-bar{background:#b3946329}#entry-loading progress::-webkit-progress-value{background:#ae8a48;transition:width .15s ease}#entry-loading progress::-moz-progress-bar{background:#ae8a48}
+#entry-phase{margin:16px 0 26px;min-height:23px;font-size:12px;color:#8c7e68}
+.entry-metrics{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin:0}.entry-metrics div{min-width:0}.entry-metrics dt{color:#9b8d78;font-size:11px;margin-bottom:3px}.entry-metrics dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;font-size:13px}
+.entry-note{margin:26px 0 12px;font-size:10px;color:#a39680;line-height:1.8}.entry-reload{font-size:11px;color:#9b8869;text-underline-offset:3px}#entry-loading[data-state=error] #entry-phase{color:#a04d37}
+@media(max-height:620px){.entry-brand{margin-bottom:24px}.entry-metrics{gap:10px 20px}.entry-title{font-size:23px}.entry-note{margin-top:16px}}
+@media(prefers-reduced-motion:reduce){#entry-loading,#entry-loading progress::-webkit-progress-value{transition:none}}
+</style></head><body><section id="entry-loading" aria-label="准备城市杯"><div class="entry-content">
+<p class="entry-brand">城市共彩</p><h1 class="entry-title">一座城，一杯心意。</h1>
+<div class="entry-progress-row"><span>准备进入设计</span><strong id="entry-percent">—</strong></div>
+<progress aria-label="素材预加载进度" max="100"></progress><p id="entry-phase" role="status" aria-live="polite">正在启动…</p>
+<dl class="entry-metrics"><div><dt>已读取</dt><dd id="entry-received">0 KiB</dd></div><div><dt>本次预加载总量</dt><dd id="entry-total">正在计算</dd></div><div><dt>读取速度</dt><dd id="entry-rate">—</dd></div><div><dt>已用时间</dt><dd id="entry-elapsed">—</dd></div><div><dt>图形资源估算 / 预算</dt><dd id="entry-graphics">—</dd></div><div><dt>JS 堆内存（如可用）</dt><dd id="entry-heap">—</dd></div><div><dt>文件缓存 / 上限</dt><dd id="entry-cache">—</dd></div><div><dt>预览版本</dt><dd>V7.1.1</dd></div></dl>
+<p class="entry-note">预加载全部城市低清及邻近高清，读取含缓存。<br>城市按需解码；图形内存为应用估算。</p><a class="entry-reload" href="">重新加载</a></div></section><div id="app" inert aria-hidden="true"></div><script src="%BASE_URL%runtime-config.js"></script><script type="module" src="/src/main.ts"></script></body></html>

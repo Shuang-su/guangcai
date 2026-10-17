@@ -1,0 +1,28 @@
+{
+  "sourceSha256": "f40d9db47adcf17ae97bccb97c30eac0e851feb61bdee2c7184021383fcd3886",
+  "correctionSha256": "3bcec7a22bbf916a64fe1331132c3ff9260578f3d079d6ad46013e9b003111fd",
+  "changedCoveragePixels": 55852,
+  "lineChannelUnchanged": true,
+  "normalFilesUnchanged": true,
+  "releaseId": "v7-2",
+  "tiers": [
+    {
+      "tier": "light",
+      "width": 1024,
+      "height": 446,
+      "sha256": "02a6808d8532b8af51e4534af62fe125e6c398470fd8435bbfa8a3196e658816"
+    },
+    {
+      "tier": "standard",
+      "width": 2048,
+      "height": 892,
+      "sha256": "547ec8ef8b249bce47baa9a35fdea3f65921e870f51d5e5f369d412bdb8a2bba"
+    },
+    {
+      "tier": "detail",
+      "width": 4096,
+      "height": 1783,
+      "sha256": "cd07e2cae76c63a69d83bf8f441b536dc21ac0f993dd9e0be745f85823017721"
+    }
+  ]
+}

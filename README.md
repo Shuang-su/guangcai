@@ -2,15 +2,36 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：V6 独立预览
+## 当前开发交付候选：V7.1.1
 
-[用户创作页](https://guangcai-no1-china-v6.netlify.app/) · [完整开发工作台](https://guangcai-no1-china-v6.netlify.app/dev/) · [对比审计](https://guangcai-no1-china-v6.netlify.app/audit/) · [应用说明](guangcai-china-preview/README.md) · [版本索引](VERSION_HISTORY.md)
+[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.1 预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [V7 PR #30](https://github.com/Shuang-su/guangcai/pull/30) · [验证与完成记录](docs/changes/20261017-v7-v6-sync-handoff/completion.md)
 
-V6 消费者页面提供 23 城、六组东方大楷祝福语和五种配色，保留自由调色、明度、材质和视觉浮雕。Glass-HQ 原算法与 SVG 合成保留，材质图后端迁移到 WebGL2；原 WebGPU 在审计页独立对比。城市、文字和金线分离，颜色／材质不改变固定金色。原始城市稿、字体、上游源码及许可均保存。
+V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
-当前独立预览为 **6.0.4**：发布源码 `833a8b33561d36e72f1164743e80f28fc63d96b2`，部署 `6ad314a2a5e661a14e469026`。移动 WebKit 使用原 Glass-HQ 位移／高光图和交互的独立 WebGL2 折射合成，修复收起时胶囊上跳，以及大法线文件持续下载被总超时中断。线上通过 124 项 Chrome、运动专项、74 项 WebKit、42 项慢加载／城市返回和 49 项独立折射／收起专项；1337 项发布文件已校验归档。iOS 27 真机效果与物理触感仍待复测。[PR #28](https://github.com/Shuang-su/guangcai/pull/28) 保持 Draft，详见[完成记录](docs/changes/20261017-v6-webgl2-studio/completion.md)。
+交付内容包括版本化资源、OpenAPI、JSON Schema、公司账号/作品/修订/分享关系说明，以及独立可运行的保存/还原/分享 mock。正式身份、数据库、业务后端和COS发布由公司接入；mock仅使用本地合成用户，不用于生产。
 
-V5.4.2 的[历史预览](https://guangcai-no1-china-v5.netlify.app/)继续保留，部署 `6ad20c45a7780e55fedba3d7` 未改变。4.3 的[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)、标签和部署同样保留。本仓库未连接 Netlify Git 自动部署。
+```sh
+cd guangcai-china-preview
+npm ci --cache .codex-work/cache/npm
+npm run dev                     # http://127.0.0.1:5270/
+npm run build                   # .codex-work/deploy/v7-build/
+npm run build:integration
+npm run mock:v7                 # http://127.0.0.1:5271/integration/
+```
+
+[应用说明](guangcai-china-preview/README.md) · [OpenAPI](guangcai-china-preview/integration/contracts/openapi.json) · [作品格式](guangcai-china-preview/integration/contracts/design.schema.json) · [资源格式](guangcai-china-preview/integration/contracts/resource-manifest.schema.json) · [版本索引](VERSION_HISTORY.md)
+
+V7.1.1 补充：当前深圳高清实际显示后才进入，稳定切城自动提清、左右邻城动态预载；正常材质替换按峰值额度核算，不因新旧图短暂叠加误降级。西安内部填色补齐为 v7-2，v7-1 保留回放。法线保留半浮点 X/Y、运行时重建 Z，环境反射释放用完的深度缓冲。每项触发条件、缓存、取消、预算、失败处理及测试见性能文档。
+
+V7.1.1验证：45基础+31V7单元，Chrome/WebKit各85项，玻璃53、加载50、分域6条；线上WebKit83项及24次高清城市/液态检查通过。独立交接包全新安装构建和31项测试通过，224构建文件与发布一致。详细证据在完成记录和 evidence/v7-corrections。iPhone13mini/iOS18连续30分钟、实际触感，以及Air/mini6上的V7视觉复测仍待用户验收。原5MiB/6秒目标未通过，不将桌面浏览器结果写成真机验收。
+
+## V6 与历史站点
+
+[V6 用户页](https://guangcai-no1-china-v6.netlify.app/) · [V6 开发工作台](https://guangcai-no1-china-v6.netlify.app/dev/) · [V6 对比审计](https://guangcai-no1-china-v6.netlify.app/audit/)
+
+V6.0.4 发布源码 `833a8b3`，部署 `6ad314a2a5e661a14e469026`。[PR #28](https://github.com/Shuang-su/guangcai/pull/28) 已先合并。用户确认 iPhone Air/iOS27.0.1、iPad mini6/iPadOS16.6.1 在V6正常渲染折射；性能/触感与V7验收分开记录。本轮V7发布没有重发V6。
+
+[V5 历史预览](https://guangcai-no1-china-v5.netlify.app/)和[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)继续保留；仓库未连接 Netlify Git 自动部署，Git合并与线上发布分别记录。
 
 ## 原件与旧工作区
 
@@ -40,7 +61,7 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 
 - `guangcai-viewer/`：原版一号杯，当前发布基线 1.0。
 - `guangcai-china-preview/`：中国杯持续开发目录。2.x → 3.0 → 4.0 → 后续版本在同一目录演进，通过功能分支和发布标签定位，不再为每版复制一套长期维护的源码。
-- `main`：包含原版、中国杯至 V5.4.2 的完整已合并版本链；新功能另建分支。
+- `main`：按合并顺序保留原版、中国杯及后续版本链；源码、发布、验收状态以版本索引和对应PR为准。
 - [版本与部署索引](VERSION_HISTORY.md) · [恢复的 16 个历史节点](HISTORY.md) · [开发接入记录](docs/changes/20261013-git-development/completion.md)。
 
 | 已发布版本 | Git 标签 | 站点 | 部署 ID |
@@ -71,7 +92,7 @@ npm --prefix guangcai-china-preview run dev -- --port 5208
 
 原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。中国杯测试覆盖几何、浮点法线、固定图集、城市选择、二维控件与触感映射；V5.4.2 的 35 项应用测试、构建和浏览器检查见[完成记录](docs/changes/20261016-short-screen-lift/completion.md)。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
 
-中国杯 `prebuild` 会从保存的母版生成 WebP；如产生源码或素材清单差异，先核对原因。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
+V7 常规构建不会重新生成母版资源；只有资源变动时才显式运行 `npm run textures:v7`，并核对来源哈希与派生物差异。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
 
 ## 开发与发布
 
@@ -97,3 +118,5 @@ python3 tools/test_verify_archive.py
 4.2 保留原始颜色图、花果晕染与描线，用独立空白金底范围清理杂点和拖痕；对齐金属、粗糙度和凹凸，界面与 package 同步递增。[请求、验证与发布记录](docs/changes/20261014-floral-cleanup-4.2/completion.md)。
 
 4.3 [北京主题的请求、素材与验证记录](docs/changes/20261014-beijing-4.3/completion.md)，关联 [Issue #21](https://github.com/Shuang-su/guangcai/issues/21)。
+
+

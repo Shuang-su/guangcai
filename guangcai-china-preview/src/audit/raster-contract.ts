@@ -14,8 +14,8 @@ export async function rasterContract(){
  const element=document.createElement('div');root.append(element);
  const lens:LayerLens={serial:1,element,options:{material:'clear'},maps,x:32,y:16,w:192,h:128,opacity:1,refraction:0,parents:[],beneath:[],frame:{left:32,top:16,sx:1,sy:1,clientLeft:0,clientTop:0}};
  const errors:string[]=[],renderer=createRasterGlass(root,e=>errors.push(String(e)));
- const read=(x=100,y=80)=>{renderer.render();const c=root.querySelector<HTMLCanvasElement>('.glass-raster')!,gl=c.getContext('webgl2')!,pixel=new Uint8Array(4),dpr=c.width/256;gl.readPixels(Math.floor(x*dpr),c.height-Math.floor(y*dpr)-1,1,1,gl.RGBA,gl.UNSIGNED_BYTE,pixel);return [...pixel];};
- const set=(lenses:LayerLens[])=>renderer.update(lenses,content,{width:256,height:160});
+ const read=(x=100,y=80)=>{renderer.captureModel();renderer.render();const c=root.querySelector<HTMLCanvasElement>('.glass-raster')!,gl=c.getContext('webgl2')!,pixel=new Uint8Array(4),dpr=c.width/256;gl.readPixels(Math.floor(x*dpr),c.height-Math.floor(y*dpr)-1,1,1,gl.RGBA,gl.UNSIGNED_BYTE,pixel);return [...pixel];};
+ const set=(lenses:LayerLens[])=>{renderer.update(lenses,content,{width:256,height:160});renderer.captureModel();renderer.render();};
  try{
   set([lens]);await new Promise(r=>setTimeout(r,150));const neutral=read();
   lens.refraction=20;set([lens]);const refracted=read();

@@ -64,7 +64,9 @@ export class ViewController{
     this.studio.camera.updateProjectionMatrix();
     this.active=true;this.animateCamera=true;if(instant)this.update(10);this.onChange();
   }
+  get moving(){return this.active||this.auto;}
   update(dt:number){
+    const wasActive=this.active;
     if(this.active){
       const p=this.getProduct(),a=1-Math.exp(-dt*7);
       p.cup.position.lerp(this.cupPos,a);p.lid.position.lerp(this.lidPos,a);p.saucer.position.lerp(this.saucerPos,a);
@@ -72,7 +74,7 @@ export class ViewController{
       if(this.animateCamera){this.studio.camera.position.lerp(this.toCamera,a);this.controls.target.lerp(this.toTarget,a);}
       if((!this.animateCamera||this.studio.camera.position.distanceTo(this.toCamera)<.005)&&p.cup.position.distanceTo(this.cupPos)<.001&&p.lid.position.distanceTo(this.lidPos)<.001&&p.cup.quaternion.angleTo(this.cupQuat)<.0001)this.active=false;
     }
-    this.controls.update(dt);
+    return this.controls.update(dt)||wasActive;
   }
   reference(id:ReferenceId){
     const pose=references[id];if(!pose)return;

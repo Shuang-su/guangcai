@@ -29,6 +29,7 @@ export function createLoopSelector(host:HTMLElement,items:HTMLButtonElement[],op
    button.style.left=`calc(50% + ${distance*step}px)`;
    const amount=Math.min(1,Math.abs(distance));button.style.setProperty('--loop-scale',String(options.palette?1-amount*.16:1));button.style.opacity=String(1-amount*(options.palette?.3:.43));
    button.setAttribute('data-glass-near',String(Math.abs(distance)<slots/2+(options.peek?1.5:1)));
+   const thumbnail=button.querySelector<HTMLImageElement>('img[data-src]');if(thumbnail){if(Math.abs(distance)<slots/2+1.5){if(!thumbnail.hasAttribute('src'))thumbnail.src=thumbnail.dataset.src!;}else thumbnail.removeAttribute('src');}
    const visible=Math.abs(distance)<slots/2+(options.peek||!options.palette?.5:0);
    if(!options.palette){const edge=Math.max(0,Math.min(1,(slots/2+.42-Math.abs(distance))/.42));button.style.opacity=String((1-amount*.43)*edge);}button.style.visibility=visible?'visible':'hidden';const accessible=Math.abs(distance)<slots/2+(options.peek?.5:0);button.inert=!accessible;button.setAttribute('aria-hidden',String(!accessible));button.tabIndex=i===target?0:-1;
    button.setAttribute(options.palette?'aria-pressed':'aria-selected',String(i===target));

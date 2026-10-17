@@ -1,0 +1,167 @@
+[
+  {
+    "run": 1,
+    "readyMs": 13445,
+    "encodedBytes": 12107347,
+    "debug": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 115,
+        "contextLost": false
+      },
+      "resources": {
+        "fileCache": {
+          "bytes": 10929425,
+          "reservedBytes": 10929425,
+          "peakBytes": 10929425,
+          "limit": 12582912,
+          "entries": 91,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 23884602,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 196376394,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 18,
+        "activeEntries": 18,
+        "decodedBytes": 17913444,
+        "fetchedBodyBytes": 10929425,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  },
+  {
+    "run": 2,
+    "readyMs": 13455,
+    "encodedBytes": 12107347,
+    "debug": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 117,
+        "contextLost": false
+      },
+      "resources": {
+        "fileCache": {
+          "bytes": 10929425,
+          "reservedBytes": 10929425,
+          "peakBytes": 10929425,
+          "limit": 12582912,
+          "entries": 91,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 23884602,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 196376394,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 18,
+        "activeEntries": 18,
+        "decodedBytes": 17913444,
+        "fetchedBodyBytes": 10929425,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  },
+  {
+    "run": 3,
+    "readyMs": 13387,
+    "encodedBytes": 12107347,
+    "debug": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 117,
+        "contextLost": false
+      },
+      "resources": {
+        "fileCache": {
+          "bytes": 10929425,
+          "reservedBytes": 10929425,
+          "peakBytes": 10929425,
+          "limit": 12582912,
+          "entries": 91,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 23884602,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 196376394,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 18,
+        "activeEntries": 18,
+        "decodedBytes": 17913444,
+        "fetchedBodyBytes": 10929425,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  }
+]

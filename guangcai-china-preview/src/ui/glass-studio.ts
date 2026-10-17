@@ -1,3 +1,5 @@
+import {configureGlassBudget,glassMemory} from '../../vendor/glass-hq/src/dom/resource-budget';
+import {clearMaterialMapCache,releaseDecodedMaps} from '../../vendor/glass-hq/src/dom/maps';
 import {createGlassScene,type GlassSceneController,type SurfaceOptions} from '../../vendor/glass-hq/src/dom/index';
 import {getMaterialRenderer} from '../../vendor/glass-hq/src/dom/renderer';
 import {disposeMaterialRenderer} from '../../vendor/glass-hq/src/webgl2/index';
@@ -11,23 +13,25 @@ import '../../vendor/glass-hq/src/styles.css';
 import './glass-compat.css';
 
 /** Original Glass-HQ materials on visible UI; input and haptic nodes stay intact. */
-export function createGlassStudio(){
+export function createGlassStudio(options:{admitMemory?:(bytes:number,scratch:number)=>boolean;invalidate?:()=>void}={}){
+ configureGlassBudget(options.admitMemory??(()=>true));
  const root=document.querySelector<HTMLElement>('.consumer-scene')!,content=document.querySelector<HTMLElement>('#glass-content')!;
  // Engine-specific composition, not GPU capability filtering: both paths
  // retain WebGL2 maps. Native frosting is only an actual failure fallback.
  const isolated=needsIsolatedGlass(navigator);
  root.dataset.glassCompositor=isolated?'webgl2':'svg';
  let compositor:ReturnType<typeof createRasterGlass>|undefined,releaseFallback=()=>{};
+ let firstComposite=false;
  let scene:GlassSceneController|undefined,disposed=false,optionFrame=0,optionObserver:MutationObserver|undefined;
  const optionSurfaces=new Map<HTMLElement,()=>void>();let releaseCityClip=()=>{},releaseAnimation=()=>{};
  const clearOptions=()=>{cancelAnimationFrame(optionFrame);optionObserver?.disconnect();optionObserver=undefined;optionSurfaces.forEach(release=>release());optionSurfaces.clear();releaseCityClip();releaseCityClip=()=>{};releaseAnimation();releaseAnimation=()=>{};};
  let state:{backend:string;ready:boolean;maps:number;mapTime:number;error:string}={backend:isolated?'webgl2-isolated':'webgl2',ready:false,maps:0,mapTime:0,error:''};
  root.dataset.glassState='preparing';
- const fallback=(e:unknown)=>{if(disposed||state.backend==='native-backdrop')return;clearOptions();scene?.dispose();scene=undefined;compositor?.dispose();compositor=undefined;root.dataset.glassState='compatible';releaseFallback=attachNativeGlass(root);state={...state,backend:'native-backdrop',ready:true,error:String(e)};};
+ const fallback=(e:unknown)=>{if(disposed||state.backend==='native-backdrop')return;state={...state,backend:'native-backdrop',ready:true,error:String(e)};clearOptions();scene?.dispose();scene=undefined;compositor?.dispose();compositor=undefined;root.dataset.glassState='compatible';releaseFallback=attachNativeGlass(root);state={...state,backend:'native-backdrop',ready:true,error:String(e)};releaseDecodedMaps();clearMaterialMapCache();void disposeMaterialRenderer().catch(()=>{});options.invalidate?.();};
  void getMaterialRenderer().then(async renderer=>{
-  await renderer.warmed;if(disposed)return;
-  if(isolated)compositor=createRasterGlass(root,e=>queueMicrotask(()=>fallback(e)));
-  scene=createGlassScene(root,{layers:compositor,maxSurfaces:32,synchronizedMotion:true,onDiagnostic:d=>{if(disposed)return;if(d.error){queueMicrotask(()=>fallback(d.error));return;}state={...state,maps:d.maps,mapTime:d.mapTime,ready:d.maps>0};if(state.ready)root.dataset.glassState='ready';}});
+  await renderer.warmed;if(disposed||state.backend==='native-backdrop')return;
+  if(isolated)compositor=createRasterGlass(root,e=>queueMicrotask(()=>fallback(e)),()=>{if(!firstComposite){firstComposite=true;options.invalidate?.();}});
+  scene=createGlassScene(root,{layers:compositor,maxSurfaces:32,synchronizedMotion:true,onDiagnostic:d=>{if(disposed)return;if(d.error){queueMicrotask(()=>fallback(d.error));return;}const wasReady=state.ready;state={...state,maps:d.maps,mapTime:d.mapTime,ready:d.maps>0};if(state.ready&&!wasReady)options.invalidate?.();if(state.ready)root.dataset.glassState='ready';}});
   scene.setContent(content);releaseAnimation=connectGlassAnimation(scene);scene.addAnimator(attachInteraction(document.querySelector<HTMLElement>('.panel-handle')!,()=> 'reduced'));
   // The panel owns its DOM height transition. A second layout spring would
   // restart against every intermediate height and keep the optical frame chasing it.
@@ -56,5 +60,5 @@ export function createGlassStudio(){
   optionObserver.observe(root,{subtree:true,attributes:true,attributeFilter:['aria-hidden','data-glass-near','hidden','data-pane','data-level','data-collapsed']});syncOptions();
   // The three-slot ring uses the same upstream Spring, with a fixed central lens.
  }).catch(fallback);
- return {render:()=>compositor?.render(),debug:()=>({...state,optionSurfaces:optionSurfaces.size,compositor:compositor?.debug()}),dispose(){disposed=true;clearOptions();scene?.dispose();scene=undefined;compositor?.dispose();releaseFallback();void disposeMaterialRenderer();}};
+ return {releaseScratch:()=>compositor?.releaseScratch(),captureModel:()=>compositor?.captureModel(),render:()=>compositor?.render(),ready:()=>state.ready&&(!compositor||firstComposite),fallback,debug:()=>({...state,optionSurfaces:optionSurfaces.size,memory:glassMemory(),deviceMemoryGiB:(navigator as Navigator&{deviceMemory?:number}).deviceMemory??null,compositor:compositor?.debug()}),dispose(){disposed=true;clearOptions();scene?.dispose();scene=undefined;compositor?.dispose();releaseFallback();releaseDecodedMaps();clearMaterialMapCache();void disposeMaterialRenderer().catch(()=>{});}};
 }

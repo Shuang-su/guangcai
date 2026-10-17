@@ -1,3 +1,4 @@
+import {reserveGlassMemory,releaseGlassMemory} from '../../vendor/glass-hq/src/dom/resource-budget';
 import {materials} from '../../vendor/glass-hq/src/core/materials';
 import {tintChannels} from '../../vendor/glass-hq/src/dom/material-graph';
 import type {LayerLens} from '../../vendor/glass-hq/src/dom/lens-layers';
@@ -79,7 +80,7 @@ void main(){
 
 type Target={frame:WebGLFramebuffer;textures:WebGLTexture[];width:number;height:number};
 type Program={program:WebGLProgram;locations:Map<string,WebGLUniformLocation|null>};
-type MapTexture={texture:WebGLTexture;ready:boolean;last:number};
+type MapTexture={texture:WebGLTexture;ready:boolean;last:number;bytes:number};
 
 /** Final material-graph port for mobile WebKit. The existing Glass-HQ scene
  * still measures every shape and produces all field/overlay/morph pixels.
@@ -87,7 +88,7 @@ type MapTexture={texture:WebGLTexture;ready:boolean;last:number};
  * this transparent optical canvas are ordinary, unfiltered sibling layers.
  * The offscreen accumulator includes earlier glass, so nested lenses refract
  * their finished parent instead of resampling the bare model. */
-export function createRasterGlass(root:HTMLElement,onError:(error:unknown)=>void){
+export function createRasterGlass(root:HTMLElement,onError:(error:unknown)=>void,onFrame:()=>void=()=>{}){
  const canvas=document.createElement('canvas');canvas.className='glass-raster';canvas.setAttribute('aria-hidden','true');
  const gl=canvas.getContext('webgl2',{alpha:true,antialias:false,premultipliedAlpha:true,depth:false,stencil:false,preserveDrawingBuffer:false});
  if(!gl)throw Error('Glass compositor WebGL2 unavailable');
@@ -104,25 +105,30 @@ export function createRasterGlass(root:HTMLElement,onError:(error:unknown)=>void
  const allocate=(t:WebGLTexture,w:number,h:number)=>{gpu.bindTexture(gpu.TEXTURE_2D,t);gpu.texImage2D(gpu.TEXTURE_2D,0,gpu.RGBA8,w,h,0,gpu.RGBA,gpu.UNSIGNED_BYTE,null);};
  const target=(count:number):Target=>({frame:gpu.createFramebuffer()!,textures:Array.from({length:count},texture),width:0,height:0});
  const resizeTarget=(t:Target,w:number,h:number)=>{if(t.width===w&&t.height===h)return;t.width=w;t.height=h;gpu.bindFramebuffer(gpu.FRAMEBUFFER,t.frame);t.textures.forEach((v,i)=>{allocate(v,w,h);gpu.framebufferTexture2D(gpu.FRAMEBUFFER,gpu.COLOR_ATTACHMENT0+i,gpu.TEXTURE_2D,v,0);});gpu.drawBuffers(t.textures.map((_,i)=>gpu.COLOR_ATTACHMENT0+i));if(gpu.checkFramebufferStatus(gpu.FRAMEBUFFER)!==gpu.FRAMEBUFFER_COMPLETE)throw Error('Glass framebuffer incomplete');};
- const accumulated=target(2),blurX=target(2),blurY=target(2),snapshot=texture(),modelTexture=texture(),backgroundTexture=texture();
+ const accumulated=target(1),blurX=target(2),blurY=target(2),snapshot=texture(),modelTexture=texture(),backgroundTexture=texture();
  const images=new Map<string,MapTexture>();
- let lenses:readonly LayerLens[]=[],width=0,height=0,ratio=1,disposed=false,frames=0,lastDuration=0,backgroundUrl='',backgroundImage:HTMLImageElement|undefined,backgroundReady=false,source:HTMLCanvasElement|null=null;
+ let scratchReleased=false;
+ let raf=0,modelBytes=0,backgroundBytes=4,modelCaptures=0,hasModel=false;
+ const requestRender=()=>{if(!disposed&&!document.hidden&&!raf)raf=requestAnimationFrame(()=>{raf=0;render();});};
+ let lenses:readonly LayerLens[]=[],width=0,height=0,ratio=1,disposed=false,frames=0,lastDuration=0,backgroundUrl='',backgroundImage:HTMLImageElement|undefined,backgroundReady=false,backgroundSize='',source:HTMLCanvasElement|null=null;
  const upload=(t:WebGLTexture,image:TexImageSource,premultiplied=false)=>{gpu.bindTexture(gpu.TEXTURE_2D,t);gpu.pixelStorei(gpu.UNPACK_FLIP_Y_WEBGL,false);gpu.pixelStorei(gpu.UNPACK_PREMULTIPLY_ALPHA_WEBGL,premultiplied);gpu.pixelStorei(gpu.UNPACK_COLORSPACE_CONVERSION_WEBGL,gpu.NONE);gpu.texImage2D(gpu.TEXTURE_2D,0,gpu.RGBA,gpu.RGBA,gpu.UNSIGNED_BYTE,image);};
  allocate(backgroundTexture,1,1);
- const mapTexture=(url:string)=>{let entry=images.get(url);if(!entry){entry={texture:texture(),ready:false,last:frames};images.set(url,entry);const decoded=decodedMaterialImage(url);if(decoded){upload(entry.texture,decoded);entry.ready=true;}else{allocate(entry.texture,1,1);const image=new Image();image.src=url;const next=entry;void image.decode().then(()=>{if(disposed||images.get(url)!==next)return;upload(next.texture,image);next.ready=true;render();}).catch(onError);}}entry.last=frames;return entry;};
+ const memory=(extra=0)=>{const w=Math.ceil(width*ratio),h=Math.ceil(height*ratio);return w*h*4+(scratchReleased?28:w*h*8+Math.ceil(width/2)*Math.ceil(height/2)*16)+modelBytes+backgroundBytes+[...images.values()].reduce((n,m)=>n+m.bytes,0)+extra;};
+ const admit=(extra=0)=>reserveGlassMemory('compositor',memory(extra),backgroundImage?backgroundImage.naturalWidth*backgroundImage.naturalHeight*4:0);
+ const trimMaps=(keep:Set<string>)=>{for(const [url,m]of images)if(!keep.has(url)){gpu.deleteTexture(m.texture);images.delete(url);}};
+ const mapTexture=(url:string)=>{let entry=images.get(url);if(!entry){entry={texture:texture(),ready:false,last:frames,bytes:0};images.set(url,entry);const decoded=decodedMaterialImage(url);if(decoded){const size=decoded.naturalWidth*decoded.naturalHeight*4;admit(size);upload(entry.texture,decoded);entry.bytes=size;entry.ready=true;}else{allocate(entry.texture,1,1);const image=new Image();image.src=url;const next=entry;void image.decode().then(()=>{if(disposed||images.get(url)!==next)return;const size=image.naturalWidth*image.naturalHeight*4;admit(size);upload(next.texture,image);next.bytes=size;next.ready=true;requestRender();}).catch(onError);}}entry.last=frames;return entry;};
  const draw=()=>gpu.drawArrays(gpu.TRIANGLES,0,3);
  const scissor=(x:number,y:number,w:number,h:number,scale=ratio)=>{const left=Math.max(0,Math.floor(x*scale)),bottom=Math.max(0,Math.floor((height-y-h)*scale));const right=Math.min(Math.ceil(width*scale),Math.ceil((x+w)*scale)),top=Math.min(Math.ceil(height*scale),Math.ceil((height-y)*scale));gpu.scissor(left,bottom,Math.max(0,right-left),Math.max(0,top-bottom));};
  const render=()=>{
-  if(disposed||!source||!width||!height||!lenses.length)return;
+  if(disposed||document.hidden||!hasModel||!width||!height||!lenses.length)return;
   const start=performance.now();
   try{
    if(gpu.isContextLost())return;
-   const w=Math.ceil(width*ratio),h=Math.ceil(height*ratio);
-   if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;resizeTarget(accumulated,w,h);resizeTarget(blurX,Math.ceil(width/2),Math.ceil(height/2));resizeTarget(blurY,blurX.width,blurX.height);allocate(snapshot,w,h);}
-   gpu.disable(gpu.SCISSOR_TEST);gpu.disable(gpu.BLEND);gpu.bindFramebuffer(gpu.FRAMEBUFFER,accumulated.frame);gpu.viewport(0,0,w,h);gpu.drawBuffers([gpu.COLOR_ATTACHMENT0,gpu.COLOR_ATTACHMENT1]);gpu.clearBufferfv(gpu.COLOR,1,new Float32Array(4));gpu.drawBuffers([gpu.COLOR_ATTACHMENT0]);
-   upload(modelTexture,source,true);gpu.useProgram(base.program);bind(base,'model',modelTexture,0);bind(base,'background',backgroundTexture,1);flag(base,'hasBackground',backgroundReady);
-   const factor=backgroundImage?Math.max(width/backgroundImage.width,height/backgroundImage.height):1;
-   vector(base,'cover',backgroundImage?[width/(backgroundImage.width*factor),height/(backgroundImage.height*factor)]:[1,1]);draw();
+   const w=Math.ceil(width*ratio),h=Math.ceil(height*ratio);scratchReleased=false;admit();
+   if(canvas.width!==w||canvas.height!==h||accumulated.width!==w||accumulated.height!==h){canvas.width=w;canvas.height=h;resizeTarget(accumulated,w,h);resizeTarget(blurX,Math.ceil(width/2),Math.ceil(height/2));resizeTarget(blurY,blurX.width,blurX.height);allocate(snapshot,w,h);}
+   gpu.disable(gpu.SCISSOR_TEST);gpu.disable(gpu.BLEND);gpu.bindFramebuffer(gpu.FRAMEBUFFER,accumulated.frame);gpu.viewport(0,0,w,h);gpu.drawBuffers([gpu.COLOR_ATTACHMENT0]);gpu.bindFramebuffer(gpu.FRAMEBUFFER,null);gpu.clearColor(0,0,0,0);gpu.clear(gpu.COLOR_BUFFER_BIT);gpu.bindFramebuffer(gpu.FRAMEBUFFER,accumulated.frame);
+   gpu.useProgram(base.program);bind(base,'model',modelTexture,0);bind(base,'background',backgroundTexture,1);flag(base,'hasBackground',backgroundReady);
+   vector(base,'cover',[1,1]);draw();
    gpu.enable(gpu.SCISSOR_TEST);
    for(const l of lenses){
     const a=l.place?.a??{maps:l.maps,x:l.x,y:l.y,w:l.w,h:l.h},b=l.place?.b??a;
@@ -143,7 +149,7 @@ export function createRasterGlass(root:HTMLElement,onError:(error:unknown)=>void
      vector(blur,'direction',[2/width,0]);bind(blur,'smallSource',snapshot,0);bind(blur,'wideSource',snapshot,1);draw();
      gpu.bindFramebuffer(gpu.FRAMEBUFFER,blurY.frame);vector(blur,'direction',[0,2/height]);bind(blur,'smallSource',blurX.textures[0],0);bind(blur,'wideSource',blurX.textures[1],1);draw();
     }
-    gpu.bindFramebuffer(gpu.FRAMEBUFFER,accumulated.frame);gpu.drawBuffers([gpu.COLOR_ATTACHMENT0,gpu.COLOR_ATTACHMENT1]);gpu.viewport(0,0,w,h);scissor(clip.x,clip.y,clip.right-clip.x,clip.bottom-clip.y);
+    gpu.bindFramebuffer(gpu.FRAMEBUFFER,accumulated.frame);gpu.drawBuffers([gpu.COLOR_ATTACHMENT0]);gpu.viewport(0,0,w,h);scissor(clip.x,clip.y,clip.right-clip.x,clip.bottom-clip.y);
     gpu.enable(gpu.BLEND);gpu.blendFunc(gpu.ONE,gpu.ONE_MINUS_SRC_ALPHA);gpu.useProgram(lens.program);
     bind(lens,'backdrop',snapshot,0);bind(lens,'frost',blurY.textures[0],1);bind(lens,'fill',blurY.textures[1],2);
     ['fieldA','fieldB','overlayA','overlayB'].forEach((key,i)=>bind(lens,key,maps[i].texture,i+3));
@@ -152,21 +158,33 @@ export function createRasterGlass(root:HTMLElement,onError:(error:unknown)=>void
     scalar(lens,'mixMaps',l.place?.mix??0);scalar(lens,'travel',l.refraction);scalar(lens,'opacity',l.opacity);scalar(lens,'fillOpacity',spec.fillOpacity);
     flag(lens,'regular',regular);flag(lens,'dark',dark);flag(lens,'nested',l.parents.length>0);const tint=tintChannels(o);flag(lens,'tinted',!!tint);vector(lens,'tint',tint??[1,1,1]);
     const clear=dark?materials.clear.dark:materials.clear.light;vector(lens,'tone',regular?[...spec.tone]:[clear.shadowLift,clear.highlightRolloff,0,0]);draw();
+    // The canvas is the transparent output. Drawing the same lens here avoids
+    // retaining another full-screen glass attachment and the final copy pass.
+    gpu.bindFramebuffer(gpu.FRAMEBUFFER,null);draw();
    }
-   gpu.bindFramebuffer(gpu.FRAMEBUFFER,null);gpu.viewport(0,0,w,h);gpu.disable(gpu.SCISSOR_TEST);gpu.disable(gpu.BLEND);gpu.useProgram(copy.program);bind(copy,'source',accumulated.textures[1],0);draw();
-   frames++;lastDuration=performance.now()-start;
+   gpu.bindFramebuffer(gpu.FRAMEBUFFER,null);gpu.viewport(0,0,w,h);gpu.disable(gpu.SCISSOR_TEST);gpu.disable(gpu.BLEND);
+   frames++;lastDuration=performance.now()-start;onFrame();
    if(frames%120===0)for(const [url,m]of images)if(frames-m.last>240){gpu.deleteTexture(m.texture);images.delete(url);}
   }catch(error){onError(error);}
  };
- const refreshBackground=()=>{const element=root.querySelector<HTMLElement>('#scene-background');const url=element?.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1]??'';if(url===backgroundUrl)return;backgroundUrl=url;backgroundReady=false;if(!url)return;const image=new Image();image.src=url;void image.decode().then(()=>{if(disposed||backgroundUrl!==url)return;backgroundImage=image;upload(backgroundTexture,image);backgroundReady=true;}).catch(onError);};
+ // The compositor only needs the visible background crop, at CSS resolution.
+ // UI text stays in the DOM; the main scene background keeps its source quality.
+ const uploadBackground=()=>{if(!backgroundImage||!width||!height)return;const size=`${Math.ceil(width)}x${Math.ceil(height)}`;if(size===backgroundSize)return;
+  const resized=document.createElement('canvas');resized.width=Math.ceil(width);resized.height=Math.ceil(height);backgroundBytes=resized.width*resized.height*4;admit();
+  const factor=Math.max(resized.width/backgroundImage.width,resized.height/backgroundImage.height),w=backgroundImage.width*factor,h=backgroundImage.height*factor;
+  resized.getContext('2d')!.drawImage(backgroundImage,(resized.width-w)/2,(resized.height-h)/2,w,h);upload(backgroundTexture,resized);resized.width=resized.height=1;backgroundSize=size;backgroundReady=true;
+ };
+ const refreshBackground=()=>{const element=root.querySelector<HTMLElement>('#scene-background');const url=element?.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1]??'';if(url===backgroundUrl)return;backgroundUrl=url;backgroundReady=false;backgroundSize='';if(!url){backgroundImage=undefined;return;}const image=new Image();image.src=url;void image.decode().then(()=>{if(disposed||backgroundUrl!==url)return;backgroundImage=image;uploadBackground();requestRender();}).catch(onError);};
  const observer=new MutationObserver(refreshBackground);const background=root.querySelector('#scene-background');if(background)observer.observe(background,{attributes:true,attributeFilter:['style']});refreshBackground();
  const lost=(event:Event)=>{event.preventDefault();onError(Error('Glass compositor context lost'));};canvas.addEventListener('webglcontextlost',lost);
  root.append(canvas);
  return {
-  update(next:readonly LayerLens[],content:HTMLElement,rect:{width:number;height:number}){lenses=next;source=content.querySelector('canvas');width=rect.width;height=rect.height;ratio=Math.min(devicePixelRatio||1,1.5);render();},
-  render,
-  debug:()=>({frames,lenses:lenses.length,textures:images.size,renderMs:Math.round(lastDuration*10)/10,dpr:ratio}),
+  update(next:readonly LayerLens[],content:HTMLElement,rect:{width:number;height:number}){lenses=next;source=content.querySelector('canvas');width=rect.width;height=rect.height;ratio=Math.min(devicePixelRatio||1,1.25);try{uploadBackground();}catch(e){onError(e);return;}trimMaps(new Set(next.flatMap(l=>[l.maps,l.place?.a.maps,l.place?.b.maps].filter(Boolean).flatMap(m=>[m!.field,m!.overlay]))));requestRender();},
+  releaseScratch(){if(disposed)return;resizeTarget(accumulated,1,1);resizeTarget(blurX,1,1);resizeTarget(blurY,1,1);allocate(snapshot,1,1);scratchReleased=true;admit();},
+  captureModel(){if(disposed||!source)return;try{modelBytes=source.width*source.height*4;admit();upload(modelTexture,source,true);hasModel=true;modelCaptures++;requestRender();}catch(e){onError(e);}},
+  render(){cancelAnimationFrame(raf);raf=0;render();},
+  debug:()=>({frames,lenses:lenses.length,textures:images.size,renderMs:Math.round(lastDuration*10)/10,dpr:ratio,modelCaptures,gpuBytes:memory()}),
   owns:(node:Node)=>node===canvas,
-  dispose(){if(disposed)return;disposed=true;observer.disconnect();canvas.removeEventListener('webglcontextlost',lost);canvas.remove();for(const t of [accumulated,blurX,blurY]){gpu.deleteFramebuffer(t.frame);t.textures.forEach(v=>gpu.deleteTexture(v));}for(const t of [snapshot,modelTexture,backgroundTexture,...[...images.values()].map(v=>v.texture)])gpu.deleteTexture(t);for(const p of [base,copy,blur,lens])gpu.deleteProgram(p.program);images.clear();gpu.getExtension('WEBGL_lose_context')?.loseContext();},
+  dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);observer.disconnect();canvas.removeEventListener('webglcontextlost',lost);canvas.remove();for(const t of [accumulated,blurX,blurY]){gpu.deleteFramebuffer(t.frame);t.textures.forEach(v=>gpu.deleteTexture(v));}for(const t of [snapshot,modelTexture,backgroundTexture,...[...images.values()].map(v=>v.texture)])gpu.deleteTexture(t);for(const p of [base,copy,blur,lens])gpu.deleteProgram(p.program);images.clear();releaseGlassMemory('compositor');gpu.getExtension('WEBGL_lose_context')?.loseContext();},
  };
 }

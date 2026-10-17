@@ -11,7 +11,7 @@ export function createContactShadow(renderer:WebGLRenderer,scene:Scene){
   const quad=new Mesh(new PlaneGeometry(2,2),blur);blurScene.add(quad);
   const floor=new Mesh(new PlaneGeometry(300,300),new MeshBasicMaterial({map:a.texture,transparent:true,depthWrite:false,toneMapped:false}));floor.rotation.x=-Math.PI/2;floor.position.y=-.09;floor.renderOrder=1;scene.add(floor);
   let previous='';
-  return{floor,update(root:Group){
+  return{floor,releaseContext(){a.dispose();b.dispose();depth.dispose();blur.dispose();quad.geometry.dispose();previous='';},invalidate(){previous='';},update(root:Group){
     const key=root.id+root.children.map(o=>[o.position.toArray(),o.quaternion.toArray(),o.visible].join(',')).join('/');if(key===previous)return;previous=key;
     const target=renderer.getRenderTarget(),background=scene.background,override=scene.overrideMaterial,clearColor=renderer.getClearColor(new Color()),clearAlpha=renderer.getClearAlpha();
     floor.visible=false;scene.background=null;scene.overrideMaterial=depth;renderer.setClearColor(0,0);

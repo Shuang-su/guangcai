@@ -1,3 +1,4 @@
+import {configurePackedNormals} from '../materials/packed-normals';
 import { CanvasTexture, ClampToEdgeWrapping, NoColorSpace, SRGBColorSpace, Texture, type MeshPhysicalMaterial, type MeshBasicMaterial } from 'three';
 import {loadTexture} from './load-texture';
 import {loadFloatNormal} from './float-normal';
@@ -5,8 +6,11 @@ import {setPorcelainCoverage} from '../materials/porcelain';
 import webTextures from './web-textures.json';
 import {installCityParameters} from '../materials/city-parametric';
 import {normalizeAppearance,type Appearance} from './city-appearance';
+import type {CityLevel,Label} from '../resources/types';
+import type {ResourcePool,Lease} from '../resources/pool';
 
 export interface CityArtworkPack {
+  runtime?:CityLevel&{label:Label};
   id: string; version: number; name: string; layout: 'blank-300deg-v1';
   placement?: {scale:number;offsetU:number;offsetV:number};
   baseColor: string; normal: string; roughness: string; metalness: string; height?: string;
@@ -41,9 +45,10 @@ export class CityArtworkManager {
   relief=1;metalEnabled=true;lastError='';
   uniformOnly=false;
   private parameters:ReturnType<typeof installCityParameters>;
+  private leases:Lease[]=[];private controller?:AbortController;
   private parametricCache=new Map<string,Promise<Texture[]>>();private paramKey='';private paramMaps:Texture[]=[];
   private textCache=new Map<string,Promise<Texture[]>>();private textKey='';private requestedStructure='';private requestedText='';
-  constructor(private material:MeshPhysicalMaterial,private anisotropy:number){this.parameters=installCityParameters(material);}
+  constructor(private material:MeshPhysicalMaterial,private anisotropy:number,private pool?:ResourcePool){this.parameters=installCityParameters(material);}
   private labelPixels(source?:string){
     const url=source??`${import.meta.env.BASE_URL}china/label.png`;
     if(url!==this.labelUrl){this.label=undefined;this.labelUrl=url;}
@@ -56,6 +61,7 @@ export class CityArtworkManager {
     const revision=++this.revision;
     if(pack?.finish==='paint')pack={...pack,finish:'enamel'};
     this.uniformOnly=false;
+    if(pack.runtime&&this.pool)return this.applyRuntime(pack,revision);
     if(!pack||pack.layout!=='blank-300deg-v1'||!pack.id||!pack.name||!Number.isInteger(pack.version)||pack.version<1||channels.some(k=>typeof pack[k]!=='string'||!pack[k]))throw new Error('城市包缺少有效版本、展开规范或对齐通道');
     if(pack.label?.color&&!/^#[0-9a-f]{6}$/i.test(pack.label.color))throw new Error('文字颜色格式不正确');
     if(pack.finish&&!['enamel','metal','paint'].includes(pack.finish))throw new Error('不支持的城市材质');
@@ -138,6 +144,24 @@ export class CityArtworkManager {
     }else{cache.delete(key);cache.set(key,promise);}
     return promise;
   }
+  private async applyRuntime(pack:CityArtworkPack,revision:number){
+    const runtime=pack.runtime!,key=[runtime.mask.url,runtime.normal.url].join('|'),textKey=runtime.label.asset.url;
+    const appearance=normalizeAppearance(pack.parametric!.appearance);
+    if(key===this.paramKey&&textKey===this.textKey){this.controller?.abort();this.uniformOnly=true;this.parameters.update(appearance,true);this.current=structuredClone(pack);this.relief=appearance.relief;return true;}
+    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
+    try{
+      leases=await this.pool!.acquireAll([runtime.mask,runtime.normal,runtime.label.asset],controller.signal);
+      if(revision!==this.revision||this.disposed)return false;
+      const [mask,normal,label]=leases.map(l=>l.texture);for(const t of [mask,normal,label]){t.channel=1;t.anisotropy=this.anisotropy;}
+      const mat=this.material;this.uniformOnly=this.paramKey===key;
+      mat.map=mat.metalnessMap=mask;mat.normalMap=mat.clearcoatNormalMap=normal;mat.roughnessMap=mat.clearcoatMap=null;
+      mat.clearcoat=1;mat.roughness=1;mat.metalness=this.metalEnabled?1:0;mat.color.set(0xffffff);mat.displacementMap=null;mat.displacementScale=0;
+      configurePackedNormals(mat);setPorcelainCoverage(mat,mask);if(!this.uniformOnly)mat.needsUpdate=true;
+      this.parameters.enable(mask,label,true,runtime.label.uvRect);this.parameters.fixedGold(true);this.parameters.update(appearance,true);this.parameters.metal(this.metalEnabled);
+      const old=this.leases;this.leases=leases;leases=[];old.forEach(l=>l.release());this.owned.forEach(t=>this.release(t));this.owned=[];
+      this.paramKey=key;this.textKey=textKey;this.paramMaps=[mask,normal,label];this.current=structuredClone(pack);this.relief=appearance.relief;this.lastError='';return true;
+    }catch(e){if(controller.signal.aborted)return false;this.lastError=String(e);throw e;}finally{leases.forEach(l=>l.release());finishSwap();}
+  }
   private trimResources(){
     for(const [cache,limit,protectedKeys] of [[this.parametricCache,2,[this.paramKey,this.requestedStructure]],[this.textCache,6,[this.textKey,this.requestedText]]] as const){
       for(const [key,promise] of cache){if(cache.size<=limit)break;if(protectedKeys.includes(key))continue;cache.delete(key);void promise.then(maps=>maps.forEach(t=>this.release(t)),()=>{});}
@@ -174,10 +198,11 @@ export class CityArtworkManager {
     }catch(e){if(revision===this.revision)this.lastError=(e as Error).message;throw e;}
     finally{this.trimResources();}
   }
+  resetRuntime(){this.controller?.abort();++this.revision;this.leases.forEach(l=>l.release());this.leases=[];this.paramKey=this.textKey='';this.paramMaps=[];}
   setRelief(value:number){if(!Number.isFinite(value)||value< -1||value>2)throw new Error('凹凸强度超出范围');this.relief=value;if(this.current?.parametric){const a={...this.current.parametric.appearance,relief:Math.max(0,value)};this.current.parametric.appearance=a;this.parameters.update(a,!this.current.label?.hidden);}else{this.material.normalScale.setScalar(value*.7);this.material.clearcoatNormalScale.setScalar(value*.7);}}
   setMetal(enabled:boolean){this.metalEnabled=enabled;this.material.metalness=enabled?1:0;this.parameters.metal(enabled);}
   configureMetalnessInspection(material:MeshBasicMaterial){if(this.current?.parametric)this.parameters.inspect(material);}
   private release(t:Texture){t.dispose();if(t.image instanceof HTMLCanvasElement)t.image.width=t.image.height=1;}
   debug(){return {pack:this.current,relief:this.relief,metalEnabled:this.metalEnabled,displacementScale:this.material.displacementScale,parameters:this.parameters.debug(),cachedCities:this.parametricCache.size,cachedLabels:this.textCache.size,uniformOnly:this.uniformOnly,maps:[...this.owned,...this.paramMaps].map(t=>({uuid:t.uuid,channel:t.channel,size:[(t.image as {width:number;height:number}).width,(t.image as {width:number;height:number}).height],colorSpace:t.colorSpace,precision:t.userData.precision??'8-bit'})),labelSource:this.current?.label?.hidden?null:this.current?.label?.source??'china/label.png',labelColor:this.current?.label?.color??'#ddb538',lastError:this.lastError};}
-  dispose(){this.disposed=true;++this.revision;this.owned.forEach(t=>this.release(t));this.owned=[];for(const p of [...this.parametricCache.values(),...this.textCache.values()])void p.then(ts=>ts.forEach(t=>t.dispose()),()=>{});this.parametricCache.clear();this.textCache.clear();this.paramMaps=[];this.label=undefined;}
+  dispose(){this.disposed=true;++this.revision;this.controller?.abort();this.leases.forEach(l=>l.release());this.leases=[];this.owned.forEach(t=>this.release(t));this.owned=[];for(const p of [...this.parametricCache.values(),...this.textCache.values()])void p.then(ts=>ts.forEach(t=>t.dispose()),()=>{});this.parametricCache.clear();this.textCache.clear();this.paramMaps=[];this.label=undefined;}
 }

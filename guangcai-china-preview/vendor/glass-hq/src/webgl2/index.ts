@@ -1,3 +1,4 @@
+import {reserveGlassMemory,releaseGlassMemory} from '../dom/resource-budget';
 import { outlineSegments } from '../core/concentric.js';
 import { shapeSegments } from '../core/shape.js';
 import { mapScale, maxAtlasRows, type MapGeometry } from '../gpu/geometry.js';
@@ -33,6 +34,7 @@ export class WebGL2MaterialRenderer implements MaterialBackend {
     gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);gl.deleteShader(vs);gl.deleteShader(fs);
     if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Glass program: '+gl.getProgramInfoLog(program));
     this.program=program;gl.useProgram(program);gl.disable(gl.DITHER);gl.disable(gl.BLEND);gl.disable(gl.DEPTH_TEST);
+    reserveGlassMemory('map-renderer',64*64*16);
     this.outline=gl.createTexture()!;gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.outline);
     gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);
     gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA32F,64,64,0,gl.RGBA,gl.FLOAT,null);
@@ -66,6 +68,7 @@ export class WebGL2MaterialRenderer implements MaterialBackend {
   private slot(width:number,height:number){
     const gl=this.gl;let slot=this.slots.find(s=>!s.busy);
     if(!slot){slot={texture:gl.createTexture()!,fbo:gl.createFramebuffer()!,pbo:gl.createBuffer()!,busy:false,width:0,height:0,sync:null};this.slots.push(slot);}
+    const scratch=this.slots.reduce((n,s)=>n+(s===slot?width*height:s.width*s.height)*8,0);reserveGlassMemory('map-renderer',64*64*16+scratch,0,scratch);
     slot.busy=true;
     gl.bindFramebuffer(gl.FRAMEBUFFER,slot.fbo);
     if(slot.width!==width||slot.height!==height){
@@ -103,13 +106,13 @@ export class WebGL2MaterialRenderer implements MaterialBackend {
       const atlas=new Uint8Array(width*height*4);gl.bindBuffer(gl.PIXEL_PACK_BUFFER,slot.pbo);gl.getBufferSubData(gl.PIXEL_PACK_BUFFER,0,atlas);gl.bindBuffer(gl.PIXEL_PACK_BUFFER,null);
       requests.forEach((s,i)=>{const pixels=new Uint8Array(s.columns*s.rows*2*4);for(let y=0;y<s.rows*2;y++){const from=(height-1-bands[i]-y)*width*4;pixels.set(atlas.subarray(from,from+s.columns*4),y*s.columns*4);}s.resolve({width:s.columns,height:s.rows,pixels,duration:performance.now()-s.started});});
     }catch(e){requests.forEach(s=>s.reject(e instanceof Error?e:new Error(String(e))));}
-    finally{requests.forEach(s=>this.pending.delete(s));if(slot){if(slot.sync)this.gl.deleteSync(slot.sync);slot.sync=null;slot.busy=false;}}
+    finally{requests.forEach(s=>this.pending.delete(s));if(slot){if(slot.sync)this.gl.deleteSync(slot.sync);slot.sync=null;slot.busy=false;this.gl.deleteTexture(slot.texture);this.gl.deleteFramebuffer(slot.fbo);this.gl.deleteBuffer(slot.pbo);this.slots=this.slots.filter(s=>s!==slot);if(!this.dead){const scratch=this.slots.reduce((n,s)=>n+s.width*s.height*8,0);reserveGlassMemory('map-renderer',64*64*16+scratch,0,scratch);}}}
   }
   dispose(){
     if(this.dead)return;this.dead=true;this.queue=[];
     for(const request of this.pending)request.reject(new Error('Glass renderer disposed or context lost'));this.pending.clear();
     const gl=this.gl;for(const s of this.slots){gl.deleteTexture(s.texture);gl.deleteFramebuffer(s.fbo);gl.deleteBuffer(s.pbo);if(s.sync)gl.deleteSync(s.sync);s.sync=null;}
-    this.slots=[];gl.deleteTexture(this.outline);gl.deleteProgram(this.program);this.canvas.removeEventListener('webglcontextlost',this.lost);
+    this.slots=[];releaseGlassMemory('map-renderer');gl.deleteTexture(this.outline);gl.deleteProgram(this.program);this.canvas.removeEventListener('webglcontextlost',this.lost);
   }
 }
 let renderer:Promise<WebGL2MaterialRenderer>|undefined;

@@ -1,3 +1,4 @@
+import {configurePackedNormals} from '../materials/packed-normals';
 import { ClampToEdgeWrapping, MirroredRepeatWrapping, RepeatWrapping, NoColorSpace, SRGBColorSpace, Texture } from 'three';
 import { setRegionMaps, type Maps, type Materials, type Region } from '../materials/materials';
 import {loadTexture} from './load-texture';
@@ -7,7 +8,9 @@ import fixedRendering from './fixed-rendering.json';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
 import {configureFixedGoldGround} from '../materials/fixed-gold-ground';
-export interface RegionPack {atlas?:FixedAtlas;baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
+import type {FixedLevel} from '../resources/types';
+import type {ResourcePool,Lease} from '../resources/pool';
+export interface RegionPack {runtime?:FixedLevel;atlas?:FixedAtlas;baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
 export interface StylePack {mapping?:'source-layout-v3';cleanGoldGround?:boolean;name:string;regions:Record<Region,RegionPack>}
 export const defaultPack:StylePack={name:'固定广彩 · 高清重建花纸',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
@@ -39,11 +42,13 @@ export class StyleManager {
   }
   private revision=0;
   private owned:Texture[]=[];
+  private leases:Lease[]=[];private controller?:AbortController;
   currentName='正在载入花纸';
   currentMaps:Partial<Record<Region,Maps>>={};
-  constructor(private materials:Materials,private anisotropy:number,private onChange:()=>void){}
+  constructor(private materials:Materials,private anisotropy:number,private onChange:()=>void,private pool?:ResourcePool){}
   async apply(pack:StylePack):Promise<boolean>{
     const revision=++this.revision;
+    if(this.pool&&regions.every(r=>pack.regions[r].runtime))return this.applyRuntime(pack,revision);
     if(!pack||typeof pack.name!=='string'||!pack.regions)throw new Error('无效材质包：缺少 name / regions');
     if(pack.mapping!==undefined&&pack.mapping!=='source-layout-v3')throw new Error('不支持的花纸展开规范');
     const tasks:{region:Region;channel:typeof channels[number];url:string;normalFormat?:RegionPack['normalFormat']}[]=[];
@@ -104,5 +109,22 @@ export class StyleManager {
     }finally{urls.forEach(url=>URL.revokeObjectURL(url));}
   }
   precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
-  dispose(){++this.revision;this.owned.forEach(t=>t.dispose());this.owned=[];}
+  private async applyRuntime(pack:StylePack,revision:number){
+    this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
+    try{
+      const assets=regions.flatMap(r=>{const a=pack.regions[r].runtime!;return [a.baseColor,a.normal,a.orm];});
+      leases=await this.pool!.acquireAll(assets,controller.signal);if(revision!==this.revision)return false;
+      const maps={} as Record<Region,Maps>;
+      regions.forEach((r,i)=>{const [baseColor,normal,orm]=leases.slice(i*3,i*3+3).map(l=>l.texture);const entry=pack.regions[r];
+        if(entry.atlas)validateFixedAtlas(entry.atlas,entry.runtime!.baseColor.width,entry.runtime!.baseColor.height);
+        for(const t of [baseColor,normal,orm]){t.channel=2;t.anisotropy=this.anisotropy;t.wrapS=r==='saucer'?RepeatWrapping:ClampToEdgeWrapping;}
+        maps[r]={baseColor,normal,roughness:orm,metalness:orm};
+      });
+      regions.forEach(r=>{setRegionMaps(this.materials.regions[r],maps[r],pack.regions[r].atlas);configureFixedGoldGround(this.materials.regions[r],true);configurePackedNormals(this.materials.regions[r]);});
+      const old=this.leases;this.leases=leases;leases=[];old.forEach(l=>l.release());
+      this.owned.forEach(t=>t.dispose());this.owned=[];this.mapping=pack.mapping;this.currentMaps=maps;this.offsets=Object.fromEntries(regions.map(r=>[r,pack.regions[r].offsetU??0]));this.fit(this.aspects);this.currentName=pack.name;this.onChange();return true;
+    }catch(e){if(controller.signal.aborted)return false;throw e;}finally{leases.forEach(l=>l.release());finishSwap();}
+  }
+  cancelPending(){++this.revision;this.controller?.abort();}
+  dispose(){++this.revision;this.controller?.abort();this.leases.forEach(l=>l.release());this.leases=[];this.owned.forEach(t=>t.dispose());this.owned=[];this.currentMaps={};}
 }

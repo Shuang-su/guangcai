@@ -1,0 +1,452 @@
+{
+  "engine": "Desktop WebKit with mobile policy",
+  "url": "http://127.0.0.1:5276/",
+  "checks": [
+    {
+      "name": "correct page and meaningful content",
+      "passed": true
+    },
+    {
+      "name": "no framework overlay",
+      "passed": true
+    },
+    {
+      "name": "light first render and preserved reflections",
+      "passed": true
+    },
+    {
+      "name": "initial texture budget",
+      "passed": true
+    },
+    {
+      "name": "initial model GPU estimate within steady budget",
+      "passed": true
+    },
+    {
+      "name": "consumer never requests legacy large texture paths",
+      "passed": true
+    },
+    {
+      "name": "initial encoded resources below 5 MiB",
+      "passed": true
+    },
+    {
+      "name": "stationary model stops rendering",
+      "passed": true
+    },
+    {
+      "name": "near view preserves design",
+      "passed": true
+    },
+    {
+      "name": "near view stays within mobile budget",
+      "passed": true
+    },
+    {
+      "name": "flower focus promotes only inspected region",
+      "passed": true
+    },
+    {
+      "name": "last fast city selection wins",
+      "passed": true
+    },
+    {
+      "name": "city 1/shanghai",
+      "passed": true
+    },
+    {
+      "name": "city 1/urumqi",
+      "passed": true
+    },
+    {
+      "name": "city 1/beijing",
+      "passed": true
+    },
+    {
+      "name": "city 1/nanjing",
+      "passed": true
+    },
+    {
+      "name": "city 1/nanchang",
+      "passed": true
+    },
+    {
+      "name": "city 1/xiamen",
+      "passed": true
+    },
+    {
+      "name": "city 1/hohhot",
+      "passed": true
+    },
+    {
+      "name": "city 1/harbin",
+      "passed": true
+    },
+    {
+      "name": "city 1/tianjin",
+      "passed": true
+    },
+    {
+      "name": "city 1/taiyuan",
+      "passed": true
+    },
+    {
+      "name": "city 1/guangzhou",
+      "passed": true
+    },
+    {
+      "name": "city 1/chengdu",
+      "passed": true
+    },
+    {
+      "name": "city 1/jingdezhen",
+      "passed": true
+    },
+    {
+      "name": "city 1/hangzhou",
+      "passed": true
+    },
+    {
+      "name": "city 1/wuhan",
+      "passed": true
+    },
+    {
+      "name": "city 1/shenyang",
+      "passed": true
+    },
+    {
+      "name": "city 1/shenzhen",
+      "passed": true
+    },
+    {
+      "name": "city 1/shijiazhuang",
+      "passed": true
+    },
+    {
+      "name": "city 1/xian",
+      "passed": true
+    },
+    {
+      "name": "city 1/zhengzhou",
+      "passed": true
+    },
+    {
+      "name": "city 1/chongqing",
+      "passed": true
+    },
+    {
+      "name": "city 1/changchun",
+      "passed": true
+    },
+    {
+      "name": "city 1/qingdao",
+      "passed": true
+    },
+    {
+      "name": "city 2/shanghai",
+      "passed": true
+    },
+    {
+      "name": "city 2/urumqi",
+      "passed": true
+    },
+    {
+      "name": "city 2/beijing",
+      "passed": true
+    },
+    {
+      "name": "city 2/nanjing",
+      "passed": true
+    },
+    {
+      "name": "city 2/nanchang",
+      "passed": true
+    },
+    {
+      "name": "city 2/xiamen",
+      "passed": true
+    },
+    {
+      "name": "city 2/hohhot",
+      "passed": true
+    },
+    {
+      "name": "city 2/harbin",
+      "passed": true
+    },
+    {
+      "name": "city 2/tianjin",
+      "passed": true
+    },
+    {
+      "name": "city 2/taiyuan",
+      "passed": true
+    },
+    {
+      "name": "city 2/guangzhou",
+      "passed": true
+    },
+    {
+      "name": "city 2/chengdu",
+      "passed": true
+    },
+    {
+      "name": "city 2/jingdezhen",
+      "passed": true
+    },
+    {
+      "name": "city 2/hangzhou",
+      "passed": true
+    },
+    {
+      "name": "city 2/wuhan",
+      "passed": true
+    },
+    {
+      "name": "city 2/shenyang",
+      "passed": true
+    },
+    {
+      "name": "city 2/shenzhen",
+      "passed": true
+    },
+    {
+      "name": "city 2/shijiazhuang",
+      "passed": true
+    },
+    {
+      "name": "city 2/xian",
+      "passed": true
+    },
+    {
+      "name": "city 2/zhengzhou",
+      "passed": true
+    },
+    {
+      "name": "city 2/chongqing",
+      "passed": true
+    },
+    {
+      "name": "city 2/changchun",
+      "passed": true
+    },
+    {
+      "name": "city 2/qingdao",
+      "passed": true
+    },
+    {
+      "name": "slogan open",
+      "passed": true
+    },
+    {
+      "name": "slogan innovation",
+      "passed": true
+    },
+    {
+      "name": "slogan cooperation",
+      "passed": true
+    },
+    {
+      "name": "slogan sharing",
+      "passed": true
+    },
+    {
+      "name": "slogan together",
+      "passed": true
+    },
+    {
+      "name": "slogan ocean",
+      "passed": true
+    },
+    {
+      "name": "repeated switching budget bounded",
+      "passed": true
+    },
+    {
+      "name": "peak accounts for reflection scratch buffers",
+      "passed": true
+    },
+    {
+      "name": "no pending jobs",
+      "passed": true
+    },
+    {
+      "name": "invalid design rejected",
+      "passed": true
+    },
+    {
+      "name": "failed transfer retains complete previous selection",
+      "passed": true
+    },
+    {
+      "name": "export/import roundtrip",
+      "passed": true
+    },
+    {
+      "name": "auto render requests coalesce to one per frame",
+      "passed": true
+    },
+    {
+      "name": "auto rotation changes actual camera",
+      "passed": true
+    },
+    {
+      "name": "context recovery preserves design",
+      "passed": true
+    },
+    {
+      "name": "context recovery restarts at light",
+      "passed": true
+    },
+    {
+      "name": "input bytes preserved src/ui/haptics.ts",
+      "passed": true
+    },
+    {
+      "name": "input bytes preserved src/ui/ios-haptics.ts",
+      "passed": true
+    },
+    {
+      "name": "input bytes preserved src/ui/xy-pad.ts",
+      "passed": true
+    },
+    {
+      "name": "input bytes preserved src/ui/lightness-slider.ts",
+      "passed": true
+    },
+    {
+      "name": "input bytes preserved src/ui/control-lift.ts",
+      "passed": true
+    },
+    {
+      "name": "desktop full glass backend",
+      "passed": true
+    },
+    {
+      "name": "no uncaught application errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "unthrottledReadyMs": 1141,
+    "initial": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 18,
+        "contextLost": false
+      },
+      "resources": {
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 22085092,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 194576884,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 16563814,
+        "fetchedBodyBytes": 2286310,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      },
+      "renderTargets": {
+        "environments": 28311552,
+        "shadow": 8388608,
+        "contact": 4194304,
+        "framebuffer": 24642576
+      }
+    },
+    "initialResourceEncodedBytes": 3489940,
+    "near": {
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 52,
+        "contextLost": false
+      },
+      "resources": {
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 40353252,
+        "reservedRenderTargetBytes": 89605200,
+        "peakEstimatedBytes": 199164468,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 30264934,
+        "fetchedBodyBytes": 3207984,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    "afterSwitching": {
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 33015950,
+      "reservedRenderTargetBytes": 89605200,
+      "peakEstimatedBytes": 199164468,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 13,
+      "decodedBytes": 24761956,
+      "fetchedBodyBytes": 16038429,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    }
+  },
+  "physicalIPhoneTested": false
+}

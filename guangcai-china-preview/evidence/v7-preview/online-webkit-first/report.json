@@ -1,0 +1,203 @@
+{
+  "engine": "Desktop WebKit with mobile policy",
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "checks": [
+    {
+      "name": "correct page and meaningful content",
+      "passed": true
+    },
+    {
+      "name": "no framework overlay",
+      "passed": true
+    },
+    {
+      "name": "light first render and preserved reflections",
+      "passed": true
+    },
+    {
+      "name": "initial texture budget",
+      "passed": true
+    },
+    {
+      "name": "initial model GPU estimate within steady budget",
+      "passed": true
+    },
+    {
+      "name": "consumer never requests legacy large texture paths",
+      "passed": true
+    },
+    {
+      "name": "initial encoded resources below 5 MiB",
+      "passed": true
+    },
+    {
+      "name": "stationary model stops rendering",
+      "passed": true
+    },
+    {
+      "name": "near view preserves design",
+      "passed": true
+    },
+    {
+      "name": "near view stays within mobile budget",
+      "passed": true
+    },
+    {
+      "name": "flower focus promotes only inspected region",
+      "passed": true
+    },
+    {
+      "name": "last fast city selection wins",
+      "passed": true
+    },
+    {
+      "name": "city 1/shanghai",
+      "passed": true
+    },
+    {
+      "name": "city 1/urumqi",
+      "passed": true
+    },
+    {
+      "name": "city 1/beijing",
+      "passed": true
+    },
+    {
+      "name": "city 1/nanjing",
+      "passed": true
+    },
+    {
+      "name": "city 1/nanchang",
+      "passed": true
+    },
+    {
+      "name": "city 1/xiamen",
+      "passed": true
+    },
+    {
+      "name": "city 1/hohhot",
+      "passed": true
+    },
+    {
+      "name": "city 1/harbin",
+      "passed": true
+    },
+    {
+      "name": "city 1/tianjin",
+      "passed": true
+    },
+    {
+      "name": "city 1/taiyuan",
+      "passed": true
+    },
+    {
+      "name": "city 1/guangzhou",
+      "passed": true
+    },
+    {
+      "name": "city 1/chengdu",
+      "passed": true
+    },
+    {
+      "name": "city 1/jingdezhen",
+      "passed": true
+    },
+    {
+      "name": "city 1/hangzhou",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "unthrottledReadyMs": 15556,
+    "initial": {
+      "quality": {
+        "cityTier": "light",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 149,
+        "contextLost": false
+      },
+      "resources": {
+        "estimatedGpuBytes": 22085092,
+        "reservedRenderTargetBytes": 103285776,
+        "peakEstimatedBytes": 194576884,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 16563814,
+        "fetchedBodyBytes": 2286310,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      },
+      "renderTargets": {
+        "environments": 28311552,
+        "shadow": 8388608,
+        "contact": 4194304,
+        "framebuffer": 24642576
+      }
+    },
+    "initialResourceEncodedBytes": 2696009,
+    "near": {
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 225,
+        "contextLost": false
+      },
+      "resources": {
+        "estimatedGpuBytes": 40353252,
+        "reservedRenderTargetBytes": 89605200,
+        "peakEstimatedBytes": 199164468,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 13,
+        "activeEntries": 13,
+        "decodedBytes": 30264934,
+        "fetchedBodyBytes": 3207984,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  },
+  "physicalIPhoneTested": false,
+  "failure": "Error: Timed out: city 0/wuhan; requests: []\n    at Timeout.<anonymous> (file:///Volumes/Prism/%E5%B9%BF%E5%BD%A9/guangcai-v7-workspace/guangcai-china-preview/.codex-work/tmp/browser-qa-diagnostic.mjs:7:166)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+}
