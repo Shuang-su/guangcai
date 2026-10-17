@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "url": "https://6ad314a2a5e661a14e469026--guangcai-no1-china-v6.netlify.app/",
+  "engine": "26.6",
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+  "deviceScaleFactor": 3,
+  "hasTouch": true,
+  "physicalIOS": "pending real-device retest; desktop WebKit automation is not iOS 27",
+  "checks": [
+    {
+      "name": "page identity",
+      "passed": true
+    },
+    {
+      "name": "isolated WebGL2 liquid compositor selected",
+      "passed": true
+    },
+    {
+      "name": "refraction canvas draws prepared lenses",
+      "passed": true
+    },
+    {
+      "name": "WebGL scene has no SVG filter or transformed ancestor",
+      "passed": true
+    },
+    {
+      "name": "scene uses no SVG reference filter",
+      "passed": true
+    },
+    {
+      "name": "only transparent canvas composites glass",
+      "passed": true
+    },
+    {
+      "name": "city: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "city: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "city: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "city: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "city: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "glass panel remains over canvas",
+      "passed": true
+    },
+    {
+      "name": "color-zoom: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color-zoom: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color-zoom: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color-zoom: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "color-zoom: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "editor opens",
+      "passed": true
+    },
+    {
+      "name": "editor-zoom: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "editor-zoom: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "editor-zoom: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "editor-zoom: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "editor-zoom: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "slogan selection updates",
+      "passed": true
+    },
+    {
+      "name": "collapsed shell matches menu height",
+      "passed": true
+    },
+    {
+      "name": "collapsed: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "collapsed: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "collapsed: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "collapsed: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "collapsed: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view popup above scene",
+      "passed": true
+    },
+    {
+      "name": "view-menu: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view-menu: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view-menu: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view-menu: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view-menu: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "view popup closes",
+      "passed": true
+    },
+    {
+      "name": "rotation changes camera",
+      "passed": true
+    },
+    {
+      "name": "scene fills 393x852",
+      "passed": true
+    },
+    {
+      "name": "resize-393x852: row 102 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-393x852: row 204 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-393x852: row 340 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-393x852: row 511 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-393x852: row 664 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "scene fills 390x664",
+      "passed": true
+    },
+    {
+      "name": "resize-390x664: row 79 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-390x664: row 159 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-390x664: row 265 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-390x664: row 398 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-390x664: row 517 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "scene fills 844x390",
+      "passed": true
+    },
+    {
+      "name": "resize-844x390: row 46 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-844x390: row 93 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-844x390: row 156 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-844x390: row 234 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-844x390: row 304 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "scene fills 420x912",
+      "passed": true
+    },
+    {
+      "name": "resize-420x912: row 109 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-420x912: row 218 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-420x912: row 364 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-420x912: row 547 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "resize-420x912: row 711 has rendered scene detail",
+      "passed": true
+    },
+    {
+      "name": "no framework error overlay",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
