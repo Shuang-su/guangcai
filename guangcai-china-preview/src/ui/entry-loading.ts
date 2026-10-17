@@ -18,8 +18,9 @@ export function createEntryLoading(pool:ResourcePool){
   text('rate',rate===null?'—':bytes(rate)+'/s');text('elapsed',`${((now-started)/1000).toFixed(1)} s`);
   text('graphics',`${((memory.estimatedGpuBytes+memory.reservedRenderTargetBytes)/1024**2).toFixed(1)} / ${(memory.steadyBudget/1024**2).toFixed(0)} MiB`);
   const heap=(performance as Performance&{memory?:{usedJSHeapSize:number}}).memory?.usedJSHeapSize;
+  text('cache',`${(memory.fileCache.bytes/1024**2).toFixed(2)} / ${(memory.fileCache.limit/1024**2).toFixed(0)} MiB`);
   text('heap',typeof heap==='number'&&Number.isFinite(heap)?bytes(heap):'浏览器未提供');
-  text('phase',error|| (document.hidden?'页面在后台，加载已暂停':prepared?'画面已准备好':!data.total?'正在读取资源目录':data.completed<data.count?`正在准备花纸与城市 · ${data.completed} / ${data.count}`:'正在准备背景与反射'));
+  text('phase',error|| (document.hidden?'页面在后台，加载已暂停':prepared?'画面已准备好':!data.total?'正在读取资源目录':data.completed<data.count?`正在预加载城市与花纸 · ${data.completed} / ${data.count}`:'正在准备文字与完整画面'));
  };
  const begin=()=>{epoch++;clearTimeout(revealTimer);clearInterval(timer);assets=[];samples=[];started=entered?performance.now():0;prepared=leaving=entered=false;error='';root.hidden=false;root.classList.remove('is-leaving');root.dataset.state='loading';app.inert=true;app.setAttribute('aria-hidden','true');update();timer=window.setInterval(update,200);};
  begin();

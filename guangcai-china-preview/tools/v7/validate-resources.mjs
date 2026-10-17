@@ -19,7 +19,9 @@ for(const [id,s]of Object.entries(m.slogans)){
  for(let y=0;y<crop.info.height;y++)for(let x=0;x<crop.info.width;x++)assert.equal(crop.data[(y*crop.info.width+x)*crop.info.channels],original.data[((y+top)*4096+x+left)*original.info.channels],id+' glyph mismatch');
  assert.equal(Math.round(w*4096),crop.info.width);assert.equal(Math.round(h*1783),crop.info.height);
 }
-const initial=Object.values(m.fixed).flatMap(l=>[l.light.baseColor,l.light.normal,l.light.orm]).concat([m.cities.shenzhen.levels.light.mask,m.cities.shenzhen.levels.light.normal,m.slogans.open.asset,m.mark]);
-assert.ok(initial.reduce((n,a)=>n+a.gpuBytes,0)<64*1024**2);assert.ok(initial.reduce((n,a)=>n+a.bytes,0)<5*1024**2);
+const fixed=Object.values(m.fixed).flatMap(l=>[l.light.baseColor,l.light.normal,l.light.orm]);
+const initial=[...fixed,m.mark,m.cities.shenzhen.levels.light.mask,m.cities.shenzhen.levels.light.normal,...Object.values(m.slogans).map(s=>s.asset)];
+const preload=[...fixed,m.mark,...Object.values(m.cities).flatMap(c=>[c.thumbnail,c.levels.light.mask,c.levels.light.normal]),...Object.values(m.slogans).map(s=>s.asset),...['shenzhen','shenyang','shijiazhuang'].flatMap(id=>Object.values(m.cities[id].levels.standard))];
+assert.ok(initial.reduce((n,a)=>n+a.gpuBytes,0)<64*1024**2);assert.ok(preload.reduce((n,a)=>n+a.bytes,0)<12*1024**2);
 assert.equal(Object.keys(m.cities).length,23);assert.equal(Object.keys(m.slogans).length,6);
-console.log(JSON.stringify({passed:true,assets:assets.length,labelsPixelIdentical:6,cities:23,initialEncodedBytes:initial.reduce((n,a)=>n+a.bytes,0),initialGpuBytes:initial.reduce((n,a)=>n+a.gpuBytes,0)}));
+console.log(JSON.stringify({passed:true,assets:assets.length,labelsPixelIdentical:6,cities:23,preloadEncodedBytes:preload.reduce((n,a)=>n+a.bytes,0),initialGpuBytes:initial.reduce((n,a)=>n+a.gpuBytes,0),original5MiBTargetMet:preload.reduce((n,a)=>n+a.bytes,0)<5*1024**2}));

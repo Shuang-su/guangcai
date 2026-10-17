@@ -3,6 +3,7 @@ import type {Asset} from './types';
 import {TaskQueue,abortError} from './queue';
 import {readBounded} from './hfn';
 import {decodeImage} from './image-decode';
+import {EncodedCache} from './encoded-cache';
 export interface Lease {texture:Texture;release:()=>void}
 type Entry={asset:Asset;refs:number;touched:number;texture?:Texture;controller:AbortController;promise:Promise<Texture>};
 const MiB=1024*1024;
@@ -10,8 +11,8 @@ export class ResourcePool {
  private received=new Map<string,number>();private decodeTask:{asset:string;phase:string}|null=null;private decodeRetries=0;
  private entries=new Map<string,Entry>();private disposed=false;private worker?:Worker;
  private network=new TaskQueue(2);private decoding=new TaskQueue(1);private bytes=0;private peak=0;private transferred=0;private cancelled=0;
- readonly steady:number;readonly maximum:number;reserve=0;
- constructor(mobile:boolean){this.steady=(mobile?128:256)*MiB;this.maximum=(mobile?192:384)*MiB;}
+ readonly steady:number;readonly maximum:number;reserve=0;private encoded:EncodedCache;private previewUrls=new Map<string,string>();
+ constructor(mobile:boolean){this.steady=(mobile?128:256)*MiB;this.maximum=(mobile?192:384)*MiB;this.encoded=new EncodedCache((mobile?12:24)*MiB,(asset,signal)=>this.fetchBytes(asset,signal));}
  private disposeEntry(key:string,e:Entry){
   this.entries.delete(key);this.bytes-=e.asset.gpuBytes;e.controller.abort();
   if(e.texture){e.texture.dispose();const image=e.texture.image as {close?:()=>void;data?:unknown};image?.close?.();if(image&&'data'in image)image.data=null;e.texture=null as unknown as Texture;}
@@ -47,14 +48,14 @@ export class ResourcePool {
   const results=await Promise.allSettled(assets.map(a=>this.acquire(a,signal))),leases=results.flatMap(r=>r.status==='fulfilled'?[r.value]:[]),error=results.find(r=>r.status==='rejected');
   if(error?.status==='rejected'){leases.forEach(l=>l.release());throw error.reason;}return leases;
  }
+ private fetchBytes(asset:Asset,signal:AbortSignal){return this.network.run(async()=>{
+  const combined=AbortSignal.any([signal,AbortSignal.timeout(20000)]),response=await fetch(asset.url,{signal:combined});if(!response.ok||!response.body)throw Error(`Resource HTTP ${response.status}`);
+  this.received.set(asset.url,0);const bytes=await readBounded(response.body,asset.bytes,size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;return bytes;
+ },signal);}
  private async load(asset:Asset,signal:AbortSignal){
-  // Keep a transfer slot until decoding finishes: queued compressed/decoded
-  // buffers are bounded too, not merely the number of concurrent fetch calls.
-  return this.network.run(async()=>{
-   const timeout=AbortSignal.timeout(20000),combined=AbortSignal.any([signal,timeout]);
-   const response=await fetch(asset.url,{signal:combined});if(!response.ok||!response.body)throw Error(`Resource HTTP ${response.status}`);
-   this.received.set(asset.url,0);const bytes=await readBounded(response.body,Math.max(asset.bytes,asset.decodedBytes+16),size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;
-   return this.decoding.run(async()=>{
+  const source=await this.encoded.acquire(asset,signal),bytes=source.bytes;
+  try{
+   return await this.decoding.run(async()=>{
     if(signal.aborted)throw abortError();
     this.decodeTask={asset:asset.id,phase:'decode'};
     let decoded:Awaited<ReturnType<typeof decodeImage>>|Awaited<ReturnType<ResourcePool['decode']>>;
@@ -66,8 +67,12 @@ export class ResourcePool {
     texture.flipY=decoded.kind==='image';texture.generateMipmaps=true;texture.minFilter=LinearMipmapLinearFilter;texture.magFilter=LinearFilter;texture.wrapS=texture.wrapT=ClampToEdgeWrapping;
     texture.colorSpace=asset.colorSpace==='srgb'?SRGBColorSpace:NoColorSpace;texture.needsUpdate=true;texture.userData={assetId:asset.id,gpuBytes:asset.gpuBytes,precision:asset.encoding==='hfn1-gzip'?'RGBA16F':asset.channels===1?'R8':asset.channels===2?'RG8':'RGBA8'};return texture;
    },signal);
-  },signal);
+  }finally{source.release();}
  }
+ pinFiles(assets:Asset[]){this.encoded.pin(assets);}
+ prefetch(assets:Asset[],signal?:AbortSignal){return this.encoded.prefetch(assets,signal);}
+ fileReady(asset:Asset){return this.encoded.has(asset);}
+ previewUrl(asset:Asset){let url=this.previewUrls.get(asset.url);if(!url){const bytes=this.encoded.peek(asset);if(!bytes)throw Error('Thumbnail was not preloaded');url=URL.createObjectURL(new Blob([bytes],{type:'image/webp'}));this.previewUrls.set(asset.url,url);}return url;}
  private decode(bytes:ArrayBuffer,asset:Asset,signal:AbortSignal):Promise<{kind:'normal';data:Uint16Array}>{
   return new Promise((resolve,reject)=>{
    const worker=this.worker??=new Worker(new URL('./decode.worker.ts',import.meta.url),{type:'module'});
@@ -80,9 +85,9 @@ export class ResourcePool {
    worker.postMessage({bytes,asset},[bytes]);
   });
  }
- progress(assets:Asset[]){const unique=[...new Map(assets.map(a=>[a.url,a])).values()];return {total:unique.reduce((n,a)=>n+a.bytes,0),received:unique.reduce((n,a)=>n+Math.min(a.bytes,this.received.get(a.url)??0),0),completed:unique.filter(a=>!!this.entries.get(a.url)?.texture).length,count:unique.length};}
+ progress(assets:Asset[]){const unique=[...new Map(assets.map(a=>[a.url,a])).values()];return {total:unique.reduce((n,a)=>n+a.bytes,0),received:unique.reduce((n,a)=>n+(this.encoded.has(a)?a.bytes:Math.min(a.bytes,this.received.get(a.url)??0)),0),completed:unique.filter(a=>this.encoded.has(a)||!!this.entries.get(a.url)?.texture).length,count:unique.length};}
  pause(value:boolean){this.network.pause(value);this.decoding.pause(value);}
  clear(){this.received.clear();for(const [key,e]of this.entries)this.disposeEntry(key,e);this.worker?.terminate();this.worker=undefined;}
- debug(){return {decodeTask:this.decodeTask,decodeRetries:this.decodeRetries,estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),fetchedBodyBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
- dispose(){this.disposed=true;this.clear();}
+ debug(){return {fileCache:this.encoded.debug(),decodeTask:this.decodeTask,decodeRetries:this.decodeRetries,estimatedGpuBytes:this.bytes,reservedRenderTargetBytes:this.reserve,peakEstimatedBytes:this.peak,steadyBudget:this.steady,peakBudget:this.maximum,entries:this.entries.size,activeEntries:[...this.entries.values()].filter(e=>e.refs>0).length,decodedBytes:[...this.entries.values()].filter(e=>e.texture).reduce((n,e)=>n+e.asset.decodedBytes,0),fetchedBodyBytes:this.transferred,cancelled:this.cancelled,network:this.network.debug(),decode:this.decoding.debug()};}
+ dispose(){this.disposed=true;this.clear();this.encoded.dispose();for(const url of this.previewUrls.values())URL.revokeObjectURL(url);this.previewUrls.clear();}
 }

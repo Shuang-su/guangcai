@@ -155,7 +155,7 @@ export class CityArtworkManager {
       const mat=this.material;this.uniformOnly=this.paramKey===key;
       mat.map=mat.metalnessMap=mask;mat.normalMap=mat.clearcoatNormalMap=normal;mat.roughnessMap=mat.clearcoatMap=null;
       mat.clearcoat=1;mat.roughness=1;mat.metalness=this.metalEnabled?1:0;mat.color.set(0xffffff);mat.displacementMap=null;mat.displacementScale=0;
-      setPorcelainCoverage(mat,mask);mat.needsUpdate=true;
+      setPorcelainCoverage(mat,mask);if(!this.uniformOnly)mat.needsUpdate=true;
       this.parameters.enable(mask,label,true,runtime.label.uvRect);this.parameters.fixedGold(true);this.parameters.update(appearance,true);this.parameters.metal(this.metalEnabled);
       const old=this.leases;this.leases=leases;leases=[];old.forEach(l=>l.release());this.owned.forEach(t=>this.release(t));this.owned=[];
       this.paramKey=key;this.textKey=textKey;this.paramMaps=[mask,normal,label];this.current=structuredClone(pack);this.relief=appearance.relief;this.lastError='';return true;

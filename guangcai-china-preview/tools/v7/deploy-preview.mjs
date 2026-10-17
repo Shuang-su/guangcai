@@ -33,8 +33,9 @@ try{
  const reviewed=JSON.parse(await readFile('evidence/v7/consumer-build.json','utf8'));
  const actual=(await files(build)).filter(f=>f!=='release.json');if(JSON.stringify(actual)!==JSON.stringify(reviewed.inventory.map(f=>f.path).sort()))throw Error('Build inventory changed');
  for(const file of reviewed.inventory)if(hash(await readFile(path.join(build,file.path)))!==file.sha256)throw Error(`Build changed: ${file.path}`);
- for(const folder of ['chrome','webkit']){const report=JSON.parse(await readFile(`evidence/v7-entry/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer QA did not pass');}
- const startup=JSON.parse(await readFile('evidence/v7-entry/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
+ for(const folder of ['chrome','webkit','offline-chrome','offline-webkit']){const report=JSON.parse(await readFile(`evidence/v7-preload/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer/preload QA did not pass');}
+ const startup=JSON.parse(await readFile('evidence/v7-preload/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
+ const retry=JSON.parse(await readFile('evidence/v7-preload/retry/report.json'));if(!retry.passed)throw Error('Recovery QA did not pass');
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');
  receipt.protectedBefore=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));
  await writeFile(path.join(build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,sourceBranch:receipt.sourceBranch,v6SyncedThrough:'923a54d',resourceRelease:'v7-1'},null,2)+'\n');

@@ -21,7 +21,9 @@ try{
  const requests=await page.evaluate(()=>performance.getEntriesByType('resource').map(r=>({url:r.name,encoded:r.encodedBodySize,decoded:r.decodedBodySize})));
  check('consumer never requests legacy large texture paths',!requests.some(r=>/\/(fixed|textures|cities\/v[456])\//.test(r.url)));
  report.metrics.initialResourceEncodedBytes=requests.reduce((n,r)=>n+r.encoded,0);
- check('initial encoded resources below 5 MiB',report.metrics.initialResourceEncodedBytes<5*1024**2);
+ check('all 23 low cities and six slogans ready before entry',state.preload.readyCities===23&&state.preload.slogans===6&&state.entryLoading.completed===state.entryLoading.count);
+ check('encoded startup matches declared preload plus UI and code',report.metrics.initialResourceEncodedBytes<=state.entryLoading.total+2*1024**2);
+ report.metrics.original5MiBTargetMet=report.metrics.initialResourceEncodedBytes<5*1024**2;
  await page.waitForTimeout(1300);await page.screenshot({path:out+'/mobile-city.png',scale:'css'});
  const f1=(await read()).quality.renderFrames;await page.waitForTimeout(1000);check('stationary model stops rendering',(await read()).quality.renderFrames===f1);
  const beforeDesign=await page.evaluate(()=>window.cupViewer.exportDesign());
@@ -35,13 +37,14 @@ try{
  check('last fast city selection wins',(await read()).selection.current.variant===`v6-${cities.at(-1)}-gold`);
  for(let round=0;round<2;round++)for(const id of cities)check(`city ${round+1}/${id}`,await bounded(`city ${round+1}/${id}`,page.evaluate(id=>window.cupViewer.selectArtwork({variant:`v6-${id}-gold`}),id)));
  for(const id of ['open','innovation','cooperation','sharing','together','ocean'])check('slogan '+id,await bounded('slogan '+id,page.evaluate(text=>window.cupViewer.selectArtwork({text}),id)));
- state=await read();check('repeated switching budget bounded',state.resources.estimatedGpuBytes+state.resources.reservedRenderTargetBytes<=state.resources.steadyBudget);check('peak accounts for reflection scratch buffers',state.resources.peakEstimatedBytes<=state.resources.peakBudget);check('no pending jobs',state.resources.network.active===0&&state.resources.decode.active===0);report.metrics.afterSwitching=state.resources;
+ await page.waitForFunction(()=>window.cupViewer.debug().resources.network.active===0,null,{polling:100});
+ state=await read();check('repeated switching budget bounded',state.resources.estimatedGpuBytes+state.resources.reservedRenderTargetBytes<=state.resources.steadyBudget);check('peak accounts for reflection scratch buffers',state.resources.peakEstimatedBytes<=state.resources.peakBudget);check('no pending jobs',state.resources.network.active===0&&state.resources.decode.active===0);check('raw file cache within budget',state.resources.fileCache.peakBytes<=state.resources.fileCache.limit);report.metrics.afterSwitching=state.resources;
  const original=await page.evaluate(()=>window.cupViewer.exportDesign());
  check('invalid design rejected',await page.evaluate(async()=>{try{await window.cupViewer.importDesign({...window.cupViewer.exportDesign(),cityId:'invalid'});return false;}catch{return true;}}));
  expectedNetworkFailure=true;await page.route('**/assets/beijing-light-normal-*',r=>r.abort());
- // Evicted earlier in the traversal, so this exercises a real failed transfer.
- const failed=await page.evaluate(()=>window.cupViewer.selectArtwork({variant:'v6-beijing-gold'}));
- check('failed transfer retains complete previous selection',!failed&&JSON.stringify(await page.evaluate(()=>window.cupViewer.exportDesign()))===JSON.stringify(original));await page.unroute('**/assets/beijing-light-normal-*');expectedNetworkFailure=false;
+ // Low files are now pinned: the selection must succeed with the origin unavailable.
+ const cached=await page.evaluate(()=>window.cupViewer.selectArtwork({variant:'v6-beijing-gold'}));
+ check('preloaded city survives unavailable origin',cached&&(await read()).selection.current.variant==='v6-beijing-gold');await page.unroute('**/assets/beijing-light-normal-*');expectedNetworkFailure=false;
  check('export/import roundtrip',await page.evaluate(d=>window.cupViewer.importDesign(d),original));
  await page.locator('#auto').click();const c1=(await read()).camera;const cadence=await page.evaluate(async()=>{const start=window.cupViewer.debug().quality.renderFrames;let samples=0;await new Promise(resolve=>{function tick(){if(++samples<20)requestAnimationFrame(tick);else resolve();}requestAnimationFrame(tick);});return {renders:window.cupViewer.debug().quality.renderFrames-start,samples};});check('auto render requests coalesce to one per frame',cadence.renders<=cadence.samples+2);check('auto rotation changes actual camera',(await read()).camera.some((n,i)=>Math.abs(n-c1[i])>.01));await page.locator('#auto').click();
  await page.evaluate(()=>{window.testLoss=document.querySelector('#viewport').getContext('webgl2').getExtension('WEBGL_lose_context');window.testLoss.loseContext();});await page.waitForTimeout(300);await page.evaluate(()=>window.testLoss.restoreContext());await page.waitForFunction(()=>window.cupViewer.ready(),null,{timeout:60000});
