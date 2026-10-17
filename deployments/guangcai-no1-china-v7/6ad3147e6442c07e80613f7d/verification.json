@@ -1,0 +1,18 @@
+{
+  "version": "7.0.4",
+  "sourceCommit": "9d3a6f42bc980cd8fb86715d386126b0e30371dd",
+  "deployId": "6ad3147e6442c07e80613f7d",
+  "status": "functional-verified-first-load-performance-still-pending",
+  "archiveFilesVerified": 220,
+  "onlineWebKitChecks": 32,
+  "uncaughtErrors": [],
+  "comparison": "guangcai-china-preview/evidence/v7-hotspots/comparison.json",
+  "normalPrecision": "unchanged; byte equality verified at three tiers",
+  "physicalIPhoneTested": false,
+  "concurrentV6": {
+    "source": "833a8b3",
+    "deploy": "6ad314a2a5e661a14e469026",
+    "publishedAt": "2026-10-17T06:24:42.019Z",
+    "note": "Separately published after V7 at 06:24:07.075Z; this task only wrote the V7 site"
+  }
+}
