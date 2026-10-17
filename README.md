@@ -2,11 +2,11 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前开发交付候选：V7.1.1
+## 当前开发交付候选：V7.1.2
 
-**后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。现有性能文档的12项机制补充接入核对表；本轮数据/文档交付不重发V6/V7站点。
+**后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。现有性能文档的12项机制补充接入核对表；V7.1.2更换杯身思源宋体CN Bold与字框，复核23城并修正厦门、西安填色；更新独立V7预览，V6保持原部署。
 
-[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.1 预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [V7 PR #30](https://github.com/Shuang-su/guangcai/pull/30) · [验证与完成记录](docs/changes/20261017-v7-v6-sync-handoff/completion.md)
+[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.1 预览](https://6ad336a18e5052baf0191481--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [V7 PR #30](https://github.com/Shuang-su/guangcai/pull/30) · [V7.1.2验证与完成记录](docs/changes/20261018-v7.1.2-font-fill/completion.md)
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 

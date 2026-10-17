@@ -29,17 +29,18 @@ async function api(route,method='GET',body,raw=false){
 async function files(dir,base=dir){let list=[];for(const item of await readdir(dir,{withFileTypes:true})){if(item.name.startsWith('.'))throw Error('Hidden file in deployment');const p=path.join(dir,item.name);if(item.isDirectory())list.push(...await files(p,base));else if(item.isFile())list.push(path.relative(base,p));else throw Error('Non-regular deployment file');}return list.sort();}
 const summary=s=>({id:s.id,name:s.name,publishedDeploy:s.published_deploy?.id??null,gitConnected:!!s.build_settings?.repo_url});
 try{
- if(receipt.sourceBranch!=='codex/v7-v6-sync-handoff'||git('status','--porcelain'))throw Error('Commit the reviewed V7 branch before deployment');
+ if(receipt.sourceBranch!=='codex/v7.1.2-font-fill'||git('status','--porcelain'))throw Error('Commit the reviewed V7 branch before deployment');
  const reviewed=JSON.parse(await readFile('evidence/v7/consumer-build.json','utf8'));
  const actual=(await files(build)).filter(f=>f!=='release.json');if(JSON.stringify(actual)!==JSON.stringify(reviewed.inventory.map(f=>f.path).sort()))throw Error('Build inventory changed');
  for(const file of reviewed.inventory)if(hash(await readFile(path.join(build,file.path)))!==file.sha256)throw Error(`Build changed: ${file.path}`);
- for(const folder of ['chrome','webkit']){const report=JSON.parse(await readFile(`evidence/v7-corrections/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer/preload QA did not pass');}
- for(const engine of ['chrome','webkit']){const city=JSON.parse(await readFile(`evidence/v7-corrections/city-${engine}/report.json`));if(!city.passed)throw Error('HD/city/glass QA did not pass');}
- const startup=JSON.parse(await readFile('evidence/v7-corrections/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
- const retry=JSON.parse(await readFile('evidence/v7-corrections/retry/report.json'));if(!retry.passed)throw Error('Recovery QA did not pass');
- const liquid=JSON.parse(await readFile('evidence/v7-corrections/liquid/liquid-qa.json'));if(liquid.status!=='passed')throw Error('Liquid QA did not pass');
- const split=JSON.parse(await readFile('evidence/v7-corrections/split/report.json'));if(!split.passed)throw Error('Split-origin QA did not pass');
- const performance=JSON.parse(await readFile('evidence/v7-corrections/performance/report.json'));receipt.controlledColdStartPassed=performance.passed;receipt.physicalDeviceAcceptance='pending';
+ for(const folder of ['chrome','webkit']){const report=JSON.parse(await readFile(`evidence/v7.1.2/qa/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer/preload QA did not pass');}
+ for(const engine of ['chrome','webkit']){const city=JSON.parse(await readFile(`evidence/v7.1.2/qa/city-${engine}/report.json`));if(!city.passed)throw Error('HD/city/glass QA did not pass');}
+ const startup=JSON.parse(await readFile('evidence/v7.1.2/qa/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
+ const retry=JSON.parse(await readFile('evidence/v7.1.2/qa/retry/report.json'));if(!retry.passed)throw Error('Recovery QA did not pass');
+ const liquid=JSON.parse(await readFile('evidence/v7.1.2/qa/liquid/liquid-qa.json'));if(liquid.status!=='passed')throw Error('Liquid QA did not pass');
+ const split=JSON.parse(await readFile('evidence/v7.1.2/qa/split/report.json'));if(!split.passed)throw Error('Split-origin QA did not pass');
+ const performance=JSON.parse(await readFile('evidence/v7.1.2/qa/performance/report.json'));receipt.controlledColdStartPassed=performance.passed;receipt.physicalDeviceAcceptance='pending';
+ const art=JSON.parse(await readFile('evidence/v7.1.2/resource-validation.json'));if(!art.passed)throw Error('Artwork preservation QA did not pass');
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');
  receipt.protectedBefore=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));
  await writeFile(path.join(build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,sourceBranch:receipt.sourceBranch,v6SyncedThrough:'833a8b33561d36e72f1164743e80f28fc63d96b2',resourceRelease:JSON.parse(await readFile('public/api/v1/bootstrap.json')).releaseId},null,2)+'\n');

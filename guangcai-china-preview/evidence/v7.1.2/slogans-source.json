@@ -1,0 +1,278 @@
+{
+  "font": {
+    "file": "assets/source/v7.1.2/fonts/SourceHanSerifCN-Bold.otf",
+    "sha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
+    "bytes": 13153520,
+    "family": "Source Han Serif CN",
+    "style": "Bold",
+    "version": "Version 1.000;PS 1;hotconv 16.6.54;makeotf.lib2.5.65590",
+    "weight": 700,
+    "copyright": "Copyright © 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "licenseUrl": "https://github.com/adobe-fonts/source-han-serif/blob/release/LICENSE.txt"
+  },
+  "reference": {
+    "svgSha256": "96f762da6d3a867817fca88d535b36034c9f73b7e905aebd9833d2f9b0a372b4",
+    "size": [
+      209,
+      694
+    ],
+    "glyphBoxes": [
+      [
+        55.375,
+        117.5,
+        154.25,
+        214.125
+      ],
+      [
+        54.5,
+        233.875,
+        154.75,
+        332.5
+      ],
+      [
+        55.125,
+        352.5,
+        153.375,
+        449.5
+      ],
+      [
+        55.0,
+        471.0,
+        154.5,
+        569.5
+      ]
+    ],
+    "glyphCenters": [
+      [
+        104.8125,
+        165.8125
+      ],
+      [
+        104.625,
+        283.1875
+      ],
+      [
+        104.25,
+        401.0
+      ],
+      [
+        104.75,
+        520.25
+      ]
+    ],
+    "derivedFontSize": 105.0,
+    "frameIoU": 0.9806924536946136,
+    "embeddedRasterFrame": true
+  },
+  "placement": {
+    "canvas": [
+      4096,
+      1783
+    ],
+    "centerU": 0.81,
+    "topV": 0.09,
+    "heightRatio": 0.52,
+    "padding": 4
+  },
+  "slogans": [
+    {
+      "id": "open",
+      "text": "开放包容",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          55.3575,
+          117.46000000000001,
+          154.26749999999998,
+          214.165
+        ],
+        [
+          54.435,
+          233.8375,
+          154.815,
+          332.5375
+        ],
+        [
+          55.11,
+          352.49,
+          153.39,
+          449.51
+        ],
+        [
+          54.980000000000004,
+          471.01991228590333,
+          154.51999999999998,
+          569.4800877140967
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-open.svg",
+      "masterSha256": "4bb4fc55916758d5253a91cf40d8a62474733ff293045e4c4ae9e397be8df178",
+      "referenceGlyphIoU": 0.9914075370793417
+    },
+    {
+      "id": "innovation",
+      "text": "创新驱动",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          55.305,
+          116.095,
+          154.32,
+          215.53
+        ],
+        [
+          54.645,
+          233.89,
+          154.605,
+          332.485
+        ],
+        [
+          54.585,
+          353.12,
+          153.915,
+          448.88
+        ],
+        [
+          54.822500000000005,
+          470.9,
+          154.6775,
+          569.6
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-innovation.svg",
+      "masterSha256": "d9f0655b57e762ccb1bc2d8fabda1e2e10169d750927da929ca3a29165ede2c8"
+    },
+    {
+      "id": "cooperation",
+      "text": "合作共赢",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          55.1475,
+          116.3575,
+          154.4775,
+          215.26749999999998
+        ],
+        [
+          54.3825,
+          233.8375,
+          154.8675,
+          332.5375
+        ],
+        [
+          54.9525,
+          352.28,
+          153.5475,
+          449.72
+        ],
+        [
+          54.2975,
+          470.72670312287244,
+          155.2025,
+          569.7732968771276
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-cooperation.svg",
+      "masterSha256": "2999d4de9baa2231d20e6ba096a3026940b1f21588704f88ed86effd5ff4c693"
+    },
+    {
+      "id": "sharing",
+      "text": "共建共享",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          55.515,
+          117.0925,
+          154.11,
+          214.5325
+        ],
+        [
+          54.120000000000005,
+          234.0475,
+          155.13,
+          332.3275
+        ],
+        [
+          54.9525,
+          352.28,
+          153.5475,
+          449.72
+        ],
+        [
+          55.295,
+          470.7425,
+          154.20499999999998,
+          569.7575
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-sharing.svg",
+      "masterSha256": "b088533e404deb956a0455a9f7651deb7e1dfa87924b32826f07a6c77a999466"
+    },
+    {
+      "id": "together",
+      "text": "携手同心",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          54.675000000000004,
+          116.14750000000001,
+          154.95,
+          215.4775
+        ],
+        [
+          54.645,
+          233.9425,
+          154.605,
+          332.4325
+        ],
+        [
+          59.6775,
+          352.595,
+          148.8225,
+          449.405
+        ],
+        [
+          55.21832581242587,
+          474.1025,
+          154.28167418757414,
+          566.3975
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-together.svg",
+      "masterSha256": "103598f5e5ce7db1538f361e5661b7ee78c8f35365dfd615bd907387d25b7024"
+    },
+    {
+      "id": "ocean",
+      "text": "拥抱瀚海",
+      "fontSize": 105.0,
+      "glyphBounds": [
+        [
+          55.095,
+          116.3575,
+          154.53,
+          215.26749999999998
+        ],
+        [
+          54.435,
+          233.6275,
+          154.815,
+          332.7475
+        ],
+        [
+          53.7975,
+          351.545,
+          154.7025,
+          450.455
+        ],
+        [
+          54.245000000000005,
+          471.0575,
+          155.255,
+          569.4425
+        ]
+      ],
+      "master": "assets/masters/v7.1.2/slogan-ocean.svg",
+      "masterSha256": "0becf213da9cccd311b61d044d08f29ac420ee2845dd4e9efe9b53c53e822bd3"
+    }
+  ]
+}

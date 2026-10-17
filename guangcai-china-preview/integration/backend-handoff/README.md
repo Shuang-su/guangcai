@@ -1,6 +1,6 @@
 # 后台同事从这里开始
 
-适用版本：V7.1.1，默认资源 `v7-2`，兼容旧作品 `v7-1`。数据基线为合并提交 `ec6f9bb0b606f319435f57dc18fbc6375ed6566a`。本包是现有配置的数据字典和映射参考；公司尚未提供后台模板，因此不声称可直接导入公司管理后台。
+适用版本：V7.1.2，默认资源 `v7-3`，兼容旧作品 `v7-1`、`v7-2`。精确数据基线见 JSON 的 sourceCommit 和 sources。本包是现有配置的数据字典和映射参考；公司尚未提供后台模板，因此不声称可直接导入公司管理后台。
 
 - [Excel 配置表](V7后台配置数据表.xlsx)：六张表，包含23城、五套配色、材质参数、六组祝福语和195项资源。
 - [完整 JSON](backend-config.json)：与Excel同源，保留数值精度、来源提交及哈希，便于程序读取。
@@ -68,7 +68,7 @@ const maskUrl = new URL(mask.publishPath, 'https://cdn.example.com/cup/').href;
 
 ## 2. 实际录入与保存流程
 
-1. 将现有两份 `releases/v7-1/`、`releases/v7-2/` 目录上传COS，保留层级和哈希文件名。v7-2复用v7-1的文件，不能只上传v7-2。
+1. 将 `releases/v7-1/`、`releases/v7-2/`、`releases/v7-3/` 三个目录上传COS，保留层级和哈希文件名。新版本复用旧文件，不能只上传v7-3。
 2. 后台建立资源发布记录，保存releaseId、catalog/manifest路径、模型版本、配方版本。建立城市目录时录入 `cities[].extension`；建立配色目录时录入五套颜色及完整默认appearance。
 3. 配置公开 `runtime-config.js` 的 bootstrapUrl、apiBase、assetBase。资源描述中的原始URL以manifest为基准解析；不要直接拼到网站根或把当前Netlify域名写死在业务数据里。
 4. 前端初始化取得 `window.cupViewer` 后调用 `whenReady()`；从后台记录组装合法DesignConfig，用 `importDesign()` 应用。失败返回false时保留原作品，不将“选择中”状态当成已完成。
@@ -120,7 +120,7 @@ if (!await viewer.importDesign((await restored.json()).design)) throw new Error(
 在 `guangcai-china-preview` 执行。普通应用构建不需要电子表格依赖，也不会运行这些导出工具。
 
 ```sh
-npm run export:backend-data -- ec6f9bb0b606f319435f57dc18fbc6375ed6566a
+npm run export:backend-data -- <已提交的资源源码SHA>
 # 在具备 @oai/artifact-tool 的文档工具环境执行；指定其node_modules目录。
 ARTIFACT_NODE_MODULES=/path/to/authoring/node_modules node tools/v7/export-backend-workbook.mjs
 npm run check:backend-handoff
@@ -131,3 +131,9 @@ JSON导出直接调用项目的配色和材质函数，并用TypeScript AST读�
 Excel使用Artifact Tool生成，保存后重新打开，对比每个表格单元格；长JSON保持合法文本，浮点完整值以JSON和单元格底层数值保存，材质九点表仅显示六位小数。构建缓存、渲染预览及Excel读回数据在 `.codex-work/tmp/backend-handoff/`；交接目录仅保留最终文件。验证脚本从已读回Excel取西安、开放蓝和自定义材质，实际调用mock保存、读取并校验隔离。
 
 数据导出检查覆盖本轮配置与文档。历史V7浏览器性能证据见PERFORMANCE；iPhone 13 mini/iOS18连续30分钟、实体触感、Air/mini6的V7复测以及正式COS/账号联调仍待验收。
+
+## V7.1.2 / v7-3 资源差异
+
+六组文字改用思源宋体 CN Bold 700，与新SVG参考的字框和间距一致；每张288×936，4px护边，uvRect更新。六组R8含mipmap共2,156,544字节，运行时不下载字体。JSON typography保存字体版本、哈希、来源及母版。两个城市共六张mask替换：厦门树丛与西安小接缝只增加G覆盖；R描线、法线、缩略图均不变。共195项资源，其他项按相对路径复用。模型、配方、城市和配色ID及作品schemaVersion保持原值。旧作品使用原release，不能自动迁移到v7-3。
+
+本次21张参考照片属于亚太地区杯款，并非23座国内城市的一一对应图；只作为填色表现参考。逐城判断与源哈希见 `evidence/v7.1.2/cities/review.json`。

@@ -13,7 +13,12 @@ for(const [region,levels]of Object.entries(m.fixed))for(const [tier,l]of Object.
  const {data,info}=await sharp(base+l.orm.url).raw().toBuffer({resolveWithObject:true});for(let row=0;row<a.rows;row++)for(let y=a.gutter;y<a.contentHeight+a.gutter;y+=7){for(const x of [0,a.gutter-1])for(let k=0;k<3;k++)assert.equal(data[((row*(a.contentHeight+2*a.gutter)+y)*info.width+x)*info.channels+k],data[((row*(a.contentHeight+2*a.gutter)+y)*info.width+a.gutter)*info.channels+k]);}}
 }
 for(const [id,s]of Object.entries(m.slogans)){
- const original=await sharp(`public/cities/v6/slogan-${id}.webp`).removeAlpha().raw().toBuffer({resolveWithObject:true});
+ let original;
+ if(m.releaseId==='v7-3'){
+  const master=await fs.readFile(`assets/masters/v7.1.2/slogan-${id}.svg`,'utf8'),content=master.replace(/^<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'');
+  const scale=1783*.52/694,x=4096*.81-209*scale/2,y=1783*.09;
+  original=await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="4096" height="1783"><g transform="translate(${x} ${y}) scale(${scale})">${content}</g></svg>`)).ensureAlpha().extractChannel('alpha').raw().toBuffer({resolveWithObject:true});
+ }else original=await sharp(`public/cities/v6/slogan-${id}.webp`).removeAlpha().raw().toBuffer({resolveWithObject:true});
  const crop=await sharp(base+s.asset.url).removeAlpha().raw().toBuffer({resolveWithObject:true});
  const [u,v,w,h]=s.uvRect,left=Math.round(u*4096),top=Math.round((1-v-h)*1783);
  for(let y=0;y<crop.info.height;y++)for(let x=0;x<crop.info.width;x++)assert.equal(crop.data[(y*crop.info.width+x)*crop.info.channels],original.data[((y+top)*4096+x+left)*original.info.channels],id+' glyph mismatch');

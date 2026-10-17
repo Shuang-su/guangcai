@@ -1,6 +1,6 @@
 // Browser plugin not available. Three distinct local origins, real browser CORS.
 import {execFileSync} from 'node:child_process';import {once} from 'node:events';import {resolve} from 'node:path';import {mkdir,writeFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {chromium} from 'playwright';import {createMockServer,type MockOptions} from './mock-server';
-const out='.codex-work/tmp/v7-sync/split',root=resolve('.codex-work/deploy/v7-split');await mkdir(out,{recursive:true});
+const out=process.env.QA_OUT??'.codex-work/tmp/v7-sync/split',root=resolve('.codex-work/deploy/v7-split');await mkdir(out,{recursive:true});
 execFileSync('npm',['run','build:integration','--','--outDir',root],{env:{...process.env,APP_BASE:'/cup/'},stdio:'pipe'});
 const servers:Awaited<ReturnType<typeof createMockServer>>[]=[],errors:string[]=[],checks:string[]=[];
 const start=async(options:MockOptions={})=>{const s=await createMockServer(root,'/cup/',options);servers.push(s);s.listen(0,'127.0.0.1');await once(s,'listening');return `http://127.0.0.1:${(s.address() as {port:number}).port}`;};

@@ -1,8 +1,8 @@
-# V7.1.1 性能机制与故障处理交接
+# V7.1.2 性能机制与故障处理交接
 
 本文件逐项说明消费者页面的运行机制、取舍、诊断与验证。当前代码沿用 V6.0.4 的几何、金线/配色/材质、杯壁局部反射、杯盖平面反射和触感输入路径。对应 Issue #29；本轮纠错证据在 `evidence/v7-corrections/`，V7.1.0 历史证据在 `evidence/v7-sync/`。自动化与实体设备验收分别记录。
 
-后台录入先看 [配置表、JSON与字段映射](backend-handoff/README.md)。以下每节的接入核对表以V7.1.1实际代码为准，历史验证均明确指向 `evidence/v7-corrections/`；2026-10-17补充文档与数据导出不构成新的真机性能验收。源码路径相对 `guangcai-china-preview/`。这些机制当前由前端实现，公司后端主要负责稳定的版本、资源字节与业务数据，不应另造一套下载/提清门槛覆盖它们。
+后台录入先看 [配置表、JSON与字段映射](backend-handoff/README.md)。V7.1.2沿用V7.1.1的运行策略；本轮回归见 `evidence/v7.1.2/qa/`，历史数字仍明确指向 `evidence/v7-corrections/`。桌面回归不构成真机验收。源码路径相对 `guangcai-china-preview/`。这些机制当前由前端实现，公司后端主要负责稳定的版本、资源字节与业务数据，不应另造一套下载/提清门槛覆盖它们。
 
 ## 1. 进入门槛：已下载与已显示是两件事
 
@@ -101,11 +101,11 @@ HFN1 gzip 文件及来源哈希保持完整。Worker 用固定版本 fflate 解�
 | 数据 | WebP线性遮罩，GPU R8；uvRect=[u,v,width,height]，左下原点归一化坐标。 |
 | 阈值 | 4px护边；六组含mipmap约2.06MiB；不保留六张完整4K展开图。 |
 | 失败与诊断 | 首屏遮罩失败保留加载错误；字框错位查UV，字形变化查母版/字体/裁切，不重画运行时Canvas。 |
-| 源码 | `tools/v7/compile-resources.mjs`、`src/materials/city-parametric.ts`、`src/main.ts` sloganLeases。 |
+| 源码 | `tools/v7/build-slogan-masters.py`、`tools/v7/compile-v7-3.mjs`、`src/materials/city-parametric.ts`、`src/main.ts` sloganLeases。 |
 | 历史验证 | `tools/v7/validate-resources.mjs`六组裁切像素比对；浏览器文字切换见chrome/report.json、webkit/report.json。 |
 | 接入方 | 后台保存sloganId并发布对应遮罩/UV；新祝福语需走编译与前端白名单更新，不能只返回文案。 |
 
-字形/边框来自既有字体与 SVG 制作母版，运行时使用构建出的遮罩，不直接渲染 SVG。只保留实际字框包围区域和 4px 护边；`uvRect` 把它定位回杯身 4096×1783 原展开坐标。六组文字合计约 2.06MiB GPU（含 mipmap），首屏统一上传，切换只替换已持有纹理/均匀参数。无整张展开画布重绘、无重复反射捕获。原字形逐像素与旧裁切区域一致，菜单标签仍是 DOM 文字。
+v7-3字形/边框来自新的字体与 SVG 制作母版，运行时使用构建出的遮罩，不直接渲染 SVG。只保留实际字框包围区域和 4px 护边；`uvRect` 把它定位回杯身 4096×1783 原展开坐标。六组文字合计约 2.06MiB GPU（含 mipmap），首屏统一上传，切换只替换已持有纹理/均匀参数。无整张展开画布重绘、无重复反射捕获。v7-1/v7-2保留旧字形。v7-3更换为思源宋体 CN Bold 700，按新SVG参考重建矢量字框和四行字心，六张均288×936，含mipmap共2,156,544字节；字体仅用于制作，消费者不下载字体，菜单标签仍是原DOM文字。
 
 入口：`compile-resources.mjs`、`city-parametric.ts`、main sloganLeases；`validate-resources.mjs` 检查六组裁切像素。
 
@@ -210,7 +210,7 @@ HFN1 gzip 文件及来源哈希保持完整。Worker 用固定版本 fflate 解�
 
 保存的是当前作品参数和资源版本。丢失时取消过期资源、清空GPU租约及渲染目标、遮挡设计并重新进入准备状态。恢复时先重建轻量花纸/城市/环境及两种反射，再自动提清；不会马上解码所有最高档。六组文字恢复后仍可直接切换。失败继续保留加载错误和重试入口，不能露出半完成空杯。
 
-## 11. 西安修正与旧作品回放
+## 11. 城市填色修正、资源版本与旧作品回放
 
 | 接入核对 | 具体实现与责任 |
 | --- | --- |
@@ -221,11 +221,15 @@ HFN1 gzip 文件及来源哈希保持完整。Worker 用固定版本 fflate 解�
 | 失败与诊断 | 找不到旧目录会404；检查manifest相对路径、源/派生哈希与填色点。 |
 | 源码 | `tools/v7/patch-xian.mjs`、`src/resources/client.ts`、`design.ts`、`tools/v7/mock-server.ts`。 |
 | 历史验证 | `tools/v7/xian-qa.mjs`；xian.json、xian-qa.json、city-webkit/report.json的双版本回放。 |
-| 接入方 | 保留两个目录和历史作品引用；新资源版本同步白名单、契约及兼容分支，先上传校验再切入口。 |
+| 接入方 | 保留三个目录和历史作品引用；新资源版本同步白名单、契约及兼容分支，先上传校验再切入口。 |
 
 v7-2 只替换西安三个清晰度的填色 G 通道：塔下两层、檐口接缝、右侧山坡和城墙漏填。源 PNG、V6 SVG、所有 R 金线和 HFN 法线保持字节不变；可审查补面为 `assets/masters/v7/xian-fill-correction.svg`，生成器 `patch-xian.mjs`，记录源哈希与修正哈希。每档验证原漏填点变满、外部天空不变、其他通道不变。
 
-v7-1 的 catalog/manifest/资源不覆盖。v7-2 的其他资源引用 `../v7-1/`，避免复制整包。导入 DesignConfig 按指定发布版本加载对应 manifest；mock也校验该版本。旧作品保持v7-1的外观，新作品默认v7-2。未知版本明确拒绝，不能静默用最新资源替换。线上需同时发布两个目录。基础编译器遇到已经存在的v7-1目录入口会拒绝覆盖；常规build不编译资源。制作新资源版本时要先定义新releaseId和审核修正层，再生成新清单，不能直接重跑冻结的母版编译覆盖已发布入口。
+v7-1 的 catalog/manifest/资源不覆盖。v7-2 的其他资源引用 `../v7-1/`，避免复制整包。导入 DesignConfig 按指定发布版本加载对应 manifest；mock也校验该版本。旧作品保持v7-1的外观，新作品默认v7-3。未知版本明确拒绝，不能静默用最新资源替换。线上需同时发布v7-1、v7-2、v7-3三个目录。基础编译器遇到已经存在的v7-1目录入口会拒绝覆盖；常规build不编译资源。制作新资源版本时要先定义新releaseId和审核修正层，再生成新清单，不能直接重跑冻结的母版编译覆盖已发布入口。
+
+v7-3继续复用旧资源，只新增6张文字遮罩与厦门/西安各3张城市遮罩。先扫描所有23城各档G通道的封闭空点和列间空隙，再按原稿逐城人工判断；不能把天空连通的开口一律填满，也不能按高度扫涂。厦门确认树丛轮廓开口，西安确认右城墙3处微小接缝。修正层分别为 `assets/masters/v7.1.2/xiamen-coverage-correction.svg`、`xian-coverage-correction.svg`，仅在其足迹内取G通道最大值。三级R/B逐像素不变、法线和缩略图哈希不变，304项原稿/旧版本保护文件逐字节通过。来源与每城判断见 `evidence/v7.1.2/cities/review.json`，校验入口 `tools/v7/validate-v7-3.mjs`。
+
+下表上一轮“只替换西安3张”描述的是v7-2历史补面；当前发布流程为新修正层→v7-3清单→同步client/mock/schema白名单→新旧三版本回放。后台保存作品release不变；缺少旧版文件时明确失败，不用最新图片顶替。
 
 ## 12. 部署与验收边界
 

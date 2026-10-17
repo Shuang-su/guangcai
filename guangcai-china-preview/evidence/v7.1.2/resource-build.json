@@ -1,0 +1,135 @@
+{
+  "releaseId": "v7-3",
+  "reuses": [
+    "v7-1",
+    "v7-2"
+  ],
+  "changedMaskFiles": 6,
+  "changedSloganFiles": 6,
+  "fillProof": [
+    {
+      "cityId": "xiamen",
+      "tier": "light",
+      "changedPixels": 182,
+      "outlineUnchanged": true,
+      "normalSha256": "6f70be1bb66497b255a113ce66dcd328375cfd2571f16e51a3b77f159ba5951a"
+    },
+    {
+      "cityId": "xiamen",
+      "tier": "standard",
+      "changedPixels": 742,
+      "outlineUnchanged": true,
+      "normalSha256": "439df6fc1d30eb02627cfbccaf3de9f613cba9a9efaa6d72fd20d74d768d8b52"
+    },
+    {
+      "cityId": "xiamen",
+      "tier": "detail",
+      "changedPixels": 2950,
+      "outlineUnchanged": true,
+      "normalSha256": "6f6a8b207df7bf358c0b5cf0f2fabd96b97dabd682d2ef3e107204bbc5d78d5a"
+    },
+    {
+      "cityId": "xian",
+      "tier": "light",
+      "changedPixels": 3,
+      "outlineUnchanged": true,
+      "normalSha256": "310d3f93fd8de363f6a8e4c9956e385bac17e298fd1924074eb389700d8bd13a"
+    },
+    {
+      "cityId": "xian",
+      "tier": "standard",
+      "changedPixels": 18,
+      "outlineUnchanged": true,
+      "normalSha256": "fd3f81fd25fd679c357987c614c18d70aa939ded4487b065a1d14c8dc5524ed4"
+    },
+    {
+      "cityId": "xian",
+      "tier": "detail",
+      "changedPixels": 69,
+      "outlineUnchanged": true,
+      "normalSha256": "cf3e00ddd05f7daccaca7cc7dd12673bc384402e496fc48af3c5c10cd5281b39"
+    }
+  ],
+  "sloganProof": [
+    {
+      "id": "open",
+      "width": 288,
+      "height": 936,
+      "bytes": 13680,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    },
+    {
+      "id": "innovation",
+      "width": 288,
+      "height": 936,
+      "bytes": 15024,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    },
+    {
+      "id": "cooperation",
+      "width": 288,
+      "height": 936,
+      "bytes": 12632,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    },
+    {
+      "id": "sharing",
+      "width": 288,
+      "height": 936,
+      "bytes": 11912,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    },
+    {
+      "id": "together",
+      "width": 288,
+      "height": 936,
+      "bytes": 11890,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    },
+    {
+      "id": "ocean",
+      "width": 288,
+      "height": 936,
+      "bytes": 15404,
+      "gpuBytes": 359424,
+      "uvRect": [
+        0.77490234375,
+        0.38754907459338195,
+        0.0703125,
+        0.5249579360628155
+      ]
+    }
+  ],
+  "sloganGpuBytes": 2156544,
+  "fontRuntimeBytes": 0
+}
