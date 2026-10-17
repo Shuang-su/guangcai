@@ -1,0 +1,28 @@
+{
+  "status": "verified",
+  "version": "7.0.2",
+  "deployId": "6ad3052bc8c052a7d6ccac6b",
+  "sourceCommit": "bb51f75e26f0fc630900d6f27e85d79a2dd1e1c2",
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "verifiedAt": "2026-10-17T05:25:14.645986+00:00",
+  "serverFilesMatched": 220,
+  "onlineBrowserChecks": {
+    "chrome": 81,
+    "webkit": 81
+  },
+  "onlineStartupChecks": {
+    "chromium": 25,
+    "webkit": 25
+  },
+  "protectedSitesUnchanged": true,
+  "observedReadyMs": {
+    "chrome": 9730,
+    "webkit": 2520
+  },
+  "performanceAcceptance": {
+    "desktopControlledNetworkPassed": true,
+    "publicSixSecondTargetPassed": false,
+    "physicalIPhoneTested": false
+  },
+  "evidence": "guangcai-china-preview/evidence/v7-entry/"
+}

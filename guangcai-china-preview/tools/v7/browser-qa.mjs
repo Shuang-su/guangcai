@@ -11,7 +11,7 @@ try{
  activePage=page;
  if(process.env.QA_ASSET_BASE)await page.addInitScript(base=>{window.GUANGCAI_CONFIG={assetBase:base};},process.env.QA_ASSET_BASE);
  page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().includes('404')&&!(expectedNetworkFailure&&m.text().includes('net::ERR_FAILED')))report.errors.push(m.text().slice(0,1500));});
- console.log('loading',url);const started=performance.now();await bounded('navigation',page.goto(url,{waitUntil:'domcontentloaded'}));await bounded('initial readiness',page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000,polling:100}));
+ console.log('loading',url);const started=performance.now();await bounded('navigation',page.goto(url,{waitUntil:'domcontentloaded'}));if(await page.evaluate(()=>document.hidden))await bounded('foreground',page.bringToFront());await bounded('initial readiness',page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000,polling:100}));
  report.metrics.unthrottledReadyMs=Math.round(performance.now()-started);const read=()=>page.evaluate(()=>window.cupViewer.debug());let state=await read();
  check('correct page and meaningful content',(await page.title())==='城市共彩'&&await page.locator('#artwork-settings').isVisible());
  check('no framework overlay',await page.locator('vite-error-overlay').count()===0);
@@ -55,6 +55,6 @@ try{
  await page.screenshot({path:out+'/integration.png',scale:'css'});
  }
  // A clean desktop view exercises the retained optical UI backend as well.
- const desktop=await browser.newPage({viewport:{width:1440,height:900}});desktop.on('pageerror',e=>report.errors.push(e.message));await desktop.goto(url);await desktop.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000});await desktop.waitForTimeout(1000);await desktop.screenshot({path:out+'/desktop.png',scale:'css'});check('desktop full glass backend',await desktop.evaluate(()=>window.cupViewer.debug().glass.backend==='webgl2'));await desktop.close();
+ const desktop=await bounded('desktop page',browser.newPage({viewport:{width:1440,height:900}}));activePage=desktop;desktop.on('pageerror',e=>report.errors.push(e.message));await bounded('desktop navigation',desktop.goto(url,{waitUntil:'domcontentloaded'}));if(await desktop.evaluate(()=>document.hidden))await bounded('desktop foreground',desktop.bringToFront());await bounded('desktop readiness',desktop.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:60000,polling:100}));await desktop.waitForTimeout(1000);await desktop.screenshot({path:out+'/desktop.png',scale:'css'});check('desktop full glass backend',await desktop.evaluate(()=>window.cupViewer.debug().glass.backend==='webgl2'));await desktop.close();
  check('no uncaught application errors',report.errors.length===0);
 }catch(e){report.failure=e.stack;process.exitCode=1;}finally{await browser.close();await fs.writeFile(out+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:!report.failure,checks:report.checks.length,failure:report.failure,errors:report.errors,metrics:report.metrics},null,2));}

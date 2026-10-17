@@ -144,3 +144,9 @@ V6 使用独立站点，原 V5、V4 和其他历史站部署 ID 均经 API 前�
 [预览站点](https://guangcai-no1-china-v7.netlify.app/) · [固定部署](https://6ad2ffb0fe9651b1a32349cc--guangcai-no1-china-v7.netlify.app/)
 
 源码 `922fad662aecaad16e1b874c6e8d62e8f453dab3`，部署 `6ad2ffb0fe9651b1a32349cc`。同步 V6.0.2 的启动、城市返回与 Safari 元信息修复，保留 V7 分级资源。220 个文件摘要已核验，Chrome 线上 81 项通过；桌面 WebKit 公网长流程发现解码停等，未通过，继续修复。当前网络首屏约 9.8 秒，线上 6 秒目标未达标。V6 及四个旧站发布 ID 未变，未连接 Git 自动部署。详见 `docs/changes/20261017-v7-preview-release/completion.md`。
+
+## 2026-10-17 V7.0.2 加载后进入设计（独立预览已更新）
+
+[预览站点](https://guangcai-no1-china-v7.netlify.app/) · [固定部署](https://6ad3052bc8c052a7d6ccac6b--guangcai-no1-china-v7.netlify.app/)
+
+源码 `bb51f75e26f0fc630900d6f27e85d79a2dd1e1c2`，部署 `6ad3052bc8c052a7d6ccac6b`。新增进入前的真实首屏材质进度、读取速度、耗时和内存信息，完整场景实际绘制后才进入设计；缺失素材可重载，法线解码超时可有界重建。图片改为文档图像解码，WebKit 公网连续切换不再复现旧的解码停等。Chrome/WebKit 线上各 81 项、入口专项各 25 项通过，220 个文件摘要一致；V6 及旧站未重发。公网首次进入仍有波动，6 秒目标及真实 iPhone 30 分钟稳定性未作为已通过。记录见 `docs/changes/20261017-v7-entry-loading/completion.md`。

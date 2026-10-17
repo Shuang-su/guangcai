@@ -27,4 +27,18 @@ V6 已提交远端仍为 `923a54d`（V6.0.2）。本轮结束前发现 V6 原工
 
 实际 iPhone 13 mini / iOS 18 的连续 30 分钟稳定性、触感及 Safari 系统栏仍待用户实测。公网 6 秒目标尚不能依据本地模拟标记通过。正式后端、保存/分享模拟服务不在本次公开静态站中。
 
-源码 checkpoint、公网部署与最终线上检查结果待补记。
+## 已提交与已发布
+
+源码 checkpoint：`bb51f75e26f0fc630900d6f27e85d79a2dd1e1c2`，`feat(v7): gate entry on complete rendering with live load metrics (refs #27)`。
+
+- 当前独立 V7 预览：https://guangcai-no1-china-v7.netlify.app/
+- 固定本次部署：https://6ad3052bc8c052a7d6ccac6b--guangcai-no1-china-v7.netlify.app/
+- 部署 ID：`6ad3052bc8c052a7d6ccac6b`。官方 API 读回 ready，`release.json` 对应 7.0.2 / bb51f75。
+- 220 个发布文件与服务端摘要一致；额外公共 URL / HTTP / 哈希检查 13 项通过。HTML 仅有 Netlify 平台说明注释，移除已识别的注释后源内容一致；JS/Worker/配置等字节匹配。站点徽章关闭，法线 CORS/缓存/编码正确。
+- Chrome 与桌面 WebKit 线上完整回归各 81 项通过；两引擎加载页与菜单专项各 25 项通过。最终线上运行无未处理异常、无解码重试，显存估算仍在预算内。
+- 首次 WebKit 线上回归在追加桌面页的等待环节未退出。补充 DOM 就绪等待、前台可见性检查及独立超时后，同一已发布构建完整通过；没有为这个自动化等待问题修改线上应用。
+- 公网首次进入观测 Chrome 9730ms、WebKit 重测 2520ms，环境/缓存不同，不用于平均成一项达标成绩；公网 6 秒目标仍标记未全面达成，真机保持待测。
+- 五个旧站发布指针前后相同，V6 仍是 `6ad295b03953db1e0b268b8f`。V6 另一轮未提交源码保持原样。
+- 发布文件、API 核对与最终验证保存于 `deployments/guangcai-no1-china-v7/6ad3052bc8c052a7d6ccac6b/`；线上截图与报告见 `guangcai-china-preview/evidence/v7-entry/online-*`。原 V7.0.1 发布快照保留，不覆盖。
+
+面向用户交付：同一独立链接现为 V7.0.2；打开后先显示真实加载信息，完整画面准备后自动进入设计；本轮修改和发布记录均保存在 V7 分支的本地提交中。未推送、创建 PR、合并或打标签。
