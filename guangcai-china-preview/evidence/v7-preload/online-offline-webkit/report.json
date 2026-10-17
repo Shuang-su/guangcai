@@ -1,0 +1,596 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "engine": "WebKit",
+  "checks": [
+    {
+      "name": "all city lows and six uploaded slogans precede entry",
+      "passed": true
+    },
+    {
+      "name": "current HD is already downloaded",
+      "passed": true
+    },
+    {
+      "name": "neighbor HD decodes without needing its files from the origin",
+      "passed": true
+    },
+    {
+      "name": "cached city urumqi",
+      "passed": true
+    },
+    {
+      "name": "cached city shanghai",
+      "passed": true
+    },
+    {
+      "name": "cached city beijing",
+      "passed": true
+    },
+    {
+      "name": "cached city nanjing",
+      "passed": true
+    },
+    {
+      "name": "cached city nanchang",
+      "passed": true
+    },
+    {
+      "name": "cached city xiamen",
+      "passed": true
+    },
+    {
+      "name": "cached city hohhot",
+      "passed": true
+    },
+    {
+      "name": "cached city harbin",
+      "passed": true
+    },
+    {
+      "name": "cached city tianjin",
+      "passed": true
+    },
+    {
+      "name": "cached city taiyuan",
+      "passed": true
+    },
+    {
+      "name": "cached city guangzhou",
+      "passed": true
+    },
+    {
+      "name": "cached city chengdu",
+      "passed": true
+    },
+    {
+      "name": "cached city jingdezhen",
+      "passed": true
+    },
+    {
+      "name": "cached city hangzhou",
+      "passed": true
+    },
+    {
+      "name": "cached city wuhan",
+      "passed": true
+    },
+    {
+      "name": "cached city shenyang",
+      "passed": true
+    },
+    {
+      "name": "cached city shenzhen",
+      "passed": true
+    },
+    {
+      "name": "cached city shijiazhuang",
+      "passed": true
+    },
+    {
+      "name": "cached city xian",
+      "passed": true
+    },
+    {
+      "name": "cached city zhengzhou",
+      "passed": true
+    },
+    {
+      "name": "cached city chongqing",
+      "passed": true
+    },
+    {
+      "name": "cached city changchun",
+      "passed": true
+    },
+    {
+      "name": "cached city qingdao",
+      "passed": true
+    },
+    {
+      "name": "no low city or thumbnail transfers after entry",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/open",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/innovation",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/cooperation",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/sharing",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/together",
+      "passed": true
+    },
+    {
+      "name": "slogan 0/ocean",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/open",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/innovation",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/cooperation",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/sharing",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/together",
+      "passed": true
+    },
+    {
+      "name": "slogan 1/ocean",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/open",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/innovation",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/cooperation",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/sharing",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/together",
+      "passed": true
+    },
+    {
+      "name": "slogan 2/ocean",
+      "passed": true
+    },
+    {
+      "name": "slogan swaps make no new transfers",
+      "passed": true
+    },
+    {
+      "name": "slogan swaps reuse shader programs",
+      "passed": true
+    },
+    {
+      "name": "all six slogans render distinct frames",
+      "passed": true
+    },
+    {
+      "name": "rapid switching retains final city",
+      "passed": true
+    },
+    {
+      "name": "context recovers from pinned lows with resource origin unavailable",
+      "passed": true
+    },
+    {
+      "name": "no fallback transfer of pinned low or fixed resources",
+      "passed": true
+    },
+    {
+      "name": "GPU steady and switching peak stay bounded",
+      "passed": true
+    },
+    {
+      "name": "encoded cache stays within cap",
+      "passed": true
+    },
+    {
+      "name": "missing distant city is detected before entering design",
+      "passed": true
+    },
+    {
+      "name": "reload repairs failed city preload",
+      "passed": true
+    },
+    {
+      "name": "no uncaught application errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "timings": {
+    "cities": [
+      {
+        "id": "urumqi",
+        "ok": true,
+        "ms": 51,
+        "current": "v6-urumqi-gold"
+      },
+      {
+        "id": "shanghai",
+        "ok": true,
+        "ms": 44,
+        "current": "v6-shanghai-gold"
+      },
+      {
+        "id": "beijing",
+        "ok": true,
+        "ms": 46,
+        "current": "v6-beijing-gold"
+      },
+      {
+        "id": "nanjing",
+        "ok": true,
+        "ms": 38,
+        "current": "v6-nanjing-gold"
+      },
+      {
+        "id": "nanchang",
+        "ok": true,
+        "ms": 47,
+        "current": "v6-nanchang-gold"
+      },
+      {
+        "id": "xiamen",
+        "ok": true,
+        "ms": 54,
+        "current": "v6-xiamen-gold"
+      },
+      {
+        "id": "hohhot",
+        "ok": true,
+        "ms": 33,
+        "current": "v6-hohhot-gold"
+      },
+      {
+        "id": "harbin",
+        "ok": true,
+        "ms": 37,
+        "current": "v6-harbin-gold"
+      },
+      {
+        "id": "tianjin",
+        "ok": true,
+        "ms": 46,
+        "current": "v6-tianjin-gold"
+      },
+      {
+        "id": "taiyuan",
+        "ok": true,
+        "ms": 54,
+        "current": "v6-taiyuan-gold"
+      },
+      {
+        "id": "guangzhou",
+        "ok": true,
+        "ms": 33,
+        "current": "v6-guangzhou-gold"
+      },
+      {
+        "id": "chengdu",
+        "ok": true,
+        "ms": 37,
+        "current": "v6-chengdu-gold"
+      },
+      {
+        "id": "jingdezhen",
+        "ok": true,
+        "ms": 39,
+        "current": "v6-jingdezhen-gold"
+      },
+      {
+        "id": "hangzhou",
+        "ok": true,
+        "ms": 43,
+        "current": "v6-hangzhou-gold"
+      },
+      {
+        "id": "wuhan",
+        "ok": true,
+        "ms": 48,
+        "current": "v6-wuhan-gold"
+      },
+      {
+        "id": "shenyang",
+        "ok": true,
+        "ms": 55,
+        "current": "v6-shenyang-gold"
+      },
+      {
+        "id": "shenzhen",
+        "ok": true,
+        "ms": 50,
+        "current": "v6-shenzhen-gold"
+      },
+      {
+        "id": "shijiazhuang",
+        "ok": true,
+        "ms": 44,
+        "current": "v6-shijiazhuang-gold"
+      },
+      {
+        "id": "xian",
+        "ok": true,
+        "ms": 44,
+        "current": "v6-xian-gold"
+      },
+      {
+        "id": "zhengzhou",
+        "ok": true,
+        "ms": 51,
+        "current": "v6-zhengzhou-gold"
+      },
+      {
+        "id": "chongqing",
+        "ok": true,
+        "ms": 48,
+        "current": "v6-chongqing-gold"
+      },
+      {
+        "id": "changchun",
+        "ok": true,
+        "ms": 37,
+        "current": "v6-changchun-gold"
+      },
+      {
+        "id": "qingdao",
+        "ok": true,
+        "ms": 37,
+        "current": "v6-qingdao-gold"
+      }
+    ],
+    "slogans": [
+      {
+        "text": "open",
+        "ok": true,
+        "ms": 1,
+        "current": "open",
+        "uniformOnly": true
+      },
+      {
+        "text": "innovation",
+        "ok": true,
+        "ms": 0,
+        "current": "innovation",
+        "uniformOnly": true
+      },
+      {
+        "text": "cooperation",
+        "ok": true,
+        "ms": 1,
+        "current": "cooperation",
+        "uniformOnly": true
+      },
+      {
+        "text": "sharing",
+        "ok": true,
+        "ms": 1,
+        "current": "sharing",
+        "uniformOnly": true
+      },
+      {
+        "text": "together",
+        "ok": true,
+        "ms": 1,
+        "current": "together",
+        "uniformOnly": true
+      },
+      {
+        "text": "ocean",
+        "ok": true,
+        "ms": 1,
+        "current": "ocean",
+        "uniformOnly": true
+      },
+      {
+        "text": "open",
+        "ok": true,
+        "ms": 1,
+        "current": "open",
+        "uniformOnly": true
+      },
+      {
+        "text": "innovation",
+        "ok": true,
+        "ms": 0,
+        "current": "innovation",
+        "uniformOnly": true
+      },
+      {
+        "text": "cooperation",
+        "ok": true,
+        "ms": 1,
+        "current": "cooperation",
+        "uniformOnly": true
+      },
+      {
+        "text": "sharing",
+        "ok": true,
+        "ms": 1,
+        "current": "sharing",
+        "uniformOnly": true
+      },
+      {
+        "text": "together",
+        "ok": true,
+        "ms": 0,
+        "current": "together",
+        "uniformOnly": true
+      },
+      {
+        "text": "ocean",
+        "ok": true,
+        "ms": 1,
+        "current": "ocean",
+        "uniformOnly": true
+      },
+      {
+        "text": "open",
+        "ok": true,
+        "ms": 1,
+        "current": "open",
+        "uniformOnly": true
+      },
+      {
+        "text": "innovation",
+        "ok": true,
+        "ms": 1,
+        "current": "innovation",
+        "uniformOnly": true
+      },
+      {
+        "text": "cooperation",
+        "ok": true,
+        "ms": 1,
+        "current": "cooperation",
+        "uniformOnly": true
+      },
+      {
+        "text": "sharing",
+        "ok": true,
+        "ms": 1,
+        "current": "sharing",
+        "uniformOnly": true
+      },
+      {
+        "text": "together",
+        "ok": true,
+        "ms": 1,
+        "current": "together",
+        "uniformOnly": true
+      },
+      {
+        "text": "ocean",
+        "ok": true,
+        "ms": 1,
+        "current": "ocean",
+        "uniformOnly": true
+      }
+    ]
+  },
+  "physicalIPhoneTested": false,
+  "initial": {
+    "preload": {
+      "neighborCity": "shenzhen",
+      "neighborError": "",
+      "readyCities": 23,
+      "slogans": 6
+    },
+    "entry": {
+      "prepared": true,
+      "entered": true,
+      "error": "",
+      "total": 10929425,
+      "received": 10929425,
+      "completed": 91,
+      "count": 91
+    },
+    "resources": {
+      "fileCache": {
+        "bytes": 10929425,
+        "reservedBytes": 10929425,
+        "peakBytes": 10929425,
+        "limit": 12582912,
+        "entries": 91,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 23884602,
+      "reservedRenderTargetBytes": 103285776,
+      "peakEstimatedBytes": 196376394,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 18,
+      "decodedBytes": 17913444,
+      "fetchedBodyBytes": 10929425,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    }
+  },
+  "final": {
+    "resources": {
+      "fileCache": {
+        "bytes": 9189113,
+        "reservedBytes": 9189113,
+        "peakBytes": 12572436,
+        "limit": 12582912,
+        "entries": 86,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 23884602,
+      "reservedRenderTargetBytes": 89605200,
+      "peakEstimatedBytes": 200963978,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 18,
+      "activeEntries": 18,
+      "decodedBytes": 17913444,
+      "fetchedBodyBytes": 10929425,
+      "cancelled": 10,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    },
+    "preload": {
+      "neighborCity": "qingdao",
+      "neighborError": "TypeError: Load failed",
+      "readyCities": 23,
+      "slogans": 6
+    },
+    "blockedOptionalHD": 137
+  }
+}

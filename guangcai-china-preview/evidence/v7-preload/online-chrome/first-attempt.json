@@ -1,0 +1,46 @@
+{
+  "engine": "Chrome",
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "checks": [],
+  "errors": [],
+  "metrics": {},
+  "physicalIPhoneTested": false,
+  "timeoutDebug": {
+    "hidden": false,
+    "resources": {
+      "fileCache": {
+        "bytes": 3295464,
+        "reservedBytes": 10929425,
+        "peakBytes": 10929425,
+        "limit": 12582912,
+        "entries": 91,
+        "pending": 65
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 22085092,
+      "reservedRenderTargetBytes": 103285776,
+      "peakEstimatedBytes": 125370868,
+      "steadyBudget": 134217728,
+      "peakBudget": 201326592,
+      "entries": 13,
+      "activeEntries": 13,
+      "decodedBytes": 16563814,
+      "fetchedBodyBytes": 3295464,
+      "cancelled": 0,
+      "network": {
+        "active": 2,
+        "queued": 63,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    }
+  },
+  "failure": "Error: Timed out: initial readiness\n    at Timeout.<anonymous> (file:///Volumes/Prism/%E5%B9%BF%E5%BD%A9/guangcai-v7-workspace/guangcai-china-preview/tools/v7/browser-qa.mjs:6:140)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+}
