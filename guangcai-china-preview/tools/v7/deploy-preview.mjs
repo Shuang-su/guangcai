@@ -40,6 +40,7 @@ try{
  const liquid=JSON.parse(await readFile('evidence/v7.1.2/qa/liquid/liquid-qa.json'));if(liquid.status!=='passed')throw Error('Liquid QA did not pass');
  const split=JSON.parse(await readFile('evidence/v7.1.2/qa/split/report.json'));if(!split.passed)throw Error('Split-origin QA did not pass');
  const performance=JSON.parse(await readFile('evidence/v7.1.2/qa/performance/report.json'));receipt.controlledColdStartPassed=performance.passed;receipt.physicalDeviceAcceptance='pending';
+ const artwork=JSON.parse(await readFile('evidence/v7.1.2/qa/artwork/report.json'));if(!artwork.passed)throw Error('Fixed-camera artwork QA did not pass');
  const art=JSON.parse(await readFile('evidence/v7.1.2/resource-validation.json'));if(!art.passed)throw Error('Artwork preservation QA did not pass');
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');
  receipt.protectedBefore=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));

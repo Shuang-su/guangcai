@@ -1,0 +1,79 @@
+{
+  "version": "7.1.2",
+  "resourceRelease": "v7-3",
+  "artworkSourceCommit": "3dee2885886faf4b42f01618593ced0e69b964be",
+  "baseTests": 45,
+  "v7Tests": 31,
+  "resources": 195,
+  "protectedFiles": 304,
+  "browser": {
+    "chrome": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/chrome/report.json",
+      "sha256": "9da3319197b067ec9d0db910bdc5563575327ed614480d741af1d0d29d23be8a",
+      "count": 85
+    },
+    "webkit": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/webkit/report.json",
+      "sha256": "af90e9d53cb617c3a5197169723ce144fdaa37950a3f3c1be49844f619229029",
+      "count": 85
+    },
+    "city-chrome": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/city-chrome/report.json",
+      "sha256": "14f17adaf787e5e0c8ec9336bbff5c6d97e75f004624271c5e834cb25e396b4a",
+      "count": 24
+    },
+    "city-webkit": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/city-webkit/report.json",
+      "sha256": "7695caab2a889fdf60b26c1050a7a47bcb860058bca401d4e53b0011c4f1d1da",
+      "count": 24
+    },
+    "retry": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/retry/report.json",
+      "sha256": "d082b874c0b5822db3adda27c48a4f1358068671a1c22a72a67a3d8528a8c379",
+      "count": 0
+    },
+    "liquid": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/liquid/liquid-qa.json",
+      "sha256": "fa87715f3948229024f0206a253a2db7d21a2a775a39c063a02e60d2544b01a0",
+      "count": 53
+    },
+    "startup": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/startup/startup-qa.json",
+      "sha256": "3432a8d8f8cc7d536b0fbdabdd9af5099fff1fa4f2cf7def46c39468742a3821",
+      "count": 2
+    },
+    "split": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/split/report.json",
+      "sha256": "1898a0ecbfcb0e86d1ab51c3561cd6458f58c8d43670d8cafcc35095541905d5",
+      "count": 6
+    },
+    "performance": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/performance/report.json",
+      "sha256": "219cc900ba5d518da159a7a194226e06bee42eb03c7537526d95f2d477bcf77b",
+      "count": 0
+    },
+    "artwork": {
+      "passed": true,
+      "report": "evidence/v7.1.2/qa/artwork/report.json",
+      "sha256": "e0e153f3f342d2ba9e1bc06360adbcabc5d9c56beb45f0607acd2091e958d4f9",
+      "count": 17
+    }
+  },
+  "backendData": "integration/backend-handoff/verification.json",
+  "original5MiB6SecondTargetPassed": false,
+  "physicalDeviceAcceptance": "pending",
+  "setupFailuresResolved": [
+    "Missing WebKit runtime installed in project cache before retry",
+    "Optical audit test requires separate Vite QA_AUDIT_URL on port5284",
+    "Artwork capture now waits for asynchronous near-view promotion/selection completion before export; product readiness contract unchanged"
+  ]
+}

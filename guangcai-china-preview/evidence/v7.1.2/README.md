@@ -2,7 +2,7 @@
 
 ## 来源与身份
 
-23张原始PNG与用户“23个城市线稿”目录逐字节一致，派生sourceSha256一致。`cities/before.json`保存各城、三级封闭空点及候选坐标；`cities/review.json`保存逐城人工判定和修正理由，`*-review.jpg`是候选放大图。`cities/reference-identities.json`记录21张参考照片的地区身份和哈希。这批是亚太地区杯款，不是23个国内城市逐城照片，故不编造对应；作为填色材质参考，城市几何以原稿为准。
+23张原始PNG与用户“23个城市线稿”目录逐字节一致，派生sourceSha256一致。`cities/before.json`保存各城、三级封闭空点及候选坐标；`cities/review.json`保存逐城人工判定和修正理由，`*-review.jpg`是候选放大图。`cities/after.json`保存两城修复后三级复扫，4K西安的3个封闭空点已消失，低档外部边界候选保持原样。`cities/reference-identities.json`记录21张参考照片的地区身份和哈希。这批是亚太地区杯款，不是23个国内城市逐城照片，故不编造对应；作为填色材质参考，城市几何以原稿为准。
 
 ## 字体与版式
 

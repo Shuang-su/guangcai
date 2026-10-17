@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:5282/",
+  "checks": [
+    "gold/open restores unchanged parameters and renders",
+    "gold/innovation restores unchanged parameters and renders",
+    "gold/cooperation restores unchanged parameters and renders",
+    "gold/sharing restores unchanged parameters and renders",
+    "gold/together restores unchanged parameters and renders",
+    "gold/ocean restores unchanged parameters and renders",
+    "xiamen/gold fixed camera",
+    "xian/gold fixed camera",
+    "blue/open restores unchanged parameters and renders",
+    "blue/innovation restores unchanged parameters and renders",
+    "blue/cooperation restores unchanged parameters and renders",
+    "blue/sharing restores unchanged parameters and renders",
+    "blue/together restores unchanged parameters and renders",
+    "blue/ocean restores unchanged parameters and renders",
+    "xiamen/blue fixed camera",
+    "xian/blue fixed camera",
+    "consumer never requests font"
+  ],
+  "errors": [],
+  "physicalDeviceTested": false,
+  "passed": true
+}
