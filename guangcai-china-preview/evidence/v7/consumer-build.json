@@ -1,7 +1,7 @@
 {
   "root": ".codex-work/deploy/v7-build",
-  "files": 218,
-  "bytes": 115173617,
+  "files": 219,
+  "bytes": 115174794,
   "assetsVerified": 195,
   "inventory": [
     {
@@ -20,19 +20,19 @@
       "sha256": "7a5bdf8878c93c50cc62754b7f0f6bcbaaf4ded39fb9913ada5f7e09636ce82a"
     },
     {
-      "path": "assets/gpu-D_a3vXZ2.js",
+      "path": "assets/gpu-R8_8w5o_.js",
       "bytes": 152547,
-      "sha256": "a6ecc93916e06a34e3a1652d85c2a9c9e350dd8003eca953c3e361fd520c6fac"
+      "sha256": "1c4dc14ab328f72432c3177a4a1783f0f382ee9be00518025b492de059e28449"
     },
     {
-      "path": "assets/index-BQHdFreB.js",
-      "bytes": 880945,
-      "sha256": "62e96dc30d03d68ed5d9c13dc3c0294be6b391529a749cd208d28a85649f41f1"
+      "path": "assets/index-CEDbFCZ3.css",
+      "bytes": 52022,
+      "sha256": "795c900d081f713876634599930735d59603c4360e9fe31ec1afacfd4558e0a1"
     },
     {
-      "path": "assets/index-DkuqbCai.css",
-      "bytes": 51887,
-      "sha256": "c335dd68f297a3152083fd8965c0a8b1dc83fd2be854ce1127a8b39af67039cc"
+      "path": "assets/index-VHv-4a8Z.js",
+      "bytes": 881590,
+      "sha256": "3d79d8ecb82f4c912b35a281a56ed73038e4165f577a1d9894cafed61d31cf0f"
     },
     {
       "path": "assets/map-encoder.worker-gG3z5fOt.js",
@@ -71,8 +71,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 494,
-      "sha256": "3246cfada1a2d7cee1f9b643365ad8d67d1e566cac99123b1d44acb067fee95b"
+      "bytes": 699,
+      "sha256": "53beea193b264f927f1b3b7a29662ccdf0e848299a6672aeee56daf37ad353e0"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 192,
+      "sha256": "22b1294f2da9ea9f3eb4bd3579b183db7394d5583a763bb1f4798b41b4f13bdf"
     },
     {
       "path": "releases/v7-1/assets/beijing-detail-mask-6409b4cf1142dad2.webp",

@@ -1,6 +1,6 @@
 {
   "name": "guangcai-china-v4",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -38,7 +38,9 @@
     "mock:v7": "tsx tools/v7/mock-server.ts",
     "qa:v7": "node tools/v7/browser-qa.mjs",
     "test:v7": "tsx --test tools/v7/*.test.ts",
-    "check:v7-assets": "node tools/v7/validate-resources.mjs"
+    "check:v7-assets": "node tools/v7/validate-resources.mjs",
+    "qa:v7-startup": "node tools/v7/startup-qa.mjs",
+    "deploy:v7": "node tools/v7/deploy-preview.mjs"
   },
   "dependencies": {
     "@lisse/core": "0.7.2",

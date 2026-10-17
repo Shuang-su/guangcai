@@ -14,7 +14,12 @@ export function createLoopSelector(host:HTMLElement,items:HTMLButtonElement[],op
  let index=loopIndex(options.initial,n),target=index,direction=1,step=1,last=0,pending=false,pendingDelta=0,suppress=false,disposed=false;
  let stopAnimation:(()=>void)|undefined;
  let drag:{id:number;x:number;y:number;lastX:number;lastTime:number;velocity:number;moved:boolean;offset:number}|undefined;
- const resize=()=>{const next=host.clientWidth/slots||1,ratio=next/step;position.value*=ratio;position.target*=ratio;position.velocity*=ratio;step=next;if(options.peek)host.style.setProperty('--city-card-size',`${step-6}px`);paint();};
+ const resize=()=>{
+  // Hidden panes report zero width. Keep their last usable geometry instead
+  // of shrinking city cards to a negative height until the next observer tick.
+  const width=host.clientWidth;if(width<=0)return;
+  const next=width/slots,ratio=next/step;position.value*=ratio;position.target*=ratio;position.velocity*=ratio;step=next;if(options.peek)host.style.setProperty('--city-card-size',`${Math.max(1,step-6)}px`);paint();
+ };
  function paint(){
   host.dataset.selected=String(target);
   items.forEach((button,i)=>{

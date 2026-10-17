@@ -1,4 +1,7 @@
 html[data-profile=consumer]{--accent:#996a2e;--line:#8e70422e;background:#faf9f5;color:#4d4135}
+/* Let Safari sample the actual backdrop at the viewport edges rather than a
+   fixed cream theme color. Standalone mode extends it beneath the status bar. */
+html[data-profile=consumer],html[data-profile=consumer] body{background:#faf9f5 var(--consumer-edge-background) center/cover no-repeat}
 [data-profile=consumer] main{position:relative;isolation:isolate;height:100dvh}
 #glass-content{position:absolute;inset:0;background:#faf9f5}
 [data-profile=consumer] #viewport{position:absolute;inset:0}

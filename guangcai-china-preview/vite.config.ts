@@ -5,7 +5,7 @@ import {resolve} from 'node:path';
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','third-party']){
+  for(const item of ['releases/v7-1','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
    await mkdir(resolve(out,item,'..'),{recursive:true});await cp(resolve('public',item),resolve(out,item),{recursive:true});
   }
   const headers='/releases/*\n  Access-Control-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
