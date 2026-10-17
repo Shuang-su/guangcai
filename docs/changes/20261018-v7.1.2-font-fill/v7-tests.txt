@@ -1,0 +1,44 @@
+
+> guangcai-china-v4@7.1.2 test:v7
+> tsx --test tools/v7/*.test.ts
+
+✔ progressing exact transfer may exceed idle timeout in total (234.546791ms)
+✔ stalled transfer retries at most three times (53.6775ms)
+✔ HTTP retries are limited and 404/size failures are immediate (7.126125ms)
+✔ external cancellation does not retry a slow transfer or backoff (52.164375ms)
+✔ empty chunks do not keep a stalled transfer alive (64.86175ms)
+✔ background suspension does not count against idle deadline (97.437875ms)
+✔ glass tolerates isolated slow frames but falls back on sustained active cadence (2.711667ms)
+✔ idle and hidden intervals do not count as slow frames (0.120792ms)
+✔ readiness has no total-time deadline, supports abort/error and repeated recovery (3.827584ms)
+✔ 30fps timer quantization does not falsely reject a stable cadence (0.457208ms)
+✔ mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation (52.944792ms)
+✔ split-origin mock permits only configured credentialed API clients (16.425125ms)
+{"normalAssets":78,"portableBytesIdentical":true,"halfFloatXYIdentical":true,"maxNormalDegrees":0.08183487404404731}
+✔ portable decoder matches every released HFN and packed XY preserves exact half floats (16139.632208ms)
+✔ normal decode rejects bad size before allocation and rejects invalid tangent direction (1.620667ms)
+✔ packed clearcoat retains atlas sampling and reconstructs Z before scale (1.281625ms)
+✔ file cache shares pending transfers; cancelling one consumer retains the other (17.660875ms)
+✔ last cancellation drops reserved bytes, aborts the fetch and permits a fresh attempt (2.207291ms)
+✔ pinned low library survives LRU eviction and active leases prevent unsafe eviction (2.627958ms)
+✔ wrong size and checksum never poison cache, and inflight reservations obey the limit (0.570542ms)
+✔ manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps (1.37825ms)
+✔ queue bounds concurrency, rejects cancelled waiters and resumes after visibility pause (47.205583ms)
+✔ adaptive DPR responds to sustained load, excludes idle gaps and never drops below one (0.3ms)
+✔ design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers (1.06875ms)
+✔ bounded decompression input rejects excess bytes and HFN headers cannot overallocate (5.400584ms)
+✔ merged ORM uses blue metalness for the bare-gold override and retains original controls (0.657083ms)
+✔ stream progress reports actual cumulative bytes before completion (2.455791ms)
+✔ exact stream reader copies consumed chunks immediately and preserves progress (1.6115ms)
+✔ exact stream reader rejects truncated and oversized input and always releases the reader (0.757084ms)
+✔ upstream cancellation/error keeps its original reason and unlocks the reader (0.304666ms)
+✔ streamed high precision normals are byte-identical to native decompression at every city tier (264.053583ms)
+✔ resource swaps track temporary overlap and release their allowance once (39.747334ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16421.608875
