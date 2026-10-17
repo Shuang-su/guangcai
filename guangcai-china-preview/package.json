@@ -1,6 +1,6 @@
 {
   "name": "guangcai-china-v4",
-  "version": "7.0.4",
+  "version": "7.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "textures": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs",
-    "test": "tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts tools/v6-selection.test.ts tools/loop-selector.test.ts tools/glass-compat.test.ts",
+    "test": "tsx --test tools/geometry.test.ts tools/float-normal.test.ts tools/fixed-atlas.test.ts tools/city-selection.test.ts tools/xy-controls.test.ts tools/haptics.test.ts tools/v6-selection.test.ts tools/loop-selector.test.ts tools/glass-compat.test.ts tools/download-bytes.test.ts",
     "qa": "node tools/china-qa.mjs",
     "textures:variants": "tsx tools/surface-metrics.ts && node tools/derive-pbr.mjs peony-magnolia && node tools/derive-pbr.mjs lotus-butterfly && node tools/texture-density.mjs && node tools/texture-standards.mjs",
     "qa:textures": "node tools/texture-qa.mjs",
@@ -40,7 +40,9 @@
     "test:v7": "tsx --test tools/v7/*.test.ts",
     "check:v7-assets": "node tools/v7/validate-resources.mjs",
     "qa:v7-startup": "node tools/v7/startup-qa.mjs",
-    "deploy:v7": "node tools/v7/deploy-preview.mjs"
+    "deploy:v7": "node tools/v7/deploy-preview.mjs",
+    "qa:v7-split": "tsx tools/v7/split-qa.ts",
+    "qa:v7-glass": "node tools/v7/glass-qa.mjs"
   },
   "dependencies": {
     "@lisse/core": "0.7.2",

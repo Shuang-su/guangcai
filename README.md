@@ -97,3 +97,5 @@ python3 tools/test_verify_archive.py
 4.2 保留原始颜色图、花果晕染与描线，用独立空白金底范围清理杂点和拖痕；对齐金属、粗糙度和凹凸，界面与 package 同步递增。[请求、验证与发布记录](docs/changes/20261014-floral-cleanup-4.2/completion.md)。
 
 4.3 [北京主题的请求、素材与验证记录](docs/changes/20261014-beijing-4.3/completion.md)，关联 [Issue #21](https://github.com/Shuang-su/guangcai/issues/21)。
+
+V7.1.0 接入候选正在独立 `codex/v7-v6-sync-handoff` 分支验证，接入 V6.0.4 功能源码 `833a8b3`。开发交接入口为 `guangcai-china-preview/integration/README.md`；验收、资源预算和发布回读见 `docs/changes/20261017-v7-v6-sync-handoff/`。真机与正式COS上线状态独立记录。

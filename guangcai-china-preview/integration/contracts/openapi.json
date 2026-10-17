@@ -280,6 +280,9 @@
           "401": {
             "description": "Authentication required"
           },
+          "403": {
+            "description": "Origin not allowed"
+          },
           "404": {
             "description": "Not found or not owned"
           },
@@ -320,6 +323,9 @@
           },
           "401": {
             "description": "Authentication required"
+          },
+          "403": {
+            "description": "Origin not allowed"
           },
           "404": {
             "description": "Not found or not owned"
@@ -456,6 +462,9 @@
           "401": {
             "description": "Authentication required"
           },
+          "403": {
+            "description": "Origin not allowed"
+          },
           "404": {
             "description": "Not found or not owned"
           },
@@ -525,6 +534,9 @@
           },
           "401": {
             "description": "Authentication required"
+          },
+          "403": {
+            "description": "Origin not allowed"
           },
           "404": {
             "description": "Not found or not owned"
@@ -614,6 +626,9 @@
           "401": {
             "description": "Authentication required"
           },
+          "403": {
+            "description": "Origin not allowed"
+          },
           "404": {
             "description": "Not found or not owned"
           },
@@ -632,6 +647,9 @@
           },
           "401": {
             "description": "Authentication required"
+          },
+          "403": {
+            "description": "Origin not allowed"
           },
           "404": {
             "description": "Not found or not owned"
@@ -713,6 +731,9 @@
           "401": {
             "description": "Authentication required"
           },
+          "403": {
+            "description": "Origin not allowed"
+          },
           "404": {
             "description": "Not found or not owned"
           },
@@ -743,6 +764,9 @@
           },
           "401": {
             "description": "Authentication required"
+          },
+          "403": {
+            "description": "Origin not allowed"
           },
           "404": {
             "description": "Not found or not owned"

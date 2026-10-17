@@ -1,5 +1,7 @@
 /* Mobile WebKit: bounded native backdrop surfaces above an unfiltered canvas.
    Avoid a whole-scene reference filter, promotion, and negative glass z-index. */
+[data-profile=consumer] [data-glass-compositor=webgl2] #glass-content{z-index:0;filter:none;will-change:auto;transform:none;overflow:hidden}
+.glass-raster{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;contain:strict}
 .consumer-scene[data-glass-state=compatible] .lg-surface{visibility:visible}
 [data-profile=consumer] [data-glass-state=compatible] #glass-content{z-index:0;filter:none;will-change:auto;transform:none;overflow:hidden}
 [data-glass-state=compatible] #viewport{z-index:0}

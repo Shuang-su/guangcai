@@ -35,3 +35,7 @@ const canvas=content.querySelector('canvas')!,ctx=canvas.getContext('2d')!;let r
 const draw=(now:number)=>{ctx.fillStyle='#d9e3e5';ctx.fillRect(0,0,900,600);for(let i=0;i<16;i++){ctx.fillStyle=['#678b86','#e7c7a5','#e6eded','#8d9bac'][i%4];ctx.beginPath();ctx.arc((i*83+now*.025)%1050-75,90+(i*137)%600,75,0,Math.PI*2);ctx.fill();}ctx.fillStyle='#182d32';ctx.font='48px sans-serif';ctx.fillText('实时画面 · LIVE',170,330);raf=requestAnimationFrame(draw);};raf=requestAnimationFrame(draw);
 const renderer=getMaterialRenderer();renderer.then(async r=>{await r.warmed;ready=true;document.querySelector('#result')!.textContent=`${materialBackend} 已就绪`;},e=>{error=String(e);document.querySelector('#result')!.textContent=error;});
 Object.assign(window,{glassAudit:{backend:materialBackend,lifecycle,status:()=>({ready,error,diagnostics}),render:async(g:MapGeometry)=>{const p=await(await renderer).render(g);return {...p,pixels:Array.from(p.pixels)};},renderMany:async(gs:MapGeometry[])=>Promise.all(gs.map(async g=>{const p=await(await renderer).render(g);return {...p,pixels:Array.from(p.pixels)};})),dispose:async()=>{cancelAnimationFrame(raf);scene.dispose();(await renderer).dispose();}}});
+
+// Available only in the explicit audit entry, never on the consumer page.
+import {rasterContract} from './raster-contract';
+Object.assign(window,{rasterContract});

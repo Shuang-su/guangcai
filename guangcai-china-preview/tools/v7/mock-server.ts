@@ -10,7 +10,9 @@ import type {DesignConfig,ResourceManifest} from '../../src/resources/types';
 type Work={id:string;owner:string;title:string;revision:number;design:DesignConfig;createdAt:string;updatedAt:string};
 type Share={id:string;token:string;owner:string;workId:string;revision:number;title:string;design:DesignConfig;revoked:boolean};
 // Intentionally local, synthetic, in-memory reference service. Restart clears data.
-export async function createMockServer(root=resolve('.codex-work/deploy/v7-integration'),base='/'){
+export interface MockOptions {allowedOrigins?:string[];runtimeConfig?:{bootstrapUrl?:string;apiBase?:string;assetBase?:string}}
+export async function createMockServer(root=resolve('.codex-work/deploy/v7-integration'),base='/',options:MockOptions={}){
+ const origins=new Set(options.allowedOrigins??[]);for(const origin of origins)if(new URL(origin).origin!==origin||!/^https?:/.test(origin))throw Error('Use exact HTTP(S) origins');
  if(!/^\/[a-zA-Z0-9/_-]*\/$/.test(base)&&base!=='/')throw Error('MOCK_BASE must be an absolute path ending in /');
  const bootstrap=JSON.parse(await readFile(resolve(root,'api/v1/bootstrap.json'),'utf8'));
  const manifest=JSON.parse(await readFile(resolve(root,bootstrap.manifestUrl),'utf8')) as ResourceManifest;
@@ -27,8 +29,17 @@ export async function createMockServer(root=resolve('.codex-work/deploy/v7-integ
   try{
    const url=new URL(req.url??'/',`http://${req.headers.host}`);if(!url.pathname.startsWith(base))throw fail(404,'Unknown base path');
    const route='/'+url.pathname.slice(base.length),method=req.method??'GET';
-   if(!['GET','HEAD','OPTIONS'].includes(method)&&req.headers.origin&&req.headers.origin!==url.origin)throw fail(403,'Origin mismatch');
-   if(route==='/runtime-config.js'){res.writeHead(200,{'Content-Type':'application/javascript','Cache-Control':'no-store'});res.end('window.GUANGCAI_CONFIG='+JSON.stringify({bootstrapUrl:base+'api/v1/bootstrap',apiBase:base+'api/v1/',assetBase:base})+';');return;}
+   const origin=req.headers.origin;
+   if(route.startsWith('/api/')){
+    res.setHeader('Vary','Origin');
+    if(origin){if(origin!==url.origin&&!origins.has(origin))throw fail(403,'Origin mismatch');res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Access-Control-Allow-Credentials','true');}
+    if(method==='OPTIONS'){
+     const headers=String(req.headers['access-control-request-headers']??'').toLowerCase().split(',').map(s=>s.trim()).filter(Boolean);
+     if(!origin||!['GET','POST','PUT','DELETE'].includes(String(req.headers['access-control-request-method']))||headers.some(h=>!['content-type','idempotency-key'].includes(h)))throw fail(403,'Preflight not allowed');
+     res.writeHead(204,{'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE','Access-Control-Allow-Headers':'Content-Type, Idempotency-Key','Access-Control-Max-Age':'600'});res.end();return;
+    }
+   }
+   if(route==='/runtime-config.js'){res.writeHead(200,{'Content-Type':'application/javascript','Cache-Control':'no-store'});res.end('window.GUANGCAI_CONFIG='+JSON.stringify({bootstrapUrl:base+'api/v1/bootstrap',apiBase:base+'api/v1/',assetBase:base,...options.runtimeConfig})+';');return;}
    if(route==='/api/v1/bootstrap'&&method==='GET'){json(res,200,bootstrap);return;}
    if(route==='/api/v1/mock/session'&&method==='POST'){const value=(await body(req)).user;if(value!==null&&!['alice','bob'].includes(value))throw fail(400,'Use alice, bob or null');res.setHeader('Set-Cookie',`mock-user=${value??''}; HttpOnly; SameSite=Lax; Path=${base}${value===null?'; Max-Age=0':''}`);json(res,200,{mock:true,userId:value});return;}
    if(route==='/api/v1/session'&&method==='GET'){let id=null;try{id=user(req);}catch{}json(res,200,{mock:true,userId:id});return;}
@@ -57,6 +68,6 @@ export async function createMockServer(root=resolve('.codex-work/deploy/v7-integ
  });
 }
 if(process.argv[1]&&fileURLToPath(import.meta.url)===resolve(process.argv[1])){
- const server=await createMockServer(resolve(process.env.MOCK_ROOT??'.codex-work/deploy/v7-integration'),process.env.MOCK_BASE??'/');
+ const server=await createMockServer(resolve(process.env.MOCK_ROOT??'.codex-work/deploy/v7-integration'),process.env.MOCK_BASE??'/',{allowedOrigins:(process.env.MOCK_ORIGINS??'').split(',').filter(Boolean),runtimeConfig:{...(process.env.MOCK_API_BASE?{apiBase:process.env.MOCK_API_BASE,bootstrapUrl:new URL('bootstrap',process.env.MOCK_API_BASE).href}:{}),...(process.env.MOCK_ASSET_BASE?{assetBase:process.env.MOCK_ASSET_BASE}:{})}});
  server.listen(Number(process.env.PORT??5271),'127.0.0.1',()=>console.log(`V7 reference mock: http://127.0.0.1:${process.env.PORT??5271}${process.env.MOCK_BASE??'/'} (in-memory synthetic data)`));
 }

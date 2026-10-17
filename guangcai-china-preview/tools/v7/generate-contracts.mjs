@@ -16,7 +16,7 @@ const work=object({id:string,title:{type:'string',minLength:1,maxLength:120},rev
 const workInput=object({title:{type:'string',minLength:1,maxLength:120},design:{$ref:'#/components/schemas/DesignConfig'}});
 const request=schema=>({required:true,content:{'application/json':{schema}}});
 const param=name=>({name,in:'path',required:true,schema:string});
-const errors={400:response('Invalid input'),401:response('Authentication required'),404:response('Not found or not owned'),409:response('Revision or idempotency conflict')};
+const errors={400:response('Invalid input'),401:response('Authentication required'),403:response('Origin not allowed'),404:response('Not found or not owned'),409:response('Revision or idempotency conflict')};
 const openapi={openapi:'3.1.0',info:{title:'Guangcai V7 resource and integration reference',version:'1.0.0',description:'Resource delivery contract plus optional in-memory sample API. Company identity and database implementation remain external.'},servers:[{url:'/api/v1'}],components:{schemas:{DesignConfig:{...design,$id:undefined,$schema:undefined},Work:work}},paths:{
  '/bootstrap':{get:{summary:'Active release and default design',responses:{200:response('Bootstrap',bootstrapSchema)}}},
  '/session':{get:{summary:'Mock session; replace with company adapter',responses:{200:response('Synthetic session',object({mock:{const:true},userId:{type:['string','null']}}))}}},

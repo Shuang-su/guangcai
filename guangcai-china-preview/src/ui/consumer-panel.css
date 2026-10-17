@@ -50,7 +50,7 @@
 @media(max-width:520px){.camera-creator .city-cards{height:88px}.camera-creator .city-card{height:76px;padding-top:7px}.camera-creator .city-card>img{height:42px}.camera-creator .city-card>span{line-height:18px}}
 
 [data-profile=consumer] #artwork-settings.camera-creator[data-collapsed=true]{padding:0;width:min(420px,calc(100% - 72px));height:48px}
-.camera-creator[data-collapsed=true] .creator-tabs{position:relative;left:0;bottom:auto;width:100%;max-width:none;transform:none}
+.camera-creator[data-collapsed=true] .creator-tabs{bottom:0;width:100%;max-width:none}
 [data-glass-state=ready] .camera-creator .creator-glass{border:0;background:transparent;box-shadow:none}
 /* Gold UI ink stays dark enough to read over porcelain and tinted glass. */
 [data-profile=consumer]{--accent:#926623;--ui-gold:#886426;--ui-gold-active:#805418}

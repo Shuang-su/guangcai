@@ -29,16 +29,19 @@ async function api(route,method='GET',body,raw=false){
 async function files(dir,base=dir){let list=[];for(const item of await readdir(dir,{withFileTypes:true})){if(item.name.startsWith('.'))throw Error('Hidden file in deployment');const p=path.join(dir,item.name);if(item.isDirectory())list.push(...await files(p,base));else if(item.isFile())list.push(path.relative(base,p));else throw Error('Non-regular deployment file');}return list.sort();}
 const summary=s=>({id:s.id,name:s.name,publishedDeploy:s.published_deploy?.id??null,gitConnected:!!s.build_settings?.repo_url});
 try{
- if(receipt.sourceBranch!=='codex/v7-progressive-resources'||git('status','--porcelain'))throw Error('Commit the reviewed V7 branch before deployment');
+ if(receipt.sourceBranch!=='codex/v7-v6-sync-handoff'||git('status','--porcelain'))throw Error('Commit the reviewed V7 branch before deployment');
  const reviewed=JSON.parse(await readFile('evidence/v7/consumer-build.json','utf8'));
  const actual=(await files(build)).filter(f=>f!=='release.json');if(JSON.stringify(actual)!==JSON.stringify(reviewed.inventory.map(f=>f.path).sort()))throw Error('Build inventory changed');
  for(const file of reviewed.inventory)if(hash(await readFile(path.join(build,file.path)))!==file.sha256)throw Error(`Build changed: ${file.path}`);
- for(const folder of ['chrome','webkit','chrome-targeted','webkit-targeted']){const report=JSON.parse(await readFile(`evidence/v7-hotspots/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer/preload QA did not pass');}
- const startup=JSON.parse(await readFile('evidence/v7-hotspots/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
- const retry=JSON.parse(await readFile('evidence/v7-hotspots/retry/report.json'));if(!retry.passed)throw Error('Recovery QA did not pass');
+ for(const folder of ['chrome','webkit']){const report=JSON.parse(await readFile(`evidence/v7-sync/${folder}/report.json`));if(report.failure||report.errors.length||report.checks.some(c=>!c.passed))throw Error('Consumer/preload QA did not pass');}
+ const startup=JSON.parse(await readFile('evidence/v7-sync/startup/startup-qa.json'));if(startup.status!=='passed')throw Error('Startup QA did not pass');
+ const retry=JSON.parse(await readFile('evidence/v7-sync/retry/report.json'));if(!retry.passed)throw Error('Recovery QA did not pass');
+ const liquid=JSON.parse(await readFile('evidence/v7-sync/liquid/liquid-qa.json'));if(liquid.status!=='passed')throw Error('Liquid QA did not pass');
+ const split=JSON.parse(await readFile('evidence/v7-sync/split/report.json'));if(!split.passed)throw Error('Split-origin QA did not pass');
+ const performance=JSON.parse(await readFile('evidence/v7-sync/performance/report.json'));receipt.controlledColdStartPassed=performance.passed;receipt.physicalDeviceAcceptance='pending';
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');
  receipt.protectedBefore=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));
- await writeFile(path.join(build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,sourceBranch:receipt.sourceBranch,v6SyncedThrough:'923a54d',resourceRelease:'v7-1'},null,2)+'\n');
+ await writeFile(path.join(build,'release.json'),JSON.stringify({version:JSON.parse(await readFile('package.json')).version,kind:'independent-preview',sourceCommit:receipt.sourceCommit,sourceBranch:receipt.sourceBranch,v6SyncedThrough:'833a8b33561d36e72f1164743e80f28fc63d96b2',resourceRelease:'v7-1'},null,2)+'\n');
  const manifest={},bySha=new Map(),casePaths=new Set();for(const file of await files(build)){if(/[?#]/.test(file)||casePaths.has(file.toLowerCase()))throw Error('Unsafe or case-colliding deployment path');casePaths.add(file.toLowerCase());const bytes=await readFile(path.join(build,file)),sha1=hash(bytes,'sha1');manifest['/'+file]={sha1,sha256:hash(bytes),bytes:bytes.length};bySha.set(sha1,file);}
  receipt.fileCount=Object.keys(manifest).length;receipt.manifestSha256=hash(JSON.stringify(manifest));
  let deploy;if(old?.deployId&&old.sourceCommit===receipt.sourceCommit&&old.manifestSha256===receipt.manifestSha256){receipt.deployId=old.deployId;deploy=await api(`/deploys/${old.deployId}`);}else{deploy=await api(`/sites/${siteId}/deploys`,'POST',{async:true,draft:false,title:`V${JSON.parse(await readFile('package.json')).version} independent iPhone preview ${receipt.sourceCommit.slice(0,7)}`,files:Object.fromEntries(Object.entries(manifest).map(([p,v])=>[p,v.sha1]))});receipt.deployId=deploy.id;await save();}

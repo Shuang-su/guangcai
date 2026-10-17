@@ -26,10 +26,20 @@ export function createConsumerPanel(controller:SelectionController,onView:(view:
  document.querySelector('main')!.append(panel);
  const $=<T extends HTMLElement>(q:string)=>panel.querySelector<T>(q)!;
  let pane:Menu='city',editor=false,collapsed=false,pending:Appearance|undefined,frame=0,fromInput=false,observed:Appearance|undefined,transition=0,restoringFrame=0;
- const reduce=matchMedia('(prefers-reduced-motion: reduce)');const detach:Array<()=>void>=[];let motion:Animation[]=[],layoutMotion:Animation|undefined;
- const stopLayout=()=>{layoutMotion?.cancel();layoutMotion=undefined;panel.classList.remove('is-resizing');};
- const layoutTo=(from:DOMRect)=>{stopLayout();const to=panel.getBoundingClientRect();if(reduce.matches||Math.abs(from.height-to.height)+Math.abs(from.width-to.width)<1)return;panel.classList.add('is-resizing');const a=panel.animate([{height:from.height+'px',width:from.width+'px'},{height:to.height+'px',width:to.width+'px'}],{duration:420,easing:'cubic-bezier(.22,.82,.22,1)',fill:'both'});layoutMotion=a;void a.finished.then(()=>{if(layoutMotion===a){stopLayout();refresh();}},()=>{});};
- const panelHeight=()=>panel.getBoundingClientRect();
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)');const detach:Array<()=>void>=[];let motion:Animation[]=[],layoutMotion:Animation|undefined,tabLayoutMotion:Animation|undefined;
+ const stopLayout=()=>{layoutMotion?.cancel();tabLayoutMotion?.cancel();layoutMotion=tabLayoutMotion=undefined;panel.classList.remove('is-resizing');};
+ const panelHeight=()=>({box:panel.getBoundingClientRect(),tabs:$('.creator-tabs').getBoundingClientRect()});
+ const layoutTo=(previous:ReturnType<typeof panelHeight>)=>{
+  stopLayout();const from=previous.box,to=panel.getBoundingClientRect(),tabs=$('.creator-tabs'),target=tabs.getBoundingClientRect();
+  if(reduce.matches||Math.abs(from.height-to.height)+Math.abs(from.width-to.width)<1)return;
+  const timing:KeyframeAnimationOptions={duration:420,easing:'cubic-bezier(.22,.82,.22,1)',fill:'both'};
+  panel.classList.add('is-resizing');
+  // Both states keep the tab bar anchored to the panel bottom. Animate its
+  // inset and width with the shell instead of changing it to normal flow.
+  if(previous.tabs.height&&target.height)tabLayoutMotion=tabs.animate([{bottom:from.bottom-previous.tabs.bottom+'px',width:previous.tabs.width+'px'},{bottom:to.bottom-target.bottom+'px',width:target.width+'px'}],timing);
+  const a=panel.animate([{height:from.height+'px',width:from.width+'px'},{height:to.height+'px',width:to.width+'px'}],timing);layoutMotion=a;
+  void a.finished.then(()=>{if(layoutMotion===a){stopLayout();refresh();}},()=>{});
+ };
  const syncCollapsed=()=>{panel.dataset.collapsed=String(collapsed);$('.panel-handle').hidden=collapsed;$('.creator-content').hidden=collapsed;$('.creator-content').inert=collapsed;$('.panel-handle').setAttribute('aria-expanded',String(!collapsed));$('.panel-handle').setAttribute('aria-label',collapsed?'展开创作面板':'收起创作面板');};
  const finishMotion=()=>{++transition;motion.forEach(a=>a.cancel());motion=[];};
  const cancelPending=()=>{cancelAnimationFrame(restoringFrame);restoringFrame=0;delete panel.dataset.restoring;cancelAnimationFrame(frame);frame=0;pending=undefined;colorPad.cancel();materialPad.cancel();lightness.cancel();};
@@ -60,6 +70,15 @@ export function createConsumerPanel(controller:SelectionController,onView:(view:
  }
  function setCollapsed(value:boolean){
   if(editor){back();}const height=panelHeight();finishMotion();stopLayout();cancelPending();collapsed=value;syncCollapsed();layoutTo(height);refresh();
+  if(!reduce.matches){
+   const content=$('.creator-content'),handle=$('.panel-handle'),token=transition;
+   if(value){content.hidden=false;handle.hidden=false;}
+   const frames=[{opacity:0,filter:'blur(7px)',transform:'translateY(5px) scale(.96)'},{opacity:1,filter:'blur(0px)',transform:'none'}];
+   for(const node of [content,handle]){
+    const a=node.animate(value?[...frames].reverse():frames,{duration:420,easing:'cubic-bezier(.22,.82,.22,1)',fill:'both'});motion.push(a);
+    void a.finished.then(()=>{if(token===transition){a.cancel();if(value)node.hidden=true;}},()=>{});
+   }
+  }
  }
  function openEditor(){
   if(editor)return;const height=panelHeight();finishMotion();stopLayout();cancelPending();const source=tiles[paletteLoop.selected()].querySelector('.palette-swatch')!.getBoundingClientRect();

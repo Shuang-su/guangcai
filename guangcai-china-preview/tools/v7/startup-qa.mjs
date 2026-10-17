@@ -18,7 +18,7 @@ for(const engine of ['chromium','webkit']){
   await page.evaluate(()=>{void window.cupViewer.selectArtwork({variant:'v6-beijing-gold'});void window.cupViewer.selectArtwork({variant:'v6-shanghai-gold'});});
   check('pre-catalog selection does not load legacy maps',await page.evaluate(()=>!performance.getEntriesByType('resource').some(r=>/\/(fixed|textures|cities\/v[456])\//.test(r.name))));
   openCatalog();
-  check('entry page hides the unfinished cup',await page.locator('#app').evaluate(e=>e.inert&&getComputedStyle(e).visibility==='hidden'));
+  check('entry page hides the unfinished cup',await page.locator('#app').evaluate(e=>e.inert&&getComputedStyle(e).opacity==='0'));
   check('entry progress is visible',await page.locator('#entry-loading').isVisible());
   await page.waitForFunction(()=>!window.cupViewer.debug().selection.busy,null,{timeout:120000});
   check('latest early selection survives resource bootstrap',await page.evaluate(()=>window.cupViewer.debug().selection.current.variant==='v6-shanghai-gold'));
@@ -28,7 +28,7 @@ for(const engine of ['chromium','webkit']){
   check('scene is not falsely marked fully loaded',await page.evaluate(()=>!window.cupViewer.ready()));
   await page.screenshot({path:`${out}/${engine}-loading-interactive.png`,scale:'css'});
   release();await page.waitForFunction(()=>window.cupViewer.ready(),null,{timeout:120000});
-  check('entry disappears only after complete rendering',await page.locator('#entry-loading').isHidden()&&await page.locator('#app').evaluate(e=>!e.inert&&getComputedStyle(e).visibility==='visible'));
+  check('entry disappears only after complete rendering',await page.locator('#entry-loading').isHidden()&&await page.locator('#app').evaluate(e=>!e.inert&&getComputedStyle(e).opacity==='1'));
   check('status clears once startup actually completes',await page.locator('#status').textContent()==='');
   for(let round=0;round<3;round++){
    // Move through both editors while the city list is display:none long

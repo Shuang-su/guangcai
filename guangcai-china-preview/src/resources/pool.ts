@@ -1,7 +1,7 @@
 import {Texture,DataTexture,HalfFloatType,RGBAFormat,RedFormat,RGFormat,UnsignedByteType,LinearFilter,LinearMipmapLinearFilter,SRGBColorSpace,NoColorSpace,ClampToEdgeWrapping} from 'three';
 import type {Asset} from './types';
 import {TaskQueue,abortError} from './queue';
-import {readExact} from './hfn';
+import {downloadResource} from './download';
 import {decodeImage} from './image-decode';
 import {EncodedCache} from './encoded-cache';
 export interface Lease {texture:Texture;release:()=>void}
@@ -21,6 +21,7 @@ export class ResourcePool {
   const idle=[...this.entries].filter(([,e])=>e.refs===0).sort((a,b)=>a[1].touched-b[1].touched);
   for(const [k,e]of idle){if(this.bytes+this.reserve<=target)break;this.disposeEntry(k,e);}
  }
+ trimIdle(projectedReserve=this.reserve){this.trim(this.steady+this.reserve-projectedReserve);}
  setReserve(bytes:number){this.reserve=bytes;this.trim(this.steady);this.peak=Math.max(this.peak,this.bytes+this.reserve);}
  canFit(assets:Asset[]){const newBytes=[...new Map(assets.map(a=>[a.url,a])).values()].filter(a=>!this.entries.has(a.url)).reduce((n,a)=>n+a.gpuBytes,0);this.trim(this.steady-newBytes);return this.bytes+this.reserve+newBytes<=this.maximum;}
  async acquire(asset:Asset,signal?:AbortSignal):Promise<Lease>{
@@ -49,8 +50,8 @@ export class ResourcePool {
   if(error?.status==='rejected'){leases.forEach(l=>l.release());throw error.reason;}return leases;
  }
  private fetchBytes(asset:Asset,signal:AbortSignal){return this.network.run(async()=>{
-  const combined=AbortSignal.any([signal,AbortSignal.timeout(20000)]),response=await fetch(asset.url,{signal:combined});if(!response.ok||!response.body)throw Error(`Resource HTTP ${response.status}`);
-  this.received.set(asset.url,0);const bytes=await readExact(response.body,asset.bytes,size=>this.received.set(asset.url,size));this.transferred+=bytes.byteLength;return bytes;
+  const bytes=await downloadResource(asset.url,asset.bytes,{signal,onProgress:size=>this.received.set(asset.url,size)});
+  this.transferred+=bytes.byteLength;return bytes;
  },signal);}
  private async load(asset:Asset,signal:AbortSignal){
   const source=await this.encoded.acquire(asset,signal),bytes=source.bytes;

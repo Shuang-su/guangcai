@@ -52,19 +52,22 @@ MOCK_BASE=/cup/ PORT=5273 npm run mock:v7
 - `assets/<id>-<hash>.webp`：颜色为 sRGB；遮罩、ORM 是线性数据，禁止 CDN 进行有损转码或色彩调整。
 - 城市结构上传为 RG8：R 是金线、G 是覆盖；文字上传为 R8，`uvRect=[u,v,width,height]` 采用模型 UV 的左下原点。裁切边缘留保护像素，字形沿用原稿像素。
 - 固定花纸 ORM：R 恒为 1（未使用），G 粗糙度，B 金属度。裸金色校正读取 B；法线与颜色始终共享同一图集/UV。图集按段重新缩放并重建 gutter。
-- `.hfn.gz`：gzip 封装 HFN1，16字节头后是 bottom-up RGBA binary16 数据。材质法线保留半浮点精度，Worker 解压、校验、传输 ArrayBuffer。普通静态托管使用 `application/octet-stream`，**不设置 Content-Encoding:gzip**；客户端也兼容托管方已解压的 HFN1 响应。
+- `.hfn.gz`：gzip 封装 HFN1，16字节头后是 bottom-up RGBA binary16 数据。材质法线保留半浮点精度，Worker 解压、校验、传输 ArrayBuffer。普通静态托管使用 `application/octet-stream`，**不设置 Content-Encoding:gzip**；消费者按清单精确校验压缩文件长度和哈希，托管方不得提前解压响应。
 - 模型当前由前端参数化生成，照明和反射由版本化配方计算；图片列表本身不能替代模型/材质版本。`china-cup-v6` 与 `porcelain-city-v6` 的语义由对应源码固定。
 
 母版、来源、字体、SVG 与旧发布仍保存在原路径。生成器是单向派生，不覆盖原稿。将新资源发布到新 releaseId；不要覆盖已经引用的 `v7-1` 或哈希 URL。作品当前仅支持已实现的版本，未知版本明确报错，不隐式替换。
 
-`decodedBytes` 是目标纹理通道的数据大小，不是浏览器进程总内存。运行时 `fetchedBodyBytes` 在托管方透明解压 gzip 时包含解压后的响应体；实际网络传输应读取 Resource Timing 或网络面板。模型 GPU 估算计入 mipmap、深度、MSAA、反射临时缓冲，不包含驱动、CSS 合成和系统浏览器开销。
+`decodedBytes` 是目标纹理通道的数据大小，不是浏览器进程总内存。运行时 `fetchedBodyBytes` 是成功读取的文件字节；网络头、协议及重试成本应读取 Resource Timing 或网络面板。图形资源估算计入 mipmap、深度、MSAA、反射临时缓冲，以及玻璃合成和材质图生成的多个 WebGL 上下文；CPU 解码缓存独立记录。不包含驱动、浏览器内部交换链、CSS 合成和系统浏览器开销；不是系统可用 RAM。
 
 ## 前端接口
 
-观察器就绪后：
+设计器脚本完成执行后取得接口，再等待资源与首帧就绪；不要给全部下载设置固定总时限：
 
 ```js
 const viewer = window.cupViewer;
+const stopLoading = viewer.onLoadStateChange(state => console.log(state));
+await viewer.whenReady({signal: new AbortController().signal});
+stopLoading();
 const design = viewer.exportDesign();
 const applied = await viewer.importDesign(design);
 const unsubscribe = viewer.onDesignChange(next => console.log(next));
@@ -103,3 +106,23 @@ unsubscribe();
 `npm test`、`npm run test:v7`、`npm run check:v7-assets`、`npm run qa:v7`。浏览器检查、设备模拟、字节预算是真实 iPhone 验收的前置证据，不能代替 iPhone 13 mini / iOS18 连续30分钟及触感测试。最新实测数字见 `evidence/v7/` 和仓库变更记录。
 
 上下文恢复语义参考 [MDN webglcontextrestored](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/webglcontextrestored_event)：恢复后旧 GPU 对象无效，需要重新创建。本项目在丢失事件阶段释放 GPU 对象并保留作品状态，恢复后从轻量档重建。
+
+## V7.1 加载与玻璃策略
+
+`getLoadState()` / `onLoadStateChange(callback)` 返回 `{phase, receivedBytes, totalBytes, lastProgressAt, error}`。phase 是 loading、rendering、ready、error、disposed；最近字节进度是毫秒时间戳，没有进度时为0。`whenReady({signal})` 在完整画面可进入时完成，真实失败/销毁/取消时拒绝，失败后可重新订阅并重试。加载页失败点击重新加载会复用已验证文件，不必重下全部城市。
+
+网络队列最多2项、解码队列1项；非空数据块重置120秒无进度超时。临时网络/408/429/5xx最多3次，间隔400/800ms；用户取消和错误长度/哈希/404不重试。后台暂停排队任务和空闲超时，继续到达的数据仍正常处理。
+
+默认尝试原液态材质。手机常态128MiB、临时峰值192MiB；预算紧张时释放闲置缓存、调整模型DPR并拒绝非必要高清。玻璃在独立WebGL2图层合成，模型绘制后捕获一次，UI动画复用；反射计算期间释放可再生的玻璃中间缓冲。进一步超预算、连续两个2秒窗口P95>33.3ms（含0.5ms计时精度容差），或上下文失败时回退磨砂，本次会话不反复恢复。Safari没有deviceMemory不是失败；诊断中缺失为null，不能当成0。
+
+原5MiB/6秒与全部预加载选择不相容。当前要求全部低清+当前及相邻高清、6组文字准备完成后进入；受控10Mbps/100ms冷缓存目标15秒。Netlify跨地域耗时单独记录；实际COS线路需上线环境复测。
+
+## 三个独立地址与子路径联调
+
+同源iframe是指联调页和设计器来自同一个前端站点；API和资源可以在其他Origin。已有示例用Cookie会话（credentials: include），API必须返回精确Origin及Access-Control-Allow-Credentials，不能用星号。真实跨站Cookie还需公司按SameSite/Secure和浏览器策略适配；可由公司同站网关代理。不要以mock的Cookie代替正式身份认证。
+
+运行 `npm run qa:v7-split` 可在本机随机端口启动前端、API、资源三个服务，使用 `/cup/` 子路径构建，验证账号、保存/重载、分享与撤销。模拟服务仅绑定127.0.0.1、只用合成用户、内存存储，关闭即清空。也可以通过 MOCK_ORIGINS（逗号分隔的精确Origin）、MOCK_API_BASE、MOCK_ASSET_BASE 注入地址。Origin `null`、未列出的Origin和任意请求头不会自动放行。生产服务必须排除 `/mock/session`。
+
+## 交付验收状态
+
+源码和预览完成不等于真机体验验收。iPhone Air/iOS27.0.1、iPad mini6/iPadOS16.6.1 已由用户确认V6折射正常；合并后的V7仍需复测。iPhone13mini/iOS18连续30分钟、物理触感和正式COS联调单独记录。具体候选、提交、自动化和未通过目标见本轮变更记录。

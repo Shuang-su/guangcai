@@ -1,3 +1,4 @@
+import {reserveGlassMemory,releaseGlassMemory} from './resource-budget';
 import { encodeMaterialPixels } from "./map-encoder.js";
 import { getMaterialRenderer } from "./renderer.js";
 import { mapScale } from "../gpu/geometry.js";
@@ -27,23 +28,10 @@ const version = (() => {
   for (const char of `${materialBackend}|${materialBackend==='webgpu'?materialShader.wgsl:webglShader}|png-sub-2`) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619);
   return (hash >>> 0).toString(36);
 })();
+let generation=0;
 const cache = new Map<string, Promise<MaterialMaps>>();
 /** Stored maps are read and decoded while the page is still loading, so the
  * first frame that measures a surface finds its glass ready. */
-if (typeof indexedDB !== "undefined" && typeof Image !== "undefined") {
-  const prefix = `${version}|`;
-  void preloadStoredMaps(prefix).then(() => {
-    for (const stored of preloadedKeys()) {
-      const key = stored.slice(prefix.length);
-      let g: MapGeometry, slice: boolean;
-      try {
-        const [width, height, radius, dpr, appearance, outline, sliceCapsule] = JSON.parse(key) as [number, number, MapGeometry["radius"], number, MapGeometry["appearance"], MapGeometry["outline"], boolean];
-        g = { width, height, radius, dpr, appearance, outline }; slice = sliceCapsule;
-      } catch { continue; }
-      if (!cache.has(key)) materialMaps(g, slice).catch(() => undefined);
-    }
-  });
-}
 export function getMaterialMaps(g: MapGeometry): Promise<MaterialMaps> {
   return materialMaps(g);
 }
@@ -96,12 +84,14 @@ function assemble(g: MapGeometry, sliceCapsule: boolean, encoded: string[][], du
   };
 }
 function materialMaps(g: MapGeometry, sliceCapsule = false, persist = true): Promise<MaterialMaps> {
+  const token=generation;
   const key = keyOf(g, sliceCapsule);
   const cached = cache.get(key);
   if (cached) return cached;
   const stored = `${version}|${key}`;
   const result = (persist ? loadStoredMaps(stored) : Promise.resolve(peekStoredMaps(stored)))
     .then(async (found) => {
+      if(token!==generation)throw Error('Glass maps cancelled');
       if (found) { claimFirstPaint(stored, found); return assemble(g, sliceCapsule, found.planes, found.duration); }
       const renderer = await getMaterialRenderer();
       const { width, height, pixels, duration } = await renderer.render(g);
@@ -113,6 +103,7 @@ function materialMaps(g: MapGeometry, sliceCapsule = false, persist = true): Pro
       return assemble(g, sliceCapsule, encoded, duration);
     })
     .then(async (maps) => {
+      if(token!==generation)throw Error('Glass maps cancelled');
       // Only hand out maps whose image is decoded: switching a filter to it
       // then draws in the same frame instead of leaving the material blank.
       await Promise.all(urls(maps).map(decode));
@@ -130,13 +121,26 @@ function materialMaps(g: MapGeometry, sliceCapsule = false, persist = true): Pro
 }
 /** Decoded images, kept alive while their maps are cached. */
 const decoded = new Map<string, HTMLImageElement>();
+/** Raster composition can upload an admitted map in its first draw frame. */
+export const decodedMaterialImage = (url:string):HTMLImageElement|undefined => decoded.get(url);
 export async function decode(url: string): Promise<void> {
   if (decoded.has(url) || typeof Image === "undefined") return;
+  const token=generation;
   const image = new Image();
   image.src = url;
   await image.decode();
-  decoded.set(url, image);
+  if(token!==generation)return;
+  decoded.set(url, image);trimDecoded();
 }
+const activeUrls=new Set<string>();
+const decodedBytes=()=>[...decoded.values()].reduce((n,i)=>n+i.naturalWidth*i.naturalHeight*4,0);
+function trimDecoded(){
+ for(const [url]of decoded){if(decodedBytes()<=8*1024**2)break;if(!activeUrls.has(url))decoded.delete(url);}
+ reserveGlassMemory('decoded-maps',0,decodedBytes());
+ if(decodedBytes()>8*1024**2)throw Error('Glass decoded-map budget exceeded');
+}
+export function pinMaterialMaps(maps:MaterialMaps[]){activeUrls.clear();for(const m of maps)for(const url of urls(m))activeUrls.add(url);trimDecoded();}
+export function releaseDecodedMaps(){generation++;activeUrls.clear();decoded.clear();releaseGlassMemory('decoded-maps');}
 const lastUse = new WeakMap<MaterialMaps, number>();
 const settled = new Map<string, MaterialMaps>();
 /** Record that maps were drawn, so eviction never releases images on screen. */

@@ -19,3 +19,14 @@ test('mock preserves ownership, idempotency, revisions, immutable public snapsho
  assert.equal((await request('works/'+id,'DELETE')).status,204);assert.equal((await request('works/'+id)).status,404);
  }finally{server.closeAllConnections();await new Promise<void>(r=>server.close(()=>r()));}
 });
+
+test('split-origin mock permits only configured credentialed API clients',async()=>{
+ const origin='http://127.0.0.1:5277',server=await createMockServer(undefined,'/cup/',{allowedOrigins:[origin],runtimeConfig:{apiBase:'http://127.0.0.1:5278/cup/api/v1/'}});server.listen(0,'127.0.0.1');await once(server,'listening');const base=`http://127.0.0.1:${(server.address() as {port:number}).port}/cup/`;
+ try{
+  const preflight=await fetch(base+'api/v1/works',{method:'OPTIONS',headers:{Origin:origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type,idempotency-key'}});assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),origin);assert.equal(preflight.headers.get('access-control-allow-credentials'),'true');
+  const allowed=await fetch(base+'api/v1/session',{headers:{Origin:origin,Cookie:'mock-user=alice'}});assert.equal((await allowed.json()).userId,'alice');assert.equal(allowed.headers.get('vary'),'Origin');
+  const rejected=await fetch(base+'api/v1/session',{headers:{Origin:'https://not-allowed.example'}});assert.equal(rejected.status,403);assert.equal(rejected.headers.get('access-control-allow-origin'),null);
+  assert.equal((await fetch(base+'api/v1/works',{headers:{Origin:origin}})).status,401);
+  assert.match(await fetch(base+'runtime-config.js').then(r=>r.text()),/5278/);
+ }finally{server.closeAllConnections();await new Promise<void>(r=>server.close(()=>r()));}
+});
