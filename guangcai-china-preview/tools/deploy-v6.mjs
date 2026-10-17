@@ -1,6 +1,6 @@
 // Independent V6 preview only. Existing .netlify/state.json is never relinked.
 // Netlify file-digest API: https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/
-import {readFile,writeFile,mkdir,readdir,stat,copyFile} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,readdir,stat,copyFile,rename} from 'node:fs/promises';
 import {spawn,execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
@@ -81,7 +81,19 @@ try{
  if(motionCode!==0)throw new Error('Online glass motion QA failed');receipt.onlineMotion='passed';
  const webkitCode=await new Promise((resolve,reject)=>{const p=spawn('node',['tools/v6-webkit-qa.mjs'],{cwd:root,env:{...process.env,QA_URL:receipt.permalink+'/',QA_OUT:path.join(work,'online-webkit')},stdio:'inherit'});p.once('error',reject);p.once('close',resolve);});
  if(webkitCode!==0)throw new Error('Online WebKit regression failed');receipt.onlineWebkitChecks=JSON.parse(await readFile(path.join(work,'online-webkit/webkit-qa.json'))).checks.length;
+ const startupCode=await new Promise((resolve,reject)=>{const p=spawn('node',['tools/v6-startup-qa.mjs'],{cwd:root,env:{...process.env,QA_URL:receipt.permalink+'/',QA_OUT:path.join(work,'online-startup')},stdio:'inherit'});p.once('error',reject);p.once('close',resolve);});
+ if(startupCode!==0)throw new Error('Online startup regression failed');receipt.onlineStartupChecks=JSON.parse(await readFile(path.join(work,'online-startup/startup-qa.json'))).results.reduce((n,r)=>n+r.checks.length,0);
+ const liquidCode=await new Promise((resolve,reject)=>{const p=spawn('node',['tools/v6-liquid-qa.mjs'],{cwd:root,env:{...process.env,QA_URL:receipt.permalink+'/',QA_OUT:path.join(work,'online-liquid')},stdio:'inherit'});p.once('error',reject);p.once('close',resolve);});
+ if(liquidCode!==0)throw new Error('Online isolated glass regression failed');receipt.onlineLiquidChecks=JSON.parse(await readFile(path.join(work,'online-liquid/liquid-qa.json'))).checks.length;
  const archive=path.resolve('..','deployments',cfg.siteName,receipt.deployId);await mkdir(archive,{recursive:true});
+ // Optional same-volume archival avoids duplicating a large verified build on
+ // a nearly full asset disk. Rename only into an absent destination; then read
+ // every byte back against the published manifest. No historical files move.
+ if(process.env.V6_MOVE_BUILD_TO_ARCHIVE==='1'){
+  const dest=path.join(archive,'site');let exists=false;try{await stat(dest);exists=true;}catch(e){if(e.code!=='ENOENT')throw e;}
+  if(exists)throw new Error('Move archive destination already exists');
+  await rename(path.resolve(cfg.build),dest);receipt.buildMovedToArchive=true;
+ }
  for(const file of Object.keys(manifest)){const dest=path.join(archive,'site',file.slice(1));await mkdir(path.dirname(dest),{recursive:true});try{const existing=await readFile(dest);if(hash(existing)!==manifest[file].sha256)throw new Error('Immutable archive differs');}catch(e){if(e.code!=='ENOENT')throw e;await copyFile(path.join(cfg.build,file.slice(1)),dest);}}
  receipt.archive=path.relative(path.resolve('..'),archive);receipt.status='verified';await save();
  for(const [name,data] of [['files.json',manifest],['deployment.json',receipt]]){

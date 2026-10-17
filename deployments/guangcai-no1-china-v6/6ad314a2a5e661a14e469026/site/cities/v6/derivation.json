@@ -1,0 +1,1409 @@
+{
+  "version": 6,
+  "cities": [
+    {
+      "id": "shanghai",
+      "source": "assets/source/v6/shanghai.png",
+      "sourceSha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 380373,
+      "runtimeLinePixels": 270051,
+      "masterSha256": "99242555d76b81683aaef2b53bfa929108a0c9341bd0f4346ccf2eef65c11143",
+      "maps": {
+        "mask": {
+          "file": "shanghai-structure.webp",
+          "sha256": "5d537237921d1ba12100e2777e21e82f928459fe1273dd835cfba5cce59d12f5"
+        },
+        "normal": {
+          "file": "shanghai-normal.hfn.gz",
+          "sha256": "11e201d8e00b6dc52a0c2fc14f6df06339aa0bc8a85e6e0afaea563fce1e6b60"
+        },
+        "label": {
+          "file": "shanghai-label.webp",
+          "sha256": "7f87795b607f686d2a859ccd79a3814707eb2e6807aadafbb3d5e4e9e4e38c69"
+        },
+        "thumbnail": {
+          "file": "shanghai-thumb.webp",
+          "sha256": "03484d0f459eaddff51c3d30e9be9f2c826b5b50a3adb1b51787e14dba5ca8ca"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9971501657583477,
+        "tracedStrokePrecisionWithin1px": 0.9981583896202165
+      }
+    },
+    {
+      "id": "urumqi",
+      "source": "assets/source/v6/urumqi.png",
+      "sourceSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          84.80866425992781
+        ],
+        "contentBottom": 1624
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 548181,
+      "runtimeLinePixels": 391592,
+      "masterSha256": "95f34631eaed63daac4f49d3a27da71de75aab2072d379e84c6651a7f6f30c52",
+      "maps": {
+        "mask": {
+          "file": "urumqi-structure.webp",
+          "sha256": "6382710fdf92cff85a97de6c962b3a0d05c31503b33f09060ac067d9b2337efa"
+        },
+        "normal": {
+          "file": "urumqi-normal.hfn.gz",
+          "sha256": "678663c6eeb4f91bad8ec8b7d3d1c0cd0211e1d2987e6342001c03b5022ad240"
+        },
+        "label": {
+          "file": "urumqi-label.webp",
+          "sha256": "274cb7b0b6a2b88c321f6c5d1ecf87397a33ce78c480e60bc1b52c5190bf388a"
+        },
+        "thumbnail": {
+          "file": "urumqi-thumb.webp",
+          "sha256": "5bf4304a86b4c2c7493db2712c63be23e85fd3cee1b6b74c5dd148daf3ea6f75"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9996880592359093,
+        "tracedStrokePrecisionWithin1px": 0.9985527142336164
+      }
+    },
+    {
+      "id": "beijing",
+      "source": "assets/source/v6/beijing.png",
+      "sourceSha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 648704,
+      "runtimeLinePixels": 456017,
+      "masterSha256": "525d21ac27e733dcc4c07ac3bb154a796824f24c201adb6e77c6a8d70ce7d73c",
+      "maps": {
+        "mask": {
+          "file": "beijing-structure.webp",
+          "sha256": "6409b4cf1142dad2d28a5c00d771d03ce7a2c00658b56fcc216dd492cdbdcd22"
+        },
+        "normal": {
+          "file": "beijing-normal.hfn.gz",
+          "sha256": "36d0b196daaa7b64625d4d5d5a6bcdff7969f800ea980dfeddc567419559da66"
+        },
+        "label": {
+          "file": "beijing-label.webp",
+          "sha256": "cb6bcae3d5ce1ca9047755b7f21bfb57067d2e607beb6d6dacda76b2ad1fd2f1"
+        },
+        "thumbnail": {
+          "file": "beijing-thumb.webp",
+          "sha256": "2c23f7467b5a8d5c4e40e8fdf4e0edfea45b210e012b66cc5220a6e656a24458"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995899516574586,
+        "tracedStrokePrecisionWithin1px": 0.9999227354923558
+      }
+    },
+    {
+      "id": "nanjing",
+      "source": "assets/source/v6/nanjing.png",
+      "sourceSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 520535,
+      "runtimeLinePixels": 368736,
+      "masterSha256": "efde8253c31447b3ae036733a444b8b238df55f7b5654af2374fb6c185359607",
+      "maps": {
+        "mask": {
+          "file": "nanjing-structure.webp",
+          "sha256": "a4132519d0578cb309d101ad52aa9cfdbdc76d61376b28c429d5d4c5bd46ded1"
+        },
+        "normal": {
+          "file": "nanjing-normal.hfn.gz",
+          "sha256": "337801d125a702a3285595243e8062b0789352b578935ba2da9e0e4c28e956c8"
+        },
+        "label": {
+          "file": "nanjing-label.webp",
+          "sha256": "70e5ea5fa5938f32af77980e231bc53d62841927cf792a37215e458b89c1207b"
+        },
+        "thumbnail": {
+          "file": "nanjing-thumb.webp",
+          "sha256": "5bc537172559da9930426fa12fc809b354546bbb1eac663fc204c4fd1ee28f55"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995908056134554,
+        "tracedStrokePrecisionWithin1px": 0.9999797388335646
+      }
+    },
+    {
+      "id": "nanchang",
+      "source": "assets/source/v6/nanchang.png",
+      "sourceSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 756055,
+      "runtimeLinePixels": 542809,
+      "masterSha256": "f54a42862bf4d896ea985d9d3e190e2def670ac8754b6ce759db44a85cd4f5f1",
+      "maps": {
+        "mask": {
+          "file": "nanchang-structure.webp",
+          "sha256": "28778287d7d71b6a0260d6e392d316f3b9e4e6d7f7898f69a369f66d39df21c4"
+        },
+        "normal": {
+          "file": "nanchang-normal.hfn.gz",
+          "sha256": "ceb85ad9141b1f839d64646315582571cdcd081051f8a7adf6511bfc70974652"
+        },
+        "label": {
+          "file": "nanchang-label.webp",
+          "sha256": "be61d93e73fd09b86fc8d07556034c372ffb088c533a533c5254872a88e13776"
+        },
+        "thumbnail": {
+          "file": "nanchang-thumb.webp",
+          "sha256": "b20f6711a2110d53de7657118d3eb48bde1d439cf78f60da18aa5e4778762cd4"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9994973910628195,
+        "tracedStrokePrecisionWithin1px": 0.9998894471806268
+      }
+    },
+    {
+      "id": "xiamen",
+      "source": "assets/source/v6/xiamen.png",
+      "sourceSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 662724,
+      "runtimeLinePixels": 467609,
+      "masterSha256": "c9d21b0010173974916f86cf38b1cc4f08bcdd7eeff04f64e205650bb5440b5c",
+      "maps": {
+        "mask": {
+          "file": "xiamen-structure.webp",
+          "sha256": "6a1e5d9bf6267ad3566279b74cf4a48244dfe69a4ea6e331ffb400b82eb12c7f"
+        },
+        "normal": {
+          "file": "xiamen-normal.hfn.gz",
+          "sha256": "6f6a8b207df7bf358c0b5cf0f2fabd96b97dabd682d2ef3e107204bbc5d78d5a"
+        },
+        "label": {
+          "file": "xiamen-label.webp",
+          "sha256": "47afa15e3399e062a37f41d8fa7f335c350867656699b37641b580d7cd02a25a"
+        },
+        "thumbnail": {
+          "file": "xiamen-thumb.webp",
+          "sha256": "1fc3f49656d26db0e20bfcca36ea7fdea62c6775f8d2712c4a6ac679328fe570"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9985137100814215,
+        "tracedStrokePrecisionWithin1px": 0.9996641907396598
+      }
+    },
+    {
+      "id": "hohhot",
+      "source": "assets/source/v6/hohhot.png",
+      "sourceSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 797966,
+      "runtimeLinePixels": 578763,
+      "masterSha256": "fe7077eec24b44e41928a5dc0131ac7fded7b8dc559c7c30f798b5674e5ef98d",
+      "maps": {
+        "mask": {
+          "file": "hohhot-structure.webp",
+          "sha256": "a7533b3f945787fac011a24ce6dd7b930002c6380773d819740401ee225d2107"
+        },
+        "normal": {
+          "file": "hohhot-normal.hfn.gz",
+          "sha256": "96e7b5872aed1e158f44aa6446f8d016cb84884a1448e394ee2ab4f4dccf25e3"
+        },
+        "label": {
+          "file": "hohhot-label.webp",
+          "sha256": "6a89a05972492b44d32d19609f85db06cb44a95285c11fb31dc94bf9b293ea4d"
+        },
+        "thumbnail": {
+          "file": "hohhot-thumb.webp",
+          "sha256": "c637b3c4dab381799e67c067b8deef19cbd46899394566f8d9c6095056bb79a8"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997343245200924,
+        "tracedStrokePrecisionWithin1px": 0.9999948320346667
+      }
+    },
+    {
+      "id": "harbin",
+      "source": "assets/source/v6/harbin.png",
+      "sourceSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 496653,
+      "runtimeLinePixels": 349254,
+      "masterSha256": "6046e616ab5e4950b82e748328739399b8601d9cea02d9a76b36ab0e2e1cca00",
+      "maps": {
+        "mask": {
+          "file": "harbin-structure.webp",
+          "sha256": "7d5f6984d4edc505fd274b1621a896b33a4bef54114e5272a5ba797cce8f11e7"
+        },
+        "normal": {
+          "file": "harbin-normal.hfn.gz",
+          "sha256": "9033afbc9ff115297a1409fa099d80ce222680a22cb4465a3aae3b33e7e93ace"
+        },
+        "label": {
+          "file": "harbin-label.webp",
+          "sha256": "a782eae08991126445c78210c1f4908e5fbc818bcb76213cdc025e51a9468085"
+        },
+        "thumbnail": {
+          "file": "harbin-thumb.webp",
+          "sha256": "e986289c9d2bacd2f283605927c82ac2c27afc72a4f236727e9e7cf8bab5bb24"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9996476413109354,
+        "tracedStrokePrecisionWithin1px": 0.9998784500461677
+      }
+    },
+    {
+      "id": "tianjin",
+      "source": "assets/source/v6/tianjin.png",
+      "sourceSha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          77.80376482723022
+        ],
+        "contentBottom": 1629
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 757170,
+      "runtimeLinePixels": 537999,
+      "masterSha256": "df7fdef61eccf8ec9dc984be3e65c596cef8b94f31129a458e449817a4298eba",
+      "maps": {
+        "mask": {
+          "file": "tianjin-structure.webp",
+          "sha256": "9828c8b523cdfd06d486a6b7cc6915df4ae22042cf41e27c84d1f0f9289d4c7c"
+        },
+        "normal": {
+          "file": "tianjin-normal.hfn.gz",
+          "sha256": "4dab3f9766a90e3d0764942d1eba35078a796e9f5d90a8ecdaca8460280341f3"
+        },
+        "label": {
+          "file": "tianjin-label.webp",
+          "sha256": "787b60d4635f4b4ddb02ab3b9fb5c5d3163c484c91a98de939a63670fe17c9d3"
+        },
+        "thumbnail": {
+          "file": "tianjin-thumb.webp",
+          "sha256": "a558a3b0670c8a90f7b05ef622abc3aec72b36937e34526918b26044d82bbc97"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9992353104322675,
+        "tracedStrokePrecisionWithin1px": 0.9996663849472888
+      }
+    },
+    {
+      "id": "taiyuan",
+      "source": "assets/source/v6/taiyuan.png",
+      "sourceSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 698683,
+      "runtimeLinePixels": 504272,
+      "masterSha256": "1609463185e1b817429b8c8c9aad9247ec6fb9ad01052ecc616ca5dd2bf690b8",
+      "maps": {
+        "mask": {
+          "file": "taiyuan-structure.webp",
+          "sha256": "2e10099e0136912792274a0c47b9ea22af0ca4f6787f176e73cce3720aa6feae"
+        },
+        "normal": {
+          "file": "taiyuan-normal.hfn.gz",
+          "sha256": "9c10b1b39119a4e898e328e6d3714355954e6a3d56c98ae61ca7f5b07795366b"
+        },
+        "label": {
+          "file": "taiyuan-label.webp",
+          "sha256": "9ae7837d3eaa4f5a5158cbbd49349750cb7125381f6f1df5e706efba99cdf7c6"
+        },
+        "thumbnail": {
+          "file": "taiyuan-thumb.webp",
+          "sha256": "45152d2ff127a275282bd4adb83308a1562da8a0cffaf1e06660f22187004fd3"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997609788702458,
+        "tracedStrokePrecisionWithin1px": 0.9995519812959609
+      }
+    },
+    {
+      "id": "guangzhou",
+      "source": "assets/source/v6/guangzhou.png",
+      "sourceSha256": "7fca8585c5931d47e5d4592115e31fd0c475829e3cb16cba96563439ce602de6",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 473719,
+      "runtimeLinePixels": 330238,
+      "masterSha256": "44c7faadbf5bca91ddb601313324a50645555df9184772fcc32792ac96bf80fb",
+      "maps": {
+        "mask": {
+          "file": "guangzhou-structure.webp",
+          "sha256": "76139a575ea0825fb123075baa518006a6909e6a3c20e258ce6e6aff9ed6fbbb"
+        },
+        "normal": {
+          "file": "guangzhou-normal.hfn.gz",
+          "sha256": "b6b58e85768e4f0cf5d35ad6d2cb178d39eee80ec7f4cd499498a7df796236f3"
+        },
+        "label": {
+          "file": "guangzhou-label.webp",
+          "sha256": "93c2ad7407eac60fbe48fcc44ffddf937a946eb4e4281230753e49a992b2a6dc"
+        },
+        "thumbnail": {
+          "file": "guangzhou-thumb.webp",
+          "sha256": "0fa9876106f8914024e1219b7b8fef3dfdbfbb8f22fe4ad324080be8cf02cef2"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997720167441035,
+        "tracedStrokePrecisionWithin1px": 0.9996567043162656
+      }
+    },
+    {
+      "id": "chengdu",
+      "source": "assets/source/v6/chengdu.png",
+      "sourceSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 552816,
+      "runtimeLinePixels": 399388,
+      "masterSha256": "3ba05c7b97f405e61d30e3d9143369fdc002a37b81387df16c9224a004fd04c7",
+      "maps": {
+        "mask": {
+          "file": "chengdu-structure.webp",
+          "sha256": "a1e1642d5365fdf0917114bf5aff54787f7631321ff51e746d29ba133c9da834"
+        },
+        "normal": {
+          "file": "chengdu-normal.hfn.gz",
+          "sha256": "80062adc97829d07b93b6d6933d3b52b17680568e0f7174a93e2809bcdef3c1d"
+        },
+        "label": {
+          "file": "chengdu-label.webp",
+          "sha256": "349f814169c1ded40b9329aa2284d71ab58dc5f6f6e8cea923953bbf08ed5e74"
+        },
+        "thumbnail": {
+          "file": "chengdu-thumb.webp",
+          "sha256": "a2477861fa8ab7f7f18cd18a8b68b39b9ce9c1c70b2ba0860d7eb9dbb2a0f747"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9984714624757605,
+        "tracedStrokePrecisionWithin1px": 0.9999905998074841
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "source": "assets/source/v6/jingdezhen.png",
+      "sourceSha256": "ac8230f3e60a5d3afc2d4b2df211bc7a2b2d9327aca897f4a1ef20b9ffbe092f",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 609369,
+      "runtimeLinePixels": 439427,
+      "masterSha256": "3256a7a589ee4347152ccd30cd284269c3997a354b9242264ce2213743fc610f",
+      "maps": {
+        "mask": {
+          "file": "jingdezhen-structure.webp",
+          "sha256": "bec0e85babda62db752bed49235482fcc3bdd07847fa1775673367ed69237b32"
+        },
+        "normal": {
+          "file": "jingdezhen-normal.hfn.gz",
+          "sha256": "a0facaa861cd7a12d5182d0471313e6211e1bf198226ad351befcdc10bd91834"
+        },
+        "label": {
+          "file": "jingdezhen-label.webp",
+          "sha256": "ca70f3adcc5a29b61d29d94e046d7d3f249e1a3387015c6b0433c367205f24b2"
+        },
+        "thumbnail": {
+          "file": "jingdezhen-thumb.webp",
+          "sha256": "709a1f987ecec5146313e14bb4973e5fae853a2b5b29b85a4df611eb1475aa43"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9975811043883098,
+        "tracedStrokePrecisionWithin1px": 0.999660667819373
+      }
+    },
+    {
+      "id": "hangzhou",
+      "source": "assets/source/v6/hangzhou.png",
+      "sourceSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          79.20474471376974
+        ],
+        "contentBottom": 1628
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 642049,
+      "runtimeLinePixels": 452043,
+      "masterSha256": "8f800a3506076404f8f3901fb77f64fe1a95340d6e409974173d2162aaf6481d",
+      "maps": {
+        "mask": {
+          "file": "hangzhou-structure.webp",
+          "sha256": "b0fe607bcd5f70ec33c9e8fd8ccae1c86f30648a1d15e38b1a40bc83a7adade0"
+        },
+        "normal": {
+          "file": "hangzhou-normal.hfn.gz",
+          "sha256": "9ad9c839a1d96d776ebe698bc5cae177c09104451d3ed960f93b6883e7849e24"
+        },
+        "label": {
+          "file": "hangzhou-label.webp",
+          "sha256": "d02b776016ed472c36ff271c2060a00b3e488a8474c7fa005bc1eed110091a75"
+        },
+        "thumbnail": {
+          "file": "hangzhou-thumb.webp",
+          "sha256": "438d4d42a938dfb4f485ca9f04abf75947fcbec1977a165a022d0cc713a3c8d7"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9990234390210093,
+        "tracedStrokePrecisionWithin1px": 0.9998451839017609
+      }
+    },
+    {
+      "id": "wuhan",
+      "source": "assets/source/v6/wuhan.png",
+      "sourceSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 770492,
+      "runtimeLinePixels": 550252,
+      "masterSha256": "344230f614c922cc73b6da59a7e0f35241a97f87f4d59b3aa31d3e78cf34e9bb",
+      "maps": {
+        "mask": {
+          "file": "wuhan-structure.webp",
+          "sha256": "6b2165d5268ad957e8659b66ac4dc4bb392a72a2ef7069edd3638539678d911c"
+        },
+        "normal": {
+          "file": "wuhan-normal.hfn.gz",
+          "sha256": "698824a2455d06ac03ac92f24244a298e3b476ee67c6e8629abd7cff149b123c"
+        },
+        "label": {
+          "file": "wuhan-label.webp",
+          "sha256": "7f63e09d99b138491459c3439c2fe5fbe71e13039ac5f0a1ee119016e4bd8fed"
+        },
+        "thumbnail": {
+          "file": "wuhan-thumb.webp",
+          "sha256": "d64236b5592652435bee8ce96ead716d7e0ccddd473bfd9c59541f31be4d1ddd"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9996430851975102,
+        "tracedStrokePrecisionWithin1px": 0.9999659262671681
+      }
+    },
+    {
+      "id": "shenyang",
+      "source": "assets/source/v6/shenyang.png",
+      "sourceSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 707466,
+      "runtimeLinePixels": 502315,
+      "masterSha256": "d8efe27107f289c3a7fd91458dccd5217ca14697f5528b1c7df96138b6483349",
+      "maps": {
+        "mask": {
+          "file": "shenyang-structure.webp",
+          "sha256": "e48375bd0b7e3d611cfef6b26ad59fc1ca386ee67a05a39aeac12064d8b65254"
+        },
+        "normal": {
+          "file": "shenyang-normal.hfn.gz",
+          "sha256": "4bd9378d0cce58dedc44ac3fd79b16aad76b063c6e8308110924d10a30f7e20f"
+        },
+        "label": {
+          "file": "shenyang-label.webp",
+          "sha256": "eb65477eead3a25c8bdbc88bf7f78d46bcf3db599d4e365d1c8c4808f5e443ed"
+        },
+        "thumbnail": {
+          "file": "shenyang-thumb.webp",
+          "sha256": "222ec80964011dc81fd9bf59de4cb3fb5e89fcaa5695eed45844468c6764b0b3"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9993314166334495,
+        "tracedStrokePrecisionWithin1px": 0.9999091265271585
+      }
+    },
+    {
+      "id": "shenzhen",
+      "source": "assets/source/v6/shenzhen.png",
+      "sourceSha256": "57802cadfee150f4988a73e6d8540e43efc02fa230480f6fe931861d1f1a96e0",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          83.40768437338829
+        ],
+        "contentBottom": 1625
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 716203,
+      "runtimeLinePixels": 504064,
+      "masterSha256": "036122de2393ecc2dc9332ad110159630b53f3aa5e0b961a37a15e31e556daf4",
+      "maps": {
+        "mask": {
+          "file": "shenzhen-structure.webp",
+          "sha256": "0f39104d2f4814e767dab2bb770e19f517043ae9195f8168b27278bdc95cdef8"
+        },
+        "normal": {
+          "file": "shenzhen-normal.hfn.gz",
+          "sha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133"
+        },
+        "label": {
+          "file": "shenzhen-label.webp",
+          "sha256": "9d6374680bb7fb1dd118f046ba92cd7b2cfbd1c55e9235fd47b66b01a771ff92"
+        },
+        "thumbnail": {
+          "file": "shenzhen-thumb.webp",
+          "sha256": "2ee3495523bdb9fcd11e123b3bae3f81b30f5a7328785c996aff506ab0c3a825"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995113117370354,
+        "tracedStrokePrecisionWithin1px": 0.9999227117475171
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "source": "assets/source/v6/shijiazhuang.png",
+      "sourceSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          77.80376482723022
+        ],
+        "contentBottom": 1629
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 696602,
+      "runtimeLinePixels": 501569,
+      "masterSha256": "2a0b5c70680c967d24bb1f8ccbad112d9945d3b4495b91f083e1e9bbf0653737",
+      "maps": {
+        "mask": {
+          "file": "shijiazhuang-structure.webp",
+          "sha256": "13270363bc9eac636c9043c6027066554ebaf8d961e4b8e858aafacd87768d57"
+        },
+        "normal": {
+          "file": "shijiazhuang-normal.hfn.gz",
+          "sha256": "7f775c28371f35bd21ad69050c8518c56a9daf740566f1fde7610f107afedde9"
+        },
+        "label": {
+          "file": "shijiazhuang-label.webp",
+          "sha256": "8beba89498c8b72405c5e2cc635ebbfa22b96b980169a7d0b0054735de42a542"
+        },
+        "thumbnail": {
+          "file": "shijiazhuang-thumb.webp",
+          "sha256": "7b6364d270242ee6c015174afad14b630861d1b0586ed1220d5ed144a17c8e01"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.999735860649266,
+        "tracedStrokePrecisionWithin1px": 0.9999970127808173
+      }
+    },
+    {
+      "id": "xian",
+      "source": "assets/source/v6/xian.png",
+      "sourceSha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 698506,
+      "runtimeLinePixels": 494382,
+      "masterSha256": "f26febe10dfceccce824b2544835a96f7a3bbff12af16480440d13a91bbac01e",
+      "maps": {
+        "mask": {
+          "file": "xian-structure.webp",
+          "sha256": "f40d9db47adcf17ae97bccb97c30eac0e851feb61bdee2c7184021383fcd3886"
+        },
+        "normal": {
+          "file": "xian-normal.hfn.gz",
+          "sha256": "cf3e00ddd05f7daccaca7cc7dd12673bc384402e496fc48af3c5c10cd5281b39"
+        },
+        "label": {
+          "file": "xian-label.webp",
+          "sha256": "4863a51d07cf8f74f94f9cbcdaf8bf3e41df85b2e172a78d8965821eb22ad6d8"
+        },
+        "thumbnail": {
+          "file": "xian-thumb.webp",
+          "sha256": "8113cf8b401312220c3e1666d31217406b4bab4b9988c92ef120d55aa2007a9f"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9998754484571356,
+        "tracedStrokePrecisionWithin1px": 0.9999909214844583
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "source": "assets/source/v6/zhengzhou.png",
+      "sourceSha256": "f9989128b6b45c537fa3633ca7e39236c0a3b5a8f3659b2ae3313a0f53ed6d8b",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          76.40278494069116
+        ],
+        "contentBottom": 1630
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 676108,
+      "runtimeLinePixels": 480184,
+      "masterSha256": "138774b82b6f1c667a43fe11a707b0682eba2b03df010c5171dc71679b686800",
+      "maps": {
+        "mask": {
+          "file": "zhengzhou-structure.webp",
+          "sha256": "0ec8c24a0fcc2cf27a908796cb6837c273946006d268ae9e0e7cc6292d7542a6"
+        },
+        "normal": {
+          "file": "zhengzhou-normal.hfn.gz",
+          "sha256": "c4f9a7567add621d0e311d06f7d72edb7a117a01da38f8bb13dfc81fcffee021"
+        },
+        "label": {
+          "file": "zhengzhou-label.webp",
+          "sha256": "9c1810c6bde010f7575181be2b13d26d6b47ab79ca3877b9947eb0b5357c2532"
+        },
+        "thumbnail": {
+          "file": "zhengzhou-thumb.webp",
+          "sha256": "bb199407ed01a75be7313e37d73bfe60dc462f7983baeb7616d52e8edba4a45b"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9995651582291587,
+        "tracedStrokePrecisionWithin1px": 0.9999485861983545
+      }
+    },
+    {
+      "id": "chongqing",
+      "source": "assets/source/v6/chongqing.png",
+      "sourceSha256": "629d08baa315d9dd3201056a71d47540d524ef5bab10f6baad21ecb3f4e378d9",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          82.00670448684878
+        ],
+        "contentBottom": 1626
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 872180,
+      "runtimeLinePixels": 620335,
+      "masterSha256": "9cae9173ee0830c871a0c75f56ac212cc737a6a56ce12dd3d3f7e5e029881bb7",
+      "maps": {
+        "mask": {
+          "file": "chongqing-structure.webp",
+          "sha256": "7a7c7db7b6037436ceee750fa4bf3854d229123a36fec95af49dfcba34603194"
+        },
+        "normal": {
+          "file": "chongqing-normal.hfn.gz",
+          "sha256": "5cfa17ee657c530d8e783110b89e0eadbacb8303e4430bdd2045127bb38b6cf9"
+        },
+        "label": {
+          "file": "chongqing-label.webp",
+          "sha256": "86046edefca0f9251dc11411fafccc06088d01a30ed0145ec0c52a2bda925ef7"
+        },
+        "thumbnail": {
+          "file": "chongqing-thumb.webp",
+          "sha256": "65bf3e96742ce4b5edd51fb9e1812041ce845b01a8303ffbb897cc564ed2de1b"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9997259739961935,
+        "tracedStrokePrecisionWithin1px": 0.9998577185286649
+      }
+    },
+    {
+      "id": "changchun",
+      "source": "assets/source/v6/changchun.png",
+      "sourceSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          79.20474471376974
+        ],
+        "contentBottom": 1628
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 692392,
+      "runtimeLinePixels": 494665,
+      "masterSha256": "57d3a94965f3616e2555ceeca1738caa4e1214180648b62f3f7864ca78d12d0b",
+      "maps": {
+        "mask": {
+          "file": "changchun-structure.webp",
+          "sha256": "79c2aabd0558e8a081e334af62f49eeaed2700422fe591c83a8670b29014f487"
+        },
+        "normal": {
+          "file": "changchun-normal.hfn.gz",
+          "sha256": "4e3fb8f8d9487f99870bf127e2f673ea121e46f430b3e18de7e79b33798d6a3f"
+        },
+        "label": {
+          "file": "changchun-label.webp",
+          "sha256": "fe1293679ed04d77183bac3c170362624be1e70dff4b6b030d113cde24f26d5f"
+        },
+        "thumbnail": {
+          "file": "changchun-thumb.webp",
+          "sha256": "6c56d0d3da689c1598c6721f62d347f4e8712a0ef0fc67613bdc9f157f1ebe51"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9996346000531491,
+        "tracedStrokePrecisionWithin1px": 0.9999864091451353
+      }
+    },
+    {
+      "id": "qingdao",
+      "source": "assets/source/v6/qingdao.png",
+      "sourceSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+      "sourceSize": [
+        3878,
+        1630
+      ],
+      "authoring": {},
+      "masterSize": [
+        5433,
+        2365
+      ],
+      "runtimeSize": [
+        4096,
+        1783
+      ],
+      "sourceToMaster": {
+        "scale": 1.4009798865394534,
+        "offset": [
+          0.0,
+          77.80376482723022
+        ],
+        "contentBottom": 1629
+      },
+      "placementAppliedOnce": {
+        "scale": 0.82,
+        "offsetU": 0.047,
+        "offsetV": 0
+      },
+      "sourceInkPixels": 602509,
+      "runtimeLinePixels": 433933,
+      "masterSha256": "cc11279f76098781f1662128cfeb9849608d4e00dd9bee9ad3421b89859b6a81",
+      "maps": {
+        "mask": {
+          "file": "qingdao-structure.webp",
+          "sha256": "22a615d811c4fa1a1229c5d3f80df4230ba5db1c4bc336ddf38c86dc593c76d9"
+        },
+        "normal": {
+          "file": "qingdao-normal.hfn.gz",
+          "sha256": "c3cafc9f2be68ae621d54805dc6a1f6dc3ea8804133a35d3055525c815e3af24"
+        },
+        "label": {
+          "file": "qingdao-label.webp",
+          "sha256": "9b7dc5c144bbabad98a5cf65d346ea650727af2759419e0457227c9605b85e19"
+        },
+        "thumbnail": {
+          "file": "qingdao-thumb.webp",
+          "sha256": "d0cf4d4c275b47b340e4b61c23ce8448b7a31bc4e7236d6fb5855df0bdb44d7d"
+        }
+      },
+      "candidate": false,
+      "holePolygons": [],
+      "holeSeeds": [],
+      "fillClosures": [],
+      "fillPolygons": [],
+      "traceFidelity": {
+        "originalStrokeRecallWithin1px": 0.9986041702281626,
+        "tracedStrokePrecisionWithin1px": 0.9989286132603917
+      }
+    }
+  ],
+  "method": "source-faithful spline contours from supplied or generated artwork; independent fill-only closure and semantic holes; line-only relief; original native resolution and authority recorded per city"
+}

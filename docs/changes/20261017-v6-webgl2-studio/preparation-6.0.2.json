@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "date": "2026-10-16T21:16:01.700Z",
+  "steps": [
+    {
+      "name": "unit and contract tests",
+      "code": 0,
+      "durationMs": 1953
+    },
+    {
+      "name": "23-city/font asset checks",
+      "code": 0,
+      "durationMs": 458
+    },
+    {
+      "name": "shared consumer/dev/audit build",
+      "code": 0,
+      "durationMs": 33366
+    },
+    {
+      "name": "built V6 browser checks",
+      "code": 0,
+      "durationMs": 75057
+    },
+    {
+      "name": "same-frame glass motion and original menu morph",
+      "code": 0,
+      "durationMs": 14444
+    },
+    {
+      "name": "mobile WebKit isolated glass and viewport regression",
+      "code": 0,
+      "durationMs": 20762
+    },
+    {
+      "name": "slow startup, touch navigation and repeated city return",
+      "code": 0,
+      "durationMs": 89383
+    },
+    {
+      "name": "legacy haptic paths in dev",
+      "code": 0,
+      "durationMs": 38016
+    }
+  ],
+  "browserChecks": 124,
+  "webkitChecks": 72,
+  "startupChecks": 42,
+  "buildFiles": 1336
+}

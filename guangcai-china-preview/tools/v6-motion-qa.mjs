@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {mkdir} from 'node:fs/promises';
 import {chromium} from 'playwright';import {writeFile} from 'node:fs/promises';
 const url=process.env.QA_URL??'http://127.0.0.1:5260/',out=process.env.QA_OUT??'.codex-work/tmp/v6-qa/motion';await mkdir(out,{recursive:true});
-const b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:393,height:852}});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(url);await p.waitForFunction(()=>window.cupViewer?.ready()&&window.cupViewer.debug().glass.ready,null,{timeout:120000});
+const b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:393,height:852}});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(url);await p.waitForFunction(()=>window.cupViewer?.ready()&&window.cupViewer.debug().glass.ready,null,{timeout:Number(process.env.QA_READY_TIMEOUT??120000)});
 const proof={};try{
 for(const [name,host,items] of [['city','.city-cards','.city-card[aria-hidden=false]'],['color','.palette-loop','.palette-tile .palette-swatch']]){
  if(name==='color'){await p.locator('#color-tab').click();await p.waitForTimeout(800);}

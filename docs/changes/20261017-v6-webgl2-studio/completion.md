@@ -85,3 +85,49 @@ V5 发布仍为 6ad20c45a7780e55fedba3d7，其他三个受保护站点同样没�
 对用户 GPU 判定疑问追加调用链检查：杯子为 Three WebGLRenderer（WebGL2）；完整玻璃材质图由 dom/backend.ts 固定选 WebGL2，只有 /audit/ 且 backend=webgpu 才初始化原版 WebGPU 材质图。另有独立 hdr-surface.ts 使用 WebGPU 输出可选色盘 HDR，高动态范围＋安全上下文＋navigator.gpu＋adapter/device/configuration 检测后启用，失败保留 SDR；它没有 UA 平台过滤。不能把整个页面描述为完全不含 WebGPU。
 
 追加 6 组运行记录（backend-proof.json）：Chrome 与真实桌面 WebKit 各测原生环境、删除 navigator.gpu、requestAdapter 返回 null；为触达 HDR 能力分支强制 dynamic-range: high。Chrome 原生实际创建两个 WebGPU HDR context，调用栈只来自 hdr-surface；另外两种情况下只有杯子和材质图两个 WebGL2 context。WebKit 本机原生未提供 navigator.gpu，absent 与 null-adapter 同样正常。六组均拖动调色成功、零 pageerror；未证明所有 iOS 27 渲染均正确。移动 WebKit 原生磨砂是单独的合成兼容措施，不是用 UA 决定 WebGPU 支持与否，也不会禁用已有 HDR 能力检测。
+
+6.0.1 发布源码 checkpoint：a2319370175259f1ee22b9ecfd75167041faa91e。独立 V6 部署 6ad28d933b40920e67613f89 已 verified，线上 124 项 Chrome、运动专项及 72 项 WebKit 检查通过；1336 文件远端摘要与本地不可变归档 SHA-256 均核对。四个受保护旧站保持原部署。
+
+后续真机反馈仍存在功能问题：菜单无法点击、准备提示停留、Safari 上下边缘非沉浸；用户进一步确认在其他菜单调整一段时间后返回城市会卡在高度过渡中途，完整玻璃和磨砂模式都可复现。因此 PR 继续 Draft，6.0.1 不代表真机验收完成。下一修复检查共用的加载锁定、提示生命周期、隐藏列表几何及面板测量顺序。
+
+6.0.2 问题定位：consumer-panel 初始化把整个面板设为 inert，main 等所有高清素材结束才 ready；截图可见基础杯子不代表固定花纹已全部解码，故在慢链路上仍不能点菜单。另 selection.busy 结束且没有 error 时没有状态文案分支，导致“正在准备 深圳 纯金”遗留。现取消整面板初始锁定，并按真实 startup pending 更新提示与最终 ready。
+
+城市过渡的共用逻辑问题已确认：ResizeObserver 在 display:none 期间回报零宽度，旧代码把 step 改成 1，进而把城市卡片尺寸写成 -5px；重新显示又在 refresh 前测量动画终点。现在保留最后有效尺寸，先 refresh 再确定高度终点。该修复同时适用于完整玻璃和原生磨砂。
+
+全屏边界：根 html/body 扩展真实柔光背景供 Safari 采样，取消固定 theme-color；保留 viewport-fit=cover，增加 apple-mobile-web-app-capable / black-translucent 和 standalone manifest。普通 Safari 浏览器工具栏并非网页 DOM，不能用 CSS 强行隐藏；主屏幕独立启动与实际 iOS 27 边缘采样仍待设备验收。参考 Apple Configuring Web Applications 和 WebKit Designing Websites for iPhone X。
+
+6.0.1 线上直接采样确认：城市列表隐藏宽度 0，--city-card-size 为 -5px（city-before-6.0.1.json）。6.0.2 构建后专项在 Chrome 和真实桌面 WebKit 各通过 21 项，共 42 项；故意拦住固定花纹的浮点法线请求，仍可触屏切菜单／进出自定义，图样加载完成后提示正确显示“正在载入花纹”，花纹释放加载完成后提示清空。三轮其他菜单调整再返回城市，隐藏尺寸有效、动画目标与最终高度误差小于 1px、卡片 1:1、卡片与菜单无重叠。
+
+完整最终准备通过 42 项单元／契约、资产检查、124 项 Chrome、运动专项、72 项 WebKit、42 项加载／城市回归及 70 项原触感分支。原始素材和五个已确认输入／触感实现文件保持字节不变。源码 checkpoint 与线上回读随后补记。
+
+6.0.2 源码 checkpoint：81cd1f9efc805074cec72fbbdb71f920270ce20e，已推送。独立 V6 部署 6ad295b03953db1e0b268b8f 已 verified：1337 个远端文件摘要匹配，完整不可变归档再次逐一 SHA-256 核对；线上 124 项 Chrome、运动专项、72 项 WebKit、42 项慢加载／触屏／城市返回检查均通过。四个旧站部署完全保持。归档核对后回收本轮可再生成的 .codex-work/deploy/v6-build，原件、源码、不可变发布文件保留。
+
+当前仍有明确验收边界：iPhone 用户页保持原生磨砂兼容，完整液态折射尚未恢复与验收；这不是 iPhone 硬件不能实现玻璃的结论。普通 Safari 地址栏不能由页面 CSS 隐藏；主屏幕独立启动的实际 iOS 27 状态栏处理仍需真机。WebKit 对应问题可见 https://bugs.webkit.org/show_bug.cgi?id=206854 和 https://www2.webkit.org/show_bug.cgi?id=317153 。PR #28 继续 Draft，未合并，未创建或移动标签。
+
+## 6.0.3：移动 WebKit 独立折射与面板收起锚点
+
+本轮实现保留 Glass-HQ 原位移场、高光、覆盖图、胶囊切片、形变和交互弹簧，把最终材质图合成移植到透明 WebGL2 图层。模型画布不再经过 SVG 引用滤镜；有色玻璃、Regular 磨砂折射与嵌套父玻璃取样都在独立累积缓冲中完成。原曲线和 tint 常量复用，模糊采用两 CSS 像素采样步长，输出 DPR 限定 1.5，因此没有声称最终像素与浏览器 SVG 栅格化逐字节相同。原图已解码时在第一帧直接上传；实际初始化或上下文丢失才进入可操作的 native-backdrop，并在诊断里保留原因。五个触感／二维输入核心文件未改。
+
+收起跳位的具体原因是 collapsed CSS 把胶囊从 absolute/bottom 改为 relative 正常文档流。现在两种状态保留相同底部锚点，胶囊内距与宽度跟随外框 420ms 过渡；内容按展开关键帧逆序淡出、缩回，不再跳到面板顶部。城市 ResizeObserver 的高度写入移至下一帧，显式切回城市时仍先同步 refresh 再测量动画终点。
+
+本轮回答了祝福语来源：边框母版为 SVG，阿里妈妈东方大楷文字与边框在构建时合成 4096×1783 无损 WebP 遮罩，运行时由杯身 UV 和固定金色材质渲染；菜单标签为 HTML 文字，未改动该素材链。
+
+容量与失败记录：第一次资产检查用到系统 Python 缺少 numpy，随后改为现有 bundled Python；通过指纹复核重用未变化的资产检查。两次构建／写入遭遇 ENOSPC，其中有效构建已完成、后续 QA 写报告时空间不足。定位到无进程占用、无索引的 Git 临时包 tmp_pack_tw2MJ9（1590165504 字节）和 tmp_pack_I3xknk（229113856 字节），连同两个 AppleDouble 伴随文件完整备份、双向 SHA256 验证后移出原卷，未改动有效 Git 对象包。恢复目录：/Users/shuangsu/Codex/guangcai-v6-recovery/.codex-work/cache/abandoned-git-packs-20261017/；recovery.json 和 verified.json 保存精确来源与摘要。macOS 随主体删除伴随 ._ 文件导致一次 ENOENT，复查四份备份均完整、原四路径均已离开；Git connectivity fsck 通过。测试缓存分别在 /Volumes/Prism/广彩/.codex-work/cache/v6-before-6.0.3-20261017/ 和 v6-tmp-preserved-20261017/ 按逐文件哈希搬存，没有清理原稿、模型或发布归档。部署工具增加可选同卷原子移动构建到归档，并再按已发布清单回读，避免重复占用约 1.3GiB。
+
+最终打包与线上检查、源码 checkpoint 和部署摘要由本节后续发布回读补齐。物理 iPhone Air / Safari 27.0.1、iPhone 16 / Safari 26.6.1 的最终效果和帧率仍需真机复测；桌面 WebKit 26.6 的成功不等于真机验收。
+
+6.0.3 最终打包结果：42 项单元／契约、哈希一致的 23 城／六套字体边框资产、124 项 Chrome、原库同帧高光与菜单 morph、74 项 WebKit、42 项慢加载／城市返回、49 项独立折射像素／首帧／四菜单底部锚点／上下文丢失检查、70 项原触感分支全部通过。构建清单 1336 个文件，发布时再增加 release.json。build-6.0.3.json、webkit-6.0.3.json、liquid-6.0.3.json、startup-6.0.3.json 与 evidence/ui-v6/safari-6.0.3/ 保存本轮证据；无应用运行时错误。
+
+6.0.3 发布候选：源码 checkpoint `2ad92f6352119a014637da1b46f0e7ed788ab82d` 已推送；部署 `6ad30bc420f569fd63dd9068` 已在 V6 发布，1337 项服务器摘要匹配、旧站未改变，但线上完整 QA 未通过，未标记验证完成。Chrome 网络证据显示杯碟法线为 24,283,080 字节，120 秒时仍下载了 17,055,301 字节，应用总时长 AbortController 中断了正常进度并从头重试。候选完整文件已按准备清单回读，并保存到不可变归档，deployment.json 明确 published-online-qa-failed。
+
+容量后续：再次发现无人占用的 tmp_pack_erBDJL（含伴随文件共 1,704,726,528 字节），以同样逐文件哈希方法搬存到内置盘 recovery 下 abandoned-git-packs-20261017-repeat/。为防止容量不足期间自动维护反复产生临时包，仅在本仓库把 gc.auto 从未设置改为 0、maintenance.auto 从未设置改为 false；旧值保存为 automatic-maintenance-before.json，未修改全局 Git 配置。有效对象包与历史仍保留。
+
+## 6.0.4：持续传输不中断
+
+新增 downloadBytes 流式读取，保留原 120 秒容忍度但按最后一个非空数据块重置空闲计时；fetch、gzip 检测、HFN 格式、RGBA16F 精度和三次重试都保留。正常持续传输不再被总时长强制丢弃。新增三个传输契约均通过；直接从线上读回 24,283,080 字节杯碟法线，耗时 28.8 秒，SHA256 与本地原件完全一致，见 progress-download-6.0.4.json。QA_READY_TIMEOUT 仅配置线上慢链路等待，所有功能、素材完成、点击和像素断言保留。
+
+最终打包通过：45 项单元／契约、未改变资产的哈希复核、124 项 Chrome、原库运动同步、74 项 WebKit、42 项慢加载／城市返回、49 项独立玻璃／首帧／收起检查、70 项原触感分支；新构建 1336 项，发布附加 release.json。源码 checkpoint、部署和线上结果在下方发布回读记录。
+
+6.0.4 最终发布回读：源码 checkpoint `833a8b33561d36e72f1164743e80f28fc63d96b2` 已推送；发布部署 `6ad314a2a5e661a14e469026`，固定链接 https://6ad314a2a5e661a14e469026--guangcai-no1-china-v6.netlify.app/ 。1337 项服务器摘要及不可变归档回读一致，原四个站点发布 ID 保持不变。线上最终通过 124 项 Chrome、原库同帧运动／菜单 morph、74 项 WebKit、42 项慢加载／城市返回、49 项独立折射／首帧／收起／失效回退检查，无应用运行时错误。大法线完成后 ready 成立、加载提示清除。验证等待使用 QA_READY_TIMEOUT=360000 适配实测慢链路，未跳过或替换线上资源，未改变功能／像素断言。
+
+代码与发布完整归档、截图和回读记录都保留。6.0.3 的失败候选归档 checkpoint 为 `5b2852064a7e72ed4161974bfaf7f318dd27a267`；6.0.4 发布文件在 deployments/guangcai-no1-china-v6/6ad314a2a5e661a14e469026/。PR #28 仍为 Draft，没有合并、打 tag 或关联 Git 自动发布。实际 iOS 27 设备验收仍待用户复测，未把桌面 WebKit 自动化等同物理设备／马达结论。仓库本地自动 Git 维护暂时关闭以防低容量下再次产生大临时包；原值与三份临时包的可恢复副本有单独收据，全局配置未改。
