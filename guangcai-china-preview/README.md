@@ -1,12 +1,24 @@
-# 中国杯 V7：渐进资源与部署参考
+# 中国杯 V7.1：渐进资源与开发交接
 
-V7 本地候选从 V6.0.1 演进。首屏加载轻量花纸与城市，近看按资源预算提升当前部件；保留杯壁/杯盖反射。消费者与开发审计分离构建，正式发布状态不由本文件推定。
+[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261017-v7-v6-sync-handoff/completion.md)
 
-- `npm run build`：消费者静态产物。
-- `npm run build:integration`、`npm run mock:v7`：本地资源与保存/分享接口参考。
-- 交接规范、数据契约、CDN 和子路径配置见 [integration/README.md](integration/README.md)。
-- 资源生成、契约测试与浏览器检查：`npm run textures:v7`、`npm run test:v7`、`npm run check:v7-assets`、`npm run qa:v7`。
-- iPhone 13 mini / iOS18 的30分钟稳定性、实体触感及帧率需真机验收。
+V7.1 基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；按需解码/提清与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
+
+| 命令 | 用途 |
+| --- | --- |
+| `npm ci --cache .codex-work/cache/npm` | 按锁文件安装 |
+| `npm run dev` | 127.0.0.1:5270 本地开发，HFN按原始字节分发 |
+| `npm run build` | 消费者静态产物 `.codex-work/deploy/v7-build/` |
+| `npm run build:integration`、`npm run mock:v7` | 127.0.0.1:5271/integration/ 本地模拟保存/还原/分享 |
+| `npm test`、`npm run test:v7` | 基础与V7契约测试（完整仓库） |
+| `npm run qa:v7-split` | 三个Origin及 `/cup/` 子路径联调验证 |
+| `npm run check:v7-assets` | 检查195资源与裁切文字 |
+| `npm run build:audit` | 单独构建历史开发/审计入口，不进入消费者包 |
+| `node tools/v7/package-handoff.mjs` | 从干净提交生成带哈希清单的消费者/源码交接包 |
+
+API与资源地址通过公开 `runtime-config.js` 配置；公司身份、数据库和真实业务后端不由mock承担。完整接口、Schema、数据关系、CORS/COS及部署步骤见交接主文档。消费者包不包含母版和历史审计素材，资源变动才运行生成器。
+
+本轮是开发交付候选。iPhone13mini/iOS18连续30分钟、实体触感及真实COS线路待验收；用户确认的Air/iOS27.0.1与mini6/iPadOS16.6.1正常折射属于V6基线，V7需要复测。Git提交、PR合并、预览发布和真机验收分别记录。
 
 以下为保留的 V6 素材及开发说明。
 

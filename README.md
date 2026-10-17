@@ -2,15 +2,34 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前版本：V6 独立预览
+## 当前开发交付候选：V7.1
 
-[用户创作页](https://guangcai-no1-china-v6.netlify.app/) · [完整开发工作台](https://guangcai-no1-china-v6.netlify.app/dev/) · [对比审计](https://guangcai-no1-china-v6.netlify.app/audit/) · [应用说明](guangcai-china-preview/README.md) · [版本索引](VERSION_HISTORY.md)
+[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [本次固定预览](https://6ad325215904b77f5accac72--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [验证与完成记录](docs/changes/20261017-v7-v6-sync-handoff/completion.md)
 
-V6 消费者页面提供 23 城、六组东方大楷祝福语和五种配色，保留自由调色、明度、材质和视觉浮雕。Glass-HQ 原算法与 SVG 合成保留，材质图后端迁移到 WebGL2；原 WebGPU 在审计页独立对比。城市、文字和金线分离，颜色／材质不改变固定金色。原始城市稿、字体、上游源码及许可均保存。
+V7.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
-发布源码 `45e8c5cfb68adcbd142ff94473b229c846a386b3`，部署 `6ad276ccaae8ef493bdd8f97`。线上 124 项浏览器检查、同帧光学动效专项、1336 个文件摘要回读通过；本地另有 40 项单元／契约、资产验证、70 项旧触感路径检查。两台 iPhone 的实际触感与 Safari 性能待真机验收。源码与发布归档由 [PR #28](https://github.com/Shuang-su/guangcai/pull/28) 整合，合并状态见 [完成记录](docs/changes/20261017-v6-webgl2-studio/completion.md)。
+交付内容包括版本化资源、OpenAPI、JSON Schema、公司账号/作品/修订/分享关系说明，以及独立可运行的保存/还原/分享 mock。正式身份、数据库、业务后端和COS发布由公司接入；mock仅使用本地合成用户，不用于生产。
 
-V5.4.2 的[历史预览](https://guangcai-no1-china-v5.netlify.app/)继续保留，部署 `6ad20c45a7780e55fedba3d7` 未改变。4.3 的[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)、标签和部署同样保留。本仓库未连接 Netlify Git 自动部署。
+```sh
+cd guangcai-china-preview
+npm ci --cache .codex-work/cache/npm
+npm run dev                     # http://127.0.0.1:5270/
+npm run build                   # .codex-work/deploy/v7-build/
+npm run build:integration
+npm run mock:v7                 # http://127.0.0.1:5271/integration/
+```
+
+[应用说明](guangcai-china-preview/README.md) · [OpenAPI](guangcai-china-preview/integration/contracts/openapi.json) · [作品格式](guangcai-china-preview/integration/contracts/design.schema.json) · [资源格式](guangcai-china-preview/integration/contracts/resource-manifest.schema.json) · [版本索引](VERSION_HISTORY.md)
+
+本地验证：45项基础、27项V7单元；Chrome/WebKit各85项；玻璃53项；加载50项；分域联调6条通过。10Mbps/100ms冷缓存三轮13.335–13.372秒，通过15秒目标。这些是桌面浏览器证据；iPhone13mini/iOS18连续30分钟、实际触感，以及合并后的Air/mini6视觉复测仍待用户验收。不要将开发候选写成生产验收通过。
+
+## V6 与历史站点
+
+[V6 用户页](https://guangcai-no1-china-v6.netlify.app/) · [V6 开发工作台](https://guangcai-no1-china-v6.netlify.app/dev/) · [V6 对比审计](https://guangcai-no1-china-v6.netlify.app/audit/)
+
+V6.0.4 发布源码 `833a8b3`，部署 `6ad314a2a5e661a14e469026`。[PR #28](https://github.com/Shuang-su/guangcai/pull/28) 已先合并。用户确认 iPhone Air/iOS27.0.1、iPad mini6/iPadOS16.6.1 在V6正常渲染折射；性能/触感与V7验收分开记录。本轮V7发布没有重发V6。
+
+[V5 历史预览](https://guangcai-no1-china-v5.netlify.app/)和[V4 历史预览](https://guangcai-no1-china-v4.netlify.app/)继续保留；仓库未连接 Netlify Git 自动部署，Git合并与线上发布分别记录。
 
 ## 原件与旧工作区
 
@@ -40,7 +59,7 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 
 - `guangcai-viewer/`：原版一号杯，当前发布基线 1.0。
 - `guangcai-china-preview/`：中国杯持续开发目录。2.x → 3.0 → 4.0 → 后续版本在同一目录演进，通过功能分支和发布标签定位，不再为每版复制一套长期维护的源码。
-- `main`：包含原版、中国杯至 V5.4.2 的完整已合并版本链；新功能另建分支。
+- `main`：按合并顺序保留原版、中国杯及后续版本链；源码、发布、验收状态以版本索引和对应PR为准。
 - [版本与部署索引](VERSION_HISTORY.md) · [恢复的 16 个历史节点](HISTORY.md) · [开发接入记录](docs/changes/20261013-git-development/completion.md)。
 
 | 已发布版本 | Git 标签 | 站点 | 部署 ID |
@@ -71,7 +90,7 @@ npm --prefix guangcai-china-preview run dev -- --port 5208
 
 原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。中国杯测试覆盖几何、浮点法线、固定图集、城市选择、二维控件与触感映射；V5.4.2 的 35 项应用测试、构建和浏览器检查见[完成记录](docs/changes/20261016-short-screen-lift/completion.md)。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
 
-中国杯 `prebuild` 会从保存的母版生成 WebP；如产生源码或素材清单差异，先核对原因。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
+V7 常规构建不会重新生成母版资源；只有资源变动时才显式运行 `npm run textures:v7`，并核对来源哈希与派生物差异。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
 
 ## 开发与发布
 
@@ -98,4 +117,4 @@ python3 tools/test_verify_archive.py
 
 4.3 [北京主题的请求、素材与验证记录](docs/changes/20261014-beijing-4.3/completion.md)，关联 [Issue #21](https://github.com/Shuang-su/guangcai/issues/21)。
 
-V7.1.0 接入候选正在独立 `codex/v7-v6-sync-handoff` 分支验证，接入 V6.0.4 功能源码 `833a8b3`。开发交接入口为 `guangcai-china-preview/integration/README.md`；验收、资源预算和发布回读见 `docs/changes/20261017-v7-v6-sync-handoff/`。真机与正式COS上线状态独立记录。
+
