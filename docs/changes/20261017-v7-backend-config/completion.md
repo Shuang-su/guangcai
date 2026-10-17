@@ -26,4 +26,12 @@
 
 ## 提交与远端
 
-独立分支 `codex/v7-backend-config-handoff`。数据/文档checkpoint完成后在下一记录提交补入SHA；随后推送、PR合并、Issue正文及远端文件读取分别核验。
+独立分支 `codex/v7-backend-config-handoff`，数据/文档checkpoint为 `d7dd1f9de61cd342dbb2d9165c1dacd5d140fc85`，已推送并创建 [PR #31](https://github.com/Shuang-su/guangcai/pull/31)。本条记录提交补充checkpoint与远端核验；其后按用户授权合并，合并SHA和最终远端状态另回读记录到Issue。
+
+[Issue #29](https://github.com/Shuang-su/guangcai/issues/29) 已更新为“V7.1.1 后台配置数据表、开发交接与真机验收”。顶部包含固定提交下载、数据含义、深圳引用JSON与接入步骤；正文完整保留新版12节性能机制。更新后回读26,623字符与准备正文完全一致。
+
+通过GitHub Contents API读取checkpoint中的Excel、JSON、交接README、验证JSON，均与本地逐字节一致。Excel为55,132字节，SHA-256 `429a6f8c44ed7c035bf048a2342ff86fa81f269994ac41f2aa6ebed616713174`；配置JSON为241,449字节，SHA-256 `8ca17a0ccd306c5bb13ec1f60d1448f8fff092b804dee2274fbc71b35a3c4a95`。
+
+第一次暂存因新增记录目录在稀疏检出定义外而被Git拒绝；仅对本次明确路径启用git add --sparse后正常提交。临时Git对象已打包校验并回存原对象库，临时alternate移除，原V6索引哈希不变。没有跳过钩子、重写历史或清理其他工作。
+
+补写完成记录时原卷剩余3.8MiB，小于本worktree索引4,590,225字节的临时写入需求，git add因磁盘不足失败且未产生新提交。将本worktree索引逐字节备份到Prism，用GIT_INDEX_FILE在Prism暂存并正常提交，提交后核验复制回原索引；对象打包流程相同。原V6索引独立保留，未修改全局临时目录或删除用户文件。
