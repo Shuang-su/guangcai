@@ -2,11 +2,13 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-## 当前开发交付候选：V7.1.2
+## 当前开发交付候选：V7.1.3 / v7-4
 
-**后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。现有性能文档的12项机制补充接入核对表；V7.1.2更换杯身思源宋体CN Bold与字框，复核23城并修正厦门、西安填色；更新独立V7预览，V6保持原部署。
+**后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 
-[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.2 预览](https://6ad3be04e1ca085185e3e395--guangcai-no1-china-v7.netlify.app/) · [开发交接文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [V7 Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [V7.1.2 PR #32](https://github.com/Shuang-su/guangcai/pull/32) · [V7.1.2验证与完成记录](docs/changes/20261018-v7.1.2-font-fill/completion.md)
+[V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.3 预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [实现 PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [验证与交付记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md)
+
+[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-4`，保留 `v7-1`～`v7-3`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
@@ -25,7 +27,7 @@ npm run mock:v7                 # http://127.0.0.1:5271/integration/
 
 V7.1.1 补充：当前深圳高清实际显示后才进入，稳定切城自动提清、左右邻城动态预载；正常材质替换按峰值额度核算，不因新旧图短暂叠加误降级。西安内部填色补齐为 v7-2，v7-1 保留回放。法线保留半浮点 X/Y、运行时重建 Z，环境反射释放用完的深度缓冲。每项触发条件、缓存、取消、预算、失败处理及测试见性能文档。
 
-V7.1.1验证：45基础+31V7单元，Chrome/WebKit各85项，玻璃53、加载50、分域6条；线上WebKit83项及24次高清城市/液态检查通过。独立交接包全新安装构建和31项测试通过，224构建文件与发布一致。详细证据在完成记录和 evidence/v7-corrections。iPhone13mini/iOS18连续30分钟、实际触感，以及Air/mini6上的V7视觉复测仍待用户验收。原5MiB/6秒目标未通过，不将桌面浏览器结果写成真机验收。
+V7.1.3发布验证：45项基础测试、33项V7测试，Chrome/WebKit消费者各85检查、花纸事务各44检查、城市各24轮及四版本还原通过；追加白瓷与杯碟高清问题各7检查、公网7检查通过。250个发布文件摘要和9个新资源下载哈希一致。10Mbps/100ms冷缓存三轮13.572～13.772秒、12,110,057字节，**原5MiB/6秒目标仍未达到**。iPhone13mini/iOS18连续30分钟、实际触感、Air/mini6上的V7视觉复测及正式COS接入待验收。各结果属于本次V7.1.3发布验证，后续文档修改不代表重新运行测试。
 
 ## V6 与历史站点
 
@@ -76,6 +78,9 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 | 4.2 预览 | `v4.2` | [花纹金底清洗](https://guangcai-no1-china-v4.netlify.app/) | `6acefdc52ef3d568cd9acedd` |
 | 4.3 预览 | `v4.3` | [北京主题与五款配色](https://guangcai-no1-china-v4.netlify.app/) | `6acf18984f3abc04fe3cab18` |
 | 5.4.2 独立预览 | 未打标签，源码 `156dc368` | [城市与自由创作 V5](https://guangcai-no1-china-v5.netlify.app/) | `6ad20c45a7780e55fedba3d7` |
+| 6.0.4 独立预览 | 未新增标签，源码 `833a8b3` | [V6 固定预览](https://6ad314a2a5e661a14e469026--guangcai-no1-china-v6.netlify.app/) | `6ad314a2a5e661a14e469026` |
+| 7.1.2 独立预览 | 未新增标签，源码 `6a9c4d3` | [V7.1.2 固定预览](https://6ad3be04e1ca085185e3e395--guangcai-no1-china-v7.netlify.app/) | `6ad3be04e1ca085185e3e395` |
+| 7.1.3 独立预览 | 未新增标签，源码 `3283d27` | [V7.1.3 固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) | `6ad4995927bf346abcf5fcf4` |
 
 Git 提交、PR 合并、版本标签与上线分别记录。3.0、4.0 已手动发布，`v3.0`、`v4.0` 标签指向各自已发布源码；后续修复使用新的 commit，不移动已有标签。现有站点未连接 Git 自动部署；推送、合并和打标签不会更新线上站点。V3、V4 使用独立网址，旧站继续保留。`v4.0` 固定在表中发布基线；后续纹饰修正对应源码 `591d8c56b0819143a2bdab454068fd30921a2977`、部署 `6acef244237630dba7fa87fe`，详见[部署与公网复核记录](docs/changes/20261014-fixed-relief-alignment/deployment.json)及[凹凸对照](https://guangcai-no1-china-v4.netlify.app/evidence.html#fixed-relief-alignment)。
 
@@ -94,15 +99,29 @@ npm --prefix guangcai-china-preview run dev -- --port 5208
 
 原版把命令中的目录改成 `guangcai-viewer`，使用不同端口。中国杯测试覆盖几何、浮点法线、固定图集、城市选择、二维控件与触感映射；V5.4.2 的 35 项应用测试、构建和浏览器检查见[完成记录](docs/changes/20261016-short-screen-lift/completion.md)。浏览器回归工具在各应用 `tools/` 下；根据实际运行端口设置 `QA_URL`，运行前确认输出位置，保留本轮结果，不以历史结果代替本轮验证。
 
-V7 常规构建不会重新生成母版资源；只有资源变动时才显式运行 `npm run textures:v7`，并核对来源哈希与派生物差异。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
+V7 常规构建使用已生成的版本化资源，不重新生成母版。资源变动使用对应新版本的生成器；V7.1.3 / v7-4 为 `node tools/v7/compile-v7-4.mjs`，随后运行 `node tools/v7/validate-v7-4.mjs`，并核对来源哈希与派生物差异。历史 `textures:v7` 属于v7-1制作流程，不要用它覆盖已发布资源。原稿及运行所需素材均在项目内；仅历史来源记录可能包含旧电脑绝对路径。
 
 ## 开发与发布
 
-1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，从 main 建立 `codex/<task>` 分支；存在其他修改时使用独立 worktree。
+1. 开始前检查 Git 根目录、分支、upstream、状态和 diff。每项功能关联 Issue，每个准备发布的小版本建立独立版本 Issue；从 main 建立 `codex/<task>` 分支，存在其他修改时使用独立 worktree。
 2. 在本仓库直接修改、验证并形成原子提交，例如 `fix(china): align porcelain at artwork boundary`。根据当前任务授权推送并创建关联 PR；未完成的功能保持 Draft。
 3. PR 审查和必要验证通过后按授权合并。原始历史补录已经保留为真实可达提交，不对既有分支强推或重写。
 4. 版本标签只在对应版本验证完成且获得授权后创建，不能移动已发布标签。现有标签为 `v1.0`、`v2.0`、`v2.1`、`v2.2`、`v3.0`、`v4.0`、`v4.1`、`v4.2`、`v4.3`；产品版本与普通开发提交分别管理，一个版本可包含多个提交。
 5. 发布仅使用用户已授权的目标站点。从已记录的 Git 提交构建，保存站点 ID、提交 SHA、构建命令、部署 ID、文件哈希及回读结果。`.netlify/` 和凭据只留本地，不入库。
+
+## 版本 Issue 与交接索引
+
+每个准备发布的小版本保留一个版本 Issue，标题采用 `V7.1.x：本版主题`，使用[版本记录模板](.github/ISSUE_TEMPLATE/version-release.md)。一个版本可关联多个功能/缺陷 Issue、提交和 PR。发布后的新修复进入下一版；原版本记录保留当时的范围、固定预览和验证结果。
+
+| 入口 | 记录内容 |
+| --- | --- |
+| [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) | 本版需求、实际改动、资源版本、关联PR、源码/部署/交付SHA、固定预览、验证和待验收项 |
+| [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) | 后台配置、12项性能机制、接口/COS/身份接入责任和各版本入口；更新公共说明时保留历史版本证据链接 |
+| [版本索引](VERSION_HISTORY.md) | 按版本查找Issue、PR、源码和实际部署；已发布记录不覆盖 |
+
+PR使用 `Refs #35` 这样的引用关联对应版本Issue。完成代码合并与部署后，补齐线上回读和设备验收结果；未完成项验证通过，或明确转入关联后续Issue并说明接收责任与验收条件后，再关闭版本Issue。不要让PR的自动关闭关键字提前结束仍待验收的版本记录。
+
+发布时同步仓库首页、应用README和版本索引。此前版本继续保留原PR和完成记录；若补建历史Issue，明确标注“历史补录”及补录日期，不倒签日期或用新结果替代当时证据。
 
 ## 历史完整性
 

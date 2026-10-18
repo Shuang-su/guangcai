@@ -2,7 +2,9 @@
 
 [后台配置 Excel](integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](integration/backend-handoff/backend-config.json) · [字段、录入与扩展说明](integration/backend-handoff/README.md)。后台同事先读此入口，再按性能文档逐项接入；表格不是新增运行时接口。
 
-[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [V7.1.3 固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)
+[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [V7.1.3 固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)
+
+每个准备发布的小版本使用独立版本Issue，集中保存本版需求、PR、固定预览和验收；#29维护跨版本接入说明。历史发布与源码在[版本索引](../VERSION_HISTORY.md)，后续按[版本记录约定](../README.md#版本-issue-与交接索引)维护。
 
 V7.1.3 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；当前城市高清真正显示后进入，切城后自动提清；按需解码与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
 
@@ -30,11 +32,11 @@ API与资源地址通过公开 `runtime-config.js` 配置；公司身份、数�
 
 V6 使用一套模型、城市材质与创作状态，分为三个入口：
 
-- `/`：消费者页面。23 城、六组思源宋体 CN Bold 祝福语、五个配色预设及自由颜色／明度／质感调整；默认深圳＋同心金＋开放包容。
+- `/`：消费者页面。23 城、六组祝福语、五个配色预设及自由颜色／明度／质感调整；默认深圳＋同心金＋开放包容。V6使用阿里妈妈东方大楷，思源宋体CN Bold从V7.1.2引入。
 - `/dev/`：完整开发工作台。保留原 26 个图样选项和所有调试、背景、材质及视角功能，另加 23 城新稿。
 - `/audit/`：Glass-HQ WebGL2／原 WebGPU 对比、23 城原稿／SVG／填色，以及六组字框证明图。
 
-当前源码关联 [Issue #27](https://github.com/Shuang-su/guangcai/issues/27)，发布状态以 [版本索引](../VERSION_HISTORY.md) 和 [完成记录](../docs/changes/20261017-v6-webgl2-studio/completion.md) 为准。V5 独立站保留历史部署，不由本次构建重发。
+V6历史开发关联 [Issue #27](https://github.com/Shuang-su/guangcai/issues/27)，当时发布状态以 [版本索引](../VERSION_HISTORY.md) 和 [完成记录](../docs/changes/20261017-v6-webgl2-studio/completion.md) 为准。V5 独立站保留历史部署，不由本次构建重发。
 
 ## 创作交互
 
@@ -150,7 +152,7 @@ QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
 
 六组杯身文字统一为思源宋体 CN Bold（700），字框与间距对齐用户SVG；菜单字体不变。23城原稿与指定目录逐字节一致。逐城检查确认厦门树丛开口漏填、西安右城墙3个微小空点，修正仅增加G覆盖；所有R描线、法线、原稿和旧资源保持不变。
 
-[字体与城市审核记录](evidence/v7.1.2/README.md) · [当前后台配置表](integration/backend-handoff/README.md)。常规build使用已生成的v7-3；不要重跑V6/v7-1制作命令覆盖历史资源。制作复现步骤见审核记录。
+[字体与城市审核记录](evidence/v7.1.2/README.md) · [当前后台配置表](integration/backend-handoff/README.md)。V7.1.2发布时使用已生成的v7-3，当前V7.1.3默认使用v7-4；不要重跑V6/v7-1制作命令覆盖历史资源。制作复现步骤见审核记录。
 
 ## V7.1.3 花纸与把手核对
 
