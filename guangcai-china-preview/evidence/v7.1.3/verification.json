@@ -1,0 +1,81 @@
+{
+  "productVersion": "7.1.3",
+  "resourceReleaseId": "v7-4",
+  "baselineCommit": "1e2ec499720b37deb4648fb4487d3abbf25ef2a5",
+  "unitTests": {
+    "base": 45,
+    "v7": 33
+  },
+  "browser": {
+    "chrome": {
+      "passed": true,
+      "report": "qa/chrome/report.json"
+    },
+    "webkit": {
+      "passed": true,
+      "report": "qa/webkit/report.json"
+    },
+    "city-chrome": {
+      "passed": true,
+      "report": "qa/city-chrome/report.json"
+    },
+    "city-webkit": {
+      "passed": true,
+      "report": "qa/city-webkit/report.json"
+    },
+    "floral": {
+      "passed": true,
+      "report": "qa/floral/report.json"
+    },
+    "floral-webkit": {
+      "passed": true,
+      "report": "qa/floral-webkit/report.json"
+    },
+    "startup": {
+      "passed": true,
+      "report": "qa/startup/startup-qa.json"
+    },
+    "retry": {
+      "passed": true,
+      "report": "qa/retry/report.json"
+    },
+    "liquid": {
+      "passed": true,
+      "report": "qa/liquid/liquid-qa.json"
+    },
+    "split": {
+      "passed": true,
+      "report": "qa/split/report.json"
+    },
+    "artwork": {
+      "passed": true,
+      "report": "qa/artwork/report.json"
+    },
+    "performance": {
+      "passed": true,
+      "report": "qa/performance/report.json"
+    }
+  },
+  "originalPerformanceTarget": {
+    "bytes": 5242880,
+    "readyMs": 6000,
+    "passed": false
+  },
+  "controlledNetwork": {
+    "mbps": 10,
+    "rttMs": 100,
+    "readyMs": [
+      13493,
+      13448,
+      13471
+    ],
+    "encodedBytes": [
+      12109368,
+      12109368,
+      12109368
+    ]
+  },
+  "physicalIPhoneAcceptance": "pending",
+  "productionCOSAndCompanyIdentity": "pending",
+  "handleGeometryChanged": false
+}

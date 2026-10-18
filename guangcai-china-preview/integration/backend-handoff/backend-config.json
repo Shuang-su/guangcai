@@ -1,14 +1,245 @@
 {
   "format": "guangcai-backend-handoff-v1",
-  "productVersion": "7.1.2",
-  "sourceCommit": "3dee2885886faf4b42f01618593ced0e69b964be",
-  "resourceReleaseId": "v7-3",
+  "productVersion": "7.1.3",
+  "sourceCommit": "3b7b509efe95034725ee655cc217badbc45f65bb",
+  "resourceReleaseId": "v7-4",
   "modelVersion": "china-cup-v6",
   "recipeVersion": "porcelain-city-v6",
-  "catalogPath": "releases/v7-3/catalog.json",
-  "manifestPath": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+  "catalogPath": "releases/v7-4/catalog.json",
+  "manifestPath": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
   "previewBase": "https://guangcai-no1-china-v7.netlify.app/",
   "notice": "配置参考导出，不新增前端接口；城市拓展JSON通过manifest与resourceIds引用完整资源描述。",
+  "fixedMapping": "source-layout-v4",
+  "fixedCorrection": {
+    "releaseId": "v7-4",
+    "fixedMapping": "source-layout-v4",
+    "source": {
+      "sourceFile": "assets/masters/v3/body.png",
+      "sourceSha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+      "size": [
+        637,
+        1534
+      ],
+      "holes": [
+        {
+          "id": "upper",
+          "seed": [
+            315,
+            180
+          ],
+          "bounds": [
+            210,
+            85,
+            426,
+            308
+          ]
+        },
+        {
+          "id": "lower",
+          "seed": [
+            315,
+            1010
+          ],
+          "bounds": [
+            210,
+            910,
+            427,
+            1118
+          ]
+        }
+      ],
+      "edgeRadius": 2,
+      "normalEdgeRadius": 4,
+      "goldRGB": [
+        255,
+        200,
+        70
+      ],
+      "roughness": 56,
+      "metalness": 255
+    },
+    "counts": [
+      {
+        "id": "upper",
+        "pixels": 38940
+      },
+      {
+        "id": "lower",
+        "pixels": 35604
+      }
+    ],
+    "correctionSha256": "0b86869a58b7633208d942c5d86a75f770241aad74c1e6bbc3d5520dce4ae953",
+    "normalCorrectionSha256": "22bbe0075131ac6755fbc81be48b30bbda5cee440bd4da4c2b72b943dd2fcba4",
+    "originalInputs": {
+      "color": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "roughness": "bbdff3a1f74fe6c269f378eeb380a9827f230715c5960bd307f1e6cc98bd0353",
+      "metalness": "9e0327987000d410ffcf21db48e99ea376b4c6bcd346c7df60c1d598dcfad3db",
+      "normal": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db"
+    },
+    "changedColorPixels": 201762,
+    "changedNormalPixels": 209157,
+    "generated": [
+      {
+        "tier": "light",
+        "w": 425,
+        "h": 1024,
+        "assets": [
+          {
+            "id": "fixed-body-light-color",
+            "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4",
+            "bytes": 149578
+          },
+          {
+            "id": "fixed-body-light-orm",
+            "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904",
+            "bytes": 112240
+          },
+          {
+            "id": "fixed-body-light-normal",
+            "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9",
+            "bytes": 910683
+          }
+        ]
+      },
+      {
+        "tier": "standard",
+        "w": 850,
+        "h": 2048,
+        "assets": [
+          {
+            "id": "fixed-body-standard-color",
+            "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474",
+            "bytes": 386446
+          },
+          {
+            "id": "fixed-body-standard-orm",
+            "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f",
+            "bytes": 281146
+          },
+          {
+            "id": "fixed-body-standard-normal",
+            "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06",
+            "bytes": 3449729
+          }
+        ]
+      },
+      {
+        "tier": "detail",
+        "w": 1024,
+        "h": 2466,
+        "assets": [
+          {
+            "id": "fixed-body-detail-color",
+            "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245",
+            "bytes": 475446
+          },
+          {
+            "id": "fixed-body-detail-orm",
+            "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b",
+            "bytes": 281864
+          },
+          {
+            "id": "fixed-body-detail-normal",
+            "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
+            "bytes": 4845924
+          }
+        ]
+      }
+    ],
+    "unmodified": [
+      "all city channels",
+      "all slogan masks",
+      "handle textures",
+      "saucer atlas",
+      "porcelain collar geometry"
+    ],
+    "normalOrientation": "HFN1 RGBA16F bottom-up; runtime RG16F; mirrored tangent basis from transformed UV derivatives"
+  },
+  "handleDimensions": {
+    "units": "mm unless stated",
+    "qualification": "Computed model dimensions; source defaults are photo-based estimates, not caliper measurements or production CAD",
+    "body": {
+      "height": 103,
+      "diameter": 86,
+      "centerHeight": 51.5
+    },
+    "handle": {
+      "centerPlaneZ": 0,
+      "nominalWidth": 14,
+      "nominalThickness": 4.8,
+      "centerlineReach": 35,
+      "actualOuterReach": 37.441802978515625,
+      "localBounds": {
+        "min": [
+          43.25,
+          31.040000915527344,
+          -7.449999809265137
+        ],
+        "max": [
+          80.44180297851562,
+          91.78666687011719,
+          7.449999809265137
+        ]
+      },
+      "actualWidth": 14.899999618530273,
+      "actualVerticalSpan": 60.746665954589844,
+      "upperRootCenter": 89.095,
+      "lowerRootCenter": 33.475,
+      "rootCenterSeparation": 55.62,
+      "rootMidpoint": 61.285,
+      "rootMidpointAboveCupCenter": 9.784999999999997,
+      "topMargin": 11.213333129882812,
+      "bottomMargin": 31.040000915527344,
+      "collars": [
+        {
+          "localCenterHeight": 89.095,
+          "boundsRelativeToCenter": {
+            "min": [
+              41.87636184692383,
+              -6.291999816894531,
+              -8.119999885559082
+            ],
+            "max": [
+              45.20000076293945,
+              3.7920000553131104,
+              8.119999885559082
+            ]
+          },
+          "width": 16.239999771118164
+        },
+        {
+          "localCenterHeight": 33.475,
+          "boundsRelativeToCenter": {
+            "min": [
+              41.87636184692383,
+              -3.7920000553131104,
+              -8.119999885559082
+            ],
+            "max": [
+              45.20000076293945,
+              3.7920000553131104,
+              8.119999885559082
+            ]
+          },
+          "width": 16.239999771118164
+        }
+      ]
+    },
+    "floral": {
+      "angleBoundsDegrees": [
+        -30,
+        27
+      ],
+      "widthDegrees": 57,
+      "arcWidth": 42.77801996638102,
+      "centerDegrees": -1.5,
+      "handleOffsetFromFloralCenterDegrees": 1.5,
+      "handleOffsetAlongWallArc": 1.1257373675363425,
+      "leftArcMarginFromHandle": 15.51474735072685,
+      "rightArcMarginFromHandle": 13.263272615654163
+    },
+    "decision": "No handle geometry changed: handle is symmetric about the cup radial plane. Existing floral sector is 57 degrees (-30 to +27), so its centre is 1.5 degrees / 1.126 mm offset. User requested inspection; approved V7.1.3 keeps horizontal floral extent and model version. Photos confirm broad proportions, not absolute millimetre precision."
+  },
   "typography": {
     "font": {
       "file": "assets/source/v7.1.2/fonts/SourceHanSerifCN-Bold.otf",
@@ -305,14 +536,15 @@
       "label": "资源发布版本",
       "type": "string",
       "required": true,
-      "default": "v7-3",
+      "default": "v7-4",
       "allowed": [
         "v7-1",
         "v7-2",
-        "v7-3"
+        "v7-3",
+        "v7-4"
       ],
       "storage": "作品 DesignConfig",
-      "note": "默认v7-3；旧作品v7-1/v7-2按原版本回放"
+      "note": "默认v7-4；旧作品v7-1/v7-2/v7-3按原版本回放"
     },
     {
       "path": "modelVersion",
@@ -534,6 +766,19 @@
       "note": "归一化UV，左下原点；不是像素坐标。"
     },
     {
+      "path": "fixedMapping",
+      "label": "固定花纸映射版本",
+      "type": "string",
+      "required": false,
+      "default": "source-layout-v3",
+      "allowed": [
+        "source-layout-v3",
+        "source-layout-v4"
+      ],
+      "storage": "CDN manifest",
+      "note": "v7-4声明source-layout-v4：三部件花纹镜像，杯身花纹底边0.12 mm。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。"
+    },
+    {
       "path": "fixed.atlas",
       "label": "花纸图集分区",
       "type": "object",
@@ -578,10 +823,10 @@
       "extension": {
         "cityId": "shanghai",
         "name": "上海",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "shanghai-thumbnail",
           "light": {
@@ -622,10 +867,10 @@
       "extension": {
         "cityId": "urumqi",
         "name": "乌鲁木齐",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "urumqi-thumbnail",
           "light": {
@@ -666,10 +911,10 @@
       "extension": {
         "cityId": "beijing",
         "name": "北京",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "beijing-thumbnail",
           "light": {
@@ -710,10 +955,10 @@
       "extension": {
         "cityId": "nanjing",
         "name": "南京",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "nanjing-thumbnail",
           "light": {
@@ -754,10 +999,10 @@
       "extension": {
         "cityId": "nanchang",
         "name": "南昌",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "nanchang-thumbnail",
           "light": {
@@ -798,10 +1043,10 @@
       "extension": {
         "cityId": "xiamen",
         "name": "厦门",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "xiamen-thumbnail",
           "light": {
@@ -842,10 +1087,10 @@
       "extension": {
         "cityId": "hohhot",
         "name": "呼和浩特",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "hohhot-thumbnail",
           "light": {
@@ -886,10 +1131,10 @@
       "extension": {
         "cityId": "harbin",
         "name": "哈尔滨",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "harbin-thumbnail",
           "light": {
@@ -930,10 +1175,10 @@
       "extension": {
         "cityId": "tianjin",
         "name": "天津",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "tianjin-thumbnail",
           "light": {
@@ -974,10 +1219,10 @@
       "extension": {
         "cityId": "taiyuan",
         "name": "太原",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "taiyuan-thumbnail",
           "light": {
@@ -1018,10 +1263,10 @@
       "extension": {
         "cityId": "guangzhou",
         "name": "广州",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "guangzhou-thumbnail",
           "light": {
@@ -1062,10 +1307,10 @@
       "extension": {
         "cityId": "chengdu",
         "name": "成都",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "chengdu-thumbnail",
           "light": {
@@ -1106,10 +1351,10 @@
       "extension": {
         "cityId": "jingdezhen",
         "name": "景德镇",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "jingdezhen-thumbnail",
           "light": {
@@ -1150,10 +1395,10 @@
       "extension": {
         "cityId": "hangzhou",
         "name": "杭州",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "hangzhou-thumbnail",
           "light": {
@@ -1194,10 +1439,10 @@
       "extension": {
         "cityId": "wuhan",
         "name": "武汉",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "wuhan-thumbnail",
           "light": {
@@ -1238,10 +1483,10 @@
       "extension": {
         "cityId": "shenyang",
         "name": "沈阳",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "shenyang-thumbnail",
           "light": {
@@ -1282,10 +1527,10 @@
       "extension": {
         "cityId": "shenzhen",
         "name": "深圳",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "shenzhen-thumbnail",
           "light": {
@@ -1326,10 +1571,10 @@
       "extension": {
         "cityId": "shijiazhuang",
         "name": "石家庄",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "shijiazhuang-thumbnail",
           "light": {
@@ -1370,10 +1615,10 @@
       "extension": {
         "cityId": "xian",
         "name": "西安",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "xian-thumbnail",
           "light": {
@@ -1414,10 +1659,10 @@
       "extension": {
         "cityId": "zhengzhou",
         "name": "郑州",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "zhengzhou-thumbnail",
           "light": {
@@ -1458,10 +1703,10 @@
       "extension": {
         "cityId": "chongqing",
         "name": "重庆",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "chongqing-thumbnail",
           "light": {
@@ -1502,10 +1747,10 @@
       "extension": {
         "cityId": "changchun",
         "name": "长春",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "changchun-thumbnail",
           "light": {
@@ -1546,10 +1791,10 @@
       "extension": {
         "cityId": "qingdao",
         "name": "青岛",
-        "resourceReleaseId": "v7-3",
+        "resourceReleaseId": "v7-4",
         "modelVersion": "china-cup-v6",
         "recipeVersion": "porcelain-city-v6",
-        "manifestUrl": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+        "manifestUrl": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
         "resourceIds": {
           "thumbnail": "qingdao-thumbnail",
           "light": {
@@ -1843,7 +2088,7 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     },
     {
       "order": 2,
@@ -1861,7 +2106,7 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     },
     {
       "order": 3,
@@ -1879,7 +2124,7 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     },
     {
       "order": 4,
@@ -1897,7 +2142,7 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     },
     {
       "order": 5,
@@ -1915,7 +2160,7 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     },
     {
       "order": 6,
@@ -1933,19 +2178,19 @@
       "fontFamily": "Source Han Serif CN",
       "fontWeight": 700,
       "fontSha256": "04cd127eef790a7bf1b6320586cbd8282a520005f0fcde7296b6612c4c0a6468",
-      "resourceReleaseId": "v7-3"
+      "resourceReleaseId": "v7-4"
     }
   ],
   "resources": [
     {
       "id": "fixed-body-light-color",
-      "url": "../v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
-      "sha256": "8c2bf9cbe44a3d18658ede38822ce091abbcd9cfb3dbcf07557edede50cb97e7",
-      "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "url": "assets/fixed-body-light-color-f4e419cd29c55ac9.webp",
+      "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4",
+      "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
       "encoding": "webp",
       "width": 425,
       "height": 1024,
-      "bytes": 151206,
+      "bytes": 149578,
       "decodedBytes": 1740800,
       "gpuBytes": 2321067,
       "channels": 4,
@@ -1953,21 +2198,21 @@
       "owner": "body",
       "purpose": "baseColor",
       "tier": "light",
-      "publishPath": "releases/v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-light-color-f4e419cd29c55ac9.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-light-color-f4e419cd29c55ac9.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 1740800,
       "runtimeGpuBytes": 2321067
     },
     {
       "id": "fixed-body-light-normal",
-      "url": "../v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
-      "sha256": "fc1a43461e4250778580bc90584a118e7ce2a694864bf5d10fa539887fa6058d",
-      "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+      "url": "assets/fixed-body-light-normal-21b9894d6ea0354a.hfn.gz",
+      "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9",
+      "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
       "encoding": "hfn1-gzip",
       "width": 425,
       "height": 1024,
-      "bytes": 915743,
+      "bytes": 910683,
       "decodedBytes": 3481600,
       "gpuBytes": 4642134,
       "channels": 4,
@@ -1975,21 +2220,21 @@
       "owner": "body",
       "purpose": "normal",
       "tier": "light",
-      "publishPath": "releases/v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
+      "publishPath": "releases/v7-4/assets/fixed-body-light-normal-21b9894d6ea0354a.hfn.gz",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-light-normal-21b9894d6ea0354a.hfn.gz",
       "runtimeFormat": "RG16F",
       "runtimeRetainedBytes": 1740800,
       "runtimeGpuBytes": 2321067
     },
     {
       "id": "fixed-body-light-orm",
-      "url": "../v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
-      "sha256": "038b21ee36c530210af1767d212b5fae5a293adeffbb19dd2c94046e7a89bbe2",
-      "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+      "url": "assets/fixed-body-light-orm-489ca56853301382.webp",
+      "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904",
+      "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
       "encoding": "webp",
       "width": 425,
       "height": 1024,
-      "bytes": 113944,
+      "bytes": 112240,
       "decodedBytes": 1740800,
       "gpuBytes": 2321067,
       "channels": 4,
@@ -1997,21 +2242,21 @@
       "owner": "body",
       "purpose": "orm",
       "tier": "light",
-      "publishPath": "releases/v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-light-orm-489ca56853301382.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-light-orm-489ca56853301382.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 1740800,
       "runtimeGpuBytes": 2321067
     },
     {
       "id": "fixed-body-standard-color",
-      "url": "../v7-1/assets/fixed-body-standard-color-6f9be4cd52c23e29.webp",
-      "sha256": "6f9be4cd52c23e293a2f608eabb4106b22fdabf46f7583ade448798e662ccdc0",
-      "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "url": "assets/fixed-body-standard-color-bb91f401684f96e5.webp",
+      "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474",
+      "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
       "encoding": "webp",
       "width": 850,
       "height": 2048,
-      "bytes": 389520,
+      "bytes": 386446,
       "decodedBytes": 6963200,
       "gpuBytes": 9284267,
       "channels": 4,
@@ -2019,21 +2264,21 @@
       "owner": "body",
       "purpose": "baseColor",
       "tier": "standard",
-      "publishPath": "releases/v7-1/assets/fixed-body-standard-color-6f9be4cd52c23e29.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-standard-color-6f9be4cd52c23e29.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-standard-color-bb91f401684f96e5.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-standard-color-bb91f401684f96e5.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 6963200,
       "runtimeGpuBytes": 9284267
     },
     {
       "id": "fixed-body-standard-normal",
-      "url": "../v7-1/assets/fixed-body-standard-normal-433099d227c03917.hfn.gz",
-      "sha256": "433099d227c039173c918048bfdf3c3d4b9056d12eb864ad795e8c56891d7022",
-      "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+      "url": "assets/fixed-body-standard-normal-f4b16839dd597ac4.hfn.gz",
+      "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06",
+      "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
       "encoding": "hfn1-gzip",
       "width": 850,
       "height": 2048,
-      "bytes": 3466614,
+      "bytes": 3449729,
       "decodedBytes": 13926400,
       "gpuBytes": 18568534,
       "channels": 4,
@@ -2041,21 +2286,21 @@
       "owner": "body",
       "purpose": "normal",
       "tier": "standard",
-      "publishPath": "releases/v7-1/assets/fixed-body-standard-normal-433099d227c03917.hfn.gz",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-standard-normal-433099d227c03917.hfn.gz",
+      "publishPath": "releases/v7-4/assets/fixed-body-standard-normal-f4b16839dd597ac4.hfn.gz",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-standard-normal-f4b16839dd597ac4.hfn.gz",
       "runtimeFormat": "RG16F",
       "runtimeRetainedBytes": 6963200,
       "runtimeGpuBytes": 9284267
     },
     {
       "id": "fixed-body-standard-orm",
-      "url": "../v7-1/assets/fixed-body-standard-orm-4738736a95e92256.webp",
-      "sha256": "4738736a95e92256e14a8e98e08ecc9a47cabefe79c154082ac221db3b0aa629",
-      "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+      "url": "assets/fixed-body-standard-orm-4be928717d848cca.webp",
+      "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f",
+      "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
       "encoding": "webp",
       "width": 850,
       "height": 2048,
-      "bytes": 284336,
+      "bytes": 281146,
       "decodedBytes": 6963200,
       "gpuBytes": 9284267,
       "channels": 4,
@@ -2063,21 +2308,21 @@
       "owner": "body",
       "purpose": "orm",
       "tier": "standard",
-      "publishPath": "releases/v7-1/assets/fixed-body-standard-orm-4738736a95e92256.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-standard-orm-4738736a95e92256.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-standard-orm-4be928717d848cca.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-standard-orm-4be928717d848cca.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 6963200,
       "runtimeGpuBytes": 9284267
     },
     {
       "id": "fixed-body-detail-color",
-      "url": "../v7-1/assets/fixed-body-detail-color-667b175ba4181dce.webp",
-      "sha256": "667b175ba4181dce310c7214424116909e0d2fa60aa63ac1c78bf6d63da1edd1",
-      "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+      "url": "assets/fixed-body-detail-color-55458633cf881236.webp",
+      "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245",
+      "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
       "encoding": "webp",
       "width": 1024,
       "height": 2466,
-      "bytes": 479504,
+      "bytes": 475446,
       "decodedBytes": 10100736,
       "gpuBytes": 13467648,
       "channels": 4,
@@ -2085,21 +2330,21 @@
       "owner": "body",
       "purpose": "baseColor",
       "tier": "detail",
-      "publishPath": "releases/v7-1/assets/fixed-body-detail-color-667b175ba4181dce.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-detail-color-667b175ba4181dce.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-detail-color-55458633cf881236.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-detail-color-55458633cf881236.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 10100736,
       "runtimeGpuBytes": 13467648
     },
     {
       "id": "fixed-body-detail-normal",
-      "url": "../v7-1/assets/fixed-body-detail-normal-35f734f1f0e18386.hfn.gz",
-      "sha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
-      "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+      "url": "assets/fixed-body-detail-normal-49b67ebbd3628109.hfn.gz",
+      "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
+      "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
       "encoding": "hfn1-gzip",
       "width": 1024,
       "height": 2466,
-      "bytes": 4959453,
+      "bytes": 4845924,
       "decodedBytes": 20201472,
       "gpuBytes": 26935296,
       "channels": 4,
@@ -2107,21 +2352,21 @@
       "owner": "body",
       "purpose": "normal",
       "tier": "detail",
-      "publishPath": "releases/v7-1/assets/fixed-body-detail-normal-35f734f1f0e18386.hfn.gz",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-detail-normal-35f734f1f0e18386.hfn.gz",
+      "publishPath": "releases/v7-4/assets/fixed-body-detail-normal-49b67ebbd3628109.hfn.gz",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-detail-normal-49b67ebbd3628109.hfn.gz",
       "runtimeFormat": "RG16F",
       "runtimeRetainedBytes": 10100736,
       "runtimeGpuBytes": 13467648
     },
     {
       "id": "fixed-body-detail-orm",
-      "url": "../v7-1/assets/fixed-body-detail-orm-2f29c84c7465fc11.webp",
-      "sha256": "2f29c84c7465fc11947162789e344dd257faf56c173546c8d47056e341b54681",
-      "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+      "url": "assets/fixed-body-detail-orm-a117af74f734bf7d.webp",
+      "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b",
+      "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
       "encoding": "webp",
       "width": 1024,
       "height": 2466,
-      "bytes": 282582,
+      "bytes": 281864,
       "decodedBytes": 10100736,
       "gpuBytes": 13467648,
       "channels": 4,
@@ -2129,8 +2374,8 @@
       "owner": "body",
       "purpose": "orm",
       "tier": "detail",
-      "publishPath": "releases/v7-1/assets/fixed-body-detail-orm-2f29c84c7465fc11.webp",
-      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-1/assets/fixed-body-detail-orm-2f29c84c7465fc11.webp",
+      "publishPath": "releases/v7-4/assets/fixed-body-detail-orm-a117af74f734bf7d.webp",
+      "previewUrl": "https://guangcai-no1-china-v7.netlify.app/releases/v7-4/assets/fixed-body-detail-orm-a117af74f734bf7d.webp",
       "runtimeFormat": "RGBA8",
       "runtimeRetainedBytes": 10100736,
       "runtimeGpuBytes": 13467648
@@ -3325,7 +3570,7 @@
     },
     {
       "id": "xiamen-light-mask",
-      "url": "assets/xiamen-light-mask-43538debb37bd826.webp",
+      "url": "../v7-3/assets/xiamen-light-mask-43538debb37bd826.webp",
       "sha256": "43538debb37bd8265ff918e4e42f28c77124e94e95159ba5bc80f143c361d6cf",
       "sourceSha256": "ee68b1a111837996d96fba0774a432938cabf682358fc288787ae1a05991a1b6",
       "encoding": "webp",
@@ -3369,7 +3614,7 @@
     },
     {
       "id": "xiamen-standard-mask",
-      "url": "assets/xiamen-standard-mask-403c47be25586d7a.webp",
+      "url": "../v7-3/assets/xiamen-standard-mask-403c47be25586d7a.webp",
       "sha256": "403c47be25586d7a21c449c260d4f035e121746385c468e4a2f82843c91d92b9",
       "sourceSha256": "f68612cebb63411e052c72bc695c78a51e9ef404a5da45aab71d4e4ac9de6d30",
       "encoding": "webp",
@@ -3413,7 +3658,7 @@
     },
     {
       "id": "xiamen-detail-mask",
-      "url": "assets/xiamen-detail-mask-7e7d2ac8b97d19f8.webp",
+      "url": "../v7-3/assets/xiamen-detail-mask-7e7d2ac8b97d19f8.webp",
       "sha256": "7e7d2ac8b97d19f8cb09377952d34074d35422fda354872913e8e765af287549",
       "sourceSha256": "72647e9af88e0e15fb4fe898b0f8a9877c2d5c4d8355c669b635433811f2c484",
       "encoding": "webp",
@@ -5327,7 +5572,7 @@
     },
     {
       "id": "xian-light-mask",
-      "url": "assets/xian-light-mask-c5024f591539dc71.webp",
+      "url": "../v7-3/assets/xian-light-mask-c5024f591539dc71.webp",
       "sha256": "c5024f591539dc7123cac1cf19e119bf146d59fcb5b249dd3e581ec1c1c3a89e",
       "sourceSha256": "3ac72d0b8185245a2ba28118e5c3b6029ccc11dbad55b65a2073d0a1c98fbedb",
       "encoding": "webp",
@@ -5371,7 +5616,7 @@
     },
     {
       "id": "xian-standard-mask",
-      "url": "assets/xian-standard-mask-6765eb28884cba73.webp",
+      "url": "../v7-3/assets/xian-standard-mask-6765eb28884cba73.webp",
       "sha256": "6765eb28884cba73b5aeab4fb4a93bbc8d6ef3478c2f40e13ac5341e8374a071",
       "sourceSha256": "25823c1deb22e635369d3415670304ca60e748e4974fb19b74a92237e0f1d207",
       "encoding": "webp",
@@ -5415,7 +5660,7 @@
     },
     {
       "id": "xian-detail-mask",
-      "url": "assets/xian-detail-mask-2fec346956d39c3b.webp",
+      "url": "../v7-3/assets/xian-detail-mask-2fec346956d39c3b.webp",
       "sha256": "2fec346956d39c3bcc25967e818c297c9927383fcfc05ce6e33418328a563fc2",
       "sourceSha256": "3d4926de6a16340bffa1d2fd2389f10863d78e3b743d82d6fe0468f9237fcfb8",
       "encoding": "webp",
@@ -6075,7 +6320,7 @@
     },
     {
       "id": "slogan-open",
-      "url": "assets/slogan-open-d0dc0df725a844be.webp",
+      "url": "../v7-3/assets/slogan-open-d0dc0df725a844be.webp",
       "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
       "sourceSha256": "4bb4fc55916758d5253a91cf40d8a62474733ff293045e4c4ae9e397be8df178",
       "encoding": "webp",
@@ -6097,7 +6342,7 @@
     },
     {
       "id": "slogan-innovation",
-      "url": "assets/slogan-innovation-0c31d18458db52dd.webp",
+      "url": "../v7-3/assets/slogan-innovation-0c31d18458db52dd.webp",
       "sha256": "0c31d18458db52dd67f18cb0a7a94e82a0c5e934f4b629664994b37075798556",
       "sourceSha256": "d9f0655b57e762ccb1bc2d8fabda1e2e10169d750927da929ca3a29165ede2c8",
       "encoding": "webp",
@@ -6119,7 +6364,7 @@
     },
     {
       "id": "slogan-cooperation",
-      "url": "assets/slogan-cooperation-e2c5f6b534591635.webp",
+      "url": "../v7-3/assets/slogan-cooperation-e2c5f6b534591635.webp",
       "sha256": "e2c5f6b534591635051fa826c08b3b55e13bbecb42e6a2e2a25c5fe931181fe9",
       "sourceSha256": "2999d4de9baa2231d20e6ba096a3026940b1f21588704f88ed86effd5ff4c693",
       "encoding": "webp",
@@ -6141,7 +6386,7 @@
     },
     {
       "id": "slogan-sharing",
-      "url": "assets/slogan-sharing-7d2d7bf570a46ce8.webp",
+      "url": "../v7-3/assets/slogan-sharing-7d2d7bf570a46ce8.webp",
       "sha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
       "sourceSha256": "b088533e404deb956a0455a9f7651deb7e1dfa87924b32826f07a6c77a999466",
       "encoding": "webp",
@@ -6163,7 +6408,7 @@
     },
     {
       "id": "slogan-together",
-      "url": "assets/slogan-together-7e3a2c69d745a00f.webp",
+      "url": "../v7-3/assets/slogan-together-7e3a2c69d745a00f.webp",
       "sha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
       "sourceSha256": "103598f5e5ce7db1538f361e5661b7ee78c8f35365dfd615bd907387d25b7024",
       "encoding": "webp",
@@ -6185,7 +6430,7 @@
     },
     {
       "id": "slogan-ocean",
-      "url": "assets/slogan-ocean-4fcdcbb818dbd1a2.webp",
+      "url": "../v7-3/assets/slogan-ocean-4fcdcbb818dbd1a2.webp",
       "sha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
       "sourceSha256": "0becf213da9cccd311b61d044d08f29ac420ee2845dd4e9efe9b53c53e822bd3",
       "encoding": "webp",
@@ -6233,13 +6478,13 @@
       "light": {
         "baseColor": {
           "id": "fixed-body-light-color",
-          "url": "../v7-1/assets/fixed-body-light-color-8c2bf9cbe44a3d18.webp",
-          "sha256": "8c2bf9cbe44a3d18658ede38822ce091abbcd9cfb3dbcf07557edede50cb97e7",
-          "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+          "url": "assets/fixed-body-light-color-f4e419cd29c55ac9.webp",
+          "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4",
+          "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
           "encoding": "webp",
           "width": 425,
           "height": 1024,
-          "bytes": 151206,
+          "bytes": 149578,
           "decodedBytes": 1740800,
           "gpuBytes": 2321067,
           "channels": 4,
@@ -6247,13 +6492,13 @@
         },
         "normal": {
           "id": "fixed-body-light-normal",
-          "url": "../v7-1/assets/fixed-body-light-normal-fc1a43461e425077.hfn.gz",
-          "sha256": "fc1a43461e4250778580bc90584a118e7ce2a694864bf5d10fa539887fa6058d",
-          "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+          "url": "assets/fixed-body-light-normal-21b9894d6ea0354a.hfn.gz",
+          "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9",
+          "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
           "encoding": "hfn1-gzip",
           "width": 425,
           "height": 1024,
-          "bytes": 915743,
+          "bytes": 910683,
           "decodedBytes": 3481600,
           "gpuBytes": 4642134,
           "channels": 4,
@@ -6261,13 +6506,13 @@
         },
         "orm": {
           "id": "fixed-body-light-orm",
-          "url": "../v7-1/assets/fixed-body-light-orm-038b21ee36c53021.webp",
-          "sha256": "038b21ee36c530210af1767d212b5fae5a293adeffbb19dd2c94046e7a89bbe2",
-          "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+          "url": "assets/fixed-body-light-orm-489ca56853301382.webp",
+          "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904",
+          "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
           "encoding": "webp",
           "width": 425,
           "height": 1024,
-          "bytes": 113944,
+          "bytes": 112240,
           "decodedBytes": 1740800,
           "gpuBytes": 2321067,
           "channels": 4,
@@ -6277,13 +6522,13 @@
       "standard": {
         "baseColor": {
           "id": "fixed-body-standard-color",
-          "url": "../v7-1/assets/fixed-body-standard-color-6f9be4cd52c23e29.webp",
-          "sha256": "6f9be4cd52c23e293a2f608eabb4106b22fdabf46f7583ade448798e662ccdc0",
-          "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+          "url": "assets/fixed-body-standard-color-bb91f401684f96e5.webp",
+          "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474",
+          "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
           "encoding": "webp",
           "width": 850,
           "height": 2048,
-          "bytes": 389520,
+          "bytes": 386446,
           "decodedBytes": 6963200,
           "gpuBytes": 9284267,
           "channels": 4,
@@ -6291,13 +6536,13 @@
         },
         "normal": {
           "id": "fixed-body-standard-normal",
-          "url": "../v7-1/assets/fixed-body-standard-normal-433099d227c03917.hfn.gz",
-          "sha256": "433099d227c039173c918048bfdf3c3d4b9056d12eb864ad795e8c56891d7022",
-          "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+          "url": "assets/fixed-body-standard-normal-f4b16839dd597ac4.hfn.gz",
+          "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06",
+          "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
           "encoding": "hfn1-gzip",
           "width": 850,
           "height": 2048,
-          "bytes": 3466614,
+          "bytes": 3449729,
           "decodedBytes": 13926400,
           "gpuBytes": 18568534,
           "channels": 4,
@@ -6305,13 +6550,13 @@
         },
         "orm": {
           "id": "fixed-body-standard-orm",
-          "url": "../v7-1/assets/fixed-body-standard-orm-4738736a95e92256.webp",
-          "sha256": "4738736a95e92256e14a8e98e08ecc9a47cabefe79c154082ac221db3b0aa629",
-          "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+          "url": "assets/fixed-body-standard-orm-4be928717d848cca.webp",
+          "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f",
+          "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
           "encoding": "webp",
           "width": 850,
           "height": 2048,
-          "bytes": 284336,
+          "bytes": 281146,
           "decodedBytes": 6963200,
           "gpuBytes": 9284267,
           "channels": 4,
@@ -6321,13 +6566,13 @@
       "detail": {
         "baseColor": {
           "id": "fixed-body-detail-color",
-          "url": "../v7-1/assets/fixed-body-detail-color-667b175ba4181dce.webp",
-          "sha256": "667b175ba4181dce310c7214424116909e0d2fa60aa63ac1c78bf6d63da1edd1",
-          "sourceSha256": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+          "url": "assets/fixed-body-detail-color-55458633cf881236.webp",
+          "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245",
+          "sourceSha256": "ccb2af98157bccbf9ae97358371669fa0a3488ce709f926e1cb451c28809282e",
           "encoding": "webp",
           "width": 1024,
           "height": 2466,
-          "bytes": 479504,
+          "bytes": 475446,
           "decodedBytes": 10100736,
           "gpuBytes": 13467648,
           "channels": 4,
@@ -6335,13 +6580,13 @@
         },
         "normal": {
           "id": "fixed-body-detail-normal",
-          "url": "../v7-1/assets/fixed-body-detail-normal-35f734f1f0e18386.hfn.gz",
-          "sha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
-          "sourceSha256": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db",
+          "url": "assets/fixed-body-detail-normal-49b67ebbd3628109.hfn.gz",
+          "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
+          "sourceSha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
           "encoding": "hfn1-gzip",
           "width": 1024,
           "height": 2466,
-          "bytes": 4959453,
+          "bytes": 4845924,
           "decodedBytes": 20201472,
           "gpuBytes": 26935296,
           "channels": 4,
@@ -6349,13 +6594,13 @@
         },
         "orm": {
           "id": "fixed-body-detail-orm",
-          "url": "../v7-1/assets/fixed-body-detail-orm-2f29c84c7465fc11.webp",
-          "sha256": "2f29c84c7465fc11947162789e344dd257faf56c173546c8d47056e341b54681",
-          "sourceSha256": "f131df6c732aa03d2f7fd0b13cdf9912926a9410f96370f4417ee6c376f5b768",
+          "url": "assets/fixed-body-detail-orm-a117af74f734bf7d.webp",
+          "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b",
+          "sourceSha256": "621f23235db6c40f363595c364336a78e070a17eed0578d883e385f1211845db",
           "encoding": "webp",
           "width": 1024,
           "height": 2466,
-          "bytes": 282582,
+          "bytes": 281864,
           "decodedBytes": 10100736,
           "gpuBytes": 13467648,
           "channels": 4,
@@ -6652,7 +6897,7 @@
   },
   "defaultDesign": {
     "schemaVersion": 1,
-    "resourceReleaseId": "v7-3",
+    "resourceReleaseId": "v7-4",
     "modelVersion": "china-cup-v6",
     "recipeVersion": "porcelain-city-v6",
     "cityId": "shenzhen",
@@ -6670,83 +6915,108 @@
   "sources": [
     {
       "path": "guangcai-china-preview/package.json",
-      "sha256": "5aed23b52d75397e6522e393ecccc1159f701d398840036bea28919131d6bef4",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/package.json"
+      "sha256": "40f2b7a47ba6aa7196e230435e1f39a8a3086d6e4effb1c81622c23c965c4e74",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/package.json"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/v7.1.3/resource-build.json",
+      "sha256": "cd3794968bf3682f4caf3db951e0f03ad388b3906080bd1c72279dd07b41a164",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.3/resource-build.json"
+    },
+    {
+      "path": "guangcai-china-preview/evidence/v7.1.3/handle-dimensions.json",
+      "sha256": "c817e8fd47a2178d13d9fd4933019a3107400701d3eb7069fc0733100a3af4d3",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.3/handle-dimensions.json"
+    },
+    {
+      "path": "guangcai-china-preview/src/geometry/fixed-mapping.ts",
+      "sha256": "ba1d9c22dbedc3c942b771a23790d4765332624211d8ac6dd34b590368ac38ec",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/geometry/fixed-mapping.ts"
+    },
+    {
+      "path": "guangcai-china-preview/src/styles/style-manager.ts",
+      "sha256": "7005f4a6aa3cf92170e8985f41ace7086eb7aaca19d45a5f46602be385901f4f",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/style-manager.ts"
+    },
+    {
+      "path": "guangcai-china-preview/integration/contracts/resource-manifest.schema.json",
+      "sha256": "8f695bcc4c13e703a81d9176db1403b985ade0226720e249dcacdd73316253df",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/integration/contracts/resource-manifest.schema.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.2/slogans-source.json",
       "sha256": "7fd7479d5fa365c589a38affb9b3e39ab6d73e44d0af6f0e24d1338729739676",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/evidence/v7.1.2/slogans-source.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.2/slogans-source.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.2/cities/review.json",
       "sha256": "f1a59172052ffe6b38fbd5823895bdb919a5a4c8ba3407387a82d222b74768f9",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/evidence/v7.1.2/cities/review.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.2/cities/review.json"
     },
     {
       "path": "guangcai-china-preview/src/styles/city-appearance.ts",
       "sha256": "1c9ede8cb261f81df0c3e063afb693175afdfa0dbe48f32429e56cf62480f845",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/styles/city-appearance.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/city-appearance.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/slogans.ts",
       "sha256": "3806074f4d0bb9ad58d6646ca15359ac06bd2ad8c6911ed2ffaf50b928a9bac3",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/styles/slogans.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/slogans.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/xy-mapping.ts",
       "sha256": "787e120d4e6723e10fdf6016789d1bc3e122bd5e0c0eb9222765ad82d00eb80c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/styles/xy-mapping.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/xy-mapping.ts"
     },
     {
       "path": "guangcai-china-preview/src/ui/consumer-panel.ts",
       "sha256": "f1f39d829920bc8ec783a3f8aef4d49706bc57f0cddb998116d139f7e2d42298",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/ui/consumer-panel.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/ui/consumer-panel.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/city-catalog-v6.json",
       "sha256": "1ee5338f075c3ad9adcc1e0f954a1019b500336a963d240e462b1f711747dd7c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/styles/city-catalog-v6.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/city-catalog-v6.json"
     },
     {
       "path": "guangcai-china-preview/src/materials/city-parametric.ts",
       "sha256": "8afc23e52bed2fd7acd7c4919a516d84076201b6f3d6e531d5cb21b9b5787952",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/materials/city-parametric.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/materials/city-parametric.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/types.ts",
-      "sha256": "1b4f1ac4f2f0728b99199b15babe718511dcc7627d97a0d557092083d5cf9c59",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/resources/types.ts"
+      "sha256": "636eac09a704879e7626680f06fcc1c81e1a79f205fdb54a4522f2725289ae07",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/types.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/design.ts",
       "sha256": "53b2f985833471c3d9b1d7f771f6fbc541b8aaed4843edcf8d4eefc66680a74c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/resources/design.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/design.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/texture-budget.ts",
       "sha256": "6ded54fb41d04288d70405682e5a25257de7e104fc1b1045f1de60816e7dbca7",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/src/resources/texture-budget.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/texture-budget.ts"
     },
     {
       "path": "guangcai-china-preview/integration/contracts/design.schema.json",
-      "sha256": "3232486d0d43660983480309b42a58c1d884923ecce5fc977994e61baa1ccf09",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/integration/contracts/design.schema.json"
+      "sha256": "01da12a94124a99c2d3914ec548302ffb0b1009545611e6ebd2d1519ef067c3b",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/integration/contracts/design.schema.json"
     },
     {
       "path": "guangcai-china-preview/public/api/v1/bootstrap.json",
-      "sha256": "0cdeaff1114932539f77e28acf51c059d9a68d58ab2f908b67a1315691ccde34",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/public/api/v1/bootstrap.json"
+      "sha256": "5c0b51af871cc6494cb401e39bef6809c946ec599d5c79647e42569804de321d",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/api/v1/bootstrap.json"
     },
     {
-      "path": "guangcai-china-preview/public/releases/v7-3/catalog.json",
-      "sha256": "5efd3f2ada5bece80ab5efd3b70c0030d892673eec6cc21bb5367f4ecca785c5",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/public/releases/v7-3/catalog.json"
+      "path": "guangcai-china-preview/public/releases/v7-4/catalog.json",
+      "sha256": "c4fd486fae5d5f784600b4ef358e11abde04b7af1e91e74b78637b8727006ee5",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/releases/v7-4/catalog.json"
     },
     {
-      "path": "guangcai-china-preview/public/releases/v7-3/manifest-b27eb343b846cdc4.json",
-      "sha256": "b27eb343b846cdc4237d3df7adde61edbb304ad0155ea6da9ac47d375ade11b4",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3dee2885886faf4b42f01618593ced0e69b964be/guangcai-china-preview/public/releases/v7-3/manifest-b27eb343b846cdc4.json"
+      "path": "guangcai-china-preview/public/releases/v7-4/manifest-a6484ca5de3f4cc2.json",
+      "sha256": "a6484ca5de3f4cc2f471192a3eb947b2027443552ec87b4ccb172642908c0465",
+      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/releases/v7-4/manifest-a6484ca5de3f4cc2.json"
     }
   ]
 }

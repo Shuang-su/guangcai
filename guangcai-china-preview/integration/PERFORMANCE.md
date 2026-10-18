@@ -277,3 +277,7 @@ v7-2是上一轮西安大补面；v7-3当前发布流程为新修正层→v7-3�
 - 通知：导入过程中exportDesign拒绝，选择返回false，并发import拒绝；onDesignChange仅发布完整提交后版本。失败恢复后继续原作品。接入方等待Promise并展示错误，不将拒绝视为保存成功。
 - 源码：src/main.ts importDesign、src/resources/client.ts、src/styles/style-manager.ts、src/geometry/fixed-mapping.ts。
 - 证据：evidence/v7.1.3/resource-validation.json、qa/floral/report.json、qa/city-chrome、qa/city-webkit；qa/floral保存四版本往返、失败、并发与上下文恢复结果及实拍方向对照。历史报告仅代表其版本；真机与正式COS未验收。
+
+### V7.1.3 实际验证（2026-10-18）
+
+三轮10Mbps/100ms冷缓存首个完整交互画面为13.448～13.493秒，每轮12,109,368字节。资源预载91项共10,894,205字节，较V7.1.2预载文件减少8,392字节；代码/构建差异使总传输与前版有小幅变化。原5MiB/6秒仍未达标，15秒工程观察线通过，不能表述为原目标通过。首屏图形估算约122.67MiB，观测峰值约191.87MiB。桌面Chrome/WebKit回归通过，实体iPhone13mini、Air、mini6和生产COS仍需复测。完整结果见[evidence/v7.1.3/verification.json](../evidence/v7.1.3/verification.json)。

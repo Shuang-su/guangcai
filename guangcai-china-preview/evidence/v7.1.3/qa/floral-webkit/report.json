@@ -1,0 +1,631 @@
+{
+  "engine": "webkit",
+  "url": "http://127.0.0.1:5271/",
+  "checks": [
+    "import v7-3",
+    "v7-3 complete mapping",
+    "v7-3 exact design",
+    "v7-3 bounded steady memory",
+    "import v7-4",
+    "v7-4 complete mapping",
+    "v7-4 exact design",
+    "v7-4 bounded steady memory",
+    "import v7-1",
+    "v7-1 complete mapping",
+    "v7-1 exact design",
+    "v7-1 bounded steady memory",
+    "import v7-4",
+    "v7-4 complete mapping",
+    "v7-4 exact design",
+    "v7-4 bounded steady memory",
+    "import v7-2",
+    "v7-2 complete mapping",
+    "v7-2 exact design",
+    "v7-2 bounded steady memory",
+    "import v7-4",
+    "v7-4 complete mapping",
+    "v7-4 exact design",
+    "v7-4 bounded steady memory",
+    "import v7-3",
+    "v7-3 complete mapping",
+    "v7-3 exact design",
+    "v7-3 bounded steady memory",
+    "import v7-4",
+    "v7-4 complete mapping",
+    "v7-4 exact design",
+    "v7-4 bounded steady memory",
+    "404 rejects import",
+    "404 retains original complete work",
+    "404 retains v4 mapping",
+    "staged invalid atlas rolls back",
+    "rollback mapping and parameters",
+    "pending work hidden and immutable",
+    "pending export rejects",
+    "pending selection rejected",
+    "concurrent import rejected",
+    "context loss cancels pending version",
+    "context restores committed version and mapping",
+    "no application exceptions"
+  ],
+  "errors": [],
+  "versions": [
+    {
+      "releaseId": "v7-3",
+      "mapping": "source-layout-v3",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            -0.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-4",
+      "mapping": "source-layout-v4",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-1",
+      "mapping": "source-layout-v3",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            -0.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-4",
+      "mapping": "source-layout-v4",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-2",
+      "mapping": "source-layout-v3",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            -0.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-4",
+      "mapping": "source-layout-v4",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-3",
+      "mapping": "source-layout-v3",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v3",
+          "repeat": [
+            1,
+            1
+          ],
+          "offset": [
+            -0.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    },
+    {
+      "releaseId": "v7-4",
+      "mapping": "source-layout-v4",
+      "activeEntries": 18,
+      "precision": {
+        "body": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            425,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "handle": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            88,
+            1024
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": null
+        },
+        "saucer": {
+          "mapping": "source-layout-v4",
+          "repeat": [
+            -1,
+            1
+          ],
+          "offset": [
+            1.105,
+            0
+          ],
+          "normalType": 1016,
+          "anisotropy": 16,
+          "normalSize": [
+            1024,
+            158
+          ],
+          "precision": "RG16F",
+          "normalFlipY": false,
+          "atlas": {
+            "rows": 2,
+            "contentWidth": 1008,
+            "contentHeight": 63,
+            "gutter": 8
+          }
+        }
+      }
+    }
+  ],
+  "physicalIPhoneTested": false,
+  "passed": true
+}
