@@ -2,6 +2,8 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
+本机当前主仓库已迁至 `/Volumes/Prism_初号機/广彩/guangcai-main/`，稳定入口为同盘的 `guangcai-repo/`。Prism上的旧工作树、交付副本与恢复资料已逐文件归档核验后清理；位置与恢复方法见[工作区说明](WORKSPACE_LOCATIONS.md)及[迁移回执](docs/changes/20261018-main-migration/completion.md)。这些路径描述本机布局，不是安装或部署前置条件。
+
 ## 当前开发交付候选：V7.1.3 / v7-4
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
