@@ -15,7 +15,7 @@ try{
  }
  for(const releaseId of ['v7-3','v7-4']){
   await page.evaluate(d=>window.cupViewer.importDesign(d),{...initial,resourceReleaseId:releaseId});await ready(page);
-  const poses=[['side',90,3,290,60,33],['upper',75,24,245,76,33],['lower',105,-8,245,36,33],['saucer-front',0,4,210,14,40],['saucer-back',180,4,210,14,40]];
+  const poses=[['side',90,3,290,60,33],['upper',75,24,245,76,33],['upper-under',135,-4,190,83,33],['lower',105,-8,245,36,33],['saucer-front',0,4,210,14,40],['saucer-back',180,4,210,14,40]];
   for(const [name,yaw,pitch,distance,targetY,fov]of poses){await page.evaluate(p=>window.cupViewer.setCalibration(p),{yaw,pitch,distance,targetY,fov,cupYaw:0,roll:0,cx:.5,cy:.5});await page.waitForTimeout(800);await ready(page);await page.screenshot({path:`${out}/${releaseId}-${name}.png`});}
   await page.evaluate(()=>window.cupViewer.setView('exploded',true));await page.waitForTimeout(900);await page.screenshot({path:`${out}/${releaseId}-exploded.png`});
  }

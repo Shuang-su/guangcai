@@ -75,7 +75,7 @@ function updateBudget(transient=false){
  const exceeds=()=>pool&&(pool.debug().estimatedGpuBytes+targetBytes()+(transient?66*1024**2:0)>pool.maximum||!transient&&!pool.transitioning&&pool.debug().estimatedGpuBytes+targetBytes()-glassScratch>pool.steady);
  if(!budgetResizing&&pool&&glassBytes){
   budgetResizing=true;
-  try{while(mobile&&exceeds()&&studio.renderer.getPixelRatio()>1){const ratio=Math.max(1,studio.renderer.getPixelRatio()-.25);studio.renderer.setPixelRatio(ratio);resolution.ratio=ratio;studio.resize();}}finally{budgetResizing=false;}
+  try{while(exceeds()&&studio.renderer.getPixelRatio()>1){const ratio=Math.max(1,studio.renderer.getPixelRatio()-.25);studio.renderer.setPixelRatio(ratio);resolution.ratio=ratio;studio.resize();}}finally{budgetResizing=false;}
   if(exceeds())glass?.fallback('graphics-memory-budget');
  }
  pool?.setReserve(targetBytes()+(transient?66*1024**2:0));
@@ -100,7 +100,7 @@ glass=profile==='consumer'?createGlassStudio({invalidate,admitMemory:(bytes,scra
  if(!pool)return true;pool.trimIdle(targetBytes()-glassBytes+bytes-scratch);
  const total=()=>pool.debug().estimatedGpuBytes+targetBytes()-glassBytes+bytes;
  // Preserve the optical material before lowering the model's pixel density.
- while(mobile&&bytes>glassBytes&&(!pool.transitioning&&total()-scratch>pool.steady||total()+(transientReserve?66*1024**2:0)>pool.maximum)&&studio.renderer.getPixelRatio()>1){
+ while(bytes>glassBytes&&(!pool.transitioning&&total()-scratch>pool.steady||total()+(transientReserve?66*1024**2:0)>pool.maximum)&&studio.renderer.getPixelRatio()>1){
   const ratio=Math.max(1,studio.renderer.getPixelRatio()-.25);studio.renderer.setPixelRatio(ratio);resolution.ratio=ratio;studio.resize();
  }
  if(bytes>glassBytes&&(!pool.transitioning&&total()-scratch>pool.steady||total()+(transientReserve?66*1024**2:0)>pool.maximum))return false;
@@ -164,7 +164,7 @@ async function initialize(){
  try{
  entryLoading?.begin();startupError='';for(const stage of ['花纹','杯底标识','背景',...(pool?['城市与文字']:[])])startupPending.add(stage);
  if(profile==='consumer'){await ensureResources();if(generation!==initialization||disposed||contextLost)return;const m=resources!.manifest;pool!.pinFiles([...cityLibrary(m),m.mark,...Object.values(m.fixed).flatMap(region=>[region.light.baseColor,region.light.normal,region.light.orm])]);}
- const markReady=pool&&resources?pool.acquire(resources.manifest.mark).then(lease=>{if(disposed){lease.release();return;}markLease?.release();markLease=lease;mats.mark.map=lease.texture;mats.mark.needsUpdate=true;invalidate();}):loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;invalidate();});
+ const markReady=pool&&resources?pool.acquire(resources.manifest.mark).then(lease=>{if(disposed){lease.release();return;}markLease?.release();markLease=lease;lease.texture.anisotropy=anisotropy;lease.texture.needsUpdate=true;mats.mark.map=lease.texture;mats.mark.needsUpdate=true;invalidate();}):loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;invalidate();});
  const initialDesign=resources?validateDesign(resources.bootstrap.defaultDesign,resources.manifest):undefined;
  const initialSelection=initializedOnce?selection.current:selection.desired!==untouchedSelection||!initialDesign?selection.desired:{variant:`v6-${initialDesign.cityId}-${initialDesign.appearance.preset}`,text:initialDesign.sloganId as Selection['text'],appearance:initialDesign.appearance};
  const cityReady=profile==='consumer'?selection.select(initialSelection):applyCityArtwork(chinaPack);
@@ -205,12 +205,12 @@ async function upgradeQuality(){
   const focus=view.view==='flowers'?'saucer':view.view==='handle'?'handle':view.view==='lid'?'none':'city';
   const next:Record<Region,Tier>={body:'light',handle:'light',saucer:'light'};
   if(focus==='saucer')next.saucer=tier;if(focus==='handle'){next.body=tier;next.handle=tier;}
-  const nextCity:Tier=tier;const upgradeCity=selectedCity();
+  const nextCity:Tier=focus==='city'?tier:cityTier==='light'?'light':'standard';const upgradeCity=selectedCity();
   const cp=resources.cityPack(selection.current,nextCity),fixedPack=resources.fixedPack(next);
   const assets=[cp.runtime!.mask,cp.runtime!.normal,cp.runtime!.label.asset,resources.manifest.mark,...Object.values(fixedPack.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm])];
   const labelExtra=Object.values(resources.manifest.slogans).reduce((n,s)=>n+textureBytes(s.asset),0)-textureBytes(cp.runtime!.label.asset);
   const steady=assets.reduce((n,a)=>n+textureBytes(a),0)+labelExtra;
-  while(mobile&&steady+targetBytes()>pool!.steady&&resolution.ratio>1){resolution.ratio=Math.max(1,resolution.ratio-.25);studio.renderer.setPixelRatio(resolution.ratio);studio.resize();updateBudget();}
+  while(steady+targetBytes()>pool!.steady&&resolution.ratio>1){resolution.ratio=Math.max(1,resolution.ratio-.25);studio.renderer.setPixelRatio(resolution.ratio);studio.resize();updateBudget();}
   if(steady+targetBytes()>pool!.steady){qualityError='当前画面达到资源预算，保留现有清晰度';return;}
   if(cityTier!==nextCity){const previous=cityTier;cityTier=nextCity;const applied=await selection.select({});if(epoch!==qualityEpoch)return;if(!applied&&selectedCity()===upgradeCity)cityTier=previous;if(selectedCity()!==upgradeCity)return;}
   if(epoch!==qualityEpoch)return;
@@ -254,7 +254,7 @@ async function importDesign(value:unknown):Promise<boolean>{
  importing=true;selection.locked=true;selection.cancelPending();city.cancelPending();fixed.cancelPending();++qualityEpoch;clearTimeout(qualityTimer);neighborController?.abort();neighborCity='';
  entryLoading?.begin();ui.canvas.dataset.ready='false';
  const finishSwap=pool.beginSwap();let held:Awaited<ReturnType<ResourcePool['acquireAll']>>=[],candidates:typeof held=[];
- let touched=false,committed=false;
+ let touched=false,committed=false,rollbackFailed=false;
  const guard=()=>{if(controller.signal.aborted||contextLost||disposed||generation!==initialization)throw new DOMException('作品还原已取消','AbortError');};
  try{
   const releaseId=(value as DesignConfig)?.resourceReleaseId,next=releaseId===previous.manifest.releaseId?previous:await loadResources(releaseId,controller.signal);guard();
@@ -271,7 +271,7 @@ async function importDesign(value:unknown):Promise<boolean>{
   if(!await fixed.apply(next.fixedPack(tiers)))throw Error('花纸未完整还原');guard();
   if(!await applyCityArtwork(next.cityPack(desired,tier)))throw Error('城市与文字未完整还原');guard();
   const labels=candidates.splice(11,6),mark=candidates.splice(11,1)[0];
-  markLease?.release();markLease=mark;mats.mark.map=mark.texture;mats.mark.needsUpdate=true;
+  markLease?.release();markLease=mark;mark.texture.anisotropy=anisotropy;mark.texture.needsUpdate=true;mats.mark.map=mark.texture;mats.mark.needsUpdate=true;
   sloganLeases.forEach(l=>l.release());sloganLeases=labels;
   resources=next;resourcesPromise=Promise.resolve(next);fixedTiers=tiers;cityTier=tier;requestedCity=d.cityId;
   pool.pinFiles(pinnedAssets(next));selection.commit(desired);setFixedRelief(fixedReliefEnabled);committed=true;
@@ -279,7 +279,7 @@ async function importDesign(value:unknown):Promise<boolean>{
  }catch(error){
   if(!contextLost&&!disposed&&generation===initialization){
    if(touched){
-    if(!await fixed.apply(previous.fixedPack(oldTiers))||!await applyCityArtwork(previous.cityPack(oldSelection,oldCityTier)))throw Error('原作品恢复失败，请重新加载');
+    try{if(!await fixed.apply(previous.fixedPack(oldTiers))||!await applyCityArtwork(previous.cityPack(oldSelection,oldCityTier)))throw Error('原作品恢复失败');}catch{rollbackFailed=true;assetsReady=false;startupError='原作品恢复失败，请重新加载';entryLoading?.fail(startupError);throw Error(startupError);}
    }
    resources=previous;resourcesPromise=Promise.resolve(previous);fixedTiers=oldTiers;cityTier=oldCityTier;requestedCity=oldSelection.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,'');
    pool.pinFiles(pinnedAssets(previous));selection.commit(oldSelection);ui.message('还原未完成，已保留原作品');
@@ -287,11 +287,11 @@ async function importDesign(value:unknown):Promise<boolean>{
   throw error;
  }finally{
   held.forEach(l=>l.release());candidates.forEach(l=>l.release());finishSwap();importing=false;selection.locked=false;importController=undefined;
-  if(!contextLost&&!disposed&&generation===initialization){artworkUI?.render();entryLoading?.prepared();invalidate();publishDesign();warmNeighbors();scheduleQuality();}
+  if(!rollbackFailed&&!contextLost&&!disposed&&generation===initialization){artworkUI?.render();entryLoading?.prepared();invalidate();publishDesign();warmNeighbors();scheduleQuality();}
   if(committed)qualityError='';
  }
 }
-const debug=()=>({version:'7.1.3',profile,fixedMapping:fixed.currentMapping,importing,preload:{neighborCity,neighborError,readyCities:resources?Object.values(resources.manifest.cities).filter(c=>pool?.fileReady(c.levels.light.mask)&&pool.fileReady(c.levels.light.normal)).length:0,slogans:sloganLeases.length},entryLoading:entryLoading?.debug(),loading:{pending:[...startupPending],error:startupError},quality:{cityTier,fixedTiers,mobile,upgrading:qualityBusy,error:qualityError,dpr:studio.renderer.getPixelRatio(),renderFrames,contextLost},resources:pool?.debug(),renderTargets:studio.memory(),glass:glass?.debug(),haptics:haptics.debug(),selection:{current:selection.current,desired:selection.desired,busy:selection.busy,error:selection.error},porcelain:PORCELAIN,ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),clipping:{near:studio.camera.near,far:studio.camera.far},target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),lidReflections:lidReflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory,programs:studio.renderer.info.programs?.length},city:city.debug(),fixedFinish:{cleanGoldGround:mats.regions.saucer.userData.cleanGoldGround,enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
+const debug=()=>({version:'7.1.3',profile,fixedMapping:fixed.currentMapping,markFiltering:{anisotropy:mats.mark.map?.anisotropy},importing,preload:{neighborCity,neighborError,readyCities:resources?Object.values(resources.manifest.cities).filter(c=>pool?.fileReady(c.levels.light.mask)&&pool.fileReady(c.levels.light.normal)).length:0,slogans:sloganLeases.length},entryLoading:entryLoading?.debug(),loading:{pending:[...startupPending],error:startupError},quality:{cityTier,fixedTiers,mobile,upgrading:qualityBusy,error:qualityError,dpr:studio.renderer.getPixelRatio(),renderFrames,contextLost},resources:pool?.debug(),renderTargets:studio.memory(),glass:glass?.debug(),haptics:haptics.debug(),selection:{current:selection.current,desired:selection.desired,busy:selection.busy,error:selection.error},porcelain:PORCELAIN,ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),clipping:{near:studio.camera.near,far:studio.camera.far},target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),lidReflections:lidReflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory,programs:studio.renderer.info.programs?.length},city:city.debug(),fixedFinish:{cleanGoldGround:mats.regions.saucer.userData.cleanGoldGround,enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
 Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',whenReady:readiness.whenReady,getLoadState:readiness.get,onLoadStateChange:readiness.subscribe,exportDesign:()=>{if(importing||!resources||!assetsReady||selection.busy)throw Error('作品尚未准备完成');return exportDesign(selection.current,resources.manifest);},importDesign:(value:unknown)=>{if(importing)throw Error('正在还原另一作品，请稍后重试');activeImport=importDesign(value);return activeImport.finally(()=>{activeImport=undefined;});},onDesignChange:(callback:(design:DesignConfig)=>void)=>{subscribers.add(callback);return ()=>subscribers.delete(callback);},capture:()=>{authoringFraming.apply();studio.renderer.render(studio.scene,studio.camera);authoringFraming.restore();return ui.canvas.toDataURL('image/png');},applyCityArtwork,restore:()=>selection.restore(),selectArtwork:(patch:Partial<Selection>)=>selection.select(patch),setView:(v:View,instant=false)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v,instant);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;product.cup.quaternion.setFromAxisAngle(new Vector3(0,1,0),(pose.cupYaw??0)*Math.PI/180);product.lid.quaternion.copy(product.cup.quaternion);applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:setCityRelief,setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},

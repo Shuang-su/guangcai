@@ -44,7 +44,7 @@ export async function collectBackendData(sourceRef='HEAD'){
  const colorOrder=uiConstant(ui,'paletteOrder') as (keyof typeof palettes)[];
  const colorNames=uiConstant(ui,'paletteNames') as Record<keyof typeof palettes,string>;
  const cityCatalog=await json('src/styles/city-catalog-v6.json');
- const sourcePaths=['package.json','evidence/v7.1.3/resource-build.json','evidence/v7.1.3/handle-dimensions.json','src/geometry/fixed-mapping.ts','src/styles/style-manager.ts','integration/contracts/resource-manifest.schema.json','evidence/v7.1.2/slogans-source.json','evidence/v7.1.2/cities/review.json','src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
+ const sourcePaths=['package.json','evidence/v7.1.3/resource-build.json','evidence/v7.1.3/handle-dimensions.json','src/geometry/fixed-mapping.ts','src/geometry/product.ts','src/main.ts','src/styles/style-manager.ts','integration/contracts/resource-manifest.schema.json','evidence/v7.1.2/slogans-source.json','evidence/v7.1.2/cities/review.json','src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
  const sources=[];
  for(const p of sourcePaths){
   const bytes=await readFile(resolve(app,p)),gitPath='guangcai-china-preview/'+p;
@@ -107,7 +107,7 @@ export async function collectBackendData(sourceRef='HEAD'){
   {path:'color.hsl',label:'默认HSL数组',type:'number[3]',required:false,default:null,allowed:'[H,S,L]',storage:'后台配色参考',note:'由darkHex换算；作品使用三个具名字段；不是物理显示色域。'},
   {path:'asset',label:'资源描述',type:'object',required:true,default:null,allowed:'ResourceManifest schema',storage:'CDN manifest',note:'id/url/sha256/sourceSha256/encoding/width/height/bytes/decodedBytes/gpuBytes/channels/colorSpace；完整值见资源表。'},
   {path:'slogan.uvRect',label:'祝福语定位',type:'number[4]',required:true,default:null,allowed:'[u,v,width,height]',storage:'CDN manifest',note:'归一化UV，左下原点；不是像素坐标。'},
-  {path:'fixedMapping',label:'固定花纸映射版本',type:'string',required:false,default:'source-layout-v3',allowed:['source-layout-v3','source-layout-v4'],storage:'CDN manifest',note:'v7-4声明source-layout-v4：三部件花纹镜像，杯身花纹底边0.12 mm。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。'},
+  {path:'fixedMapping',label:'固定花纸映射版本',type:'string',required:false,default:'source-layout-v3',allowed:['source-layout-v3','source-layout-v4'],storage:'CDN manifest',note:'v7-4声明source-layout-v4：三部件花纹镜像，花纹底边0.12 mm，上连接白瓷下沿补足。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。'},
   {path:'fixed.atlas',label:'花纸图集分区',type:'object',required:false,default:null,allowed:'随对应资源档位',storage:'CDN manifest',note:'rows/contentWidth/contentHeight/gutter随编译产物保留，不可只换图片尺寸。'},
   {path:'quality / DPR / cache / deviceMemory',label:'设备与清晰度状态',type:'runtime',required:false,default:null,allowed:'由前端调度',storage:'不写入作品',note:'未提供的机器内存指标为不可用；禁止当作0。'});
  validateDesign(bootstrap.defaultDesign,manifest);

@@ -154,6 +154,6 @@ QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
 
 ## V7.1.3 花纸与把手核对
 
-[制作、尺寸与兼容记录](evidence/v7.1.3/README.md) · [固定相机对照](evidence/v7.1.3/qa/floral/) · [完整把手尺寸](evidence/v7.1.3/handle-dimensions.json)。把手轴对杯身径向平面对称，旧花纹范围使其相对花纹中心偏1.126mm；本轮核查后保持几何和横向花纹范围。模型尺寸为照片估计，不是实物测量。
+[制作、尺寸与兼容记录](evidence/v7.1.3/README.md) · [固定相机对照](evidence/v7.1.3/qa/floral/) · [完整把手尺寸](evidence/v7.1.3/handle-dimensions.json)。把手轴对杯身径向平面对称，旧花纹范围使其相对花纹中心偏1.126mm；本轮保持主把手和横向花纹范围；追加反馈仅补足上连接白瓷下沿。模型尺寸为照片估计，不是实物测量。
 
 复现新资源：`node tools/v7/compile-v7-4.mjs`；验证：`node tools/v7/validate-v7-4.mjs`。不可重跑历史生成器覆盖旧发布。四个资源目录一起部署COS；表格和JSON通过固定sourceCommit导出。
