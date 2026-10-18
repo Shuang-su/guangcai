@@ -10,4 +10,12 @@
 
 ## 清理
 
-恢复证据的checkpoint、远端回读和旧工作区清理结果将在相应步骤完成后补充。旧V7和archive-index仍共享旧主仓库Git目录，本轮保留它们的依赖关系。
+恢复证据checkpoint：`40ce0a6d18a96f2c070663b01e9b1f6f438a7608`。已推送，GitHub blob `b1858c934f2248a7164865506254675fb087cd3c`回读846,805字节与本地原待提交内容完全一致。之后才将旧工作区该文件精确恢复为原HEAD字节；原归档哈希匹配，工作树干净。
+
+旧V6保持原HEAD `5a2d7e47354854de418b83915ec081081d0486c9`，已切为detached并删除本地`codex/v6-webgl2-studio`。sparse checkout收窄为README、AGENTS、WORKSPACE_LOCATIONS及两份根Git规则文件，清除9,105个可由Git恢复的展开文件，逻辑大小5,094,635,552字节。初号機可用空间从4,245,946,368增加到12,082,479,104字节，约增加7.30GiB；具体测量记录见`cleanup.json`。
+
+共享`.git`、`.codex-work`中的恢复/QA资料、旧V7及archive-index关联工作树保留。三个工作区均能读取HEAD且status干净，未注销或改动共享Git指向。清理后没有需要另行处理的已移除文件AppleDouble伴随项，没有创建空的元数据归档。没有删除素材原件、历史工程或现有V7交付目录。
+
+仓库WORKSPACE_LOCATIONS及两盘项目入口文档同步当前main开发目录与旧V6最小检出状态；原入口符号链接继续指向旧共享仓库，标明其历史用途，未冒充当前开发目录。外部入口文档前后哈希保存在`cleanup.json`，原文备份在当前交付目录`.codex-work/receipts/project-entry-before-*.md`。
+
+验证包括原始字节GitHub回读、前后哈希、XML解析边界、精确还原、Git状态、分支删除及关联工作树连通。`git diff --check`对文本通过；二进制恢复文件用本目录`.gitattributes`明确标记binary，保留原字节，不为通过空白检查修改它。没有运行或发布异常SVG，也没有重跑应用构建。
