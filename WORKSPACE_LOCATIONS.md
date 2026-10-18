@@ -1,44 +1,35 @@
-# 广彩工程与原件位置
+# 广彩工程、原件与历史恢复位置
 
-三类工程的用途、Git归属和还原方法见[工程关系](PROJECTS.md)。
+更新：2026-10-18。按用户最终选择，只保留当前主仓库与素材原件；旧版本通过正式 Git / Git LFS 按需取回。迁移过程中生成的恢复包已在远端核验后清理，不再保留一层本地归档套件。[本轮清理与验证](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。
 
-2026-10-18最终更新：按用户选择，当前main主仓库从Prism迁回初号機，采用不带产品版本号的`guangcai-main`目录。旧V7工作树、V7.1.2副本和Prism本地恢复资料已归档并逐文件核验，Prism的广彩目录已移除。[迁移与恢复回执](docs/changes/20261018-main-migration/completion.md)。
-
-旧V6未提交SVG字节已单独提交为恢复证据；旧V6检出收窄为根目录说明文件并detach，删除已合并V6分支，保留共享Git数据与本地恢复资料。旧V7工作树已注销，archive-index仍使用这套历史Git数据。[保存与清理记录](docs/changes/20261018-v6-local-state-preservation/completion.md)。
-
-2026-10-14的整理采用初号機上的主仓库；下表已同步本轮实际位置，历史记录中的当时路径仍保留。
-
-| 用途 | 位置 |
+| 用途 | 当前位置 |
 |---|---|
-| 当前main维护仓库 | `/Volumes/Prism_初号機/广彩/guangcai-main`，独立Git元数据，无对旧仓库的alternates依赖 |
-| 当前主仓库稳定入口 | `/Volumes/Prism_初号機/广彩/guangcai-repo` → `guangcai-main`，仅符号链接，不复制数据 |
-| 旧V6共享Git与最小检出 | `/Volumes/Prism_初号機/广彩/guangcai-v4-workspace`，保留`.git`与`.codex-work`恢复资料；不作为当前开发目录 |
-| 本机资料归档核验工作树 | 旧V6目录内 `.codex-work/archive-index/`，其Git依赖保留 |
-| 旧V7及V7.1.2交付归档 | `/Volumes/Prism_初号機/广彩/历史工程/Prism清理归档/20261018-v7-main-migration/`，包含压缩包、逐文件哈希、扩展属性和恢复说明；旧工作树已注销 |
-| 中国杯应用 | 当前main维护仓库内 `guangcai-china-preview/` |
-| 原始 PSD、花纸、线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
-| 旧 h5 工程 | `/Volumes/Prism_初号機/广彩/历史工程/h5/` |
-| 9月早期杯子工程 | `/Volumes/Prism_初号機/广彩/历史工程/GuangcaiCeramic/` |
-| 旧正式库完整 Git 元数据备份 | `/Volumes/Prism_初号機/广彩/历史工程/Git元数据/` |
-| 本地会话摘录与旧站点绑定 | `/Volumes/Prism_初号機/广彩/历史工程/本地恢复资料/`，仅本地保存 |
-| 原路径、文件哈希、恢复入口 | [来源索引](docs/changes/20261014-source-consolidation/source-index.md)与[本轮清理记录](docs/changes/20261014-workspace-cleanup/completion.md) |
+| 当前维护仓库 | `/Volumes/Prism_初号機/广彩/guangcai-main/`，独立Git元数据，不依赖其他旧目录 |
+| 稳定入口 | `/Volumes/Prism_初号機/广彩/guangcai-repo/` → `guangcai-main` |
+| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，产品基线 V7.1.3 / v7-4 |
+| 原始 PSD、花纸、城市线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
+| 项目临时文件与回执 | 当前仓库 `.codex-work/`，仅按用途保留，通过本地exclude忽略 |
+| 旧产品版本、历史源码与资源 | `https://github.com/Shuang-su/guangcai` 的提交、标签、`archives/`、来源清单与 Git LFS |
 
-Prism旧正式库、9月viewer输出、原型输出、内盘北京4.3副本及旧非Git 3.0副本中的已核验内容，均由Git/Git LFS归档恢复。内盘4.3工作树已注销，原提交保留在正式 Git 历史；已合并的旧分支名称于 2026-10-16 整理。旧依赖可按对应锁文件重新安装。
+## 已清理的旧位置
 
-按原文件名恢复旧目录：在包含归档的工作树运行 `python3 tools/restore-source-folder.py --list` 查询来源；然后运行 `python3 tools/restore-source-folder.py prism-viewer /足够空间的空目录`。恢复过程核验每份文件哈希，不执行历史脚本。可用 `--prefix` 选择来源内的子目录。大文件需有真实Git LFS对象，不能仅下载指针。
+`/Volumes/Prism/广彩/`、初号機上的 `guangcai-v4-workspace/`、整个 `历史工程/` 及内盘 `/Users/shuangsu/Codex/guangcai-v6-recovery/` 均已移除。前者迁移为当前主仓库；后者主要是恢复包、旧Git副本、下载残包、机器绑定与元数据。
 
-素材原件是在同一卷内改名归位，保留原始字节；历史索引仍记录原始路径。实际位置变化见[迁移映射](docs/changes/20261014-workspace-cleanup/relocations.json)。
+历史 `h5` 和 `GuangcaiCeramic` 的源码早前已归档，本轮检查仅剩目录及元数据。旧Ceramic工作树登记已注销；它所属的 `/Users/shuangsu/Codex/New project` 混合仓库、原分支及其他工作树保留，未整体迁移或清理。
 
-恢复旧V6检出：在保留的旧目录核对HEAD为`5a2d7e47354854de418b83915ec081081d0486c9`，按需要扩大sparse checkout，例如`git sparse-checkout set --cone docs/changes guangcai-china-preview tools`。先核算磁盘；旧目录中的原始未提交差异由本轮`.svg.bin`保存，不能作为有效SVG运行资源。Git/LFS对象仍保留，未删除源照片或制作原稿。
+旧V6未提交SVG的异常字节已由 [PR #38 对应记录](docs/changes/20261018-v6-local-state-preservation/completion.md)保存为 `.svg.bin`；这不是可运行SVG。旧工作区被删除前，所有文件先完整归档并核验；用户随后决定不保留恢复包，因此这些包也已删除。前序迁移和归档文档描述当时步骤，不能当作当前路径清单。
 
-主仓库迁入ExFAT后，复制过程中产生的`._`扩展属性伴随文件已先单独归档再清理，避免污染Git扫描和消费者发布目录；真实源码与Git包按哈希核对。本机设置`core.filemode=false`适配ExFAT权限能力，不修改提交中的模式。依赖目录`node_modules`未重复迁运，后续按锁文件在项目内安装。历史恢复包只留本地，不把本地绑定和恢复状态上传为公开资源。
+## 从 Git 取回
 
-2026-10-15更新：`/Users/shuangsu/Documents/New project/.git` 的395个文件已全部本地可读，云占位为0。两个9月21日原始广彩提交的项目内容与树证明已补齐，见[原始Git记录](docs/history/20260921-original-git/README.md)。该目录仍是含其他项目的混合仓库，原目录、无关历史及未引用对象没有删除或整体迁移；早期GuangcaiCeramic工作树仍使用其Git元数据。
+- 已发布产品：从提交/标签新建工作树或检出旧版本，例如 `v4.0`；版本与部署的对应见 [版本索引](VERSION_HISTORY.md)。不要在有未提交工作的当前目录强制切版本。
+- 非Git历史H5与来源文件：用 [来源清单](docs/changes/20261014-source-consolidation/source-manifest.json)和 `tools/restore-source-folder.py`，恢复到空目录。具体命令见 [Git恢复说明](docs/changes/20261018-exfat-and-v4-retirement/restore-v4.md)。
+- 9月21日早期试验：两份原commit及各154份广彩文件快照的证明保留在 [原始Git记录](docs/history/20260921-original-git/README.md)。原混合仓库祖先链没有合入正式库，原SHA不能直接当成正式库checkout版本。
+- 大文件：需要 Git LFS 原文件，不能只取得指针；本轮11个LFS文件均从GitHub完整下载并核对SHA-256，通过后未重复落盘。
 
-原22个失效附件路径已按2026-10-15用户确认处理：17张照片及1份PSD为用户移动，保留无水印PDF，3张旧截图停止追查。19份保留文件与Git归档哈希一致；保留旧路径失效的历史事实，不宣称水印版或截图原字节已找回。详见[附件处理与内部查重](docs/changes/20261015-attachment-resolution-and-duplicates/report.md)。该次查重先记录完全相同内容和各副本用途；用户随后授权删除，执行结果见[核对与实际去重](docs/changes/20261015-verified-dedup-cleanup/completion.md)。
+旧本机绑定、缓存、历史展开状态和操作系统元数据随恢复目录移除，不宣称这些都能从Git恢复。源码内容、版本和已归档制作资源才是Git恢复的范围。
 
-H5文件已归档，但H5本身仍是非Git历史工程。Git归档PR与产品分支、线上发布分别管理。
+## ExFAT 日常维护
 
-2026-10-15去重收尾：删除当前中国杯`dist/`和`.codex-work/deploy/v4-final/`、旧H5的`dist/`、早期Web3D的`dist/`和`.codex-work/tmp/verified-delivery/`，以及两张外围重复图片，共1,494个内容文件及1,603份配套元数据。删除内容已纳入`cleanup-20261015`恢复来源；元数据备份在`历史工程/Git元数据/20261015-duplicate-cleanup-metadata.tar.gz`。初号機可用空间从约2.65 GiB增至4.12 GiB（净增加约1.47 GiB，测量时点见结果文件）。
+主仓库与 `.git` 保留普通ExFAT目录，本机 `core.filemode=false` 适配其权限表示。使用 `python3 -B tools/git-exfat.py <Git参数>` 处理macOS产生的Git包伴随元数据，例如 `python3 -B tools/git-exfat.py fetch origin main`。工具先严格校验、备份并读回合法 `._pack-*`，再清理伴随文件；保留真实包和实际错误。详见 [工具说明](tools/README-exfat.md)。磁盘断开时停止写入，恢复并核对后继续。
 
-文档配图保留在`素材原件/文档/五次添彩_东方雅韵版_V1/03_万彩落于白瓷.png`；另一图片保留为`素材原件/一号杯2/IMG_1226.jpg`。原始PSD、制作母版、运行资源和验收证据保持用途对应。该次删除时，当前与旧工作树的HEAD及原有跟踪状态不变；该阶段没有切换开发分支。
+[工程关系](PROJECTS.md) · [主仓库迁移记录](docs/changes/20261018-main-migration/completion.md) · [远端核验与最终删除回执](docs/changes/20261018-exfat-and-v4-retirement/history-cleanup.json)。

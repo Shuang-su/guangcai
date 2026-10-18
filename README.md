@@ -2,7 +2,9 @@
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
-本机当前主仓库已迁至 `/Volumes/Prism_初号機/广彩/guangcai-main/`，稳定入口为同盘的 `guangcai-repo/`。Prism上的旧工作树、交付副本与恢复资料已逐文件归档核验后清理；位置与恢复方法见[工作区说明](WORKSPACE_LOCATIONS.md)及[迁移回执](docs/changes/20261018-main-migration/completion.md)。这些路径描述本机布局，不是安装或部署前置条件。
+本机当前主仓库为 `/Volumes/Prism_初号機/广彩/guangcai-main/`，稳定入口为同盘的 `guangcai-repo/`。旧工作区、历史工程恢复包及内盘失败下载包已按用户选择清理；源码和资源从正式 Git / Git LFS 按需取回，素材原件继续保留。位置与方法见[工作区说明](WORKSPACE_LOCATIONS.md)、[Git恢复说明](docs/changes/20261018-exfat-and-v4-retirement/restore-v4.md)及[最终清理回执](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。这些路径描述本机布局，不是安装或部署前置条件。
+
+本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
 ## 当前开发交付候选：V7.1.3 / v7-4
 
@@ -43,7 +45,7 @@ V6.0.4 发布源码 `833a8b3`，部署 `6ad314a2a5e661a14e469026`。[PR #28](htt
 
 [原件分类与下载索引](docs/changes/20261014-source-consolidation/source-index.md) · [来源与哈希](docs/changes/20261014-source-consolidation/source-manifest.json) · [范围和缺口](docs/changes/20261014-source-consolidation/completion.md) · [整理任务 #23](https://github.com/Shuang-su/guangcai/issues/23)。
 
-已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,661份去重内容、19,534处来源，11个大文件使用Git LFS。`archives/`保存实际对象，原文件名和各来源路径在索引中。已核验的重复工作区完成迁移与清理，原件和历史工程集中保留在初号機盘，恢复方法见[位置说明](WORKSPACE_LOCATIONS.md)。
+已补录原始PSD、线稿、文档、照片视频、会话附件和旧工程产物，共3,661份去重内容、19,534处来源，11个大文件使用Git LFS。`archives/`保存实际对象，原文件名和各来源路径在索引中。已核验的重复工作区完成迁移与清理，原件保留在初号機盘，历史源码通过Git归档按需恢复，恢复方法见[位置说明](WORKSPACE_LOCATIONS.md)。
 
 北京工作区此前3593个云占位已全部按字节核验；2026-10-15旧 `New project/.git` 的云占位也清零，9月21日两个原提交的完整广彩项目快照均已校验，各154个文件、25个树payload。新增初始完成记录原字节保存在[原始Git证据](docs/history/20260921-original-git/README.md)，其余内容复用档案。此项补录与既有16个源码恢复节点互补，不整条导入混合仓库其他项目历史。
 
@@ -61,7 +63,7 @@ V4 经 [PR #15](https://github.com/Shuang-su/guangcai/pull/15) 汇入开发分�
 | 广彩流程H5 | 为APEC添彩：开场、五步选择、海报、成果与榜单框架 | 独立非Git工程，文件已归档；尚未作为正式应用接入本仓库 |
 | 正式Git产品工程 | 一号杯和中国杯的持续开发 | 本仓库；两个应用分别为 `guangcai-viewer/`、`guangcai-china-preview/` |
 
-[工程关系、磁盘位置与还原方法](PROJECTS.md)。三类用途不等于三个Git工作树；开发与资料核验工作树共用本仓库。早期试验版与后来发布的一号杯也不是同一个发布版本。
+[工程关系、磁盘位置与还原方法](PROJECTS.md)。三类用途不等于三个Git工作树；当前主仓库独立维护，旧资料核验工作树与本地恢复包已清理，历史内容按Git索引取回。早期试验版与后来发布的一号杯也不是同一个发布版本。
 
 ## 项目与版本
 
