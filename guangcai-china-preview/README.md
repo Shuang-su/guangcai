@@ -2,7 +2,7 @@
 
 [后台配置 Excel](integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](integration/backend-handoff/backend-config.json) · [字段、录入与扩展说明](integration/backend-handoff/README.md)。后台同事先读此入口，再按性能文档逐项接入；表格不是新增运行时接口。
 
-[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)
+[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [V7.1.3 固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)
 
 V7.1.3 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；当前城市高清真正显示后进入，切城后自动提清；按需解码与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
 
