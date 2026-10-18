@@ -21,4 +21,4 @@ V7.1.3仍待实体iPhone/iPad复测、真实COS与公司身份联调；原5MiB/6
 
 首次核验工具把URL的`#标题锚点`当成文件路径而误报，剥离fragment后重验全部通过；没有为检查器修改已有正确链接。V6字体说明同时与原编译器记录核对。
 
-本地checkpoint与后续推送、合并状态在提交后补充；本记录不把这些步骤提前声明为完成。
+文档与核验checkpoint：`3df7543eb1e0b471703ece50d192e3647ee95628`（`docs(v7): refresh release readmes and track each version in an issue`）。提交后工作树干净；本段随后作为记录补充提交。推送与main合并以关联文档PR及远端回读为准，不由本地commit推断。
