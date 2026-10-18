@@ -3,6 +3,7 @@
 - 正式远端为 `https://github.com/Shuang-su/guangcai.git`。编辑、测试、Git 操作在实际 Git 工作目录执行；开始前检查根目录、分支、upstream、状态与 diff，保护既有修改。
 - 原版在 `guangcai-viewer/`；中国杯在 `guangcai-china-preview/` 持续演进。2.x、3.x 与 4.x 使用同一源码目录，通过功能分支、提交和版本标签保存旧版。不要继续在旧的非 Git 副本开发，不自动抽取公共代码。
 - 每项功能关联 Issue，使用 `codex/<task>` 分支或独立 worktree，形成可审查的原子提交。按当前用户授权推送、创建 PR 和合并；未完成的开发保持 Draft。PR 合并与部署分别核实。
+- 每个准备发布的小版本使用独立版本 Issue（模板 `.github/ISSUE_TEMPLATE/version-release.md`），记录范围、关联PR、源码/资源版本、固定预览、验证和未完成验收；V7的 #29 保留为跨版本开发交接总入口。发布同步根README、应用README和VERSION_HISTORY。存在待验收项时PR用Refs关联，避免自动关闭；验证完成或明确关联转交后再关闭版本Issue。
 - 1.0/2.0/2.1/2.2/3.0/4.0/4.1/4.2/4.3 已建立对应发布记录与标签；后续版本基于 main 持续演进。提交说明写实际改动，不伪造历史拆分或倒签日期。已发布标签不可移动。
 - 两个应用各自 `npm ci`、`npm test`、`npm run build`；浏览器回归按改动选择。不要沿用旧结果声称新代码已通过。不要提交 node_modules 或外部机器依赖链接。
 - `deployments/` 是按部署 ID 保存的不可变发布文件；新发布新增目录。历史源码核验固定到相应 commit，不限制当前源代码演进。`python3 tools/verify-archive.py` 需要完整 Git 历史；`python3 tools/test_verify_archive.py` 验证核验工具边界。

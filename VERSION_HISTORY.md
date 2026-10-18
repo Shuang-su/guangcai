@@ -2,8 +2,17 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
+当前独立预览为 **V7.1.3 / v7-4**，已合并和部署；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
+
+| 版本记录 | 实现与证据 | 验收状态 |
+| --- | --- | --- |
+| [V7.1.3 · Issue #35](https://github.com/Shuang-su/guangcai/issues/35) | [PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [完整记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md) | 已合并/部署，Issue保持开启，待验收项见正文 |
+| V7.1.2 · 历史记录 | [PR #32](https://github.com/Shuang-su/guangcai/pull/32) · [完整记录](docs/changes/20261018-v7.1.2-font-fill/completion.md) · [当时Issue正文存档](docs/changes/20261018-v7.1.3-floral-correction/issue29-v7.1.2-history.md) | 当时未单开版本Issue，保留原证据 |
+| [V7开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) | 后台表格、性能机制、接口与接入责任 | 跨版本持续维护 |
+
 | 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
+| 7.1.3 独立预览 | 未新增标签 | `3283d27147e080913b5bddf3a7e88ddec7351a7a` | `6ad4995927bf346abcf5fcf4` | v7-4实拍花纹方向、底边、金底补洞、上连接白瓷与杯碟近看高清；跨版本原子还原及后台表更新；V6不变 |
 | 7.1.2 独立预览 | 未新增标签 | `6a9c4d3bd8ff237b11a9039070a9836083fdd224` | `6ad3be04e1ca085185e3e395` | 思源宋体CN Bold六组祝福语与字框、23城填色复核、厦门/西安G补面、v7-3及后台表更新；V6不变 |
 | 1.0 | `v1.0` | `152a791b51faaa28e4a565809b3250cf7fc75346` | `6abbdf78d912b4b6b1d7c3b9` | 原版一号杯 |
 | 2.0 | `v2.0` | `e50528015a727ea0689a0ca277a0ab2f6731cf8e` | `6acbd24fa545c331cdd20dae` | 中国杯上线基线 |
