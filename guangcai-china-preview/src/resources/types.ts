@@ -1,6 +1,7 @@
 import type {FixedAtlas} from '../materials/fixed-atlas';
 import type {Appearance} from '../styles/city-appearance';
 
+export type FixedMapping='source-layout-v3'|'source-layout-v4';
 export type Tier='light'|'standard'|'detail';
 export type Region='body'|'handle'|'saucer';
 export interface Asset {
@@ -12,6 +13,7 @@ export interface FixedLevel {atlas?:FixedAtlas;baseColor:Asset;normal:Asset;orm:
 export interface CityLevel {mask:Asset;normal:Asset}
 export interface Label {asset:Asset;uvRect:[number,number,number,number]}
 export interface ResourceManifest {
+ fixedMapping?:FixedMapping;
  schemaVersion:1;releaseId:string;modelVersion:string;recipeVersion:string;
  fixed:Record<Region,Record<Tier,FixedLevel>>;
  cities:Record<string,{name:string;thumbnail:Asset;levels:Record<Tier,CityLevel>}>;

@@ -1,0 +1,914 @@
+{
+  "checks": [
+    "777x878 DPR2 desktop promotes inspected saucer to detail",
+    "non-focus city standard frees memory",
+    "full liquid glass preserved",
+    "steady memory budget maintained",
+    "bottom logo uses anisotropic filtering",
+    "appearance and design unchanged",
+    "desktop resize reduces DPR before rejecting detailed floral or liquid glass"
+  ],
+  "errors": [],
+  "physicalDeviceTested": false,
+  "inspection": {
+    "debug": {
+      "version": "7.1.3",
+      "profile": "consumer",
+      "fixedMapping": "source-layout-v4",
+      "markFiltering": {
+        "anisotropy": 8
+      },
+      "importing": false,
+      "preload": {
+        "neighborCity": "shenzhen",
+        "neighborError": "",
+        "readyCities": 23,
+        "slogans": 6
+      },
+      "entryLoading": {
+        "prepared": true,
+        "entered": true,
+        "error": "",
+        "total": 17181250,
+        "received": 17181250,
+        "completed": 89,
+        "count": 91
+      },
+      "loading": {
+        "pending": [],
+        "error": ""
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 2,
+        "renderFrames": 10,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 22371191,
+          "reservedBytes": 22371191,
+          "peakBytes": 24999345,
+          "limit": 25165824,
+          "entries": 94,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 66491056,
+        "reservedRenderTargetBytes": 192675040,
+        "peakEstimatedBytes": 334434192,
+        "steadyBudget": 268435456,
+        "peakBudget": 402653184,
+        "entries": 21,
+        "activeEntries": 18,
+        "decodedBytes": 49868288,
+        "fetchedBodyBytes": 25424323,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      },
+      "renderTargets": {
+        "environments": 18874368,
+        "shadow": 33554432,
+        "contact": 4194304,
+        "framebuffer": 98237664
+      },
+      "glass": {
+        "backend": "webgl2",
+        "ready": true,
+        "maps": 14,
+        "mapTime": 193.89999997615814,
+        "error": "",
+        "optionSurfaces": 8,
+        "memory": {
+          "gpuBytes": 65536,
+          "scratchBytes": 0,
+          "cpuBytes": 8198816,
+          "parts": {
+            "map-renderer": {
+              "gpu": 65536,
+              "cpu": 0,
+              "scratch": 0
+            },
+            "decoded-maps": {
+              "gpu": 0,
+              "cpu": 8198816,
+              "scratch": 0
+            }
+          }
+        },
+        "deviceMemoryGiB": 16
+      },
+      "haptics": {
+        "backend": "none",
+        "continuousBackend": "none",
+        "requests": 0,
+        "surfaces": [],
+        "physicalMotorVerified": false
+      },
+      "selection": {
+        "current": {
+          "variant": "v6-shenzhen-gold",
+          "finish": "metal",
+          "text": "open",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "desired": {
+          "variant": "v6-shenzhen-gold",
+          "finish": "metal",
+          "text": "open",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "busy": false,
+        "error": ""
+      },
+      "porcelain": {
+        "color": "#fffdf7",
+        "indirectGain": 1.38,
+        "roughness": 0.16,
+        "clearcoatRoughness": 0.065
+      },
+      "ready": true,
+      "view": "flowers",
+      "mode": "pbr",
+      "auto": false,
+      "camera": [
+        0,
+        25.379999999999995,
+        176.25
+      ],
+      "clipping": {
+        "near": 0.5,
+        "far": 2500
+      },
+      "target": [
+        0,
+        8.999999999999998,
+        29.999999999999996
+      ],
+      "exposure": 1.08,
+      "background": {
+        "choice": "soft-v3",
+        "active": "soft-v3",
+        "busy": false,
+        "hasCustom": false
+      },
+      "environment": "d56a770a-6fe2-44c1-a9a2-574aa4b87dc4",
+      "parameters": {
+        "radius": 43,
+        "height": 103,
+        "wall": 2.2,
+        "bottom": 5.5,
+        "bandAngle": 1.0471975511965976,
+        "handleReach": 35,
+        "handleWidth": 14,
+        "handleThickness": 4.8,
+        "saucerRadius": 75.5,
+        "lidOverhang": 2.4
+      },
+      "reflections": {
+        "enabled": true,
+        "ready": false,
+        "captures": 1,
+        "resolution": 512,
+        "position": [
+          0,
+          57.5,
+          0
+        ],
+        "envMap": "1c950ca2-7369-4be5-9713-88b2bfc76847",
+        "method": "local cube probe; cup wall excluded, real nearby geometry included",
+        "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+      },
+      "lidReflections": {
+        "method": "planar reflection of actual lid knob",
+        "captures": 2,
+        "resolution": 1024
+      },
+      "bottomClearance": 6.119999997317791,
+      "geometries": [
+        "b2f08aaa-8c57-4765-bd9f-5a14e48bfa97",
+        "33614af4-1181-435b-bce3-9c11d85e6e0e",
+        "1d1f40b2-1e28-4791-a488-ea8f69917bce",
+        "3ef877c7-d65c-4210-bb78-a9284b24b0a2",
+        "84c214a6-0e92-40ed-8d1c-3f01ddc87bfb",
+        "82591b74-1842-4c64-be97-533583862dbd",
+        "b3e60398-47d3-42fe-949b-6e006367705e",
+        "f3451947-2ca2-403c-b6e0-05f338d4ccbc",
+        "3aa1a224-9369-4f14-84d9-da89ea97ff77",
+        "1af1744a-15ff-4b86-8b69-2dce43c17eda",
+        "79bf5538-7d7a-4828-b896-f322e717fdb5"
+      ],
+      "memory": {
+        "geometries": 14,
+        "textures": 31,
+        "programs": 24
+      },
+      "city": {
+        "pack": {
+          "id": "v6-shenzhen-gold",
+          "version": 7,
+          "name": "深圳",
+          "layout": "blank-300deg-v1",
+          "baseColor": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+          "normal": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+          "roughness": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+          "metalness": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+          "coverage": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+          "normalEncoding": "rgba16f",
+          "parametric": {
+            "mask": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+            "appearance": {
+              "preset": "gold",
+              "hue": 41.80851063829786,
+              "saturation": 100,
+              "lightness": 63.13725490196078,
+              "material": 1,
+              "materialX": 0.5,
+              "relief": 1
+            }
+          },
+          "label": {
+            "source": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+            "fixedGold": true
+          },
+          "runtime": {
+            "mask": {
+              "id": "shenzhen-standard-mask",
+              "url": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+              "sha256": "e62b8c3f23030aa66a96c345f10c759816a76125ff9bc0e0178d87026fb407e8",
+              "sourceSha256": "0f39104d2f4814e767dab2bb770e19f517043ae9195f8168b27278bdc95cdef8",
+              "encoding": "webp",
+              "width": 2048,
+              "height": 892,
+              "bytes": 117898,
+              "decodedBytes": 3653632,
+              "gpuBytes": 4871510,
+              "channels": 2,
+              "colorSpace": "linear"
+            },
+            "normal": {
+              "id": "shenzhen-standard-normal",
+              "url": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+              "sha256": "1758749aa67986753cce2e6dd5b71e4f191c6d5850a54b107eabc9c352903199",
+              "sourceSha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133",
+              "encoding": "hfn1-gzip",
+              "width": 2048,
+              "height": 892,
+              "bytes": 803776,
+              "decodedBytes": 14614528,
+              "gpuBytes": 19486038,
+              "channels": 4,
+              "colorSpace": "linear"
+            },
+            "label": {
+              "text": "开放包容",
+              "asset": {
+                "id": "slogan-open",
+                "url": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+                "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+                "sourceSha256": "4bb4fc55916758d5253a91cf40d8a62474733ff293045e4c4ae9e397be8df178",
+                "encoding": "webp",
+                "width": 288,
+                "height": 936,
+                "bytes": 13680,
+                "decodedBytes": 269568,
+                "gpuBytes": 359424,
+                "channels": 1,
+                "colorSpace": "linear"
+              },
+              "uvRect": [
+                0.77490234375,
+                0.38754907459338195,
+                0.0703125,
+                0.5249579360628155
+              ]
+            }
+          }
+        },
+        "relief": 1,
+        "metalEnabled": true,
+        "displacementScale": 0,
+        "parameters": {
+          "enabled": true,
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          },
+          "fill": {
+            "metalness": 1,
+            "roughness": 0.2823529411764706,
+            "clearcoat": 0.10196078431372546
+          },
+          "line": {
+            "color": "#dcb251",
+            "metalness": 1,
+            "roughness": 0.23,
+            "clearcoat": 0.10196078431372549
+          },
+          "fixedGoldLabel": true,
+          "updates": 3
+        },
+        "cachedCities": 0,
+        "cachedLabels": 0,
+        "uniformOnly": false,
+        "maps": [
+          {
+            "uuid": "2986b76e-bb32-4896-aa18-6dc5394056cd",
+            "channel": 1,
+            "size": [
+              2048,
+              892
+            ],
+            "colorSpace": "",
+            "precision": "RG8"
+          },
+          {
+            "uuid": "f29cab74-e26f-4346-8c60-26e65741e1ec",
+            "channel": 1,
+            "size": [
+              2048,
+              892
+            ],
+            "colorSpace": "",
+            "precision": "RG16F"
+          },
+          {
+            "uuid": "81069072-3f39-4c1f-9c86-bb6d5d8a47ae",
+            "channel": 1,
+            "size": [
+              288,
+              936
+            ],
+            "colorSpace": "",
+            "precision": "R8"
+          }
+        ],
+        "labelSource": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+        "labelColor": "#ddb538",
+        "lastError": ""
+      },
+      "fixedFinish": {
+        "cleanGoldGround": true,
+        "enabled": true,
+        "normalScale": 4.4,
+        "clearcoatNormalScale": 2.4,
+        "clearcoat": 0.4,
+        "specularIntensity": 0.85
+      },
+      "fixed": {
+        "body": {
+          "baseColor": "9dbe62c8-941d-4daa-9e90-3c31a8323a51",
+          "normal": "735f783e-3380-47ad-a8ae-69314812975d",
+          "roughness": "2ce6dac5-b6ff-44d8-a36b-466c92da9970",
+          "metalness": "2ce6dac5-b6ff-44d8-a36b-466c92da9970"
+        },
+        "handle": {
+          "baseColor": "143d6466-e6ed-4e89-a326-bb7c937902ff",
+          "normal": "2b34d5c0-f3e8-47b6-a91c-eaefeae4ecde",
+          "roughness": "f3d0853e-b380-4c04-8bdd-103f001941e0",
+          "metalness": "f3d0853e-b380-4c04-8bdd-103f001941e0"
+        },
+        "saucer": {
+          "baseColor": "44223796-ea73-4ea8-a98c-feb5b3af2b43",
+          "normal": "3c61962d-5d76-4551-b8e5-5fa95d5d70fd",
+          "roughness": "a7fe3e32-719c-4cf9-b1d0-327b77a2ca36",
+          "metalness": "a7fe3e32-719c-4cf9-b1d0-327b77a2ca36"
+        }
+      }
+    },
+    "fixed": {
+      "body": {
+        "mapping": "source-layout-v4",
+        "repeat": [
+          -1,
+          1
+        ],
+        "offset": [
+          1,
+          0
+        ],
+        "normalType": 1016,
+        "anisotropy": 16,
+        "normalSize": [
+          425,
+          1024
+        ],
+        "precision": "RG16F",
+        "normalFlipY": false,
+        "atlas": null
+      },
+      "handle": {
+        "mapping": "source-layout-v4",
+        "repeat": [
+          -1,
+          1
+        ],
+        "offset": [
+          1,
+          0
+        ],
+        "normalType": 1016,
+        "anisotropy": 16,
+        "normalSize": [
+          88,
+          1024
+        ],
+        "precision": "RG16F",
+        "normalFlipY": false,
+        "atlas": null
+      },
+      "saucer": {
+        "mapping": "source-layout-v4",
+        "repeat": [
+          -1,
+          1
+        ],
+        "offset": [
+          1.105,
+          0
+        ],
+        "normalType": 1016,
+        "anisotropy": 16,
+        "normalSize": [
+          4096,
+          576
+        ],
+        "precision": "RG16F",
+        "normalFlipY": false,
+        "atlas": {
+          "rows": 2,
+          "contentWidth": 4064,
+          "contentHeight": 256,
+          "gutter": 16
+        }
+      }
+    },
+    "design": {
+      "schemaVersion": 1,
+      "resourceReleaseId": "v7-4",
+      "modelVersion": "china-cup-v6",
+      "recipeVersion": "porcelain-city-v6",
+      "cityId": "shenzhen",
+      "sloganId": "open",
+      "appearance": {
+        "preset": "gold",
+        "hue": 41.80851063829786,
+        "saturation": 100,
+        "lightness": 63.13725490196078,
+        "material": 1,
+        "materialX": 0.5,
+        "relief": 1
+      }
+    }
+  },
+  "resized": {
+    "version": "7.1.3",
+    "profile": "consumer",
+    "fixedMapping": "source-layout-v4",
+    "markFiltering": {
+      "anisotropy": 8
+    },
+    "importing": false,
+    "preload": {
+      "neighborCity": "shenzhen",
+      "neighborError": "",
+      "readyCities": 23,
+      "slogans": 6
+    },
+    "entryLoading": {
+      "prepared": true,
+      "entered": true,
+      "error": "",
+      "total": 17181250,
+      "received": 17181250,
+      "completed": 89,
+      "count": 91
+    },
+    "loading": {
+      "pending": [],
+      "error": ""
+    },
+    "quality": {
+      "cityTier": "standard",
+      "fixedTiers": {
+        "body": "light",
+        "handle": "light",
+        "saucer": "detail"
+      },
+      "mobile": false,
+      "upgrading": false,
+      "error": "",
+      "dpr": 1.25,
+      "renderFrames": 11,
+      "contextLost": false
+    },
+    "resources": {
+      "transitions": 0,
+      "fileCache": {
+        "bytes": 22371191,
+        "reservedBytes": 22371191,
+        "peakBytes": 24999345,
+        "limit": 25165824,
+        "entries": 94,
+        "pending": 0
+      },
+      "decodeTask": null,
+      "decodeRetries": 0,
+      "estimatedGpuBytes": 66491056,
+      "reservedRenderTargetBytes": 183537376,
+      "peakEstimatedBytes": 334434192,
+      "steadyBudget": 268435456,
+      "peakBudget": 402653184,
+      "entries": 21,
+      "activeEntries": 18,
+      "decodedBytes": 49868288,
+      "fetchedBodyBytes": 25424323,
+      "cancelled": 0,
+      "network": {
+        "active": 0,
+        "queued": 0,
+        "limit": 2,
+        "paused": false
+      },
+      "decode": {
+        "active": 0,
+        "queued": 0,
+        "limit": 1,
+        "paused": false
+      }
+    },
+    "renderTargets": {
+      "environments": 18874368,
+      "shadow": 33554432,
+      "contact": 4194304,
+      "framebuffer": 89100000
+    },
+    "glass": {
+      "backend": "webgl2",
+      "ready": true,
+      "maps": 14,
+      "mapTime": 193.89999997615814,
+      "error": "",
+      "optionSurfaces": 8,
+      "memory": {
+        "gpuBytes": 65536,
+        "scratchBytes": 0,
+        "cpuBytes": 8198816,
+        "parts": {
+          "map-renderer": {
+            "gpu": 65536,
+            "cpu": 0,
+            "scratch": 0
+          },
+          "decoded-maps": {
+            "gpu": 0,
+            "cpu": 8198816,
+            "scratch": 0
+          }
+        }
+      },
+      "deviceMemoryGiB": 16
+    },
+    "haptics": {
+      "backend": "none",
+      "continuousBackend": "none",
+      "requests": 0,
+      "surfaces": [],
+      "physicalMotorVerified": false
+    },
+    "selection": {
+      "current": {
+        "variant": "v6-shenzhen-gold",
+        "finish": "metal",
+        "text": "open",
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        }
+      },
+      "desired": {
+        "variant": "v6-shenzhen-gold",
+        "finish": "metal",
+        "text": "open",
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        }
+      },
+      "busy": false,
+      "error": ""
+    },
+    "porcelain": {
+      "color": "#fffdf7",
+      "indirectGain": 1.38,
+      "roughness": 0.16,
+      "clearcoatRoughness": 0.065
+    },
+    "ready": true,
+    "view": "flowers",
+    "mode": "pbr",
+    "auto": false,
+    "camera": [
+      0,
+      25.379999999999995,
+      176.25
+    ],
+    "clipping": {
+      "near": 0.5,
+      "far": 2500
+    },
+    "target": [
+      0,
+      8.999999999999998,
+      29.999999999999996
+    ],
+    "exposure": 1.08,
+    "background": {
+      "choice": "soft-v3",
+      "active": "soft-v3",
+      "busy": false,
+      "hasCustom": false
+    },
+    "environment": "d56a770a-6fe2-44c1-a9a2-574aa4b87dc4",
+    "parameters": {
+      "radius": 43,
+      "height": 103,
+      "wall": 2.2,
+      "bottom": 5.5,
+      "bandAngle": 1.0471975511965976,
+      "handleReach": 35,
+      "handleWidth": 14,
+      "handleThickness": 4.8,
+      "saucerRadius": 75.5,
+      "lidOverhang": 2.4
+    },
+    "reflections": {
+      "enabled": true,
+      "ready": false,
+      "captures": 1,
+      "resolution": 512,
+      "position": [
+        0,
+        57.5,
+        0
+      ],
+      "envMap": "1c950ca2-7369-4be5-9713-88b2bfc76847",
+      "method": "local cube probe; cup wall excluded, real nearby geometry included",
+      "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
+    },
+    "lidReflections": {
+      "method": "planar reflection of actual lid knob",
+      "captures": 2,
+      "resolution": 1024
+    },
+    "bottomClearance": 6.119999997317791,
+    "geometries": [
+      "b2f08aaa-8c57-4765-bd9f-5a14e48bfa97",
+      "33614af4-1181-435b-bce3-9c11d85e6e0e",
+      "1d1f40b2-1e28-4791-a488-ea8f69917bce",
+      "3ef877c7-d65c-4210-bb78-a9284b24b0a2",
+      "84c214a6-0e92-40ed-8d1c-3f01ddc87bfb",
+      "82591b74-1842-4c64-be97-533583862dbd",
+      "b3e60398-47d3-42fe-949b-6e006367705e",
+      "f3451947-2ca2-403c-b6e0-05f338d4ccbc",
+      "3aa1a224-9369-4f14-84d9-da89ea97ff77",
+      "1af1744a-15ff-4b86-8b69-2dce43c17eda",
+      "79bf5538-7d7a-4828-b896-f322e717fdb5"
+    ],
+    "memory": {
+      "geometries": 14,
+      "textures": 31,
+      "programs": 24
+    },
+    "city": {
+      "pack": {
+        "id": "v6-shenzhen-gold",
+        "version": 7,
+        "name": "深圳",
+        "layout": "blank-300deg-v1",
+        "baseColor": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+        "normal": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+        "roughness": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+        "metalness": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+        "coverage": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+        "normalEncoding": "rgba16f",
+        "parametric": {
+          "mask": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+          "appearance": {
+            "preset": "gold",
+            "hue": 41.80851063829786,
+            "saturation": 100,
+            "lightness": 63.13725490196078,
+            "material": 1,
+            "materialX": 0.5,
+            "relief": 1
+          }
+        },
+        "label": {
+          "source": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+          "fixedGold": true
+        },
+        "runtime": {
+          "mask": {
+            "id": "shenzhen-standard-mask",
+            "url": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-mask-e62b8c3f23030aa6.webp",
+            "sha256": "e62b8c3f23030aa66a96c345f10c759816a76125ff9bc0e0178d87026fb407e8",
+            "sourceSha256": "0f39104d2f4814e767dab2bb770e19f517043ae9195f8168b27278bdc95cdef8",
+            "encoding": "webp",
+            "width": 2048,
+            "height": 892,
+            "bytes": 117898,
+            "decodedBytes": 3653632,
+            "gpuBytes": 4871510,
+            "channels": 2,
+            "colorSpace": "linear"
+          },
+          "normal": {
+            "id": "shenzhen-standard-normal",
+            "url": "http://127.0.0.1:5271/releases/v7-1/assets/shenzhen-standard-normal-1758749aa6798675.hfn.gz",
+            "sha256": "1758749aa67986753cce2e6dd5b71e4f191c6d5850a54b107eabc9c352903199",
+            "sourceSha256": "6ad0994b9373ebb2ba189f94e4cf58e2aa0380e38e1fa7889dd901d606925133",
+            "encoding": "hfn1-gzip",
+            "width": 2048,
+            "height": 892,
+            "bytes": 803776,
+            "decodedBytes": 14614528,
+            "gpuBytes": 19486038,
+            "channels": 4,
+            "colorSpace": "linear"
+          },
+          "label": {
+            "text": "开放包容",
+            "asset": {
+              "id": "slogan-open",
+              "url": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+              "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+              "sourceSha256": "4bb4fc55916758d5253a91cf40d8a62474733ff293045e4c4ae9e397be8df178",
+              "encoding": "webp",
+              "width": 288,
+              "height": 936,
+              "bytes": 13680,
+              "decodedBytes": 269568,
+              "gpuBytes": 359424,
+              "channels": 1,
+              "colorSpace": "linear"
+            },
+            "uvRect": [
+              0.77490234375,
+              0.38754907459338195,
+              0.0703125,
+              0.5249579360628155
+            ]
+          }
+        }
+      },
+      "relief": 1,
+      "metalEnabled": true,
+      "displacementScale": 0,
+      "parameters": {
+        "enabled": true,
+        "appearance": {
+          "preset": "gold",
+          "hue": 41.80851063829786,
+          "saturation": 100,
+          "lightness": 63.13725490196078,
+          "material": 1,
+          "materialX": 0.5,
+          "relief": 1
+        },
+        "fill": {
+          "metalness": 1,
+          "roughness": 0.2823529411764706,
+          "clearcoat": 0.10196078431372546
+        },
+        "line": {
+          "color": "#dcb251",
+          "metalness": 1,
+          "roughness": 0.23,
+          "clearcoat": 0.10196078431372549
+        },
+        "fixedGoldLabel": true,
+        "updates": 3
+      },
+      "cachedCities": 0,
+      "cachedLabels": 0,
+      "uniformOnly": false,
+      "maps": [
+        {
+          "uuid": "2986b76e-bb32-4896-aa18-6dc5394056cd",
+          "channel": 1,
+          "size": [
+            2048,
+            892
+          ],
+          "colorSpace": "",
+          "precision": "RG8"
+        },
+        {
+          "uuid": "f29cab74-e26f-4346-8c60-26e65741e1ec",
+          "channel": 1,
+          "size": [
+            2048,
+            892
+          ],
+          "colorSpace": "",
+          "precision": "RG16F"
+        },
+        {
+          "uuid": "81069072-3f39-4c1f-9c86-bb6d5d8a47ae",
+          "channel": 1,
+          "size": [
+            288,
+            936
+          ],
+          "colorSpace": "",
+          "precision": "R8"
+        }
+      ],
+      "labelSource": "http://127.0.0.1:5271/releases/v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+      "labelColor": "#ddb538",
+      "lastError": ""
+    },
+    "fixedFinish": {
+      "cleanGoldGround": true,
+      "enabled": true,
+      "normalScale": 4.4,
+      "clearcoatNormalScale": 2.4,
+      "clearcoat": 0.4,
+      "specularIntensity": 0.85
+    },
+    "fixed": {
+      "body": {
+        "baseColor": "9dbe62c8-941d-4daa-9e90-3c31a8323a51",
+        "normal": "735f783e-3380-47ad-a8ae-69314812975d",
+        "roughness": "2ce6dac5-b6ff-44d8-a36b-466c92da9970",
+        "metalness": "2ce6dac5-b6ff-44d8-a36b-466c92da9970"
+      },
+      "handle": {
+        "baseColor": "143d6466-e6ed-4e89-a326-bb7c937902ff",
+        "normal": "2b34d5c0-f3e8-47b6-a91c-eaefeae4ecde",
+        "roughness": "f3d0853e-b380-4c04-8bdd-103f001941e0",
+        "metalness": "f3d0853e-b380-4c04-8bdd-103f001941e0"
+      },
+      "saucer": {
+        "baseColor": "44223796-ea73-4ea8-a98c-feb5b3af2b43",
+        "normal": "3c61962d-5d76-4551-b8e5-5fa95d5d70fd",
+        "roughness": "a7fe3e32-719c-4cf9-b1d0-327b77a2ca36",
+        "metalness": "a7fe3e32-719c-4cf9-b1d0-327b77a2ca36"
+      }
+    }
+  },
+  "passed": true
+}

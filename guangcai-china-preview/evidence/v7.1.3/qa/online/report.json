@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "base": "https://guangcai-no1-china-v7.netlify.app/",
+  "deployId": "6ad4995927bf346abcf5fcf4",
+  "release": {
+    "version": "7.1.3",
+    "kind": "independent-preview",
+    "sourceCommit": "3283d27147e080913b5bddf3a7e88ddec7351a7a",
+    "sourceBranch": "codex/v7.1.3-floral-correction",
+    "v6SyncedThrough": "833a8b33561d36e72f1164743e80f28fc63d96b2",
+    "resourceRelease": "v7-4"
+  },
+  "entries": [
+    {
+      "releaseId": "v7-1",
+      "catalogSha256": "d18465aedc0a8a51058c271116637a079fbea370eff3b02c524fe7b6c3945afb",
+      "manifestPath": "releases/v7-1/manifest-ec81ffecfc60c00c.json",
+      "manifestSha256": "ec81ffecfc60c00c946ede97740920cc61cdd14f22930a112780503e78976173"
+    },
+    {
+      "releaseId": "v7-2",
+      "catalogSha256": "4de9ed12629dfa22bcee33713a051c28bc09bf98146629d06dc596c90be1f708",
+      "manifestPath": "releases/v7-2/manifest-c3af02ef5468edcb.json",
+      "manifestSha256": "c3af02ef5468edcb425f9a9761528ea3c002aa6902215bca5dec0688764c5236"
+    },
+    {
+      "releaseId": "v7-3",
+      "catalogSha256": "5efd3f2ada5bece80ab5efd3b70c0030d892673eec6cc21bb5367f4ecca785c5",
+      "manifestPath": "releases/v7-3/manifest-b27eb343b846cdc4.json",
+      "manifestSha256": "b27eb343b846cdc4237d3df7adde61edbb304ad0155ea6da9ac47d375ade11b4"
+    },
+    {
+      "releaseId": "v7-4",
+      "catalogSha256": "c4fd486fae5d5f784600b4ef358e11abde04b7af1e91e74b78637b8727006ee5",
+      "manifestPath": "releases/v7-4/manifest-a6484ca5de3f4cc2.json",
+      "manifestSha256": "a6484ca5de3f4cc2f471192a3eb947b2027443552ec87b4ccb172642908c0465"
+    }
+  ],
+  "newAssetHashes": [
+    {
+      "id": "fixed-body-light-color",
+      "bytes": 149578,
+      "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4"
+    },
+    {
+      "id": "fixed-body-light-normal",
+      "bytes": 910683,
+      "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9"
+    },
+    {
+      "id": "fixed-body-light-orm",
+      "bytes": 112240,
+      "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904"
+    },
+    {
+      "id": "fixed-body-standard-color",
+      "bytes": 386446,
+      "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474"
+    },
+    {
+      "id": "fixed-body-standard-normal",
+      "bytes": 3449729,
+      "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06"
+    },
+    {
+      "id": "fixed-body-standard-orm",
+      "bytes": 281146,
+      "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f"
+    },
+    {
+      "id": "fixed-body-detail-color",
+      "bytes": 475446,
+      "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245"
+    },
+    {
+      "id": "fixed-body-detail-normal",
+      "bytes": 4845924,
+      "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9"
+    },
+    {
+      "id": "fixed-body-detail-orm",
+      "bytes": 281864,
+      "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b"
+    }
+  ],
+  "entryVersionMatches": true,
+  "serverFilesMatched": 250,
+  "protectedSitesUnchanged": true,
+  "v6": {
+    "version": "6.0.4",
+    "kind": "independent-preview",
+    "sourceCommit": "833a8b33561d36e72f1164743e80f28fc63d96b2",
+    "reviewSha256": "211c69c67b12bdd89dd7bd911c62b1595aa0966ecaf634a3e7739344bd45c5e7",
+    "sourceHashes": {
+      "shanghai": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "urumqi": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+      "beijing": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "nanjing": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+      "nanchang": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+      "xiamen": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+      "hohhot": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+      "harbin": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+      "tianjin": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "taiyuan": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "guangzhou": "7fca8585c5931d47e5d4592115e31fd0c475829e3cb16cba96563439ce602de6",
+      "chengdu": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+      "jingdezhen": "ac8230f3e60a5d3afc2d4b2df211bc7a2b2d9327aca897f4a1ef20b9ffbe092f",
+      "hangzhou": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "wuhan": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "shenyang": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+      "shenzhen": "57802cadfee150f4988a73e6d8540e43efc02fa230480f6fe931861d1f1a96e0",
+      "shijiazhuang": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+      "xian": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "zhengzhou": "f9989128b6b45c537fa3633ca7e39236c0a3b5a8f3659b2ae3313a0f53ed6d8b",
+      "chongqing": "629d08baa315d9dd3201056a71d47540d524ef5bab10f6baad21ecb3f4e378d9",
+      "changchun": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+      "qingdao": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b"
+    }
+  },
+  "physicalDeviceAcceptance": "pending"
+}

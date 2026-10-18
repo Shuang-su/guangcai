@@ -5,6 +5,8 @@ import { handlePath, handleRails, handleCollar, knobFoot } from './handle';
 import { defaults, validateDimensions, type Dimensions } from './parameters';
 import type { Materials } from '../materials/materials';
 import fixedLayout from '../styles/fixed-layout.json';
+import {fixedBodyMapping} from './fixed-mapping';
+import type {FixedMapping} from '../resources/types';
 
 export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   validateDimensions(p);
@@ -40,9 +42,20 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const bodyUV=body.geometry.getAttribute('uv'),sourceBodyUV=[];
   for(let i=0;i<bodyUV.count;i++)sourceBodyUV.push(bodyUV.getX(i)/(.5+fixedLayout.body.visibleEndFraction),bodyUV.getY(i));
   body.geometry.setAttribute('uv2',new Float32BufferAttribute(sourceBodyUV,2));
+  const setBodyMapping=fixedBodyMapping(body.geometry,profile.length,visibleBandSegments,h);
   const {path,upper,lower}=handlePath(p);
   mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
   for(const y of[upper,lower])mesh('porcelain-handle-root',handleCollar(r,p.handleWidth,p.handleThickness,y===upper?2.5:0),m.porcelain,cup,y-h/2);
+  // The filled source cutout reveals an undersized upper porcelain fillet.
+  // Reuse buffers; old resource releases restore the original collar shape.
+  const upperCollar=cup.children.find(o=>o.name==='porcelain-handle-root') as Mesh;
+  const legacyCollar=upperCollar.geometry.clone(),correctedCollar=handleCollar(r,p.handleWidth,p.handleThickness,5);
+  const setFixedMapping=(mapping:FixedMapping='source-layout-v3')=>{
+    if(!setBodyMapping(mapping))return false;
+    const source=mapping==='source-layout-v4'?correctedCollar:legacyCollar;
+    for(const key of ['position','normal']){const target=upperCollar.geometry.getAttribute(key);target.array.set(source.getAttribute(key).array);target.needsUpdate=true;}
+    upperCollar.geometry.computeBoundingBox();upperCollar.geometry.computeBoundingSphere();return true;
+  };
   const handleMesh=cup.getObjectByName('wide-ribbon-handle') as Mesh;
   handleMesh.geometry.setAttribute('uv2',handleMesh.geometry.getAttribute('uv').clone());
   const lr=r+p.lidOverhang;
@@ -102,8 +115,8 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   }
   cup.position.set(0,6+h/2,0);lid.position.y=6+h-.6;
   root.updateMatrixWorld(true);
-  return {root,cup,lid,saucer,parameters:p,home:{cup:cup.position.clone(),lid:lid.position.clone(),saucer:saucer.position.clone()},dispose(){
-    root.traverse(o=>{if(o instanceof Mesh)o.geometry.dispose();});striped.dispose();
+  return {root,cup,lid,saucer,setFixedMapping,parameters:p,home:{cup:cup.position.clone(),lid:lid.position.clone(),saucer:saucer.position.clone()},dispose(){
+    root.traverse(o=>{if(o instanceof Mesh)o.geometry.dispose();});striped.dispose();legacyCollar.dispose();correctedCollar.dispose();
   }};
 }
 export type Product=ReturnType<typeof buildProduct>;

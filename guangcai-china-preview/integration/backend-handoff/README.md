@@ -1,6 +1,6 @@
 # 后台同事从这里开始
 
-适用版本：V7.1.2，默认资源 `v7-3`，兼容旧作品 `v7-1`、`v7-2`。精确数据基线见 JSON 的 sourceCommit 和 sources。本包是现有配置的数据字典和映射参考；公司尚未提供后台模板，因此不声称可直接导入公司管理后台。
+适用版本：V7.1.3，默认资源 `v7-4`，兼容旧作品 `v7-1`、`v7-2`、`v7-3`。精确数据基线见 JSON 的 sourceCommit 和 sources。本包是现有配置的数据字典和映射参考；公司尚未提供后台模板，因此不声称可直接导入公司管理后台。
 
 - [Excel 配置表](V7后台配置数据表.xlsx)：六张表，包含23城、五套配色、材质参数、六组祝福语和195项资源。
 - [完整 JSON](backend-config.json)：与Excel同源，保留数值精度、来源提交及哈希，便于程序读取。
@@ -68,7 +68,7 @@ const maskUrl = new URL(mask.publishPath, 'https://cdn.example.com/cup/').href;
 
 ## 2. 实际录入与保存流程
 
-1. 将 `releases/v7-1/`、`releases/v7-2/`、`releases/v7-3/` 三个目录上传COS，保留层级和哈希文件名。新版本复用旧文件，不能只上传v7-3。
+1. 将 `releases/v7-1/`、`releases/v7-2/`、`releases/v7-3/`、`releases/v7-4/` 四个目录上传COS，保留层级和哈希文件名。新版本复用旧文件，不能只上传v7-4。
 2. 后台建立资源发布记录，保存releaseId、catalog/manifest路径、模型版本、配方版本。建立城市目录时录入 `cities[].extension`；建立配色目录时录入五套颜色及完整默认appearance。
 3. 配置公开 `runtime-config.js` 的 bootstrapUrl、apiBase、assetBase。资源描述中的原始URL以manifest为基准解析；不要直接拼到网站根或把当前Netlify域名写死在业务数据里。
 4. 前端初始化取得 `window.cupViewer` 后调用 `whenReady()`；从后台记录组装合法DesignConfig，用 `importDesign()` 应用。失败返回false时保留原作品，不将“选择中”状态当成已完成。
@@ -137,3 +137,16 @@ Excel使用Artifact Tool生成，保存后重新打开，对比每个表格单�
 六组文字改用思源宋体 CN Bold 700，与新SVG参考的字框和间距一致；每张288×936，4px护边，uvRect更新。六组R8含mipmap共2,156,544字节，运行时不下载字体。JSON typography保存字体版本、哈希、来源及母版。两个城市共六张mask替换：厦门树丛与西安小接缝只增加G覆盖；R描线、法线、缩略图均不变。共195项资源，其他项按相对路径复用。模型、配方、城市和配色ID及作品schemaVersion保持原值。旧作品使用原release，不能自动迁移到v7-3。
 
 本次21张参考照片属于亚太地区杯款，并非23座国内城市的一一对应图；只作为填色表现参考。逐城判断与源哈希见 `evidence/v7.1.2/cities/review.json`。
+
+
+## V7.1.3 / v7-4 花纸映射与补洞
+
+`ResourceManifest.fixedMapping`为可选字符串，只接受`source-layout-v3`和`source-layout-v4`。缺省为v3；v7-4明确声明v4。它属于资源发布，不属于DesignConfig，也不是后台随意切换花纸方向的开关。v4将三部件颜色、ORM、基础/清漆法线的逻辑U统一为`1-(u+offsetU)`，杯身花纹纵向改为`(y-0.12)/(height-2.42)`，材质覆盖下沿至0.12mm。杯碟先变换逻辑U，再按图集分区采样。法线切线基使用变换后UV，不要再翻法线X。
+
+新增9个杯身资源，轻量425×1024、标准850×2048、细节1024×2466；总描述仍195项。把手、杯碟、城市、祝福语均引用旧文件。两处源图孔位由独立遮罩填金，保留白花瓣和彩绘及模型白瓷连接件。JSON新增`fixedMapping`、`fixedCorrection`、`handleDimensions`交接说明字段，不改变HTTP返回结构。详见[evidence/v7.1.3](../../evidence/v7.1.3/README.md)。
+
+跨版本导入时，前端暂时锁定编辑和导出，保留旧资源租约，新花纸/当前高清城市/六组文字/标识全部就绪后提交。中途失败恢复旧版本及作品，WebGL丢失则取消候选，从最后已提交版本轻量恢复。并发importDesign明确拒绝，调用方应等待Promise后再继续；onDesignChange只通知完整已提交作品。后台必须保留作品原releaseId，不能保存时强制改为最新。资源清晰度、缓存、设备能力和映射不另写入作品。
+
+把手模型核查：名义宽14mm，含金边14.90mm，外廓伸出37.44mm，上下连接中心高89.095/33.475mm（从杯底计），中心距55.62mm。把手轴对杯身居中；相对旧57°花纹中心偏1.126mm。把手主带和连接点不调整；按追加反馈仅补足上连接白瓷下沿（lowerHaunch 2.5→5mm，旧版本恢复原形状）。数据为模型计算，非生产测量。
+
+杯碟近看提清补充：固定部件近看时城市最高standard，桌面也按原预算降低DPR以留出高清花纸空间；底部标识启用各向异性过滤。详见性能文档的V7.1.3追加反馈段。

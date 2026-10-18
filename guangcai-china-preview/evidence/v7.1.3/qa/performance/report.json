@@ -1,0 +1,198 @@
+{
+  "url": "http://127.0.0.1:5271/",
+  "conditions": {
+    "downloadMbps": 10,
+    "rttMs": 100,
+    "cache": "disabled"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "readyMs": 13772,
+      "encodedBytes": 12110057,
+      "debug": {
+        "quality": {
+          "cityTier": "standard",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.25,
+          "renderFrames": 11,
+          "contextLost": false
+        },
+        "resources": {
+          "transitions": 0,
+          "fileCache": {
+            "bytes": 10894205,
+            "reservedBytes": 10894205,
+            "peakBytes": 10894205,
+            "limit": 12582912,
+            "entries": 91,
+            "pending": 0
+          },
+          "decodeTask": null,
+          "decodeRetries": 0,
+          "estimatedGpuBytes": 28742320,
+          "reservedRenderTargetBytes": 99890004,
+          "peakEstimatedBytes": 201188680,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 18,
+          "activeEntries": 18,
+          "decodedBytes": 21556736,
+          "fetchedBodyBytes": 10894205,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    },
+    {
+      "run": 2,
+      "readyMs": 13643,
+      "encodedBytes": 12110057,
+      "debug": {
+        "quality": {
+          "cityTier": "standard",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.25,
+          "renderFrames": 11,
+          "contextLost": false
+        },
+        "resources": {
+          "transitions": 0,
+          "fileCache": {
+            "bytes": 10894205,
+            "reservedBytes": 10894205,
+            "peakBytes": 10894205,
+            "limit": 12582912,
+            "entries": 91,
+            "pending": 0
+          },
+          "decodeTask": null,
+          "decodeRetries": 0,
+          "estimatedGpuBytes": 28742320,
+          "reservedRenderTargetBytes": 99890004,
+          "peakEstimatedBytes": 201188680,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 18,
+          "activeEntries": 18,
+          "decodedBytes": 21556736,
+          "fetchedBodyBytes": 10894205,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    },
+    {
+      "run": 3,
+      "readyMs": 13572,
+      "encodedBytes": 12110057,
+      "debug": {
+        "quality": {
+          "cityTier": "standard",
+          "fixedTiers": {
+            "body": "light",
+            "handle": "light",
+            "saucer": "light"
+          },
+          "mobile": true,
+          "upgrading": false,
+          "error": "",
+          "dpr": 1.25,
+          "renderFrames": 11,
+          "contextLost": false
+        },
+        "resources": {
+          "transitions": 0,
+          "fileCache": {
+            "bytes": 10894205,
+            "reservedBytes": 10894205,
+            "peakBytes": 10894205,
+            "limit": 12582912,
+            "entries": 91,
+            "pending": 0
+          },
+          "decodeTask": null,
+          "decodeRetries": 0,
+          "estimatedGpuBytes": 28742320,
+          "reservedRenderTargetBytes": 99890004,
+          "peakEstimatedBytes": 201188680,
+          "steadyBudget": 134217728,
+          "peakBudget": 201326592,
+          "entries": 18,
+          "activeEntries": 18,
+          "decodedBytes": 21556736,
+          "fetchedBodyBytes": 10894205,
+          "cancelled": 0,
+          "network": {
+            "active": 0,
+            "queued": 0,
+            "limit": 2,
+            "paused": false
+          },
+          "decode": {
+            "active": 0,
+            "queued": 0,
+            "limit": 1,
+            "paused": false
+          }
+        }
+      }
+    }
+  ],
+  "visibility": {
+    "simulatedVisibilityEvent": true,
+    "renderPaused": true,
+    "queuesPaused": true,
+    "resumed": true
+  },
+  "cadence": {
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+    "modelRenders": 120,
+    "medianFrameMs": 16.699999999999818,
+    "p95FrameMs": 16.799999999999727,
+    "samples": 119,
+    "device": "Desktop Chrome, mobile viewport; not physical iPhone"
+  },
+  "targets": {
+    "readyMs": 15000,
+    "requiredPreloadPolicy": "all-low-plus-adjacent-high"
+  },
+  "passed": true,
+  "physicalIPhoneTested": false
+}

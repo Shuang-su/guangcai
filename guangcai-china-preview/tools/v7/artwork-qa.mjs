@@ -1,11 +1,11 @@
-// Fixed-camera app verification for V7.1.2 artwork; desktop automation is not device acceptance.
+// Fixed-camera app verification for V7.1.3 unchanged city/slogan artwork; desktop automation is not device acceptance.
 import {chromium} from 'playwright';import fs from 'node:fs/promises';import assert from 'node:assert/strict';
-const out=process.env.QA_OUT??'evidence/v7.1.2/qa/artwork',url=process.env.QA_URL??'http://127.0.0.1:5282/';await fs.mkdir(out,{recursive:true});
+const out=process.env.QA_OUT??'evidence/v7.1.3/qa/artwork',url=process.env.QA_URL??'http://127.0.0.1:5282/';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({channel:'chrome'}),report={url,checks:[],errors:[],physicalDeviceTested:false};
 try{
  const page=await browser.newPage({viewport:{width:1200,height:1100},deviceScaleFactor:1});page.on('pageerror',e=>report.errors.push(e.message));
  await page.goto(url);await page.waitForFunction(()=>window.cupViewer?.ready(),null,{timeout:180000});
- const initial=await page.evaluate(()=>window.cupViewer.exportDesign());assert.equal(initial.resourceReleaseId,'v7-3');
+ const initial=await page.evaluate(()=>window.cupViewer.exportDesign());assert.equal(initial.resourceReleaseId,'v7-4');
  const slogans=['open','innovation','cooperation','sharing','together','ocean'];
  for(const preset of ['gold','blue']){
   const appearance=preset==='gold'?initial.appearance:{preset:'blue',hue:207.27272727272725,saturation:75.34246575342466,lightness:28.627450980392155,material:0,materialX:.5,relief:1};
