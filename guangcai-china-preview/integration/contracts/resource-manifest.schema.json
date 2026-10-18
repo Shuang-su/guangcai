@@ -125,6 +125,12 @@
     "recipeVersion": {
       "type": "string"
     },
+    "fixedMapping": {
+      "enum": [
+        "source-layout-v3",
+        "source-layout-v4"
+      ]
+    },
     "fixed": {
       "type": "object",
       "additionalProperties": false,

@@ -1,10 +1,10 @@
-# 中国杯 V7.1.2：思源宋体与城市填色复核
+# 中国杯 V7.1.3：实拍花纹修正与完整版本还原
 
 [后台配置 Excel](integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](integration/backend-handoff/backend-config.json) · [字段、录入与扩展说明](integration/backend-handoff/README.md)。后台同事先读此入口，再按性能文档逐项接入；表格不是新增运行时接口。
 
-[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261017-v7-v6-sync-handoff/completion.md)
+[V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [Issue #29](https://github.com/Shuang-su/guangcai/issues/29) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)
 
-V7.1.2 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；当前城市高清真正显示后进入，切城后自动提清；按需解码与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
+V7.1.3 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态折射、底部收起锚点和无进度下载超时。进入前显示真实加载指标，完整预加载23城低清、当前及相邻高清、六组文字和花纸；当前城市高清真正显示后进入，切城后自动提清；按需解码与绘制。文字使用已裁切R8遮罩，切换无需重新绘制整张4K图。保留金线、配色和杯壁/杯盖反射。预算或持续帧耗不足时回退磨砂；Safari读不到机器RAM不直接降级。
 
 | 命令 | 用途 |
 | --- | --- |
@@ -18,7 +18,7 @@ V7.1.2 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态�
 | `npm run build:audit` | 单独构建历史开发/审计入口，不进入消费者包 |
 | `node tools/v7/package-handoff.mjs` | 从干净提交生成带哈希清单的消费者/源码交接包 |
 
-资源默认 v7-3（新字体、厦门及西安补面），保留 v7-1、v7-2 不可变目录和旧作品回放。性能文档详细说明每个加载、缓存、预算、降级与恢复条件。
+资源默认 v7-4：三部件花纹方向按手机实拍纠正，侧花纹下延至城市底边，两个贴图白洞补金；白瓷连接件保留。manifest新增可选fixedMapping，作品字段不变。保留v7-1、v7-2、v7-3不可变目录，完整还原花纸、映射、城市和文字；失败恢复旧作品。性能文档详细说明每个加载、缓存、预算、降级与恢复条件。
 
 API与资源地址通过公开 `runtime-config.js` 配置；公司身份、数据库和真实业务后端不由mock承担。完整接口、Schema、数据关系、CORS/COS及部署步骤见交接主文档。消费者包不包含母版和历史审计素材，资源变动才运行生成器。
 
@@ -151,3 +151,9 @@ QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
 六组杯身文字统一为思源宋体 CN Bold（700），字框与间距对齐用户SVG；菜单字体不变。23城原稿与指定目录逐字节一致。逐城检查确认厦门树丛开口漏填、西安右城墙3个微小空点，修正仅增加G覆盖；所有R描线、法线、原稿和旧资源保持不变。
 
 [字体与城市审核记录](evidence/v7.1.2/README.md) · [当前后台配置表](integration/backend-handoff/README.md)。常规build使用已生成的v7-3；不要重跑V6/v7-1制作命令覆盖历史资源。制作复现步骤见审核记录。
+
+## V7.1.3 花纸与把手核对
+
+[制作、尺寸与兼容记录](evidence/v7.1.3/README.md) · [固定相机对照](evidence/v7.1.3/qa/floral/) · [完整把手尺寸](evidence/v7.1.3/handle-dimensions.json)。把手轴对杯身径向平面对称，旧花纹范围使其相对花纹中心偏1.126mm；本轮核查后保持几何和横向花纹范围。模型尺寸为照片估计，不是实物测量。
+
+复现新资源：`node tools/v7/compile-v7-4.mjs`；验证：`node tools/v7/validate-v7-4.mjs`。不可重跑历史生成器覆盖旧发布。四个资源目录一起部署COS；表格和JSON通过固定sourceCommit导出。

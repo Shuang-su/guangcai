@@ -5,6 +5,7 @@ import { handlePath, handleRails, handleCollar, knobFoot } from './handle';
 import { defaults, validateDimensions, type Dimensions } from './parameters';
 import type { Materials } from '../materials/materials';
 import fixedLayout from '../styles/fixed-layout.json';
+import {fixedBodyMapping} from './fixed-mapping';
 
 export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   validateDimensions(p);
@@ -40,6 +41,7 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   const bodyUV=body.geometry.getAttribute('uv'),sourceBodyUV=[];
   for(let i=0;i<bodyUV.count;i++)sourceBodyUV.push(bodyUV.getX(i)/(.5+fixedLayout.body.visibleEndFraction),bodyUV.getY(i));
   body.geometry.setAttribute('uv2',new Float32BufferAttribute(sourceBodyUV,2));
+  const setFixedMapping=fixedBodyMapping(body.geometry,profile.length,visibleBandSegments,h);
   const {path,upper,lower}=handlePath(p);
   mesh('wide-ribbon-handle',ribbon(path,p.handleWidth,p.handleThickness,192,true,handleRails(p)),[m.porcelain,m.gold,m.regions.handle],cup,-h/2);
   for(const y of[upper,lower])mesh('porcelain-handle-root',handleCollar(r,p.handleWidth,p.handleThickness,y===upper?2.5:0),m.porcelain,cup,y-h/2);
@@ -102,7 +104,7 @@ export function buildProduct(m: Materials,p:Dimensions={...defaults}){
   }
   cup.position.set(0,6+h/2,0);lid.position.y=6+h-.6;
   root.updateMatrixWorld(true);
-  return {root,cup,lid,saucer,parameters:p,home:{cup:cup.position.clone(),lid:lid.position.clone(),saucer:saucer.position.clone()},dispose(){
+  return {root,cup,lid,saucer,setFixedMapping,parameters:p,home:{cup:cup.position.clone(),lid:lid.position.clone(),saucer:saucer.position.clone()},dispose(){
     root.traverse(o=>{if(o instanceof Mesh)o.geometry.dispose();});striped.dispose();
   }};
 }

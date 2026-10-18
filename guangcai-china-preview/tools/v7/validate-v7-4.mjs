@@ -1,0 +1,20 @@
+import fs from 'node:fs/promises';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {gunzipSync} from 'node:zlib';import {execFileSync} from 'node:child_process';import sharp from 'sharp';
+const hash=b=>createHash('sha256').update(b).digest('hex'),load=async id=>{const root='public/releases/'+id,c=JSON.parse(await fs.readFile(root+'/catalog.json'));return{root,m:JSON.parse(await fs.readFile(root+'/'+c.manifestUrl))};},old=await load('v7-3'),next=await load('v7-4');
+const assets=m=>Object.values(m.fixed).flatMap(r=>Object.values(r).flatMap(l=>[l.baseColor,l.normal,l.orm])).concat(Object.values(m.cities).flatMap(c=>[c.thumbnail,...Object.values(c.levels).flatMap(l=>[l.mask,l.normal])]),Object.values(m.slogans).map(l=>l.asset),[m.mark]);
+assert.equal(assets(next.m).length,195);assert.equal(next.m.fixedMapping,'source-layout-v4');let changed=0;
+for(let i=0;i<195;i++){const a=assets(next.m)[i],b=assets(old.m)[i];assert.equal(a.id,b.id);assert.equal(a.width,b.width);assert.equal(a.height,b.height);assert.equal(a.encoding,b.encoding);assert.equal(a.gpuBytes,b.gpuBytes);assert.equal(hash(await fs.readFile(next.root+'/'+a.url)),a.sha256);if(a.sha256!==b.sha256){changed++;assert(a.id.startsWith('fixed-body-'));}else assert.equal(hash(await fs.readFile(old.root+'/'+b.url)),a.sha256);}
+assert.equal(changed,9);
+// Every old release path, including catalogs, remains byte-for-byte at main baseline.
+const tracked=execFileSync('git',['ls-tree','-r','--name-only','1e2ec499720b37deb4648fb4487d3abbf25ef2a5','--','guangcai-china-preview/public/releases'],{cwd:'..',encoding:'utf8'}).trim().split('\n');
+for(const p of tracked){assert.equal(execFileSync('git',['hash-object',p],{cwd:'..',encoding:'utf8'}).trim(),execFileSync('git',['rev-parse',`1e2ec499720b37deb4648fb4487d3abbf25ef2a5:${p}`],{cwd:'..',encoding:'utf8'}).trim());}
+const report=JSON.parse(await fs.readFile('evidence/v7.1.3/resource-build.json')),master='assets/masters/v7.1.3/';assert.equal(hash(await fs.readFile(report.source.sourceFile)),report.source.sourceSha256);
+const color=await sharp(master+'body-color.png').removeAlpha().raw().toBuffer({resolveWithObject:true}),original=await sharp('public/fixed/body-baseColor.png').removeAlpha().raw().toBuffer(),{width:w,height:h}=color.info;
+const mask=await sharp(master+'body-hole-mask.png').resize(w,h).greyscale().raw().toBuffer(),normalMask=await sharp(master+'body-normal-repair-mask.png').resize(w,h).blur(.5).greyscale().raw().toBuffer();
+const normals=gunzipSync(await fs.readFile(master+'body-normal.hfn.gz')),beforeNormals=gunzipSync(await fs.readFile('public/fixed/body-normal.hfn.gz'));let untouched=0;
+for(let i=0;i<w*h;i++){if(!mask[i]){assert(color.data.subarray(i*3,i*3+3).equals(original.subarray(i*3,i*3+3)));untouched++;}if(!normalMask[i]){const j=16+((h-1-Math.floor(i/w))*w+i%w)*8;assert(normals.subarray(j,j+8).equals(beforeNormals.subarray(j,j+8)));}}
+const tiers=[];
+for(const [tier,l]of Object.entries(next.m.fixed.body)){const c=await sharp(next.root+'/'+l.baseColor.url).removeAlpha().raw().toBuffer(),orm=await sharp(next.root+'/'+l.orm.url).removeAlpha().raw().toBuffer(),n=gunzipSync(await fs.readFile(next.root+'/'+l.normal.url));
+ for(const [x,y]of [[315,180],[315,1010]]){const xx=Math.round(x/637*l.baseColor.width),yy=Math.round(y/1534*l.baseColor.height),i=yy*l.baseColor.width+xx;assert(orm[i*3+2]>250);assert(orm[i*3+1]>=54&&orm[i*3+1]<=58);assert(c[i*3+2]<85);const j=16+((l.baseColor.height-1-yy)*l.baseColor.width+xx)*8;assert.equal(n.readUInt16LE(j),0x3800);assert.equal(n.readUInt16LE(j+2),0x3800);assert.equal(n.readUInt16LE(j+4),0x3c00);}
+ tiers.push({tier,size:[l.baseColor.width,l.baseColor.height],bytes:l.baseColor.bytes+l.normal.bytes+l.orm.bytes,holesGoldAndNormalsFlat:true});
+}
+const proof={passed:true,resources:195,changedFiles:changed,immutableHistoricalFiles:tracked.length,untouchedMasterColorPixels:untouched,tiers,renderingAndPhoneAcceptance:'See browser comparisons; physical iPhone acceptance remains pending'};await fs.writeFile('evidence/v7.1.3/resource-validation.json',JSON.stringify(proof,null,2)+'\n');console.log(proof);

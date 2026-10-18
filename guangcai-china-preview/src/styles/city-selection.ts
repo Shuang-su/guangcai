@@ -67,9 +67,12 @@ export function artworkPack(selection:Selection,gold:CityArtworkPack,base='/'):C
 }
 /** Only a complete successful transaction is exposed as current; sliders use the same revision guard. */
 export class SelectionController {
- current:Selection;desired:Selection;busy=false;error='';private revision=0;
+ current:Selection;desired:Selection;busy=false;error='';locked=false;private revision=0;
  constructor(private apply:(selection:Selection)=>Promise<boolean>,private changed:()=>void,private initial:Selection=defaultSelection){this.current=normalizeSelection(initial,{});this.desired={...this.current};}
+ cancelPending(){++this.revision;this.busy=false;this.desired={...this.current};}
+ commit(next:Selection){this.current=normalizeSelection(next,{});this.desired={...this.current};this.error='';this.changed();}
  async select(patch:Partial<Selection>){
+  if(this.locked)return false;
   const next=normalizeSelection(this.desired,patch),revision=++this.revision;
   this.desired=next;this.busy=true;this.error='';this.changed();
   try{const success=await this.apply(next);if(revision!==this.revision)return false;if(!success)throw new Error('图样未完整应用，已保留当前款式');this.current={...next};return true;}

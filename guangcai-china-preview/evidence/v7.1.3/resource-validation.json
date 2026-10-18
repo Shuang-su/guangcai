@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "resources": 195,
+  "changedFiles": 9,
+  "immutableHistoricalFiles": 216,
+  "untouchedMasterColorPixels": 2323422,
+  "tiers": [
+    {
+      "tier": "light",
+      "size": [
+        425,
+        1024
+      ],
+      "bytes": 1172501,
+      "holesGoldAndNormalsFlat": true
+    },
+    {
+      "tier": "standard",
+      "size": [
+        850,
+        2048
+      ],
+      "bytes": 4117321,
+      "holesGoldAndNormalsFlat": true
+    },
+    {
+      "tier": "detail",
+      "size": [
+        1024,
+        2466
+      ],
+      "bytes": 5603234,
+      "holesGoldAndNormalsFlat": true
+    }
+  ],
+  "renderingAndPhoneAcceptance": "See browser comparisons; physical iPhone acceptance remains pending"
+}

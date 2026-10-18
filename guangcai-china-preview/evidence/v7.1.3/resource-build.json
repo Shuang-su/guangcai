@@ -1,0 +1,145 @@
+{
+  "releaseId": "v7-4",
+  "fixedMapping": "source-layout-v4",
+  "source": {
+    "sourceFile": "assets/masters/v3/body.png",
+    "sourceSha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+    "size": [
+      637,
+      1534
+    ],
+    "holes": [
+      {
+        "id": "upper",
+        "seed": [
+          315,
+          180
+        ],
+        "bounds": [
+          210,
+          85,
+          426,
+          308
+        ]
+      },
+      {
+        "id": "lower",
+        "seed": [
+          315,
+          1010
+        ],
+        "bounds": [
+          210,
+          910,
+          427,
+          1118
+        ]
+      }
+    ],
+    "edgeRadius": 2,
+    "normalEdgeRadius": 4,
+    "goldRGB": [
+      255,
+      200,
+      70
+    ],
+    "roughness": 56,
+    "metalness": 255
+  },
+  "counts": [
+    {
+      "id": "upper",
+      "pixels": 38940
+    },
+    {
+      "id": "lower",
+      "pixels": 35604
+    }
+  ],
+  "correctionSha256": "0b86869a58b7633208d942c5d86a75f770241aad74c1e6bbc3d5520dce4ae953",
+  "normalCorrectionSha256": "22bbe0075131ac6755fbc81be48b30bbda5cee440bd4da4c2b72b943dd2fcba4",
+  "originalInputs": {
+    "color": "973cf1048f697acafd3bbe3f4bbdf6eb9ba46469572e571e35c1c5fad12d6559",
+    "roughness": "bbdff3a1f74fe6c269f378eeb380a9827f230715c5960bd307f1e6cc98bd0353",
+    "metalness": "9e0327987000d410ffcf21db48e99ea376b4c6bcd346c7df60c1d598dcfad3db",
+    "normal": "35f734f1f0e183864ac76dd6d7866f7e8c7eadf17f9e287950a986abb943b3db"
+  },
+  "changedColorPixels": 201762,
+  "changedNormalPixels": 209157,
+  "generated": [
+    {
+      "tier": "light",
+      "w": 425,
+      "h": 1024,
+      "assets": [
+        {
+          "id": "fixed-body-light-color",
+          "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4",
+          "bytes": 149578
+        },
+        {
+          "id": "fixed-body-light-orm",
+          "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904",
+          "bytes": 112240
+        },
+        {
+          "id": "fixed-body-light-normal",
+          "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9",
+          "bytes": 910683
+        }
+      ]
+    },
+    {
+      "tier": "standard",
+      "w": 850,
+      "h": 2048,
+      "assets": [
+        {
+          "id": "fixed-body-standard-color",
+          "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474",
+          "bytes": 386446
+        },
+        {
+          "id": "fixed-body-standard-orm",
+          "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f",
+          "bytes": 281146
+        },
+        {
+          "id": "fixed-body-standard-normal",
+          "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06",
+          "bytes": 3449729
+        }
+      ]
+    },
+    {
+      "tier": "detail",
+      "w": 1024,
+      "h": 2466,
+      "assets": [
+        {
+          "id": "fixed-body-detail-color",
+          "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245",
+          "bytes": 475446
+        },
+        {
+          "id": "fixed-body-detail-orm",
+          "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b",
+          "bytes": 281864
+        },
+        {
+          "id": "fixed-body-detail-normal",
+          "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9",
+          "bytes": 4845924
+        }
+      ]
+    }
+  ],
+  "unmodified": [
+    "all city channels",
+    "all slogan masks",
+    "handle textures",
+    "saucer atlas",
+    "porcelain collar geometry"
+  ],
+  "normalOrientation": "HFN1 RGBA16F bottom-up; runtime RG16F; mirrored tangent basis from transformed UV derivatives"
+}

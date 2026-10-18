@@ -1,0 +1,45 @@
+{
+  "sourceFile": "assets/masters/v3/body.png",
+  "sourceSha256": "40dbf3d11565134458a28bb2a57c55bda6e900228e946cf1d61d0a134991f6ca",
+  "size": [
+    637,
+    1534
+  ],
+  "holes": [
+    {
+      "id": "upper",
+      "seed": [
+        315,
+        180
+      ],
+      "bounds": [
+        210,
+        85,
+        426,
+        308
+      ]
+    },
+    {
+      "id": "lower",
+      "seed": [
+        315,
+        1010
+      ],
+      "bounds": [
+        210,
+        910,
+        427,
+        1118
+      ]
+    }
+  ],
+  "edgeRadius": 2,
+  "normalEdgeRadius": 4,
+  "goldRGB": [
+    255,
+    200,
+    70
+  ],
+  "roughness": 56,
+  "metalness": 255
+}

@@ -44,7 +44,7 @@ export async function collectBackendData(sourceRef='HEAD'){
  const colorOrder=uiConstant(ui,'paletteOrder') as (keyof typeof palettes)[];
  const colorNames=uiConstant(ui,'paletteNames') as Record<keyof typeof palettes,string>;
  const cityCatalog=await json('src/styles/city-catalog-v6.json');
- const sourcePaths=['package.json','evidence/v7.1.2/slogans-source.json','evidence/v7.1.2/cities/review.json','src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
+ const sourcePaths=['package.json','evidence/v7.1.3/resource-build.json','evidence/v7.1.3/handle-dimensions.json','src/geometry/fixed-mapping.ts','src/styles/style-manager.ts','integration/contracts/resource-manifest.schema.json','evidence/v7.1.2/slogans-source.json','evidence/v7.1.2/cities/review.json','src/styles/city-appearance.ts','src/styles/slogans.ts','src/styles/xy-mapping.ts','src/ui/consumer-panel.ts','src/styles/city-catalog-v6.json','src/materials/city-parametric.ts','src/resources/types.ts','src/resources/design.ts','src/resources/texture-budget.ts','integration/contracts/design.schema.json','public/api/v1/bootstrap.json','public/'+catalogPath,'public/'+manifestPath];
  const sources=[];
  for(const p of sourcePaths){
   const bytes=await readFile(resolve(app,p)),gitPath='guangcai-china-preview/'+p;
@@ -91,7 +91,7 @@ export async function collectBackendData(sourceRef='HEAD'){
  await asset(manifest.mark,'mark','mark','shared');
  const materialSamples=[0,.5,1].flatMap(material=>[0,.5,1].map(materialX=>({material,materialX,...materialAt(material,materialX)})));
  const descriptions:Record<string,[string,string]>={
-  schemaVersion:['作品格式版本','当前固定为1'],resourceReleaseId:['资源发布版本','默认v7-3；旧作品v7-1/v7-2按原版本回放'],modelVersion:['几何模型版本','模型由前端生成，不是模型图片URL'],recipeVersion:['材质与照明配方版本','绑定源码计算规则；后台不能仅改版本名'],cityId:['城市稳定ID','来自城市配置表；不存中文名代替ID'],sloganId:['祝福语稳定ID','来自祝福语表'],preset:['配色预设ID','决定深浅色偏移及重置默认参数'],hue:['色相','单位度；数组HSL第1项'],saturation:['饱和度','0～100数值；不是0～1'],lightness:['明度','契约0～100；UI滑块20～65'],material:['材质纵轴','0～1；金属度等于该值；同时影响粗糙度与清漆'],materialX:['材质横轴','0～1；默认0.5；调整粗糙度和清漆'],relief:['法线强度系数','0～2；normalScale=clearcoatNormalScale=0.7×relief；当前消费者面板不提供该滑块']};
+  schemaVersion:['作品格式版本','当前固定为1'],resourceReleaseId:['资源发布版本','默认v7-4；旧作品v7-1/v7-2/v7-3按原版本回放'],modelVersion:['几何模型版本','模型由前端生成，不是模型图片URL'],recipeVersion:['材质与照明配方版本','绑定源码计算规则；后台不能仅改版本名'],cityId:['城市稳定ID','来自城市配置表；不存中文名代替ID'],sloganId:['祝福语稳定ID','来自祝福语表'],preset:['配色预设ID','决定深浅色偏移及重置默认参数'],hue:['色相','单位度；数组HSL第1项'],saturation:['饱和度','0～100数值；不是0～1'],lightness:['明度','契约0～100；UI滑块20～65'],material:['材质纵轴','0～1；金属度等于该值；同时影响粗糙度与清漆'],materialX:['材质横轴','0～1；默认0.5；调整粗糙度和清漆'],relief:['法线强度系数','0～2；normalScale=clearcoatNormalScale=0.7×relief；当前消费者面板不提供该滑块']};
  const fields:any[]=[];
  const appearanceSchema=schema.properties.appearance;
  for(const [key,def] of [...Object.entries(schema.properties).filter(([key])=>key!=='appearance'),...Object.entries(appearanceSchema.properties)] as [string,any][]){
@@ -107,6 +107,7 @@ export async function collectBackendData(sourceRef='HEAD'){
   {path:'color.hsl',label:'默认HSL数组',type:'number[3]',required:false,default:null,allowed:'[H,S,L]',storage:'后台配色参考',note:'由darkHex换算；作品使用三个具名字段；不是物理显示色域。'},
   {path:'asset',label:'资源描述',type:'object',required:true,default:null,allowed:'ResourceManifest schema',storage:'CDN manifest',note:'id/url/sha256/sourceSha256/encoding/width/height/bytes/decodedBytes/gpuBytes/channels/colorSpace；完整值见资源表。'},
   {path:'slogan.uvRect',label:'祝福语定位',type:'number[4]',required:true,default:null,allowed:'[u,v,width,height]',storage:'CDN manifest',note:'归一化UV，左下原点；不是像素坐标。'},
+  {path:'fixedMapping',label:'固定花纸映射版本',type:'string',required:false,default:'source-layout-v3',allowed:['source-layout-v3','source-layout-v4'],storage:'CDN manifest',note:'v7-4声明source-layout-v4：三部件花纹镜像，杯身花纹底边0.12 mm。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。'},
   {path:'fixed.atlas',label:'花纸图集分区',type:'object',required:false,default:null,allowed:'随对应资源档位',storage:'CDN manifest',note:'rows/contentWidth/contentHeight/gutter随编译产物保留，不可只换图片尺寸。'},
   {path:'quality / DPR / cache / deviceMemory',label:'设备与清晰度状态',type:'runtime',required:false,default:null,allowed:'由前端调度',storage:'不写入作品',note:'未提供的机器内存指标为不可用；禁止当作0。'});
  validateDesign(bootstrap.defaultDesign,manifest);
@@ -117,7 +118,7 @@ export async function collectBackendData(sourceRef='HEAD'){
  return {format:'guangcai-backend-handoff-v1',productVersion:(await json('package.json')).version,sourceCommit,resourceReleaseId:manifest.releaseId,
   modelVersion:manifest.modelVersion,recipeVersion:manifest.recipeVersion,catalogPath,manifestPath,previewBase,
   notice:'配置参考导出，不新增前端接口；城市拓展JSON通过manifest与resourceIds引用完整资源描述。',
-  typography,fields,cities,colors,materialSamples,goldLine:GOLD_LINE,slogans:labels,resources,fixed:manifest.fixed,defaultDesign:bootstrap.defaultDesign,sources};
+  fixedMapping:manifest.fixedMapping??'source-layout-v3',fixedCorrection:await json('evidence/v7.1.3/resource-build.json'),handleDimensions:await json('evidence/v7.1.3/handle-dimensions.json'),typography,fields,cities,colors,materialSamples,goldLine:GOLD_LINE,slogans:labels,resources,fixed:manifest.fixed,defaultDesign:bootstrap.defaultDesign,sources};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const data=await collectBackendData(process.argv[2]??'HEAD');

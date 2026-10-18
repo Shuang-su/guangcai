@@ -265,3 +265,15 @@ v7-2是上一轮西安大补面；v7-3当前发布流程为新修正层→v7-3�
 10Mbps/100ms三轮冷启动13.390～13.461秒，每轮12,106,184传输字节，工程15秒观察线通过，原5MiB/6秒目标未达到。清单预载91项10,902,597字节。初始纹理28,742,320字节、渲染目标预留99,890,004字节，合计约122.67MiB；观察峰值201,188,680字节（191.87MiB），属于应用估算，不是Safari进程RSS。帧间隔P95约16.8ms来自M1 Pro桌面Chrome，不能代替实体手机验收。新字体遮罩总GPU含mipmap2,156,544字节，未增加消费者字体请求。
 
 后台Excel/JSON当前为v7-3：23城、5配色、6文字、195资源，完整读回相等、HSL独立公式、材质9点、边界拒绝以及从表格取配置进行mock保存/还原/账号隔离全部通过。正式COS、iPhone30分钟与Air/mini6本轮复测仍待验收。
+
+
+## V7.1.3 补充：花纸映射和跨版本事务
+
+- 触发：DesignConfig.resourceReleaseId发生变化（同版本导入也使用完整准备门槛）。字段、范围与流程见[后台说明](backend-handoff/README.md#v713--v7-4-花纸映射与补洞)。
+- 数据：manifest可选fixedMapping，v3缺省、v4显式。纹理URL含哈希，v7-4只新增9个杯身纹理。实际纹理数量与尺寸不增加，无CPU镜像副本。几何只重排已有索引材质分组/更新UV2，复用GPU缓冲，position/normal/UV0/城市UV1不变。
+- 调度：开始导入取消邻城/切城/提清，禁止外部编辑与导出；旧版有效纹理引用保留。候选固定9纹理、当前高清城市2纹理、六个文字、标识共18个逻辑描述，重复URL池内共享。所有解码成功并初始化GPU后，在遮挡层下整体替换；不出现新城市+旧花纹的可保存状态。
+- 预算：沿用128/192MiB手机常态/峰值和256/384MiB桌面预算。重叠计入beginSwap；候选超过峰值拒绝并保留原作品，不强制超预算。结束释放旧保留引用，按常态预算淘汰空闲。
+- 容错：HTTP/尺寸/哈希/图集失败拒绝导入，回滚原固定花纸、城市及映射。丢失WebGL上下文时abort，manifest请求通过AbortController连带取消；15秒目录请求截止，资源大文件仍为原120秒无进度超时。兼容旧Safari，不依赖AbortSignal.any。后台暂停仍由原队列处理。
+- 通知：导入过程中exportDesign拒绝，选择返回false，并发import拒绝；onDesignChange仅发布完整提交后版本。失败恢复后继续原作品。接入方等待Promise并展示错误，不将拒绝视为保存成功。
+- 源码：src/main.ts importDesign、src/resources/client.ts、src/styles/style-manager.ts、src/geometry/fixed-mapping.ts。
+- 证据：evidence/v7.1.3/resource-validation.json、qa/floral/report.json、qa/city-chrome、qa/city-webkit；qa/floral保存四版本往返、失败、并发与上下文恢复结果及实拍方向对照。历史报告仅代表其版本；真机与正式COS未验收。

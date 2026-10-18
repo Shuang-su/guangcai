@@ -8,11 +8,11 @@ import fixedRendering from './fixed-rendering.json';
 import webTextures from './web-textures.json';
 import fixedLayout from './fixed-layout.json';
 import {configureFixedGoldGround} from '../materials/fixed-gold-ground';
-import type {FixedLevel} from '../resources/types';
+import type {FixedLevel,FixedMapping} from '../resources/types';
 import type {ResourcePool,Lease} from '../resources/pool';
 export interface RegionPack {runtime?:FixedLevel;atlas?:FixedAtlas;baseColor:string;normal?:string;normalFormat?:'rgba16f-gzip-v1';roughness?:string;metalness?:string;height?:string;offsetU?:number}
-export interface StylePack {mapping?:'source-layout-v3';cleanGoldGround?:boolean;name:string;regions:Record<Region,RegionPack>}
-export const defaultPack:StylePack={name:'固定广彩 · 高清重建花纸',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env.BASE_URL}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
+export interface StylePack {mapping?:FixedMapping;cleanGoldGround?:boolean;name:string;regions:Record<Region,RegionPack>}
+export const defaultPack:StylePack={name:'固定广彩 · 高清重建花纸',mapping:'source-layout-v3',regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness'].map(k=>[k,`${import.meta.env?.BASE_URL??'/'}${webTextures[`fixed/${region}-${k}` as keyof typeof webTextures]}`]))])) as unknown as unknown as StylePack['regions']};
 defaultPack.regions.saucer.offsetU=fixedLayout.saucer.sourceOffsetU;
 defaultPack.cleanGoldGround=true;
 for(const [region,atlas]of Object.entries(fixedRendering))defaultPack.regions[region as Region].atlas=atlas as FixedAtlas;
@@ -22,19 +22,20 @@ export const builtinStyles = [
   ...[
     {id:'peony-magnolia',name:'牡丹玉兰 · 金地',description:'珊瑚牡丹、白玉兰与翠叶'},
     {id:'lotus-butterfly',name:'莲荷双蝶 · 金地',description:'粉莲、青荷与两只彩蝶'},
-  ].map(style=>({...style,path:`artwork/${style.id}`,pack:{name:style.name,regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${import.meta.env.BASE_URL}artwork/${style.id}/${region}-${channel}.png?v=dense-v3-final`]))])) as unknown as StylePack['regions']}}))
+  ].map(style=>({...style,path:`artwork/${style.id}`,pack:{name:style.name,regions:Object.fromEntries(['body','handle','saucer'].map(region=>[region,Object.fromEntries(['baseColor','normal','roughness','metalness','height'].map(channel=>[channel,`${import.meta.env?.BASE_URL??'/'}artwork/${style.id}/${region}-${channel}.png?v=dense-v3-final`]))])) as unknown as StylePack['regions']}}))
 ];
 const channels=['baseColor','normal','roughness','metalness','height'] as const;
 const regions:Region[]=['body','handle','saucer'];
 export class StyleManager {
   private mapping:StylePack['mapping'];
+  get currentMapping(){return this.mapping??'source-layout-v3';}
   private offsets:Partial<Record<Region,number>>={};
   private aspects:Record<Region,number>={body:45.0294947/106.7,handle:11.9/117.6181655,saucer:106.1072919/7.1867934};
   fit(aspects:Record<Region,number>){
     this.aspects=aspects;
     for(const region of regions)for(const texture of Object.values(this.currentMaps[region]??{})){
       const img=texture.image as HTMLImageElement;
-      if(this.mapping==='source-layout-v3'){texture.repeat.set(1,1);texture.offset.set(this.offsets[region]??0,0);texture.updateMatrix();continue;}
+      if(this.mapping==='source-layout-v3'||this.mapping==='source-layout-v4'){const mirror=this.mapping==='source-layout-v4',offset=this.offsets[region]??0;texture.repeat.set(mirror?-1:1,1);texture.offset.set(mirror?1-offset:offset,0);texture.updateMatrix();continue;}
       const source=img.width/img.height,target=aspects[region];
       const x=Math.min(1,target/source),y=Math.min(1,source/target);
       texture.repeat.set(x,y);texture.offset.set((1-x)/2+(this.offsets[region]??0),(1-y)/2);texture.updateMatrix();
@@ -50,7 +51,7 @@ export class StyleManager {
     const revision=++this.revision;
     if(this.pool&&regions.every(r=>pack.regions[r].runtime))return this.applyRuntime(pack,revision);
     if(!pack||typeof pack.name!=='string'||!pack.regions)throw new Error('无效材质包：缺少 name / regions');
-    if(pack.mapping!==undefined&&pack.mapping!=='source-layout-v3')throw new Error('不支持的花纸展开规范');
+    if(pack.mapping!==undefined&&!['source-layout-v3','source-layout-v4'].includes(pack.mapping))throw new Error('不支持的花纸展开规范');
     const tasks:{region:Region;channel:typeof channels[number];url:string;normalFormat?:RegionPack['normalFormat']}[]=[];
     for(const region of regions){
       const entry=pack.regions[region];
@@ -64,8 +65,8 @@ export class StyleManager {
       const img=texture.image as {width:number;height:number};
       if(!img.width||!img.height||img.width>8192||img.height>8192){texture.dispose();throw new Error('贴图尺寸必须在 1–8192 像素内');}
       texture.colorSpace=task.channel==='baseColor'?SRGBColorSpace:NoColorSpace;
-      texture.channel=pack.mapping==='source-layout-v3'?2:0;
-      texture.wrapS=task.region==='saucer'?(pack.mapping==='source-layout-v3'?RepeatWrapping:MirroredRepeatWrapping):ClampToEdgeWrapping;
+      texture.channel=pack.mapping?.startsWith('source-layout-')?2:0;
+      texture.wrapS=task.region==='saucer'?(pack.mapping?.startsWith('source-layout-')?RepeatWrapping:MirroredRepeatWrapping):ClampToEdgeWrapping;
       texture.wrapT=ClampToEdgeWrapping;texture.anisotropy=this.anisotropy;
       return texture;
     }));
@@ -77,7 +78,7 @@ export class StyleManager {
     tasks.forEach((task,i)=>{maps[task.region]??={} as Maps;maps[task.region][task.channel]=textures[i];});
     for(const region of regions){
       const map=maps[region],{width,height}=map.baseColor.image as HTMLImageElement;
-      try{if(pack.regions[region].atlas){if(pack.mapping!=='source-layout-v3')throw new Error('图集需要独立花纸 UV');validateFixedAtlas(pack.regions[region].atlas!,width,height);}}catch(error){release();throw error;}
+      try{if(pack.regions[region].atlas){if(!['source-layout-v3','source-layout-v4'].includes(pack.mapping??''))throw new Error('图集需要独立花纸 UV');validateFixedAtlas(pack.regions[region].atlas!,width,height);}}catch(error){release();throw error;}
       if(Object.values(map).some(t=>(t.image as HTMLImageElement).width!==width||(t.image as HTMLImageElement).height!==height)){
         release();throw new Error(`${region} 的 PBR 通道像素尺寸不一致，未应用。`);
       }
@@ -108,7 +109,7 @@ export class StyleManager {
       return await this.apply(pack);
     }finally{urls.forEach(url=>URL.revokeObjectURL(url));}
   }
-  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
+  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{mapping:this.currentMapping,repeat:m.normal?.repeat.toArray(),offset:m.normal?.offset.toArray(),normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
   private async applyRuntime(pack:StylePack,revision:number){
     this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
     try{

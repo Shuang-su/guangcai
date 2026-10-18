@@ -1,0 +1,85 @@
+{
+  "units": "mm unless stated",
+  "qualification": "Computed model dimensions; source defaults are photo-based estimates, not caliper measurements or production CAD",
+  "body": {
+    "height": 103,
+    "diameter": 86,
+    "centerHeight": 51.5
+  },
+  "handle": {
+    "centerPlaneZ": 0,
+    "nominalWidth": 14,
+    "nominalThickness": 4.8,
+    "centerlineReach": 35,
+    "actualOuterReach": 37.441802978515625,
+    "localBounds": {
+      "min": [
+        43.25,
+        31.040000915527344,
+        -7.449999809265137
+      ],
+      "max": [
+        80.44180297851562,
+        91.78666687011719,
+        7.449999809265137
+      ]
+    },
+    "actualWidth": 14.899999618530273,
+    "actualVerticalSpan": 60.746665954589844,
+    "upperRootCenter": 89.095,
+    "lowerRootCenter": 33.475,
+    "rootCenterSeparation": 55.62,
+    "rootMidpoint": 61.285,
+    "rootMidpointAboveCupCenter": 9.784999999999997,
+    "topMargin": 11.213333129882812,
+    "bottomMargin": 31.040000915527344,
+    "collars": [
+      {
+        "localCenterHeight": 89.095,
+        "boundsRelativeToCenter": {
+          "min": [
+            41.87636184692383,
+            -6.291999816894531,
+            -8.119999885559082
+          ],
+          "max": [
+            45.20000076293945,
+            3.7920000553131104,
+            8.119999885559082
+          ]
+        },
+        "width": 16.239999771118164
+      },
+      {
+        "localCenterHeight": 33.475,
+        "boundsRelativeToCenter": {
+          "min": [
+            41.87636184692383,
+            -3.7920000553131104,
+            -8.119999885559082
+          ],
+          "max": [
+            45.20000076293945,
+            3.7920000553131104,
+            8.119999885559082
+          ]
+        },
+        "width": 16.239999771118164
+      }
+    ]
+  },
+  "floral": {
+    "angleBoundsDegrees": [
+      -30,
+      27
+    ],
+    "widthDegrees": 57,
+    "arcWidth": 42.77801996638102,
+    "centerDegrees": -1.5,
+    "handleOffsetFromFloralCenterDegrees": 1.5,
+    "handleOffsetAlongWallArc": 1.1257373675363425,
+    "leftArcMarginFromHandle": 15.51474735072685,
+    "rightArcMarginFromHandle": 13.263272615654163
+  },
+  "decision": "No handle geometry changed: handle is symmetric about the cup radial plane. Existing floral sector is 57 degrees (-30 to +27), so its centre is 1.5 degrees / 1.126 mm offset. User requested inspection; approved V7.1.3 keeps horizontal floral extent and model version. Photos confirm broad proportions, not absolute millimetre precision."
+}
