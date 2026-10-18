@@ -43,4 +43,4 @@
 
 ## 提交与同步
 
-分支 `codex/exfat-maintenance`。本轮checkpoint SHA在验证提交后补录；按既有授权推送、PR合并到main并回读，Issue #35同步维护入口。无产品版本号变化和新部署。
+任务分支 `codex/exfat-maintenance`；本轮完整工具、清理回执与文档 checkpoint 为 `7ed04f82b0146b00a9176f8d3a9cae048bf18e1f`。本记录随后补入该真实SHA，不改写已创建提交。按既有授权推送、经PR合并到main并回读，最终远端状态另在Issue #35与用户回复记录；本文件不提前宣称尚未执行的远端合并。无产品版本号变化和新部署。
