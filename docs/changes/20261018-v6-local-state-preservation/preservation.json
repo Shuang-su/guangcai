@@ -1,0 +1,38 @@
+{
+  "sourceWorktree": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace",
+  "sourceHead": "5a2d7e47354854de418b83915ec081081d0486c9",
+  "originalPath": "deployments/guangcai-no1-china-v6/6ad30bc420f569fd63dd9068/site/review/v6/hohhot.svg",
+  "bytes": 846805,
+  "committedGitBlob": "20f8d888665de36c0769849828a592bf8952eebb",
+  "committedSha256": "5c92e6c62d6977f7559ae1202b3e7c1d6ce97bebcfb1eab407ff08eb7cb84845",
+  "worktreeSha256": "766daa88e5b78acf0088bae1da9b197ae466f0ae0fc34745bc4a08f74241311a",
+  "committedBytesMatchGitHub": true,
+  "preservedFile": "hohhot-worktree.svg.bin",
+  "xmlParseErrors": {
+    "committed": "not well-formed (invalid token): line 4, column 695898",
+    "worktree": "not well-formed (invalid token): line 4, column 695898"
+  },
+  "byteDifferences": [
+    {
+      "offset": 839688,
+      "committedByte": 131,
+      "worktreeByte": 132
+    },
+    {
+      "offset": 839696,
+      "committedByte": 215,
+      "worktreeByte": 217
+    },
+    {
+      "offset": 839704,
+      "committedByte": 195,
+      "worktreeByte": 197
+    },
+    {
+      "offset": 839708,
+      "committedByte": 95,
+      "worktreeByte": 96
+    }
+  ],
+  "interpretation": "Both historical archive and pending file are invalid XML; preserve bytes as recovery evidence, not a new runtime SVG or a production correction."
+}

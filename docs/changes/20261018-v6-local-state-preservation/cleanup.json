@@ -1,0 +1,56 @@
+{
+  "sourceHead": "5a2d7e47354854de418b83915ec081081d0486c9",
+  "preservationCommit": "40ce0a6d18a96f2c070663b01e9b1f6f438a7608",
+  "preservedGitHubBlob": "b1858c934f2248a7164865506254675fb087cd3c",
+  "remoteBytesVerified": true,
+  "beforeStatus": " M deployments/guangcai-no1-china-v6/6ad30bc420f569fd63dd9068/site/review/v6/hohhot.svg\n",
+  "freeBefore": 4245946368,
+  "startedAt": "2026-10-18T10:41:59.303910+00:00",
+  "removedTrackedFileCount": 9105,
+  "removedLogicalBytes": 5094635552,
+  "removedAllocatedBytes": 6639058944,
+  "remainingTrackedFiles": [
+    ".gitattributes",
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "WORKSPACE_LOCATIONS.md"
+  ],
+  "freeAfterSparse": 12082479104,
+  "afterStatus": "",
+  "headAfter": "5a2d7e47354854de418b83915ec081081d0486c9",
+  "branchAfter": "",
+  "dependentWorktrees": [
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace",
+      "head": "5a2d7e47354854de418b83915ec081081d0486c9",
+      "clean": true
+    },
+    {
+      "path": "/Volumes/Prism/广彩/guangcai-v7-workspace",
+      "head": "24a1f01eecebbb428312ce32e7454be004dbe65e",
+      "clean": true
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/.codex-work/archive-index",
+      "head": "77c88772b447aeaee8dae1ed51d3b2063a8b3b05",
+      "clean": true
+    }
+  ],
+  "entryDocuments": [
+    {
+      "path": "/Volumes/Prism_初号機/广彩/项目入口.md",
+      "beforeSha256": "f07a397b43699901ddc21f05eef2d91cd146a2b0239de1569096ccfc13279201",
+      "afterSha256": "f9f9f658c4bc3a326743825ce781eee7b413f9579fe1a2740b32c1720295b115"
+    },
+    {
+      "path": "/Volumes/Prism/广彩/项目入口.md",
+      "beforeSha256": "4513a74576ebfb6d24615a3ffa2b6322ca3edb38ee407377716775f217a5aa7d",
+      "afterSha256": "6ca6a0f10b86429e6ad363816c5650b49c605433bb9b4df92cc7dc9c88905212"
+    }
+  ],
+  "freeAfter": 12082479104,
+  "sharedGitPreserved": true,
+  "v6BranchDeleted": true,
+  "runtimeDeploymentsChanged": false
+}
