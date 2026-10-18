@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-10-18T10:30:49.352955+00:00",
+  "protectedDirtyFile": {
+    "path": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace/deployments/guangcai-no1-china-v6/6ad30bc420f569fd63dd9068/site/review/v6/hohhot.svg",
+    "sha256Before": "766daa88e5b78acf0088bae1da9b197ae466f0ae0fc34745bc4a08f74241311a"
+  },
+  "freeBytesBefore": 552325120,
+  "recovery": "Pinned project npm install regenerates npm/Vite cache; matching Playwright install regenerates WebKit runtime. No source/evidence is in the deletion allowlist.",
+  "finishedAt": "2026-10-18T10:30:49.922153+00:00",
+  "removedAll": true,
+  "protectedDirtyFileUnchanged": true,
+  "freeBytesAfter": 941850624,
+  "targets": [
+    {
+      "path": "/Volumes/Prism/广彩/.codex-work/cache/v6-webkit",
+      "fileCount": 6936,
+      "logicalBytes": 296850016,
+      "allocatedFileBytes": 310796288
+    },
+    {
+      "path": "/Volumes/Prism/广彩/guangcai-v7-workspace/guangcai-china-preview/.codex-work/cache/vite",
+      "fileCount": 13,
+      "logicalBytes": 6350070,
+      "allocatedFileBytes": 6377472
+    },
+    {
+      "path": "/Volumes/Prism/广彩/guangcai-v7-workspace/guangcai-china-preview/.codex-work/cache/npm",
+      "fileCount": 107,
+      "logicalBytes": 69866051,
+      "allocatedFileBytes": 70144000
+    }
+  ]
+}
