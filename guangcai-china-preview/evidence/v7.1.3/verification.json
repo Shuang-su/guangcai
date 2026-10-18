@@ -54,6 +54,14 @@
     "performance": {
       "passed": true,
       "report": "qa/performance/report.json"
+    },
+    "feedback": {
+      "passed": true,
+      "report": "qa/feedback/report.json"
+    },
+    "feedback-webkit": {
+      "passed": true,
+      "report": "qa/feedback-webkit/report.json"
     }
   },
   "originalPerformanceTarget": {
@@ -65,17 +73,19 @@
     "mbps": 10,
     "rttMs": 100,
     "readyMs": [
-      13493,
-      13448,
-      13471
+      13772,
+      13643,
+      13572
     ],
     "encodedBytes": [
-      12109368,
-      12109368,
-      12109368
+      12110057,
+      12110057,
+      12110057
     ]
   },
   "physicalIPhoneAcceptance": "pending",
   "productionCOSAndCompanyIdentity": "pending",
-  "handleGeometryChanged": false
+  "runtimeSourceCommit": "d31e6821916c780ef7f8c1fc28add3252a8ff191",
+  "handleRibbonAndAnchorsChanged": false,
+  "upperCollarFilletCorrectedInV4": true
 }

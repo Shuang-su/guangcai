@@ -41,6 +41,7 @@ try{
  const split=JSON.parse(await readFile('evidence/v7.1.3/qa/split/report.json'));if(!split.passed)throw Error('Split-origin QA did not pass');
  const performance=JSON.parse(await readFile('evidence/v7.1.3/qa/performance/report.json'));receipt.controlledColdStartPassed=performance.passed;receipt.physicalDeviceAcceptance='pending';
  const artwork=JSON.parse(await readFile('evidence/v7.1.3/qa/artwork/report.json'));if(!artwork.passed)throw Error('Fixed-camera artwork QA did not pass');
+ for(const folder of ['feedback','feedback-webkit','floral-webkit'])if(!JSON.parse(await readFile(`evidence/v7.1.3/qa/${folder}/report.json`)).passed)throw Error('Final feedback QA did not pass');
  const floral=JSON.parse(await readFile('evidence/v7.1.3/qa/floral/report.json'));if(!floral.passed)throw Error('Floral mapping and transactional restore QA did not pass');
  const art=JSON.parse(await readFile('evidence/v7.1.3/resource-validation.json'));if(!art.passed)throw Error('Artwork preservation QA did not pass');
  const site=await api(`/sites/${siteId}`);if(site.name!==siteName||site.build_settings?.repo_url)throw Error('V7 target name or Git connection changed');

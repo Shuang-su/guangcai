@@ -345,7 +345,7 @@
   ],
   "errors": [],
   "metrics": {
-    "unthrottledReadyMs": 4020,
+    "unthrottledReadyMs": 1517,
     "initial": {
       "quality": {
         "cityTier": "standard",
@@ -358,7 +358,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1.25,
-        "renderFrames": 10,
+        "renderFrames": 9,
         "contextLost": false
       },
       "resources": {
@@ -403,7 +403,7 @@
         "framebuffer": 17100720
       }
     },
-    "initialResourceEncodedBytes": 12084633,
+    "initialResourceEncodedBytes": 12085595,
     "original5MiBTargetMet": false,
     "near": {
       "quality": {
@@ -417,7 +417,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1.25,
-        "renderFrames": 11,
+        "renderFrames": 10,
         "contextLost": false
       },
       "resources": {
@@ -468,15 +468,15 @@
       },
       "decodeTask": null,
       "decodeRetries": 0,
-      "estimatedGpuBytes": 39703222,
+      "estimatedGpuBytes": 39244467,
       "reservedRenderTargetBytes": 93067668,
       "peakEstimatedBytes": 201187144,
       "steadyBudget": 134217728,
       "peakBudget": 201326592,
-      "entries": 30,
+      "entries": 26,
       "activeEntries": 18,
-      "decodedBytes": 29777408,
-      "fetchedBodyBytes": 48606536,
+      "decodedBytes": 29433344,
+      "fetchedBodyBytes": 51460701,
       "cancelled": 0,
       "network": {
         "active": 0,

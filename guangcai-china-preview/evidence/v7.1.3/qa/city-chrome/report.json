@@ -5,12 +5,12 @@
     {
       "id": "xian",
       "ok": true,
-      "lowReadyMs": 160.23512499999924,
+      "lowReadyMs": 69.57470899999998,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -37,12 +37,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 15,
+          "frames": 12,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.3,
+          "renderMs": 0.5,
           "dpr": 1.25,
-          "modelCaptures": 12,
+          "modelCaptures": 13,
           "gpuBytes": 15838800
         }
       },
@@ -82,7 +82,7 @@
         }
       },
       "variant": "v6-xian-gold",
-      "highAfterLowMs": 644.343458000003,
+      "highAfterLowMs": 527.4489170000006,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -94,7 +94,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 14,
+        "renderFrames": 15,
         "contextLost": false
       },
       "city": {
@@ -212,7 +212,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "c906889d-2b51-4a6c-9e26-5461dca24a4b",
+            "uuid": "2d5ba6ff-97a4-4727-8d8d-30d023d2a77d",
             "channel": 1,
             "size": [
               2048,
@@ -222,7 +222,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "18307b22-5918-48d3-aaad-30855e49237f",
+            "uuid": "93fd36a2-89f5-4ccc-80a7-a5cff2e4055f",
             "channel": 1,
             "size": [
               2048,
@@ -232,7 +232,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -250,12 +250,12 @@
     {
       "id": "shanghai",
       "ok": true,
-      "lowReadyMs": 126.50058400000125,
+      "lowReadyMs": 113.53141600000072,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -282,12 +282,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 20,
+          "frames": 16,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.5,
+          "renderMs": 0.4,
           "dpr": 1.25,
-          "modelCaptures": 16,
+          "modelCaptures": 17,
           "gpuBytes": 15838800
         }
       },
@@ -327,7 +327,7 @@
         }
       },
       "variant": "v6-shanghai-gold",
-      "highAfterLowMs": 775.7321669999983,
+      "highAfterLowMs": 415.01237499999934,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -339,7 +339,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 18,
+        "renderFrames": 19,
         "contextLost": false
       },
       "city": {
@@ -457,7 +457,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "cc0c575d-8bbe-43dc-90b7-46d5cca7213f",
+            "uuid": "24b98c0d-f4f0-4300-bab7-a2628681c9eb",
             "channel": 1,
             "size": [
               2048,
@@ -467,7 +467,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "341dc313-9458-4a13-99ea-44ae74ec0744",
+            "uuid": "659e9761-349e-43fd-883b-746e90ae1a78",
             "channel": 1,
             "size": [
               2048,
@@ -477,7 +477,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -495,12 +495,12 @@
     {
       "id": "urumqi",
       "ok": true,
-      "lowReadyMs": 302.68541600000026,
+      "lowReadyMs": 118.32316699999956,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -527,12 +527,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 24,
+          "frames": 20,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.2,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 19,
+          "modelCaptures": 21,
           "gpuBytes": 15838800
         }
       },
@@ -572,7 +572,7 @@
         }
       },
       "variant": "v6-urumqi-gold",
-      "highAfterLowMs": 263.765416000002,
+      "highAfterLowMs": 412.0701250000002,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -584,7 +584,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 21,
+        "renderFrames": 23,
         "contextLost": false
       },
       "city": {
@@ -702,7 +702,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "e23dd180-551b-42d7-aa6a-ba666f709d3a",
+            "uuid": "ecf541b2-b7ee-4100-9490-8c574487d6ca",
             "channel": 1,
             "size": [
               2048,
@@ -712,7 +712,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "39f59d5d-6ba7-4ecd-8ea1-4f4c9ff74a69",
+            "uuid": "f3643ba2-a2c6-4d18-911d-3ce879744681",
             "channel": 1,
             "size": [
               2048,
@@ -722,7 +722,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -740,12 +740,12 @@
     {
       "id": "beijing",
       "ok": true,
-      "lowReadyMs": 81.67083400000047,
+      "lowReadyMs": 111.6830829999999,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -772,12 +772,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 29,
+          "frames": 24,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.6,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 24,
+          "modelCaptures": 25,
           "gpuBytes": 15838800
         }
       },
@@ -817,7 +817,7 @@
         }
       },
       "variant": "v6-beijing-gold",
-      "highAfterLowMs": 479.5218750000022,
+      "highAfterLowMs": 413.9383749999997,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -829,7 +829,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 26,
+        "renderFrames": 27,
         "contextLost": false
       },
       "city": {
@@ -947,7 +947,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "ce362de0-ea28-4066-ab22-830d08a0be19",
+            "uuid": "4d60d8f5-aba9-4426-a603-511550b94dc5",
             "channel": 1,
             "size": [
               2048,
@@ -957,7 +957,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "7d61accd-0106-4305-890a-8e78df9c8b6f",
+            "uuid": "80bb4d08-f65e-4548-83a4-5f0072834c3f",
             "channel": 1,
             "size": [
               2048,
@@ -967,7 +967,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -985,12 +985,12 @@
     {
       "id": "nanjing",
       "ok": true,
-      "lowReadyMs": 149.9484169999996,
+      "lowReadyMs": 107.63879199999974,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -1017,12 +1017,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 33,
+          "frames": 28,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.3,
+          "renderMs": 0.4,
           "dpr": 1.25,
-          "modelCaptures": 28,
+          "modelCaptures": 29,
           "gpuBytes": 15838800
         }
       },
@@ -1062,7 +1062,7 @@
         }
       },
       "variant": "v6-nanjing-gold",
-      "highAfterLowMs": 378.09195799999725,
+      "highAfterLowMs": 415.6643750000003,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -1074,7 +1074,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 30,
+        "renderFrames": 31,
         "contextLost": false
       },
       "city": {
@@ -1192,7 +1192,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "21b241e4-a362-4d00-a184-940affe5c49b",
+            "uuid": "e65d03f1-8864-4c7e-a2b4-e699d2237cde",
             "channel": 1,
             "size": [
               2048,
@@ -1202,7 +1202,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "f67c67d1-0aba-41ce-8041-bb6031387497",
+            "uuid": "837895ec-bbc8-420c-a200-37ddb4683f37",
             "channel": 1,
             "size": [
               2048,
@@ -1212,7 +1212,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -1230,12 +1230,12 @@
     {
       "id": "nanchang",
       "ok": true,
-      "lowReadyMs": 112.16808400000082,
+      "lowReadyMs": 112.88483300000007,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -1262,12 +1262,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 38,
+          "frames": 32,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.4,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 32,
+          "modelCaptures": 33,
           "gpuBytes": 15838800
         }
       },
@@ -1307,7 +1307,7 @@
         }
       },
       "variant": "v6-nanchang-gold",
-      "highAfterLowMs": 478.3862079999999,
+      "highAfterLowMs": 417.96450000000004,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -1319,7 +1319,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 34,
+        "renderFrames": 35,
         "contextLost": false
       },
       "city": {
@@ -1437,7 +1437,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "d73a9f15-df69-45e2-b969-c1188ff55d27",
+            "uuid": "df8a4d79-c327-4302-9c3c-10190a521100",
             "channel": 1,
             "size": [
               2048,
@@ -1447,7 +1447,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "c85e9ea6-0c41-4d62-8c04-7b5de5c3f370",
+            "uuid": "2bb22dc7-ddfb-4c71-b7bc-cb7078ba98ef",
             "channel": 1,
             "size": [
               2048,
@@ -1457,7 +1457,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -1475,12 +1475,12 @@
     {
       "id": "xiamen",
       "ok": true,
-      "lowReadyMs": 119.28962500000125,
+      "lowReadyMs": 112.20691699999952,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -1507,12 +1507,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 42,
+          "frames": 36,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.5,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 36,
+          "modelCaptures": 37,
           "gpuBytes": 15838800
         }
       },
@@ -1552,7 +1552,7 @@
         }
       },
       "variant": "v6-xiamen-gold",
-      "highAfterLowMs": 422.1780830000025,
+      "highAfterLowMs": 415.9840410000015,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -1564,7 +1564,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 38,
+        "renderFrames": 39,
         "contextLost": false
       },
       "city": {
@@ -1682,7 +1682,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "69fdf47f-f52a-4c52-af01-457e4615b9b5",
+            "uuid": "cfdc8d9f-55a2-4ba6-a200-7fee1998857a",
             "channel": 1,
             "size": [
               2048,
@@ -1692,7 +1692,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "0be3e0bf-211e-4a94-b617-045e4f206cac",
+            "uuid": "cfc6f3cc-15c2-4a39-8341-6bd4bfc135a5",
             "channel": 1,
             "size": [
               2048,
@@ -1702,7 +1702,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -1720,12 +1720,12 @@
     {
       "id": "hohhot",
       "ok": true,
-      "lowReadyMs": 146.2520000000004,
+      "lowReadyMs": 117.5319580000014,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -1752,12 +1752,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 45,
+          "frames": 40,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 40,
+          "modelCaptures": 41,
           "gpuBytes": 15838800
         }
       },
@@ -1797,7 +1797,7 @@
         }
       },
       "variant": "v6-hohhot-gold",
-      "highAfterLowMs": 432.3554580000018,
+      "highAfterLowMs": 413.80712499999936,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -1809,7 +1809,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 42,
+        "renderFrames": 43,
         "contextLost": false
       },
       "city": {
@@ -1927,7 +1927,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "8df487fc-2dff-4daa-849f-59f510edb295",
+            "uuid": "d6ec3784-94be-4f0a-809d-ed12fe6206a6",
             "channel": 1,
             "size": [
               2048,
@@ -1937,7 +1937,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "7d7c9cd5-eff2-4f6e-8c00-54da56133df4",
+            "uuid": "a985636f-827e-42b0-b0f3-fcabe600e3e1",
             "channel": 1,
             "size": [
               2048,
@@ -1947,7 +1947,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -1965,12 +1965,12 @@
     {
       "id": "harbin",
       "ok": true,
-      "lowReadyMs": 192.04675000000134,
+      "lowReadyMs": 108.4129580000008,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -1997,12 +1997,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 51,
+          "frames": 44,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 44,
+          "modelCaptures": 45,
           "gpuBytes": 15838800
         }
       },
@@ -2042,7 +2042,7 @@
         }
       },
       "variant": "v6-harbin-gold",
-      "highAfterLowMs": 420.242166,
+      "highAfterLowMs": 413.5344160000004,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -2054,7 +2054,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 46,
+        "renderFrames": 47,
         "contextLost": false
       },
       "city": {
@@ -2172,7 +2172,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "7e8544b4-533a-4e7e-9827-8709896459a5",
+            "uuid": "89f20769-79a4-4847-9727-7d279b75e220",
             "channel": 1,
             "size": [
               2048,
@@ -2182,7 +2182,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "437aa6b9-0fa4-4ede-9ed1-fc46e82b88d0",
+            "uuid": "058f8be9-e187-4c07-9814-809c5118e363",
             "channel": 1,
             "size": [
               2048,
@@ -2192,7 +2192,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -2210,12 +2210,12 @@
     {
       "id": "tianjin",
       "ok": true,
-      "lowReadyMs": 162.05862499999785,
+      "lowReadyMs": 112.44416699999965,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -2242,12 +2242,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 56,
+          "frames": 48,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.5,
+          "renderMs": 0.2,
           "dpr": 1.25,
-          "modelCaptures": 48,
+          "modelCaptures": 49,
           "gpuBytes": 15838800
         }
       },
@@ -2287,7 +2287,7 @@
         }
       },
       "variant": "v6-tianjin-gold",
-      "highAfterLowMs": 420.14229200000045,
+      "highAfterLowMs": 418.7847500000007,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -2299,7 +2299,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 50,
+        "renderFrames": 51,
         "contextLost": false
       },
       "city": {
@@ -2417,7 +2417,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "740ed6cf-5f6b-4d9d-bfc3-8493a31b6925",
+            "uuid": "d5f7c119-92f1-4a30-a8cb-4db173c92d38",
             "channel": 1,
             "size": [
               2048,
@@ -2427,7 +2427,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "acfc02e8-beba-4865-a2f3-2de4848fb5df",
+            "uuid": "97b871ef-f728-477a-b561-2ecfb5fd32d8",
             "channel": 1,
             "size": [
               2048,
@@ -2437,7 +2437,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -2455,12 +2455,12 @@
     {
       "id": "taiyuan",
       "ok": true,
-      "lowReadyMs": 128.9643329999999,
+      "lowReadyMs": 112.78179199999977,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -2487,12 +2487,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 61,
+          "frames": 52,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 52,
+          "modelCaptures": 53,
           "gpuBytes": 15838800
         }
       },
@@ -2532,7 +2532,7 @@
         }
       },
       "variant": "v6-taiyuan-gold",
-      "highAfterLowMs": 431.393415999999,
+      "highAfterLowMs": 414.73775000000023,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -2544,7 +2544,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 54,
+        "renderFrames": 55,
         "contextLost": false
       },
       "city": {
@@ -2662,7 +2662,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "25c5b25e-4d1a-439b-a00d-11d2775e402f",
+            "uuid": "b8393ae9-3aa5-4a34-95ea-2b26be7f8264",
             "channel": 1,
             "size": [
               2048,
@@ -2672,7 +2672,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "f81be559-22a7-462e-bf25-eac0c5991a83",
+            "uuid": "c88ce6a9-ecba-4003-82c6-35f76d97435a",
             "channel": 1,
             "size": [
               2048,
@@ -2682,7 +2682,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -2700,12 +2700,12 @@
     {
       "id": "guangzhou",
       "ok": true,
-      "lowReadyMs": 136.50058299999728,
+      "lowReadyMs": 109.40799999999945,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -2732,12 +2732,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 65,
+          "frames": 56,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 56,
+          "modelCaptures": 57,
           "gpuBytes": 15838800
         }
       },
@@ -2777,7 +2777,7 @@
         }
       },
       "variant": "v6-guangzhou-gold",
-      "highAfterLowMs": 486.1195829999997,
+      "highAfterLowMs": 415.512917,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -2789,7 +2789,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 58,
+        "renderFrames": 59,
         "contextLost": false
       },
       "city": {
@@ -2907,7 +2907,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "5a2b9579-5c40-4963-88e7-8c7e9d8a63e9",
+            "uuid": "ca79ea50-d2cf-42ce-ad5a-989630a6d4dd",
             "channel": 1,
             "size": [
               2048,
@@ -2917,7 +2917,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "a9800e41-5c88-44e2-b570-3bf7dc33bae3",
+            "uuid": "fda1d8d9-9d37-47fe-a882-5721ccae1612",
             "channel": 1,
             "size": [
               2048,
@@ -2927,7 +2927,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -2945,12 +2945,12 @@
     {
       "id": "chengdu",
       "ok": true,
-      "lowReadyMs": 118.41500000000087,
+      "lowReadyMs": 108.61704199999986,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -2977,12 +2977,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 69,
+          "frames": 60,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.4,
+          "renderMs": 0.2,
           "dpr": 1.25,
-          "modelCaptures": 60,
+          "modelCaptures": 61,
           "gpuBytes": 15838800
         }
       },
@@ -3022,7 +3022,7 @@
         }
       },
       "variant": "v6-chengdu-gold",
-      "highAfterLowMs": 421.12562499999694,
+      "highAfterLowMs": 418.28200000000106,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -3034,7 +3034,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 62,
+        "renderFrames": 63,
         "contextLost": false
       },
       "city": {
@@ -3152,7 +3152,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "ea68ea4f-6229-44a6-9370-28cbed7c66ea",
+            "uuid": "1456909b-c626-4fce-aab7-242c897e3502",
             "channel": 1,
             "size": [
               2048,
@@ -3162,7 +3162,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "c4cefdd1-1bdd-4955-94e0-60e88eb39324",
+            "uuid": "b2276a32-0cb9-4f24-a451-120b9124c35c",
             "channel": 1,
             "size": [
               2048,
@@ -3172,7 +3172,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -3190,12 +3190,12 @@
     {
       "id": "jingdezhen",
       "ok": true,
-      "lowReadyMs": 125.79970899999898,
+      "lowReadyMs": 107.57095800000025,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -3222,12 +3222,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 73,
+          "frames": 64,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.5,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 64,
+          "modelCaptures": 65,
           "gpuBytes": 15838800
         }
       },
@@ -3267,7 +3267,7 @@
         }
       },
       "variant": "v6-jingdezhen-gold",
-      "highAfterLowMs": 451.04266700000153,
+      "highAfterLowMs": 414.11466700000165,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -3279,7 +3279,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 66,
+        "renderFrames": 67,
         "contextLost": false
       },
       "city": {
@@ -3397,7 +3397,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "4d21556d-1c5e-486d-b46c-ec2abc35e7cc",
+            "uuid": "011fcd9e-116c-48f8-af0a-e5d8238753e6",
             "channel": 1,
             "size": [
               2048,
@@ -3407,7 +3407,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "8711ef92-6154-4a1d-bb44-4dbe0b8244f1",
+            "uuid": "43c9a517-eae4-4e15-b1fc-8d6f8f1dd9e3",
             "channel": 1,
             "size": [
               2048,
@@ -3417,7 +3417,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -3435,12 +3435,12 @@
     {
       "id": "hangzhou",
       "ok": true,
-      "lowReadyMs": 134.15708399999858,
+      "lowReadyMs": 112.98025000000052,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -3467,12 +3467,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 78,
+          "frames": 68,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.2,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 68,
+          "modelCaptures": 69,
           "gpuBytes": 15838800
         }
       },
@@ -3512,7 +3512,7 @@
         }
       },
       "variant": "v6-hangzhou-gold",
-      "highAfterLowMs": 425.7007080000003,
+      "highAfterLowMs": 413.16741700000057,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -3524,7 +3524,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 70,
+        "renderFrames": 71,
         "contextLost": false
       },
       "city": {
@@ -3642,7 +3642,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "c7ce3238-1f50-4370-9543-3a9c60ac445b",
+            "uuid": "587add22-a57f-4771-a0e6-633a9ce4a169",
             "channel": 1,
             "size": [
               2048,
@@ -3652,7 +3652,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "a4c97f74-58e8-40f9-ad4d-2f9737a81ed2",
+            "uuid": "e7c003d9-472e-4073-830d-1e1e5b5809c7",
             "channel": 1,
             "size": [
               2048,
@@ -3662,7 +3662,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -3680,12 +3680,12 @@
     {
       "id": "wuhan",
       "ok": true,
-      "lowReadyMs": 118.76850000000559,
+      "lowReadyMs": 114.19525000000067,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -3712,12 +3712,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 82,
+          "frames": 72,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.3,
+          "renderMs": 0.2,
           "dpr": 1.25,
-          "modelCaptures": 72,
+          "modelCaptures": 73,
           "gpuBytes": 15838800
         }
       },
@@ -3757,7 +3757,7 @@
         }
       },
       "variant": "v6-wuhan-gold",
-      "highAfterLowMs": 435.82137499999953,
+      "highAfterLowMs": 411.90391699999964,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -3769,7 +3769,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 74,
+        "renderFrames": 75,
         "contextLost": false
       },
       "city": {
@@ -3887,7 +3887,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "0e0de6ac-9bd2-49f3-a142-1fce7c8c2128",
+            "uuid": "d2bd4ef8-4d26-4026-a1f3-365880cb254b",
             "channel": 1,
             "size": [
               2048,
@@ -3897,7 +3897,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "3db4bbd8-773f-4f93-a9e2-6bdad99b0e83",
+            "uuid": "1584d4db-07ad-4ae0-ba3c-1539e61e31db",
             "channel": 1,
             "size": [
               2048,
@@ -3907,7 +3907,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -3925,12 +3925,12 @@
     {
       "id": "shenyang",
       "ok": true,
-      "lowReadyMs": 149.8222090000054,
+      "lowReadyMs": 108.12474999999904,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -3957,12 +3957,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 88,
+          "frames": 76,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.4,
+          "renderMs": 0.2,
           "dpr": 1.25,
-          "modelCaptures": 76,
+          "modelCaptures": 77,
           "gpuBytes": 15838800
         }
       },
@@ -4002,7 +4002,7 @@
         }
       },
       "variant": "v6-shenyang-gold",
-      "highAfterLowMs": 429.78941699999996,
+      "highAfterLowMs": 412.6775000000016,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -4014,7 +4014,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 78,
+        "renderFrames": 79,
         "contextLost": false
       },
       "city": {
@@ -4132,7 +4132,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "3d7edb9f-3e98-4e9a-a64d-cb1726ad7ca0",
+            "uuid": "b769abed-2b29-4c47-8b1f-0b2ebe996374",
             "channel": 1,
             "size": [
               2048,
@@ -4142,7 +4142,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "40604125-a87c-4a12-ae91-1d0d5df43d4f",
+            "uuid": "2a741da9-7913-4ddd-9fb6-8458d9603f39",
             "channel": 1,
             "size": [
               2048,
@@ -4152,7 +4152,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -4170,12 +4170,12 @@
     {
       "id": "shenzhen",
       "ok": true,
-      "lowReadyMs": 120.2601250000007,
+      "lowReadyMs": 113.32324999999764,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -4202,12 +4202,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 93,
+          "frames": 80,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 80,
+          "modelCaptures": 81,
           "gpuBytes": 15838800
         }
       },
@@ -4247,7 +4247,7 @@
         }
       },
       "variant": "v6-shenzhen-gold",
-      "highAfterLowMs": 424.03133300000627,
+      "highAfterLowMs": 415.90179200000057,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -4259,7 +4259,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 82,
+        "renderFrames": 83,
         "contextLost": false
       },
       "city": {
@@ -4377,7 +4377,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "1f33aa8c-cb0e-4491-99bb-5d94e93c9079",
+            "uuid": "52a35615-7447-45a9-b498-06bd727e7cc9",
             "channel": 1,
             "size": [
               2048,
@@ -4387,7 +4387,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "aea14331-5808-4def-9bdd-b006767f9d03",
+            "uuid": "060b3e56-106a-41c3-ba1b-34e02bf4ca13",
             "channel": 1,
             "size": [
               2048,
@@ -4397,7 +4397,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -4415,12 +4415,12 @@
     {
       "id": "shijiazhuang",
       "ok": true,
-      "lowReadyMs": 130.5832089999967,
+      "lowReadyMs": 111.3247080000001,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -4447,12 +4447,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 97,
+          "frames": 84,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.4,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 84,
+          "modelCaptures": 85,
           "gpuBytes": 15838800
         }
       },
@@ -4492,7 +4492,7 @@
         }
       },
       "variant": "v6-shijiazhuang-gold",
-      "highAfterLowMs": 426.71441600000253,
+      "highAfterLowMs": 412.44620900000155,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -4504,7 +4504,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 86,
+        "renderFrames": 87,
         "contextLost": false
       },
       "city": {
@@ -4622,7 +4622,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "ae7a0765-b26c-4778-ac3e-51eb64732c29",
+            "uuid": "8dc72d95-073b-4d44-970b-5e780ed4c4b0",
             "channel": 1,
             "size": [
               2048,
@@ -4632,7 +4632,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "add8b1f8-fcab-4c3e-a193-bb6c7c6ee42c",
+            "uuid": "931cdfc8-bd07-4599-b670-9f36f7112a3b",
             "channel": 1,
             "size": [
               2048,
@@ -4642,7 +4642,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -4660,12 +4660,12 @@
     {
       "id": "xian",
       "ok": true,
-      "lowReadyMs": 190.4702080000061,
+      "lowReadyMs": 116.70858399999997,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -4692,12 +4692,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 102,
+          "frames": 88,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.2,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 88,
+          "modelCaptures": 89,
           "gpuBytes": 15838800
         }
       },
@@ -4737,7 +4737,7 @@
         }
       },
       "variant": "v6-xian-gold",
-      "highAfterLowMs": 443.12104199999885,
+      "highAfterLowMs": 412.96749999999884,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -4749,7 +4749,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 90,
+        "renderFrames": 91,
         "contextLost": false
       },
       "city": {
@@ -4867,7 +4867,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "1ea03088-09a5-41c0-96d9-f92764199212",
+            "uuid": "3f5b700f-aa52-45f7-aac1-9f482c9f5527",
             "channel": 1,
             "size": [
               2048,
@@ -4877,7 +4877,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "bf8ed34e-1a82-4416-bc08-cf66348e7781",
+            "uuid": "d752dbcd-93a3-4472-ad03-c39024dc5170",
             "channel": 1,
             "size": [
               2048,
@@ -4887,7 +4887,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -4905,12 +4905,12 @@
     {
       "id": "zhengzhou",
       "ok": true,
-      "lowReadyMs": 117.95162500000151,
+      "lowReadyMs": 113.50895800000217,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -4937,12 +4937,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 107,
+          "frames": 92,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.4,
+          "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 92,
+          "modelCaptures": 93,
           "gpuBytes": 15838800
         }
       },
@@ -4982,7 +4982,7 @@
         }
       },
       "variant": "v6-zhengzhou-gold",
-      "highAfterLowMs": 414.88962499999616,
+      "highAfterLowMs": 417.0982499999991,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -4994,7 +4994,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 94,
+        "renderFrames": 95,
         "contextLost": false
       },
       "city": {
@@ -5112,7 +5112,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "19e45f68-358a-40a9-b249-3884275eb675",
+            "uuid": "dc45724d-ae94-47ed-8abf-e78df8f926e8",
             "channel": 1,
             "size": [
               2048,
@@ -5122,7 +5122,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "4f1a5e4e-6cc6-40f8-84d5-03929d12233f",
+            "uuid": "ffcff9b8-009a-434f-9979-28960e937c46",
             "channel": 1,
             "size": [
               2048,
@@ -5132,7 +5132,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -5150,12 +5150,12 @@
     {
       "id": "chongqing",
       "ok": true,
-      "lowReadyMs": 114.88591699999961,
+      "lowReadyMs": 109.50762499999837,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -5182,12 +5182,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 111,
+          "frames": 97,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 96,
+          "modelCaptures": 97,
           "gpuBytes": 15838800
         }
       },
@@ -5227,7 +5227,7 @@
         }
       },
       "variant": "v6-chongqing-gold",
-      "highAfterLowMs": 412.80154200000106,
+      "highAfterLowMs": 417.2402919999986,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -5239,7 +5239,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 98,
+        "renderFrames": 99,
         "contextLost": false
       },
       "city": {
@@ -5357,7 +5357,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "2f03290b-4714-419a-874c-90271b00e4b8",
+            "uuid": "97eec50f-1dc4-432d-b188-69514ba73512",
             "channel": 1,
             "size": [
               2048,
@@ -5367,7 +5367,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "a2d9805a-1d6e-4ffe-8525-c2d77c787b28",
+            "uuid": "61cfabed-6b0d-4b92-91f2-80e7992aec09",
             "channel": 1,
             "size": [
               2048,
@@ -5377,7 +5377,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -5395,12 +5395,12 @@
     {
       "id": "changchun",
       "ok": true,
-      "lowReadyMs": 117.14104099999531,
+      "lowReadyMs": 112.84183300000223,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -5427,12 +5427,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 115,
+          "frames": 101,
           "lenses": 12,
           "textures": 14,
-          "renderMs": 0.6,
+          "renderMs": 0.2,
           "dpr": 1.25,
-          "modelCaptures": 100,
+          "modelCaptures": 101,
           "gpuBytes": 15838800
         }
       },
@@ -5472,7 +5472,7 @@
         }
       },
       "variant": "v6-changchun-gold",
-      "highAfterLowMs": 426.0173330000034,
+      "highAfterLowMs": 421.15408399999797,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -5484,7 +5484,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 102,
+        "renderFrames": 103,
         "contextLost": false
       },
       "city": {
@@ -5602,7 +5602,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "cb984123-abd0-40fb-9196-c7704215971b",
+            "uuid": "07dc605d-b26c-4c30-a77f-83cfd5755ce8",
             "channel": 1,
             "size": [
               2048,
@@ -5612,7 +5612,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "4ab6735c-65f8-48e4-ad82-d94cc60273b3",
+            "uuid": "3cd23d99-6286-4e1c-8a3d-42a45c00d43e",
             "channel": 1,
             "size": [
               2048,
@@ -5622,7 +5622,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -5640,12 +5640,12 @@
     {
       "id": "qingdao",
       "ok": true,
-      "lowReadyMs": 123.39658300000156,
+      "lowReadyMs": 112.09870799999771,
       "glass": {
         "backend": "webgl2-isolated",
         "ready": true,
         "maps": 14,
-        "mapTime": 137.09999999403954,
+        "mapTime": 122.7999999821186,
         "error": "",
         "optionSurfaces": 8,
         "memory": {
@@ -5672,12 +5672,12 @@
         },
         "deviceMemoryGiB": 16,
         "compositor": {
-          "frames": 120,
+          "frames": 106,
           "lenses": 12,
           "textures": 14,
           "renderMs": 0.3,
           "dpr": 1.25,
-          "modelCaptures": 104,
+          "modelCaptures": 105,
           "gpuBytes": 15838800
         }
       },
@@ -5717,7 +5717,7 @@
         }
       },
       "variant": "v6-qingdao-gold",
-      "highAfterLowMs": 436.50991700000304,
+      "highAfterLowMs": 436.742209,
       "quality": {
         "cityTier": "standard",
         "fixedTiers": {
@@ -5729,7 +5729,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1,
-        "renderFrames": 106,
+        "renderFrames": 107,
         "contextLost": false
       },
       "city": {
@@ -5847,7 +5847,7 @@
         "uniformOnly": false,
         "maps": [
           {
-            "uuid": "08726e5b-3c63-45d4-a8ce-0c7dd7745522",
+            "uuid": "339fb616-8abd-42b5-8dcf-b7788beea5fe",
             "channel": 1,
             "size": [
               2048,
@@ -5857,7 +5857,7 @@
             "precision": "RG8"
           },
           {
-            "uuid": "58b2e9cd-0330-42ce-9061-6d2cd4c9b9b3",
+            "uuid": "47473b9c-ab1a-4c70-af39-152fc12baf4c",
             "channel": 1,
             "size": [
               2048,
@@ -5867,7 +5867,7 @@
             "precision": "RG16F"
           },
           {
-            "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+            "uuid": "5231878e-6d43-407e-9454-bb448b296583",
             "channel": 1,
             "size": [
               288,
@@ -5888,6 +5888,9 @@
     "version": "7.1.3",
     "profile": "consumer",
     "fixedMapping": "source-layout-v4",
+    "markFiltering": {
+      "anisotropy": 8
+    },
     "importing": false,
     "preload": {
       "neighborCity": "shenzhen",
@@ -5919,7 +5922,7 @@
       "upgrading": false,
       "error": "",
       "dpr": 1,
-      "renderFrames": 10,
+      "renderFrames": 11,
       "contextLost": false
     },
     "resources": {
@@ -5967,7 +5970,7 @@
       "backend": "webgl2-isolated",
       "ready": true,
       "maps": 14,
-      "mapTime": 137.09999999403954,
+      "mapTime": 122.7999999821186,
       "error": "",
       "optionSurfaces": 8,
       "memory": {
@@ -5994,12 +5997,12 @@
       },
       "deviceMemoryGiB": 16,
       "compositor": {
-        "frames": 10,
+        "frames": 7,
         "lenses": 12,
         "textures": 14,
-        "renderMs": 0.6,
+        "renderMs": 0.3,
         "dpr": 1.25,
-        "modelCaptures": 8,
+        "modelCaptures": 9,
         "gpuBytes": 15838800
       }
     },
@@ -6073,7 +6076,7 @@
       "busy": false,
       "hasCustom": false
     },
-    "environment": "ce935719-8f74-499e-bf04-869c8b5b48f5",
+    "environment": "9691bf48-0902-421e-959d-49cfec4628ae",
     "parameters": {
       "radius": 43,
       "height": 103,
@@ -6096,7 +6099,7 @@
         57.5,
         0
       ],
-      "envMap": "91818521-b868-41a8-a065-f44deb0712ea",
+      "envMap": "6a1f26e7-6d96-41aa-9230-ea785b12f098",
       "method": "local cube probe; cup wall excluded, real nearby geometry included",
       "approximation": "single centre probe with finite-volume correction near handle; no ray tracing or multiple bounces"
     },
@@ -6107,17 +6110,17 @@
     },
     "bottomClearance": 6.119999997317791,
     "geometries": [
-      "0861431f-78d1-485a-89f7-d0ff9866cfe8",
-      "36a38114-ddcb-48ff-b1ea-075010156841",
-      "71a24bd7-f60d-447e-8c5d-8b69f4ce84e8",
-      "b7b05459-53e7-4657-b794-7f21dfe8269b",
-      "931b0cf1-c90b-4e09-a904-f54a0dfdb066",
-      "6eeb6293-ac96-4721-aea6-dcd6ce42080b",
-      "70e4ad4a-5f9e-4383-b87c-a800815f674d",
-      "73f53fd4-cf6d-4a7e-a1ab-7bf0a69a7369",
-      "c5a64d1d-96e5-486b-9b2f-b9efc851219a",
-      "571dad6a-d428-4152-9eda-7393cc014828",
-      "98bc9722-881f-4c62-b451-09f3531399c4"
+      "875e7feb-7467-4c11-a199-9d69b8820093",
+      "4a30a5d0-d9a0-45f9-8a51-7c56a9ab5588",
+      "ab9525a9-2eaa-45b4-8ee8-e6a18a7030c5",
+      "c9d2a416-03d2-46a1-89f6-99e7beae1649",
+      "67ab549e-2838-4b03-ab22-a1981c069ac1",
+      "cf726317-a621-4589-95f6-4e1ae3d42a65",
+      "6d2e5fc9-b2fa-4bad-ba62-da393e1dcfe3",
+      "050939c9-a83d-4af3-918e-739d9d17c5d7",
+      "607d3627-3990-4f70-9d73-8b73e1628ee3",
+      "4f5bdf32-2280-4c00-a86c-b525141e3b17",
+      "cee61eb7-d1f8-41bd-af1d-161fda5658b9"
     ],
     "memory": {
       "geometries": 14,
@@ -6239,7 +6242,7 @@
       "uniformOnly": false,
       "maps": [
         {
-          "uuid": "5fe10c8c-f761-4228-839f-1f2ccdb83500",
+          "uuid": "a2a21a45-ae6e-4d8c-8128-a518dd18df36",
           "channel": 1,
           "size": [
             2048,
@@ -6249,7 +6252,7 @@
           "precision": "RG8"
         },
         {
-          "uuid": "405c6931-c881-4210-8f78-25c111c3bc4d",
+          "uuid": "2e0b8f28-71d2-4675-87cb-6fec3ece73ce",
           "channel": 1,
           "size": [
             2048,
@@ -6259,7 +6262,7 @@
           "precision": "RG16F"
         },
         {
-          "uuid": "a9e9840e-7005-4812-98ae-f0e9bc69de0e",
+          "uuid": "5231878e-6d43-407e-9454-bb448b296583",
           "channel": 1,
           "size": [
             288,
@@ -6283,22 +6286,22 @@
     },
     "fixed": {
       "body": {
-        "baseColor": "2ed564b0-5fee-457b-b952-6c3267d80d67",
-        "normal": "7d4894f1-44e3-46d2-ae58-991eeacc48e5",
-        "roughness": "11b0cacc-6938-4e98-a9a8-d2d275412b01",
-        "metalness": "11b0cacc-6938-4e98-a9a8-d2d275412b01"
+        "baseColor": "b5d01fa7-b961-4499-bc56-8c5bc979d29c",
+        "normal": "80f39ce1-32e3-4603-9da8-2361abd7bf06",
+        "roughness": "064f113b-d629-4fa6-8e37-8cefe522633f",
+        "metalness": "064f113b-d629-4fa6-8e37-8cefe522633f"
       },
       "handle": {
-        "baseColor": "3816a92d-f6de-476c-a1cd-3fe0466d2bf7",
-        "normal": "8048daa2-aceb-4bed-81ba-6e0984734271",
-        "roughness": "5f37c848-da00-4039-b927-bfa0fcf08df8",
-        "metalness": "5f37c848-da00-4039-b927-bfa0fcf08df8"
+        "baseColor": "52ad4f62-03e6-43f5-99a5-42bac9bf33c2",
+        "normal": "b76b9788-b8dc-4b48-8011-bfd381ecc2e6",
+        "roughness": "28514fa4-282d-459a-9ca0-b659fd8cf523",
+        "metalness": "28514fa4-282d-459a-9ca0-b659fd8cf523"
       },
       "saucer": {
-        "baseColor": "be0459b4-25ba-4e7f-b220-156cde40d5f9",
-        "normal": "0ba6101d-aa0c-4d8e-baa4-e986abc9d68e",
-        "roughness": "4b231e7f-675f-40e4-a4c2-8dbff03fff8e",
-        "metalness": "4b231e7f-675f-40e4-a4c2-8dbff03fff8e"
+        "baseColor": "510a7bfd-3511-4b69-9b9d-a82f7820786a",
+        "normal": "4501a033-7b30-42ed-b15a-120b646659df",
+        "roughness": "095d61d2-9d00-411d-afea-9cc6e68b1cb5",
+        "metalness": "095d61d2-9d00-411d-afea-9cc6e68b1cb5"
       }
     }
   },
@@ -6315,7 +6318,7 @@
       "upgrading": false,
       "error": "",
       "dpr": 1,
-      "renderFrames": 107,
+      "renderFrames": 108,
       "contextLost": false
     },
     "resources": {

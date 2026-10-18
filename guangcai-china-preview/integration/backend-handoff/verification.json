@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "3b7b509efe95034725ee655cc217badbc45f65bb",
+  "sourceCommit": "d31e6821916c780ef7f8c1fc28add3252a8ff191",
   "resourceReleaseId": "v7-4",
   "counts": {
     "cities": 23,
@@ -17,13 +17,13 @@
   "files": [
     {
       "name": "backend-config.json",
-      "bytes": 258584,
-      "sha256": "8e51fb63d459dfc897e49f47aae662b4d5e633c129bf1ca9891865119c0a0e34"
+      "bytes": 259354,
+      "sha256": "2f23ea20cd7d764cb3b490ad94ce7f886e01dfe4e1f0e8d6c46449a41ba585a8"
     },
     {
       "name": "V7后台配置数据表.xlsx",
-      "bytes": 55727,
-      "sha256": "86802bbebb336d8d0e1e7dbfffc501a654b034a3e6d683cce20fa6ab70a4d9eb"
+      "bytes": 55771,
+      "sha256": "df1505163d722b93c4b897c934db53ec057d1937a80172a1ebcdaac9ca6f6266"
     }
   ],
   "scope": "数据与交接导出；不是新增真机或COS验收"

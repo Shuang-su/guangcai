@@ -345,7 +345,7 @@
   ],
   "errors": [],
   "metrics": {
-    "unthrottledReadyMs": 1407,
+    "unthrottledReadyMs": 1151,
     "initial": {
       "quality": {
         "cityTier": "standard",
@@ -358,7 +358,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1.25,
-        "renderFrames": 11,
+        "renderFrames": 10,
         "contextLost": false
       },
       "resources": {
@@ -403,7 +403,7 @@
         "framebuffer": 17100720
       }
     },
-    "initialResourceEncodedBytes": 12084418,
+    "initialResourceEncodedBytes": 12085380,
     "original5MiBTargetMet": false,
     "near": {
       "quality": {
@@ -417,7 +417,7 @@
         "upgrading": false,
         "error": "",
         "dpr": 1.25,
-        "renderFrames": 12,
+        "renderFrames": 11,
         "contextLost": false
       },
       "resources": {

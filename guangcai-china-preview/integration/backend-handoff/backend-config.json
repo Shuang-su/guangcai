@@ -1,7 +1,7 @@
 {
   "format": "guangcai-backend-handoff-v1",
   "productVersion": "7.1.3",
-  "sourceCommit": "3b7b509efe95034725ee655cc217badbc45f65bb",
+  "sourceCommit": "d31e6821916c780ef7f8c1fc28add3252a8ff191",
   "resourceReleaseId": "v7-4",
   "modelVersion": "china-cup-v6",
   "recipeVersion": "porcelain-city-v6",
@@ -151,7 +151,8 @@
       "all slogan masks",
       "handle textures",
       "saucer atlas",
-      "porcelain collar geometry"
+      "handle ribbon and attachment centers",
+      "lower porcelain collar geometry"
     ],
     "normalOrientation": "HFN1 RGBA16F bottom-up; runtime RG16F; mirrored tangent basis from transformed UV derivatives"
   },
@@ -196,7 +197,7 @@
           "boundsRelativeToCenter": {
             "min": [
               41.87636184692383,
-              -6.291999816894531,
+              -8.791999816894531,
               -8.119999885559082
             ],
             "max": [
@@ -238,7 +239,7 @@
       "leftArcMarginFromHandle": 15.51474735072685,
       "rightArcMarginFromHandle": 13.263272615654163
     },
-    "decision": "No handle geometry changed: handle is symmetric about the cup radial plane. Existing floral sector is 57 degrees (-30 to +27), so its centre is 1.5 degrees / 1.126 mm offset. User requested inspection; approved V7.1.3 keeps horizontal floral extent and model version. Photos confirm broad proportions, not absolute millimetre precision."
+    "decision": "Handle ribbon and anchors unchanged; v4 upper collar lower fillet extends 2.5 mm farther while legacy versions retain the original. Handle is symmetric about the cup radial plane. Existing floral sector is 57 degrees (-30 to +27), so its centre is 1.5 degrees / 1.126 mm offset. User requested inspection; approved V7.1.3 keeps horizontal floral extent and model version. Photos confirm broad proportions, not absolute millimetre precision."
   },
   "typography": {
     "font": {
@@ -776,7 +777,7 @@
         "source-layout-v4"
       ],
       "storage": "CDN manifest",
-      "note": "v7-4声明source-layout-v4：三部件花纹镜像，杯身花纹底边0.12 mm。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。"
+      "note": "v7-4声明source-layout-v4：三部件花纹镜像，花纹底边0.12 mm，上连接白瓷下沿补足。缺省按v3。不是DesignConfig字段，不可由后台任意改写旧发布。"
     },
     {
       "path": "fixed.atlas",
@@ -6916,107 +6917,117 @@
     {
       "path": "guangcai-china-preview/package.json",
       "sha256": "40f2b7a47ba6aa7196e230435e1f39a8a3086d6e4effb1c81622c23c965c4e74",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/package.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/package.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.3/resource-build.json",
-      "sha256": "cd3794968bf3682f4caf3db951e0f03ad388b3906080bd1c72279dd07b41a164",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.3/resource-build.json"
+      "sha256": "7b8f8674b84f3bfcb6fae9a33cb9deb400e196442d5f5b20ee3ece614e198c65",
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/evidence/v7.1.3/resource-build.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.3/handle-dimensions.json",
-      "sha256": "c817e8fd47a2178d13d9fd4933019a3107400701d3eb7069fc0733100a3af4d3",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.3/handle-dimensions.json"
+      "sha256": "a6cf2d2e0bf26e233431e22e81b4d385e7bcf25456e27f0384f59273c99aea1e",
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/evidence/v7.1.3/handle-dimensions.json"
     },
     {
       "path": "guangcai-china-preview/src/geometry/fixed-mapping.ts",
       "sha256": "ba1d9c22dbedc3c942b771a23790d4765332624211d8ac6dd34b590368ac38ec",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/geometry/fixed-mapping.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/geometry/fixed-mapping.ts"
+    },
+    {
+      "path": "guangcai-china-preview/src/geometry/product.ts",
+      "sha256": "de09d435a4063daac6a13981c8493579bb3f98075d7fca275dc356376b53ea7d",
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/geometry/product.ts"
+    },
+    {
+      "path": "guangcai-china-preview/src/main.ts",
+      "sha256": "699c6c9b07372f3a8537de15306df020c45f7931d9c9b9bf3c3bc8dc398efc63",
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/main.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/style-manager.ts",
       "sha256": "7005f4a6aa3cf92170e8985f41ace7086eb7aaca19d45a5f46602be385901f4f",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/style-manager.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/styles/style-manager.ts"
     },
     {
       "path": "guangcai-china-preview/integration/contracts/resource-manifest.schema.json",
       "sha256": "8f695bcc4c13e703a81d9176db1403b985ade0226720e249dcacdd73316253df",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/integration/contracts/resource-manifest.schema.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/integration/contracts/resource-manifest.schema.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.2/slogans-source.json",
       "sha256": "7fd7479d5fa365c589a38affb9b3e39ab6d73e44d0af6f0e24d1338729739676",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.2/slogans-source.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/evidence/v7.1.2/slogans-source.json"
     },
     {
       "path": "guangcai-china-preview/evidence/v7.1.2/cities/review.json",
       "sha256": "f1a59172052ffe6b38fbd5823895bdb919a5a4c8ba3407387a82d222b74768f9",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/evidence/v7.1.2/cities/review.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/evidence/v7.1.2/cities/review.json"
     },
     {
       "path": "guangcai-china-preview/src/styles/city-appearance.ts",
       "sha256": "1c9ede8cb261f81df0c3e063afb693175afdfa0dbe48f32429e56cf62480f845",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/city-appearance.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/styles/city-appearance.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/slogans.ts",
       "sha256": "3806074f4d0bb9ad58d6646ca15359ac06bd2ad8c6911ed2ffaf50b928a9bac3",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/slogans.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/styles/slogans.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/xy-mapping.ts",
       "sha256": "787e120d4e6723e10fdf6016789d1bc3e122bd5e0c0eb9222765ad82d00eb80c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/xy-mapping.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/styles/xy-mapping.ts"
     },
     {
       "path": "guangcai-china-preview/src/ui/consumer-panel.ts",
       "sha256": "f1f39d829920bc8ec783a3f8aef4d49706bc57f0cddb998116d139f7e2d42298",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/ui/consumer-panel.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/ui/consumer-panel.ts"
     },
     {
       "path": "guangcai-china-preview/src/styles/city-catalog-v6.json",
       "sha256": "1ee5338f075c3ad9adcc1e0f954a1019b500336a963d240e462b1f711747dd7c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/styles/city-catalog-v6.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/styles/city-catalog-v6.json"
     },
     {
       "path": "guangcai-china-preview/src/materials/city-parametric.ts",
       "sha256": "8afc23e52bed2fd7acd7c4919a516d84076201b6f3d6e531d5cb21b9b5787952",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/materials/city-parametric.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/materials/city-parametric.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/types.ts",
       "sha256": "636eac09a704879e7626680f06fcc1c81e1a79f205fdb54a4522f2725289ae07",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/types.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/resources/types.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/design.ts",
       "sha256": "53b2f985833471c3d9b1d7f771f6fbc541b8aaed4843edcf8d4eefc66680a74c",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/design.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/resources/design.ts"
     },
     {
       "path": "guangcai-china-preview/src/resources/texture-budget.ts",
       "sha256": "6ded54fb41d04288d70405682e5a25257de7e104fc1b1045f1de60816e7dbca7",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/src/resources/texture-budget.ts"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/src/resources/texture-budget.ts"
     },
     {
       "path": "guangcai-china-preview/integration/contracts/design.schema.json",
       "sha256": "01da12a94124a99c2d3914ec548302ffb0b1009545611e6ebd2d1519ef067c3b",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/integration/contracts/design.schema.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/integration/contracts/design.schema.json"
     },
     {
       "path": "guangcai-china-preview/public/api/v1/bootstrap.json",
       "sha256": "5c0b51af871cc6494cb401e39bef6809c946ec599d5c79647e42569804de321d",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/api/v1/bootstrap.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/public/api/v1/bootstrap.json"
     },
     {
       "path": "guangcai-china-preview/public/releases/v7-4/catalog.json",
       "sha256": "c4fd486fae5d5f784600b4ef358e11abde04b7af1e91e74b78637b8727006ee5",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/releases/v7-4/catalog.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/public/releases/v7-4/catalog.json"
     },
     {
       "path": "guangcai-china-preview/public/releases/v7-4/manifest-a6484ca5de3f4cc2.json",
       "sha256": "a6484ca5de3f4cc2f471192a3eb947b2027443552ec87b4ccb172642908c0465",
-      "url": "https://github.com/Shuang-su/guangcai/blob/3b7b509efe95034725ee655cc217badbc45f65bb/guangcai-china-preview/public/releases/v7-4/manifest-a6484ca5de3f4cc2.json"
+      "url": "https://github.com/Shuang-su/guangcai/blob/d31e6821916c780ef7f8c1fc28add3252a8ff191/guangcai-china-preview/public/releases/v7-4/manifest-a6484ca5de3f4cc2.json"
     }
   ]
 }

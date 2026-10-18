@@ -1,6 +1,6 @@
 # V7.1.3 制作、尺寸与兼容记录
 
-固定花纸参照五张 iPhone 13 mini 实拍，来源与原件 SHA-256 见 [references/sources.json](references/sources.json)。预览副本仅调整 EXIF 方向与尺寸，未重绘。白瓷连接件保留；执行中按追加反馈补足上连接件下沿，主把手和下连接件不变。
+固定花纸参照七张 iPhone 13 mini 实拍，来源与原件 SHA-256 见 [references/sources.json](references/sources.json)。预览副本仅调整 EXIF 方向与尺寸，未重绘。白瓷连接件保留；执行中按追加反馈补足上连接件下沿，主把手和下连接件不变。
 
 ## 本轮资源
 
