@@ -1,0 +1,28 @@
+[
+  {
+    "repository": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace",
+    "branch": "codex/v7-progressive-resources",
+    "sha": "ea48236bfbbbc491b595673e0a8928f6f3009509",
+    "ancestorOfVerifiedMain": true,
+    "deleted": true,
+    "method": "compare-and-delete exact ref after verifying ancestry of current remote main",
+    "mainVerified": "7b0f1e3fbdad4d3ff0230e305891c32c4d2014f0",
+    "initialSafeDeleteReason": "error: the branch 'codex/v7-progressive-resources' is not fully merged\nhint: If you are sure you want to delete it, run 'git branch -D codex/v7-progressive-resources'\nhint: Disable this message with \"git config set advice.forceDeleteBranch false\""
+  },
+  {
+    "repository": "/Volumes/Prism_初号機/广彩/guangcai-v4-workspace",
+    "branch": "codex/v7-v6-sync-handoff",
+    "sha": "5f227f4ce32a891c078f764aba7c52effc7f1bbe",
+    "ancestorOfVerifiedMain": true,
+    "deleted": true,
+    "result": "Deleted branch codex/v7-v6-sync-handoff (was 5f227f4).\nwarning: deleting branch 'codex/v7-v6-sync-handoff' that has been merged to\n         'refs/remotes/origin/codex/v7-v6-sync-handoff', but not yet merged to HEAD"
+  },
+  {
+    "repository": "/Volumes/Prism/广彩/guangcai-v7.1.2-delivery",
+    "branch": "codex/v6-webgl2-studio",
+    "sha": "5a2d7e47354854de418b83915ec081081d0486c9",
+    "ancestorOfVerifiedMain": true,
+    "deleted": true,
+    "result": "Deleted branch codex/v6-webgl2-studio (was 5a2d7e4)."
+  }
+]
