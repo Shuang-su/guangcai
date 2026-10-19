@@ -1,4 +1,4 @@
-import {packNormalXY} from './texture-budget';
+import {packNormalXY,packNormalBytePlanes} from './texture-budget';
 import {parseHFN} from './hfn';
 import {inflateNormal} from './inflate';
 import type {Asset} from './types';
@@ -15,6 +15,6 @@ scope.onmessage=async({data:{bytes,asset}})=>{
   const raw=inflateNormal(bytes,asset.decodedBytes+16);
   scope.postMessage({stage:'validate'},[]);
   const normal=parseHFN(raw);if(normal.width!==asset.width||normal.height!==asset.height)throw Error('Normal dimensions differ from manifest');
-  const data=packNormalXY(normal.data);scope.postMessage({kind:'normal',data},[data.buffer]);
+  const data=normal.bytePlanes?packNormalBytePlanes(normal.bytePlanes):packNormalXY(normal.data);scope.postMessage({kind:'normal',data},[data.buffer]);
  }catch(e){scope.postMessage({error:String(e)},[]);}
 };

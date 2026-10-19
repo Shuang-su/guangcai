@@ -1,0 +1,435 @@
+{
+  "passed": true,
+  "resources": 71,
+  "beforeBytes": 145565753,
+  "bytes": 102869487,
+  "layout": "HFN1 byte-plane layout 2; exact original RGBA16F values; direct RG16F upload",
+  "checks": [
+    {
+      "id": "shanghai-light-normal",
+      "beforeBytes": 219066,
+      "bytes": 189145,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shanghai-standard-normal",
+      "beforeBytes": 831790,
+      "bytes": 632568,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shanghai-detail-normal",
+      "beforeBytes": 3167625,
+      "bytes": 2152311,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "urumqi-light-normal",
+      "beforeBytes": 282460,
+      "bytes": 238896,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "urumqi-standard-normal",
+      "beforeBytes": 1081650,
+      "bytes": 819973,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "urumqi-detail-normal",
+      "beforeBytes": 4136700,
+      "bytes": 2831184,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "beijing-light-normal",
+      "beforeBytes": 340659,
+      "bytes": 289192,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "beijing-standard-normal",
+      "beforeBytes": 1311898,
+      "bytes": 1003771,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "beijing-detail-normal",
+      "beforeBytes": 5037976,
+      "bytes": 3490083,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanjing-light-normal",
+      "beforeBytes": 264706,
+      "bytes": 223777,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanjing-standard-normal",
+      "beforeBytes": 1018064,
+      "bytes": 784809,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanjing-detail-normal",
+      "beforeBytes": 3874595,
+      "bytes": 2727665,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanchang-light-normal",
+      "beforeBytes": 367241,
+      "bytes": 311535,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanchang-standard-normal",
+      "beforeBytes": 1409322,
+      "bytes": 1083047,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "nanchang-detail-normal",
+      "beforeBytes": 5366681,
+      "bytes": 3759921,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xiamen-light-normal",
+      "beforeBytes": 312031,
+      "bytes": 261397,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xiamen-standard-normal",
+      "beforeBytes": 1193067,
+      "bytes": 898694,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xiamen-detail-normal",
+      "beforeBytes": 4620545,
+      "bytes": 3080779,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hohhot-light-normal",
+      "beforeBytes": 337945,
+      "bytes": 281651,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hohhot-standard-normal",
+      "beforeBytes": 1284162,
+      "bytes": 978995,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hohhot-detail-normal",
+      "beforeBytes": 4873696,
+      "bytes": 3381440,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "harbin-light-normal",
+      "beforeBytes": 276497,
+      "bytes": 236890,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "harbin-standard-normal",
+      "beforeBytes": 1059531,
+      "bytes": 809977,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "harbin-detail-normal",
+      "beforeBytes": 4053397,
+      "bytes": 2792392,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "tianjin-light-normal",
+      "beforeBytes": 362259,
+      "bytes": 311294,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "tianjin-standard-normal",
+      "beforeBytes": 1399285,
+      "bytes": 1074835,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "tianjin-detail-normal",
+      "beforeBytes": 5374497,
+      "bytes": 3711187,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "taiyuan-light-normal",
+      "beforeBytes": 321137,
+      "bytes": 268987,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "taiyuan-standard-normal",
+      "beforeBytes": 1228581,
+      "bytes": 939675,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "taiyuan-detail-normal",
+      "beforeBytes": 4694444,
+      "bytes": 3273297,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "guangzhou-light-normal",
+      "beforeBytes": 260323,
+      "bytes": 210770,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "guangzhou-standard-normal",
+      "beforeBytes": 1001387,
+      "bytes": 735906,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "guangzhou-detail-normal",
+      "beforeBytes": 3930411,
+      "bytes": 2568892,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chengdu-light-normal",
+      "beforeBytes": 253571,
+      "bytes": 214427,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chengdu-standard-normal",
+      "beforeBytes": 967706,
+      "bytes": 739299,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chengdu-detail-normal",
+      "beforeBytes": 3706539,
+      "bytes": 2567783,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "jingdezhen-light-normal",
+      "beforeBytes": 301951,
+      "bytes": 251220,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "jingdezhen-standard-normal",
+      "beforeBytes": 1158083,
+      "bytes": 878655,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "jingdezhen-detail-normal",
+      "beforeBytes": 4452170,
+      "bytes": 3057398,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hangzhou-light-normal",
+      "beforeBytes": 357632,
+      "bytes": 288315,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hangzhou-standard-normal",
+      "beforeBytes": 1362934,
+      "bytes": 1001991,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "hangzhou-detail-normal",
+      "beforeBytes": 5348124,
+      "bytes": 3418549,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "wuhan-light-normal",
+      "beforeBytes": 358014,
+      "bytes": 301345,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "wuhan-standard-normal",
+      "beforeBytes": 1377454,
+      "bytes": 1051782,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "wuhan-detail-normal",
+      "beforeBytes": 5262458,
+      "bytes": 3663399,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenyang-light-normal",
+      "beforeBytes": 350963,
+      "bytes": 293694,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenyang-standard-normal",
+      "beforeBytes": 1351682,
+      "bytes": 1026795,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenyang-detail-normal",
+      "beforeBytes": 5205333,
+      "bytes": 3597303,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenzhen-light-normal",
+      "beforeBytes": 375594,
+      "bytes": 305418,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenzhen-standard-normal",
+      "beforeBytes": 1441605,
+      "bytes": 1064617,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shenzhen-detail-normal",
+      "beforeBytes": 5570020,
+      "bytes": 3703029,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shijiazhuang-light-normal",
+      "beforeBytes": 318898,
+      "bytes": 264322,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shijiazhuang-standard-normal",
+      "beforeBytes": 1227032,
+      "bytes": 933849,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "shijiazhuang-detail-normal",
+      "beforeBytes": 4687055,
+      "bytes": 3267966,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xian-light-normal",
+      "beforeBytes": 355738,
+      "bytes": 297834,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xian-standard-normal",
+      "beforeBytes": 1381265,
+      "bytes": 1040775,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "xian-detail-normal",
+      "beforeBytes": 5354493,
+      "bytes": 3674566,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "zhengzhou-light-normal",
+      "beforeBytes": 347944,
+      "bytes": 290394,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "zhengzhou-standard-normal",
+      "beforeBytes": 1343813,
+      "bytes": 1007621,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "zhengzhou-detail-normal",
+      "beforeBytes": 5203343,
+      "bytes": 3512122,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chongqing-light-normal",
+      "beforeBytes": 396939,
+      "bytes": 332699,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chongqing-standard-normal",
+      "beforeBytes": 1525902,
+      "bytes": 1141340,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "chongqing-detail-normal",
+      "beforeBytes": 5909461,
+      "bytes": 3921629,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "changchun-light-normal",
+      "beforeBytes": 313796,
+      "bytes": 262103,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "changchun-standard-normal",
+      "beforeBytes": 1195365,
+      "bytes": 912081,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "changchun-detail-normal",
+      "beforeBytes": 4540848,
+      "bytes": 3149135,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "qingdao-light-normal",
+      "beforeBytes": 274535,
+      "bytes": 233115,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "qingdao-standard-normal",
+      "beforeBytes": 1052268,
+      "bytes": 798167,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "qingdao-detail-normal",
+      "beforeBytes": 4015092,
+      "bytes": 2743552,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "bezier-shenzhen-standard-normal",
+      "beforeBytes": 744081,
+      "bytes": 592263,
+      "canonicalRgba16fIdentical": true
+    },
+    {
+      "id": "bezier-beijing-standard-normal",
+      "beforeBytes": 882424,
+      "bytes": 714000,
+      "canonicalRgba16fIdentical": true
+    }
+  ]
+}

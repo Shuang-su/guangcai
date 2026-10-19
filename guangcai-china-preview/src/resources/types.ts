@@ -16,7 +16,7 @@ export interface ResourceManifest {
  fixedMapping?:FixedMapping;
  schemaVersion:1;releaseId:string;modelVersion:string;recipeVersion:string;
  fixed:Record<Region,Record<Tier,FixedLevel>>;
- cities:Record<string,{name:string;thumbnail:Asset;levels:Record<Tier,CityLevel>}>;
+ cities:Record<string,{name:string;thumbnail:Asset;levels:Record<Tier,CityLevel>;slogans?:Record<string,Label>}>;
  slogans:Record<string,{text:string}&Label>;mark:Asset;
 }
 export interface DesignConfig {

@@ -1,0 +1,1742 @@
+{
+  "mapping": {
+    "version": "7.1.7",
+    "sourceCanvas": [
+      1939,
+      815
+    ],
+    "psdDocument": [
+      7016,
+      4961
+    ],
+    "psdBounds": [
+      777,
+      2243,
+      6210,
+      4608
+    ],
+    "psdFrame": [
+      5433,
+      2365
+    ],
+    "psdSha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+    "runtime": [
+      4096,
+      1783
+    ],
+    "policy": "contain-width-bottom; preserve complete source; no nonuniform stretch or per-city registration",
+    "scale": 2.112429087158329,
+    "offset": [
+      0,
+      61.370293965961764
+    ],
+    "widthCoverage": 1,
+    "topGapFraction": 0.03441968253839695
+  },
+  "cities": [
+    {
+      "id": "shanghai",
+      "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+      "sourceSvgSha256": "f5c6184bd65d590ddec8c459ef3be1ed7ea501757a59694400aa7b0b0061d89f",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            40,
+            93,
+            889,
+            445
+          ],
+          "coverageBounds": [
+            40,
+            93,
+            889,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            80,
+            186,
+            1778,
+            889
+          ],
+          "coverageBounds": [
+            80,
+            186,
+            1778,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            160,
+            371,
+            3555,
+            1778
+          ],
+          "coverageBounds": [
+            160,
+            371,
+            3555,
+            1778
+          ]
+        }
+      }
+    },
+    {
+      "id": "urumqi",
+      "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+      "sourceSvgSha256": "4e01614622779ee3a181da2e9c44870d46fcbc6d29f7ea024360f6356f10af2d",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            6,
+            111,
+            993,
+            444
+          ],
+          "coverageBounds": [
+            6,
+            111,
+            993,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            11,
+            222,
+            1986,
+            889
+          ],
+          "coverageBounds": [
+            11,
+            221,
+            1986,
+            889
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            23,
+            443,
+            3972,
+            1776
+          ],
+          "coverageBounds": [
+            23,
+            442,
+            3972,
+            1777
+          ]
+        }
+      }
+    },
+    {
+      "id": "beijing",
+      "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+      "sourceSvgSha256": "572133c8dd38a007034370f26adecf09fb63169c217b089ac4fc4499b0ac372a",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            37,
+            157,
+            985,
+            445
+          ],
+          "coverageBounds": [
+            36,
+            157,
+            985,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            73,
+            314,
+            1970,
+            889
+          ],
+          "coverageBounds": [
+            73,
+            314,
+            1971,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            146,
+            628,
+            3941,
+            1777
+          ],
+          "coverageBounds": [
+            145,
+            627,
+            3941,
+            1778
+          ]
+        }
+      }
+    },
+    {
+      "id": "nanjing",
+      "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+      "sourceSvgSha256": "e16a9ea1302947b23d3596d36d6428ffabbcf07303bcabe682632aa962302cc0",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            13,
+            93,
+            942,
+            445
+          ],
+          "coverageBounds": [
+            13,
+            93,
+            942,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            27,
+            186,
+            1884,
+            890
+          ],
+          "coverageBounds": [
+            27,
+            186,
+            1885,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            54,
+            372,
+            3769,
+            1778
+          ],
+          "coverageBounds": [
+            54,
+            372,
+            3769,
+            1779
+          ]
+        }
+      }
+    },
+    {
+      "id": "nanchang",
+      "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+      "sourceSvgSha256": "fd12ad8bc1e722a23a0649f13796a1d0d97b53bb91f54b413484a91cf5dfd4cf",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            0,
+            175,
+            980,
+            445
+          ],
+          "coverageBounds": [
+            0,
+            174,
+            980,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            0,
+            349,
+            1959,
+            890
+          ],
+          "coverageBounds": [
+            0,
+            349,
+            1960,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            0,
+            699,
+            3918,
+            1778
+          ],
+          "coverageBounds": [
+            0,
+            698,
+            3919,
+            1779
+          ]
+        }
+      }
+    },
+    {
+      "id": "xiamen",
+      "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+      "sourceSvgSha256": "bae533336b1997964d7b4359962fc0fd18143f0bf0e328db73bde130c8cb9ba9",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            7,
+            113,
+            934,
+            446
+          ],
+          "coverageBounds": [
+            7,
+            112,
+            934,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            15,
+            225,
+            1868,
+            892
+          ],
+          "coverageBounds": [
+            14,
+            225,
+            1868,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            29,
+            450,
+            3735,
+            1783
+          ],
+          "coverageBounds": [
+            29,
+            450,
+            3736,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "hohhot",
+      "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+      "sourceSvgSha256": "0127edc0937c181418d14acbfb4f0e412c06494b22cdf38575fa7d098d10c7ff",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            0,
+            219,
+            1024,
+            446
+          ],
+          "coverageBounds": [
+            0,
+            219,
+            1024,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            0,
+            438,
+            2048,
+            892
+          ],
+          "coverageBounds": [
+            0,
+            438,
+            2048,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            0,
+            876,
+            4096,
+            1783
+          ],
+          "coverageBounds": [
+            0,
+            875,
+            4096,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "harbin",
+      "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+      "sourceSvgSha256": "e1d5822036d567ef355c27fea78f7f3a6b0030a5679e89c11fc7aa137957be07",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            40,
+            93,
+            917,
+            446
+          ],
+          "coverageBounds": [
+            40,
+            92,
+            917,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            80,
+            185,
+            1834,
+            892
+          ],
+          "coverageBounds": [
+            79,
+            185,
+            1835,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            159,
+            371,
+            3669,
+            1783
+          ],
+          "coverageBounds": [
+            158,
+            370,
+            3670,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "tianjin",
+      "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+      "sourceSvgSha256": "67180703921f49d5ea584e463f9c4a7a477d6f6c03e0490043d4fb1b2e568812",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            13,
+            120,
+            939,
+            446
+          ],
+          "coverageBounds": [
+            13,
+            120,
+            939,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            26,
+            241,
+            1878,
+            892
+          ],
+          "coverageBounds": [
+            26,
+            241,
+            1879,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            53,
+            481,
+            3757,
+            1783
+          ],
+          "coverageBounds": [
+            53,
+            481,
+            3757,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "taiyuan",
+      "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+      "sourceSvgSha256": "afefe17d3b79c172a647ec9ccdb0e2aca8798687b96dacd44aebfde0140f837e",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            9,
+            105,
+            1015,
+            446
+          ],
+          "coverageBounds": [
+            9,
+            105,
+            1015,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            19,
+            210,
+            2029,
+            892
+          ],
+          "coverageBounds": [
+            19,
+            210,
+            2029,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            38,
+            420,
+            4058,
+            1783
+          ],
+          "coverageBounds": [
+            38,
+            420,
+            4058,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "guangzhou",
+      "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+      "sourceSvgSha256": "b38585ef5c845f6520d2406444072f5b92f67795e4d2b2cf6c42ee1de5d67754",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            32,
+            83,
+            894,
+            446
+          ],
+          "coverageBounds": [
+            32,
+            83,
+            895,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            64,
+            167,
+            1789,
+            891
+          ],
+          "coverageBounds": [
+            63,
+            166,
+            1789,
+            891
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            127,
+            333,
+            3578,
+            1781
+          ],
+          "coverageBounds": [
+            126,
+            333,
+            3579,
+            1781
+          ]
+        }
+      }
+    },
+    {
+      "id": "chengdu",
+      "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+      "sourceSvgSha256": "09407a0ea574f9763ca509f921890f0bad427dd24df2b1d99478e0444663e902",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            0,
+            80,
+            993,
+            445
+          ],
+          "coverageBounds": [
+            0,
+            80,
+            993,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            0,
+            160,
+            1986,
+            890
+          ],
+          "coverageBounds": [
+            0,
+            159,
+            1986,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            0,
+            319,
+            3972,
+            1779
+          ],
+          "coverageBounds": [
+            0,
+            319,
+            3972,
+            1779
+          ]
+        }
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+      "sourceSvgSha256": "a5f8f74ef3827cfac7c3a977a194987cdd42a8a163d7d70b161cbfb92566f7b1",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            3,
+            160,
+            1024,
+            445
+          ],
+          "coverageBounds": [
+            3,
+            160,
+            1024,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            6,
+            321,
+            2048,
+            890
+          ],
+          "coverageBounds": [
+            6,
+            321,
+            2048,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            12,
+            641,
+            4096,
+            1778
+          ],
+          "coverageBounds": [
+            11,
+            641,
+            4096,
+            1779
+          ]
+        }
+      }
+    },
+    {
+      "id": "hangzhou",
+      "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+      "sourceSvgSha256": "f801c67c0547c97477e46e95235d8925116210fe9439e9b0a19bb820b93bba94",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            5,
+            130,
+            974,
+            445
+          ],
+          "coverageBounds": [
+            5,
+            130,
+            975,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            10,
+            260,
+            1949,
+            891
+          ],
+          "coverageBounds": [
+            10,
+            259,
+            1949,
+            891
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            21,
+            519,
+            3897,
+            1780
+          ],
+          "coverageBounds": [
+            21,
+            518,
+            3898,
+            1781
+          ]
+        }
+      }
+    },
+    {
+      "id": "wuhan",
+      "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+      "sourceSvgSha256": "ac70161ad494a8a30aa42e3b82907b6f2f9ccc63d1275bdef2e91cf8982c96e7",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            7,
+            77,
+            1006,
+            446
+          ],
+          "coverageBounds": [
+            7,
+            77,
+            1007,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            15,
+            154,
+            2012,
+            892
+          ],
+          "coverageBounds": [
+            15,
+            154,
+            2013,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            30,
+            309,
+            4025,
+            1783
+          ],
+          "coverageBounds": [
+            29,
+            308,
+            4026,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "shenyang",
+      "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+      "sourceSvgSha256": "09667618b3ceb5036b78ded0612f84b6b4823d1ec1c68d17aaeee00652c89f1b",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            8,
+            80,
+            936,
+            446
+          ],
+          "coverageBounds": [
+            8,
+            80,
+            937,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            16,
+            161,
+            1873,
+            892
+          ],
+          "coverageBounds": [
+            16,
+            160,
+            1873,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            33,
+            322,
+            3745,
+            1783
+          ],
+          "coverageBounds": [
+            32,
+            321,
+            3746,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "shenzhen",
+      "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+      "sourceSvgSha256": "08bbd22afb2e87bc648aa09f6504ef82f6080b243bfa1375d0e5236949fb8061",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            18,
+            93,
+            982,
+            445
+          ],
+          "coverageBounds": [
+            18,
+            93,
+            983,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            37,
+            186,
+            1964,
+            889
+          ],
+          "coverageBounds": [
+            36,
+            185,
+            1965,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            73,
+            371,
+            3929,
+            1777
+          ],
+          "coverageBounds": [
+            73,
+            371,
+            3929,
+            1778
+          ]
+        }
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+      "sourceSvgSha256": "187b7c5b6d215496c5c1162920acdb5940dc1c1ba64866e1e4e210a7259b3306",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            10,
+            98,
+            983,
+            446
+          ],
+          "coverageBounds": [
+            10,
+            98,
+            983,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            20,
+            197,
+            1965,
+            891
+          ],
+          "coverageBounds": [
+            20,
+            196,
+            1966,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            40,
+            393,
+            3931,
+            1781
+          ],
+          "coverageBounds": [
+            40,
+            393,
+            3931,
+            1782
+          ]
+        }
+      }
+    },
+    {
+      "id": "xian",
+      "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+      "sourceSvgSha256": "80e7d45e06fd2838fe86d683e97942d8f1e345469ef6c4ef5ccb2b2ffe2f5a75",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            7,
+            167,
+            1009,
+            445
+          ],
+          "coverageBounds": [
+            7,
+            167,
+            1009,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            14,
+            334,
+            2018,
+            890
+          ],
+          "coverageBounds": [
+            14,
+            334,
+            2019,
+            890
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            29,
+            668,
+            4037,
+            1779
+          ],
+          "coverageBounds": [
+            28,
+            667,
+            4037,
+            1779
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+      "sourceSvgSha256": "10b32138aaa1fb6faac796cd8451c82dc3b32b021afcc2dc695c6d36ae171fbf",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            19,
+            77,
+            951,
+            446
+          ],
+          "coverageBounds": [
+            19,
+            76,
+            951,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            39,
+            153,
+            1902,
+            892
+          ],
+          "coverageBounds": [
+            39,
+            153,
+            1903,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            78,
+            306,
+            3804,
+            1783
+          ],
+          "coverageBounds": [
+            78,
+            306,
+            3805,
+            1783
+          ]
+        }
+      }
+    },
+    {
+      "id": "chongqing",
+      "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+      "sourceSvgSha256": "a0b21904833147dec17045e457eac4c05a426c5bc0998b820f056e7bc37bdb7c",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            13,
+            120,
+            1015,
+            445
+          ],
+          "coverageBounds": [
+            13,
+            119,
+            1015,
+            445
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            27,
+            239,
+            2029,
+            890
+          ],
+          "coverageBounds": [
+            27,
+            239,
+            2029,
+            891
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            54,
+            479,
+            4058,
+            1780
+          ],
+          "coverageBounds": [
+            54,
+            478,
+            4058,
+            1780
+          ]
+        }
+      }
+    },
+    {
+      "id": "changchun",
+      "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+      "sourceSvgSha256": "28a821c9de67a43d0088455e0b302673862f7db131d59dc71872699788d5554d",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            10,
+            116,
+            1005,
+            445
+          ],
+          "coverageBounds": [
+            10,
+            116,
+            1006,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            20,
+            233,
+            2011,
+            891
+          ],
+          "coverageBounds": [
+            20,
+            232,
+            2011,
+            891
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            40,
+            465,
+            4022,
+            1781
+          ],
+          "coverageBounds": [
+            40,
+            465,
+            4022,
+            1781
+          ]
+        }
+      }
+    },
+    {
+      "id": "qingdao",
+      "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+      "sourceSvgSha256": "d396d8c5ba31e98d5f1315e5ae8406b8f5594faec5c56fa64c9274955931c8fe",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            14,
+            72,
+            979,
+            446
+          ],
+          "coverageBounds": [
+            14,
+            72,
+            979,
+            446
+          ]
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            28,
+            144,
+            1958,
+            891
+          ],
+          "coverageBounds": [
+            28,
+            143,
+            1958,
+            892
+          ]
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            56,
+            287,
+            3916,
+            1782
+          ],
+          "coverageBounds": [
+            56,
+            286,
+            3916,
+            1782
+          ]
+        }
+      }
+    },
+    {
+      "id": "bezier-shenzhen",
+      "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+      "sourceSvgSha256": "00ee3a554a0ff04c0ce45b7db31a4f363e5aa26342fba39a91c3de4a4987049f",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            35,
+            188,
+            1961,
+            891
+          ],
+          "coverageBounds": [
+            35,
+            188,
+            1961,
+            891
+          ]
+        }
+      }
+    },
+    {
+      "id": "bezier-beijing",
+      "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+      "sourceSvgSha256": "34d921bfd15d3d6f9f210a1c756015e0d15e76e9135fb522e181a7ec744dbd21",
+      "canvas": [
+        3878,
+        1630
+      ],
+      "uniformScale": 1.0562145435791646,
+      "offset": [
+        0,
+        61.370293965961764
+      ],
+      "perCityTranslation": false,
+      "tiers": {
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            75,
+            313,
+            1961,
+            890
+          ],
+          "coverageBounds": [
+            75,
+            313,
+            1961,
+            890
+          ]
+        }
+      }
+    }
+  ],
+  "sourceGeometryChanged": false
+}
