@@ -1,4 +1,5 @@
 import './style.css';
+import {waitForLabPreview} from './readiness';
 import {loadResources} from '../resources/client';
 import {presetAppearance,type Palette} from '../styles/city-appearance';
 import type {Lettering} from '../styles/city-selection';
@@ -6,12 +7,11 @@ import type {CityArtworkPack} from '../styles/city-artwork';
 import type {ResourceManifest,Label,Asset} from '../resources/types';
 const $=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
 const city=$<HTMLSelectElement>('city'),art=$<HTMLSelectElement>('art'),label=$<HTMLSelectElement>('label'),slogan=$<HTMLSelectElement>('slogan'),palette=$<HTMLSelectElement>('palette'),view=$<HTMLSelectElement>('view'),show=$<HTMLInputElement>('show-label'),frame=$<HTMLIFrameElement>('cup');
-interface Viewer{ready:()=>boolean;debug:()=>{selection:{busy:boolean};quality:{upgrading:boolean};city:{pack:CityArtworkPack}};applyLabArtwork:(p:CityArtworkPack)=>Promise<boolean>;setView:(v:string,instant:boolean)=>void;setCalibration:(p:{cupYaw:number;yaw:number;pitch:number;roll:number;distance:number;fov:number;cx:number;cy:number;targetY:number})=>void;capture:()=>string;setAuto:(v:boolean)=>void}
+interface Viewer{getLoadState?:()=>{phase:string;error?:unknown};ready:()=>boolean;debug:()=>{selection:{busy:boolean};quality:{upgrading:boolean};city:{pack:CityArtworkPack}};applyLabArtwork:(p:CityArtworkPack)=>Promise<boolean>;setView:(v:string,instant:boolean)=>void;setCalibration:(p:{cupYaw:number;yaw:number;pitch:number;roll:number;distance:number;fov:number;cx:number;cy:number;targetY:number})=>void;capture:()=>string;setAuto:(v:boolean)=>void}
 const applyView=(v:Viewer)=>view.value==='combined'?v.setCalibration({cupYaw:0,yaw:-75,pitch:11,roll:0,distance:660,fov:22,cx:.5,cy:.49,targetY:62}):v.setView(view.value,true);
 const getViewer=()=>((frame.contentWindow as unknown as {cupViewer?:Viewer})?.cupViewer);
 let generation=0,applied:Record<string,unknown>|undefined;
-const nextFrame=()=>new Promise<void>(r=>setTimeout(r,80));
-async function waitViewer(){const start=performance.now();while(performance.now()-start<120000){const v=getViewer();if(v?.ready()&&!v.debug().selection.busy&&!v.debug().quality.upgrading)return v;await nextFrame();}throw Error('杯身预览载入超时，请刷新重试');}
+const waitViewer=()=>waitForLabPreview(getViewer);
 const json=async<T>(p:string):Promise<T>=>{const r=await fetch(p);if(!r.ok)throw Error('素材读取失败：'+r.status);return r.json();};
 async function start(){
  const [current,previous,unified,experimental,reference,layout]=await Promise.all([loadResources('v7-5'),loadResources('v7-4'),loadResources('v7-6'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);

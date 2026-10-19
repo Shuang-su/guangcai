@@ -2,11 +2,12 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-当前独立预览为 **V7.1.4 / v7-5**，已合并并部署；回执见[本轮完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
+当前独立预览为 **V7.1.5 / v7-6**，已合并并部署；回执见[本轮完成记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md)；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
-| [V7.1.5 · Issue #43](https://github.com/Shuang-su/guangcai/issues/43) | [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) · [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/) · [本轮记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md) | 本地验证通过，合并与生产回执待补齐 |
+| [V7.1.6 · Issue #45](https://github.com/Shuang-su/guangcai/issues/45) | [修正记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md) | 开发页实际就绪等待；本地验证及发布待补齐 |
+| [V7.1.5 · Issue #43](https://github.com/Shuang-su/guangcai/issues/43) | [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) · [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/) · [本轮记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md) | PR #44已合并/生产文件核验；开发页慢网累计超时转V7.1.6修复 |
 | [V7.1.4 · Issue #41](https://github.com/Shuang-su/guangcai/issues/41) | [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) · [两城SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/) · [完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md) | 23城描线与底部更新；旧文字字框；合并部署回执在完成记录 |
 | [V7.1.3 · Issue #35](https://github.com/Shuang-su/guangcai/issues/35) | [PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [完整记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md) | 已合并/部署，Issue保持开启，待验收项见正文 |
 | V7.1.2 · 历史记录 | [PR #32](https://github.com/Shuang-su/guangcai/pull/32) · [完整记录](docs/changes/20261018-v7.1.2-font-fill/completion.md) · [当时Issue正文存档](docs/changes/20261018-v7.1.3-floral-correction/issue29-v7.1.2-history.md) | 当时未单开版本Issue，保留原证据 |
@@ -14,6 +15,7 @@
 
 | 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
+| 7.1.5 独立预览 | 未新增标签 | `02753e0640d52c2cf04b429ea606c23938aaa085` | `6ad648aee2d03ef0182627b9` | 统一字框、字框报告与独立开发页；冷加载等待后续由V7.1.6修正 |
 | 7.1.4 独立预览 | 未新增标签 | `5991ec274757b984b2b19873d254027829bf2e48` | `6ad61f84c8773f7fd5ee6756` | v7-5城市描线/69档底边；保留旧文字字框；/city-compare/与/bezier-lab/；PR #42合并及公网核验通过 |
 | 7.1.3 独立预览 | 未新增标签 | `3283d27147e080913b5bddf3a7e88ddec7351a7a` | `6ad4995927bf346abcf5fcf4` | v7-4实拍花纹方向、底边、金底补洞、上连接白瓷与杯碟近看高清；跨版本原子还原及后台表更新；V6不变 |
 | 7.1.2 独立预览 | 未新增标签 | `6a9c4d3bd8ff237b11a9039070a9836083fdd224` | `6ad3be04e1ca085185e3e395` | 思源宋体CN Bold六组祝福语与字框、23城填色复核、厦门/西安G补面、v7-3及后台表更新；V6不变 |
