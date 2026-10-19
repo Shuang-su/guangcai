@@ -1,0 +1,28 @@
+{
+  "reviewedOn": "2026-10-19",
+  "project": "广彩",
+  "policy": "append-only; retain all historical references",
+  "sourceRepository": "guangcai",
+  "references": [
+    {
+      "repository": "https://github.com/Glass-HQ/liquid-glass",
+      "commit": "9f5bfc7daa7be5d20a41b94d841b8f065de655fc",
+      "release": "v0.0.2",
+      "releaseUrl": "https://github.com/Glass-HQ/liquid-glass/releases/tag/v0.0.2",
+      "licenseMetadata": "MIT",
+      "observedAt": "2026-10-19T06:51:17.039394+00:00",
+      "error": null,
+      "evidenceLevel": "official-docs-and-metadata"
+    },
+    {
+      "repository": "https://github.com/lushm0nstera/XYSlider",
+      "commit": "9f2e92f123f50cf843f15bd08665b71f4a20c9e3",
+      "release": null,
+      "releaseUrl": null,
+      "licenseMetadata": "MIT",
+      "observedAt": "2026-10-19T06:51:17.039394+00:00",
+      "error": null,
+      "evidenceLevel": "official-docs-and-metadata"
+    }
+  ]
+}
