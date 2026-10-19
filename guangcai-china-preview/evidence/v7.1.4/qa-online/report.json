@@ -1,0 +1,61 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "browser": "Chrome / Playwright (Browser plugin not available)",
+  "viewports": [
+    {
+      "width": 1200,
+      "height": 1000,
+      "resourceReleaseId": "v7-5"
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "candidate bootstrap v7-5",
+    "page identity",
+    "meaningful content",
+    "no framework overlay",
+    "visible city-card click changes selected city",
+    "city shanghai",
+    "city urumqi",
+    "city beijing",
+    "city nanjing",
+    "city nanchang",
+    "city xiamen",
+    "city hohhot",
+    "city harbin",
+    "city tianjin",
+    "city taiyuan",
+    "city guangzhou",
+    "city chengdu",
+    "city jingdezhen",
+    "city hangzhou",
+    "city wuhan",
+    "city shenyang",
+    "city shenzhen",
+    "city shijiazhuang",
+    "city xian",
+    "city zhengzhou",
+    "city chongqing",
+    "city changchun",
+    "city qingdao",
+    "blue fill and fixed gold shenzhen",
+    "blue fill and fixed gold beijing",
+    "blue fill and fixed gold xian",
+    "blue fill and fixed gold tianjin",
+    "historical roundtrip v7-1",
+    "historical roundtrip v7-2",
+    "historical roundtrip v7-3",
+    "historical roundtrip v7-4",
+    "historical roundtrip v7-5",
+    "mobile city-card click changes real design",
+    "mobile content and no overlay",
+    "no runtime or console errors"
+  ],
+  "errors": [],
+  "warnings": [],
+  "physicalDeviceTested": false,
+  "passed": true
+}

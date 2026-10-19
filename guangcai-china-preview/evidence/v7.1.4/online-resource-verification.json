@@ -1,0 +1,991 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "assets": [
+    {
+      "id": "fixed-body-light-color",
+      "bytes": 149578,
+      "sha256": "f4e419cd29c55ac986eecd36759d988e8c72a9c2c56ba9c37176008f1de0b0d4"
+    },
+    {
+      "id": "fixed-body-light-normal",
+      "bytes": 910683,
+      "sha256": "21b9894d6ea0354a43660e3e00d8b4c5b49212b814d3d665415631e2076e02b9"
+    },
+    {
+      "id": "fixed-body-standard-color",
+      "bytes": 386446,
+      "sha256": "bb91f401684f96e5ae97c594241843b168457781aa121e7121f381fcef704474"
+    },
+    {
+      "id": "fixed-body-light-orm",
+      "bytes": 112240,
+      "sha256": "489ca56853301382445e8ac9ad23676c673c1af4cc910f890d5e15d7143e6904"
+    },
+    {
+      "id": "fixed-body-standard-orm",
+      "bytes": 281146,
+      "sha256": "4be928717d848cca46280c286ab73107461957527c8c27e7172271656b28cb5f"
+    },
+    {
+      "id": "fixed-body-standard-normal",
+      "bytes": 3449729,
+      "sha256": "f4b16839dd597ac489b0ddfb52e10da9dfdd1957b0c7ee502a86142a9060af06"
+    },
+    {
+      "id": "fixed-body-detail-orm",
+      "bytes": 281864,
+      "sha256": "a117af74f734bf7d1b175ca4b31c5e0ad40244b49a78d32ed1ff5bd538685e4b"
+    },
+    {
+      "id": "fixed-body-detail-color",
+      "bytes": 475446,
+      "sha256": "55458633cf881236e5bc51fce2aaffcde06cc08e4e438b245392eac2ae7b3245"
+    },
+    {
+      "id": "fixed-handle-light-color",
+      "bytes": 39092,
+      "sha256": "701bfd4d526ffaeb41f9d2e58a3df190646c2c06ed04f70881a71a3848ec6a3d"
+    },
+    {
+      "id": "fixed-handle-light-normal",
+      "bytes": 217835,
+      "sha256": "6c56e311d85ec22428d63ad4e8e395677d52f6410947b34816188fed38556590"
+    },
+    {
+      "id": "fixed-handle-light-orm",
+      "bytes": 32544,
+      "sha256": "8e8aef807eb4da9a49d6d18c8b429958c7998a010a72ab7422e6d1596f411b79"
+    },
+    {
+      "id": "fixed-handle-standard-color",
+      "bytes": 112134,
+      "sha256": "3fff075b8631c221bd4a6f788bf9ba45a0d99372be2b140053b4c2be26f93630"
+    },
+    {
+      "id": "fixed-handle-detail-color",
+      "bytes": 275636,
+      "sha256": "fc81742f4f5833866f2f89c2a0af1ed866bab0325a1255b6165519d8bc4f1958"
+    },
+    {
+      "id": "fixed-handle-standard-orm",
+      "bytes": 77988,
+      "sha256": "6cdcbc339e7479b753ec1c0c2dbc74772b162525bc76662f5cc7ebdcdce5c73c"
+    },
+    {
+      "id": "fixed-body-detail-normal",
+      "bytes": 4845924,
+      "sha256": "49b67ebbd362810945e5f62812cd2b18b6de7838e3e86f9cf51149ebe1c6c5c9"
+    },
+    {
+      "id": "fixed-saucer-light-color",
+      "bytes": 77912,
+      "sha256": "f2e319117e64a4260e65bdaa75559babd76c11938dab9511ef1458563f0c6441"
+    },
+    {
+      "id": "fixed-handle-standard-normal",
+      "bytes": 824847,
+      "sha256": "d07668c5b76c4af977a31a130b91940ec50ee39000b5de9814d6301c3f6c53e5"
+    },
+    {
+      "id": "fixed-handle-detail-orm",
+      "bytes": 187850,
+      "sha256": "f5153acf48e024dd88b8346073ea561753bd6c3994a926c1c5eeffca10103d26"
+    },
+    {
+      "id": "fixed-saucer-light-orm",
+      "bytes": 67010,
+      "sha256": "ab634c9bbc545e1c9c372bdf88ee60788c8199a8988c24075290e6596c80178d"
+    },
+    {
+      "id": "fixed-saucer-light-normal",
+      "bytes": 376650,
+      "sha256": "1d2d34ac35b0e3b18803bec915d9ef11b9905b4f17f92adf266d4530e2fc49ca"
+    },
+    {
+      "id": "fixed-handle-detail-normal",
+      "bytes": 3115261,
+      "sha256": "2a8ea98e34842285305059c274539b0966dc4ab3842cad2204c6704369edc9ee"
+    },
+    {
+      "id": "fixed-saucer-standard-color",
+      "bytes": 252234,
+      "sha256": "36a908c6e2cb8f8f1dfb915a6efce45d6be1dace126cbe451cf10b3145c24559"
+    },
+    {
+      "id": "fixed-saucer-standard-orm",
+      "bytes": 181566,
+      "sha256": "45eb50f9ce1a7d7ed75afd503860fb5664f5d2ad7d42f47ccb155e2d3cd1e4ca"
+    },
+    {
+      "id": "fixed-saucer-standard-normal",
+      "bytes": 1452601,
+      "sha256": "1af6a3834d7412912e8f87d236178a3e84d7b702eb9b273f32ee9d6aa52bd2ac"
+    },
+    {
+      "id": "fixed-saucer-detail-color",
+      "bytes": 743624,
+      "sha256": "7c717ddfa7fa788c7a275e23a3a565ab41d17e902d92867e02c593d35e97094b"
+    },
+    {
+      "id": "fixed-saucer-detail-orm",
+      "bytes": 424978,
+      "sha256": "f25ec3669835eab771fdb1a863aba9da22041d58d398aa499626f3b3235533e7"
+    },
+    {
+      "id": "shanghai-light-mask",
+      "bytes": 41040,
+      "sha256": "b3bf59008a929ce175695c033252243edf8662ccdd2ade6c43e01789d31804e3"
+    },
+    {
+      "id": "shanghai-light-normal",
+      "bytes": 161371,
+      "sha256": "9bd2cf9c39a6c1d5a9bc0a570e379e3c3d3e71c61b98d89c3a67279f2f706999"
+    },
+    {
+      "id": "shanghai-standard-mask",
+      "bytes": 121682,
+      "sha256": "f01982d6abe60aec20ef5fc0399402ddffbb38a50f6ff7e619ede60ce8b6b89a"
+    },
+    {
+      "id": "shanghai-standard-normal",
+      "bytes": 614468,
+      "sha256": "59b6ecd72273365a4c9952f52a661bb352df302dabc861074e9ad85d8bb52208"
+    },
+    {
+      "id": "shanghai-detail-mask",
+      "bytes": 249822,
+      "sha256": "46095b30a1576b6b80b2a02493eaad052c2c8af51645075b71bf61938b376778"
+    },
+    {
+      "id": "shanghai-thumbnail",
+      "bytes": 37748,
+      "sha256": "f0c365b7730f069809674bf0ff6500016c695004ea4a70b78de0e390f238bf9d"
+    },
+    {
+      "id": "urumqi-light-normal",
+      "bytes": 164760,
+      "sha256": "2a8281c151df10d4aa5f73f61ba1f1f2d8948979a333e1b39a8e5daf33a43e79"
+    },
+    {
+      "id": "urumqi-light-mask",
+      "bytes": 35912,
+      "sha256": "bf158c4a4b6f8b5904a54efd350ffd25dec10e6065bb2285623998d17ed0ee96"
+    },
+    {
+      "id": "urumqi-standard-mask",
+      "bytes": 92046,
+      "sha256": "61eeab4e13cd190d4c7a6dd6bc41cc241270aaeec18cd4c28f0e7723f7195026"
+    },
+    {
+      "id": "urumqi-detail-mask",
+      "bytes": 152994,
+      "sha256": "ec3ddb5171faf0e16a6362cbc128dfdfcddb1f73adb20fb83023a8f829bb8f70"
+    },
+    {
+      "id": "urumqi-standard-normal",
+      "bytes": 617514,
+      "sha256": "db7f9ba659ba45ca6fa11709d76418dc4bfd3e44bd60a89d347c9f989c73647e"
+    },
+    {
+      "id": "shanghai-detail-normal",
+      "bytes": 2326275,
+      "sha256": "5dc182aa6e2e98d618f5d1cdbe4d73ae032b53c6cb5fcaff060d7359236284d5"
+    },
+    {
+      "id": "urumqi-thumbnail",
+      "bytes": 39442,
+      "sha256": "6b4528ec831723ab8f738ce605d0a5daec9a9beb4cdc78466c7392ff432ad384"
+    },
+    {
+      "id": "beijing-light-mask",
+      "bytes": 63212,
+      "sha256": "154190901af41c0dd73cdcb5878d5db47fe67c5056c50af2e9a46adc2a2fbc4f"
+    },
+    {
+      "id": "beijing-light-normal",
+      "bytes": 247655,
+      "sha256": "39400b1161a582892a5df2802c25c72e86bb669f314d45a71a9e7eb2f5b3ef38"
+    },
+    {
+      "id": "beijing-standard-mask",
+      "bytes": 194478,
+      "sha256": "6f08fc92118b39670f62952187a991aad6ecd6f8ff5ebf456cf9cc30ec14cd7f"
+    },
+    {
+      "id": "urumqi-detail-normal",
+      "bytes": 2244943,
+      "sha256": "3c1ea51ac8cbbdc2cf8d480480e49ce9c84e91fbf4800c7a3454147c52400faa"
+    },
+    {
+      "id": "fixed-saucer-detail-normal",
+      "bytes": 6152797,
+      "sha256": "8fee8918fd1eb40d0673534d57d13f296f6a5d1d8fcf780d2b6237ccaf6af0e9"
+    },
+    {
+      "id": "beijing-detail-mask",
+      "bytes": 458244,
+      "sha256": "6418acbeac4ae489c036f99fbcd2965b838df199212dd056e316a87caf4a39a3"
+    },
+    {
+      "id": "beijing-standard-normal",
+      "bytes": 956310,
+      "sha256": "8ba9631f5fcbe7c9657fb70ce9a1286906f214659e2f50377caf38c0b3ab7b2b"
+    },
+    {
+      "id": "beijing-thumbnail",
+      "bytes": 46824,
+      "sha256": "43b23b6489d5739f4c574ea30733ef4837a6987a8104db614ebd43c66a73f5dc"
+    },
+    {
+      "id": "nanjing-light-mask",
+      "bytes": 32492,
+      "sha256": "dca5985a5a36ed5c20b295240acc6aa47aa48216804278bdab3b8b23e8536158"
+    },
+    {
+      "id": "nanjing-light-normal",
+      "bytes": 146323,
+      "sha256": "0c7cd679d958c1f1e0954c17e8c211ba4eb9d4f8eb2d95c631c8e7ea81e8e35d"
+    },
+    {
+      "id": "nanjing-standard-mask",
+      "bytes": 84484,
+      "sha256": "b2f64e79c0d6c8c42b11721d7838e5261f804f12a8329d20b0a53ef82ed2e7d3"
+    },
+    {
+      "id": "nanjing-detail-mask",
+      "bytes": 139270,
+      "sha256": "9638e46dd455fd3b50c6a3d07320622007eaeba31c0530e17171c28ae62a6847"
+    },
+    {
+      "id": "nanjing-thumbnail",
+      "bytes": 39396,
+      "sha256": "a3935f190e7519a54065d5977559e840714ea1443ad309c9770bf23529b9131e"
+    },
+    {
+      "id": "nanjing-standard-normal",
+      "bytes": 552132,
+      "sha256": "327bee3ef62dd489e5ec775ada208afc223f6ad0fb4310aeedaec7ad1b0642be"
+    },
+    {
+      "id": "nanchang-light-mask",
+      "bytes": 47394,
+      "sha256": "7ddb4b94ae5f893b9dce7ed6107686373571557d588a768f0c930b0ccb2e592c"
+    },
+    {
+      "id": "beijing-detail-normal",
+      "bytes": 3664756,
+      "sha256": "beb68daea7d3bbc53b27c1f9a37e75fcd733c55e8b5b81e2854a31bab2cc345b"
+    },
+    {
+      "id": "nanjing-detail-normal",
+      "bytes": 2030648,
+      "sha256": "5567b41c7a28e025f99e77c169f11f86d1f9c452b30f995c997acfc3b1d3f4a5"
+    },
+    {
+      "id": "nanchang-light-normal",
+      "bytes": 206053,
+      "sha256": "2c5e4e9767031255aeb561fe4d6173057426da6a8b717a23e01a0368e13eb3a5"
+    },
+    {
+      "id": "nanchang-standard-mask",
+      "bytes": 119652,
+      "sha256": "82f6587fd1d5351b39e34de540ef56d6df0fedca7ee39527005eb6491c1cb397"
+    },
+    {
+      "id": "nanchang-detail-mask",
+      "bytes": 193178,
+      "sha256": "04f3cb8c09f2a797f2fc377ff41e21fa4296ea651e33e06262f466ebb740b8a9"
+    },
+    {
+      "id": "xiamen-light-mask",
+      "bytes": 46206,
+      "sha256": "03bffb012ce09cc671aba1f38c0f31995ee1f3b1dd525d2d4616f4a0c035d208"
+    },
+    {
+      "id": "nanchang-thumbnail",
+      "bytes": 52550,
+      "sha256": "5be94aa8d0dd7e7bb5fb1264b916ebda75a8d9fc569027b83e5ca9a8e3184268"
+    },
+    {
+      "id": "nanchang-standard-normal",
+      "bytes": 776519,
+      "sha256": "5e5fa02eec1bdb39c0dc9c1e2ca19e639ed972eceb1a75eb00284b7836eff698"
+    },
+    {
+      "id": "xiamen-light-normal",
+      "bytes": 213683,
+      "sha256": "ddabd118230cf6824b8d66bd8f1f99ae692e454c76ecc747afd9d47792a52ad7"
+    },
+    {
+      "id": "xiamen-standard-mask",
+      "bytes": 115390,
+      "sha256": "9233680efb4cd0e78261332195ed865ca5a1c9195570e60859a268ed93ef7559"
+    },
+    {
+      "id": "xiamen-detail-mask",
+      "bytes": 198106,
+      "sha256": "516c3431ba11af5338696d4b0f9f5a0017b76786fc306d418a75cb55fb9cbbbf"
+    },
+    {
+      "id": "nanchang-detail-normal",
+      "bytes": 2772924,
+      "sha256": "40bf9e3aa1489bd69464ce9323a98fcf24879d3c1fe0894e01784077d7a7a1c1"
+    },
+    {
+      "id": "xiamen-thumbnail",
+      "bytes": 48994,
+      "sha256": "55c61f6301f4be10456756ac80695335778ed64fdb38d9676b514b771e56e382"
+    },
+    {
+      "id": "hohhot-light-mask",
+      "bytes": 37760,
+      "sha256": "57c3875e0f376aacdf22700b537c84fa8babbc7518fa1c9a6c68bdbf5645881c"
+    },
+    {
+      "id": "xiamen-standard-normal",
+      "bytes": 793223,
+      "sha256": "eeaa16317f825fc0374929e449668e10c5efab578a3038c640818c3b7dcf6d4d"
+    },
+    {
+      "id": "hohhot-standard-mask",
+      "bytes": 92952,
+      "sha256": "dc0654d274c9aecb3f6c08a2dda4c84fd61a0f8df50c2bed5e3c149eac6691e0"
+    },
+    {
+      "id": "hohhot-light-normal",
+      "bytes": 162566,
+      "sha256": "5aa5bb94796cf03faed4e27355ddb0feb03b00db9670921c4bbbca174e11bc02"
+    },
+    {
+      "id": "hohhot-detail-mask",
+      "bytes": 140014,
+      "sha256": "90c39035ba0df93ac22af0ba605121bad75ec715f09da89405505572dc2d3c5a"
+    },
+    {
+      "id": "hohhot-thumbnail",
+      "bytes": 41490,
+      "sha256": "822464740e1f0899fdefe8aa3944c7c5f1be6146b029a581b37a19fb599384a0"
+    },
+    {
+      "id": "harbin-light-mask",
+      "bytes": 37216,
+      "sha256": "5dff11c39dd7b9760acfcf4ec34c37547fc5966c14051c78870b29166ff88143"
+    },
+    {
+      "id": "hohhot-standard-normal",
+      "bytes": 604702,
+      "sha256": "0bee468506c99d11b1498422697a3ee8ebee4d4130597d2de5912d4484142117"
+    },
+    {
+      "id": "harbin-light-normal",
+      "bytes": 169013,
+      "sha256": "7c46834f1ea8d594e68a67199b0801e5b4d02ca13734f959a880e37a8d51c1a7"
+    },
+    {
+      "id": "hohhot-detail-normal",
+      "bytes": 2168896,
+      "sha256": "d59ee3727f3302091c8344118a9d4d9011ca54201476a340e13879224adce4b0"
+    },
+    {
+      "id": "harbin-detail-mask",
+      "bytes": 159704,
+      "sha256": "da0c07ef1b100ca0bbcebdf84869beac6107e3b60e24b678d959c33c5323fc68"
+    },
+    {
+      "id": "harbin-standard-mask",
+      "bytes": 94682,
+      "sha256": "752a65424f9e10a633b37db9e52c0a7cf86b2c05e0f34f0d3270705701748a99"
+    },
+    {
+      "id": "xiamen-detail-normal",
+      "bytes": 2914554,
+      "sha256": "71600933184b6150a87b60dc274026caefb6ea9ee4af422deb6c0309ef9c1f78"
+    },
+    {
+      "id": "harbin-thumbnail",
+      "bytes": 47144,
+      "sha256": "cd05bf68c036aea5f1002e5bdb1d50bbd23e6cbf566b4302127e6cd13ff0d96d"
+    },
+    {
+      "id": "tianjin-light-mask",
+      "bytes": 77424,
+      "sha256": "85ef348a3dae2b7486b8ecfa8d6270142aad01648e279238672ea303a4ed0b35"
+    },
+    {
+      "id": "harbin-standard-normal",
+      "bytes": 636017,
+      "sha256": "233ba84eb4f937f78c9f5003d2e78ce5bf61d0e66edd9fb239572d570741abc6"
+    },
+    {
+      "id": "tianjin-standard-mask",
+      "bytes": 238824,
+      "sha256": "33fd2e3924936ea91eedd207d3ca3223ef56ae7d77ef9194bf7f920814854ed5"
+    },
+    {
+      "id": "tianjin-detail-mask",
+      "bytes": 540652,
+      "sha256": "23aa9fa5c5a43bcc10989827f71b2bd4539fa74187ec6bd0ddb4cf210b848a70"
+    },
+    {
+      "id": "tianjin-light-normal",
+      "bytes": 298532,
+      "sha256": "b419e6b5f84d934c1724cbba6b9db30d0cc0c42945cfe326a4fb2e87fe8df24c"
+    },
+    {
+      "id": "tianjin-thumbnail",
+      "bytes": 54062,
+      "sha256": "dcc6adb2a33d329f65c988643d0dadda9cabcb711a9eee328e604da5c999627f"
+    },
+    {
+      "id": "tianjin-standard-normal",
+      "bytes": 1155239,
+      "sha256": "5896b4a69812456c7b258934a6656a6a992bf057330144ed6fa0ce749e3a8c2d"
+    },
+    {
+      "id": "taiyuan-light-normal",
+      "bytes": 170336,
+      "sha256": "c33136f26b0c27a7726f921b1119fcaee008ccdf05efd89099e49773f31c3881"
+    },
+    {
+      "id": "taiyuan-light-mask",
+      "bytes": 38728,
+      "sha256": "db182ec4a63ab9b838b4f9fe0cc93e0450b899492b3d9fa8d3a794c7850a6b43"
+    },
+    {
+      "id": "harbin-detail-normal",
+      "bytes": 2317215,
+      "sha256": "d8e8fed438ab6e21b4c68ed7c95deb1ae31dcc0cfc3fb0336f9a6466ebb86718"
+    },
+    {
+      "id": "taiyuan-standard-mask",
+      "bytes": 96616,
+      "sha256": "c0a9a3c1409ec2971f56a954e101312629ccfadf5e16615a24dc388201f50144"
+    },
+    {
+      "id": "taiyuan-detail-mask",
+      "bytes": 155052,
+      "sha256": "84db8ad90f3c8d793e2ab79c02a955f028aa1f6c77464ce0f561758e0d797ce5"
+    },
+    {
+      "id": "taiyuan-thumbnail",
+      "bytes": 43658,
+      "sha256": "84a4f7299d81dd4b138250077fa35244770db570161b5399b179333e566c2871"
+    },
+    {
+      "id": "guangzhou-light-mask",
+      "bytes": 47362,
+      "sha256": "fc53a9e2d1982ec023577538acbb790169fcba30da8699c5f4e6f1d75346a7b3"
+    },
+    {
+      "id": "taiyuan-standard-normal",
+      "bytes": 637961,
+      "sha256": "2f7c3c4c6759fb4435309437e73a71823f10649a0e6058b0a2a181274cb71468"
+    },
+    {
+      "id": "guangzhou-light-normal",
+      "bytes": 188453,
+      "sha256": "42b0f2c2bc715875d908bb3caa1f3378cd35c00d1e3e4e8e5d9b59913be5fd85"
+    },
+    {
+      "id": "guangzhou-standard-mask",
+      "bytes": 150944,
+      "sha256": "d61c7b103693ed4c34a26a1857a67bf4aa4919d90643b12e0e4f441958c369cd"
+    },
+    {
+      "id": "tianjin-detail-normal",
+      "bytes": 4411881,
+      "sha256": "bf66aae9c523c7b7ec95e7ea9172839212e5274af1aae28133dbab898c3562a2"
+    },
+    {
+      "id": "taiyuan-detail-normal",
+      "bytes": 2262427,
+      "sha256": "a784db23c8e7dc81d08fcfe4dc6ef94eecb8a7901a7572638f9bec5cea60e4df"
+    },
+    {
+      "id": "guangzhou-standard-normal",
+      "bytes": 729845,
+      "sha256": "01ce12e0387ed7605f6426e8d2769970f2322c71d298ba93ad91139ea514a158"
+    },
+    {
+      "id": "chengdu-light-mask",
+      "bytes": 29866,
+      "sha256": "51e348baf569a55d3d589f3c8ff834ba897dd7ddbc0c2dfb705e5e6998204ca2"
+    },
+    {
+      "id": "guangzhou-detail-mask",
+      "bytes": 442356,
+      "sha256": "8481b131591b5aee568c99aacbb8de495eab00ad436be6f33150e8756568e602"
+    },
+    {
+      "id": "guangzhou-thumbnail",
+      "bytes": 39332,
+      "sha256": "60fa080349f7be81bd4d84d0f9cd202cf8c8a06ba29a5aff0ed018735b27db61"
+    },
+    {
+      "id": "guangzhou-detail-normal",
+      "bytes": 2856038,
+      "sha256": "a07fb025ae05e7a1ec965225ed4a7864609454e2d4e3c86e6e97e9558613c0d3"
+    },
+    {
+      "id": "chengdu-standard-mask",
+      "bytes": 74334,
+      "sha256": "0a5e2c49015a805067128c43da781b5ca4e17c84d3e6197f881d51311555c19e"
+    },
+    {
+      "id": "chengdu-light-normal",
+      "bytes": 133359,
+      "sha256": "ebe2ef0ca11d464c53fd998e2358f05a1c213fefad5dc0397502c82eb80aee79"
+    },
+    {
+      "id": "chengdu-thumbnail",
+      "bytes": 34974,
+      "sha256": "46773139355b800f382993e05efbe45f06d6c8e50d3a7c2085323994a480181f"
+    },
+    {
+      "id": "chengdu-detail-mask",
+      "bytes": 123502,
+      "sha256": "04db1c26af8b9794ca8fd5e3fab20ddf83c2dfed2f057ae1246ba2d7af354c57"
+    },
+    {
+      "id": "chengdu-standard-normal",
+      "bytes": 499596,
+      "sha256": "91c196589e85ccbfb020b809025bd5a17f90dd76b6f90226d30b61e9c9da9ae1"
+    },
+    {
+      "id": "jingdezhen-light-mask",
+      "bytes": 36354,
+      "sha256": "7d760bf6e85aaee8c6dcd25cdab83eea6cc7baff6b528f1746bbcdfff18634de"
+    },
+    {
+      "id": "jingdezhen-light-normal",
+      "bytes": 167395,
+      "sha256": "37656ff520d455f2acfea36737f32e78544d4b1e9182abd1fbde393e6172aa56"
+    },
+    {
+      "id": "jingdezhen-standard-mask",
+      "bytes": 92606,
+      "sha256": "b274549947bab304b3239ec370cb40d49bf0ce5f824117468c44a15b1c899610"
+    },
+    {
+      "id": "jingdezhen-standard-normal",
+      "bytes": 623464,
+      "sha256": "4f9be578ce98092f89de3dc3e75cae5486093898a84935d42afbf8679bd34d40"
+    },
+    {
+      "id": "jingdezhen-detail-mask",
+      "bytes": 152550,
+      "sha256": "19b7ddc9c4910b3d9e3c2c3558cbc78df4cc5c8836702f4416afd34d1af8351b"
+    },
+    {
+      "id": "jingdezhen-thumbnail",
+      "bytes": 38918,
+      "sha256": "56d26f35239d134fac2e2cb0a5e8e63c35509345090508a9403db2e44057d257"
+    },
+    {
+      "id": "hangzhou-light-mask",
+      "bytes": 44450,
+      "sha256": "5ac218281cacc8b32454e971b8d14a20453a36eb42187422d94b00c6858979a3"
+    },
+    {
+      "id": "hangzhou-standard-mask",
+      "bytes": 111266,
+      "sha256": "a43db8ce87a51852b7ab078654e100eb77887e34562aab049cb86b1eec7ea7b4"
+    },
+    {
+      "id": "chengdu-detail-normal",
+      "bytes": 1797074,
+      "sha256": "aadacab5d833c0ef6ce4753bf1f25ccd94d0e0160b5eaf1c90c1eac1e2b765e4"
+    },
+    {
+      "id": "hangzhou-light-normal",
+      "bytes": 208802,
+      "sha256": "9a4a6ee9cd498915c20597c53af57709a4dd96af2a5896751d0f383e16db21bc"
+    },
+    {
+      "id": "jingdezhen-detail-normal",
+      "bytes": 2284720,
+      "sha256": "39a0ed2c4d0bc1407b9dd3aad063f0c711950c4fbce51c12d34645bee607ce99"
+    },
+    {
+      "id": "hangzhou-standard-normal",
+      "bytes": 773733,
+      "sha256": "7ded1a3cc5aaa6e5067e9e3773f5c84e55248e8b35922674fa38667ad3470a48"
+    },
+    {
+      "id": "hangzhou-thumbnail",
+      "bytes": 48340,
+      "sha256": "01ed7c08e24999114c2b831fd3880609b54fc533536ffeeea7717d66095fa93d"
+    },
+    {
+      "id": "wuhan-light-mask",
+      "bytes": 44934,
+      "sha256": "e484b70f7d7b179b284079db6986a7f3121d4762d6b44feb0a50b88aa26c2f8a"
+    },
+    {
+      "id": "hangzhou-detail-mask",
+      "bytes": 187908,
+      "sha256": "3d53fb7d5f46be17e3f1c17b235f9e6d59fcbbb95655c0a074e0dce1151dac51"
+    },
+    {
+      "id": "wuhan-standard-mask",
+      "bytes": 110626,
+      "sha256": "d6f8e8cc49f340cf14a37102ce34f05912f0bd441cfc5baba666e274bfb4c524"
+    },
+    {
+      "id": "wuhan-light-normal",
+      "bytes": 197979,
+      "sha256": "bbf60bbdde1f81e0ed68ae847dad2163c8525eba44cd285ddaf1b1fcd4c606f3"
+    },
+    {
+      "id": "wuhan-detail-mask",
+      "bytes": 176608,
+      "sha256": "70245232db817024237468e87199ec216bb4d9874cf9989aafc4a827ac2e72d4"
+    },
+    {
+      "id": "wuhan-thumbnail",
+      "bytes": 49528,
+      "sha256": "e4b736997650de414ae60478228393237e792f2adb296b266044f739cf1318a5"
+    },
+    {
+      "id": "shenyang-light-mask",
+      "bytes": 44392,
+      "sha256": "f96ed5c1ffcc009cf294eb5a82c58e79138383fba02cdc8d08030be2162bf24f"
+    },
+    {
+      "id": "hangzhou-detail-normal",
+      "bytes": 3039041,
+      "sha256": "389b75717e7c11f8793278a2abb6d048162e582edd4832dc3590327c31c04325"
+    },
+    {
+      "id": "wuhan-standard-normal",
+      "bytes": 744214,
+      "sha256": "107570eb324e55ca1310074f9bc9d6f371505d120293b52e7cd32c28c3a5b12b"
+    },
+    {
+      "id": "shenyang-standard-mask",
+      "bytes": 114380,
+      "sha256": "405be7f57aa27fa4fc747952933de44d5be2a391a475f95e8022fbc9ee7a8d70"
+    },
+    {
+      "id": "shenyang-light-normal",
+      "bytes": 202607,
+      "sha256": "81115040daa17b724e5f29b98ebb72c9b90a043ab0edc0b61a4ffb7206c7d0de"
+    },
+    {
+      "id": "shenyang-detail-mask",
+      "bytes": 188040,
+      "sha256": "af8200e11a1db009ee301b8a9ca365a15ba42755ce2d6226bbfffadce95e66fe"
+    },
+    {
+      "id": "shenyang-thumbnail",
+      "bytes": 54094,
+      "sha256": "3eb2b1d10e5dad32e1f0aff8164af3a4411b8998741fd6df1c7142715e691550"
+    },
+    {
+      "id": "wuhan-detail-normal",
+      "bytes": 2619085,
+      "sha256": "450bef784a1293954a688f51a525be319dd776d7656eff90f4c5e3faecb25fc1"
+    },
+    {
+      "id": "shenzhen-light-mask",
+      "bytes": 67592,
+      "sha256": "ae49eb61a9536b1591a688ac257fc1a23604ce7ec62c68a66364c10f68064e12"
+    },
+    {
+      "id": "shenzhen-light-normal",
+      "bytes": 271554,
+      "sha256": "98a28d995fa2255e157a28172f2afa2265898be2bf4ede5dd6b81e523c9f6937"
+    },
+    {
+      "id": "shenyang-detail-normal",
+      "bytes": 2817084,
+      "sha256": "94151a8b7b32164efaa1e28675d4bdef8bcd42e5ee5419e4bd13d377506ac2af"
+    },
+    {
+      "id": "shenzhen-standard-normal",
+      "bytes": 1047658,
+      "sha256": "25199d8255610ba034da436aaa7cd8ea7e07912da8a6996a90467ba28a3727bb"
+    },
+    {
+      "id": "shenyang-standard-normal",
+      "bytes": 766182,
+      "sha256": "a59ffa62496661b7d8baa49dd7094664735adbb26a555a01e17bfb7e993848df"
+    },
+    {
+      "id": "shenzhen-standard-mask",
+      "bytes": 161430,
+      "sha256": "b4d7b24f174a2a3f9bd4977ddfe9612b95fedd11c8a624fd9522cd49a726f793"
+    },
+    {
+      "id": "shenzhen-detail-mask",
+      "bytes": 420628,
+      "sha256": "dd02d36049687625209c0c7fcd3607085d552c31f25868aaad6bba9764964311"
+    },
+    {
+      "id": "shijiazhuang-light-mask",
+      "bytes": 38516,
+      "sha256": "dccfed87f24483bc86263e9ec574f75ecc7f9d05a346974c35e15aec6948458e"
+    },
+    {
+      "id": "shenzhen-thumbnail",
+      "bytes": 48364,
+      "sha256": "1249f486ed54f1a0713598870c203f622354c7369c532b2819b2a512ef1f21eb"
+    },
+    {
+      "id": "shijiazhuang-light-normal",
+      "bytes": 171655,
+      "sha256": "61d7376dabae72f39472014aa5b6cb6754d81e24164e468762804403652f2d55"
+    },
+    {
+      "id": "shijiazhuang-detail-mask",
+      "bytes": 157824,
+      "sha256": "309e583753aa94a84de3db81336ebc6dfac53a646aa5bb20ec70dd05654ac5b8"
+    },
+    {
+      "id": "shijiazhuang-standard-mask",
+      "bytes": 96530,
+      "sha256": "0bd9cce423dff639bdde04ef4b4f71b4b952d528a23d1015006eb5be30f1e772"
+    },
+    {
+      "id": "shijiazhuang-thumbnail",
+      "bytes": 45642,
+      "sha256": "2cff2718e1c9f4e49f7744714b05532142923f9afd21f3b6d00a6a0f68b857cf"
+    },
+    {
+      "id": "shijiazhuang-standard-normal",
+      "bytes": 644992,
+      "sha256": "3671273acdda2c3ae7b23058695655e9a66a7d6585fe333e319e7801598678fd"
+    },
+    {
+      "id": "xian-light-normal",
+      "bytes": 257540,
+      "sha256": "b690eafc22b1a5e533f1b46db0e5ba3999b2a1d3dbaaabdc53677b3e6e41ff68"
+    },
+    {
+      "id": "xian-light-mask",
+      "bytes": 65410,
+      "sha256": "5e27ba9beeaa16e7f50683a1933104b80e26304ec5b381ddc5d257b7cf38a51f"
+    },
+    {
+      "id": "shenzhen-detail-normal",
+      "bytes": 4039187,
+      "sha256": "7e74e1be9e3b381a0e7d3078949436eaa75a1d18f1d575ec8fcf270a34b87070"
+    },
+    {
+      "id": "shijiazhuang-detail-normal",
+      "bytes": 2309843,
+      "sha256": "70a8ebad8b6a0c63953892b2e6916c3db45a5ce670befd320058f35d57011233"
+    },
+    {
+      "id": "xian-standard-mask",
+      "bytes": 208762,
+      "sha256": "9e613df78664ecbfb04b2084a2b478cc41bbf7b2d9500db58a98c42c896f86ba"
+    },
+    {
+      "id": "xian-thumbnail",
+      "bytes": 43900,
+      "sha256": "6527bba88cc23f4eb3fdf0d28cb49f75a954566f8a65894a07b1dd149846992f"
+    },
+    {
+      "id": "xian-detail-mask",
+      "bytes": 505316,
+      "sha256": "dd0ad606869bf308a21ff6fd2b6609988c3986faef0c6d94551d5f1b32d4f41c"
+    },
+    {
+      "id": "zhengzhou-light-mask",
+      "bytes": 46054,
+      "sha256": "b71246de54a3d55a6fbd668f714445e63f25adbddcdbb8c6064a2629258782bd"
+    },
+    {
+      "id": "xian-standard-normal",
+      "bytes": 1002118,
+      "sha256": "d702631b48b9940e9a84ac487e9c91587acb618ab9fa3c2588756e6dbae5003b"
+    },
+    {
+      "id": "zhengzhou-standard-mask",
+      "bytes": 117178,
+      "sha256": "8d3548043e0d41a794b5aff6fca6a7c81f7a711f995e20a0318719bb490becc5"
+    },
+    {
+      "id": "zhengzhou-light-normal",
+      "bytes": 211141,
+      "sha256": "c700df3d4d4416de738e4c376f2204d843b8599f5cf0e5fcab769845a058ba1d"
+    },
+    {
+      "id": "zhengzhou-detail-mask",
+      "bytes": 195950,
+      "sha256": "628c5fb7542482f2e0dfe4c7656bdc9357c25d5bca62263840e509ab7a97636e"
+    },
+    {
+      "id": "xian-detail-normal",
+      "bytes": 3880327,
+      "sha256": "768387155205ae8118580a01ac9170a580ed3b3bae948283316f4189fba3a9b6"
+    },
+    {
+      "id": "zhengzhou-standard-normal",
+      "bytes": 795732,
+      "sha256": "1dc0d9330a0c1488f7bb9d19db1e18bd426dc475d8a8689f1e4c456cb2ad77c5"
+    },
+    {
+      "id": "chongqing-light-mask",
+      "bytes": 77048,
+      "sha256": "3822411268a5768394c95a5877bd7fd783775a4e424c1a3fd7ea99cae2bef33f"
+    },
+    {
+      "id": "zhengzhou-thumbnail",
+      "bytes": 52282,
+      "sha256": "542bfb86a3360f6b5a19c0cad42c119aab91f34696cc45d403e53853a53f29c6"
+    },
+    {
+      "id": "chongqing-light-normal",
+      "bytes": 290893,
+      "sha256": "c6ad63463ada2411593d72a3b5334e03577c6dca06d2e9e3e9eb504af98cd9a4"
+    },
+    {
+      "id": "chongqing-standard-mask",
+      "bytes": 225864,
+      "sha256": "5cd69d1e528d0988b5732282fe8060af0d98505f0ee4a07c58bc60c639f3fecb"
+    },
+    {
+      "id": "chongqing-detail-mask",
+      "bytes": 477918,
+      "sha256": "7a8cce0f923f72ec0f66a345a2a540c000e5ce45a6982a7f9f4bf69b9109d7b5"
+    },
+    {
+      "id": "chongqing-thumbnail",
+      "bytes": 52598,
+      "sha256": "75af6b919de5118a19a7092626f955ad468ad0d83521461b6dad2c032b5c4792"
+    },
+    {
+      "id": "changchun-light-mask",
+      "bytes": 36254,
+      "sha256": "345789d62734dc75bc9fbfe21f0602b50a859a48a016428fb32deec272e4bb53"
+    },
+    {
+      "id": "changchun-light-normal",
+      "bytes": 163889,
+      "sha256": "6e084ce79b7ce2610187b2d352408902e713904be0ddd176e71180709d2f2353"
+    },
+    {
+      "id": "chongqing-standard-normal",
+      "bytes": 1120912,
+      "sha256": "456e29a47f6c18caab4be21fba032161b2acbdd4cc0cf4cc10e7d0d731ba9baf"
+    },
+    {
+      "id": "zhengzhou-detail-normal",
+      "bytes": 2910274,
+      "sha256": "128fd03dfac4d6d94c71bd9694dbb7fe3f5c45cdc0594b5e2ac7b1f5d3800d4f"
+    },
+    {
+      "id": "changchun-standard-mask",
+      "bytes": 90838,
+      "sha256": "b93950e9ddccfc2047696d102f1bda22607fb284f5e66968f9611a5a0638d085"
+    },
+    {
+      "id": "changchun-detail-mask",
+      "bytes": 144932,
+      "sha256": "0815ad0506a899323555561bb57174ad268bd5722244845876a21824cfcdbeb5"
+    },
+    {
+      "id": "changchun-thumbnail",
+      "bytes": 41012,
+      "sha256": "cfb678469d8095213c3c720a4c94d9147764b82723d9801c5b4ad930acbb6d60"
+    },
+    {
+      "id": "changchun-standard-normal",
+      "bytes": 607526,
+      "sha256": "628d0eb081164a4cc81b70a8be2fd181aa0409ca7f6fed87f86441a6c501013d"
+    },
+    {
+      "id": "qingdao-light-mask",
+      "bytes": 33470,
+      "sha256": "e52233ee07a4cd90d38baed6ca43f5d6e0bbd9e85cdb763714bd54b5781374c9"
+    },
+    {
+      "id": "qingdao-light-normal",
+      "bytes": 149142,
+      "sha256": "6c3faa87b5e68d4d81ef6c0d71476b51e2026a57cc9a3a12bda7c51e955b0935"
+    },
+    {
+      "id": "qingdao-standard-mask",
+      "bytes": 81732,
+      "sha256": "a206676aab4501e0690ea3e482d7e69f7e64bd068d12eb61ef2a4f73b9bcce87"
+    },
+    {
+      "id": "qingdao-detail-mask",
+      "bytes": 130644,
+      "sha256": "c682651041d50585546841e7966e568768204a5ab20f215493ad9ef22d2d86c1"
+    },
+    {
+      "id": "qingdao-standard-normal",
+      "bytes": 552750,
+      "sha256": "f3ab7adf961737dd18083f3b55c53dd9985843154892a8c230eaa5aff5399c55"
+    },
+    {
+      "id": "chongqing-detail-normal",
+      "bytes": 4312877,
+      "sha256": "5efc0b4114a01dc0d8cd0db35320fc7a6c2b3223f80f6057ffa7c5b8ba888bf9"
+    },
+    {
+      "id": "slogan-open",
+      "bytes": 13680,
+      "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126"
+    },
+    {
+      "id": "slogan-innovation",
+      "bytes": 15024,
+      "sha256": "0c31d18458db52dd67f18cb0a7a94e82a0c5e934f4b629664994b37075798556"
+    },
+    {
+      "id": "qingdao-thumbnail",
+      "bytes": 41152,
+      "sha256": "37cdb9952c1ad6f739fd7f2a7b3a0ebf9c5501237a43dab424ce3dfd769b24bf"
+    },
+    {
+      "id": "slogan-cooperation",
+      "bytes": 12632,
+      "sha256": "e2c5f6b534591635051fa826c08b3b55e13bbecb42e6a2e2a25c5fe931181fe9"
+    },
+    {
+      "id": "changchun-detail-normal",
+      "bytes": 2165865,
+      "sha256": "ba59e05ec14bc1f460cb2cda2a9cff003aa77db3e27efde42bdc9e45641b9f54"
+    },
+    {
+      "id": "slogan-sharing",
+      "bytes": 11912,
+      "sha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2"
+    },
+    {
+      "id": "slogan-together",
+      "bytes": 11890,
+      "sha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b"
+    },
+    {
+      "id": "slogan-ocean",
+      "bytes": 15404,
+      "sha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803"
+    },
+    {
+      "id": "mark",
+      "bytes": 13842,
+      "sha256": "619bafa2ff7da748ac1c008e33a5abe60c07463b940024344c187441d6f8af87"
+    },
+    {
+      "id": "qingdao-detail-normal",
+      "bytes": 1982346,
+      "sha256": "4d545c07be8051225df36faa63505e92fcf21336494ad900f4cba52cbb0a9964"
+    }
+  ],
+  "errors": [],
+  "release": {
+    "version": "7.1.4",
+    "kind": "user-authorized-production",
+    "sourceCommit": "5991ec274757b984b2b19873d254027829bf2e48",
+    "sourceBranch": "main",
+    "v6SyncedThrough": "833a8b33561d36e72f1164743e80f28fc63d96b2",
+    "resourceRelease": "v7-5"
+  },
+  "sixOldTextFramesIdentical": true,
+  "passed": true
+}

@@ -1,0 +1,30 @@
+{
+  "status": "production-verified",
+  "verifiedAt": "2026-10-19T14:00:52.596321+00:00",
+  "sourceCommit": "5991ec274757b984b2b19873d254027829bf2e48",
+  "deployId": "6ad61f84c8773f7fd5ee6756",
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "permalink": "https://6ad61f84c8773f7fd5ee6756--guangcai-no1-china-v7.netlify.app/",
+  "fileCount": 769,
+  "remoteFilesMatched": 769,
+  "publicResourceAssetsVerified": 195,
+  "sixOldTextFramesIdentical": true,
+  "browserChecks": {
+    "consumer": 40,
+    "comparison": 35,
+    "bezier": 19
+  },
+  "archiveReadback": {
+    "passed": true,
+    "files": 769,
+    "bytes": 340631246,
+    "archive": "deployments/guangcai-no1-china-v7/6ad61f84c8773f7fd5ee6756",
+    "sourceCommit": "5991ec274757b984b2b19873d254027829bf2e48"
+  },
+  "netlifyHtmlRewrite": {
+    "path": "index.html",
+    "expectedSha256": "8e4c3bf0c77a076239fe0ea73fdde5fb192e311c561390c65cd8117a1e263a02",
+    "servedSha256": "ad5e17aec194f7014d2805aaa3e1fabd5e444a4edd2c26757bffc3caa4d3f020",
+    "onlyChange": "href=downloads.html to href=/bezier-lab/downloads"
+  }
+}

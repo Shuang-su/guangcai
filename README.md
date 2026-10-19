@@ -1,6 +1,6 @@
 # 广彩一号杯与中国杯
 
-2026-10-19：V7.1.4 / v7-5 发布批次，更新23城描线与底部对齐，文字及字框沿用V7.1.3。新增 [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) 与 [独立闭合建筑SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/)；发布核验以本轮完成记录为准。后台Excel/JSON仍为v7-4历史导出。
+2026-10-19：V7.1.4 / v7-5 已合并并上线，更新23城描线与底部对齐，文字及字框沿用V7.1.3。新增 [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) 与 [独立闭合建筑SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/)；发布核验以本轮完成记录为准。后台Excel/JSON仍为v7-4历史导出。
 
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
@@ -155,3 +155,5 @@ python3 tools/test_verify_archive.py
 `/city-compare/` 提供23城逐项对比；`/bezier-lab/` 是另一个聊天最新两城独立闭合SVG试绘，含22个独立对象，不替换应用图案。
 
 [V7.1.4 Issue #41](https://github.com/Shuang-su/guangcai/issues/41) · [本轮完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)。当前后台表格为v7-4导出；接入v7-5时以更新后的bootstrap、catalog、manifest和JSON Schema为准。
+
+V7.1.4实际发布：源码 `5991ec274757b984b2b19873d254027829bf2e48`，[PR #42](https://github.com/Shuang-su/guangcai/pull/42)，[固定预览](https://6ad61f84c8773f7fd5ee6756--guangcai-no1-china-v7.netlify.app/)；769份服务器摘要、195项公网资源，以及杯身40/对比35/SVG19项检查通过。六组旧文字字框保留，SVG单独审阅。

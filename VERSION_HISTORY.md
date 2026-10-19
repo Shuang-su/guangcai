@@ -2,7 +2,7 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-当前发布批次为 **V7.1.4 / v7-5**，实际合并/部署回执见[本轮完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
+当前独立预览为 **V7.1.4 / v7-5**，已合并并部署；回执见[本轮完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
@@ -13,6 +13,7 @@
 
 | 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
+| 7.1.4 独立预览 | 未新增标签 | `5991ec274757b984b2b19873d254027829bf2e48` | `6ad61f84c8773f7fd5ee6756` | v7-5城市描线/69档底边；保留旧文字字框；/city-compare/与/bezier-lab/；PR #42合并及公网核验通过 |
 | 7.1.3 独立预览 | 未新增标签 | `3283d27147e080913b5bddf3a7e88ddec7351a7a` | `6ad4995927bf346abcf5fcf4` | v7-4实拍花纹方向、底边、金底补洞、上连接白瓷与杯碟近看高清；跨版本原子还原及后台表更新；V6不变 |
 | 7.1.2 独立预览 | 未新增标签 | `6a9c4d3bd8ff237b11a9039070a9836083fdd224` | `6ad3be04e1ca085185e3e395` | 思源宋体CN Bold六组祝福语与字框、23城填色复核、厦门/西安G补面、v7-3及后台表更新；V6不变 |
 | 1.0 | `v1.0` | `152a791b51faaa28e4a565809b3250cf7fc75346` | `6abbdf78d912b4b6b1d7c3b9` | 原版一号杯 |

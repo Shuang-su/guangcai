@@ -1,0 +1,43 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/bezier-lab/",
+  "checks": [
+    "page identity and content",
+    "Beijing has 8 independent objects",
+    "solo shows only temple",
+    "focus changes actual viewBox",
+    "control handles visible",
+    "fill is applied to closed outline",
+    "overlay displays actual source",
+    "400% zoom",
+    "800% zoom",
+    "mouse selects an actual path",
+    "slider changes selected geometry",
+    "reset restores stroke",
+    "Shenzhen has 14 independent objects",
+    "city switch clears prior selected path",
+    "mobile city and building interaction",
+    "mobile no document horizontal overflow",
+    "download listing opens and has 24 SVG links",
+    "85 imported files verified; HTML allows only exact observed Netlify Pretty URL rewrite",
+    "no runtime or console errors"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "physicalDeviceTested": false,
+  "netlifyHtmlRewrite": {
+    "path": "index.html",
+    "expectedSha256": "8e4c3bf0c77a076239fe0ea73fdde5fb192e311c561390c65cd8117a1e263a02",
+    "servedSha256": "ad5e17aec194f7014d2805aaa3e1fabd5e444a4edd2c26757bffc3caa4d3f020",
+    "onlyChange": "href=downloads.html to href=/bezier-lab/downloads"
+  },
+  "passed": true
+}

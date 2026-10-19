@@ -4,7 +4,7 @@
 
 用户最终要求：新PNG的导出缩放保留，更新描线并统一到底部；文字和字框先沿用旧版；合并并上线。另将聊天“用贝塞尔曲线描摹线稿”的最新深圳/北京独立闭合版增加后缀一起发布。
 
-代码与资源已完成，本记录的首次提交属于部署前准备；实际推送、PR合并、部署ID与线上核验在下方发布回执中追加。此前本地素材checkpoint为 `055321a4826211faf609fdb0e576fcbecefd5b20`，记录提交为 `4718a8d`。
+已合并并部署。首次准备提交为 `cf701282d413328167a3325996723a06cf17d2d3`，随后PR #42合入main；下方是实际发布与公网核验回执。此前本地素材checkpoint为 `055321a4826211faf609fdb0e576fcbecefd5b20`，记录提交为 `4718a8d`。
 
 ## 实际变更
 
@@ -38,4 +38,18 @@
 
 ## 发布回执
 
-待实际PR合并、发布和公网回读后追加，不能以构建或推送推断上线。
+- PR：[#42](https://github.com/Shuang-su/guangcai/pull/42)，状态MERGED，合并时间2026-10-19T13:46:24Z。
+- 合并/部署源码：`5991ec274757b984b2b19873d254027829bf2e48`；产品7.1.4 / 资源v7-5。
+- 正式入口：https://guangcai-no1-china-v7.netlify.app/；逐城对比：https://guangcai-no1-china-v7.netlify.app/city-compare/；两城独立闭合SVG：https://guangcai-no1-china-v7.netlify.app/bezier-lab/。
+- 固定预览：https://6ad61f84c8773f7fd5ee6756--guangcai-no1-china-v7.netlify.app/；Netlify部署ID：`6ad61f84c8773f7fd5ee6756`。
+- 769/769服务器文件摘要匹配；195个公网运行资源逐个长度和SHA-256通过，六组旧文字与uvRect回读一致。
+- 公网Chrome桌面/手机浏览器：杯身40项、对比页35项、SVG页19项通过，无运行错误；下载列表24条SVG链接可访问。
+- SVG查看页84份资源HTTP字节一致。唯一HTML差异是Netlify Pretty URLs将下载链接从downloads.html重写为/bezier-lab/downloads，严格只还原这一处后SHA-256与上传原件相同；SVG矢量内容未变。
+- 五个旧站publishedDeploy及Git连接状态在部署前后完全相等；本次只写V7站点。
+- 不可变归档：`deployments/guangcai-no1-china-v7/6ad61f84c8773f7fd5ee6756/`；769文件、340,631,246字节逐项本地回读哈希通过。原deployment.json保留部署时状态，追加verification.json记录最终验证。
+- [部署回执](deployment.json)、[合并回执](merge.json)、公开资源与三入口浏览器报告位于应用evidence/v7.1.4/。
+
+
+发布收尾补充：合入main后，本地稀疏检出未展开新增证据目录，部署前检查在任何远端写入前拦截；已将本轮资源、页面、证据和记录目录加入稀疏范围，再从相同已合并SHA发布。公网SVG页首次HTML哈希检查发现上述Pretty URLs改写，未放宽其他内容或SVG摘要，只增加了精确的单处转换验证及实际下载列表检查。真实产品未因该验证调整再次修改或重新部署。最终归档提交会追加测试脚本修正、部署文件和证据，线上源码仍固定为上述5991ec2。
+
+归档差异检查：已部署的打包JS包含第三方shader字符串的行尾空白和缩进；为保证769文件字节与部署清单相等，归档原样保留。源码、记录和测试脚本的差异空白检查单独通过，归档采用完整SHA-256回读核验。
