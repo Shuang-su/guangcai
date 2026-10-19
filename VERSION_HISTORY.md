@@ -2,10 +2,11 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-当前线上独立预览为 **V7.1.8 / v7-7**，PSD整版设计与V7.1.7相同，加载版本标识已统一。原5MiB/6秒目标未通过，实体设备与COS/身份仍待验收，继续由Issue #47跟踪。
+本轮版本为 **V7.1.9 / v7-8**，修复23城卡片线稿缩略图，城市贴图和字框继续使用v7-7原数据；发布状态以本轮完成记录回执为准。原5MiB/6秒目标未通过，实体设备与COS/身份仍待验收，继续由Issue #47跟踪。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
+| [V7.1.9 · Issue #51](https://github.com/Shuang-su/guangcai/issues/51) | [完整卡片线稿记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md) | 45基础、45V7测试及29项页面回归通过；逐城浏览器检查和发布回执见完成记录 |
 | [V7.1.8 · Issue #49](https://github.com/Shuang-su/guangcai/issues/49) | [入口版本记录](docs/changes/20261020-v7.1.8-entry-version/completion.md) | PR #50合并/部署；入口与运行时7.1.8，沿用v7-7设计；本地/线上核心28项通过 |
 | [V7.1.7 · Issue #47](https://github.com/Shuang-su/guangcai/issues/47) | [PSD整版记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md) | PR #48合并/部署，23城69档原稿核对、45基础与43V7测试，正式43项、开发86项及线上26项通过；入口版本标识转V7.1.8修正 |
 | [V7.1.6 · Issue #45](https://github.com/Shuang-su/guangcai/issues/45) | [修正记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md) | PR #46已合并/部署；本地41+86项、V7测试39项，最终线上核心24项通过 |
