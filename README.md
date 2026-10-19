@@ -1,5 +1,7 @@
 # 广彩一号杯与中国杯
 
+2026-10-19 本地候选：23城新原图与描线底边统一，资源版本 `v7-5`。已发布版本与在线地址仍为下文 V7.1.3 / v7-4；本地 bootstrap 改用新候选并保留四个历史资源版本。后台交接 Excel/JSON 仍对应既有 v7-4，不将候选当作已发布交付。[本轮请求、验证和 checkpoint](docs/changes/20261019-city-artwork-alignment/completion.md)。
+
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
 本机当前主仓库为 `/Volumes/Prism_初号機/广彩/guangcai-main/`，稳定入口为同盘的 `guangcai-repo/`。旧工作区、历史工程恢复包及内盘失败下载包已按用户选择清理；源码和资源从正式 Git / Git LFS 按需取回，素材原件继续保留。位置与方法见[工作区说明](WORKSPACE_LOCATIONS.md)、[Git恢复说明](docs/changes/20261018-exfat-and-v4-retirement/restore-v4.md)及[最终清理回执](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。这些路径描述本机布局，不是安装或部署前置条件。

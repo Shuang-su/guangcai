@@ -49,7 +49,9 @@
     "textures:v7-4": "node tools/v7/compile-v7-4.mjs",
     "check:v7-4": "node tools/v7/validate-v7-4.mjs",
     "textures:v7-3": "node tools/v7/compile-v7-3.mjs",
-    "check:v7-3": "node tools/v7/validate-v7-3.mjs"
+    "check:v7-3": "node tools/v7/validate-v7-3.mjs",
+    "textures:city-alignment": "python3 tools/v7/compile-city-alignment.py",
+    "check:city-alignment": "python3 tools/v7/validate-city-alignment.py"
   },
   "dependencies": {
     "@lisse/core": "0.7.2",

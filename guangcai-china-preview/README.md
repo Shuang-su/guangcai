@@ -1,5 +1,7 @@
 # 中国杯 V7.1.3：实拍花纹修正与完整版本还原
 
+2026-10-19 本地候选：23城新原图与描线底边统一，资源版本 `v7-5`。已发布版本与在线地址仍为下文 V7.1.3 / v7-4；本地 bootstrap 改用新候选并保留四个历史资源版本。后台交接 Excel/JSON 仍对应既有 v7-4，不将候选当作已发布交付。[本轮请求、验证和 checkpoint](../docs/changes/20261019-city-artwork-alignment/completion.md)。
+
 [后台配置 Excel](integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](integration/backend-handoff/backend-config.json) · [字段、录入与扩展说明](integration/backend-handoff/README.md)。后台同事先读此入口，再按性能文档逐项接入；表格不是新增运行时接口。
 
 [V7 在线预览](https://guangcai-no1-china-v7.netlify.app/) · [V7.1.3 固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [开发交接主文档](integration/README.md) · [逐项性能机制](integration/PERFORMANCE.md) · [本轮验证](../docs/changes/20261018-v7.1.3-floral-correction/completion.md)

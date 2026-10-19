@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-19",
+  "status": "local candidate",
+  "source": "User-supplied 23个城市图 directory, exported 2026-10-19 18:42",
+  "reference": "https://mastergo.com/file/207427706578154?fileOpenFrom=home&page_id=M&shareId=207427706578154&state=LanHuVX",
+  "frame": [
+    3878,
+    1630
+  ],
+  "mastergoFrame": [
+    1939,
+    815
+  ],
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "file": "shanghai.png",
+      "sha256": "59feabc471e99540bff56cbe2f2d3017bc42ad05723801280c12464def953101",
+      "previousSourceSha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+      "sourceChanged": true
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "file": "urumqi.png",
+      "sha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+      "previousSourceSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+      "sourceChanged": false
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "file": "beijing.png",
+      "sha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c",
+      "previousSourceSha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+      "sourceChanged": true
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "file": "nanjing.png",
+      "sha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+      "previousSourceSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+      "sourceChanged": false
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "file": "nanchang.png",
+      "sha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+      "previousSourceSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+      "sourceChanged": false
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "file": "xiamen.png",
+      "sha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+      "previousSourceSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+      "sourceChanged": false
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "file": "hohhot.png",
+      "sha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+      "previousSourceSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+      "sourceChanged": false
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "file": "harbin.png",
+      "sha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+      "previousSourceSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+      "sourceChanged": false
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "file": "tianjin.png",
+      "sha256": "9322fe3ae9a5b809aab44befd84efb3d7fb9d00f6c5f7971bb57c9108d21f23a",
+      "previousSourceSha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+      "sourceChanged": true
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "file": "taiyuan.png",
+      "sha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "previousSourceSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "sourceChanged": false
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "file": "guangzhou.png",
+      "sha256": "c05ed4e8969daa9e6449c3a7a3a8572c98724e8d7dac366898647868c23e8521",
+      "previousSourceSha256": "7fca8585c5931d47e5d4592115e31fd0c475829e3cb16cba96563439ce602de6",
+      "sourceChanged": true
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "file": "chengdu.png",
+      "sha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+      "previousSourceSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+      "sourceChanged": false
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "file": "jingdezhen.png",
+      "sha256": "c87bf92701b919014d0de31113aa627427989144ede5bbe9e124efce21244a14",
+      "previousSourceSha256": "ac8230f3e60a5d3afc2d4b2df211bc7a2b2d9327aca897f4a1ef20b9ffbe092f",
+      "sourceChanged": true
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "file": "hangzhou.png",
+      "sha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "previousSourceSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "sourceChanged": false
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "file": "wuhan.png",
+      "sha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "previousSourceSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "sourceChanged": false
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "file": "shenyang.png",
+      "sha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+      "previousSourceSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+      "sourceChanged": false
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "file": "shenzhen.png",
+      "sha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2",
+      "previousSourceSha256": "57802cadfee150f4988a73e6d8540e43efc02fa230480f6fe931861d1f1a96e0",
+      "sourceChanged": true
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "file": "shijiazhuang.png",
+      "sha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+      "previousSourceSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+      "sourceChanged": false
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "file": "xian.png",
+      "sha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+      "previousSourceSha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+      "sourceChanged": true
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "file": "zhengzhou.png",
+      "sha256": "fc62fe5380af329616b5abebf5fb0fdfc2ab810d9eead0b1ae820b01be2d1e5f",
+      "previousSourceSha256": "f9989128b6b45c537fa3633ca7e39236c0a3b5a8f3659b2ae3313a0f53ed6d8b",
+      "sourceChanged": true
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "file": "chongqing.png",
+      "sha256": "f10de1c6cc71e0ec6810ecde09dddd4cc92f835fb1f38f6b8d792093528dca65",
+      "previousSourceSha256": "629d08baa315d9dd3201056a71d47540d524ef5bab10f6baad21ecb3f4e378d9",
+      "sourceChanged": true
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "file": "changchun.png",
+      "sha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+      "previousSourceSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+      "sourceChanged": false
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "file": "qingdao.png",
+      "sha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+      "previousSourceSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+      "sourceChanged": false
+    }
+  ]
+}

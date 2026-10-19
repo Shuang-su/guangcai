@@ -15,7 +15,7 @@ export async function createMockServer(root=resolve('.codex-work/deploy/v7-integ
  const origins=new Set(options.allowedOrigins??[]);for(const origin of origins)if(new URL(origin).origin!==origin||!/^https?:/.test(origin))throw Error('Use exact HTTP(S) origins');
  if(!/^\/[a-zA-Z0-9/_-]*\/$/.test(base)&&base!=='/')throw Error('MOCK_BASE must be an absolute path ending in /');
  const bootstrap=JSON.parse(await readFile(resolve(root,'api/v1/bootstrap.json'),'utf8'));
- const manifests=new Map<string,ResourceManifest>();for(const id of ['v7-1','v7-2','v7-3','v7-4']){const catalog=JSON.parse(await readFile(resolve(root,'releases',id,'catalog.json'),'utf8'));manifests.set(id,JSON.parse(await readFile(resolve(root,'releases',id,catalog.manifestUrl),'utf8')));}
+ const manifests=new Map<string,ResourceManifest>();for(const id of ['v7-1','v7-2','v7-3','v7-4','v7-5']){const catalog=JSON.parse(await readFile(resolve(root,'releases',id,'catalog.json'),'utf8'));manifests.set(id,JSON.parse(await readFile(resolve(root,'releases',id,catalog.manifestUrl),'utf8')));}
  const works=new Map<string,Work>(),shares=new Map<string,Share>(),idempotency=new Map<string,{body:string;workId:string}>();
  const json=(res:ServerResponse,status:number,value:unknown)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(value));};
  const fail=(status:number,message:string)=>Object.assign(Error(message),{status});
