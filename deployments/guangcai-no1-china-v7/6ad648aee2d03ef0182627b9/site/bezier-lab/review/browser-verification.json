@@ -1,0 +1,49 @@
+{
+  "tool": "Playwright CLI in Chromium",
+  "url": "http://127.0.0.1:8769/查看独立建筑.html",
+  "passed": true,
+  "checks": {
+    "city_switch": true,
+    "independent_building_selection_and_solo": true,
+    "focus_and_overview": true,
+    "control_handles_visible_in_solo": true,
+    "fill_only_selected_temple": {
+      "visible_buildings": [
+        "bj-temple"
+      ],
+      "visible_detail_paths": 0,
+      "outline_fill": "rgb(222, 154, 29)"
+    },
+    "source_overlay": {
+      "source_display": "block",
+      "svg_opacity": ".58"
+    },
+    "zoom_400_stage_width_px": 15512,
+    "zoom_800_stage_width_px": 31024,
+    "physical_mouse_path_selection": {
+      "id": "bj-cctv-p030",
+      "x": 214.978,
+      "y": 486.516,
+      "initial_width": 3.2,
+      "slider_click_width": 7.3,
+      "reset_width": 3.2
+    },
+    "console_errors": 0,
+    "console_warnings": 0
+  },
+  "fixed_during_review": [
+    "CCTV return surfaces excluded by an overlarge aperture clip",
+    "Civic V braces clipped out by a solid-body-only clipping shape",
+    "Acute miter joins generated artificial eave spikes; changed joins while keeping closed geometric tips",
+    "Fill inspection initially left un-clipped component paths visible; final CSS hides every non-outline drawing path",
+    "City switch now clears previous path highlight"
+  ],
+  "tool_retry": "Initial CLI select-option command was unsupported; refreshed the page snapshot and used documented select. Final interactions passed.",
+  "final_reload": {
+    "groups_in_beijing": 8,
+    "clip_target": "#bj-zun-outline",
+    "unresolved_use_references": 0,
+    "console_errors": 0,
+    "console_warnings": 0
+  }
+}

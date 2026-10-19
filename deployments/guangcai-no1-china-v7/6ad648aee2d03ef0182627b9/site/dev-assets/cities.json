@@ -1,0 +1,2802 @@
+{
+  "mastergo-shanghai": {
+    "name": "上海",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-shanghai-standard-mask",
+          "url": "assets/mastergo-shanghai-standard-mask-0dd9167941468249.webp",
+          "sha256": "0dd916794146824904e2d0919e90f923f1ec7106de269d540a30352f07459eaa",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 121372,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shanghai-standard-normal",
+          "url": "assets/mastergo-shanghai-standard-normal-b4c4c0e6eb9d62e7.hfn.gz",
+          "sha256": "b4c4c0e6eb9d62e758aa52f8666546da9fd94b1572eb9c4ddab42f5b8e9354da",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 620410,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-shanghai-standard-mask",
+          "url": "assets/mastergo-shanghai-standard-mask-0dd9167941468249.webp",
+          "sha256": "0dd916794146824904e2d0919e90f923f1ec7106de269d540a30352f07459eaa",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 121372,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shanghai-standard-normal",
+          "url": "assets/mastergo-shanghai-standard-normal-b4c4c0e6eb9d62e7.hfn.gz",
+          "sha256": "b4c4c0e6eb9d62e758aa52f8666546da9fd94b1572eb9c4ddab42f5b8e9354da",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 620410,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-shanghai-standard-mask",
+          "url": "assets/mastergo-shanghai-standard-mask-0dd9167941468249.webp",
+          "sha256": "0dd916794146824904e2d0919e90f923f1ec7106de269d540a30352f07459eaa",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 121372,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shanghai-standard-normal",
+          "url": "assets/mastergo-shanghai-standard-normal-b4c4c0e6eb9d62e7.hfn.gz",
+          "sha256": "b4c4c0e6eb9d62e758aa52f8666546da9fd94b1572eb9c4ddab42f5b8e9354da",
+          "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 620410,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-shanghai-thumbnail",
+      "url": "assets/mastergo-shanghai-thumbnail-6bfa34db3e7278ce.webp",
+      "sha256": "6bfa34db3e7278ceae58e257b00877d11d5866db28814d6ee966ea65c6a49d7a",
+      "sourceSha256": "6e6b5562a1c70bd4ab17e1de0f2ff576a918601b161245d07eda6ab25e2ae6d9",
+      "encoding": "webp",
+      "width": 560,
+      "height": 232,
+      "bytes": 37656,
+      "decodedBytes": 519680,
+      "gpuBytes": 692907,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "shanghai",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-urumqi": {
+    "name": "乌鲁木齐",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-urumqi-standard-mask",
+          "url": "assets/mastergo-urumqi-standard-mask-e4b0cef173ab4c44.webp",
+          "sha256": "e4b0cef173ab4c44244f58737cf3ba142d2fe44f5efc43234bcbae9f99c77280",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 151532,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-urumqi-standard-normal",
+          "url": "assets/mastergo-urumqi-standard-normal-3445fa75ab972b0f.hfn.gz",
+          "sha256": "3445fa75ab972b0fe7296335f2451e131158db528bcb7cc49d170c681a25afb5",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 788913,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-urumqi-standard-mask",
+          "url": "assets/mastergo-urumqi-standard-mask-e4b0cef173ab4c44.webp",
+          "sha256": "e4b0cef173ab4c44244f58737cf3ba142d2fe44f5efc43234bcbae9f99c77280",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 151532,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-urumqi-standard-normal",
+          "url": "assets/mastergo-urumqi-standard-normal-3445fa75ab972b0f.hfn.gz",
+          "sha256": "3445fa75ab972b0fe7296335f2451e131158db528bcb7cc49d170c681a25afb5",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 788913,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-urumqi-standard-mask",
+          "url": "assets/mastergo-urumqi-standard-mask-e4b0cef173ab4c44.webp",
+          "sha256": "e4b0cef173ab4c44244f58737cf3ba142d2fe44f5efc43234bcbae9f99c77280",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 151532,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-urumqi-standard-normal",
+          "url": "assets/mastergo-urumqi-standard-normal-3445fa75ab972b0f.hfn.gz",
+          "sha256": "3445fa75ab972b0fe7296335f2451e131158db528bcb7cc49d170c681a25afb5",
+          "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 788913,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-urumqi-thumbnail",
+      "url": "assets/mastergo-urumqi-thumbnail-bc434449869b41a1.webp",
+      "sha256": "bc434449869b41a1fbdff06dc869e988af2255e5bbea79a90fd4fb3786b0de69",
+      "sourceSha256": "b05de0cefc6e1a964826c0b67564b8553708d083ab13e9a20b97e745c3927b77",
+      "encoding": "webp",
+      "width": 560,
+      "height": 189,
+      "bytes": 35418,
+      "decodedBytes": 423360,
+      "gpuBytes": 564480,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "urumqi",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-beijing": {
+    "name": "北京",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-beijing-standard-mask",
+          "url": "assets/mastergo-beijing-standard-mask-355ea5249079d405.webp",
+          "sha256": "355ea5249079d40509d32aa5b6f81d22a5164c90dcfc540c2b2d75f10a526132",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 198280,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-beijing-standard-normal",
+          "url": "assets/mastergo-beijing-standard-normal-b9c0a57eced8b50c.hfn.gz",
+          "sha256": "b9c0a57eced8b50c135b61e007714c063c70101ccb5e75043ee8b3261f4a4573",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 953595,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-beijing-standard-mask",
+          "url": "assets/mastergo-beijing-standard-mask-355ea5249079d405.webp",
+          "sha256": "355ea5249079d40509d32aa5b6f81d22a5164c90dcfc540c2b2d75f10a526132",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 198280,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-beijing-standard-normal",
+          "url": "assets/mastergo-beijing-standard-normal-b9c0a57eced8b50c.hfn.gz",
+          "sha256": "b9c0a57eced8b50c135b61e007714c063c70101ccb5e75043ee8b3261f4a4573",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 953595,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-beijing-standard-mask",
+          "url": "assets/mastergo-beijing-standard-mask-355ea5249079d405.webp",
+          "sha256": "355ea5249079d40509d32aa5b6f81d22a5164c90dcfc540c2b2d75f10a526132",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 198280,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-beijing-standard-normal",
+          "url": "assets/mastergo-beijing-standard-normal-b9c0a57eced8b50c.hfn.gz",
+          "sha256": "b9c0a57eced8b50c135b61e007714c063c70101ccb5e75043ee8b3261f4a4573",
+          "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 953595,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-beijing-thumbnail",
+      "url": "assets/mastergo-beijing-thumbnail-5c762906725d995a.webp",
+      "sha256": "5c762906725d995a3586b09beb52ee9ffe4301f654b7f7770a7672825c9dd4d0",
+      "sourceSha256": "a9ab52c7413acc133b4bb876384b70a08e93a3ce9a5162bb387cd632cd828f42",
+      "encoding": "webp",
+      "width": 560,
+      "height": 170,
+      "bytes": 46128,
+      "decodedBytes": 380800,
+      "gpuBytes": 507734,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "beijing",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-nanjing": {
+    "name": "南京",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-nanjing-standard-mask",
+          "url": "assets/mastergo-nanjing-standard-mask-3cda409327b142b7.webp",
+          "sha256": "3cda409327b142b7f9a30bf35fc822a3740868f2460468343adc1b06fccaa562",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 139760,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanjing-standard-normal",
+          "url": "assets/mastergo-nanjing-standard-normal-9dca5264df418724.hfn.gz",
+          "sha256": "9dca5264df41872425265a43cf85c02e5442cdba0de23dec82d9458f1ece3932",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 743504,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-nanjing-standard-mask",
+          "url": "assets/mastergo-nanjing-standard-mask-3cda409327b142b7.webp",
+          "sha256": "3cda409327b142b7f9a30bf35fc822a3740868f2460468343adc1b06fccaa562",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 139760,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanjing-standard-normal",
+          "url": "assets/mastergo-nanjing-standard-normal-9dca5264df418724.hfn.gz",
+          "sha256": "9dca5264df41872425265a43cf85c02e5442cdba0de23dec82d9458f1ece3932",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 743504,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-nanjing-standard-mask",
+          "url": "assets/mastergo-nanjing-standard-mask-3cda409327b142b7.webp",
+          "sha256": "3cda409327b142b7f9a30bf35fc822a3740868f2460468343adc1b06fccaa562",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 139760,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanjing-standard-normal",
+          "url": "assets/mastergo-nanjing-standard-normal-9dca5264df418724.hfn.gz",
+          "sha256": "9dca5264df41872425265a43cf85c02e5442cdba0de23dec82d9458f1ece3932",
+          "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 743504,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-nanjing-thumbnail",
+      "url": "assets/mastergo-nanjing-thumbnail-b82422c31101ac4d.webp",
+      "sha256": "b82422c31101ac4dd5dc3894034b9e28eb9b968d709f4d0addc8c3ccdc1d75d7",
+      "sourceSha256": "7e3e2638a263197b719f5264b1cc8ad26519f39cbc3b7adf06a24333f06d557f",
+      "encoding": "webp",
+      "width": 560,
+      "height": 212,
+      "bytes": 37768,
+      "decodedBytes": 474880,
+      "gpuBytes": 633174,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "nanjing",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-nanchang": {
+    "name": "南昌",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-nanchang-standard-mask",
+          "url": "assets/mastergo-nanchang-standard-mask-3de3d09445e6511b.webp",
+          "sha256": "3de3d09445e6511bed268e48e475df71f2397412be144946945a20e3626d411d",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 202478,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanchang-standard-normal",
+          "url": "assets/mastergo-nanchang-standard-normal-134151af5a37f8fe.hfn.gz",
+          "sha256": "134151af5a37f8feeb940ae96a9b19d03d0d3bf82efd734a0b5c685575082170",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1025470,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-nanchang-standard-mask",
+          "url": "assets/mastergo-nanchang-standard-mask-3de3d09445e6511b.webp",
+          "sha256": "3de3d09445e6511bed268e48e475df71f2397412be144946945a20e3626d411d",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 202478,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanchang-standard-normal",
+          "url": "assets/mastergo-nanchang-standard-normal-134151af5a37f8fe.hfn.gz",
+          "sha256": "134151af5a37f8feeb940ae96a9b19d03d0d3bf82efd734a0b5c685575082170",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1025470,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-nanchang-standard-mask",
+          "url": "assets/mastergo-nanchang-standard-mask-3de3d09445e6511b.webp",
+          "sha256": "3de3d09445e6511bed268e48e475df71f2397412be144946945a20e3626d411d",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 202478,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-nanchang-standard-normal",
+          "url": "assets/mastergo-nanchang-standard-normal-134151af5a37f8fe.hfn.gz",
+          "sha256": "134151af5a37f8feeb940ae96a9b19d03d0d3bf82efd734a0b5c685575082170",
+          "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1025470,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-nanchang-thumbnail",
+      "url": "assets/mastergo-nanchang-thumbnail-34a2bf3f6c941cbf.webp",
+      "sha256": "34a2bf3f6c941cbfb05e95e67ca8cbbcd69e3258b10d99560d6520f8168b6805",
+      "sourceSha256": "523bc93ba225a68f0c78cb745aa538887d96992cc807df81a5d508192cd6b79a",
+      "encoding": "webp",
+      "width": 560,
+      "height": 154,
+      "bytes": 48100,
+      "decodedBytes": 344960,
+      "gpuBytes": 459947,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "nanchang",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-xiamen": {
+    "name": "厦门",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-xiamen-standard-mask",
+          "url": "assets/mastergo-xiamen-standard-mask-ab6c3a09debd7ab9.webp",
+          "sha256": "ab6c3a09debd7ab901b2cd48884222951d25cc18db5547c598018912fadaf640",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178246,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xiamen-standard-normal",
+          "url": "assets/mastergo-xiamen-standard-normal-eeafb638f197d18b.hfn.gz",
+          "sha256": "eeafb638f197d18ba5f4a5339c587035611be9c8af3fe5c2ecc1ef7620f4044c",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 878426,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-xiamen-standard-mask",
+          "url": "assets/mastergo-xiamen-standard-mask-ab6c3a09debd7ab9.webp",
+          "sha256": "ab6c3a09debd7ab901b2cd48884222951d25cc18db5547c598018912fadaf640",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178246,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xiamen-standard-normal",
+          "url": "assets/mastergo-xiamen-standard-normal-eeafb638f197d18b.hfn.gz",
+          "sha256": "eeafb638f197d18ba5f4a5339c587035611be9c8af3fe5c2ecc1ef7620f4044c",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 878426,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-xiamen-standard-mask",
+          "url": "assets/mastergo-xiamen-standard-mask-ab6c3a09debd7ab9.webp",
+          "sha256": "ab6c3a09debd7ab901b2cd48884222951d25cc18db5547c598018912fadaf640",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178246,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xiamen-standard-normal",
+          "url": "assets/mastergo-xiamen-standard-normal-eeafb638f197d18b.hfn.gz",
+          "sha256": "eeafb638f197d18ba5f4a5339c587035611be9c8af3fe5c2ecc1ef7620f4044c",
+          "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 878426,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-xiamen-thumbnail",
+      "url": "assets/mastergo-xiamen-thumbnail-a39e60529ed5f72e.webp",
+      "sha256": "a39e60529ed5f72e48053cf443816d5dc3009471eabed7497161bbe522289847",
+      "sourceSha256": "8c0e453864e03b6b7ed1205b6a696645f7b70af6e5bd86c672392eb2d26a5ecb",
+      "encoding": "webp",
+      "width": 560,
+      "height": 201,
+      "bytes": 44504,
+      "decodedBytes": 450240,
+      "gpuBytes": 600320,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "xiamen",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-hohhot": {
+    "name": "呼和浩特",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-hohhot-standard-mask",
+          "url": "assets/mastergo-hohhot-standard-mask-a5be2f24a4becb01.webp",
+          "sha256": "a5be2f24a4becb014c20b445dc64e3b53107ebbc825dad98686eff09374f9c04",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 175942,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hohhot-standard-normal",
+          "url": "assets/mastergo-hohhot-standard-normal-ef55d5b1eff0638c.hfn.gz",
+          "sha256": "ef55d5b1eff0638cc2203998d9392b298e1a89a64e72e0c1195f1b158c718305",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 941063,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-hohhot-standard-mask",
+          "url": "assets/mastergo-hohhot-standard-mask-a5be2f24a4becb01.webp",
+          "sha256": "a5be2f24a4becb014c20b445dc64e3b53107ebbc825dad98686eff09374f9c04",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 175942,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hohhot-standard-normal",
+          "url": "assets/mastergo-hohhot-standard-normal-ef55d5b1eff0638c.hfn.gz",
+          "sha256": "ef55d5b1eff0638cc2203998d9392b298e1a89a64e72e0c1195f1b158c718305",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 941063,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-hohhot-standard-mask",
+          "url": "assets/mastergo-hohhot-standard-mask-a5be2f24a4becb01.webp",
+          "sha256": "a5be2f24a4becb014c20b445dc64e3b53107ebbc825dad98686eff09374f9c04",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 175942,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hohhot-standard-normal",
+          "url": "assets/mastergo-hohhot-standard-normal-ef55d5b1eff0638c.hfn.gz",
+          "sha256": "ef55d5b1eff0638cc2203998d9392b298e1a89a64e72e0c1195f1b158c718305",
+          "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 941063,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-hohhot-thumbnail",
+      "url": "assets/mastergo-hohhot-thumbnail-4092b51058f06c1a.webp",
+      "sha256": "4092b51058f06c1a5dc452cc332834d76cfca7109f3ea77e480758f6d94bf53d",
+      "sourceSha256": "99b91c2c6390d000a43a79bcc2cca65081f7503e5a0820367deb438b768d169f",
+      "encoding": "webp",
+      "width": 560,
+      "height": 124,
+      "bytes": 41094,
+      "decodedBytes": 277760,
+      "gpuBytes": 370347,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "hohhot",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-harbin": {
+    "name": "哈尔滨",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-harbin-standard-mask",
+          "url": "assets/mastergo-harbin-standard-mask-a44d4a6d3887ab5a.webp",
+          "sha256": "a44d4a6d3887ab5ab121181b63508dc6ccfb88874bc42f0f4b77d8bd1a2f7ce7",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 161462,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-harbin-standard-normal",
+          "url": "assets/mastergo-harbin-standard-normal-56da12da58e0a672.hfn.gz",
+          "sha256": "56da12da58e0a672050bfd82974e775e5e2a0c28bbf0bd42e006b4c08c883d04",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 779320,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-harbin-standard-mask",
+          "url": "assets/mastergo-harbin-standard-mask-a44d4a6d3887ab5a.webp",
+          "sha256": "a44d4a6d3887ab5ab121181b63508dc6ccfb88874bc42f0f4b77d8bd1a2f7ce7",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 161462,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-harbin-standard-normal",
+          "url": "assets/mastergo-harbin-standard-normal-56da12da58e0a672.hfn.gz",
+          "sha256": "56da12da58e0a672050bfd82974e775e5e2a0c28bbf0bd42e006b4c08c883d04",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 779320,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-harbin-standard-mask",
+          "url": "assets/mastergo-harbin-standard-mask-a44d4a6d3887ab5a.webp",
+          "sha256": "a44d4a6d3887ab5ab121181b63508dc6ccfb88874bc42f0f4b77d8bd1a2f7ce7",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 161462,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-harbin-standard-normal",
+          "url": "assets/mastergo-harbin-standard-normal-56da12da58e0a672.hfn.gz",
+          "sha256": "56da12da58e0a672050bfd82974e775e5e2a0c28bbf0bd42e006b4c08c883d04",
+          "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 779320,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-harbin-thumbnail",
+      "url": "assets/mastergo-harbin-thumbnail-501dbbe948e4b52e.webp",
+      "sha256": "501dbbe948e4b52e67432ebb8cd68bef99739285a53b89badac3c8e74df58d98",
+      "sourceSha256": "9ef3f5c1d4fb552dc61f2977ed8e1a5cfb6cf6c5362f77aeb31fba64bb6f7aeb",
+      "encoding": "webp",
+      "width": 560,
+      "height": 225,
+      "bytes": 43214,
+      "decodedBytes": 504000,
+      "gpuBytes": 672000,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "harbin",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-tianjin": {
+    "name": "天津",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-tianjin-standard-mask",
+          "url": "assets/mastergo-tianjin-standard-mask-a1f5c36068d62631.webp",
+          "sha256": "a1f5c36068d626313cf1336d7b4840bb0303ee9909b7b592b6b0c0062d7c23db",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 212414,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-tianjin-standard-normal",
+          "url": "assets/mastergo-tianjin-standard-normal-9c53a89efce3b7c7.hfn.gz",
+          "sha256": "9c53a89efce3b7c72884ed6fe9d0cfbd31956221ac524b22dff8b71a817c3f30",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1028566,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-tianjin-standard-mask",
+          "url": "assets/mastergo-tianjin-standard-mask-a1f5c36068d62631.webp",
+          "sha256": "a1f5c36068d626313cf1336d7b4840bb0303ee9909b7b592b6b0c0062d7c23db",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 212414,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-tianjin-standard-normal",
+          "url": "assets/mastergo-tianjin-standard-normal-9c53a89efce3b7c7.hfn.gz",
+          "sha256": "9c53a89efce3b7c72884ed6fe9d0cfbd31956221ac524b22dff8b71a817c3f30",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1028566,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-tianjin-standard-mask",
+          "url": "assets/mastergo-tianjin-standard-mask-a1f5c36068d62631.webp",
+          "sha256": "a1f5c36068d626313cf1336d7b4840bb0303ee9909b7b592b6b0c0062d7c23db",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 212414,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-tianjin-standard-normal",
+          "url": "assets/mastergo-tianjin-standard-normal-9c53a89efce3b7c7.hfn.gz",
+          "sha256": "9c53a89efce3b7c72884ed6fe9d0cfbd31956221ac524b22dff8b71a817c3f30",
+          "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1028566,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-tianjin-thumbnail",
+      "url": "assets/mastergo-tianjin-thumbnail-796cc3d704374f59.webp",
+      "sha256": "796cc3d704374f597c1cb125db9980ca1228912d967672a7583dee5d5e7a6496",
+      "sourceSha256": "f9f1f4a522f4b88d13095d30976ca59d1c2a374f2b2147741b9f08d4ab8ac3e8",
+      "encoding": "webp",
+      "width": 560,
+      "height": 197,
+      "bytes": 53244,
+      "decodedBytes": 441280,
+      "gpuBytes": 588374,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "tianjin",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-taiyuan": {
+    "name": "太原",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-taiyuan-standard-mask",
+          "url": "assets/mastergo-taiyuan-standard-mask-4c12c342d246c15b.webp",
+          "sha256": "4c12c342d246c15b52ac1a0a94ee2d8355c9e1289702b5dd40d510c2c1436c45",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178052,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-taiyuan-standard-normal",
+          "url": "assets/mastergo-taiyuan-standard-normal-a0588557dfaac027.hfn.gz",
+          "sha256": "a0588557dfaac027da152465b9eaa8a9fb24a455d362934039ab6e46be310836",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 894857,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-taiyuan-standard-mask",
+          "url": "assets/mastergo-taiyuan-standard-mask-4c12c342d246c15b.webp",
+          "sha256": "4c12c342d246c15b52ac1a0a94ee2d8355c9e1289702b5dd40d510c2c1436c45",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178052,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-taiyuan-standard-normal",
+          "url": "assets/mastergo-taiyuan-standard-normal-a0588557dfaac027.hfn.gz",
+          "sha256": "a0588557dfaac027da152465b9eaa8a9fb24a455d362934039ab6e46be310836",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 894857,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-taiyuan-standard-mask",
+          "url": "assets/mastergo-taiyuan-standard-mask-4c12c342d246c15b.webp",
+          "sha256": "4c12c342d246c15b52ac1a0a94ee2d8355c9e1289702b5dd40d510c2c1436c45",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 178052,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-taiyuan-standard-normal",
+          "url": "assets/mastergo-taiyuan-standard-normal-a0588557dfaac027.hfn.gz",
+          "sha256": "a0588557dfaac027da152465b9eaa8a9fb24a455d362934039ab6e46be310836",
+          "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 894857,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-taiyuan-thumbnail",
+      "url": "assets/mastergo-taiyuan-thumbnail-206ed3275ba747ad.webp",
+      "sha256": "206ed3275ba747adee276e4f1a9b339645a7e126a6ce3979ff58495983427985",
+      "sourceSha256": "95fa318de9d26c4203dcfce3e9a43432233ecd97a5aa5c3fe817108d64942df6",
+      "encoding": "webp",
+      "width": 560,
+      "height": 190,
+      "bytes": 40188,
+      "decodedBytes": 425600,
+      "gpuBytes": 567467,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "taiyuan",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-guangzhou": {
+    "name": "广州",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-guangzhou-standard-mask",
+          "url": "assets/mastergo-guangzhou-standard-mask-b441ec9e2303b0d6.webp",
+          "sha256": "b441ec9e2303b0d6e177a8304b38298d41630cfa1f13a4db4bebc9d46af5eecf",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 146388,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-guangzhou-standard-normal",
+          "url": "assets/mastergo-guangzhou-standard-normal-7e5511f4628bab6b.hfn.gz",
+          "sha256": "7e5511f4628bab6bf125ab238159f321f211b8f25eac556958332338a40d6444",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 722770,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-guangzhou-standard-mask",
+          "url": "assets/mastergo-guangzhou-standard-mask-b441ec9e2303b0d6.webp",
+          "sha256": "b441ec9e2303b0d6e177a8304b38298d41630cfa1f13a4db4bebc9d46af5eecf",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 146388,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-guangzhou-standard-normal",
+          "url": "assets/mastergo-guangzhou-standard-normal-7e5511f4628bab6b.hfn.gz",
+          "sha256": "7e5511f4628bab6bf125ab238159f321f211b8f25eac556958332338a40d6444",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 722770,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-guangzhou-standard-mask",
+          "url": "assets/mastergo-guangzhou-standard-mask-b441ec9e2303b0d6.webp",
+          "sha256": "b441ec9e2303b0d6e177a8304b38298d41630cfa1f13a4db4bebc9d46af5eecf",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 146388,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-guangzhou-standard-normal",
+          "url": "assets/mastergo-guangzhou-standard-normal-7e5511f4628bab6b.hfn.gz",
+          "sha256": "7e5511f4628bab6bf125ab238159f321f211b8f25eac556958332338a40d6444",
+          "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 722770,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-guangzhou-thumbnail",
+      "url": "assets/mastergo-guangzhou-thumbnail-f10d60e7ee425c7e.webp",
+      "sha256": "f10d60e7ee425c7eae742ae9b521db27be5272e2daeae528f20c937c580b7101",
+      "sourceSha256": "08cfd1b5d5e39901a1fb0934696522218e884e30dfccc2c04dae6dbd2eee4450",
+      "encoding": "webp",
+      "width": 560,
+      "height": 235,
+      "bytes": 38390,
+      "decodedBytes": 526400,
+      "gpuBytes": 701867,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "guangzhou",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-chengdu": {
+    "name": "成都",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-chengdu-standard-mask",
+          "url": "assets/mastergo-chengdu-standard-mask-1cd46e3859e36ac4.webp",
+          "sha256": "1cd46e3859e36ac4a08db44249a1fcc2639c2a047bb3193e5db5ad80be7b3b60",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137442,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chengdu-standard-normal",
+          "url": "assets/mastergo-chengdu-standard-normal-bf8b5102dcd46e4b.hfn.gz",
+          "sha256": "bf8b5102dcd46e4b5e841b6bb1bc39762925c947c104dc2bc867be33cb84da90",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 705327,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-chengdu-standard-mask",
+          "url": "assets/mastergo-chengdu-standard-mask-1cd46e3859e36ac4.webp",
+          "sha256": "1cd46e3859e36ac4a08db44249a1fcc2639c2a047bb3193e5db5ad80be7b3b60",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137442,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chengdu-standard-normal",
+          "url": "assets/mastergo-chengdu-standard-normal-bf8b5102dcd46e4b.hfn.gz",
+          "sha256": "bf8b5102dcd46e4b5e841b6bb1bc39762925c947c104dc2bc867be33cb84da90",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 705327,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-chengdu-standard-mask",
+          "url": "assets/mastergo-chengdu-standard-mask-1cd46e3859e36ac4.webp",
+          "sha256": "1cd46e3859e36ac4a08db44249a1fcc2639c2a047bb3193e5db5ad80be7b3b60",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137442,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chengdu-standard-normal",
+          "url": "assets/mastergo-chengdu-standard-normal-bf8b5102dcd46e4b.hfn.gz",
+          "sha256": "bf8b5102dcd46e4b5e841b6bb1bc39762925c947c104dc2bc867be33cb84da90",
+          "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 705327,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-chengdu-thumbnail",
+      "url": "assets/mastergo-chengdu-thumbnail-843cfba58b3e1e9b.webp",
+      "sha256": "843cfba58b3e1e9b0c73897bfb8790a91bab9aadd7f76682333ab157514ae4ce",
+      "sourceSha256": "76b442189309465c05b13d0753da9953a8f99e3ba3c3d4d0766b6e77f4fecf29",
+      "encoding": "webp",
+      "width": 560,
+      "height": 206,
+      "bytes": 32438,
+      "decodedBytes": 461440,
+      "gpuBytes": 615254,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "chengdu",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-jingdezhen": {
+    "name": "景德镇",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-jingdezhen-standard-mask",
+          "url": "assets/mastergo-jingdezhen-standard-mask-6e2be7d056d823a0.webp",
+          "sha256": "6e2be7d056d823a06f3f162fe0f7ab404193cb4d8fa67c0e1c97c2152f2f073e",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 157928,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-jingdezhen-standard-normal",
+          "url": "assets/mastergo-jingdezhen-standard-normal-8ddf4fa71f13ebb5.hfn.gz",
+          "sha256": "8ddf4fa71f13ebb5b1d11a5942305a711b346cffe47f59080ab91aac054f8fb0",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 843022,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-jingdezhen-standard-mask",
+          "url": "assets/mastergo-jingdezhen-standard-mask-6e2be7d056d823a0.webp",
+          "sha256": "6e2be7d056d823a06f3f162fe0f7ab404193cb4d8fa67c0e1c97c2152f2f073e",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 157928,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-jingdezhen-standard-normal",
+          "url": "assets/mastergo-jingdezhen-standard-normal-8ddf4fa71f13ebb5.hfn.gz",
+          "sha256": "8ddf4fa71f13ebb5b1d11a5942305a711b346cffe47f59080ab91aac054f8fb0",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 843022,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-jingdezhen-standard-mask",
+          "url": "assets/mastergo-jingdezhen-standard-mask-6e2be7d056d823a0.webp",
+          "sha256": "6e2be7d056d823a06f3f162fe0f7ab404193cb4d8fa67c0e1c97c2152f2f073e",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 157928,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-jingdezhen-standard-normal",
+          "url": "assets/mastergo-jingdezhen-standard-normal-8ddf4fa71f13ebb5.hfn.gz",
+          "sha256": "8ddf4fa71f13ebb5b1d11a5942305a711b346cffe47f59080ab91aac054f8fb0",
+          "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 843022,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-jingdezhen-thumbnail",
+      "url": "assets/mastergo-jingdezhen-thumbnail-ee293bd89342a698.webp",
+      "sha256": "ee293bd89342a698589d25c3d8d94599492beed25eaf2dbda1e74857b05ae094",
+      "sourceSha256": "65da575e47df3c51ad61e07156f9b211b5e6ac30cef86cf17964a98772d1594d",
+      "encoding": "webp",
+      "width": 560,
+      "height": 156,
+      "bytes": 36066,
+      "decodedBytes": 349440,
+      "gpuBytes": 465920,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "jingdezhen",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-hangzhou": {
+    "name": "杭州",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-hangzhou-standard-mask",
+          "url": "assets/mastergo-hangzhou-standard-mask-f970df47e24c73a6.webp",
+          "sha256": "f970df47e24c73a6073baf41440f004f7f349d9f91cf2419ac2ab248da38056d",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 188130,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hangzhou-standard-normal",
+          "url": "assets/mastergo-hangzhou-standard-normal-d915c2501d163e40.hfn.gz",
+          "sha256": "d915c2501d163e405d89e2be222ba82a03495cd3d3c3c2e53520b8cf48dd2ef1",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1000921,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-hangzhou-standard-mask",
+          "url": "assets/mastergo-hangzhou-standard-mask-f970df47e24c73a6.webp",
+          "sha256": "f970df47e24c73a6073baf41440f004f7f349d9f91cf2419ac2ab248da38056d",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 188130,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hangzhou-standard-normal",
+          "url": "assets/mastergo-hangzhou-standard-normal-d915c2501d163e40.hfn.gz",
+          "sha256": "d915c2501d163e405d89e2be222ba82a03495cd3d3c3c2e53520b8cf48dd2ef1",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1000921,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-hangzhou-standard-mask",
+          "url": "assets/mastergo-hangzhou-standard-mask-f970df47e24c73a6.webp",
+          "sha256": "f970df47e24c73a6073baf41440f004f7f349d9f91cf2419ac2ab248da38056d",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 188130,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-hangzhou-standard-normal",
+          "url": "assets/mastergo-hangzhou-standard-normal-d915c2501d163e40.hfn.gz",
+          "sha256": "d915c2501d163e405d89e2be222ba82a03495cd3d3c3c2e53520b8cf48dd2ef1",
+          "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1000921,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-hangzhou-thumbnail",
+      "url": "assets/mastergo-hangzhou-thumbnail-30e0c6feb6ba87fd.webp",
+      "sha256": "30e0c6feb6ba87fde1e109b12454d2daceecf392b56901b6c3aee7faf1a14489",
+      "sourceSha256": "a2fdfc3e4f1c3f1315f289c0ce235ee26a5359152c7ae119ce1950923c620f70",
+      "encoding": "webp",
+      "width": 560,
+      "height": 182,
+      "bytes": 45194,
+      "decodedBytes": 407680,
+      "gpuBytes": 543574,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "hangzhou",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-wuhan": {
+    "name": "武汉",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-wuhan-standard-mask",
+          "url": "assets/mastergo-wuhan-standard-mask-f9a6d40047dd87c4.webp",
+          "sha256": "f9a6d40047dd87c4e8e665dbdbed8975e50e89b0cf157e907567a5b58013a596",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 195620,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-wuhan-standard-normal",
+          "url": "assets/mastergo-wuhan-standard-normal-66f60c1155218b30.hfn.gz",
+          "sha256": "66f60c1155218b3061aaf929261ddd584ec86bf693d1bc86c87857521d47d122",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1004773,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-wuhan-standard-mask",
+          "url": "assets/mastergo-wuhan-standard-mask-f9a6d40047dd87c4.webp",
+          "sha256": "f9a6d40047dd87c4e8e665dbdbed8975e50e89b0cf157e907567a5b58013a596",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 195620,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-wuhan-standard-normal",
+          "url": "assets/mastergo-wuhan-standard-normal-66f60c1155218b30.hfn.gz",
+          "sha256": "66f60c1155218b3061aaf929261ddd584ec86bf693d1bc86c87857521d47d122",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1004773,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-wuhan-standard-mask",
+          "url": "assets/mastergo-wuhan-standard-mask-f9a6d40047dd87c4.webp",
+          "sha256": "f9a6d40047dd87c4e8e665dbdbed8975e50e89b0cf157e907567a5b58013a596",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 195620,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-wuhan-standard-normal",
+          "url": "assets/mastergo-wuhan-standard-normal-66f60c1155218b30.hfn.gz",
+          "sha256": "66f60c1155218b3061aaf929261ddd584ec86bf693d1bc86c87857521d47d122",
+          "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1004773,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-wuhan-thumbnail",
+      "url": "assets/mastergo-wuhan-thumbnail-7281b5efecc48f73.webp",
+      "sha256": "7281b5efecc48f7322cc785276d0d7fe0bff8b0243bb867ba8a7da7ef6fbee8a",
+      "sourceSha256": "13df8712551d1f28e0852d57133d098968034e95b65e965d599a3b8650cfcae6",
+      "encoding": "webp",
+      "width": 560,
+      "height": 207,
+      "bytes": 44770,
+      "decodedBytes": 463680,
+      "gpuBytes": 618240,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "wuhan",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-shenyang": {
+    "name": "沈阳",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-shenyang-standard-mask",
+          "url": "assets/mastergo-shenyang-standard-mask-02197ec16d2f3d3a.webp",
+          "sha256": "02197ec16d2f3d3a4cb71c7f3381d288a2e564f24a075d170ab5d3b8ed5005e7",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 173856,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenyang-standard-normal",
+          "url": "assets/mastergo-shenyang-standard-normal-debe87357dc0f3a4.hfn.gz",
+          "sha256": "debe87357dc0f3a4a8800b24ae45bf461973466b40aa8b51c74bf259d34d6a7b",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 984405,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-shenyang-standard-mask",
+          "url": "assets/mastergo-shenyang-standard-mask-02197ec16d2f3d3a.webp",
+          "sha256": "02197ec16d2f3d3a4cb71c7f3381d288a2e564f24a075d170ab5d3b8ed5005e7",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 173856,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenyang-standard-normal",
+          "url": "assets/mastergo-shenyang-standard-normal-debe87357dc0f3a4.hfn.gz",
+          "sha256": "debe87357dc0f3a4a8800b24ae45bf461973466b40aa8b51c74bf259d34d6a7b",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 984405,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-shenyang-standard-mask",
+          "url": "assets/mastergo-shenyang-standard-mask-02197ec16d2f3d3a.webp",
+          "sha256": "02197ec16d2f3d3a4cb71c7f3381d288a2e564f24a075d170ab5d3b8ed5005e7",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 173856,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenyang-standard-normal",
+          "url": "assets/mastergo-shenyang-standard-normal-debe87357dc0f3a4.hfn.gz",
+          "sha256": "debe87357dc0f3a4a8800b24ae45bf461973466b40aa8b51c74bf259d34d6a7b",
+          "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 984405,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-shenyang-thumbnail",
+      "url": "assets/mastergo-shenyang-thumbnail-e5949223cb7ce51e.webp",
+      "sha256": "e5949223cb7ce51e1d41996376287e391e6c6689a7396958cca0e4c1aca30b2a",
+      "sourceSha256": "544c5b7deb569b80e05f8097a655d95ede397c220d2d70435172057918f519a4",
+      "encoding": "webp",
+      "width": 560,
+      "height": 221,
+      "bytes": 49378,
+      "decodedBytes": 495040,
+      "gpuBytes": 660054,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "shenyang",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-shenzhen": {
+    "name": "深圳",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-shenzhen-standard-mask",
+          "url": "assets/mastergo-shenzhen-standard-mask-c76d1be83e4a6e69.webp",
+          "sha256": "c76d1be83e4a6e69fdd34a47430ba6a4a77d9ff907ef1fcc65641bfbea2aa0f0",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 162124,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenzhen-standard-normal",
+          "url": "assets/mastergo-shenzhen-standard-normal-6f62b89323293440.hfn.gz",
+          "sha256": "6f62b893232934406b06477c69c5dec320383e7976a3e4af763d91016c9821e8",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1048528,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-shenzhen-standard-mask",
+          "url": "assets/mastergo-shenzhen-standard-mask-c76d1be83e4a6e69.webp",
+          "sha256": "c76d1be83e4a6e69fdd34a47430ba6a4a77d9ff907ef1fcc65641bfbea2aa0f0",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 162124,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenzhen-standard-normal",
+          "url": "assets/mastergo-shenzhen-standard-normal-6f62b89323293440.hfn.gz",
+          "sha256": "6f62b893232934406b06477c69c5dec320383e7976a3e4af763d91016c9821e8",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1048528,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-shenzhen-standard-mask",
+          "url": "assets/mastergo-shenzhen-standard-mask-c76d1be83e4a6e69.webp",
+          "sha256": "c76d1be83e4a6e69fdd34a47430ba6a4a77d9ff907ef1fcc65641bfbea2aa0f0",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 162124,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shenzhen-standard-normal",
+          "url": "assets/mastergo-shenzhen-standard-normal-6f62b89323293440.hfn.gz",
+          "sha256": "6f62b893232934406b06477c69c5dec320383e7976a3e4af763d91016c9821e8",
+          "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1048528,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-shenzhen-thumbnail",
+      "url": "assets/mastergo-shenzhen-thumbnail-1ecbfc718be7b8d1.webp",
+      "sha256": "1ecbfc718be7b8d1e44d90f780e846a68cdcf8d5509d4be81f07cafbbbf8ab8a",
+      "sourceSha256": "013f2746945d6a329a50660396fff8b54a7b5688f9db37a8acc2ac42da464650",
+      "encoding": "webp",
+      "width": 560,
+      "height": 204,
+      "bytes": 48020,
+      "decodedBytes": 456960,
+      "gpuBytes": 609280,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "shenzhen",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-shijiazhuang": {
+    "name": "石家庄",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-shijiazhuang-standard-mask",
+          "url": "assets/mastergo-shijiazhuang-standard-mask-dec8bd2c27a6b20e.webp",
+          "sha256": "dec8bd2c27a6b20e6122df4c5e36a92e52ac08a72de0017d54c78f12dba768bb",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 177068,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shijiazhuang-standard-normal",
+          "url": "assets/mastergo-shijiazhuang-standard-normal-29a546b3495b4389.hfn.gz",
+          "sha256": "29a546b3495b4389d9c86c176d7fb9f6f43cdf0ee6d76455f991c3da4705f845",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 891140,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-shijiazhuang-standard-mask",
+          "url": "assets/mastergo-shijiazhuang-standard-mask-dec8bd2c27a6b20e.webp",
+          "sha256": "dec8bd2c27a6b20e6122df4c5e36a92e52ac08a72de0017d54c78f12dba768bb",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 177068,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shijiazhuang-standard-normal",
+          "url": "assets/mastergo-shijiazhuang-standard-normal-29a546b3495b4389.hfn.gz",
+          "sha256": "29a546b3495b4389d9c86c176d7fb9f6f43cdf0ee6d76455f991c3da4705f845",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 891140,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-shijiazhuang-standard-mask",
+          "url": "assets/mastergo-shijiazhuang-standard-mask-dec8bd2c27a6b20e.webp",
+          "sha256": "dec8bd2c27a6b20e6122df4c5e36a92e52ac08a72de0017d54c78f12dba768bb",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 177068,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-shijiazhuang-standard-normal",
+          "url": "assets/mastergo-shijiazhuang-standard-normal-29a546b3495b4389.hfn.gz",
+          "sha256": "29a546b3495b4389d9c86c176d7fb9f6f43cdf0ee6d76455f991c3da4705f845",
+          "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 891140,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-shijiazhuang-thumbnail",
+      "url": "assets/mastergo-shijiazhuang-thumbnail-ec1c210442ead337.webp",
+      "sha256": "ec1c210442ead33704490f25d947aedb5c1ca4fed705fd53758feba200ee68a0",
+      "sourceSha256": "9d24836b695c4d285fe4647696f353f6a95eb7aeeeb7fa42abe38d139ab5bcc5",
+      "encoding": "webp",
+      "width": 560,
+      "height": 200,
+      "bytes": 42190,
+      "decodedBytes": 448000,
+      "gpuBytes": 597334,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "shijiazhuang",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-xian": {
+    "name": "西安",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-xian-standard-mask",
+          "url": "assets/mastergo-xian-standard-mask-168fe9e49247f256.webp",
+          "sha256": "168fe9e49247f256a7bf7dd8270b735b47fbc401ec13aed4862945ef0f04caa3",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 215564,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xian-standard-normal",
+          "url": "assets/mastergo-xian-standard-normal-6b90b75ec9892acb.hfn.gz",
+          "sha256": "6b90b75ec9892acb4439b5255cb890283633968a84ec045ff371a08d4786ed6e",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1002948,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-xian-standard-mask",
+          "url": "assets/mastergo-xian-standard-mask-168fe9e49247f256.webp",
+          "sha256": "168fe9e49247f256a7bf7dd8270b735b47fbc401ec13aed4862945ef0f04caa3",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 215564,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xian-standard-normal",
+          "url": "assets/mastergo-xian-standard-normal-6b90b75ec9892acb.hfn.gz",
+          "sha256": "6b90b75ec9892acb4439b5255cb890283633968a84ec045ff371a08d4786ed6e",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1002948,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-xian-standard-mask",
+          "url": "assets/mastergo-xian-standard-mask-168fe9e49247f256.webp",
+          "sha256": "168fe9e49247f256a7bf7dd8270b735b47fbc401ec13aed4862945ef0f04caa3",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 215564,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-xian-standard-normal",
+          "url": "assets/mastergo-xian-standard-normal-6b90b75ec9892acb.hfn.gz",
+          "sha256": "6b90b75ec9892acb4439b5255cb890283633968a84ec045ff371a08d4786ed6e",
+          "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1002948,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-xian-thumbnail",
+      "url": "assets/mastergo-xian-thumbnail-289689dd52341008.webp",
+      "sha256": "289689dd52341008da455d51f562659ef0e0f2130080dab6897b10a4a8a94d3a",
+      "sourceSha256": "a5b4f6681cd27cdf75b60ebb3f1fb68f26fcc9407827fc716442e4882d259766",
+      "encoding": "webp",
+      "width": 560,
+      "height": 155,
+      "bytes": 42968,
+      "decodedBytes": 347200,
+      "gpuBytes": 462934,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "xian",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-zhengzhou": {
+    "name": "郑州",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-zhengzhou-standard-mask",
+          "url": "assets/mastergo-zhengzhou-standard-mask-678f758b7fe7286f.webp",
+          "sha256": "678f758b7fe7286f5f74f50cc35fada617071ef42d9e589e0de1bfd6c40179d5",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 200170,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-zhengzhou-standard-normal",
+          "url": "assets/mastergo-zhengzhou-standard-normal-4a7b19467ab691d3.hfn.gz",
+          "sha256": "4a7b19467ab691d3bfd9520a27395146cbf5b10af1f3efefff24e587057ea58a",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 978169,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-zhengzhou-standard-mask",
+          "url": "assets/mastergo-zhengzhou-standard-mask-678f758b7fe7286f.webp",
+          "sha256": "678f758b7fe7286f5f74f50cc35fada617071ef42d9e589e0de1bfd6c40179d5",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 200170,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-zhengzhou-standard-normal",
+          "url": "assets/mastergo-zhengzhou-standard-normal-4a7b19467ab691d3.hfn.gz",
+          "sha256": "4a7b19467ab691d3bfd9520a27395146cbf5b10af1f3efefff24e587057ea58a",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 978169,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-zhengzhou-standard-mask",
+          "url": "assets/mastergo-zhengzhou-standard-mask-678f758b7fe7286f.webp",
+          "sha256": "678f758b7fe7286f5f74f50cc35fada617071ef42d9e589e0de1bfd6c40179d5",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 200170,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-zhengzhou-standard-normal",
+          "url": "assets/mastergo-zhengzhou-standard-normal-4a7b19467ab691d3.hfn.gz",
+          "sha256": "4a7b19467ab691d3bfd9520a27395146cbf5b10af1f3efefff24e587057ea58a",
+          "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 978169,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-zhengzhou-thumbnail",
+      "url": "assets/mastergo-zhengzhou-thumbnail-f2cfc9f246d0faa8.webp",
+      "sha256": "f2cfc9f246d0faa8ccfdcc5439e175bba69c73fbdf744a9857a24ef18cfd4970",
+      "sourceSha256": "f40de310a484d8255d5b6cba757992571581650447c094851821f6a10988af66",
+      "encoding": "webp",
+      "width": 560,
+      "height": 222,
+      "bytes": 47748,
+      "decodedBytes": 497280,
+      "gpuBytes": 663040,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "zhengzhou",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-chongqing": {
+    "name": "重庆",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-chongqing-standard-mask",
+          "url": "assets/mastergo-chongqing-standard-mask-35705b7c7c095e42.webp",
+          "sha256": "35705b7c7c095e42de80f27e14a25de645687895019afde464637959c782e14e",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 184920,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chongqing-standard-normal",
+          "url": "assets/mastergo-chongqing-standard-normal-e434ec41b7dfe336.hfn.gz",
+          "sha256": "e434ec41b7dfe336f74aa10024b40ae6194a616f71c2ca8e0815501f1688728b",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1121266,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-chongqing-standard-mask",
+          "url": "assets/mastergo-chongqing-standard-mask-35705b7c7c095e42.webp",
+          "sha256": "35705b7c7c095e42de80f27e14a25de645687895019afde464637959c782e14e",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 184920,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chongqing-standard-normal",
+          "url": "assets/mastergo-chongqing-standard-normal-e434ec41b7dfe336.hfn.gz",
+          "sha256": "e434ec41b7dfe336f74aa10024b40ae6194a616f71c2ca8e0815501f1688728b",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1121266,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-chongqing-standard-mask",
+          "url": "assets/mastergo-chongqing-standard-mask-35705b7c7c095e42.webp",
+          "sha256": "35705b7c7c095e42de80f27e14a25de645687895019afde464637959c782e14e",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 184920,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-chongqing-standard-normal",
+          "url": "assets/mastergo-chongqing-standard-normal-e434ec41b7dfe336.hfn.gz",
+          "sha256": "e434ec41b7dfe336f74aa10024b40ae6194a616f71c2ca8e0815501f1688728b",
+          "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 1121266,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-chongqing-thumbnail",
+      "url": "assets/mastergo-chongqing-thumbnail-94ccd21947c75e13.webp",
+      "sha256": "94ccd21947c75e13e9fb433d579d33a0c4f4cdcfeaa20536e25e0139b336a85c",
+      "sourceSha256": "1dd3c08620cd4c1a0131aec8c5602c84d6ea6d68104f7dc13846ead100015b01",
+      "encoding": "webp",
+      "width": 560,
+      "height": 182,
+      "bytes": 51776,
+      "decodedBytes": 407680,
+      "gpuBytes": 543574,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "chongqing",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-changchun": {
+    "name": "长春",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-changchun-standard-mask",
+          "url": "assets/mastergo-changchun-standard-mask-0df7e81a1f2f19e2.webp",
+          "sha256": "0df7e81a1f2f19e2986c87a42415ce2b45100bbdadd1c7ed7adda35ea4783bfb",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143534,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-changchun-standard-normal",
+          "url": "assets/mastergo-changchun-standard-normal-88b193f327bd830d.hfn.gz",
+          "sha256": "88b193f327bd830d8c3e0100c2869509563358c46c04de147c225f48c38585e5",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 873760,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-changchun-standard-mask",
+          "url": "assets/mastergo-changchun-standard-mask-0df7e81a1f2f19e2.webp",
+          "sha256": "0df7e81a1f2f19e2986c87a42415ce2b45100bbdadd1c7ed7adda35ea4783bfb",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143534,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-changchun-standard-normal",
+          "url": "assets/mastergo-changchun-standard-normal-88b193f327bd830d.hfn.gz",
+          "sha256": "88b193f327bd830d8c3e0100c2869509563358c46c04de147c225f48c38585e5",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 873760,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-changchun-standard-mask",
+          "url": "assets/mastergo-changchun-standard-mask-0df7e81a1f2f19e2.webp",
+          "sha256": "0df7e81a1f2f19e2986c87a42415ce2b45100bbdadd1c7ed7adda35ea4783bfb",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143534,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-changchun-standard-normal",
+          "url": "assets/mastergo-changchun-standard-normal-88b193f327bd830d.hfn.gz",
+          "sha256": "88b193f327bd830d8c3e0100c2869509563358c46c04de147c225f48c38585e5",
+          "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 873760,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-changchun-thumbnail",
+      "url": "assets/mastergo-changchun-thumbnail-590cb734a2becabd.webp",
+      "sha256": "590cb734a2becabdbaf66bbea30115437de3fad21fd5635fe5942f3cd3491fd1",
+      "sourceSha256": "99d0604bdaae9c7f7a8df3465290abac59470e2ec15480ed81fac8adefefd325",
+      "encoding": "webp",
+      "width": 560,
+      "height": 185,
+      "bytes": 40210,
+      "decodedBytes": 414400,
+      "gpuBytes": 552534,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "changchun",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "mastergo-qingdao": {
+    "name": "青岛",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "mastergo-qingdao-standard-mask",
+          "url": "assets/mastergo-qingdao-standard-mask-4e7d834cf8002504.webp",
+          "sha256": "4e7d834cf8002504c1032a491db265f994780f30393f37aa25b65bb1a6643e2e",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143864,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-qingdao-standard-normal",
+          "url": "assets/mastergo-qingdao-standard-normal-0a6874b9fe3f2141.hfn.gz",
+          "sha256": "0a6874b9fe3f21418099b28c37df756a9231b1bd0da70edf108dd76ba36f5906",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 773758,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "mastergo-qingdao-standard-mask",
+          "url": "assets/mastergo-qingdao-standard-mask-4e7d834cf8002504.webp",
+          "sha256": "4e7d834cf8002504c1032a491db265f994780f30393f37aa25b65bb1a6643e2e",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143864,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-qingdao-standard-normal",
+          "url": "assets/mastergo-qingdao-standard-normal-0a6874b9fe3f2141.hfn.gz",
+          "sha256": "0a6874b9fe3f21418099b28c37df756a9231b1bd0da70edf108dd76ba36f5906",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 773758,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "mastergo-qingdao-standard-mask",
+          "url": "assets/mastergo-qingdao-standard-mask-4e7d834cf8002504.webp",
+          "sha256": "4e7d834cf8002504c1032a491db265f994780f30393f37aa25b65bb1a6643e2e",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 143864,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "mastergo-qingdao-standard-normal",
+          "url": "assets/mastergo-qingdao-standard-normal-0a6874b9fe3f2141.hfn.gz",
+          "sha256": "0a6874b9fe3f21418099b28c37df756a9231b1bd0da70edf108dd76ba36f5906",
+          "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 773758,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "mastergo-qingdao-thumbnail",
+      "url": "assets/mastergo-qingdao-thumbnail-70b479a41b1cefc5.webp",
+      "sha256": "70b479a41b1cefc5b3fbfde6732f3630b6ffc339355ebf49118df4cb54d3e074",
+      "sourceSha256": "fdce83e50df0afa57f9b4289b5581ceef67ff516986cc72cc1e430860ddfc514",
+      "encoding": "webp",
+      "width": 560,
+      "height": 217,
+      "bytes": 38912,
+      "decodedBytes": 486080,
+      "gpuBytes": 648107,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "qingdao",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "bezier-shenzhen": {
+    "name": "深圳",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "bezier-shenzhen-standard-mask",
+          "url": "assets/bezier-shenzhen-standard-mask-7385793204808837.webp",
+          "sha256": "7385793204808837639625bde65d6608241f1a21c01039987b4fb2616f6d4b7a",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 126686,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-shenzhen-standard-normal",
+          "url": "assets/bezier-shenzhen-standard-normal-5cc791fc682eb79e.hfn.gz",
+          "sha256": "5cc791fc682eb79ee4cb1d4f5ddc03076838e98eda98af9521a2f9691c48ed01",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 572502,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "bezier-shenzhen-standard-mask",
+          "url": "assets/bezier-shenzhen-standard-mask-7385793204808837.webp",
+          "sha256": "7385793204808837639625bde65d6608241f1a21c01039987b4fb2616f6d4b7a",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 126686,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-shenzhen-standard-normal",
+          "url": "assets/bezier-shenzhen-standard-normal-5cc791fc682eb79e.hfn.gz",
+          "sha256": "5cc791fc682eb79ee4cb1d4f5ddc03076838e98eda98af9521a2f9691c48ed01",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 572502,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "bezier-shenzhen-standard-mask",
+          "url": "assets/bezier-shenzhen-standard-mask-7385793204808837.webp",
+          "sha256": "7385793204808837639625bde65d6608241f1a21c01039987b4fb2616f6d4b7a",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 126686,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-shenzhen-standard-normal",
+          "url": "assets/bezier-shenzhen-standard-normal-5cc791fc682eb79e.hfn.gz",
+          "sha256": "5cc791fc682eb79ee4cb1d4f5ddc03076838e98eda98af9521a2f9691c48ed01",
+          "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 572502,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "bezier-shenzhen-thumbnail",
+      "url": "assets/bezier-shenzhen-thumbnail-76efa28ce4781e0f.webp",
+      "sha256": "76efa28ce4781e0f4572e927771576861c69e159fd0bcca9347bb041e374d7c6",
+      "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+      "encoding": "webp",
+      "width": 560,
+      "height": 204,
+      "bytes": 37312,
+      "decodedBytes": 456960,
+      "gpuBytes": 609280,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "shenzhen",
+    "experimental": true,
+    "rasterWidth": 2048
+  },
+  "bezier-beijing": {
+    "name": "北京",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "bezier-beijing-standard-mask",
+          "url": "assets/bezier-beijing-standard-mask-4250fb5b3a6a91b8.webp",
+          "sha256": "4250fb5b3a6a91b80a6177adeb74f667979ead90172730c6b312c0114ff9b0db",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137858,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-beijing-standard-normal",
+          "url": "assets/bezier-beijing-standard-normal-21f4ac8db6c10c5a.hfn.gz",
+          "sha256": "21f4ac8db6c10c5a6f02c049950f04db6b1036a25489a01365898a0802c3d0e7",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 671092,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "bezier-beijing-standard-mask",
+          "url": "assets/bezier-beijing-standard-mask-4250fb5b3a6a91b8.webp",
+          "sha256": "4250fb5b3a6a91b80a6177adeb74f667979ead90172730c6b312c0114ff9b0db",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137858,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-beijing-standard-normal",
+          "url": "assets/bezier-beijing-standard-normal-21f4ac8db6c10c5a.hfn.gz",
+          "sha256": "21f4ac8db6c10c5a6f02c049950f04db6b1036a25489a01365898a0802c3d0e7",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 671092,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "bezier-beijing-standard-mask",
+          "url": "assets/bezier-beijing-standard-mask-4250fb5b3a6a91b8.webp",
+          "sha256": "4250fb5b3a6a91b80a6177adeb74f667979ead90172730c6b312c0114ff9b0db",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 137858,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "bezier-beijing-standard-normal",
+          "url": "assets/bezier-beijing-standard-normal-21f4ac8db6c10c5a.hfn.gz",
+          "sha256": "21f4ac8db6c10c5a6f02c049950f04db6b1036a25489a01365898a0802c3d0e7",
+          "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 671092,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "thumbnail": {
+      "id": "bezier-beijing-thumbnail",
+      "url": "assets/bezier-beijing-thumbnail-104f5fc135bccbea.webp",
+      "sha256": "104f5fc135bccbeab581bf2df828ceb002500a81cab9c31e8b60ae80269d1dc5",
+      "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+      "encoding": "webp",
+      "width": 560,
+      "height": 171,
+      "bytes": 41418,
+      "decodedBytes": 383040,
+      "gpuBytes": 510720,
+      "channels": 4,
+      "colorSpace": "srgb"
+    },
+    "cityId": "beijing",
+    "experimental": true,
+    "rasterWidth": 2048
+  }
+}

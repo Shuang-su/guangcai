@@ -1,0 +1,11 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "browser": "Chrome / Playwright (Browser plugin not available)",
+  "viewports": [],
+  "checks": [],
+  "errors": [],
+  "warnings": [],
+  "physicalDeviceTested": false,
+  "passed": false,
+  "failure": "page.waitForFunction: Timeout 90000ms exceeded.\n    at settled (/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/tools/v7/city-alignment-qa.mjs:15:41)\n    at /Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/tools/v7/city-alignment-qa.mjs:19:29"
+}
