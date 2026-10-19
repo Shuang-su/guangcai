@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>北京 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="bj-hills-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#bj-hills-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="bj-hills" data-building="bj-hills" data-name="背景山线" data-kind="background" fill="none" stroke="#fc9f07" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="背景山线">
+    <title>背景山线</title>
+    <path id="bj-hills-outline" d="M 145 1622 C 200 1595 250 1540 335 1500 C 560 1400 910 1430 1050 1390 C 1290 1360 1460 1330 1730 1332 C 2010 1370 2110 1210 2260 1245 C 2520 1290 2650 1490 2870 1452 C 2980 1430 3010 1405 3115 1418 C 3330 1445 3490 1600 3710 1622 L 145 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="bj-hills-components" clip-path="url(#bj-hills-clip)" />
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+{
+  "siteId": "52e02ef9-e2d8-4fcb-98ed-1d14e283c74c",
+  "siteName": "guangcai-no1-china-v7",
+  "sourceCommit": "aba6d1a5488683b7ae51cc193c6433bab45873f0",
+  "sourceBranch": "main",
+  "date": "2026-10-19T18:48:06.845Z",
+  "status": "server-verified-browser-check-pending",
+  "physicalDeviceAcceptance": "pending",
+  "previousPublished": "6ad64f4df744e9df794ecaee",
+  "protectedBefore": [
+    {
+      "id": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+      "name": "guangcai-no1-china-v6",
+      "publishedDeploy": "6ad314a2a5e661a14e469026",
+      "gitConnected": false
+    },
+    {
+      "id": "b1fce272-cf28-41e5-8366-024c314b615f",
+      "name": "guangcai-no1-china-v5",
+      "publishedDeploy": "6ad20c45a7780e55fedba3d7",
+      "gitConnected": false
+    },
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "publishedDeploy": "6acf18984f3abc04fe3cab18",
+      "gitConnected": false
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "publishedDeploy": "6ace443df7425f433e717eb0",
+      "gitConnected": false
+    },
+    {
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "publishedDeploy": "6ace111ab0415c9455a3c6f8",
+      "gitConnected": false
+    }
+  ],
+  "fileCount": 1159,
+  "manifestSha256": "7c166fc56634e376ed82781694b5eb931b155c46de2818092c6a5b958a79df1e",
+  "deployId": "6ad665ed5a65f73c7d481d66",
+  "requiredFiles": 281,
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "permalink": "https://6ad665ed5a65f73c7d481d66--guangcai-no1-china-v7.netlify.app/",
+  "remoteFilesMatched": 1159,
+  "protectedAfter": [
+    {
+      "id": "15a98425-f9a2-4c44-afbe-5859f4b5d1f7",
+      "name": "guangcai-no1-china-v6",
+      "publishedDeploy": "6ad314a2a5e661a14e469026",
+      "gitConnected": false
+    },
+    {
+      "id": "b1fce272-cf28-41e5-8366-024c314b615f",
+      "name": "guangcai-no1-china-v5",
+      "publishedDeploy": "6ad20c45a7780e55fedba3d7",
+      "gitConnected": false
+    },
+    {
+      "id": "cbb885ed-16d0-41a2-9ab0-055c0c3ce234",
+      "name": "guangcai-no1-china-v4",
+      "publishedDeploy": "6acf18984f3abc04fe3cab18",
+      "gitConnected": false
+    },
+    {
+      "id": "71306515-d3d5-46a9-8f36-e51f4f3ae480",
+      "name": "guangcai-no1-china-v3",
+      "publishedDeploy": "6ace443df7425f433e717eb0",
+      "gitConnected": false
+    },
+    {
+      "id": "8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f",
+      "name": "guangcai-no1-china",
+      "publishedDeploy": "6ace111ab0415c9455a3c6f8",
+      "gitConnected": false
+    }
+  ],
+  "archive": "deployments/guangcai-no1-china-v7/6ad665ed5a65f73c7d481d66"
+}
