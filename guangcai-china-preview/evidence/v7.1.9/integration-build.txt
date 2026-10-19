@@ -1,0 +1,31 @@
+
+> guangcai-china-v4@7.1.9 build:integration
+> tsc --noEmit && vite build --mode integration
+
+vite v8.3.1 building client environment for integration...
+transforming...
+<script src="/runtime-config.js"> in "/integration/index.html" can't be bundled without type="module" attribute
+<script src="/runtime-config.js"> in "/index.html" can't be bundled without type="module" attribute
+
+/backgrounds/soft-light-v3-d06c52a8f2003f50.webp referenced in /backgrounds/soft-light-v3-d06c52a8f2003f50.webp didn't resolve at build time, it will remain unchanged to be resolved at runtime
+✓ 228 modules transformed.
+rendering chunks...
+computing gzip size...
+.codex-work/deploy/v7-integration/integration/index.html                   2.52 kB │ gzip:   1.50 kB
+.codex-work/deploy/v7-integration/index.html                               4.12 kB │ gzip:   1.95 kB
+.codex-work/deploy/v7-integration/assets/decode.worker-DRG5ZHis.js         6.77 kB
+.codex-work/deploy/v7-integration/assets/index-m0pXmlyI.css               52.22 kB │ gzip:  10.87 kB
+.codex-work/deploy/v7-integration/assets/map-encoder.worker-gG3z5fOt.js    3.20 kB │ gzip:   1.54 kB
+.codex-work/deploy/v7-integration/assets/index-CJD0vY8K.js                 3.32 kB │ gzip:   1.66 kB
+.codex-work/deploy/v7-integration/assets/client-Dla2WQUb.js                8.08 kB │ gzip:   3.60 kB
+.codex-work/deploy/v7-integration/assets/gpu-Cf_cBAOL.js                 152.55 kB │ gzip:  48.61 kB
+.codex-work/deploy/v7-integration/assets/index-nV3yFkb8.js               909.77 kB │ gzip: 258.75 kB
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mvendor/glass-hq/src/webgl2/index.ts is dynamically imported by vendor/glass-hq/src/dom/renderer.ts but also statically imported by src/ui/glass-studio.ts, dynamic import will not move module into another chunk.
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 650 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.10s
