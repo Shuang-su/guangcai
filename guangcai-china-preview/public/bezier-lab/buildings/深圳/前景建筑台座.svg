@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-plinths-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-plinths-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-plinths" data-building="sz-plinths" data-name="前景建筑台座" data-kind="foreground" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="前景建筑台座">
+    <title>前景建筑台座</title>
+    <path id="sz-plinths-outline" d="M 324 1598 L 492 1598 L 492 1622 L 324 1622 Z M 606 1545 L 861 1545 L 861 1585 L 606 1585 Z M 546 1601 L 891 1601 L 891 1622 L 546 1622 Z M 955 1595 L 1155 1595 L 1155 1622 L 955 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-plinths-components" clip-path="url(#sz-plinths-clip)">
+      <path id="sz-plinths-p005" d="M 333 1606 L 483 1606" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p006" d="M 615 1553 L 852 1553" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p007" d="M 555 1609 L 882 1609" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p008" d="M 964 1603 L 1146 1603" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+    </g>
+    <path id="sz-plinths-p001" d="M 324 1598 L 492 1598 L 492 1622 L 324 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p002" d="M 606 1545 L 861 1545 L 861 1585 L 606 1585 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p003" d="M 546 1601 L 891 1601 L 891 1622 L 546 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p004" d="M 955 1595 L 1155 1595 L 1155 1622 L 955 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+  </g>
+</svg>

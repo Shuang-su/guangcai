@@ -1,0 +1,52 @@
+{
+  "url": "http://127.0.0.1:5287/city-compare/",
+  "checks": [
+    "meaningful comparison page and 23 cities",
+    "page title",
+    "no framework overlay",
+    "all comparison images and city shanghai",
+    "all comparison images and city urumqi",
+    "all comparison images and city beijing",
+    "all comparison images and city nanjing",
+    "all comparison images and city nanchang",
+    "all comparison images and city xiamen",
+    "all comparison images and city hohhot",
+    "all comparison images and city harbin",
+    "all comparison images and city tianjin",
+    "all comparison images and city taiyuan",
+    "all comparison images and city guangzhou",
+    "all comparison images and city chengdu",
+    "all comparison images and city jingdezhen",
+    "all comparison images and city hangzhou",
+    "all comparison images and city wuhan",
+    "all comparison images and city shenyang",
+    "all comparison images and city shenzhen",
+    "all comparison images and city shijiazhuang",
+    "all comparison images and city xian",
+    "all comparison images and city zhengzhou",
+    "all comparison images and city chongqing",
+    "all comparison images and city changchun",
+    "all comparison images and city qingdao",
+    "keyboard wipe to new image",
+    "keyboard wipe to old image",
+    "gold tab updates actual images",
+    "filter has nine changed pixel originals",
+    "desktop no horizontal overflow",
+    "mobile direct city anchor",
+    "mobile city selector",
+    "mobile no horizontal overflow",
+    "no console or runtime errors"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "passed": true
+}

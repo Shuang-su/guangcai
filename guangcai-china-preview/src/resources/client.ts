@@ -16,8 +16,8 @@ async function json<T>(url:string,signal?:AbortSignal){
 }
 export async function loadResources(releaseId?:string,signal?:AbortSignal){
  let bootstrap=await json<Bootstrap>(new URL(config.bootstrapUrl??'api/v1/bootstrap.json',appBase).href,signal);
- if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
- if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
+ if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4','v7-5'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
+ if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4','v7-5'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
  const manifestUrl=new URL(bootstrap.manifestUrl,new URL(config.assetBase??appBase,appBase)).href;
  const manifest=await json<ResourceManifest>(manifestUrl,signal);
  if(manifest.schemaVersion!==1||manifest.releaseId!==bootstrap.releaseId||manifest.modelVersion!=='china-cup-v6'||manifest.recipeVersion!=='porcelain-city-v6')throw Error('Unsupported model or recipe');

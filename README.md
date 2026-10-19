@@ -1,18 +1,20 @@
 # 广彩一号杯与中国杯
 
+2026-10-19：V7.1.4 / v7-5 发布批次，更新23城描线与底部对齐，文字及字框沿用V7.1.3。新增 [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) 与 [独立闭合建筑SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/)；发布核验以本轮完成记录为准。后台Excel/JSON仍为v7-4历史导出。
+
 广彩项目的正式开发仓库，保存完整源码、必要设计素材、工具、修改记录和发布证据。仓库为私有；设计资料不代表公开授权。
 
 本机当前主仓库为 `/Volumes/Prism_初号機/广彩/guangcai-main/`，稳定入口为同盘的 `guangcai-repo/`。旧工作区、历史工程恢复包及内盘失败下载包已按用户选择清理；源码和资源从正式 Git / Git LFS 按需取回，素材原件继续保留。位置与方法见[工作区说明](WORKSPACE_LOCATIONS.md)、[Git恢复说明](docs/changes/20261018-exfat-and-v4-retirement/restore-v4.md)及[最终清理回执](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。这些路径描述本机布局，不是安装或部署前置条件。
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 当前开发交付候选：V7.1.3 / v7-4
+## 当前发布批次：V7.1.4 / v7-5
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 
 [V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.3 预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [实现 PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [验证与交付记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md)
 
-[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-4`，保留 `v7-1`～`v7-3`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
+[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-5`，保留 `v7-1`～`v7-4`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
@@ -145,3 +147,11 @@ python3 tools/test_verify_archive.py
 4.3 [北京主题的请求、素材与验证记录](docs/changes/20261014-beijing-4.3/completion.md)，关联 [Issue #21](https://github.com/Shuang-su/guangcai/issues/21)。
 
 
+
+## V7.1.4 描线与素材查看
+
+新资源保留原PNG导出缩放，23城三级实色描线均贴到底部。9个文件像素有变化，其中景德镇5像素、郑州6像素不改变二值金线，复用已审核几何；14个文件完全相同。西安保留已批准的建筑填色。六组文字、字框、固定花纸与底印保持v7-4。
+
+`/city-compare/` 提供23城逐项对比；`/bezier-lab/` 是另一个聊天最新两城独立闭合SVG试绘，含22个独立对象，不替换应用图案。
+
+[V7.1.4 Issue #41](https://github.com/Shuang-su/guangcai/issues/41) · [本轮完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)。当前后台表格为v7-4导出；接入v7-5时以更新后的bootstrap、catalog、manifest和JSON Schema为准。

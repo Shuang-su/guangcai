@@ -1,0 +1,18 @@
+// Browser plugin absent. Exercise the requested /city-compare/ page in Chrome.
+import {chromium} from 'playwright';import fs from 'node:fs/promises';import assert from 'node:assert/strict';
+const url=process.env.COMPARISON_URL??'http://127.0.0.1:5286/city-compare/',out=process.env.COMPARISON_OUT??'evidence/v7.1.4';await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({channel:'chrome'}),report={url,checks:[],errors:[],viewports:[{width:1440,height:1000},{width:390,height:844}]};
+function check(name,v){assert.ok(v,name);report.checks.push(name);}
+async function images(page){await page.locator('img').evaluateAll(imgs=>imgs.forEach(img=>img.loading='eager'));await page.waitForFunction(()=>[...document.images].every(img=>img.complete&&img.naturalWidth>0),null,{timeout:30000});}
+try{
+ const p=await browser.newPage({viewport:report.viewports[0]});p.on('pageerror',e=>report.errors.push(e.message));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});
+ await p.goto(url);await p.waitForSelector('h2');check('meaningful comparison page and 23 cities',await p.locator('.city').count()===23);check('page title',(await p.title()).includes('图案对比'));check('no framework overlay',await p.locator('vite-error-overlay').count()===0);
+ const cities=await p.locator('#city-select option').evaluateAll(opts=>opts.map(o=>({id:o.value,name:o.textContent})));
+ for(const [i,c]of cities.entries()){await p.locator(`.city[data-index="${i}"]`).click();await images(p);check('all comparison images and city '+c.id,(await p.locator('h2').textContent())===c.name&&new URL(p.url()).hash==='#'+c.id);}
+ await p.locator('.city[data-index="8"]').click();await images(p);const slider=p.locator('#wipe-range');await slider.focus();await slider.press('End');check('keyboard wipe to new image',(await p.locator('.wipe .new').getAttribute('style')).includes('0%'));await slider.press('Home');check('keyboard wipe to old image',(await p.locator('.wipe .new').getAttribute('style')).includes('100%'));
+ await p.getByRole('tab',{name:'同心金',exact:true}).click();await images(p);check('gold tab updates actual images',(await p.locator('#cup-pair img').first().getAttribute('src')).includes('-gold-'));
+ await p.locator('#only-changed').check();check('filter has nine changed pixel originals',await p.locator('.city').count()===9);await p.locator('#only-changed').uncheck();
+ await p.evaluate(()=>scrollTo(0,0));await p.screenshot({path:out+'/comparison-desktop.png',fullPage:true});await p.screenshot({path:out+'/comparison-overview.png'});check('desktop no horizontal overflow',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ const mobile=await browser.newPage({viewport:report.viewports[1],isMobile:true,hasTouch:true});mobile.on('pageerror',e=>report.errors.push(e.message));await mobile.goto(url+'#shenzhen');await mobile.waitForSelector('h2');await images(mobile);check('mobile direct city anchor',await mobile.locator('h2').textContent()==='深圳');await mobile.locator('#city-select').selectOption('xian');await images(mobile);check('mobile city selector',await mobile.locator('h2').textContent()==='西安');check('mobile no horizontal overflow',await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await mobile.screenshot({path:out+'/comparison-mobile.png',fullPage:true});
+ check('no console or runtime errors',report.errors.length===0);report.passed=true;
+}catch(e){report.failure=e.stack;report.passed=false;process.exitCode=1;}finally{await browser.close();await fs.writeFile(out+'/comparison-browser.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));}

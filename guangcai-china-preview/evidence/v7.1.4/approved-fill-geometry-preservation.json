@@ -1,0 +1,251 @@
+{
+  "manifest": "manifest-ce22329fb934d373.json",
+  "proof": [
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "sourceSha256": "c87bf92701b919014d0de31113aa627427989144ede5bbe9e124efce21244a14",
+      "sourceChanged": true,
+      "method": "translate reviewed line/fill/normal together; source ink geometry identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            49,
+            213,
+            888,
+            446
+          ],
+          "coverageBounds": [
+            49,
+            213,
+            888,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            100,
+            425,
+            1776,
+            892
+          ],
+          "coverageBounds": [
+            100,
+            425,
+            1776,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            202,
+            849,
+            3551,
+            1783
+          ],
+          "coverageBounds": [
+            202,
+            849,
+            3551,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "sourceSha256": "fc62fe5380af329616b5abebf5fb0fdfc2ab810d9eead0b1ae820b01be2d1e5f",
+      "sourceChanged": true,
+      "method": "translate reviewed line/fill/normal together; source ink geometry identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            63,
+            143,
+            828,
+            446
+          ],
+          "coverageBounds": [
+            63,
+            143,
+            828,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            127,
+            286,
+            1656,
+            892
+          ],
+          "coverageBounds": [
+            127,
+            286,
+            1656,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            256,
+            572,
+            3313,
+            1783
+          ],
+          "coverageBounds": [
+            256,
+            572,
+            3313,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "xian",
+      "tier": "light",
+      "fillChangedPixels": 4498,
+      "outlineUnchanged": true,
+      "normalUnchanged": true,
+      "normalSha256": "b690eafc22b1a5e533f1b46db0e5ba3999b2a1d3dbaaabdc53677b3e6e41ff68",
+      "before": {
+        "id": "xian-light-mask",
+        "url": "assets/xian-light-mask-c08ba5df312483c4.webp",
+        "sha256": "c08ba5df312483c45cf76c11ec83ed01d327339fe5473be37f4b6dff75d405b1",
+        "sourceSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+        "encoding": "webp",
+        "width": 1024,
+        "height": 446,
+        "bytes": 67616,
+        "decodedBytes": 913408,
+        "gpuBytes": 1217878,
+        "channels": 2,
+        "colorSpace": "linear"
+      },
+      "after": {
+        "id": "xian-light-mask",
+        "url": "assets/xian-light-mask-ff912544e4982761.webp",
+        "sha256": "ff912544e49827614717e58548dd7124751ea77db808c0debb882b6f1de98d65",
+        "sourceSha256": "10c745b323f405c531aa89ee36e95ddf37ec684c2398e84609fa41f66ae40895",
+        "encoding": "webp",
+        "width": 1024,
+        "height": 446,
+        "bytes": 65414,
+        "decodedBytes": 913408,
+        "gpuBytes": 1217878,
+        "channels": 2,
+        "colorSpace": "linear"
+      }
+    },
+    {
+      "id": "xian",
+      "tier": "standard",
+      "fillChangedPixels": 16357,
+      "outlineUnchanged": true,
+      "normalUnchanged": true,
+      "normalSha256": "d702631b48b9940e9a84ac487e9c91587acb618ab9fa3c2588756e6dbae5003b",
+      "before": {
+        "id": "xian-standard-mask",
+        "url": "assets/xian-standard-mask-62e1ca470c6b1fac.webp",
+        "sha256": "62e1ca470c6b1fac65cccf72e1a1147180e09134c8adb9f83054ec68066777d4",
+        "sourceSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+        "encoding": "webp",
+        "width": 2048,
+        "height": 892,
+        "bytes": 213320,
+        "decodedBytes": 3653632,
+        "gpuBytes": 4871510,
+        "channels": 2,
+        "colorSpace": "linear"
+      },
+      "after": {
+        "id": "xian-standard-mask",
+        "url": "assets/xian-standard-mask-92b8753c57122a3e.webp",
+        "sha256": "92b8753c57122a3ea91e8a5d75590553c4d2df053ad6743d3cf3608bf38ed6ad",
+        "sourceSha256": "10c745b323f405c531aa89ee36e95ddf37ec684c2398e84609fa41f66ae40895",
+        "encoding": "webp",
+        "width": 2048,
+        "height": 892,
+        "bytes": 208764,
+        "decodedBytes": 3653632,
+        "gpuBytes": 4871510,
+        "channels": 2,
+        "colorSpace": "linear"
+      }
+    },
+    {
+      "id": "xian",
+      "tier": "detail",
+      "fillChangedPixels": 57831,
+      "outlineUnchanged": true,
+      "normalUnchanged": true,
+      "normalSha256": "768387155205ae8118580a01ac9170a580ed3b3bae948283316f4189fba3a9b6",
+      "before": {
+        "id": "xian-detail-mask",
+        "url": "assets/xian-detail-mask-72e066cf7cb583cc.webp",
+        "sha256": "72e066cf7cb583cc2fb1f17ef497f97aa4c6405e369bb792ae459e93414df7f3",
+        "sourceSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+        "encoding": "webp",
+        "width": 4096,
+        "height": 1783,
+        "bytes": 514620,
+        "decodedBytes": 14606336,
+        "gpuBytes": 19475115,
+        "channels": 2,
+        "colorSpace": "linear"
+      },
+      "after": {
+        "id": "xian-detail-mask",
+        "url": "assets/xian-detail-mask-2873f4d473d92d4a.webp",
+        "sha256": "2873f4d473d92d4a4e243b69c8cf9741dc2cc05f98d6fbeff5d51daeba8cea15",
+        "sourceSha256": "10c745b323f405c531aa89ee36e95ddf37ec684c2398e84609fa41f66ae40895",
+        "encoding": "webp",
+        "width": 4096,
+        "height": 1783,
+        "bytes": 505322,
+        "decodedBytes": 14606336,
+        "gpuBytes": 19475115,
+        "channels": 2,
+        "colorSpace": "linear"
+      }
+    }
+  ]
+}

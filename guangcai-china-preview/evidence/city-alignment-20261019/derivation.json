@@ -1,0 +1,1682 @@
+{
+  "releaseId": "v7-5",
+  "sourceFrame": [
+    3878,
+    1630
+  ],
+  "runtimeFrame": [
+    4096,
+    1783
+  ],
+  "bottomRegistration": "source last ink row to geometry uv1.y=0",
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "sourceSha256": "59feabc471e99540bff56cbe2f2d3017bc42ad05723801280c12464def953101",
+      "sourceChanged": true,
+      "sourceBounds": [
+        159,
+        314,
+        3353,
+        1630
+      ],
+      "sourceBottomGap": 0,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        371.2636410520888
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            83,
+            161,
+            774,
+            446
+          ],
+          "coverageBounds": [
+            83,
+            161,
+            774,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            165,
+            322,
+            1548,
+            892
+          ],
+          "coverageBounds": [
+            165,
+            321,
+            1548,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            330,
+            643,
+            3096,
+            1783
+          ],
+          "coverageBounds": [
+            330,
+            643,
+            3097,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "sourceSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            52,
+            172,
+            862,
+            446
+          ],
+          "coverageBounds": [
+            52,
+            172,
+            862,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            105,
+            344,
+            1725,
+            892
+          ],
+          "coverageBounds": [
+            105,
+            344,
+            1725,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            211,
+            688,
+            3449,
+            1783
+          ],
+          "coverageBounds": [
+            211,
+            688,
+            3449,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        }
+      }
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "sourceSha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c",
+      "sourceChanged": true,
+      "sourceBounds": [
+        137,
+        536,
+        3731,
+        1625
+      ],
+      "sourceBottomGap": 5,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        375.59412068076335
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            78,
+            210,
+            856,
+            446
+          ],
+          "coverageBounds": [
+            78,
+            210,
+            856,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            156,
+            420,
+            1712,
+            892
+          ],
+          "coverageBounds": [
+            155,
+            420,
+            1712,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            312,
+            840,
+            3424,
+            1783
+          ],
+          "coverageBounds": [
+            311,
+            840,
+            3424,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "sourceSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            58,
+            158,
+            821,
+            446
+          ],
+          "coverageBounds": [
+            58,
+            158,
+            821,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            117,
+            314,
+            1642,
+            892
+          ],
+          "coverageBounds": [
+            117,
+            314,
+            1642,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            237,
+            630,
+            3283,
+            1783
+          ],
+          "coverageBounds": [
+            237,
+            630,
+            3283,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "sourceSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            47,
+            224,
+            851,
+            446
+          ],
+          "coverageBounds": [
+            47,
+            224,
+            851,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            95,
+            448,
+            1703,
+            892
+          ],
+          "coverageBounds": [
+            95,
+            448,
+            1703,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            192,
+            897,
+            3406,
+            1783
+          ],
+          "coverageBounds": [
+            192,
+            897,
+            3406,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "sourceSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            54,
+            151,
+            873,
+            446
+          ],
+          "coverageBounds": [
+            54,
+            151,
+            873,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            108,
+            302,
+            1745,
+            892
+          ],
+          "coverageBounds": [
+            108,
+            302,
+            1745,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            219,
+            604,
+            3491,
+            1783
+          ],
+          "coverageBounds": [
+            219,
+            604,
+            3491,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "sourceSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            47,
+            260,
+            888,
+            446
+          ],
+          "coverageBounds": [
+            47,
+            260,
+            888,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            95,
+            520,
+            1776,
+            892
+          ],
+          "coverageBounds": [
+            95,
+            520,
+            1776,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            192,
+            1039,
+            3551,
+            1783
+          ],
+          "coverageBounds": [
+            192,
+            1039,
+            3551,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "sourceSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            80,
+            156,
+            799,
+            446
+          ],
+          "coverageBounds": [
+            80,
+            156,
+            800,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            161,
+            313,
+            1599,
+            892
+          ],
+          "coverageBounds": [
+            161,
+            313,
+            1600,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            323,
+            624,
+            3201,
+            1783
+          ],
+          "coverageBounds": [
+            323,
+            624,
+            3202,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "sourceSha256": "9322fe3ae9a5b809aab44befd84efb3d7fb9d00f6c5f7971bb57c9108d21f23a",
+      "sourceChanged": true,
+      "sourceBounds": [
+        51,
+        300,
+        3818,
+        1630
+      ],
+      "sourceBottomGap": 0,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        371.2636410520888
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            59,
+            158,
+            875,
+            446
+          ],
+          "coverageBounds": [
+            59,
+            158,
+            875,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            118,
+            316,
+            1750,
+            892
+          ],
+          "coverageBounds": [
+            118,
+            315,
+            1750,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            236,
+            631,
+            3499,
+            1783
+          ],
+          "coverageBounds": [
+            236,
+            631,
+            3499,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "sourceSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            55,
+            167,
+            880,
+            446
+          ],
+          "coverageBounds": [
+            55,
+            167,
+            880,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            110,
+            332,
+            1760,
+            892
+          ],
+          "coverageBounds": [
+            110,
+            332,
+            1760,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            223,
+            665,
+            3520,
+            1783
+          ],
+          "coverageBounds": [
+            223,
+            665,
+            3520,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "sourceSha256": "c05ed4e8969daa9e6449c3a7a3a8572c98724e8d7dac366898647868c23e8521",
+      "sourceChanged": true,
+      "sourceBounds": [
+        120,
+        257,
+        3388,
+        1628
+      ],
+      "sourceBottomGap": 2,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        372.9958329035585
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            74,
+            149,
+            781,
+            446
+          ],
+          "coverageBounds": [
+            74,
+            149,
+            782,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            148,
+            298,
+            1563,
+            892
+          ],
+          "coverageBounds": [
+            148,
+            298,
+            1564,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            297,
+            596,
+            3127,
+            1783
+          ],
+          "coverageBounds": [
+            296,
+            595,
+            3127,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "sourceSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            47,
+            147,
+            862,
+            446
+          ],
+          "coverageBounds": [
+            47,
+            147,
+            862,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            95,
+            292,
+            1725,
+            892
+          ],
+          "coverageBounds": [
+            95,
+            292,
+            1725,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            192,
+            585,
+            3449,
+            1783
+          ],
+          "coverageBounds": [
+            192,
+            585,
+            3449,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "sourceSha256": "c87bf92701b919014d0de31113aa627427989144ede5bbe9e124efce21244a14",
+      "sourceChanged": true,
+      "sourceBounds": [
+        11,
+        549,
+        3878,
+        1626
+      ],
+      "sourceBottomGap": 4,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        374.7280247550284
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            50,
+            213,
+            888,
+            446
+          ],
+          "coverageBounds": [
+            50,
+            212,
+            888,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            101,
+            425,
+            1776,
+            892
+          ],
+          "coverageBounds": [
+            101,
+            425,
+            1776,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            202,
+            850,
+            3551,
+            1783
+          ],
+          "coverageBounds": [
+            202,
+            850,
+            3551,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "sourceSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            51,
+            187,
+            847,
+            446
+          ],
+          "coverageBounds": [
+            51,
+            187,
+            847,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            104,
+            374,
+            1694,
+            892
+          ],
+          "coverageBounds": [
+            104,
+            374,
+            1694,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 2
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            209,
+            747,
+            3389,
+            1783
+          ],
+          "coverageBounds": [
+            209,
+            747,
+            3389,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "sourceSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            53,
+            144,
+            873,
+            446
+          ],
+          "coverageBounds": [
+            53,
+            144,
+            873,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            107,
+            286,
+            1747,
+            892
+          ],
+          "coverageBounds": [
+            107,
+            286,
+            1747,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            217,
+            573,
+            3493,
+            1783
+          ],
+          "coverageBounds": [
+            217,
+            573,
+            3493,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "sourceSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            54,
+            146,
+            816,
+            446
+          ],
+          "coverageBounds": [
+            54,
+            146,
+            816,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            109,
+            292,
+            1632,
+            892
+          ],
+          "coverageBounds": [
+            109,
+            292,
+            1632,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            219,
+            584,
+            3264,
+            1783
+          ],
+          "coverageBounds": [
+            219,
+            584,
+            3264,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "sourceSha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2",
+      "sourceChanged": true,
+      "sourceBounds": [
+        69,
+        301,
+        3720,
+        1630
+      ],
+      "sourceBottomGap": 0,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        371.2636410520888
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            63,
+            158,
+            854,
+            446
+          ],
+          "coverageBounds": [
+            63,
+            158,
+            854,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            126,
+            316,
+            1707,
+            892
+          ],
+          "coverageBounds": [
+            126,
+            316,
+            1707,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            253,
+            632,
+            3414,
+            1783
+          ],
+          "coverageBounds": [
+            252,
+            632,
+            3415,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "sourceSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            55,
+            161,
+            854,
+            446
+          ],
+          "coverageBounds": [
+            55,
+            161,
+            854,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            111,
+            321,
+            1708,
+            892
+          ],
+          "coverageBounds": [
+            111,
+            321,
+            1708,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            225,
+            644,
+            3416,
+            1783
+          ],
+          "coverageBounds": [
+            225,
+            644,
+            3416,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "sourceSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+      "sourceChanged": true,
+      "sourceBounds": [
+        29,
+        582,
+        3819,
+        1630
+      ],
+      "sourceBottomGap": 0,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        371.2636410520888
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            55,
+            219,
+            874,
+            446
+          ],
+          "coverageBounds": [
+            55,
+            219,
+            875,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            109,
+            438,
+            1750,
+            892
+          ],
+          "coverageBounds": [
+            109,
+            438,
+            1750,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            218,
+            876,
+            3500,
+            1783
+          ],
+          "coverageBounds": [
+            217,
+            875,
+            3500,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "sourceSha256": "fc62fe5380af329616b5abebf5fb0fdfc2ab810d9eead0b1ae820b01be2d1e5f",
+      "sourceChanged": true,
+      "sourceBounds": [
+        74,
+        232,
+        3602,
+        1630
+      ],
+      "sourceBottomGap": 0,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        371.2636410520888
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            64,
+            143,
+            828,
+            446
+          ],
+          "coverageBounds": [
+            64,
+            143,
+            828,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            128,
+            286,
+            1656,
+            892
+          ],
+          "coverageBounds": [
+            128,
+            286,
+            1656,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            256,
+            572,
+            3312,
+            1783
+          ],
+          "coverageBounds": [
+            256,
+            572,
+            3312,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "sourceSha256": "f10de1c6cc71e0ec6810ecde09dddd4cc92f835fb1f38f6b8d792093528dca65",
+      "sourceChanged": true,
+      "sourceBounds": [
+        51,
+        395,
+        3842,
+        1627
+      ],
+      "sourceBottomGap": 3,
+      "uniformScale": 0.8660959257349149,
+      "offset": [
+        192.512,
+        373.86192882929345
+      ],
+      "baseline": 1783,
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            59,
+            179,
+            880,
+            446
+          ],
+          "coverageBounds": [
+            59,
+            179,
+            880,
+            446
+          ],
+          "bottomGap": 0
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            118,
+            358,
+            1760,
+            892
+          ],
+          "coverageBounds": [
+            118,
+            358,
+            1760,
+            892
+          ],
+          "bottomGap": 0
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            237,
+            716,
+            3520,
+            1783
+          ],
+          "coverageBounds": [
+            236,
+            716,
+            3520,
+            1783
+          ],
+          "bottomGap": 0
+        }
+      }
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "sourceSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            55,
+            176,
+            873,
+            446
+          ],
+          "coverageBounds": [
+            55,
+            176,
+            873,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            111,
+            351,
+            1746,
+            892
+          ],
+          "coverageBounds": [
+            111,
+            351,
+            1746,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            225,
+            704,
+            3491,
+            1783
+          ],
+          "coverageBounds": [
+            225,
+            704,
+            3491,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "sourceSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+      "sourceChanged": false,
+      "method": "translate reviewed line/fill/normal together; source bytes identical",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "lineBounds": [
+            58,
+            139,
+            851,
+            446
+          ],
+          "coverageBounds": [
+            58,
+            139,
+            851,
+            446
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "lineBounds": [
+            118,
+            278,
+            1702,
+            892
+          ],
+          "coverageBounds": [
+            118,
+            278,
+            1702,
+            892
+          ],
+          "bottomGap": 0,
+          "translatedRows": 1
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "lineBounds": [
+            238,
+            557,
+            3404,
+            1783
+          ],
+          "coverageBounds": [
+            238,
+            557,
+            3404,
+            1783
+          ],
+          "bottomGap": 0,
+          "translatedRows": 3
+        }
+      }
+    }
+  ]
+}

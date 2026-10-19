@@ -1,0 +1,64 @@
+{
+  "status": "local validated candidate",
+  "date": "2026-10-19",
+  "baseCommit": "ccd1edc5118e4e565d4378fb26fb3b8e9442daa6",
+  "releaseId": "v7-5",
+  "manifest": "releases/v7-5/manifest-f5c853090efb167a.json",
+  "manifestSha256": "f5c853090efb167a3e981ae99938fe579dcfffdcae388071d54839c032e8c521",
+  "baseTests": {
+    "passed": 45,
+    "failed": 0
+  },
+  "v7Tests": {
+    "passed": 33,
+    "failed": 0,
+    "normalAssets": 78,
+    "halfFloatXYPreserved": true,
+    "maxNormalDegrees": 0.08183487404404731
+  },
+  "resourceValidation": {
+    "assets": 195,
+    "cities": 23,
+    "labelsPixelIdentical": 6,
+    "preloadEncodedBytes": 11701408,
+    "initialGpuBytes": 23881734,
+    "original5MiBTargetMet": false,
+    "preloadProfile": "validator combination: all low cities plus standard current and neighbors; desktop detail startup differs"
+  },
+  "cityValidation": {
+    "cities": 23,
+    "tiers": 69,
+    "allBottomGaps": 0,
+    "sourceChanged": 9
+  },
+  "browserChecks": 40,
+  "viewports": [
+    {
+      "width": 1200,
+      "height": 1000,
+      "resourceReleaseId": "v7-5"
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "builds": [
+    "consumer: passed",
+    "integration: passed"
+  ],
+  "protectedUnchanged": [
+    "guangcai-china-preview/public/releases/v7-1",
+    "guangcai-china-preview/public/releases/v7-2",
+    "guangcai-china-preview/public/releases/v7-3",
+    "guangcai-china-preview/public/releases/v7-4",
+    "guangcai-china-preview/src/geometry",
+    "guangcai-china-preview/src/materials",
+    "guangcai-china-preview/src/ui"
+  ],
+  "physicalDeviceTested": false,
+  "pushed": false,
+  "deployed": false
+}

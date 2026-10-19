@@ -1,5 +1,7 @@
 > 当前实现：V7.1.2 / 默认资源 v7-3。[逐项性能机制与故障处理](PERFORMANCE.md) 是交接必读，覆盖高清显示、邻城预载、祝福语、预算、液态降级、上下文恢复和旧版本回放；如以下历史策略描述冲突，以该文档为准。
 
+2026-10-19 V7.1.4说明：应用bootstrap现为 `v7-5`（23城描线与底部更新；文字/字框沿用v7-4）。此目录既有Excel/配置JSON保留为V7.1.3/v7-4历史导出，不能直接当作v7-5最新资源表；接入时以版本化bootstrap/catalog/manifest及更新的作品Schema为准。新增浏览入口 `/city-compare/`、`/bezier-lab/` 属本站查看页，不改公司身份/数据库/COS接入契约。
+
 # V7 资源与模拟接口交接
 
 **后台同事从这里开始：[配置表与完整录入说明](backend-handoff/README.md)**，包含 [Excel](backend-handoff/V7后台配置数据表.xlsx)、[JSON](backend-handoff/backend-config.json) 和 [本轮验证](backend-handoff/verification.json)。城市拓展为JSON引用对象；深浅HEX数组与HSL数组分开说明；材质保存二维参数和配方版本。新增菜单内容仍需同步前端白名单，不能只在后台新增一行。
