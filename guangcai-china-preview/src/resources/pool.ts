@@ -1,4 +1,4 @@
-import {textureBytes,retainedBytes} from './texture-budget';
+import {textureBytes,retainedBytes,mobileEncodedCacheBytes} from './texture-budget';
 import {Texture,DataTexture,HalfFloatType,RGBAFormat,RedFormat,RGFormat,UnsignedByteType,LinearFilter,LinearMipmapLinearFilter,SRGBColorSpace,NoColorSpace,ClampToEdgeWrapping} from 'three';
 import type {Asset} from './types';
 import {TaskQueue,abortError} from './queue';
@@ -14,7 +14,7 @@ export class ResourcePool {
  private entries=new Map<string,Entry>();private disposed=false;private worker?:Worker;
  private network=new TaskQueue(2);private decoding=new TaskQueue(1);private bytes=0;private peak=0;private transferred=0;private cancelled=0;
  readonly steady:number;readonly maximum:number;reserve=0;private encoded:EncodedCache;private previewUrls=new Map<string,string>();
- constructor(mobile:boolean){this.steady=(mobile?128:256)*MiB;this.maximum=(mobile?192:384)*MiB;this.encoded=new EncodedCache((mobile?12:24)*MiB,(asset,signal)=>this.fetchBytes(asset,signal));}
+ constructor(mobile:boolean){this.steady=(mobile?128:256)*MiB;this.maximum=(mobile?192:384)*MiB;this.encoded=new EncodedCache(mobile?mobileEncodedCacheBytes:24*MiB,(asset,signal)=>this.fetchBytes(asset,signal));}
  private disposeEntry(key:string,e:Entry){
   this.entries.delete(key);this.bytes-=textureBytes(e.asset);e.controller.abort();
   if(e.texture){e.texture.dispose();const image=e.texture.image as {close?:()=>void;data?:unknown};image?.close?.();if(image&&'data'in image)image.data=null;e.texture.mipmaps=[];e.texture=null as unknown as Texture;}

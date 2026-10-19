@@ -3,6 +3,7 @@ import type {Selection} from '../styles/city-selection';
 import type {CityArtworkPack} from '../styles/city-artwork';
 import type {StylePack} from '../styles/style-manager';
 import fixedLayout from '../styles/fixed-layout.json';
+import {sloganLabels} from './preload';
 export {exportDesign,validateDesign} from './design';
 
 declare global {interface Window {GUANGCAI_CONFIG?:{bootstrapUrl?:string;assetBase?:string;apiBase?:string}}}
@@ -16,8 +17,8 @@ async function json<T>(url:string,signal?:AbortSignal){
 }
 export async function loadResources(releaseId?:string,signal?:AbortSignal){
  let bootstrap=await json<Bootstrap>(new URL(config.bootstrapUrl??'api/v1/bootstrap.json',appBase).href,signal);
- if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
- if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
+ if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
+ if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
  const manifestUrl=new URL(bootstrap.manifestUrl,new URL(config.assetBase??appBase,appBase)).href;
  const manifest=await json<ResourceManifest>(manifestUrl,signal);
  if(manifest.schemaVersion!==1||manifest.releaseId!==bootstrap.releaseId||manifest.modelVersion!=='china-cup-v6'||manifest.recipeVersion!=='porcelain-city-v6')throw Error('Unsupported model or recipe');
@@ -25,7 +26,7 @@ export async function loadResources(releaseId?:string,signal?:AbortSignal){
  const assets:Asset[]=[];
  for(const levels of Object.values(manifest.fixed))for(const level of Object.values(levels))assets.push(level.baseColor,level.normal,level.orm);
  for(const city of Object.values(manifest.cities)){assets.push(city.thumbnail);for(const level of Object.values(city.levels))assets.push(level.mask,level.normal);}
- assets.push(...Object.values(manifest.slogans).map(s=>s.asset),manifest.mark);
+ assets.push(...sloganLabels(manifest).map(s=>s.asset),manifest.mark);
  for(const asset of assets){
   if(!asset||![asset.width,asset.height,asset.bytes,asset.decodedBytes,asset.gpuBytes].every(n=>Number.isInteger(n)&&n>0)||asset.width>8192||asset.height>8192||![1,2,4].includes(asset.channels)||!['webp','hfn1-gzip'].includes(asset.encoding)||!['srgb','linear'].includes(asset.colorSpace)||!/^[a-f0-9]{64}$/.test(asset.sha256))throw Error('Invalid resource descriptor');
   const expected=asset.width*asset.height*(asset.encoding==='hfn1-gzip'?8:asset.channels);
@@ -33,7 +34,7 @@ export async function loadResources(releaseId?:string,signal?:AbortSignal){
   asset.url=new URL(asset.url,manifestUrl).href;if(!/^https?:/.test(asset.url))throw Error('Invalid resource URL');
  }
  function cityPack(s:Selection,tier:Tier):CityArtworkPack{
-  const cityId=s.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,''),city=manifest.cities[cityId],label=manifest.slogans[s.text];
+  const cityId=s.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,''),city=manifest.cities[cityId],label=city?.slogans?.[s.text]??manifest.slogans[s.text];
   if(!city||!label||!s.appearance)throw Error('Unknown city or slogan');
   const level=city.levels[tier];
   return {id:s.variant,version:7,name:city.name,layout:'blank-300deg-v1',baseColor:level.mask.url,normal:level.normal.url,roughness:level.mask.url,metalness:level.mask.url,coverage:level.mask.url,normalEncoding:'rgba16f',parametric:{mask:level.mask.url,appearance:s.appearance},label:{source:label.asset.url,fixedGold:true},runtime:{...level,label}};

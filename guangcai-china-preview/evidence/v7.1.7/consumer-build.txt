@@ -1,0 +1,33 @@
+
+> guangcai-china-v4@7.1.7 build
+> tsc --noEmit && vite build
+
+vite v8.3.1 building client environment for production...
+transforming...
+<script src="/runtime-config.js"> in "/artwork-dev/cup.html" can't be bundled without type="module" attribute
+<script src="/runtime-config.js"> in "/index.html" can't be bundled without type="module" attribute
+
+/backgrounds/soft-light-v3-d06c52a8f2003f50.webp referenced in /backgrounds/soft-light-v3-d06c52a8f2003f50.webp didn't resolve at build time, it will remain unchanged to be resolved at runtime
+✓ 231 modules transformed.
+rendering chunks...
+computing gzip size...
+.codex-work/deploy/v7-build/artwork-dev/index.html                   3.22 kB │ gzip:   1.67 kB
+.codex-work/deploy/v7-build/index.html                               4.12 kB │ gzip:   1.94 kB
+.codex-work/deploy/v7-build/artwork-dev/cup.html                     4.32 kB │ gzip:   2.03 kB
+.codex-work/deploy/v7-build/assets/decode.worker-DRG5ZHis.js         6.77 kB
+.codex-work/deploy/v7-build/assets/index-DF4OLjzi.css                3.24 kB │ gzip:   1.30 kB
+.codex-work/deploy/v7-build/assets/main-m0pXmlyI.css                52.22 kB │ gzip:  10.87 kB
+.codex-work/deploy/v7-build/assets/map-encoder.worker-gG3z5fOt.js    3.20 kB │ gzip:   1.54 kB
+.codex-work/deploy/v7-build/assets/index-BKjtvnP8.js                 4.63 kB │ gzip:   2.35 kB
+.codex-work/deploy/v7-build/assets/client-CvL2Ai3f.js                8.05 kB │ gzip:   3.59 kB
+.codex-work/deploy/v7-build/assets/gpu-M_N0dAhv.js                 152.55 kB │ gzip:  48.61 kB
+.codex-work/deploy/v7-build/assets/main-_y6mtBmE.js                909.75 kB │ gzip: 258.75 kB
+
+[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mvendor/glass-hq/src/webgl2/index.ts is dynamically imported by vendor/glass-hq/src/dom/renderer.ts but also statically imported by src/ui/glass-studio.ts, dynamic import will not move module into another chunk.
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 650 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.11s

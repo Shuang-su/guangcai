@@ -1,0 +1,19 @@
+✔ queue bounds concurrency, rejects cancelled waiters and resumes after visibility pause (46.891792ms)
+✔ adaptive DPR responds to sustained load, excludes idle gaps and never drops below one (0.297417ms)
+✔ design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers (0.669625ms)
+✔ bounded decompression input rejects excess bytes and HFN headers cannot overallocate (5.207458ms)
+✔ merged ORM uses blue metalness for the bare-gold override and retains original controls (2.267458ms)
+✔ stream progress reports actual cumulative bytes before completion (1.385625ms)
+✔ exact stream reader copies consumed chunks immediately and preserves progress (1.900417ms)
+✔ exact stream reader rejects truncated and oversized input and always releases the reader (0.905958ms)
+✔ upstream cancellation/error keeps its original reason and unlocks the reader (0.333833ms)
+✔ streamed high precision normals are byte-identical to native decompression at every city tier (690.083667ms)
+✔ resource swaps track temporary overlap and release their allowance once (78.185458ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1093.402459

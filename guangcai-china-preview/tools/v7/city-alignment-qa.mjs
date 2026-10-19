@@ -41,7 +41,7 @@ try{
   assert.deepEqual(await page.evaluate(()=>window.cupViewer.exportDesign()),design);
   await page.screenshot({path:`${out}/${cityId}-blue.png`});check('blue fill and fixed gold '+cityId,true);
  }
- for(const resourceReleaseId of (expectedRelease==='v7-6'?['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6']:['v7-1','v7-2','v7-3','v7-4','v7-5'])){
+ for(const resourceReleaseId of ['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7']){
   const design={...initial,resourceReleaseId};assert.equal(await page.evaluate(d=>window.cupViewer.importDesign(d),design),true);await settled(page);
   assert.deepEqual(await page.evaluate(()=>window.cupViewer.exportDesign()),design);check('historical roundtrip '+resourceReleaseId,true);
  }
