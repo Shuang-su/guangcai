@@ -2,11 +2,12 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-当前线上独立预览为 **V7.1.6 / v7-6**；**V7.1.7 / v7-7** 本地完成PSD整版校正，准备合并部署。前版，已合并并部署；回执见[本轮完成记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md)；真机、正式COS/身份接入待验收，原5MiB/6秒性能目标未通过。每个后续小版本保留独立Issue；[记录约定](README.md#版本-issue-与交接索引)与[模板](.github/ISSUE_TEMPLATE/version-release.md)统一入口。
+当前线上独立预览为 **V7.1.7 / v7-7**；V7.1.8准备修正开发iframe加载版本标识，设计资源不变。原5MiB/6秒目标未通过，实体设备与COS/身份仍待验收。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
-| [V7.1.7 · Issue #47](https://github.com/Shuang-su/guangcai/issues/47) | [PSD整版记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md) | 本地23城69档原稿核对、45基础与42V7测试、报告和开发页回归通过；待生产回执 |
+| [V7.1.8 · Issue #49](https://github.com/Shuang-su/guangcai/issues/49) | [入口版本记录](docs/changes/20261020-v7.1.8-entry-version/completion.md) | 统一入口与运行时版本；保留v7-7设计资源，准备发布 |
+| [V7.1.7 · Issue #47](https://github.com/Shuang-su/guangcai/issues/47) | [PSD整版记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md) | PR #48合并/部署，23城69档原稿核对、45基础与43V7测试，正式43项、开发86项及线上26项通过；入口版本标识转V7.1.8修正 |
 | [V7.1.6 · Issue #45](https://github.com/Shuang-su/guangcai/issues/45) | [修正记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md) | PR #46已合并/部署；本地41+86项、V7测试39项，最终线上核心24项通过 |
 | [V7.1.5 · Issue #43](https://github.com/Shuang-su/guangcai/issues/43) | [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) · [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/) · [本轮记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md) | PR #44已合并/生产文件核验；开发页慢网累计超时转V7.1.6修复 |
 | [V7.1.4 · Issue #41](https://github.com/Shuang-su/guangcai/issues/41) | [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) · [两城SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/) · [完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md) | 23城描线与底部更新；旧文字字框；合并部署回执在完成记录 |
@@ -16,6 +17,7 @@
 
 | 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
+| 7.1.7 独立预览 | 未新增标签 | `aba6d1a5488683b7ae51cc193c6433bab45873f0` | `6ad665ed5a65f73c7d481d66` | PSD整版等比重标定、取消82%缩小；线上核心26项通过；加载版本标识后续修正 |
 | 7.1.6 独立预览 | 未新增标签 | `36bb8bc4b7c647104fa14380c51448b84f2039ea` | `6ad64f4df744e9df794ecaee` | 开发页取消错误总等待上限，实际错误仍显示；沿用v7-6设计资源；线上核心24项通过 |
 | 7.1.5 独立预览 | 未新增标签 | `02753e0640d52c2cf04b429ea606c23938aaa085` | `6ad648aee2d03ef0182627b9` | 统一字框、字框报告与独立开发页；冷加载等待后续由V7.1.6修正 |
 | 7.1.4 独立预览 | 未新增标签 | `5991ec274757b984b2b19873d254027829bf2e48` | `6ad61f84c8773f7fd5ee6756` | v7-5城市描线/69档底边；保留旧文字字框；/city-compare/与/bezier-lab/；PR #42合并及公网核验通过 |

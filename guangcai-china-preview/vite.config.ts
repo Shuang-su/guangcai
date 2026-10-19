@@ -2,7 +2,9 @@ import { defineConfig, type Plugin } from 'vite';
 import { wgslVitePlugin } from '@vgpu/wgsl/loader-vite';
 import {cp,mkdir,writeFile} from 'node:fs/promises';
 import {resolve,basename} from 'node:path';
-import {createReadStream,statSync} from 'node:fs';
+import {createReadStream,statSync,readFileSync} from 'node:fs';
+const appVersion=JSON.parse(readFileSync(new URL('./package.json',import.meta.url),'utf8')).version;
+const entryVersion=():Plugin=>({name:'app-entry-version',transformIndexHtml:html=>html.replaceAll('__APP_VERSION__',appVersion)});
 // Vite/sirv treats a .gz suffix as HTTP content encoding. These hashed files
 // are gzip containers in the resource protocol and must arrive byte-exact.
 function rawNormalFiles():Plugin {
@@ -24,5 +26,5 @@ function runtimeFiles():Plugin {
 }
 export default defineConfig(({command,mode})=>{
  const audit=mode==='audit';
- return {base:process.env.APP_BASE??'/',plugins:[wgslVitePlugin(),rawNormalFiles(),...(!audit?[runtimeFiles()]:[])],publicDir:command==='serve'||audit?'public':false,cacheDir:'.codex-work/cache/vite',server:{port:5270,strictPort:true,watch:{ignored:['**/.codex-work/**']}},build:{outDir:audit?'.codex-work/deploy/v7-audit':mode==='integration'?'.codex-work/deploy/v7-integration':'.codex-work/deploy/v7-build',chunkSizeWarningLimit:650,rolldownOptions:{input:audit?['dev/index.html','audit/index.html','audit/glass.html']:mode==='integration'?['index.html','integration/index.html']:[ 'index.html','artwork-dev/index.html','artwork-dev/cup.html']}}};
+ return {base:process.env.APP_BASE??'/',plugins:[entryVersion(),wgslVitePlugin(),rawNormalFiles(),...(!audit?[runtimeFiles()]:[])],publicDir:command==='serve'||audit?'public':false,cacheDir:'.codex-work/cache/vite',server:{port:5270,strictPort:true,watch:{ignored:['**/.codex-work/**']}},build:{outDir:audit?'.codex-work/deploy/v7-audit':mode==='integration'?'.codex-work/deploy/v7-integration':'.codex-work/deploy/v7-build',chunkSizeWarningLimit:650,rolldownOptions:{input:audit?['dev/index.html','audit/index.html','audit/glass.html']:mode==='integration'?['index.html','integration/index.html']:[ 'index.html','artwork-dev/index.html','artwork-dev/cup.html']}}};
 });
