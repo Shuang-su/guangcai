@@ -1,0 +1,211 @@
+{
+  "url": "http://127.0.0.1:5292/",
+  "rows": [
+    {
+      "id": "open",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "open",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "together",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "together",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ocean",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ocean",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "sharing",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "sharing",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cooperation",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cooperation",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "innovation",
+      "phase": "before",
+      "resourceReleaseId": "v7-5",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "id": "innovation",
+      "phase": "after",
+      "resourceReleaseId": "v7-6",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
