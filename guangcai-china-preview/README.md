@@ -1,4 +1,6 @@
-# 中国杯 V7.1.4：城市描线更新与逐城对比
+# 中国杯 V7.1.5：统一字框与独立开发预览
+
+2026-10-20：V7.1.5 / v7-6 本地候选已完成资源与页面验证。统一23城字框，成都文字6px归一；新增 [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) 和 [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/)。正式城市描线沿用V7.1.4，实验页加入蓝湖当前稿与两城贝塞尔SVG。推送、合并和生产部署回执待本轮完成记录补齐。
 
 2026-10-19：V7.1.4 / v7-5 已合并并上线，更新23城描线与底部对齐，文字及字框沿用V7.1.3。新增 [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) 与 [独立闭合建筑SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/)；发布核验以本轮完成记录为准。后台Excel/JSON仍为v7-4历史导出。
 
