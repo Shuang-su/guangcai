@@ -1,0 +1,8 @@
+Glass-HQ/liquid-glass
+Upstream commit: 9f5bfc7daa7be5d20a41b94d841b8f065de655fc
+https://github.com/Glass-HQ/liquid-glass/tree/9f5bfc7daa7be5d20a41b94d841b8f065de655fc
+MIT license: glass-hq-LICENSE.txt
+
+The Guangcai V6 preview adds a WebGL2 material-map backend and DOM carousel integration.
+Original material formulas, geometry, interaction and morph springs remain upstream-derived.
+Dependencies: @lisse/core 0.7.2 (lisse-core-LICENSE.txt); vgpu 0.5.0 (vgpu-LICENSE.txt).

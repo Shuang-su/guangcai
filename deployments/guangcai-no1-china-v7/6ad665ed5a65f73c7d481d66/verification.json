@@ -1,0 +1,13 @@
+{
+  "status": "core-verified-entry-label-fix-in-progress",
+  "version": "7.1.7",
+  "resourceRelease": "v7-7",
+  "deployId": "6ad665ed5a65f73c7d481d66",
+  "sourceCommit": "aba6d1a5488683b7ae51cc193c6433bab45873f0",
+  "browserCoreChecks": 26,
+  "archiveFilesVerified": 1159,
+  "archiveBytes": 498677840,
+  "protectedSitesUnchanged": true,
+  "defect": "development iframe loading panel says V7.1.6 while actual runtime is V7.1.7; patch follows as V7.1.8",
+  "physicalDeviceTested": false
+}
