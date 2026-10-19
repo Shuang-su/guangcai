@@ -191,7 +191,7 @@ async function initialize(){
 function startupFailed(e:unknown){console.error('Startup failed',e);startupError='部分素材未能载入，请刷新重试。';syncLoadingStatus();if(profile!=='consumer')ui.error(String(e));}
 document.querySelector<HTMLAnchorElement>('.entry-reload')?.addEventListener('click',e=>{if(!startupError&&!selection.error)return;e.preventDefault();if(!resources)resourcesPromise=undefined;assetsReady=false;void initialize().catch(startupFailed);});
 void initialize().catch(startupFailed);
-const authoringFraming=createAuthoringFraming(studio.camera,ui.canvas,profile==='consumer');
+const authoringFraming=document.documentElement.dataset.labPreview==='true'?{apply(){},restore(){}}:createAuthoringFraming(studio.camera,ui.canvas,profile==='consumer');
 const updateClipping=createCameraClipping(studio.camera,product.root);
 const resolution=new AdaptiveResolution(studio.renderer.getPixelRatio(),Math.min(devicePixelRatio,2));
 function density(){return product.parameters.radius*2*ui.canvas.clientHeight*studio.renderer.getPixelRatio()/(2*studio.camera.position.distanceTo(view.controls.target)*Math.tan(studio.camera.fov*Math.PI/360));}
