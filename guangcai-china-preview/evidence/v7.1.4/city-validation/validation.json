@@ -1,0 +1,768 @@
+{
+  "passed": true,
+  "cities": 23,
+  "tiers": 69,
+  "sourceChanged": 9,
+  "fixedAndSlogansUnchanged": true,
+  "checks": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007059574127197266
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006983280181884766
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.000759422779083252
+        }
+      }
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014826059341430664
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015227198600769043
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007856488227844238
+        }
+      }
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007207393646240234
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007374882698059082
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007532238960266113
+        }
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014029145240783691
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014826059341430664
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007870793342590332
+        }
+      }
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015222430229187012
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015776753425598145
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007612705230712891
+        }
+      }
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001461625099182129
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9999765494922965,
+          "maxNormalLengthError": 0.0015184283256530762
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9999296484768895,
+          "maxNormalLengthError": 0.0007555484771728516
+        }
+      }
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001436769962310791
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015604496002197266
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0008023381233215332
+        }
+      }
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001477360725402832
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001571953296661377
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007775425910949707
+        }
+      }
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006930828094482422
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007059574127197266
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007598400115966797
+        }
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015413761138916016
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.00148695707321167
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007842183113098145
+        }
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006778240203857422
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007737278938293457
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007718205451965332
+        }
+      }
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015700459480285645
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015370845794677734
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9995721810743603,
+          "maxNormalLengthError": 0.000805199146270752
+        }
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014310479164123535
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9998723578065966,
+          "maxNormalLengthError": 0.0015375614166259766
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9986980496272848,
+          "maxNormalLengthError": 0.0007894635200500488
+        }
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001510322093963623
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015165209770202637
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007693767547607422
+        }
+      }
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015227198600769043
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001547098159790039
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.000775456428527832
+        }
+      }
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014922022819519043
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015571117401123047
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007498264312744141
+        }
+      }
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006654262542724609
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007097721099853516
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007407665252685547
+        }
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014993548393249512
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0015069842338562012
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007689595222473145
+        }
+      }
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007045269012451172
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006964206695556641
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007722973823547363
+        }
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014224648475646973
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.001535654067993164
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007717609405517578
+        }
+      }
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0006859302520751953
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007312297821044922
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007730722427368164
+        }
+      }
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014979243278503418
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014749765396118164
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0007875561714172363
+        }
+      }
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "tiers": {
+        "light": {
+          "size": [
+            1024,
+            446
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014835596084594727
+        },
+        "standard": {
+          "size": [
+            2048,
+            892
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 1.0,
+          "maxNormalLengthError": 0.0014711618423461914
+        },
+        "detail": {
+          "size": [
+            4096,
+            1783
+          ],
+          "bottomGap": 0,
+          "sourceStrokeRecallWithin2px": 0.9997549199813739,
+          "maxNormalLengthError": 0.0007840394973754883
+        }
+      }
+    }
+  ]
+}

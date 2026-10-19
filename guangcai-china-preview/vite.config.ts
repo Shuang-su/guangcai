@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from 'vite';
 import { wgslVitePlugin } from '@vgpu/wgsl/loader-vite';
 import {cp,mkdir,writeFile} from 'node:fs/promises';
-import {resolve} from 'node:path';
+import {resolve,basename} from 'node:path';
 import {createReadStream,statSync} from 'node:fs';
 // Vite/sirv treats a .gz suffix as HTTP content encoding. These hashed files
 // are gzip containers in the resource protocol and must arrive byte-exact.
@@ -15,8 +15,8 @@ function rawNormalFiles():Plugin {
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
-   await mkdir(resolve(out,item,'..'),{recursive:true});await cp(resolve('public',item),resolve(out,item),{recursive:true});
+  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
+   await mkdir(resolve(out,item,'..'),{recursive:true});await cp(resolve('public',item),resolve(out,item),{recursive:true,filter:source=>!basename(source).startsWith('._')&&basename(source)!=='.DS_Store'});
   }
   const headers='/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
   await writeFile(resolve(out,'_headers'),headers);

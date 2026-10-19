@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:5287/bezier-lab/",
+  "checks": [
+    "page identity and content",
+    "Beijing has 8 independent objects",
+    "solo shows only temple",
+    "focus changes actual viewBox",
+    "control handles visible",
+    "fill is applied to closed outline",
+    "overlay displays actual source",
+    "400% zoom",
+    "800% zoom",
+    "mouse selects an actual path",
+    "slider changes selected geometry",
+    "reset restores stroke",
+    "Shenzhen has 14 independent objects",
+    "city switch clears prior selected path",
+    "mobile city and building interaction",
+    "mobile no document horizontal overflow",
+    "all 85 imported files match reviewed hashes",
+    "no runtime or console errors"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "physicalDeviceTested": false,
+  "passed": true
+}

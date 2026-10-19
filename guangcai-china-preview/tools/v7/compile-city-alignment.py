@@ -8,8 +8,11 @@ import gzip
 import hashlib
 import json
 import struct
+import subprocess
+import io
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
+from mask_regions import enclosed_mask
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCES = ROOT / 'assets/source/v7.1.4'
@@ -94,6 +97,34 @@ def bounds(a):
     return [int(x.min()), int(y.min()), int(x.max() + 1), int(y.max() + 1)]
 
 
+def fill_correction(ident):
+    config = ROOT / 'assets/masters/v7.1.4/fill-preservation.json'
+    spec = json.loads(config.read_text()) if config.exists() else {}
+    if ident not in spec:
+        return None, b''
+    svg = (ROOT / spec[ident]['file']).read_bytes()
+    js = "import sharp from 'sharp';let b=[];for await(const x of process.stdin)b.push(x);process.stdout.write(await sharp(Buffer.concat(b)).png().toBuffer());"
+    result = subprocess.run(['node','--input-type=module','-e',js],input=svg,stdout=subprocess.PIPE,cwd=ROOT,check=True)
+    return np.asarray(Image.open(io.BytesIO(result.stdout)).convert('RGBA'))[:,:,3], svg
+
+
+def register_solid_bottom(line, fill, normal_bytes):
+    h, w = line.shape
+    gap = h - (np.where(line > 127)[0].max() + 1)
+    if not gap:
+        return line, fill, normal_bytes, 0
+    def shift(channel):
+        out = np.zeros_like(channel)
+        out[gap:] = channel[:h-gap]
+        return out
+    raw = gzip.decompress(normal_bytes)
+    normal = np.frombuffer(raw, dtype='<f2', offset=16).reshape(h,w,4)[::-1]
+    shifted = np.empty_like(normal); shifted[:] = [.5,.5,1,1]
+    shifted[gap:] = normal[:h-gap]
+    normal_bytes = gzip.compress(raw[:16] + shifted[::-1].tobytes(), compresslevel=9, mtime=0)
+    return shift(line), shift(fill), normal_bytes, int(gap)
+
+
 def align_existing(entry, source):
     # Fourteen supplied originals are byte-identical. Translate their already
     # reviewed maps together, retaining fine contours and the approved fill fixes.
@@ -124,8 +155,8 @@ def align_existing(entry, source):
                            coverageBounds=bounds(aligned[:,:,1]), bottomGap=0, translatedRows=int(gap))
     import os
     city['thumbnail'] = {**prior['thumbnail'], 'url': os.path.relpath((old_root / prior['thumbnail']['url']).resolve(), OUT)}
-    return city, dict(id=entry['id'], name=entry['name'], sourceSha256=sha(source), sourceChanged=False,
-                      method='translate reviewed line/fill/normal together; source bytes identical', tiers=tiers)
+    return city, dict(id=entry['id'], name=entry['name'], sourceSha256=sha(source), sourceChanged=entry['sourceChanged'],
+                      method='translate reviewed line/fill/normal together; source ink geometry identical', tiers=tiers)
 
 
 def compile_city(entry):
@@ -133,9 +164,14 @@ def compile_city(entry):
     source = (SOURCES / entry['file']).read_bytes()
     if sha(source) != entry['sha256']:
         raise ValueError(f'Source changed: {ident}')
-    if not entry['sourceChanged']:
-        if entry['sha256'] != entry['previousSourceSha256']:
+    if not entry['sourceChanged'] or entry.get('reuseReviewedGeometry'):
+        if not entry.get('reuseReviewedGeometry') and entry['sha256'] != entry['previousSourceSha256']:
             raise ValueError(f'Cannot reuse maps for changed source: {ident}')
+        if entry.get('reuseReviewedGeometry'):
+            a = np.asarray(Image.open(SOURCES/entry['file']).convert('RGBA'),dtype=np.float32)
+            geometry = np.uint8((np.maximum(a[:,:,0]-a[:,:,2],0)*a[:,:,3]/255)>70)
+            if sha(geometry.tobytes()) != entry['reviewedInkSha256']:
+                raise ValueError(f'Reviewed ink geometry changed: {ident}')
         return align_existing(entry, source)
     a = np.asarray(Image.open(SOURCES / entry['file']).convert('RGBA'), dtype=np.float32)
     if list(a.shape[:2][::-1]) != [3878, 1630]:
@@ -169,6 +205,8 @@ def compile_city(entry):
 
     lines, coverage = place(ink), place(cover)
     coverage = np.maximum(coverage, lines)
+    correction, correction_svg = fill_correction(ident)
+    correction = place(correction) if correction is not None else None
     vectors = normal_vectors(lines)
     city = {'name': entry['name'], 'levels': {}}
     tiers = {}
@@ -176,13 +214,19 @@ def compile_city(entry):
         height = round(H * width / W)
         line = np.asarray(Image.fromarray(lines).resize((width, height), Image.Resampling.LANCZOS))
         fill = np.maximum(np.asarray(Image.fromarray(coverage).resize((width, height), Image.Resampling.LANCZOS)), line)
+        if correction is not None:
+            fill = np.maximum(fill,np.asarray(Image.fromarray(correction).resize((width,height),Image.Resampling.LANCZOS)))
+            # Joining the approved facade faces can enclose tiny AA pockets.
+            # Full-fill policy applies to these too; never touch the ink channel.
+            fill = np.where(enclosed_mask(fill),255,fill).astype('uint8')
+        line, fill, normal_bytes, registered_rows = register_solid_bottom(line, fill, normal_map(vectors, (width,height)))
         mask = np.stack([line, fill, np.zeros_like(line)], axis=2)
         city['levels'][tier] = {
-            'mask': emit(f'{ident}-{tier}-mask', webp(Image.fromarray(mask)), (width, height), source, 2),
-            'normal': emit(f'{ident}-{tier}-normal', normal_map(vectors, (width, height)), (width, height), source, 4, 'hfn1-gzip')}
-        if not np.any(line[-1] > 70) or not np.any(fill[-1] > 127):
+            'mask': emit(f'{ident}-{tier}-mask', webp(Image.fromarray(mask)), (width, height), source+correction_svg, 2),
+            'normal': emit(f'{ident}-{tier}-normal', normal_bytes, (width, height), source, 4, 'hfn1-gzip')}
+        if not np.any(line[-1] > 127) or not np.any(fill[-1] > 127):
             raise ValueError(f'{ident}/{tier}: bottom seam')
-        tiers[tier] = dict(size=[width, height], lineBounds=bounds(line), coverageBounds=bounds(fill), bottomGap=0)
+        tiers[tier] = dict(size=[width, height], lineBounds=bounds(line), coverageBounds=bounds(fill), bottomGap=0, solidBaselineAdjustment=registered_rows)
     alpha = Image.fromarray(lines)
     choice = Image.new('RGBA', alpha.size, (180, 132, 52, 0))
     choice.putalpha(alpha)

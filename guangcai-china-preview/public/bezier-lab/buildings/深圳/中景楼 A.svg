@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-mid-a-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-mid-a-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-mid-a" data-building="sz-mid-a" data-name="中景楼 A" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中景楼 A">
+    <title>中景楼 A</title>
+    <path id="sz-mid-a-outline" d="M 1205 1077 L 1268 1060 L 1295 1081 L 1295 1618 L 1205 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-mid-a-components" clip-path="url(#sz-mid-a-clip)">
+      <path id="sz-mid-a-p001" d="M 1268 1060 L 1268 1618" stroke-width="4.6" data-role="detail" data-label="建筑转角">
+        <title>建筑转角</title>
+      </path>
+      <path id="sz-mid-a-p002" d="M 1214 1074.571 L 1214 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p003" d="M 1223 1072.143 L 1223 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p004" d="M 1232 1069.714 L 1232 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p005" d="M 1241 1067.286 L 1241 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p006" d="M 1250 1064.857 L 1250 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p007" d="M 1259 1062.429 L 1259 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p008" d="M 1205 1127 L 1268 1110 L 1295 1131" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p009" d="M 1205 1219 L 1268 1202 L 1295 1223" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p010" d="M 1205 1311 L 1268 1294 L 1295 1315" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p011" d="M 1205 1403 L 1268 1386 L 1295 1407" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p012" d="M 1205 1495 L 1268 1478 L 1295 1499" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p013" d="M 1205 1587 L 1268 1570 L 1295 1591" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p014" d="M 1277 1067 L 1277 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+      <path id="sz-mid-a-p015" d="M 1286 1074 L 1286 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+    </g>
+  </g>
+</svg>

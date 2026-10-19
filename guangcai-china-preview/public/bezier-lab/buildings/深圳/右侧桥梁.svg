@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-bridge-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-bridge-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-bridge" data-building="sz-bridge" data-name="右侧桥梁" data-kind="infrastructure" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="右侧桥梁">
+    <title>右侧桥梁</title>
+    <path id="sz-bridge-outline" d="M 2675 1566 C 2890 1540 3200 1510 3460 1508 L 3460 1528 C 3200 1530 2890 1560 2675 1585 L 2675 1566 Z M 2733 1564.25 L 2767 1562.25 L 2757 1581.25 L 2757 1622 L 2743 1622 L 2743 1581.25 Z M 2848 1558.5 L 2882 1556.5 L 2872 1575.5 L 2872 1622 L 2858 1622 L 2858 1575.5 Z M 2978 1552 L 3012 1550 L 3002 1569 L 3002 1622 L 2988 1622 L 2988 1569 Z M 3113 1545.25 L 3147 1543.25 L 3137 1562.25 L 3137 1622 L 3123 1622 L 3123 1562.25 Z M 3243 1538.75 L 3277 1536.75 L 3267 1555.75 L 3267 1622 L 3253 1622 L 3253 1555.75 Z M 3393 1531.25 L 3427 1529.25 L 3417 1548.25 L 3417 1622 L 3403 1622 L 3403 1548.25 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-bridge-components" clip-path="url(#sz-bridge-clip)" />
+    <path id="sz-bridge-p001" d="M 2675 1566 C 2890 1540 3200 1510 3460 1508 L 3460 1528 C 3200 1530 2890 1560 2675 1585 L 2675 1566 Z" stroke-width="5.6" data-role="component-outline" data-label="连续桥面">
+      <title>连续桥面</title>
+    </path>
+    <path id="sz-bridge-p002" d="M 2733 1564.25 L 2767 1562.25 L 2757 1581.25 L 2757 1622 L 2743 1622 L 2743 1581.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p003" d="M 2848 1558.5 L 2882 1556.5 L 2872 1575.5 L 2872 1622 L 2858 1622 L 2858 1575.5 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p004" d="M 2978 1552 L 3012 1550 L 3002 1569 L 3002 1622 L 2988 1622 L 2988 1569 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p005" d="M 3113 1545.25 L 3147 1543.25 L 3137 1562.25 L 3137 1622 L 3123 1622 L 3123 1562.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p006" d="M 3243 1538.75 L 3277 1536.75 L 3267 1555.75 L 3267 1622 L 3253 1622 L 3253 1555.75 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p007" d="M 3393 1531.25 L 3427 1529.25 L 3417 1548.25 L 3417 1622 L 3403 1622 L 3403 1548.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+  </g>
+</svg>

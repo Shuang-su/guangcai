@@ -1,0 +1,347 @@
+{
+  "shanghai": {
+    "notes": [
+      "主体建筑组合保留，整体略收窄并下移。原稿左界+7px、右界-12px；最高点下移20px，底部延至画板末行。",
+      "东方明珠、摩天楼和坡线按新版附件提取，未以拉伸杯身几何代替图案调整。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "59feabc471e99540bff56cbe2f2d3017bc42ad05723801280c12464def953101",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "urumqi": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "尖塔逐层外檐和高塔外侧留白正常，门窗、塔体及树丛完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、2→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "beijing": {
+    "notes": [
+      "原稿外框和描线范围完全相同，仅2938个RGBA像素有变化，二值金线701个像素不同；属于局部细线变化，不是整体构图重做。",
+      "祈年殿、长城和塔楼组合保留。精细档另把实色描线下移1px，修正上一轮只计算抗锯齿覆盖的底边。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "nanjing": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "城楼外檐与左塔挑檐外部留白；墙面和山坡完整，标准档1像素候选位于边缘。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "nanchang": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "摩天轮外缘/吊舱间、塔楼外檐为外部留白；轮盘、建筑内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "xiamen": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "确认建筑后方树丛开口漏填；建筑与双子塔之间狭缝属于楼间天空，低清封闭候选不填。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "hohhot": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "五塔各层挑檐外侧和屋顶装饰间隙为外部天空；庙宇内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "harbin": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "电视塔收分外侧、教堂穹顶外部与十字架两侧保留天空；墙面完整。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "tianjin": {
+    "notes": [
+      "构图有明显更新：左侧世纪钟替换为西式楼群；摩天轮周边与右侧桥架也更新。",
+      "最高点从原稿321px上移至300px；按新附件的楼群、轮盘与桥梁描线生成，非简单平移旧贴图。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "9322fe3ae9a5b809aab44befd84efb3d7fb9d00f6c5f7971bb57c9108d21f23a",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "taiyuan": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "双塔挑檐两侧及小亭檐下为外部天空；塔层与墙面完整。低清候选处于轮廓边缘。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "guangzhou": {
+    "notes": [
+      "五羊与高楼组合保留，整体向右约50px：原稿左界+56px、右界+49px，顶部257px不变。",
+      "底部原稿空白2px在注册时去除；建筑填色与法线随描线同步，不改变杯身模型。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "c05ed4e8969daa9e6449c3a7a3a8572c98724e8d7dac366898647868c23e8521",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "chengdu": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "候选集中于亭台外檐与后方树丛之间的外部天空；缩图闭合的狭小天空仍保留。桥拱内部已实填。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "jingdezhen": {
+    "notes": [
+      "文件变化仅涉及5个RGBA像素；二值金线和描线范围完全相同。",
+      "沿用已审查的厂房、楼阁、窑体描线与填色；注册后描线IoU为100%，不因重新提取制造额外线宽差异。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "c87bf92701b919014d0de31113aa627427989144ede5bbe9e124efce21244a14",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "hangzhou": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "U形楼中央开口是外部天空；楼体、桥体、体育场内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "wuhan": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "黄鹤楼外檐、电视塔外侧为天空；桥体与楼面内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "shenyang": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "电视塔收分两侧、宫殿外檐为天空；圆形建筑与宫殿内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "shenzhen": {
+    "notes": [
+      "左右边界保持69px与3720px；最高点下移8px，底部下移5px。高楼、中心屋顶和右侧桥梁组合保留，局部描线和竖向关系更新。",
+      "原稿右桥原本已存在，本次不将它误报为新增建筑；按新版线条和底部边界同步更新。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "shijiazhuang": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "塔檐与楼檐外侧留白正常；桥拱、桥体和建筑内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "xian": {
+    "notes": [
+      "古塔、楼阁与城墙组合保留；原稿最高点下移8px、底边下移4px，外框略收窄。",
+      "迁移此前已审查的大雁塔下两层、檐口以及东侧山坡/城墙补填面。只改填色通道，原有描线与法线不变；4/2/5个封闭抗锯齿小孔按整面填色规则补齐。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "zhengzhou": {
+    "notes": [
+      "文件变化仅涉及6个RGBA像素；二值金线和描线范围完全相同。",
+      "电视塔、双塔楼、楼群与桥梁沿用已审查资源，注册后描线IoU为100%；只统一到底部。",
+      "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "fc62fe5380af329616b5abebf5fb0fdfc2ab810d9eead0b1ae820b01be2d1e5f",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "chongqing": {
+    "notes": [
+      "变化最明显的一城：最高点从556px上移至395px，轮廓高度约增加15%；楼群、洪崖洞和桥梁描线均有更新。",
+      "画板尺寸仍为3878×1630；使用新构图保持原稿比例，没有把所有城市强行放大到相同建筑高度。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "f10de1c6cc71e0ec6810ecde09dddd4cc92f835fb1f38f6b8d792093528dca65",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "changchun": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "塔身外侧及站房外檐为天空；楼体和钟楼完整。低清孤点位于檐下外部。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  },
+  "qingdao": {
+    "notes": [
+      "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+      "五月风外轮廓、电视塔收分外侧、亭阁挑檐为天空；雕塑与楼体内部完整。",
+      "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+    ],
+    "reviewed": true,
+    "sourceSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+    "basis": [
+      "source bytes and RGBA",
+      "runtime line registration",
+      "three-tier solid bottom",
+      "92 matching-camera frames inspected in six boards"
+    ]
+  }
+}

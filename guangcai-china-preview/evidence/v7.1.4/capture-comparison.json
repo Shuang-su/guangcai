@@ -1,0 +1,2036 @@
+{
+  "url": "http://127.0.0.1:5287/",
+  "viewport": {
+    "width": 1200,
+    "height": 1000
+  },
+  "rows": [
+    {
+      "cityId": "shanghai",
+      "name": "上海",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shanghai-gold-before.webp",
+      "pose": {
+        "camera": [
+          -80.00000000000001,
+          87,
+          -177.9999999999999
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shanghai",
+      "name": "上海",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shanghai-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shanghai",
+      "name": "上海",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shanghai-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shanghai",
+      "name": "上海",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shanghai-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "urumqi",
+      "name": "乌鲁木齐",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "urumqi-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "urumqi",
+      "name": "乌鲁木齐",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "urumqi-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "urumqi",
+      "name": "乌鲁木齐",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "urumqi-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "urumqi",
+      "name": "乌鲁木齐",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "urumqi-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "beijing",
+      "name": "北京",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "beijing-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "beijing",
+      "name": "北京",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "beijing-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "beijing",
+      "name": "北京",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "beijing-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "beijing",
+      "name": "北京",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "beijing-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanjing",
+      "name": "南京",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "nanjing-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanjing",
+      "name": "南京",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "nanjing-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanjing",
+      "name": "南京",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "nanjing-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanjing",
+      "name": "南京",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "nanjing-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanchang",
+      "name": "南昌",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "nanchang-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanchang",
+      "name": "南昌",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "nanchang-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanchang",
+      "name": "南昌",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "nanchang-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "nanchang",
+      "name": "南昌",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "nanchang-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xiamen",
+      "name": "厦门",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "xiamen-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xiamen",
+      "name": "厦门",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "xiamen-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xiamen",
+      "name": "厦门",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "xiamen-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xiamen",
+      "name": "厦门",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "xiamen-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hohhot",
+      "name": "呼和浩特",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "hohhot-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hohhot",
+      "name": "呼和浩特",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "hohhot-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hohhot",
+      "name": "呼和浩特",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "hohhot-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hohhot",
+      "name": "呼和浩特",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "hohhot-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "harbin",
+      "name": "哈尔滨",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "harbin-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "harbin",
+      "name": "哈尔滨",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "harbin-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "harbin",
+      "name": "哈尔滨",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "harbin-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "harbin",
+      "name": "哈尔滨",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "harbin-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "tianjin",
+      "name": "天津",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "tianjin-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "tianjin",
+      "name": "天津",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "tianjin-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "tianjin",
+      "name": "天津",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "tianjin-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "tianjin",
+      "name": "天津",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "tianjin-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "taiyuan",
+      "name": "太原",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "taiyuan-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "taiyuan",
+      "name": "太原",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "taiyuan-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "taiyuan",
+      "name": "太原",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "taiyuan-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "taiyuan",
+      "name": "太原",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "taiyuan-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "guangzhou",
+      "name": "广州",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "guangzhou-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "guangzhou",
+      "name": "广州",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "guangzhou-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "guangzhou",
+      "name": "广州",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "guangzhou-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "guangzhou",
+      "name": "广州",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "guangzhou-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chengdu",
+      "name": "成都",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "chengdu-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chengdu",
+      "name": "成都",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "chengdu-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chengdu",
+      "name": "成都",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "chengdu-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chengdu",
+      "name": "成都",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "chengdu-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "jingdezhen",
+      "name": "景德镇",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "jingdezhen-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "jingdezhen",
+      "name": "景德镇",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "jingdezhen-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "jingdezhen",
+      "name": "景德镇",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "jingdezhen-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "jingdezhen",
+      "name": "景德镇",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "jingdezhen-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hangzhou",
+      "name": "杭州",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "hangzhou-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hangzhou",
+      "name": "杭州",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "hangzhou-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hangzhou",
+      "name": "杭州",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "hangzhou-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "hangzhou",
+      "name": "杭州",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "hangzhou-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "wuhan",
+      "name": "武汉",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "wuhan-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "wuhan",
+      "name": "武汉",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "wuhan-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "wuhan",
+      "name": "武汉",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "wuhan-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "wuhan",
+      "name": "武汉",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "wuhan-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenyang",
+      "name": "沈阳",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shenyang-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenyang",
+      "name": "沈阳",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shenyang-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenyang",
+      "name": "沈阳",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shenyang-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenyang",
+      "name": "沈阳",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shenyang-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenzhen",
+      "name": "深圳",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shenzhen-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenzhen",
+      "name": "深圳",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shenzhen-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenzhen",
+      "name": "深圳",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shenzhen-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shenzhen",
+      "name": "深圳",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shenzhen-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shijiazhuang",
+      "name": "石家庄",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shijiazhuang-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shijiazhuang",
+      "name": "石家庄",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shijiazhuang-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shijiazhuang",
+      "name": "石家庄",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "shijiazhuang-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "shijiazhuang",
+      "name": "石家庄",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "shijiazhuang-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xian",
+      "name": "西安",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "xian-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xian",
+      "name": "西安",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "xian-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xian",
+      "name": "西安",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "xian-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "xian",
+      "name": "西安",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "xian-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "zhengzhou",
+      "name": "郑州",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "zhengzhou-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "zhengzhou",
+      "name": "郑州",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "zhengzhou-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "zhengzhou",
+      "name": "郑州",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "zhengzhou-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "zhengzhou",
+      "name": "郑州",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "zhengzhou-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chongqing",
+      "name": "重庆",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "chongqing-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chongqing",
+      "name": "重庆",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "chongqing-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chongqing",
+      "name": "重庆",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "chongqing-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "chongqing",
+      "name": "重庆",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "chongqing-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "changchun",
+      "name": "长春",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "changchun-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "changchun",
+      "name": "长春",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "changchun-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "changchun",
+      "name": "长春",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "changchun-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "changchun",
+      "name": "长春",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "changchun-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "qingdao",
+      "name": "青岛",
+      "finish": "gold",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "qingdao-gold-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "qingdao",
+      "name": "青岛",
+      "finish": "gold",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "qingdao-gold-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "qingdao",
+      "name": "青岛",
+      "finish": "blue",
+      "phase": "before",
+      "resourceReleaseId": "v7-4",
+      "file": "qingdao-blue-before.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    },
+    {
+      "cityId": "qingdao",
+      "name": "青岛",
+      "finish": "blue",
+      "phase": "after",
+      "resourceReleaseId": "v7-5",
+      "file": "qingdao-blue-after.webp",
+      "pose": {
+        "camera": [
+          -79.99999999999997,
+          86.99999999999997,
+          -178.00000000000003
+        ],
+        "target": [
+          -9,
+          38,
+          -11.000000000000002
+        ],
+        "view": "detail"
+      },
+      "textureWidth": 4096
+    }
+  ],
+  "errors": [],
+  "physicalDeviceTested": false,
+  "passed": true
+}

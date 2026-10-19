@@ -1,6 +1,6 @@
-# 中国杯 V7.1.3：实拍花纹修正与完整版本还原
+# 中国杯 V7.1.4：城市描线更新与逐城对比
 
-2026-10-19 本地候选：23城新原图与描线底边统一，资源版本 `v7-5`。已发布版本与在线地址仍为下文 V7.1.3 / v7-4；本地 bootstrap 改用新候选并保留四个历史资源版本。后台交接 Excel/JSON 仍对应既有 v7-4，不将候选当作已发布交付。[本轮请求、验证和 checkpoint](../docs/changes/20261019-city-artwork-alignment/completion.md)。
+2026-10-19：V7.1.4 / v7-5 发布批次，更新23城描线与底部对齐，文字及字框沿用V7.1.3。新增 [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) 与 [独立闭合建筑SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/)；发布核验以本轮完成记录为准。后台Excel/JSON仍为v7-4历史导出。
 
 [后台配置 Excel](integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](integration/backend-handoff/backend-config.json) · [字段、录入与扩展说明](integration/backend-handoff/README.md)。后台同事先读此入口，再按性能文档逐项接入；表格不是新增运行时接口。
 
@@ -22,7 +22,7 @@ V7.1.3 保留V7.1.1的性能机制，基于V7.0.4，同步V6.0.4的独立液态�
 | `npm run build:audit` | 单独构建历史开发/审计入口，不进入消费者包 |
 | `node tools/v7/package-handoff.mjs` | 从干净提交生成带哈希清单的消费者/源码交接包 |
 
-资源默认 v7-4：三部件花纹方向按手机实拍纠正，侧花纹下延至城市底边，两个贴图白洞补金；白瓷连接件保留。manifest新增可选fixedMapping，作品字段不变。保留v7-1、v7-2、v7-3不可变目录，完整还原花纸、映射、城市和文字；失败恢复旧作品。性能文档详细说明每个加载、缓存、预算、降级与恢复条件。
+历史v7-4：三部件花纹方向按手机实拍纠正，侧花纹下延至城市底边，两个贴图白洞补金；白瓷连接件保留。manifest新增可选fixedMapping，作品字段不变。保留v7-1、v7-2、v7-3不可变目录，完整还原花纸、映射、城市和文字；失败恢复旧作品。性能文档详细说明每个加载、缓存、预算、降级与恢复条件。
 
 API与资源地址通过公开 `runtime-config.js` 配置；公司身份、数据库和真实业务后端不由mock承担。完整接口、Schema、数据关系、CORS/COS及部署步骤见交接主文档。消费者包不包含母版和历史审计素材，资源变动才运行生成器。
 
@@ -154,10 +154,18 @@ QA_URL=http://127.0.0.1:5216/ npm run qa:beijing
 
 六组杯身文字统一为思源宋体 CN Bold（700），字框与间距对齐用户SVG；菜单字体不变。23城原稿与指定目录逐字节一致。逐城检查确认厦门树丛开口漏填、西安右城墙3个微小空点，修正仅增加G覆盖；所有R描线、法线、原稿和旧资源保持不变。
 
-[字体与城市审核记录](evidence/v7.1.2/README.md) · [当前后台配置表](integration/backend-handoff/README.md)。V7.1.2发布时使用已生成的v7-3，当前V7.1.3默认使用v7-4；不要重跑V6/v7-1制作命令覆盖历史资源。制作复现步骤见审核记录。
+[字体与城市审核记录](evidence/v7.1.2/README.md) · [当前后台配置表](integration/backend-handoff/README.md)。V7.1.2发布时使用已生成的v7-3，当前V7.1.4默认使用v7-5；不要重跑V6/v7-1制作命令覆盖历史资源。制作复现步骤见审核记录。
 
 ## V7.1.3 花纸与把手核对
 
 [制作、尺寸与兼容记录](evidence/v7.1.3/README.md) · [固定相机对照](evidence/v7.1.3/qa/floral/) · [完整把手尺寸](evidence/v7.1.3/handle-dimensions.json)。把手轴对杯身径向平面对称，旧花纹范围使其相对花纹中心偏1.126mm；本轮保持主把手和横向花纹范围；追加反馈仅补足上连接白瓷下沿。模型尺寸为照片估计，不是实物测量。
 
 复现新资源：`node tools/v7/compile-v7-4.mjs`；验证：`node tools/v7/validate-v7-4.mjs`。不可重跑历史生成器覆盖旧发布。四个资源目录一起部署COS；表格和JSON通过固定sourceCommit导出。
+
+## V7.1.4 描线与素材查看
+
+新资源保留原PNG导出缩放，23城三级实色描线均贴到底部。9个文件像素有变化，其中景德镇5像素、郑州6像素不改变二值金线，复用已审核几何；14个文件完全相同。西安保留已批准的建筑填色。六组文字、字框、固定花纸与底印保持v7-4。
+
+`/city-compare/` 提供23城逐项对比；`/bezier-lab/` 是另一个聊天最新两城独立闭合SVG试绘，含22个独立对象，不替换应用图案。
+
+[V7.1.4 Issue #41](https://github.com/Shuang-su/guangcai/issues/41) · [本轮完成记录](../docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md)。当前后台表格为v7-4导出；接入v7-5时以更新后的bootstrap、catalog、manifest和JSON Schema为准。

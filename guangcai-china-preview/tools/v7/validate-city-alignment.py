@@ -4,13 +4,14 @@ import gzip
 import hashlib
 import json
 import struct
+import os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 RELEASE = ROOT / 'public/releases/v7-5'
 SOURCE = ROOT / 'assets/source/v7.1.4'
-OUT = ROOT / 'evidence/city-alignment-20261019'
+OUT = ROOT / os.environ.get('CITY_ALIGNMENT_OUT', 'evidence/city-alignment-20261019')
 
 
 def load(root):
@@ -74,7 +75,7 @@ def main():
             asset = level['mask']
             mask = np.asarray(Image.open(RELEASE / asset['url']).convert('RGB'))
             h, w = mask.shape[:2]
-            assert np.any(mask[-1, :, 0] > 70), (ident, tier, 'line bottom')
+            assert np.any(mask[-1, :, 0] > 127), (ident, tier, 'solid line bottom')
             assert np.any(mask[-1, :, 1] > 127), (ident, tier, 'fill bottom')
             assert np.all(mask[:, :, 1] >= mask[:, :, 0]), (ident, tier, 'coverage misses line')
             # Source sample locations predict where strokes must appear on the cup.
