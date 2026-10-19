@@ -1,0 +1,257 @@
+{
+  "cities": {
+    "深圳": {
+      "objects": [
+        {
+          "key": "sz-hills",
+          "name": "背景山线",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-landscape",
+          "name": "前景植物",
+          "closed_exterior_subpaths": 6,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-diwang-left",
+          "name": "地王大厦・左塔",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "sz-diwang-right",
+          "name": "地王大厦・右塔",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "sz-mid-a",
+          "name": "中景楼 A",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-mid-b",
+          "name": "中景楼 B",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-mid-c",
+          "name": "中景楼 C",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-mid-d",
+          "name": "中景楼 D",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-spring",
+          "name": "华润春笋",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "sz-pingan",
+          "name": "平安金融中心",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "sz-kk100",
+          "name": "京基100",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "sz-plinths",
+          "name": "前景建筑台座",
+          "closed_exterior_subpaths": 4,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-bridge",
+          "name": "右侧桥梁",
+          "closed_exterior_subpaths": 7,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "sz-civic",
+          "name": "深圳市民中心",
+          "closed_exterior_subpaths": 32,
+          "standalone": true,
+          "eaves": [
+            {
+              "name": "civic-roof",
+              "closure_gap_px": 0.0,
+              "max_smooth_join_angle_degrees": 0.007089936591886025,
+              "cubic_segments": 12,
+              "sampled_self_intersections": 0
+            }
+          ],
+          "continuous_long_sides": 0
+        }
+      ],
+      "path_count": 353,
+      "cubic_segments": 220,
+      "straight_segments": 587,
+      "grid_members": 0,
+      "clip_and_mask_outline_references_resolve": true,
+      "source_hash_verified": true
+    },
+    "北京": {
+      "objects": [
+        {
+          "key": "bj-hills",
+          "name": "背景山线",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "bj-wall",
+          "name": "长城连续墙身",
+          "closed_exterior_subpaths": 3,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0,
+          "wall_runs": [
+            {
+              "teeth": 6,
+              "arc_length_pitch_px": 26.919561266943944,
+              "rise_px": 14,
+              "width_variation_px": 0.0
+            },
+            {
+              "teeth": 29,
+              "arc_length_pitch_px": 25.602629510571496,
+              "rise_px": 14,
+              "width_variation_px": 0.0
+            },
+            {
+              "teeth": 21,
+              "arc_length_pitch_px": 26.436991666397645,
+              "rise_px": 14,
+              "width_variation_px": 0.0
+            }
+          ]
+        },
+        {
+          "key": "bj-wall-tower-west",
+          "name": "长城・西侧城楼",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "bj-wall-tower-east",
+          "name": "长城・东侧城楼",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "bj-zun",
+          "name": "中国尊",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 2
+        },
+        {
+          "key": "bj-temple",
+          "name": "天坛祈年殿",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [
+            {
+              "name": "temple-tier-1",
+              "closure_gap_px": 0.0,
+              "max_smooth_join_angle_degrees": 0.0,
+              "cubic_segments": 6,
+              "sampled_self_intersections": 0,
+              "mirror_control_point_error_px": 0.0
+            },
+            {
+              "name": "temple-tier-2",
+              "closure_gap_px": 0.0,
+              "max_smooth_join_angle_degrees": 0.0,
+              "cubic_segments": 6,
+              "sampled_self_intersections": 0,
+              "mirror_control_point_error_px": 0.0
+            },
+            {
+              "name": "temple-tier-3",
+              "closure_gap_px": 0.0,
+              "max_smooth_join_angle_degrees": 0.0,
+              "cubic_segments": 6,
+              "sampled_self_intersections": 0,
+              "mirror_control_point_error_px": 0.0
+            }
+          ],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "bj-terrace",
+          "name": "天坛台基与栏杆",
+          "closed_exterior_subpaths": 1,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        },
+        {
+          "key": "bj-cctv",
+          "name": "央视总部",
+          "closed_exterior_subpaths": 2,
+          "standalone": true,
+          "eaves": [],
+          "continuous_long_sides": 0
+        }
+      ],
+      "path_count": 553,
+      "cubic_segments": 705,
+      "straight_segments": 913,
+      "grid_members": 74,
+      "clip_and_mask_outline_references_resolve": true,
+      "source_hash_verified": true
+    }
+  },
+  "passed": true,
+  "psd_source_hash_verified": true,
+  "previous_delivery_files_unchanged": 51,
+  "embedded_raster_images": 0
+}

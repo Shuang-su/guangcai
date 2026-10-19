@@ -1,6 +1,6 @@
 # 广彩一号杯与中国杯
 
-2026-10-20：V7.1.6准备发布，修复独立开发页在持续慢下载时的错误总超时；字框、报告及实验素材沿用已发布的V7.1.5 / v7-6。
+2026-10-20：V7.1.6 / v7-6 已合并上线，修复独立开发页在持续慢下载时的错误总超时；字框、报告及实验素材沿用已发布的V7.1.5 / v7-6。
 
 2026-10-20：V7.1.5 / v7-6 已合并发布，服务端文件核验完成。统一23城字框，成都文字6px归一；新增 [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) 和 [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/)。正式城市描线沿用V7.1.4，实验页加入蓝湖当前稿与两城贝塞尔SVG。PR #44；冷加载开发页问题转V7.1.6修复，详情见本轮记录。
 
@@ -12,7 +12,7 @@
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 本轮发布候选：V7.1.6 / v7-6
+## 当前发布批次：V7.1.6 / v7-6
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 
