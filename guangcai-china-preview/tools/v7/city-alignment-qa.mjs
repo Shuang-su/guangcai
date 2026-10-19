@@ -12,7 +12,7 @@ await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({channel:'chrome'});
 const report={url,browser:'Chrome / Playwright (Browser plugin not available)',viewports:[],checks:[],errors:[],warnings:[],physicalDeviceTested:false};
 function check(name,value){assert.ok(value,name);report.checks.push(name);}
-async function settled(page){await page.waitForFunction(()=>window.cupViewer?.ready()&&!window.cupViewer.debug().selection.busy&&!window.cupViewer.debug().quality.upgrading,null,{timeout:90000});}
+async function settled(page){await page.waitForFunction(()=>window.cupViewer?.ready()&&!window.cupViewer.debug().selection.busy&&!window.cupViewer.debug().quality.upgrading,null,{timeout:Number(process.env.QA_READY_TIMEOUT??90000)});}
 function observe(page){page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());if(m.type()==='warning')report.warnings.push(m.text());});}
 try{
  const page=await browser.newPage({viewport:{width:1200,height:1000},deviceScaleFactor:1});observe(page);

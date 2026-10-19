@@ -1,0 +1,54 @@
+{
+  "base": "https://guangcai-no1-china-v7.netlify.app/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "report identity and 23 rows",
+    "report has six wording options",
+    "reference and comparison load shanghai",
+    "reference and comparison load urumqi",
+    "reference and comparison load beijing",
+    "reference and comparison load nanjing",
+    "reference and comparison load nanchang",
+    "reference and comparison load xiamen",
+    "reference and comparison load hohhot",
+    "reference and comparison load harbin",
+    "reference and comparison load tianjin",
+    "reference and comparison load taiyuan",
+    "reference and comparison load guangzhou",
+    "reference and comparison load chengdu",
+    "reference and comparison load jingdezhen",
+    "reference and comparison load hangzhou",
+    "reference and comparison load wuhan",
+    "reference and comparison load shenyang",
+    "reference and comparison load shenzhen",
+    "reference and comparison load shijiazhuang",
+    "reference and comparison load xian",
+    "reference and comparison load zhengzhou",
+    "reference and comparison load chongqing",
+    "reference and comparison load changchun",
+    "reference and comparison load qingdao",
+    "wording and paired cup images open",
+    "wording and paired cup images together",
+    "wording and paired cup images ocean",
+    "wording and paired cup images sharing",
+    "wording and paired cup images cooperation",
+    "wording and paired cup images innovation",
+    "comparison slider reveals old label extent",
+    "comparison slider reveals new label extent",
+    "Chengdu discrepancy is explicit",
+    "report no framework overlay or horizontal overflow"
+  ],
+  "errors": [],
+  "physicalDeviceTested": false,
+  "passed": false,
+  "failure": "page.waitForFunction: Timeout 120000ms exceeded.\n    at labReady (/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/tools/v7/label-lab-qa.mjs:7:47)\n    at /Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/tools/v7/label-lab-qa.mjs:16:56"
+}
