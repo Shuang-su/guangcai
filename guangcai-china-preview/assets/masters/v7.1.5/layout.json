@@ -1,0 +1,871 @@
+{
+  "date": "2026-10-20",
+  "method": "MasterGo normal UI Copy SVG; CUA; no private editor API",
+  "sourceUrl": "https://mastergo.com/file/207427706578154?fileOpenFrom=home&page_id=M&shareId=207427706578154&state=LanHuVX",
+  "canvas": [
+    1939,
+    815
+  ],
+  "canonicalFrame": {
+    "left": 1539,
+    "top": 190,
+    "width": 127,
+    "height": 423
+  },
+  "canonicalText": {
+    "left": 1570,
+    "top": 249,
+    "width": 116,
+    "height": 343,
+    "fontSize": 66
+  },
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shanghai.svg",
+      "sha256": "f5c6184bd65d590ddec8c459ef3be1ed7ea501757a59694400aa7b0b0061d89f",
+      "bytes": 1309035,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 76.0,
+        "y": 114.0,
+        "width": 1607.0,
+        "height": 701.0
+      }
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/urumqi.svg",
+      "sha256": "4e01614622779ee3a181da2e9c44870d46fcbc6d29f7ea024360f6356f10af2d",
+      "bytes": 1976636,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -15.0,
+        "y": 43.0,
+        "width": 1923.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/beijing.svg",
+      "sha256": "572133c8dd38a007034370f26adecf09fb63169c217b089ac4fc4499b0ac372a",
+      "bytes": 1452978,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0.0,
+        "y": 3.0,
+        "width": 1938.0,
+        "height": 812.0
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/nanjing.svg",
+      "sha256": "e16a9ea1302947b23d3596d36d6428ffabbcf07303bcabe682632aa962302cc0",
+      "bytes": 1334630,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 17.0,
+        "y": 67.0,
+        "width": 1777.0,
+        "height": 756.0
+      }
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/nanchang.svg",
+      "sha256": "fd12ad8bc1e722a23a0649f13796a1d0d97b53bb91f54b413484a91cf5dfd4cf",
+      "bytes": 1489131,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -34.0,
+        "y": 40.0,
+        "width": 1922.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/xiamen.svg",
+      "sha256": "bae533336b1997964d7b4359962fc0fd18143f0bf0e328db73bde130c8cb9ba9",
+      "bytes": 1452716,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -1.0,
+        "y": 70.0,
+        "width": 1784.0,
+        "height": 761.0
+      }
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/hohhot.svg",
+      "sha256": "0127edc0937c181418d14acbfb4f0e412c06494b22cdf38575fa7d098d10c7ff",
+      "bytes": 1298502,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -18.0,
+        "y": 31.0,
+        "width": 1973.0,
+        "height": 842.0
+      }
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/harbin.svg",
+      "sha256": "e1d5822036d567ef355c27fea78f7f3a6b0030a5679e89c11fc7aa137957be07",
+      "bytes": 1539632,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 46.0,
+        "y": 94.0,
+        "width": 1721.0,
+        "height": 732.0
+      }
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/tianjin.svg",
+      "sha256": "67180703921f49d5ea584e463f9c4a7a477d6f6c03e0490043d4fb1b2e568812",
+      "bytes": 1726083,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 17.0,
+        "y": 103.0,
+        "width": 1771.0,
+        "height": 754.0
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/taiyuan.svg",
+      "sha256": "afefe17d3b79c172a647ec9ccdb0e2aca8798687b96dacd44aebfde0140f837e",
+      "bytes": 1368631,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 9.0,
+        "y": 29.0,
+        "width": 1921.0,
+        "height": 819.0
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/guangzhou.svg",
+      "sha256": "b38585ef5c845f6520d2406444072f5b92f67795e4d2b2cf6c42ee1de5d67754",
+      "bytes": 1766146,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 29.0,
+        "y": 1.0,
+        "width": 1934.0,
+        "height": 813.0
+      }
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 255,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/chengdu.svg",
+      "sha256": "09407a0ea574f9763ca509f921890f0bad427dd24df2b1d99478e0444663e902",
+      "bytes": 1374167,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": false,
+      "cityImageRect": {
+        "x": -21.0,
+        "y": 16.0,
+        "width": 1922.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/jingdezhen.svg",
+      "sha256": "a5f8f74ef3827cfac7c3a977a194987cdd42a8a163d7d70b161cbfb92566f7b1",
+      "bytes": 1496082,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -11.0,
+        "y": 14.0,
+        "width": 1975.0,
+        "height": 841.0
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 204,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/hangzhou.svg",
+      "sha256": "f801c67c0547c97477e46e95235d8925116210fe9439e9b0a19bb820b93bba94",
+      "bytes": 1305785,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -20.0,
+        "y": 5.0,
+        "width": 1895.0,
+        "height": 830.0
+      }
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/wuhan.svg",
+      "sha256": "ac70161ad494a8a30aa42e3b82907b6f2f9ccc63d1275bdef2e91cf8982c96e7",
+      "bytes": 1500249,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -3.0,
+        "y": 16.0,
+        "width": 1921.0,
+        "height": 819.0
+      }
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shenyang.svg",
+      "sha256": "09667618b3ceb5036b78ded0612f84b6b4823d1ec1c68d17aaeee00652c89f1b",
+      "bytes": 1531653,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0.0,
+        "y": 67.0,
+        "width": 1789.0,
+        "height": 763.0
+      }
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shenzhen.svg",
+      "sha256": "08bbd22afb2e87bc648aa09f6504ef82f6080b243bfa1375d0e5236949fb8061",
+      "bytes": 2063996,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 20.0,
+        "y": 7.0,
+        "width": 1853.0,
+        "height": 808.0
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shijiazhuang.svg",
+      "sha256": "187b7c5b6d215496c5c1162920acdb5940dc1c1ba64866e1e4e210a7259b3306",
+      "bytes": 1445136,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0.0,
+        "y": 35.0,
+        "width": 1880.0,
+        "height": 800.0
+      }
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/xian.svg",
+      "sha256": "80e7d45e06fd2838fe86d683e97942d8f1e345469ef6c4ef5ccb2b2ffe2f5a75",
+      "bytes": 1539495,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 3.0,
+        "y": 35.0,
+        "width": 1922.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/zhengzhou.svg",
+      "sha256": "10b32138aaa1fb6faac796cd8451c82dc3b32b021afcc2dc695c6d36ae171fbf",
+      "bytes": 1440993,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0.0,
+        "y": 52.0,
+        "width": 1838.0,
+        "height": 782.0
+      }
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/chongqing.svg",
+      "sha256": "a0b21904833147dec17045e457eac4c05a426c5bc0998b820f056e7bc37bdb7c",
+      "bytes": 1620526,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 14.0,
+        "y": 16.0,
+        "width": 1922.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/changchun.svg",
+      "sha256": "28a821c9de67a43d0088455e0b302673862f7db131d59dc71872699788d5554d",
+      "bytes": 1275340,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0.0,
+        "y": 23.0,
+        "width": 1923.0,
+        "height": 818.0
+      }
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/qingdao.svg",
+      "sha256": "d396d8c5ba31e98d5f1315e5ae8406b8f5594faec5c56fa64c9274955931c8fe",
+      "bytes": 1270147,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 9.0,
+        "y": 39.0,
+        "width": 1864.0,
+        "height": 793.0
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "cityId": "chengdu",
+      "kind": "textVerticalOffset",
+      "sourceDeltaY": 6,
+      "productionDeltaY": 0,
+      "action": "Use the same canonical open-slogan outlines and position as Xiamen; original retained for comparison."
+    }
+  ],
+  "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+  "passed": true,
+  "missingPhrasesInReference": [
+    "cooperation",
+    "innovation"
+  ],
+  "deadSourceNodes": {
+    "guangzhou": "Empty old mask group has no rendered children.",
+    "shijiazhuang": "Old text lies outside the clipped canvas; current visible text matches sharing."
+  }
+}

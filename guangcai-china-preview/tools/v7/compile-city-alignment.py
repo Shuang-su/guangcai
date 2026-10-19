@@ -159,7 +159,7 @@ def align_existing(entry, source):
                       method='translate reviewed line/fill/normal together; source ink geometry identical', tiers=tiers)
 
 
-def compile_city(entry):
+def compile_city(entry, tiers_spec=(('light',1024),('standard',2048),('detail',4096))):
     ident = entry['id']
     source = (SOURCES / entry['file']).read_bytes()
     if sha(source) != entry['sha256']:
@@ -210,7 +210,7 @@ def compile_city(entry):
     vectors = normal_vectors(lines)
     city = {'name': entry['name'], 'levels': {}}
     tiers = {}
-    for tier, width in [('light', 1024), ('standard', 2048), ('detail', 4096)]:
+    for tier, width in tiers_spec:
         height = round(H * width / W)
         line = np.asarray(Image.fromarray(lines).resize((width, height), Image.Resampling.LANCZOS))
         fill = np.maximum(np.asarray(Image.fromarray(coverage).resize((width, height), Image.Resampling.LANCZOS)), line)
