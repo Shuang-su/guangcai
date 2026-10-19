@@ -1,0 +1,1275 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-hills-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-hills-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-hills-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-diwang-left-outline" fill="black" stroke="none" />
+      <use href="#sz-diwang-right-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-a-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-b-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-landscape-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-landscape-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-landscape-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-diwang-left-outline" fill="black" stroke="none" />
+      <use href="#sz-diwang-right-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-a-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-b-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-diwang-left-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-diwang-left-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-diwang-left-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-diwang-right-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-a-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-b-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-diwang-right-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-diwang-right-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-diwang-right-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-mid-a-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-b-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-mid-a-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-mid-a-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-mid-a-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-mid-b-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-mid-b-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-mid-b-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-mid-b-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-mid-c-outline" fill="black" stroke="none" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-mid-c-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-mid-c-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-mid-c-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-mid-d-outline" fill="black" stroke="none" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-mid-d-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-mid-d-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-mid-d-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-spring-outline" fill="black" stroke="none" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-spring-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-spring-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-spring-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-pingan-outline" fill="black" stroke="none" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-pingan-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-pingan-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-pingan-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-kk100-outline" fill="black" stroke="none" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-kk100-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-kk100-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-kk100-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-plinths-outline" fill="black" stroke="none" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-plinths-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-plinths-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-plinths-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-bridge-outline" fill="black" stroke="none" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-bridge-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-bridge-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="sz-bridge-occlusion" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <use href="#sz-civic-outline" fill="black" stroke="none" />
+    </mask>
+    <clipPath id="sz-civic-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-civic-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-hills" data-building="sz-hills" data-name="背景山线" data-kind="background" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="背景山线" mask="url(#sz-hills-occlusion)">
+    <title>背景山线</title>
+    <path id="sz-hills-outline" d="M 70 1622 C 160 1480 235 1370 335 1350 C 490 1335 590 1280 725 1245 C 850 1205 970 1280 1090 1295 C 1350 1370 1540 1400 1730 1340 C 1840 1310 1900 1230 2030 1275 C 2260 1355 2290 1338 2430 1325 C 2650 1304 2720 1242 2850 1320 C 3030 1440 3000 1400 3120 1445 C 3325 1330 3260 1340 3440 1405 C 3620 1470 3660 1550 3710 1622 L 70 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-hills-components" clip-path="url(#sz-hills-clip)" />
+  </g>
+  <g id="sz-landscape" data-building="sz-landscape" data-name="前景植物" data-kind="landscape" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="前景植物" mask="url(#sz-landscape-occlusion)">
+    <title>前景植物</title>
+    <path id="sz-landscape-outline" d="M 3626.78 1626 C 3622.08 1616.04 3618.38 1608.06 3606 1607 C 3590.42 1574.05 3580.65 1595.58 3569.02 1589.53 C 3565.54 1587.72 3564.15 1580.91 3561 1578.02 C 3555.65 1573.1 3550.32 1574.51 3545.02 1571.53 C 3541.75 1569.69 3540.16 1563.74 3537 1561.11 C 3521.11 1547.84 3504.2 1556.89 3495 1572 L 3495 1622 L 3626.78 1622 L 3626.78 1626 Z M 863.64 1425.1 C 873.13 1407.15 875.81 1416.76 887.98 1409.53 C 892.54 1406.82 894.09 1397.08 899 1393.11 C 909.19 1384.88 916.28 1391.13 927 1389.98 C 930.19 1389.63 932.82 1387.12 936 1386.34 C 941.45 1385 947.77 1387.83 953.07 1388.56 L 953.07 1622 L 863.64 1622 L 863.64 1425.1 Z M 627.97 1423.88 C 623.84 1422.72 615.55 1422.59 612.11 1420.53 C 609.44 1418.93 607.6 1415.29 605 1413.34 C 595.44 1406.17 582.58 1411.42 575 1419 C 570.58 1423.42 570.12 1431.09 565.89 1434.87 C 556.65 1443.13 552.6 1431.28 542.53 1451.45 L 542.53 1622 L 627.97 1622 L 627.97 1423.88 Z M 526 1626 C 526 1621.25 523.98 1610.42 528.02 1607.13 C 531.53 1604.27 638.38 1603.72 649.55 1605.89 L 649.55 1622 L 526 1622 L 526 1626 Z M 308 1507 L 297 1506.99 C 287.65 1488.49 285.07 1498.06 274 1492.53 C 270.42 1490.74 268.41 1486.54 265 1484.45 C 247.09 1473.48 235.19 1491.1 228 1504 C 216.07 1504.06 205.34 1512.62 205 1525 L 205 1622 L 308 1622 L 308 1507 Z M 128.94 1586 C 136.09 1574.17 140.25 1568 155 1568 C 161.43 1554.41 166.61 1542.91 184 1543 C 186.66 1543.01 189.64 1544.28 191.98 1542.64 C 195.71 1540.02 198.02 1530.41 205 1525 L 205 1622 L 128.94 1622 L 128.94 1586 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-landscape-components" clip-path="url(#sz-landscape-clip)" />
+    <path id="sz-landscape-p001" d="M 3626.78 1626 C 3622.08 1616.04 3618.38 1608.06 3606 1607 C 3590.42 1574.05 3580.65 1595.58 3569.02 1589.53 C 3565.54 1587.72 3564.15 1580.91 3561 1578.02 C 3555.65 1573.1 3550.32 1574.51 3545.02 1571.53 C 3541.75 1569.69 3540.16 1563.74 3537 1561.11 C 3521.11 1547.84 3504.2 1556.89 3495 1572" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+    <path id="sz-landscape-p002" d="M 863.64 1425.1 C 873.13 1407.15 875.81 1416.76 887.98 1409.53 C 892.54 1406.82 894.09 1397.08 899 1393.11 C 909.19 1384.88 916.28 1391.13 927 1389.98 C 930.19 1389.63 932.82 1387.12 936 1386.34 C 941.45 1385 947.77 1387.83 953.07 1388.56" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+    <path id="sz-landscape-p003" d="M 627.97 1423.88 C 623.84 1422.72 615.55 1422.59 612.11 1420.53 C 609.44 1418.93 607.6 1415.29 605 1413.34 C 595.44 1406.17 582.58 1411.42 575 1419 C 570.58 1423.42 570.12 1431.09 565.89 1434.87 C 556.65 1443.13 552.6 1431.28 542.53 1451.45" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+    <path id="sz-landscape-p004" d="M 526 1626 C 526 1621.25 523.98 1610.42 528.02 1607.13 C 531.53 1604.27 638.38 1603.72 649.55 1605.89" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+    <path id="sz-landscape-p005" d="M 308 1507 L 297 1506.99 C 287.65 1488.49 285.07 1498.06 274 1492.53 C 270.42 1490.74 268.41 1486.54 265 1484.45 C 247.09 1473.48 235.19 1491.1 228 1504 C 216.07 1504.06 205.34 1512.62 205 1525" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+    <path id="sz-landscape-p006" d="M 128.94 1586 C 136.09 1574.17 140.25 1568 155 1568 C 161.43 1554.41 166.61 1542.91 184 1543 C 186.66 1543.01 189.64 1544.28 191.98 1542.64 C 195.71 1540.02 198.02 1530.41 205 1525" stroke-width="3.3" data-role="detail" data-label="保留的有机植物曲线">
+      <title>保留的有机植物曲线</title>
+    </path>
+  </g>
+  <g id="sz-diwang-left" data-building="sz-diwang-left" data-name="地王大厦・左塔" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="地王大厦・左塔" mask="url(#sz-diwang-left-occlusion)">
+    <title>地王大厦・左塔</title>
+    <path id="sz-diwang-left-outline" d="M 621 1618 C 619 1320 620 1090 621 875 C 621 850 642 842 647 842 L 647 807 L 655 807 L 655 764 C 655 749 658 746 663 746 L 663 660 L 667 660 L 667 746 C 672 746 675 749 675 764 L 675 807 L 683 807 L 683 842 C 688 842 709 850 709 875 C 710 1090 711 1320 709 1618 L 621 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-diwang-left-components" clip-path="url(#sz-diwang-left-clip)">
+      <path id="sz-diwang-left-p001" d="M 631 900 L 699 900" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p002" d="M 631 916 L 699 916" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p003" d="M 631 932 L 699 932" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p004" d="M 631 948 L 699 948" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p005" d="M 631 964 L 699 964" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p006" d="M 631 980 L 699 980" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p007" d="M 631 996 L 699 996" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p008" d="M 631 1012 L 699 1012" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p009" d="M 631 1028 L 699 1028" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p010" d="M 631 1044 L 699 1044" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p011" d="M 631 1060 L 699 1060" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p012" d="M 631 1076 L 699 1076" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p013" d="M 631 1092 L 699 1092" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p014" d="M 631 1108 L 699 1108" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p015" d="M 631 1124 L 699 1124" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p016" d="M 631 1140 L 699 1140" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p017" d="M 631 1156 L 699 1156" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p018" d="M 631 1172 L 699 1172" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p019" d="M 631 1188 L 699 1188" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p020" d="M 631 1204 L 699 1204" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p021" d="M 631 1220 L 699 1220" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p022" d="M 631 1236 L 699 1236" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p023" d="M 631 1252 L 699 1252" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p024" d="M 631 1268 L 699 1268" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p025" d="M 631 1284 L 699 1284" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p026" d="M 631 1300 L 699 1300" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p027" d="M 631 1316 L 699 1316" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p028" d="M 631 1332 L 699 1332" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p029" d="M 631 1348 L 699 1348" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p030" d="M 631 1364 L 699 1364" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p031" d="M 631 1380 L 699 1380" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p032" d="M 631 1396 L 699 1396" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p033" d="M 631 1412 L 699 1412" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p034" d="M 631 1428 L 699 1428" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p035" d="M 631 1444 L 699 1444" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p036" d="M 631 1460 L 699 1460" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p037" d="M 631 1476 L 699 1476" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p038" d="M 631 1492 L 699 1492" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p039" d="M 631 1508 L 699 1508" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p040" d="M 631 1524 L 699 1524" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p041" d="M 631 1540 L 699 1540" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p042" d="M 631 1556 L 699 1556" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p043" d="M 631 1572 L 699 1572" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p044" d="M 631 1588 L 699 1588" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-left-p045" d="M 629 891 L 629 1618" stroke-width="2.8" data-role="detail" data-label="楼身竖肋">
+        <title>楼身竖肋</title>
+      </path>
+      <path id="sz-diwang-left-p046" d="M 701 891 L 701 1618" stroke-width="2.8" data-role="detail" data-label="楼身竖肋">
+        <title>楼身竖肋</title>
+      </path>
+      <path id="sz-diwang-left-p047" d="M 621 875 C 635.667 867.667 650.333 864 665 864 C 679.667 864 694.333 867.667 709 875" stroke-width="3.2" data-role="detail" data-label="圆柱顶缘">
+        <title>圆柱顶缘</title>
+      </path>
+      <path id="sz-diwang-left-p048" d="M 623 885 C 637 880.333 651 878 665 878 C 679 878 693 880.333 707 885" stroke-width="2.3" data-role="detail" data-label="圆柱檐下缘">
+        <title>圆柱檐下缘</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-diwang-right" data-building="sz-diwang-right" data-name="地王大厦・右塔" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="地王大厦・右塔" mask="url(#sz-diwang-right-occlusion)">
+    <title>地王大厦・右塔</title>
+    <path id="sz-diwang-right-outline" d="M 760 1618 C 758 1320 759 1090 760 875 C 760 850 781 842 786 842 L 786 807 L 794 807 L 794 764 C 794 749 797 746 802 746 L 802 660 L 806 660 L 806 746 C 811 746 814 749 814 764 L 814 807 L 822 807 L 822 842 C 827 842 848 850 848 875 C 849 1090 850 1320 848 1618 L 760 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-diwang-right-components" clip-path="url(#sz-diwang-right-clip)">
+      <path id="sz-diwang-right-p001" d="M 770 900 L 838 900" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p002" d="M 770 916 L 838 916" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p003" d="M 770 932 L 838 932" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p004" d="M 770 948 L 838 948" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p005" d="M 770 964 L 838 964" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p006" d="M 770 980 L 838 980" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p007" d="M 770 996 L 838 996" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p008" d="M 770 1012 L 838 1012" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p009" d="M 770 1028 L 838 1028" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p010" d="M 770 1044 L 838 1044" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p011" d="M 770 1060 L 838 1060" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p012" d="M 770 1076 L 838 1076" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p013" d="M 770 1092 L 838 1092" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p014" d="M 770 1108 L 838 1108" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p015" d="M 770 1124 L 838 1124" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p016" d="M 770 1140 L 838 1140" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p017" d="M 770 1156 L 838 1156" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p018" d="M 770 1172 L 838 1172" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p019" d="M 770 1188 L 838 1188" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p020" d="M 770 1204 L 838 1204" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p021" d="M 770 1220 L 838 1220" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p022" d="M 770 1236 L 838 1236" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p023" d="M 770 1252 L 838 1252" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p024" d="M 770 1268 L 838 1268" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p025" d="M 770 1284 L 838 1284" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p026" d="M 770 1300 L 838 1300" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p027" d="M 770 1316 L 838 1316" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p028" d="M 770 1332 L 838 1332" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p029" d="M 770 1348 L 838 1348" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p030" d="M 770 1364 L 838 1364" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p031" d="M 770 1380 L 838 1380" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p032" d="M 770 1396 L 838 1396" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p033" d="M 770 1412 L 838 1412" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p034" d="M 770 1428 L 838 1428" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p035" d="M 770 1444 L 838 1444" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p036" d="M 770 1460 L 838 1460" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p037" d="M 770 1476 L 838 1476" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p038" d="M 770 1492 L 838 1492" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p039" d="M 770 1508 L 838 1508" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p040" d="M 770 1524 L 838 1524" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p041" d="M 770 1540 L 838 1540" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p042" d="M 770 1556 L 838 1556" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p043" d="M 770 1572 L 838 1572" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p044" d="M 770 1588 L 838 1588" stroke-width="2.1" data-role="detail" data-label="连续等距楼层">
+        <title>连续等距楼层</title>
+      </path>
+      <path id="sz-diwang-right-p045" d="M 768 891 L 768 1618" stroke-width="2.8" data-role="detail" data-label="楼身竖肋">
+        <title>楼身竖肋</title>
+      </path>
+      <path id="sz-diwang-right-p046" d="M 840 891 L 840 1618" stroke-width="2.8" data-role="detail" data-label="楼身竖肋">
+        <title>楼身竖肋</title>
+      </path>
+      <path id="sz-diwang-right-p047" d="M 760 875 C 774.667 867.667 789.333 864 804 864 C 818.667 864 833.333 867.667 848 875" stroke-width="3.2" data-role="detail" data-label="圆柱顶缘">
+        <title>圆柱顶缘</title>
+      </path>
+      <path id="sz-diwang-right-p048" d="M 762 885 C 776 880.333 790 878 804 878 C 818 878 832 880.333 846 885" stroke-width="2.3" data-role="detail" data-label="圆柱檐下缘">
+        <title>圆柱檐下缘</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-mid-a" data-building="sz-mid-a" data-name="中景楼 A" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中景楼 A" mask="url(#sz-mid-a-occlusion)">
+    <title>中景楼 A</title>
+    <path id="sz-mid-a-outline" d="M 1205 1077 L 1268 1060 L 1295 1081 L 1295 1618 L 1205 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-mid-a-components" clip-path="url(#sz-mid-a-clip)">
+      <path id="sz-mid-a-p001" d="M 1268 1060 L 1268 1618" stroke-width="4.6" data-role="detail" data-label="建筑转角">
+        <title>建筑转角</title>
+      </path>
+      <path id="sz-mid-a-p002" d="M 1214 1074.571 L 1214 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p003" d="M 1223 1072.143 L 1223 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p004" d="M 1232 1069.714 L 1232 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p005" d="M 1241 1067.286 L 1241 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p006" d="M 1250 1064.857 L 1250 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p007" d="M 1259 1062.429 L 1259 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-a-p008" d="M 1205 1127 L 1268 1110 L 1295 1131" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p009" d="M 1205 1219 L 1268 1202 L 1295 1223" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p010" d="M 1205 1311 L 1268 1294 L 1295 1315" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p011" d="M 1205 1403 L 1268 1386 L 1295 1407" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p012" d="M 1205 1495 L 1268 1478 L 1295 1499" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p013" d="M 1205 1587 L 1268 1570 L 1295 1591" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-a-p014" d="M 1277 1067 L 1277 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+      <path id="sz-mid-a-p015" d="M 1286 1074 L 1286 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-mid-b" data-building="sz-mid-b" data-name="中景楼 B" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中景楼 B" mask="url(#sz-mid-b-occlusion)">
+    <title>中景楼 B</title>
+    <path id="sz-mid-b-outline" d="M 1290 1207 L 1354.4 1190 L 1382 1211 L 1382 1618 L 1290 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-mid-b-components" clip-path="url(#sz-mid-b-clip)">
+      <path id="sz-mid-b-p001" d="M 1354.4 1190 L 1354.4 1618" stroke-width="4.6" data-role="detail" data-label="建筑转角">
+        <title>建筑转角</title>
+      </path>
+      <path id="sz-mid-b-p002" d="M 1299.2 1204.571 L 1299.2 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p003" d="M 1308.4 1202.143 L 1308.4 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p004" d="M 1317.6 1199.714 L 1317.6 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p005" d="M 1326.8 1197.286 L 1326.8 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p006" d="M 1336 1194.857 L 1336 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p007" d="M 1345.2 1192.429 L 1345.2 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-b-p008" d="M 1290 1257 L 1354.4 1240 L 1382 1261" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-b-p009" d="M 1290 1349 L 1354.4 1332 L 1382 1353" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-b-p010" d="M 1290 1441 L 1354.4 1424 L 1382 1445" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-b-p011" d="M 1290 1533 L 1354.4 1516 L 1382 1537" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-b-p012" d="M 1363.6 1197 L 1363.6 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+      <path id="sz-mid-b-p013" d="M 1372.8 1204 L 1372.8 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-mid-c" data-building="sz-mid-c" data-name="中景楼 C" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中景楼 C" mask="url(#sz-mid-c-occlusion)">
+    <title>中景楼 C</title>
+    <path id="sz-mid-c-outline" d="M 1380 974 L 1485 957 L 1530 978 L 1530 1618 L 1380 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-mid-c-components" clip-path="url(#sz-mid-c-clip)">
+      <path id="sz-mid-c-p001" d="M 1485 957 L 1485 1618" stroke-width="4.6" data-role="detail" data-label="建筑转角">
+        <title>建筑转角</title>
+      </path>
+      <path id="sz-mid-c-p002" d="M 1395 971.571 L 1395 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p003" d="M 1410 969.143 L 1410 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p004" d="M 1425 966.714 L 1425 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p005" d="M 1440 964.286 L 1440 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p006" d="M 1455 961.857 L 1455 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p007" d="M 1470 959.429 L 1470 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-c-p008" d="M 1380 1024 L 1485 1007 L 1530 1028" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p009" d="M 1380 1116 L 1485 1099 L 1530 1120" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p010" d="M 1380 1208 L 1485 1191 L 1530 1212" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p011" d="M 1380 1300 L 1485 1283 L 1530 1304" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p012" d="M 1380 1392 L 1485 1375 L 1530 1396" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p013" d="M 1380 1484 L 1485 1467 L 1530 1488" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p014" d="M 1380 1576 L 1485 1559 L 1530 1580" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-c-p015" d="M 1500 964 L 1500 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+      <path id="sz-mid-c-p016" d="M 1515 971 L 1515 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-mid-d" data-building="sz-mid-d" data-name="中景楼 D" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中景楼 D" mask="url(#sz-mid-d-occlusion)">
+    <title>中景楼 D</title>
+    <path id="sz-mid-d-outline" d="M 1528 1127 L 1558.8 1110 L 1572 1131 L 1572 1618 L 1528 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-mid-d-components" clip-path="url(#sz-mid-d-clip)">
+      <path id="sz-mid-d-p001" d="M 1558.8 1110 L 1558.8 1618" stroke-width="4.6" data-role="detail" data-label="建筑转角">
+        <title>建筑转角</title>
+      </path>
+      <path id="sz-mid-d-p002" d="M 1532.4 1124.571 L 1532.4 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p003" d="M 1536.8 1122.143 L 1536.8 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p004" d="M 1541.2 1119.714 L 1541.2 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p005" d="M 1545.6 1117.286 L 1545.6 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p006" d="M 1550 1114.857 L 1550 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p007" d="M 1554.4 1112.429 L 1554.4 1618" stroke-width="2.3" data-role="detail" data-label="连续幕墙">
+        <title>连续幕墙</title>
+      </path>
+      <path id="sz-mid-d-p008" d="M 1528 1177 L 1558.8 1160 L 1572 1181" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-d-p009" d="M 1528 1269 L 1558.8 1252 L 1572 1273" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-d-p010" d="M 1528 1361 L 1558.8 1344 L 1572 1365" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-d-p011" d="M 1528 1453 L 1558.8 1436 L 1572 1457" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-d-p012" d="M 1528 1545 L 1558.8 1528 L 1572 1549" stroke-width="2.6" data-role="detail" data-label="水平楼层带">
+        <title>水平楼层带</title>
+      </path>
+      <path id="sz-mid-d-p013" d="M 1563.2 1117 L 1563.2 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+      <path id="sz-mid-d-p014" d="M 1567.6 1124 L 1567.6 1618" stroke-width="2.3" data-role="detail" data-label="返回面竖肋">
+        <title>返回面竖肋</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-spring" data-building="sz-spring" data-name="华润春笋" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="华润春笋" mask="url(#sz-spring-occlusion)">
+    <title>华润春笋</title>
+    <path id="sz-spring-outline" d="M 1596 1618 C 1582 1160 1646 670 1728 670 C 1810 670 1874 1160 1860 1618 L 1596 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-spring-components" clip-path="url(#sz-spring-clip)">
+      <path id="sz-spring-p001" d="M 1637.912 975 C 1625.163 1082.167 1617.953 1189.333 1613.844 1296.5 C 1609.735 1403.667 1610.399 1510.833 1611.84 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p002" d="M 1656.339 975 C 1646.198 1082.167 1640.463 1189.333 1637.194 1296.5 C 1633.926 1403.667 1634.453 1510.833 1635.6 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p003" d="M 1674.766 975 C 1667.233 1082.167 1662.972 1189.333 1660.544 1296.5 C 1658.116 1403.667 1658.508 1510.833 1659.36 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p004" d="M 1692.169 975 C 1687.099 1082.167 1684.231 1189.333 1682.597 1296.5 C 1680.963 1403.667 1681.227 1510.833 1681.8 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p005" d="M 1710.597 975 C 1708.134 1082.167 1706.741 1189.333 1705.947 1296.5 C 1705.153 1403.667 1705.282 1510.833 1705.56 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p006" d="M 1728 975 C 1728 1082.167 1728 1189.333 1728 1296.5 C 1728 1403.667 1728 1510.833 1728 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p007" d="M 1745.403 975 C 1747.866 1082.167 1749.259 1189.333 1750.053 1296.5 C 1750.847 1403.667 1750.718 1510.833 1750.44 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p008" d="M 1763.831 975 C 1768.901 1082.167 1771.769 1189.333 1773.403 1296.5 C 1775.037 1403.667 1774.773 1510.833 1774.2 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p009" d="M 1781.234 975 C 1788.767 1082.167 1793.028 1189.333 1795.456 1296.5 C 1797.884 1403.667 1797.492 1510.833 1796.64 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p010" d="M 1799.661 975 C 1809.802 1082.167 1815.537 1189.333 1818.806 1296.5 C 1822.074 1403.667 1821.547 1510.833 1820.4 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p011" d="M 1818.088 975 C 1830.837 1082.167 1838.047 1189.333 1842.156 1296.5 C 1846.265 1403.667 1845.601 1510.833 1844.16 1618" stroke-width="3.2" data-role="detail" data-label="连续曲面幕墙竖肋">
+        <title>连续曲面幕墙竖肋</title>
+      </path>
+      <path id="sz-spring-p012" d="M 1702.143 705 C 1697.461 713.621 1692.796 722.241 1688.014 730.862 C 1683.231 739.483 1678.345 748.103 1673.332 756.724" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p013" d="M 1710.762 705 C 1703.769 721.552 1696.109 738.103 1687.756 754.655 C 1679.402 771.207 1670.391 787.759 1660.843 804.31" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p014" d="M 1719.381 705 C 1711.992 729.483 1701.846 753.966 1690.178 778.448 C 1678.51 802.931 1665.241 827.414 1650.881 851.897" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p015" d="M 1728 705 C 1722.129 737.414 1709.563 769.828 1694.662 802.241 C 1679.761 834.655 1662.019 867.069 1642.568 899.483" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p016" d="M 1736.619 705 C 1734.18 745.345 1718.96 785.69 1700.828 826.034 C 1682.695 866.379 1660.245 906.724 1635.472 947.069" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p017" d="M 1745.238 705 C 1748.146 753.276 1729.816 801.552 1708.411 849.828 C 1687.005 898.103 1659.618 946.379 1629.343 994.655" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p018" d="M 1753.857 705 C 1762.902 755 1745.434 805 1725.107 855 C 1704.78 905 1677.624 955 1647.248 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p019" d="M 1762.476 705 C 1777.555 755 1762.149 805 1744.12 855 C 1726.091 905 1700.641 955 1671.686 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p020" d="M 1780.111 748.448 C 1782.253 791.207 1771.207 833.966 1755.789 876.724 C 1740.37 919.483 1719.669 962.241 1696.124 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p021" d="M 1793.203 796.034 C 1789.913 830.862 1780.358 865.69 1767.612 900.517 C 1754.866 935.345 1738.75 970.172 1720.562 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p022" d="M 1803.522 843.621 C 1798.352 870.517 1790.241 897.414 1780.231 924.31 C 1770.221 951.207 1758.281 978.103 1745 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p023" d="M 1812.083 891.207 C 1807.018 910.172 1800.747 929.138 1793.56 948.103 C 1786.372 967.069 1778.264 986.034 1769.439 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p024" d="M 1643.917 891.207 C 1648.982 910.172 1655.253 929.138 1662.44 948.103 C 1669.628 967.069 1677.736 986.034 1686.561 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p025" d="M 1652.478 843.621 C 1657.648 870.517 1665.759 897.414 1675.769 924.31 C 1685.779 951.207 1697.719 978.103 1711 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p026" d="M 1662.797 796.034 C 1666.087 830.862 1675.642 865.69 1688.388 900.517 C 1701.134 935.345 1717.25 970.172 1735.438 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p027" d="M 1675.889 748.448 C 1673.747 791.207 1684.793 833.966 1700.211 876.724 C 1715.63 919.483 1736.331 962.241 1759.876 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p028" d="M 1693.524 705 C 1678.445 755 1693.851 805 1711.88 855 C 1729.909 905 1755.359 955 1784.314 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p029" d="M 1702.143 705 C 1693.098 755 1710.566 805 1730.893 855 C 1751.22 905 1778.376 955 1808.752 1005" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p030" d="M 1710.762 705 C 1707.854 753.276 1726.184 801.552 1747.589 849.828 C 1768.995 898.103 1796.382 946.379 1826.657 994.655" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p031" d="M 1719.381 705 C 1721.82 745.345 1737.04 785.69 1755.172 826.034 C 1773.305 866.379 1795.755 906.724 1820.528 947.069" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p032" d="M 1728 705 C 1733.871 737.414 1746.437 769.828 1761.338 802.241 C 1776.239 834.655 1793.981 867.069 1813.432 899.483" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p033" d="M 1736.619 705 C 1744.008 729.483 1754.154 753.966 1765.822 778.448 C 1777.49 802.931 1790.759 827.414 1805.119 851.897" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p034" d="M 1745.238 705 C 1752.231 721.552 1759.891 738.103 1768.244 754.655 C 1776.598 771.207 1785.609 787.759 1795.157 804.31" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p035" d="M 1753.857 705 C 1758.539 713.621 1763.204 722.241 1767.986 730.862 C 1772.769 739.483 1777.655 748.103 1782.668 756.724" stroke-width="2.3" data-role="detail" data-label="规律交叉幕墙">
+        <title>规律交叉幕墙</title>
+      </path>
+      <path id="sz-spring-p036" d="M 1625.539 1000 C 1659.693 994.667 1693.846 992 1728 992 C 1762.154 992 1796.307 994.667 1830.461 1000" stroke-width="3.2" data-role="detail" data-label="幕墙结构环带">
+        <title>幕墙结构环带</title>
+      </path>
+      <path id="sz-spring-p037" d="M 1624.104 1012 C 1658.736 1006.667 1693.368 1004 1728 1004 C 1762.632 1004 1797.264 1006.667 1831.896 1012" stroke-width="3.2" data-role="detail" data-label="幕墙结构环带">
+        <title>幕墙结构环带</title>
+      </path>
+      <path id="sz-spring-p038" d="M 1602.989 1278 C 1644.66 1272.667 1686.33 1270 1728 1270 C 1769.67 1270 1811.34 1272.667 1853.011 1278" stroke-width="3.2" data-role="detail" data-label="幕墙结构环带">
+        <title>幕墙结构环带</title>
+      </path>
+      <path id="sz-spring-p039" d="M 1602.449 1290 C 1644.299 1284.667 1686.15 1282 1728 1282 C 1769.85 1282 1811.701 1284.667 1853.551 1290" stroke-width="3.2" data-role="detail" data-label="幕墙结构环带">
+        <title>幕墙结构环带</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-pingan" data-building="sz-pingan" data-name="平安金融中心" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="平安金融中心" mask="url(#sz-pingan-occlusion)">
+    <title>平安金融中心</title>
+    <path id="sz-pingan-outline" d="M 946 1618 C 958 1210 975 650 990 415 C 1003 387 1032 340 1058 301 C 1084 340 1113 387 1126 415 C 1141 650 1158 1210 1170 1618 L 946 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-pingan-components" clip-path="url(#sz-pingan-clip)">
+      <path id="sz-pingan-p001" d="M 970.64 1618 C 980 1210 993.26 650 1004.96 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p002" d="M 1004.96 415 L 1035.38 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p003" d="M 999.76 1618 C 1006 1210 1014.84 650 1022.64 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p004" d="M 1022.64 415 L 1042.92 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p005" d="M 1028.88 1618 C 1032 1210 1036.42 650 1040.32 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p006" d="M 1040.32 415 L 1050.46 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p007" d="M 1058 1618 C 1058 1210 1058 650 1058 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p008" d="M 1058 415 L 1058 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p009" d="M 1087.12 1618 C 1084 1210 1079.58 650 1075.68 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p010" d="M 1075.68 415 L 1065.54 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p011" d="M 1116.24 1618 C 1110 1210 1101.16 650 1093.36 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p012" d="M 1093.36 415 L 1073.08 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p013" d="M 1145.36 1618 C 1136 1210 1122.74 650 1111.04 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p014" d="M 1111.04 415 L 1080.62 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p015" d="M 990 415 L 1126 415" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p016" d="M 981.094 585 L 1134.906 585" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p017" d="M 972.889 785 L 1143.111 785" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p018" d="M 962.384 1085 L 1153.616 1085" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p019" d="M 953.25 1375 L 1162.75 1375" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p020" d="M 948.302 1540 L 1167.698 1540" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p021" d="M 990 415 L 1134.906 585" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p022" d="M 1126 415 L 981.094 585" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p023" d="M 981.094 585 L 1143.111 785" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p024" d="M 1134.906 585 L 972.889 785" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p025" d="M 972.889 785 L 1153.616 1085" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p026" d="M 1143.111 785 L 962.384 1085" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p027" d="M 962.384 1085 L 1162.75 1375" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p028" d="M 1153.616 1085 L 953.25 1375" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p029" d="M 953.25 1375 L 1170 1618" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p030" d="M 1162.75 1375 L 946 1618" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-kk100" data-building="sz-kk100" data-name="京基100" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="京基100" mask="url(#sz-kk100-occlusion)">
+    <title>京基100</title>
+    <path id="sz-kk100-outline" d="M 303 1618 C 290 1150 340 780 415 780 C 490 780 540 1150 527 1618 L 303 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-kk100-components" clip-path="url(#sz-kk100-clip)">
+      <path id="sz-kk100-p001" d="M 374.42 862 L 455.58 862" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p002" d="M 368.124 884 L 461.876 884" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p003" d="M 362.674 906 L 467.326 906" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p004" d="M 357.867 928 L 472.133 928" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p005" d="M 353.576 950 L 476.424 950" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p006" d="M 349.711 972 L 480.289 972" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p007" d="M 346.209 994 L 483.791 994" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p008" d="M 343.021 1016 L 486.979 1016" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p009" d="M 340.112 1038 L 489.888 1038" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p010" d="M 337.451 1060 L 492.549 1060" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p011" d="M 335.016 1082 L 494.984 1082" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p012" d="M 332.786 1104 L 497.214 1104" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p013" d="M 330.747 1126 L 499.253 1126" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p014" d="M 328.883 1148 L 501.117 1148" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p015" d="M 327.185 1170 L 502.815 1170" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p016" d="M 325.642 1192 L 504.358 1192" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p017" d="M 324.245 1214 L 505.755 1214" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p018" d="M 322.988 1236 L 507.012 1236" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p019" d="M 321.864 1258 L 508.136 1258" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p020" d="M 320.866 1280 L 509.134 1280" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p021" d="M 319.991 1302 L 510.009 1302" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p022" d="M 319.234 1324 L 510.766 1324" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p023" d="M 318.59 1346 L 511.41 1346" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p024" d="M 318.057 1368 L 511.943 1368" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p025" d="M 317.631 1390 L 512.369 1390" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p026" d="M 317.309 1412 L 512.691 1412" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p027" d="M 317.09 1434 L 512.91 1434" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p028" d="M 316.97 1456 L 513.03 1456" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p029" d="M 316.948 1478 L 513.052 1478" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p030" d="M 317.022 1500 L 512.978 1500" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p031" d="M 317.19 1522 L 512.81 1522" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p032" d="M 317.452 1544 L 512.548 1544" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p033" d="M 317.805 1566 L 512.195 1566" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p034" d="M 318.25 1588 L 511.75 1588" stroke-width="2.3" data-role="detail" data-label="完整楼层横线">
+        <title>完整楼层横线</title>
+      </path>
+      <path id="sz-kk100-p035" d="M 320.92 1618 C 310 1150 352 780 415 780" stroke-width="3.2" data-role="detail" data-label="连续幕墙竖肋">
+        <title>连续幕墙竖肋</title>
+      </path>
+      <path id="sz-kk100-p036" d="M 367.96 1618 C 362.5 1150 383.5 780 415 780" stroke-width="3.2" data-role="detail" data-label="连续幕墙竖肋">
+        <title>连续幕墙竖肋</title>
+      </path>
+      <path id="sz-kk100-p037" d="M 415 1618 C 415 1150 415 780 415 780" stroke-width="3.2" data-role="detail" data-label="连续幕墙竖肋">
+        <title>连续幕墙竖肋</title>
+      </path>
+      <path id="sz-kk100-p038" d="M 462.04 1618 C 467.5 1150 446.5 780 415 780" stroke-width="3.2" data-role="detail" data-label="连续幕墙竖肋">
+        <title>连续幕墙竖肋</title>
+      </path>
+      <path id="sz-kk100-p039" d="M 509.08 1618 C 520 1150 478 780 415 780" stroke-width="3.2" data-role="detail" data-label="连续幕墙竖肋">
+        <title>连续幕墙竖肋</title>
+      </path>
+    </g>
+  </g>
+  <g id="sz-plinths" data-building="sz-plinths" data-name="前景建筑台座" data-kind="foreground" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="前景建筑台座" mask="url(#sz-plinths-occlusion)">
+    <title>前景建筑台座</title>
+    <path id="sz-plinths-outline" d="M 324 1598 L 492 1598 L 492 1622 L 324 1622 Z M 606 1545 L 861 1545 L 861 1585 L 606 1585 Z M 546 1601 L 891 1601 L 891 1622 L 546 1622 Z M 955 1595 L 1155 1595 L 1155 1622 L 955 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-plinths-components" clip-path="url(#sz-plinths-clip)">
+      <path id="sz-plinths-p005" d="M 333 1606 L 483 1606" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p006" d="M 615 1553 L 852 1553" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p007" d="M 555 1609 L 882 1609" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+      <path id="sz-plinths-p008" d="M 964 1603 L 1146 1603" stroke-width="2.3" data-role="detail" data-label="台座连续饰线">
+        <title>台座连续饰线</title>
+      </path>
+    </g>
+    <path id="sz-plinths-p001" d="M 324 1598 L 492 1598 L 492 1622 L 324 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p002" d="M 606 1545 L 861 1545 L 861 1585 L 606 1585 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p003" d="M 546 1601 L 891 1601 L 891 1622 L 546 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+    <path id="sz-plinths-p004" d="M 955 1595 L 1155 1595 L 1155 1622 L 955 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭台座">
+      <title>独立封闭台座</title>
+    </path>
+  </g>
+  <g id="sz-bridge" data-building="sz-bridge" data-name="右侧桥梁" data-kind="infrastructure" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="右侧桥梁" mask="url(#sz-bridge-occlusion)">
+    <title>右侧桥梁</title>
+    <path id="sz-bridge-outline" d="M 2675 1566 C 2890 1540 3200 1510 3460 1508 L 3460 1528 C 3200 1530 2890 1560 2675 1585 L 2675 1566 Z M 2733 1564.25 L 2767 1562.25 L 2757 1581.25 L 2757 1622 L 2743 1622 L 2743 1581.25 Z M 2848 1558.5 L 2882 1556.5 L 2872 1575.5 L 2872 1622 L 2858 1622 L 2858 1575.5 Z M 2978 1552 L 3012 1550 L 3002 1569 L 3002 1622 L 2988 1622 L 2988 1569 Z M 3113 1545.25 L 3147 1543.25 L 3137 1562.25 L 3137 1622 L 3123 1622 L 3123 1562.25 Z M 3243 1538.75 L 3277 1536.75 L 3267 1555.75 L 3267 1622 L 3253 1622 L 3253 1555.75 Z M 3393 1531.25 L 3427 1529.25 L 3417 1548.25 L 3417 1622 L 3403 1622 L 3403 1548.25 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-bridge-components" clip-path="url(#sz-bridge-clip)" />
+    <path id="sz-bridge-p001" d="M 2675 1566 C 2890 1540 3200 1510 3460 1508 L 3460 1528 C 3200 1530 2890 1560 2675 1585 L 2675 1566 Z" stroke-width="5.6" data-role="component-outline" data-label="连续桥面">
+      <title>连续桥面</title>
+    </path>
+    <path id="sz-bridge-p002" d="M 2733 1564.25 L 2767 1562.25 L 2757 1581.25 L 2757 1622 L 2743 1622 L 2743 1581.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p003" d="M 2848 1558.5 L 2882 1556.5 L 2872 1575.5 L 2872 1622 L 2858 1622 L 2858 1575.5 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p004" d="M 2978 1552 L 3012 1550 L 3002 1569 L 3002 1622 L 2988 1622 L 2988 1569 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p005" d="M 3113 1545.25 L 3147 1543.25 L 3137 1562.25 L 3137 1622 L 3123 1622 L 3123 1562.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p006" d="M 3243 1538.75 L 3277 1536.75 L 3267 1555.75 L 3267 1622 L 3253 1622 L 3253 1555.75 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+    <path id="sz-bridge-p007" d="M 3393 1531.25 L 3427 1529.25 L 3417 1548.25 L 3417 1622 L 3403 1622 L 3403 1548.25 Z" stroke-width="5.6" data-role="component-outline" data-label="封闭桥墩">
+      <title>封闭桥墩</title>
+    </path>
+  </g>
+  <g id="sz-civic" data-building="sz-civic" data-name="深圳市民中心" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="深圳市民中心">
+    <title>深圳市民中心</title>
+    <path id="sz-civic-outline" d="M 1200 1421 C 1278.33 1448.37 1356.67 1466.35 1435 1463.56 C 1510 1460.88 1585 1439.17 1660 1415.25 C 1756.67 1384.41 1853.33 1349.91 1950 1349.91 C 2046.67 1349.91 2143.33 1384.41 2240 1415.25 C 2315 1439.17 2390 1460.88 2465 1463.56 C 2543.33 1466.35 2621.67 1448.37 2700 1421 C 2656.67 1463.06 2613.33 1487.79 2570 1502.03 C 2480 1531.62 2390 1516.01 2300 1493.96 C 2183.33 1465.38 2066.67 1425.97 1950 1425.97 C 1833.33 1425.97 1716.67 1465.38 1600 1493.96 C 1510 1516.01 1420 1531.62 1330 1502.03 C 1286.67 1487.79 1243.33 1463.06 1200 1421 Z M 1230 1535 L 1595 1535 L 1595 1622 L 1230 1622 Z M 2285 1535 L 2660 1535 L 2660 1622 L 2285 1622 Z M 1845 1457 C 1900 1442 2000 1442 2055 1457 L 2055 1622 L 1845 1622 Z M 1655 1475 L 1665 1475 L 1665 1622 L 1655 1622 Z M 1740 1475 L 1750 1475 L 1750 1622 L 1740 1622 Z M 2150 1475 L 2160 1475 L 2160 1622 L 2150 1622 Z M 2235 1475 L 2245 1475 L 2245 1622 L 2235 1622 Z M 1280.982 1482.156 L 1308.982 1535.534 L 1311.018 1534.466 L 1283.018 1481.087 Z M 1337.153 1503.764 L 1309.153 1534.222 L 1310.847 1535.778 L 1338.847 1505.32 Z M 2561.153 1505.32 L 2589.153 1535.778 L 2590.847 1534.222 L 2562.847 1503.764 Z M 2616.982 1481.087 L 2588.982 1534.466 L 2591.018 1535.534 L 2619.018 1482.156 Z M 1351.208 1509.217 L 1379.208 1535.834 L 1380.792 1534.166 L 1352.792 1507.55 Z M 1407.385 1516.32 L 1379.385 1534.028 L 1380.615 1535.972 L 1408.615 1518.264 Z M 2491.385 1518.264 L 2519.385 1535.972 L 2520.615 1534.028 L 2492.615 1516.32 Z M 2547.208 1507.55 L 2519.208 1534.166 L 2520.792 1535.834 L 2548.792 1509.217 Z M 1421.405 1519.051 L 1449.405 1535.984 L 1450.595 1534.016 L 1422.595 1517.083 Z M 1477.362 1515.373 L 1449.362 1534.043 L 1450.638 1535.957 L 1478.638 1517.286 Z M 2421.362 1517.286 L 2449.362 1535.957 L 2450.638 1534.043 L 2422.638 1515.373 Z M 2477.405 1517.083 L 2449.405 1534.016 L 2450.595 1535.984 L 2478.595 1519.051 Z M 1491.328 1515.782 L 1519.328 1535.933 L 1520.672 1534.067 L 1492.672 1513.915 Z M 1547.169 1504.912 L 1519.169 1534.205 L 1520.831 1535.795 L 1548.831 1506.501 Z M 2351.169 1506.501 L 2379.169 1535.795 L 2380.831 1534.205 L 2352.831 1504.912 Z M 2407.328 1513.915 L 2379.328 1534.067 L 2380.672 1535.933 L 2408.672 1515.782 Z M 1561.132 1503.534 L 1589.132 1535.754 L 1590.868 1534.246 L 1562.868 1502.025 Z M 1617.02 1488.869 L 1589.02 1534.398 L 1590.98 1535.602 L 1618.98 1490.074 Z M 2281.02 1490.074 L 2309.02 1535.602 L 2310.98 1534.398 L 2282.98 1488.869 Z M 2337.132 1502.025 L 2309.132 1534.246 L 2310.868 1535.754 L 2338.868 1503.534 Z M 1810 1555 L 1740 1555 L 1690 1622 L 1810 1622 Z M 1800 1529 L 1826 1529 L 1826 1622 L 1800 1622 Z M 2090 1555 L 2160 1555 L 2210 1622 L 2090 1622 Z M 2074 1529 L 2100 1529 L 2100 1622 L 2074 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" stroke="none" data-display="geometry-only" />
+    <g id="sz-civic-components" clip-path="url(#sz-civic-clip)">
+      <path id="sz-civic-p009" d="M 1200 1421 C 1278.33 1449.97 1356.67 1478.97 1435 1480.79 C 1510 1482.53 1585 1459.35 1660 1434.81 C 1756.67 1403.18 1853.33 1369.29 1950 1369.29 C 2046.67 1369.29 2143.33 1403.18 2240 1434.81 C 2315 1459.35 2390 1482.53 2465 1480.79 C 2543.33 1478.97 2621.67 1449.97 2700 1421" stroke-width="4.6" data-role="detail" data-label="屋盖中间连续弧线">
+        <title>屋盖中间连续弧线</title>
+      </path>
+      <path id="sz-civic-p030" d="M 1242 1552 L 1583 1552" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p031" d="M 1242 1565 L 1583 1565" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p032" d="M 1242 1578 L 1583 1578" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p033" d="M 1242 1591 L 1583 1591" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p034" d="M 1242 1604 L 1583 1604" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p035" d="M 2297 1552 L 2648 1552" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p036" d="M 2297 1565 L 2648 1565" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p037" d="M 2297 1578 L 2648 1578" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p038" d="M 2297 1591 L 2648 1591" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+      <path id="sz-civic-p039" d="M 2297 1604 L 2648 1604" stroke-width="2.3" data-role="detail" data-label="附楼连续横向百叶">
+        <title>附楼连续横向百叶</title>
+      </path>
+    </g>
+    <path id="sz-civic-p001" d="M 1200 1421 C 1278.33 1448.37 1356.67 1466.35 1435 1463.56 C 1510 1460.88 1585 1439.17 1660 1415.25 C 1756.67 1384.41 1853.33 1349.91 1950 1349.91 C 2046.67 1349.91 2143.33 1384.41 2240 1415.25 C 2315 1439.17 2390 1460.88 2465 1463.56 C 2543.33 1466.35 2621.67 1448.37 2700 1421 C 2656.67 1463.06 2613.33 1487.79 2570 1502.03 C 2480 1531.62 2390 1516.01 2300 1493.96 C 2183.33 1465.38 2066.67 1425.97 1950 1425.97 C 1833.33 1425.97 1716.67 1465.38 1600 1493.96 C 1510 1516.01 1420 1531.62 1330 1502.03 C 1286.67 1487.79 1243.33 1463.06 1200 1421 Z" stroke-width="7.2" data-role="eave" data-label="屋盖・两端精确尖角闭合" stroke-linejoin="round">
+      <title>屋盖・两端精确尖角闭合</title>
+    </path>
+    <path id="sz-civic-p002" d="M 1230 1535 L 1595 1535 L 1595 1622 L 1230 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p003" d="M 2285 1535 L 2660 1535 L 2660 1622 L 2285 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p004" d="M 1845 1457 C 1900 1442 2000 1442 2055 1457 L 2055 1622 L 1845 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p005" d="M 1655 1475 L 1665 1475 L 1665 1622 L 1655 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p006" d="M 1740 1475 L 1750 1475 L 1750 1622 L 1740 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p007" d="M 2150 1475 L 2160 1475 L 2160 1622 L 2150 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p008" d="M 2235 1475 L 2245 1475 L 2245 1622 L 2235 1622 Z" stroke-width="5.6" data-role="component-outline" data-label="独立封闭的墙体或支柱">
+      <title>独立封闭的墙体或支柱</title>
+    </path>
+    <path id="sz-civic-p010" d="M 1280.982 1482.156 L 1308.982 1535.534 L 1311.018 1534.466 L 1283.018 1481.087 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p011" d="M 1337.153 1503.764 L 1309.153 1534.222 L 1310.847 1535.778 L 1338.847 1505.32 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p012" d="M 2561.153 1505.32 L 2589.153 1535.778 L 2590.847 1534.222 L 2562.847 1503.764 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p013" d="M 2616.982 1481.087 L 2588.982 1534.466 L 2591.018 1535.534 L 2619.018 1482.156 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p014" d="M 1351.208 1509.217 L 1379.208 1535.834 L 1380.792 1534.166 L 1352.792 1507.55 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p015" d="M 1407.385 1516.32 L 1379.385 1534.028 L 1380.615 1535.972 L 1408.615 1518.264 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p016" d="M 2491.385 1518.264 L 2519.385 1535.972 L 2520.615 1534.028 L 2492.615 1516.32 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p017" d="M 2547.208 1507.55 L 2519.208 1534.166 L 2520.792 1535.834 L 2548.792 1509.217 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p018" d="M 1421.405 1519.051 L 1449.405 1535.984 L 1450.595 1534.016 L 1422.595 1517.083 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p019" d="M 1477.362 1515.373 L 1449.362 1534.043 L 1450.638 1535.957 L 1478.638 1517.286 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p020" d="M 2421.362 1517.286 L 2449.362 1535.957 L 2450.638 1534.043 L 2422.638 1515.373 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p021" d="M 2477.405 1517.083 L 2449.405 1534.016 L 2450.595 1535.984 L 2478.595 1519.051 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p022" d="M 1491.328 1515.782 L 1519.328 1535.933 L 1520.672 1534.067 L 1492.672 1513.915 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p023" d="M 1547.169 1504.912 L 1519.169 1534.205 L 1520.831 1535.795 L 1548.831 1506.501 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p024" d="M 2351.169 1506.501 L 2379.169 1535.795 L 2380.831 1534.205 L 2352.831 1504.912 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p025" d="M 2407.328 1513.915 L 2379.328 1534.067 L 2380.672 1535.933 L 2408.672 1515.782 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p026" d="M 1561.132 1503.534 L 1589.132 1535.754 L 1590.868 1534.246 L 1562.868 1502.025 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p027" d="M 1617.02 1488.869 L 1589.02 1534.398 L 1590.98 1535.602 L 1618.98 1490.074 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p028" d="M 2281.02 1490.074 L 2309.02 1535.602 L 2310.98 1534.398 L 2282.98 1488.869 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p029" d="M 2337.132 1502.025 L 2309.132 1534.246 L 2310.868 1535.754 L 2338.868 1503.534 Z" stroke-width="1.2" data-role="component-outline" data-label="规律直线 V 形桁架・闭合杆件">
+      <title>规律直线 V 形桁架・闭合杆件</title>
+    </path>
+    <path id="sz-civic-p040" d="M 1950 1372 C 1955.523 1372 1960 1384.088 1960 1399 C 1960 1413.912 1955.523 1426 1950 1426 C 1944.477 1426 1940 1413.912 1940 1399 C 1940 1384.088 1944.477 1372 1950 1372 Z" stroke-width="3.2" data-role="component-outline" data-label="中轴椭圆构件">
+      <title>中轴椭圆构件</title>
+    </path>
+    <path id="sz-civic-p041" d="M 1810 1555 L 1740 1555 L 1690 1622 L 1810 1622 Z" stroke-width="3.2" data-role="component-outline" data-label="独立封闭入口台阶">
+      <title>独立封闭入口台阶</title>
+    </path>
+    <path id="sz-civic-p042" d="M 1810 1555 L 1740 1555" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p043" d="M 1810 1565 L 1731.667 1565" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p044" d="M 1810 1575 L 1723.333 1575" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p045" d="M 1810 1585 L 1715 1585" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p046" d="M 1810 1595 L 1706.667 1595" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p047" d="M 1810 1605 L 1698.333 1605" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p048" d="M 1800 1529 L 1826 1529 L 1826 1622 L 1800 1622 Z" stroke-width="4.6" data-role="component-outline" data-label="入口封闭门框">
+      <title>入口封闭门框</title>
+    </path>
+    <path id="sz-civic-p049" d="M 2090 1555 L 2160 1555 L 2210 1622 L 2090 1622 Z" stroke-width="3.2" data-role="component-outline" data-label="独立封闭入口台阶">
+      <title>独立封闭入口台阶</title>
+    </path>
+    <path id="sz-civic-p050" d="M 2090 1555 L 2160 1555" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p051" d="M 2090 1565 L 2168.333 1565" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p052" d="M 2090 1575 L 2176.667 1575" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p053" d="M 2090 1585 L 2185 1585" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p054" d="M 2090 1595 L 2193.333 1595" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p055" d="M 2090 1605 L 2201.667 1605" stroke-width="2.3" data-role="detail" data-label="前景台阶">
+      <title>前景台阶</title>
+    </path>
+    <path id="sz-civic-p056" d="M 2074 1529 L 2100 1529 L 2100 1622 L 2074 1622 Z" stroke-width="4.6" data-role="component-outline" data-label="入口封闭门框">
+      <title>入口封闭门框</title>
+    </path>
+  </g>
+</svg>
