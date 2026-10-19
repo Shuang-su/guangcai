@@ -7,3 +7,7 @@
 验证：新增JSON可解析、文档diff检查通过、既有行无删除。
 
 Issue写入及读回见 issue-receipts.json；空列表表示本仓库本轮未写Issue。远端或无法访问的服务保持只读建议。未运行产品构建/真机验收；无产品行为变更。未push、开PR、合并或部署。
+
+## Checkpoint
+
+参考与证据 checkpoint：`7d456f489d5af6746edb7737dc5b03aa855fb8dc`。随后仅追加本段回执，不改变参考或产品。
