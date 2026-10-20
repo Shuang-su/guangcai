@@ -6,6 +6,7 @@
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
+| [V7.1.11 · Issue #57](https://github.com/Shuang-su/guangcai/issues/57) | [城市闭合/镂空记录](docs/changes/20261020-v7.1.11-city-cutouts/completion.md) | 待发布；正式西安与五城背景修正，深圳二期仅dev；45基础/55V7测试通过，线上验证待追加 |
 | [V7.1.10 · Issue #53](https://github.com/Shuang-su/guangcai/issues/53) | [曲面占比与映射记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md) | 45基础、52V7测试通过；本地及公网核心各30项、占比/23城/部位交互各57项通过；PR #54/#55/#56合并部署，1187文件核验，实体与既有UV差异见#47，资源仍为v7-8 |
 | [V7.1.9 · Issue #51](https://github.com/Shuang-su/guangcai/issues/51) | [完整卡片线稿记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md) | 45基础、45V7测试及29项页面回归通过；本地/公网卡片各92项通过，PR #52合并/部署，回执见完成记录 |
 | [V7.1.8 · Issue #49](https://github.com/Shuang-su/guangcai/issues/49) | [入口版本记录](docs/changes/20261020-v7.1.8-entry-version/completion.md) | PR #50合并/部署；入口与运行时7.1.8，沿用v7-7设计；本地/线上核心28项通过 |

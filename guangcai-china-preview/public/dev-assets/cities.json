@@ -2794,5 +2794,105 @@
     "cityId": "qingdao",
     "experimental": true,
     "rasterWidth": 4096
+  },
+  "phase2-shenzhen": {
+    "name": "深圳 · 二期 APEC 会场",
+    "levels": {
+      "light": {
+        "mask": {
+          "id": "phase2-shenzhen-light-mask",
+          "url": "assets/phase2-shenzhen-light-mask-ebf8da8861ff4918.webp",
+          "sha256": "ebf8da8861ff49184a1a41f34c69ff5dc827cb6f8c0ef6cd276b5e3207b38fb5",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "webp",
+          "width": 1024,
+          "height": 446,
+          "bytes": 63154,
+          "decodedBytes": 913408,
+          "gpuBytes": 1217878,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "phase2-shenzhen-light-normal",
+          "url": "assets/phase2-shenzhen-light-normal-b5c2b21863c11df5.hfn.gz",
+          "sha256": "b5c2b21863c11df5d5179639494d85fd9b0b373ee0ed49f634ffb4de3aecb3a6",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "hfn1-gzip",
+          "width": 1024,
+          "height": 446,
+          "bytes": 250932,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "standard": {
+        "mask": {
+          "id": "phase2-shenzhen-standard-mask",
+          "url": "assets/phase2-shenzhen-standard-mask-f684b54a47b106a7.webp",
+          "sha256": "f684b54a47b106a78332fcd33e2e3aa4420125dd090d7f33e92b88b09d2a837a",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "webp",
+          "width": 2048,
+          "height": 892,
+          "bytes": 166984,
+          "decodedBytes": 3653632,
+          "gpuBytes": 4871510,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "phase2-shenzhen-standard-normal",
+          "url": "assets/phase2-shenzhen-standard-normal-aec96e56738412c4.hfn.gz",
+          "sha256": "aec96e56738412c470e0ce0fdf24691abb3275075ea1203f9d7bf9859ddb8fc6",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "hfn1-gzip",
+          "width": 2048,
+          "height": 892,
+          "bytes": 866621,
+          "decodedBytes": 14614528,
+          "gpuBytes": 19486038,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      },
+      "detail": {
+        "mask": {
+          "id": "phase2-shenzhen-detail-mask",
+          "url": "assets/phase2-shenzhen-detail-mask-a54b96426c1600c4.webp",
+          "sha256": "a54b96426c1600c460d4983cbf92e0c67a18b9f590c0b303f0ba1430f22b6260",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "webp",
+          "width": 4096,
+          "height": 1783,
+          "bytes": 439558,
+          "decodedBytes": 14606336,
+          "gpuBytes": 19475115,
+          "channels": 2,
+          "colorSpace": "linear"
+        },
+        "normal": {
+          "id": "phase2-shenzhen-detail-normal",
+          "url": "assets/phase2-shenzhen-detail-normal-00f07ddebc86a259.hfn.gz",
+          "sha256": "00f07ddebc86a25935f876044810c4eb4cdd7137e5b15346319660891778bca9",
+          "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+          "encoding": "hfn1-gzip",
+          "width": 4096,
+          "height": 1783,
+          "bytes": 2967919,
+          "decodedBytes": 58425344,
+          "gpuBytes": 77900459,
+          "channels": 4,
+          "colorSpace": "linear"
+        }
+      }
+    },
+    "cityId": "shenzhen",
+    "experimental": true,
+    "phase": 2,
+    "rasterWidth": 2048,
+    "scope": "dev-only"
   }
 }
