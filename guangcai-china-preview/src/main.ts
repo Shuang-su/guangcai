@@ -39,6 +39,7 @@ import {BackgroundController} from './ui/background';
 import {loadTexture} from './styles/load-texture';
 if(profile==='consumer')document.documentElement.style.setProperty('--consumer-edge-background',`url("${import.meta.env.BASE_URL}backgrounds/soft-light-v3-d06c52a8f2003f50.webp")`);
 let disposeHapticsDiagnostics=()=>{};
+let disposeLabCoverage=()=>{};
 const startupPending=new Set(['花纹','杯底标识','背景']);
 let labArtworkOverride=false;
 let importing=false,qualityEpoch=0,importController:AbortController|undefined,activeImport:Promise<boolean>|undefined;
@@ -300,9 +301,18 @@ Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',when
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},
  fixedPrecision:()=>fixed.precision(),
  applyFixedArtwork:async(pack:StylePack)=>{const committed=await fixed.apply(pack);if(committed){reflections.refresh();inspect();}return committed;},
- debug,dispose:()=>{if(disposed)return;disposed=true;importController?.abort();++qualityEpoch;++initialization;neighborController?.abort();sloganLeases.forEach(l=>l.release());sloganLeases=[];eventScope.abort();panelResize.disconnect();clearTimeout(qualityTimer);subscribers.clear();cancelAnimationFrame(raf);readiness.dispose();entryLoading?.dispose();glass?.dispose();background.dispose();artworkUI?.dispose();disposeHapticsDiagnostics();haptics.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();markLease?.release();pool?.dispose();view.dispose();temporary.forEach(m=>m.dispose());product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.wallPorcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
+ debug,dispose:()=>{if(disposed)return;disposed=true;importController?.abort();++qualityEpoch;++initialization;neighborController?.abort();sloganLeases.forEach(l=>l.release());sloganLeases=[];eventScope.abort();panelResize.disconnect();clearTimeout(qualityTimer);subscribers.clear();cancelAnimationFrame(raf);readiness.dispose();entryLoading?.dispose();glass?.dispose();background.dispose();artworkUI?.dispose();disposeHapticsDiagnostics();haptics.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();markLease?.release();pool?.dispose();view.dispose();temporary.forEach(m=>m.dispose());disposeLabCoverage();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.wallPorcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(profile==='dev')disposeHapticsDiagnostics=createHapticsDiagnostics();
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});
 
 // Manual packs are available only in the dedicated experiment iframe.
-if(document.documentElement.dataset.labPreview==='true')Object.assign((window as unknown as {cupViewer:object}).cupViewer,{applyLabArtwork:async(pack:CityArtworkPack)=>{if(qualityBusy||selection.busy)throw Error('请等待当前杯身准备完成');labArtworkOverride=true;++qualityEpoch;clearTimeout(qualityTimer);return applyCityArtwork(pack);}});
+if(document.documentElement.dataset.labPreview==='true'){
+ let guide:ReturnType<typeof import('./lab/coverage-guide').createCoverageGuide>|undefined;
+ Object.assign((window as unknown as {cupViewer:object}).cupViewer,{
+  applyLabArtwork:async(pack:CityArtworkPack)=>{if(qualityBusy||selection.busy)throw Error('请等待当前杯身准备完成');labArtworkOverride=true;++qualityEpoch;clearTimeout(qualityTimer);return applyCityArtwork(pack);},
+  setLabCoverageGuide:async(enabled:boolean,showSourceTop=true,part='city',highlight=false)=>{
+   if(!guide){const {createCoverageGuide}=await import('./lab/coverage-guide');guide=createCoverageGuide(product,1-61.370293965961764/1783);disposeLabCoverage=guide.dispose;}
+   guide.set(enabled,showSourceTop,part,highlight);invalidate();return guide.debug();
+  },
+ });
+}

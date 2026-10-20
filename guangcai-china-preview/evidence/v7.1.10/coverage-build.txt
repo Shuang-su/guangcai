@@ -1,0 +1,28 @@
+{
+  ppi: [ 600, 600 ],
+  surface: {
+    radius: 43,
+    nominalHeight: 103,
+    angleDegrees: 300.00000000000006,
+    reservedDegrees: 59.99999999999999,
+    widthMm: 225.14747350726853,
+    heightMm: 100.5799969509244,
+    bottomY: 0.11999999731779099,
+    topY: 100.69999694824219,
+    meridianLengthMm: 101.45490436749556
+  },
+  differences: {
+    gapRuntimePx: 61.370293965961764,
+    gapPsdPx: 81.40254080006598,
+    gapSourcePx: 29.052001953124964,
+    gapPsdMm: 3.446041249606739,
+    gapModelMm: 3.461931564763751,
+    heightCoverage: 0.965580317461603,
+    widthDeltaMm: -4.8495264927314565,
+    heightDeltaMm: 0.4616636175910571,
+    widthChange: -0.021085172818477882,
+    heightChange: 0.004611179613368099,
+    relativeAspectChange: -0.025578506398670986
+  },
+  cityVersions: 71
+}

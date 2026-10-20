@@ -1,0 +1,13 @@
+✔ measured city surface uses actual UV material triangles and separates arc, vertical and curved-foot length (93.176875ms)
+✔ 71 city versions and all chosen label variants have bounded, source-identifiable measurements (1.947666ms)
+✔ diagnostic contours follow actual mesh UV and never alter approved cup geometry or UV buffers (88.664709ms)
+✔ surface occupation is normalized to actual city triangles, including curved foot, not the rectangular canvas (49.699792ms)
+✔ part diagnostics include actual floral meshes, handle join band and saucer wrap boundaries (79.820833ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 662.5115
