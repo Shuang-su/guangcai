@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>北京 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="bj-zun-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#bj-zun-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="bj-zun" data-building="bj-zun" data-name="中国尊" data-kind="building" fill="none" stroke="#fc9f07" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="中国尊">
+    <title>中国尊</title>
+    <path id="bj-zun-outline" d="M 895 1618 C 965 1210 963 855 910 630 C 956 590 1054 590 1100 630 C 1047 855 1045 1210 1115 1618 L 895 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="bj-zun-components" clip-path="url(#bj-zun-clip)">
+      <path id="bj-zun-p001" d="M 917 1618 C 973 1210 971.4 855 929 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p002" d="M 939 1618 C 981 1210 979.8 855 948 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p003" d="M 961 1618 C 989 1210 988.2 855 967 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p004" d="M 983 1618 C 997 1210 996.6 855 986 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p005" d="M 1005 1618 C 1005 1210 1005 855 1005 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p006" d="M 1027 1618 C 1013 1210 1013.4 855 1024 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p007" d="M 1049 1618 C 1021 1210 1021.8 855 1043 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p008" d="M 1071 1618 C 1029 1210 1030.2 855 1062 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p009" d="M 1093 1618 C 1037 1210 1038.6 855 1081 630" stroke-width="2.6" data-role="detail" data-label="贯通的曲面幕墙">
+        <title>贯通的曲面幕墙</title>
+      </path>
+      <path id="bj-zun-p010" d="M 919.587 675 C 948.058 671 976.529 669 1005 669 C 1033.471 669 1061.942 671 1090.413 675" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p011" d="M 937.713 800 C 960.142 796 982.571 794 1005 794 C 1027.429 794 1049.858 796 1072.287 800" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p012" d="M 947.043 935 C 966.362 931 985.681 929 1005 929 C 1024.319 929 1043.638 931 1062.957 935" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p013" d="M 948.279 1080 C 967.186 1076 986.093 1074 1005 1074 C 1023.907 1074 1042.814 1076 1061.721 1080" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p014" d="M 940.779 1245 C 962.186 1241 983.593 1239 1005 1239 C 1026.407 1239 1047.814 1241 1069.221 1245" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p015" d="M 923.95 1420 C 950.967 1416 977.983 1414 1005 1414 C 1032.017 1414 1059.033 1416 1086.05 1420" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+      <path id="bj-zun-p016" d="M 901.337 1580 C 935.891 1576 970.446 1574 1005 1574 C 1039.554 1574 1074.109 1576 1108.663 1580" stroke-width="3.8" data-role="detail" data-label="连续结构环带">
+        <title>连续结构环带</title>
+      </path>
+    </g>
+  </g>
+</svg>

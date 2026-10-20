@@ -1,0 +1,447 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>北京 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="bj-terrace-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#bj-terrace-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="bj-terrace" data-building="bj-terrace" data-name="天坛台基与栏杆" data-kind="terrace" fill="none" stroke="#fc9f07" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="天坛台基与栏杆">
+    <title>天坛台基与栏杆</title>
+    <path id="bj-terrace-outline" d="M 900 1622 L 900 1506 L 990 1506 L 990 1438 L 1080 1438 L 1080 1376 L 2108 1376 L 2108 1438 L 2250 1438 L 2250 1506 L 2450 1506 L 2450 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="bj-terrace-components" clip-path="url(#bj-terrace-clip)">
+      <path id="bj-terrace-p125" d="M 1495.867 1398 L 1692.133 1398" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p126" d="M 1491.733 1414 L 1696.267 1414" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p127" d="M 1487.6 1430 L 1700.4 1430" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p128" d="M 1483.467 1446 L 1704.533 1446" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p129" d="M 1479.333 1462 L 1708.667 1462" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p130" d="M 1475.2 1478 L 1712.8 1478" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p131" d="M 1471.067 1494 L 1716.933 1494" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p132" d="M 1466.933 1510 L 1721.067 1510" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p133" d="M 1462.8 1526 L 1725.2 1526" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p134" d="M 1458.667 1542 L 1729.333 1542" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p135" d="M 1454.533 1558 L 1733.467 1558" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p136" d="M 1450.4 1574 L 1737.6 1574" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p137" d="M 1446.267 1590 L 1741.733 1590" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p138" d="M 1442.133 1606 L 1745.867 1606" stroke-width="2.3" data-role="detail" data-label="连续等距阶面">
+        <title>连续等距阶面</title>
+      </path>
+      <path id="bj-terrace-p139" d="M 1080 1379 L 1449 1379" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+      <path id="bj-terrace-p140" d="M 990 1441 L 1449 1441" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+      <path id="bj-terrace-p141" d="M 900 1509 L 1449 1509" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+      <path id="bj-terrace-p142" d="M 2108 1379 L 1739 1379" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+      <path id="bj-terrace-p143" d="M 2198 1441 L 1739 1441" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+      <path id="bj-terrace-p144" d="M 2288 1509 L 1739 1509" stroke-width="4.6" data-role="detail" data-label="连续栏杆扶手">
+        <title>连续栏杆扶手</title>
+      </path>
+    </g>
+    <path id="bj-terrace-p001" d="M 1075 1376 L 1085 1376 L 1085 1444 L 1075 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p002" d="M 1085 1397 L 1139.25 1397 L 1139.25 1444 L 1085 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p003" d="M 1112.125 1413 C 1116.543 1413 1120.125 1414.343 1120.125 1416 C 1120.125 1417.657 1116.543 1419 1112.125 1419 C 1107.707 1419 1104.125 1417.657 1104.125 1416 C 1104.125 1414.343 1107.707 1413 1112.125 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p004" d="M 1139.25 1376 L 1149.25 1376 L 1149.25 1444 L 1139.25 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p005" d="M 1149.25 1397 L 1203.5 1397 L 1203.5 1444 L 1149.25 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p006" d="M 1176.375 1413 C 1180.793 1413 1184.375 1414.343 1184.375 1416 C 1184.375 1417.657 1180.793 1419 1176.375 1419 C 1171.957 1419 1168.375 1417.657 1168.375 1416 C 1168.375 1414.343 1171.957 1413 1176.375 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p007" d="M 1203.5 1376 L 1213.5 1376 L 1213.5 1444 L 1203.5 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p008" d="M 1213.5 1397 L 1267.75 1397 L 1267.75 1444 L 1213.5 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p009" d="M 1240.625 1413 C 1245.043 1413 1248.625 1414.343 1248.625 1416 C 1248.625 1417.657 1245.043 1419 1240.625 1419 C 1236.207 1419 1232.625 1417.657 1232.625 1416 C 1232.625 1414.343 1236.207 1413 1240.625 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p010" d="M 1267.75 1376 L 1277.75 1376 L 1277.75 1444 L 1267.75 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p011" d="M 1277.75 1397 L 1332 1397 L 1332 1444 L 1277.75 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p012" d="M 1304.875 1413 C 1309.293 1413 1312.875 1414.343 1312.875 1416 C 1312.875 1417.657 1309.293 1419 1304.875 1419 C 1300.457 1419 1296.875 1417.657 1296.875 1416 C 1296.875 1414.343 1300.457 1413 1304.875 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p013" d="M 1332 1376 L 1342 1376 L 1342 1444 L 1332 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p014" d="M 1342 1397 L 1396.25 1397 L 1396.25 1444 L 1342 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p015" d="M 1369.125 1413 C 1373.543 1413 1377.125 1414.343 1377.125 1416 C 1377.125 1417.657 1373.543 1419 1369.125 1419 C 1364.707 1419 1361.125 1417.657 1361.125 1416 C 1361.125 1414.343 1364.707 1413 1369.125 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p016" d="M 1396.25 1376 L 1406.25 1376 L 1406.25 1444 L 1396.25 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p017" d="M 1781.75 1376 L 1791.75 1376 L 1791.75 1444 L 1781.75 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p018" d="M 1791.75 1397 L 1846 1397 L 1846 1444 L 1791.75 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p019" d="M 1818.875 1413 C 1823.293 1413 1826.875 1414.343 1826.875 1416 C 1826.875 1417.657 1823.293 1419 1818.875 1419 C 1814.457 1419 1810.875 1417.657 1810.875 1416 C 1810.875 1414.343 1814.457 1413 1818.875 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p020" d="M 1846 1376 L 1856 1376 L 1856 1444 L 1846 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p021" d="M 1856 1397 L 1910.25 1397 L 1910.25 1444 L 1856 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p022" d="M 1883.125 1413 C 1887.543 1413 1891.125 1414.343 1891.125 1416 C 1891.125 1417.657 1887.543 1419 1883.125 1419 C 1878.707 1419 1875.125 1417.657 1875.125 1416 C 1875.125 1414.343 1878.707 1413 1883.125 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p023" d="M 1910.25 1376 L 1920.25 1376 L 1920.25 1444 L 1910.25 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p024" d="M 1920.25 1397 L 1974.5 1397 L 1974.5 1444 L 1920.25 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p025" d="M 1947.375 1413 C 1951.793 1413 1955.375 1414.343 1955.375 1416 C 1955.375 1417.657 1951.793 1419 1947.375 1419 C 1942.957 1419 1939.375 1417.657 1939.375 1416 C 1939.375 1414.343 1942.957 1413 1947.375 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p026" d="M 1974.5 1376 L 1984.5 1376 L 1984.5 1444 L 1974.5 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p027" d="M 1984.5 1397 L 2038.75 1397 L 2038.75 1444 L 1984.5 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p028" d="M 2011.625 1413 C 2016.043 1413 2019.625 1414.343 2019.625 1416 C 2019.625 1417.657 2016.043 1419 2011.625 1419 C 2007.207 1419 2003.625 1417.657 2003.625 1416 C 2003.625 1414.343 2007.207 1413 2011.625 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p029" d="M 2038.75 1376 L 2048.75 1376 L 2048.75 1444 L 2038.75 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p030" d="M 2048.75 1397 L 2103 1397 L 2103 1444 L 2048.75 1444 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p031" d="M 2075.875 1413 C 2080.293 1413 2083.875 1414.343 2083.875 1416 C 2083.875 1417.657 2080.293 1419 2075.875 1419 C 2071.457 1419 2067.875 1417.657 2067.875 1416 C 2067.875 1414.343 2071.457 1413 2075.875 1413 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p032" d="M 2103 1376 L 2113 1376 L 2113 1444 L 2103 1444 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p033" d="M 985 1438 L 995 1438 L 995 1518 L 985 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p034" d="M 995 1459 L 1055 1459 L 1055 1518 L 995 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p035" d="M 1025 1475 C 1029.418 1475 1033 1476.343 1033 1478 C 1033 1479.657 1029.418 1481 1025 1481 C 1020.582 1481 1017 1479.657 1017 1478 C 1017 1476.343 1020.582 1475 1025 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p036" d="M 1055 1438 L 1065 1438 L 1065 1518 L 1055 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p037" d="M 1065 1459 L 1125 1459 L 1125 1518 L 1065 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p038" d="M 1095 1475 C 1099.418 1475 1103 1476.343 1103 1478 C 1103 1479.657 1099.418 1481 1095 1481 C 1090.582 1481 1087 1479.657 1087 1478 C 1087 1476.343 1090.582 1475 1095 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p039" d="M 1125 1438 L 1135 1438 L 1135 1518 L 1125 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p040" d="M 1135 1459 L 1195 1459 L 1195 1518 L 1135 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p041" d="M 1165 1475 C 1169.418 1475 1173 1476.343 1173 1478 C 1173 1479.657 1169.418 1481 1165 1481 C 1160.582 1481 1157 1479.657 1157 1478 C 1157 1476.343 1160.582 1475 1165 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p042" d="M 1195 1438 L 1205 1438 L 1205 1518 L 1195 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p043" d="M 1205 1459 L 1265 1459 L 1265 1518 L 1205 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p044" d="M 1235 1475 C 1239.418 1475 1243 1476.343 1243 1478 C 1243 1479.657 1239.418 1481 1235 1481 C 1230.582 1481 1227 1479.657 1227 1478 C 1227 1476.343 1230.582 1475 1235 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p045" d="M 1265 1438 L 1275 1438 L 1275 1518 L 1265 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p046" d="M 1275 1459 L 1335 1459 L 1335 1518 L 1275 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p047" d="M 1305 1475 C 1309.418 1475 1313 1476.343 1313 1478 C 1313 1479.657 1309.418 1481 1305 1481 C 1300.582 1481 1297 1479.657 1297 1478 C 1297 1476.343 1300.582 1475 1305 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p048" d="M 1335 1438 L 1345 1438 L 1345 1518 L 1335 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p049" d="M 1345 1459 L 1405 1459 L 1405 1518 L 1345 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p050" d="M 1375 1475 C 1379.418 1475 1383 1476.343 1383 1478 C 1383 1479.657 1379.418 1481 1375 1481 C 1370.582 1481 1367 1479.657 1367 1478 C 1367 1476.343 1370.582 1475 1375 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p051" d="M 1405 1438 L 1415 1438 L 1415 1518 L 1405 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p052" d="M 1755 1438 L 1765 1438 L 1765 1518 L 1755 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p053" d="M 1765 1459 L 1825 1459 L 1825 1518 L 1765 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p054" d="M 1795 1475 C 1799.418 1475 1803 1476.343 1803 1478 C 1803 1479.657 1799.418 1481 1795 1481 C 1790.582 1481 1787 1479.657 1787 1478 C 1787 1476.343 1790.582 1475 1795 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p055" d="M 1825 1438 L 1835 1438 L 1835 1518 L 1825 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p056" d="M 1835 1459 L 1895 1459 L 1895 1518 L 1835 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p057" d="M 1865 1475 C 1869.418 1475 1873 1476.343 1873 1478 C 1873 1479.657 1869.418 1481 1865 1481 C 1860.582 1481 1857 1479.657 1857 1478 C 1857 1476.343 1860.582 1475 1865 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p058" d="M 1895 1438 L 1905 1438 L 1905 1518 L 1895 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p059" d="M 1905 1459 L 1965 1459 L 1965 1518 L 1905 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p060" d="M 1935 1475 C 1939.418 1475 1943 1476.343 1943 1478 C 1943 1479.657 1939.418 1481 1935 1481 C 1930.582 1481 1927 1479.657 1927 1478 C 1927 1476.343 1930.582 1475 1935 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p061" d="M 1965 1438 L 1975 1438 L 1975 1518 L 1965 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p062" d="M 1975 1459 L 2035 1459 L 2035 1518 L 1975 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p063" d="M 2005 1475 C 2009.418 1475 2013 1476.343 2013 1478 C 2013 1479.657 2009.418 1481 2005 1481 C 2000.582 1481 1997 1479.657 1997 1478 C 1997 1476.343 2000.582 1475 2005 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p064" d="M 2035 1438 L 2045 1438 L 2045 1518 L 2035 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p065" d="M 2045 1459 L 2105 1459 L 2105 1518 L 2045 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p066" d="M 2075 1475 C 2079.418 1475 2083 1476.343 2083 1478 C 2083 1479.657 2079.418 1481 2075 1481 C 2070.582 1481 2067 1479.657 2067 1478 C 2067 1476.343 2070.582 1475 2075 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p067" d="M 2105 1438 L 2115 1438 L 2115 1518 L 2105 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p068" d="M 2115 1459 L 2175 1459 L 2175 1518 L 2115 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p069" d="M 2145 1475 C 2149.418 1475 2153 1476.343 2153 1478 C 2153 1479.657 2149.418 1481 2145 1481 C 2140.582 1481 2137 1479.657 2137 1478 C 2137 1476.343 2140.582 1475 2145 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p070" d="M 2175 1438 L 2185 1438 L 2185 1518 L 2175 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p071" d="M 2185 1459 L 2245 1459 L 2245 1518 L 2185 1518 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p072" d="M 2215 1475 C 2219.418 1475 2223 1476.343 2223 1478 C 2223 1479.657 2219.418 1481 2215 1481 C 2210.582 1481 2207 1479.657 2207 1478 C 2207 1476.343 2210.582 1475 2215 1475 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p073" d="M 2245 1438 L 2255 1438 L 2255 1518 L 2245 1518 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p074" d="M 895 1506 L 905 1506 L 905 1618 L 895 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p075" d="M 905 1527 L 968.81 1527 L 968.81 1618 L 905 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p076" d="M 936.905 1543 C 941.323 1543 944.905 1544.343 944.905 1546 C 944.905 1547.657 941.323 1549 936.905 1549 C 932.486 1549 928.905 1547.657 928.905 1546 C 928.905 1544.343 932.486 1543 936.905 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p077" d="M 968.81 1506 L 978.81 1506 L 978.81 1618 L 968.81 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p078" d="M 978.81 1527 L 1042.619 1527 L 1042.619 1618 L 978.81 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p079" d="M 1010.714 1543 C 1015.133 1543 1018.714 1544.343 1018.714 1546 C 1018.714 1547.657 1015.133 1549 1010.714 1549 C 1006.296 1549 1002.714 1547.657 1002.714 1546 C 1002.714 1544.343 1006.296 1543 1010.714 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p080" d="M 1042.619 1506 L 1052.619 1506 L 1052.619 1618 L 1042.619 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p081" d="M 1052.619 1527 L 1116.429 1527 L 1116.429 1618 L 1052.619 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p082" d="M 1084.524 1543 C 1088.942 1543 1092.524 1544.343 1092.524 1546 C 1092.524 1547.657 1088.942 1549 1084.524 1549 C 1080.106 1549 1076.524 1547.657 1076.524 1546 C 1076.524 1544.343 1080.106 1543 1084.524 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p083" d="M 1116.429 1506 L 1126.429 1506 L 1126.429 1618 L 1116.429 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p084" d="M 1126.429 1527 L 1190.238 1527 L 1190.238 1618 L 1126.429 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p085" d="M 1158.333 1543 C 1162.752 1543 1166.333 1544.343 1166.333 1546 C 1166.333 1547.657 1162.752 1549 1158.333 1549 C 1153.915 1549 1150.333 1547.657 1150.333 1546 C 1150.333 1544.343 1153.915 1543 1158.333 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p086" d="M 1190.238 1506 L 1200.238 1506 L 1200.238 1618 L 1190.238 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p087" d="M 1200.238 1527 L 1264.048 1527 L 1264.048 1618 L 1200.238 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p088" d="M 1232.143 1543 C 1236.561 1543 1240.143 1544.343 1240.143 1546 C 1240.143 1547.657 1236.561 1549 1232.143 1549 C 1227.725 1549 1224.143 1547.657 1224.143 1546 C 1224.143 1544.343 1227.725 1543 1232.143 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p089" d="M 1264.048 1506 L 1274.048 1506 L 1274.048 1618 L 1264.048 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p090" d="M 1274.048 1527 L 1337.857 1527 L 1337.857 1618 L 1274.048 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p091" d="M 1305.952 1543 C 1310.371 1543 1313.952 1544.343 1313.952 1546 C 1313.952 1547.657 1310.371 1549 1305.952 1549 C 1301.534 1549 1297.952 1547.657 1297.952 1546 C 1297.952 1544.343 1301.534 1543 1305.952 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p092" d="M 1337.857 1506 L 1347.857 1506 L 1347.857 1618 L 1337.857 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p093" d="M 1347.857 1527 L 1411.667 1527 L 1411.667 1618 L 1347.857 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p094" d="M 1379.762 1543 C 1384.18 1543 1387.762 1544.343 1387.762 1546 C 1387.762 1547.657 1384.18 1549 1379.762 1549 C 1375.344 1549 1371.762 1547.657 1371.762 1546 C 1371.762 1544.343 1375.344 1543 1379.762 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p095" d="M 1411.667 1506 L 1421.667 1506 L 1421.667 1618 L 1411.667 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p096" d="M 1780.714 1506 L 1790.714 1506 L 1790.714 1618 L 1780.714 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p097" d="M 1790.714 1527 L 1854.524 1527 L 1854.524 1618 L 1790.714 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p098" d="M 1822.619 1543 C 1827.037 1543 1830.619 1544.343 1830.619 1546 C 1830.619 1547.657 1827.037 1549 1822.619 1549 C 1818.201 1549 1814.619 1547.657 1814.619 1546 C 1814.619 1544.343 1818.201 1543 1822.619 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p099" d="M 1854.524 1506 L 1864.524 1506 L 1864.524 1618 L 1854.524 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p100" d="M 1864.524 1527 L 1928.333 1527 L 1928.333 1618 L 1864.524 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p101" d="M 1896.429 1543 C 1900.847 1543 1904.429 1544.343 1904.429 1546 C 1904.429 1547.657 1900.847 1549 1896.429 1549 C 1892.01 1549 1888.429 1547.657 1888.429 1546 C 1888.429 1544.343 1892.01 1543 1896.429 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p102" d="M 1928.333 1506 L 1938.333 1506 L 1938.333 1618 L 1928.333 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p103" d="M 1938.333 1527 L 2002.143 1527 L 2002.143 1618 L 1938.333 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p104" d="M 1970.238 1543 C 1974.656 1543 1978.238 1544.343 1978.238 1546 C 1978.238 1547.657 1974.656 1549 1970.238 1549 C 1965.82 1549 1962.238 1547.657 1962.238 1546 C 1962.238 1544.343 1965.82 1543 1970.238 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p105" d="M 2002.143 1506 L 2012.143 1506 L 2012.143 1618 L 2002.143 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p106" d="M 2012.143 1527 L 2075.952 1527 L 2075.952 1618 L 2012.143 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p107" d="M 2044.048 1543 C 2048.466 1543 2052.048 1544.343 2052.048 1546 C 2052.048 1547.657 2048.466 1549 2044.048 1549 C 2039.629 1549 2036.048 1547.657 2036.048 1546 C 2036.048 1544.343 2039.629 1543 2044.048 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p108" d="M 2075.952 1506 L 2085.952 1506 L 2085.952 1618 L 2075.952 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p109" d="M 2085.952 1527 L 2149.762 1527 L 2149.762 1618 L 2085.952 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p110" d="M 2117.857 1543 C 2122.275 1543 2125.857 1544.343 2125.857 1546 C 2125.857 1547.657 2122.275 1549 2117.857 1549 C 2113.439 1549 2109.857 1547.657 2109.857 1546 C 2109.857 1544.343 2113.439 1543 2117.857 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p111" d="M 2149.762 1506 L 2159.762 1506 L 2159.762 1618 L 2149.762 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p112" d="M 2159.762 1527 L 2223.571 1527 L 2223.571 1618 L 2159.762 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p113" d="M 2191.667 1543 C 2196.085 1543 2199.667 1544.343 2199.667 1546 C 2199.667 1547.657 2196.085 1549 2191.667 1549 C 2187.248 1549 2183.667 1547.657 2183.667 1546 C 2183.667 1544.343 2187.248 1543 2191.667 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p114" d="M 2223.571 1506 L 2233.571 1506 L 2233.571 1618 L 2223.571 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p115" d="M 2233.571 1527 L 2297.381 1527 L 2297.381 1618 L 2233.571 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p116" d="M 2265.476 1543 C 2269.894 1543 2273.476 1544.343 2273.476 1546 C 2273.476 1547.657 2269.894 1549 2265.476 1549 C 2261.058 1549 2257.476 1547.657 2257.476 1546 C 2257.476 1544.343 2261.058 1543 2265.476 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p117" d="M 2297.381 1506 L 2307.381 1506 L 2307.381 1618 L 2297.381 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p118" d="M 2307.381 1527 L 2371.19 1527 L 2371.19 1618 L 2307.381 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p119" d="M 2339.286 1543 C 2343.704 1543 2347.286 1544.343 2347.286 1546 C 2347.286 1547.657 2343.704 1549 2339.286 1549 C 2334.867 1549 2331.286 1547.657 2331.286 1546 C 2331.286 1544.343 2334.867 1543 2339.286 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p120" d="M 2371.19 1506 L 2381.19 1506 L 2381.19 1618 L 2371.19 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p121" d="M 2381.19 1527 L 2445 1527 L 2445 1618 L 2381.19 1618 Z" stroke-width="2.3" data-role="component-outline" data-label="同规格封闭栏板">
+      <title>同规格封闭栏板</title>
+    </path>
+    <path id="bj-terrace-p122" d="M 2413.095 1543 C 2417.514 1543 2421.095 1544.343 2421.095 1546 C 2421.095 1547.657 2417.514 1549 2413.095 1549 C 2408.677 1549 2405.095 1547.657 2405.095 1546 C 2405.095 1544.343 2408.677 1543 2413.095 1543 Z" stroke-width="2.1" data-role="component-outline" data-label="栏板纹样">
+      <title>栏板纹样</title>
+    </path>
+    <path id="bj-terrace-p123" d="M 2445 1506 L 2455 1506 L 2455 1618 L 2445 1618 Z" stroke-width="3.2" data-role="component-outline" data-label="同规格封闭栏杆柱">
+      <title>同规格封闭栏杆柱</title>
+    </path>
+    <path id="bj-terrace-p124" d="M 1500 1382 L 1688 1382 L 1750 1622 L 1438 1622 Z" stroke-width="4.6" data-role="component-outline" data-label="中轴封闭台阶轮廓">
+      <title>中轴封闭台阶轮廓</title>
+    </path>
+  </g>
+</svg>

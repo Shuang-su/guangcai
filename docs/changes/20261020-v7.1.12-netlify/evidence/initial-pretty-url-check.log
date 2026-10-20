@@ -1,0 +1,23 @@
+public bytes index.html
+public bytes release.json
+public bytes artwork-dev/index.html
+public bytes artwork-dev/cup.html
+public bytes label-compare/index.html
+public bytes city-compare/index.html
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: public bytes bezier-lab/index.html
+    at check (file:///Volumes/Prism/.codex-work/guangcai/v7.1.12-netlify/online-qa.mjs:3:283)
+    at file:///Volumes/Prism/.codex-work/guangcai/v7.1.12-netlify/online-qa.mjs:4:1127
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.3.0

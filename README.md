@@ -1,8 +1,6 @@
 # 广彩一号杯与中国杯
 
-2026-10-20：本地V7.1.12继续增强花纹加载：120ms节流、套杯自由放大与花纹/杯碟近看优先4K色图，按预算组合PBR档位并保持城市高清；正式主页交付包取当前构建，唯一HTML入口index.html。验证、包来源与交付状态见[本轮记录](docs/changes/20261020-v7.1.12-floral-package/completion.md)，未部署。
-
-2026-10-20：本地 **V7.1.12 / v7-9** 已完成七视角调整：套杯、拆解、杯盖、杯身、杯碟、浮雕、花纹；套杯和拆解沿用已发布机位，三个单件独立展示，浮雕与花纹在装配状态近看。开发分支 `codex/next-version-20261020`，线上仍为 V7.1.11；本轮未推送或部署。[本轮记录](docs/changes/20261020-v7.1.12-seven-views/completion.md)。
+2026-10-20：**V7.1.12 / v7-9 已发布到 Netlify 正式主页**。套杯、拆解、杯盖、杯身、杯碟、浮雕、花纹七视角，以及120ms主动花纹提清、自由放大/花纹/杯碟4K色图已包含。部署 `6ad76b8796b6f32499d6fa63`，源码 `006e3268`；1252份服务端文件摘要一致，原dev/compare等后缀页内容保留。[发布与公网核对](docs/changes/20261020-v7.1.12-netlify/completion.md)。GitHub尚未同步。
 
 2026-10-20：V7.1.11 / v7-9 已独立发布（GitHub合并因账号暂停待恢复）：西安新闭合稿、五城指定背景镂空；正式深圳保留，APEC二期仅dev。compare保留7.1.4主基线，并新增本轮实色面与上杯对照。Issue #57 / PR #58，部署 `6ad6fcdcf1f9e6ca6c7c5330`；公网57+31+41项与1248文件核验通过。
 
@@ -26,7 +24,7 @@
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 当前发布批次：V7.1.11 / v7-9
+## 当前发布批次：V7.1.12 / v7-9
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 

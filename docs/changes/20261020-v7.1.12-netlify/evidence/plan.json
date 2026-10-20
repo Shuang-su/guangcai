@@ -1,0 +1,21 @@
+{
+  "siteId": "52e02ef9-e2d8-4fcb-98ed-1d14e283c74c",
+  "siteName": "guangcai-no1-china-v7",
+  "previousDeploy": "6ad6fcdcf1f9e6ca6c7c5330",
+  "sourceCommit": "006e32681b686ed161b2aa710a67831e9b3bc9b3",
+  "sourceBranch": "codex/next-version-20261020",
+  "version": "7.1.12",
+  "resourceRelease": "v7-9",
+  "files": 1252,
+  "changedPaths": [
+    "/assets/client-CZgvZ1vV.js",
+    "/assets/coverage-guide-DhWZP3Tb.js",
+    "/assets/gpu-sULbiCKG.js",
+    "/assets/main-BsVMhd1x.js",
+    "/index.html",
+    "/release.json"
+  ],
+  "changedBytes": 1086102,
+  "removedPaths": [],
+  "rebuildReason": "previous delivery directory disappeared during deployment preparation; app tree equals verified source commit"
+}

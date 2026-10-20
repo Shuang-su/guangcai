@@ -6,7 +6,7 @@
 |---|---|
 | 当前维护仓库 | `/Volumes/Prism_初号機/广彩/guangcai-main/`，独立Git元数据，不依赖其他旧目录 |
 | 稳定入口 | `/Volumes/Prism_初号機/广彩/guangcai-repo/` → `guangcai-main` |
-| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，本地 V7.1.12 / v7-9，线上 V7.1.11 |
+| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，本地及正式主页 V7.1.12 / v7-9 |
 | 原始 PSD、花纸、城市线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
 | 项目临时文件与回执 | 当前仓库 `.codex-work/`，仅按用途保留，通过本地exclude忽略 |
 | 旧产品版本、历史源码与资源 | `https://github.com/Shuang-su/guangcai` 的提交、标签、`archives/`、来源清单与 Git LFS |
@@ -14,7 +14,7 @@
 ## 2026-10-20 本地开发状态
 
 - 本地 `main` 已从 `85998a9c` 快进至 `9c072032`，整合 V7.1.11 和交付收尾的 8 个现有提交；没有生成内容合并提交，也没有删除原任务分支。
-- 下一版本在同一仓库的 `codex/next-version-20261020` 开发，起点为上述已完成基线；本地产品 V7.1.12 已完成七视角调整与必要验证，线上仍是 V7.1.11。[本轮记录](docs/changes/20261020-v7.1.12-seven-views/completion.md)。
+- 下一版本在同一仓库的 `codex/next-version-20261020` 开发，起点为上述已完成基线；本地产品 V7.1.12 已完成七视角调整与必要验证，正式主页已发布V7.1.12，后缀页保留原内容。[本轮记录](docs/changes/20261020-v7.1.12-seven-views/completion.md)。
 - `origin/main` 的本地跟踪引用仍是 `85998a9c`；GitHub 暂停期间未推送、未远端合并，不把本地快进当作 GitHub PR #58 已合并。
 - 参考审计工作树 `.codex-work/worktrees/reference-audit-20261019/` 及其独立提交 `a13ba1b8` 保留，不并入本轮产品基线。
 - 用户明确授权后，正式主页临时交付、被替代完整包、两类解包暂存及可再生成 npm/Vite/图像缓存已按精确清单移除。此前交付包链接不再有效；打包脚本、receipt 和小型验证摘要仍在 Git 中，可按固定提交重新生成。
@@ -45,6 +45,8 @@
 
 [工程关系](PROJECTS.md) · [主仓库迁移记录](docs/changes/20261018-main-migration/completion.md) · [远端核验与最终删除回执](docs/changes/20261018-exfat-and-v4-retirement/history-cleanup.json)。
 
-## V7.1.12 当前交付
+## V7.1.12 当前交付与发布
 
-正式主页源码包和静态包位于 `/Volumes/Prism/广彩交付/中国杯-V7.1.12-正式主页-花纹提清/`，来源提交006e3268，资源v7-9；七视角与主动花纹提清已包含，未部署。本轮build/解包检查暂存已移除，源码预览5299保留。详见[交付记录](docs/changes/20261020-v7.1.12-floral-package/completion.md)。
+正式主页已发布至 https://guangcai-no1-china-v7.netlify.app/ ，部署6ad76b8796b6f32499d6fa63，源码006e3268。原临时交付目录 `/Volumes/Prism/广彩交付/中国杯-V7.1.12-正式主页-花纹提清/` 在部署准备期间不再存在，卷挂载正常且定向查找未发现移动副本；旧包链接不再作为当前交付入口。原打包回执、源码和验证记录仍在Git。
+
+本次以相同已验证应用树重建静态产物并差量发布，没有重建交付压缩包。新增deployments/guangcai-no1-china-v7/6ad76b8796b6f32499d6fa63/site快照以Git对象复用保存，本机不展开整站副本；详细位置与恢复说明见[发布记录](docs/changes/20261020-v7.1.12-netlify/completion.md)。
