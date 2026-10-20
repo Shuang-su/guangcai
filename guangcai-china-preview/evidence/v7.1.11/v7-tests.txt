@@ -1,0 +1,68 @@
+
+> guangcai-china-v4@7.1.11 test:v7
+> tsx --test tools/v7/*.test.ts
+
+✔ five background corrections retain all released line bytes and normal hashes at every tier (2336.680292ms)
+✔ explicit background seeds clear while wheel cabins, hubs, supports, building faces and skybridge retain fill (702.597417ms)
+✔ formal Shenzhen and unrelated resources stay identical; supplied APEC Shenzhen exists only in dev (28.089917ms)
+✔ pixel-only export changes keep reviewed Jingdezhen and Zhengzhou contours and fill (683.277292ms)
+✔ new Xi’an keeps approved pagoda faces and wall fill without altering lines or normals (541.599125ms)
+✔ thumbnail keeps linework at all four source edges and uses gold on transparent sky (56.758166ms)
+✔ all 23 published thumbnails retain the entire source R channel; cup maps and label placements are unchanged (1220.823958ms)
+✔ current comparison images and lettering are sourced from published 7.1.4 and current manifests (161.582625ms)
+✔ 7.1.4 dev measurements and six same-camera cup pairs retain their actual releases (20.709708ms)
+✔ measured city surface uses actual UV material triangles and separates arc, vertical and curved-foot length (201.149209ms)
+✔ 141 city versions and all chosen label variants have bounded, source-identifiable measurements (8.92025ms)
+✔ diagnostic contours follow actual mesh UV and never alter approved cup geometry or UV buffers (210.678791ms)
+✔ surface occupation is normalized to actual city triangles, including curved foot, not the rectangular canvas (169.676458ms)
+✔ part diagnostics include actual floral meshes, handle join band and saucer wrap boundaries (502.882042ms)
+✔ progressing exact transfer may exceed idle timeout in total (310.189875ms)
+✔ stalled transfer retries at most three times (61.630541ms)
+✔ HTTP retries are limited and 404/size failures are immediate (22.785958ms)
+✔ external cancellation does not retry a slow transfer or backoff (56.710792ms)
+✔ empty chunks do not keep a stalled transfer alive (80.81125ms)
+✔ background suspension does not count against idle deadline (98.160792ms)
+✔ v4 extends only floral triangles to city bottom; geometry and old mapping round trip exactly (331.525ms)
+✔ every PBR channel mirrors logical source U with offset before atlas; repeated fit is idempotent (0.922ms)
+✔ glass tolerates isolated slow frames but falls back on sustained active cadence (1.034542ms)
+✔ idle and hidden intervals do not count as slow frames (1.103875ms)
+✔ readiness has no total-time deadline, supports abort/error and repeated recovery (8.051042ms)
+✔ 30fps timer quantization does not falsely reject a stable cadence (0.196959ms)
+✔ a preview still progressing after 120 seconds can finish without a false timeout (1.007958ms)
+✔ the lab reports an actual viewer error without waiting indefinitely (0.363792ms)
+✔ v7-6 changes only the six label resources and preserves all reviewed artwork maps (69.823333ms)
+✔ all city frames have canonical coordinates; Chengdu correction retains source and uses shared production glyphs (97.88275ms)
+✔ mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation (441.59575ms)
+✔ split-origin mock permits only configured credentialed API clients (177.4985ms)
+{"normalAssets":78,"portableBytesIdentical":true,"halfFloatXYIdentical":true,"maxNormalDegrees":0.02936920590413174}
+✔ portable decoder matches every released HFN and packed XY preserves exact half floats (56916.637ms)
+✔ normal decode rejects bad size before allocation and rejects invalid tangent direction (1.129334ms)
+✔ byte-plane layout preserves exact XY and validates bounds before RG16F upload (0.303583ms)
+✔ packed clearcoat retains atlas sampling and reconstructs Z before scale (1.495167ms)
+✔ file cache shares pending transfers; cancelling one consumer retains the other (29.939917ms)
+✔ last cancellation drops reserved bytes, aborts the fetch and permits a fresh attempt (4.892167ms)
+✔ pinned low library survives LRU eviction and active leases prevent unsafe eviction (29.854625ms)
+✔ wrong size and checksum never poison cache, and inflight reservations obey the limit (1.086375ms)
+✔ manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps (2.510291ms)
+✔ PSD calibration keeps both axes equal, the complete canvas, full width and common bottom (21.481959ms)
+✔ new full-source city resources differ from the old mapping while fixed florals stay identical (10.403083ms)
+✔ Chengdu original lettering is preserved and preloaded with its actual placement (30.423459ms)
+✔ queue bounds concurrency, rejects cancelled waiters and resumes after visibility pause (47.415958ms)
+✔ adaptive DPR responds to sustained load, excludes idle gaps and never drops below one (0.481959ms)
+✔ design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers (0.784959ms)
+✔ bounded decompression input rejects excess bytes and HFN headers cannot overallocate (8.713291ms)
+✔ merged ORM uses blue metalness for the bare-gold override and retains original controls (4.72675ms)
+✔ stream progress reports actual cumulative bytes before completion (2.194792ms)
+✔ exact stream reader copies consumed chunks immediately and preserves progress (1.813625ms)
+✔ exact stream reader rejects truncated and oversized input and always releases the reader (0.85825ms)
+✔ upstream cancellation/error keeps its original reason and unlocks the reader (7.027958ms)
+✔ streamed high precision normals are byte-identical to native decompression at every city tier (1281.24425ms)
+✔ resource swaps track temporary overlap and release their allowance once (55.239917ms)
+ℹ tests 55
+ℹ suites 0
+ℹ pass 55
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 58563.31725

@@ -1,0 +1,316 @@
+{
+  "mapping": {
+    "version": "7.1.7",
+    "sourceCanvas": [
+      1939,
+      815
+    ],
+    "psdDocument": [
+      7016,
+      4961
+    ],
+    "psdBounds": [
+      777,
+      2243,
+      6210,
+      4608
+    ],
+    "psdFrame": [
+      5433,
+      2365
+    ],
+    "psdSha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+    "runtime": [
+      4096,
+      1783
+    ],
+    "policy": "contain-width-bottom; preserve complete source; no nonuniform stretch or per-city registration",
+    "scale": 2.112429087158329,
+    "offset": [
+      0,
+      61.370293965961764
+    ],
+    "widthCoverage": 1,
+    "topGapFraction": 0.03441968253839695
+  },
+  "cities": {
+    "chongqing": {
+      "method": "bounded background components; G only",
+      "regions": 3,
+      "maskSha256": "2f329e22815d67123c41e30ed8a9a2a9062162833810733129f423fc574c3a2e",
+      "tiers": {
+        "light": {
+          "changedCoveragePixels": 5555,
+          "lineSha256": "a436662aeedeb4bf764adacc8f2c0041dd14f1b9910cf39fec768bbb654a1223",
+          "normalSha256": "e6f7bdce28a829f31068da1535d0512e0ee17db025165cb19abf6ccd77395ec3",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 4330.317647058823
+        },
+        "standard": {
+          "changedCoveragePixels": 20574,
+          "lineSha256": "7451c6c61cd62d81706c5f5f5788a5d4718c6c3b624747fd1ba002e1718975e4",
+          "normalSha256": "31c50d668c195a7b14b726e765705cfde1e5722a0b035dbbe1cd43c1ca94b070",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 17294.086274509806
+        },
+        "detail": {
+          "changedCoveragePixels": 72796,
+          "lineSha256": "9037cc0c1287e4f737555f932ecad2e3e3357ceae4ee49d91322cba8efe50359",
+          "normalSha256": "19da7c4e0269f28fb7a73474c26a3a647cc505b98a7321e8df9fd4c128edcd6e",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 68954.46274509803
+        }
+      }
+    },
+    "nanchang": {
+      "method": "bounded background components; G only",
+      "regions": 26,
+      "maskSha256": "17f19046ccfd8425950ef8ee8171bdf046754eed5993ced7402e8cebec24f01b",
+      "tiers": {
+        "light": {
+          "changedCoveragePixels": 15251,
+          "lineSha256": "234bead85f0347cb05026c02959d59451a86e80443694f4e5fe543349e208b98",
+          "normalSha256": "d937943859e71eb874fce41d05fc67421ad45c50535b9d3763bfafb49ae0befe",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 12017.33725490196
+        },
+        "standard": {
+          "changedCoveragePixels": 58880,
+          "lineSha256": "4032ffaf55012cf34d0d499cbc54a04ce37c0f18f67b6446f6cf0208d611842c",
+          "normalSha256": "1753a34877d8abedac49c632729be33e52e7803f37c4f87607786c473365cf78",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 48249.529411764706
+        },
+        "detail": {
+          "changedCoveragePixels": 215698,
+          "lineSha256": "e199d09ee8fa8031466be570bb513c489fa8d11f5833ae6e105339c47416a795",
+          "normalSha256": "5de18d69d2fcef1f06270ddbbcce471a3a58855756ff05fef5b634296dda91c4",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 192386.04705882352
+        }
+      }
+    },
+    "beijing": {
+      "method": "bounded background components; G only",
+      "regions": 1,
+      "maskSha256": "9c45986b5d67b5ed4b256b4552813b12534d88e003b0fd930dfc2cbdd4876ec2",
+      "tiers": {
+        "light": {
+          "changedCoveragePixels": 3201,
+          "lineSha256": "a2a08441fb2ed97cc9ceafa87c7a194271721d4b0069751968c7fb1a5e94c4e4",
+          "normalSha256": "826f58e69c305d7d46e0744c7d23cf505ecdc919a1968a20c0c1275fcdc6545a",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 2741.219607843137
+        },
+        "standard": {
+          "changedCoveragePixels": 12124,
+          "lineSha256": "6f8d1ad2134d88a8aa3beca27a6e3b065d961454670537673d45cdc5d10aaf64",
+          "normalSha256": "af1055ec9b0af953cf8a0e5a9375dea828a29408e734ccdf5a00ad1a4665fcf0",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 10958.611764705882
+        },
+        "detail": {
+          "changedCoveragePixels": 45104,
+          "lineSha256": "9680c0ff61c604fd82e85c9e985e16a0e211427693bf591fe6e4346b7bb92574",
+          "normalSha256": "0afcf0c95b1185370ff5ca99b9646a80951bebd55c9bf7d674b61dc0aef1e707",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 43744.99607843137
+        }
+      }
+    },
+    "qingdao": {
+      "method": "bounded background components; G only",
+      "regions": 3,
+      "maskSha256": "1bd72d5cd519c1137ca73eca59ca2850dabc2074476477e2f9a3cd9cfe0a398d",
+      "tiers": {
+        "light": {
+          "changedCoveragePixels": 3215,
+          "lineSha256": "01a130f5de6870b688dbe13d62d8a59bc200280f34978883bb26ea978d43852a",
+          "normalSha256": "9ebf0b08c6d8c00d534f4dd84bf485b1bae1c43869d2fa939155a620c753c886",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 2430.5372549019608
+        },
+        "standard": {
+          "changedCoveragePixels": 11950,
+          "lineSha256": "074991afa8e1c553bc09ad586121cd14a9bf9dc4a2124d7f3fcf042c8761f2f7",
+          "normalSha256": "6b6b83ead7804cffe133fa1a864f10c49c3b0fef425593d17ce2beef30c2921d",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 9700.635294117646
+        },
+        "detail": {
+          "changedCoveragePixels": 41664,
+          "lineSha256": "397ad36659dea007e1faf6f8530a466c79ddfcdf05f4d080dc7879a4d394f11e",
+          "normalSha256": "52f9f3b3e74194a301e68476d929d842ea193d76a6bb3292170b95181fa07f48",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 38645.99607843137
+        }
+      }
+    },
+    "tianjin": {
+      "method": "bounded background components; G only",
+      "regions": 30,
+      "maskSha256": "4488bfe2ec4d35867e618a9b93131b56c08a905d657ef7c292300592f0d0ad94",
+      "tiers": {
+        "light": {
+          "changedCoveragePixels": 33252,
+          "lineSha256": "6155b8be9dbfec54b551d78bee45c9f13bf9d4f77be9c43f970b2774a4bfae52",
+          "normalSha256": "36b8a4dd10448977ecd4dbba5ef161a6f4a68627efa05195e84d2ff796d8ac4e",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 27179.313725490196
+        },
+        "standard": {
+          "changedCoveragePixels": 128030,
+          "lineSha256": "6e6d57c8672c28b42bed9c244b0d8033d7d712790d9eb5900b9cd0beea90ca7f",
+          "normalSha256": "442aa1eab4c9ac9fdc1dddf5830b39e979640422cfd20e8701bf4952f84074b2",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 108626.9137254902
+        },
+        "detail": {
+          "changedCoveragePixels": 472435,
+          "lineSha256": "0f0e7bea69c59a4f5d2144b3dc1110f127a6f52573342cb71080e177b402f20c",
+          "normalSha256": "9e4eab05f4bed53f291c306f5fdb1fafc723bbddf398c00dc8a197b99c0e97d3",
+          "allLineBytesUnchanged": true,
+          "coverageOnlyInsideMask": true,
+          "coverageReducedByPixels": 433098.74901960784
+        }
+      }
+    },
+    "xian": {
+      "method": "supplied complete PNG with shared PSD matrix",
+      "sourceSha256": "77956e300c20c6117d86f7c816bd41c1c2e45ccf49ca086914a5d2c69620642d",
+      "scope": "formal",
+      "tiers": {
+        "light": {
+          "lineBounds": [
+            12,
+            165,
+            1013,
+            446
+          ],
+          "coverageBounds": [
+            11,
+            165,
+            1013,
+            446
+          ],
+          "size": [
+            1024,
+            446
+          ]
+        },
+        "standard": {
+          "lineBounds": [
+            23,
+            331,
+            2027,
+            892
+          ],
+          "coverageBounds": [
+            22,
+            331,
+            2027,
+            892
+          ],
+          "size": [
+            2048,
+            892
+          ]
+        },
+        "detail": {
+          "lineBounds": [
+            46,
+            662,
+            4054,
+            1783
+          ],
+          "coverageBounds": [
+            45,
+            661,
+            4054,
+            1783
+          ],
+          "size": [
+            4096,
+            1783
+          ]
+        }
+      }
+    },
+    "phase2-shenzhen": {
+      "method": "supplied complete PNG with shared PSD matrix",
+      "sourceSha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce",
+      "scope": "dev-only",
+      "tiers": {
+        "light": {
+          "lineBounds": [
+            12,
+            112,
+            1015,
+            445
+          ],
+          "coverageBounds": [
+            12,
+            111,
+            1016,
+            445
+          ],
+          "size": [
+            1024,
+            446
+          ]
+        },
+        "standard": {
+          "lineBounds": [
+            25,
+            223,
+            2031,
+            890
+          ],
+          "coverageBounds": [
+            25,
+            223,
+            2031,
+            891
+          ],
+          "size": [
+            2048,
+            892
+          ]
+        },
+        "detail": {
+          "lineBounds": [
+            50,
+            446,
+            4062,
+            1779
+          ],
+          "coverageBounds": [
+            50,
+            446,
+            4062,
+            1780
+          ],
+          "size": [
+            4096,
+            1783
+          ]
+        }
+      }
+    }
+  },
+  "phase2Formal": false
+}
