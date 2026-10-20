@@ -17,7 +17,7 @@ test('71 city versions and all chosen label variants have bounded, source-identi
 test('diagnostic contours follow actual mesh UV and never alter approved cup geometry or UV buffers',()=>{
  const m=makeMaterials(),p=buildProduct(m),body=p.cup.getObjectByName('cup-wall-and-recessed-foot') as Mesh,g=body.geometry;
  const fingerprint=()=>createHash('sha256').update(Buffer.from(g.getAttribute('position').array.buffer)).update(Buffer.from(g.getAttribute('uv1').array.buffer)).update(Buffer.from(g.index!.array.buffer)).digest('hex'),before=fingerprint(),v=1-61.370293965961764/1783;
- const guide=createCoverageGuide(p,v);assert.equal(guide.debug().enabled,false);assert.ok(guide.debug().lines.every(l=>l.vertices>0));guide.set(true);assert.equal(guide.debug().enabled,true);
+ const guide=createCoverageGuide(p,v),fill=body.getObjectByName('surface-area-denominator') as Mesh;assert.equal((fill.material as any).polygonOffset,true);assert.equal((fill.material as any).polygonOffsetUnits,-1);assert.equal((fill.material as any).depthWrite,false);assert.equal(guide.debug().enabled,false);assert.ok(guide.debug().lines.every(l=>l.vertices>0));guide.set(true);assert.equal(guide.debug().enabled,true);
  const line=body.getObjectByName('source-top') as LineSegments,a=line.geometry.getAttribute('position'),s=citySurfaceMetrics(p),y=s.bottomY+v*s.heightMm;for(let i=0;i<a.count;i++)assert.ok(Math.abs(a.getY(i)-y)<.066);
  guide.set(true,false);assert.equal(guide.debug().lines.find(l=>l.name==='source-top')!.visible,false);assert.equal(fingerprint(),before);guide.dispose();assert.ok(!body.getObjectByName('lab-coverage-guide'));assert.equal(fingerprint(),before);p.dispose();
 });

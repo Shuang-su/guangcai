@@ -19,11 +19,11 @@ computing gzip size...
 .codex-work/deploy/v7-build/assets/index-bG8FfO-B.css                3.35 kB │ gzip:   1.33 kB
 .codex-work/deploy/v7-build/assets/main-m0pXmlyI.css                52.22 kB │ gzip:  10.87 kB
 .codex-work/deploy/v7-build/assets/map-encoder.worker-gG3z5fOt.js    3.20 kB │ gzip:   1.54 kB
-.codex-work/deploy/v7-build/assets/coverage-guide-CXqE-pl-.js        4.49 kB │ gzip:   1.94 kB
+.codex-work/deploy/v7-build/assets/coverage-guide-CiG7Re4s.js        4.55 kB │ gzip:   1.97 kB
 .codex-work/deploy/v7-build/assets/index-BHtsgCtd.js                 5.66 kB │ gzip:   2.72 kB
 .codex-work/deploy/v7-build/assets/client-BYTvRpVq.js                8.07 kB │ gzip:   3.59 kB
-.codex-work/deploy/v7-build/assets/gpu-BTqVGPKC.js                 152.55 kB │ gzip:  48.61 kB
-.codex-work/deploy/v7-build/assets/main-CwC6FsrE.js                913.47 kB │ gzip: 259.64 kB
+.codex-work/deploy/v7-build/assets/gpu-Dy2irHfS.js                 152.55 kB │ gzip:  48.61 kB
+.codex-work/deploy/v7-build/assets/main-ConezdBd.js                913.47 kB │ gzip: 259.63 kB
 
 [33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mvendor/glass-hq/src/webgl2/index.ts is dynamically imported by vendor/glass-hq/src/dom/renderer.ts but also statically imported by src/ui/glass-studio.ts, dynamic import will not move module into another chunk.
 
@@ -32,4 +32,4 @@ computing gzip size...
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 1.21s
+✓ built in 1.20s
