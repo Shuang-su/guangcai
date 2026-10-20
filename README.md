@@ -1,6 +1,6 @@
 # 广彩一号杯与中国杯
 
-2026-10-20：V7.1.9 / v7-8 修复23城卡片线稿不完整：完整R通道先缩小，再按相同目标尺寸组装金色透明图。城市69档、字框及PSD映射沿用v7-7原数据。[Issue #51](https://github.com/Shuang-su/guangcai/issues/51) · [本轮记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md)。发布状态以本轮回执为准。
+2026-10-20：V7.1.9 / v7-8 已合并上线，修复23城卡片线稿不完整：完整R通道先缩小，再按相同目标尺寸组装金色透明图。城市69档、字框及PSD映射沿用v7-7原数据。[Issue #51](https://github.com/Shuang-su/guangcai/issues/51) · [本轮记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md)。部署 `6ad6af47aa240e6a1c47b305`，线上23城卡片及4个独立视口92项通过。
 
 2026-10-20：V7.1.8 / v7-7 已合并上线：统一正式页/开发iframe加载版本标识；PSD整版设计沿用已发布的V7.1.7。
 

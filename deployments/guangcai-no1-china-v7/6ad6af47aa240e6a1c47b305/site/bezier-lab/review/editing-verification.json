@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "outline_id": "sz-pingan-outline",
+  "translation_px": 50,
+  "cases": {
+    "clip": {
+      "before": {
+        "pixels": 230361,
+        "cx": 1057.4954354252673,
+        "cy": 1037.744119013201
+      },
+      "after": {
+        "pixels": 230361,
+        "cx": 1107.4954354252673,
+        "cy": 1037.744119013201
+      },
+      "measured_centroid_shift_px": 50
+    },
+    "mask": {
+      "before": {
+        "pixels": 230361,
+        "cx": 1057.4954354252673,
+        "cy": 1037.744119013201
+      },
+      "after": {
+        "pixels": 230361,
+        "cx": 1107.4954354252673,
+        "cy": 1037.744119013201
+      },
+      "measured_centroid_shift_px": 50
+    }
+  }
+}

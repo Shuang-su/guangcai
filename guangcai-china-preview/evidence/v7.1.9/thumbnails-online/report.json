@@ -1,0 +1,512 @@
+{
+  "base": "https://guangcai-no1-china-v7.netlify.app/",
+  "browser": "Chrome / Playwright (Browser plugin not available)",
+  "viewports": [
+    {
+      "width": 320,
+      "height": 568
+    },
+    {
+      "width": 430,
+      "height": 932
+    },
+    {
+      "width": 844,
+      "height": 390
+    },
+    {
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "checks": [
+    "formal identity",
+    "meaningful app and no framework overlay",
+    "V7.1.9 / v7-8 active",
+    "23 city choices",
+    "shenzhen real selected card matches cup",
+    "shenzhen complete image fits inside card",
+    "shenzhen browser decodes every linework pixel",
+    "shijiazhuang real selected card matches cup",
+    "shijiazhuang complete image fits inside card",
+    "shijiazhuang browser decodes every linework pixel",
+    "xian real selected card matches cup",
+    "xian complete image fits inside card",
+    "xian browser decodes every linework pixel",
+    "zhengzhou real selected card matches cup",
+    "zhengzhou complete image fits inside card",
+    "zhengzhou browser decodes every linework pixel",
+    "chongqing real selected card matches cup",
+    "chongqing complete image fits inside card",
+    "chongqing browser decodes every linework pixel",
+    "changchun real selected card matches cup",
+    "changchun complete image fits inside card",
+    "changchun browser decodes every linework pixel",
+    "qingdao real selected card matches cup",
+    "qingdao complete image fits inside card",
+    "qingdao browser decodes every linework pixel",
+    "shanghai real selected card matches cup",
+    "shanghai complete image fits inside card",
+    "shanghai browser decodes every linework pixel",
+    "urumqi real selected card matches cup",
+    "urumqi complete image fits inside card",
+    "urumqi browser decodes every linework pixel",
+    "beijing real selected card matches cup",
+    "beijing complete image fits inside card",
+    "beijing browser decodes every linework pixel",
+    "nanjing real selected card matches cup",
+    "nanjing complete image fits inside card",
+    "nanjing browser decodes every linework pixel",
+    "nanchang real selected card matches cup",
+    "nanchang complete image fits inside card",
+    "nanchang browser decodes every linework pixel",
+    "xiamen real selected card matches cup",
+    "xiamen complete image fits inside card",
+    "xiamen browser decodes every linework pixel",
+    "hohhot real selected card matches cup",
+    "hohhot complete image fits inside card",
+    "hohhot browser decodes every linework pixel",
+    "harbin real selected card matches cup",
+    "harbin complete image fits inside card",
+    "harbin browser decodes every linework pixel",
+    "tianjin real selected card matches cup",
+    "tianjin complete image fits inside card",
+    "tianjin browser decodes every linework pixel",
+    "taiyuan real selected card matches cup",
+    "taiyuan complete image fits inside card",
+    "taiyuan browser decodes every linework pixel",
+    "guangzhou real selected card matches cup",
+    "guangzhou complete image fits inside card",
+    "guangzhou browser decodes every linework pixel",
+    "chengdu real selected card matches cup",
+    "chengdu complete image fits inside card",
+    "chengdu browser decodes every linework pixel",
+    "jingdezhen real selected card matches cup",
+    "jingdezhen complete image fits inside card",
+    "jingdezhen browser decodes every linework pixel",
+    "hangzhou real selected card matches cup",
+    "hangzhou complete image fits inside card",
+    "hangzhou browser decodes every linework pixel",
+    "wuhan real selected card matches cup",
+    "wuhan complete image fits inside card",
+    "wuhan browser decodes every linework pixel",
+    "shenyang real selected card matches cup",
+    "shenyang complete image fits inside card",
+    "shenyang browser decodes every linework pixel",
+    "every city visited once",
+    "keyboard loop returns to Shenzhen",
+    "shenzhen complete image fits inside card",
+    "shenzhen browser decodes every linework pixel",
+    "no horizontal overflow 320",
+    "visible neighbor click updates real cup 320",
+    "shenzhen complete image fits inside card",
+    "shenzhen browser decodes every linework pixel",
+    "no horizontal overflow 430",
+    "visible neighbor click updates real cup 430",
+    "shenzhen complete image fits inside card",
+    "shenzhen browser decodes every linework pixel",
+    "no horizontal overflow 844",
+    "visible neighbor click updates real cup 844",
+    "shenzhen complete image fits inside card",
+    "shenzhen browser decodes every linework pixel",
+    "no horizontal overflow 1440",
+    "visible neighbor click updates real cup 1440",
+    "no runtime or console errors"
+  ],
+  "errors": [],
+  "cities": [
+    {
+      "id": "shenzhen",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.5,
+          42
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "xian",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.908447265625,
+          41.6875
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "chongqing",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "changchun",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "qingdao",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          77.12947082519531,
+          40.7476806640625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "shanghai",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          77.74229431152344,
+          41.0714111328125
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "urumqi",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.61224365234375,
+          41.531005859375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "beijing",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.90830993652344,
+          41.68743896484375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "nanjing",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.61224365234375,
+          41.531005859375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "nanchang",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "xiamen",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.61224365234375,
+          41.531005859375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "hohhot",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "harbin",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          77.739013671875,
+          41.0697021484375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "tianjin",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          77.12947082519531,
+          40.7476806640625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "taiyuan",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.61224365234375,
+          41.531005859375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "guangzhou",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.61224365234375,
+          41.531005859375
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "chengdu",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "hangzhou",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "wuhan",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          78.90985107421875,
+          41.688232421875
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    },
+    {
+      "id": "shenyang",
+      "geometry": {
+        "fit": "contain",
+        "position": "50% 100%",
+        "image": [
+          79.29777526855469,
+          41.89312744140625
+        ],
+        "natural": [
+          560,
+          244
+        ],
+        "inside": true,
+        "whole": true
+      }
+    }
+  ],
+  "physicalDeviceTested": false,
+  "passed": true
+}

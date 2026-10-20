@@ -1,0 +1,1918 @@
+{
+  "date": "2026-10-20",
+  "method": "MasterGo normal UI Copy SVG; CUA; no private editor API",
+  "sourceUrl": "https://mastergo.com/file/207427706578154?fileOpenFrom=home&page_id=M&shareId=207427706578154&state=LanHuVX",
+  "canvas": [
+    1939,
+    815
+  ],
+  "canonicalFrame": {
+    "left": 1539,
+    "top": 190,
+    "width": 127,
+    "height": 423
+  },
+  "canonicalText": {
+    "left": 1570,
+    "top": 249,
+    "width": 116,
+    "height": 343,
+    "fontSize": 66
+  },
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shanghai.svg",
+      "sha256": "f5c6184bd65d590ddec8c459ef3be1ed7ea501757a59694400aa7b0b0061d89f",
+      "bytes": 1309035,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 76,
+        "y": 114,
+        "width": 1607,
+        "height": 701
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/urumqi.svg",
+      "sha256": "4e01614622779ee3a181da2e9c44870d46fcbc6d29f7ea024360f6356f10af2d",
+      "bytes": 1976636,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -15,
+        "y": 43,
+        "width": 1923,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/beijing.svg",
+      "sha256": "572133c8dd38a007034370f26adecf09fb63169c217b089ac4fc4499b0ac372a",
+      "bytes": 1452978,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0,
+        "y": 3,
+        "width": 1938,
+        "height": 812
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/nanjing.svg",
+      "sha256": "e16a9ea1302947b23d3596d36d6428ffabbcf07303bcabe682632aa962302cc0",
+      "bytes": 1334630,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 17,
+        "y": 67,
+        "width": 1777,
+        "height": 756
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/nanchang.svg",
+      "sha256": "fd12ad8bc1e722a23a0649f13796a1d0d97b53bb91f54b413484a91cf5dfd4cf",
+      "bytes": 1489131,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -34,
+        "y": 40,
+        "width": 1922,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/xiamen.svg",
+      "sha256": "bae533336b1997964d7b4359962fc0fd18143f0bf0e328db73bde130c8cb9ba9",
+      "bytes": 1452716,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -1,
+        "y": 70,
+        "width": 1784,
+        "height": 761
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/hohhot.svg",
+      "sha256": "0127edc0937c181418d14acbfb4f0e412c06494b22cdf38575fa7d098d10c7ff",
+      "bytes": 1298502,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -18,
+        "y": 31,
+        "width": 1973,
+        "height": 842
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/harbin.svg",
+      "sha256": "e1d5822036d567ef355c27fea78f7f3a6b0030a5679e89c11fc7aa137957be07",
+      "bytes": 1539632,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 46,
+        "y": 94,
+        "width": 1721,
+        "height": 732
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/tianjin.svg",
+      "sha256": "67180703921f49d5ea584e463f9c4a7a477d6f6c03e0490043d4fb1b2e568812",
+      "bytes": 1726083,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 17,
+        "y": 103,
+        "width": 1771,
+        "height": 754
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/taiyuan.svg",
+      "sha256": "afefe17d3b79c172a647ec9ccdb0e2aca8798687b96dacd44aebfde0140f837e",
+      "bytes": 1368631,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 9,
+        "y": 29,
+        "width": 1921,
+        "height": 819
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/guangzhou.svg",
+      "sha256": "b38585ef5c845f6520d2406444072f5b92f67795e4d2b2cf6c42ee1de5d67754",
+      "bytes": 1766146,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 29,
+        "y": 1,
+        "width": 1934,
+        "height": 813
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 255,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/chengdu.svg",
+      "sha256": "09407a0ea574f9763ca509f921890f0bad427dd24df2b1d99478e0444663e902",
+      "bytes": 1374167,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": false,
+      "cityImageRect": {
+        "x": -21,
+        "y": 16,
+        "width": 1922,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "asset": {
+          "id": "slogan-chengdu-open",
+          "url": "assets/slogan-chengdu-open-5affeebaeaf14c53.webp",
+          "sha256": "5affeebaeaf14c53e6b26c745f363887f6d1c8b73cbb96e2de9e093eb2c4dccb",
+          "sourceSha256": "d87c103092154e0435d1c775ce351acb3bdabe097e78cd120cc771639c5e4adc",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19830,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "slogan": "open",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1530,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/jingdezhen.svg",
+      "sha256": "a5f8f74ef3827cfac7c3a977a194987cdd42a8a163d7d70b161cbfb92566f7b1",
+      "bytes": 1496082,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -11,
+        "y": 14,
+        "width": 1975,
+        "height": 841
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1504,
+        "top": 204,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/hangzhou.svg",
+      "sha256": "f801c67c0547c97477e46e95235d8925116210fe9439e9b0a19bb820b93bba94",
+      "bytes": 1305785,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -20,
+        "y": 5,
+        "width": 1895,
+        "height": 830
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/wuhan.svg",
+      "sha256": "ac70161ad494a8a30aa42e3b82907b6f2f9ccc63d1275bdef2e91cf8982c96e7",
+      "bytes": 1500249,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": -3,
+        "y": 16,
+        "width": 1921,
+        "height": 819
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shenyang.svg",
+      "sha256": "09667618b3ceb5036b78ded0612f84b6b4823d1ec1c68d17aaeee00652c89f1b",
+      "bytes": 1531653,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0,
+        "y": 67,
+        "width": 1789,
+        "height": 763
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shenzhen.svg",
+      "sha256": "08bbd22afb2e87bc648aa09f6504ef82f6080b243bfa1375d0e5236949fb8061",
+      "bytes": 2063996,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 20,
+        "y": 7,
+        "width": 1853,
+        "height": 808
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/shijiazhuang.svg",
+      "sha256": "187b7c5b6d215496c5c1162920acdb5940dc1c1ba64866e1e4e210a7259b3306",
+      "bytes": 1445136,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0,
+        "y": 35,
+        "width": 1880,
+        "height": 800
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "slogan": "ocean",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1548,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/xian.svg",
+      "sha256": "80e7d45e06fd2838fe86d683e97942d8f1e345469ef6c4ef5ccb2b2ffe2f5a75",
+      "bytes": 1539495,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 3,
+        "y": 35,
+        "width": 1922,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/zhengzhou.svg",
+      "sha256": "10b32138aaa1fb6faac796cd8451c82dc3b32b021afcc2dc695c6d36ae171fbf",
+      "bytes": 1440993,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0,
+        "y": 52,
+        "width": 1838,
+        "height": 782
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/chongqing.svg",
+      "sha256": "a0b21904833147dec17045e457eac4c05a426c5bc0998b820f056e7bc37bdb7c",
+      "bytes": 1620526,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 14,
+        "y": 16,
+        "width": 1922,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "slogan": "sharing",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/changchun.svg",
+      "sha256": "28a821c9de67a43d0088455e0b302673862f7db131d59dc71872699788d5554d",
+      "bytes": 1275340,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 0,
+        "y": 23,
+        "width": 1923,
+        "height": 818
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "slogan": "together",
+      "frame": {
+        "left": 1539,
+        "top": 190,
+        "width": 127,
+        "height": 423
+      },
+      "text": {
+        "left": 1570,
+        "top": 249,
+        "width": 116,
+        "height": 343,
+        "fontSize": 66
+      },
+      "previousReferenceFrame": {
+        "left": 1556,
+        "top": 196,
+        "width": 127,
+        "height": 423
+      },
+      "sourceFile": "assets/source/v7.1.5/mastergo/qingdao.svg",
+      "sha256": "d396d8c5ba31e98d5f1315e5ae8406b8f5594faec5c56fa64c9274955931c8fe",
+      "bytes": 1270147,
+      "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+      "frameUnified": true,
+      "textUnified": true,
+      "cityImageRect": {
+        "x": 9,
+        "y": 39,
+        "width": 1864,
+        "height": 793
+      },
+      "runtimeFrame": {
+        "left": 3251.0283651366685,
+        "top": 462.7318205260443,
+        "width": 268.2784940691078,
+        "height": 893.5575038679732
+      },
+      "productionLabel": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ]
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "cityId": "chengdu",
+      "kind": "textVerticalOffset",
+      "sourceDeltaY": 6,
+      "productionDeltaY": 0,
+      "action": "Use the same canonical open-slogan outlines and position as Xiamen; original retained for comparison."
+    }
+  ],
+  "frameImageSha256": "830d0722ed2adc9c40f6838eff6e03eb6d77b4d3def4d5496bd3c48f8add146b",
+  "passed": true,
+  "missingPhrasesInReference": [
+    "cooperation",
+    "innovation"
+  ],
+  "deadSourceNodes": {
+    "guangzhou": "Empty old mask group has no rendered children.",
+    "shijiazhuang": "Old text lies outside the clipped canvas; current visible text matches sharing."
+  },
+  "version": "7.1.7",
+  "resourceReleaseId": "v7-7",
+  "mapping": {
+    "version": "7.1.7",
+    "sourceCanvas": [
+      1939,
+      815
+    ],
+    "psdDocument": [
+      7016,
+      4961
+    ],
+    "psdBounds": [
+      777,
+      2243,
+      6210,
+      4608
+    ],
+    "psdFrame": [
+      5433,
+      2365
+    ],
+    "psdSha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9",
+    "runtime": [
+      4096,
+      1783
+    ],
+    "policy": "contain-width-bottom; preserve complete source; no nonuniform stretch or per-city registration",
+    "scale": 2.112429087158329,
+    "offset": [
+      0,
+      61.370293965961764
+    ],
+    "widthCoverage": 1,
+    "topGapFraction": 0.03441968253839695
+  },
+  "phrases": [
+    {
+      "id": "open",
+      "text": "开放包容",
+      "before": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-154e855ea8053f14.webp",
+          "sha256": "154e855ea8053f1477426a7da3144813337dbfbb1d5fcd9021d10d7aa6017084",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 17094,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/open-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "开放包容",
+        "asset": {
+          "id": "slogan-open",
+          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 19750,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/open-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖原稿字形与城市共用一次等比变换。"
+    },
+    {
+      "id": "innovation",
+      "text": "创新驱动",
+      "before": {
+        "text": "创新驱动",
+        "asset": {
+          "id": "slogan-innovation",
+          "url": "assets/slogan-innovation-5fc4ce6b84eced7e.webp",
+          "sha256": "5fc4ce6b84eced7eb96ed1205747ce0f6e90161da49dee634c6fa86dc2f650fe",
+          "sourceSha256": "c1b7a3dd1c1b1357e7d6067911e1ac6d5fdd1a171b568a8149582e4ed9986d6e",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 18120,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/innovation-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "创新驱动",
+        "asset": {
+          "id": "slogan-innovation",
+          "url": "assets/slogan-innovation-d0ba488b50e17c68.webp",
+          "sha256": "d0ba488b50e17c685bd9fef8e1d6e384156ff599120dceb4bcc8aaf09793f18c",
+          "sourceSha256": "c1b7a3dd1c1b1357e7d6067911e1ac6d5fdd1a171b568a8149582e4ed9986d6e",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 24954,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/innovation-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖当前画板缺席；保留已批准字形，使用整版共同矩阵。"
+    },
+    {
+      "id": "cooperation",
+      "text": "合作共赢",
+      "before": {
+        "text": "合作共赢",
+        "asset": {
+          "id": "slogan-cooperation",
+          "url": "assets/slogan-cooperation-fc0e943800279686.webp",
+          "sha256": "fc0e9438002796861e5b015ee0db3937427b3150b80d791ac396ae3d2aa2c5ca",
+          "sourceSha256": "d797a82137c19c058a2bdf651f2a51f08dea628bcb30a0aedca41ed572435378",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 16244,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/cooperation-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "合作共赢",
+        "asset": {
+          "id": "slogan-cooperation",
+          "url": "assets/slogan-cooperation-ab2ea3fb79502eb9.webp",
+          "sha256": "ab2ea3fb79502eb940a0aa3e9800f573a98c14b2025599c4564b3e966af691cb",
+          "sourceSha256": "d797a82137c19c058a2bdf651f2a51f08dea628bcb30a0aedca41ed572435378",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18970,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/cooperation-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖当前画板缺席；保留已批准字形，使用整版共同矩阵。"
+    },
+    {
+      "id": "sharing",
+      "text": "共建共享",
+      "before": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-08602e1c2b5e2cff.webp",
+          "sha256": "08602e1c2b5e2cffc299d0c576a490f2fa4929153dac1b82e77b05df5e3acf92",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 15716,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/sharing-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "共建共享",
+        "asset": {
+          "id": "slogan-sharing",
+          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18294,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/sharing-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖原稿字形与城市共用一次等比变换。"
+    },
+    {
+      "id": "together",
+      "text": "携手同心",
+      "before": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-17bf8e28fe77ada8.webp",
+          "sha256": "17bf8e28fe77ada8bb19275c4243d6c3ddf5b516b4f223e21cc0980efe3ead4b",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 15844,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/together-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "携手同心",
+        "asset": {
+          "id": "slogan-together",
+          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 18096,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/together-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖原稿字形与城市共用一次等比变换。"
+    },
+    {
+      "id": "ocean",
+      "text": "拥抱瀚海",
+      "before": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-7f2736ff3e09eb92.webp",
+          "sha256": "7f2736ff3e09eb9205da94ccb49fd380487fe04dd9a0c69577dc2ab3d56fe690",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 229,
+          "height": 741,
+          "bytes": 18452,
+          "decodedBytes": 169689,
+          "gpuBytes": 226252,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.69677734375,
+          0.19405496354458773,
+          0.055908203125,
+          0.41559169938306223
+        ],
+        "image": "images/ocean-before.webp",
+        "width": 229,
+        "height": 741
+      },
+      "after": {
+        "text": "拥抱瀚海",
+        "asset": {
+          "id": "slogan-ocean",
+          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "encoding": "webp",
+          "width": 277,
+          "height": 903,
+          "bytes": 25388,
+          "decodedBytes": 250131,
+          "gpuBytes": 333508,
+          "channels": 1,
+          "colorSpace": "linear"
+        },
+        "uvRect": [
+          0.792724609375,
+          0.23667975322490187,
+          0.067626953125,
+          0.5064498037016265
+        ],
+        "image": "images/ocean-after.webp",
+        "width": 277,
+        "height": 903
+      },
+      "origin": "蓝湖原稿字形与城市共用一次等比变换。"
+    }
+  ],
+  "productionPolicy": "23城及原位置字框使用蓝湖整版共同等比矩阵；宽度100%，底边对齐，不按单城墨迹重排。成都原稿6px保留。"
+}

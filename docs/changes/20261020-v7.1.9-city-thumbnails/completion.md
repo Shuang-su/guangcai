@@ -10,9 +10,17 @@
 - 45项基础测试、45项V7测试通过（新增四角防裁切、23城完整R通道像素及杯身资源不变验证）。
 - 消费者与integration构建通过，196项资源摘要/尺寸校验和6组文字逐像素校验通过。
 - 本地正式/报告/开发页29项通过，Chrome桌面1440×1000与移动390×844，含六文字、两城SVG、旧/新字框、v7-5..8作品恢复和实验隔离；无相关console或运行错误。
-- 23城卡片真实切换、完整图片解码及320×568、430×932、844×390、1440×1000独立视口共92项通过，23城手机390×844/DPR2逐项核对通过。发布结果待回读后追加。Browser plugin not available，使用仓库现有Playwright/Chrome。
+- 23城卡片真实切换、完整图片解码及320×568、430×932、844×390、1440×1000独立视口共92项通过，23城手机390×844/DPR2逐项核对通过。服务端与归档1184文件摘要回读通过；公网23城缩略图与四个独立视口92项通过，无相关console或运行错误；正式/报告/开发页最终29项通过。Browser plugin not available，使用仓库现有Playwright/Chrome。
 - 首次卡片QA脚本在切城后的异步提清阶段提前调用exportDesign，触发“作品尚未准备完成”；改为等待真实目标城市/提清稳定后重测，无产品逻辑改动。
 
 23城切换和320px检查完成后的连续resize中，Playwright的Chrome标签页发生一次Target crashed。保留失败报告thumbnail-browser-crash-attempt.json；独立浏览器会话逐尺寸重测通过，无相关console或运行错误；不将其掩盖为长时稳定性通过。
 
-Issue #51。源码checkpoint `1146944dc6e199ff975de6015f1eb7c75c4ce174`；PR、部署、归档与线上逐城验证待完成后追加，不提前声称上线。原5MiB/6秒目标、真实iPhone/WeChat/Safari、实体触感/长时GPU、COS及身份联调继续由#47跟踪。
+发布预检首次因稀疏检出切换到main时未展开本轮证据目录而停止（Netlify写入前）。将本轮记录/证据加入本机稀疏路径后重跑通过。
+
+Issue #51。源码checkpoint `1146944dc6e199ff975de6015f1eb7c75c4ce174`；[PR #52](https://github.com/Shuang-su/guangcai/pull/52)已合并；生产源码 `097690d748fa9dbefbb6b181acdb4d8e5fa7ef48`。部署 `6ad6af47aa240e6a1c47b305`，1184服务端摘要匹配，1184文件/499,368,519 bytes归档SHA256回读通过，5个历史站点未变。公网23城与四个视口92项通过；正式/报告/开发页29项通过。原5MiB/6秒目标、真实iPhone/WeChat/Safari、实体触感/长时GPU、COS及身份联调继续由#47跟踪。
+
+正式主页：https://guangcai-no1-china-v7.netlify.app/
+
+固定版本：https://6ad6af47aa240e6a1c47b305--guangcai-no1-china-v7.netlify.app/
+
+归档原deployment.json及site文件保持不可变，追加verification.json保存最终回读。生产程序文件与部署源码一致；本轮最终提交仅补齐文档、证据与完整发布归档。
