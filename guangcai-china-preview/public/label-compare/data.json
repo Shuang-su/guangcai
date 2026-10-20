@@ -83,6 +83,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "46095b30a1576b6b80b2a02493eaad052c2c8af51645075b71bf61938b376778",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/shanghai-before.webp",
+          "imageSha256": "28a765c691fc0c0ef40a8278e8f569f34b266c6f1a1e64fba3a6c65bed564ae8"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "1845e9aa5c9c2708ca3cdc10a1f7c4327c41435fd61ed8369a61e8209ca528c0",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/shanghai-after.webp",
+          "imageSha256": "6b547cb9e63f7fd2001e176f79da75e550881a4cdf5cbae458ca32fe729a838a"
+        }
       }
     },
     {
@@ -148,6 +176,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "ec3ddb5171faf0e16a6362cbc128dfdfcddb1f73adb20fb83023a8f829bb8f70",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/urumqi-before.webp",
+          "imageSha256": "f8509e476aaeddabce3f836d2a1eace6c9c4c0a749779788c25f28b9633a6d37"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "c5a9c00a7e3990b91528f7054a28c10cf084363734a11cc4c53307343c4d1613",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/urumqi-after.webp",
+          "imageSha256": "317953dd06ca449a0c174030bc6981f4c8f04ffdfd0d9eb0f370fe84360b7092"
+        }
       }
     },
     {
@@ -213,6 +269,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "6418acbeac4ae489c036f99fbcd2965b838df199212dd056e316a87caf4a39a3",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/beijing-before.webp",
+          "imageSha256": "53a00282df5ed3ba645447f47c45552ef4453cf234d4078d6292da204aa93438"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "425255eb45b60c1ff101765ef8dad4fac24006294557bc22943cd2d7c3408ab0",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/beijing-after.webp",
+          "imageSha256": "b88107964415ffc4e54f35782f7a453b83998941b8ea1c963b0c1f9c1e2e7ebd"
+        }
       }
     },
     {
@@ -278,6 +362,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "9638e46dd455fd3b50c6a3d07320622007eaeba31c0530e17171c28ae62a6847",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/nanjing-before.webp",
+          "imageSha256": "13dc880752b864fbc87018cae3dc27b1c70e547f51097df305f5d83b97dbdd7b"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "daf1bac91565abbb3957f50af8f57ba662c0c6071eb2cd2c3f24266f12cf4f60",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/nanjing-after.webp",
+          "imageSha256": "d99e39690cbed2251d871fe2fec4ac8e9737a22e91b3e1092ee0357cafb322ca"
+        }
       }
     },
     {
@@ -343,6 +455,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "04f3cb8c09f2a797f2fc377ff41e21fa4296ea651e33e06262f466ebb740b8a9",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/nanchang-before.webp",
+          "imageSha256": "a981fad85570506baf14d6c297fad70d9b0c14d6fde029458f3cdad02ab5fadc"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "ceb5c5be3e9517157881a5005920421d0b4e8628285d4a742bb399b74950a8ba",
+          "labelSha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/nanchang-after.webp",
+          "imageSha256": "0bea597e4da1a0d83fe3d68c260cc266995f680156778b3171d4a2a147ec07ac"
+        }
       }
     },
     {
@@ -408,6 +548,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "516c3431ba11af5338696d4b0f9f5a0017b76786fc306d418a75cb55fb9cbbbf",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/xiamen-before.webp",
+          "imageSha256": "e94f9d11a668ff57f50fd8f726cf56ae825081c0f8ff7d912a75010b4c2d1455"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "6e89e0d4f56ba13a8b5dda5766a635d5628561234c1ec50d1a2339a49b9d9322",
+          "labelSha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/xiamen-after.webp",
+          "imageSha256": "4425bd34a5d8cabaa7774e603c6033d971327ee829a4f749cb0f4355a3e2f7eb"
+        }
       }
     },
     {
@@ -473,6 +641,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "90c39035ba0df93ac22af0ba605121bad75ec715f09da89405505572dc2d3c5a",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/hohhot-before.webp",
+          "imageSha256": "de70f1800d930533bacc29b5246cc1d416b6ee9ef3cdfe19f3df3fd5ccd60571"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "190cecc935d89e1a09d983f869a28973da9249283b1ef14ac880f9a758e32f87",
+          "labelSha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/hohhot-after.webp",
+          "imageSha256": "c4c4b888397082b8c8b19770327ed5eaf8ddb5ee4143e302d3bd63b966217cc2"
+        }
       }
     },
     {
@@ -538,6 +734,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "da0c07ef1b100ca0bbcebdf84869beac6107e3b60e24b678d959c33c5323fc68",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/harbin-before.webp",
+          "imageSha256": "91598826e8b0a9c6a7abbb76e62751d24e3a205ca812f2a5fc66a85c16099e7e"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "5e60bfbd1bce5ce671179e825397d14cfa158b6d7a02effff9c3529ce19367e1",
+          "labelSha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/harbin-after.webp",
+          "imageSha256": "ede909497b13a7d09d7841811020e11bf1b3497eb345bfaf0e29dd082e337bf5"
+        }
       }
     },
     {
@@ -603,6 +827,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "23aa9fa5c5a43bcc10989827f71b2bd4539fa74187ec6bd0ddb4cf210b848a70",
+          "labelSha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/tianjin-before.webp",
+          "imageSha256": "25a66a1eef0855dbc25449a8b8a2284472a7baf73efb04be0be73562a8838a15"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "00c9a830d622c3c30c2bb3b8d77dac8ffbe6133bc02675fe87186d8010a4fc1d",
+          "labelSha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/tianjin-after.webp",
+          "imageSha256": "240a18f33edb3597ce52b94d45bc000a42b703244984bebf3e0f8bf88bd0f2a0"
+        }
       }
     },
     {
@@ -668,6 +920,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "84db8ad90f3c8d793e2ab79c02a955f028aa1f6c77464ce0f561758e0d797ce5",
+          "labelSha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/taiyuan-before.webp",
+          "imageSha256": "30ba5de8b78758b17518fd8e34370cb50fba8bfc277f345f986ef8095714a8fb"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "bf53ad127d7a02a9eb01b0cc5bc98722460863b4f073d5d61df15fa284fe98c8",
+          "labelSha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/taiyuan-after.webp",
+          "imageSha256": "e7e595c5f923a563b6936ada2a9a9f8f08fdc24c63e64fbf7c0dd15da176d5c2"
+        }
       }
     },
     {
@@ -733,6 +1013,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "8481b131591b5aee568c99aacbb8de495eab00ad436be6f33150e8756568e602",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/guangzhou-before.webp",
+          "imageSha256": "d418c979f66abbe35839eb8ed87afd36bde4134fce6f5ccc209f780c6ba39870"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "f7eb113e683eb312da3a92bc22f646682c05e1174e349e37fab80c85534dd449",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/guangzhou-after.webp",
+          "imageSha256": "04390bfddd8777504e1a8db429197fa77af25f3b7c93e1751923e381f2a37664"
+        }
       }
     },
     {
@@ -797,6 +1105,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "04db1c26af8b9794ca8fd5e3fab20ddf83c2dfed2f057ae1246ba2d7af354c57",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/chengdu-before.webp",
+          "imageSha256": "d901dfa66d6ffdc5063ae75a11ae9b1b47e506a8e02e8750bbcd93d5ddb426b0"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "4629433d1cdcc6715d07769827153710e3bbf3edece3cdc1d5cf1a3d0aa01246",
+          "labelSha256": "5affeebaeaf14c53e6b26c745f363887f6d1c8b73cbb96e2de9e093eb2c4dccb",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/chengdu-after.webp",
+          "imageSha256": "eb5ad96853c9dcdb3d4d3766bfd8a5b172af2dadb3f2570ccae7fc51da7649e8"
+        }
       }
     },
     {
@@ -862,6 +1198,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "19b7ddc9c4910b3d9e3c2c3558cbc78df4cc5c8836702f4416afd34d1af8351b",
+          "labelSha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/jingdezhen-before.webp",
+          "imageSha256": "7008fe4e32d182b5d5b69f7b9be04f5e81dadedd41efd6d07306c5333987ce54"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "8fefa6aa95c949861da14e21460409467aaedd26ea465e70c7e3b4208197b6b1",
+          "labelSha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/jingdezhen-after.webp",
+          "imageSha256": "1d818dc9eab66e98578fbc41ca1ec0a46bd36f4f91551ca4d50d24eaf3b31004"
+        }
       }
     },
     {
@@ -927,6 +1291,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "3d53fb7d5f46be17e3f1c17b235f9e6d59fcbbb95655c0a074e0dce1151dac51",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/hangzhou-before.webp",
+          "imageSha256": "96a53057033767d566ec505fcdbef3bb880794e3ab8d84323e0380401da2ca6f"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "679c774e6db72281186a884e4c7f181f444bfbbf72d673410f7a67f44d2b53e6",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/hangzhou-after.webp",
+          "imageSha256": "b4fa3219aea325882d83fb33c42a0be076a494e5ba15e86815b5d522e25ec8f6"
+        }
       }
     },
     {
@@ -992,6 +1384,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "70245232db817024237468e87199ec216bb4d9874cf9989aafc4a827ac2e72d4",
+          "labelSha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/wuhan-before.webp",
+          "imageSha256": "e15aef29a0d8a397c9b5eda84cb0add6dad2858a30fc18d4e9cd7c327059c19d"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "88bb538e2f0195a2cc7bc3ad92f367acf926bfd4434d0b0f13fd2d3cd39e5bbd",
+          "labelSha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/wuhan-after.webp",
+          "imageSha256": "d8931564a9ba01efe43f966e512622827c6bc18fe4cdbc2731589d8c5361b3ff"
+        }
       }
     },
     {
@@ -1057,6 +1477,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "af8200e11a1db009ee301b8a9ca365a15ba42755ce2d6226bbfffadce95e66fe",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/shenyang-before.webp",
+          "imageSha256": "eebc3da8e49396cde26b1b8b37fb88c3b0721fd9ab92c482fd218b7d17b430b3"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "70897e897cad9e62781e2ae75375ab726e3d343927bdef92c39d062ebb952de4",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/shenyang-after.webp",
+          "imageSha256": "b4cf7cf03380a44e1bf3cd0721e5bf864b8ccfec061e4808543bf7e158a3dd13"
+        }
       }
     },
     {
@@ -1122,6 +1570,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "dd02d36049687625209c0c7fcd3607085d552c31f25868aaad6bba9764964311",
+          "labelSha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/shenzhen-before.webp",
+          "imageSha256": "7295d46357c7acca566c8e92cf75e294e31fdba1e0129e21774d3cc8bf7c28ee"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "d745c2f3c2afa51a5711dbc3d448169d005ccea65a2417ddd74facbe1a045297",
+          "labelSha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/shenzhen-after.webp",
+          "imageSha256": "d6bada9fc1b1f48b8fb0ba6cc5cf9bc9c41bb34dd543b994f6239b8c6c85bb83"
+        }
       }
     },
     {
@@ -1187,6 +1663,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "309e583753aa94a84de3db81336ebc6dfac53a646aa5bb20ec70dd05654ac5b8",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/shijiazhuang-before.webp",
+          "imageSha256": "b6a5f355a5ec3f8a0fe68f8af4ac39f7271d7207731c178a287643d842563b32"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "c8adf6cd00868bd8532ceea42d0be8b7533004c8a6ec7f67d8357e9b4240f748",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/shijiazhuang-after.webp",
+          "imageSha256": "626b8c3b2552c479577157de7bcc223fc2e9e5287564373ef4339817e66c587c"
+        }
       }
     },
     {
@@ -1252,6 +1756,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "dd0ad606869bf308a21ff6fd2b6609988c3986faef0c6d94551d5f1b32d4f41c",
+          "labelSha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/xian-before.webp",
+          "imageSha256": "6c774f403c02f18c01acc6950116b8573cc471188e94f9e1ebf3b50718bcff2d"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "9d6b28939b7b40be71dfa94bc36f35d11e042d84afaf55b027c600c1e2c3db1e",
+          "labelSha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/xian-after.webp",
+          "imageSha256": "56e87d49ea35ac41714d7539ead8c2871ac45426081abd9ed7100eedb1b870a6"
+        }
       }
     },
     {
@@ -1317,6 +1849,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "628c5fb7542482f2e0dfe4c7656bdc9357c25d5bca62263840e509ab7a97636e",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/zhengzhou-before.webp",
+          "imageSha256": "566131fa43f6b0ef9cbf53fd52fa391aac1a7c27ea18c648c84d0922666892cd"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "b10f8f0c18c1e01d704a6c920244db2b4606b0e5c6de3a5056abdeac682e6fe0",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/zhengzhou-after.webp",
+          "imageSha256": "4c6a7fa2e219d2f52e1eee2d835a50efeddbd9584175a990c442f5a5fa19a84d"
+        }
       }
     },
     {
@@ -1382,6 +1942,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "7a8cce0f923f72ec0f66a345a2a540c000e5ce45a6982a7f9f4bf69b9109d7b5",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/chongqing-before.webp",
+          "imageSha256": "c01abcedac41363334995d24d80e37ea6dbd259ec7af5f230dbb4a59a1be6a68"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "3ba3892be30e6ce7867ce1e1a410bf852c4be52f57e8b7d443ad4f4aef5e3171",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/chongqing-after.webp",
+          "imageSha256": "07efe3b0acff3f8ecca305e1438bc62543c961a5f99974c398ef1139d7bf9156"
+        }
       }
     },
     {
@@ -1447,6 +2035,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "0815ad0506a899323555561bb57174ad268bd5722244845876a21824cfcdbeb5",
+          "labelSha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/changchun-before.webp",
+          "imageSha256": "930b0f53427daee28ba410d743f6853e4d4bb84fe8364e0e0f5cfd4acc4a9b40"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "caf86737fe6ef95ed1a10d53f26f2cadd2cc61f8ce68616260d16f22128dc800",
+          "labelSha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/changchun-after.webp",
+          "imageSha256": "2317b292b43df8af8e4df180ebe1282ab29196e14431c2219b780c12314e5c77"
+        }
       }
     },
     {
@@ -1512,6 +2128,34 @@
           0.067626953125,
           0.5064498037016265
         ]
+      },
+      "comparison": {
+        "before": {
+          "releaseId": "v7-5",
+          "maskSha256": "c682651041d50585546841e7966e568768204a5ab20f215493ad9ef22d2d86c1",
+          "labelSha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "labelUvRect": [
+            0.77490234375,
+            0.38754907459338195,
+            0.0703125,
+            0.5249579360628155
+          ],
+          "image": "images/qingdao-before.webp",
+          "imageSha256": "a17f8b802634e37c744e064614f9d4f579eaad0633355c1f0a928c49e71d0dad"
+        },
+        "after": {
+          "releaseId": "v7-8",
+          "maskSha256": "7279aef587f4417f41f87c03f7e2adb4e593dbc7d22352e60d78bd764089db64",
+          "labelSha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
+          "labelUvRect": [
+            0.792724609375,
+            0.23667975322490187,
+            0.067626953125,
+            0.5064498037016265
+          ],
+          "image": "images/qingdao-after.webp",
+          "imageSha256": "0f9d875037c155b4b908818e3fc1416f129afc72b7062c4b48d021ad3f2d5533"
+        }
       }
     }
   ],
@@ -1534,8 +2178,8 @@
     "guangzhou": "Empty old mask group has no rendered children.",
     "shijiazhuang": "Old text lies outside the clipped canvas; current visible text matches sharing."
   },
-  "version": "7.1.7",
-  "resourceReleaseId": "v7-7",
+  "version": "7.1.10",
+  "resourceReleaseId": "v7-8",
   "mapping": {
     "version": "7.1.7",
     "sourceCanvas": [
@@ -1578,33 +2222,34 @@
         "text": "开放包容",
         "asset": {
           "id": "slogan-open",
-          "url": "assets/slogan-open-154e855ea8053f14.webp",
-          "sha256": "154e855ea8053f1477426a7da3144813337dbfbb1d5fcd9021d10d7aa6017084",
-          "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
+          "url": "../v7-3/assets/slogan-open-d0dc0df725a844be.webp",
+          "sha256": "d0dc0df725a844be17183846ee7efe114fcc3f1009a0efaee703254378d40126",
+          "sourceSha256": "4bb4fc55916758d5253a91cf40d8a62474733ff293045e4c4ae9e397be8df178",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 17094,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 13680,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/open-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "开放包容",
         "asset": {
           "id": "slogan-open",
-          "url": "assets/slogan-open-718029e4b32395b1.webp",
+          "url": "../v7-7/assets/slogan-open-718029e4b32395b1.webp",
           "sha256": "718029e4b32395b116930b5edb09d8ae25889363cfe716b1eab24468155d1a5b",
           "sourceSha256": "f25f9956df0c2f438e7ac1edf6098ef34e98f11a563a8955c823dbb21bf1def5",
           "encoding": "webp",
@@ -1622,6 +2267,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/open-after.webp",
         "width": 277,
         "height": 903
@@ -1635,33 +2281,34 @@
         "text": "创新驱动",
         "asset": {
           "id": "slogan-innovation",
-          "url": "assets/slogan-innovation-5fc4ce6b84eced7e.webp",
-          "sha256": "5fc4ce6b84eced7eb96ed1205747ce0f6e90161da49dee634c6fa86dc2f650fe",
-          "sourceSha256": "c1b7a3dd1c1b1357e7d6067911e1ac6d5fdd1a171b568a8149582e4ed9986d6e",
+          "url": "../v7-3/assets/slogan-innovation-0c31d18458db52dd.webp",
+          "sha256": "0c31d18458db52dd67f18cb0a7a94e82a0c5e934f4b629664994b37075798556",
+          "sourceSha256": "d9f0655b57e762ccb1bc2d8fabda1e2e10169d750927da929ca3a29165ede2c8",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 18120,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 15024,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/innovation-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "创新驱动",
         "asset": {
           "id": "slogan-innovation",
-          "url": "assets/slogan-innovation-d0ba488b50e17c68.webp",
+          "url": "../v7-7/assets/slogan-innovation-d0ba488b50e17c68.webp",
           "sha256": "d0ba488b50e17c685bd9fef8e1d6e384156ff599120dceb4bcc8aaf09793f18c",
           "sourceSha256": "c1b7a3dd1c1b1357e7d6067911e1ac6d5fdd1a171b568a8149582e4ed9986d6e",
           "encoding": "webp",
@@ -1679,6 +2326,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/innovation-after.webp",
         "width": 277,
         "height": 903
@@ -1692,33 +2340,34 @@
         "text": "合作共赢",
         "asset": {
           "id": "slogan-cooperation",
-          "url": "assets/slogan-cooperation-fc0e943800279686.webp",
-          "sha256": "fc0e9438002796861e5b015ee0db3937427b3150b80d791ac396ae3d2aa2c5ca",
-          "sourceSha256": "d797a82137c19c058a2bdf651f2a51f08dea628bcb30a0aedca41ed572435378",
+          "url": "../v7-3/assets/slogan-cooperation-e2c5f6b534591635.webp",
+          "sha256": "e2c5f6b534591635051fa826c08b3b55e13bbecb42e6a2e2a25c5fe931181fe9",
+          "sourceSha256": "2999d4de9baa2231d20e6ba096a3026940b1f21588704f88ed86effd5ff4c693",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 16244,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 12632,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/cooperation-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "合作共赢",
         "asset": {
           "id": "slogan-cooperation",
-          "url": "assets/slogan-cooperation-ab2ea3fb79502eb9.webp",
+          "url": "../v7-7/assets/slogan-cooperation-ab2ea3fb79502eb9.webp",
           "sha256": "ab2ea3fb79502eb940a0aa3e9800f573a98c14b2025599c4564b3e966af691cb",
           "sourceSha256": "d797a82137c19c058a2bdf651f2a51f08dea628bcb30a0aedca41ed572435378",
           "encoding": "webp",
@@ -1736,6 +2385,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/cooperation-after.webp",
         "width": 277,
         "height": 903
@@ -1749,33 +2399,34 @@
         "text": "共建共享",
         "asset": {
           "id": "slogan-sharing",
-          "url": "assets/slogan-sharing-08602e1c2b5e2cff.webp",
-          "sha256": "08602e1c2b5e2cffc299d0c576a490f2fa4929153dac1b82e77b05df5e3acf92",
-          "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
+          "url": "../v7-3/assets/slogan-sharing-7d2d7bf570a46ce8.webp",
+          "sha256": "7d2d7bf570a46ce8dc758724cb6981d9339a8087cc3b8b0d47e37784310369a2",
+          "sourceSha256": "b088533e404deb956a0455a9f7651deb7e1dfa87924b32826f07a6c77a999466",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 15716,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 11912,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/sharing-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "共建共享",
         "asset": {
           "id": "slogan-sharing",
-          "url": "assets/slogan-sharing-7c574891fb891f17.webp",
+          "url": "../v7-7/assets/slogan-sharing-7c574891fb891f17.webp",
           "sha256": "7c574891fb891f172ac47954103abeca4044c93b13aafcc8d8f986ba36acf1e4",
           "sourceSha256": "6b29bd9dbdfa1187fcdd525a7929c24e96bb4cb197fe4190c6d934097ab08452",
           "encoding": "webp",
@@ -1793,6 +2444,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/sharing-after.webp",
         "width": 277,
         "height": 903
@@ -1806,33 +2458,34 @@
         "text": "携手同心",
         "asset": {
           "id": "slogan-together",
-          "url": "assets/slogan-together-17bf8e28fe77ada8.webp",
-          "sha256": "17bf8e28fe77ada8bb19275c4243d6c3ddf5b516b4f223e21cc0980efe3ead4b",
-          "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
+          "url": "../v7-3/assets/slogan-together-7e3a2c69d745a00f.webp",
+          "sha256": "7e3a2c69d745a00f9d027f9add8a24fb9d5406d9cf9771c7951214a057c00d2b",
+          "sourceSha256": "103598f5e5ce7db1538f361e5661b7ee78c8f35365dfd615bd907387d25b7024",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 15844,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 11890,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/together-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "携手同心",
         "asset": {
           "id": "slogan-together",
-          "url": "assets/slogan-together-20202a139c54cb08.webp",
+          "url": "../v7-7/assets/slogan-together-20202a139c54cb08.webp",
           "sha256": "20202a139c54cb088e4a88af040df9521fd27e1daeb5e8554705120df0e56338",
           "sourceSha256": "15db7da25b3b17f0b43bb17066eb1e56e937a93b8093acd9fe9bd0eae66db298",
           "encoding": "webp",
@@ -1850,6 +2503,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/together-after.webp",
         "width": 277,
         "height": 903
@@ -1863,33 +2517,34 @@
         "text": "拥抱瀚海",
         "asset": {
           "id": "slogan-ocean",
-          "url": "assets/slogan-ocean-7f2736ff3e09eb92.webp",
-          "sha256": "7f2736ff3e09eb9205da94ccb49fd380487fe04dd9a0c69577dc2ab3d56fe690",
-          "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
+          "url": "../v7-3/assets/slogan-ocean-4fcdcbb818dbd1a2.webp",
+          "sha256": "4fcdcbb818dbd1a28038ad208f7cc0a88cc7fc44e6a708eb8868a7f3f5c6e803",
+          "sourceSha256": "0becf213da9cccd311b61d044d08f29ac420ee2845dd4e9efe9b53c53e822bd3",
           "encoding": "webp",
-          "width": 229,
-          "height": 741,
-          "bytes": 18452,
-          "decodedBytes": 169689,
-          "gpuBytes": 226252,
+          "width": 288,
+          "height": 936,
+          "bytes": 15404,
+          "decodedBytes": 269568,
+          "gpuBytes": 359424,
           "channels": 1,
           "colorSpace": "linear"
         },
         "uvRect": [
-          0.69677734375,
-          0.19405496354458773,
-          0.055908203125,
-          0.41559169938306223
+          0.77490234375,
+          0.38754907459338195,
+          0.0703125,
+          0.5249579360628155
         ],
+        "releaseId": "v7-5",
         "image": "images/ocean-before.webp",
-        "width": 229,
-        "height": 741
+        "width": 288,
+        "height": 936
       },
       "after": {
         "text": "拥抱瀚海",
         "asset": {
           "id": "slogan-ocean",
-          "url": "assets/slogan-ocean-082ae53a103be19a.webp",
+          "url": "../v7-7/assets/slogan-ocean-082ae53a103be19a.webp",
           "sha256": "082ae53a103be19ad6c672a822ceb9c59bb80bf97915a6e648f4767ed716eaed",
           "sourceSha256": "d9bff3b78a42db445df47c4a785c55fea15cd1ceb5e829bb5c6415d017974d6b",
           "encoding": "webp",
@@ -1907,6 +2562,7 @@
           0.067626953125,
           0.5064498037016265
         ],
+        "releaseId": "v7-8",
         "image": "images/ocean-after.webp",
         "width": 277,
         "height": 903
@@ -1914,5 +2570,9 @@
       "origin": "蓝湖原稿字形与城市共用一次等比变换。"
     }
   ],
-  "productionPolicy": "23城及原位置字框使用蓝湖整版共同等比矩阵；宽度100%，底边对齐，不按单城墨迹重排。成都原稿6px保留。"
+  "productionPolicy": "23城及原位置字框使用蓝湖整版共同等比矩阵；宽度100%，底边对齐，不按单城墨迹重排。成都原稿6px保留。",
+  "beforeVersion": "V7.1.4",
+  "beforeReleaseId": "v7-5",
+  "afterVersion": "V7.1.10",
+  "afterReleaseId": "v7-8"
 }
