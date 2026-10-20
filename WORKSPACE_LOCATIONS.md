@@ -44,3 +44,7 @@
 主仓库与 `.git` 保留普通ExFAT目录，本机 `core.filemode=false` 适配其权限表示。使用 `python3 -B tools/git-exfat.py <Git参数>` 处理macOS产生的Git包伴随元数据，例如 `python3 -B tools/git-exfat.py fetch origin main`。工具先严格校验、备份并读回合法 `._pack-*`，再清理伴随文件；保留真实包和实际错误。详见 [工具说明](tools/README-exfat.md)。磁盘断开时停止写入，恢复并核对后继续。
 
 [工程关系](PROJECTS.md) · [主仓库迁移记录](docs/changes/20261018-main-migration/completion.md) · [远端核验与最终删除回执](docs/changes/20261018-exfat-and-v4-retirement/history-cleanup.json)。
+
+## V7.1.12 当前交付
+
+正式主页源码包和静态包位于 `/Volumes/Prism/广彩交付/中国杯-V7.1.12-正式主页-花纹提清/`，来源提交006e3268，资源v7-9；七视角与主动花纹提清已包含，未部署。本轮build/解包检查暂存已移除，源码预览5299保留。详见[交付记录](docs/changes/20261020-v7.1.12-floral-package/completion.md)。
