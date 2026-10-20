@@ -30,7 +30,7 @@ npm ci --cache .codex-work/cache/npm
 npm run dev
 ```
 
-开发入口通常为 http://127.0.0.1:5173/ 。依赖安装使用 npm registry，不需要 GitHub；包内不含 node_modules，首次安装需要网络，不是完全断网的安装包。实际端口以 Vite 输出为准。
+开发入口通常为 http://127.0.0.1:5270/ 。依赖安装使用 npm registry，不需要 GitHub；包内不含 node_modules，首次安装需要网络，不是完全断网的安装包。实际端口以 Vite 输出为准。
 
 ```sh
 npm test

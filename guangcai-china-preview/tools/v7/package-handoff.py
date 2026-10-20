@@ -34,9 +34,9 @@ def forbidden(name):
                or p.startswith('._') or p.startswith('.env') for p in Path(name).parts)
 
 
-def add(tar, name, data):
+def add(tar, name, data, mode=0o644):
     member = tarfile.TarInfo(name)
-    member.size, member.mode, member.mtime = len(data), 0o644, timestamp
+    member.size, member.mode, member.mtime = len(data), mode, timestamp
     tar.addfile(member, io.BytesIO(data))
 
 
@@ -113,7 +113,7 @@ with tarfile.open(out / 'source.tar.gz', 'w:gz', compresslevel=3) as tar:
         item, data = record(repo / name, name)
         assert hashlib.sha1(f'blob {len(data)}\0'.encode() + data).hexdigest() == blob, name
         source_records.append({**item, 'gitBlob': blob, 'mode': mode})
-        add(tar, 'source/' + name, data)
+        add(tar, 'source/' + name, data, int(mode, 8) & 0o777)
         if number % 400 == 0:
             print(f'Source: {number}/{len(files)} hashed and archived', flush=True)
     generated['source-files.json'] = encode({'revision': revision, 'files': source_records})
