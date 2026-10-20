@@ -1,5 +1,7 @@
 # 广彩一号杯与中国杯
 
+2026-10-20：V7.1.9 / v7-8 修复23城卡片线稿不完整：完整R通道先缩小，再按相同目标尺寸组装金色透明图。城市69档、字框及PSD映射沿用v7-7原数据。[Issue #51](https://github.com/Shuang-su/guangcai/issues/51) · [本轮记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md)。发布状态以本轮回执为准。
+
 2026-10-20：V7.1.8 / v7-7 已合并上线：统一正式页/开发iframe加载版本标识；PSD整版设计沿用已发布的V7.1.7。
 
 2026-10-20：V7.1.7 / v7-7 已合并上线：按PSD有效框5433×2365等比映射蓝湖23城整版，取消额外82%缩放，城市和字框共用矩阵；报告及独立开发页同步修正。详见[本轮记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md)。
@@ -16,7 +18,7 @@
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 当前发布批次：V7.1.8 / v7-7
+## 当前发布批次：V7.1.9 / v7-8
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 

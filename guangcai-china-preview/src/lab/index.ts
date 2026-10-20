@@ -14,7 +14,7 @@ let generation=0,applied:Record<string,unknown>|undefined;
 const waitViewer=()=>waitForLabPreview(getViewer);
 const json=async<T>(p:string):Promise<T>=>{const r=await fetch(p);if(!r.ok)throw Error('素材读取失败：'+r.status);return r.json();};
 async function start(){
- const [current,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-7'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
+ const [current,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-8'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
  for(const [id,c]of Object.entries(unified.manifest.cities))city.add(new Option(c.name,id));city.value='shenzhen';
  for(const [id,s]of Object.entries(unified.manifest.slogans))slogan.add(new Option(s.text,id));slogan.value='ocean';
  const absolutize=(a:Asset):Asset=>({...a,url:new URL('/dev-assets/'+a.url,location.origin).href});

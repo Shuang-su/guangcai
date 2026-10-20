@@ -1,0 +1,58 @@
+
+> guangcai-china-v4@7.1.9 test:v7
+> tsx --test tools/v7/*.test.ts
+
+✔ pixel-only export changes keep reviewed Jingdezhen and Zhengzhou contours and fill (575.400584ms)
+✔ new Xi’an keeps approved pagoda faces and wall fill without altering lines or normals (307.197583ms)
+✔ thumbnail keeps linework at all four source edges and uses gold on transparent sky (45.193459ms)
+✔ all 23 published thumbnails retain the entire source R channel; cup maps and label placements are unchanged (908.21ms)
+✔ progressing exact transfer may exceed idle timeout in total (311.579834ms)
+✔ stalled transfer retries at most three times (71.554125ms)
+✔ HTTP retries are limited and 404/size failures are immediate (4.770333ms)
+✔ external cancellation does not retry a slow transfer or backoff (52.961791ms)
+✔ empty chunks do not keep a stalled transfer alive (73.202125ms)
+✔ background suspension does not count against idle deadline (99.189583ms)
+✔ v4 extends only floral triangles to city bottom; geometry and old mapping round trip exactly (261.147792ms)
+✔ every PBR channel mirrors logical source U with offset before atlas; repeated fit is idempotent (2.148958ms)
+✔ glass tolerates isolated slow frames but falls back on sustained active cadence (1.024375ms)
+✔ idle and hidden intervals do not count as slow frames (0.093541ms)
+✔ readiness has no total-time deadline, supports abort/error and repeated recovery (1.176834ms)
+✔ 30fps timer quantization does not falsely reject a stable cadence (0.166375ms)
+✔ a preview still progressing after 120 seconds can finish without a false timeout (1.386125ms)
+✔ the lab reports an actual viewer error without waiting indefinitely (0.441458ms)
+✔ v7-6 changes only the six label resources and preserves all reviewed artwork maps (34.894875ms)
+✔ all city frames have canonical coordinates; Chengdu correction retains source and uses shared production glyphs (41.994458ms)
+✔ mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation (212.10425ms)
+✔ split-origin mock permits only configured credentialed API clients (40.219542ms)
+{"normalAssets":78,"portableBytesIdentical":true,"halfFloatXYIdentical":true,"maxNormalDegrees":0.02936920590413174}
+✔ portable decoder matches every released HFN and packed XY preserves exact half floats (51830.429791ms)
+✔ normal decode rejects bad size before allocation and rejects invalid tangent direction (0.590708ms)
+✔ byte-plane layout preserves exact XY and validates bounds before RG16F upload (0.250333ms)
+✔ packed clearcoat retains atlas sampling and reconstructs Z before scale (1.293041ms)
+✔ file cache shares pending transfers; cancelling one consumer retains the other (11.062917ms)
+✔ last cancellation drops reserved bytes, aborts the fetch and permits a fresh attempt (1.129417ms)
+✔ pinned low library survives LRU eviction and active leases prevent unsafe eviction (3.616583ms)
+✔ wrong size and checksum never poison cache, and inflight reservations obey the limit (2.046083ms)
+✔ manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps (7.444625ms)
+✔ PSD calibration keeps both axes equal, the complete canvas, full width and common bottom (17.986834ms)
+✔ new full-source city resources differ from the old mapping while fixed florals stay identical (4.790166ms)
+✔ Chengdu original lettering is preserved and preloaded with its actual placement (31.864667ms)
+✔ queue bounds concurrency, rejects cancelled waiters and resumes after visibility pause (48.857667ms)
+✔ adaptive DPR responds to sustained load, excludes idle gaps and never drops below one (1.037833ms)
+✔ design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers (1.498916ms)
+✔ bounded decompression input rejects excess bytes and HFN headers cannot overallocate (7.084917ms)
+✔ merged ORM uses blue metalness for the bare-gold override and retains original controls (0.895542ms)
+✔ stream progress reports actual cumulative bytes before completion (1.306625ms)
+✔ exact stream reader copies consumed chunks immediately and preserves progress (0.680417ms)
+✔ exact stream reader rejects truncated and oversized input and always releases the reader (1.16775ms)
+✔ upstream cancellation/error keeps its original reason and unlocks the reader (0.648458ms)
+✔ streamed high precision normals are byte-identical to native decompression at every city tier (971.850458ms)
+✔ resource swaps track temporary overlap and release their allowance once (40.072792ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52439.952333
