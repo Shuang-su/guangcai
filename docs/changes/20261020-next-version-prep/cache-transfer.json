@@ -1,0 +1,23 @@
+{
+  "reason": "Copy and verify three reproducible npm cache blobs to allow local checkpoint on full volume; sources and release archives untouched",
+  "files": [
+    {
+      "source": "/Volumes/Prism_\u521d\u53f7\u6a5f/\u5e7f\u5f69/guangcai-main/.codex-work/cache/npm/_cacache/content-v2/sha512/17/9a/629a7dc0a22d335a3b9176256ce539eb5304b30f6944481a21b0852cab28ad5a41914255d4d9f855eb27179504dad5bbc07f7b23aa2529044a66490e69b4",
+      "destination": "/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/offline-handoff-cache-transfer/17/9a/629a7dc0a22d335a3b9176256ce539eb5304b30f6944481a21b0852cab28ad5a41914255d4d9f855eb27179504dad5bbc07f7b23aa2529044a66490e69b4",
+      "bytes": 24756122,
+      "sha256": "d8835c95790d7d34299283619568f4cce97b4358581d9e2b56e7f63e3a86e062"
+    },
+    {
+      "source": "/Volumes/Prism_\u521d\u53f7\u6a5f/\u5e7f\u5f69/guangcai-main/.codex-work/cache/npm/_cacache/content-v2/sha512/ce/a8/e3a3b45ab457c5a0fd0c910e758dfb856419d5136a5189ac9d289d46feb1d9be7b2b1c039c4002c88bdb00e5ca39c5e9d0753ba00afb5bd5cb9fefc55fe2",
+      "destination": "/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/offline-handoff-cache-transfer/ce/a8/e3a3b45ab457c5a0fd0c910e758dfb856419d5136a5189ac9d289d46feb1d9be7b2b1c039c4002c88bdb00e5ca39c5e9d0753ba00afb5bd5cb9fefc55fe2",
+      "bytes": 7646386,
+      "sha256": "2b7a106979fc6c3e9ba27a7b9e305c610a0c11c2d10aac3b3d317d706cf302f7"
+    },
+    {
+      "source": "/Volumes/Prism_\u521d\u53f7\u6a5f/\u5e7f\u5f69/guangcai-main/.codex-work/cache/npm/_cacache/content-v2/sha512/8d/28/6fa8db4feaf0c2ebf03924e0336d557e0e4807aa197f49c5422446edf93518e90633ed89d772b837b0bb450678aba347ff2dde7467009603a7fb2980f59d",
+      "destination": "/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/offline-handoff-cache-transfer/8d/28/6fa8db4feaf0c2ebf03924e0336d557e0e4807aa197f49c5422446edf93518e90633ed89d772b837b0bb450678aba347ff2dde7467009603a7fb2980f59d",
+      "bytes": 7200098,
+      "sha256": "a8e44a04d324ff9c8f376f89aa9bff0df72bd213e3571fa6b8b3a259830a4bae"
+    }
+  ]
+}

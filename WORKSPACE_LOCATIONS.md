@@ -1,15 +1,26 @@
 # 广彩工程、原件与历史恢复位置
 
-更新：2026-10-18。按用户最终选择，只保留当前主仓库与素材原件；旧版本通过正式 Git / Git LFS 按需取回。迁移过程中生成的恢复包已在远端核验后清理，不再保留一层本地归档套件。[本轮清理与验证](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。
+更新：2026-10-20。按用户最终选择，只保留当前主仓库与素材原件；旧版本通过正式 Git / Git LFS 按需取回。迁移过程中生成的恢复包已在远端核验后清理，不再保留一层本地归档套件。[本轮清理与验证](docs/changes/20261018-exfat-and-v4-retirement/completion.md)。
 
 | 用途 | 当前位置 |
 |---|---|
 | 当前维护仓库 | `/Volumes/Prism_初号機/广彩/guangcai-main/`，独立Git元数据，不依赖其他旧目录 |
 | 稳定入口 | `/Volumes/Prism_初号機/广彩/guangcai-repo/` → `guangcai-main` |
-| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，产品基线 V7.1.3 / v7-4 |
+| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，当前产品 V7.1.11 / v7-9 |
 | 原始 PSD、花纸、城市线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
 | 项目临时文件与回执 | 当前仓库 `.codex-work/`，仅按用途保留，通过本地exclude忽略 |
 | 旧产品版本、历史源码与资源 | `https://github.com/Shuang-su/guangcai` 的提交、标签、`archives/`、来源清单与 Git LFS |
+
+## 2026-10-20 本地开发状态
+
+- 本地 `main` 已从 `85998a9c` 快进至 `9c072032`，整合 V7.1.11 和交付收尾的 8 个现有提交；没有生成内容合并提交，也没有删除原任务分支。
+- 下一版本在同一仓库的 `codex/next-version-20261020` 开发，起点为上述已完成基线；产品版本号尚未递增，线上仍是 V7.1.11。
+- `origin/main` 的本地跟踪引用仍是 `85998a9c`；GitHub 暂停期间未推送、未远端合并，不把本地快进当作 GitHub PR #58 已合并。
+- 参考审计工作树 `.codex-work/worktrees/reference-audit-20261019/` 及其独立提交 `a13ba1b8` 保留，不并入本轮产品基线。
+- 用户明确授权后，正式主页临时交付、被替代完整包、两类解包暂存及可再生成 npm/Vite/图像缓存已按精确清单移除。此前交付包链接不再有效；打包脚本、receipt 和小型验证摘要仍在 Git 中，可按固定提交重新生成。
+- 源码、原稿、固定部署 `deployments/`、`node_modules`、蓝湖原始下载、PSD/镂空诊断和 Git 元数据回执保留。本轮未安装依赖、未重复测试或构建、未部署。
+
+清理清单、保留边界和结果见 [本轮整理记录](docs/changes/20261020-next-version-prep/completion.md)。
 
 ## 已清理的旧位置
 
