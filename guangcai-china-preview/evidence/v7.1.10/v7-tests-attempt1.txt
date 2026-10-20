@@ -1,0 +1,81 @@
+
+> guangcai-china-v4@7.1.10 test:v7
+> tsx --test tools/v7/*.test.ts
+
+✔ pixel-only export changes keep reviewed Jingdezhen and Zhengzhou contours and fill (499.981125ms)
+✔ new Xi’an keeps approved pagoda faces and wall fill without altering lines or normals (314.212667ms)
+✔ thumbnail keeps linework at all four source edges and uses gold on transparent sky (67.258958ms)
+✔ all 23 published thumbnails retain the entire source R channel; cup maps and label placements are unchanged (804.566666ms)
+✔ measured city surface uses actual UV material triangles and separates arc, vertical and curved-foot length (281.422542ms)
+✔ 71 city versions and all chosen label variants have bounded, source-identifiable measurements (1.262ms)
+✔ diagnostic contours follow actual mesh UV and never alter approved cup geometry or UV buffers (140.954ms)
+✔ progressing exact transfer may exceed idle timeout in total (281.054458ms)
+✔ stalled transfer retries at most three times (57.345042ms)
+✔ HTTP retries are limited and 404/size failures are immediate (5.678041ms)
+✔ external cancellation does not retry a slow transfer or backoff (52.284042ms)
+✔ empty chunks do not keep a stalled transfer alive (80.021583ms)
+✔ background suspension does not count against idle deadline (97.169333ms)
+✔ v4 extends only floral triangles to city bottom; geometry and old mapping round trip exactly (417.729959ms)
+✔ every PBR channel mirrors logical source U with offset before atlas; repeated fit is idempotent (0.6635ms)
+✔ glass tolerates isolated slow frames but falls back on sustained active cadence (1.020541ms)
+✔ idle and hidden intervals do not count as slow frames (0.088958ms)
+✔ readiness has no total-time deadline, supports abort/error and repeated recovery (1.193167ms)
+✔ 30fps timer quantization does not falsely reject a stable cadence (0.141833ms)
+✔ a preview still progressing after 120 seconds can finish without a false timeout (1.261459ms)
+✔ the lab reports an actual viewer error without waiting indefinitely (0.414542ms)
+✔ v7-6 changes only the six label resources and preserves all reviewed artwork maps (32.584041ms)
+✔ all city frames have canonical coordinates; Chengdu correction retains source and uses shared production glyphs (69.747291ms)
+✖ mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation (83.940666ms)
+✔ split-origin mock permits only configured credentialed API clients (74.154958ms)
+{"normalAssets":78,"portableBytesIdentical":true,"halfFloatXYIdentical":true,"maxNormalDegrees":0.02936920590413174}
+✔ portable decoder matches every released HFN and packed XY preserves exact half floats (46841.296084ms)
+✔ normal decode rejects bad size before allocation and rejects invalid tangent direction (1.147708ms)
+✔ byte-plane layout preserves exact XY and validates bounds before RG16F upload (0.25625ms)
+✔ packed clearcoat retains atlas sampling and reconstructs Z before scale (0.926667ms)
+✔ file cache shares pending transfers; cancelling one consumer retains the other (9.49125ms)
+✔ last cancellation drops reserved bytes, aborts the fetch and permits a fresh attempt (2.008708ms)
+✔ pinned low library survives LRU eviction and active leases prevent unsafe eviction (4.578084ms)
+✔ wrong size and checksum never poison cache, and inflight reservations obey the limit (1.216458ms)
+✔ manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps (3.888833ms)
+✔ PSD calibration keeps both axes equal, the complete canvas, full width and common bottom (12.500875ms)
+✔ new full-source city resources differ from the old mapping while fixed florals stay identical (4.310167ms)
+✔ Chengdu original lettering is preserved and preloaded with its actual placement (23.376916ms)
+✔ queue bounds concurrency, rejects cancelled waiters and resumes after visibility pause (47.749666ms)
+✔ adaptive DPR responds to sustained load, excludes idle gaps and never drops below one (0.316334ms)
+✔ design roundtrip preserves parameters while rejecting unsupported releases and invalid numbers (0.725ms)
+✔ bounded decompression input rejects excess bytes and HFN headers cannot overallocate (8.764833ms)
+✔ merged ORM uses blue metalness for the bare-gold override and retains original controls (1.577ms)
+✔ stream progress reports actual cumulative bytes before completion (1.494375ms)
+✔ exact stream reader copies consumed chunks immediately and preserves progress (1.649041ms)
+✔ exact stream reader rejects truncated and oversized input and always releases the reader (1.00175ms)
+✔ upstream cancellation/error keeps its original reason and unlocks the reader (0.292708ms)
+✔ streamed high precision normals are byte-identical to native decompression at every city tier (663.240667ms)
+✔ resource swaps track temporary overlap and release their allowance once (52.136208ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 47
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 47824.141166
+
+✖ failing tests:
+
+test at tools/v7/mock.test.ts:3:1
+✖ mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation (83.940666ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  400 !== 201
+
+      at TestContext.<anonymous> (/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/tools/v7/mock.test.ts:10:111)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 201,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

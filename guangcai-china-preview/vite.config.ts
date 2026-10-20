@@ -17,10 +17,10 @@ function rawNormalFiles():Plugin {
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','dev-assets','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
+  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
    await mkdir(resolve(out,item,'..'),{recursive:true});await cp(resolve('public',item),resolve(out,item),{recursive:true,filter:source=>!basename(source).startsWith('._')&&basename(source)!=='.DS_Store'});
   }
-  const headers='/dev-assets/*.json\n  Cache-Control: no-cache\n\n/label-compare/data.json\n  Cache-Control: no-cache\n\n/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
+  const headers='/coverage/*\n  Cache-Control: no-cache\n\n/dev-assets/*.json\n  Cache-Control: no-cache\n\n/label-compare/data.json\n  Cache-Control: no-cache\n\n/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
   await writeFile(resolve(out,'_headers'),headers);
  }};
 }

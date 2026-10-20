@@ -1,5 +1,7 @@
 # 广彩一号杯与中国杯
 
+2026-10-20：V7.1.10 / v7-8 已完成本地验证，待合并发布：compare与独立dev新增实际城市曲面图案/白瓷占比、PSD与模型尺寸差异、三部件花纸尺寸与接缝说明、3D可贴面高亮。默认深圳＋拥抱瀚海图案25.94%、白瓷74.06%；现有约2.56%的UV宽高比差明确披露，正式资源与几何映射未改。[Issue #53](https://github.com/Shuang-su/guangcai/issues/53) · [本轮记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md)。
+
 2026-10-20：V7.1.9 / v7-8 已合并上线，修复23城卡片线稿不完整：完整R通道先缩小，再按相同目标尺寸组装金色透明图。城市69档、字框及PSD映射沿用v7-7原数据。[Issue #51](https://github.com/Shuang-su/guangcai/issues/51) · [本轮记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md)。部署 `6ad6af47aa240e6a1c47b305`，线上23城卡片及4个独立视口92项通过。
 
 2026-10-20：V7.1.8 / v7-7 已合并上线：统一正式页/开发iframe加载版本标识；PSD整版设计沿用已发布的V7.1.7。

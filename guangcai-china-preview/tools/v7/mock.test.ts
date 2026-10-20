@@ -7,6 +7,7 @@ test('mock preserves ownership, idempotency, revisions, immutable public snapsho
  const boot=await request('bootstrap'),design=boot.body.defaultDesign;
  assert.equal((await request('works','POST',{title:'Example',design},'')).status,401);
  const legacy=await request('works','POST',{title:'Pinned legacy',design:{...design,resourceReleaseId:'v7-1'}});assert.equal(legacy.status,201);assert.equal(legacy.body.design.resourceReleaseId,'v7-1');
+ const current=await request('works','POST',{title:'Pinned current',design:{...design,resourceReleaseId:'v7-8'}});assert.equal(current.status,201);assert.equal(current.body.design.resourceReleaseId,'v7-8');
  const first=await request('works','POST',{title:'Example',design},'alice',{'Idempotency-Key':'test'});assert.equal(first.status,201);const id=first.body.id;
  assert.equal((await request('works','POST',{title:'Example',design},'alice',{'Idempotency-Key':'test'})).body.id,id);
  assert.equal((await request('works','POST',{title:'Other',design},'alice',{'Idempotency-Key':'test'})).status,409);
