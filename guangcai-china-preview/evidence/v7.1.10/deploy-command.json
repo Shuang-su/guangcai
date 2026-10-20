@@ -1,0 +1,12 @@
+{
+  "command": "node .codex-work/tmp/deploy-coverage-move.mjs",
+  "baseHelper": "tools/v7/deploy-coverage-report.mjs",
+  "baseHelperSha256": "f77afb21e7f1e0f9406a0bef36e4d464f0ae2174519548fed2d9654497984a3c",
+  "driverSha256": "a0e568691d76b8f8978683c9843a0844deebe121d7054acf9ff7f324260e82ae",
+  "difference": "Same fixed-target deployment checks; after live file-digest readback, atomically move the reviewed build into the new immutable archive on the same volume. Avoid an additional full staging copy.",
+  "localPreviewStopped": {
+    "pid": 64518,
+    "port": 5294
+  },
+  "sourceAndArchivesRetained": true
+}

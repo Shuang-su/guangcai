@@ -1,0 +1,808 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>北京 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="bj-temple-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#bj-temple-outline" clip-rule="nonzero" />
+    </clipPath>
+    <mask id="bj-temple-sign" maskUnits="userSpaceOnUse" x="0" y="0" width="3878" height="1630" style="mask-type:luminance">
+      <path d="M 0 0 L 3878 0 L 3878 1630 L 0 1630 Z" fill="white" />
+      <path d="M 1549 801 L 1639 801 L 1639 912 L 1549 912 Z" fill="black" />
+    </mask>
+  </defs>
+  <g id="bj-temple" data-building="bj-temple" data-name="天坛祈年殿" data-kind="building" fill="none" stroke="#fc9f07" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="天坛祈年殿">
+    <title>天坛祈年殿</title>
+    <path id="bj-temple-outline" d="M 1594 538 C 1619 538 1642 551 1612 604 L 1617 606 L 1617 637 C 1635 646 1635 658 1629 674 C 1659 717 1790.646 777.497 1850.646 803.986 C 1868.062 811.675 1878 821.77 1878 835 C 1878 855 1796 869 1808 885 L 1808 926 C 1838 969 1876.496 975.119 1936.496 994.597 C 1959.738 1002.142 1973 1012.04 1973 1025 C 1973 1045 1886 1060 1898 1076 L 1898 1103 C 1928 1146 1941.562 1146.537 2001.562 1160.096 C 2029.219 1166.346 2045 1174.47 2045 1185 C 2045 1205 1967 1212 1979 1228 L 1979 1368 L 1209 1368 L 1209 1228 C 1221 1212 1143 1205 1143 1185 C 1143 1174.47 1158.781 1166.346 1186.438 1160.096 C 1246.438 1146.537 1260 1146 1290 1103 L 1290 1076 C 1302 1060 1215 1045 1215 1025 C 1215 1012.04 1228.262 1002.142 1251.504 994.597 C 1311.504 975.119 1350 969 1380 926 L 1380 885 C 1392 869 1310 855 1310 835 C 1310 821.77 1319.938 811.675 1337.354 803.986 C 1397.354 777.497 1529 717 1559 674 C 1553 658 1553 646 1571 637 L 1571 606 L 1576 604 C 1546 551 1569 538 1594 538 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="bj-temple-components" clip-path="url(#bj-temple-clip)">
+      <path id="bj-temple-p003" d="M 1562.889 673.16 C 1521.313 745.387 1425.687 782.745 1355.007 797.688" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p004" d="M 1566.778 672.42 C 1528.684 742.11 1441.069 778.156 1376.31 792.575" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p005" d="M 1570.667 671.778 C 1536.706 739.493 1458.596 774.518 1400.862 788.528" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p006" d="M 1574.556 671.235 C 1545.297 737.467 1478.003 771.725 1428.263 785.429" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p007" d="M 1578.444 670.79 C 1554.378 735.964 1499.026 769.674 1458.113 783.158" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p008" d="M 1582.333 670.444 C 1563.869 734.914 1521.401 768.26 1490.012 781.599" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p009" d="M 1586.222 670.198 C 1573.69 734.249 1544.865 767.38 1523.559 780.632" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p010" d="M 1590.111 670.049 C 1583.76 733.901 1569.152 766.928 1558.355 780.138" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p011" d="M 1594 670 C 1594 733.8 1594 766.8 1594 780" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p012" d="M 1597.889 670.049 C 1604.24 733.901 1618.848 766.928 1629.645 780.138" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p013" d="M 1601.778 670.198 C 1614.31 734.249 1643.135 767.38 1664.441 780.632" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p014" d="M 1605.667 670.444 C 1624.131 734.914 1666.599 768.26 1697.988 781.599" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p015" d="M 1609.556 670.79 C 1633.622 735.964 1688.974 769.674 1729.887 783.158" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p016" d="M 1613.444 671.235 C 1642.703 737.467 1709.997 771.725 1759.737 785.429" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p017" d="M 1617.333 671.778 C 1651.294 739.493 1729.404 774.518 1787.138 788.528" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p018" d="M 1621.222 672.42 C 1659.316 742.11 1746.931 778.156 1811.69 792.575" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p019" d="M 1625.111 673.16 C 1666.687 745.387 1762.313 782.745 1832.993 797.688" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p021" d="M 1322.619 838.016 C 1326.459 849.016 1382.8 873.315 1388.56 881.315" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p022" d="M 1326.9 829.707 C 1330.445 840.707 1399.046 866.908 1404.363 874.908" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p023" d="M 1335.007 822.493 C 1338.256 833.493 1415.292 861.013 1420.166 869.013" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p024" d="M 1346.651 816.3 C 1349.605 827.3 1431.538 855.63 1435.969 863.63" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p025" d="M 1361.542 811.052 C 1364.201 822.052 1447.785 850.761 1451.772 858.761" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p026" d="M 1379.392 806.674 C 1381.756 817.674 1464.031 846.403 1467.575 854.403" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p027" d="M 1399.912 803.092 C 1401.98 814.092 1480.277 842.559 1483.378 850.559" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p028" d="M 1422.812 800.23 C 1424.584 811.23 1496.523 839.227 1499.182 847.227" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p029" d="M 1447.802 798.014 C 1449.279 809.014 1512.769 836.408 1514.985 844.408" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p030" d="M 1474.595 796.369 C 1475.776 807.369 1529.015 834.101 1530.788 842.101" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p031" d="M 1502.9 795.22 C 1503.786 806.22 1545.262 832.307 1546.591 840.307" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p032" d="M 1532.429 794.493 C 1533.02 805.493 1561.508 831.025 1562.394 839.025" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p033" d="M 1562.892 794.111 C 1563.187 805.111 1577.754 830.256 1578.197 838.256" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p034" d="M 1594 794 C 1594 805 1594 830 1594 838" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p035" d="M 1625.108 794.111 C 1624.813 805.111 1610.246 830.256 1609.803 838.256" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p036" d="M 1655.571 794.493 C 1654.98 805.493 1626.492 831.025 1625.606 839.025" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p037" d="M 1685.1 795.22 C 1684.214 806.22 1642.738 832.307 1641.409 840.307" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p038" d="M 1713.405 796.369 C 1712.224 807.369 1658.985 834.101 1657.212 842.101" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p039" d="M 1740.198 798.014 C 1738.721 809.014 1675.231 836.408 1673.015 844.408" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p040" d="M 1765.188 800.23 C 1763.416 811.23 1691.477 839.227 1688.818 847.227" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p041" d="M 1788.088 803.092 C 1786.02 814.092 1707.723 842.559 1704.622 850.559" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p042" d="M 1808.608 806.674 C 1806.244 817.674 1723.969 846.403 1720.425 854.403" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p043" d="M 1826.458 811.052 C 1823.799 822.052 1740.215 850.761 1736.228 858.761" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p044" d="M 1841.349 816.3 C 1838.395 827.3 1756.462 855.63 1752.031 863.63" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p045" d="M 1852.993 822.493 C 1849.744 833.493 1772.708 861.013 1767.834 869.013" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p046" d="M 1861.1 829.707 C 1857.555 840.707 1788.954 866.908 1783.637 874.908" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p047" d="M 1865.381 838.016 C 1861.541 849.016 1805.2 873.315 1799.44 881.315" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p055" d="M 1397.833 923.125 C 1372.006 961.824 1312.602 981.841 1268.695 989.847" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p056" d="M 1415.667 920.5 C 1390.274 958.354 1331.87 977.934 1288.702 985.766" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p057" d="M 1433.5 918.125 C 1409.059 955.349 1352.846 974.602 1311.297 982.304" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p058" d="M 1451.333 916 C 1428.318 952.779 1375.383 971.803 1336.256 979.413" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p059" d="M 1469.167 914.125 C 1448.004 950.618 1399.33 969.494 1363.354 977.044" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p060" d="M 1487 912.5 C 1468.073 948.836 1424.541 967.631 1392.366 975.149" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p061" d="M 1504.833 911.125 C 1488.48 947.406 1450.866 966.172 1423.065 973.678" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p062" d="M 1522.667 910 C 1509.179 946.299 1478.157 965.074 1455.227 972.584" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p063" d="M 1540.5 909.125 C 1530.125 945.487 1506.264 964.295 1488.627 971.818" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p064" d="M 1558.333 908.5 C 1551.275 944.942 1535.039 963.792 1523.039 971.331" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p065" d="M 1576.167 908.125 C 1572.581 944.636 1564.334 963.521 1558.239 971.075" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p066" d="M 1594 908 C 1594 944.54 1594 963.44 1594 971" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p067" d="M 1611.833 908.125 C 1615.419 944.636 1623.666 963.521 1629.761 971.075" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p068" d="M 1629.667 908.5 C 1636.725 944.942 1652.961 963.792 1664.961 971.331" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p069" d="M 1647.5 909.125 C 1657.875 945.487 1681.736 964.295 1699.373 971.818" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p070" d="M 1665.333 910 C 1678.821 946.299 1709.843 965.074 1732.773 972.584" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p071" d="M 1683.167 911.125 C 1699.52 947.406 1737.134 966.172 1764.935 973.678" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p072" d="M 1701 912.5 C 1719.927 948.836 1763.459 967.631 1795.634 975.149" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p073" d="M 1718.833 914.125 C 1739.996 950.618 1788.67 969.494 1824.646 977.044" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p074" d="M 1736.667 916 C 1759.682 952.779 1812.617 971.803 1851.744 979.413" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p075" d="M 1754.5 918.125 C 1778.941 955.349 1835.154 974.602 1876.703 982.304" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p076" d="M 1772.333 920.5 C 1797.726 958.354 1856.13 977.934 1899.298 985.766" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p077" d="M 1790.167 923.125 C 1815.994 961.824 1875.398 981.841 1919.305 989.847" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p079" d="M 1227.835 1028.131 C 1231.675 1039.131 1296.4 1063.453 1302.16 1071.453" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p080" d="M 1232.123 1021.45 C 1235.723 1032.45 1315 1056.98 1320.4 1064.98" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p081" d="M 1239.868 1015.482 C 1243.228 1026.482 1333.6 1050.925 1338.64 1058.925" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p082" d="M 1250.859 1010.188 C 1253.979 1021.188 1352.2 1045.287 1356.88 1053.287" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p083" d="M 1264.888 1005.529 C 1267.768 1016.529 1370.8 1040.067 1375.12 1048.067" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p084" d="M 1281.745 1001.466 C 1284.385 1012.466 1389.4 1035.265 1393.36 1043.265" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p085" d="M 1301.222 997.96 C 1303.622 1008.96 1408 1030.88 1411.6 1038.88" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p086" d="M 1323.109 994.973 C 1325.269 1005.973 1426.6 1026.913 1429.84 1034.913" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p087" d="M 1347.196 992.465 C 1349.116 1003.465 1445.2 1023.363 1448.08 1031.363" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p088" d="M 1373.274 990.398 C 1374.954 1001.398 1463.8 1020.231 1466.32 1028.231" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p089" d="M 1401.134 988.732 C 1402.574 999.732 1482.4 1017.517 1484.56 1025.517" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p090" d="M 1430.568 987.43 C 1431.768 998.43 1501 1015.22 1502.8 1023.22" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p091" d="M 1461.364 986.452 C 1462.324 997.452 1519.6 1013.341 1521.04 1021.341" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p092" d="M 1493.315 985.758 C 1494.035 996.758 1538.2 1011.879 1539.28 1019.879" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p093" d="M 1526.211 985.311 C 1526.691 996.311 1556.8 1010.835 1557.52 1018.835" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p094" d="M 1559.842 985.071 C 1560.082 996.071 1575.4 1010.209 1575.76 1018.209" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p095" d="M 1594 985 C 1594 996 1594 1010 1594 1018" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p096" d="M 1628.158 985.071 C 1627.918 996.071 1612.6 1010.209 1612.24 1018.209" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p097" d="M 1661.789 985.311 C 1661.309 996.311 1631.2 1010.835 1630.48 1018.835" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p098" d="M 1694.685 985.758 C 1693.965 996.758 1649.8 1011.879 1648.72 1019.879" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p099" d="M 1726.636 986.452 C 1725.676 997.452 1668.4 1013.341 1666.96 1021.341" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p100" d="M 1757.432 987.43 C 1756.232 998.43 1687 1015.22 1685.2 1023.22" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p101" d="M 1786.866 988.732 C 1785.426 999.732 1705.6 1017.517 1703.44 1025.517" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p102" d="M 1814.726 990.398 C 1813.046 1001.398 1724.2 1020.231 1721.68 1028.231" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p103" d="M 1840.804 992.465 C 1838.884 1003.465 1742.8 1023.363 1739.92 1031.363" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p104" d="M 1864.891 994.973 C 1862.731 1005.973 1761.4 1026.913 1758.16 1034.913" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p105" d="M 1886.778 997.96 C 1884.378 1008.96 1780 1030.88 1776.4 1038.88" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p106" d="M 1906.255 1001.466 C 1903.615 1012.466 1798.6 1035.265 1794.64 1043.265" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p107" d="M 1923.112 1005.529 C 1920.232 1016.529 1817.2 1040.067 1812.88 1048.067" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p108" d="M 1937.141 1010.188 C 1934.021 1021.188 1835.8 1045.287 1831.12 1053.287" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p109" d="M 1948.132 1015.482 C 1944.772 1026.482 1854.4 1050.925 1849.36 1058.925" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p110" d="M 1955.877 1021.45 C 1952.277 1032.45 1873 1056.98 1867.6 1064.98" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p111" d="M 1960.165 1028.131 C 1956.325 1039.131 1891.6 1063.453 1885.84 1071.453" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p119" d="M 1310.267 1100.422 C 1288.719 1133.177 1239.159 1150.119 1202.528 1156.896" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p120" d="M 1330.533 1098.022 C 1308.586 1130.514 1258.106 1147.32 1220.796 1154.042" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p121" d="M 1350.8 1095.8 C 1328.861 1128.116 1278.4 1144.831 1241.104 1151.517" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p122" d="M 1371.067 1093.756 C 1349.516 1125.972 1299.95 1142.635 1263.315 1149.301" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p123" d="M 1391.333 1091.889 C 1370.525 1124.071 1322.666 1140.717 1287.292 1147.375" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p124" d="M 1411.6 1090.2 C 1391.86 1122.403 1346.457 1139.059 1312.898 1145.722" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p125" d="M 1431.867 1088.689 C 1413.492 1120.956 1371.231 1137.646 1339.995 1144.322" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p126" d="M 1452.133 1087.356 C 1435.396 1119.72 1396.9 1136.46 1368.447 1143.156" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p127" d="M 1472.4 1086.2 C 1457.543 1118.684 1423.372 1135.486 1398.116 1142.207" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p128" d="M 1492.667 1085.222 C 1479.906 1117.837 1450.557 1134.707 1428.864 1141.455" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p129" d="M 1512.933 1084.422 C 1502.458 1117.168 1478.364 1134.106 1460.555 1140.881" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p130" d="M 1533.2 1083.8 C 1525.17 1116.667 1506.702 1133.668 1493.051 1140.468" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p131" d="M 1553.467 1083.356 C 1548.017 1116.323 1535.481 1133.375 1526.216 1140.195" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p132" d="M 1573.733 1083.089 C 1570.969 1116.124 1564.611 1133.211 1559.911 1140.046" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p133" d="M 1594 1083 C 1594 1116.06 1594 1133.16 1594 1140" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p134" d="M 1614.267 1083.089 C 1617.031 1116.124 1623.389 1133.211 1628.089 1140.046" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p135" d="M 1634.533 1083.356 C 1639.983 1116.323 1652.519 1133.375 1661.784 1140.195" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p136" d="M 1654.8 1083.8 C 1662.83 1116.667 1681.298 1133.668 1694.949 1140.468" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p137" d="M 1675.067 1084.422 C 1685.542 1117.168 1709.636 1134.106 1727.445 1140.881" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p138" d="M 1695.333 1085.222 C 1708.094 1117.837 1737.443 1134.707 1759.136 1141.455" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p139" d="M 1715.6 1086.2 C 1730.457 1118.684 1764.628 1135.486 1789.884 1142.207" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p140" d="M 1735.867 1087.356 C 1752.604 1119.72 1791.1 1136.46 1819.553 1143.156" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p141" d="M 1756.133 1088.689 C 1774.508 1120.956 1816.769 1137.646 1848.005 1144.322" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p142" d="M 1776.4 1090.2 C 1796.14 1122.403 1841.543 1139.059 1875.102 1145.722" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p143" d="M 1796.667 1091.889 C 1817.475 1124.071 1865.334 1140.717 1900.708 1147.375" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p144" d="M 1816.933 1093.756 C 1838.484 1125.972 1888.05 1142.635 1924.685 1149.301" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p145" d="M 1837.2 1095.8 C 1859.139 1128.116 1909.6 1144.831 1946.896 1151.517" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p146" d="M 1857.467 1098.022 C 1879.414 1130.514 1929.894 1147.32 1967.204 1154.042" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p147" d="M 1877.733 1100.422 C 1899.281 1133.177 1948.841 1150.119 1985.472 1156.896" stroke-width="2.3" data-role="detail" data-label="中轴对称屋面肋线" mask="url(#bj-temple-sign)">
+        <title>中轴对称屋面肋线</title>
+      </path>
+      <path id="bj-temple-p149" d="M 1155.999 1189.168 C 1159.839 1200.168 1218.64 1216.08 1224.4 1224.08" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p150" d="M 1160.037 1184.686 C 1163.675 1195.686 1238.396 1211.357 1243.853 1219.357" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p151" d="M 1167.035 1180.588 C 1170.471 1191.588 1258.152 1206.89 1263.305 1214.89" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p152" d="M 1176.844 1176.859 C 1180.077 1187.859 1277.907 1202.677 1282.758 1210.677" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p153" d="M 1189.313 1173.481 C 1192.344 1184.481 1297.663 1198.72 1302.211 1206.72" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p154" d="M 1204.294 1170.44 C 1207.123 1181.44 1317.419 1195.019 1321.663 1203.019" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p155" d="M 1221.636 1167.717 C 1224.263 1178.717 1337.175 1191.572 1341.116 1199.572" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p156" d="M 1241.191 1165.298 C 1243.616 1176.298 1356.931 1188.381 1360.568 1196.381" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p157" d="M 1262.809 1163.166 C 1265.032 1174.166 1376.686 1185.445 1380.021 1193.445" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p158" d="M 1286.34 1161.304 C 1288.361 1172.304 1396.442 1182.765 1399.474 1190.765" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p159" d="M 1311.635 1159.697 C 1313.454 1170.697 1416.198 1180.339 1418.926 1188.339" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p160" d="M 1338.544 1158.328 C 1340.161 1169.328 1435.954 1178.169 1438.379 1186.169" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p161" d="M 1366.919 1157.181 C 1368.334 1168.181 1455.709 1176.255 1457.832 1184.255" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p162" d="M 1396.609 1156.239 C 1397.821 1167.239 1475.465 1174.595 1477.284 1182.595" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p163" d="M 1427.464 1155.487 C 1428.475 1166.487 1495.221 1173.191 1496.737 1181.191" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p164" d="M 1459.337 1154.909 C 1460.145 1165.909 1514.977 1172.042 1516.189 1180.042" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p165" d="M 1492.076 1154.487 C 1492.682 1165.487 1534.733 1171.149 1535.642 1179.149" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p166" d="M 1525.532 1154.205 C 1525.937 1165.205 1554.488 1170.511 1555.095 1178.511" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p167" d="M 1559.557 1154.049 C 1559.759 1165.049 1574.244 1170.128 1574.547 1178.128" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p168" d="M 1594 1154 C 1594 1165 1594 1170 1594 1178" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p169" d="M 1628.443 1154.049 C 1628.241 1165.049 1613.756 1170.128 1613.453 1178.128" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p170" d="M 1662.468 1154.205 C 1662.063 1165.205 1633.512 1170.511 1632.905 1178.511" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p171" d="M 1695.924 1154.487 C 1695.318 1165.487 1653.267 1171.149 1652.358 1179.149" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p172" d="M 1728.663 1154.909 C 1727.855 1165.909 1673.023 1172.042 1671.811 1180.042" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p173" d="M 1760.536 1155.487 C 1759.525 1166.487 1692.779 1173.191 1691.263 1181.191" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p174" d="M 1791.391 1156.239 C 1790.179 1167.239 1712.535 1174.595 1710.716 1182.595" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p175" d="M 1821.081 1157.181 C 1819.666 1168.181 1732.291 1176.255 1730.168 1184.255" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p176" d="M 1849.456 1158.328 C 1847.839 1169.328 1752.046 1178.169 1749.621 1186.169" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p177" d="M 1876.365 1159.697 C 1874.546 1170.697 1771.802 1180.339 1769.074 1188.339" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p178" d="M 1901.66 1161.304 C 1899.639 1172.304 1791.558 1182.765 1788.526 1190.765" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p179" d="M 1925.191 1163.166 C 1922.968 1174.166 1811.314 1185.445 1807.979 1193.445" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p180" d="M 1946.809 1165.298 C 1944.384 1176.298 1831.069 1188.381 1827.432 1196.381" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p181" d="M 1966.364 1167.717 C 1963.737 1178.717 1850.825 1191.572 1846.884 1199.572" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p182" d="M 1983.706 1170.44 C 1980.877 1181.44 1870.581 1195.019 1866.337 1203.019" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p183" d="M 1998.687 1173.481 C 1995.656 1184.481 1890.337 1198.72 1885.789 1206.72" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p184" d="M 2011.156 1176.859 C 2007.923 1187.859 1910.093 1202.677 1905.242 1210.677" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p185" d="M 2020.965 1180.588 C 2017.529 1191.588 1929.848 1206.89 1924.695 1214.89" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p186" d="M 2027.963 1184.686 C 2024.325 1195.686 1949.604 1211.357 1944.147 1219.357" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p187" d="M 2032.001 1189.168 C 2028.161 1200.168 1969.36 1216.08 1963.6 1224.08" stroke-width="2.3" data-role="detail" data-label="重复檐下构件" mask="url(#bj-temple-sign)">
+        <title>重复檐下构件</title>
+      </path>
+      <path id="bj-temple-p231" d="M 1216 1252 C 1342 1230.667 1468 1220 1594 1220 C 1720 1220 1846 1230.667 1972 1252" stroke-width="3.2" data-role="detail" data-label="横向墙身弧线" mask="url(#bj-temple-sign)">
+        <title>横向墙身弧线</title>
+      </path>
+      <path id="bj-temple-p232" d="M 1216 1270 C 1342 1254 1468 1246 1594 1246 C 1720 1246 1846 1254 1972 1270" stroke-width="3.2" data-role="detail" data-label="横向墙身弧线" mask="url(#bj-temple-sign)">
+        <title>横向墙身弧线</title>
+      </path>
+    </g>
+    <path id="bj-temple-p001" d="M 1559 674 C 1570.667 671.333 1582.333 670 1594 670 C 1605.667 670 1617.333 671.333 1629 674 C 1659 717 1790.646 777.497 1850.646 803.986 C 1803.559 783.197 1701.806 780 1594 780 C 1486.194 780 1384.441 783.197 1337.354 803.986 C 1397.354 777.497 1529 717 1559 674 Z" stroke-width="5.6" data-role="roof-field" data-label="第1层・封闭屋面" mask="url(#bj-temple-sign)">
+      <title>第1层・封闭屋面</title>
+    </path>
+    <path id="bj-temple-p002" d="M 1380 885 C 1392 869 1310 855 1310 835 C 1310 786 1446.32 780 1594 780 C 1741.68 780 1878 786 1878 835 C 1878 855 1796 869 1808 885 C 1736.667 853.667 1665.333 838 1594 838 C 1522.667 838 1451.333 853.667 1380 885 Z" stroke-width="7.2" data-role="eave" data-label="第1层・尖檐闭合" mask="url(#bj-temple-sign)" stroke-linejoin="round">
+      <title>第1层・尖檐闭合</title>
+    </path>
+    <path id="bj-temple-p020" d="M 1380 885 C 1392 869 1322 855 1322 843 C 1322 800 1452.56 794 1594 794 C 1735.44 794 1866 800 1866 843 C 1866 855 1796 869 1808 885 C 1736.667 853.667 1665.333 838 1594 838 C 1522.667 838 1451.333 853.667 1380 885 Z" stroke-width="3.2" data-role="component-outline" data-label="檐下内弧・同尖角闭合" mask="url(#bj-temple-sign)">
+      <title>檐下内弧・同尖角闭合</title>
+    </path>
+    <path id="bj-temple-p048" d="M 1380 885 C 1451.333 853.667 1522.667 838 1594 838 C 1665.333 838 1736.667 853.667 1808 885 L 1808 926 C 1736.667 914 1665.333 908 1594 908 C 1522.667 908 1451.333 914 1380 926 Z" stroke-width="5.6" data-role="wall-field" data-label="第1层・封闭墙身" mask="url(#bj-temple-sign)">
+      <title>第1层・封闭墙身</title>
+    </path>
+    <path id="bj-temple-p049" d="M 1433.78 863.046 L 1441.78 863.046 L 1441.78 917.592 L 1433.78 917.592 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p050" d="M 1532.22 841.426 L 1540.22 841.426 L 1540.22 909.312 L 1532.22 909.312 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p051" d="M 1647.78 841.426 L 1655.78 841.426 L 1655.78 909.312 L 1647.78 909.312 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p052" d="M 1746.22 863.046 L 1754.22 863.046 L 1754.22 917.592 L 1746.22 917.592 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p053" d="M 1380 926 C 1451.333 914 1522.667 908 1594 908 C 1665.333 908 1736.667 914 1808 926 C 1838 969 1876.496 975.119 1936.496 994.597 C 1873.658 974.197 1737.868 971 1594 971 C 1450.132 971 1314.342 974.197 1251.504 994.597 C 1311.504 975.119 1350 969 1380 926 Z" stroke-width="5.6" data-role="roof-field" data-label="第2层・封闭屋面" mask="url(#bj-temple-sign)">
+      <title>第2层・封闭屋面</title>
+    </path>
+    <path id="bj-temple-p054" d="M 1290 1076 C 1302 1060 1215 1045 1215 1025 C 1215 977 1396.92 971 1594 971 C 1791.08 971 1973 977 1973 1025 C 1973 1045 1886 1060 1898 1076 C 1796.667 1037.333 1695.333 1018 1594 1018 C 1492.667 1018 1391.333 1037.333 1290 1076 Z" stroke-width="7.2" data-role="eave" data-label="第2层・尖檐闭合" mask="url(#bj-temple-sign)" stroke-linejoin="round">
+      <title>第2层・尖檐闭合</title>
+    </path>
+    <path id="bj-temple-p078" d="M 1290 1076 C 1302 1060 1227 1045 1227 1033 C 1227 991 1403.16 985 1594 985 C 1784.84 985 1961 991 1961 1033 C 1961 1045 1886 1060 1898 1076 C 1796.667 1037.333 1695.333 1018 1594 1018 C 1492.667 1018 1391.333 1037.333 1290 1076 Z" stroke-width="3.2" data-role="component-outline" data-label="檐下内弧・同尖角闭合" mask="url(#bj-temple-sign)">
+      <title>檐下内弧・同尖角闭合</title>
+    </path>
+    <path id="bj-temple-p112" d="M 1290 1076 C 1391.333 1037.333 1492.667 1018 1594 1018 C 1695.333 1018 1796.667 1037.333 1898 1076 L 1898 1103 C 1796.667 1089.667 1695.333 1083 1594 1083 C 1492.667 1083 1391.333 1089.667 1290 1103 Z" stroke-width="5.6" data-role="wall-field" data-label="第2层・封闭墙身" mask="url(#bj-temple-sign)">
+      <title>第2层・封闭墙身</title>
+    </path>
+    <path id="bj-temple-p113" d="M 1368.08 1048.908 L 1376.08 1048.908 L 1376.08 1093.658 L 1368.08 1093.658 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p114" d="M 1507.92 1022.228 L 1515.92 1022.228 L 1515.92 1084.458 L 1507.92 1084.458 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p115" d="M 1672.08 1022.228 L 1680.08 1022.228 L 1680.08 1084.458 L 1672.08 1084.458 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p116" d="M 1811.92 1048.908 L 1819.92 1048.908 L 1819.92 1093.658 L 1811.92 1093.658 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p117" d="M 1290 1103 C 1391.333 1089.667 1492.667 1083 1594 1083 C 1695.333 1083 1796.667 1089.667 1898 1103 C 1928 1146 1941.562 1146.537 2001.562 1160.096 C 1926.786 1143.197 1765.2 1140 1594 1140 C 1422.8 1140 1261.214 1143.197 1186.438 1160.096 C 1246.438 1146.537 1260 1146 1290 1103 Z" stroke-width="5.6" data-role="roof-field" data-label="第3层・封闭屋面" mask="url(#bj-temple-sign)">
+      <title>第3层・封闭屋面</title>
+    </path>
+    <path id="bj-temple-p118" d="M 1209 1228 C 1221 1212 1143 1205 1143 1185 C 1143 1146 1359.48 1140 1594 1140 C 1828.52 1140 2045 1146 2045 1185 C 2045 1205 1967 1212 1979 1228 C 1850.667 1194.667 1722.333 1178 1594 1178 C 1465.667 1178 1337.333 1194.667 1209 1228 Z" stroke-width="7.2" data-role="eave" data-label="第3层・尖檐闭合" mask="url(#bj-temple-sign)" stroke-linejoin="round">
+      <title>第3层・尖檐闭合</title>
+    </path>
+    <path id="bj-temple-p148" d="M 1209 1228 C 1221 1212 1155 1205 1155 1193 C 1155 1160 1365.72 1154 1594 1154 C 1822.28 1154 2033 1160 2033 1193 C 2033 1205 1967 1212 1979 1228 C 1850.667 1194.667 1722.333 1178 1594 1178 C 1465.667 1178 1337.333 1194.667 1209 1228 Z" stroke-width="3.2" data-role="component-outline" data-label="檐下内弧・同尖角闭合" mask="url(#bj-temple-sign)">
+      <title>檐下内弧・同尖角闭合</title>
+    </path>
+    <path id="bj-temple-p188" d="M 1209 1228 C 1337.333 1194.667 1465.667 1178 1594 1178 C 1722.333 1178 1850.667 1194.667 1979 1228 L 1979 1368 C 1850.667 1365.333 1722.333 1364 1594 1364 C 1465.667 1364 1337.333 1365.333 1209 1368 Z" stroke-width="5.6" data-role="wall-field" data-label="第3层・封闭墙身" mask="url(#bj-temple-sign)">
+      <title>第3层・封闭墙身</title>
+    </path>
+    <path id="bj-temple-p189" d="M 1308.95 1204.645 L 1316.95 1204.645 L 1316.95 1366.132 L 1308.95 1366.132 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p190" d="M 1486.05 1181.645 L 1494.05 1181.645 L 1494.05 1364.292 L 1486.05 1364.292 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p191" d="M 1693.95 1181.645 L 1701.95 1181.645 L 1701.95 1364.292 L 1693.95 1364.292 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p192" d="M 1871.05 1204.645 L 1879.05 1204.645 L 1879.05 1366.132 L 1871.05 1366.132 Z" stroke-width="3.2" data-role="component-outline" data-label="闭合柱身" mask="url(#bj-temple-sign)">
+      <title>闭合柱身</title>
+    </path>
+    <path id="bj-temple-p193" d="M 1231.939 1279.206 L 1247.301 1279.206 L 1247.301 1366.651 L 1231.939 1366.651 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p194" d="M 1225.62 1252.741 L 1253.62 1252.741 L 1253.62 1263.741 L 1225.62 1263.741 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p195" d="M 1271.079 1274.756 L 1286.912 1274.756 L 1286.912 1366.094 L 1271.079 1366.094 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p196" d="M 1264.996 1247.548 L 1292.996 1247.548 L 1292.996 1258.548 L 1264.996 1258.548 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p197" d="M 1310.219 1270.829 L 1326.523 1270.829 L 1326.523 1365.604 L 1310.219 1365.604 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p198" d="M 1304.371 1242.967 L 1332.371 1242.967 L 1332.371 1253.967 L 1304.371 1253.967 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p199" d="M 1349.359 1267.425 L 1366.134 1267.425 L 1366.134 1365.178 L 1349.359 1365.178 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p200" d="M 1343.747 1238.996 L 1371.747 1238.996 L 1371.747 1249.996 L 1343.747 1249.996 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p201" d="M 1388.499 1264.545 L 1405.745 1264.545 L 1405.745 1364.818 L 1388.499 1364.818 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p202" d="M 1383.122 1235.636 L 1411.122 1235.636 L 1411.122 1246.636 L 1383.122 1246.636 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p203" d="M 1427.639 1262.189 L 1445.356 1262.189 L 1445.356 1364.524 L 1427.639 1364.524 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p204" d="M 1422.498 1232.887 L 1450.498 1232.887 L 1450.498 1243.887 L 1422.498 1243.887 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p205" d="M 1466.78 1260.356 L 1484.967 1260.356 L 1484.967 1364.295 L 1466.78 1364.295 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p206" d="M 1461.873 1230.749 L 1489.873 1230.749 L 1489.873 1241.749 L 1461.873 1241.749 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p207" d="M 1505.92 1259.047 L 1524.578 1259.047 L 1524.578 1364.131 L 1505.92 1364.131 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p208" d="M 1501.249 1229.222 L 1529.249 1229.222 L 1529.249 1240.222 L 1501.249 1240.222 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p209" d="M 1545.06 1258.262 L 1564.189 1258.262 L 1564.189 1364.033 L 1545.06 1364.033 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p210" d="M 1540.624 1228.305 L 1568.624 1228.305 L 1568.624 1239.305 L 1540.624 1239.305 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p211" d="M 1584.2 1258 L 1603.8 1258 L 1603.8 1364 L 1584.2 1364 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p212" d="M 1580 1228 L 1608 1228 L 1608 1239 L 1580 1239 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p213" d="M 1623.811 1258.262 L 1642.94 1258.262 L 1642.94 1364.033 L 1623.811 1364.033 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p214" d="M 1619.376 1228.305 L 1647.376 1228.305 L 1647.376 1239.305 L 1619.376 1239.305 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p215" d="M 1663.422 1259.047 L 1682.08 1259.047 L 1682.08 1364.131 L 1663.422 1364.131 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p216" d="M 1658.751 1229.222 L 1686.751 1229.222 L 1686.751 1240.222 L 1658.751 1240.222 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p217" d="M 1703.033 1260.356 L 1721.22 1260.356 L 1721.22 1364.295 L 1703.033 1364.295 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p218" d="M 1698.127 1230.749 L 1726.127 1230.749 L 1726.127 1241.749 L 1698.127 1241.749 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p219" d="M 1742.644 1262.189 L 1760.361 1262.189 L 1760.361 1364.524 L 1742.644 1364.524 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p220" d="M 1737.502 1232.887 L 1765.502 1232.887 L 1765.502 1243.887 L 1737.502 1243.887 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p221" d="M 1782.255 1264.545 L 1799.501 1264.545 L 1799.501 1364.818 L 1782.255 1364.818 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p222" d="M 1776.878 1235.636 L 1804.878 1235.636 L 1804.878 1246.636 L 1776.878 1246.636 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p223" d="M 1821.866 1267.425 L 1838.641 1267.425 L 1838.641 1365.178 L 1821.866 1365.178 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p224" d="M 1816.253 1238.996 L 1844.253 1238.996 L 1844.253 1249.996 L 1816.253 1249.996 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p225" d="M 1861.477 1270.829 L 1877.781 1270.829 L 1877.781 1365.604 L 1861.477 1365.604 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p226" d="M 1855.629 1242.967 L 1883.629 1242.967 L 1883.629 1253.967 L 1855.629 1253.967 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p227" d="M 1901.088 1274.756 L 1916.921 1274.756 L 1916.921 1366.094 L 1901.088 1366.094 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p228" d="M 1895.004 1247.548 L 1923.004 1247.548 L 1923.004 1258.548 L 1895.004 1258.548 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p229" d="M 1940.699 1279.206 L 1956.061 1279.206 L 1956.061 1366.651 L 1940.699 1366.651 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭门窗" mask="url(#bj-temple-sign)">
+      <title>封闭门窗</title>
+    </path>
+    <path id="bj-temple-p230" d="M 1934.38 1252.741 L 1962.38 1252.741 L 1962.38 1263.741 L 1934.38 1263.741 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭横额格" mask="url(#bj-temple-sign)">
+      <title>封闭横额格</title>
+    </path>
+    <path id="bj-temple-p233" d="M 1594 602 C 1606.703 602 1617 603.791 1617 606 C 1617 608.209 1606.703 610 1594 610 C 1581.297 610 1571 608.209 1571 606 C 1571 603.791 1581.297 602 1594 602 Z" stroke-width="3.2" data-role="component-outline" data-label="宝顶闭合颈圈" mask="url(#bj-temple-sign)">
+      <title>宝顶闭合颈圈</title>
+    </path>
+    <path id="bj-temple-p234" d="M 1594 615 C 1606.703 615 1617 616.791 1617 619 C 1617 621.209 1606.703 623 1594 623 C 1581.297 623 1571 621.209 1571 619 C 1571 616.791 1581.297 615 1594 615 Z" stroke-width="3.2" data-role="component-outline" data-label="宝顶闭合颈圈" mask="url(#bj-temple-sign)">
+      <title>宝顶闭合颈圈</title>
+    </path>
+    <path id="bj-temple-p235" d="M 1594 627 C 1606.703 627 1617 628.791 1617 631 C 1617 633.209 1606.703 635 1594 635 C 1581.297 635 1571 633.209 1571 631 C 1571 628.791 1581.297 627 1594 627 Z" stroke-width="3.2" data-role="component-outline" data-label="宝顶闭合颈圈" mask="url(#bj-temple-sign)">
+      <title>宝顶闭合颈圈</title>
+    </path>
+    <path id="bj-temple-p236" d="M 1594 538 C 1619 538 1642 551 1612 604 L 1576 604 C 1546 551 1569 538 1594 538 Z" stroke-width="5.6" data-role="component-outline" data-label="宝顶闭合球形" mask="url(#bj-temple-sign)">
+      <title>宝顶闭合球形</title>
+    </path>
+    <path id="bj-temple-p237" d="M 1553 665 C 1566.667 646.333 1580.333 637 1594 637 C 1607.667 637 1621.333 646.333 1635 665 C 1621.333 668.333 1607.667 670 1594 670 C 1580.333 670 1566.667 668.333 1553 665 Z" stroke-width="4.6" data-role="component-outline" data-label="宝顶闭合基座" mask="url(#bj-temple-sign)">
+      <title>宝顶闭合基座</title>
+    </path>
+    <path id="bj-temple-p238" d="M 1584.74 824.87 L 1586.9 826.61" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p239" d="M 1582.58 828.35 L 1589.06 828.35 L 1583.66 834.44" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p240" d="M 1586.9 831.83 L 1586.9 842.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p241" d="M 1587.98 833.57 L 1591.22 836.18" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p242" d="M 1604.18 824.87 L 1594.46 827.48 L 1594.46 834.44 L 1591.22 841.4" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p243" d="M 1594.46 831.83 L 1605.26 831.83" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p244" d="M 1600.94 831.83 L 1600.94 842.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p245" d="M 1589.06 848.87 L 1584.74 854.09" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p246" d="M 1587.98 851.48 L 1604.18 851.48" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p247" d="M 1586.9 855.83 L 1603.1 855.83" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p248" d="M 1587.98 855.83 L 1587.98 861.05" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p249" d="M 1582.58 861.05 L 1605.26 861.05" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p250" d="M 1595.54 851.48 L 1595.54 866.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p251" d="M 1582.58 872.74 L 1593.38 872.74 L 1593.38 876.22 L 1583.66 876.22 L 1583.66 884.05 L 1581.5 889.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p252" d="M 1584.74 879.7 L 1593.38 879.7" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p253" d="M 1586.9 877.09 L 1586.9 883.18" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p254" d="M 1591.22 877.09 L 1591.22 883.18" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p255" d="M 1583.66 883.18 L 1594.46 883.18" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p256" d="M 1586.9 884.92 L 1583.66 888.4" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p257" d="M 1591.22 884.92 L 1594.46 888.4" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p258" d="M 1597.7 872.74 L 1603.1 872.74 L 1603.1 877.09 L 1606.34 877.09" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p259" d="M 1597.7 872.74 L 1597.7 876.22 L 1595.54 877.96" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p260" d="M 1596.62 879.7 L 1605.26 879.7 L 1603.1 884.92 L 1595.54 889.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p261" d="M 1596.62 880.57 L 1599.86 885.79 L 1606.34 889.27" stroke-width="2.05" data-role="lettering" data-label="祈年殿・逐笔路径" stroke="#e4ba08">
+      <title>祈年殿・逐笔路径</title>
+    </path>
+    <path id="bj-temple-p262" d="M 1551 803 L 1637 803 L 1637 910 L 1551 910 Z" stroke-width="4.6" data-role="plaque" data-label="封闭匾额">
+      <title>封闭匾额</title>
+    </path>
+    <path id="bj-temple-p263" d="M 1560 812 L 1628 812 L 1628 901 L 1560 901 Z" stroke-width="3.2" data-role="plaque" data-label="封闭匾额">
+      <title>封闭匾额</title>
+    </path>
+  </g>
+</svg>

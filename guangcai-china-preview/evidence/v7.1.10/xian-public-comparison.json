@@ -1,0 +1,20 @@
+{
+  "city": "xian",
+  "beforeVersion": "V7.1.4",
+  "afterVersion": "V7.1.10",
+  "images": {
+    "before": {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/xian-before.webp",
+      "sha256": "6c774f403c02f18c01acc6950116b8573cc471188e94f9e1ebf3b50718bcff2d",
+      "sourceRelease": "v7-5",
+      "bytes": 101088
+    },
+    "after": {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/xian-after.webp",
+      "sha256": "56e87d49ea35ac41714d7539ead8c2871ac45426081abd9ed7100eedb1b870a6",
+      "sourceRelease": "v7-8",
+      "bytes": 123460
+    }
+  },
+  "passed": true
+}

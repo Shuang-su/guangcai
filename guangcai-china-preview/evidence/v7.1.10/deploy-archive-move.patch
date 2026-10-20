@@ -1,0 +1,25 @@
+--- tools/v7/deploy-coverage-report.mjs
++++ same-volume-archive-driver
+@@ -1,11 +1,11 @@
+ // User-authorized V7.1.10 production deploy; fixed V7 target, no other site writes.
+ // Official Netlify file-digest API; uses the existing local login without copying it.
+-import {readFile,writeFile,mkdir,readdir,copyFile} from 'node:fs/promises';
++import {readFile,writeFile,mkdir,readdir,copyFile,rename,stat} from 'node:fs/promises';
+ import {execFileSync} from 'node:child_process';
+ import {createHash} from 'node:crypto';
+ import {fileURLToPath} from 'node:url';
+ import path from 'node:path';import os from 'node:os';
+-const root=fileURLToPath(new URL('../../',import.meta.url));process.chdir(root);
++const root=process.cwd();process.chdir(root);
+ const siteId='52e02ef9-e2d8-4fcb-98ed-1d14e283c74c',siteName='guangcai-no1-china-v7';
+ const protectedIds=['15a98425-f9a2-4c44-afbe-5859f4b5d1f7','b1fce272-cf28-41e5-8366-024c314b615f','cbb885ed-16d0-41a2-9ab0-055c0c3ce234','71306515-d3d5-46a9-8f36-e51f4f3ae480','8d9dfdb3-270a-46c5-9dde-0fe4ddc2662f'];
+ const build='.codex-work/deploy/v7-build',work='.codex-work/deploy/v7.1.10-release';await mkdir(work,{recursive:true});
+@@ -60,7 +60,7 @@
+  const release=await fetch(new URL('release.json',receipt.url)).then(r=>r.json());if(release.sourceCommit!==receipt.sourceCommit)throw Error('Public source metadata mismatch');
+  receipt.protectedAfter=await Promise.all(protectedIds.map(async id=>summary(await api(`/sites/${id}`))));if(JSON.stringify(receipt.protectedBefore)!==JSON.stringify(receipt.protectedAfter))throw Error('Protected site state changed');
+  const archive=path.resolve('..','deployments',siteName,receipt.deployId);await mkdir(archive,{recursive:true});
+- for(const [file,entry]of Object.entries(manifest)){const dest=path.join(archive,'site',file.slice(1));await mkdir(path.dirname(dest),{recursive:true});try{if(hash(await readFile(dest))!==entry.sha256)throw Error('Immutable archive differs');}catch(e){if(e.code!=='ENOENT')throw e;await copyFile(path.join(build,file.slice(1)),dest);}}
++ if((await readdir(archive)).length)throw Error('New archive directory must be empty for reviewed build move');if((await stat(build)).dev!==(await stat(archive)).dev)throw Error('Archive move must stay on the same volume');await rename(path.resolve(build),path.join(archive,'site'));receipt.buildArchivedBy='same-volume-rename-after-server-digest-readback';
+  receipt.archive=path.relative(path.resolve('..'),archive);receipt.status='server-verified-browser-check-pending';await save();
+  for(const [name,value]of [['files.json',manifest],['deployment.json',receipt]])try{await writeFile(path.join(archive,name),JSON.stringify(value,null,2)+'\n',{flag:'wx'});}catch(e){if(e.code!=='EEXIST')throw e;}
+  console.log(JSON.stringify({url:receipt.url,deployId:receipt.deployId,filesMatched:matched,protectedSitesUnchanged:true}));

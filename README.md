@@ -1,6 +1,6 @@
 # 广彩一号杯与中国杯
 
-2026-10-20：V7.1.10 / v7-8 已完成本地验证，待合并发布：前后对比改为V7.1.4与当前，compare与独立dev新增实际城市曲面图案/白瓷占比、PSD与模型尺寸差异、三部件花纸尺寸与接缝说明、3D可贴面高亮。默认深圳＋拥抱瀚海图案25.94%、白瓷74.06%；现有约2.56%的UV宽高比差明确披露，正式资源与几何映射未改。[Issue #53](https://github.com/Shuang-su/guangcai/issues/53) · [本轮记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md)。
+2026-10-20：V7.1.10 / v7-8 已合并上线：前后对比改为V7.1.4与当前，compare与独立dev新增实际城市曲面图案/白瓷占比、PSD与模型尺寸差异、三部件花纸尺寸与接缝说明、3D可贴面高亮。默认深圳＋拥抱瀚海图案25.94%、白瓷74.06%；现有约2.56%的UV宽高比差明确披露，正式资源与几何映射未改。[Issue #53](https://github.com/Shuang-su/guangcai/issues/53) · [本轮记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md)。PR #54/#55/#56，部署 `6ad6c3ad0d1a73552408b968`；公网占比57项、核心30项通过，1187发布与归档文件核验一致。
 
 2026-10-20：V7.1.9 / v7-8 已合并上线，修复23城卡片线稿不完整：完整R通道先缩小，再按相同目标尺寸组装金色透明图。城市69档、字框及PSD映射沿用v7-7原数据。[Issue #51](https://github.com/Shuang-su/guangcai/issues/51) · [本轮记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md)。部署 `6ad6af47aa240e6a1c47b305`，线上23城卡片及4个独立视口92项通过。
 
@@ -20,13 +20,13 @@
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 当前发布批次：V7.1.9 / v7-8
+## 当前发布批次：V7.1.10 / v7-8
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 
 [V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.3 预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [实现 PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [验证与交付记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md)
 
-[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-6`，保留 `v7-1`～`v7-5`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
+[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-8`，保留 `v7-1`～`v7-7`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 
