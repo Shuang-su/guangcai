@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "v7-8",
+  "modelVersion": "china-cup-v6",
+  "recipeVersion": "porcelain-city-v6",
+  "manifestUrl": "manifest-60e2ccdd1b4beb7b.json",
+  "cities": {
+    "shanghai": {
+      "name": "上海",
+      "thumbnail": "assets/shanghai-thumbnail-31e473d36d2f96cf.webp"
+    },
+    "urumqi": {
+      "name": "乌鲁木齐",
+      "thumbnail": "assets/urumqi-thumbnail-785bb5386137c165.webp"
+    },
+    "beijing": {
+      "name": "北京",
+      "thumbnail": "assets/beijing-thumbnail-ba0a1dcd10dbdbc8.webp"
+    },
+    "nanjing": {
+      "name": "南京",
+      "thumbnail": "assets/nanjing-thumbnail-ef9036bbbfc84e28.webp"
+    },
+    "nanchang": {
+      "name": "南昌",
+      "thumbnail": "assets/nanchang-thumbnail-f56973847a59425a.webp"
+    },
+    "xiamen": {
+      "name": "厦门",
+      "thumbnail": "assets/xiamen-thumbnail-be70df7979c49412.webp"
+    },
+    "hohhot": {
+      "name": "呼和浩特",
+      "thumbnail": "assets/hohhot-thumbnail-9f822ce540caed82.webp"
+    },
+    "harbin": {
+      "name": "哈尔滨",
+      "thumbnail": "assets/harbin-thumbnail-ee9d94a811c71b75.webp"
+    },
+    "tianjin": {
+      "name": "天津",
+      "thumbnail": "assets/tianjin-thumbnail-bb11d1eacdb5df5a.webp"
+    },
+    "taiyuan": {
+      "name": "太原",
+      "thumbnail": "assets/taiyuan-thumbnail-94787820fa9de84f.webp"
+    },
+    "guangzhou": {
+      "name": "广州",
+      "thumbnail": "assets/guangzhou-thumbnail-6eb8e59172b8f5d3.webp"
+    },
+    "chengdu": {
+      "name": "成都",
+      "thumbnail": "assets/chengdu-thumbnail-ed276a07ee1632d6.webp"
+    },
+    "jingdezhen": {
+      "name": "景德镇",
+      "thumbnail": "assets/jingdezhen-thumbnail-52ad4f723b7f5204.webp"
+    },
+    "hangzhou": {
+      "name": "杭州",
+      "thumbnail": "assets/hangzhou-thumbnail-bd346eb4261d0595.webp"
+    },
+    "wuhan": {
+      "name": "武汉",
+      "thumbnail": "assets/wuhan-thumbnail-2017479dca163655.webp"
+    },
+    "shenyang": {
+      "name": "沈阳",
+      "thumbnail": "assets/shenyang-thumbnail-581fafac68648fbd.webp"
+    },
+    "shenzhen": {
+      "name": "深圳",
+      "thumbnail": "assets/shenzhen-thumbnail-75a497dd0b3fd92e.webp"
+    },
+    "shijiazhuang": {
+      "name": "石家庄",
+      "thumbnail": "assets/shijiazhuang-thumbnail-8bb7c0f25cfc8b5c.webp"
+    },
+    "xian": {
+      "name": "西安",
+      "thumbnail": "assets/xian-thumbnail-584e37b1eab348d6.webp"
+    },
+    "zhengzhou": {
+      "name": "郑州",
+      "thumbnail": "assets/zhengzhou-thumbnail-9b43875491b2c8f5.webp"
+    },
+    "chongqing": {
+      "name": "重庆",
+      "thumbnail": "assets/chongqing-thumbnail-190fd9db8df7c157.webp"
+    },
+    "changchun": {
+      "name": "长春",
+      "thumbnail": "assets/changchun-thumbnail-d6cd8cf080d674a5.webp"
+    },
+    "qingdao": {
+      "name": "青岛",
+      "thumbnail": "assets/qingdao-thumbnail-036464b5c4abeb67.webp"
+    }
+  },
+  "slogans": {
+    "open": "开放包容",
+    "innovation": "创新驱动",
+    "cooperation": "合作共赢",
+    "sharing": "共建共享",
+    "together": "携手同心",
+    "ocean": "拥抱瀚海"
+  },
+  "tiers": [
+    "light",
+    "standard",
+    "detail"
+  ]
+}

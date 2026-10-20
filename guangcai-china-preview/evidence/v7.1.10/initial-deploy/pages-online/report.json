@@ -1,0 +1,47 @@
+{
+  "base": "https://guangcai-no1-china-v7.netlify.app/",
+  "checks": [
+    "entry version matches 7.1.10 ",
+    "entry version matches 7.1.10 artwork-dev/cup.html",
+    "public lab renders real cup",
+    "public viewer version 7.1.10",
+    "old and unified frame switch changes actual mask",
+    "public wording open",
+    "public wording cooperation",
+    "public wording innovation",
+    "public wording sharing",
+    "public wording together",
+    "public wording ocean",
+    "public Bezier cup shenzhen",
+    "public Bezier cup beijing",
+    "current MasterGo city on public cup",
+    "public source lettering retains Chengdu 6px difference",
+    "formal page stays independent after experiment",
+    "formal version 7.1.10",
+    "formal Chengdu uses its original 6px lettering override",
+    "public legacy/new design restore v7-5",
+    "public legacy/new design restore v7-6",
+    "public legacy/new design restore v7-7",
+    "public legacy/new design restore v7-8",
+    "public report has all 23 city records",
+    "report provenance uses the actual innovation name",
+    "public comparison slider works",
+    "public mobile report has no overflow",
+    "public mobile SVG and frame controls work",
+    "public mobile lab has no overflow",
+    "no relevant runtime or console errors"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "physicalDeviceTested": false,
+  "passed": true
+}

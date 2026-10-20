@@ -1,0 +1,25 @@
+{
+  "deployId": "6ad6bc018f6cb0fad7745e58",
+  "sourceCommit": "0d8c590681ddbe4e78a87a7f1be608266b260a1f",
+  "serverFilesMatched": 1187,
+  "automatedCoverageChecks": 53,
+  "automatedPageChecks": 29,
+  "automatedPassed": true,
+  "manualVisualReview": "Highlight fill has depth stripes on mobile-sized view; polygon depth bias correction follows in the next deploy. Formal artwork and geometry unaffected.",
+  "physicalDeviceTested": false,
+  "archiveReadback": {
+    "passed": true,
+    "deployId": "6ad6bc018f6cb0fad7745e58",
+    "sourceCommit": "0d8c590681ddbe4e78a87a7f1be608266b260a1f",
+    "filesMatched": 1187,
+    "bytes": 499815470,
+    "publicRelease": {
+      "version": "7.1.10",
+      "kind": "user-authorized-production",
+      "sourceCommit": "0d8c590681ddbe4e78a87a7f1be608266b260a1f",
+      "sourceBranch": "main",
+      "v6SyncedThrough": "833a8b33561d36e72f1164743e80f28fc63d96b2",
+      "resourceRelease": "v7-8"
+    }
+  }
+}

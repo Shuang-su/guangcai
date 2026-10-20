@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-hills-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-hills-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-hills" data-building="sz-hills" data-name="背景山线" data-kind="background" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="背景山线">
+    <title>背景山线</title>
+    <path id="sz-hills-outline" d="M 70 1622 C 160 1480 235 1370 335 1350 C 490 1335 590 1280 725 1245 C 850 1205 970 1280 1090 1295 C 1350 1370 1540 1400 1730 1340 C 1840 1310 1900 1230 2030 1275 C 2260 1355 2290 1338 2430 1325 C 2650 1304 2720 1242 2850 1320 C 3030 1440 3000 1400 3120 1445 C 3325 1330 3260 1340 3440 1405 C 3620 1470 3660 1550 3710 1622 L 70 1622 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-hills-components" clip-path="url(#sz-hills-clip)" />
+  </g>
+</svg>
