@@ -1,0 +1,82 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "name": "desktop",
+    "view": "hero",
+    "camera": [
+      31.765735672387418,
+      240.54729642798253,
+      909.6516524326336
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "version": "7.1.11",
+    "source": "published production archive 6ad6fcdcf1f9e6ca6c7c5330; fresh fixed viewport"
+  },
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "name": "desktop",
+    "view": "exploded",
+    "camera": [
+      240,
+      204.99999999999997,
+      355
+    ],
+    "target": [
+      4.999999999999998,
+      103,
+      0
+    ],
+    "version": "7.1.11",
+    "source": "published production archive 6ad6fcdcf1f9e6ca6c7c5330; fresh fixed viewport"
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "name": "mobile",
+    "view": "hero",
+    "camera": [
+      66.46084517592222,
+      435.55987428915705,
+      1903.1895958543482
+    ],
+    "target": [
+      0,
+      62,
+      0
+    ],
+    "version": "7.1.11",
+    "source": "published production archive 6ad6fcdcf1f9e6ca6c7c5330; fresh fixed viewport"
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "name": "mobile",
+    "view": "exploded",
+    "camera": [
+      381,
+      266.20000000000005,
+      568
+    ],
+    "target": [
+      4.999999999999998,
+      103,
+      0
+    ],
+    "version": "7.1.11",
+    "source": "published production archive 6ad6fcdcf1f9e6ca6c7c5330; fresh fixed viewport"
+  }
+]

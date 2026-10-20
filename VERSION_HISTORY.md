@@ -2,10 +2,13 @@
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
+当前本地开发版为 **V7.1.12 / v7-9**：七种观察视角；代码及浏览器验证完成，未推送、未部署。版本 Issue 因 GitHub 账号暂停暂存[本地草稿](docs/changes/20261020-v7.1.12-seven-views/version-issue-pending.md)。
+
 当前线上独立预览为 **V7.1.11 / v7-9**，西安闭合新版与五城背景修正，深圳二期仅dev；部署`6ad6fcdcf1f9e6ca6c7c5330`，公网57+31+41项通过。GitHub因账号暂停403尚未合并。此前V7.1.10 / v7-8，前后对比统一为V7.1.4/v7-5→当前V7.1.10/v7-8，compare与独立dev增加实际曲面占比、PSD/模型差异、三部分花纸尺寸与接缝高亮；PR #54/#55/#56已合并部署，公网占比57项＋核心30项通过。正式图案、几何、UV保持既有映射，现有约2.56%比例差已公开。原5MiB/6秒目标、实体设备及COS/身份仍由Issue #47跟踪。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
+| V7.1.12 · 本地开发 | [七视角记录](docs/changes/20261020-v7.1.12-seven-views/completion.md) | 45基础测试、74浏览器检查、杯碟/花纹清晰度检查与196资源构建核验通过；未部署，版本Issue待GitHub恢复 |
 | [V7.1.11 · Issue #57](https://github.com/Shuang-su/guangcai/issues/57) | [城市闭合/镂空记录](docs/changes/20261020-v7.1.11-city-cutouts/completion.md) | Netlify已发布；45基础/55V7测试、公网57+31+41项、1248文件通过；PR #58合并受GitHub账号暂停阻断 |
 | [V7.1.10 · Issue #53](https://github.com/Shuang-su/guangcai/issues/53) | [曲面占比与映射记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md) | 45基础、52V7测试通过；本地及公网核心各30项、占比/23城/部位交互各57项通过；PR #54/#55/#56合并部署，1187文件核验，实体与既有UV差异见#47，资源仍为v7-8 |
 | [V7.1.9 · Issue #51](https://github.com/Shuang-su/guangcai/issues/51) | [完整卡片线稿记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md) | 45基础、45V7测试及29项页面回归通过；本地/公网卡片各92项通过，PR #52合并/部署，回执见完成记录 |

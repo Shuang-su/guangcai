@@ -1,0 +1,19 @@
+{
+  "productVersion": "7.1.12",
+  "resourceVersion": "v7-9",
+  "browserChecks": 74,
+  "browserPassed": true,
+  "qualityChecks": 4,
+  "qualityPassed": true,
+  "resourcesVerified": 196,
+  "buildPassed": true,
+  "buildInventorySha256": "fdab138e099c59c2c1cca97a75d05f88c09ab73a8f2cd49f84bc5f2c65bb5d3b",
+  "buildInventoryPath": "/Volumes/Prism/广彩交付/.codex-work/v7.1.12-views/build-inventory-final.json",
+  "physicalDeviceTested": false,
+  "deployed": false,
+  "notes": [
+    "74 menu/camera checks preceded the final saucer quality trigger only; the 4 focused quality checks and final build use that correction.",
+    "Build output reused the same temporary directory and includes preceding hashed chunks; no archive or publish used this directory.",
+    "Temporary build is removed after evidence capture; source preview is retained."
+  ]
+}
