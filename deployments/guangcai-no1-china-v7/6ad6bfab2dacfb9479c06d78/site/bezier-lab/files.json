@@ -1,0 +1,690 @@
+{
+  "date": "2026-10-19",
+  "sourceTitle": "用贝塞尔曲线描摹线稿 / 最新独立闭合版",
+  "sourceManifestSha256": "36d9ea06a3f2e23a60ea14e99f4618519499efe1e81a732674d5f3b7241f404f",
+  "route": "/bezier-lab/",
+  "files": [
+    {
+      "path": "buildings/北京/中国尊.svg",
+      "sourcePath": "buildings/北京/中国尊.svg",
+      "sourceSha256": "1d13e6a3dc6f7ebea1ebe05e60d356cc267cb11f614cc8f728817d4f585ab350",
+      "sha256": "1d13e6a3dc6f7ebea1ebe05e60d356cc267cb11f614cc8f728817d4f585ab350",
+      "bytes": 4878,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/天坛台基与栏杆.svg",
+      "sourcePath": "buildings/北京/天坛台基与栏杆.svg",
+      "sourceSha256": "a59741fe5e64c0f0a87396d52eb07fc504e592c07db9b22db743e7b7f6bc2c68",
+      "sha256": "a59741fe5e64c0f0a87396d52eb07fc504e592c07db9b22db743e7b7f6bc2c68",
+      "bytes": 39030,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/天坛祈年殿.svg",
+      "sourcePath": "buildings/北京/天坛祈年殿.svg",
+      "sourceSha256": "e5584e520378e9289c3b0465d5b6898588f48db6816e5de72226d6894fde40b8",
+      "sha256": "e5584e520378e9289c3b0465d5b6898588f48db6816e5de72226d6894fde40b8",
+      "bytes": 74040,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/央视总部.svg",
+      "sourcePath": "buildings/北京/央视总部.svg",
+      "sourceSha256": "ba6ff54d710278c13b5ee1969f5854fb6247a6240d6fc7534f2c388a718f2f76",
+      "sha256": "ba6ff54d710278c13b5ee1969f5854fb6247a6240d6fc7534f2c388a718f2f76",
+      "bytes": 24597,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/背景山线.svg",
+      "sourcePath": "buildings/北京/背景山线.svg",
+      "sourceSha256": "245f26386f48c760d725881c1609acecac713d120b7e8f0fb3a79ec407971f63",
+      "sha256": "245f26386f48c760d725881c1609acecac713d120b7e8f0fb3a79ec407971f63",
+      "bytes": 1381,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/长城・东侧城楼.svg",
+      "sourcePath": "buildings/北京/长城・东侧城楼.svg",
+      "sourceSha256": "daeb9945bff2128db7be3395071406a5bfc757f471b93311a659211ddc844ece",
+      "sha256": "daeb9945bff2128db7be3395071406a5bfc757f471b93311a659211ddc844ece",
+      "bytes": 2535,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/长城・西侧城楼.svg",
+      "sourcePath": "buildings/北京/长城・西侧城楼.svg",
+      "sourceSha256": "f9fd5b50cc7471f6c95a7d0e49afd4e87dec34f0693b361f65efcc60e5f9054e",
+      "sha256": "f9fd5b50cc7471f6c95a7d0e49afd4e87dec34f0693b361f65efcc60e5f9054e",
+      "bytes": 2535,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/北京/长城连续墙身.svg",
+      "sourcePath": "buildings/北京/长城连续墙身.svg",
+      "sourceSha256": "de014759e9128d441e0f3b1ca213c540326de80321bb37eed09a5b3ec569f0b1",
+      "sha256": "de014759e9128d441e0f3b1ca213c540326de80321bb37eed09a5b3ec569f0b1",
+      "bytes": 19118,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/中景楼 A.svg",
+      "sourcePath": "buildings/深圳/中景楼 A.svg",
+      "sourceSha256": "f819a0361562c148dff7f60947c3090e734e9eb0b32494840cdf09ee72bd9d9a",
+      "sha256": "f819a0361562c148dff7f60947c3090e734e9eb0b32494840cdf09ee72bd9d9a",
+      "bytes": 3956,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/中景楼 B.svg",
+      "sourcePath": "buildings/深圳/中景楼 B.svg",
+      "sourceSha256": "6a02b5fb4aa32a1d9eef807f45e39b02c91d65d82a4417d06092188181fed6ac",
+      "sha256": "6a02b5fb4aa32a1d9eef807f45e39b02c91d65d82a4417d06092188181fed6ac",
+      "bytes": 3614,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/中景楼 C.svg",
+      "sourcePath": "buildings/深圳/中景楼 C.svg",
+      "sourceSha256": "817f903ebad9f00c342647df9f2863d4430c19dc45520b0ed560884c94918057",
+      "sha256": "817f903ebad9f00c342647df9f2863d4430c19dc45520b0ed560884c94918057",
+      "bytes": 4136,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/中景楼 D.svg",
+      "sourcePath": "buildings/深圳/中景楼 D.svg",
+      "sourceSha256": "d375f07b4c1a1c9978d747cde6ca39cdaf1509075931dbc5e3df6347c8373b45",
+      "sha256": "d375f07b4c1a1c9978d747cde6ca39cdaf1509075931dbc5e3df6347c8373b45",
+      "bytes": 3808,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/京基100.svg",
+      "sourcePath": "buildings/深圳/京基100.svg",
+      "sourceSha256": "e48c91359dac2036e563aa3d0866112372c61424c17b18bbb94e83af9fed3c02",
+      "sha256": "e48c91359dac2036e563aa3d0866112372c61424c17b18bbb94e83af9fed3c02",
+      "bytes": 8735,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/前景建筑台座.svg",
+      "sourcePath": "buildings/深圳/前景建筑台座.svg",
+      "sourceSha256": "644201df2bc4bb89bf7dcd7a72aedd5559ac871196c235bfb6316b36011cfc8e",
+      "sha256": "644201df2bc4bb89bf7dcd7a72aedd5559ac871196c235bfb6316b36011cfc8e",
+      "bytes": 3013,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/前景植物.svg",
+      "sourcePath": "buildings/深圳/前景植物.svg",
+      "sourceSha256": "30ec0e78fd8d9937b413364c8470f3ceca05ced426ba3160d3c08a9b2255c74f",
+      "sha256": "30ec0e78fd8d9937b413364c8470f3ceca05ced426ba3160d3c08a9b2255c74f",
+      "bytes": 5031,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/华润春笋.svg",
+      "sourcePath": "buildings/深圳/华润春笋.svg",
+      "sourceSha256": "bd279b40d711e88bab6e6200677acc9490f54acdd758466a50dc71f3124032bc",
+      "sha256": "bd279b40d711e88bab6e6200677acc9490f54acdd758466a50dc71f3124032bc",
+      "bytes": 12216,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/右侧桥梁.svg",
+      "sourcePath": "buildings/深圳/右侧桥梁.svg",
+      "sourceSha256": "d8321002ab385f4a294204c19217316343fb7a174a3a57152ee60bb91303d554",
+      "sha256": "d8321002ab385f4a294204c19217316343fb7a174a3a57152ee60bb91303d554",
+      "bytes": 3488,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/地王大厦・右塔.svg",
+      "sourcePath": "buildings/深圳/地王大厦・右塔.svg",
+      "sourceSha256": "0ee6c25bf7965045bc456fc00b748502e85bc80451dfc031b44b1180e69cdc55",
+      "sha256": "0ee6c25bf7965045bc456fc00b748502e85bc80451dfc031b44b1180e69cdc55",
+      "bytes": 10716,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/地王大厦・左塔.svg",
+      "sourcePath": "buildings/深圳/地王大厦・左塔.svg",
+      "sourceSha256": "b79b741c72f580c76d98b645b404e0e73ed64bad8b74c549c6f3c8ec1d07f217",
+      "sha256": "b79b741c72f580c76d98b645b404e0e73ed64bad8b74c549c6f3c8ec1d07f217",
+      "bytes": 10661,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/平安金融中心.svg",
+      "sourcePath": "buildings/深圳/平安金融中心.svg",
+      "sourceSha256": "5b77917b3f352ee5620f715c3cd6047927cbb6809f1ee352ec1b7ad31525b0bf",
+      "sha256": "5b77917b3f352ee5620f715c3cd6047927cbb6809f1ee352ec1b7ad31525b0bf",
+      "bytes": 7338,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/深圳市民中心.svg",
+      "sourcePath": "buildings/深圳/深圳市民中心.svg",
+      "sourceSha256": "1c726e8a78a21640e2fc9d883c1fbdde8f0fab2323feddfca0aff5fce1f41482",
+      "sha256": "1c726e8a78a21640e2fc9d883c1fbdde8f0fab2323feddfca0aff5fce1f41482",
+      "bytes": 17931,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "buildings/深圳/背景山线.svg",
+      "sourcePath": "buildings/深圳/背景山线.svg",
+      "sourceSha256": "0ade68a64b174bc37e8904f50179284e12c389fd704f20b33504dcd958582c61",
+      "sha256": "0ade68a64b174bc37e8904f50179284e12c389fd704f20b33504dcd958582c61",
+      "bytes": 1472,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/browser-verification.json",
+      "sourcePath": "review/browser-verification.json",
+      "sourceSha256": "9219ddb88591fe2294bcdc44dac58a85b6397100697b310bab22565a06ff6cbe",
+      "sha256": "9219ddb88591fe2294bcdc44dac58a85b6397100697b310bab22565a06ff6cbe",
+      "bytes": 1668,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/construction.json",
+      "sourcePath": "review/construction.json",
+      "sourceSha256": "1b634a67a8b59ba7d13d61f58275ee0c30fdc72ce9a34f6599886247a785d5fa",
+      "sha256": "1b634a67a8b59ba7d13d61f58275ee0c30fdc72ce9a34f6599886247a785d5fa",
+      "bytes": 47988,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/editing-verification.json",
+      "sourcePath": "review/editing-verification.json",
+      "sourceSha256": "49799e861e895e79d5357cffef970f33fef0709a0b218ef7e844310a50b2a78f",
+      "sha256": "49799e861e895e79d5357cffef970f33fef0709a0b218ef7e844310a50b2a78f",
+      "bytes": 692,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/render-verification.json",
+      "sourcePath": "review/render-verification.json",
+      "sourceSha256": "1eec18e2607f18de5c43736bacb72531f01893cdafe3c665132f41506b2b483b",
+      "sha256": "1eec18e2607f18de5c43736bacb72531f01893cdafe3c665132f41506b2b483b",
+      "bytes": 419,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/verification.json",
+      "sourcePath": "review/verification.json",
+      "sourceSha256": "916b097fec65a6e3eaca05379ff33ed189ee29a04e7bf925a0421edd97ede30d",
+      "sha256": "916b097fec65a6e3eaca05379ff33ed189ee29a04e7bf925a0421edd97ede30d",
+      "bytes": 7212,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-中国尊-对照.png",
+      "sourcePath": "review/北京-中国尊-对照.png",
+      "sourceSha256": "bdac3e183282543c1182489e2e5a051aaaf5b649d1287c0dbe44d228694133a3",
+      "sha256": "bdac3e183282543c1182489e2e5a051aaaf5b649d1287c0dbe44d228694133a3",
+      "bytes": 1135069,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-中国尊-控制柄.png",
+      "sourcePath": "review/北京-中国尊-控制柄.png",
+      "sourceSha256": "99a977bbdbc8cd34216127b1b9a636af0ab1a6e681f7cd20df396e935db18839",
+      "sha256": "99a977bbdbc8cd34216127b1b9a636af0ab1a6e681f7cd20df396e935db18839",
+      "bytes": 84665,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-中国尊.png",
+      "sourcePath": "review/北京-中国尊.png",
+      "sourceSha256": "06ae2fa39ab58fe8992a301e1f8539a85797f83095e24bb3a74465f0710c6feb",
+      "sha256": "06ae2fa39ab58fe8992a301e1f8539a85797f83095e24bb3a74465f0710c6feb",
+      "bytes": 71618,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-填色检查.png",
+      "sourcePath": "review/北京-填色检查.png",
+      "sourceSha256": "152ed86a741d3e6e19f5dea58a813941e8da8e48343f05d34b42671ae1d83b2d",
+      "sha256": "152ed86a741d3e6e19f5dea58a813941e8da8e48343f05d34b42671ae1d83b2d",
+      "bytes": 510241,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-填色检查.svg",
+      "sourcePath": "review/北京-填色检查.svg",
+      "sourceSha256": "ea9f12bec807d395ea982540238be7a6085fddb937351873b9361a3b23473939",
+      "sha256": "ea9f12bec807d395ea982540238be7a6085fddb937351873b9361a3b23473939",
+      "bytes": 164566,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-天坛整体-对照.png",
+      "sourcePath": "review/北京-天坛整体-对照.png",
+      "sourceSha256": "f00bca6543a4c568291d9ba6ce1a753bfa6fdd2d0197a171bf9e7ea21b833530",
+      "sha256": "f00bca6543a4c568291d9ba6ce1a753bfa6fdd2d0197a171bf9e7ea21b833530",
+      "bytes": 4281103,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-天坛整体-控制柄.png",
+      "sourcePath": "review/北京-天坛整体-控制柄.png",
+      "sourceSha256": "fed4a14ea3059d8f420791e759e801e9fde413fee237f041f2c6fea9a0e8f122",
+      "sha256": "fed4a14ea3059d8f420791e759e801e9fde413fee237f041f2c6fea9a0e8f122",
+      "bytes": 253984,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-天坛整体.png",
+      "sourcePath": "review/北京-天坛整体.png",
+      "sourceSha256": "b579f7d67cfb1f4fd2d2afe4904cd96984a0567554607e32a51b534d15ecb601",
+      "sha256": "b579f7d67cfb1f4fd2d2afe4904cd96984a0567554607e32a51b534d15ecb601",
+      "bytes": 223151,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-央视连续网格-400-对照.png",
+      "sourcePath": "review/北京-央视连续网格-400-对照.png",
+      "sourceSha256": "ba40b7f8fec6e7a39e958cbcfd5b4c8c52703a60c71cafac3e2a192414d9cbe8",
+      "sha256": "ba40b7f8fec6e7a39e958cbcfd5b4c8c52703a60c71cafac3e2a192414d9cbe8",
+      "bytes": 2591486,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-央视连续网格-400-控制柄.png",
+      "sourcePath": "review/北京-央视连续网格-400-控制柄.png",
+      "sourceSha256": "c70a65dee256382b9f1221cff22c9ceaee1b494fce2d341fd2e42925568e6f85",
+      "sha256": "c70a65dee256382b9f1221cff22c9ceaee1b494fce2d341fd2e42925568e6f85",
+      "bytes": 115608,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-央视连续网格-400.png",
+      "sourcePath": "review/北京-央视连续网格-400.png",
+      "sourceSha256": "c70a65dee256382b9f1221cff22c9ceaee1b494fce2d341fd2e42925568e6f85",
+      "sha256": "c70a65dee256382b9f1221cff22c9ceaee1b494fce2d341fd2e42925568e6f85",
+      "bytes": 115608,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐尖角-800-对照.png",
+      "sourcePath": "review/北京-屋檐尖角-800-对照.png",
+      "sourceSha256": "2bbf7dbbe8cd7d86b24629e69a211f0dbdfe91ba16243370537f9ddce379c317",
+      "sha256": "2bbf7dbbe8cd7d86b24629e69a211f0dbdfe91ba16243370537f9ddce379c317",
+      "bytes": 1794072,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐尖角-800-控制柄.png",
+      "sourcePath": "review/北京-屋檐尖角-800-控制柄.png",
+      "sourceSha256": "f28bb59b51717138ec96f189aec825d30a93692d28610c659da5dfbc6c3af1d3",
+      "sha256": "f28bb59b51717138ec96f189aec825d30a93692d28610c659da5dfbc6c3af1d3",
+      "bytes": 53761,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐尖角-800.png",
+      "sourcePath": "review/北京-屋檐尖角-800.png",
+      "sourceSha256": "fac6a1fd9e1ddbe2c10e0b7d7df3210c649b83e30f8d6ea632a8dcb33b97c73b",
+      "sha256": "fac6a1fd9e1ddbe2c10e0b7d7df3210c649b83e30f8d6ea632a8dcb33b97c73b",
+      "bytes": 45723,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐闭合-400-对照.png",
+      "sourcePath": "review/北京-屋檐闭合-400-对照.png",
+      "sourceSha256": "714e258a5a1833d52f1021e4ea5ddf333ef2b510fc6e45d00017ea0eff73e8fa",
+      "sha256": "714e258a5a1833d52f1021e4ea5ddf333ef2b510fc6e45d00017ea0eff73e8fa",
+      "bytes": 4334922,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐闭合-400-控制柄.png",
+      "sourcePath": "review/北京-屋檐闭合-400-控制柄.png",
+      "sourceSha256": "5cf6ac330caf59fb79888d88e92af1e9ca0248e8c98b5d650ffb9282406fea62",
+      "sha256": "5cf6ac330caf59fb79888d88e92af1e9ca0248e8c98b5d650ffb9282406fea62",
+      "bytes": 164523,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-屋檐闭合-400.png",
+      "sourcePath": "review/北京-屋檐闭合-400.png",
+      "sourceSha256": "a39b63b5b89ebd2fe0c7f5154ef7dd6e1066fde9728d9331f009ee79c9f36981",
+      "sha256": "a39b63b5b89ebd2fe0c7f5154ef7dd6e1066fde9728d9331f009ee79c9f36981",
+      "bytes": 145379,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-总览对照.png",
+      "sourcePath": "review/北京-总览对照.png",
+      "sourceSha256": "92169cb0f504af50434c4935cdc65b85e452775a4ee08d279ba2b96c4ce5b16c",
+      "sha256": "92169cb0f504af50434c4935cdc65b85e452775a4ee08d279ba2b96c4ce5b16c",
+      "bytes": 1460565,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-成品预览.png",
+      "sourcePath": "review/北京-成品预览.png",
+      "sourceSha256": "7b9ea6cf45b5251461492cbcb6039506a414a2d0d0190052f0d4b3531dd7a66f",
+      "sha256": "7b9ea6cf45b5251461492cbcb6039506a414a2d0d0190052f0d4b3531dd7a66f",
+      "bytes": 372870,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-控制柄.svg",
+      "sourcePath": "review/北京-控制柄.svg",
+      "sourceSha256": "e6687562bfed833be7d3ee9302d3084929bef52b63637cd562ccc8bed0206750",
+      "sha256": "e6687562bfed833be7d3ee9302d3084929bef52b63637cd562ccc8bed0206750",
+      "bytes": 313456,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-独立建筑一览.png",
+      "sourcePath": "review/北京-独立建筑一览.png",
+      "sourceSha256": "13ea99f8633e48ee9a194b2936276d7fa38e6723c8ddb9aaba82a23b75bf972d",
+      "sha256": "13ea99f8633e48ee9a194b2936276d7fa38e6723c8ddb9aaba82a23b75bf972d",
+      "bytes": 307012,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-白底预览.png",
+      "sourcePath": "review/北京-白底预览.png",
+      "sourceSha256": "9d2c7deeb1c6c1130b17b9a06f565b8d924515f37b6551bc7034594a6ae3a9d7",
+      "sha256": "9d2c7deeb1c6c1130b17b9a06f565b8d924515f37b6551bc7034594a6ae3a9d7",
+      "bytes": 473786,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-规则城墙-400-对照.png",
+      "sourcePath": "review/北京-规则城墙-400-对照.png",
+      "sourceSha256": "1b52821ea34979d0710237e07d1a4c9fe7a9c0211637dcbe670d434ae62db638",
+      "sha256": "1b52821ea34979d0710237e07d1a4c9fe7a9c0211637dcbe670d434ae62db638",
+      "bytes": 1601926,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-规则城墙-400-控制柄.png",
+      "sourcePath": "review/北京-规则城墙-400-控制柄.png",
+      "sourceSha256": "d5e0a0a5c4cc604221dd4eeabab74e8fb29474deb2f8edbcc83a5390e433e5ce",
+      "sha256": "d5e0a0a5c4cc604221dd4eeabab74e8fb29474deb2f8edbcc83a5390e433e5ce",
+      "bytes": 102791,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-规则城墙-400.png",
+      "sourcePath": "review/北京-规则城墙-400.png",
+      "sourceSha256": "c82c385485d297a48c0f45dbef74983fca09bf9af5b6aaf750427d1f6b533cac",
+      "sha256": "c82c385485d297a48c0f45dbef74983fca09bf9af5b6aaf750427d1f6b533cac",
+      "bytes": 54469,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-透明预览.png",
+      "sourcePath": "review/北京-透明预览.png",
+      "sourceSha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+      "sha256": "0de58689e0c20241524a45b572ee02a0d7a7af87480222fb40e60571d72a9263",
+      "bytes": 503034,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/北京-闭合轮廓.svg",
+      "sourcePath": "review/北京-闭合轮廓.svg",
+      "sourceSha256": "ea9f12bec807d395ea982540238be7a6085fddb937351873b9361a3b23473939",
+      "sha256": "ea9f12bec807d395ea982540238be7a6085fddb937351873b9361a3b23473939",
+      "bytes": 164566,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/浏览器-天坛控制柄.png",
+      "sourcePath": "review/浏览器-天坛控制柄.png",
+      "sourceSha256": "009611a6a06d3e7ee5b38937000fea52797dd97aa5bd039f63e9b04dcae93b00",
+      "sha256": "009611a6a06d3e7ee5b38937000fea52797dd97aa5bd039f63e9b04dcae93b00",
+      "bytes": 168091,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/浏览器-市民中心单栋.png",
+      "sourcePath": "review/浏览器-市民中心单栋.png",
+      "sourceSha256": "03c96948525b4a6cc38ad4b5912cee42b4313b22bb8a1c4dad46f844a1d5822d",
+      "sha256": "03c96948525b4a6cc38ad4b5912cee42b4313b22bb8a1c4dad46f844a1d5822d",
+      "bytes": 105148,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/浏览器-最终城墙单栋.png",
+      "sourcePath": "review/浏览器-最终城墙单栋.png",
+      "sourceSha256": "c86a145c9a7e854a5ec672d86202d4bef7429e70c07e050ff972c04c86df6f55",
+      "sha256": "c86a145c9a7e854a5ec672d86202d4bef7429e70c07e050ff972c04c86df6f55",
+      "bytes": 94566,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/浏览器-最终填色模式.png",
+      "sourcePath": "review/浏览器-最终填色模式.png",
+      "sourceSha256": "b44f22b764b5157b7a702a1d64b383ea880907648cf4e0af15467f592a803494",
+      "sha256": "b44f22b764b5157b7a702a1d64b383ea880907648cf4e0af15467f592a803494",
+      "bytes": 89684,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/浏览器-最终总览.png",
+      "sourcePath": "review/浏览器-最终总览.png",
+      "sourceSha256": "cbf0d01ac822c99a4df0f48118ed722a2ac5736ef278c4df5d884a5b4082809c",
+      "sha256": "cbf0d01ac822c99a4df0f48118ed722a2ac5736ef278c4df5d884a5b4082809c",
+      "bytes": 187604,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-填色检查.png",
+      "sourcePath": "review/深圳-填色检查.png",
+      "sourceSha256": "0523088575e7c3407632fce2b0a71f5451acafe1bb36413f8af3a0b25e904535",
+      "sha256": "0523088575e7c3407632fce2b0a71f5451acafe1bb36413f8af3a0b25e904535",
+      "bytes": 438954,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-填色检查.svg",
+      "sourcePath": "review/深圳-填色检查.svg",
+      "sourceSha256": "b6884bf3d8dcd0912ff25a89c25f95c405c62a5c4b5f8e655a4c1c33197cf8fd",
+      "sha256": "b6884bf3d8dcd0912ff25a89c25f95c405c62a5c4b5f8e655a4c1c33197cf8fd",
+      "bytes": 89390,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖中部-400-对照.png",
+      "sourcePath": "review/深圳-屋盖中部-400-对照.png",
+      "sourceSha256": "687f03e5adc27461f99b00d2d76a94f50565fe259f1cb2011ff6d2c077fafa4a",
+      "sha256": "687f03e5adc27461f99b00d2d76a94f50565fe259f1cb2011ff6d2c077fafa4a",
+      "bytes": 2239092,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖中部-400-控制柄.png",
+      "sourcePath": "review/深圳-屋盖中部-400-控制柄.png",
+      "sourceSha256": "ddf91615972538a61877342775a026e1be00908ba9fcd1afaf97eb33f051c1fd",
+      "sha256": "ddf91615972538a61877342775a026e1be00908ba9fcd1afaf97eb33f051c1fd",
+      "bytes": 70116,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖中部-400.png",
+      "sourcePath": "review/深圳-屋盖中部-400.png",
+      "sourceSha256": "9ce0a95cfd2c0c50c91916d7e3b6a5944ec30e71a400803e2476ffa00c285702",
+      "sha256": "9ce0a95cfd2c0c50c91916d7e3b6a5944ec30e71a400803e2476ffa00c285702",
+      "bytes": 55624,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖尖角-400-对照.png",
+      "sourcePath": "review/深圳-屋盖尖角-400-对照.png",
+      "sourceSha256": "a658a690dc418c5c4f4f29104f04cc3cdba9174c034a6ef2b3fdd38f2cdfff63",
+      "sha256": "a658a690dc418c5c4f4f29104f04cc3cdba9174c034a6ef2b3fdd38f2cdfff63",
+      "bytes": 2134402,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖尖角-400-控制柄.png",
+      "sourcePath": "review/深圳-屋盖尖角-400-控制柄.png",
+      "sourceSha256": "71da82d48e688dfa07525ab175d584fafa3fd51bd52fb431bcf820d84291ea9c",
+      "sha256": "71da82d48e688dfa07525ab175d584fafa3fd51bd52fb431bcf820d84291ea9c",
+      "bytes": 67089,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-屋盖尖角-400.png",
+      "sourcePath": "review/深圳-屋盖尖角-400.png",
+      "sourceSha256": "1b03f18224b52e08c2c7fd024a16b046c5183eb218556061e707c470b34e3158",
+      "sha256": "1b03f18224b52e08c2c7fd024a16b046c5183eb218556061e707c470b34e3158",
+      "bytes": 57317,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-总览对照.png",
+      "sourcePath": "review/深圳-总览对照.png",
+      "sourceSha256": "35a4cfdd65a194df09da7cbfc582d0d5cd919e0edf4ad69eb5a42b06692f9f3d",
+      "sha256": "35a4cfdd65a194df09da7cbfc582d0d5cd919e0edf4ad69eb5a42b06692f9f3d",
+      "bytes": 1923474,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-成品预览.png",
+      "sourcePath": "review/深圳-成品预览.png",
+      "sourceSha256": "626fe13652e21868a12c35dc253e65c5f4aafd4f5b697b511e1d6b0d4c765e18",
+      "sha256": "626fe13652e21868a12c35dc253e65c5f4aafd4f5b697b511e1d6b0d4c765e18",
+      "bytes": 318032,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-控制柄.svg",
+      "sourcePath": "review/深圳-控制柄.svg",
+      "sourceSha256": "5a5c7b69bd0698004c5bfa748c6b69f64455a3d2e740fb012ef256119cbd4b3c",
+      "sha256": "5a5c7b69bd0698004c5bfa748c6b69f64455a3d2e740fb012ef256119cbd4b3c",
+      "bytes": 157037,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-春笋幕墙-对照.png",
+      "sourcePath": "review/深圳-春笋幕墙-对照.png",
+      "sourceSha256": "7e6252b129db62b1f2197d494d192bd73cb7f467ba72d9dbf2becb07a32838de",
+      "sha256": "7e6252b129db62b1f2197d494d192bd73cb7f467ba72d9dbf2becb07a32838de",
+      "bytes": 1917800,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-春笋幕墙-控制柄.png",
+      "sourcePath": "review/深圳-春笋幕墙-控制柄.png",
+      "sourceSha256": "44e166a8f6edd7fd345a1ec07e2d87b7ec0edf3b54ed4a2def2f77b10ea6ac7f",
+      "sha256": "44e166a8f6edd7fd345a1ec07e2d87b7ec0edf3b54ed4a2def2f77b10ea6ac7f",
+      "bytes": 110943,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-春笋幕墙.png",
+      "sourcePath": "review/深圳-春笋幕墙.png",
+      "sourceSha256": "4754ddb9d020e37fd20c715bc2316b1c7fa80027aa7970570ed50ac933d2ff45",
+      "sha256": "4754ddb9d020e37fd20c715bc2316b1c7fa80027aa7970570ed50ac933d2ff45",
+      "bytes": 110550,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-独立建筑一览.png",
+      "sourcePath": "review/深圳-独立建筑一览.png",
+      "sourceSha256": "ee0edfd69f323e4cf4f8ec081cc96669044e0670177d319a85117a622f96a563",
+      "sha256": "ee0edfd69f323e4cf4f8ec081cc96669044e0670177d319a85117a622f96a563",
+      "bytes": 252694,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-白底预览.png",
+      "sourcePath": "review/深圳-白底预览.png",
+      "sourceSha256": "6c4503845c0594232ffbb85402b67a16b403180363b8b6b876781ee418380415",
+      "sha256": "6c4503845c0594232ffbb85402b67a16b403180363b8b6b876781ee418380415",
+      "bytes": 406166,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-透明预览.png",
+      "sourcePath": "review/深圳-透明预览.png",
+      "sourceSha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+      "sha256": "540ee8c09b8caad31b8c6f1c50205ecc40a3e2df6c649ee09a494a89cf603f2b",
+      "bytes": 424905,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-闭合轮廓.svg",
+      "sourcePath": "review/深圳-闭合轮廓.svg",
+      "sourceSha256": "b6884bf3d8dcd0912ff25a89c25f95c405c62a5c4b5f8e655a4c1c33197cf8fd",
+      "sha256": "b6884bf3d8dcd0912ff25a89c25f95c405c62a5c4b5f8e655a4c1c33197cf8fd",
+      "bytes": 89390,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-高楼长轮廓-对照.png",
+      "sourcePath": "review/深圳-高楼长轮廓-对照.png",
+      "sourceSha256": "8c56949389244dd9b1bdc94d793029ba5e9dd478ca7c9bfeaf1aa388155da6a0",
+      "sha256": "8c56949389244dd9b1bdc94d793029ba5e9dd478ca7c9bfeaf1aa388155da6a0",
+      "bytes": 1308796,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-高楼长轮廓-控制柄.png",
+      "sourcePath": "review/深圳-高楼长轮廓-控制柄.png",
+      "sourceSha256": "4784f419a358006b2c3cdd50c8f6e622210000b12db9a7cd82551da1e1abe2e1",
+      "sha256": "4784f419a358006b2c3cdd50c8f6e622210000b12db9a7cd82551da1e1abe2e1",
+      "bytes": 91012,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "review/深圳-高楼长轮廓.png",
+      "sourcePath": "review/深圳-高楼长轮廓.png",
+      "sourceSha256": "e5399043744f07d605c6de14db8e7b27cf8764617dced9b72266235d9dfd0c5f",
+      "sha256": "e5399043744f07d605c6de14db8e7b27cf8764617dced9b72266235d9dfd0c5f",
+      "bytes": 83982,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "source-reference/北京@2x.png",
+      "sourcePath": "source-reference/北京@2x.png",
+      "sourceSha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c",
+      "sha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c",
+      "bytes": 2499457,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "source-reference/深圳@2x.png",
+      "sourcePath": "source-reference/深圳@2x.png",
+      "sourceSha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2",
+      "sha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2",
+      "bytes": 3956224,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "北京-独立闭合.svg",
+      "sourcePath": "北京-独立闭合.svg",
+      "sourceSha256": "34d921bfd15d3d6f9f210a1c756015e0d15e76e9135fb522e181a7ec744dbd21",
+      "sha256": "34d921bfd15d3d6f9f210a1c756015e0d15e76e9135fb522e181a7ec744dbd21",
+      "bytes": 167841,
+      "geometryUnchanged": true
+    },
+    {
+      "path": "index.html",
+      "sourcePath": "查看独立建筑.html",
+      "sourceSha256": "bc66d21dfbdc75e968daa407b7d6a4ebd6c6c39ae868fd0d06be2e7bd4f32100",
+      "sha256": "8e4c3bf0c77a076239fe0ea73fdde5fb192e311c561390c65cd8117a1e263a02",
+      "bytes": 510517,
+      "geometryUnchanged": false
+    },
+    {
+      "path": "深圳-独立闭合.svg",
+      "sourcePath": "深圳-独立闭合.svg",
+      "sourceSha256": "00ee3a554a0ff04c0ce45b7db31a4f363e5aa26342fba39a91c3de4a4987049f",
+      "sha256": "00ee3a554a0ff04c0ce45b7db31a4f363e5aa26342fba39a91c3de4a4987049f",
+      "bytes": 98075,
+      "geometryUnchanged": true
+    }
+  ],
+  "independentObjects": 22,
+  "geometryFilesByteIdentical": true
+}

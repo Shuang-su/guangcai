@@ -1,0 +1,19 @@
+/coverage/*
+  Cache-Control: no-cache
+
+/dev-assets/*.json
+  Cache-Control: no-cache
+
+/label-compare/data.json
+  Cache-Control: no-cache
+
+/releases/*
+  Access-Control-Allow-Origin: *
+  Timing-Allow-Origin: *
+  Cache-Control: public, max-age=31536000, immutable
+
+/api/*
+  Cache-Control: no-cache
+
+/runtime-config.js
+  Cache-Control: no-cache
