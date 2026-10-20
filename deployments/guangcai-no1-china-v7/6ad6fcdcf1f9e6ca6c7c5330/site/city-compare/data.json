@@ -1,0 +1,3046 @@
+{
+  "title": "23城图案逐项对比",
+  "beforeVersion": "V7.1.3 / v7-4",
+  "afterVersion": "V7.1.4 / v7-5",
+  "scope": "同一应用、相机和参数；原稿预览提取附件金线，不公开PSD或原件下载；杯身图是自动化渲染证据。",
+  "thresholds": "边界和底部使用描线通道>127；原稿预览边界使用金色差分>70。IoU对细线位移敏感，不作为质量分数。",
+  "cityCount": 23,
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          152,
+          294,
+          3366,
+          1625
+        ],
+        "afterBounds": [
+          159,
+          314,
+          3354,
+          1630
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 3034686,
+        "inkChangedPixels": 340083,
+        "rawInkIoU": 0.3815244611028365,
+        "beforeSha256": "09cbf3e23763d0c84210f3c9f0ffc4e7f33dd17cb761af845e4ad78e68c661ec",
+        "afterSha256": "59feabc471e99540bff56cbe2f2d3017bc42ad05723801280c12464def953101"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            80,
+            157,
+            777,
+            445
+          ],
+          "afterBounds": [
+            83,
+            161,
+            773,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.282287896265065,
+          "registeredLineIoU": 0.24832526621490802,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 46884,
+          "coveragePixelsAfter": 46698
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            161,
+            314,
+            1554,
+            890
+          ],
+          "afterBounds": [
+            166,
+            322,
+            1547,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.32908030413498596,
+          "registeredLineIoU": 0.28521357277387777,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 187325,
+          "coveragePixelsAfter": 186502
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            324,
+            627,
+            3108,
+            1780
+          ],
+          "afterBounds": [
+            331,
+            644,
+            3096,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.3533412774573179,
+          "registeredLineIoU": 0.3285197061099422,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 750838,
+          "coveragePixelsAfter": 745474
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/shanghai-source-before.webp",
+        "sourceAfter": "images/shanghai-source-after.webp",
+        "flatBefore": "images/shanghai-flat-before.webp",
+        "flatAfter": "images/shanghai-flat-after.webp",
+        "overlay": "images/shanghai-overlay.webp",
+        "bottomBefore": "images/shanghai-bottom-before.webp",
+        "bottomAfter": "images/shanghai-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "主体建筑组合保留，整体略收窄并下移。原稿左界+7px、右界-12px；最高点下移20px，底部延至画板末行。",
+        "东方明珠、摩天楼和坡线按新版附件提取，未以拉伸杯身几何代替图案调整。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          22,
+          361,
+          3760,
+          1624
+        ],
+        "afterBounds": [
+          22,
+          361,
+          3760,
+          1624
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee",
+        "afterSha256": "d8fd7c817c05a22fd58b7c7596690b3d114ae84fb8da22f167977a495b2263ee"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            52,
+            172,
+            862,
+            445
+          ],
+          "afterBounds": [
+            52,
+            173,
+            862,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5868249911023393,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 56246,
+          "coveragePixelsAfter": 56246
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            105,
+            343,
+            1724,
+            891
+          ],
+          "afterBounds": [
+            105,
+            344,
+            1724,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7566097182161082,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 226324,
+          "coveragePixelsAfter": 226324
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            211,
+            686,
+            3449,
+            1781
+          ],
+          "afterBounds": [
+            211,
+            688,
+            3449,
+            1783
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.7531288123831802,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 901563,
+          "coveragePixelsAfter": 901563
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/urumqi-source-before.webp",
+        "sourceAfter": "images/urumqi-source-after.webp",
+        "flatBefore": "images/urumqi-flat-before.webp",
+        "flatAfter": "images/urumqi-flat-after.webp",
+        "overlay": "images/urumqi-overlay.webp",
+        "bottomBefore": "images/urumqi-bottom-before.webp",
+        "bottomAfter": "images/urumqi-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "尖塔逐层外檐和高塔外侧留白正常，门窗、塔体及树丛完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、2→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          137,
+          536,
+          3731,
+          1625
+        ],
+        "afterBounds": [
+          137,
+          536,
+          3731,
+          1625
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 2938,
+        "inkChangedPixels": 701,
+        "rawInkIoU": 0.998921749135169,
+        "beforeSha256": "b0822fd50878bc23dc988186a9b1c0c21b28171ce9a5eb45115120068b49c25e",
+        "afterSha256": "a7774571b5fb6a865f8caf434d2cbc0f59e2096bb02e167b348d23c831c6cd6c"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            77,
+            209,
+            856,
+            445
+          ],
+          "afterBounds": [
+            78,
+            210,
+            855,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.44557422669378144,
+          "registeredLineIoU": 0.5934873020086718,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 74707,
+          "coveragePixelsAfter": 74629
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            155,
+            418,
+            1712,
+            890
+          ],
+          "afterBounds": [
+            156,
+            421,
+            1711,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.5250461339080703,
+          "registeredLineIoU": 0.7219350426262884,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 298627,
+          "coveragePixelsAfter": 298579
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            311,
+            836,
+            3424,
+            1780
+          ],
+          "afterBounds": [
+            312,
+            841,
+            3423,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.516649818687813,
+          "registeredLineIoU": 0.803215394036264,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1196476,
+          "coveragePixelsAfter": 1190397
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/beijing-source-before.webp",
+        "sourceAfter": "images/beijing-source-after.webp",
+        "flatBefore": "images/beijing-flat-before.webp",
+        "flatAfter": "images/beijing-flat-after.webp",
+        "overlay": "images/beijing-overlay.webp",
+        "bottomBefore": "images/beijing-bottom-before.webp",
+        "bottomAfter": "images/beijing-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "原稿外框和描线范围完全相同，仅2938个RGBA像素有变化，二值金线701个像素不同；属于局部细线变化，不是整体构图重做。",
+        "祈年殿、长城和塔楼组合保留。精细档另把实色描线下移1px，修正上一轮只计算抗锯齿覆盖的底边。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          51,
+          295,
+          3568,
+          1626
+        ],
+        "afterBounds": [
+          51,
+          295,
+          3568,
+          1626
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce",
+        "afterSha256": "36720d832588c3c0bf220854e04d8636ee434a4830a9966cb3a09191357dd0ce"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            58,
+            157,
+            820,
+            445
+          ],
+          "afterBounds": [
+            58,
+            158,
+            820,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5004531917648583,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 61192,
+          "coveragePixelsAfter": 61192
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            117,
+            314,
+            1641,
+            891
+          ],
+          "afterBounds": [
+            117,
+            315,
+            1641,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6817568060725494,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 246285,
+          "coveragePixelsAfter": 246285
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            237,
+            627,
+            3283,
+            1780
+          ],
+          "afterBounds": [
+            237,
+            630,
+            3283,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.5639748312433595,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 981119,
+          "coveragePixelsAfter": 981119
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/nanjing-source-before.webp",
+        "sourceAfter": "images/nanjing-source-after.webp",
+        "flatBefore": "images/nanjing-flat-before.webp",
+        "flatAfter": "images/nanjing-flat-after.webp",
+        "overlay": "images/nanjing-overlay.webp",
+        "bottomBefore": "images/nanjing-bottom-before.webp",
+        "bottomAfter": "images/nanjing-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "城楼外檐与左塔挑檐外部留白；墙面和山坡完整，标准档1像素候选位于边缘。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          0,
+          603,
+          3710,
+          1626
+        ],
+        "afterBounds": [
+          0,
+          603,
+          3710,
+          1626
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e",
+        "afterSha256": "45e8110dc39a6b97969559f7f96d23b3baa12c2b9644baf9e32df490a807b01e"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            47,
+            224,
+            851,
+            445
+          ],
+          "afterBounds": [
+            47,
+            225,
+            851,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5525798803206503,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 76922,
+          "coveragePixelsAfter": 76922
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            95,
+            447,
+            1703,
+            891
+          ],
+          "afterBounds": [
+            95,
+            448,
+            1703,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7268399529012572,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 309201,
+          "coveragePixelsAfter": 309201
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            193,
+            894,
+            3406,
+            1780
+          ],
+          "afterBounds": [
+            193,
+            897,
+            3406,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6189190881950306,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1232583,
+          "coveragePixelsAfter": 1232583
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/nanchang-source-before.webp",
+        "sourceAfter": "images/nanchang-source-after.webp",
+        "flatBefore": "images/nanchang-flat-before.webp",
+        "flatAfter": "images/nanchang-flat-after.webp",
+        "overlay": "images/nanchang-overlay.webp",
+        "bottomBefore": "images/nanchang-bottom-before.webp",
+        "bottomAfter": "images/nanchang-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "摩天轮外缘/吊舱间、塔楼外檐为外部留白；轮盘、建筑内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          31,
+          270,
+          3808,
+          1630
+        ],
+        "afterBounds": [
+          31,
+          270,
+          3808,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717",
+        "afterSha256": "0133c52e0ddad1fb51d0b9fd6a12fd7585300c9e4095565df724065a758d7717"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            54,
+            151,
+            872,
+            445
+          ],
+          "afterBounds": [
+            54,
+            152,
+            872,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6478939633419294,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 75164,
+          "coveragePixelsAfter": 75164
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            109,
+            301,
+            1745,
+            891
+          ],
+          "afterBounds": [
+            109,
+            302,
+            1745,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7938138032664218,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 302090,
+          "coveragePixelsAfter": 302090
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            219,
+            602,
+            3491,
+            1780
+          ],
+          "afterBounds": [
+            219,
+            605,
+            3491,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.7075712676354646,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1203940,
+          "coveragePixelsAfter": 1203940
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/xiamen-source-before.webp",
+        "sourceAfter": "images/xiamen-source-after.webp",
+        "flatBefore": "images/xiamen-flat-before.webp",
+        "flatAfter": "images/xiamen-flat-after.webp",
+        "overlay": "images/xiamen-overlay.webp",
+        "bottomBefore": "images/xiamen-bottom-before.webp",
+        "bottomAfter": "images/xiamen-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "确认建筑后方树丛开口漏填；建筑与双子塔之间狭缝属于楼间天空，低清封闭候选不填。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "hohhot",
+      "name": "呼和浩特",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          0,
+          771,
+          3878,
+          1630
+        ],
+        "afterBounds": [
+          0,
+          771,
+          3878,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107",
+        "afterSha256": "ff23c3f588e4161e0cece213055dfa3080406d4e57a676daf4163d76dae8a107"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            47,
+            259,
+            888,
+            445
+          ],
+          "afterBounds": [
+            47,
+            260,
+            888,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6209730665027434,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 70094,
+          "coveragePixelsAfter": 70094
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            95,
+            518,
+            1775,
+            890
+          ],
+          "afterBounds": [
+            95,
+            520,
+            1775,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.6219277850920194,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 280443,
+          "coveragePixelsAfter": 280443
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            193,
+            1036,
+            3551,
+            1780
+          ],
+          "afterBounds": [
+            193,
+            1039,
+            3551,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6941644480806975,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1123939,
+          "coveragePixelsAfter": 1123939
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/hohhot-source-before.webp",
+        "sourceAfter": "images/hohhot-source-after.webp",
+        "flatBefore": "images/hohhot-flat-before.webp",
+        "flatAfter": "images/hohhot-flat-after.webp",
+        "overlay": "images/hohhot-overlay.webp",
+        "bottomBefore": "images/hohhot-bottom-before.webp",
+        "bottomAfter": "images/hohhot-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "五塔各层挑檐外侧和屋顶装饰间隙为外部天空；庙宇内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "harbin",
+      "name": "哈尔滨",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          150,
+          293,
+          3475,
+          1630
+        ],
+        "afterBounds": [
+          150,
+          293,
+          3475,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af",
+        "afterSha256": "d413b59e3833402170333229503ac863aced6ee4f9cd867096a3684f14e639af"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            81,
+            156,
+            799,
+            445
+          ],
+          "afterBounds": [
+            81,
+            157,
+            799,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5399015122411204,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 53278,
+          "coveragePixelsAfter": 53278
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            162,
+            311,
+            1599,
+            890
+          ],
+          "afterBounds": [
+            162,
+            313,
+            1599,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.5334367414184434,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 212983,
+          "coveragePixelsAfter": 212983
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            323,
+            622,
+            3201,
+            1780
+          ],
+          "afterBounds": [
+            323,
+            625,
+            3201,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6191017043834619,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 854079,
+          "coveragePixelsAfter": 854079
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/harbin-source-before.webp",
+        "sourceAfter": "images/harbin-source-after.webp",
+        "flatBefore": "images/harbin-flat-before.webp",
+        "flatAfter": "images/harbin-flat-after.webp",
+        "overlay": "images/harbin-overlay.webp",
+        "bottomBefore": "images/harbin-bottom-before.webp",
+        "bottomAfter": "images/harbin-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "电视塔收分外侧、教堂穹顶外部与十字架两侧保留天空；墙面完整。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          34,
+          321,
+          3838,
+          1629
+        ],
+        "afterBounds": [
+          51,
+          300,
+          3818,
+          1630
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 4490364,
+        "inkChangedPixels": 1005396,
+        "rawInkIoU": 0.22367619431491506,
+        "beforeSha256": "02338f1c8fff7f4eb2ff900b95ab1e89fae7186baa63329d402383b7eae28a5c",
+        "afterSha256": "9322fe3ae9a5b809aab44befd84efb3d7fb9d00f6c5f7971bb57c9108d21f23a"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            55,
+            162,
+            879,
+            445
+          ],
+          "afterBounds": [
+            59,
+            158,
+            875,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.201519023282226,
+          "registeredLineIoU": 0.20181760090880047,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 90151,
+          "coveragePixelsAfter": 92938
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            111,
+            323,
+            1758,
+            890
+          ],
+          "afterBounds": [
+            119,
+            316,
+            1749,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.1979919427596495,
+          "registeredLineIoU": 0.1969815294952407,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 360470,
+          "coveragePixelsAfter": 371648
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            223,
+            646,
+            3517,
+            1780
+          ],
+          "afterBounds": [
+            237,
+            632,
+            3499,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.19569865620300275,
+          "registeredLineIoU": 0.20496451057555895,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1443650,
+          "coveragePixelsAfter": 1482454
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/tianjin-source-before.webp",
+        "sourceAfter": "images/tianjin-source-after.webp",
+        "flatBefore": "images/tianjin-flat-before.webp",
+        "flatAfter": "images/tianjin-flat-after.webp",
+        "overlay": "images/tianjin-overlay.webp",
+        "bottomBefore": "images/tianjin-bottom-before.webp",
+        "bottomAfter": "images/tianjin-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "构图有明显更新：左侧世纪钟替换为西式楼群；摩天轮周边与右侧桥架也更新。",
+        "最高点从原稿321px上移至300px；按新附件的楼群、轮盘与桥梁描线生成，非简单平移旧贴图。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          36,
+          340,
+          3842,
+          1630
+        ],
+        "afterBounds": [
+          36,
+          340,
+          3842,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299",
+        "afterSha256": "bc74b73f89206edf7663557c27c6904fc5ee74e150e7e03030115f1a86c66299"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            55,
+            166,
+            880,
+            445
+          ],
+          "afterBounds": [
+            55,
+            167,
+            880,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6452273658336747,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 65489,
+          "coveragePixelsAfter": 65489
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            111,
+            331,
+            1760,
+            891
+          ],
+          "afterBounds": [
+            111,
+            332,
+            1760,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7709891965589553,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 263496,
+          "coveragePixelsAfter": 263496
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            223,
+            662,
+            3520,
+            1780
+          ],
+          "afterBounds": [
+            223,
+            665,
+            3520,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6798483621984817,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1049464,
+          "coveragePixelsAfter": 1049464
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/taiyuan-source-before.webp",
+        "sourceAfter": "images/taiyuan-source-after.webp",
+        "flatBefore": "images/taiyuan-flat-before.webp",
+        "flatAfter": "images/taiyuan-flat-after.webp",
+        "overlay": "images/taiyuan-overlay.webp",
+        "bottomBefore": "images/taiyuan-bottom-before.webp",
+        "bottomAfter": "images/taiyuan-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "双塔挑檐两侧及小亭檐下为外部天空；塔层与墙面完整。低清候选处于轮廓边缘。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          64,
+          257,
+          3339,
+          1630
+        ],
+        "afterBounds": [
+          120,
+          257,
+          3388,
+          1628
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 5300060,
+        "inkChangedPixels": 557473,
+        "rawInkIoU": 0.24581729631007543,
+        "beforeSha256": "7fca8585c5931d47e5d4592115e31fd0c475829e3cb16cba96563439ce602de6",
+        "afterSha256": "c05ed4e8969daa9e6449c3a7a3a8572c98724e8d7dac366898647868c23e8521"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            61,
+            148,
+            770,
+            445
+          ],
+          "afterBounds": [
+            75,
+            149,
+            781,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.184451971455819,
+          "registeredLineIoU": 0.20938822107313143,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 49238,
+          "coveragePixelsAfter": 49137
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            123,
+            295,
+            1542,
+            890
+          ],
+          "afterBounds": [
+            149,
+            298,
+            1563,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.1906805294530437,
+          "registeredLineIoU": 0.21322725666335177,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 196877,
+          "coveragePixelsAfter": 196633
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            248,
+            591,
+            3084,
+            1780
+          ],
+          "afterBounds": [
+            297,
+            596,
+            3126,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.19002569188589674,
+          "registeredLineIoU": 0.2084382204625624,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 789395,
+          "coveragePixelsAfter": 786257
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/guangzhou-source-before.webp",
+        "sourceAfter": "images/guangzhou-source-after.webp",
+        "flatBefore": "images/guangzhou-flat-before.webp",
+        "flatAfter": "images/guangzhou-flat-after.webp",
+        "overlay": "images/guangzhou-overlay.webp",
+        "bottomBefore": "images/guangzhou-bottom-before.webp",
+        "bottomAfter": "images/guangzhou-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "五羊与高楼组合保留，整体向右约50px：原稿左界+56px、右界+49px，顶部257px不变。",
+        "底部原稿空白2px在注册时去除；建筑填色与法线随描线同步，不改变杯身模型。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          0,
+          244,
+          3760,
+          1626
+        ],
+        "afterBounds": [
+          0,
+          244,
+          3760,
+          1626
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817",
+        "afterSha256": "3e3d3d52d242590e607b35ce597eb65f97f8020378d1002298c59a07a4c59817"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            47,
+            146,
+            862,
+            445
+          ],
+          "afterBounds": [
+            47,
+            147,
+            862,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6535417556073693,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 60342,
+          "coveragePixelsAfter": 60342
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            95,
+            292,
+            1724,
+            891
+          ],
+          "afterBounds": [
+            95,
+            293,
+            1724,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7940811498460028,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 242828,
+          "coveragePixelsAfter": 242828
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            192,
+            583,
+            3449,
+            1780
+          ],
+          "afterBounds": [
+            192,
+            586,
+            3449,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.7107121899401618,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 967147,
+          "coveragePixelsAfter": 967147
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/chengdu-source-before.webp",
+        "sourceAfter": "images/chengdu-source-after.webp",
+        "flatBefore": "images/chengdu-flat-before.webp",
+        "flatAfter": "images/chengdu-flat-after.webp",
+        "overlay": "images/chengdu-overlay.webp",
+        "bottomBefore": "images/chengdu-bottom-before.webp",
+        "bottomAfter": "images/chengdu-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "候选集中于亭台外檐与后方树丛之间的外部天空；缩图闭合的狭小天空仍保留。桥拱内部已实填。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          11,
+          549,
+          3878,
+          1626
+        ],
+        "afterBounds": [
+          11,
+          549,
+          3878,
+          1626
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 5,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "ac8230f3e60a5d3afc2d4b2df211bc7a2b2d9327aca897f4a1ef20b9ffbe092f",
+        "afterSha256": "c87bf92701b919014d0de31113aa627427989144ede5bbe9e124efce21244a14"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            50,
+            212,
+            888,
+            445
+          ],
+          "afterBounds": [
+            50,
+            213,
+            888,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.626689925861317,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 60748,
+          "coveragePixelsAfter": 60748
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            100,
+            424,
+            1775,
+            890
+          ],
+          "afterBounds": [
+            100,
+            426,
+            1775,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.6080208883412545,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 242778,
+          "coveragePixelsAfter": 242778
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            202,
+            847,
+            3551,
+            1780
+          ],
+          "afterBounds": [
+            202,
+            850,
+            3551,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6765080109954466,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 973574,
+          "coveragePixelsAfter": 973574
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/jingdezhen-source-before.webp",
+        "sourceAfter": "images/jingdezhen-source-after.webp",
+        "flatBefore": "images/jingdezhen-flat-before.webp",
+        "flatAfter": "images/jingdezhen-flat-after.webp",
+        "overlay": "images/jingdezhen-overlay.webp",
+        "bottomBefore": "images/jingdezhen-bottom-before.webp",
+        "bottomAfter": "images/jingdezhen-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "文件变化仅涉及5个RGBA像素；二值金线和描线范围完全相同。",
+        "沿用已审查的厂房、楼阁、窑体描线与填色；注册后描线IoU为100%，不因重新提取制造额外线宽差异。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          20,
+          433,
+          3690,
+          1628
+        ],
+        "afterBounds": [
+          20,
+          433,
+          3690,
+          1628
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0",
+        "afterSha256": "5090a27beb74d9eafa84aa6fb15507671de743f4c63780f02f4f2f1c02d2bfb0"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            51,
+            186,
+            847,
+            445
+          ],
+          "afterBounds": [
+            51,
+            187,
+            847,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6109905175368445,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 72482,
+          "coveragePixelsAfter": 72482
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            104,
+            372,
+            1694,
+            890
+          ],
+          "afterBounds": [
+            104,
+            374,
+            1694,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.6089747247104468,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 290001,
+          "coveragePixelsAfter": 290001
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            210,
+            744,
+            3388,
+            1780
+          ],
+          "afterBounds": [
+            210,
+            747,
+            3388,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6730219415201215,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1160949,
+          "coveragePixelsAfter": 1160949
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/hangzhou-source-before.webp",
+        "sourceAfter": "images/hangzhou-source-after.webp",
+        "flatBefore": "images/hangzhou-flat-before.webp",
+        "flatAfter": "images/hangzhou-flat-after.webp",
+        "overlay": "images/hangzhou-overlay.webp",
+        "bottomBefore": "images/hangzhou-bottom-before.webp",
+        "bottomAfter": "images/hangzhou-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "U形楼中央开口是外部天空；楼体、桥体、体育场内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          28,
+          234,
+          3811,
+          1630
+        ],
+        "afterBounds": [
+          28,
+          234,
+          3811,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9",
+        "afterSha256": "a250e6789de3f7936020c3e88b1b63ad81a62cb748ab7fc0bee655caa50185f9"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            53,
+            143,
+            873,
+            445
+          ],
+          "afterBounds": [
+            53,
+            144,
+            873,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5750234698784146,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 74143,
+          "coveragePixelsAfter": 74143
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            107,
+            286,
+            1746,
+            891
+          ],
+          "afterBounds": [
+            107,
+            287,
+            1746,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7511874684183931,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 298088,
+          "coveragePixelsAfter": 298088
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            217,
+            571,
+            3493,
+            1780
+          ],
+          "afterBounds": [
+            217,
+            574,
+            3493,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.648467926517993,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1188083,
+          "coveragePixelsAfter": 1188083
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/wuhan-source-before.webp",
+        "sourceAfter": "images/wuhan-source-after.webp",
+        "flatBefore": "images/wuhan-flat-before.webp",
+        "flatAfter": "images/wuhan-flat-after.webp",
+        "overlay": "images/wuhan-overlay.webp",
+        "bottomBefore": "images/wuhan-bottom-before.webp",
+        "bottomAfter": "images/wuhan-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "黄鹤楼外檐、电视塔外侧为天空；桥体与楼面内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          31,
+          246,
+          3546,
+          1630
+        ],
+        "afterBounds": [
+          31,
+          246,
+          3546,
+          1630
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77",
+        "afterSha256": "bb52df1936187c67b175ceefd89833801ce5a410d641c34d8a886e20f0e95b77"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            54,
+            145,
+            816,
+            445
+          ],
+          "afterBounds": [
+            54,
+            146,
+            816,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5728021640231157,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 71429,
+          "coveragePixelsAfter": 71429
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            109,
+            291,
+            1632,
+            891
+          ],
+          "afterBounds": [
+            109,
+            292,
+            1632,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7408897464318459,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 286970,
+          "coveragePixelsAfter": 286970
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            219,
+            581,
+            3264,
+            1780
+          ],
+          "afterBounds": [
+            219,
+            584,
+            3264,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6340548594032609,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1144061,
+          "coveragePixelsAfter": 1144061
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/shenyang-source-before.webp",
+        "sourceAfter": "images/shenyang-source-after.webp",
+        "flatBefore": "images/shenyang-flat-before.webp",
+        "flatAfter": "images/shenyang-flat-after.webp",
+        "overlay": "images/shenyang-overlay.webp",
+        "bottomBefore": "images/shenyang-bottom-before.webp",
+        "bottomAfter": "images/shenyang-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "电视塔收分两侧、宫殿外檐为天空；圆形建筑与宫殿内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          69,
+          293,
+          3720,
+          1625
+        ],
+        "afterBounds": [
+          69,
+          301,
+          3720,
+          1630
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 5160157,
+        "inkChangedPixels": 461904,
+        "rawInkIoU": 0.5108855869745692,
+        "beforeSha256": "57802cadfee150f4988a73e6d8540e43efc02fa230480f6fe931861d1f1a96e0",
+        "afterSha256": "51751b046072b339451454e57f954968239ed77148d832e22506ab61157f20d2"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            62,
+            157,
+            853,
+            445
+          ],
+          "afterBounds": [
+            63,
+            158,
+            853,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.32835787644529596,
+          "registeredLineIoU": 0.5113938810169577,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 77336,
+          "coveragePixelsAfter": 76584
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            125,
+            313,
+            1707,
+            891
+          ],
+          "afterBounds": [
+            127,
+            317,
+            1707,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.4024714149595045,
+          "registeredLineIoU": 0.4796712721241023,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 310137,
+          "coveragePixelsAfter": 306364
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            252,
+            626,
+            3414,
+            1780
+          ],
+          "afterBounds": [
+            253,
+            633,
+            3414,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.4785251202923814,
+          "registeredLineIoU": 0.6547994450600748,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1236751,
+          "coveragePixelsAfter": 1224868
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/shenzhen-source-before.webp",
+        "sourceAfter": "images/shenzhen-source-after.webp",
+        "flatBefore": "images/shenzhen-flat-before.webp",
+        "flatAfter": "images/shenzhen-flat-after.webp",
+        "overlay": "images/shenzhen-overlay.webp",
+        "bottomBefore": "images/shenzhen-bottom-before.webp",
+        "bottomAfter": "images/shenzhen-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "左右边界保持69px与3720px；最高点下移8px，底部下移5px。高楼、中心屋顶和右侧桥梁组合保留，局部描线和竖向关系更新。",
+        "原稿右桥原本已存在，本次不将它误报为新增建筑；按新版线条和底部边界同步更新。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "shijiazhuang",
+      "name": "石家庄",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          38,
+          314,
+          3722,
+          1629
+        ],
+        "afterBounds": [
+          38,
+          314,
+          3722,
+          1629
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206",
+        "afterSha256": "e36c0e4caae9ab4bb470225d1bfc39a577cbb18247dd6c595e91e2a9b03b6206"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            55,
+            160,
+            854,
+            445
+          ],
+          "afterBounds": [
+            55,
+            161,
+            854,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6159376571141277,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 74180,
+          "coveragePixelsAfter": 74180
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            112,
+            321,
+            1708,
+            891
+          ],
+          "afterBounds": [
+            112,
+            322,
+            1708,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7568885774351787,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 297101,
+          "coveragePixelsAfter": 297101
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            225,
+            641,
+            3416,
+            1780
+          ],
+          "afterBounds": [
+            225,
+            644,
+            3416,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6636670602751722,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1188249,
+          "coveragePixelsAfter": 1188249
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/shijiazhuang-source-before.webp",
+        "sourceAfter": "images/shijiazhuang-source-after.webp",
+        "flatBefore": "images/shijiazhuang-flat-before.webp",
+        "flatAfter": "images/shijiazhuang-flat-after.webp",
+        "overlay": "images/shijiazhuang-overlay.webp",
+        "bottomBefore": "images/shijiazhuang-bottom-before.webp",
+        "bottomAfter": "images/shijiazhuang-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "塔檐与楼檐外侧留白正常；桥拱、桥体和建筑内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          27,
+          574,
+          3822,
+          1626
+        ],
+        "afterBounds": [
+          29,
+          582,
+          3819,
+          1630
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 4119970,
+        "inkChangedPixels": 583362,
+        "rawInkIoU": 0.4128680255923283,
+        "beforeSha256": "4b550bbc8e670bf3b6a88d4f650ef4598084cd9bf343531aed02a54a489b32de",
+        "afterSha256": "31277659953f49e6f8ca1392db952946647a4275844afa3b773c61e004fbcda3"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            53,
+            218,
+            875,
+            445
+          ],
+          "afterBounds": [
+            55,
+            219,
+            874,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.31756394204972277,
+          "registeredLineIoU": 0.5330506490465908,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 81088,
+          "coveragePixelsAfter": 80415
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            107,
+            435,
+            1751,
+            890
+          ],
+          "afterBounds": [
+            110,
+            438,
+            1749,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.3325252410016542,
+          "registeredLineIoU": 0.5590608461194498,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 323164,
+          "coveragePixelsAfter": 321627
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            216,
+            869,
+            3503,
+            1780
+          ],
+          "afterBounds": [
+            218,
+            876,
+            3499,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.35542943122989473,
+          "registeredLineIoU": 0.5086012191209496,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1291308,
+          "coveragePixelsAfter": 1285662
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/xian-source-before.webp",
+        "sourceAfter": "images/xian-source-after.webp",
+        "flatBefore": "images/xian-flat-before.webp",
+        "flatAfter": "images/xian-flat-after.webp",
+        "overlay": "images/xian-overlay.webp",
+        "bottomBefore": "images/xian-bottom-before.webp",
+        "bottomAfter": "images/xian-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "古塔、楼阁与城墙组合保留；原稿最高点下移8px、底边下移4px，外框略收窄。",
+        "迁移此前已审查的大雁塔下两层、檐口以及东侧山坡/城墙补填面。只改填色通道，原有描线与法线不变；4/2/5个封闭抗锯齿小孔按整面填色规则补齐。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          74,
+          232,
+          3602,
+          1630
+        ],
+        "afterBounds": [
+          74,
+          232,
+          3602,
+          1630
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 6,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "f9989128b6b45c537fa3633ca7e39236c0a3b5a8f3659b2ae3313a0f53ed6d8b",
+        "afterSha256": "fc62fe5380af329616b5abebf5fb0fdfc2ab810d9eead0b1ae820b01be2d1e5f"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            63,
+            142,
+            828,
+            445
+          ],
+          "afterBounds": [
+            63,
+            143,
+            828,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6132714567664159,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 65542,
+          "coveragePixelsAfter": 65542
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            127,
+            285,
+            1656,
+            890
+          ],
+          "afterBounds": [
+            127,
+            287,
+            1656,
+            892
+          ],
+          "beforeGap": 2,
+          "afterGap": 0,
+          "rawLineIoU": 0.6090909700926678,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 2,
+          "coveragePixelsBefore": 261881,
+          "coveragePixelsAfter": 261881
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            257,
+            569,
+            3312,
+            1780
+          ],
+          "afterBounds": [
+            257,
+            572,
+            3312,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6774723192124491,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1049541,
+          "coveragePixelsAfter": 1049541
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/zhengzhou-source-before.webp",
+        "sourceAfter": "images/zhengzhou-source-after.webp",
+        "flatBefore": "images/zhengzhou-flat-before.webp",
+        "flatAfter": "images/zhengzhou-flat-after.webp",
+        "overlay": "images/zhengzhou-overlay.webp",
+        "bottomBefore": "images/zhengzhou-bottom-before.webp",
+        "bottomAfter": "images/zhengzhou-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "文件变化仅涉及6个RGBA像素；二值金线和描线范围完全相同。",
+        "电视塔、双塔楼、楼群与桥梁沿用已审查资源，注册后描线IoU为100%；只统一到底部。",
+        "实色底隙（低/标准/精细）：1→0px、2→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          23,
+          556,
+          3807,
+          1626
+        ],
+        "afterBounds": [
+          51,
+          395,
+          3842,
+          1627
+        ],
+        "fileChanged": true,
+        "pixelChanged": true,
+        "differentPixels": 5517070,
+        "inkChangedPixels": 949599,
+        "rawInkIoU": 0.2746435086025415,
+        "beforeSha256": "629d08baa315d9dd3201056a71d47540d524ef5bab10f6baad21ecb3f4e378d9",
+        "afterSha256": "f10de1c6cc71e0ec6810ecde09dddd4cc92f835fb1f38f6b8d792093528dca65"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            52,
+            213,
+            872,
+            445
+          ],
+          "afterBounds": [
+            59,
+            179,
+            880,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.23296889596235684,
+          "registeredLineIoU": 0.24533477774671514,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 90091,
+          "coveragePixelsAfter": 99086
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            105,
+            427,
+            1745,
+            891
+          ],
+          "afterBounds": [
+            119,
+            358,
+            1760,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.23727402783196774,
+          "registeredLineIoU": 0.24327291260994002,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 361689,
+          "coveragePixelsAfter": 396316
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            213,
+            853,
+            3490,
+            1780
+          ],
+          "afterBounds": [
+            237,
+            716,
+            3520,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.2423994609129152,
+          "registeredLineIoU": 0.24714950422115273,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1442332,
+          "coveragePixelsAfter": 1584438
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/chongqing-source-before.webp",
+        "sourceAfter": "images/chongqing-source-after.webp",
+        "flatBefore": "images/chongqing-flat-before.webp",
+        "flatAfter": "images/chongqing-flat-after.webp",
+        "overlay": "images/chongqing-overlay.webp",
+        "bottomBefore": "images/chongqing-bottom-before.webp",
+        "bottomAfter": "images/chongqing-bottom-after.webp"
+      },
+      "action": "按新附件描线生成，填色与法线同步到底边",
+      "method": "source-refresh",
+      "notes": [
+        "变化最明显的一城：最高点从556px上移至395px，轮廓高度约增加15%；楼群、洪崖洞和桥梁描线均有更新。",
+        "画板尺寸仍为3878×1630；使用新构图保持原稿比例，没有把所有城市强行放大到相同建筑高度。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "changchun",
+      "name": "长春",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          38,
+          382,
+          3808,
+          1628
+        ],
+        "afterBounds": [
+          38,
+          382,
+          3808,
+          1628
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed",
+        "afterSha256": "c56790b812baf0e3a8ae2d7cbe9b8835cbd4f63ed8d0b1a947c35cf48e3631ed"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            55,
+            175,
+            872,
+            445
+          ],
+          "afterBounds": [
+            55,
+            176,
+            872,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.6199943197955127,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 65201,
+          "coveragePixelsAfter": 65201
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            112,
+            351,
+            1745,
+            891
+          ],
+          "afterBounds": [
+            112,
+            352,
+            1745,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7687867053427261,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 262484,
+          "coveragePixelsAfter": 262484
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            225,
+            701,
+            3491,
+            1780
+          ],
+          "afterBounds": [
+            225,
+            704,
+            3491,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6773308648003472,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1045578,
+          "coveragePixelsAfter": 1045578
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/changchun-source-before.webp",
+        "sourceAfter": "images/changchun-source-after.webp",
+        "flatBefore": "images/changchun-flat-before.webp",
+        "flatAfter": "images/changchun-flat-after.webp",
+        "overlay": "images/changchun-overlay.webp",
+        "bottomBefore": "images/changchun-bottom-before.webp",
+        "bottomAfter": "images/changchun-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "塔身外侧及站房外檐为天空；楼体和钟楼完整。低清孤点位于檐下外部。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "source": {
+        "size": [
+          3878,
+          1630
+        ],
+        "beforeBounds": [
+          53,
+          214,
+          3707,
+          1629
+        ],
+        "afterBounds": [
+          53,
+          214,
+          3707,
+          1629
+        ],
+        "fileChanged": false,
+        "pixelChanged": false,
+        "differentPixels": 0,
+        "inkChangedPixels": 0,
+        "rawInkIoU": 1.0,
+        "beforeSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b",
+        "afterSha256": "18084a8c6cb967a52a02d6e12f9c78d0f6ada85aa87363af1e5194357dca234b"
+      },
+      "tiers": [
+        {
+          "tier": "light",
+          "size": [
+            1024,
+            446
+          ],
+          "beforeBounds": [
+            59,
+            139,
+            851,
+            445
+          ],
+          "afterBounds": [
+            59,
+            140,
+            851,
+            446
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.5994099424693907,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 68272,
+          "coveragePixelsAfter": 68272
+        },
+        {
+          "tier": "standard",
+          "size": [
+            2048,
+            892
+          ],
+          "beforeBounds": [
+            118,
+            277,
+            1702,
+            891
+          ],
+          "afterBounds": [
+            118,
+            278,
+            1702,
+            892
+          ],
+          "beforeGap": 1,
+          "afterGap": 0,
+          "rawLineIoU": 0.7708393469963758,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 1,
+          "coveragePixelsBefore": 274324,
+          "coveragePixelsAfter": 274324
+        },
+        {
+          "tier": "detail",
+          "size": [
+            4096,
+            1783
+          ],
+          "beforeBounds": [
+            238,
+            554,
+            3403,
+            1780
+          ],
+          "afterBounds": [
+            238,
+            557,
+            3403,
+            1783
+          ],
+          "beforeGap": 3,
+          "afterGap": 0,
+          "rawLineIoU": 0.6715124901292348,
+          "registeredLineIoU": 1.0,
+          "translatedRows": 3,
+          "coveragePixelsBefore": 1093363,
+          "coveragePixelsAfter": 1093363
+        }
+      ],
+      "images": {
+        "sourceBefore": "images/qingdao-source-before.webp",
+        "sourceAfter": "images/qingdao-source-after.webp",
+        "flatBefore": "images/qingdao-flat-before.webp",
+        "flatAfter": "images/qingdao-flat-after.webp",
+        "overlay": "images/qingdao-overlay.webp",
+        "bottomBefore": "images/qingdao-bottom-before.webp",
+        "bottomAfter": "images/qingdao-bottom-after.webp"
+      },
+      "action": "原稿金线边界相同，保留已审查描线并同步到底边",
+      "method": "bottom-translation",
+      "notes": [
+        "新附件与旧原图逐字节、逐RGBA像素完全相同。既有描线、填色和半浮点法线同步下移，三档注册后描线IoU均为100%。",
+        "五月风外轮廓、电视塔收分外侧、亭阁挑檐为天空；雕塑与楼体内部完整。",
+        "实色底隙（低/标准/精细）：1→0px、1→0px、3→0px。前后各有金色与蓝色同机位渲染。"
+      ],
+      "reviewed": true,
+      "reviewBasis": [
+        "source bytes and RGBA",
+        "runtime line registration",
+        "three-tier solid bottom",
+        "92 matching-camera frames inspected in six boards"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "base": "https://guangcai-no1-china-v7.netlify.app/",
+  "passed": true,
+  "checks": [
+    "xian before imports formal material",
+    "xian after imports formal material",
+    "xian changes rendered material",
+    "chongqing before imports formal material",
+    "chongqing after imports formal material",
+    "chongqing changes rendered material",
+    "nanchang before imports formal material",
+    "nanchang after imports formal material",
+    "nanchang changes rendered material",
+    "beijing before imports formal material",
+    "beijing after imports formal material",
+    "beijing changes rendered material",
+    "qingdao before imports formal material",
+    "qingdao after imports formal material",
+    "qingdao changes rendered material",
+    "tianjin before imports formal material",
+    "tianjin after imports formal material",
+    "tianjin changes rendered material",
+    "formal Shenzhen still original released mask",
+    "formal no experiment API",
+    "Phase II deep link loads dev-only APEC",
+    "Phase II limits city choice",
+    "Phase II visibly identified",
+    "switch returns to formal Shenzhen",
+    "blue porcelain cutouts xian",
+    "blue porcelain cutouts chongqing",
+    "blue porcelain cutouts nanchang",
+    "blue porcelain cutouts beijing",
+    "blue porcelain cutouts qingdao",
+    "blue porcelain cutouts tianjin",
+    "main comparison retains 7.1.4 baseline",
+    "repair panel displays xian",
+    "repair panel displays chongqing",
+    "repair panel displays nanchang",
+    "repair panel displays beijing",
+    "repair panel displays qingdao",
+    "repair panel displays tianjin",
+    "repair report mobile no overflow",
+    "mobile Phase II no overflow",
+    "no framework overlay",
+    "no runtime/console errors"
+  ],
+  "errors": [],
+  "failedRequests": [
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/zhengzhou-detail-mask-b10f8f0c18c1e01d.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/zhengzhou-detail-normal-478a22ee602998da.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/zhengzhou-detail-normal-478a22ee602998da.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/changchun-detail-mask-caf86737fe6ef95e.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/changchun-detail-normal-92730c13a9be6f36.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/changchun-detail-normal-92730c13a9be6f36.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/nanjing-detail-mask-daf1bac91565abbb.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/nanjing-detail-normal-39674fd5d5a4092a.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/nanjing-detail-normal-39674fd5d5a4092a.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/xiamen-detail-mask-6e89e0d4f56ba13a.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/urumqi-detail-mask-c5a9c00a7e3990b9.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/urumqi-detail-normal-f0d103da977be58a.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/urumqi-detail-normal-f0d103da977be58a.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/nanjing-detail-normal-39674fd5d5a4092a.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/changchun-detail-normal-92730c13a9be6f36.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/shanghai-detail-mask-1845e9aa5c9c2708.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/changchun-detail-normal-92730c13a9be6f36.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/shanghai-detail-normal-00529dcc5c4c38d4.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/harbin-detail-mask-5e60bfbd1bce5ce6.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/harbin-detail-normal-79f4f1585f87e7bc.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/harbin-detail-normal-79f4f1585f87e7bc.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/taiyuan-detail-mask-bf53ad127d7a02a9.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/xian-standard-mask-5edcdb81ec60d21e.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/xian-standard-normal-2ea96f6c59adc95f.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/chongqing-standard-mask-3c43f3df1a1e59e9.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/chongqing-standard-normal-31c50d668c195a7b.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/nanchang-standard-mask-9d6b40192bab41d3.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/nanchang-standard-normal-1753a34877d8abed.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/beijing-standard-mask-eb11607b622cbfe8.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/beijing-standard-normal-af1055ec9b0af953.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/qingdao-standard-mask-a84b95463e0fd02c.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/qingdao-standard-normal-6b6b83ead7804cff.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-9/assets/tianjin-standard-mask-8424ad9a8a84b4fe.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/releases/v7-7/assets/tianjin-standard-normal-442aa1eab4c9ac9f.hfn.gz",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-xian-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-chongqing-before.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-chongqing-after.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-chongqing-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-nanchang-before.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-nanchang-after.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-nanchang-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-beijing-before.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-beijing-after.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-beijing-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-qingdao-before.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-qingdao-after.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-qingdao-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-tianjin-before.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-tianjin-after.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "https://guangcai-no1-china-v7.netlify.app/label-compare/images/repair-tianjin-delta.webp",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "city": "xian",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "xian",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "chongqing",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "chongqing",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "nanchang",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "nanchang",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "beijing",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "beijing",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "qingdao",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "qingdao",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "tianjin",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "tianjin",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    }
+  ],
+  "physicalDeviceTested": false,
+  "browser": "Chrome / Playwright; Browser plugin not available"
+}

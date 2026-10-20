@@ -21,4 +21,14 @@
 
 实际消费者构建1247文件、518527767 bytes、196资源摘要核验通过。静态构建预览Chrome/Playwright：报告/测量57项、核心31项、六城/二期41项全部通过，控制台与运行错误均为0，覆盖1200/1440桌面与390手机尺寸。六城12张同机位金色杯身与6张蓝色核对；西安塔身完整、指定背景露出白瓷、轮毂/轮辋/座舱/支架保持填色。
 
-提交、发布与公网核验待完成后追加。
+## 发布与未完成的GitHub交付
+
+实现checkpoint `5241dccc5e26bb0a75741c8063459728147e05b3` 已推送，并创建PR #58。原稿/完整验证记录checkpoint `cd8159b3c93b4b7083526f521d5a4c01e919219d`。随后GitHub新请求返回账号暂停HTTP403，远端回读、合并与Issue回填被阻断；第二次推送约8分钟无成功回执后停止，工具返回失败，本地提交完整保留；未将PR或main记为已合并。
+
+用户已有明确V7上线授权；Netlify独立链路验证原发布未变、固定V7站点可写后，从完整且洁净的上述精确本地checkpoint发布，记录实际codex分支与合并待恢复状态。专用执行器仅放宽main条件为指定分支+精确SHA，保留构建全文件摘要、129项浏览器、源码/几何边界、固定站点及五个保护站点校验；差异与摘要见deployment-driver.patch和deployment-exception.json。
+
+生产部署 `6ad6fcdcf1f9e6ca6c7c5330`，版本7.1.11/v7-9，源码`cd8159b3c93b4b7083526f521d5a4c01e919219d`。公网Chrome/Playwright报告57项、核心31项、六城/二期41项全部通过，最终复跑无运行或console错误；专项首轮完成40项后记录一次ERR_CONNECTION_CLOSED，失败证据保留，单独重跑41项确认。23城、金色/蓝色及多版本切换、真实杯身及390手机尺寸均有实际证据。正式深圳资源摘要与7.1.10一致，APEC二期仅dev。
+
+1248服务端摘要匹配；1248归档文件518528045 bytes逐项长度/SHA256一致，release.json确认源码/资源/产品版本；五个保护站点发布与Git连接状态未变。reviewed build在服务端回读后同卷重命名为新不可变归档，site/deployment.json未改，单独追加verification.json。
+
+Prism卷余量仅约55MiB，公网完整PNG另存`/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/`，报告JSON与精选WebP入库，本地完整PNG证据亦已纳入checkpoint。未删除原件、历史发布或其他项目数据。GitHub恢复后仍需推送全部后续checkpoint、确认PR完整head、合并并回填Issue #57；#47原有物理尺寸/实体设备/性能边界继续保留。最终本地归档checkpoint通过Git回执定位。

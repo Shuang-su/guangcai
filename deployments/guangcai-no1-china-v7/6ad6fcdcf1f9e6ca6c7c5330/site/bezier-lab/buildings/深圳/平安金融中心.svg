@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>深圳 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="sz-pingan-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#sz-pingan-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="sz-pingan" data-building="sz-pingan" data-name="平安金融中心" data-kind="building" fill="none" stroke="#f7a707" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="平安金融中心">
+    <title>平安金融中心</title>
+    <path id="sz-pingan-outline" d="M 946 1618 C 958 1210 975 650 990 415 C 1003 387 1032 340 1058 301 C 1084 340 1113 387 1126 415 C 1141 650 1158 1210 1170 1618 L 946 1618 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="sz-pingan-components" clip-path="url(#sz-pingan-clip)">
+      <path id="sz-pingan-p001" d="M 970.64 1618 C 980 1210 993.26 650 1004.96 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p002" d="M 1004.96 415 L 1035.38 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p003" d="M 999.76 1618 C 1006 1210 1014.84 650 1022.64 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p004" d="M 1022.64 415 L 1042.92 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p005" d="M 1028.88 1618 C 1032 1210 1036.42 650 1040.32 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p006" d="M 1040.32 415 L 1050.46 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p007" d="M 1058 1618 C 1058 1210 1058 650 1058 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p008" d="M 1058 415 L 1058 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p009" d="M 1087.12 1618 C 1084 1210 1079.58 650 1075.68 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p010" d="M 1075.68 415 L 1065.54 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p011" d="M 1116.24 1618 C 1110 1210 1101.16 650 1093.36 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p012" d="M 1093.36 415 L 1073.08 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p013" d="M 1145.36 1618 C 1136 1210 1122.74 650 1111.04 415" stroke-width="3.2" data-role="detail" data-label="纵向完整幕墙肋">
+        <title>纵向完整幕墙肋</title>
+      </path>
+      <path id="sz-pingan-p014" d="M 1111.04 415 L 1080.62 344" stroke-width="2.3" data-role="detail" data-label="尖顶收束肋">
+        <title>尖顶收束肋</title>
+      </path>
+      <path id="sz-pingan-p015" d="M 990 415 L 1126 415" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p016" d="M 981.094 585 L 1134.906 585" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p017" d="M 972.889 785 L 1143.111 785" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p018" d="M 962.384 1085 L 1153.616 1085" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p019" d="M 953.25 1375 L 1162.75 1375" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p020" d="M 948.302 1540 L 1167.698 1540" stroke-width="3.8" data-role="detail" data-label="楼身横向结构带">
+        <title>楼身横向结构带</title>
+      </path>
+      <path id="sz-pingan-p021" d="M 990 415 L 1134.906 585" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p022" d="M 1126 415 L 981.094 585" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p023" d="M 981.094 585 L 1143.111 785" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p024" d="M 1134.906 585 L 972.889 785" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p025" d="M 972.889 785 L 1153.616 1085" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p026" d="M 1143.111 785 L 962.384 1085" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p027" d="M 962.384 1085 L 1162.75 1375" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p028" d="M 1153.616 1085 L 953.25 1375" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p029" d="M 953.25 1375 L 1170 1618" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+      <path id="sz-pingan-p030" d="M 1162.75 1375 L 946 1618" stroke-width="2.3" data-role="detail" data-label="规律连续交叉斜撑">
+        <title>规律连续交叉斜撑</title>
+      </path>
+    </g>
+  </g>
+</svg>
