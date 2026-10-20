@@ -14,7 +14,7 @@ for(const [region,levels]of Object.entries(m.fixed))for(const [tier,l]of Object.
 }
 for(const [id,s]of Object.entries(m.slogans)){
  let original;
- if(['v7-7','v7-8'].includes(m.releaseId)){
+ if(['v7-7','v7-8','v7-9'].includes(m.releaseId)){
   const source=await fs.readFile(`assets/masters/v7.1.5/slogan-${id}.svg`,'utf8'),scale=4096/1939,x=1539*scale,y=1783-815*scale+190*scale;
   original=await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="4096" height="1783"><g transform="translate(${x} ${y}) scale(${scale})">${source}</g></svg>`)).ensureAlpha().extractChannel('alpha').raw().toBuffer({resolveWithObject:true});
  }else if(m.releaseId==='v7-6'){

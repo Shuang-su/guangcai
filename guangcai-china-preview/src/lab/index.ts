@@ -16,36 +16,38 @@ const waitViewer=()=>waitForLabPreview(getViewer);
 const json=async<T>(p:string):Promise<T>=>{const r=await fetch(p);if(!r.ok)throw Error('素材读取失败：'+r.status);return r.json();};
 async function start(){
  const guide=$<HTMLInputElement>('coverage-guide'),coverage=$('coverage-review'),part=$<HTMLSelectElement>('coverage-part'),highlight=$<HTMLInputElement>('coverage-highlight');
- const updateGuide=async()=>{const v=await waitViewer();guideState=await v.setLabCoverageGuide(guide.checked,['current','mastergo','bezier'].includes(art.value),part.value,highlight.checked);};
+ const updateGuide=async()=>{const v=await waitViewer();guideState=await v.setLabCoverageGuide(guide.checked,['current','mastergo','bezier','phase2','prior'].includes(art.value),part.value,highlight.checked);};
  coverage.addEventListener('coverage-part',e=>{part.value=(e as CustomEvent<string>).detail;part.dispatchEvent(new Event('change'));});
  const requestedPart=new URL(location.href).searchParams.get('part');if(requestedPart&&['city','body','handle','saucer','all'].includes(requestedPart)){part.value=requestedPart;guide.checked=true;highlight.checked=true;}
  guide.addEventListener('change',()=>void updateGuide());highlight.addEventListener('change',()=>{guide.checked=true;void updateGuide();});part.addEventListener('change',async()=>{guide.checked=true;await updateGuide();const v=await waitViewer();const next=part.value==='all'?'exploded':part.value==='saucer'?'flowers':part.value==='handle'||part.value==='body'?'handle':'hero';view.value=next;v.setView(next,true);});
- const [current,baseline,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-8'),loadResources('v7-5'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
- for(const [id,c]of Object.entries(unified.manifest.cities))city.add(new Option(c.name,id));city.value='shenzhen';
+ const [current,prior,baseline,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-9'),loadResources('v7-8'),loadResources('v7-5'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
+ for(const [id,c]of Object.entries(unified.manifest.cities))city.add(new Option(c.name,id));city.value='shenzhen';const requestedArt=new URL(location.href).searchParams.get('art');if(requestedArt==='phase2')art.value='phase2';
  for(const [id,s]of Object.entries(unified.manifest.slogans))slogan.add(new Option(s.text,id));slogan.value='ocean';
  const absolutize=(a:Asset):Asset=>({...a,url:new URL('/dev-assets/'+a.url,location.origin).href});
  async function update(){
   const rev=++generation;
+  if(art.value==='phase2'&&city.value!=='shenzhen'){city.value='shenzhen';$('notice').textContent='深圳二期 APEC 会场仅用于本开发页；正式无后缀主页仍保留原深圳。';}
   if(art.value==='bezier'&&!['shenzhen','beijing'].includes(city.value)){city.value='shenzhen';$('notice').textContent='已切换至深圳。贝塞尔稿目前仅提供深圳和北京；其余城市可切回现行描线、此前描线或蓝湖画板。';}
-  for(const option of city.options)option.disabled=art.value==='bezier'&&!['shenzhen','beijing'].includes(option.value);
+  for(const option of city.options)option.disabled=(art.value==='bezier'&&!['shenzhen','beijing'].includes(option.value))||(art.value==='phase2'&&option.value!=='shenzhen');
   const ref=layout.cities.find(c=>c.id===city.value)!;slogan.disabled=label.value==='reference';if(slogan.disabled)slogan.value=ref.slogan;
+  $('notice').textContent=art.value==='phase2'?'深圳二期 APEC 会场仅用于本开发页；正式无后缀主页保留原深圳。':art.value==='bezier'?'贝塞尔SVG实验稿仅提供深圳和北京，保持原始2K栅格分辨率；其余城市可切回正式或历史版本。':'当前城市稿按PSD共同矩阵等比映射；可与V7.1.10修正前和V7.1.4发布稿分别对照。';
   const state={city:city.value,art:art.value,label:label.value,slogan:slogan.value,palette:palette.value,showLabel:show.checked};
   $('status').textContent='正在更新组合…';$('status').dataset.state='loading';$('combination').textContent=unified.manifest.cities[state.city].name+' · '+art.selectedOptions[0].text;
   try{
    const v=await waitViewer();if(rev!==generation)return;
-   const appearance=presetAppearance(state.palette as Palette),base=state.art==='baseline'?baseline:state.art==='previous'?previous:state.art==='legacy'?legacy:current;
+   const appearance=presetAppearance(state.palette as Palette),base=state.art==='prior'?prior:state.art==='baseline'?baseline:state.art==='previous'?previous:state.art==='legacy'?legacy:current;
    const pack=base.cityPack({variant:'v6-'+state.city+'-gold',text:state.slogan as Lettering,finish:'metal',appearance},'standard');
    let l=state.label==='baseline'?baseline.manifest.slogans[state.slogan]:state.label==='previous'?previous.manifest.slogans[state.slogan]:unified.manifest.cities[state.city].slogans?.[state.slogan]??unified.manifest.slogans[state.slogan];
    if(state.label==='reference'){const raw=reference[state.city];l={...raw,asset:absolutize(raw.asset)};}
-   if(['mastergo','bezier'].includes(state.art)){
+   if(['mastergo','bezier','phase2'].includes(state.art)){
     const e=experimental[state.art+'-'+state.city];if(!e)throw Error('本城尚无该实验稿');const lev=e.levels.standard;const level={mask:absolutize(lev.mask),normal:absolutize(lev.normal)};
     pack.runtime={...level,label:l};pack.baseColor=pack.roughness=pack.metalness=pack.coverage=level.mask.url;pack.normal=level.normal.url;pack.parametric={mask:level.mask.url,appearance};
    }else pack.runtime={...pack.runtime!,label:l};
    pack.id='lab-'+state.art+'-'+state.city;pack.name=unified.manifest.cities[state.city].name+' · 开发预览';pack.label={source:l.asset.url,fixedGold:true,hidden:!state.showLabel};
    if(!await v.applyLabArtwork(pack)){if(rev!==generation)return;throw Error('组合未应用，请重试');}if(rev!==generation)return;
-   applied={...state,experimental:['mastergo','bezier'].includes(state.art),rasterWidth:pack.runtime!.mask.width,labelAsset:pack.runtime!.label.asset.sha256,cityAsset:pack.runtime!.mask.sha256};
+   applied={...state,experimental:['mastergo','bezier','phase2'].includes(state.art),rasterWidth:pack.runtime!.mask.width,labelAsset:pack.runtime!.label.asset.sha256,cityAsset:pack.runtime!.mask.sha256};
    for(const [k,v]of Object.entries({city:state.city,art:state.art,label:state.label,slogan:state.slogan,'show-label':String(state.showLabel)}))coverage.setAttribute(k,String(v));await updateGuide();
-   document.documentElement.dataset.ready='true';$('details').textContent=JSON.stringify(applied,null,2);$('status').dataset.state='ready';$('status').textContent=state.label==='reference'&&state.city==='chengdu'?'已显示蓝湖整版原位：成都文字原有6px差异保留，城市和字框共用PSD等比矩阵。':'组合已应用 · 拖动杯身旋转，滚轮或双指缩放';
+   document.documentElement.dataset.ready='true';$('details').textContent=JSON.stringify(applied,null,2);$('status').dataset.state='ready';$('status').textContent=state.label==='reference'&&state.city==='chengdu'?'已显示蓝湖整版原位：成都文字原有6px差异保留，城市和字框共用PSD等比矩阵。':state.art==='phase2'?'二期 APEC 会场 · 仅本页预览；正式深圳保留原稿':'组合已应用 · 拖动杯身旋转，滚轮或双指缩放';
    const source=$<HTMLAnchorElement>('source-svg');source.hidden=state.art!=='bezier';if(!source.hidden)source.href='/bezier-lab/'+(state.city==='shenzhen'?'深圳':'北京')+'-独立闭合.svg';
   }catch(e){if(rev!==generation)return;$('status').dataset.state='error';$('status').textContent=String(e);document.documentElement.dataset.ready='false';}
  }
