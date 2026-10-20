@@ -4,6 +4,7 @@ import type {CityArtworkPack} from '../styles/city-artwork';
 import type {StylePack} from '../styles/style-manager';
 import fixedLayout from '../styles/fixed-layout.json';
 import {sloganLabels} from './preload';
+import {compatibleAtlas} from './fixed-quality';
 export {exportDesign,validateDesign} from './design';
 
 declare global {interface Window {GUANGCAI_CONFIG?:{bootstrapUrl?:string;assetBase?:string;apiBase?:string}}}
@@ -39,8 +40,8 @@ export async function loadResources(releaseId?:string,signal?:AbortSignal){
   const level=city.levels[tier];
   return {id:s.variant,version:7,name:city.name,layout:'blank-300deg-v1',baseColor:level.mask.url,normal:level.normal.url,roughness:level.mask.url,metalness:level.mask.url,coverage:level.mask.url,normalEncoding:'rgba16f',parametric:{mask:level.mask.url,appearance:s.appearance},label:{source:label.asset.url,fixedGold:true},runtime:{...level,label}};
  }
- function fixedPack(tiers:Record<Region,Tier>):StylePack{
-  return {name:'V7 分级广彩花纸',mapping:manifest.fixedMapping??'source-layout-v3',cleanGoldGround:true,regions:Object.fromEntries((['body','handle','saucer'] as Region[]).map(region=>{const level=manifest.fixed[region][tiers[region]];return [region,{baseColor:level.baseColor.url,normal:level.normal.url,normalFormat:'rgba16f-gzip-v1',roughness:level.orm.url,metalness:level.orm.url,atlas:level.atlas,runtime:level,...(region==='saucer'?{offsetU:fixedLayout.saucer.sourceOffsetU}:{})}];})) as StylePack['regions']};
+ function fixedPack(tiers:Record<Region,Tier>,colors=tiers):StylePack{
+  return {name:'V7 分级广彩花纸',mapping:manifest.fixedMapping??'source-layout-v3',cleanGoldGround:true,regions:Object.fromEntries((['body','handle','saucer'] as Region[]).map(region=>{const level=manifest.fixed[region][tiers[region]],requested=manifest.fixed[region][colors[region]],color=compatibleAtlas(level.atlas,requested.atlas)?requested:level,runtime={...level,atlas:color.atlas,baseColor:color.baseColor};return [region,{baseColor:color.baseColor.url,normal:level.normal.url,normalFormat:'rgba16f-gzip-v1',roughness:level.orm.url,metalness:level.orm.url,atlas:color.atlas,runtime,...(region==='saucer'?{offsetU:fixedLayout.saucer.sourceOffsetU}:{})}];})) as StylePack['regions']};
  }
  return {bootstrap,manifest,cityPack,fixedPack};
 }

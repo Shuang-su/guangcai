@@ -1,7 +1,8 @@
 """Package only the formal China Cup root page, without changing production.
-python3 -B tools/package-china-main.py /new/output/directory
+python3 -B tools/package-china-main.py /new/output/directory --build-root /validated/build
 """
 from pathlib import Path
+import argparse
 import hashlib
 import io
 import json
@@ -13,7 +14,11 @@ import tarfile
 
 repo = Path(__file__).resolve().parent.parent
 app = repo / 'guangcai-china-preview'
-out = Path(sys.argv[1]).resolve()
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('output', type=Path)
+parser.add_argument('--build-root', type=Path)
+args = parser.parse_args()
+out = args.output.resolve()
 assert not out.exists(), 'Refuse to replace an existing package'
 
 
@@ -38,14 +43,31 @@ def add(tar, name, data, mode=0o644):
 assert not git('status', '--porcelain').strip(), 'Commit reviewed packaging first'
 commit = git('rev-parse', 'HEAD').decode().strip()
 timestamp = int(git('show', '-s', '--format=%ct', 'HEAD').decode().strip())
-deploy_id = '6ad6fcdcf1f9e6ca6c7c5330'
-archive = repo / 'deployments/guangcai-no1-china-v7' / deploy_id
-site = archive / 'site'
-production = json.loads((archive / 'files.json').read_text())
-release = json.loads((site / 'release.json').read_text())
+version = json.loads((app / 'package.json').read_text())['version']
+bootstrap = json.loads((app / 'public/api/v1/bootstrap.json').read_text())
+if args.build_root:
+    deploy_id = None
+    site = args.build_root.resolve()
+    build_source = json.loads((site / 'build-source.json').read_text())
+    assert build_source['sourceCommit'] == commit and build_source['version'] == version, 'Build source checkpoint differs'
+    assert f'V{version}</dd>' in (site / 'index.html').read_text(), 'Stale build version'
+    build_bootstrap = json.loads((site / 'api/v1/bootstrap.json').read_text())
+    assert build_bootstrap == bootstrap, 'Build and source resource versions differ'
+    production = {'/' + p.relative_to(site).as_posix(): record(p.relative_to(site).as_posix(), p.read_bytes())
+                  for p in site.rglob('*') if p.is_file() and not p.name.startswith('.')}
+    release = {'version': version, 'sourceCommit': commit, 'resourceRelease': bootstrap['releaseId'],
+               'kind': 'local-build-not-deployed'}
+    production['/release.json'] = record('release.json', encode(release))
+else:
+    deploy_id = '6ad6fcdcf1f9e6ca6c7c5330'
+    archive = repo / 'deployments/guangcai-no1-china-v7' / deploy_id
+    site = archive / 'site'
+    production = json.loads((archive / 'files.json').read_text())
+    release = json.loads((site / 'release.json').read_text())
+    assert release['version'] == version, 'Current source requires a current --build-root'
 runtime = [f'releases/v7-{i}' for i in range(1, 10)] + ['api/v1/bootstrap.json', 'icons',
            'backgrounds', 'runtime-config.js', 'manifest.webmanifest', 'third-party']
-tests = ['geometry', 'float-normal', 'fixed-atlas', 'city-selection', 'xy-controls',
+tests = ['geometry', 'float-normal', 'fixed-atlas', 'fixed-quality', 'city-selection', 'xy-controls',
          'haptics', 'v6-selection', 'loop-selector', 'glass-compat', 'download-bytes']
 
 
@@ -110,11 +132,28 @@ for raw in git('ls-files', '--stage', '-z', '--', 'guangcai-china-preview').spli
 out.mkdir(parents=True)
 identity = {'version': package['version'], 'scope': 'formal-root-only', 'snapshotCommit': commit,
             'productionSourceCommit': release['sourceCommit'], 'deployId': deploy_id, 'resourceRelease': release['resourceRelease'],
+            'artifactKind': 'local-build-not-deployed' if args.build_root else 'published-snapshot',
             'sourceOverrides': list(overrides), 'formalShenzhen': 'original; no Phase II APEC', 'githubSync': 'pending-account-suspended'}
 bootstrap = json.loads((app / 'public/api/v1/bootstrap.json').read_text())
 current = {**identity, 'bootstrap': bootstrap, 'catalog': json.loads((app / 'public' / bootstrap['catalogUrl']).read_text()),
            'manifest': json.loads((app / 'public' / bootstrap['manifestUrl']).read_text())}
-readme = (repo / 'docs/changes/20261020-v7.1.11-main-only-handoff/handoff-readme.md').read_bytes()
+readme = f'''# 中国杯 V{version} 正式主页开发交付
+
+只包含无后缀正式主页，唯一 HTML 入口为 index.html。七视角及花纹提清策略已包含；正式深圳保留原稿。
+本包来源提交：{commit}；资源版本：{release['resourceRelease']}。
+构建来源：{identity['artifactKind']}；部署ID：{deploy_id or '未部署'}。本地包不代表已经更新线上。
+
+- source-main.tar.gz：当前可维护源码、运行资源、所需工具和测试，无 node_modules、凭据、Git历史或构建缓存。
+- production-main.tar.gz：可托管的静态主页，完整资源保留以兼容已有作品，无 dev/compare/APEC 页面。
+- package-receipt.json、source-files.json、production-files.json：版本与逐文件SHA-256清单。
+
+解开源码包后进入 source/guangcai-china-preview，使用 npm ci、npm run dev；npm run build 生成静态文件。
+npm test 运行基础及花纹策略测试。构建默认仅 index.html；部署时以静态包 production/site 为站点根目录。
+应通过 HTTP(S) 访问，不能以 file:// 打开。默认使用同源 api/v1/bootstrap.json 和 releases；
+runtime-config.js 可配置后端和资源地址，包内不含真实身份或服务凭据。
+花纹近看优先高分彩色，法线/ORM按预算分档，保留16位法线及原有显存预算。
+实体手机视觉与真实后端线路验收按接入环境另行完成。
+'''.encode()
 source_records = []
 with tarfile.open(out / 'source-main.tar.gz', 'w:gz', compresslevel=3) as tar:
     for number, (name, blob, mode) in enumerate(entries, 1):
@@ -139,7 +178,7 @@ for name, data in generated.items():
 static_records = []
 with tarfile.open(out / 'production-main.tar.gz', 'w:gz', compresslevel=3) as tar:
     for name in static_paths:
-        data = (site / name).read_bytes()
+        data = encode(release) if args.build_root and name == 'release.json' else (site / name).read_bytes()
         item = record('site/' + name, data)
         assert item['sha256'] == production['/' + name]['sha256'], name
         static_records.append(item)
