@@ -34,7 +34,7 @@ try{
  const reviewed=JSON.parse(await readFile('evidence/v7.1.10/consumer-build.json','utf8'));
  const actual=(await files(build)).filter(f=>f!=='release.json');if(JSON.stringify(actual)!==JSON.stringify(reviewed.inventory.map(f=>f.path).sort()))throw Error('Build inventory changed');
  for(const file of reviewed.inventory)if(hash(await readFile(path.join(build,file.path)))!==file.sha256)throw Error(`Build changed: ${file.path}`);
- const qa=JSON.parse(await readFile('evidence/v7.1.10/coverage-local/report.json'));if(!qa.passed||qa.errors.length||qa.checks.length<53)throw Error('Current 23-city/model occupancy and texture mapping browser QA did not pass');
+ const qa=JSON.parse(await readFile('evidence/v7.1.10/coverage-local/report.json'));if(!qa.passed||qa.errors.length||qa.checks.length<54)throw Error('Current 23-city/model occupancy and texture mapping browser QA did not pass');
  const source=JSON.parse(await readFile('evidence/v7.1.7/source-registration.json'));if(!source.passed||source.cities!==23||source.tiers!==69)throw Error('23-city full-source PSD mapping audit missing');
  const capture=JSON.parse(await readFile('evidence/v7.1.7/cup-comparisons.json'));if(!capture.passed||capture.rows.length!==12)throw Error('Six wording comparisons missing');
  const pages=JSON.parse(await readFile('evidence/v7.1.10/pages-local/report.json'));if(!pages.passed||pages.errors.length||pages.checks.length<29)throw Error('Report and independent lab QA did not pass');
