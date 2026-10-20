@@ -1,4 +1,5 @@
 report identity and meaningful content
+report compares actual 7.1.4 and current releases
 mesh-based painted/white occupation is explicit
 three original/floral texture cards are displayed
 distinct planar/model/actual-ink values
@@ -32,6 +33,8 @@ all 23 per-city model boundaries visible
 historical city compare has a separately identified current measurement panel
 historical city navigation also updates current measurements
 dev identity and real viewer
+dev 7.1.4 city uses the actual v7-5 mask
+dev 7.1.4 frame and measurements use its actual release
 guide changes actual rendered cup pixels
 3D guide follows actual city triangles
 actual part/highlight body
@@ -52,4 +55,4 @@ formal release and default remain unchanged
 formal homepage does not fetch experimental measurement data
 no framework overlay
 no runtime or console errors
-{ passed: true, checks: 54, errors: [], failure: undefined }
+{ passed: true, checks: 57, errors: [], failure: undefined }

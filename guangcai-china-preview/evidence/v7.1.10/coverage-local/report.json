@@ -2,6 +2,7 @@
   "base": "http://127.0.0.1:5294/",
   "checks": [
     "report identity and meaningful content",
+    "report compares actual 7.1.4 and current releases",
     "mesh-based painted/white occupation is explicit",
     "three original/floral texture cards are displayed",
     "distinct planar/model/actual-ink values",
@@ -35,6 +36,8 @@
     "historical city compare has a separately identified current measurement panel",
     "historical city navigation also updates current measurements",
     "dev identity and real viewer",
+    "dev 7.1.4 city uses the actual v7-5 mask",
+    "dev 7.1.4 frame and measurements use its actual release",
     "guide changes actual rendered cup pixels",
     "3D guide follows actual city triangles",
     "actual part/highlight body",

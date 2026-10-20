@@ -1,7 +1,7 @@
 {
   "root": ".codex-work/deploy/v7-build",
   "files": 1186,
-  "bytes": 499815284,
+  "bytes": 500161704,
   "assetsVerified": 196,
   "inventory": [
     {
@@ -21,8 +21,8 @@
     },
     {
       "path": "artwork-dev/index.html",
-      "bytes": 4236,
-      "sha256": "5f19cbb1d8df1cc8b73f4f650d6d5380942b0c13b142798ba98db568027cf42f"
+      "bytes": 4347,
+      "sha256": "59109415c198a38d1f23d58dd6da2f9f8d043451c6fc3b4f7eb43f362c2be468"
     },
     {
       "path": "assets/client-BYTvRpVq.js",
@@ -45,9 +45,9 @@
       "sha256": "6f5f2873e995fe96761b5eaa2f621ef6ea9f5a603b87919d7d1954d03cf57c59"
     },
     {
-      "path": "assets/index-BHtsgCtd.js",
-      "bytes": 5662,
-      "sha256": "38dd4b528df1e84f8b06df5a00a3ddc06f916a68ceb622b1e36e1332f3851160"
+      "path": "assets/index-DcuhPl8h.js",
+      "bytes": 5745,
+      "sha256": "7e840f44b21bc95abe4db2cf283077565c4526fddcfa6d3ae2ed8243b0da6b07"
     },
     {
       "path": "assets/index-bG8FfO-B.css",
@@ -1791,18 +1791,18 @@
     },
     {
       "path": "city-compare/index.html",
-      "bytes": 13046,
-      "sha256": "a411a6e93d20e30b1c5d1c0f348ba30166ad1fc458d964c858e9584a76cbc8ff"
+      "bytes": 13184,
+      "sha256": "db831b30814f85dda4dfec28aaed7ccf41bb7aa7a9882eb7520e5dff42b57af9"
     },
     {
       "path": "coverage/data.json",
-      "bytes": 415091,
-      "sha256": "fe3aea9a953c5395cc31de4440a8a025c2899f7b222fb0ed278435141e3c384b"
+      "bytes": 684283,
+      "sha256": "ae803aa98e86ca4749929e40890d8a172959cbff298bb1762873f8211f66b255"
     },
     {
       "path": "coverage/view.js",
-      "bytes": 20843,
-      "sha256": "ccd61306c6c1de9d3a765718b678d24e87b63cde4645718ec480da9718920f59"
+      "bytes": 20876,
+      "sha256": "94617601f1c343a317e7da36739d049834ab2141eb14b6ee2410fc981b1a8bee"
     },
     {
       "path": "dev-assets/assets/bezier-beijing-standard-mask-4250fb5b3a6a91b8.webp",
@@ -2266,8 +2266,8 @@
     },
     {
       "path": "label-compare/data.json",
-      "bytes": 54695,
-      "sha256": "201875495aae9deb8ebfd47779a80240e268a8132e161869bee954faf5f9c4f5"
+      "bytes": 80957,
+      "sha256": "909af021b91ec48724ac877ee0c6845de9bc9b9fdd84c66d351ee9aa8984ee6a"
     },
     {
       "path": "label-compare/images/beijing-after.webp",
@@ -2276,8 +2276,8 @@
     },
     {
       "path": "label-compare/images/beijing-before.webp",
-      "bytes": 89750,
-      "sha256": "959af97c053244291fcdc51c24e665466904004402a5570346ae9ae0f890e4ee"
+      "bytes": 92164,
+      "sha256": "53a00282df5ed3ba645447f47c45552ef4453cf234d4078d6292da204aa93438"
     },
     {
       "path": "label-compare/images/beijing-label.webp",
@@ -2296,8 +2296,8 @@
     },
     {
       "path": "label-compare/images/changchun-before.webp",
-      "bytes": 77986,
-      "sha256": "534aff25e9f31cd3b50f0e3d6111a1cd16e857e88a63afe32fddaf63d0450fe7"
+      "bytes": 80268,
+      "sha256": "930b0f53427daee28ba410d743f6853e4d4bb84fe8364e0e0f5cfd4acc4a9b40"
     },
     {
       "path": "label-compare/images/changchun-label.webp",
@@ -2316,8 +2316,8 @@
     },
     {
       "path": "label-compare/images/chengdu-before.webp",
-      "bytes": 67854,
-      "sha256": "b5ae5d534bf083d5605f6eb46e5101c758e092935f9ba882db921654013fad68"
+      "bytes": 70148,
+      "sha256": "d901dfa66d6ffdc5063ae75a11ae9b1b47e506a8e02e8750bbcd93d5ddb426b0"
     },
     {
       "path": "label-compare/images/chengdu-label.webp",
@@ -2336,8 +2336,8 @@
     },
     {
       "path": "label-compare/images/chongqing-before.webp",
-      "bytes": 97534,
-      "sha256": "c775b7f000cc423d357ca38962b13cef03c3a636f4649e465a3bdf93e84b8d68"
+      "bytes": 99838,
+      "sha256": "c01abcedac41363334995d24d80e37ea6dbd259ec7af5f230dbb4a59a1be6a68"
     },
     {
       "path": "label-compare/images/chongqing-label.webp",
@@ -2356,8 +2356,8 @@
     },
     {
       "path": "label-compare/images/cooperation-before.webp",
-      "bytes": 16244,
-      "sha256": "c1dd974f3a511c85534fd2c2594fbfdbe6ccb0dd5e5fe95453ddd97822c21761"
+      "bytes": 12634,
+      "sha256": "3d71534ee4689fac9dd48d0fe8e37cd94c89722d12b12afcc1dc78098a8fce52"
     },
     {
       "path": "label-compare/images/cup-cooperation-after.webp",
@@ -2366,8 +2366,8 @@
     },
     {
       "path": "label-compare/images/cup-cooperation-before.webp",
-      "bytes": 72240,
-      "sha256": "4e5718ed1492669d3176d4f9fa1674011e2f210c1e82e57903568dcbde012e93"
+      "bytes": 75034,
+      "sha256": "b0e36a1d2899e365234204719447ec26071c7018abfffcbba9dfa130a031d72e"
     },
     {
       "path": "label-compare/images/cup-innovation-after.webp",
@@ -2376,8 +2376,8 @@
     },
     {
       "path": "label-compare/images/cup-innovation-before.webp",
-      "bytes": 72192,
-      "sha256": "541a6343335dbe2e70770fbc843509e34f3f87124a4424b75d82019591a5d0f2"
+      "bytes": 75338,
+      "sha256": "0142aa7ec2ffe3eb9913d1879ae8813c774628beb1a7582e64d23eae522fa870"
     },
     {
       "path": "label-compare/images/cup-ocean-after.webp",
@@ -2386,18 +2386,18 @@
     },
     {
       "path": "label-compare/images/cup-ocean-before.webp",
-      "bytes": 72302,
-      "sha256": "9bf74d6f9b7555aebd7758f3c597a3652df888ab855a80f551d100475d00ccd9"
+      "bytes": 75810,
+      "sha256": "9420b8b0ab496363f70c5bdf50ca75c05c3c24ebec4fc22130565f82dce909cf"
     },
     {
       "path": "label-compare/images/cup-open-after.webp",
-      "bytes": 77912,
-      "sha256": "56984e7c74301726ffa9606e6f4d9064298c3cfa72594b20bcd7ed217ec92f10"
+      "bytes": 77526,
+      "sha256": "e4bc712152527c33cf308ca3e52e14e4989ce1ffa5e68c3110e103cdd0de2e6b"
     },
     {
       "path": "label-compare/images/cup-open-before.webp",
-      "bytes": 72178,
-      "sha256": "93dd5882e4756986553c89844b79711954c0444992762bc155d80cfdaaae6bbf"
+      "bytes": 75084,
+      "sha256": "f67cba361bb1052004cf45c3f842e09f6d7afc121e8960aeb4fc56b46b4b8bfd"
     },
     {
       "path": "label-compare/images/cup-sharing-after.webp",
@@ -2406,8 +2406,8 @@
     },
     {
       "path": "label-compare/images/cup-sharing-before.webp",
-      "bytes": 72230,
-      "sha256": "e6b18446fffbe56fb6704824806081df92a499ff6b550f8a09f562fe4e2cbb45"
+      "bytes": 75082,
+      "sha256": "59365ad326c3c3319020bfa93894070ef1cdddc452e57c31f2e64ca3682907c9"
     },
     {
       "path": "label-compare/images/cup-together-after.webp",
@@ -2416,8 +2416,8 @@
     },
     {
       "path": "label-compare/images/cup-together-before.webp",
-      "bytes": 72202,
-      "sha256": "64b119bcb0594fa86265ece43f57a193cc8be99b5c257a82e5b07cfda0fe4d65"
+      "bytes": 74830,
+      "sha256": "7dc217d6c0c354cf700b79e986e189e3a01e886fa4661c8690a03bbdf8024126"
     },
     {
       "path": "label-compare/images/guangzhou-after.webp",
@@ -2426,8 +2426,8 @@
     },
     {
       "path": "label-compare/images/guangzhou-before.webp",
-      "bytes": 58784,
-      "sha256": "9c92737602c8534d1097ee46fdbc75f2892cc6f6ef952294f2fbadf657c44167"
+      "bytes": 61280,
+      "sha256": "d418c979f66abbe35839eb8ed87afd36bde4134fce6f5ccc209f780c6ba39870"
     },
     {
       "path": "label-compare/images/guangzhou-label.webp",
@@ -2446,8 +2446,8 @@
     },
     {
       "path": "label-compare/images/hangzhou-before.webp",
-      "bytes": 78176,
-      "sha256": "f8b2e25bbc0eed73f10417c055173280b4440606e5e6565ade9a1aaf5ee882ff"
+      "bytes": 80644,
+      "sha256": "96a53057033767d566ec505fcdbef3bb880794e3ab8d84323e0380401da2ca6f"
     },
     {
       "path": "label-compare/images/hangzhou-label.webp",
@@ -2466,8 +2466,8 @@
     },
     {
       "path": "label-compare/images/harbin-before.webp",
-      "bytes": 76098,
-      "sha256": "fd84e1d90d39f63c201d2cf9633370365893991e9f21a42106eff022e3b5b6ad"
+      "bytes": 78452,
+      "sha256": "91598826e8b0a9c6a7abbb76e62751d24e3a205ca812f2a5fc66a85c16099e7e"
     },
     {
       "path": "label-compare/images/harbin-label.webp",
@@ -2486,8 +2486,8 @@
     },
     {
       "path": "label-compare/images/hohhot-before.webp",
-      "bytes": 82566,
-      "sha256": "67406bde679910783d9ce06c65d0b977ca6c44686e0b915534e2d3a88eb667ca"
+      "bytes": 84896,
+      "sha256": "de70f1800d930533bacc29b5246cc1d416b6ee9ef3cdfe19f3df3fd5ccd60571"
     },
     {
       "path": "label-compare/images/hohhot-label.webp",
@@ -2506,8 +2506,8 @@
     },
     {
       "path": "label-compare/images/innovation-before.webp",
-      "bytes": 18120,
-      "sha256": "c8e31abc3cef550d14d37fcacda460cba2bed9b5989f7d8aa70ba4f50d10d136"
+      "bytes": 15026,
+      "sha256": "9d53c6e43f7e94ed08f85bfc35516e9487cbeafa5a0163cdfc532cee7f4ab57a"
     },
     {
       "path": "label-compare/images/jingdezhen-after.webp",
@@ -2516,8 +2516,8 @@
     },
     {
       "path": "label-compare/images/jingdezhen-before.webp",
-      "bytes": 77732,
-      "sha256": "201755e57f5f157f0993434faeb66252cb3601f3c977a3bf10d78e0091f298ff"
+      "bytes": 80046,
+      "sha256": "7008fe4e32d182b5d5b69f7b9be04f5e81dadedd41efd6d07306c5333987ce54"
     },
     {
       "path": "label-compare/images/jingdezhen-label.webp",
@@ -2536,8 +2536,8 @@
     },
     {
       "path": "label-compare/images/nanchang-before.webp",
-      "bytes": 98852,
-      "sha256": "176f8ea772be3554fde477b5234d646107c51f06b4c1b52916790886cb2272df"
+      "bytes": 101244,
+      "sha256": "a981fad85570506baf14d6c297fad70d9b0c14d6fde029458f3cdad02ab5fadc"
     },
     {
       "path": "label-compare/images/nanchang-label.webp",
@@ -2556,8 +2556,8 @@
     },
     {
       "path": "label-compare/images/nanjing-before.webp",
-      "bytes": 69594,
-      "sha256": "ced38122e41173ae7ab01ec7304e4e6233fc430617ef76b6e0237e1ebce337c5"
+      "bytes": 71894,
+      "sha256": "13dc880752b864fbc87018cae3dc27b1c70e547f51097df305f5d83b97dbdd7b"
     },
     {
       "path": "label-compare/images/nanjing-label.webp",
@@ -2576,8 +2576,8 @@
     },
     {
       "path": "label-compare/images/ocean-before.webp",
-      "bytes": 18452,
-      "sha256": "3e709d268a4cb2119083f7d619c9e2aafcf9fbbe828eadc3db9f363335e73943"
+      "bytes": 15406,
+      "sha256": "5f92d1bb49db63e024907dd3d7e3da05c0aa8fa0460f96f6868ddd63fe2ef11a"
     },
     {
       "path": "label-compare/images/open-after.webp",
@@ -2586,8 +2586,8 @@
     },
     {
       "path": "label-compare/images/open-before.webp",
-      "bytes": 17094,
-      "sha256": "3b1f6cf552a3aac927276a3a6fe2e76a184d5ef77ca4fdedddd8b1ee8e6503ed"
+      "bytes": 13680,
+      "sha256": "38045fb474824e0ec468840f7e7a7a6d5582cbdf3608de77c3fe9ab07922b7cd"
     },
     {
       "path": "label-compare/images/qingdao-after.webp",
@@ -2596,8 +2596,8 @@
     },
     {
       "path": "label-compare/images/qingdao-before.webp",
-      "bytes": 72512,
-      "sha256": "064c66f5a36a6b0137b500ca670bef74e223c3f09f5a336b821beae58fe7ca03"
+      "bytes": 74782,
+      "sha256": "a17f8b802634e37c744e064614f9d4f579eaad0633355c1f0a928c49e71d0dad"
     },
     {
       "path": "label-compare/images/qingdao-label.webp",
@@ -2616,8 +2616,8 @@
     },
     {
       "path": "label-compare/images/shanghai-before.webp",
-      "bytes": 56862,
-      "sha256": "842c1db5b1eaf38cbd068e5c206bd476480cf4e495a513ad38f298b5ce3434f4"
+      "bytes": 58058,
+      "sha256": "28a765c691fc0c0ef40a8278e8f569f34b266c6f1a1e64fba3a6c65bed564ae8"
     },
     {
       "path": "label-compare/images/shanghai-label.webp",
@@ -2636,8 +2636,8 @@
     },
     {
       "path": "label-compare/images/sharing-before.webp",
-      "bytes": 15716,
-      "sha256": "7067615b1bb01ef762b0ce440b1e22bd3cf6e47edabe452844890843ba6395d7"
+      "bytes": 11912,
+      "sha256": "2203383fed2f8ed5beed2c6f5f0a6de246fd5b90c1e9fd72d10001b227b8e8ed"
     },
     {
       "path": "label-compare/images/shenyang-after.webp",
@@ -2646,8 +2646,8 @@
     },
     {
       "path": "label-compare/images/shenyang-before.webp",
-      "bytes": 93066,
-      "sha256": "f1be5ae053391f87b9c2190b53fd8b5006ce068f55f8a7260eef121588218fda"
+      "bytes": 95278,
+      "sha256": "eebc3da8e49396cde26b1b8b37fb88c3b0721fd9ab92c482fd218b7d17b430b3"
     },
     {
       "path": "label-compare/images/shenyang-label.webp",
@@ -2666,8 +2666,8 @@
     },
     {
       "path": "label-compare/images/shenzhen-before.webp",
-      "bytes": 83098,
-      "sha256": "e87456cf4d2712fa002afac81faa8d1c3202b3dd7a375ad9cdc7e05632cbcd44"
+      "bytes": 86072,
+      "sha256": "7295d46357c7acca566c8e92cf75e294e31fdba1e0129e21774d3cc8bf7c28ee"
     },
     {
       "path": "label-compare/images/shenzhen-label.webp",
@@ -2686,8 +2686,8 @@
     },
     {
       "path": "label-compare/images/shijiazhuang-before.webp",
-      "bytes": 85000,
-      "sha256": "dc98e1779bc72884336a7a529718e0de2250204ebeb11ac65a6d9b06ae32a6b1"
+      "bytes": 87402,
+      "sha256": "b6a5f355a5ec3f8a0fe68f8af4ac39f7271d7207731c178a287643d842563b32"
     },
     {
       "path": "label-compare/images/shijiazhuang-label.webp",
@@ -2706,8 +2706,8 @@
     },
     {
       "path": "label-compare/images/taiyuan-before.webp",
-      "bytes": 85494,
-      "sha256": "487df7379deba6d3c126e2c36c5c0eb4243019ed70681c8220504093ee014418"
+      "bytes": 88500,
+      "sha256": "30ba5de8b78758b17518fd8e34370cb50fba8bfc277f345f986ef8095714a8fb"
     },
     {
       "path": "label-compare/images/taiyuan-label.webp",
@@ -2726,8 +2726,8 @@
     },
     {
       "path": "label-compare/images/tianjin-before.webp",
-      "bytes": 108324,
-      "sha256": "4742e2e8456ddb50751095497caeac28a1e10300e3368725a5aa6d14db5acb7f"
+      "bytes": 111222,
+      "sha256": "25a66a1eef0855dbc25449a8b8a2284472a7baf73efb04be0be73562a8838a15"
     },
     {
       "path": "label-compare/images/tianjin-label.webp",
@@ -2746,8 +2746,8 @@
     },
     {
       "path": "label-compare/images/together-before.webp",
-      "bytes": 15844,
-      "sha256": "78f9966ef2007f4e4c7afa36283791bab17059f2b8a9e57e5257fed4223342f6"
+      "bytes": 11890,
+      "sha256": "598ff952142c81da90be3a015d45d3dfbd0a782a7ba8d4f13f9e48009dae7e22"
     },
     {
       "path": "label-compare/images/urumqi-after.webp",
@@ -2756,8 +2756,8 @@
     },
     {
       "path": "label-compare/images/urumqi-before.webp",
-      "bytes": 76248,
-      "sha256": "cc0ef633d911373b23c9320cd32aba306e73ab7def03a3460622be42f33bae64"
+      "bytes": 78506,
+      "sha256": "f8509e476aaeddabce3f836d2a1eace6c9c4c0a749779788c25f28b9633a6d37"
     },
     {
       "path": "label-compare/images/urumqi-label.webp",
@@ -2776,8 +2776,8 @@
     },
     {
       "path": "label-compare/images/wuhan-before.webp",
-      "bytes": 95918,
-      "sha256": "4d34e45a4386d9cae89c86457ccaf0e2b7f48dccc0771dc17781612bc9a167d1"
+      "bytes": 98726,
+      "sha256": "e15aef29a0d8a397c9b5eda84cb0add6dad2858a30fc18d4e9cd7c327059c19d"
     },
     {
       "path": "label-compare/images/wuhan-label.webp",
@@ -2796,8 +2796,8 @@
     },
     {
       "path": "label-compare/images/xiamen-before.webp",
-      "bytes": 87104,
-      "sha256": "e48dbb062f0e1fed446f01ffaef940aecd7770909595d4ddeb2e9f05e03d1467"
+      "bytes": 87844,
+      "sha256": "e94f9d11a668ff57f50fd8f726cf56ae825081c0f8ff7d912a75010b4c2d1455"
     },
     {
       "path": "label-compare/images/xiamen-label.webp",
@@ -2816,8 +2816,8 @@
     },
     {
       "path": "label-compare/images/xian-before.webp",
-      "bytes": 98064,
-      "sha256": "b607db599096095093c686413369827fe6fb1797507511cd957de06fc1cde9e5"
+      "bytes": 101088,
+      "sha256": "6c774f403c02f18c01acc6950116b8573cc471188e94f9e1ebf3b50718bcff2d"
     },
     {
       "path": "label-compare/images/xian-label.webp",
@@ -2836,8 +2836,8 @@
     },
     {
       "path": "label-compare/images/zhengzhou-before.webp",
-      "bytes": 89468,
-      "sha256": "537dd5c027956bb6f1aff441e0d5d292e475badae2d86e75124c13d5ac3cd15f"
+      "bytes": 91654,
+      "sha256": "566131fa43f6b0ef9cbf53fd52fa391aac1a7c27ea18c648c84d0922666892cd"
     },
     {
       "path": "label-compare/images/zhengzhou-label.webp",
@@ -2851,13 +2851,13 @@
     },
     {
       "path": "label-compare/index.html",
-      "bytes": 5725,
-      "sha256": "ebeca582f6a0a6aab591987f1524471e2776e9865258ddb9ee58ab24325ed21f"
+      "bytes": 5762,
+      "sha256": "a289d502b627a603fc70ee0053cf7944c7560279d5e950989631da846aa0c516"
     },
     {
       "path": "label-compare/report.js",
-      "bytes": 2709,
-      "sha256": "ac5be7cef614d21f8dfacf8b2a991add2b0fe2e45da7311180e8ed6d56a76197"
+      "bytes": 2825,
+      "sha256": "79e41b4f3db7cfa7799653c8f28bd00ff1186674b89a2107030d6bbb63593dea"
     },
     {
       "path": "label-compare/style.css",

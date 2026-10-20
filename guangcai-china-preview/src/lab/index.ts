@@ -20,7 +20,7 @@ async function start(){
  coverage.addEventListener('coverage-part',e=>{part.value=(e as CustomEvent<string>).detail;part.dispatchEvent(new Event('change'));});
  const requestedPart=new URL(location.href).searchParams.get('part');if(requestedPart&&['city','body','handle','saucer','all'].includes(requestedPart)){part.value=requestedPart;guide.checked=true;highlight.checked=true;}
  guide.addEventListener('change',()=>void updateGuide());highlight.addEventListener('change',()=>{guide.checked=true;void updateGuide();});part.addEventListener('change',async()=>{guide.checked=true;await updateGuide();const v=await waitViewer();const next=part.value==='all'?'exploded':part.value==='saucer'?'flowers':part.value==='handle'||part.value==='body'?'handle':'hero';view.value=next;v.setView(next,true);});
- const [current,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-8'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
+ const [current,baseline,previous,unified,legacy,experimental,reference,layout]=await Promise.all([loadResources('v7-8'),loadResources('v7-5'),loadResources('v7-6'),loadResources('v7-7'),loadResources('v7-4'),json<ResourceManifest['cities']>('/dev-assets/cities.json'),json<Record<string,Label&{text:string}>>('/dev-assets/reference-labels.json'),json<{cities:{id:string;slogan:string}[]}>('/label-compare/data.json')]);
  for(const [id,c]of Object.entries(unified.manifest.cities))city.add(new Option(c.name,id));city.value='shenzhen';
  for(const [id,s]of Object.entries(unified.manifest.slogans))slogan.add(new Option(s.text,id));slogan.value='ocean';
  const absolutize=(a:Asset):Asset=>({...a,url:new URL('/dev-assets/'+a.url,location.origin).href});
@@ -33,9 +33,9 @@ async function start(){
   $('status').textContent='正在更新组合…';$('status').dataset.state='loading';$('combination').textContent=unified.manifest.cities[state.city].name+' · '+art.selectedOptions[0].text;
   try{
    const v=await waitViewer();if(rev!==generation)return;
-   const appearance=presetAppearance(state.palette as Palette),base=state.art==='previous'?previous:state.art==='legacy'?legacy:current;
+   const appearance=presetAppearance(state.palette as Palette),base=state.art==='baseline'?baseline:state.art==='previous'?previous:state.art==='legacy'?legacy:current;
    const pack=base.cityPack({variant:'v6-'+state.city+'-gold',text:state.slogan as Lettering,finish:'metal',appearance},'standard');
-   let l=state.label==='previous'?previous.manifest.slogans[state.slogan]:unified.manifest.cities[state.city].slogans?.[state.slogan]??unified.manifest.slogans[state.slogan];
+   let l=state.label==='baseline'?baseline.manifest.slogans[state.slogan]:state.label==='previous'?previous.manifest.slogans[state.slogan]:unified.manifest.cities[state.city].slogans?.[state.slogan]??unified.manifest.slogans[state.slogan];
    if(state.label==='reference'){const raw=reference[state.city];l={...raw,asset:absolutize(raw.asset)};}
    if(['mastergo','bezier'].includes(state.art)){
     const e=experimental[state.art+'-'+state.city];if(!e)throw Error('本城尚无该实验稿');const lev=e.levels.standard;const level={mask:absolutize(lev.mask),normal:absolutize(lev.normal)};
