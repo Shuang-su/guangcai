@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:5300/",
+      "version": "7.1.13",
+      "release": "v7-10"
+    },
+    {
+      "url": "http://127.0.0.1:5300/artwork-dev/cup.html",
+      "version": "7.1.11",
+      "release": "v7-9"
+    }
+  ],
+  "errors": []
+}

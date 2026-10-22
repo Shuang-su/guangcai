@@ -6,7 +6,7 @@
 |---|---|
 | 当前维护仓库 | `/Volumes/Prism_初号機/广彩/guangcai-main/`，独立Git元数据，不依赖其他旧目录 |
 | 稳定入口 | `/Volumes/Prism_初号機/广彩/guangcai-repo/` → `guangcai-main` |
-| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，本地及正式主页 V7.1.12 / v7-9 |
+| 中国杯应用 | 主仓库内 `guangcai-china-preview/`，本地及正式主页 V7.1.13 / v7-10 |
 | 原始 PSD、花纸、城市线稿、照片视频与文档 | `/Volumes/Prism_初号機/广彩/素材原件/` |
 | 项目临时文件与回执 | 当前仓库 `.codex-work/`，仅按用途保留，通过本地exclude忽略 |
 | 旧产品版本、历史源码与资源 | `https://github.com/Shuang-su/guangcai` 的提交、标签、`archives/`、来源清单与 Git LFS |
@@ -50,3 +50,7 @@
 正式主页已发布至 https://guangcai-no1-china-v7.netlify.app/ ，部署6ad76b8796b6f32499d6fa63，源码006e3268。原临时交付目录 `/Volumes/Prism/广彩交付/中国杯-V7.1.12-正式主页-花纹提清/` 在部署准备期间不再存在，卷挂载正常且定向查找未发现移动副本；旧包链接不再作为当前交付入口。原打包回执、源码和验证记录仍在Git。
 
 本次以相同已验证应用树重建静态产物并差量发布，没有重建交付压缩包。新增deployments/guangcai-no1-china-v7/6ad76b8796b6f32499d6fa63/site快照以Git对象复用保存，本机不展开整站副本；详细位置与恢复说明见[发布记录](docs/changes/20261020-v7.1.12-netlify/completion.md)。
+
+## 2026-10-22 V7.1.13
+
+当前开发分支codex/city-blessings-20261022。新增城市祝福语与5/6字长框已发布，部署6ad9e0c4e4871da75c6b4316，源码78530b7e。旧后缀页面保留，dev固定v7-9。发布树按Git对象归档，未展开完整副本。[发布记录](docs/changes/20261022-city-blessings/completion.md)。

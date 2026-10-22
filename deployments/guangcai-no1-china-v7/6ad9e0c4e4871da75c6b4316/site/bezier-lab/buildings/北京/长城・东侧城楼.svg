@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="3878" height="1630" viewBox="0 0 3878 1630" version="1.1">
+  <title>北京 · 独立建筑・闭合贝塞尔轮廓</title>
+  <desc>Program-assisted architectural reconstruction after inspection of layered China Cup PSD. Every building owns explicitly closed exterior geometry. Curves are cubic Beziers; genuine corners and planar lattice are straight. Interior construction strokes may remain open. No embedded raster.</desc>
+  <defs>
+    <clipPath id="bj-wall-tower-east-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#bj-wall-tower-east-outline" clip-rule="nonzero" />
+    </clipPath>
+  </defs>
+  <g id="bj-wall-tower-east" data-building="bj-wall-tower-east" data-name="长城・东侧城楼" data-kind="building" fill="none" stroke="#fc9f07" stroke-linecap="round" stroke-linejoin="round" inkscape:groupmode="layer" inkscape:label="长城・东侧城楼">
+    <title>长城・东侧城楼</title>
+    <path id="bj-wall-tower-east-outline" d="M 3044 1422 L 3044 1300 L 3044 1286 L 3056.2 1286 L 3056.2 1300 L 3068.4 1300 L 3068.4 1286 L 3080.6 1286 L 3080.6 1300 L 3092.8 1300 L 3092.8 1286 L 3105 1286 L 3105 1300 L 3117.2 1300 L 3117.2 1286 L 3129.4 1286 L 3129.4 1300 L 3141.6 1300 L 3141.6 1286 L 3153.8 1286 L 3153.8 1300 L 3166 1300 L 3166 1422 L 3044 1422 Z" data-role="building-outline" stroke-width="6.2" fill-rule="nonzero" />
+    <g id="bj-wall-tower-east-components" clip-path="url(#bj-wall-tower-east-clip)">
+      <path id="bj-wall-tower-east-p001" d="M 3044 1312 L 3166 1312" stroke-width="3.2" data-role="detail" data-label="连续城楼横檐">
+        <title>连续城楼横檐</title>
+      </path>
+    </g>
+    <path id="bj-wall-tower-east-p002" d="M 3066.84 1422 L 3066.84 1351 C 3066.84 1344 3074.84 1344 3074.84 1351 L 3074.84 1422 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭拱形射口">
+      <title>封闭拱形射口</title>
+    </path>
+    <path id="bj-wall-tower-east-p003" d="M 3101 1422 L 3101 1351 C 3101 1344 3109 1344 3109 1351 L 3109 1422 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭拱形射口">
+      <title>封闭拱形射口</title>
+    </path>
+    <path id="bj-wall-tower-east-p004" d="M 3135.16 1422 L 3135.16 1351 C 3135.16 1344 3143.16 1344 3143.16 1351 L 3143.16 1422 Z" stroke-width="2.3" data-role="component-outline" data-label="封闭拱形射口">
+      <title>封闭拱形射口</title>
+    </path>
+  </g>
+</svg>

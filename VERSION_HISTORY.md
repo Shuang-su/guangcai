@@ -1,6 +1,6 @@
 # 产品版本与发布索引
 
-2026-10-22：V7.1.13 / v7-10 本地待发布，记录见 docs/changes/20261022-city-blessings/completion.md。
+2026-10-22：V7.1.13 / v7-10 已发布到Netlify，记录见 docs/changes/20261022-city-blessings/completion.md。
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 

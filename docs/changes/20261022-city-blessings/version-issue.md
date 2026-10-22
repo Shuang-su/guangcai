@@ -7,3 +7,5 @@
 产品7.1.13，资源v7-10。源码SHA、Netlify部署ID和固定入口见completion.md及部署回执。48基础、63 V7测试、225资源、99浏览器检查已通过；WebKit缺少运行时，实体iPhone/微信验收待补充。
 
 关联开发分支：codex/city-blessings-20261022。PR/合并状态待GitHub恢复；不因部署完成自动关闭设备验收项。
+
+Netlify已完成：6ad9e0c4e4871da75c6b4316；公网42项及1290份服务器摘要通过。固定入口：https://6ad9e0c4e4871da75c6b4316--guangcai-no1-china-v7.netlify.app/
