@@ -1,0 +1,420 @@
+{
+  "url": "http://127.0.0.1:5299/",
+  "engine": "Chrome",
+  "checks": [
+    {
+      "name": "mobile page identity",
+      "passed": true
+    },
+    {
+      "name": "mobile nonblank/no overlay",
+      "passed": true
+    },
+    {
+      "name": "mobile new default",
+      "passed": true
+    },
+    {
+      "name": "mobile current/neighbor label preload only",
+      "passed": true
+    },
+    {
+      "name": "mobile no runtime font",
+      "passed": true
+    },
+    {
+      "name": "mobile twelve options in order",
+      "passed": true
+    },
+    {
+      "name": "mobile click city-luck",
+      "passed": true
+    },
+    {
+      "name": "mobile click happy-cup",
+      "passed": true
+    },
+    {
+      "name": "mobile click color-luck",
+      "passed": true
+    },
+    {
+      "name": "mobile click blooming-path",
+      "passed": true
+    },
+    {
+      "name": "mobile click color-energy",
+      "passed": true
+    },
+    {
+      "name": "mobile click open",
+      "passed": true
+    },
+    {
+      "name": "mobile click innovation",
+      "passed": true
+    },
+    {
+      "name": "mobile click cooperation",
+      "passed": true
+    },
+    {
+      "name": "mobile click sharing",
+      "passed": true
+    },
+    {
+      "name": "mobile click together",
+      "passed": true
+    },
+    {
+      "name": "mobile click ocean",
+      "passed": true
+    },
+    {
+      "name": "mobile click love-city",
+      "passed": true
+    },
+    {
+      "name": "city shanghai label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city shanghai correct texture",
+      "passed": true
+    },
+    {
+      "name": "city urumqi label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city urumqi correct texture",
+      "passed": true
+    },
+    {
+      "name": "city beijing label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city beijing correct texture",
+      "passed": true
+    },
+    {
+      "name": "city nanjing label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city nanjing correct texture",
+      "passed": true
+    },
+    {
+      "name": "city nanchang label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city nanchang correct texture",
+      "passed": true
+    },
+    {
+      "name": "city xiamen label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city xiamen correct texture",
+      "passed": true
+    },
+    {
+      "name": "city hohhot label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city hohhot correct texture",
+      "passed": true
+    },
+    {
+      "name": "city harbin label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city harbin correct texture",
+      "passed": true
+    },
+    {
+      "name": "city tianjin label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city tianjin correct texture",
+      "passed": true
+    },
+    {
+      "name": "city taiyuan label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city taiyuan correct texture",
+      "passed": true
+    },
+    {
+      "name": "city guangzhou label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city guangzhou correct texture",
+      "passed": true
+    },
+    {
+      "name": "city chengdu label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city chengdu correct texture",
+      "passed": true
+    },
+    {
+      "name": "city jingdezhen label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city jingdezhen correct texture",
+      "passed": true
+    },
+    {
+      "name": "city hangzhou label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city hangzhou correct texture",
+      "passed": true
+    },
+    {
+      "name": "city wuhan label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city wuhan correct texture",
+      "passed": true
+    },
+    {
+      "name": "city shenyang label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city shenyang correct texture",
+      "passed": true
+    },
+    {
+      "name": "city shenzhen label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city shenzhen correct texture",
+      "passed": true
+    },
+    {
+      "name": "city shijiazhuang label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city shijiazhuang correct texture",
+      "passed": true
+    },
+    {
+      "name": "city xian label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city xian correct texture",
+      "passed": true
+    },
+    {
+      "name": "city zhengzhou label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city zhengzhou correct texture",
+      "passed": true
+    },
+    {
+      "name": "city chongqing label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city chongqing correct texture",
+      "passed": true
+    },
+    {
+      "name": "city changchun label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city changchun correct texture",
+      "passed": true
+    },
+    {
+      "name": "city qingdao label/name/fallback",
+      "passed": true
+    },
+    {
+      "name": "city qingdao correct texture",
+      "passed": true
+    },
+    {
+      "name": "fixed wording survives city change",
+      "passed": true
+    },
+    {
+      "name": "new work restore",
+      "passed": true
+    },
+    {
+      "name": "new roundtrip identical",
+      "passed": true
+    },
+    {
+      "name": "old work restore",
+      "passed": true
+    },
+    {
+      "name": "old work six choices/special label",
+      "passed": true
+    },
+    {
+      "name": "restore defaults upgrades to new release",
+      "passed": true
+    },
+    {
+      "name": "default restored",
+      "passed": true
+    },
+    {
+      "name": "rapid city switch latest wins",
+      "passed": true
+    },
+    {
+      "name": "short phone last row reachable",
+      "passed": true
+    },
+    {
+      "name": "short phone scroll works or all choices fit",
+      "passed": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile no unexpected console errors",
+      "passed": true
+    },
+    {
+      "name": "desktop page identity",
+      "passed": true
+    },
+    {
+      "name": "desktop nonblank/no overlay",
+      "passed": true
+    },
+    {
+      "name": "desktop new default",
+      "passed": true
+    },
+    {
+      "name": "desktop current/neighbor label preload only",
+      "passed": true
+    },
+    {
+      "name": "desktop no runtime font",
+      "passed": true
+    },
+    {
+      "name": "desktop twelve options in order",
+      "passed": true
+    },
+    {
+      "name": "desktop click city-luck",
+      "passed": true
+    },
+    {
+      "name": "desktop click happy-cup",
+      "passed": true
+    },
+    {
+      "name": "desktop click color-luck",
+      "passed": true
+    },
+    {
+      "name": "desktop click blooming-path",
+      "passed": true
+    },
+    {
+      "name": "desktop click color-energy",
+      "passed": true
+    },
+    {
+      "name": "desktop click open",
+      "passed": true
+    },
+    {
+      "name": "desktop click innovation",
+      "passed": true
+    },
+    {
+      "name": "desktop click cooperation",
+      "passed": true
+    },
+    {
+      "name": "desktop click sharing",
+      "passed": true
+    },
+    {
+      "name": "desktop click together",
+      "passed": true
+    },
+    {
+      "name": "desktop click ocean",
+      "passed": true
+    },
+    {
+      "name": "desktop click love-city",
+      "passed": true
+    },
+    {
+      "name": "network failure keeps prior cup",
+      "passed": true
+    },
+    {
+      "name": "failed selection is atomic",
+      "passed": true
+    },
+    {
+      "name": "failed asset can retry",
+      "passed": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop no unexpected console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "physicalDeviceTested": false,
+  "mobileInitialCityLabelRequests": [
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shenzhen-44272d89ddf3c4f5.webp",
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shenyang-00360310e8119a4c.webp",
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shijiazhuang-d2b2dd5f5ff97631.webp"
+  ],
+  "shortPhoneScroll": {
+    "height": 227,
+    "full": 228,
+    "top": 0
+  },
+  "desktopInitialCityLabelRequests": [
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shenzhen-44272d89ddf3c4f5.webp",
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shenyang-00360310e8119a4c.webp",
+    "http://127.0.0.1:5299/releases/v7-10/assets/slogan-love-shijiazhuang-d2b2dd5f5ff97631.webp"
+  ],
+  "passed": true
+}

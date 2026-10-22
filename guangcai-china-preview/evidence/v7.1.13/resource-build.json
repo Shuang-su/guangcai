@@ -1,0 +1,66 @@
+{
+  "releaseId": "v7-10",
+  "manifest": "manifest-ef9ddbeda2f2c956.json",
+  "addedLabels": 28,
+  "addedBytes": 640838,
+  "sharedAdditions": 5,
+  "cityAdditions": 23,
+  "longNameTrials": [
+    {
+      "id": "love-urumqi",
+      "fontSize": 62,
+      "frame": {
+        "top": 77,
+        "height": 536,
+        "bottom": 613
+      }
+    },
+    {
+      "id": "love-hohhot",
+      "fontSize": 62,
+      "frame": {
+        "top": 77,
+        "height": 536,
+        "bottom": 613
+      }
+    },
+    {
+      "id": "love-harbin",
+      "fontSize": 64,
+      "frame": {
+        "top": 133,
+        "height": 480,
+        "bottom": 613
+      }
+    },
+    {
+      "id": "love-jingdezhen",
+      "fontSize": 64,
+      "frame": {
+        "top": 133,
+        "height": 480,
+        "bottom": 613
+      }
+    },
+    {
+      "id": "love-shijiazhuang",
+      "fontSize": 64,
+      "frame": {
+        "top": 133,
+        "height": 480,
+        "bottom": 613
+      }
+    }
+  ],
+  "uvRect": [
+    0.792724609375,
+    0.23667975322490187,
+    0.067626953125,
+    0.5064498037016265
+  ],
+  "dimensions": [
+    277,
+    903
+  ],
+  "existingAssetsReused": true
+}
