@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "version": "7.1.13",
+  "sourceCommit": "78530b7ea1c67bcdd8a6871c81697d6c6519e2e8",
+  "deployId": "6ad9e0c4e4871da75c6b4316",
+  "reusedExistingBuild": true,
+  "rebuildPerformed": false,
+  "applicationTestsRerun": false,
+  "archives": [
+    {
+      "archive": "source-main.tar.gz",
+      "verifiedFiles": 1082,
+      "htmlEntries": [
+        "source/guangcai-china-preview/index.html"
+      ],
+      "unsafeOrExcludedPaths": 0
+    },
+    {
+      "archive": "production-main.tar.gz",
+      "verifiedFiles": 687,
+      "htmlEntries": [
+        "production/site/index.html"
+      ],
+      "unsafeOrExcludedPaths": 0
+    }
+  ],
+  "assetReferencesValidated": 2788,
+  "options": 12,
+  "loveCityVariants": 23,
+  "elapsedSeconds": 3.44
+}
