@@ -1,5 +1,6 @@
 """Package only the formal China Cup root page, without changing production.
 python3 -B tools/package-china-main.py /new/output/directory --build-root /validated/build
+Published build: add --deploy-id ID to verify against the saved deployment manifest.
 """
 from pathlib import Path
 import argparse
@@ -17,6 +18,7 @@ app = repo / 'guangcai-china-preview'
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('output', type=Path)
 parser.add_argument('--build-root', type=Path)
+parser.add_argument('--deploy-id', help='Published Netlify deployment matching the existing build')
 args = parser.parse_args()
 out = args.output.resolve()
 assert not out.exists(), 'Refuse to replace an existing package'
@@ -45,7 +47,22 @@ commit = git('rev-parse', 'HEAD').decode().strip()
 timestamp = int(git('show', '-s', '--format=%ct', 'HEAD').decode().strip())
 version = json.loads((app / 'package.json').read_text())['version']
 bootstrap = json.loads((app / 'public/api/v1/bootstrap.json').read_text())
-if args.build_root:
+if args.deploy_id:
+    assert args.build_root, 'Published packaging requires an existing build directory'
+    assert re.fullmatch(r'[0-9a-f]{24}', args.deploy_id), 'Invalid deployment ID'
+    deploy_id = args.deploy_id
+    site = args.build_root.resolve()
+    archive = repo / 'deployments/guangcai-no1-china-v7' / deploy_id
+    production = json.loads((archive / 'files.json').read_text())
+    deployment = json.loads((archive / 'deployment.json').read_text())
+    release = json.loads((site / 'release.json').read_text())
+    assert deployment['deployId'] == deploy_id and deployment['state'] == 'ready'
+    assert release['version'] == version and release['sourceCommit'] == deployment['sourceCommit']
+    assert release['resourceRelease'] == bootstrap['releaseId']
+    assert json.loads((site / 'api/v1/bootstrap.json').read_text()) == bootstrap
+    critical = ['src', 'vendor', 'public', 'assets', 'index.html', 'package.json', 'package-lock.json', 'vite.config.ts', 'tsconfig.json']
+    assert not git('diff', release['sourceCommit'], commit, '--', *['guangcai-china-preview/' + p for p in critical]).strip(), 'Source differs from published build'
+elif args.build_root:
     deploy_id = None
     site = args.build_root.resolve()
     build_source = json.loads((site / 'build-source.json').read_text())
@@ -65,7 +82,7 @@ else:
     production = json.loads((archive / 'files.json').read_text())
     release = json.loads((site / 'release.json').read_text())
     assert release['version'] == version, 'Current source requires a current --build-root'
-runtime = [f'releases/v7-{i}' for i in range(1, 10)] + ['api/v1/bootstrap.json', 'icons',
+runtime = [f'releases/v7-{i}' for i in range(1, int(bootstrap['releaseId'].split('-')[-1]) + 1)] + ['api/v1/bootstrap.json', 'api/v1/bootstrap-v7-9.json', 'icons',
            'backgrounds', 'runtime-config.js', 'manifest.webmanifest', 'third-party']
 tests = ['geometry', 'float-normal', 'fixed-atlas', 'fixed-quality', 'city-selection', 'xy-controls',
          'haptics', 'v6-selection', 'loop-selector', 'glass-compat', 'download-bytes']
@@ -95,6 +112,7 @@ assert not any(any(part in {'artwork-dev', 'dev-assets', 'label-compare', 'city-
 
 package = json.loads((app / 'package.json').read_text())
 package['scripts'] = {k: package['scripts'][k] for k in ['dev', 'build', 'preview', 'test']}
+package['scripts']['test:blessings'] = 'tsx --test tools/v7/blessings.test.ts'
 package['handoffScope'] = 'formal-root-only'
 config = (app / 'vite.config.ts').read_text().split('export default defineConfig')[0]
 config = re.sub(r'for\(const item of \[.*?\]\)', 'for(const item of ' + json.dumps(runtime) + ')', config)
@@ -103,9 +121,14 @@ config += "export default defineConfig(({command})=>({base:process.env.APP_BASE?
 tsconfig = json.loads((app / 'tsconfig.json').read_text())
 tsconfig['include'] = ['src']
 overrides = {'package.json': encode(package), 'vite.config.ts': config.encode(), 'tsconfig.json': encode(tsconfig)}
+font_sources = {'assets/source/v7.1.2/fonts/SourceHanSerifCN-Bold.otf', 'assets/source/v7.1.2/fonts/LICENSE.txt'}
+blessing_tools = {'tools/v7/build-city-blessings.py', 'tools/v7/compile-city-blessings.mjs', 'tools/v7/blessings.test.ts',
+                  'evidence/v7.1.2/slogans-source.json', 'integration/BLESSINGS.md'}
 
 
 def selected(name):
+    if name in blessing_tools:
+        return True
     if name in {'index.html', 'package.json', 'package-lock.json', 'vite.config.ts', 'tsconfig.json'}:
         return True
     if name.startswith(('src/', 'vendor/')):
@@ -124,7 +147,7 @@ for raw in git('ls-files', '--stage', '-z', '--', 'guangcai-china-preview').spli
     metadata, raw_path = raw.split(b'\t', 1)
     mode, blob, stage = metadata.decode().split()
     relative = raw_path.decode().removeprefix('guangcai-china-preview/')
-    if not selected(relative) or not (app / relative).exists():
+    if not selected(relative) or (not (app / relative).exists() and relative not in font_sources):
         continue
     assert stage == '0' and mode in {'100644', '100755'}
     assert not any(p in {'.git', '.netlify', '.codex-work', 'node_modules'} or p.startswith('._') or p.startswith('.env') for p in Path(relative).parts)
@@ -132,7 +155,8 @@ for raw in git('ls-files', '--stage', '-z', '--', 'guangcai-china-preview').spli
 out.mkdir(parents=True)
 identity = {'version': package['version'], 'scope': 'formal-root-only', 'snapshotCommit': commit,
             'productionSourceCommit': release['sourceCommit'], 'deployId': deploy_id, 'resourceRelease': release['resourceRelease'],
-            'artifactKind': 'local-build-not-deployed' if args.build_root else 'published-snapshot',
+            'artifactKind': 'published-snapshot' if deploy_id else 'local-build-not-deployed',
+            'reusedExistingBuild': True, 'rebuildPerformed': False,
             'sourceOverrides': list(overrides), 'formalShenzhen': 'original; no Phase II APEC', 'githubSync': 'pending-account-suspended'}
 bootstrap = json.loads((app / 'public/api/v1/bootstrap.json').read_text())
 current = {**identity, 'bootstrap': bootstrap, 'catalog': json.loads((app / 'public' / bootstrap['catalogUrl']).read_text()),
@@ -140,15 +164,20 @@ current = {**identity, 'bootstrap': bootstrap, 'catalog': json.loads((app / 'pub
 readme = f'''# 中国杯 V{version} 正式主页开发交付
 
 只包含无后缀正式主页，唯一 HTML 入口为 index.html。七视角及花纹提清策略已包含；正式深圳保留原稿。
+V7.1.13包含原六句祝福语、五句新固定文案和23城“我爱城市”，默认我爱深圳；五六字框向上加高、底边不变。
 本包来源提交：{commit}；资源版本：{release['resourceRelease']}。
-构建来源：{identity['artifactKind']}；部署ID：{deploy_id or '未部署'}。本地包不代表已经更新线上。
+构建来源：{identity['artifactKind']}；部署ID：{deploy_id or '未部署'}。
+本次直接筛选现成构建并核对发布清单，没有重新构建、安装依赖或更改线上。
 
 - source-main.tar.gz：当前可维护源码、运行资源、所需工具和测试，无 node_modules、凭据、Git历史或构建缓存。
 - production-main.tar.gz：可托管的静态主页，完整资源保留以兼容已有作品，无 dev/compare/APEC 页面。
 - package-receipt.json、source-files.json、production-files.json：版本与逐文件SHA-256清单。
 
 解开源码包后进入 source/guangcai-china-preview，使用 npm ci、npm run dev；npm run build 生成静态文件。
-npm test 运行基础及花纹策略测试。构建默认仅 index.html；部署时以静态包 production/site 为站点根目录。
+npm test 运行基础及花纹策略测试；npm run test:blessings 运行祝福语与字框边界测试。
+这些命令供接手开发者后续使用，本次打包没有执行。构建默认仅 index.html；部署时以静态包 production/site 为站点根目录。
+直接查看现成产物：在 production/site 中执行 python3 -m http.server 8080，然后访问 http://127.0.0.1:8080/。
+修改祝福语素材的生成方式见源码内 integration/BLESSINGS.md；字体及许可、SVG母版和生成工具均随源码包提供。
 应通过 HTTP(S) 访问，不能以 file:// 打开。默认使用同源 api/v1/bootstrap.json 和 releases；
 runtime-config.js 可配置后端和资源地址，包内不含真实身份或服务凭据。
 花纹近看优先高分彩色，法线/ORM按预算分档，保留16位法线及原有显存预算。
@@ -158,8 +187,13 @@ source_records = []
 with tarfile.open(out / 'source-main.tar.gz', 'w:gz', compresslevel=3) as tar:
     for number, (name, blob, mode) in enumerate(entries, 1):
         file = app / name
-        assert stat.S_ISREG(file.lstat().st_mode), name
-        original = file.read_bytes()
+        if file.exists():
+            assert stat.S_ISREG(file.lstat().st_mode), name
+            original = file.read_bytes()
+        else:
+            assert name in font_sources
+            original = git('cat-file', 'blob', blob)
+        assert not original.startswith(b'version https://git-lfs.github.com/spec/v1\n'), 'Unresolved LFS source: ' + name
         assert hashlib.sha1(f'blob {len(original)}\0'.encode() + original).hexdigest() == blob, name
         data = overrides.get(name, original)
         item = {**record('guangcai-china-preview/' + name, data), 'gitBlob': blob, 'overridden': name in overrides}
@@ -178,7 +212,7 @@ for name, data in generated.items():
 static_records = []
 with tarfile.open(out / 'production-main.tar.gz', 'w:gz', compresslevel=3) as tar:
     for name in static_paths:
-        data = encode(release) if args.build_root and name == 'release.json' else (site / name).read_bytes()
+        data = encode(release) if args.build_root and not deploy_id and name == 'release.json' else (site / name).read_bytes()
         item = record('site/' + name, data)
         assert item['sha256'] == production['/' + name]['sha256'], name
         static_records.append(item)
