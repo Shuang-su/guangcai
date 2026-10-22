@@ -31,7 +31,7 @@ async function copyRuntimeBytes(source:string,target:string):Promise<void>{
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','releases/v7-9','releases/v7-10','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
+  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','releases/v7-9','releases/v7-10','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','api/v1/bootstrap-v7-9.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
    await mkdir(resolve(out,item,'..'),{recursive:true});if(item.includes('.')&&!item.endsWith('/'))await writeRuntimeBytes(resolve(out,item),await readFile(resolve('public',item)));else await copyRuntimeBytes(resolve('public',item),resolve(out,item));
   }
   const headers='/coverage/*\n  Cache-Control: no-cache\n\n/dev-assets/*.json\n  Cache-Control: no-cache\n\n/label-compare/data.json\n  Cache-Control: no-cache\n\n/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
