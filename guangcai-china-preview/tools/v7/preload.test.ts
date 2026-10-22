@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {EncodedCache} from '../../src/resources/encoded-cache';
 import {mobileEncodedCacheBytes} from '../../src/resources/texture-budget';
-import {cityLibrary,neighborAssets} from '../../src/resources/preload';
+import {cityLibrary,neighborAssets,sloganLabels} from '../../src/resources/preload';
 import type {Asset} from '../../src/resources/types';
 const data=new Uint8Array([1,2,3,4]).buffer;
 const asset=(id:string):Asset=>({id,url:id,bytes:4,sha256:createHash('sha256').update(new Uint8Array(data)).digest('hex'),sourceSha256:'',encoding:'webp',width:1,height:1,decodedBytes:4,gpuBytes:4,channels:4,colorSpace:'linear'});
@@ -33,8 +33,8 @@ test('wrong size and checksum never poison cache, and inflight reservations obey
 });
 test('manifest preload includes all low masks, normals, thumbnails and cropped slogans; nearby order wraps',()=>{
  const boot=JSON.parse(readFileSync('public/api/v1/bootstrap.json','utf8')),manifest=JSON.parse(readFileSync('public/'+boot.manifestUrl,'utf8'));
- const library=cityLibrary(manifest);assert.equal(Object.keys(manifest.cities).length,23);assert.equal(library.length,75+Object.values<any>(manifest.cities).flatMap(c=>Object.values(c.slogans??{})).length);const fixed=Object.values<any>(manifest.fixed).flatMap(r=>[r.light.baseColor,r.light.normal,r.light.orm]);assert.ok([...library,manifest.mark,...fixed].reduce((n,a)=>n+a.bytes,0)<mobileEncodedCacheBytes,'pinned low library fits the mobile encoded-cache limit');
+ const library=cityLibrary(manifest);assert.equal(Object.keys(manifest.cities).length,23);assert.equal(library.length,69+sloganLabels(manifest).length);const fixed=Object.values<any>(manifest.fixed).flatMap(r=>[r.light.baseColor,r.light.normal,r.light.orm]);assert.ok([...library,manifest.mark,...fixed].reduce((n,a)=>n+a.bytes,0)<mobileEncodedCacheBytes,'pinned low library fits the mobile encoded-cache limit');
  const order=Object.keys(JSON.parse(readFileSync('src/styles/city-catalog-v6.json','utf8')).cities);
- const neighbors=neighborAssets(manifest,order[0],'standard',order);assert.deepEqual(neighbors.map(a=>a.id),[order[0],order.at(-1),order[1]].flatMap(id=>[`${id}-standard-mask`,`${id}-standard-normal`]));
- assert.equal(new Set(neighbors.map(a=>a.url)).size,6);assert.ok(library.filter(a=>a.id.startsWith('slogan')).every(a=>a.encoding==='webp'&&a.channels===1));
+ const neighbors=neighborAssets(manifest,order[0],'standard',order);assert.deepEqual(neighbors.map(a=>a.id),[...[order[0],order.at(-1),order[1]].flatMap(id=>[`${id}-standard-mask`,`${id}-standard-normal`]),...[order[0],order.at(-1),order[1]].flatMap(id=>Object.values<any>(manifest.cities[id].slogans??{}).map(l=>l.asset.id))]);
+ assert.equal(new Set(neighbors.map(a=>a.url)).size,neighbors.length);assert.ok(library.filter(a=>a.id.startsWith('slogan')).every(a=>a.encoding==='webp'&&a.channels===1));
 });

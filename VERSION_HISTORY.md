@@ -1,5 +1,7 @@
 # 产品版本与发布索引
 
+2026-10-22：V7.1.13 / v7-10 本地待发布，记录见 docs/changes/20261022-city-blessings/completion.md。
+
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
 当前线上正式主页为 **V7.1.12 / v7-9**：七种观察视角与主动花纹提清，部署 `6ad76b8796b6f32499d6fa63`，源码 `006e32681b686ed161b2aa710a67831e9b3bc9b3`。1252份服务端摘要核对一致，后缀页面沿用原发布内容；[发布记录](docs/changes/20261020-v7.1.12-netlify/completion.md)。版本Issue仍保留[本地草稿](docs/changes/20261020-v7.1.12-seven-views/version-issue-pending.md)，GitHub尚未同步。

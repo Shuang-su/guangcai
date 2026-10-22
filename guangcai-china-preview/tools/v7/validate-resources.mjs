@@ -14,8 +14,9 @@ for(const [region,levels]of Object.entries(m.fixed))for(const [tier,l]of Object.
 }
 for(const [id,s]of Object.entries(m.slogans)){
  let original;
- if(['v7-7','v7-8','v7-9'].includes(m.releaseId)){
-  const source=await fs.readFile(`assets/masters/v7.1.5/slogan-${id}.svg`,'utf8'),scale=4096/1939,x=1539*scale,y=1783-815*scale+190*scale;
+ if(['v7-7','v7-8','v7-9','v7-10'].includes(m.releaseId)){
+  const master=['open','innovation','cooperation','sharing','together','ocean'].includes(id)?`assets/masters/v7.1.5/slogan-${id}.svg`:`assets/masters/v7.1.13/${id==='love-city'?'love-shenzhen':id}.svg`;
+  const source=await fs.readFile(master,'utf8'),scale=4096/1939,x=1539*scale,y=1783-815*scale+190*scale;
   original=await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="4096" height="1783"><g transform="translate(${x} ${y}) scale(${scale})">${source}</g></svg>`)).ensureAlpha().extractChannel('alpha').raw().toBuffer({resolveWithObject:true});
  }else if(m.releaseId==='v7-6'){
   const source=await fs.readFile(`assets/masters/v7.1.5/slogan-${id}.svg`,'utf8'),scale=4096*.82/1939,x=4096*.047+1539*scale,y=1783-815*scale+190*scale;
@@ -34,5 +35,5 @@ const fixed=Object.values(m.fixed).flatMap(l=>[l.light.baseColor,l.light.normal,
 const initial=[...fixed,m.mark,m.cities.shenzhen.levels.light.mask,m.cities.shenzhen.levels.light.normal,...Object.values(m.slogans).map(s=>s.asset)];
 const preload=[...fixed,m.mark,...Object.values(m.cities).flatMap(c=>[c.thumbnail,c.levels.light.mask,c.levels.light.normal]),...Object.values(m.slogans).map(s=>s.asset),...['shenzhen','shenyang','shijiazhuang'].flatMap(id=>Object.values(m.cities[id].levels.standard))];
 assert.ok(initial.reduce((n,a)=>n+a.gpuBytes,0)<64*1024**2);assert.ok(preload.reduce((n,a)=>n+a.bytes,0)<16*1024**2);
-assert.equal(Object.keys(m.cities).length,23);assert.equal(Object.keys(m.slogans).length,6);
-console.log(JSON.stringify({passed:true,assets:assets.length,labelsPixelIdentical:6,cities:23,preloadEncodedBytes:preload.reduce((n,a)=>n+a.bytes,0),initialGpuBytes:initial.reduce((n,a)=>n+a.gpuBytes,0),original5MiBTargetMet:preload.reduce((n,a)=>n+a.bytes,0)<5*1024**2}));
+assert.equal(Object.keys(m.cities).length,23);assert.equal(Object.keys(m.slogans).length,m.releaseId==='v7-10'?12:6);
+console.log(JSON.stringify({passed:true,assets:assets.length,labelsPixelIdentical:Object.keys(m.slogans).length,cities:23,preloadEncodedBytes:preload.reduce((n,a)=>n+a.bytes,0),initialGpuBytes:initial.reduce((n,a)=>n+a.gpuBytes,0),original5MiBTargetMet:preload.reduce((n,a)=>n+a.bytes,0)<5*1024**2}));

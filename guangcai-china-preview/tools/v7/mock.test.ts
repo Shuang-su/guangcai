@@ -1,14 +1,15 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {once} from 'node:events';
 import {createMockServer} from './mock-server';
 test('mock preserves ownership, idempotency, revisions, immutable public snapshots and revocation',async()=>{
- const server=await createMockServer();server.listen(0,'127.0.0.1');await once(server,'listening');const base=`http://127.0.0.1:${(server.address() as {port:number}).port}/api/v1/`;
+ const server=await createMockServer('public');server.listen(0,'127.0.0.1');await once(server,'listening');const base=`http://127.0.0.1:${(server.address() as {port:number}).port}/api/v1/`;
  const request=async(path:string,method='GET',body?:unknown,user='alice',headers={})=>{const r=await fetch(base+path,{method,headers:{'Content-Type':'application/json',...(user?{Cookie:'mock-user='+user}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body)});return {status:r.status,body:r.status===204?null:await r.json()};};
  try{
  const boot=await request('bootstrap'),design=boot.body.defaultDesign;
  assert.equal((await request('works','POST',{title:'Example',design},'')).status,401);
- const legacy=await request('works','POST',{title:'Pinned legacy',design:{...design,resourceReleaseId:'v7-1'}});assert.equal(legacy.status,201);assert.equal(legacy.body.design.resourceReleaseId,'v7-1');
- const current=await request('works','POST',{title:'Pinned current',design:{...design,resourceReleaseId:'v7-9'}});assert.equal(current.status,201);assert.equal(current.body.design.resourceReleaseId,'v7-9');
- const first=await request('works','POST',{title:'Example',design},'alice',{'Idempotency-Key':'test'});assert.equal(first.status,201);const id=first.body.id;
+ const legacy=await request('works','POST',{title:'Pinned legacy',design:{...design,resourceReleaseId:'v7-1',sloganId:'open'}});assert.equal(legacy.status,201);assert.equal(legacy.body.design.resourceReleaseId,'v7-1');
+ const current=await request('works','POST',{title:'Pinned current',design:{...design,resourceReleaseId:'v7-9',sloganId:'ocean'}});assert.equal(current.status,201);assert.equal(current.body.design.resourceReleaseId,'v7-9');
+ const first=await request('works','POST',{title:'Example',design},'alice',{'Idempotency-Key':'test'});assert.equal(first.status,201);assert.equal(first.body.design.sloganId,'love-city');const id=first.body.id;
+ assert.equal((await request('works','POST',{title:'Unsupported city phrase',design:{...design,cityId:'unknown'}})).status,400);
  assert.equal((await request('works','POST',{title:'Example',design},'alice',{'Idempotency-Key':'test'})).body.id,id);
  assert.equal((await request('works','POST',{title:'Other',design},'alice',{'Idempotency-Key':'test'})).status,409);
  assert.equal((await request('works/'+id,'GET',undefined,'bob')).status,404);assert.equal((await request('works','GET',undefined,'bob')).body.items.length,0);
@@ -23,7 +24,7 @@ test('mock preserves ownership, idempotency, revisions, immutable public snapsho
 });
 
 test('split-origin mock permits only configured credentialed API clients',async()=>{
- const origin='http://127.0.0.1:5277',server=await createMockServer(undefined,'/cup/',{allowedOrigins:[origin],runtimeConfig:{apiBase:'http://127.0.0.1:5278/cup/api/v1/'}});server.listen(0,'127.0.0.1');await once(server,'listening');const base=`http://127.0.0.1:${(server.address() as {port:number}).port}/cup/`;
+ const origin='http://127.0.0.1:5277',server=await createMockServer('public','/cup/',{allowedOrigins:[origin],runtimeConfig:{apiBase:'http://127.0.0.1:5278/cup/api/v1/'}});server.listen(0,'127.0.0.1');await once(server,'listening');const base=`http://127.0.0.1:${(server.address() as {port:number}).port}/cup/`;
  try{
   const preflight=await fetch(base+'api/v1/works',{method:'OPTIONS',headers:{Origin:origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type,idempotency-key'}});assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),origin);assert.equal(preflight.headers.get('access-control-allow-credentials'),'true');
   const allowed=await fetch(base+'api/v1/session',{headers:{Origin:origin,Cookie:'mock-user=alice'}});assert.equal((await allowed.json()).userId,'alice');assert.equal(allowed.headers.get('vary'),'Origin');

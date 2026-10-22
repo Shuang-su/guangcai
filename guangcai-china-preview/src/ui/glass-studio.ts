@@ -48,7 +48,7 @@ export function createGlassStudio(options:{admitMemory?:(bytes:number,scratch:nu
    [document.querySelector<HTMLElement>('#view-menu')!,{material:'regular',radius:24,refraction:16,morphFrom:()=>document.querySelector('#view-trigger'),morph:'detach',neck:36}],
    [document.querySelector<HTMLElement>('.open-palette-editor')!,{material:'regular',radius:'capsule',refraction:14,interactive:true}],
    ...Array.from(document.querySelectorAll<HTMLElement>('[data-palette],[data-palette-copy]'),tile=>[tile.querySelector<HTMLElement>('.palette-swatch')!,{material:'clear',radius:13,tint:palettes[(tile.dataset.palette??tile.dataset.paletteCopy) as Palette].dark,refraction:26,clipTo:()=>tile.closest<HTMLElement>('.palette-viewport')}] as [HTMLElement,SurfaceOptions]),
-   ...Array.from(document.querySelectorAll<HTMLElement>('.city-card,.slogan-grid button'),element=>[element,{material:'regular',radius:13,refraction:14,...(element.classList.contains('city-card')?{clipTo:()=>document.querySelector<HTMLElement>('.city-cards')}:{interactive:true})}] as [HTMLElement,SurfaceOptions])
+   ...Array.from(document.querySelectorAll<HTMLElement>('.city-card,.slogan-grid button'),element=>[element,{material:'regular',radius:13,refraction:14,...(element.classList.contains('city-card')?{clipTo:()=>document.querySelector<HTMLElement>('.city-cards')}:{interactive:true,clipTo:()=>document.querySelector<HTMLElement>('#slogan-pane')})}] as [HTMLElement,SurfaceOptions])
   ];
   const syncOptions=()=>{
    optionFrame=0;if(!scene||disposed)return;

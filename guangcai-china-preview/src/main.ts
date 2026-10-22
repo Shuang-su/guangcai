@@ -7,6 +7,7 @@ import {profile} from './profile';
 import {ResourcePool} from './resources/pool';
 import {createEntryLoading} from './ui/entry-loading';
 import {cityLibrary,neighborAssets,sloganLabels} from './resources/preload';
+import {availableSlogans} from './resources/slogans';
 import {loadResources,exportDesign,validateDesign,type Resources} from './resources/client';
 import type {DesignConfig,Tier,Region,Asset} from './resources/types';
 import {AdaptiveResolution} from './resources/quality';
@@ -14,7 +15,7 @@ import {fixedQualityCandidates} from './resources/fixed-quality';
 import {createConsumerPanel} from './ui/consumer-panel';
 import {createConsumerInterface} from './ui/consumer-interface';
 import {createGlassStudio} from './ui/glass-studio';
-import {v6DefaultSelection,v6Themes} from './styles/city-selection';
+import {consumerDefaultSelection,v6Themes} from './styles/city-selection';
 import {configureFixedAtlas} from './materials/fixed-atlas';
 import './ui/styles.css';
 import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace,Vector3} from 'three';
@@ -64,7 +65,7 @@ function publishDesign(){if(importing||!resources||!assetsReady||selection.busy)
 
 const mats=makeMaterials(),product=buildProduct(mats);
 let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false,fixedReliefEnabled=true;
-const ui=(profile==='consumer'?createConsumerInterface:createInterface)({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>setCityRelief(v),fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),background:choice=>background.select(choice),uploadBackground:file=>background.upload(file),restore:async()=>{await selection.restore();}});
+const ui=(profile==='consumer'?createConsumerInterface:createInterface)({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>setCityRelief(v),fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),background:choice=>background.select(choice),uploadBackground:file=>background.upload(file),restore:async()=>{await restoreDesign();}});
 let studio:ReturnType<typeof createStudio>;
 ui.message('正在载入花纸与金色浮雕…',true);
 try{studio=createStudio(ui.canvas,true,{consumer:profile==='consumer',mobile});}catch(e){entryLoading?.fail('无法启动画面，请使用支持 WebGL 2 的浏览器。');ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
@@ -98,9 +99,9 @@ const anisotropy=Math.min(8,studio.renderer.capabilities.getMaxAnisotropy());
 // Fixed floral lines need the full available anisotropy at the saucer silhouette.
 const fixed=new StyleManager(mats,studio.renderer.capabilities.getMaxAnisotropy(),()=>{product.setFixedMapping(fixed.currentMapping);reflections.invalidate();lidReflections.invalidate();invalidate();},pool);city=new CityArtworkManager(mats.city,anisotropy,pool);
 let artworkUI:ReturnType<typeof createArtworkPanel>|undefined;
-const selection=new SelectionController(async s=>{if(profile==='consumer'){await ensureResources();if(s!==selection.desired||disposed||contextLost)return false;}const cityId=s.variant.replace(/^v6-/, '').replace(/-(gold|red|green|purple|blue)$/, '');if(cityId!==requestedCity){requestedCity=cityId;cityTier='light';}const applied=await applyCityArtwork(resources?resources.cityPack(s,cityTier):artworkPack(s,chinaPack,import.meta.env.BASE_URL));if(applied&&s.variant==='china-gold'&&!s.appearance){city.setRelief(1);if(mode!=='pbr')inspect();}return applied;},()=>{artworkUI?.render();syncLoadingStatus();invalidate();publishDesign();if(assetsReady&&!selection.busy&&!selection.error)warmNeighbors();},profile==='consumer'?v6DefaultSelection:undefined);
+const selection=new SelectionController(async s=>{if(profile==='consumer'){await ensureResources();if(s!==selection.desired||disposed||contextLost)return false;}const cityId=s.variant.replace(/^v6-/, '').replace(/-(gold|red|green|purple|blue)$/, '');if(cityId!==requestedCity){requestedCity=cityId;cityTier='light';}const applied=await applyCityArtwork(resources?resources.cityPack(s,cityTier):artworkPack(s,chinaPack,import.meta.env.BASE_URL));if(applied&&s.variant==='china-gold'&&!s.appearance){city.setRelief(1);if(mode!=='pbr')inspect();}return applied;},()=>{artworkUI?.render();syncLoadingStatus();invalidate();publishDesign();if(assetsReady&&!selection.busy&&!selection.error)warmNeighbors();},profile==='consumer'?consumerDefaultSelection:undefined);
 const untouchedSelection=selection.desired;
-artworkUI=profile==='consumer'?createConsumerPanel(selection,v=>{calibrating=false;view.set(v);}):createArtworkPanel(selection,ui.closePanels);
+artworkUI=profile==='consumer'?createConsumerPanel(selection,v=>{calibrating=false;view.set(v);},id=>resources?availableSlogans(resources.manifest,id):[]):createArtworkPanel(selection,ui.closePanels);
 glass=profile==='consumer'?createGlassStudio({invalidate,admitMemory:(bytes,scratch)=>{
  if(!pool)return true;pool.trimIdle(targetBytes()-glassBytes+bytes-scratch);
  const total=()=>pool.debug().estimatedGpuBytes+targetBytes()-glassBytes+bytes;
@@ -160,7 +161,12 @@ function warmNeighbors(){
  if(importing||!resources||!pool||contextLost||disposed)return;const id=selectedCity();if(id===neighborCity)return;
  neighborCity=id;neighborError='';neighborController?.abort();const controller=neighborController=new AbortController(),tier=mobile?'standard':'detail';
  const assets=neighborAssets(resources.manifest,id,tier,cityOrder);
- void (async()=>{await pool.prefetch(assets.slice(0,2),controller.signal);if(!controller.signal.aborted&&selectedCity()===id)scheduleQuality();await pool.prefetch(assets.slice(2),controller.signal);})().catch(e=>{if(!controller.signal.aborted){neighborError=String(e);neighborCity='';}});
+ void (async()=>{
+  const labels=await pool.acquireAll(sloganLabels(resources!.manifest,id).map(s=>s.asset),controller.signal);
+  if(controller.signal.aborted||importing||selectedCity()!==id){labels.forEach(l=>l.release());return;}
+  sloganLeases.forEach(l=>l.release());sloganLeases=labels;for(const lease of labels)studio.renderer.initTexture(lease.texture);
+  pool.pinFiles(pinnedAssets(resources!,id));
+  await pool.prefetch(assets.slice(0,2),controller.signal);if(!controller.signal.aborted&&selectedCity()===id)scheduleQuality();await pool.prefetch(assets.slice(2),controller.signal);})().catch(e=>{if(!controller.signal.aborted){neighborError=String(e);neighborCity='';}});
 }
 let markLease:Awaited<ReturnType<ResourcePool['acquire']>>|undefined;
 let initializedOnce=false;
@@ -168,20 +174,20 @@ async function initialize(){
  const generation=++initialization;
  try{
  entryLoading?.begin();startupError='';for(const stage of ['花纹','杯底标识','背景',...(pool?['城市与文字']:[])])startupPending.add(stage);
- if(profile==='consumer'){await ensureResources();if(generation!==initialization||disposed||contextLost)return;const m=resources!.manifest;pool!.pinFiles([...cityLibrary(m),m.mark,...Object.values(m.fixed).flatMap(region=>[region.light.baseColor,region.light.normal,region.light.orm])]);}
+ if(profile==='consumer'){await ensureResources();if(generation!==initialization||disposed||contextLost)return;const m=resources!.manifest;pool!.pinFiles([...cityLibrary(m,selectedCity()),m.mark,...Object.values(m.fixed).flatMap(region=>[region.light.baseColor,region.light.normal,region.light.orm])]);}
  const markReady=pool&&resources?pool.acquire(resources.manifest.mark).then(lease=>{if(disposed){lease.release();return;}markLease?.release();markLease=lease;lease.texture.anisotropy=anisotropy;lease.texture.needsUpdate=true;mats.mark.map=lease.texture;mats.mark.needsUpdate=true;invalidate();}):loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;invalidate();});
  const initialDesign=resources?validateDesign(resources.bootstrap.defaultDesign,resources.manifest):undefined;
  const initialSelection=initializedOnce?selection.current:selection.desired!==untouchedSelection||!initialDesign?selection.desired:{variant:`v6-${initialDesign.cityId}-${initialDesign.appearance.preset}`,text:initialDesign.sloganId as Selection['text'],appearance:initialDesign.appearance};
  const cityReady=profile==='consumer'?selection.select(initialSelection):applyCityArtwork(chinaPack);
  // Context recovery depends on the pinned low library, never a new HD transfer.
  const restoring=recovering;
- const library=resources?cityLibrary(resources.manifest):[],nearby=resources&&!restoring?neighborAssets(resources.manifest,selectedCity(),mobile?'standard':'detail',cityOrder):[];
+ const library=resources?cityLibrary(resources.manifest,selectedCity()):[],nearby=resources&&!restoring?neighborAssets(resources.manifest,selectedCity(),mobile?'standard':'detail',cityOrder):[];
  if(resources){const f=resources.fixedPack(fixedTiers,fixedColors);entryLoading?.plan([resources.manifest.mark,...Object.values(f.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]),...library,...nearby]);}
  await Promise.all([trackStartup('花纹',fixed.apply(resources?resources.fixedPack(fixedTiers,fixedColors):defaultPack).then(committed=>{if(!committed)throw Error('固定花纸读取中断');if(!disposed){wallMaterials[1]=mats.regions.body;inspect();}}),generation),cityReady,trackStartup('杯底标识',markReady,generation),trackStartup('背景',profile==='consumer'?background.ready.then(()=>background.select('soft-v3')):background.ready,generation)]);
  if(generation!==initialization||disposed||contextLost)return;
  if(pool&&resources){
   await pool.prefetch([...library,...nearby]);if(generation!==initialization||disposed||contextLost)return;
-  const labels=await pool.acquireAll(sloganLabels(resources.manifest).map(s=>s.asset));
+  const labels=await pool.acquireAll(sloganLabels(resources.manifest,selectedCity()).map(s=>s.asset));
   if(generation!==initialization||disposed||contextLost){labels.forEach(l=>l.release());return;}
   sloganLeases.forEach(l=>l.release());sloganLeases=labels;for(const lease of labels)studio.renderer.initTexture(lease.texture);
   await (artworkUI as ReturnType<typeof createConsumerPanel>).setThumbnails(Object.fromEntries(Object.entries(resources.manifest.cities).map(([id,c])=>[id,pool!.previewUrl(c.thumbnail)])));
@@ -210,7 +216,7 @@ async function upgradeQuality(){
   const cityFocus=!['flowers','saucer','handle','lid'].includes(view.view);
   const nextCity:Tier=cityFocus&&near?tier:cityTier;const upgradeCity=selectedCity();
   const cp=resources.cityPack(selection.current,nextCity),candidates=fixedQualityCandidates(view.view,zoomed);
-  const labelExtra=sloganLabels(resources.manifest).reduce((n,s)=>n+textureBytes(s.asset),0)-textureBytes(cp.runtime!.label.asset);
+  const labelExtra=sloganLabels(resources.manifest,selectedCity()).reduce((n,s)=>n+textureBytes(s.asset),0)-textureBytes(cp.runtime!.label.asset);
   const options=candidates.map(candidate=>{const pack=resources!.fixedPack(candidate.tiers,candidate.colors),assets=[cp.runtime!.mask,cp.runtime!.normal,cp.runtime!.label.asset,resources!.manifest.mark,...Object.values(pack.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm])];return {candidate,pack,assets,steady:assets.reduce((n,a)=>n+textureBytes(a),0)+labelExtra};});
   const fits=(option:typeof options[number])=>option.steady+targetBytes()<=pool!.steady&&pool!.canFit(option.assets);
   const wantsDetail=candidates[0].colors.saucer==='detail'||candidates[0].colors.body==='detail'||candidates[0].colors.handle==='detail';
@@ -252,7 +258,7 @@ ui.canvas.addEventListener('webglcontextrestored',()=>{contextLost=false;cityTie
 ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},{signal:eventScope.signal});
 invalidate();
 function fixedAssets(value:Resources,tiers:Record<Region,Tier>,colors=tiers){return Object.values(value.fixedPack(tiers,colors).regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]);}
-function pinnedAssets(value:Resources){return [...cityLibrary(value.manifest),value.manifest.mark,...fixedAssets(value,{body:'light',handle:'light',saucer:'light'})];}
+function pinnedAssets(value:Resources,cityId=selectedCity()){return [...cityLibrary(value.manifest,cityId),value.manifest.mark,...fixedAssets(value,{body:'light',handle:'light',saucer:'light'})];}
 /** No candidate release is observable/exportable until every visual component commits.
  * Old leases remain held through rollback. Encoding cache is shared by immutable URL. */
 async function importDesign(value:unknown):Promise<boolean>{
@@ -273,17 +279,17 @@ async function importDesign(value:unknown):Promise<boolean>{
   const oldAssets=[...fixedAssets(previous,oldTiers,oldColors),oldCity.mask,oldCity.normal,oldCity.label.asset];
   // Pin currently displayed textures until either the new work or rollback completes.
   held=await pool.acquireAll(oldAssets,controller.signal);guard();
-  const assets:Asset[]=[...fixedAssets(next,tiers,colors),nextCity.mask,nextCity.normal,...sloganLabels(next.manifest).map(s=>s.asset),next.manifest.mark];
+  const assets:Asset[]=[...fixedAssets(next,tiers,colors),nextCity.mask,nextCity.normal,...sloganLabels(next.manifest,d.cityId).map(s=>s.asset),next.manifest.mark];
   entryLoading?.plan(assets);candidates=await pool.acquireAll(assets,controller.signal);guard();
   for(const lease of candidates)studio.renderer.initTexture(lease.texture);
   touched=true;
   if(!await fixed.apply(next.fixedPack(tiers,colors)))throw Error('花纸未完整还原');guard();
   if(!await applyCityArtwork(next.cityPack(desired,tier)))throw Error('城市与文字未完整还原');guard();
-  const labels=candidates.splice(11,6),mark=candidates.splice(11,1)[0];
+  const labels=candidates.splice(11,sloganLabels(next.manifest,d.cityId).length),mark=candidates.splice(11,1)[0];
   markLease?.release();markLease=mark;mark.texture.anisotropy=anisotropy;mark.texture.needsUpdate=true;mats.mark.map=mark.texture;mats.mark.needsUpdate=true;
   sloganLeases.forEach(l=>l.release());sloganLeases=labels;
   resources=next;resourcesPromise=Promise.resolve(next);fixedTiers=tiers;fixedColors=colors;cityTier=tier;requestedCity=d.cityId;
-  pool.pinFiles(pinnedAssets(next));selection.commit(desired);setFixedRelief(fixedReliefEnabled);committed=true;
+  pool.pinFiles(pinnedAssets(next,d.cityId));selection.commit(desired);setFixedRelief(fixedReliefEnabled);committed=true;
   return true;
  }catch(error){
   if(!contextLost&&!disposed&&generation===initialization){
@@ -300,8 +306,16 @@ async function importDesign(value:unknown):Promise<boolean>{
   if(committed)qualityError='';
  }
 }
+async function restoreDesign(){
+ if(profile!=='consumer')return selection.restore();
+ if(importing)throw Error('正在还原另一作品，请稍后重试');
+ const latest=await loadResources();
+ if(importing)throw Error('正在还原另一作品，请稍后重试');
+ activeImport=importDesign(latest.bootstrap.defaultDesign);
+ return activeImport.finally(()=>{activeImport=undefined;});
+}
 const debug=()=>({version:APP_VERSION,profile,fixedMapping:fixed.currentMapping,markFiltering:{anisotropy:mats.mark.map?.anisotropy},importing,preload:{neighborCity,neighborError,readyCities:resources?Object.values(resources.manifest.cities).filter(c=>pool?.fileReady(c.levels.light.mask)&&pool.fileReady(c.levels.light.normal)).length:0,slogans:sloganLeases.length},entryLoading:entryLoading?.debug(),loading:{pending:[...startupPending],error:startupError},quality:{cityTier,fixedTiers,fixedColors,fixedDimensions:fixed.precision(),mobile,upgrading:qualityBusy,error:qualityError,dpr:studio.renderer.getPixelRatio(),renderFrames,contextLost},resources:pool?.debug(),renderTargets:studio.memory(),glass:glass?.debug(),haptics:haptics.debug(),selection:{current:selection.current,desired:selection.desired,busy:selection.busy,error:selection.error},porcelain:PORCELAIN,ready:ui.canvas.dataset.ready==='true',view:view.view,parts:Object.fromEntries((['cup','lid','saucer'] as const).map(part=>[part,{visible:product[part].visible,position:product[part].position.toArray(),quaternion:product[part].quaternion.toArray()}])),mode,auto:view.auto,camera:studio.camera.position.toArray(),clipping:{near:studio.camera.near,far:studio.camera.far},target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),lidReflections:lidReflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory,programs:studio.renderer.info.programs?.length},city:city.debug(),fixedFinish:{cleanGoldGround:mats.regions.saucer.userData.cleanGoldGround,enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
-Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',whenReady:readiness.whenReady,getLoadState:readiness.get,onLoadStateChange:readiness.subscribe,exportDesign:()=>{if(importing||!resources||!assetsReady||selection.busy)throw Error('作品尚未准备完成');return exportDesign(selection.current,resources.manifest);},importDesign:(value:unknown)=>{if(importing)throw Error('正在还原另一作品，请稍后重试');activeImport=importDesign(value);return activeImport.finally(()=>{activeImport=undefined;});},onDesignChange:(callback:(design:DesignConfig)=>void)=>{subscribers.add(callback);return ()=>subscribers.delete(callback);},capture:()=>{authoringFraming.apply();studio.renderer.render(studio.scene,studio.camera);authoringFraming.restore();return ui.canvas.toDataURL('image/png');},applyCityArtwork,restore:()=>selection.restore(),selectArtwork:(patch:Partial<Selection>)=>selection.select(patch),setView:(v:View,instant=false)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v,instant);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;product.cup.quaternion.setFromAxisAngle(new Vector3(0,1,0),(pose.cupYaw??0)*Math.PI/180);product.lid.quaternion.copy(product.cup.quaternion);applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:setCityRelief,setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
+Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',whenReady:readiness.whenReady,getLoadState:readiness.get,onLoadStateChange:readiness.subscribe,exportDesign:()=>{if(importing||!resources||!assetsReady||selection.busy)throw Error('作品尚未准备完成');return exportDesign(selection.current,resources.manifest);},importDesign:(value:unknown)=>{if(importing)throw Error('正在还原另一作品，请稍后重试');activeImport=importDesign(value);return activeImport.finally(()=>{activeImport=undefined;});},onDesignChange:(callback:(design:DesignConfig)=>void)=>{subscribers.add(callback);return ()=>subscribers.delete(callback);},capture:()=>{authoringFraming.apply();studio.renderer.render(studio.scene,studio.camera);authoringFraming.restore();return ui.canvas.toDataURL('image/png');},applyCityArtwork,restore:()=>restoreDesign(),selectArtwork:(patch:Partial<Selection>)=>selection.select(patch),setView:(v:View,instant=false)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v,instant);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;product.cup.quaternion.setFromAxisAngle(new Vector3(0,1,0),(pose.cupYaw??0)*Math.PI/180);product.lid.quaternion.copy(product.cup.quaternion);applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:setCityRelief,setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},
  fixedPrecision:()=>fixed.precision(),

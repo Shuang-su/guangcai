@@ -4,6 +4,7 @@ import type {CityArtworkPack} from '../styles/city-artwork';
 import type {StylePack} from '../styles/style-manager';
 import fixedLayout from '../styles/fixed-layout.json';
 import {sloganLabels} from './preload';
+import {resolveSlogan} from './slogans';
 import {compatibleAtlas} from './fixed-quality';
 export {exportDesign,validateDesign} from './design';
 
@@ -18,8 +19,8 @@ async function json<T>(url:string,signal?:AbortSignal){
 }
 export async function loadResources(releaseId?:string,signal?:AbortSignal){
  let bootstrap=await json<Bootstrap>(new URL(config.bootstrapUrl??'api/v1/bootstrap.json',appBase).href,signal);
- if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7','v7-8','v7-9'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId}};}
- if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7','v7-8','v7-9'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
+ if(releaseId&&releaseId!==bootstrap.releaseId){if(!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7','v7-8','v7-9','v7-10'].includes(releaseId))throw Error('Unsupported resource release');const catalogPath=`releases/${releaseId}/catalog.json`,catalog=await json<{manifestUrl:string}>(new URL(catalogPath,new URL(config.assetBase??appBase,appBase)).href,signal);bootstrap={...bootstrap,releaseId,catalogUrl:catalogPath,manifestUrl:`releases/${releaseId}/${catalog.manifestUrl}`,defaultDesign:{...bootstrap.defaultDesign,resourceReleaseId:releaseId,sloganId:'ocean'}};}
+ if(bootstrap.schemaVersion!==1||!['v7-1','v7-2','v7-3','v7-4','v7-5','v7-6','v7-7','v7-8','v7-9','v7-10'].includes(bootstrap.releaseId))throw Error('Unsupported resource release');
  const manifestUrl=new URL(bootstrap.manifestUrl,new URL(config.assetBase??appBase,appBase)).href;
  const manifest=await json<ResourceManifest>(manifestUrl,signal);
  if(manifest.schemaVersion!==1||manifest.releaseId!==bootstrap.releaseId||manifest.modelVersion!=='china-cup-v6'||manifest.recipeVersion!=='porcelain-city-v6')throw Error('Unsupported model or recipe');
@@ -35,7 +36,7 @@ export async function loadResources(releaseId?:string,signal?:AbortSignal){
   asset.url=new URL(asset.url,manifestUrl).href;if(!/^https?:/.test(asset.url))throw Error('Invalid resource URL');
  }
  function cityPack(s:Selection,tier:Tier):CityArtworkPack{
-  const cityId=s.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,''),city=manifest.cities[cityId],label=city?.slogans?.[s.text]??manifest.slogans[s.text];
+  const cityId=s.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,''),city=manifest.cities[cityId],label=resolveSlogan(manifest,cityId,s.text);
   if(!city||!label||!s.appearance)throw Error('Unknown city or slogan');
   const level=city.levels[tier];
   return {id:s.variant,version:7,name:city.name,layout:'blank-300deg-v1',baseColor:level.mask.url,normal:level.normal.url,roughness:level.mask.url,metalness:level.mask.url,coverage:level.mask.url,normalEncoding:'rgba16f',parametric:{mask:level.mask.url,appearance:s.appearance},label:{source:label.asset.url,fixedGold:true},runtime:{...level,label}};

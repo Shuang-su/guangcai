@@ -453,6 +453,32 @@
               "standard",
               "detail"
             ]
+          },
+          "slogans": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "asset": {
+                  "$ref": "#/$defs/asset"
+                },
+                "uvRect": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                }
+              },
+              "required": [
+                "asset",
+                "uvRect"
+              ]
+            }
           }
         },
         "required": [
