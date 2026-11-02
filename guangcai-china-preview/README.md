@@ -1,5 +1,13 @@
 # 中国杯 V7.1.13：城市祝福语
 
+2026-11-02 交付收尾：**本轮开发已交付，最终版本 V7.1.13 / v7-10**。用户确认同一大版本不再逐个中间版本补处理；旧版 Issue 已集中收尾，交付后事项统一保留在 [#29](https://github.com/Shuang-su/guangcai/issues/29)。
+
+- **正式活动：** [深圳广电「城市共彩」](https://www.sztv.com.cn/huodong/gcyfy/h5/#/home) · [DIY](https://www.sztv.com.cn/huodong/gcyfy/h5/#/create)。
+- **技术交付：** [V7.1.13 / #62](https://github.com/Shuang-su/guangcai/issues/62) · [V7.1.12 / #61](https://github.com/Shuang-su/guangcai/issues/61) · [Netlify 技术预览](https://guangcai-no1-china-v7.netlify.app/)。
+- **本次只读核对：** 正式活动/DIY 可见，默认“我爱深圳”；生产 COS 的 10 份版本清单与 5 个资源抽样摘要匹配。身份、作品发布/权限和真机验收未在本轮验证。见[正式入口核对](../docs/changes/20261102-delivery-closeout/formal-entry.md)与[收尾记录](../docs/changes/20261102-delivery-closeout/completion.md)。
+
+以下按原日期保存各阶段历史状态，旧文中的“未同步/未验收/保持开启”不覆盖上述交付收尾结论。
+
 2026-11-02：**GitHub已补齐至V7.1.13及正式主页交付记录**。PR [#58](https://github.com/Shuang-su/guangcai/pull/58)、[#59](https://github.com/Shuang-su/guangcai/pull/59)已合入main；21个正式提交已包含，参考审计另存独立分支。本轮未重新构建或部署，历史条目中的“未同步”为当时状态。[同步完成记录](../docs/changes/20261102-github-catchup/completion.md)。
 
 2026-10-22：V7.1.13 / v7-10 已发布至原Netlify正式主页。默认“我爱深圳”；五句新祝福语、23城完整名称与原六句并存。5/6字字号64/62，框高480/536，底边位置不变。
