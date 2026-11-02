@@ -109,7 +109,7 @@ export class StyleManager {
       return await this.apply(pack);
     }finally{urls.forEach(url=>URL.revokeObjectURL(url));}
   }
-  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{mapping:this.currentMapping,repeat:m.normal?.repeat.toArray(),offset:m.normal?.offset.toArray(),normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
+  precision(){return Object.fromEntries(Object.entries(this.currentMaps).map(([region,m])=>{const image=m.normal?.image as {width:number;height:number}|undefined;return [region,{mapping:this.currentMapping,colorSize:[(m.baseColor.image as {width:number;height:number}).width,(m.baseColor.image as {width:number;height:number}).height],repeat:m.normal?.repeat.toArray(),offset:m.normal?.offset.toArray(),normalType:m.normal?.type,anisotropy:m.normal?.anisotropy,normalSize:[image?.width,image?.height],precision:m.normal?.userData.precision??'8-bit',normalFlipY:m.normal?.flipY,atlas:this.materials.regions[region as Region].userData.fixedAtlas??null}]}));}
   private async applyRuntime(pack:StylePack,revision:number){
     this.controller?.abort();const controller=this.controller=new AbortController();let leases:Lease[]=[];const finishSwap=this.pool!.beginSwap();
     try{

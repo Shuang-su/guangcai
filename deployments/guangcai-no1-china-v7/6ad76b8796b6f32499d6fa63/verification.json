@@ -1,0 +1,84 @@
+{
+  "deployId": "6ad76b8796b6f32499d6fa63",
+  "sourceCommit": "006e32681b686ed161b2aa710a67831e9b3bc9b3",
+  "state": "ready",
+  "publishedDeploy": "6ad76b8796b6f32499d6fa63",
+  "serverFilesMatched": 1252,
+  "expectedFiles": 1252,
+  "publicFiles": [
+    {
+      "route": "index.html",
+      "status": 200,
+      "rawSha256": "704fab73cdde111e61f81c083410ff5354929793ae8f17d1eb0c76d213fa25dd",
+      "normalizedSha256": "054f6acae44a0088ba572272a5ca902c326084cd9494faa5fa18aaa74bd2f275",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "release.json",
+      "status": 200,
+      "rawSha256": "05d9fb7f37ef43fea76e14bb6d8deb96cc68a6850a482099fd243b4ec5c986ea",
+      "normalizedSha256": "05d9fb7f37ef43fea76e14bb6d8deb96cc68a6850a482099fd243b4ec5c986ea",
+      "hostingComments": 0,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "artwork-dev/index.html",
+      "status": 200,
+      "rawSha256": "79f84c254842adcc94b3e691bcc597410c76eb56e867a79498928eb38e8675ed",
+      "normalizedSha256": "d8353dd22f3f4544c6bed76461451f82ad003d1253c005385b2486cd955bd47e",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "artwork-dev/cup.html",
+      "status": 200,
+      "rawSha256": "a00e614378beec2a99814fa720f61d29203ab2d20b1c872bdf75a1e4a743a084",
+      "normalizedSha256": "5932581b97784eb61273d2632639ebbc4cbeef5c11d38e37fd540154bac35dd6",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "label-compare/index.html",
+      "status": 200,
+      "rawSha256": "a35aac20374ebbbf3a7d51784865fef4f008530ff206952dd2ddc021f8d04a8d",
+      "normalizedSha256": "883cf5283025b70066bdca29f67ff7d2e471c00d0e3ae29c6c764fa647f32725",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "city-compare/index.html",
+      "status": 200,
+      "rawSha256": "7cea35919451ffb9b5eafe9e10e65facf325acb6f862782820b0f9cde95fe988",
+      "normalizedSha256": "ea6fa14e9d836f0a24ae09f7ec8c2b2cede19c0ddd05aa8bf516fff7876e5738",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "bezier-lab/index.html",
+      "status": 200,
+      "rawSha256": "ad5e17aec194f7014d2805aaa3e1fabd5e444a4edd2c26757bffc3caa4d3f020",
+      "normalizedSha256": "8e4c3bf0c77a076239fe0ea73fdde5fb192e311c561390c65cd8117a1e263a02",
+      "hostingComments": 0,
+      "prettyUrlRewrites": 1
+    }
+  ],
+  "browser": {
+    "passed": true,
+    "checks": 63,
+    "errors": [],
+    "physicalDeviceTested": false
+  },
+  "archive": {
+    "method": "Git object reuse; new archive site entries marked skip-worktree without expanded copies",
+    "files": 1252,
+    "reusedObjectsByPath": 1246,
+    "newPayloadBytes": 1086102,
+    "archivePrefix": "deployments/guangcai-no1-china-v7/6ad76b8796b6f32499d6fa63/site/",
+    "changedFilesReadBack": 6,
+    "filesExpanded": 0,
+    "uniqueObjectsPresent": 1212,
+    "missingObjects": 0
+  },
+  "passed": true
+}

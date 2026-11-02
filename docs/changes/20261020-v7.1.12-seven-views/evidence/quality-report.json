@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "errors": [],
+  "rows": [
+    {
+      "name": "desktop",
+      "mode": "saucer",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 13,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "mode": "flowers",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 13,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "mode": "saucer",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 9,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "mode": "flowers",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 9,
+        "contextLost": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "7.1.13",
+  "scope": "formal-root-only",
+  "snapshotCommit": "bcf257151e62005165745f0fcd6e87cae60cbfd2",
+  "productionSourceCommit": "78530b7ea1c67bcdd8a6871c81697d6c6519e2e8",
+  "deployId": "6ad9e0c4e4871da75c6b4316",
+  "resourceRelease": "v7-10",
+  "artifactKind": "published-snapshot",
+  "reusedExistingBuild": true,
+  "rebuildPerformed": false,
+  "sourceOverrides": [
+    "package.json",
+    "vite.config.ts",
+    "tsconfig.json"
+  ],
+  "formalShenzhen": "original; no Phase II APEC",
+  "githubSync": "pending-account-suspended",
+  "sourceFiles": 1082,
+  "productionFiles": 687,
+  "onlyHtmlEntry": "index.html",
+  "archives": [
+    {
+      "path": "source-main.tar.gz",
+      "bytes": 673252728,
+      "sha256": "3e80c64374252d4d2eaaaf94b14476fbd85e0c4b3a2d762737001b8ef96c31c7"
+    },
+    {
+      "path": "production-main.tar.gz",
+      "bytes": 370564367,
+      "sha256": "10253dbe26af7e68e9697ee430638ab3228de3aa35455fdd425d16791ab2138a"
+    }
+  ]
+}

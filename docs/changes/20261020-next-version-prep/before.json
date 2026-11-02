@@ -1,0 +1,498 @@
+{
+  "git": {
+    "at": "2026-10-20T07:10:14.552347+00:00",
+    "branch": "codex/next-version-20261020",
+    "head": "9c0720326d70e86685bf919d9db6963fff243548",
+    "main": "9c0720326d70e86685bf919d9db6963fff243548",
+    "originMainTrackingRef": "85998a9c14ce9eabcfe7868e935fe93b59664ba4",
+    "referenceAudit": "a13ba1b8c6dfcbd9be2f204fb497a00b825218d2",
+    "freeBytes": {
+      "/Volumes/Prism_初号機/广彩/guangcai-main": 25952256,
+      "/Volumes/Prism": 2869456896,
+      "/Users/shuangsu": 3077578752
+    }
+  },
+  "targets": [
+    {
+      "path": "/Volumes/Prism/广彩交付/城市共彩-V7.1.11-正式主页-20261020",
+      "files": 12,
+      "logicalBytes": 1032693821,
+      "allocatedBytes": 1032728576
+    },
+    {
+      "path": "/Volumes/Prism/广彩交付/.codex-work/full-package-before-main-only",
+      "files": 49,
+      "logicalBytes": 1630989157,
+      "allocatedBytes": 1631105024
+    },
+    {
+      "path": "/Volumes/Prism/广彩交付/.codex-work/main-only-handoff-20261020",
+      "files": 1015,
+      "logicalBytes": 698716334,
+      "allocatedBytes": 700878848
+    },
+    {
+      "path": "/Volumes/Prism/广彩交付/.codex-work/offline-handoff-20261020",
+      "files": 126,
+      "logicalBytes": 70580665,
+      "allocatedBytes": 70922240
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/.codex-work/cache/npm",
+      "files": 412,
+      "logicalBytes": 31518924,
+      "allocatedBytes": 133955584
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/cache",
+      "files": 436,
+      "logicalBytes": 387990707,
+      "allocatedBytes": 474218496
+    },
+    {
+      "path": "/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/offline-handoff-cache-transfer",
+      "files": 4,
+      "logicalBytes": 39604655,
+      "allocatedBytes": 39608320
+    },
+    {
+      "path": "/Users/shuangsu/Library/Caches/Codex/guangcai-v7.1.11-online/tracked-handoff-files.zlist",
+      "files": 1,
+      "logicalBytes": 465646,
+      "allocatedBytes": 466944
+    }
+  ],
+  "openHandles": [],
+  "protected": [
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/deployments/guangcai-no1-china-v7/6ad6fcdcf1f9e6ca6c7c5330/files.json",
+      "bytes": 282546,
+      "sha256": "f65b2a7640fe7e87622c44879c21731ee76b158419fc281f5ff71ea04c8378e1"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/deployments/guangcai-no1-china-v7/6ad6fcdcf1f9e6ca6c7c5330/site/release.json",
+      "bytes": 278,
+      "sha256": "f27ee6005cc7a45631516caa3211eb65bfe1ad4e01fbc23581078b64f100c9ba"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/beijing.svg",
+      "bytes": 1452978,
+      "sha256": "572133c8dd38a007034370f26adecf09fb63169c217b089ac4fc4499b0ac372a"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/changchun.svg",
+      "bytes": 1275340,
+      "sha256": "28a821c9de67a43d0088455e0b302673862f7db131d59dc71872699788d5554d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/chengdu.svg",
+      "bytes": 1374167,
+      "sha256": "09407a0ea574f9763ca509f921890f0bad427dd24df2b1d99478e0444663e902"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/chongqing.svg",
+      "bytes": 1620526,
+      "sha256": "a0b21904833147dec17045e457eac4c05a426c5bc0998b820f056e7bc37bdb7c"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/guangzhou.svg",
+      "bytes": 1766146,
+      "sha256": "b38585ef5c845f6520d2406444072f5b92f67795e4d2b2cf6c42ee1de5d67754"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/hangzhou.svg",
+      "bytes": 1305785,
+      "sha256": "f801c67c0547c97477e46e95235d8925116210fe9439e9b0a19bb820b93bba94"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/harbin.svg",
+      "bytes": 1539632,
+      "sha256": "e1d5822036d567ef355c27fea78f7f3a6b0030a5679e89c11fc7aa137957be07"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/hohhot.svg",
+      "bytes": 1298502,
+      "sha256": "0127edc0937c181418d14acbfb4f0e412c06494b22cdf38575fa7d098d10c7ff"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/jingdezhen.svg",
+      "bytes": 1496082,
+      "sha256": "a5f8f74ef3827cfac7c3a977a194987cdd42a8a163d7d70b161cbfb92566f7b1"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/nanchang.svg",
+      "bytes": 1489131,
+      "sha256": "fd12ad8bc1e722a23a0649f13796a1d0d97b53bb91f54b413484a91cf5dfd4cf"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/nanjing.svg",
+      "bytes": 1334630,
+      "sha256": "e16a9ea1302947b23d3596d36d6428ffabbcf07303bcabe682632aa962302cc0"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/qingdao.svg",
+      "bytes": 1270147,
+      "sha256": "d396d8c5ba31e98d5f1315e5ae8406b8f5594faec5c56fa64c9274955931c8fe"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/shanghai.svg",
+      "bytes": 1309035,
+      "sha256": "f5c6184bd65d590ddec8c459ef3be1ed7ea501757a59694400aa7b0b0061d89f"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/shenyang.svg",
+      "bytes": 1531653,
+      "sha256": "09667618b3ceb5036b78ded0612f84b6b4823d1ec1c68d17aaeee00652c89f1b"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/shenzhen.svg",
+      "bytes": 2063996,
+      "sha256": "08bbd22afb2e87bc648aa09f6504ef82f6080b243bfa1375d0e5236949fb8061"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/shijiazhuang.svg",
+      "bytes": 1445136,
+      "sha256": "187b7c5b6d215496c5c1162920acdb5940dc1c1ba64866e1e4e210a7259b3306"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/taiyuan.svg",
+      "bytes": 1368631,
+      "sha256": "afefe17d3b79c172a647ec9ccdb0e2aca8798687b96dacd44aebfde0140f837e"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/tianjin.svg",
+      "bytes": 1726083,
+      "sha256": "67180703921f49d5ea584e463f9c4a7a477d6f6c03e0490043d4fb1b2e568812"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/urumqi.svg",
+      "bytes": 1976636,
+      "sha256": "4e01614622779ee3a181da2e9c44870d46fcbc6d29f7ea024360f6356f10af2d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/wuhan.svg",
+      "bytes": 1500249,
+      "sha256": "ac70161ad494a8a30aa42e3b82907b6f2f9ccc63d1275bdef2e91cf8982c96e7"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/xiamen.svg",
+      "bytes": 1452716,
+      "sha256": "bae533336b1997964d7b4359962fc0fd18143f0bf0e328db73bde130c8cb9ba9"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/xian.svg",
+      "bytes": 1539495,
+      "sha256": "80e7d45e06fd2838fe86d683e97942d8f1e345469ef6c4ef5ccb2b2ffe2f5a75"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-20261020/zhengzhou.svg",
+      "bytes": 1440993,
+      "sha256": "10b32138aaa1fb6faac796cd8451c82dc3b32b021afcc2dc695c6d36ae171fbf"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/beijing.svg",
+      "bytes": 1468247,
+      "sha256": "9adaf9a032be7b8e4aece6a0cebade013ddbbbe393f19ae59eff115ca74d3d36"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/changchun.svg",
+      "bytes": 1290609,
+      "sha256": "94cbcfbcfebe40ee392d3aeaea2ab55dc0765201f213541be45adb2bd9c2cb03"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/chengdu.svg",
+      "bytes": 1389436,
+      "sha256": "11d9386b921c5bb6df7c7797b7e0200f3de37c8f613b30974711a450a74c58a6"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/chongqing.svg",
+      "bytes": 1635795,
+      "sha256": "9741c6a6340ecce99465131c0b7eb9eda5e1a9e2045335031c1444885d524b04"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/guangzhou.svg",
+      "bytes": 1767545,
+      "sha256": "a69331f6dc89c4b80766e082f040652645488bb7156afb5b821962a86a8c43a1"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/hangzhou.svg",
+      "bytes": 1321070,
+      "sha256": "fb4f206f18456362929b8292b1f3c5d9edd9a6fd3eb5a96241e1be2884a3abbd"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/harbin.svg",
+      "bytes": 1554909,
+      "sha256": "21ab671302e608d539d245696f6f6dd74b87527f07a094dede71904f8a0b93c4"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/hohhot.svg",
+      "bytes": 1313777,
+      "sha256": "bebce43cf0ba5a6bf73b2dc4206933635afe2d737ea2ed0ec44fd7af91d344f5"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/jingdezhen.svg",
+      "bytes": 1511357,
+      "sha256": "bc6c582957b0e8d424b773eb7056f8d5452ee098addd639fd1eab2d0911a8c30"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/nanchang.svg",
+      "bytes": 1504406,
+      "sha256": "8eab801dfe26b41f40b687be81132c6852bc6173151ce893c12d374f32918a67"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/nanjing.svg",
+      "bytes": 1349899,
+      "sha256": "d3676f5d999f94d5fbfc421f7a0d7540d77e81203f6772cbf1fae284426a7f27"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/qingdao.svg",
+      "bytes": 1284957,
+      "sha256": "1c5f830c5ec7ad524d4ac7c123be3e1087df2e0b0a108291890908035a833078"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/shanghai.svg",
+      "bytes": 1324304,
+      "sha256": "f3bed0db6b1ea301c9102ac1d2269372ae5b2f271ad5234bc7d8da8b82954fec"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/shenyang.svg",
+      "bytes": 1538777,
+      "sha256": "52d5834daadae2997702877f5319d49243607d2152e97f50f8cc5c560d181b60"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/shenzhen.svg",
+      "bytes": 2079295,
+      "sha256": "19604769bd003cd03f9d0a04596d1201fc56dc8027cdf82b7065c57b40745b51"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/shijiazhuang.svg",
+      "bytes": 1460405,
+      "sha256": "952f52b4f03eea066314b479a30acb82deb3c34eff2bf7a11e12cc86a7ff0ce6"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/taiyuan.svg",
+      "bytes": 1383930,
+      "sha256": "efd761a3f8c963ad945550b84bede6f86f60516c4d167fd88c491da43aee28f8"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/tianjin.svg",
+      "bytes": 1734759,
+      "sha256": "781fc1ae555264182f510dc7f7966e2fabe3c5af8e239059e590fc9a9c74bc42"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/urumqi.svg",
+      "bytes": 1991905,
+      "sha256": "fecfd98f70355f5d081aedac11399213851b2229c55c7215ff22742b98ec9373"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/wuhan.svg",
+      "bytes": 1515548,
+      "sha256": "5a3a99064b25a2bc406bc162afb62311cf41bce1d30075f1b3cf26e21e885c5f"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/xiamen.svg",
+      "bytes": 1467991,
+      "sha256": "3e65c8f196e2b779cdeb6157fbd699bdfd42c147bd0ea2f19bbc7e67de7daaaf"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/xian.svg",
+      "bytes": 1554794,
+      "sha256": "e3e7569b24446d4a44843041d526d0ea72f4d4dcbbe6003a7e05db8a37f6f215"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/.codex-work/downloads/mastergo-v7.1.4/zhengzhou.svg",
+      "bytes": 1456262,
+      "sha256": "978090ea82c3f26e39fd62835deb2a6e1f9627012ea696e1a7cecde7b169b761"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/background-cutouts.json",
+      "bytes": 14969,
+      "sha256": "2564cfe63c689c7e3da863e2c447be284fd986ff36fe5e1c341306383a100ea4"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/beijing-cutout-mask-9c45986b5d67b5ed.png",
+      "bytes": 8316,
+      "sha256": "9c45986b5d67b5ed4b256b4552813b12534d88e003b0fd930dfc2cbdd4876ec2"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/chongqing-cutout-mask-2f329e22815d6712.png",
+      "bytes": 9194,
+      "sha256": "2f329e22815d67123c41e30ed8a9a2a9062162833810733129f423fc574c3a2e"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/nanchang-cutout-mask-17f19046ccfd8425.png",
+      "bytes": 18441,
+      "sha256": "17f19046ccfd8425950ef8ee8171bdf046754eed5993ced7402e8cebec24f01b"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/qingdao-cutout-mask-1bd72d5cd519c113.png",
+      "bytes": 9355,
+      "sha256": "1bd72d5cd519c1137ca73eca59ca2850dabc2074476477e2f9a3cd9cfe0a398d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/masters/v7.1.11/tianjin-cutout-mask-4488bfe2ec4d3586.png",
+      "bytes": 26250,
+      "sha256": "4488bfe2ec4d35867e618a9b93131b56c08a905d657ef7c292300592f0d0ad94"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/china-lines.psd",
+      "bytes": 10238996,
+      "sha256": "837d6408195762eacaaf13edeb8fbafa35c610928c0889ee31c844f316f9eda9"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/floral-export.psd",
+      "bytes": 25627383,
+      "sha256": "7b851a46b57d0dc009fd4ec2160c51de7e9b4bdf347c00a81a4fe021afff0e37"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.11/深圳-带APEC会场@2x.png",
+      "bytes": 3622646,
+      "sha256": "70ab5e05165563faf08147094a2859573c4b6618aa76a3be49e4bef20670d6ce"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.11/西安@2x.png",
+      "bytes": 2547583,
+      "sha256": "77956e300c20c6117d86f7c816bd41c1c2e45ccf49ca086914a5d2c69620642d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/beijing.svg",
+      "bytes": 1452978,
+      "sha256": "572133c8dd38a007034370f26adecf09fb63169c217b089ac4fc4499b0ac372a"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/changchun.svg",
+      "bytes": 1275340,
+      "sha256": "28a821c9de67a43d0088455e0b302673862f7db131d59dc71872699788d5554d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/chengdu.svg",
+      "bytes": 1374167,
+      "sha256": "09407a0ea574f9763ca509f921890f0bad427dd24df2b1d99478e0444663e902"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/chongqing.svg",
+      "bytes": 1620526,
+      "sha256": "a0b21904833147dec17045e457eac4c05a426c5bc0998b820f056e7bc37bdb7c"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/guangzhou.svg",
+      "bytes": 1766146,
+      "sha256": "b38585ef5c845f6520d2406444072f5b92f67795e4d2b2cf6c42ee1de5d67754"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/hangzhou.svg",
+      "bytes": 1305785,
+      "sha256": "f801c67c0547c97477e46e95235d8925116210fe9439e9b0a19bb820b93bba94"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/harbin.svg",
+      "bytes": 1539632,
+      "sha256": "e1d5822036d567ef355c27fea78f7f3a6b0030a5679e89c11fc7aa137957be07"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/hohhot.svg",
+      "bytes": 1298502,
+      "sha256": "0127edc0937c181418d14acbfb4f0e412c06494b22cdf38575fa7d098d10c7ff"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/jingdezhen.svg",
+      "bytes": 1496082,
+      "sha256": "a5f8f74ef3827cfac7c3a977a194987cdd42a8a163d7d70b161cbfb92566f7b1"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/nanchang.svg",
+      "bytes": 1489131,
+      "sha256": "fd12ad8bc1e722a23a0649f13796a1d0d97b53bb91f54b413484a91cf5dfd4cf"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/nanjing.svg",
+      "bytes": 1334630,
+      "sha256": "e16a9ea1302947b23d3596d36d6428ffabbcf07303bcabe682632aa962302cc0"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/qingdao.svg",
+      "bytes": 1270147,
+      "sha256": "d396d8c5ba31e98d5f1315e5ae8406b8f5594faec5c56fa64c9274955931c8fe"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/shanghai.svg",
+      "bytes": 1309035,
+      "sha256": "f5c6184bd65d590ddec8c459ef3be1ed7ea501757a59694400aa7b0b0061d89f"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/shenyang.svg",
+      "bytes": 1531653,
+      "sha256": "09667618b3ceb5036b78ded0612f84b6b4823d1ec1c68d17aaeee00652c89f1b"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/shenzhen.svg",
+      "bytes": 2063996,
+      "sha256": "08bbd22afb2e87bc648aa09f6504ef82f6080b243bfa1375d0e5236949fb8061"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/shijiazhuang.svg",
+      "bytes": 1445136,
+      "sha256": "187b7c5b6d215496c5c1162920acdb5940dc1c1ba64866e1e4e210a7259b3306"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/taiyuan.svg",
+      "bytes": 1368631,
+      "sha256": "afefe17d3b79c172a647ec9ccdb0e2aca8798687b96dacd44aebfde0140f837e"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/tianjin.svg",
+      "bytes": 1726083,
+      "sha256": "67180703921f49d5ea584e463f9c4a7a477d6f6c03e0490043d4fb1b2e568812"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/urumqi.svg",
+      "bytes": 1976636,
+      "sha256": "4e01614622779ee3a181da2e9c44870d46fcbc6d29f7ea024360f6356f10af2d"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/wuhan.svg",
+      "bytes": 1500249,
+      "sha256": "ac70161ad494a8a30aa42e3b82907b6f2f9ccc63d1275bdef2e91cf8982c96e7"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/xiamen.svg",
+      "bytes": 1452716,
+      "sha256": "bae533336b1997964d7b4359962fc0fd18143f0bf0e328db73bde130c8cb9ba9"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/xian.svg",
+      "bytes": 1539495,
+      "sha256": "80e7d45e06fd2838fe86d683e97942d8f1e345469ef6c4ef5ccb2b2ffe2f5a75"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/assets/source/v7.1.5/mastergo/zhengzhou.svg",
+      "bytes": 1440993,
+      "sha256": "10b32138aaa1fb6faac796cd8451c82dc3b32b021afcc2dc695c6d36ae171fbf"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/public/api/v1/bootstrap.json",
+      "bytes": 579,
+      "sha256": "9908f48fd329ccd7a796130b188974b0f71747fd2a27a74302b5ef1613b33344"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/public/bezier-lab/北京-独立闭合.svg",
+      "bytes": 167841,
+      "sha256": "34d921bfd15d3d6f9f210a1c756015e0d15e76e9135fb522e181a7ec744dbd21"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/public/bezier-lab/深圳-独立闭合.svg",
+      "bytes": 98075,
+      "sha256": "00ee3a554a0ff04c0ce45b7db31a4f363e5aa26342fba39a91c3de4a4987049f"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/src/geometry/parameters.ts",
+      "bytes": 865,
+      "sha256": "4cdf2232fce95b9718cb114828e1d5f1b52febb1eb934d3ccb841398136ed001"
+    },
+    {
+      "path": "/Volumes/Prism_初号機/广彩/guangcai-main/guangcai-china-preview/src/styles/fixed-layout.json",
+      "bytes": 343,
+      "sha256": "8d145fe78cbd9cab56f954c1d6ca1c6a038f4f949baff85c3cc0e2ccfa7ed4e0"
+    }
+  ]
+}

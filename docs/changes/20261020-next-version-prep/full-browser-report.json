@@ -1,0 +1,256 @@
+{
+  "base": "http://127.0.0.1:5298/",
+  "passed": true,
+  "checks": [
+    "xian before imports formal material",
+    "xian after imports formal material",
+    "xian changes rendered material",
+    "chongqing before imports formal material",
+    "chongqing after imports formal material",
+    "chongqing changes rendered material",
+    "nanchang before imports formal material",
+    "nanchang after imports formal material",
+    "nanchang changes rendered material",
+    "beijing before imports formal material",
+    "beijing after imports formal material",
+    "beijing changes rendered material",
+    "qingdao before imports formal material",
+    "qingdao after imports formal material",
+    "qingdao changes rendered material",
+    "tianjin before imports formal material",
+    "tianjin after imports formal material",
+    "tianjin changes rendered material",
+    "formal Shenzhen still original released mask",
+    "formal no experiment API",
+    "Phase II deep link loads dev-only APEC",
+    "Phase II limits city choice",
+    "Phase II visibly identified",
+    "switch returns to formal Shenzhen",
+    "blue porcelain cutouts xian",
+    "blue porcelain cutouts chongqing",
+    "blue porcelain cutouts nanchang",
+    "blue porcelain cutouts beijing",
+    "blue porcelain cutouts qingdao",
+    "blue porcelain cutouts tianjin",
+    "main comparison retains 7.1.4 baseline",
+    "repair panel displays xian",
+    "repair panel displays chongqing",
+    "repair panel displays nanchang",
+    "repair panel displays beijing",
+    "repair panel displays qingdao",
+    "repair panel displays tianjin",
+    "repair report mobile no overflow",
+    "mobile Phase II no overflow",
+    "no framework overlay",
+    "no runtime/console errors"
+  ],
+  "errors": [],
+  "rows": [
+    {
+      "city": "xian",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "xian",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "chongqing",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "chongqing",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "nanchang",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "nanchang",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "beijing",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "beijing",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "qingdao",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "qingdao",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "tianjin",
+      "phase": "before",
+      "resourceReleaseId": "v7-8",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    },
+    {
+      "city": "tianjin",
+      "phase": "after",
+      "resourceReleaseId": "v7-9",
+      "pose": {
+        "camera": [
+          31.765735672387418,
+          240.54729642798253,
+          909.6516524326336
+        ],
+        "target": [
+          0,
+          62,
+          0
+        ]
+      }
+    }
+  ],
+  "physicalDeviceTested": false,
+  "browser": "Chrome / Playwright; Browser plugin not available"
+}

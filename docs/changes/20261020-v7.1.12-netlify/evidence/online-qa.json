@@ -1,0 +1,1229 @@
+{
+  "url": "https://guangcai-no1-china-v7.netlify.app/",
+  "deployId": "6ad76b8796b6f32499d6fa63",
+  "passed": true,
+  "checks": [
+    "public bytes index.html",
+    "public bytes release.json",
+    "public bytes artwork-dev/index.html",
+    "public bytes artwork-dev/cup.html",
+    "public bytes label-compare/index.html",
+    "public bytes city-compare/index.html",
+    "public bytes bezier-lab/index.html",
+    "public release identity",
+    "desktop identity/content",
+    "desktop no framework overlay",
+    "desktop default 套杯",
+    "desktop seven labels",
+    "desktop hero actual resolution",
+    "desktop hero budgets",
+    "desktop hero city HD",
+    "desktop free zoom actual resolution",
+    "desktop free zoom budgets",
+    "desktop free zoom city HD",
+    "desktop zoom retains label",
+    "desktop real parts 套杯",
+    "desktop real parts 拆解",
+    "desktop real parts 杯盖",
+    "desktop real parts 杯身",
+    "desktop real parts 杯碟",
+    "desktop saucer actual resolution",
+    "desktop saucer budgets",
+    "desktop saucer city HD",
+    "desktop real parts 浮雕",
+    "desktop real parts 花纹",
+    "desktop flowers actual resolution",
+    "desktop flowers budgets",
+    "desktop flowers city HD",
+    "desktop choices preserved",
+    "desktop no overflow",
+    "desktop reset restores assembly",
+    "mobile identity/content",
+    "mobile no framework overlay",
+    "mobile default 套杯",
+    "mobile seven labels",
+    "mobile hero actual resolution",
+    "mobile hero budgets",
+    "mobile hero city HD",
+    "mobile free zoom actual resolution",
+    "mobile free zoom budgets",
+    "mobile free zoom city HD",
+    "mobile zoom retains label",
+    "mobile real parts 套杯",
+    "mobile real parts 拆解",
+    "mobile real parts 杯盖",
+    "mobile real parts 杯身",
+    "mobile real parts 杯碟",
+    "mobile saucer actual resolution",
+    "mobile saucer budgets",
+    "mobile saucer city HD",
+    "mobile real parts 浮雕",
+    "mobile real parts 花纹",
+    "mobile flowers actual resolution",
+    "mobile flowers budgets",
+    "mobile flowers city HD",
+    "mobile choices preserved",
+    "mobile no overflow",
+    "mobile reset restores assembly",
+    "runtime console errors absent"
+  ],
+  "rows": [
+    {
+      "name": "desktop",
+      "label": "hero",
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "standard"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              850,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              850,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              176,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              176,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              2048,
+              288
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 2032,
+              "contentHeight": 128,
+              "gutter": 8
+            }
+          }
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 10,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 21947785,
+          "reservedBytes": 21947785,
+          "peakBytes": 25034185,
+          "limit": 25165824,
+          "entries": 97,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 115788303,
+        "reservedRenderTargetBytes": 146277376,
+        "peakEstimatedBytes": 288214540,
+        "steadyBudget": 268435456,
+        "peakBudget": 402653184,
+        "entries": 28,
+        "activeEntries": 19,
+        "decodedBytes": 86841221,
+        "fetchedBodyBytes": 30009098,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "desktop",
+      "label": "free zoom",
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              850,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              850,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              176,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              176,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 13,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 22691409,
+          "reservedBytes": 22691409,
+          "peakBytes": 25034185,
+          "limit": 25165824,
+          "entries": 98,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 121408014,
+        "reservedRenderTargetBytes": 146277376,
+        "peakEstimatedBytes": 288214540,
+        "steadyBudget": 268435456,
+        "peakBudget": 402653184,
+        "entries": 26,
+        "activeEntries": 19,
+        "decodedBytes": 91056005,
+        "fetchedBodyBytes": 30752722,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "desktop",
+      "label": "saucer",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "fixedColors": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              425,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              425,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              88,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              88,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              4096,
+              576
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 96,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 22453843,
+          "reservedBytes": 22453843,
+          "peakBytes": 25034185,
+          "limit": 25165824,
+          "entries": 98,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 106580495,
+        "reservedRenderTargetBytes": 146277376,
+        "peakEstimatedBytes": 288214540,
+        "steadyBudget": 268435456,
+        "peakBudget": 402653184,
+        "entries": 30,
+        "activeEntries": 19,
+        "decodedBytes": 79935365,
+        "fetchedBodyBytes": 38611536,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "desktop",
+      "label": "flowers",
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "standard",
+          "handle": "standard",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              850,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              850,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              176,
+              2048
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              176,
+              2048
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 130,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 21695551,
+          "reservedBytes": 21695551,
+          "peakBytes": 25165699,
+          "limit": 25165824,
+          "entries": 96,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 114231819,
+        "reservedRenderTargetBytes": 146277376,
+        "peakEstimatedBytes": 294080014,
+        "steadyBudget": 268435456,
+        "peakBudget": 402653184,
+        "entries": 19,
+        "activeEntries": 19,
+        "decodedBytes": 85673861,
+        "fetchedBodyBytes": 49638198,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "mobile",
+      "label": "hero",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              425,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              425,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              88,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              88,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              2048,
+              288
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 2032,
+              "contentHeight": 128,
+              "gutter": 8
+            }
+          }
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 10,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 16247917,
+          "reservedBytes": 16247917,
+          "peakBytes": 16247917,
+          "limit": 16777216,
+          "entries": 95,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 37494625,
+        "reservedRenderTargetBytes": 95933512,
+        "peakEstimatedBytes": 194059860,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 21,
+        "activeEntries": 19,
+        "decodedBytes": 28120965,
+        "fetchedBodyBytes": 16247917,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "mobile",
+      "label": "free zoom",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              425,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              425,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              88,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              88,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.25,
+        "renderFrames": 14,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 16758253,
+          "reservedBytes": 16758253,
+          "peakBytes": 16758253,
+          "limit": 16777216,
+          "entries": 95,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 45206027,
+        "reservedRenderTargetBytes": 87767812,
+        "peakEstimatedBytes": 194059860,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 19,
+        "activeEntries": 19,
+        "decodedBytes": 33904517,
+        "fetchedBodyBytes": 16991541,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "mobile",
+      "label": "saucer",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              425,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              425,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              88,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              88,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.25,
+        "renderFrames": 289,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 16230038,
+          "reservedBytes": 16230038,
+          "peakBytes": 16758253,
+          "limit": 16777216,
+          "entries": 96,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 46068918,
+        "reservedRenderTargetBytes": 87702276,
+        "peakEstimatedBytes": 194059860,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 20,
+        "activeEntries": 19,
+        "decodedBytes": 34551685,
+        "fetchedBodyBytes": 17490121,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "mobile",
+      "label": "flowers",
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "standard"
+        },
+        "fixedColors": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "detail"
+        },
+        "fixedDimensions": {
+          "body": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              425,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              425,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "handle": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              88,
+              1024
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              88,
+              1024
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": null
+          },
+          "saucer": {
+            "mapping": "source-layout-v4",
+            "colorSize": [
+              4096,
+              576
+            ],
+            "repeat": [
+              -1,
+              1
+            ],
+            "offset": [
+              1.105,
+              0
+            ],
+            "normalType": 1016,
+            "anisotropy": 16,
+            "normalSize": [
+              2048,
+              288
+            ],
+            "precision": "RG16F",
+            "normalFlipY": false,
+            "atlas": {
+              "rows": 2,
+              "contentWidth": 4064,
+              "contentHeight": 256,
+              "gutter": 16
+            }
+          }
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.25,
+        "renderFrames": 478,
+        "contextLost": false
+      },
+      "resources": {
+        "transitions": 0,
+        "fileCache": {
+          "bytes": 16230038,
+          "reservedBytes": 16230038,
+          "peakBytes": 16758253,
+          "limit": 16777216,
+          "entries": 96,
+          "pending": 0
+        },
+        "decodeTask": null,
+        "decodeRetries": 0,
+        "estimatedGpuBytes": 46068918,
+        "reservedRenderTargetBytes": 87702276,
+        "peakEstimatedBytes": 194059860,
+        "steadyBudget": 134217728,
+        "peakBudget": 201326592,
+        "entries": 20,
+        "activeEntries": 19,
+        "decodedBytes": 34551685,
+        "fetchedBodyBytes": 17490121,
+        "cancelled": 0,
+        "network": {
+          "active": 0,
+          "queued": 0,
+          "limit": 2,
+          "paused": false
+        },
+        "decode": {
+          "active": 0,
+          "queued": 0,
+          "limit": 1,
+          "paused": false
+        }
+      }
+    }
+  ],
+  "publicFiles": [
+    {
+      "route": "index.html",
+      "status": 200,
+      "rawSha256": "704fab73cdde111e61f81c083410ff5354929793ae8f17d1eb0c76d213fa25dd",
+      "normalizedSha256": "054f6acae44a0088ba572272a5ca902c326084cd9494faa5fa18aaa74bd2f275",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "release.json",
+      "status": 200,
+      "rawSha256": "05d9fb7f37ef43fea76e14bb6d8deb96cc68a6850a482099fd243b4ec5c986ea",
+      "normalizedSha256": "05d9fb7f37ef43fea76e14bb6d8deb96cc68a6850a482099fd243b4ec5c986ea",
+      "hostingComments": 0,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "artwork-dev/index.html",
+      "status": 200,
+      "rawSha256": "79f84c254842adcc94b3e691bcc597410c76eb56e867a79498928eb38e8675ed",
+      "normalizedSha256": "d8353dd22f3f4544c6bed76461451f82ad003d1253c005385b2486cd955bd47e",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "artwork-dev/cup.html",
+      "status": 200,
+      "rawSha256": "a00e614378beec2a99814fa720f61d29203ab2d20b1c872bdf75a1e4a743a084",
+      "normalizedSha256": "5932581b97784eb61273d2632639ebbc4cbeef5c11d38e37fd540154bac35dd6",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "label-compare/index.html",
+      "status": 200,
+      "rawSha256": "a35aac20374ebbbf3a7d51784865fef4f008530ff206952dd2ddc021f8d04a8d",
+      "normalizedSha256": "883cf5283025b70066bdca29f67ff7d2e471c00d0e3ae29c6c764fa647f32725",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "city-compare/index.html",
+      "status": 200,
+      "rawSha256": "7cea35919451ffb9b5eafe9e10e65facf325acb6f862782820b0f9cde95fe988",
+      "normalizedSha256": "ea6fa14e9d836f0a24ae09f7ec8c2b2cede19c0ddd05aa8bf516fff7876e5738",
+      "hostingComments": 1,
+      "prettyUrlRewrites": 0
+    },
+    {
+      "route": "bezier-lab/index.html",
+      "status": 200,
+      "rawSha256": "ad5e17aec194f7014d2805aaa3e1fabd5e444a4edd2c26757bffc3caa4d3f020",
+      "normalizedSha256": "8e4c3bf0c77a076239fe0ea73fdde5fb192e311c561390c65cd8117a1e263a02",
+      "hostingComments": 0,
+      "prettyUrlRewrites": 1
+    }
+  ],
+  "errors": [],
+  "browser": "Chrome / Playwright; Browser plugin not available",
+  "physicalDeviceTested": false
+}

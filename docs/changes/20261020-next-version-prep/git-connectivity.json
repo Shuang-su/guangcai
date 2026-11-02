@@ -1,0 +1,6 @@
+{
+  "command": "GIT_NO_LAZY_FETCH=1 GIT_TERMINAL_PROMPT=0 python3 -B tools/git-exfat.py fsck --connectivity-only --no-dangling",
+  "exitCode": 0,
+  "outputBytes": 0,
+  "scope": "Local Git connectivity; no build, tests, remote fetch or object removal"
+}

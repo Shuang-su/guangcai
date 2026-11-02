@@ -102,3 +102,6 @@
 .camera-creator .creator-tabs button,.camera-creator .creator-tabs button[aria-selected=true]{font-weight:500}
 .camera-creator .palette-viewport{position:relative;left:50%;transform:translateX(-50%);width:calc(100% + var(--creator-inset)*2);max-width:424px;overflow:clip}
 .camera-creator .palette-loop{width:calc(100% - 24px);overflow:visible}
+
+/* Keep all twelve options reachable on short phones without moving the tabs. */
+.camera-creator #slogan-pane{max-height:min(256px,40dvh);overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin}

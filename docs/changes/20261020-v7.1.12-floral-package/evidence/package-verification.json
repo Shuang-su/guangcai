@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "snapshotCommit": "006e32681b686ed161b2aa710a67831e9b3bc9b3",
+  "version": "7.1.12",
+  "scope": "formal-root-only",
+  "archives": [
+    {
+      "path": "source-main.tar.gz",
+      "members": 1016,
+      "manifestFilesVerified": 1012,
+      "bytesUnpacked": 698719682,
+      "sha256": "456276ef5f8a3883367118f30e4d34c1f68435db6c767eb5d810775aaf6ce75a"
+    },
+    {
+      "path": "production-main.tar.gz",
+      "members": 656,
+      "manifestFilesVerified": 655,
+      "bytesUnpacked": 381955395,
+      "sha256": "df9881d9928a8a4115025d4aac1eb455cfc7a66bb650256022f65d0a6b6c2ef4"
+    }
+  ],
+  "onlyHtmlEntry": "site/index.html"
+}

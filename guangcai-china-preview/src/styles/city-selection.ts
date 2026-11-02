@@ -1,7 +1,7 @@
 import catalog from './city-catalog.json';
 import v5 from './city-catalog-v5.json';
 import v6 from './city-catalog-v6.json';
-import {slogans,type Slogan} from './slogans';
+import {consumerSlogans as slogans,type Slogan} from './slogans';
 import {palettes,presetAppearance,normalizeAppearance,type Appearance,type Palette} from './city-appearance';
 import type {CityArtworkPack} from './city-artwork';
 
@@ -17,6 +17,7 @@ export type Lettering='auto'|'name'|'he'|'create'|'none'|Slogan;
 export interface Selection {variant:string;finish:Finish;text:Lettering;appearance?:Appearance}
 export const defaultSelection:Selection={variant:'china-gold',finish:'enamel',text:'auto'};
 export const v6DefaultSelection:Selection={variant:'v6-shenzhen-gold',finish:'metal',text:'open',appearance:presetAppearance('gold')};
+export const consumerDefaultSelection:Selection={...v6DefaultSelection,text:'love-city'};
 export const finishes={enamel:'彩釉金线',metal:'彩色金属'};
 export const isPilot=(theme:string):theme is PilotTheme|V6Theme=>Object.hasOwn(v5.cities,theme)||isV6(theme);
 export const variants=[{id:'china-gold',name:'中国 · 原版纯金',theme:'china',thumbnail:'',fixedGold:true},

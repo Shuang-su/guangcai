@@ -1,6 +1,6 @@
 import {v6Themes,selectTheme,variantFor,type SelectionController,type Theme} from '../styles/city-selection';
 import {palettes,presetAppearance,type Palette,type Appearance} from '../styles/city-appearance';
-import {slogans,type Slogan} from '../styles/slogans';
+import {consumerSlogans as slogans,type Slogan} from '../styles/slogans';
 import {colorAtPosition,colorPosition} from '../styles/xy-mapping';
 import type {View} from '../interaction/views';
 import {createXYPad} from './xy-pad';
@@ -14,7 +14,7 @@ const paletteOrder:Palette[]=['purple','red','gold','blue','green'];
 const paletteNames={purple:'焕新紫',red:'繁盛红',gold:'同心金',blue:'开放蓝',green:'共融绿'};
 const menus=['city','color','material','slogan'] as const,typeNames=['城市','色彩','质感','祝福语'];
 type Menu=typeof menus[number];
-export function createConsumerPanel(controller:SelectionController,onView:(view:View)=>void){
+export function createConsumerPanel(controller:SelectionController,onView:(view:View)=>void,sloganOptions:(cityId:string)=>{id:Slogan;text:string}[]){
  const panel=document.createElement('aside');panel.id='artwork-settings';panel.className='creator-panel camera-creator';panel.dataset.pane='city';panel.dataset.level='overview';panel.setAttribute('aria-label','城市与创作');
  panel.innerHTML=`<div class="creator-glass" aria-hidden="true"></div><button class="panel-handle" aria-label="收起创作面板" aria-expanded="true"><span class="handle-glass lg-surface" data-glass-interactive></span></button><div class="creator-tabs loop-menu lg-surface" role="tablist" aria-label="创作选项，左右循环切换"><div class="creator-indicator" aria-hidden="true"></div>${menus.map((id,i)=>`<button role="tab" id="${id}-tab" data-pane="${id}" aria-controls="${id}-pane" aria-selected="${i===0}">${typeNames[i]}</button>`).join('')}</div>
  <div class="creator-content"><div id="city-pane" role="tabpanel" aria-labelledby="city-tab"><div class="city-cards" role="group" aria-label="选择城市">${Object.entries(v6Themes).map(([id,t])=>`<button class="city-card" data-theme="${id}"><span>${t.name}</span><img alt="" loading="${id==='v6-shenzhen'?'eager':'lazy'}" decoding="async"></button>`).join('')}</div></div>
@@ -127,7 +127,8 @@ export function createConsumerPanel(controller:SelectionController,onView:(view:
   if(observed!==a&&!fromInput)cancelPending();observed=a;
   const theme=variantFor(s.variant).theme;cityLoop.set(cityIds.indexOf(theme));panel.setAttribute('aria-busy',String(controller.busy));
   panel.querySelectorAll<HTMLElement>('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===theme)));
-  panel.querySelectorAll<HTMLElement>('[data-slogan]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.slogan===s.text)));
+  const available=new Map(sloganOptions(theme.slice(3)).map(option=>[option.id,option.text]));
+  panel.querySelectorAll<HTMLElement>('[data-slogan]').forEach(b=>{const id=b.dataset.slogan as Slogan;b.hidden=!available.has(id);b.textContent=available.get(id)??slogans[id];b.setAttribute('aria-pressed',String(id===s.text));});
   paletteLoop.set(paletteOrder.indexOf(a.preset));
   const original=presetAppearance(a.preset);colorPad.setValue(colorPosition(a.hue,a.saturation));colorPad.setReference(colorPosition(original.hue,original.saturation));materialPad.setValue({x:a.materialX??.5,y:a.material});materialPad.setReference({x:original.materialX??.5,y:original.material});lightness.setValue(a.lightness,a.hue,a.saturation,original.lightness);
   colorPad.setBackground(String(a.lightness),colorField(a.lightness));materialPad.setBackground([a.hue,a.saturation,a.lightness].join(','),materialField(a));

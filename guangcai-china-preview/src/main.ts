@@ -7,13 +7,15 @@ import {profile} from './profile';
 import {ResourcePool} from './resources/pool';
 import {createEntryLoading} from './ui/entry-loading';
 import {cityLibrary,neighborAssets,sloganLabels} from './resources/preload';
+import {availableSlogans} from './resources/slogans';
 import {loadResources,exportDesign,validateDesign,type Resources} from './resources/client';
 import type {DesignConfig,Tier,Region,Asset} from './resources/types';
 import {AdaptiveResolution} from './resources/quality';
+import {fixedQualityCandidates} from './resources/fixed-quality';
 import {createConsumerPanel} from './ui/consumer-panel';
 import {createConsumerInterface} from './ui/consumer-interface';
 import {createGlassStudio} from './ui/glass-studio';
-import {v6DefaultSelection,v6Themes} from './styles/city-selection';
+import {consumerDefaultSelection,v6Themes} from './styles/city-selection';
 import {configureFixedAtlas} from './materials/fixed-atlas';
 import './ui/styles.css';
 import {Color,Material,Mesh,MeshBasicMaterial,MeshStandardMaterial,SRGBColorSpace,Vector3} from 'three';
@@ -55,6 +57,7 @@ Object.assign(window,{cupViewer:{ready:()=>readiness.get().phase==='ready',whenR
 const entryLoading=pool?createEntryLoading(pool,readiness.publish):undefined;
 let resources:Resources|undefined,cityTier:Tier='light',requestedCity='shenzhen';
 let fixedTiers:Record<Region,Tier>={body:'light',handle:'light',saucer:'light'};
+let fixedColors:Record<Region,Tier>={...fixedTiers};
 let raf=0,last=performance.now(),dirty=true,awakeUntil=0,renderFrames=0,contextLost=false,recovering=false,qualityTimer=0,qualityBusy=false,qualityError='',baselineDensity=0;
 const subscribers=new Set<(design:DesignConfig)=>void>();let lastDesign='';
 function invalidate(){dirty=true;awakeUntil=performance.now()+500;if(!raf&&!document.hidden&&!contextLost)raf=requestAnimationFrame(frame);}
@@ -62,7 +65,7 @@ function publishDesign(){if(importing||!resources||!assetsReady||selection.busy)
 
 const mats=makeMaterials(),product=buildProduct(mats);
 let view:ViewController,city:CityArtworkManager,mode='pbr',disposed=false,calibrating=false,assetsReady=false,fixedReliefEnabled=true;
-const ui=(profile==='consumer'?createConsumerInterface:createInterface)({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>setCityRelief(v),fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),background:choice=>background.select(choice),uploadBackground:file=>background.upload(file),restore:async()=>{await selection.restore();}});
+const ui=(profile==='consumer'?createConsumerInterface:createInterface)({view:v=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v);},auto:()=>view.setAuto(!view.auto),reset:()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},relief:v=>setCityRelief(v),fixedRelief:v=>setFixedRelief(v),metal:v=>{city.setMetal(v);inspect();},mode:v=>{mode=v;inspect();},reflection:v=>reflections.setEnabled(v),background:choice=>background.select(choice),uploadBackground:file=>background.upload(file),restore:async()=>{await restoreDesign();}});
 let studio:ReturnType<typeof createStudio>;
 ui.message('正在载入花纸与金色浮雕…',true);
 try{studio=createStudio(ui.canvas,true,{consumer:profile==='consumer',mobile});}catch(e){entryLoading?.fail('无法启动画面，请使用支持 WebGL 2 的浏览器。');ui.error('无法启动 WebGL 2，请使用支持硬件加速的浏览器。');throw e;}
@@ -91,14 +94,14 @@ mats.porcelain.envMap=studio.porcelainEnvironment;
 product.root.traverse(o=>{if(o instanceof Mesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m.name==='knob-striped-porcelain'){m.envMap=studio.porcelainEnvironment;porcelainControls.push(calibratePorcelain(m));}});
 const lidReflections=createLidReflections(studio,product,mats.porcelain);
 view=new ViewController(studio,()=>product,()=>{if(view){ui.update(view.view,view.auto);invalidate();}});
-baselineDensity=density();
+baselineDensity=density()/studio.renderer.getPixelRatio();
 const anisotropy=Math.min(8,studio.renderer.capabilities.getMaxAnisotropy());
 // Fixed floral lines need the full available anisotropy at the saucer silhouette.
 const fixed=new StyleManager(mats,studio.renderer.capabilities.getMaxAnisotropy(),()=>{product.setFixedMapping(fixed.currentMapping);reflections.invalidate();lidReflections.invalidate();invalidate();},pool);city=new CityArtworkManager(mats.city,anisotropy,pool);
 let artworkUI:ReturnType<typeof createArtworkPanel>|undefined;
-const selection=new SelectionController(async s=>{if(profile==='consumer'){await ensureResources();if(s!==selection.desired||disposed||contextLost)return false;}const cityId=s.variant.replace(/^v6-/, '').replace(/-(gold|red|green|purple|blue)$/, '');if(cityId!==requestedCity){requestedCity=cityId;cityTier='light';}const applied=await applyCityArtwork(resources?resources.cityPack(s,cityTier):artworkPack(s,chinaPack,import.meta.env.BASE_URL));if(applied&&s.variant==='china-gold'&&!s.appearance){city.setRelief(1);if(mode!=='pbr')inspect();}return applied;},()=>{artworkUI?.render();syncLoadingStatus();invalidate();publishDesign();if(assetsReady&&!selection.busy&&!selection.error)warmNeighbors();},profile==='consumer'?v6DefaultSelection:undefined);
+const selection=new SelectionController(async s=>{if(profile==='consumer'){await ensureResources();if(s!==selection.desired||disposed||contextLost)return false;}const cityId=s.variant.replace(/^v6-/, '').replace(/-(gold|red|green|purple|blue)$/, '');if(cityId!==requestedCity){requestedCity=cityId;cityTier='light';}const applied=await applyCityArtwork(resources?resources.cityPack(s,cityTier):artworkPack(s,chinaPack,import.meta.env.BASE_URL));if(applied&&s.variant==='china-gold'&&!s.appearance){city.setRelief(1);if(mode!=='pbr')inspect();}return applied;},()=>{artworkUI?.render();syncLoadingStatus();invalidate();publishDesign();if(assetsReady&&!selection.busy&&!selection.error)warmNeighbors();},profile==='consumer'?consumerDefaultSelection:undefined);
 const untouchedSelection=selection.desired;
-artworkUI=profile==='consumer'?createConsumerPanel(selection,v=>{calibrating=false;view.set(v);}):createArtworkPanel(selection,ui.closePanels);
+artworkUI=profile==='consumer'?createConsumerPanel(selection,v=>{calibrating=false;view.set(v);},id=>resources?availableSlogans(resources.manifest,id):[]):createArtworkPanel(selection,ui.closePanels);
 glass=profile==='consumer'?createGlassStudio({invalidate,admitMemory:(bytes,scratch)=>{
  if(!pool)return true;pool.trimIdle(targetBytes()-glassBytes+bytes-scratch);
  const total=()=>pool.debug().estimatedGpuBytes+targetBytes()-glassBytes+bytes;
@@ -158,7 +161,12 @@ function warmNeighbors(){
  if(importing||!resources||!pool||contextLost||disposed)return;const id=selectedCity();if(id===neighborCity)return;
  neighborCity=id;neighborError='';neighborController?.abort();const controller=neighborController=new AbortController(),tier=mobile?'standard':'detail';
  const assets=neighborAssets(resources.manifest,id,tier,cityOrder);
- void (async()=>{await pool.prefetch(assets.slice(0,2),controller.signal);if(!controller.signal.aborted&&selectedCity()===id)scheduleQuality();await pool.prefetch(assets.slice(2),controller.signal);})().catch(e=>{if(!controller.signal.aborted){neighborError=String(e);neighborCity='';}});
+ void (async()=>{
+  const labels=await pool.acquireAll(sloganLabels(resources!.manifest,id).map(s=>s.asset),controller.signal);
+  if(controller.signal.aborted||importing||selectedCity()!==id){labels.forEach(l=>l.release());return;}
+  sloganLeases.forEach(l=>l.release());sloganLeases=labels;for(const lease of labels)studio.renderer.initTexture(lease.texture);
+  pool.pinFiles(pinnedAssets(resources!,id));
+  await pool.prefetch(assets.slice(0,2),controller.signal);if(!controller.signal.aborted&&selectedCity()===id)scheduleQuality();await pool.prefetch(assets.slice(2),controller.signal);})().catch(e=>{if(!controller.signal.aborted){neighborError=String(e);neighborCity='';}});
 }
 let markLease:Awaited<ReturnType<ResourcePool['acquire']>>|undefined;
 let initializedOnce=false;
@@ -166,20 +174,20 @@ async function initialize(){
  const generation=++initialization;
  try{
  entryLoading?.begin();startupError='';for(const stage of ['花纹','杯底标识','背景',...(pool?['城市与文字']:[])])startupPending.add(stage);
- if(profile==='consumer'){await ensureResources();if(generation!==initialization||disposed||contextLost)return;const m=resources!.manifest;pool!.pinFiles([...cityLibrary(m),m.mark,...Object.values(m.fixed).flatMap(region=>[region.light.baseColor,region.light.normal,region.light.orm])]);}
+ if(profile==='consumer'){await ensureResources();if(generation!==initialization||disposed||contextLost)return;const m=resources!.manifest;pool!.pinFiles([...cityLibrary(m,selectedCity()),m.mark,...Object.values(m.fixed).flatMap(region=>[region.light.baseColor,region.light.normal,region.light.orm])]);}
  const markReady=pool&&resources?pool.acquire(resources.manifest.mark).then(lease=>{if(disposed){lease.release();return;}markLease?.release();markLease=lease;lease.texture.anisotropy=anisotropy;lease.texture.needsUpdate=true;mats.mark.map=lease.texture;mats.mark.needsUpdate=true;invalidate();}):loadTexture(`${import.meta.env.BASE_URL}marks/auratic-reference.png`).then(t=>{if(disposed){t.dispose();return;}t.colorSpace=SRGBColorSpace;mats.mark.map=t;mats.mark.needsUpdate=true;invalidate();});
  const initialDesign=resources?validateDesign(resources.bootstrap.defaultDesign,resources.manifest):undefined;
  const initialSelection=initializedOnce?selection.current:selection.desired!==untouchedSelection||!initialDesign?selection.desired:{variant:`v6-${initialDesign.cityId}-${initialDesign.appearance.preset}`,text:initialDesign.sloganId as Selection['text'],appearance:initialDesign.appearance};
  const cityReady=profile==='consumer'?selection.select(initialSelection):applyCityArtwork(chinaPack);
  // Context recovery depends on the pinned low library, never a new HD transfer.
  const restoring=recovering;
- const library=resources?cityLibrary(resources.manifest):[],nearby=resources&&!restoring?neighborAssets(resources.manifest,selectedCity(),mobile?'standard':'detail',cityOrder):[];
- if(resources){const f=resources.fixedPack(fixedTiers);entryLoading?.plan([resources.manifest.mark,...Object.values(f.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]),...library,...nearby]);}
- await Promise.all([trackStartup('花纹',fixed.apply(resources?resources.fixedPack(fixedTiers):defaultPack).then(committed=>{if(!committed)throw Error('固定花纸读取中断');if(!disposed){wallMaterials[1]=mats.regions.body;inspect();}}),generation),cityReady,trackStartup('杯底标识',markReady,generation),trackStartup('背景',profile==='consumer'?background.ready.then(()=>background.select('soft-v3')):background.ready,generation)]);
+ const library=resources?cityLibrary(resources.manifest,selectedCity()):[],nearby=resources&&!restoring?neighborAssets(resources.manifest,selectedCity(),mobile?'standard':'detail',cityOrder):[];
+ if(resources){const f=resources.fixedPack(fixedTiers,fixedColors);entryLoading?.plan([resources.manifest.mark,...Object.values(f.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]),...library,...nearby]);}
+ await Promise.all([trackStartup('花纹',fixed.apply(resources?resources.fixedPack(fixedTiers,fixedColors):defaultPack).then(committed=>{if(!committed)throw Error('固定花纸读取中断');if(!disposed){wallMaterials[1]=mats.regions.body;inspect();}}),generation),cityReady,trackStartup('杯底标识',markReady,generation),trackStartup('背景',profile==='consumer'?background.ready.then(()=>background.select('soft-v3')):background.ready,generation)]);
  if(generation!==initialization||disposed||contextLost)return;
  if(pool&&resources){
   await pool.prefetch([...library,...nearby]);if(generation!==initialization||disposed||contextLost)return;
-  const labels=await pool.acquireAll(sloganLabels(resources.manifest).map(s=>s.asset));
+  const labels=await pool.acquireAll(sloganLabels(resources.manifest,selectedCity()).map(s=>s.asset));
   if(generation!==initialization||disposed||contextLost){labels.forEach(l=>l.release());return;}
   sloganLeases.forEach(l=>l.release());sloganLeases=labels;for(const lease of labels)studio.renderer.initTexture(lease.texture);
   await (artworkUI as ReturnType<typeof createConsumerPanel>).setThumbnails(Object.fromEntries(Object.entries(resources.manifest.cities).map(([id,c])=>[id,pool!.previewUrl(c.thumbnail)])));
@@ -197,28 +205,30 @@ const authoringFraming=document.documentElement.dataset.labPreview==='true'?{app
 const updateClipping=createCameraClipping(studio.camera,product.root);
 const resolution=new AdaptiveResolution(studio.renderer.getPixelRatio(),Math.min(devicePixelRatio,2));
 function density(){return product.parameters.radius*2*ui.canvas.clientHeight*studio.renderer.getPixelRatio()/(2*studio.camera.position.distanceTo(view.controls.target)*Math.tan(studio.camera.fov*Math.PI/360));}
-function scheduleQuality(){clearTimeout(qualityTimer);if(resources&&!importing&&!contextLost&&!document.hidden)qualityTimer=window.setTimeout(()=>void upgradeQuality(),350);}
+function scheduleQuality(){if(!qualityTimer&&resources&&!importing&&!contextLost&&!document.hidden)qualityTimer=window.setTimeout(()=>{qualityTimer=0;void upgradeQuality();},120);}
 async function upgradeQuality(){
  if(labArtworkOverride)return;
- if(importing||!resources||!assetsReady||selection.busy||view.moving||qualityBusy||document.hidden||contextLost)return;
- baselineDensity||=density();const near=['detail','flowers','handle','lid'].includes(view.view)||density()>baselineDensity*1.35;if(!near&&cityTier!=='light')return;
+ if(importing||!resources||!assetsReady||selection.busy||qualityBusy||document.hidden||contextLost)return;
+ baselineDensity||=density()/studio.renderer.getPixelRatio();const zoomed=density()/studio.renderer.getPixelRatio()>baselineDensity*1.15,near=['detail','flowers','saucer','cup','handle','lid'].includes(view.view)||zoomed;
  const tier:Tier=mobile?'standard':density()*3>2048?'detail':'standard';
  const epoch=qualityEpoch;qualityBusy=true;qualityError='';
  try{
-  // Upgrade the inspected region, not every visible material at once.
-  const focus=view.view==='flowers'?'saucer':view.view==='handle'?'handle':view.view==='lid'?'none':'city';
-  const next:Record<Region,Tier>={body:'light',handle:'light',saucer:'light'};
-  if(focus==='saucer')next.saucer=tier;if(focus==='handle'){next.body=tier;next.handle=tier;}
-  const nextCity:Tier=focus==='city'?tier:cityTier==='light'?'light':'standard';const upgradeCity=selectedCity();
-  const cp=resources.cityPack(selection.current,nextCity),fixedPack=resources.fixedPack(next);
-  const assets=[cp.runtime!.mask,cp.runtime!.normal,cp.runtime!.label.asset,resources.manifest.mark,...Object.values(fixedPack.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm])];
-  const labelExtra=sloganLabels(resources.manifest).reduce((n,s)=>n+textureBytes(s.asset),0)-textureBytes(cp.runtime!.label.asset);
-  const steady=assets.reduce((n,a)=>n+textureBytes(a),0)+labelExtra;
-  while(steady+targetBytes()>pool!.steady&&resolution.ratio>1){resolution.ratio=Math.max(1,resolution.ratio-.25);studio.renderer.setPixelRatio(resolution.ratio);studio.resize();updateBudget();}
-  if(steady+targetBytes()>pool!.steady){qualityError='当前画面达到资源预算，保留现有清晰度';return;}
+  const cityFocus=!['flowers','saucer','handle','lid'].includes(view.view);
+  const nextCity:Tier=cityFocus&&near?tier:cityTier;const upgradeCity=selectedCity();
+  const cp=resources.cityPack(selection.current,nextCity),candidates=fixedQualityCandidates(view.view,zoomed);
+  const labelExtra=sloganLabels(resources.manifest,selectedCity()).reduce((n,s)=>n+textureBytes(s.asset),0)-textureBytes(cp.runtime!.label.asset);
+  const options=candidates.map(candidate=>{const pack=resources!.fixedPack(candidate.tiers,candidate.colors),assets=[cp.runtime!.mask,cp.runtime!.normal,cp.runtime!.label.asset,resources!.manifest.mark,...Object.values(pack.regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm])];return {candidate,pack,assets,steady:assets.reduce((n,a)=>n+textureBytes(a),0)+labelExtra};});
+  const fits=(option:typeof options[number])=>option.steady+targetBytes()<=pool!.steady&&pool!.canFit(option.assets);
+  const wantsDetail=candidates[0].colors.saucer==='detail'||candidates[0].colors.body==='detail'||candidates[0].colors.handle==='detail';
+  // In a close-up, allow a small render-scale tradeoff before giving up sharp
+  // color. Never sacrifice the current city tier or exceed existing budgets.
+  const detailed=()=>options.find(option=>Object.values(option.candidate.colors).includes('detail')&&fits(option));
+  while(wantsDetail&&!detailed()&&resolution.ratio>1){resolution.ratio=Math.max(1,resolution.ratio-.25);studio.renderer.setPixelRatio(resolution.ratio);studio.resize();updateBudget();}
+  const chosen=options.find(fits);if(!chosen){qualityError='当前画面达到资源预算，保留现有清晰度';return;}
+  const next=chosen.candidate.tiers,nextColors=chosen.candidate.colors,fixedPack=chosen.pack;
   if(cityTier!==nextCity){const previous=cityTier;cityTier=nextCity;const applied=await selection.select({});if(epoch!==qualityEpoch)return;if(!applied&&selectedCity()===upgradeCity)cityTier=previous;if(selectedCity()!==upgradeCity)return;}
   if(epoch!==qualityEpoch)return;
-  if(JSON.stringify(next)!==JSON.stringify(fixedTiers)&&await fixed.apply(fixedPack)){fixedTiers=next;setFixedRelief(fixedReliefEnabled);}
+  if((JSON.stringify(next)!==JSON.stringify(fixedTiers)||JSON.stringify(nextColors)!==JSON.stringify(fixedColors))&&await fixed.apply(fixedPack)){fixedTiers=next;fixedColors=nextColors;setFixedRelief(fixedReliefEnabled);}
  }catch(e){qualityError=String(e);}finally{qualityBusy=false;}
 }
 function frame(now:number){
@@ -241,21 +251,21 @@ const interaction=(event?:Event)=>{if(!event||event.target===ui.canvas)invalidat
 const eventScope=new AbortController();for(const name of ['pointerdown','pointermove','pointerup','keydown'])document.addEventListener(name,interaction,{capture:true,passive:true,signal:eventScope.signal});
 ui.canvas.addEventListener('viewport-resize',()=>{if(!budgetResizing)updateBudget(transientReserve);invalidate();},{signal:eventScope.signal});
 const panelResize=new ResizeObserver(()=>interaction());panelResize.observe(document.querySelector('#artwork-settings')!);
-const visibility=()=>{pool?.pause(document.hidden);glassPolicy.reset();if(document.hidden){cancelAnimationFrame(raf);raf=0;clearTimeout(qualityTimer);}else{last=performance.now();invalidate();}};
+const visibility=()=>{pool?.pause(document.hidden);glassPolicy.reset();if(document.hidden){cancelAnimationFrame(raf);raf=0;clearTimeout(qualityTimer);qualityTimer=0;}else{last=performance.now();invalidate();}};
 document.addEventListener('visibilitychange',visibility,{signal:eventScope.signal});
-ui.canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();importController?.abort();++qualityEpoch;selection.cancelPending();glass?.fallback('model-context-lost');contextLost=true;recovering=true;assetsReady=false;++initialization;neighborController?.abort();neighborCity='';sloganLeases.forEach(l=>l.release());sloganLeases=[];entryLoading?.begin();document.querySelector<HTMLElement>('#artwork-settings')!.inert=true;ui.canvas.dataset.ready='false';cancelAnimationFrame(raf);raf=0;clearTimeout(qualityTimer);city.resetRuntime();fixed.cancelPending();pool?.clear();studio.releaseContext();reflections.releaseContext();lidReflections.releaseContext();const lostMaterials=new Set<Material>();studio.scene.traverse(o=>{if(o instanceof Mesh){o.geometry.dispose();for(const m of (Array.isArray(o.material)?o.material:[o.material]))lostMaterials.add(m);}});lostMaterials.forEach(m=>m.dispose());ui.message('正在恢复画面…',true);},{signal:eventScope.signal});
-ui.canvas.addEventListener('webglcontextrestored',()=>{contextLost=false;cityTier='light';fixedTiers={body:'light',handle:'light',saucer:'light'};studio.rebuildEnvironment();mats.porcelain.envMap=studio.porcelainEnvironment;product.root.traverse(o=>{if(o instanceof Mesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m.name==='knob-striped-porcelain')m.envMap=studio.porcelainEnvironment;});reflections.invalidate();lidReflections.invalidate();studio.contact.invalidate();void (activeImport?activeImport.catch(()=>false).then(()=>initialize()):initialize()).catch(startupFailed);invalidate();},{signal:eventScope.signal});
+ui.canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();importController?.abort();++qualityEpoch;selection.cancelPending();glass?.fallback('model-context-lost');contextLost=true;recovering=true;assetsReady=false;++initialization;neighborController?.abort();neighborCity='';sloganLeases.forEach(l=>l.release());sloganLeases=[];entryLoading?.begin();document.querySelector<HTMLElement>('#artwork-settings')!.inert=true;ui.canvas.dataset.ready='false';cancelAnimationFrame(raf);raf=0;clearTimeout(qualityTimer);qualityTimer=0;city.resetRuntime();fixed.cancelPending();pool?.clear();studio.releaseContext();reflections.releaseContext();lidReflections.releaseContext();const lostMaterials=new Set<Material>();studio.scene.traverse(o=>{if(o instanceof Mesh){o.geometry.dispose();for(const m of (Array.isArray(o.material)?o.material:[o.material]))lostMaterials.add(m);}});lostMaterials.forEach(m=>m.dispose());ui.message('正在恢复画面…',true);},{signal:eventScope.signal});
+ui.canvas.addEventListener('webglcontextrestored',()=>{contextLost=false;cityTier='light';fixedTiers={body:'light',handle:'light',saucer:'light'};fixedColors={...fixedTiers};studio.rebuildEnvironment();mats.porcelain.envMap=studio.porcelainEnvironment;product.root.traverse(o=>{if(o instanceof Mesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m.name==='knob-striped-porcelain')m.envMap=studio.porcelainEnvironment;});reflections.invalidate();lidReflections.invalidate();studio.contact.invalidate();void (activeImport?activeImport.catch(()=>false).then(()=>initialize()):initialize()).catch(startupFailed);invalidate();},{signal:eventScope.signal});
 ui.canvas.addEventListener('dblclick',()=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set('hero');},{signal:eventScope.signal});
 invalidate();
-function fixedAssets(value:Resources,tiers:Record<Region,Tier>){return Object.values(value.fixedPack(tiers).regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]);}
-function pinnedAssets(value:Resources){return [...cityLibrary(value.manifest),value.manifest.mark,...fixedAssets(value,{body:'light',handle:'light',saucer:'light'})];}
+function fixedAssets(value:Resources,tiers:Record<Region,Tier>,colors=tiers){return Object.values(value.fixedPack(tiers,colors).regions).flatMap(r=>[r.runtime!.baseColor,r.runtime!.normal,r.runtime!.orm]);}
+function pinnedAssets(value:Resources,cityId=selectedCity()){return [...cityLibrary(value.manifest,cityId),value.manifest.mark,...fixedAssets(value,{body:'light',handle:'light',saucer:'light'})];}
 /** No candidate release is observable/exportable until every visual component commits.
  * Old leases remain held through rollback. Encoding cache is shared by immutable URL. */
 async function importDesign(value:unknown):Promise<boolean>{
  if(!resources||!pool||!assetsReady||contextLost||disposed)throw Error('观察器尚未准备完成');
- const previous=resources,oldSelection=structuredClone(selection.current),oldTiers={...fixedTiers},oldCityTier=cityTier;
+ const previous=resources,oldSelection=structuredClone(selection.current),oldTiers={...fixedTiers},oldColors={...fixedColors},oldCityTier=cityTier;
  const controller=importController=new AbortController(),generation=initialization;
- importing=true;selection.locked=true;selection.cancelPending();city.cancelPending();fixed.cancelPending();++qualityEpoch;clearTimeout(qualityTimer);neighborController?.abort();neighborCity='';
+ importing=true;selection.locked=true;selection.cancelPending();city.cancelPending();fixed.cancelPending();++qualityEpoch;clearTimeout(qualityTimer);qualityTimer=0;neighborController?.abort();neighborCity='';
  entryLoading?.begin();ui.canvas.dataset.ready='false';
  const finishSwap=pool.beginSwap();let held:Awaited<ReturnType<ResourcePool['acquireAll']>>=[],candidates:typeof held=[];
  let touched=false,committed=false,rollbackFailed=false;
@@ -264,28 +274,29 @@ async function importDesign(value:unknown):Promise<boolean>{
   const releaseId=(value as DesignConfig)?.resourceReleaseId,next=releaseId===previous.manifest.releaseId?previous:await loadResources(releaseId,controller.signal);guard();
   const d=validateDesign(value,next.manifest),desired={...oldSelection,variant:`v6-${d.cityId}-${d.appearance.preset}`,text:d.sloganId as Selection['text'],appearance:d.appearance};
   const tiers:Record<Region,Tier>=next===previous?oldTiers:{body:'light',handle:'light',saucer:'light'},tier:Tier=mobile?'standard':'detail';
+  const colors=next===previous?oldColors:{...tiers};
   const oldCity=previous.cityPack(oldSelection,oldCityTier).runtime!,nextCity=next.cityPack(desired,tier).runtime!;
-  const oldAssets=[...fixedAssets(previous,oldTiers),oldCity.mask,oldCity.normal,oldCity.label.asset];
+  const oldAssets=[...fixedAssets(previous,oldTiers,oldColors),oldCity.mask,oldCity.normal,oldCity.label.asset];
   // Pin currently displayed textures until either the new work or rollback completes.
   held=await pool.acquireAll(oldAssets,controller.signal);guard();
-  const assets:Asset[]=[...fixedAssets(next,tiers),nextCity.mask,nextCity.normal,...sloganLabels(next.manifest).map(s=>s.asset),next.manifest.mark];
+  const assets:Asset[]=[...fixedAssets(next,tiers,colors),nextCity.mask,nextCity.normal,...sloganLabels(next.manifest,d.cityId).map(s=>s.asset),next.manifest.mark];
   entryLoading?.plan(assets);candidates=await pool.acquireAll(assets,controller.signal);guard();
   for(const lease of candidates)studio.renderer.initTexture(lease.texture);
   touched=true;
-  if(!await fixed.apply(next.fixedPack(tiers)))throw Error('花纸未完整还原');guard();
+  if(!await fixed.apply(next.fixedPack(tiers,colors)))throw Error('花纸未完整还原');guard();
   if(!await applyCityArtwork(next.cityPack(desired,tier)))throw Error('城市与文字未完整还原');guard();
-  const labels=candidates.splice(11,6),mark=candidates.splice(11,1)[0];
+  const labels=candidates.splice(11,sloganLabels(next.manifest,d.cityId).length),mark=candidates.splice(11,1)[0];
   markLease?.release();markLease=mark;mark.texture.anisotropy=anisotropy;mark.texture.needsUpdate=true;mats.mark.map=mark.texture;mats.mark.needsUpdate=true;
   sloganLeases.forEach(l=>l.release());sloganLeases=labels;
-  resources=next;resourcesPromise=Promise.resolve(next);fixedTiers=tiers;cityTier=tier;requestedCity=d.cityId;
-  pool.pinFiles(pinnedAssets(next));selection.commit(desired);setFixedRelief(fixedReliefEnabled);committed=true;
+  resources=next;resourcesPromise=Promise.resolve(next);fixedTiers=tiers;fixedColors=colors;cityTier=tier;requestedCity=d.cityId;
+  pool.pinFiles(pinnedAssets(next,d.cityId));selection.commit(desired);setFixedRelief(fixedReliefEnabled);committed=true;
   return true;
  }catch(error){
   if(!contextLost&&!disposed&&generation===initialization){
    if(touched){
-    try{if(!await fixed.apply(previous.fixedPack(oldTiers))||!await applyCityArtwork(previous.cityPack(oldSelection,oldCityTier)))throw Error('原作品恢复失败');}catch{rollbackFailed=true;assetsReady=false;startupError='原作品恢复失败，请重新加载';entryLoading?.fail(startupError);throw Error(startupError);}
+    try{if(!await fixed.apply(previous.fixedPack(oldTiers,oldColors))||!await applyCityArtwork(previous.cityPack(oldSelection,oldCityTier)))throw Error('原作品恢复失败');}catch{rollbackFailed=true;assetsReady=false;startupError='原作品恢复失败，请重新加载';entryLoading?.fail(startupError);throw Error(startupError);}
    }
-   resources=previous;resourcesPromise=Promise.resolve(previous);fixedTiers=oldTiers;cityTier=oldCityTier;requestedCity=oldSelection.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,'');
+   resources=previous;resourcesPromise=Promise.resolve(previous);fixedTiers=oldTiers;fixedColors=oldColors;cityTier=oldCityTier;requestedCity=oldSelection.variant.replace(/^v6-/,'').replace(/-(gold|red|green|purple|blue)$/,'');
    pool.pinFiles(pinnedAssets(previous));selection.commit(oldSelection);ui.message('还原未完成，已保留原作品');
   }
   throw error;
@@ -295,13 +306,21 @@ async function importDesign(value:unknown):Promise<boolean>{
   if(committed)qualityError='';
  }
 }
-const debug=()=>({version:APP_VERSION,profile,fixedMapping:fixed.currentMapping,markFiltering:{anisotropy:mats.mark.map?.anisotropy},importing,preload:{neighborCity,neighborError,readyCities:resources?Object.values(resources.manifest.cities).filter(c=>pool?.fileReady(c.levels.light.mask)&&pool.fileReady(c.levels.light.normal)).length:0,slogans:sloganLeases.length},entryLoading:entryLoading?.debug(),loading:{pending:[...startupPending],error:startupError},quality:{cityTier,fixedTiers,mobile,upgrading:qualityBusy,error:qualityError,dpr:studio.renderer.getPixelRatio(),renderFrames,contextLost},resources:pool?.debug(),renderTargets:studio.memory(),glass:glass?.debug(),haptics:haptics.debug(),selection:{current:selection.current,desired:selection.desired,busy:selection.busy,error:selection.error},porcelain:PORCELAIN,ready:ui.canvas.dataset.ready==='true',view:view.view,mode,auto:view.auto,camera:studio.camera.position.toArray(),clipping:{near:studio.camera.near,far:studio.camera.far},target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),lidReflections:lidReflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory,programs:studio.renderer.info.programs?.length},city:city.debug(),fixedFinish:{cleanGoldGround:mats.regions.saucer.userData.cleanGoldGround,enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
-Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',whenReady:readiness.whenReady,getLoadState:readiness.get,onLoadStateChange:readiness.subscribe,exportDesign:()=>{if(importing||!resources||!assetsReady||selection.busy)throw Error('作品尚未准备完成');return exportDesign(selection.current,resources.manifest);},importDesign:(value:unknown)=>{if(importing)throw Error('正在还原另一作品，请稍后重试');activeImport=importDesign(value);return activeImport.finally(()=>{activeImport=undefined;});},onDesignChange:(callback:(design:DesignConfig)=>void)=>{subscribers.add(callback);return ()=>subscribers.delete(callback);},capture:()=>{authoringFraming.apply();studio.renderer.render(studio.scene,studio.camera);authoringFraming.restore();return ui.canvas.toDataURL('image/png');},applyCityArtwork,restore:()=>selection.restore(),selectArtwork:(patch:Partial<Selection>)=>selection.select(patch),setView:(v:View,instant=false)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v,instant);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;product.cup.quaternion.setFromAxisAngle(new Vector3(0,1,0),(pose.cupYaw??0)*Math.PI/180);product.lid.quaternion.copy(product.cup.quaternion);applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:setCityRelief,setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
+async function restoreDesign(){
+ if(profile!=='consumer')return selection.restore();
+ if(importing)throw Error('正在还原另一作品，请稍后重试');
+ const latest=await loadResources();
+ if(importing)throw Error('正在还原另一作品，请稍后重试');
+ activeImport=importDesign(latest.bootstrap.defaultDesign);
+ return activeImport.finally(()=>{activeImport=undefined;});
+}
+const debug=()=>({version:APP_VERSION,profile,fixedMapping:fixed.currentMapping,markFiltering:{anisotropy:mats.mark.map?.anisotropy},importing,preload:{neighborCity,neighborError,readyCities:resources?Object.values(resources.manifest.cities).filter(c=>pool?.fileReady(c.levels.light.mask)&&pool.fileReady(c.levels.light.normal)).length:0,slogans:sloganLeases.length},entryLoading:entryLoading?.debug(),loading:{pending:[...startupPending],error:startupError},quality:{cityTier,fixedTiers,fixedColors,fixedDimensions:fixed.precision(),mobile,upgrading:qualityBusy,error:qualityError,dpr:studio.renderer.getPixelRatio(),renderFrames,contextLost},resources:pool?.debug(),renderTargets:studio.memory(),glass:glass?.debug(),haptics:haptics.debug(),selection:{current:selection.current,desired:selection.desired,busy:selection.busy,error:selection.error},porcelain:PORCELAIN,ready:ui.canvas.dataset.ready==='true',view:view.view,parts:Object.fromEntries((['cup','lid','saucer'] as const).map(part=>[part,{visible:product[part].visible,position:product[part].position.toArray(),quaternion:product[part].quaternion.toArray()}])),mode,auto:view.auto,camera:studio.camera.position.toArray(),clipping:{near:studio.camera.near,far:studio.camera.far},target:view.controls.target.toArray(),exposure:studio.renderer.toneMappingExposure,background:background.state(),environment:studio.scene.environment?.uuid,parameters:product.parameters,reflections:reflections.debug(),lidReflections:lidReflections.debug(),bottomClearance:view.bottomClearance(),geometries:[...originals.keys()].map(o=>o.geometry.uuid),memory:{...studio.renderer.info.memory,programs:studio.renderer.info.programs?.length},city:city.debug(),fixedFinish:{cleanGoldGround:mats.regions.saucer.userData.cleanGoldGround,enabled:fixedReliefEnabled,normalScale:mats.regions.saucer.normalScale.x,clearcoatNormalScale:mats.regions.saucer.clearcoatNormalScale.x,clearcoat:mats.regions.saucer.clearcoat,specularIntensity:mats.regions.saucer.specularIntensity},fixed:Object.fromEntries(Object.entries(fixed.currentMaps).map(([region,m])=>[region,Object.fromEntries(Object.entries(m).map(([k,t])=>[k,t.uuid]))]))});
+Object.assign(window,{cupViewer:{ready:()=>ui.canvas.dataset.ready==='true',whenReady:readiness.whenReady,getLoadState:readiness.get,onLoadStateChange:readiness.subscribe,exportDesign:()=>{if(importing||!resources||!assetsReady||selection.busy)throw Error('作品尚未准备完成');return exportDesign(selection.current,resources.manifest);},importDesign:(value:unknown)=>{if(importing)throw Error('正在还原另一作品，请稍后重试');activeImport=importDesign(value);return activeImport.finally(()=>{activeImport=undefined;});},onDesignChange:(callback:(design:DesignConfig)=>void)=>{subscribers.add(callback);return ()=>subscribers.delete(callback);},capture:()=>{authoringFraming.apply();studio.renderer.render(studio.scene,studio.camera);authoringFraming.restore();return ui.canvas.toDataURL('image/png');},applyCityArtwork,restore:()=>restoreDesign(),selectArtwork:(patch:Partial<Selection>)=>selection.select(patch),setView:(v:View,instant=false)=>{calibrating=false;studio.camera.clearViewOffset();studio.camera.fov=33;studio.camera.updateProjectionMatrix();view.set(v,instant);},setCalibration:(pose:Pose)=>{view.set('hero',true);calibrating=true;product.cup.quaternion.setFromAxisAngle(new Vector3(0,1,0),(pose.cupYaw??0)*Math.PI/180);product.lid.quaternion.copy(product.cup.quaternion);applyPose(studio.camera,pose,ui.canvas.clientWidth,ui.canvas.clientHeight);},setAuto:(v:boolean)=>view.setAuto(v),setRelief:setCityRelief,setLocalReflections:(v:boolean)=>reflections.setEnabled(v),refreshReflections:(options?:{includeHandle?:boolean})=>reflections.refresh(options),setFixedRelief,setCityMetal:(v:boolean)=>{city.setMetal(v);inspect();},setMode:(v:string)=>{mode=v;inspect();},
  setCamera:(camera:[number,number,number],target:[number,number,number])=>{view.set('hero',true);view.controls.dispatchEvent({type:'start'});studio.camera.position.fromArray(camera);view.controls.target.fromArray(target);view.controls.update();},
  setPorcelainEnabled:(v:boolean)=>{porcelainControls.forEach(c=>c.setEnabled(v));reflections.refresh();},
  fixedPrecision:()=>fixed.precision(),
  applyFixedArtwork:async(pack:StylePack)=>{const committed=await fixed.apply(pack);if(committed){reflections.refresh();inspect();}return committed;},
- debug,dispose:()=>{if(disposed)return;disposed=true;importController?.abort();++qualityEpoch;++initialization;neighborController?.abort();sloganLeases.forEach(l=>l.release());sloganLeases=[];eventScope.abort();panelResize.disconnect();clearTimeout(qualityTimer);subscribers.clear();cancelAnimationFrame(raf);readiness.dispose();entryLoading?.dispose();glass?.dispose();background.dispose();artworkUI?.dispose();disposeHapticsDiagnostics();haptics.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();markLease?.release();pool?.dispose();view.dispose();temporary.forEach(m=>m.dispose());disposeLabCoverage();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.wallPorcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
+ debug,dispose:()=>{if(disposed)return;disposed=true;importController?.abort();++qualityEpoch;++initialization;neighborController?.abort();sloganLeases.forEach(l=>l.release());sloganLeases=[];eventScope.abort();panelResize.disconnect();clearTimeout(qualityTimer);qualityTimer=0;subscribers.clear();cancelAnimationFrame(raf);readiness.dispose();entryLoading?.dispose();glass?.dispose();background.dispose();artworkUI?.dispose();disposeHapticsDiagnostics();haptics.dispose();ui.dispose();lidReflections.dispose();reflections.dispose();city.dispose();fixed.dispose();markLease?.release();pool?.dispose();view.dispose();temporary.forEach(m=>m.dispose());disposeLabCoverage();product.dispose();Object.values(mats.regions).forEach(m=>m.dispose());mats.porcelain.dispose();mats.wallPorcelain.dispose();mats.gold.dispose();mats.foot.dispose();mats.mark.map?.dispose();mats.mark.dispose();mats.city.dispose();studio.dispose();}}});
 if(profile==='dev')disposeHapticsDiagnostics=createHapticsDiagnostics();
 if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispose();});
 
@@ -309,7 +328,7 @@ if(import.meta.hot)import.meta.hot.dispose(()=>{(window as any).cupViewer.dispos
 if(document.documentElement.dataset.labPreview==='true'){
  let guide:ReturnType<typeof import('./lab/coverage-guide').createCoverageGuide>|undefined;
  Object.assign((window as unknown as {cupViewer:object}).cupViewer,{
-  applyLabArtwork:async(pack:CityArtworkPack)=>{if(qualityBusy||selection.busy)throw Error('请等待当前杯身准备完成');labArtworkOverride=true;++qualityEpoch;clearTimeout(qualityTimer);return applyCityArtwork(pack);},
+  applyLabArtwork:async(pack:CityArtworkPack)=>{if(qualityBusy||selection.busy)throw Error('请等待当前杯身准备完成');labArtworkOverride=true;++qualityEpoch;clearTimeout(qualityTimer);qualityTimer=0;return applyCityArtwork(pack);},
   setLabCoverageGuide:async(enabled:boolean,showSourceTop=true,part='city',highlight=false)=>{
    if(!guide){const {createCoverageGuide}=await import('./lab/coverage-guide');guide=createCoverageGuide(product,1-61.370293965961764/1783);disposeLabCoverage=guide.dispose;}
    guide.set(enabled,showSourceTop,part,highlight);invalidate();return guide.debug();

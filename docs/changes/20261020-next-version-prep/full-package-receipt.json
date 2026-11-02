@@ -1,0 +1,26 @@
+{
+  "version": "7.1.11",
+  "snapshotCommit": "d093766d7453dfce366cec0f90bb3f7a5ab15b93",
+  "productionSourceCommit": "cd8159b3c93b4b7083526f521d5a4c01e919219d",
+  "deployId": "6ad6fcdcf1f9e6ca6c7c5330",
+  "resourceRelease": "v7-9",
+  "githubMerge": "pending-account-suspended",
+  "snapshotKind": "present tracked current app and supporting records; no Git history",
+  "sourceFiles": 2890,
+  "unavailableHistoricalPaths": 3643,
+  "sourceBytes": 1164632196,
+  "productionFiles": 1248,
+  "productionBytes": 518528045,
+  "archives": [
+    {
+      "path": "source.tar.gz",
+      "bytes": 1116841467,
+      "sha256": "474134eef164022ee5e07866de71684e84d5b2ac69d3d2546162f8d1f28be08c"
+    },
+    {
+      "path": "production.tar.gz",
+      "bytes": 502298132,
+      "sha256": "1b4c7052dc3a33600ed7273bf7cfd8064358a33192c561933e724993b380d727"
+    }
+  ]
+}

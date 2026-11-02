@@ -9,7 +9,7 @@ const entryVersion=():Plugin=>({name:'app-entry-version',transformIndexHtml:html
 // are gzip containers in the resource protocol and must arrive byte-exact.
 function rawNormalFiles():Plugin {
  let base='/';return {name:'v7-byte-exact-normals',apply:'serve',configResolved(c){base=c.base;},configureServer(server){
-  server.middlewares.use((req,res,next)=>{const pathname=new URL(req.url??'/', 'http://localhost').pathname,relative=pathname.slice(base.length),match=relative.match(/^((?:releases\/v7-[1-9]|dev-assets))\/assets\/(.+)$/);if(!pathname.startsWith(base)||!match)return next();const [,assetRoot,name]=match;if(!/^[a-z0-9-]+\.hfn\.gz$/.test(name))return next();
+  server.middlewares.use((req,res,next)=>{const pathname=new URL(req.url??'/', 'http://localhost').pathname,relative=pathname.slice(base.length),match=relative.match(/^((?:releases\/v7-[1-9][0-9]*|dev-assets))\/assets\/(.+)$/);if(!pathname.startsWith(base)||!match)return next();const [,assetRoot,name]=match;if(!/^[a-z0-9-]+\.hfn\.gz$/.test(name))return next();
    const file=resolve('public',assetRoot,'assets',name);try{const size=statSync(file).size;res.writeHead(200,{'Content-Type':'application/octet-stream','Content-Length':size,'Cache-Control':'no-cache'});if(req.method==='HEAD')res.end();else createReadStream(file).pipe(res);}catch{res.statusCode=404;res.end('Resource missing');}
   });
  }};
@@ -31,7 +31,7 @@ async function copyRuntimeBytes(source:string,target:string):Promise<void>{
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','releases/v7-9','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
+  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','releases/v7-9','releases/v7-10','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','api/v1/bootstrap-v7-9.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
    await mkdir(resolve(out,item,'..'),{recursive:true});if(item.includes('.')&&!item.endsWith('/'))await writeRuntimeBytes(resolve(out,item),await readFile(resolve('public',item)));else await copyRuntimeBytes(resolve('public',item),resolve(out,item));
   }
   const headers='/coverage/*\n  Cache-Control: no-cache\n\n/dev-assets/*.json\n  Cache-Control: no-cache\n\n/label-compare/data.json\n  Cache-Control: no-cache\n\n/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';

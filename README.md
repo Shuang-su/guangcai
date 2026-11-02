@@ -1,5 +1,10 @@
 # 广彩一号杯与中国杯
 
+2026-10-22：中国杯V7.1.13 / v7-10 已发布至原Netlify正式主页：新增五句固定祝福语和23城“我爱××”，保留原六句；长城市名向上延长字框、底边不变。
+
+
+2026-10-20：**V7.1.12 / v7-9 已发布到 Netlify 正式主页**。套杯、拆解、杯盖、杯身、杯碟、浮雕、花纹七视角，以及120ms主动花纹提清、自由放大/花纹/杯碟4K色图已包含。部署 `6ad76b8796b6f32499d6fa63`，源码 `006e3268`；1252份服务端文件摘要一致，原dev/compare等后缀页内容保留。[发布与公网核对](docs/changes/20261020-v7.1.12-netlify/completion.md)。GitHub尚未同步。
+
 2026-10-20：V7.1.11 / v7-9 已独立发布（GitHub合并因账号暂停待恢复）：西安新闭合稿、五城指定背景镂空；正式深圳保留，APEC二期仅dev。compare保留7.1.4主基线，并新增本轮实色面与上杯对照。Issue #57 / PR #58，部署 `6ad6fcdcf1f9e6ca6c7c5330`；公网57+31+41项与1248文件核验通过。
 
 2026-10-20：V7.1.10 / v7-8 已合并上线：前后对比改为V7.1.4与当前，compare与独立dev新增实际城市曲面图案/白瓷占比、PSD与模型尺寸差异、三部件花纸尺寸与接缝说明、3D可贴面高亮。默认深圳＋拥抱瀚海图案25.94%、白瓷74.06%；现有约2.56%的UV宽高比差明确披露，正式资源与几何映射未改。[Issue #53](https://github.com/Shuang-su/guangcai/issues/53) · [本轮记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md)。PR #54/#55/#56，部署 `6ad6c3ad0d1a73552408b968`；公网占比57项、核心30项通过，1187发布与归档文件核验一致。
@@ -22,7 +27,7 @@
 
 本机继续使用 ExFAT 普通目录；Git 拉取建议使用 `python3 -B tools/git-exfat.py fetch origin main`，详见[伴随文件维护说明](tools/README-exfat.md)。
 
-## 当前发布批次：V7.1.11 / v7-9
+## 当前发布批次：V7.1.12 / v7-9
 
 **后台配置入口：[Excel 数据表](guangcai-china-preview/integration/backend-handoff/V7后台配置数据表.xlsx) · [同源 JSON](guangcai-china-preview/integration/backend-handoff/backend-config.json) · [字段、录入步骤与扩展边界](guangcai-china-preview/integration/backend-handoff/README.md)。** 包含23城、五套配色、材质二维参数、六组祝福语及195项资源；说明城市拓展JSON、深浅HEX/HSL数组和应保存的作品参数。性能文档逐项说明12项机制及后续修正。V7.1.3按手机实拍修正三部分花纹方向、侧花纹底边和两个贴图白洞，补足上连接白瓷下沿，并修复杯碟近看高清被预算阻挡的问题。
 

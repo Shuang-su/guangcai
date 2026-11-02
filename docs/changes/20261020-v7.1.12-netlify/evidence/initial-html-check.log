@@ -1,0 +1,17 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: public bytes index.html
+    at check (file:///Volumes/Prism/.codex-work/guangcai/v7.1.12-netlify/online-qa.mjs:3:268)
+    at file:///Volumes/Prism/.codex-work/guangcai/v7.1.12-netlify/online-qa.mjs:4:320
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.3.0

@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
-const root='.codex-work/deploy/v7-build',hash=b=>createHash('sha256').update(b).digest('hex');
+const root=process.env.BUILD_ROOT??'.codex-work/deploy/v7-build',hash=b=>createHash('sha256').update(b).digest('hex');
 const bootstrap=JSON.parse(await fs.readFile(root+'/api/v1/bootstrap.json')),manifest=JSON.parse(await fs.readFile(root+'/'+bootstrap.manifestUrl));
 const version=JSON.parse(await fs.readFile('package.json')).version;assert.ok((await fs.readFile(root+'/index.html','utf8')).includes(`<dd>V${version}</dd>`),'Entry version label must match package version');
 assert.ok((await fs.readFile(root+'/artwork-dev/cup.html','utf8')).includes(`<dd>V${version}</dd>`),'Development iframe entry version must match package version');

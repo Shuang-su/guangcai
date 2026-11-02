@@ -1,10 +1,11 @@
 import {references,type ReferenceId} from './reference-views';
-import { Box3, MathUtils, MOUSE, TOUCH, Quaternion, Vector3 } from 'three';
+import { Box3, MathUtils, MOUSE, TOUCH, Quaternion, Vector3, type Object3D } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Product } from '../geometry/product';
 import type { Studio } from '../studio/studio';
-export const viewLabels={hero:'建筑面',front:'文字面',handle:'把手',top:'俯视',bottom:'杯底',saucerBottom:'碟底',exploded:'拆解',lid:'杯盖',detail:'浮雕近看',flowers:'花纹近看'} as const;
+export const viewLabels={hero:'套杯',front:'文字面',handle:'把手',top:'俯视',bottom:'杯底',saucerBottom:'碟底',exploded:'拆解',lid:'杯盖',cup:'杯身',saucer:'杯碟',detail:'浮雕',flowers:'花纹'} as const;
 export type View=keyof typeof viewLabels;
+export const consumerViews=['hero','exploded','lid','cup','saucer','detail','flowers'] as const satisfies readonly View[];
 export class ViewController{
   controls:OrbitControls;view:View='hero';auto=false;
   private active=false;private animateCamera=false; private toCamera=new Vector3();private toTarget=new Vector3();
@@ -43,6 +44,15 @@ export class ViewController{
       p.cup.visible=false;p.saucer.visible=false;this.lidPos.set(0,33,0);
       pos=[68,111,127];this.toTarget.set(0,36,0);
     }
+    if(view==='cup'){
+      p.lid.visible=false;p.saucer.visible=false;
+      this.cupQuat.setFromAxisAngle(new Vector3(0,1,0),Math.PI);
+      pos=[9,104,250];this.toTarget.set(0,6+h/2,0);
+    }
+    if(view==='saucer'){
+      p.cup.visible=false;p.lid.visible=false;
+      pos=[14,148,242];this.toTarget.set(0,9,0);
+    }
     if(view==='detail'){pos=[-80,87,-178];this.toTarget.set(-9,38,-11);}
     if(view==='flowers'){pos=[0,23,155];this.toTarget.set(0,9,30);}
     const aspect=this.studio.camera.aspect;
@@ -60,9 +70,37 @@ export class ViewController{
       const canvas=this.studio.renderer.domElement,w=canvas.clientWidth,h=canvas.clientHeight;
       const cy=aspect<.8?.43:.49;
       this.studio.camera.setViewOffset(w,h,0,(.5-cy)*h,w,h);
+    }else if(view==='lid'||view==='cup'||view==='saucer'){
+      const part=view==='lid'?p.lid:view==='cup'?p.cup:p.saucer;
+      const position=view==='lid'?this.lidPos:view==='cup'?this.cupPos:this.saucerPos;
+      const rotation=view==='lid'?this.lidQuat:view==='cup'?this.cupQuat:part.quaternion;
+      this.fitPart(part,position,rotation);
     }else if(aspect<1.05)this.toCamera.sub(this.toTarget).multiplyScalar(aspect<.8?1.6:1.17).add(this.toTarget);
     this.studio.camera.updateProjectionMatrix();
     this.active=true;this.animateCamera=true;if(instant)this.update(10);this.onChange();
+  }
+  private fitPart(part:Object3D,position:Vector3,rotation:Quaternion){
+    // Measure the requested pose, then restore the live pose so switching still animates.
+    const savedPosition=part.position.clone(),savedRotation=part.quaternion.clone();
+    let bounds:Box3;
+    try{
+      part.position.copy(position);part.quaternion.copy(rotation);part.updateWorldMatrix(true,true);
+      bounds=new Box3().setFromObject(part);
+    }finally{
+      part.position.copy(savedPosition);part.quaternion.copy(savedRotation);part.updateWorldMatrix(true,true);
+    }
+    bounds.getCenter(this.toTarget);
+    const camera=this.studio.camera.clone();camera.clearViewOffset();camera.updateProjectionMatrix();
+    for(let iteration=0;iteration<5;iteration++){
+      camera.position.copy(this.toCamera);camera.lookAt(this.toTarget);camera.updateMatrixWorld(true);
+      let scale=0;
+      for(const x of [bounds.min.x,bounds.max.x])for(const y of [bounds.min.y,bounds.max.y])for(const z of [bounds.min.z,bounds.max.z]){
+        const projected=new Vector3(x,y,z).project(camera);
+        scale=Math.max(scale,Math.abs(projected.x)/.82,Math.abs(projected.y)/.72);
+      }
+      if(Math.abs(scale-1)<=.001)break;
+      this.toCamera.sub(this.toTarget).multiplyScalar(MathUtils.clamp(scale,.3,4)).add(this.toTarget);
+    }
   }
   get moving(){return this.active||this.auto;}
   update(dt:number){

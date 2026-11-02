@@ -1,0 +1,1163 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:5299/",
+  "browser": "existing Chrome / Playwright; Browser plugin not available",
+  "checks": [
+    "desktop page identity and version",
+    "desktop meaningful screen and no overlay",
+    "desktop defaults to 套杯",
+    "desktop exact seven labels and order",
+    "desktop selected label 套杯",
+    "desktop actual visible parts 套杯",
+    "desktop no horizontal overflow 套杯",
+    "desktop original camera preserved 套杯",
+    "desktop selected label 拆解",
+    "desktop actual visible parts 拆解",
+    "desktop no horizontal overflow 拆解",
+    "desktop original camera preserved 拆解",
+    "desktop selected label 杯盖",
+    "desktop actual visible parts 杯盖",
+    "desktop no horizontal overflow 杯盖",
+    "desktop selected label 杯身",
+    "desktop actual visible parts 杯身",
+    "desktop no horizontal overflow 杯身",
+    "desktop selected label 杯碟",
+    "desktop actual visible parts 杯碟",
+    "desktop no horizontal overflow 杯碟",
+    "desktop selected label 浮雕",
+    "desktop actual visible parts 浮雕",
+    "desktop no horizontal overflow 浮雕",
+    "desktop assembled context 浮雕",
+    "desktop selected label 花纹",
+    "desktop actual visible parts 花纹",
+    "desktop no horizontal overflow 花纹",
+    "desktop assembled context 花纹",
+    "desktop view changes preserve artwork",
+    "desktop reset restores full assembly after lid",
+    "desktop reset restores full assembly after cup",
+    "desktop reset restores full assembly after saucer",
+    "desktop rapid transitions restore all parts",
+    "desktop keyboard reaches last option",
+    "desktop keyboard selects and returns focus",
+    "mobile page identity and version",
+    "mobile meaningful screen and no overlay",
+    "mobile defaults to 套杯",
+    "mobile exact seven labels and order",
+    "mobile selected label 套杯",
+    "mobile actual visible parts 套杯",
+    "mobile no horizontal overflow 套杯",
+    "mobile original camera preserved 套杯",
+    "mobile selected label 拆解",
+    "mobile actual visible parts 拆解",
+    "mobile no horizontal overflow 拆解",
+    "mobile original camera preserved 拆解",
+    "mobile selected label 杯盖",
+    "mobile actual visible parts 杯盖",
+    "mobile no horizontal overflow 杯盖",
+    "mobile selected label 杯身",
+    "mobile actual visible parts 杯身",
+    "mobile no horizontal overflow 杯身",
+    "mobile selected label 杯碟",
+    "mobile actual visible parts 杯碟",
+    "mobile no horizontal overflow 杯碟",
+    "mobile selected label 浮雕",
+    "mobile actual visible parts 浮雕",
+    "mobile no horizontal overflow 浮雕",
+    "mobile assembled context 浮雕",
+    "mobile selected label 花纹",
+    "mobile actual visible parts 花纹",
+    "mobile no horizontal overflow 花纹",
+    "mobile assembled context 花纹",
+    "mobile view changes preserve artwork",
+    "mobile reset restores full assembly after lid",
+    "mobile reset restores full assembly after cup",
+    "mobile reset restores full assembly after saucer",
+    "mobile rapid transitions restore all parts",
+    "mobile keyboard reaches last option",
+    "mobile keyboard selects and returns focus",
+    "mobile landscape no horizontal overflow",
+    "no relevant runtime or console errors"
+  ],
+  "errors": [],
+  "rows": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "hero",
+      "label": "套杯",
+      "camera": [
+        31.765735672387418,
+        240.54729642798253,
+        909.6516524326336
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.5,
+            0
+          ],
+          "quaternion": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.4,
+            0
+          ],
+          "quaternion": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 10,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "exploded",
+      "label": "拆解",
+      "camera": [
+        239.99425793446034,
+        205.00098021767212,
+        355.0152945345006
+      ],
+      "target": [
+        4.999862124863114,
+        102.99886942387754,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            83.4992830492882,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.000043314733444042654,
+            0,
+            0.999999999061917
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            180.39801459802885,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.000043314733444042654,
+            0,
+            0.999999999061917
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 26,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "lid",
+      "label": "杯盖",
+      "camera": [
+        93.67389819599703,
+        138.14800167612458,
+        174.94850553659654
+      ],
+      "target": [
+        0.00006837098032840451,
+        39.09337397428289,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": false,
+          "position": [
+            0,
+            57.50035552909771,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            33.002015576500085,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 43,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "cup",
+      "label": "杯身",
+      "camera": [
+        15.576559487471638,
+        115.15684267525822,
+        309.28738238876815
+      ],
+      "target": [
+        -18.7203859816379,
+        56.95950952292358,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.50000000241419,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.9999999990645401,
+            0,
+            0.00004325413522484575
+          ]
+        },
+        "lid": {
+          "visible": false,
+          "position": [
+            0,
+            108.39792376540562,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 62,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "saucer",
+      "label": "杯碟",
+      "camera": [
+        14.935930970206357,
+        145.33730566840583,
+        268.05844339840576
+      ],
+      "target": [
+        -4.616486121450223,
+        20.82676084793686,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": false,
+          "position": [
+            0,
+            57.500000000146805,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.37773697669383777,
+            0,
+            0.9259129421485581
+          ]
+        },
+        "lid": {
+          "visible": false,
+          "position": [
+            0,
+            108.3998737440443,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 66,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "detail",
+      "label": "浮雕",
+      "camera": [
+        -56.64065870838577,
+        103.82155004203854,
+        -71.33094149559024
+      ],
+      "target": [
+        -6.780754624256728,
+        30.849014168947587,
+        -8.28743339664233
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.5,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.000010681209223016402,
+            0,
+            0.9999999999429561
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.3999999965185,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 81,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "id": "flowers",
+      "label": "花纹",
+      "camera": [
+        -0.3041099774090379,
+        23.274781321971332,
+        154.45410648791903
+      ],
+      "target": [
+        -0.01652663077642201,
+        9.053252476941998,
+        29.924711641303595
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.5,
+            0
+          ],
+          "quaternion": [
+            0,
+            5.400986927533502e-13,
+            0,
+            1
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.4,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "detail",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": false,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1,
+        "renderFrames": 105,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "hero",
+      "label": "套杯",
+      "camera": [
+        66.46084517592222,
+        435.55987428915705,
+        1903.1895958543482
+      ],
+      "target": [
+        0,
+        62,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.5,
+            0
+          ],
+          "quaternion": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.4,
+            0
+          ],
+          "quaternion": [
+            0,
+            1,
+            0,
+            6.123233995736766e-17
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 9,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "exploded",
+      "label": "拆解",
+      "camera": [
+        380.982558300781,
+        266.209391275909,
+        568.0740383986354
+      ],
+      "target": [
+        4.99972274200284,
+        102.99772648442328,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            83.49855825841476,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.00008710313183560184,
+            0,
+            0.9999999962065222
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            180.39600748484088,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.00008710313183560184,
+            0,
+            0.9999999962065222
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 24,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "lid",
+      "label": "杯盖",
+      "camera": [
+        241.72794746432538,
+        294.7085117398427,
+        451.460525489847
+      ],
+      "target": [
+        0.00006841885676943432,
+        39.09337458621562,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": false,
+          "position": [
+            0,
+            57.5003557780552,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            33.00201698789756,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 121,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "cup",
+      "label": "杯身",
+      "camera": [
+        49.95046708599217,
+        173.48381246034967,
+        619.2581002278736
+      ],
+      "target": [
+        -18.72038562028789,
+        56.9595091831099,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.500000004331284,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.9999999990631145,
+            0,
+            0.00004328707842619165
+          ]
+        },
+        "lid": {
+          "visible": false,
+          "position": [
+            0,
+            108.39792232239144,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 218,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "saucer",
+      "label": "杯碟",
+      "camera": [
+        41.323852763755944,
+        346.52624780875374,
+        660.7216766665728
+      ],
+      "target": [
+        -4.11004437963791,
+        19.52933139300355,
+        0
+      ],
+      "parts": {
+        "cup": {
+          "visible": false,
+          "position": [
+            0,
+            57.50000000023466,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.3380625367080277,
+            0,
+            0.9411236482389195
+          ]
+        },
+        "lid": {
+          "visible": false,
+          "position": [
+            0,
+            108.39988743779361,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 238,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "detail",
+      "label": "浮雕",
+      "camera": [
+        -87.15444326672014,
+        177.28023299551353,
+        -69.71910278644336
+      ],
+      "target": [
+        -7.049706583438809,
+        31.699723716758022,
+        -8.58669959620918
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.50000000000138,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.0020327530126004775,
+            0,
+            0.9999979339554607
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.39999933654482,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 277,
+        "contextLost": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "id": "flowers",
+      "label": "花纹",
+      "camera": [
+        -34.57862289751789,
+        58.22993026128263,
+        119.75281204101299
+      ],
+      "target": [
+        -1.9613679674075075,
+        15.319844240430482,
+        21.016655923718677
+      ],
+      "parts": {
+        "cup": {
+          "visible": true,
+          "position": [
+            0,
+            57.50000000000003,
+            0
+          ],
+          "quaternion": [
+            0,
+            0.0000151476782440101,
+            0,
+            0.999999999885274
+          ]
+        },
+        "lid": {
+          "visible": true,
+          "position": [
+            0,
+            108.39999999505606,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "saucer": {
+          "visible": true,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "quality": {
+        "cityTier": "standard",
+        "fixedTiers": {
+          "body": "light",
+          "handle": "light",
+          "saucer": "light"
+        },
+        "mobile": true,
+        "upgrading": false,
+        "error": "",
+        "dpr": 1.5,
+        "renderFrames": 316,
+        "contextLost": false
+      }
+    }
+  ],
+  "physicalDeviceTested": false
+}
