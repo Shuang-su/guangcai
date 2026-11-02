@@ -1,5 +1,13 @@
 # 广彩一号杯与中国杯
 
+2026-11-02 交付收尾：**本轮开发已交付，最终版本 V7.1.13 / v7-10**。用户确认同一大版本不再逐个中间版本补处理；旧版 Issue 已集中收尾，交付后事项统一保留在 [#29](https://github.com/Shuang-su/guangcai/issues/29)。
+
+- **正式活动：** [深圳广电「城市共彩」](https://www.sztv.com.cn/huodong/gcyfy/h5/#/home) · [DIY](https://www.sztv.com.cn/huodong/gcyfy/h5/#/create)。
+- **技术交付：** [V7.1.13 / #62](https://github.com/Shuang-su/guangcai/issues/62) · [V7.1.12 / #61](https://github.com/Shuang-su/guangcai/issues/61) · [Netlify 技术预览](https://guangcai-no1-china-v7.netlify.app/)。
+- **本次只读核对：** 正式活动/DIY 可见，默认“我爱深圳”；生产 COS 的 10 份版本清单与 5 个资源抽样摘要匹配。身份、作品发布/权限和真机验收未在本轮验证。见[正式入口核对](docs/changes/20261102-delivery-closeout/formal-entry.md)与[收尾记录](docs/changes/20261102-delivery-closeout/completion.md)。
+
+以下按原日期保存各阶段历史状态，旧文中的“未同步/未验收/保持开启”不覆盖上述交付收尾结论。
+
 2026-11-02：**GitHub已补齐至V7.1.13及正式主页交付记录**。PR [#58](https://github.com/Shuang-su/guangcai/pull/58)、[#59](https://github.com/Shuang-su/guangcai/pull/59)已合入main；21个正式提交已包含，参考审计另存独立分支。本轮未重新构建或部署，历史条目中的“未同步”为当时状态。[同步完成记录](docs/changes/20261102-github-catchup/completion.md)。
 
 2026-10-22：中国杯V7.1.13 / v7-10 已发布至原Netlify正式主页：新增五句固定祝福语和23城“我爱××”，保留原六句；长城市名向上延长字框、底边不变。
@@ -35,7 +43,7 @@
 
 [V7 用户预览](https://guangcai-no1-china-v7.netlify.app/) · [固定 V7.1.3 预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [V7.1.3 版本 Issue #35](https://github.com/Shuang-su/guangcai/issues/35) · [开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) · [实现 PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [验证与交付记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md)
 
-[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。资源默认 `v7-9`，保留 `v7-1`～`v7-8`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
+[接口与部署文档](guangcai-china-preview/integration/README.md) · [逐项性能机制](guangcai-china-preview/integration/PERFORMANCE.md) · [实拍对照与把手尺寸](guangcai-china-preview/evidence/v7.1.3/README.md)。当前交付资源默认 `v7-10`，保留 `v7-1`～`v7-9`；通过可选 `fixedMapping` 记录映射差异，作品字段不变。跨版本还原整套准备后提交，失败保留原作品。
 
 V7.1.1 同步 V6.0.4 的独立液态折射、收起动画和持续下载修正，保留杯壁/杯盖反射、金线、字形与既有触感路径。进入设计前准备全部23城低清、当前及相邻高清、6组裁切文字和固定花纸；显示实际进度、速率及应用资源估算。仅按需解码/绘制，预算和持续帧耗超限时回退磨砂，Safari 缺少内存接口不会直接降级。
 

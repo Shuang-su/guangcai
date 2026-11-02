@@ -1,5 +1,9 @@
 # 产品版本与发布索引
 
+2026-11-02 交付收尾：用户确认本轮开发已交付，以 **V7.1.13 / v7-10** 为最终基线，同一大版本的中间版本不再逐版补处理。版本/已交付功能 Issue 关闭；交付后接入、设备及已知模型/性能事项集中到 [#29](https://github.com/Shuang-su/guangcai/issues/29)，不标成已验证通过。
+
+正式业务入口为[深圳广电「城市共彩」](https://www.sztv.com.cn/huodong/gcyfy/h5/#/home)。Netlify 保留为技术预览与固定历史回溯。此次只读确认正式 DIY 与 COS 资源接入，10份版本清单和5个资源样本摘要匹配；未提交作品、未做身份与写入业务验收。[核对记录](docs/changes/20261102-delivery-closeout/formal-entry.md) · [收尾记录](docs/changes/20261102-delivery-closeout/completion.md)。
+
 2026-11-02：GitHub main已通过PR [#58](https://github.com/Shuang-su/guangcai/pull/58)、[#59](https://github.com/Shuang-su/guangcai/pull/59)补齐正式版本与交付记录；合并检查点`1e8a90d7`。[同步核验](docs/changes/20261102-github-catchup/completion.md)。当前线上为 **V7.1.13 / v7-10**，部署`6ad9e0c4e4871da75c6b4316`，本轮未重新部署。
 
 2026-10-22：V7.1.13 / v7-10 已发布到Netlify，记录见 docs/changes/20261022-city-blessings/completion.md。
@@ -12,24 +16,25 @@
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
-| V7.1.13 · GitHub/Netlify已同步 | [祝福语与正式主页交付](docs/changes/20261022-city-blessings/completion.md) | 2026-11-02经PR #59合入main；线上部署不变，设备边界见版本记录 |
-| V7.1.12 · 已发布 | [七视角与花纹提清上线](docs/changes/20261020-v7.1.12-netlify/completion.md) | Netlify ready；1252份服务端摘要与公网页面/浏览器核对完成，GitHub版本Issue待恢复 |
-| [V7.1.11 · Issue #57](https://github.com/Shuang-su/guangcai/issues/57) | [城市闭合/镂空记录](docs/changes/20261020-v7.1.11-city-cutouts/completion.md) | Netlify已发布；45基础/55V7测试、公网57+31+41项、1248文件通过；PR #58合并受GitHub账号暂停阻断 |
+| [V7.1.13 · Issue #62 · 已关闭](https://github.com/Shuang-su/guangcai/issues/62) | [祝福语与正式主页交付](docs/changes/20261022-city-blessings/completion.md) · PR #59 | 最终开发交付完成；正式活动链接见上；后续事项统一 #29 |
+| [V7.1.12 · Issue #61 · 已关闭](https://github.com/Shuang-su/guangcai/issues/61) | [七视角与花纹提清上线](docs/changes/20261020-v7.1.12-netlify/completion.md) · PR #59 | 已交付；本次历史补录，不逐版补验收；后续事项统一 #29 |
+| [V7.1.11 · Issue #57 · 已关闭](https://github.com/Shuang-su/guangcai/issues/57) | [城市闭合/镂空记录](docs/changes/20261020-v7.1.11-city-cutouts/completion.md) · PR #58 | 发布/合并证据已补齐，开发交付完成；后续事项统一 #29 |
 | [V7.1.10 · Issue #53](https://github.com/Shuang-su/guangcai/issues/53) | [曲面占比与映射记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md) | 45基础、52V7测试通过；本地及公网核心各30项、占比/23城/部位交互各57项通过；PR #54/#55/#56合并部署，1187文件核验，实体与既有UV差异见#47，资源仍为v7-8 |
 | [V7.1.9 · Issue #51](https://github.com/Shuang-su/guangcai/issues/51) | [完整卡片线稿记录](docs/changes/20261020-v7.1.9-city-thumbnails/completion.md) | 45基础、45V7测试及29项页面回归通过；本地/公网卡片各92项通过，PR #52合并/部署，回执见完成记录 |
 | [V7.1.8 · Issue #49](https://github.com/Shuang-su/guangcai/issues/49) | [入口版本记录](docs/changes/20261020-v7.1.8-entry-version/completion.md) | PR #50合并/部署；入口与运行时7.1.8，沿用v7-7设计；本地/线上核心28项通过 |
-| [V7.1.7 · Issue #47](https://github.com/Shuang-su/guangcai/issues/47) | [PSD整版记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md) | PR #48合并/部署，23城69档原稿核对、45基础与43V7测试，正式43项、开发86项及线上26项通过；入口版本标识转V7.1.8修正 |
-| [V7.1.6 · Issue #45](https://github.com/Shuang-su/guangcai/issues/45) | [修正记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md) | PR #46已合并/部署；本地41+86项、V7测试39项，最终线上核心24项通过 |
-| [V7.1.5 · Issue #43](https://github.com/Shuang-su/guangcai/issues/43) | [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) · [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/) · [本轮记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md) | PR #44已合并/生产文件核验；开发页慢网累计超时转V7.1.6修复 |
-| [V7.1.4 · Issue #41](https://github.com/Shuang-su/guangcai/issues/41) | [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) · [两城SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/) · [完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md) | 23城描线与底部更新；旧文字字框；合并部署回执在完成记录 |
-| [V7.1.3 · Issue #35](https://github.com/Shuang-su/guangcai/issues/35) | [PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [完整记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md) | 已合并/部署，Issue保持开启，待验收项见正文 |
+| [V7.1.7 · 已关闭 · Issue #47](https://github.com/Shuang-su/guangcai/issues/47) | [PSD整版记录](docs/changes/20261020-v7.1.7-psd-layout/completion.md) | 已交付；历史验证见原记录；中间版不再复验，后续事项已转交 #29 |
+| [V7.1.6 · 已关闭 · Issue #45](https://github.com/Shuang-su/guangcai/issues/45) | [修正记录](docs/changes/20261020-v7.1.6-lab-readiness/completion.md) | 已交付；历史验证见原记录；中间版不再复验，后续事项已转交 #29 |
+| [V7.1.5 · 已关闭 · Issue #43](https://github.com/Shuang-su/guangcai/issues/43) | [字框对比](https://guangcai-no1-china-v7.netlify.app/label-compare/) · [独立开发预览](https://guangcai-no1-china-v7.netlify.app/artwork-dev/) · [本轮记录](docs/changes/20261020-v7.1.5-label-layout-lab/completion.md) | 已交付；历史验证见原记录；中间版不再复验，后续事项已转交 #29 |
+| [V7.1.4 · 已关闭 · Issue #41](https://github.com/Shuang-su/guangcai/issues/41) | [逐城对比](https://guangcai-no1-china-v7.netlify.app/city-compare/) · [两城SVG试绘](https://guangcai-no1-china-v7.netlify.app/bezier-lab/) · [完成记录](docs/changes/20261019-v7.1.4-city-comparison-publish/completion.md) | 已交付；历史验证见原记录；中间版不再复验，后续事项已转交 #29 |
+| [V7.1.3 · 已关闭 · Issue #35](https://github.com/Shuang-su/guangcai/issues/35) | [PR #34](https://github.com/Shuang-su/guangcai/pull/34) · [固定预览](https://6ad4995927bf346abcf5fcf4--guangcai-no1-china-v7.netlify.app/) · [完整记录](docs/changes/20261018-v7.1.3-floral-correction/completion.md) | 已交付；历史验证见原记录；中间版不再复验，后续事项已转交 #29 |
 | V7.1.2 · 历史记录 | [PR #32](https://github.com/Shuang-su/guangcai/pull/32) · [完整记录](docs/changes/20261018-v7.1.2-font-fill/completion.md) · [当时Issue正文存档](docs/changes/20261018-v7.1.3-floral-correction/issue29-v7.1.2-history.md) | 当时未单开版本Issue，保留原证据 |
-| [V7开发交接总入口 #29](https://github.com/Shuang-su/guangcai/issues/29) | 后台表格、性能机制、接口与接入责任 | 跨版本持续维护 |
+| [V7最终交付与交付后事项 #29](https://github.com/Shuang-su/guangcai/issues/29) | 正式活动、最终技术版本、接入与已知限制 | 唯一开放交接入口；不表示本轮开发未交付 |
 
 | 版本 | 标签 | 源码提交 | 实际部署 ID | 内容 |
 | --- | --- | --- | --- | --- |
+| 7.1.13 最终交付技术预览 | 未新增标签 | `78530b7ea1c67bcdd8a6871c81697d6c6519e2e8` | `6ad9e0c4e4871da75c6b4316` | 新增祝福语/23城我爱城市、五六字框；PR #59、Issue #62；正式活动接入见上 |
 | 7.1.12 正式主页 | 未新增标签 | `006e32681b686ed161b2aa710a67831e9b3bc9b3` | `6ad76b8796b6f32499d6fa63` | 七视角与主动花纹提清；保留原后缀页面；1252份服务端摘要一致 |
-| 7.1.11 独立发布 | 未新增标签 | `cd8159b3c93b4b7083526f521d5a4c01e919219d` | `6ad6fcdcf1f9e6ca6c7c5330` | 西安闭合新版、五城背景镂空、深圳二期仅dev；公网129项；GitHub合并待恢复 |
+| 7.1.11 独立发布 | 未新增标签 | `cd8159b3c93b4b7083526f521d5a4c01e919219d` | `6ad6fcdcf1f9e6ca6c7c5330` | 西安闭合新版、五城背景镂空、深圳二期仅dev；公网129项；PR #58已合并；#57交付收尾关闭 |
 | 7.1.10 独立预览 | 未新增标签 | `a5ae402db7a8f074a5a56edbe63b6c2f3ab04724` | `6ad6c3ad0d1a73552408b968` | 真实城市网格图案/白瓷占比、PSD/模型毫米差、三部分花纸与实验高亮；公网57+30项、1187文件核验 |
 | 7.1.9 独立预览 | 未新增标签 | `097690d748fa9dbefbb6b181acdb4d8e5fa7ef48` | `6ad6af47aa240e6a1c47b305` | 完整23城金色透明缩略图；城市和字框保持v7-7原数据，公网卡片92项及页面29项通过 |
 | 7.1.8 独立预览 | 未新增标签 | `9c300a20d63125ba33fb6c8f55e7172a9b6d0810` | `6ad66823d01490f2bb745e5a` | 统一正式/开发iframe入口版本标识；沿用v7-7整版资源，最终公开28项通过 |
