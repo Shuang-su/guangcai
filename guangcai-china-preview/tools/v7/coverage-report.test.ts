@@ -9,9 +9,9 @@ test('measured city surface uses actual UV material triangles and separates arc,
  assert.ok(Math.abs(d.differences.gapRuntimePx-61.370293965961764)<1e-10);assert.ok(Math.abs(d.differences.gapPsdPx-81.4025408)<1e-7);assert.ok(Math.abs(d.differences.gapModelMm-3.4619316)<1e-6);
  assert.ok(Math.abs(d.differences.relativeAspectChange*100+2.55785)<1e-4);assert.ok(Math.abs(d.differences.widthDeltaMm+4.84952649)<1e-7);p.dispose();
 });
-test('94 city versions and all chosen label variants have bounded, source-identifiable measurements',async()=>{
- const d=await read();let n=0;for(const group of Object.values<any>(d.groups))for(const c of Object.values<any>(group.cities)){n++;assert.match(c.asset.sha256,/^[a-f0-9]{64}$/);assert.ok(c.rect[0]>=0&&c.rect[1]>=0&&c.rect[2]>0&&c.rect[3]>0);assert.ok(c.rect[0]+c.rect[2]<=4096&&c.rect[1]+c.rect[3]<=1783);assert.ok(c.bottomGapMm>=0);}
- assert.equal(n,94);assert.equal(d.groups.baseline.releaseId,'v7-5');assert.equal(Object.keys(d.labels.reference).length,23);assert.notEqual(d.labels.previous.global.open.asset.sha256,d.labels.unified.global.open.asset.sha256);assert.notEqual(d.labels.unified.overrides.chengdu.open.asset.sha256,d.labels.unified.global.open.asset.sha256);
+test('141 city versions and all chosen label variants have bounded, source-identifiable measurements',async()=>{
+ const d=await read();let n=0;for(const group of Object.values<any>(d.groups))for(const c of Object.values<any>(group.cities)){n++;assert.ok(Number.isFinite(c.occupancy.cityPaintMm2));assert.ok(c.occupancy.cityPaintFraction>=0&&c.occupancy.cityPaintFraction<=1);assert.match(c.asset.sha256,/^[a-f0-9]{64}$/);assert.ok(c.rect[0]>=0&&c.rect[1]>=0&&c.rect[2]>0&&c.rect[3]>0);assert.ok(c.rect[0]+c.rect[2]<=4096&&c.rect[1]+c.rect[3]<=1783);assert.ok(c.bottomGapMm>=0);}
+ assert.equal(n,141);assert.equal(d.groups.baseline.releaseId,'v7-5');assert.equal(Object.keys(d.labels.reference).length,23);assert.notEqual(d.labels.previous.global.open.asset.sha256,d.labels.unified.global.open.asset.sha256);assert.notEqual(d.labels.unified.overrides.chengdu.open.asset.sha256,d.labels.unified.global.open.asset.sha256);
  assert.ok(d.groups.current.cities.shenzhen.modelRectMm[1]>20);assert.ok(d.groups.current.cities.shenzhen.bottomGapMm>.3);assert.ok(d.groups.current.cities.shenzhen.modelRectMm[1]>d.differences.gapModelMm+10);
 });
 test('diagnostic contours follow actual mesh UV and never alter approved cup geometry or UV buffers',()=>{

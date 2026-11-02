@@ -1,0 +1,30 @@
+{
+  "failedIntegrationRebuilds": 2,
+  "successfulIntegrationBuild": true,
+  "v7Tests": 55,
+  "retiredStaging": ".codex-work/deploy/v7-integration",
+  "sourceAndArchivesPreserved": true,
+  "generatedDraftMasksRetired": [
+    {
+      "path": "assets/masters/v7.1.11/chongqing-cutout-mask.png",
+      "sha256": "2f329e22815d67123c41e30ed8a9a2a9062162833810733129f423fc574c3a2e"
+    },
+    {
+      "path": "assets/masters/v7.1.11/nanchang-cutout-mask.png",
+      "sha256": "ea3ab7d819eea7ff3bdc26167e0f9b5d537572d98acba683dee500b93c60d555"
+    },
+    {
+      "path": "assets/masters/v7.1.11/beijing-cutout-mask.png",
+      "sha256": "9c45986b5d67b5ed4b256b4552813b12534d88e003b0fd930dfc2cbdd4876ec2"
+    },
+    {
+      "path": "assets/masters/v7.1.11/qingdao-cutout-mask.png",
+      "sha256": "1bd72d5cd519c1137ca73eca59ca2850dabc2074476477e2f9a3cd9cfe0a398d"
+    },
+    {
+      "path": "assets/masters/v7.1.11/tianjin-cutout-mask.png",
+      "sha256": "4488bfe2ec4d35867e618a9b93131b56c08a905d657ef7c292300592f0d0ad94"
+    }
+  ],
+  "copyPolicy": "byte exact; known AppleDouble companions only in newly generated .codex-work/deploy files"
+}

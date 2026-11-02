@@ -1,0 +1,160 @@
+{
+  "version": "7.1.11",
+  "beforeRelease": "v7-8",
+  "afterRelease": "v7-9",
+  "mainComparisonBaseline": "v7-5",
+  "formalShenzhenUnchanged": true,
+  "phase2Url": "/artwork-dev/?art=phase2",
+  "cities": [
+    {
+      "id": "xian",
+      "name": "西安",
+      "note": "使用新闭合曲线导出稿；塔身和建筑面完整填色，修复原白洞。",
+      "images": {
+        "before": "images/repair-xian-before.webp",
+        "after": "images/repair-xian-after.webp",
+        "delta": "images/repair-xian-delta.webp"
+      },
+      "crop": {
+        "left": 9,
+        "top": 637,
+        "width": 4065,
+        "height": 1146
+      },
+      "addedCoveragePixels": 156710.30980392644,
+      "removedCoveragePixels": 143583.92941176516,
+      "changedLinePixels": 1296016,
+      "beforeMask": "9d6b28939b7b40be71dfa94bc36f35d11e042d84afaf55b027c600c1e2c3db1e",
+      "afterMask": "c0b9ea53c13711c51cd07576d281493f719f9211dcf0aa75de5dae33657fb14b",
+      "beforeModelPaintMm2": 5821.2113456082025,
+      "afterModelPaintMm2": 5956.86860453716,
+      "deltaModelPaintMm2": 135.65725892895716,
+      "normalUnchanged": false
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "note": "仅楼体之间的三处空隙露白瓷；楼面、空中连廊与前景继续填色。",
+      "images": {
+        "before": "images/repair-chongqing-before.webp",
+        "after": "images/repair-chongqing-after.webp",
+        "delta": "images/repair-chongqing-delta.webp"
+      },
+      "crop": {
+        "left": 34,
+        "top": 454,
+        "width": 4044,
+        "height": 1329
+      },
+      "addedCoveragePixels": 0,
+      "removedCoveragePixels": 68954.46274509831,
+      "changedLinePixels": 0,
+      "beforeMask": "3ba3892be30e6ce7867ce1e1a410bf852c4be52f57e8b7d443ad4f4aef5e3171",
+      "afterMask": "44deecacb610c31f222bf8c170960d4dcc721e51b7fed90b015cbccbb1d52c9a",
+      "beforeModelPaintMm2": 7421.43083407886,
+      "afterModelPaintMm2": 7207.637912742715,
+      "deltaModelPaintMm2": -213.7929213361449,
+      "normalUnchanged": true
+    },
+    {
+      "id": "nanchang",
+      "name": "南昌",
+      "note": "仅轮圈内轮辐间隙露白瓷；座舱、轮辋、轮毂、支架和前景保持填色。",
+      "images": {
+        "before": "images/repair-nanchang-before.webp",
+        "after": "images/repair-nanchang-after.webp",
+        "delta": "images/repair-nanchang-delta.webp"
+      },
+      "crop": {
+        "left": 0,
+        "top": 674,
+        "width": 3938,
+        "height": 1109
+      },
+      "addedCoveragePixels": 0,
+      "removedCoveragePixels": 192386.04705883143,
+      "changedLinePixels": 0,
+      "beforeMask": "ceb5c5be3e9517157881a5005920421d0b4e8628285d4a742bb399b74950a8ba",
+      "afterMask": "0578a252bb0eaa1d730ec5dbaef0a61305e8ee0b96cfcac0d3871c9539c04c2e",
+      "beforeModelPaintMm2": 5757.745708916254,
+      "afterModelPaintMm2": 5161.2537515728745,
+      "deltaModelPaintMm2": -596.4919573433799,
+      "normalUnchanged": true
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "note": "仅CCTV大裤衩中央开口露白瓷；两侧楼体及悬挑连接保持填色。",
+      "images": {
+        "before": "images/repair-beijing-before.webp",
+        "after": "images/repair-beijing-after.webp",
+        "delta": "images/repair-beijing-delta.webp"
+      },
+      "crop": {
+        "left": 126,
+        "top": 603,
+        "width": 3835,
+        "height": 1180
+      },
+      "addedCoveragePixels": 0,
+      "removedCoveragePixels": 43744.99607843131,
+      "changedLinePixels": 0,
+      "beforeMask": "425255eb45b60c1ff101765ef8dad4fac24006294557bc22943cd2d7c3408ab0",
+      "afterMask": "3d97b0a0e8aef785704d89064fa7780c72b8656510107f8c0036dbb8efaedff0",
+      "beforeModelPaintMm2": 5567.872543035207,
+      "afterModelPaintMm2": 5432.24142001076,
+      "deltaModelPaintMm2": -135.63112302444733,
+      "normalUnchanged": true
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "note": "五月的风—电视塔、电视塔—回澜阁之间两处空隙露白瓷，三个建筑本体及前景保持填色。",
+      "images": {
+        "before": "images/repair-qingdao-before.webp",
+        "after": "images/repair-qingdao-after.webp",
+        "delta": "images/repair-qingdao-delta.webp"
+      },
+      "crop": {
+        "left": 36,
+        "top": 262,
+        "width": 3900,
+        "height": 1521
+      },
+      "addedCoveragePixels": 0,
+      "removedCoveragePixels": 38645.996078431446,
+      "changedLinePixels": 0,
+      "beforeMask": "7279aef587f4417f41f87c03f7e2adb4e593dbc7d22352e60d78bd764089db64",
+      "afterMask": "c61c632627a220cf43542f9509fefd5b28a0bc16a726c2f58ac52272d01e979e",
+      "beforeModelPaintMm2": 5184.29404403155,
+      "afterModelPaintMm2": 5064.472326299917,
+      "deltaModelPaintMm2": -119.82171773163282,
+      "normalUnchanged": true
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "note": "仅轮圈内轮辐间隙露白瓷；外部座舱、轮辋、中心轮毂、Y形支架和桥面保持填色。",
+      "images": {
+        "before": "images/repair-tianjin-before.webp",
+        "after": "images/repair-tianjin-after.webp",
+        "delta": "images/repair-tianjin-delta.webp"
+      },
+      "crop": {
+        "left": 33,
+        "top": 456,
+        "width": 3744,
+        "height": 1327
+      },
+      "addedCoveragePixels": 0,
+      "removedCoveragePixels": 433098.74901963427,
+      "changedLinePixels": 0,
+      "beforeMask": "00c9a830d622c3c30c2bb3b8d77dac8ffbe6133bc02675fe87186d8010a4fc1d",
+      "afterMask": "730c7d855a31fb41c8c3569e9e99fe3f429f43e986a683bd79a43befa96d7cb2",
+      "beforeModelPaintMm2": 6039.2242307527,
+      "afterModelPaintMm2": 4696.404047991194,
+      "deltaModelPaintMm2": -1342.8201827615067,
+      "normalUnchanged": true
+    }
+  ]
+}

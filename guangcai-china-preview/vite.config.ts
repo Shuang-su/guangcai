@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from 'vite';
 import { wgslVitePlugin } from '@vgpu/wgsl/loader-vite';
-import {cp,mkdir,writeFile} from 'node:fs/promises';
-import {resolve,basename} from 'node:path';
+import {mkdir,writeFile,readFile,readdir,unlink} from 'node:fs/promises';
+import {resolve} from 'node:path';
 import {createReadStream,statSync,readFileSync} from 'node:fs';
 const appVersion=JSON.parse(readFileSync(new URL('./package.json',import.meta.url),'utf8')).version;
 const entryVersion=():Plugin=>({name:'app-entry-version',transformIndexHtml:html=>html.replaceAll('__APP_VERSION__',appVersion)});
@@ -9,16 +9,30 @@ const entryVersion=():Plugin=>({name:'app-entry-version',transformIndexHtml:html
 // are gzip containers in the resource protocol and must arrive byte-exact.
 function rawNormalFiles():Plugin {
  let base='/';return {name:'v7-byte-exact-normals',apply:'serve',configResolved(c){base=c.base;},configureServer(server){
-  server.middlewares.use((req,res,next)=>{const pathname=new URL(req.url??'/', 'http://localhost').pathname,relative=pathname.slice(base.length),match=relative.match(/^((?:releases\/v7-[1-8]|dev-assets))\/assets\/(.+)$/);if(!pathname.startsWith(base)||!match)return next();const [,assetRoot,name]=match;if(!/^[a-z0-9-]+\.hfn\.gz$/.test(name))return next();
+  server.middlewares.use((req,res,next)=>{const pathname=new URL(req.url??'/', 'http://localhost').pathname,relative=pathname.slice(base.length),match=relative.match(/^((?:releases\/v7-[1-9]|dev-assets))\/assets\/(.+)$/);if(!pathname.startsWith(base)||!match)return next();const [,assetRoot,name]=match;if(!/^[a-z0-9-]+\.hfn\.gz$/.test(name))return next();
    const file=resolve('public',assetRoot,'assets',name);try{const size=statSync(file).size;res.writeHead(200,{'Content-Type':'application/octet-stream','Content-Length':size,'Cache-Control':'no-cache'});if(req.method==='HEAD')res.end();else createReadStream(file).pipe(res);}catch{res.statusCode=404;res.end('Resource missing');}
   });
  }};
 }
+// Copy bytes rather than extended attributes: ExFAT metadata companions can
+// otherwise double staging file count. Resource hashes remain the authority.
+async function writeRuntimeBytes(target:string,bytes:Uint8Array):Promise<void>{
+ await writeFile(target,bytes);
+ // macOS may create an AppleDouble sidecar even for fresh byte writes on ExFAT.
+ // Only discard validated companions of this generated staging file.
+ if(!target.startsWith(resolve('.codex-work/deploy')+'/'))return;
+ const companion=resolve(target,'..','._'+target.split('/').pop());
+ try{const metadata=await readFile(companion);if(metadata.length<4||metadata.readUInt32BE(0)!==0x00051607)throw Error('Unknown staging companion: '+companion);await unlink(companion);}catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw e;}
+}
+async function copyRuntimeBytes(source:string,target:string):Promise<void>{
+ const entries=await readdir(source,{withFileTypes:true});await mkdir(target,{recursive:true});
+ for(const entry of entries){if(entry.name.startsWith('._')||entry.name==='.DS_Store')continue;const from=resolve(source,entry.name),to=resolve(target,entry.name);if(entry.isDirectory())await copyRuntimeBytes(from,to);else if(entry.isFile())await writeRuntimeBytes(to,await readFile(from));else throw Error('Non-regular runtime source: '+from);}
+}
 function runtimeFiles():Plugin {
  let out='';
  return {name:'v7-runtime-files',apply:'build',configResolved(c){out=c.build.outDir;},async closeBundle(){
-  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
-   await mkdir(resolve(out,item,'..'),{recursive:true});await cp(resolve('public',item),resolve(out,item),{recursive:true,filter:source=>!basename(source).startsWith('._')&&basename(source)!=='.DS_Store'});
+  for(const item of ['releases/v7-1','releases/v7-2','releases/v7-3','releases/v7-4','releases/v7-5','releases/v7-6','releases/v7-7','releases/v7-8','releases/v7-9','dev-assets','coverage','label-compare','city-compare','bezier-lab','api/v1/bootstrap.json','icons','backgrounds','runtime-config.js','manifest.webmanifest','third-party']){
+   await mkdir(resolve(out,item,'..'),{recursive:true});if(item.includes('.')&&!item.endsWith('/'))await writeRuntimeBytes(resolve(out,item),await readFile(resolve('public',item)));else await copyRuntimeBytes(resolve('public',item),resolve(out,item));
   }
   const headers='/coverage/*\n  Cache-Control: no-cache\n\n/dev-assets/*.json\n  Cache-Control: no-cache\n\n/label-compare/data.json\n  Cache-Control: no-cache\n\n/releases/*\n  Access-Control-Allow-Origin: *\n  Timing-Allow-Origin: *\n  Cache-Control: public, max-age=31536000, immutable\n\n/api/*\n  Cache-Control: no-cache\n\n/runtime-config.js\n  Cache-Control: no-cache\n';
   await writeFile(resolve(out,'_headers'),headers);
