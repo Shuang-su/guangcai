@@ -1,15 +1,18 @@
 # 产品版本与发布索引
 
+2026-11-02：GitHub main已通过PR [#58](https://github.com/Shuang-su/guangcai/pull/58)、[#59](https://github.com/Shuang-su/guangcai/pull/59)补齐正式版本与交付记录；合并检查点`1e8a90d7`。[同步核验](docs/changes/20261102-github-catchup/completion.md)。当前线上为 **V7.1.13 / v7-10**，部署`6ad9e0c4e4871da75c6b4316`，本轮未重新部署。
+
 2026-10-22：V7.1.13 / v7-10 已发布到Netlify，记录见 docs/changes/20261022-city-blessings/completion.md。
 
 本仓库按正常开发项目维护；main 已包含原版与中国杯源码。中国杯后续版本在同一 `guangcai-china-preview/` 目录演进，旧版本通过下表的标签、提交与部署定位。
 
-当前线上正式主页为 **V7.1.12 / v7-9**：七种观察视角与主动花纹提清，部署 `6ad76b8796b6f32499d6fa63`，源码 `006e32681b686ed161b2aa710a67831e9b3bc9b3`。1252份服务端摘要核对一致，后缀页面沿用原发布内容；[发布记录](docs/changes/20261020-v7.1.12-netlify/completion.md)。版本Issue仍保留[本地草稿](docs/changes/20261020-v7.1.12-seven-views/version-issue-pending.md)，GitHub尚未同步。
+2026-10-20 当时的线上正式主页为 **V7.1.12 / v7-9**：七种观察视角与主动花纹提清，部署 `6ad76b8796b6f32499d6fa63`，源码 `006e32681b686ed161b2aa710a67831e9b3bc9b3`。1252份服务端摘要核对一致，后缀页面沿用原发布内容；[发布记录](docs/changes/20261020-v7.1.12-netlify/completion.md)。版本Issue仍保留[本地草稿](docs/changes/20261020-v7.1.12-seven-views/version-issue-pending.md)，GitHub尚未同步。
 
-上一版线上独立预览为 **V7.1.11 / v7-9**，西安闭合新版与五城背景修正，深圳二期仅dev；部署`6ad6fcdcf1f9e6ca6c7c5330`，公网57+31+41项通过。GitHub因账号暂停403尚未合并。此前V7.1.10 / v7-8，前后对比统一为V7.1.4/v7-5→当前V7.1.10/v7-8，compare与独立dev增加实际曲面占比、PSD/模型差异、三部分花纸尺寸与接缝高亮；PR #54/#55/#56已合并部署，公网占比57项＋核心30项通过。正式图案、几何、UV保持既有映射，现有约2.56%比例差已公开。原5MiB/6秒目标、实体设备及COS/身份仍由Issue #47跟踪。
+2026-10-20 的上一版线上独立预览为 **V7.1.11 / v7-9**，西安闭合新版与五城背景修正，深圳二期仅dev；部署`6ad6fcdcf1f9e6ca6c7c5330`，公网57+31+41项通过。GitHub因账号暂停403尚未合并。此前V7.1.10 / v7-8，前后对比统一为V7.1.4/v7-5→当前V7.1.10/v7-8，compare与独立dev增加实际曲面占比、PSD/模型差异、三部分花纸尺寸与接缝高亮；PR #54/#55/#56已合并部署，公网占比57项＋核心30项通过。正式图案、几何、UV保持既有映射，现有约2.56%比例差已公开。原5MiB/6秒目标、实体设备及COS/身份仍由Issue #47跟踪。
 
 | 版本记录 | 实现与证据 | 验收状态 |
 | --- | --- | --- |
+| V7.1.13 · GitHub/Netlify已同步 | [祝福语与正式主页交付](docs/changes/20261022-city-blessings/completion.md) | 2026-11-02经PR #59合入main；线上部署不变，设备边界见版本记录 |
 | V7.1.12 · 已发布 | [七视角与花纹提清上线](docs/changes/20261020-v7.1.12-netlify/completion.md) | Netlify ready；1252份服务端摘要与公网页面/浏览器核对完成，GitHub版本Issue待恢复 |
 | [V7.1.11 · Issue #57](https://github.com/Shuang-su/guangcai/issues/57) | [城市闭合/镂空记录](docs/changes/20261020-v7.1.11-city-cutouts/completion.md) | Netlify已发布；45基础/55V7测试、公网57+31+41项、1248文件通过；PR #58合并受GitHub账号暂停阻断 |
 | [V7.1.10 · Issue #53](https://github.com/Shuang-su/guangcai/issues/53) | [曲面占比与映射记录](docs/changes/20261020-v7.1.10-coverage-report/completion.md) | 45基础、52V7测试通过；本地及公网核心各30项、占比/23城/部位交互各57项通过；PR #54/#55/#56合并部署，1187文件核验，实体与既有UV差异见#47，资源仍为v7-8 |

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "archives": [
+    {
+      "deployId": "6ad6fcdcf1f9e6ca6c7c5330",
+      "sourceCommit": "cd8159b3c93b4b7083526f521d5a4c01e919219d",
+      "files": 1248,
+      "passed": true
+    },
+    {
+      "deployId": "6ad76b8796b6f32499d6fa63",
+      "sourceCommit": "006e32681b686ed161b2aa710a67831e9b3bc9b3",
+      "files": 1252,
+      "passed": true
+    },
+    {
+      "deployId": "6ad9e0c4e4871da75c6b4316",
+      "sourceCommit": "78530b7ea1c67bcdd8a6871c81697d6c6519e2e8",
+      "files": 1290,
+      "passed": true
+    }
+  ],
+  "uniqueBlobsVerified": 1255,
+  "missingObjects": 0,
+  "expandedSiteFiles": 0
+}
