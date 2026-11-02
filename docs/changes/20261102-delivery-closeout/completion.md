@@ -34,3 +34,5 @@
 - 索引与入口文档 checkpoint：`1d87e850`，包含根/应用 README 和 VERSION_HISTORY。
 - 首次普通 add 拒绝暂存稀疏检出范围外的新记录目录，未改稀疏规则；上述提交仅含3份入口文档。随后对本任务6份明确记录文件使用 `git add --sparse` 补齐，未展开历史发布文件。
 - 本记录、请求/计划、Issue正文回读和正式站HTTP摘要作为独立证据 checkpoint 纳入同一文档 PR。
+- 证据 checkpoint：`7874f3e7cf8b1b8437480d8ef43559744b032b25`；入口 checkpoint 与证据 checkpoint 均已普通推送并设置 upstream。
+- 收尾 PR：[\#63](https://github.com/Shuang-su/guangcai/pull/63)。本记录随该 PR 入库；实际合并状态与 merge SHA 以 GitHub PR 回执为准。本轮没有新增产品部署。
