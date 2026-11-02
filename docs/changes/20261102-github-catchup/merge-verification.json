@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "formalMergeMain": "1e8a90d7a8e55bc69b9e76557a014b715a2b6ef3",
+  "formalCommitsContained": 21,
+  "recoveredUnpublishedCommits": 22,
+  "allSixBranchesRetained": true,
+  "auditBranch": "a13ba1b8c6dfcbd9be2f204fb497a00b825218d2",
+  "auditCommitsKeptSeparate": [
+    "a13ba1b8c6dfcbd9be2f204fb497a00b825218d2",
+    "7d456f489d5af6746edb7737dc5b03aa855fb8dc"
+  ],
+  "productTreeMatchesReviewedHead": "cd60fa9a6efe8c791f2207df1775dbc49596fbeb",
+  "newConflictEdits": false,
+  "buildPerformed": false,
+  "deployPerformed": false
+}
